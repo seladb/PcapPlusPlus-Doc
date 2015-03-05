@@ -1,0 +1,290 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>PcapPlusPlus-Doc</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">PcapPlusPlus-Doc</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/seladb/PcapPlusPlus-Doc/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/seladb/PcapPlusPlus-Doc/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/seladb/PcapPlusPlus-Doc" class="code">View PcapPlusPlus-Doc on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="pcapplusplus" class="anchor" href="#pcapplusplus" aria-hidden="true"><span class="octicon octicon-link"></span></a>PcapPlusPlus</h1>
+
+<p>PcapPlusPlus is a multiplatform C++ network sniffing and packet parsing and manipulation framework. PcapPlusPlus is meant to be lightweight, efficient and easy to use.</p>
+
+<p><strong>What makes PcapPlusPlus different from similar C++ wrappers for libpcap/WinPcap?</strong></p>
+
+<ul>
+<li>Designed to be lightweight and efficient</li>
+<li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
+<li>Support for many protocols, including HTTP protocol parsing and editing</li>
+<li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
+<li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
+</ul>
+
+<p>PcapPlusPlus is currently supported on Windows and Linux operating systems.
+It was tested on Windows (32bit and 64bit), Ubuntu and Fedora, but it should work on other Linux distributions as well.
+Other opeating systems such as FreeBSD and Mac OS were never tested and compilation on those platform would probably fail</p>
+
+<h2>
+<a id="package-content" class="anchor" href="#package-content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package Content</h2>
+
+<p>The PcapPlusPlus package contains several libraries, unit-tests and example utilities:</p>
+
+<ol>
+<li>
+<strong>Packet++ library</strong> - a library for parsing, creating and editing packets</li>
+<li>
+<strong>Pcap++ library</strong> - a library for intercepting and sending packets. This library is actually a C++ wrapper for the libPcap and WinPcap libraries</li>
+<li>
+<strong>Common++ library</strong> - a library with some common code utilities used both by Packet++ and Pcap++</li>
+<li>
+<strong>Packet++Test unit-test</strong> - a unit-test application for testing the Packet++ library</li>
+<li>
+<strong>Pcap++Test unit-test</strong> - a unit-test application for testing the Pcap++ library</li>
+<li>
+<strong>Example applications:</strong>
+
+<ol>
+<li>
+<strong>Packet Parsing</strong> - a short guide for parsing packets using Pcap++ and Packet++</li>
+<li>
+<strong>Break Pcap FileTo Streams</strong> - an application that takes a pcap file and breaks it into several pcap files, each containing one stream</li>
+<li>
+<strong>ARP Spoofing</strong> - an application that does ARP spoofing using Packet++ and Pcap++</li>
+</ol>
+</li>
+</ol>
+
+<h4>
+<a id="supported-protocols" class="anchor" href="#supported-protocols" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Protocols</h4>
+
+<p>The Packet++ library currently supports parsing, editing and creation of packets of the following protocols:</p>
+
+<ol>
+<li>Ethernet</li>
+<li>IPv4</li>
+<li>IPv6</li>
+<li>ARP</li>
+<li>VLAN</li>
+<li>TCP</li>
+<li>UDP</li>
+<li>HTTP request header</li>
+<li>HTTP response header</li>
+<li>Generic payload</li>
+</ol>
+
+<h4>
+<a id="supported-engines-and-devices" class="anchor" href="#supported-engines-and-devices" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Engines and Devices</h4>
+
+<p>PcapPlusPlus currently works with the following devices:</p>
+
+<ol>
+<li>libpcap live device (on Linux)</li>
+<li>WinPcap live device (on Windows)</li>
+<li>Vanilla PF_RING device (on Linux)</li>
+<li>Remote live device (on Windows)</li>
+<li>File devices</li>
+</ol>
+
+<h4>
+<a id="pf_ring-support" class="anchor" href="#pf_ring-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>PF_RING support</h4>
+
+<p>PcapPlusPlus provides a clean and simple C++ wrapper API for Vanilla PF_RING. Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but PF_RING DNA or ZC (which allows kernel bypass and zero-copy of packets from NIC to user-space) isn't supported yet. I hope I'll be able to add this support in the future.</p>
+
+<p>You can read more about PF_RING in ntop web-site: <a href="http://www.ntop.org/products/pf_ring/">http://www.ntop.org/products/pf_ring/</a> and in PF_RING user guide: <a href="https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf">https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf</a></p>
+
+<p>In order to compile PcapPlusPlus with PF_RING you need to:</p>
+
+<ol>
+<li>Download PF_RING from ntop's web-site: <a href="http://www.ntop.org/get-started/download/#PF_RING">http://www.ntop.org/get-started/download/#PF_RING</a>
+</li>
+<li>Note that I used PcapPlusPlus with PF_RING version 6.0.2. I can't guarantee it'll work with previous versions</li>
+<li>Once PF_RING is compiled successfully, you need to run PcapPlusPlus <strong>configure-linux.sh</strong> and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
+<li>Then you can compile PcapPlusPlus as usual (using make, see below)</li>
+<li>Before you activate any PcapPlusPlus program that uses PF_RING, don't forget to enable PF_RING kernel module. If you forget to do that, PcapPlusPlus will output an appropriate error on startup which will remind you:</li>
+</ol>
+
+<div class="highlight highlight-shell"><pre>sudo insmod <span class="pl-k">&lt;</span>PF_RING_LOCATION<span class="pl-k">&gt;</span>/kernel/pf_ring.ko</pre></div>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
+
+<p>In order to download PcapPlusPlus, please visit the github <a href="https://github.com/seladb/PcapPlusPlus/">page</a>.</p>
+
+<p>You can also download it using these links:</p>
+
+<ul>
+<li><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">ZIP format</a></li>
+<li><a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tat.gz format</a></li>
+</ul>
+
+<p>Or clone the git repository by:</p>
+
+<div class="highlight highlight-shell"><pre>git clone https://github.com/seladb/PcapPlusPlus.git</pre></div>
+
+<h2>
+<a id="compiling" class="anchor" href="#compiling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compiling</h2>
+
+<h4>
+<a id="prerequisutes---windows" class="anchor" href="#prerequisutes---windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisutes - Windows</h4>
+
+<p>In order to compile PcapPlusPlus on Windows you need the following components:</p>
+
+<ol>
+<li>The MinGW environment and compiler - this is the only environment currently supported for PcapPlusPlus. You can download and install is from <a href="http://www.mingw.org/">www.mingw.org/</a>
+</li>
+<li>Winpcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <a href="https://www.winpcap.org/devel.htm">https://www.winpcap.org/devel.htm</a>
+</li>
+</ol>
+
+<h4>
+<a id="prerequisutes---linux" class="anchor" href="#prerequisutes---linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisutes - Linux</h4>
+
+<p>In order to compile PcapPlusPlus on Linux you need the following components:</p>
+
+<ol>
+<li>
+<p>libPcap developers pack - containing the libpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <a href="http://www.tcpdump.org/#latest-release">http://www.tcpdump.org/#latest-release</a> or through package management engines 
+such as apt-get:</p>
+
+<div class="highlight highlight-shell"><pre>sudo apt-get install libpcap-dev</pre></div>
+
+<p>or yum:</p>
+
+<div class="highlight highlight-shell"><pre>sudo yum install libpcap-devel</pre></div>
+</li>
+<li><p>Make sure you have the libstdc++-static package. If not, you can install it via <em>yum</em> or <em>apt-get</em></p></li>
+</ol>
+
+<h4>
+<a id="configuration-and-compilation" class="anchor" href="#configuration-and-compilation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration and Compilation</h4>
+
+<p><em>On Windows:</em></p>
+
+<ol>
+<li>run the <strong>configure-windows.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location</li>
+<li>run <strong>mingw32-make.exe all</strong> from PcapPlusPlus main directory</li>
+<li>This should compile all libraries, unit-tests and examples</li>
+</ol>
+
+<p><em>On Linux:</em></p>
+
+<ol>
+<li>run the <strong>configure-linux.sh</strong> script from PcapPlusPlus main directory</li>
+<li>If you'd like to compile it with PF_RING please follow the instructions in the "PF_RING support" section above and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
+<li>Run <strong>make all</strong> from PcapPlusPlus main directory</li>
+<li>This should compile all libraries, unit-tests and examples</li>
+</ol>
+
+<h4>
+<a id="simple-testing" class="anchor" href="#simple-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Testing</h4>
+
+<p>To ensure configuration and compilation went smoothly, you can run the unit-test applications for both Packet++ and Pcap++:</p>
+
+<div class="highlight highlight-shell"><pre>seladb@seladb:<span class="pl-k">~</span>/home/PcapPlusPlus/Packet++Test$ Bin/Packet++Test.exe
+EthPacketCreation             <span class="pl-s3">:</span> PASSED
+EthAndArpPacketParsing        <span class="pl-s3">:</span> PASSED
+ArpPacketCreation             <span class="pl-s3">:</span> PASSED
+VlanParseAndCreation          <span class="pl-s3">:</span> PASSED
+Ipv4PacketCreation            <span class="pl-s3">:</span> PASSED
+Ipv4PacketParsing             <span class="pl-s3">:</span> PASSED
+Ipv4UdpChecksum               <span class="pl-s3">:</span> PASSED
+Ipv6UdpPacketParseAndCreate   <span class="pl-s3">:</span> PASSED
+TcpPacketNoOptionsParsing     <span class="pl-s3">:</span> PASSED
+TcpPacketWithOptionsParsing   <span class="pl-s3">:</span> PASSED
+TcpPacketWithOptionsParsing2  <span class="pl-s3">:</span> PASSED
+TcpPacketCreation             <span class="pl-s3">:</span> PASSED
+InsertDataToPacket            <span class="pl-s3">:</span> PASSED
+InsertVlanToPacket            <span class="pl-s3">:</span> PASSED
+RemoveLayerTest               <span class="pl-s3">:</span> PASSED
+HttpRequestLayerParsingTest   <span class="pl-s3">:</span> PASSED
+HttpRequestLayerCreationTest  <span class="pl-s3">:</span> PASSED
+HttpRequestLayerEditTest      <span class="pl-s3">:</span> PASSED
+HttpResponseLayerParsingTest  <span class="pl-s3">:</span> PASSED
+HttpResponseLayerCreationTest <span class="pl-s3">:</span> PASSED
+HttpResponseLayerEditTest     <span class="pl-s3">:</span> PASSED
+CopyLayerAndPacketTest        <span class="pl-s3">:</span> PASSED
+ALL TESTS PASSED<span class="pl-k">!!</span>
+
+seladb@seladb:<span class="pl-k">~</span>/PcapPlusPlus/Pcap++Test$ sudo Bin/Pcap++Test.exe -i 10.0.0.1
+Using ip: 10.0.0.1
+Debug mode: off
+Starting tests...
+TestIPAddress                 <span class="pl-s3">:</span> PASSED
+TestMacAddress                <span class="pl-s3">:</span> PASSED
+TestPcapFileReadWrite         <span class="pl-s3">:</span> PASSED
+TestPcapLiveDeviceList        <span class="pl-s3">:</span> PASSED
+TestPcapLiveDeviceListSearch  <span class="pl-s3">:</span> PASSED
+TestPcapLiveDevice            <span class="pl-s3">:</span> PASSED
+TestPcapLiveDeviceStatsMode   <span class="pl-s3">:</span> PASSED
+TestWinPcapLiveDevice         <span class="pl-s3">:</span> PASSED
+TestPcapFilters               <span class="pl-s3">:</span> PASSED
+TestSendPacket                <span class="pl-s3">:</span> PASSED
+TestSendPackets               <span class="pl-s3">:</span> PASSED
+TestRemoteCaptue              <span class="pl-s3">:</span> PASSED
+TestHttpRequestParsing        <span class="pl-s3">:</span> PASSED
+TestHttpResponseParsing       <span class="pl-s3">:</span> PASSED
+TestPrintPacketAndLayers      <span class="pl-s3">:</span> PASSED
+TestPfRingDevice              <span class="pl-s3">:</span> PASSED
+TestPfRingDeviceSingleChannel <span class="pl-s3">:</span> PASSED
+TestPfRingMultiThreadAllCores <span class="pl-s3">:</span> PASSED
+TestPfRingMultiThreadSomeCores: PASSED
+TestPfRingSendPacket          <span class="pl-s3">:</span> PASSED
+TestPfRingSendPackets         <span class="pl-s3">:</span> PASSED
+TestPfRingFilters             <span class="pl-s3">:</span> PASSED
+ALL TESTS PASSED<span class="pl-k">!!</span></pre></div>
+
+<p><em>Notice:</em> Pcap++Test must be run with <strong>sudo</strong> on Linux to have access to all NICs</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/seladb" class="avatar"><img src="https://avatars2.githubusercontent.com/u/9059541?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/seladb">seladb</a> maintains <a href="https://github.com/seladb/PcapPlusPlus-Doc">PcapPlusPlus-Doc</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/seladb/PcapPlusPlus-Doc/tarball/master" class="tar">tar</a><a href="https://github.com/seladb/PcapPlusPlus-Doc/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
