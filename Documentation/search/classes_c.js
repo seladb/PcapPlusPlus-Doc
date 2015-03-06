@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scalarbuffer',['ScalarBuffer',['../struct_scalar_buffer.html',1,'']]],
-  ['systemcore',['SystemCore',['../struct_system_core.html',1,'']]],
-  ['systemcores',['SystemCores',['../struct_system_cores.html',1,'']]]
+  ['scalarbuffer',['ScalarBuffer',['../a00054.html',1,'']]],
+  ['systemcore',['SystemCore',['../a00055.html',1,'']]],
+  ['systemcores',['SystemCores',['../a00056.html',1,'']]]
 ];
