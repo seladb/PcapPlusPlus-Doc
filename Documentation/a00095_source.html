@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: RawPacket.h Source File</title>
+<title>PcapPlusPlus: WinPcapLiveDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,59 +104,55 @@ $(document).ready(function(){initNavTree('a00095_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RawPacket.h</div>  </div>
+<div class="title">WinPcapLiveDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_RAW_PACKET</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_RAW_PACKET</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPP_WINPCAP_LIVE_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPP_WINPCAP_LIVE_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;PcapLiveDevice.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="a00053.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00053.html">RawPacket</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>WinPcapLiveDevice : <span class="keyword">public</span> <a class="code" href="a00042.html">PcapLiveDevice</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    uint8_t* m_pRawData;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> m_RawDataLen;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    timeval m_TimeStamp;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> m_DeleteRawDataAtDestructor;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> m_RawPacketSet;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> Init();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="a00053.html">RawPacket</a>&amp; other);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="a00053.html">RawPacket</a>(<span class="keyword">const</span> uint8_t* pRawData, <span class="keywordtype">int</span> rawDataLen, timeval timestamp, <span class="keywordtype">bool</span> deleteRawDataAtDestructor);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="a00053.html">RawPacket</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="a00053.html">RawPacket</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00043.html">PcapLiveDeviceList</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> m_MinAmountOfDataToCopyFromKernelToApplication;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// c&#39;tor is not public, there should be only one for every interface (created by PcapLiveDeviceList)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    WinPcapLiveDevice(pcap_if_t* iface, <span class="keywordtype">bool</span> calculateMTU);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// copy c&#39;tor is not public</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    WinPcapLiveDevice( <span class="keyword">const</span> WinPcapLiveDevice&amp; other );</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    WinPcapLiveDevice&amp; operator=(<span class="keyword">const</span> WinPcapLiveDevice&amp; other);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> LiveDeviceType getDeviceType() { <span class="keywordflow">return</span> WinPcapDevice; }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// copy c&#39;tor</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="a00053.html">RawPacket</a>(<span class="keyword">const</span> <a class="code" href="a00053.html">RawPacket</a>&amp; other);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00053.html">RawPacket</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00053.html">RawPacket</a>&amp; other);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> startCapture(OnPacketArrivesCallback onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie, <span class="keywordtype">int</span> intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUsrrCookie);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> startCapture(<span class="keywordtype">int</span> intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUserCookie);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> startCapture(<a class="code" href="a00044.html">RawPacketVector</a>&amp; capturedPacketsVector) { <span class="keywordflow">return</span> PcapLiveDevice::startCapture(capturedPacketsVector); }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setRawData(<span class="keyword">const</span> uint8_t* pRawData, <span class="keywordtype">int</span> rawDataLen, timeval timestamp);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> uint8_t* getRawData();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> uint8_t* getRawDataReadOnly() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> getRawDataLen() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    timeval getPacketTimeStamp();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> isPacketSet() { <span class="keywordflow">return</span> m_RawPacketSet; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> appendData(<span class="keyword">const</span> uint8_t* dataToAppend, <span class="keywordtype">size_t</span> dataToAppendLen);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> insertData(<span class="keywordtype">int</span> atIndex, <span class="keyword">const</span> uint8_t* dataToAppend, <span class="keywordtype">size_t</span> dataToAppendLen);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> removeData(<span class="keywordtype">int</span> atIndex, <span class="keywordtype">size_t</span> numOfBytesToRemove);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> reallocateData(uint8_t* newBuffer);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define MAX_PACKET_SIZE 65536</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:8</div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> sendPackets(<a class="code" href="a00048.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> setMinAmountOfDataToCopyFromKernelToApplication(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> getMinAmountOfDataToCopyFromKernelToApplication() { <span class="keywordflow">return</span> m_MinAmountOfDataToCopyFromKernelToApplication; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // WIN32</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPP_WINPCAP_LIVE_DEVICE */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00044_html"><div class="ttname"><a href="a00044.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:22</div></div>
+<div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:11</div></div>
+<div class="ttc" id="a00048_html"><div class="ttname"><a href="a00048.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_cd3f7d828bf98b23ca573d19c6139c8f.html">header</a></li><li class="navelem"><b>RawPacket.h</b></li>
-    <li class="footer">Generated on Fri Mar 6 2015 10:35:18 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>WinPcapLiveDevice.h</b></li>
+    <li class="footer">Generated on Fri Mar 13 2015 00:27:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

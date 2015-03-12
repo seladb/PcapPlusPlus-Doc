@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['enableerrors',['enableErrors',['../a00033.html#a949a764e78f7ab3e4610e130032f9cc4',1,'LoggerPP']]],
-  ['end',['end',['../a00049.html#aa37f4d8ebbc3e1d57cbdac06b2fa8ad2',1,'PointerVector::end()'],['../a00049.html#a101a07fa07aea0c2f615d20c6940d0a1',1,'PointerVector::end() const ']]],
-  ['erase',['erase',['../a00049.html#ae3d514e47d3e5e5ae887fd70da7bc25c',1,'PointerVector']]]
+  ['clear',['clear',['../a00044.html#a9f708acfaa3ce26d14b02d8e285c8729',1,'PointerVector::clear()'],['../a00048.html#acd933cd9082fdb75f85cec8fc0e8b44c',1,'RawPacket::clear()']]],
+  ['compute_5fchecksum',['compute_checksum',['../a00069.html#a202712529e61076e9fb0ee0682470525',1,'IpUtils.h']]],
+  ['computecalculatefields',['computeCalculateFields',['../a00004.html#a1cbb876a9dd9d631fc115c13156b6cc8',1,'ArpLayer::computeCalculateFields()'],['../a00008.html#a6740298bc6b49c5460a4ef4a390b9dea',1,'EthLayer::computeCalculateFields()'],['../a00011.html#a0bd3d93bd053bd4a0a337b6f1c914a2d',1,'HttpMessage::computeCalculateFields()'],['../a00028.html#a56511f700cf1008caf3b906819f09cae',1,'IPv4Layer::computeCalculateFields()'],['../a00031.html#ab34b0327e7eb03d0fbc8cbc15af820d0',1,'IPv6Layer::computeCalculateFields()'],['../a00032.html#aa781ec9027fb1011d9e07fefed7c908c',1,'Layer::computeCalculateFields()'],['../a00038.html#a2a757b793dfce9239223f9000551a945',1,'Packet::computeCalculateFields()'],['../a00039.html#a54f81429bd3c48d84cf53fa71ec96b5e',1,'PayloadLayer::computeCalculateFields()'],['../a00054.html#ac651dc5dee18295894f69922c7997df0',1,'TcpLayer::computeCalculateFields()'],['../a00058.html#a94f3dd3afe2b5ad9bda7e12d2f18c449',1,'UdpLayer::computeCalculateFields()'],['../a00062.html#aa9a69fc00dd5d19e88b6155a607a7d0f',1,'VlanLayer::computeCalculateFields()']]],
+  ['copydata',['copyData',['../a00032.html#a3d25b188ace59350b220b79e7dd82751',1,'Layer']]],
+  ['copyto',['copyTo',['../a00030.html#a3f6f2c5439e3db5717a038a69a1f21c3',1,'IPv6Address::copyTo(uint8_t **arr, size_t &amp;length)'],['../a00030.html#a512f02bc3c0be6ead547a7faffdc495f',1,'IPv6Address::copyTo(uint8_t *arr) const '],['../a00034.html#a9823260693c248a92c9457b25fb19cc4',1,'MacAddress::copyTo(uint8_t **arr)'],['../a00034.html#a60dac5e875c813300e5d0a9ce8b49ba0',1,'MacAddress::copyTo(uint8_t *arr) const ']]]
 ];
