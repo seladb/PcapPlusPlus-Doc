@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: Todo List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,8 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -67,14 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
-    </ul>
-  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -87,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00005.html','');});
+$(document).ready(function(){initNavTree('a00104.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,18 +98,56 @@ $(document).ready(function(){initNavTree('a00005.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">debug_new_counter Member List</div>  </div>
+<div class="title">Todo List </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="a00005.html">debug_new_counter</a>, including all inherited members.</p>
-<table class="directory">
-</table></div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="a00026.html#a0b7c5296eeee807d6481553d5ae3ba87">IPv4Address::IPv4Address</a>  (uint32_t addressAsInt)</dt>
+<dd>consider endianess in this method <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsInt</td><td>The address as 4-byte integer  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="a00033.html#a0ed1b706144dcc9214fad2da0349847e">LoggerPP::getInstance</a>  ()</dt>
+<dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00033.html">LoggerPP</a> singleton  </dd></dl>
+</dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="a00034.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress::MacAddress</a>  (uint8_t *addr)</dt>
+<dd>there is no verification array length &gt;= 6. If this is not the case, address will read uninitialized memory <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the byte array containing 6 bytes representing the MAC address  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="a00039.html#a7cc6f99cf4f6a31b8b3be6bde5ff2881">PayloadLayer::PayloadLayer</a>  (const uint8_t *data, size_t dataLen, bool selfAllocated)</dt>
+<dd>selfAllocated is probably not necessary anymore. Remove it  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="a00053.html#acd933cd9082fdb75f85cec8fc0e8b44c">RawPacket::clear</a>  ()</dt>
+<dd><p class="startdd">deleteRawDataAtDestructor was set to 'true', don't free the raw data </p>
+<p class="enddd">set timestamp to a default value as well  </p>
+</dd>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="a00053.html#ac01c7f5767e7110773f5ea2aa5ac351c">RawPacket::operator=</a>  (const <a class="el" href="a00053.html">RawPacket</a> &amp;other)</dt>
+<dd>free raw data only if deleteRawDataAtDestructor was set to 'true' <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="a00053.html#a89cd28744cc38377744b685a03a3caaf">RawPacket::RawPacket</a>  ()</dt>
+<dd>timestamp isn't set here to a default value  </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="a00067.html#a66c949b1b89d643d494ec5d8b59d1fba">VlanLayer::getVlanID</a>  ()</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="a00067.html#ae4c992425b4519ca14408b848fde17b0">VlanLayer::setVlanID</a>  (uint16_t id)</dt>
+<dd>Verify it works in big endian machines as well </dd>
+</dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 13 2015 00:27:20 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

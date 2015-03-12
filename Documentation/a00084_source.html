@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapRemoteDeviceList.h Source File</title>
+<title>PcapPlusPlus: PcapDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,58 +104,51 @@ $(document).ready(function(){initNavTree('a00084_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapRemoteDeviceList.h</div>  </div>
+<div class="title">PcapDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPP_PCAP_REMOTE_DEVICE_LIST</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPP_PCAP_REMOTE_DEVICE_LIST</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00068.html">IpAddress.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;PcapRemoteDevice.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00096.html">RawPacket.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;PcapFilter.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00094.html">PointerVector.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;pcap.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>PcapRemoteDeviceList : <span class="keyword">public</span> vector&lt;PcapRemoteDevice*&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">string</span> m_RemoteMachineIpAddress;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    uint16_t m_RemoteMachinePort;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    pcap_rmtauth* m_RemoteAuthentication;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    PcapRemoteDeviceList(<span class="keyword">const</span> PcapRemoteDeviceList&amp; other);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    PcapRemoteDeviceList&amp; operator=(<span class="keyword">const</span> PcapRemoteDeviceList&amp; other);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    PcapRemoteDeviceList() :m_RemoteMachineIpAddress(<span class="stringliteral">&quot;&quot;</span>), m_RemoteMachinePort(0), m_RemoteAuthentication(NULL) {}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~PcapRemoteDeviceList();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> getRemoteDeviceList(<span class="keywordtype">string</span> ipAddress, uint16_t port, PcapRemoteDeviceList&amp; resultList);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> getRemoteDeviceList(<span class="keywordtype">string</span> ipAddress, uint16_t port, PcapRemoteAuthentication* remoteAuth, PcapRemoteDeviceList&amp; resultList);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">string</span> getRemoteMachineIpAddress() { <span class="keywordflow">return</span> m_RemoteMachineIpAddress; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    uint16_t getRemoteMachinePort() { <span class="keywordflow">return</span> m_RemoteMachinePort; }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">typedef</span> <a class="code" href="a00049.html">PointerVector&lt;RawPacket&gt;</a> <a class="code" href="a00049.html">RawPacketVector</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00022.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00022.html">IPcapDevice</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    pcap_t* m_PcapDescriptor;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">bool</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// c&#39;tor should not be public</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="a00022.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00022.html">IPcapDevice</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> open() = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> close() = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> getStatistics(pcap_stat&amp; stats) = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> setFilter(<a class="code" href="a00009.html">GeneralFilter</a>&amp; filter);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> setFilter(<span class="keywordtype">string</span> filterAsString);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    PcapRemoteDevice* getRemoteDeviceByIP(<a class="code" href="a00026.html">IPv4Address</a> ip4Addr);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    PcapRemoteDevice* getRemoteDeviceByIP(<a class="code" href="a00030.html">IPv6Address</a> ip6Addr);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    PcapRemoteDevice* getRemoteDeviceByIP(<a class="code" href="a00021.html">IPAddress</a>* ipAddr);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    PcapRemoteDevice* getRemoteDeviceByIP(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipAddrAsString);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // WIN32</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPP_PCAP_REMOTE_DEVICE_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00068_html"><div class="ttname"><a href="a00068.html">IpAddress.h</a></div></div>
-<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:171</div></div>
-<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:19</div></div>
-<div class="ttc" id="a00026_html"><div class="ttname"><a href="a00026.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:88</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:12</div></div>
+<div class="ttc" id="a00096_html"><div class="ttname"><a href="a00096.html">RawPacket.h</a></div></div>
+<div class="ttc" id="a00009_html"><div class="ttname"><a href="a00009.html">GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:16</div></div>
+<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00094_html"><div class="ttname"><a href="a00094.html">PointerVector.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PcapRemoteDeviceList.h</b></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:27:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PcapDevice.h</b></li>
+    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

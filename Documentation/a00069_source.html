@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IpUtils.h Source File</title>
+<title>PcapPlusPlus: ArpLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,63 +104,78 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">IpUtils.h</div>  </div>
+<div class="title">ArpLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00069.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_IP_UTILS</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_IP_UTILS</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_ARP_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_ARP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef WIN32</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;in.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ws2tcpip.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* inet_ntop(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, <span class="keywordtype">char</span>* dst, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> inet_pton(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">char</span>* src, <span class="keywordtype">void</span>* dst);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00078.html">Layer.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00074.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00080.html">MacAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00003.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00003.html">arphdr</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    uint16_t hardwareType;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    uint16_t protocolType;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    uint8_t hardwareSize;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    uint8_t protocolSize;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    uint16_t opcode;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    uint8_t senderMacAddr[6];</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    uint32_t senderIpAddr;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    uint8_t targetMacAddr[6];</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    uint32_t targetIpAddr;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">enum</span> ArpOpcode</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ARP_REQUEST = 0x0001,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ARP_REPLY   = 0x0002</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00004.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00004.html">ArpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="a00004.html">ArpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="a00004.html">ArpLayer</a>(ArpOpcode opCode, <span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; senderMacAddr, <span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; targetMacAddr, <span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a> senderIpAddr, <span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; targetIpAddr);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ~<a class="code" href="a00004.html">ArpLayer</a>() {}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00003.html">arphdr</a>* getArpHeader() { <span class="keywordflow">return</span> (<a class="code" href="a00003.html">arphdr</a>*)m_Data; };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> getSenderMacAddress() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(getArpHeader()-&gt;senderMacAddr); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> getTargetMacAddress() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(getArpHeader()-&gt;targetMacAddr); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00026.html">IPv4Address</a> getSenderIpAddr() { <span class="keywordflow">return</span> <a class="code" href="a00026.html">IPv4Address</a>(getArpHeader()-&gt;senderIpAddr); }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00026.html">IPv4Address</a> getTargetIpAddr() { <span class="keywordflow">return</span> <a class="code" href="a00026.html">IPv4Address</a>(getArpHeader()-&gt;targetIpAddr); }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;in_addr* <a class="code" href="a00069.html#a9fee5de385bbc10f6ecd65cdaf5e39d5">sockaddr2in_addr</a>(<span class="keyword">struct</span> sockaddr *sa);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00004.html#a246578c6af2eccf5bcbae6214cafefb0">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00004.html#a246578c6af2eccf5bcbae6214cafefb0">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00004.html#a81008e3014736733382c57efcb778ce5">   43</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00004.html#a81008e3014736733382c57efcb778ce5">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00003.html">arphdr</a>); }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00004.html#a1cbb876a9dd9d631fc115c13156b6cc8">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00004.html#aa2c614b49fff5a6a2a8b47b3a25d08d7">toString</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;in6_addr* <a class="code" href="a00069.html#a7d63f0f361b2f303b03441ee3c8fbec0">sockaddr2in6_addr</a>(<span class="keyword">struct</span> sockaddr *sa);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00069.html#aaae13a5c6702dea78f79819c89d74ee5">sockaddr2string</a>(<span class="keyword">struct</span> sockaddr *sa, <span class="keywordtype">char</span>* resultString);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;uint32_t <a class="code" href="a00069.html#aca7bfc05b6c211454e0c5026f4f4e52d">in_addr2int</a>(in_addr inAddr);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00049.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00049.html">ScalarBuffer</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="a00049.html#ab9b62dc703c8ca44c28a24b80ba7c23e">   77</a></span>&#160;    uint16_t* <a class="code" href="a00049.html#ab9b62dc703c8ca44c28a24b80ba7c23e">buffer</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00049.html#a378572e46319cfe0acbdb221937861ba">   82</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00049.html#a378572e46319cfe0acbdb221937861ba">len</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;uint16_t <a class="code" href="a00069.html#a202712529e61076e9fb0ee0682470525">compute_checksum</a>(<a class="code" href="a00049.html">ScalarBuffer</a> vec[], <span class="keywordtype">size_t</span> vecSize);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00069_html_aca7bfc05b6c211454e0c5026f4f4e52d"><div class="ttname"><a href="a00069.html#aca7bfc05b6c211454e0c5026f4f4e52d">in_addr2int</a></div><div class="ttdeci">uint32_t in_addr2int(in_addr inAddr)</div></div>
-<div class="ttc" id="a00049_html_ab9b62dc703c8ca44c28a24b80ba7c23e"><div class="ttname"><a href="a00049.html#ab9b62dc703c8ca44c28a24b80ba7c23e">ScalarBuffer::buffer</a></div><div class="ttdeci">uint16_t * buffer</div><div class="ttdef"><b>Definition:</b> IpUtils.h:77</div></div>
-<div class="ttc" id="a00069_html_aaae13a5c6702dea78f79819c89d74ee5"><div class="ttname"><a href="a00069.html#aaae13a5c6702dea78f79819c89d74ee5">sockaddr2string</a></div><div class="ttdeci">void sockaddr2string(struct sockaddr *sa, char *resultString)</div></div>
-<div class="ttc" id="a00049_html_a378572e46319cfe0acbdb221937861ba"><div class="ttname"><a href="a00049.html#a378572e46319cfe0acbdb221937861ba">ScalarBuffer::len</a></div><div class="ttdeci">size_t len</div><div class="ttdef"><b>Definition:</b> IpUtils.h:82</div></div>
-<div class="ttc" id="a00069_html_a9fee5de385bbc10f6ecd65cdaf5e39d5"><div class="ttname"><a href="a00069.html#a9fee5de385bbc10f6ecd65cdaf5e39d5">sockaddr2in_addr</a></div><div class="ttdeci">in_addr * sockaddr2in_addr(struct sockaddr *sa)</div></div>
-<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">ScalarBuffer</a></div><div class="ttdef"><b>Definition:</b> IpUtils.h:72</div></div>
-<div class="ttc" id="a00069_html_a7d63f0f361b2f303b03441ee3c8fbec0"><div class="ttname"><a href="a00069.html#a7d63f0f361b2f303b03441ee3c8fbec0">sockaddr2in6_addr</a></div><div class="ttdeci">in6_addr * sockaddr2in6_addr(struct sockaddr *sa)</div></div>
-<div class="ttc" id="a00069_html_a202712529e61076e9fb0ee0682470525"><div class="ttname"><a href="a00069.html#a202712529e61076e9fb0ee0682470525">compute_checksum</a></div><div class="ttdeci">uint16_t compute_checksum(ScalarBuffer vec[], size_t vecSize)</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_ARP_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00003_html"><div class="ttname"><a href="a00003.html">arphdr</a></div><div class="ttdef"><b>Definition:</b> ArpLayer.h:9</div></div>
+<div class="ttc" id="a00095_html_a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928"><div class="ttname"><a href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:64</div></div>
+<div class="ttc" id="a00004_html_a1cbb876a9dd9d631fc115c13156b6cc8"><div class="ttname"><a href="a00004.html#a1cbb876a9dd9d631fc115c13156b6cc8">ArpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
+<div class="ttc" id="a00004_html_a81008e3014736733382c57efcb778ce5"><div class="ttname"><a href="a00004.html#a81008e3014736733382c57efcb778ce5">ArpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:43</div></div>
+<div class="ttc" id="a00004_html_aa2c614b49fff5a6a2a8b47b3a25d08d7"><div class="ttname"><a href="a00004.html#aa2c614b49fff5a6a2a8b47b3a25d08d7">ArpLayer::toString</a></div><div class="ttdeci">string toString()</div></div>
+<div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
+<div class="ttc" id="a00026_html"><div class="ttname"><a href="a00026.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:88</div></div>
+<div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
+<div class="ttc" id="a00032_html"><div class="ttname"><a href="a00032.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">Layer.h</a></div></div>
+<div class="ttc" id="a00004_html_a246578c6af2eccf5bcbae6214cafefb0"><div class="ttname"><a href="a00004.html#a246578c6af2eccf5bcbae6214cafefb0">ArpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:42</div></div>
+<div class="ttc" id="a00074_html"><div class="ttname"><a href="a00074.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">MacAddress.h</a></div></div>
+<div class="ttc" id="a00004_html"><div class="ttname"><a href="a00004.html">ArpLayer</a></div><div class="ttdef"><b>Definition:</b> ArpLayer.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00069.html">IpUtils.h</a></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:27:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>ArpLayer.h</b></li>
+    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

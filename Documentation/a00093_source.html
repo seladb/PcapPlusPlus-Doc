@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: UdpLayer.h Source File</title>
+<title>PcapPlusPlus: PlatformSpecificUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,58 +104,39 @@ $(document).ready(function(){initNavTree('a00093_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">UdpLayer.h</div>  </div>
+<div class="title">PlatformSpecificUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_UDP_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_UDP_LAYER</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00072.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="a00057.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00057.html">udphdr</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    uint16_t portSrc;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    uint16_t portDst;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    uint16_t length;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    uint16_t headerChecksum;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00058.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00058.html">UdpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="a00058.html">UdpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00089.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a>; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="a00058.html">UdpLayer</a>(uint16_t portSrc, uint16_t portDst);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00057.html">udphdr</a>* getUdpHeader() { <span class="keywordflow">return</span> (<a class="code" href="a00057.html">udphdr</a>*)m_Data; };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    uint16_t calculateChecksum(<span class="keywordtype">bool</span> writeResultToPacket);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00058.html#a87ca5bbf1d532555f38101b2edeeed22">parseNextLayer</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00058.html#a9cf705e60ec95b00c594a7633e4fd1ac">   26</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00058.html#a9cf705e60ec95b00c594a7633e4fd1ac">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00057.html">udphdr</a>); }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00058.html#a94f3dd3afe2b5ad9bda7e12d2f18c449">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::string <a class="code" href="a00058.html#abee5c14ffba496d372903abe40676417">toString</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_UDP_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00058_html_a87ca5bbf1d532555f38101b2edeeed22"><div class="ttname"><a href="a00058.html#a87ca5bbf1d532555f38101b2edeeed22">UdpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00058_html_a94f3dd3afe2b5ad9bda7e12d2f18c449"><div class="ttname"><a href="a00058.html#a94f3dd3afe2b5ad9bda7e12d2f18c449">UdpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00058_html_a9cf705e60ec95b00c594a7633e4fd1ac"><div class="ttname"><a href="a00058.html#a9cf705e60ec95b00c594a7633e4fd1ac">UdpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:26</div></div>
-<div class="ttc" id="a00058_html"><div class="ttname"><a href="a00058.html">UdpLayer</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:15</div></div>
-<div class="ttc" id="a00032_html"><div class="ttname"><a href="a00032.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00058_html_abee5c14ffba496d372903abe40676417"><div class="ttname"><a href="a00058.html#abee5c14ffba496d372903abe40676417">UdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00057_html"><div class="ttname"><a href="a00057.html">udphdr</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:7</div></div>
-<div class="ttc" id="a00072_html"><div class="ttname"><a href="a00072.html">Layer.h</a></div></div>
-<div class="ttc" id="a00089_html_a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6"><div class="ttname"><a href="a00089.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:44</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;winbase.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) Sleep(seconds*1000)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) sleep(seconds)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) CreateDirectory(dir, NULL)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) mkdir(dir, 0777)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PLATFORM_SPECIFIC_UTILS */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>UdpLayer.h</b></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:27:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PlatformSpecificUtils.h</b></li>
+    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

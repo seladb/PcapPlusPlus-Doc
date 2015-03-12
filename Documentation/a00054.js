@@ -1,7 +1,5 @@
 var a00054 =
 [
-    [ "computeCalculateFields", "a00054.html#ac651dc5dee18295894f69922c7997df0", null ],
-    [ "getHeaderLen", "a00054.html#aaea30d75a26555048d8089e9de3c51e2", null ],
-    [ "parseNextLayer", "a00054.html#a5142a7faf0be900aa5ea38c50a4c8b80", null ],
-    [ "toString", "a00054.html#a3a0bef30fc37635d331e73cc720f5351", null ]
+    [ "buffer", "a00054.html#ab9b62dc703c8ca44c28a24b80ba7c23e", null ],
+    [ "len", "a00054.html#a378572e46319cfe0acbdb221937861ba", null ]
 ];
