@@ -11,5 +11,39 @@
 *
 * Please visit the <a href="http://seladb.github.io/PcapPlusPlus-Doc/">PcapPlusPlus web-site</a> in order to see download and installation instructions.
 *
+* \section getting_started_sec Getting Started
+*
+* <b>%Packet capturing engines (Pcap++):</b>
+*   - PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
+*   - WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap engine (Windows)
+*   - PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap(Windows)
+*   - PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
+*
+* <b>Pcap file wrappers (Pcap++):</b>
+*   - PcapFileReaderDevice, PcapFileDevice.h - read Pcap files
+*   - PcapFileWriterDevice, PcapFileDevice.h - write Pcap files
+*
+* <b>%Packet parsing and manipulation (Packet++):</b>
+*   - RawPacket, RawPacket.h - raw data class
+*   - Packet, Packet.h - parsed packet class
+*   - Layer, Layer.h - protocol base class
+*
+* <b>Supported protocols (Packet++):</b>
+*   - EthLayer, EthLayer.h - Ethernet protocol
+*   - ArpLayer, ArpLayer.h - ARP protocol
+*   - VlanLayer, VlanLayer.h - VLAN protocol
+*   - IPv4Layer, IPv4Layer.h - IPv4 protocol
+*   - IPv6Layer, IPv6Layer.h - IPv6 protocol
+*   - TcpLayer, TcpLayer.h - TCP protocol
+*   - UdpLayer, UdpLayer.h - UDP protocol
+*   - HttpRequestLayer, HttpLayer.h - HTTP request protocol
+*   - HttpResponseLayer, HttpLayer.h - HTTP response protocol
+*   - PayloadLayer, PayloadLayer.h - unknown layer or payload
+*
+* <b>Common utilities and infrastructure (Common++):</b>
+*   - IPv4Address, IPv6Address, IpAddress.h - IP address wrapper classes
+*   - MacAddress, MacAddress.h - MAC address wrapper class
+*   - LoggerPP, Logger.h - PcapPlusPlus logger
+*   - IpUtils.h - all kinds of network helpful utilities
 */
 

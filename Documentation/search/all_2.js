@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['calculatechecksum',['calculateChecksum',['../a00059.html#ac9f22d245631b261c0d2fc72cbfa5ad9',1,'TcpLayer::calculateChecksum()'],['../a00063.html#adfd1035b90bc336a51bf48c824d3a62c',1,'UdpLayer::calculateChecksum()']]],
   ['cfi',['cfi',['../a00065.html#a02d82722bad771f3d87368351f17daf6',1,'vlan_header']]],
   ['channeldistribution',['ChannelDistribution',['../a00047.html#a859e6207223f202a35261338793c0211',1,'PfRingDevice']]],
   ['clear',['clear',['../a00049.html#a9f708acfaa3ce26d14b02d8e285c8729',1,'PointerVector::clear()'],['../a00053.html#acd933cd9082fdb75f85cec8fc0e8b44c',1,'RawPacket::clear()']]],
@@ -41,5 +42,6 @@ var searchData=
   ['core6',['Core6',['../a00056.html#a55915f90ae97330fa928c0f40ee85677',1,'SystemCores']]],
   ['core7',['Core7',['../a00056.html#a43aaa7c40fbdb832c8b3e4c44ce4d8de',1,'SystemCores']]],
   ['core8',['Core8',['../a00056.html#a4e4bff935862ee6eda818746698ece9d',1,'SystemCores']]],
-  ['core9',['Core9',['../a00056.html#a9323beb0c0dd042644ce747074c0d72a',1,'SystemCores']]]
+  ['core9',['Core9',['../a00056.html#a9323beb0c0dd042644ce747074c0d72a',1,'SystemCores']]],
+  ['cwrflag',['cwrFlag',['../a00058.html#a35739da86e2f8fef45f31e2afbaab326',1,'tcphdr']]]
 ];

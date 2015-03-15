@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('a00004.html','');});
 <div class="title">ArpLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00069_source.html">ArpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ArpLayer:</div>
 <div class="dyncontent">
@@ -124,6 +126,20 @@ Inheritance diagram for ArpLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a014b2430ea67ec5bda6da58c159839fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">ArpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00032.html">Layer</a> *prevLayer, <a class="el" href="a00038.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a014b2430ea67ec5bda6da58c159839fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d14e2a86d15dc0ac8c8541c6fed4d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a78d14e2a86d15dc0ac8c8541c6fed4d0">ArpLayer</a> (<a class="el" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode, const <a class="el" href="a00034.html">MacAddress</a> &amp;senderMacAddr, const <a class="el" href="a00034.html">MacAddress</a> &amp;targetMacAddr, const <a class="el" href="a00026.html">IPv4Address</a> senderIpAddr, const <a class="el" href="a00026.html">IPv4Address</a> &amp;targetIpAddr)</td></tr>
+<tr class="separator:a78d14e2a86d15dc0ac8c8541c6fed4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac641d801be2e861d716f1f58168db2f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00003.html">arphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ac641d801be2e861d716f1f58168db2f7">getArpHeader</a> ()</td></tr>
+<tr class="separator:ac641d801be2e861d716f1f58168db2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68add5b112792eee896246971637a310"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00034.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a68add5b112792eee896246971637a310">getSenderMacAddress</a> ()</td></tr>
+<tr class="separator:a68add5b112792eee896246971637a310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3473f9bf6feeb1d9cacb4be1628778e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00034.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3473f9bf6feeb1d9cacb4be1628778e6">getTargetMacAddress</a> ()</td></tr>
+<tr class="separator:a3473f9bf6feeb1d9cacb4be1628778e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeefbf367e4419939fde5f214dbd4fe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afeefbf367e4419939fde5f214dbd4fe8">getSenderIpAddr</a> ()</td></tr>
+<tr class="separator:afeefbf367e4419939fde5f214dbd4fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab75f346b936646629eea9a82d1feb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a7ab75f346b936646629eea9a82d1feb3">getTargetIpAddr</a> ()</td></tr>
+<tr class="separator:a7ab75f346b936646629eea9a82d1feb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a246578c6af2eccf5bcbae6214cafefb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a246578c6af2eccf5bcbae6214cafefb0">parseNextLayer</a> ()</td></tr>
 <tr class="separator:a246578c6af2eccf5bcbae6214cafefb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81008e3014736733382c57efcb778ce5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a81008e3014736733382c57efcb778ce5">getHeaderLen</a> ()</td></tr>
@@ -154,6 +170,118 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
 <tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an ARP protocol layer. Currently only IPv4 ARP messages are supported </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a014b2430ea67ec5bda6da58c159839fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArpLayer::ArpLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00032.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00038.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00003.html">arphdr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00038.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a78d14e2a86d15dc0ac8c8541c6fed4d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArpLayer::ArpLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a>&#160;</td>
+          <td class="paramname"><em>opCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00034.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>senderMacAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00034.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>targetMacAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00026.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>senderIpAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00026.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>targetIpAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new ARP header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>ARP message type (ARP request or ARP reply) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">senderMacAddr</td><td>The sender MAC address (will be put in <a class="el" href="a00003.html#ae68d9afc9eb6140915847edb64954e5f">arphdr::senderMacAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetMacAddr</td><td>The target MAC address (will be put in <a class="el" href="a00003.html#a82c7864540ab1a624fcd8d1b163a1b11">arphdr::targetMacAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">senderIpAddr</td><td>The sender IP address (will be put in <a class="el" href="a00003.html#a0ed8605408f76ce3d5881798751617ba">arphdr::senderIpAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetIpAddr</td><td>The target IP address (will be put in <a class="el" href="a00003.html#aa233f68b3551587155f596d4370b2b09">arphdr::targetIpAddr</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1cbb876a9dd9d631fc115c13156b6cc8"></a>
 <div class="memitem">
@@ -175,9 +303,39 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer can compute field values automatically using this method. This is an abstract method </p>
+<p>Calculate the following fields:</p><ul>
+<li><a class="el" href="a00003.html#a002dea7054111568b4c06487028b0da2">arphdr::hardwareType</a> = Ethernet (1)</li>
+<li><a class="el" href="a00003.html#a063950a907fa90a513310b3bcf033eec">arphdr::hardwareSize</a> = 6</li>
+<li><a class="el" href="a00003.html#a4fce6019194bfca5d699255a72c5533b">arphdr::protocolType</a> = ETHERTYPE_IP (assume IPv4 over ARP)</li>
+<li><a class="el" href="a00003.html#a6698e798e8c59baf65451122df01df84">arphdr::protocolSize</a> = 4 (assume IPv4 over ARP)</li>
+<li>if it's an ARP requst: <a class="el" href="a00003.html#a82c7864540ab1a624fcd8d1b163a1b11">arphdr::targetMacAddr</a> = <a class="el" href="a00034.html">MacAddress</a>("00:00:00:00:00:00") </li>
+</ul>
 
 <p>Implements <a class="el" href="a00032.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac641d801be2e861d716f1f58168db2f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00003.html">arphdr</a>* ArpLayer::getArpHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the ARP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00003.html">arphdr</a> </dd></dl>
 
 </div>
 </div>
@@ -201,9 +359,105 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The header length in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of <a class="el" href="a00003.html">arphdr</a> </dd></dl>
 
 <p>Implements <a class="el" href="a00032.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afeefbf367e4419939fde5f214dbd4fe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00026.html">IPv4Address</a> ArpLayer::getSenderIpAddr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the sender protocol address (SPA) in the form of <a class="el" href="a00026.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00026.html">IPv4Address</a> containing the sender protocol address (SPA) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68add5b112792eee896246971637a310"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00034.html">MacAddress</a> ArpLayer::getSenderMacAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the sender hardware address (SHA) in the form of <a class="el" href="a00034.html">MacAddress</a> </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a00034.html">MacAddress</a> containing the sender hardware address (SHA) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ab75f346b936646629eea9a82d1feb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00026.html">IPv4Address</a> ArpLayer::getTargetIpAddr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the target protocol address (TPA) in the form of <a class="el" href="a00026.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00026.html">IPv4Address</a> containing the target protocol address (TPA) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3473f9bf6feeb1d9cacb4be1628778e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00034.html">MacAddress</a> ArpLayer::getTargetMacAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the target hardware address (THA) in the form of <a class="el" href="a00034.html">MacAddress</a> </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a00034.html">MacAddress</a> containing the target hardware address (THA) </dd></dl>
 
 </div>
 </div>
@@ -227,7 +481,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer is responsible for parsing the next layer </p>
+<p>Does nothing for this layer (<a class="el" href="a00004.html">ArpLayer</a> is always last) </p>
 
 <p>Implements <a class="el" href="a00032.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
 
@@ -265,7 +519,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00004.html">ArpLayer</a></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

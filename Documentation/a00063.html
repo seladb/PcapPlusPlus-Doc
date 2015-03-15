@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('a00063.html','');});
 <div class="title">UdpLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00099_source.html">UdpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UdpLayer:</div>
 <div class="dyncontent">
@@ -124,6 +126,14 @@ Inheritance diagram for UdpLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a719f6abc85cfbcb5b7987a5eb6a99e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a719f6abc85cfbcb5b7987a5eb6a99e70">UdpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00032.html">Layer</a> *prevLayer, <a class="el" href="a00038.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a719f6abc85cfbcb5b7987a5eb6a99e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd18d27bce546fb6b21f70915817761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#aedd18d27bce546fb6b21f70915817761">UdpLayer</a> (uint16_t portSrc, uint16_t portDst)</td></tr>
+<tr class="separator:aedd18d27bce546fb6b21f70915817761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9c14cb251e2b43f4bb1cb8849549cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00062.html">udphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#abe9c14cb251e2b43f4bb1cb8849549cd">getUdpHeader</a> ()</td></tr>
+<tr class="separator:abe9c14cb251e2b43f4bb1cb8849549cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1035b90bc336a51bf48c824d3a62c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#adfd1035b90bc336a51bf48c824d3a62c">calculateChecksum</a> (bool writeResultToPacket)</td></tr>
+<tr class="separator:adfd1035b90bc336a51bf48c824d3a62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ca5bbf1d532555f38101b2edeeed22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a87ca5bbf1d532555f38101b2edeeed22">parseNextLayer</a> ()</td></tr>
 <tr class="separator:a87ca5bbf1d532555f38101b2edeeed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf705e60ec95b00c594a7633e4fd1ac"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a9cf705e60ec95b00c594a7633e4fd1ac">getHeaderLen</a> ()</td></tr>
@@ -154,7 +164,121 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
 <tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an UDP (User Datagram Protocol) protocol layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a719f6abc85cfbcb5b7987a5eb6a99e70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UdpLayer::UdpLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00032.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00038.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00062.html">udphdr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00038.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aedd18d27bce546fb6b21f70915817761"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UdpLayer::UdpLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>portSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>portDst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new UDP header with source and destination ports </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">portSrc</td><td>Source UDP port address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">portDst</td><td>Destination UDP port </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adfd1035b90bc336a51bf48c824d3a62c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t UdpLayer::calculateChecksum </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>writeResultToPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate the checksum from header and data and possibly write the result to <a class="el" href="a00062.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">udphdr::headerChecksum</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">writeResultToPacket</td><td>If set to true then checksum result will be written to <a class="el" href="a00062.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">udphdr::headerChecksum</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The checksum result </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a94f3dd3afe2b5ad9bda7e12d2f18c449"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +299,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer can compute field values automatically using this method. This is an abstract method </p>
+<p>Calculate <a class="el" href="a00062.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">udphdr::headerChecksum</a> field </p>
 
 <p>Implements <a class="el" href="a00032.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
 
@@ -201,9 +325,33 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The header length in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00062.html">udphdr</a> </dd></dl>
 
 <p>Implements <a class="el" href="a00032.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe9c14cb251e2b43f4bb1cb8849549cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00062.html">udphdr</a>* UdpLayer::getUdpHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the UDP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00062.html">udphdr</a> </dd></dl>
 
 </div>
 </div>
@@ -227,7 +375,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer is responsible for parsing the next layer </p>
+<p>Currently set only <a class="el" href="a00039.html">PayloadLayer</a> for the rest of the data </p>
 
 <p>Implements <a class="el" href="a00032.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
 
@@ -265,7 +413,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00063.html">UdpLayer</a></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

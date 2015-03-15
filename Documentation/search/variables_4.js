@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['id',['Id',['../a00055.html#a1a672c4cde277bcdeae49c1519415db6',1,'SystemCore']]],
-  ['idtosystemcore',['IdToSystemCore',['../a00056.html#a9c0aa298d90e7508756b63fe45686a10',1,'SystemCores']]]
+  ['eceflag',['eceFlag',['../a00058.html#a97b2c2e4aeca5f39d05414f0e553516c',1,'tcphdr']]],
+  ['ethertype',['etherType',['../a00006.html#ac116a63a9555eb93785b43c95a7099ff',1,'ether_header::etherType()'],['../a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0',1,'vlan_header::etherType()']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['calculatechecksum',['calculateChecksum',['../a00059.html#ac9f22d245631b261c0d2fc72cbfa5ad9',1,'TcpLayer::calculateChecksum()'],['../a00063.html#adfd1035b90bc336a51bf48c824d3a62c',1,'UdpLayer::calculateChecksum()']]],
   ['clear',['clear',['../a00049.html#a9f708acfaa3ce26d14b02d8e285c8729',1,'PointerVector::clear()'],['../a00053.html#acd933cd9082fdb75f85cec8fc0e8b44c',1,'RawPacket::clear()']]],
   ['close',['close',['../a00047.html#a25f3a3d9544e16544dc919bda44b8556',1,'PfRingDevice']]],
   ['compute_5fchecksum',['compute_checksum',['../a00075.html#a202712529e61076e9fb0ee0682470525',1,'IpUtils.h']]],

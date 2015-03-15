@@ -116,12 +116,18 @@ $(document).ready(function(){initNavTree('a00028.html','');});
   <tr><td class="entry"><a class="el" href="a00032.html#a3d25b188ace59350b220b79e7dd82751">copyData</a>(uint8_t *toArr)</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="a00032.html#a68c8d3f62652858c92c78e87005e45c7">getData</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="a00032.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00028.html#a319a0b7550be3259307a866eff5c709f">getHeaderLen</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00028.html#a693fbcbf941471ba08c2ecdd4057048c">getDstIpAddress</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00028.html#a319a0b7550be3259307a866eff5c709f">getHeaderLen</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00028.html#a8dac299b842ec9574a4b33cc28799984">getIPv4Header</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="a00032.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="a00032.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="a00032.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="a00032.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="a00032.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00028.html#aac478085b64fabe05f530efcf3d3e0fd">getSrcIpAddress</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00028.html#a414b835816502fcf60e61ecd60ecbcdd">IPv4Layer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00028.html#a6c99914fc493045c39b48141791a6f80">IPv4Layer</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00028.html#a46eb80b2caa6f3b406917226d23d2c2a">IPv4Layer</a>(const IPv4Address &amp;srcIP, const IPv4Address &amp;dstIP)</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="a00032.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a>()</td><td class="entry"><a class="el" href="a00032.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="a00028.html#ac3331bcddca9c6c54cf754194af47713">parseNextLayer</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="a00028.html#a36f407a9056121ef56a434117c8436ad">toString</a>()</td><td class="entry"><a class="el" href="a00028.html">IPv4Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -131,7 +137,7 @@ $(document).ready(function(){initNavTree('a00028.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

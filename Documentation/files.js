@@ -1,14 +1,17 @@
 var files =
 [
-    [ "ArpLayer.h", "a00069_source.html", null ],
+    [ "ArpLayer.h", "a00069.html", "a00069" ],
     [ "debug_new.h", "a00070_source.html", null ],
     [ "DnsLayer.h", "a00071_source.html", null ],
     [ "EthLayer.h", "a00072.html", "a00072" ],
-    [ "HttpLayer.h", "a00073_source.html", null ],
+    [ "HttpLayer.h", "a00073.html", "a00073" ],
     [ "IpAddress.h", "a00074.html", "a00074" ],
     [ "IpUtils.h", "a00075.html", "a00075" ],
-    [ "IPv4Layer.h", "a00076_source.html", null ],
-    [ "IPv6Layer.h", "a00077_source.html", null ],
+    [ "IPv4Layer.h", "a00076.html", "a00076" ],
+    [ "IPv6Layer.h", "a00077.html", [
+      [ "ip6_hdr", "a00020.html", "a00020" ],
+      [ "IPv6Layer", "a00031.html", "a00031" ]
+    ] ],
     [ "Layer.h", "a00078.html", [
       [ "Layer", "a00032.html", "a00032" ]
     ] ],
@@ -40,8 +43,11 @@ var files =
     [ "ProtocolType.h", "a00095.html", "a00095" ],
     [ "RawPacket.h", "a00096.html", "a00096" ],
     [ "SystemUtils.h", "a00097.html", "a00097" ],
-    [ "TcpLayer.h", "a00098_source.html", null ],
-    [ "UdpLayer.h", "a00099_source.html", null ],
+    [ "TcpLayer.h", "a00098.html", "a00098" ],
+    [ "UdpLayer.h", "a00099.html", [
+      [ "udphdr", "a00062.html", "a00062" ],
+      [ "UdpLayer", "a00063.html", "a00063" ]
+    ] ],
     [ "VlanLayer.h", "a00100.html", [
       [ "vlan_header", "a00065.html", "a00065" ],
       [ "VlanLayer", "a00067.html", "a00067" ]

@@ -5,5 +5,6 @@ var searchData=
   ['reallocatedata',['reallocateData',['../a00053.html#a235033e10b96c259e0cec0bdbe631326',1,'RawPacket']]],
   ['removedata',['removeData',['../a00053.html#a26566241957523fe8287755b8d0b0c93',1,'RawPacket']]],
   ['removefilter',['removeFilter',['../a00047.html#a226f7ccbf642bd9b9afca14b02e283d4',1,'PfRingDevice']]],
-  ['roundrobin',['RoundRobin',['../a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]]
+  ['roundrobin',['RoundRobin',['../a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]],
+  ['rstflag',['rstFlag',['../a00058.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]]
 ];

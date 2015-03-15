@@ -5,5 +5,6 @@ var searchData=
   ['macaddressfilter',['MacAddressFilter',['../a00035.html',1,'']]],
   ['mask',['Mask',['../a00055.html#aec2a69cbcd7b7c034c44b731b5882fb4',1,'SystemCore']]],
   ['matchsubnet',['matchSubnet',['../a00026.html#a85eb25a77a86495984a7c8da626b4271',1,'IPv4Address']]],
-  ['max_5fpacket_5fsize',['MAX_PACKET_SIZE',['../a00096.html#a879456c3b8e2853f7044d764e9c180d4',1,'RawPacket.h']]]
+  ['max_5fpacket_5fsize',['MAX_PACKET_SIZE',['../a00096.html#a879456c3b8e2853f7044d764e9c180d4',1,'RawPacket.h']]],
+  ['max_5fsupported_5ftcp_5foptions',['MAX_SUPPORTED_TCP_OPTIONS',['../a00098.html#af7bf839fc893aaf8bd9f63c96aa40514',1,'TcpLayer.h']]]
 ];

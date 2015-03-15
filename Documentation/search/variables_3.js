@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ethertype',['etherType',['../a00006.html#ac116a63a9555eb93785b43c95a7099ff',1,'ether_header::etherType()'],['../a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0',1,'vlan_header::etherType()']]]
+  ['dataoffset',['dataOffset',['../a00058.html#a1cf89ec60592a853f1ca2c5a5df358b8',1,'tcphdr']]],
+  ['dstmac',['dstMac',['../a00006.html#a6c28900ad0b09ce7585dae662ed1829f',1,'ether_header']]]
 ];

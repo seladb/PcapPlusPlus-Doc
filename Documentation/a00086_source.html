@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('a00086_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00095.html">ProtocolType.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ArpLayer.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00069.html">ArpLayer.h</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00102.html">std</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
@@ -275,14 +275,14 @@ $(document).ready(function(){initNavTree('a00086_source.html','');});
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a00002.html">  166</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00002.html">ArpFilter</a> : <span class="keyword">public</span> <a class="code" href="a00009.html">GeneralFilter</a></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    ArpOpcode m_OpCode;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> m_OpCode;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="a00002.html">ArpFilter</a>(ArpOpcode opCode)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="a00002.html">ArpFilter</a>(<a class="code" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        m_OpCode = opCode;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> setOpCode(ArpOpcode opCode) { m_OpCode = opCode; }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> setOpCode(<a class="code" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode) { m_OpCode = opCode; }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> parseToString(<span class="keywordtype">string</span>&amp; result);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
@@ -349,7 +349,9 @@ $(document).ready(function(){initNavTree('a00086_source.html','');});
 <div class="ttc" id="a00066_html"><div class="ttname"><a href="a00066.html">VlanFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:181</div></div>
 <div class="ttc" id="a00037_html"><div class="ttname"><a href="a00037.html">OrFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:137</div></div>
 <div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">ProtoFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:156</div></div>
+<div class="ttc" id="a00069_html"><div class="ttname"><a href="a00069.html">ArpLayer.h</a></div></div>
 <div class="ttc" id="a00057_html"><div class="ttname"><a href="a00057.html">TcpFlagsFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:191</div></div>
+<div class="ttc" id="a00069_html_aefdd3857f04fba01d5122a0e34df9523"><div class="ttname"><a href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a></div><div class="ttdeci">ArpOpcode</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:40</div></div>
 <div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">PortRangeFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:96</div></div>
 <div class="ttc" id="a00002_html"><div class="ttname"><a href="a00002.html">ArpFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:166</div></div>
 <div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
@@ -362,7 +364,7 @@ $(document).ready(function(){initNavTree('a00086_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PcapFilter.h</b></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

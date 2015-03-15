@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_e.html#index_e"><span>e</span></a></li>
       <li><a href="functions_f.html#index_f"><span>f</span></a></li>
       <li class="current"><a href="functions_g.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
@@ -103,7 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
       <li><a href="functions_v.html#index_v"><span>v</span></a></li>
+      <li><a href="functions_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_z.html#index_z"><span>z</span></a></li>
       <li><a href="functions_~.html#index_~"><span>~</span></a></li>
     </ul>
@@ -144,6 +147,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getAndRemoveFromVector()
 : <a class="el" href="a00049.html#a745d3f5f92401a8b1bfba3bb24282127">PointerVector&lt; T &gt;</a>
 </li>
+<li>getArpHeader()
+: <a class="el" href="a00004.html#ac641d801be2e861d716f1f58168db2f7">ArpLayer</a>
+</li>
 <li>getCurrentCoreId()
 : <a class="el" href="a00047.html#aea8a32e50dfb365f08f4e3f496193bd6">PfRingDevice</a>
 </li>
@@ -161,6 +167,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getDeviceName()
 : <a class="el" href="a00047.html#a5998d20f0f336c7743aede9bfd78b3c8">PfRingDevice</a>
+</li>
+<li>getDstIpAddress()
+: <a class="el" href="a00028.html#a693fbcbf941471ba08c2ecdd4057048c">IPv4Layer</a>
+, <a class="el" href="a00031.html#a7c4901b4215e9894901cc86526d850ba">IPv6Layer</a>
 </li>
 <li>getErrorString()
 : <a class="el" href="a00033.html#acc1ea00b8e216aef697e0408bf449b95">LoggerPP</a>
@@ -192,6 +202,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getInterfaceIndex()
 : <a class="el" href="a00047.html#a78a358734bfd45da43a221c65dfedd03">PfRingDevice</a>
+</li>
+<li>getIPv4Header()
+: <a class="el" href="a00028.html#a8dac299b842ec9574a4b33cc28799984">IPv4Layer</a>
+</li>
+<li>getIPv6Header()
+: <a class="el" href="a00031.html#a061c956a2aed9906ae3bb54cb2892ce7">IPv6Layer</a>
 </li>
 <li>getLastLayer()
 : <a class="el" href="a00038.html#a40618d2579ceb41ccfddd1aa511e3cb0">Packet</a>
@@ -262,11 +278,36 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getRawPacketReadOnly()
 : <a class="el" href="a00038.html#a8d73113e41efb7f2146e9058567d9827">Packet</a>
 </li>
+<li>getSenderIpAddr()
+: <a class="el" href="a00004.html#afeefbf367e4419939fde5f214dbd4fe8">ArpLayer</a>
+</li>
+<li>getSenderMacAddress()
+: <a class="el" href="a00004.html#a68add5b112792eee896246971637a310">ArpLayer</a>
+</li>
 <li>getSourceMac()
 : <a class="el" href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">EthLayer</a>
 </li>
+<li>getSrcIpAddress()
+: <a class="el" href="a00028.html#aac478085b64fabe05f530efcf3d3e0fd">IPv4Layer</a>
+, <a class="el" href="a00031.html#a468b2f35d3249b092aa6f24aff0315b1">IPv6Layer</a>
+</li>
 <li>getStatistics()
 : <a class="el" href="a00047.html#a748161ecb155fe4079bdde3c5a826ea6">PfRingDevice</a>
+</li>
+<li>getTargetIpAddr()
+: <a class="el" href="a00004.html#a7ab75f346b936646629eea9a82d1feb3">ArpLayer</a>
+</li>
+<li>getTargetMacAddress()
+: <a class="el" href="a00004.html#a3473f9bf6feeb1d9cacb4be1628778e6">ArpLayer</a>
+</li>
+<li>getTcpHeader()
+: <a class="el" href="a00059.html#ae7055966bc059ef64ad6105e96d45eb3">TcpLayer</a>
+</li>
+<li>getTcpOptionData()
+: <a class="el" href="a00059.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">TcpLayer</a>
+</li>
+<li>getTcpOptionsCount()
+: <a class="el" href="a00059.html#affbf3461de826d95fd76af38f4646b83">TcpLayer</a>
 </li>
 <li>getThreadStatistics()
 : <a class="el" href="a00047.html#a42ec65a4ffa8d29d817d21968bc70ef7">PfRingDevice</a>
@@ -278,6 +319,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="a00021.html#ab5d6c1886ad6b930151cd7a8980eaed0">IPAddress</a>
 , <a class="el" href="a00026.html#a8b7d6aab7c9836830baec99def87e73c">IPv4Address</a>
 , <a class="el" href="a00030.html#ae9730f4f30d81b853dfef1114a3893ed">IPv6Address</a>
+</li>
+<li>getUdpHeader()
+: <a class="el" href="a00063.html#abe9c14cb251e2b43f4bb1cb8849549cd">UdpLayer</a>
 </li>
 <li>getVlanHeader()
 : <a class="el" href="a00067.html#a1680bbebefc9c46ed461004273f4423d">VlanLayer</a>
@@ -291,7 +335,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

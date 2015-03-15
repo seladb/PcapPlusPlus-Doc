@@ -3,7 +3,8 @@ var NAVTREE =
   [ "PcapPlusPlus", "index.html", [
     [ "Documentation", "index.html", [
       [ "Introduction", "index.html#intro_sec", null ],
-      [ "Installation", "index.html#install_sec", null ]
+      [ "Installation", "index.html#install_sec", null ],
+      [ "Getting Started", "index.html#getting_started_sec", null ]
     ] ],
     [ "Todo List", "a00104.html", null ],
     [ "Classes", null, [
@@ -12,7 +13,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -35,7 +36,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00001.html",
-"a00060.html"
+"a00049.html#a57d53b31aff3473d26d2949e2d432db1",
+"a00098.html#a270f17a3bfa6bd8e991a264dbc1f61f3a682bd9838970ff1f5f28fab654360100"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('a00028.html','');});
 <div class="title">IPv4Layer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00076_source.html">IPv4Layer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IPv4Layer:</div>
 <div class="dyncontent">
@@ -124,6 +126,18 @@ Inheritance diagram for IPv4Layer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a414b835816502fcf60e61ecd60ecbcdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a414b835816502fcf60e61ecd60ecbcdd">IPv4Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00032.html">Layer</a> *prevLayer, <a class="el" href="a00038.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a414b835816502fcf60e61ecd60ecbcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c99914fc493045c39b48141791a6f80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a6c99914fc493045c39b48141791a6f80">IPv4Layer</a> ()</td></tr>
+<tr class="separator:a6c99914fc493045c39b48141791a6f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb80b2caa6f3b406917226d23d2c2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a46eb80b2caa6f3b406917226d23d2c2a">IPv4Layer</a> (const <a class="el" href="a00026.html">IPv4Address</a> &amp;srcIP, const <a class="el" href="a00026.html">IPv4Address</a> &amp;dstIP)</td></tr>
+<tr class="separator:a46eb80b2caa6f3b406917226d23d2c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dac299b842ec9574a4b33cc28799984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html">iphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a8dac299b842ec9574a4b33cc28799984">getIPv4Header</a> ()</td></tr>
+<tr class="separator:a8dac299b842ec9574a4b33cc28799984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac478085b64fabe05f530efcf3d3e0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aac478085b64fabe05f530efcf3d3e0fd">getSrcIpAddress</a> ()</td></tr>
+<tr class="separator:aac478085b64fabe05f530efcf3d3e0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693fbcbf941471ba08c2ecdd4057048c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a693fbcbf941471ba08c2ecdd4057048c">getDstIpAddress</a> ()</td></tr>
+<tr class="separator:a693fbcbf941471ba08c2ecdd4057048c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3331bcddca9c6c54cf754194af47713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ac3331bcddca9c6c54cf754194af47713">parseNextLayer</a> ()</td></tr>
 <tr class="separator:ac3331bcddca9c6c54cf754194af47713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a319a0b7550be3259307a866eff5c709f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a319a0b7550be3259307a866eff5c709f">getHeaderLen</a> ()</td></tr>
@@ -154,6 +168,113 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
 <tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an IPv4 protocol layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a414b835816502fcf60e61ecd60ecbcdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00032.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00038.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00025.html">iphdr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00038.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c99914fc493045c39b48141791a6f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new IPv4 header with empty fields </p>
+
+</div>
+</div>
+<a class="anchor" id="a46eb80b2caa6f3b406917226d23d2c2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00026.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00026.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>dstIP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new IPv4 header with source and destination IPv4 addresses </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcIP</td><td>Source IPv4 address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstIP</td><td>Destination IPv4 address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a56511f700cf1008caf3b906819f09cae"></a>
 <div class="memitem">
@@ -175,9 +296,39 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer can compute field values automatically using this method. This is an abstract method </p>
+<p>Calculate the following fields:</p><ul>
+<li><a class="el" href="a00025.html#a9d915fa9b82de8436a7d69c4e61ff1e9">iphdr::internetHeaderLength</a> = 5</li>
+<li><a class="el" href="a00025.html#ad5c64b12356b2825743b1944b6b3dd88">iphdr::ipVersion</a> = 4;</li>
+<li><a class="el" href="a00025.html#a7ef0e303262db11e95316591e39060e3">iphdr::totalLength</a> = total packet length</li>
+<li><a class="el" href="a00025.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf">iphdr::headerChecksum</a> = calculated</li>
+<li><a class="el" href="a00025.html#a2ea68d76d49f1a2f9d2f0d7d5e12d323">iphdr::protocol</a> = calculated if next layer is known: <a class="el" href="a00076.html#adac6a7222ef5bcd336b45fb818aafc9da1d2e2b707cbf23b0efb9ddba46275874">PACKETPP_IPPROTO_TCP</a> for TCP, <a class="el" href="a00076.html#adac6a7222ef5bcd336b45fb818aafc9da555ca922a0c1b9f5249ad53df871ba5b">PACKETPP_IPPROTO_UDP</a> for UDP, <a class="el" href="a00076.html#adac6a7222ef5bcd336b45fb818aafc9dae45cf682027fcba579b2e14349b72cc4">PACKETPP_IPPROTO_ICMP</a> for ICMP </li>
+</ul>
 
 <p>Implements <a class="el" href="a00032.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a693fbcbf941471ba08c2ecdd4057048c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00026.html">IPv4Address</a> IPv4Layer::getDstIpAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the destination IP address in the form of <a class="el" href="a00026.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00026.html">IPv4Address</a> containing the destination address </dd></dl>
 
 </div>
 </div>
@@ -201,9 +352,57 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The header length in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00025.html">iphdr</a> </dd></dl>
 
 <p>Implements <a class="el" href="a00032.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dac299b842ec9574a4b33cc28799984"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">iphdr</a>* IPv4Layer::getIPv4Header </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the IPv4 header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00025.html">iphdr</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac478085b64fabe05f530efcf3d3e0fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00026.html">IPv4Address</a> IPv4Layer::getSrcIpAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the source IP address in the form of <a class="el" href="a00026.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00026.html">IPv4Address</a> containing the source address </dd></dl>
 
 </div>
 </div>
@@ -227,7 +426,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Each layer is responsible for parsing the next layer </p>
+<p>Currently identifies the following next layers: <a class="el" href="a00063.html">UdpLayer</a>, <a class="el" href="a00059.html">TcpLayer</a>. Otherwise sets <a class="el" href="a00039.html">PayloadLayer</a> </p>
 
 <p>Implements <a class="el" href="a00032.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
 
@@ -265,7 +464,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00028.html">IPv4Layer</a></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -116,90 +116,90 @@ $(document).ready(function(){initNavTree('a00072_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00006.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00006.html">ether_header</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">   18</a></span>&#160;    uint8_t <a class="code" href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">dstMac</a>[6];</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00006.html#a476baf8b22a014f9af6d15f10113b565">   22</a></span>&#160;    uint8_t <a class="code" href="a00006.html#a476baf8b22a014f9af6d15f10113b565">srcMac</a>[6];</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">   26</a></span>&#160;    uint16_t <a class="code" href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">etherType</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* Ethernet protocol ID&#39;s */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00072.html#a17471f2d0d180ef15ed20835686f42bc">   33</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_PUP       0x0200</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">   16</a></span>&#160;    uint8_t <a class="code" href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">dstMac</a>[6];</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00006.html#a476baf8b22a014f9af6d15f10113b565">   18</a></span>&#160;    uint8_t <a class="code" href="a00006.html#a476baf8b22a014f9af6d15f10113b565">srcMac</a>[6];</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">   20</a></span>&#160;    uint16_t <a class="code" href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">etherType</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* Ethernet protocol ID&#39;s */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00072.html#a17471f2d0d180ef15ed20835686f42bc">   27</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_PUP       0x0200</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00072.html#aaf064ed783e9a594ee6cd4679085d375">   29</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_SPRITE    0x0500</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00072.html#ae2021b6951d9782a2ba9cb243abdea93">   31</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IP        0x0800</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00072.html#a58349316842ce4bdc5ff10568ec5dc31">   33</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_ARP       0x0806</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00072.html#aaf064ed783e9a594ee6cd4679085d375">   35</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_SPRITE    0x0500</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00072.html#a1d8bc382d37844a65bae2006a05046f3">   35</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_REVARP    0x8035</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00072.html#ae2021b6951d9782a2ba9cb243abdea93">   37</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IP        0x0800</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00072.html#a5363e5c55bf76c08ec5ae9dcf9556e7b">   37</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AT        0x809B</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00072.html#a58349316842ce4bdc5ff10568ec5dc31">   39</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_ARP       0x0806</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00072.html#aa2692ff7ce9c6412385d9465d0d6d152">   39</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AARP      0x80F3</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00072.html#a1d8bc382d37844a65bae2006a05046f3">   41</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_REVARP    0x8035</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00072.html#a0eee73f1048c0756b951674570977ff9">   41</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_VLAN      0x8100</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00072.html#a5363e5c55bf76c08ec5ae9dcf9556e7b">   43</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AT        0x809B</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00072.html#acd7f031a1b6e69f9b5e74c2b26edd2e8">   43</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPX       0x8137</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00072.html#aa2692ff7ce9c6412385d9465d0d6d152">   45</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AARP      0x80F3</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00072.html#ac25537090a27d590178d14ab1b63b66b">   45</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPV6      0x86dd</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00072.html#a0eee73f1048c0756b951674570977ff9">   47</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_VLAN      0x8100</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00072.html#a9656435139954003bf149ed68fcc4ca3">   47</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_LOOPBACK  0x9000</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00072.html#acd7f031a1b6e69f9b5e74c2b26edd2e8">   49</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPX       0x8137</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00072.html#ac25537090a27d590178d14ab1b63b66b">   51</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPV6      0x86dd</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00072.html#a9656435139954003bf149ed68fcc4ca3">   53</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_LOOPBACK  0x9000</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00008.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00008.html">EthLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00008.html#a039c7173f98655299b58268cd35fc552">   69</a></span>&#160;    <a class="code" href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a>; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(<a class="code" href="a00034.html">MacAddress</a>&amp; sourceMac, <a class="code" href="a00034.html">MacAddress</a>&amp; destMac, uint16_t etherType);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ~<a class="code" href="a00008.html">EthLayer</a>() {}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00008.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00008.html">EthLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00008.html#a039c7173f98655299b58268cd35fc552">   63</a></span>&#160;    <a class="code" href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a>; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(<a class="code" href="a00034.html">MacAddress</a>&amp; sourceMac, <a class="code" href="a00034.html">MacAddress</a>&amp; destMac, uint16_t etherType);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ~<a class="code" href="a00008.html">EthLayer</a>() {}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">   79</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00006.html">ether_header</a>* <a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00006.html">ether_header</a>*)m_Data; };</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">   85</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00006.html">ether_header</a>* <a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00006.html">ether_header</a>*)m_Data; };</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">   85</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">getSourceMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(<a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;srcMac); };</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">   91</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">getSourceMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(<a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;srcMac); };</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">   91</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">getDestMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(<a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;dstMac); };</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">   97</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">getDestMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00034.html">MacAddress</a>(<a class="code" href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;dstMac); };</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00008.html#ac43bf749002db7b8cfc39c7b1e22eb50">parseNextLayer</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">  109</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00006.html">ether_header</a>); }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00008.html#a6740298bc6b49c5460a4ef4a390b9dea">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00008.html#a170c2a168ce5ab5cb9bf470c5367df4b">toString</a>();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_ETH_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00008_html_a38b96ebfded7f751a0a3e2e89b32e976"><div class="ttname"><a href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">EthLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:109</div></div>
-<div class="ttc" id="a00006_html_ac116a63a9555eb93785b43c95a7099ff"><div class="ttname"><a href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">ether_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> EthLayer.h:26</div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00008.html#ac43bf749002db7b8cfc39c7b1e22eb50">parseNextLayer</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">  103</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00006.html">ether_header</a>); }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00008.html#a6740298bc6b49c5460a4ef4a390b9dea">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00008.html#a170c2a168ce5ab5cb9bf470c5367df4b">toString</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_ETH_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00008_html_a38b96ebfded7f751a0a3e2e89b32e976"><div class="ttname"><a href="a00008.html#a38b96ebfded7f751a0a3e2e89b32e976">EthLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:103</div></div>
+<div class="ttc" id="a00006_html_ac116a63a9555eb93785b43c95a7099ff"><div class="ttname"><a href="a00006.html#ac116a63a9555eb93785b43c95a7099ff">ether_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> EthLayer.h:20</div></div>
 <div class="ttc" id="a00006_html"><div class="ttname"><a href="a00006.html">ether_header</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:14</div></div>
 <div class="ttc" id="a00008_html_a6740298bc6b49c5460a4ef4a390b9dea"><div class="ttname"><a href="a00008.html#a6740298bc6b49c5460a4ef4a390b9dea">EthLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00008_html_a32cc8f4bd6c9642a6e7aac960cebf3d3"><div class="ttname"><a href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">EthLayer::getSourceMac</a></div><div class="ttdeci">MacAddress getSourceMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:91</div></div>
+<div class="ttc" id="a00008_html_a32cc8f4bd6c9642a6e7aac960cebf3d3"><div class="ttname"><a href="a00008.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">EthLayer::getSourceMac</a></div><div class="ttdeci">MacAddress getSourceMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:85</div></div>
 <div class="ttc" id="a00008_html_a170c2a168ce5ab5cb9bf470c5367df4b"><div class="ttname"><a href="a00008.html#a170c2a168ce5ab5cb9bf470c5367df4b">EthLayer::toString</a></div><div class="ttdeci">string toString()</div></div>
 <div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
 <div class="ttc" id="a00095_html_a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93"><div class="ttname"><a href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:19</div></div>
-<div class="ttc" id="a00006_html_a476baf8b22a014f9af6d15f10113b565"><div class="ttname"><a href="a00006.html#a476baf8b22a014f9af6d15f10113b565">ether_header::srcMac</a></div><div class="ttdeci">uint8_t srcMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:22</div></div>
+<div class="ttc" id="a00006_html_a476baf8b22a014f9af6d15f10113b565"><div class="ttname"><a href="a00006.html#a476baf8b22a014f9af6d15f10113b565">ether_header::srcMac</a></div><div class="ttdeci">uint8_t srcMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:18</div></div>
 <div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
 <div class="ttc" id="a00032_html"><div class="ttname"><a href="a00032.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00008_html_a837f20752b1ba301fa79076ac19c80d4"><div class="ttname"><a href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">EthLayer::getDestMac</a></div><div class="ttdeci">MacAddress getDestMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:97</div></div>
+<div class="ttc" id="a00008_html_a837f20752b1ba301fa79076ac19c80d4"><div class="ttname"><a href="a00008.html#a837f20752b1ba301fa79076ac19c80d4">EthLayer::getDestMac</a></div><div class="ttdeci">MacAddress getDestMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:91</div></div>
 <div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">Layer.h</a></div></div>
-<div class="ttc" id="a00008_html_a406cdd38fea0b50d7c22d91e10940071"><div class="ttname"><a href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">EthLayer::getEthHeader</a></div><div class="ttdeci">ether_header * getEthHeader()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:85</div></div>
+<div class="ttc" id="a00008_html_a406cdd38fea0b50d7c22d91e10940071"><div class="ttname"><a href="a00008.html#a406cdd38fea0b50d7c22d91e10940071">EthLayer::getEthHeader</a></div><div class="ttdeci">ether_header * getEthHeader()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:79</div></div>
 <div class="ttc" id="a00008_html_ac43bf749002db7b8cfc39c7b1e22eb50"><div class="ttname"><a href="a00008.html#ac43bf749002db7b8cfc39c7b1e22eb50">EthLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00008_html"><div class="ttname"><a href="a00008.html">EthLayer</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:60</div></div>
-<div class="ttc" id="a00008_html_a039c7173f98655299b58268cd35fc552"><div class="ttname"><a href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer::EthLayer</a></div><div class="ttdeci">EthLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:69</div></div>
+<div class="ttc" id="a00008_html"><div class="ttname"><a href="a00008.html">EthLayer</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:54</div></div>
+<div class="ttc" id="a00008_html_a039c7173f98655299b58268cd35fc552"><div class="ttname"><a href="a00008.html#a039c7173f98655299b58268cd35fc552">EthLayer::EthLayer</a></div><div class="ttdeci">EthLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:63</div></div>
 <div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00006_html_a6c28900ad0b09ce7585dae662ed1829f"><div class="ttname"><a href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">ether_header::dstMac</a></div><div class="ttdeci">uint8_t dstMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:18</div></div>
+<div class="ttc" id="a00006_html_a6c28900ad0b09ce7585dae662ed1829f"><div class="ttname"><a href="a00006.html#a6c28900ad0b09ce7585dae662ed1829f">ether_header::dstMac</a></div><div class="ttdeci">uint8_t dstMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00072.html">EthLayer.h</a></li>
-    <li class="footer">Generated on Fri Mar 13 2015 00:54:43 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Mar 15 2015 23:18:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

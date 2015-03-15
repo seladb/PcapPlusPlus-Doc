@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['protocoltype',['ProtocolType',['../a00095.html#a2b99fb4e4914a533566284f2ed3b0186',1,'ProtocolType.h']]]
+  ['loglevel',['LogLevel',['../a00033.html#aa52cd7c3af16c16af7209f5769796047',1,'LoggerPP']]],
+  ['logmodule',['LogModule',['../a00079.html#a7e4ae98d96e7177e6c476a1bf942ed42',1,'Logger.h']]]
 ];
