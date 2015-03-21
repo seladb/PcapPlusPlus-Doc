@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['_7elayer',['~Layer',['../a00032.html#a2bac093f2a650095a5551fc455d10dc5',1,'Layer']]],
-  ['_7epacket',['~Packet',['../a00038.html#a69d431d5730177a1bf6e1f8bbbbb6066',1,'Packet']]],
-  ['_7epfringdevice',['~PfRingDevice',['../a00047.html#af5a275b7945d22ac78f062bdaed29738',1,'PfRingDevice']]],
-  ['_7epointervector',['~PointerVector',['../a00049.html#a5fd5c0d94cdb693be9a8bb5c2b3e305c',1,'PointerVector']]],
-  ['_7erawpacket',['~RawPacket',['../a00053.html#abfe49c19d36380760e435ca7f0d0bd01',1,'RawPacket']]]
+  ['vlanlayer',['VlanLayer',['../a00067.html#a22ee2b78d0f211686e2f2d6c739c3ce7',1,'VlanLayer::VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../a00067.html#a4994a70468a65f5e2503079ee875f151',1,'VlanLayer::VlanLayer(const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)']]]
 ];

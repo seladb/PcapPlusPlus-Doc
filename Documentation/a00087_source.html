@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapLiveDevice.h Source File</title>
+<title>PcapPlusPlus: PcapLiveDeviceList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,133 +104,60 @@ $(document).ready(function(){initNavTree('a00087_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapLiveDevice.h</div>  </div>
+<div class="title">PcapLiveDeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//TODO: replace all these defines with #pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LIVE_DEVICE</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define PCAPPP_LIVE_DEVICE</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;PcapDevice.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00074.html">IpAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00082.html">Packet.h</a>&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LIVE_DEVICE_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_LIVE_DEVICE_LIST</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00073.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;PcapLiveDevice.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;WinPcapLiveDevice.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00101.html">std</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00102.html">std</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="a00042.html">PcapLiveDevice</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> void (*OnPacketArrivesCallback)(<a class="code" href="a00053.html">RawPacket</a>* pPacket, <a class="code" href="a00042.html">PcapLiveDevice</a>* pDevice, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> void (*OnStatsUpdateCallback)(pcap_stat&amp; stats, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span>* (*ThreadStart)(<span class="keywordtype">void</span>*);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span>PcapThread;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00042.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00042.html">PcapLiveDevice</a> : <span class="keyword">public</span> <a class="code" href="a00022.html">IPcapDevice</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00043.html">PcapLiveDeviceList</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// This is a second descriptor for the same device. It is needed because of a bug</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// that occurs in libpcap on Linux (on Windows using WinPcap it works well):</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// It&#39;s impossible to capture packets sent by the same descriptor</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    pcap_t* m_PcapSendDescriptor;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* m_Name;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* m_Description;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> m_IsLoopback;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    uint16_t m_DeviceMtu;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    vector&lt;pcap_addr_t&gt; m_Addresses;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a00034.html">MacAddress</a> m_MacAddress;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    PcapThread* m_CaptureThread;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> m_CaptureThreadStarted;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    PcapThread* m_StatsThread;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> m_StatsThreadStarted;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> m_StopThread;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    OnPacketArrivesCallback m_cbOnPacketArrives;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span>* m_cbOnPacketArrivesUserCookie;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    OnStatsUpdateCallback m_cbOnStatsUpdate;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span>* m_cbOnStatsUpdateUserCookie;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> m_IntervalToUpdateStats;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00049.html">RawPacketVector</a>* m_CapturedPackets;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> m_CaptureCallbackMode;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// c&#39;tor is not public, there should be only one for every interface (created by PcapLiveDeviceList)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>(pcap_if_t* pInterface, <span class="keywordtype">bool</span> calculateMTU);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// copy c&#39;tor is not public</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>( <span class="keyword">const</span> <a class="code" href="a00042.html">PcapLiveDevice</a>&amp; other );</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00042.html">PcapLiveDevice</a>&amp; other);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> setDeviceMtu();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setDeviceMacAddress();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* captureThreadMain(<span class="keywordtype">void</span> *ptr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* statsThreadMain(<span class="keywordtype">void</span> *ptr);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onPacketArrives(uint8_t *user, <span class="keyword">const</span> <span class="keyword">struct</span> pcap_pkthdr *pkthdr, <span class="keyword">const</span> uint8_t *packet);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onPacketArrivesNoCallback(uint8_t *user, <span class="keyword">const</span> <span class="keyword">struct</span> pcap_pkthdr *pkthdr, <span class="keyword">const</span> uint8_t *packet);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">string</span> printThreadId(PcapThread* <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> ThreadStart getCaptureThreadStart();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">enum</span> LiveDeviceType {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        LibPcapDevice,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        WinPcapDevice</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">enum</span> DeviceMode {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        Normal = 0,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        Promiscuous = 1</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    ~<a class="code" href="a00042.html">PcapLiveDevice</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> LiveDeviceType getDeviceType() { <span class="keywordflow">return</span> LibPcapDevice; }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* getName() { <span class="keywordflow">return</span> m_Name; }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* getDesc() { <span class="keywordflow">return</span> m_Description; }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> getLoopback() { <span class="keywordflow">return</span> m_IsLoopback; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">inline</span> uint16_t getMtu() { <span class="keywordflow">return</span> m_DeviceMtu; }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">inline</span> vector&lt;pcap_addr_t&gt;&amp; getAddresses() { <span class="keywordflow">return</span> m_Addresses; }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00034.html">MacAddress</a> getMacAddress() { <span class="keywordflow">return</span> m_MacAddress; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a00026.html">IPv4Address</a> getIPv4Address();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> startCapture(OnPacketArrivesCallback onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> startCapture(OnPacketArrivesCallback onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie, <span class="keywordtype">int</span> intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUserCookie);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> startCapture(<span class="keywordtype">int</span> intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUserCookie);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> startCapture(<a class="code" href="a00049.html">RawPacketVector</a>&amp; capturedPacketsVector);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> stopCapture();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> sendPacket(<a class="code" href="a00053.html">RawPacket</a> <span class="keyword">const</span>&amp; rawPacket);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> sendPacket(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">int</span> packetDataLength);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> sendPacket(<a class="code" href="a00038.html">Packet</a>* packet);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> sendPackets(<a class="code" href="a00053.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> sendPackets(<a class="code" href="a00038.html">Packet</a>** packetsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> sendPackets(<span class="keyword">const</span> <a class="code" href="a00049.html">RawPacketVector</a>&amp; rawPackets);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> open();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> close();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> getStatistics(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> open(DeviceMode mode);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:12</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00043.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00043.html">PcapLiveDeviceList</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    vector&lt;PcapLiveDevice*&gt; m_LiveDeviceList;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>( <span class="keyword">const</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; other );</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; other);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// private d&#39;tor</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="a00043.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; getInstance()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a> instance;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> vector&lt;PcapLiveDevice*&gt;&amp; getPcapLiveDevicesList() { <span class="keywordflow">return</span> m_LiveDeviceList; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00021.html">IPAddress</a>* ipAddr);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00026.html">IPv4Address</a> ipAddr);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00030.html">IPv6Address</a> ip6Addr);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipAddrAsString);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:22</div></div>
-<div class="ttc" id="a00082_html"><div class="ttname"><a href="a00082.html">Packet.h</a></div></div>
+<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:171</div></div>
+<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:19</div></div>
 <div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:11</div></div>
-<div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
 <div class="ttc" id="a00026_html"><div class="ttname"><a href="a00026.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:88</div></div>
-<div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
-<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
-<div class="ttc" id="a00074_html"><div class="ttname"><a href="a00074.html">IpAddress.h</a></div></div>
-<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
-<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="a00073_html"><div class="ttname"><a href="a00073.html">IpAddress.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PcapLiveDevice.h</b></li>
-    <li class="footer">Generated on Sun Mar 15 2015 23:18:22 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PcapLiveDeviceList.h</b></li>
+    <li class="footer">Generated on Sat Mar 21 2015 23:48:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

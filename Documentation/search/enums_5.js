@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tcpoption',['TcpOption',['../a00098.html#a270f17a3bfa6bd8e991a264dbc1f61f3',1,'TcpLayer.h']]]
+  ['protocoltype',['ProtocolType',['../a00094.html#a2b99fb4e4914a533566284f2ed3b0186',1,'ProtocolType.h']]]
 ];

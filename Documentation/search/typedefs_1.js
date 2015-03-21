@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectoriterator',['VectorIterator',['../a00049.html#a397409f07927eb1495cec3977d5c8fb4',1,'PointerVector']]]
+  ['rawpacketvector',['RawPacketVector',['../a00083.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]]
 ];
