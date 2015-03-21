@@ -37,7 +37,7 @@ var searchData=
   ['getnextfield',['getNextField',['../a00011.html#a4c7844dac1e382b6b3a9cdf2352cee98',1,'HttpMessage']]],
   ['getnextlayer',['getNextLayer',['../a00032.html#a4683fd5442c279f32ad6fcd6cd87c1d7',1,'Layer']]],
   ['getnextlayeroftype',['getNextLayerOfType',['../a00038.html#a097782fccb489b1dae9bb827cf9b3a75',1,'Packet']]],
-  ['getnumofcores',['getNumOfCores',['../a00096.html#a6253c79b461ea620034cc52398473809',1,'SystemUtils.h']]],
+  ['getnumofcores',['getNumOfCores',['../a00097.html#a6253c79b461ea620034cc52398473809',1,'SystemUtils.h']]],
   ['getnumofopenedrxchannels',['getNumOfOpenedRxChannels',['../a00047.html#a39c45274170d16b9d9d1e0a44951ac0b',1,'PfRingDevice']]],
   ['getpackettimestamp',['getPacketTimeStamp',['../a00053.html#a808262a20ed8401ea1ab9f73495040af',1,'RawPacket']]],
   ['getpayload',['getPayload',['../a00039.html#a675beffd918b11197c830c1f55bee687',1,'PayloadLayer']]],

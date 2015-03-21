@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 <a href="a00069.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_ARP_LAYER</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_ARP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00077.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00073.html">IpAddress.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00079.html">MacAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00078.html">Layer.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00074.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00080.html">MacAddress.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00004.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00004.html">ArpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">   60</a></span>&#160;    <a class="code" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">ArpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00094.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a>; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">   60</a></span>&#160;    <a class="code" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">ArpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a>; }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="a00004.html#a014b2430ea67ec5bda6da58c159839fc">ArpLayer</a>(<a class="code" href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode, <span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; senderMacAddr, <span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; targetMacAddr, <span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a> senderIpAddr, <span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; targetIpAddr);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 <div class="ttc" id="a00003_html"><div class="ttname"><a href="a00003.html">arphdr</a></div><div class="ttdef"><b>Definition:</b> ArpLayer.h:15</div></div>
 <div class="ttc" id="a00003_html_a063950a907fa90a513310b3bcf033eec"><div class="ttname"><a href="a00003.html#a063950a907fa90a513310b3bcf033eec">arphdr::hardwareSize</a></div><div class="ttdeci">uint8_t hardwareSize</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:21</div></div>
 <div class="ttc" id="a00003_html_a6698e798e8c59baf65451122df01df84"><div class="ttname"><a href="a00003.html#a6698e798e8c59baf65451122df01df84">arphdr::protocolSize</a></div><div class="ttdeci">uint8_t protocolSize</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:23</div></div>
-<div class="ttc" id="a00079_html"><div class="ttname"><a href="a00079.html">MacAddress.h</a></div></div>
+<div class="ttc" id="a00095_html_a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928"><div class="ttname"><a href="a00095.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:64</div></div>
 <div class="ttc" id="a00004_html_a1cbb876a9dd9d631fc115c13156b6cc8"><div class="ttname"><a href="a00004.html#a1cbb876a9dd9d631fc115c13156b6cc8">ArpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
 <div class="ttc" id="a00004_html_a7ab75f346b936646629eea9a82d1feb3"><div class="ttname"><a href="a00004.html#a7ab75f346b936646629eea9a82d1feb3">ArpLayer::getTargetIpAddr</a></div><div class="ttdeci">IPv4Address getTargetIpAddr()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:102</div></div>
 <div class="ttc" id="a00004_html_a81008e3014736733382c57efcb778ce5"><div class="ttname"><a href="a00004.html#a81008e3014736733382c57efcb778ce5">ArpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:115</div></div>
@@ -185,19 +185,19 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 <div class="ttc" id="a00003_html_a4fce6019194bfca5d699255a72c5533b"><div class="ttname"><a href="a00003.html#a4fce6019194bfca5d699255a72c5533b">arphdr::protocolType</a></div><div class="ttdeci">uint16_t protocolType</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:19</div></div>
 <div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
 <div class="ttc" id="a00032_html"><div class="ttname"><a href="a00032.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">Layer.h</a></div></div>
 <div class="ttc" id="a00003_html_aa233f68b3551587155f596d4370b2b09"><div class="ttname"><a href="a00003.html#aa233f68b3551587155f596d4370b2b09">arphdr::targetIpAddr</a></div><div class="ttdeci">uint32_t targetIpAddr</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:33</div></div>
 <div class="ttc" id="a00004_html_ac641d801be2e861d716f1f58168db2f7"><div class="ttname"><a href="a00004.html#ac641d801be2e861d716f1f58168db2f7">ArpLayer::getArpHeader</a></div><div class="ttdeci">arphdr * getArpHeader()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:78</div></div>
 <div class="ttc" id="a00069_html_aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61"><div class="ttname"><a href="a00069.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61">ARP_REQUEST</a></div><div class="ttdoc">ARP request. </div><div class="ttdef"><b>Definition:</b> ArpLayer.h:42</div></div>
 <div class="ttc" id="a00003_html_ae68d9afc9eb6140915847edb64954e5f"><div class="ttname"><a href="a00003.html#ae68d9afc9eb6140915847edb64954e5f">arphdr::senderMacAddr</a></div><div class="ttdeci">uint8_t senderMacAddr[6]</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:27</div></div>
 <div class="ttc" id="a00004_html_a246578c6af2eccf5bcbae6214cafefb0"><div class="ttname"><a href="a00004.html#a246578c6af2eccf5bcbae6214cafefb0">ArpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:110</div></div>
+<div class="ttc" id="a00074_html"><div class="ttname"><a href="a00074.html">IpAddress.h</a></div></div>
 <div class="ttc" id="a00069_html_aefdd3857f04fba01d5122a0e34df9523"><div class="ttname"><a href="a00069.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a></div><div class="ttdeci">ArpOpcode</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:40</div></div>
 <div class="ttc" id="a00003_html_a002dea7054111568b4c06487028b0da2"><div class="ttname"><a href="a00003.html#a002dea7054111568b4c06487028b0da2">arphdr::hardwareType</a></div><div class="ttdeci">uint16_t hardwareType</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:17</div></div>
 <div class="ttc" id="a00069_html_aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9"><div class="ttname"><a href="a00069.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9">ARP_REPLY</a></div><div class="ttdoc">ARP reply (response) </div><div class="ttdef"><b>Definition:</b> ArpLayer.h:43</div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">Layer.h</a></div></div>
+<div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">MacAddress.h</a></div></div>
 <div class="ttc" id="a00003_html_a20a839b570da90e03ec2c3915e4b8647"><div class="ttname"><a href="a00003.html#a20a839b570da90e03ec2c3915e4b8647">arphdr::opcode</a></div><div class="ttdeci">uint16_t opcode</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:25</div></div>
 <div class="ttc" id="a00004_html"><div class="ttname"><a href="a00004.html">ArpLayer</a></div><div class="ttdef"><b>Definition:</b> ArpLayer.h:50</div></div>
-<div class="ttc" id="a00094_html_a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928"><div class="ttname"><a href="a00094.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:64</div></div>
-<div class="ttc" id="a00073_html"><div class="ttname"><a href="a00073.html">IpAddress.h</a></div></div>
 <div class="ttc" id="a00003_html_a82c7864540ab1a624fcd8d1b163a1b11"><div class="ttname"><a href="a00003.html#a82c7864540ab1a624fcd8d1b163a1b11">arphdr::targetMacAddr</a></div><div class="ttdeci">uint8_t targetMacAddr[6]</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('a00069_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00069.html">ArpLayer.h</a></li>
-    <li class="footer">Generated on Sat Mar 21 2015 23:48:11 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Mar 21 2015 23:56:35 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
