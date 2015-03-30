@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['protocoltype',['ProtocolType',['../a00095.html#a2b99fb4e4914a533566284f2ed3b0186',1,'ProtocolType.h']]]
+  ['ipprotocoltypes',['IPProtocolTypes',['../a00076.html#adac6a7222ef5bcd336b45fb818aafc9d',1,'IPv4Layer.h']]]
 ];

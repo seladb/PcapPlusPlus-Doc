@@ -10,5 +10,5 @@ var searchData=
   ['operator_3d',['operator=',['../a00014.html#ae072a18512fe933a3464d7a4015139a7',1,'HttpRequestLayer::operator=()'],['../a00017.html#ad792a7ba83282c44f297741b83f63040',1,'HttpResponseLayer::operator=()'],['../a00038.html#a91a6b0c6ea561b9726597468acac252d',1,'Packet::operator=()'],['../a00053.html#ac01c7f5767e7110773f5ea2aa5ac351c',1,'RawPacket::operator=()'],['../a00059.html#a35e847982a29c79f82dad46a72194328',1,'TcpLayer::operator=()']]],
   ['operator_3d_3d',['operator==',['../a00026.html#affe02b4f9f62414acf2bd24157979bdf',1,'IPv4Address::operator==()'],['../a00030.html#ab12a2158a7f77a21830591870490c3df',1,'IPv6Address::operator==()'],['../a00034.html#a91021f00a460d32cb70c05cf08be8249',1,'MacAddress::operator==()']]],
   ['option',['option',['../a00060.html#a119a6362e8e50d21980580c6f3a3596d',1,'TcpOptionData']]],
-  ['orfilter',['OrFilter',['../a00037.html',1,'']]]
+  ['orfilter',['OrFilter',['../a00037.html',1,'OrFilter'],['../a00037.html#a1f29363488b0cc989f646b983f29dacb',1,'OrFilter::OrFilter()']]]
 ];

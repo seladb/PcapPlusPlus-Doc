@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vlan',['VLAN',['../a00095.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704',1,'ProtocolType.h']]]
+  ['roundrobin',['RoundRobin',['../a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]]
 ];

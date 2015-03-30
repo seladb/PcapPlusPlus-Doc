@@ -26,8 +26,12 @@ var files =
       [ "PayloadLayer", "a00039.html", "a00039" ]
     ] ],
     [ "PcapDevice.h", "a00084.html", "a00084" ],
-    [ "PcapFileDevice.h", "a00085_source.html", null ],
-    [ "PcapFilter.h", "a00086_source.html", null ],
+    [ "PcapFileDevice.h", "a00085.html", [
+      [ "IPcapFileDevice", "a00023.html", "a00023" ],
+      [ "PcapFileReaderDevice", "a00040.html", "a00040" ],
+      [ "PcapFileWriterDevice", "a00041.html", "a00041" ]
+    ] ],
+    [ "PcapFilter.h", "a00086.html", "a00086" ],
     [ "PcapLiveDevice.h", "a00087_source.html", null ],
     [ "PcapLiveDeviceList.h", "a00088_source.html", null ],
     [ "PcapRemoteDevice.h", "a00089_source.html", null ],

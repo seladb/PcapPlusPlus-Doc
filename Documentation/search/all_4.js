@@ -4,6 +4,7 @@ var searchData=
   ['enableerrors',['enableErrors',['../a00033.html#a949a764e78f7ab3e4610e130032f9cc4',1,'LoggerPP']]],
   ['end',['end',['../a00049.html#aa37f4d8ebbc3e1d57cbdac06b2fa8ad2',1,'PointerVector::end()'],['../a00049.html#a101a07fa07aea0c2f615d20c6940d0a1',1,'PointerVector::end() const ']]],
   ['end_5fof_5fhttp_5fheader',['END_OF_HTTP_HEADER',['../a00073.html#a57301f5681dddf163b56dad67240ba88',1,'HttpLayer.h']]],
+  ['equals',['EQUALS',['../a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1a949310f9cb536c15919e133f7e7316f3',1,'PcapFilter.h']]],
   ['erase',['erase',['../a00049.html#ae3d514e47d3e5e5ae887fd70da7bc25c',1,'PointerVector']]],
   ['ether_5fheader',['ether_header',['../a00006.html',1,'']]],
   ['ethernet',['Ethernet',['../a00095.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93',1,'ProtocolType.h']]],
@@ -19,7 +20,7 @@ var searchData=
   ['ethertype_5frevarp',['ETHERTYPE_REVARP',['../a00072.html#a1d8bc382d37844a65bae2006a05046f3',1,'EthLayer.h']]],
   ['ethertype_5fsprite',['ETHERTYPE_SPRITE',['../a00072.html#aaf064ed783e9a594ee6cd4679085d375',1,'EthLayer.h']]],
   ['ethertype_5fvlan',['ETHERTYPE_VLAN',['../a00072.html#a0eee73f1048c0756b951674570977ff9',1,'EthLayer.h']]],
-  ['ethertypefilter',['EtherTypeFilter',['../a00007.html',1,'']]],
+  ['ethertypefilter',['EtherTypeFilter',['../a00007.html',1,'EtherTypeFilter'],['../a00007.html#a41d75299d4d6578c48d6a066dcf09d55',1,'EtherTypeFilter::EtherTypeFilter()']]],
   ['ethlayer',['EthLayer',['../a00008.html',1,'EthLayer'],['../a00008.html#a039c7173f98655299b58268cd35fc552',1,'EthLayer::EthLayer(uint8_t *data, size_t dataLen, Packet *packet)'],['../a00008.html#a53715a36ac97bc3ce42b48ffb962ff36',1,'EthLayer::EthLayer(MacAddress &amp;sourceMac, MacAddress &amp;destMac, uint16_t etherType)']]],
   ['ethlayer_2eh',['EthLayer.h',['../a00072.html',1,'']]]
 ];
