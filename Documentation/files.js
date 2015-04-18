@@ -32,10 +32,17 @@ var files =
       [ "PcapFileWriterDevice", "a00041.html", "a00041" ]
     ] ],
     [ "PcapFilter.h", "a00086.html", "a00086" ],
-    [ "PcapLiveDevice.h", "a00087_source.html", null ],
-    [ "PcapLiveDeviceList.h", "a00088_source.html", null ],
-    [ "PcapRemoteDevice.h", "a00089_source.html", null ],
-    [ "PcapRemoteDeviceList.h", "a00090_source.html", null ],
+    [ "PcapLiveDevice.h", "a00087.html", "a00087" ],
+    [ "PcapLiveDeviceList.h", "a00088.html", [
+      [ "PcapLiveDeviceList", "a00043.html", "a00043" ]
+    ] ],
+    [ "PcapRemoteDevice.h", "a00089.html", [
+      [ "PcapRemoteAuthentication", "a00044.html", "a00044" ],
+      [ "PcapRemoteDevice", "a00045.html", "a00045" ]
+    ] ],
+    [ "PcapRemoteDeviceList.h", "a00090.html", [
+      [ "PcapRemoteDeviceList", "a00046.html", "a00046" ]
+    ] ],
     [ "PfRingDevice.h", "a00091.html", "a00091" ],
     [ "PfRingDeviceList.h", "a00092.html", [
       [ "PfRingDeviceList", "a00048.html", "a00048" ]

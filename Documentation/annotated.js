@@ -40,10 +40,10 @@ var annotated =
     [ "PcapFileReaderDevice", "a00040.html", "a00040" ],
     [ "PcapFileWriterDevice", "a00041.html", "a00041" ],
     [ "PcapLiveDevice", "a00042.html", "a00042" ],
-    [ "PcapLiveDeviceList", "a00043.html", null ],
-    [ "PcapRemoteAuthentication", "a00044.html", null ],
+    [ "PcapLiveDeviceList", "a00043.html", "a00043" ],
+    [ "PcapRemoteAuthentication", "a00044.html", "a00044" ],
     [ "PcapRemoteDevice", "a00045.html", "a00045" ],
-    [ "PcapRemoteDeviceList", "a00046.html", null ],
+    [ "PcapRemoteDeviceList", "a00046.html", "a00046" ],
     [ "PfRingDevice", "a00047.html", "a00047" ],
     [ "PfRingDeviceList", "a00048.html", "a00048" ],
     [ "PointerVector", "a00049.html", "a00049" ],
@@ -65,5 +65,5 @@ var annotated =
     [ "vlan_header", "a00065.html", "a00065" ],
     [ "VlanFilter", "a00066.html", "a00066" ],
     [ "VlanLayer", "a00067.html", "a00067" ],
-    [ "WinPcapLiveDevice", "a00068.html", null ]
+    [ "WinPcapLiveDevice", "a00068.html", "a00068" ]
 ];

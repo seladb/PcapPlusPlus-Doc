@@ -106,18 +106,184 @@ $(document).ready(function(){initNavTree('a00043.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a00148.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PcapLiveDeviceList Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00088_source.html">PcapLiveDeviceList.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a654046c26d5816f95e82530a6f056451"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="a00042.html">PcapLiveDevice</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a654046c26d5816f95e82530a6f056451">getPcapLiveDevicesList</a> ()</td></tr>
+<tr class="separator:a654046c26d5816f95e82530a6f056451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390c2c0cd28d808021a3264f56b084de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a390c2c0cd28d808021a3264f56b084de">getPcapLiveDeviceByIp</a> (<a class="el" href="a00021.html">IPAddress</a> *ipAddr)</td></tr>
+<tr class="separator:a390c2c0cd28d808021a3264f56b084de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0440ec517b35bc43fb5d31bc14ee529e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a0440ec517b35bc43fb5d31bc14ee529e">getPcapLiveDeviceByIp</a> (<a class="el" href="a00026.html">IPv4Address</a> ipAddr)</td></tr>
+<tr class="separator:a0440ec517b35bc43fb5d31bc14ee529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa331836b6dd34bc3ecae610c84db3769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#aa331836b6dd34bc3ecae610c84db3769">getPcapLiveDeviceByIp</a> (<a class="el" href="a00030.html">IPv6Address</a> ip6Addr)</td></tr>
+<tr class="separator:aa331836b6dd34bc3ecae610c84db3769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade740e1e6614c536edfdd916535fb742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#ade740e1e6614c536edfdd916535fb742">getPcapLiveDeviceByIp</a> (const char *ipAddrAsString)</td></tr>
+<tr class="separator:ade740e1e6614c536edfdd916535fb742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8543d3d93e3c5779a72820d38e52cd00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00043.html">PcapLiveDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a8543d3d93e3c5779a72820d38e52cd00">getInstance</a> ()</td></tr>
+<tr class="separator:a8543d3d93e3c5779a72820d38e52cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A singleton class that creates, stores and provides access to all <a class="el" href="a00042.html">PcapLiveDevice</a> (on Linux) or <a class="el" href="a00068.html">WinPcapLiveDevice</a> (on Windows) instances. All live devices are initialized on startup and wrap the network interfaces installed on the machine. This class enables access to them through their IP addresses or get a vector of all of them so the user can search them in some other way </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8543d3d93e3c5779a72820d38e52cd00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00043.html">PcapLiveDeviceList</a>&amp; PcapLiveDeviceList::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a390c2c0cd28d808021a3264f56b084de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00021.html">IPAddress</a> *&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IP address. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0440ec517b35bc43fb5d31bc14ee529e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv4 address exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa331836b6dd34bc3ecae610c84db3769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00030.html">IPv6Address</a>&#160;</td>
+          <td class="paramname"><em>ip6Addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IPv6 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip6Addr</td><td>The IPv6 address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv6 address exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade740e1e6614c536edfdd916535fb742"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ipAddrAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IP address represented as string. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddrAsString</td><td>The IP address defined for the device as string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address is valid and exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a654046c26d5816f95e82530a6f056451"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;<a class="el" href="a00042.html">PcapLiveDevice</a>*&gt;&amp; PcapLiveDeviceList::getPcapLiveDevicesList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A vector containing pointers to all live devices currently installed on the machine </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00043.html">PcapLiveDeviceList</a></li>
-    <li class="footer">Generated on Mon Mar 30 2015 23:28:23 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Apr 19 2015 00:34:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

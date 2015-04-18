@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rawpacketvector',['RawPacketVector',['../a00084.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]]
+  ['onpacketarrivescallback',['OnPacketArrivesCallback',['../a00087.html#a27f147465834b511910945added98cfa',1,'PcapLiveDevice.h']]],
+  ['onstatsupdatecallback',['OnStatsUpdateCallback',['../a00087.html#a13a3124ab2d11ed3e37951e51dba5ebc',1,'PcapLiveDevice.h']]]
 ];

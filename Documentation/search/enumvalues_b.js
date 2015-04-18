@@ -37,5 +37,6 @@ var searchData=
   ['pcaplogmodulepfringdevice',['PcapLogModulePfRingDevice',['../a00079.html#a7e4ae98d96e7177e6c476a1bf942ed42af61743915ea353b4a102bc521aca2460',1,'Logger.h']]],
   ['pcaplogmoduleremotedevice',['PcapLogModuleRemoteDevice',['../a00079.html#a7e4ae98d96e7177e6c476a1bf942ed42a5f792d15a1a59ff701e1dab010caee75',1,'Logger.h']]],
   ['pcaplogmodulewinpcaplivedevice',['PcapLogModuleWinPcapLiveDevice',['../a00079.html#a7e4ae98d96e7177e6c476a1bf942ed42af8deb7ac8f18d254f681b4bf5293fbb9',1,'Logger.h']]],
-  ['perflow',['PerFlow',['../a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e',1,'PfRingDevice']]]
+  ['perflow',['PerFlow',['../a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e',1,'PfRingDevice']]],
+  ['promiscuous',['Promiscuous',['../a00042.html#a185b64fcba0e667fcc7457b2ab4a4e21a18306f1bc588dcecfd3c8455f779c5ec',1,'PcapLiveDevice']]]
 ];

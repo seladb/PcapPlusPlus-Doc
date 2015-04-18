@@ -7,5 +7,6 @@ var searchData=
   ['udplengthfilter',['UdpLengthFilter',['../a00064.html',1,'UdpLengthFilter'],['../a00064.html#a4f394660971c8c765a0ff9232ba014c7',1,'UdpLengthFilter::UdpLengthFilter()']]],
   ['unknown',['Unknown',['../a00095.html#a2b99fb4e4914a533566284f2ed3b0186a4e81c184ac3ad48a389cd4454c4a05bb',1,'ProtocolType.h']]],
   ['urgentpointer',['urgentPointer',['../a00058.html#ade025d3342ca70b77c5d25f3ee04eaac',1,'tcphdr']]],
-  ['urgflag',['urgFlag',['../a00058.html#ac7d76fb4d7d89a8bd0d097a0730136f9',1,'tcphdr']]]
+  ['urgflag',['urgFlag',['../a00058.html#ac7d76fb4d7d89a8bd0d097a0730136f9',1,'tcphdr']]],
+  ['username',['userName',['../a00044.html#a1bd03f3efe382739077224990438fa66',1,'PcapRemoteAuthentication']]]
 ];

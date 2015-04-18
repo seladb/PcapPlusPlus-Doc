@@ -68,6 +68,7 @@ var hierarchy =
     [ "Packet", "a00038.html", null ],
     [ "PcapLiveDeviceList", "a00043.html", null ],
     [ "PcapRemoteAuthentication", "a00044.html", null ],
+    [ "PcapRemoteDeviceList", "a00046.html", null ],
     [ "PfRingDeviceList", "a00048.html", null ],
     [ "PointerVector< T >", "a00049.html", null ],
     [ "RawPacket", "a00053.html", null ],
@@ -77,8 +78,5 @@ var hierarchy =
     [ "tcphdr", "a00058.html", null ],
     [ "TcpOptionData", "a00060.html", null ],
     [ "udphdr", "a00062.html", null ],
-    [ "std::vector< T >", null, [
-      [ "PcapRemoteDeviceList", "a00046.html", null ]
-    ] ],
     [ "vlan_header", "a00065.html", null ]
 ];
