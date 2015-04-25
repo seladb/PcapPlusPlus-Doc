@@ -82,10 +82,14 @@ Other opeating systems such as FreeBSD and Mac OS were never tested and compilat
 <strong>Break Pcap FileTo Streams</strong> - an application that takes a pcap file and breaks it into several pcap files, each containing one stream</li>
 <li>
 <strong>ARP Spoofing</strong> - an application that does ARP spoofing using Packet++ and Pcap++</li>
+<li>
+<strong>ARP Spoofing with simple Windows makefile</strong> - same code as ARP spoofing but with simple Windows makefile (see "Creating Applications With PcapPlusPlus" section)</li>
+<li>
+<strong>ARP Spoofing with simple Linux makefile</strong> - same code as ARP spoofing but with simple Linux makefile (see "Creating Applications With PcapPlusPlus" section)</li>
 </ol>
 </li>
 </ol>
-
+<p>After compilation you can find the libraries, examples, header files and helpful makefiles under the <strong>Dist/</strong> directory</p>
 <h4>
 <a id="supported-protocols" class="anchor" href="#supported-protocols" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Protocols</h4>
 
@@ -266,6 +270,56 @@ TestPfRingFilters             <span class="pl-s3">:</span> PASSED
 ALL TESTS PASSED<span class="pl-k">!!</span></pre></div>
 
 <p><em>Notice:</em> Pcap++Test must be run with <strong>sudo</strong> on Linux to have access to all NICs</p>
+<h2>
+<a id="creating-applications-with-PcapPlusPlus" class="anchor" href="#creating-applications-with-PcapPlusPlus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating Applications With PcapPlusPlus</h2>
+<p>Creating applications that uses PcapPlusPlus is rather easy. To do this, please follow these steps:</p>
+<ol>
+<li>First make sure PcapPlusPlus is configured and compiles successfully</li>
+<li>All you need is under the <strong>Dist/</strong> directory. You can find the PcapPlusPlus libraries, header files, code examples and helpful makefiles</li>
+<li>
+In order to compile your application with PcapPlusPlus libraries you should use the makefiles under the <strong>mk/</strong> directory. There are 2 makefiles there:
+<ol>
+<li><em>platform.mk</em> - contains mainly platform-dependent variables such as MinGW and WinPcap directory in Windows, binary files extensions (.lib/.exe for Windows, .a/none for Linux), compile utilities names (g++/g++.exe, ar/ar.exe), etc.</li>
+<li><em>PcapPlusPlus.mk</em> - contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:
+<ol>
+<li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
+<li><em>PCAPPP_LIBS_DIR</em> - location of all libraries needed for compiling and linking with PcapPlusPlus</li>
+<li><em>PCAPPP_LIBS</em> - all libraries needed for compiling and linking with PcapPlusPlus</li>
+<li><em>PCAPPP_POST_BUILD</em> - all post-build actions needed after compiling with PcapPlusPlus</li>
+<li><em>PCAPPLUSPLUS_HOME</em> - PcapPlusPlus home directory</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>As an example, here is a simple Makefile needed for compiling the ArpSpoofing example on Windows (you can find this example under the <strong>Examples/ArpSpoofing-SimpleMakefile-Windows</strong> directory):
+<div class="highlight highlight-shell"><pre>-include ../../Dist/mk/platform.mk
+-include ../../Dist/mk/PcapPlusPlus.mk
+
+# All Target
+all:
+  g++.exe $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+  g++.exe $(PCAPPP_LIBS_DIR) -static-libgcc -static-libstdc++ -o ArpSpoofing.exe main.o $(PCAPPP_LIBS)
+
+# Clean Target
+clean:
+  del main.o
+  del ArpSpoofing.exe
+</pre></div>
+</li>
+<li>And the same example on Linux (you can find it in <strong>Examples/ArpSpoofing-SimpleMakefile-Linux</strong>):</li>
+<div class="highlight highlight-shell"><pre>-include ../../Dist/mk/PcapPlusPlus.mk
+
+# All Target
+all:
+  g++ $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+  g++ $(PCAPPP_LIBS_DIR) -static-libstdc++ -o ArpSpoofing main.o $(PCAPPP_LIBS)
+
+# Clean Target
+clean:
+  rm main.o
+  rm ArpSpoofing
+</pre></div>
+<li>Rather easy, isn't it?</li>
         </article>
       </div>
     </div>
