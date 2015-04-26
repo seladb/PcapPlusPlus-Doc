@@ -1,8 +1,8 @@
 var searchData=
 [
   ['rawpacket',['RawPacket',['../a00053.html',1,'RawPacket'],['../a00053.html#abd3f1c07c2d7a85bbcfe3994dd1161e6',1,'RawPacket::RawPacket(const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor)'],['../a00053.html#a89cd28744cc38377744b685a03a3caaf',1,'RawPacket::RawPacket()'],['../a00053.html#ad75d6d55c4481bb828c1a6153622f084',1,'RawPacket::RawPacket(const RawPacket &amp;other)']]],
-  ['rawpacket_2eh',['RawPacket.h',['../a00096.html',1,'']]],
-  ['rawpacketvector',['RawPacketVector',['../a00084.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]],
+  ['rawpacket_2eh',['RawPacket.h',['../a00095.html',1,'']]],
+  ['rawpacketvector',['RawPacketVector',['../a00083.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]],
   ['reallocatedata',['reallocateData',['../a00053.html#a235033e10b96c259e0cec0bdbe631326',1,'RawPacket']]],
   ['remotedevice',['RemoteDevice',['../a00042.html#a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2',1,'PcapLiveDevice']]],
   ['remotedevicelistiterator',['RemoteDeviceListIterator',['../a00046.html#a5562d31261ff1b70e6ee166a2d512a16',1,'PcapRemoteDeviceList']]],

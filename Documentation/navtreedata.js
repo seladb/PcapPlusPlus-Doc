@@ -6,7 +6,7 @@ var NAVTREE =
       [ "Installation", "index.html#install_sec", null ],
       [ "Getting Started", "index.html#getting_started_sec", null ]
     ] ],
-    [ "Todo List", "a00104.html", null ],
+    [ "Todo List", "a00103.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -39,7 +39,7 @@ var NAVTREEINDEX =
 "a00001.html",
 "a00025.html#af8153baec72e1a9ef86769fce9e9f50b",
 "a00049.html#a397409f07927eb1495cec3977d5c8fb4",
-"a00082.html"
+"a00081_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

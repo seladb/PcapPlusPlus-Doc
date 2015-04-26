@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapFilter.h File Reference</title>
+<title>PcapPlusPlus: PcapLiveDevice.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,139 +105,68 @@ $(document).ready(function(){initNavTree('a00086.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">PcapFilter.h File Reference</div>  </div>
+<div class="title">PcapLiveDevice.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="a00083_source.html">PcapDevice.h</a>&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00095_source.html">ProtocolType.h</a>&quot;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00069_source.html">ArpLayer.h</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00073_source.html">IpAddress.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="a00081_source.html">Packet.h</a>&gt;</code><br />
 </div>
 <p><a href="a00086_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html">GeneralFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html">IFilterWithDirection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html">IFilterWithOperator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html">IPFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html">IpV4IDFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html">IpV4TotalLengthFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html">PortFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">PortRangeFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html">MacAddressFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html">EtherTypeFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html">AndFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html">OrFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">NotFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html">ProtoFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html">ArpFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html">VlanFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html">TcpFlagsFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html">TcpWindowSizeFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html">UdpLengthFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html">PcapLiveDevice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a224b9163917ac32fc95a60d8c1eec3aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> { <a class="el" href="a00086.html#a224b9163917ac32fc95a60d8c1eec3aaaafc38ae6a337625b99d6cd83fe7de226">SRC</a>, 
-<a class="el" href="a00086.html#a224b9163917ac32fc95a60d8c1eec3aaa7a1970158a695340fdc76c8424740233">DST</a>, 
-<a class="el" href="a00086.html#a224b9163917ac32fc95a60d8c1eec3aaa5cf7c23b52b4066c34f120c6306de923">SRC_OR_DST</a>
- }</td></tr>
-<tr class="separator:a224b9163917ac32fc95a60d8c1eec3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e5fd8fd26fc252748d97ebd68ea6b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a> { <br />
-&#160;&#160;<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1a949310f9cb536c15919e133f7e7316f3">EQUALS</a>, 
-<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1a238616c701ea4986457efd6a6aa19f05">NOT_EQUALS</a>, 
-<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1a5fae95457121bd697edd588d1b64cc7c">GREATER_THAN</a>, 
-<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1acfac3943e885cee7538ecd7b718dd352">GREATER_OR_EQUAL</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1a41b05932cd237b2b133fff1ade85bed5">LESS_THAN</a>, 
-<a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1ad63ebcacd2e6b852e89c54f010c70b3b">LESS_OR_EQUAL</a>
-<br />
- }</td></tr>
-<tr class="separator:af9e5fd8fd26fc252748d97ebd68ea6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a27f147465834b511910945added98cfa"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>) (<a class="el" href="a00053.html">RawPacket</a> *pPacket, <a class="el" href="a00042.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
+<tr class="separator:a27f147465834b511910945added98cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
+<tr class="separator:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Most packet capture engines contain packet filtering capabilities. In order to set the filters there should be a known syntax user can use. The most popular syntax is Berkeley <a class="el" href="a00038.html">Packet</a> Filter (BPF) - see more in here: <a href="http://en.wikipedia.org/wiki/Berkeley_Packet_Filter">http://en.wikipedia.org/wiki/Berkeley_Packet_Filter</a>. Detailed explanation of the syntax can be found here: <a href="http://www.tcpdump.org/manpages/pcap-filter.7.html">http://www.tcpdump.org/manpages/pcap-filter.7.html</a>.<br />
- The problem with BPF is that, for my opinion, the syntax is too complicated and too poorly documented. In addition the BPF filter compilers may output syntax errors that are hard to understand. My experience with BPF was not good, so I decided to make the filters mechanism more structured, easier to understand and less error-prone by creating classes that represent filters. Each possible filter phrase is represented by a class. The filter, at the end, is that class.<br />
- For example: the filter "src host 1.1.1.1" will be represented by <a class="el" href="a00024.html">IPFilter</a> instance; "dst port 80" will be represented by <a class="el" href="a00050.html">PortFilter</a>, and so on.<br />
- So what about complex filters that involve "and", "or"? There are also 2 classes: <a class="el" href="a00001.html">AndFilter</a> and <a class="el" href="a00037.html">OrFilter</a> that can store more filters (in a composite idea) and connect them by "and" or "or". For example: "src host 1.1.1.1 and dst port 80" will be represented by an <a class="el" href="a00001.html">AndFilter</a> that h olds <a class="el" href="a00024.html">IPFilter</a> and <a class="el" href="a00050.html">PortFilter</a> inside it </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a224b9163917ac32fc95a60d8c1eec3aa"></a>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a27f147465834b511910945added98cfa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00086.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a></td>
+          <td class="memname">OnPacketArrivesCallback</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum that contains direction (source or destination) </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a224b9163917ac32fc95a60d8c1eec3aaaafc38ae6a337625b99d6cd83fe7de226"></a>SRC&#160;</td><td class="fielddoc">
-<p>Source </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a224b9163917ac32fc95a60d8c1eec3aaa7a1970158a695340fdc76c8424740233"></a>DST&#160;</td><td class="fielddoc">
-<p>Destination </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a224b9163917ac32fc95a60d8c1eec3aaa5cf7c23b52b4066c34f120c6306de923"></a>SRC_OR_DST&#160;</td><td class="fielddoc">
-<p>Source or destination </p>
-</td></tr>
-</table>
+<p>A callback that is called when a packet is captured by <a class="el" href="a00042.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="a00042.html">PcapLiveDevice</a> instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1"></a>
+<a class="anchor" id="a13a3124ab2d11ed3e37951e51dba5ebc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00086.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a></td>
+          <td class="memname">OnStatsUpdateCallback</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Supported operators enum </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1a949310f9cb536c15919e133f7e7316f3"></a>EQUALS&#160;</td><td class="fielddoc">
-<p>Equals </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1a238616c701ea4986457efd6a6aa19f05"></a>NOT_EQUALS&#160;</td><td class="fielddoc">
-<p>Not equals </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1a5fae95457121bd697edd588d1b64cc7c"></a>GREATER_THAN&#160;</td><td class="fielddoc">
-<p>Greater than </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1acfac3943e885cee7538ecd7b718dd352"></a>GREATER_OR_EQUAL&#160;</td><td class="fielddoc">
-<p>Greater or equal </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1a41b05932cd237b2b133fff1ade85bed5"></a>LESS_THAN&#160;</td><td class="fielddoc">
-<p>Less than </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9e5fd8fd26fc252748d97ebd68ea6b1ad63ebcacd2e6b852e89c54f010c70b3b"></a>LESS_OR_EQUAL&#160;</td><td class="fielddoc">
-<p>Less or equal </p>
-</td></tr>
-</table>
+<p>A callback that is called periodically for stats collection if user asked to start packet capturing with periodic stats collection </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stats</td><td>A reference to the most updated stats </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -246,8 +175,8 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00086.html">PcapFilter.h</a></li>
-    <li class="footer">Generated on Sun Apr 19 2015 00:34:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00086.html">PcapLiveDevice.h</a></li>
+    <li class="footer">Generated on Sun Apr 26 2015 08:44:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

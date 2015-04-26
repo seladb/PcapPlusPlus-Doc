@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Layer.h File Reference</title>
+<title>PcapPlusPlus: Logger.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,30 +104,128 @@ $(document).ready(function(){initNavTree('a00078.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Layer.h File Reference</div>  </div>
+<div class="title">Logger.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00095_source.html">ProtocolType.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div>
 <p><a href="a00078_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">Layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">LoggerPP</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7e4ae98d96e7177e6c476a1bf942ed42"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> { , <br />
+&#160;&#160;<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a0950cbb51dd09d848af9310946151405">CommonLogModuleIpUtils</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a198cb7966015358f94f05c10a9995bab">PacketLogModuleRawPacket</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a8e9b8acc28379ca0be48e01bb8f01d32">PacketLogModulePacket</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a9b4b599af5a38e4a292dab7195b4f992">PacketLogModuleLayer</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42af2746096d30a7911f31de2d469306607">PacketLogModuleArpLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a4b4dd8b52dd3ece6981d70cad327e3db">PacketLogModuleEthLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a485c7f874959bf4fbf30fbd6e457d0a7">PacketLogModuleIPv4Layer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42ae9df311615e99b0f0a1503a9d4b3383b">PacketLogModuleIPv6Layer</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a1f6b7fd7efdc069ff9dd2fb95a5396fa">PacketLogModulePayloadLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42ae8dc604bcc7961b1395c96f230e4fb06">PacketLogModuleTcpLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a46b2d8e90781acf3fd4d2495b5310a38">PacketLogModuleUdpLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a7c2ba250ee2d0b9e39398e0e6977898a">PacketLogModuleVlanLayer</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42abb1216595379a6b89e906f0aa306da48">PacketLogModuleHttpLayer</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42af8deb7ac8f18d254f681b4bf5293fbb9">PcapLogModuleWinPcapLiveDevice</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a5f792d15a1a59ff701e1dab010caee75">PcapLogModuleRemoteDevice</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42a7716b50f29d6ed5682578d84c352c1ee">PcapLogModuleLiveDevice</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42af115e9bda85149fbb7d5cb4f9deb1c0b">PcapLogModuleFileDevice</a>, 
+<a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42af61743915ea353b4a102bc521aca2460">PcapLogModulePfRingDevice</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7e4ae98d96e7177e6c476a1bf942ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00078.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum representing all PcapPlusPlus modules </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a0950cbb51dd09d848af9310946151405"></a>CommonLogModuleIpUtils&#160;</td><td class="fielddoc">
+<p>IP Utils module (Common++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a198cb7966015358f94f05c10a9995bab"></a>PacketLogModuleRawPacket&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00053.html">RawPacket</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a8e9b8acc28379ca0be48e01bb8f01d32"></a>PacketLogModulePacket&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00038.html">Packet</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a9b4b599af5a38e4a292dab7195b4f992"></a>PacketLogModuleLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00032.html">Layer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42af2746096d30a7911f31de2d469306607"></a>PacketLogModuleArpLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00004.html">ArpLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a4b4dd8b52dd3ece6981d70cad327e3db"></a>PacketLogModuleEthLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00008.html">EthLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a485c7f874959bf4fbf30fbd6e457d0a7"></a>PacketLogModuleIPv4Layer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00028.html">IPv4Layer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42ae9df311615e99b0f0a1503a9d4b3383b"></a>PacketLogModuleIPv6Layer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00031.html">IPv6Layer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a1f6b7fd7efdc069ff9dd2fb95a5396fa"></a>PacketLogModulePayloadLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00039.html">PayloadLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42ae8dc604bcc7961b1395c96f230e4fb06"></a>PacketLogModuleTcpLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00059.html">TcpLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a46b2d8e90781acf3fd4d2495b5310a38"></a>PacketLogModuleUdpLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00063.html">UdpLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a7c2ba250ee2d0b9e39398e0e6977898a"></a>PacketLogModuleVlanLayer&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00067.html">VlanLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42abb1216595379a6b89e906f0aa306da48"></a>PacketLogModuleHttpLayer&#160;</td><td class="fielddoc">
+<p>HttpLayer module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42af8deb7ac8f18d254f681b4bf5293fbb9"></a>PcapLogModuleWinPcapLiveDevice&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00068.html">WinPcapLiveDevice</a> module (Pcap++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a5f792d15a1a59ff701e1dab010caee75"></a>PcapLogModuleRemoteDevice&#160;</td><td class="fielddoc">
+<p>WinPcapRemoteDevice module (Pcap++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42a7716b50f29d6ed5682578d84c352c1ee"></a>PcapLogModuleLiveDevice&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00042.html">PcapLiveDevice</a> module (Pcap++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42af115e9bda85149fbb7d5cb4f9deb1c0b"></a>PcapLogModuleFileDevice&#160;</td><td class="fielddoc">
+<p>FileDevice module (Pcap++) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e4ae98d96e7177e6c476a1bf942ed42af61743915ea353b4a102bc521aca2460"></a>PcapLogModulePfRingDevice&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00047.html">PfRingDevice</a> module (Pcap++) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00078.html">Layer.h</a></li>
-    <li class="footer">Generated on Sun Apr 19 2015 00:34:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00078.html">Logger.h</a></li>
+    <li class="footer">Generated on Sun Apr 26 2015 08:44:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDeviceList.h Source File</title>
+<title>PcapPlusPlus: PlatformSpecificUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,63 +104,39 @@ $(document).ready(function(){initNavTree('a00092_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PfRingDeviceList.h</div>  </div>
+<div class="title">PlatformSpecificUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00092.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PF_RING_DEVICE_LIST</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PF_RING_DEVICE_LIST</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef USE_PF_RING</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00091.html">PfRingDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00048.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00048.html">PfRingDeviceList</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    vector&lt;PfRingDevice*&gt; m_PfRingDeviceList;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">string</span> m_PfRingVersion;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="a00048.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="a00048.html">PfRingDeviceList</a>(<span class="keyword">const</span> <a class="code" href="a00048.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="a00048.html">PfRingDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00048.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// private d&#39;tor</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="a00048.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> calcPfRingVersion(<span class="keywordtype">void</span>* ring);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00048.html#a69a328dd6c0f9b4acb8ab46652bf675a">   34</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00048.html">PfRingDeviceList</a>&amp; <a class="code" href="a00048.html#a69a328dd6c0f9b4acb8ab46652bf675a">getInstance</a>()</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00048.html">PfRingDeviceList</a> instance;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00048.html#a8f39642efdb9d3a37cb38dd6ccffc4d9">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> vector&lt;PfRingDevice*&gt;&amp; <a class="code" href="a00048.html#a8f39642efdb9d3a37cb38dd6ccffc4d9">getPfRingDevicesList</a>() { <span class="keywordflow">return</span> m_PfRingDeviceList; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="a00047.html">PfRingDevice</a>* <a class="code" href="a00048.html#a537a595b1e88c0e0812538073c7e9186">getPfRingDeviceByName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> devName);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00048.html#a1e13133fb1bed38754cf5bb93d5b4830">   58</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="a00048.html#a1e13133fb1bed38754cf5bb93d5b4830">getPfRingVersion</a>() { <span class="keywordflow">return</span> m_PfRingVersion; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_PF_RING */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PF_RING_DEVICE_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">PfRingDevice.h</a></div></div>
-<div class="ttc" id="a00048_html_a8f39642efdb9d3a37cb38dd6ccffc4d9"><div class="ttname"><a href="a00048.html#a8f39642efdb9d3a37cb38dd6ccffc4d9">PfRingDeviceList::getPfRingDevicesList</a></div><div class="ttdeci">const vector&lt; PfRingDevice * &gt; &amp; getPfRingDevicesList()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:44</div></div>
-<div class="ttc" id="a00047_html"><div class="ttname"><a href="a00047.html">PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:26</div></div>
-<div class="ttc" id="a00048_html_a69a328dd6c0f9b4acb8ab46652bf675a"><div class="ttname"><a href="a00048.html#a69a328dd6c0f9b4acb8ab46652bf675a">PfRingDeviceList::getInstance</a></div><div class="ttdeci">static PfRingDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:34</div></div>
-<div class="ttc" id="a00048_html_a1e13133fb1bed38754cf5bb93d5b4830"><div class="ttname"><a href="a00048.html#a1e13133fb1bed38754cf5bb93d5b4830">PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">string getPfRingVersion()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:58</div></div>
-<div class="ttc" id="a00048_html_a537a595b1e88c0e0812538073c7e9186"><div class="ttname"><a href="a00048.html#a537a595b1e88c0e0812538073c7e9186">PfRingDeviceList::getPfRingDeviceByName</a></div><div class="ttdeci">PfRingDevice * getPfRingDeviceByName(const string devName)</div></div>
-<div class="ttc" id="a00048_html"><div class="ttname"><a href="a00048.html">PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:15</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;winbase.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) Sleep(seconds*1000)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) sleep(seconds)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) CreateDirectory(dir, NULL)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) mkdir(dir, 0777)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PLATFORM_SPECIFIC_UTILS */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00092.html">PfRingDeviceList.h</a></li>
-    <li class="footer">Generated on Sun Apr 19 2015 00:34:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PlatformSpecificUtils.h</b></li>
+    <li class="footer">Generated on Sun Apr 26 2015 08:44:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
