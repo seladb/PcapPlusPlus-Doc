@@ -175,59 +175,68 @@ $(document).ready(function(){initNavTree('a00073_source.html','');});
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00026.html#affe02b4f9f62414acf2bd24157979bdf">  149</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00026.html#affe02b4f9f62414acf2bd24157979bdf">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> toInt() == other.<a class="code" href="a00026.html#a72f1000006566932602a18a5e66d0917">toInt</a>(); }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">bool</span> matchSubnet(<span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; subnet, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; subnetMask);</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="a00026.html#a448e81d6a42f54eab859da84795f2e81">  155</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00026.html#a448e81d6a42f54eab859da84795f2e81">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> toInt() != other.<a class="code" href="a00026.html#a72f1000006566932602a18a5e66d0917">toInt</a>(); }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="a00026.html">IPv4Address</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; other);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="a00026.html#a29833df4aff7a34168268bfb739ef759">  165</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00026.html">IPv4Address</a> <a class="code" href="a00026.html#a29833df4aff7a34168268bfb739ef759">Zero</a>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">struct </span>in6_addr;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="a00030.html">  176</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00030.html">IPv6Address</a> : <span class="keyword">public</span> <a class="code" href="a00021.html">IPAddress</a></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    in6_addr* m_pInAddr;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> init(<span class="keywordtype">char</span>* addressAsString);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    ~<a class="code" href="a00030.html">IPv6Address</a>();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(uint8_t* addressAsUintArr);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keywordtype">char</span>* addressAsString);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keywordtype">string</span> addressAsString);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="a00030.html#aae62b3c368fc0aab389570387c5baad8">  213</a></span>&#160;    <a class="code" href="a00021.html#a53caf33403beb8bbc212b7659ffa8608">AddressType</a> <a class="code" href="a00030.html#aae62b3c368fc0aab389570387c5baad8">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> IPv6AddressType; }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="a00030.html#aef3aee2f30589284653053e4b6406f6c">  219</a></span>&#160;    in6_addr* <a class="code" href="a00030.html#aef3aee2f30589284653053e4b6406f6c">toIn6Addr</a>() { <span class="keywordflow">return</span> m_pInAddr; }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span> matchSubnet(<span class="keyword">const</span> <a class="code" href="a00026.html">IPv4Address</a>&amp; subnet, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; subnetMask);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="a00026.html#a29833df4aff7a34168268bfb739ef759">  176</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00026.html">IPv4Address</a> <a class="code" href="a00026.html#a29833df4aff7a34168268bfb739ef759">Zero</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">struct </span>in6_addr;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="a00030.html">  187</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00030.html">IPv6Address</a> : <span class="keyword">public</span> <a class="code" href="a00021.html">IPAddress</a></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    in6_addr* m_pInAddr;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">void</span> init(<span class="keywordtype">char</span>* addressAsString);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    ~<a class="code" href="a00030.html">IPv6Address</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(uint8_t* addressAsUintArr);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keywordtype">char</span>* addressAsString);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keywordtype">string</span> addressAsString);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t** arr, <span class="keywordtype">size_t</span>&amp; length);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t* arr) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">  245</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00030.html">IPv6Address</a> <a class="code" href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">Zero</a>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;};</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_IPADDRESS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="a00030.html#aae62b3c368fc0aab389570387c5baad8">  224</a></span>&#160;    <a class="code" href="a00021.html#a53caf33403beb8bbc212b7659ffa8608">AddressType</a> <a class="code" href="a00030.html#aae62b3c368fc0aab389570387c5baad8">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> IPv6AddressType; }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="a00030.html#aef3aee2f30589284653053e4b6406f6c">  230</a></span>&#160;    in6_addr* <a class="code" href="a00030.html#aef3aee2f30589284653053e4b6406f6c">toIn6Addr</a>() { <span class="keywordflow">return</span> m_pInAddr; }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t** arr, <span class="keywordtype">size_t</span>&amp; length);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="a00030.html">IPv6Address</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00030.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">  267</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00030.html">IPv6Address</a> <a class="code" href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">Zero</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_IPADDRESS */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a00026_html_addd6ff37af6195ff5a0a6b7e3244a7cf"><div class="ttname"><a href="a00026.html#addd6ff37af6195ff5a0a6b7e3244a7cf">IPv4Address::toInAddr</a></div><div class="ttdeci">in_addr * toInAddr()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:143</div></div>
 <div class="ttc" id="a00021_html_a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81"><div class="ttname"><a href="a00021.html#a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81">IPAddress::IPv4AddressType</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:36</div></div>
 <div class="ttc" id="a00026_html_abec87cb14eac7c4fce896b7249c915a7"><div class="ttname"><a href="a00026.html#abec87cb14eac7c4fce896b7249c915a7">IPv4Address::getType</a></div><div class="ttdeci">AddressType getType() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:131</div></div>
-<div class="ttc" id="a00030_html_aae62b3c368fc0aab389570387c5baad8"><div class="ttname"><a href="a00030.html#aae62b3c368fc0aab389570387c5baad8">IPv6Address::getType</a></div><div class="ttdeci">AddressType getType() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:213</div></div>
+<div class="ttc" id="a00030_html_aae62b3c368fc0aab389570387c5baad8"><div class="ttname"><a href="a00030.html#aae62b3c368fc0aab389570387c5baad8">IPv6Address::getType</a></div><div class="ttdeci">AddressType getType() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:224</div></div>
 <div class="ttc" id="a00026_html_a72f1000006566932602a18a5e66d0917"><div class="ttname"><a href="a00026.html#a72f1000006566932602a18a5e66d0917">IPv4Address::toInt</a></div><div class="ttdeci">uint32_t toInt() const </div></div>
-<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:176</div></div>
+<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:187</div></div>
 <div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:19</div></div>
-<div class="ttc" id="a00030_html_ac9b78400c6dd8dd7a7d96339bb46f916"><div class="ttname"><a href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">IPv6Address::Zero</a></div><div class="ttdeci">static IPv6Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:245</div></div>
+<div class="ttc" id="a00030_html_ac9b78400c6dd8dd7a7d96339bb46f916"><div class="ttname"><a href="a00030.html#ac9b78400c6dd8dd7a7d96339bb46f916">IPv6Address::Zero</a></div><div class="ttdeci">static IPv6Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:267</div></div>
+<div class="ttc" id="a00026_html_a448e81d6a42f54eab859da84795f2e81"><div class="ttname"><a href="a00026.html#a448e81d6a42f54eab859da84795f2e81">IPv4Address::operator!=</a></div><div class="ttdeci">bool operator!=(const IPv4Address &amp;other) const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:155</div></div>
 <div class="ttc" id="a00021_html_a53caf33403beb8bbc212b7659ffa8608"><div class="ttname"><a href="a00021.html#a53caf33403beb8bbc212b7659ffa8608">IPAddress::AddressType</a></div><div class="ttdeci">AddressType</div><div class="ttdef"><b>Definition:</b> IpAddress.h:32</div></div>
 <div class="ttc" id="a00026_html"><div class="ttname"><a href="a00026.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:88</div></div>
-<div class="ttc" id="a00030_html_aef3aee2f30589284653053e4b6406f6c"><div class="ttname"><a href="a00030.html#aef3aee2f30589284653053e4b6406f6c">IPv6Address::toIn6Addr</a></div><div class="ttdeci">in6_addr * toIn6Addr()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:219</div></div>
+<div class="ttc" id="a00030_html_aef3aee2f30589284653053e4b6406f6c"><div class="ttname"><a href="a00030.html#aef3aee2f30589284653053e4b6406f6c">IPv6Address::toIn6Addr</a></div><div class="ttdeci">in6_addr * toIn6Addr()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:230</div></div>
 <div class="ttc" id="a00021_html_aa07d8c6edd1ccab818b1d02b27062018"><div class="ttname"><a href="a00021.html#aa07d8c6edd1ccab818b1d02b27062018">IPAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:62</div></div>
-<div class="ttc" id="a00026_html_a29833df4aff7a34168268bfb739ef759"><div class="ttname"><a href="a00026.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:165</div></div>
+<div class="ttc" id="a00026_html_a29833df4aff7a34168268bfb739ef759"><div class="ttname"><a href="a00026.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:176</div></div>
 <div class="ttc" id="a00026_html_affe02b4f9f62414acf2bd24157979bdf"><div class="ttname"><a href="a00026.html#affe02b4f9f62414acf2bd24157979bdf">IPv4Address::operator==</a></div><div class="ttdeci">bool operator==(const IPv4Address &amp;other) const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:149</div></div>
 <div class="ttc" id="a00021_html_ab61e82b8368b84f81e7d0f0f284a77f1"><div class="ttname"><a href="a00021.html#ab61e82b8368b84f81e7d0f0f284a77f1">IPAddress::toString</a></div><div class="ttdeci">string toString() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:55</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -236,7 +245,7 @@ $(document).ready(function(){initNavTree('a00073_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00073.html">IpAddress.h</a></li>
-    <li class="footer">Generated on Sun Apr 26 2015 08:44:33 for PcapPlusPlus by
+    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

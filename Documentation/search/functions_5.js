@@ -50,6 +50,7 @@ var searchData=
   ['getpayload',['getPayload',['../a00039.html#a675beffd918b11197c830c1f55bee687',1,'PayloadLayer']]],
   ['getpayloadlen',['getPayloadLen',['../a00039.html#a6437d45a1237454cd43db5ad07aa75da',1,'PayloadLayer']]],
   ['getpcaplivedevicebyip',['getPcapLiveDeviceByIp',['../a00043.html#a390c2c0cd28d808021a3264f56b084de',1,'PcapLiveDeviceList::getPcapLiveDeviceByIp(IPAddress *ipAddr)'],['../a00043.html#a0440ec517b35bc43fb5d31bc14ee529e',1,'PcapLiveDeviceList::getPcapLiveDeviceByIp(IPv4Address ipAddr)'],['../a00043.html#aa331836b6dd34bc3ecae610c84db3769',1,'PcapLiveDeviceList::getPcapLiveDeviceByIp(IPv6Address ip6Addr)'],['../a00043.html#ade740e1e6614c536edfdd916535fb742',1,'PcapLiveDeviceList::getPcapLiveDeviceByIp(const char *ipAddrAsString)']]],
+  ['getpcaplivedevicebyname',['getPcapLiveDeviceByName',['../a00043.html#a195282e47899cd987964b4ee187078ec',1,'PcapLiveDeviceList']]],
   ['getpcaplivedeviceslist',['getPcapLiveDevicesList',['../a00043.html#a654046c26d5816f95e82530a6f056451',1,'PcapLiveDeviceList']]],
   ['getpcaprmauth',['getPcapRmAuth',['../a00044.html#a88bbf0cad6e1deafd040632500da4a00',1,'PcapRemoteAuthentication']]],
   ['getpfringdevicebyname',['getPfRingDeviceByName',['../a00048.html#a537a595b1e88c0e0812538073c7e9186',1,'PfRingDeviceList']]],

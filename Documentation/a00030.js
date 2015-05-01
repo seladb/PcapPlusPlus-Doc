@@ -7,6 +7,8 @@ var a00030 =
     [ "copyTo", "a00030.html#a3f6f2c5439e3db5717a038a69a1f21c3", null ],
     [ "copyTo", "a00030.html#a512f02bc3c0be6ead547a7faffdc495f", null ],
     [ "getType", "a00030.html#aae62b3c368fc0aab389570387c5baad8", null ],
+    [ "operator!=", "a00030.html#a4d2a980acceb2b2f7d6e3257ba087518", null ],
+    [ "operator=", "a00030.html#a275d8acb1a59b388d78487210e0f6fbd", null ],
     [ "operator==", "a00030.html#ab12a2158a7f77a21830591870490c3df", null ],
     [ "toIn6Addr", "a00030.html#aef3aee2f30589284653053e4b6406f6c", null ]
 ];

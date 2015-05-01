@@ -7,6 +7,8 @@ var a00026 =
     [ "IPv4Address", "a00026.html#afb221f895af2e151fe1f0a0453cec145", null ],
     [ "getType", "a00026.html#abec87cb14eac7c4fce896b7249c915a7", null ],
     [ "matchSubnet", "a00026.html#a85eb25a77a86495984a7c8da626b4271", null ],
+    [ "operator!=", "a00026.html#a448e81d6a42f54eab859da84795f2e81", null ],
+    [ "operator=", "a00026.html#a79a49cacb06d9f86a559d6597c2bb1a8", null ],
     [ "operator==", "a00026.html#affe02b4f9f62414acf2bd24157979bdf", null ],
     [ "toInAddr", "a00026.html#addd6ff37af6195ff5a0a6b7e3244a7cf", null ],
     [ "toInt", "a00026.html#a72f1000006566932602a18a5e66d0917", null ]
