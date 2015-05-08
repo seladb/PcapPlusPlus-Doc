@@ -52,8 +52,8 @@ v
 <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
 </ul>
 
-<p>PcapPlusPlus is currently supported on Windows and Linux operating systems.
-It was tested on Windows (32bit and 64bit), Ubuntu and Fedora, but it should work on other Linux distributions as well.
+<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong> operating systems.
+It was tested on Windows (32bit and 64bit), Ubuntu and Fedora, but it should work on other Linux distributions as well. Regarding Mac OS X - I tested it on Snow Leopard (10.6) 32bit only, but I assume it would work on newer Mac OS X versions as well.
 Other opeating systems such as FreeBSD and Mac OS were never tested and compilation on those platform would probably fail</p>
 
 <h2>
@@ -116,7 +116,7 @@ Other opeating systems such as FreeBSD and Mac OS were never tested and compilat
 <p>PcapPlusPlus currently works with the following devices:</p>
 
 <ol>
-<li>libpcap live device (on Linux)</li>
+<li>libpcap live device (on Linux and Mac OS X)</li>
 <li>WinPcap live device (on Windows)</li>
 <li>Vanilla PF_RING device (on Linux)</li>
 <li>Remote live device (on Windows)</li>
@@ -194,6 +194,20 @@ such as apt-get:</p>
 </ol>
 
 <h4>
+<a id="prerequisutes---Mac-OS-X" class="anchor" href="#prerequisutes---Mac-OS-X" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisutes - Mac OS X</h4>
+
+<p>In order to compile PacpPlusPlus on Mac OS X you need to make sure <a href="https://developer.apple.com/xcode/">Xcode</a> is installed. Xcode contains all prerequisites required for PcapPlusPlus:</p>
+
+<ol>
+<li>
+<p>gcc/g++ compiler</p>
+</li>
+<li>
+<p>libpcap with all relevant H files</p>
+</li>
+
+
+<h4>
 <a id="configuration-and-compilation" class="anchor" href="#configuration-and-compilation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration and Compilation</h4>
 
 <p><em>On Windows:</em></p>
@@ -209,6 +223,14 @@ such as apt-get:</p>
 <ol>
 <li>run the <strong>configure-linux.sh</strong> script from PcapPlusPlus main directory</li>
 <li>If you'd like to compile it with PF_RING please follow the instructions in the "PF_RING support" section above and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
+<li>Run <strong>make all</strong> from PcapPlusPlus main directory</li>
+<li>This should compile all libraries, unit-tests and examples</li>
+</ol>
+
+<p><em>On Mac OS X:</em></p>
+
+<ol>
+<li>run the <strong>configure-mac_os_x.sh</strong> script from PcapPlusPlus main directory</li>
 <li>Run <strong>make all</strong> from PcapPlusPlus main directory</li>
 <li>This should compile all libraries, unit-tests and examples</li>
 </ol>
@@ -281,7 +303,7 @@ ALL TESTS PASSED<span class="pl-k">!!</span></pre></div>
 <li>
 In order to compile your application with PcapPlusPlus libraries you should use the makefiles under the <strong>mk/</strong> directory. There are 2 makefiles there:
 <ol>
-<li><em>platform.mk</em> - contains mainly platform-dependent variables such as MinGW and WinPcap directory in Windows, binary files extensions (.lib/.exe for Windows, .a/none for Linux), compile utilities names (g++/g++.exe, ar/ar.exe), etc.</li>
+<li><em>platform.mk</em> - contains mainly platform-dependent variables such as MinGW and WinPcap directory in Windows, binary files extensions (.lib/.exe for Windows, .a/none for Linux and Mac OS X), compile utilities names (g++/g++.exe, ar/ar.exe), etc.</li>
 <li><em>PcapPlusPlus.mk</em> - contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:
 <ol>
 <li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
