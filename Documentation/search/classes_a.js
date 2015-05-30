@@ -14,5 +14,10 @@ var searchData=
   ['pointervector',['PointerVector',['../a00049.html',1,'']]],
   ['portfilter',['PortFilter',['../a00050.html',1,'']]],
   ['portrangefilter',['PortRangeFilter',['../a00051.html',1,'']]],
-  ['protofilter',['ProtoFilter',['../a00052.html',1,'']]]
+  ['pppoe_5fheader',['pppoe_header',['../a00052.html',1,'']]],
+  ['pppoediscoverylayer',['PPPoEDiscoveryLayer',['../a00053.html',1,'']]],
+  ['pppoelayer',['PPPoELayer',['../a00054.html',1,'']]],
+  ['pppoesessionlayer',['PPPoESessionLayer',['../a00055.html',1,'']]],
+  ['pppoetag',['PPPoETag',['../a00056.html',1,'PPPoEDiscoveryLayer']]],
+  ['protofilter',['ProtoFilter',['../a00057.html',1,'']]]
 ];

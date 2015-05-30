@@ -1,6 +1,8 @@
 var a00052 =
 [
-    [ "ProtoFilter", "a00052.html#a97f3cc0829f14ecc2bdf0b5ac09a48c0", null ],
-    [ "parseToString", "a00052.html#a3ad51db2e288a437b855fdb22bec0af4", null ],
-    [ "setProto", "a00052.html#a2f37bd21d2182a84aab74d4c47461781", null ]
+    [ "code", "a00052.html#a73a3d18e25024b25907219dc9d68553d", null ],
+    [ "payloadLength", "a00052.html#ad835b1953dd25a4f2f4a44a6be3c5c28", null ],
+    [ "sessionId", "a00052.html#a764afb5590237f2a44e25947a4f12f5b", null ],
+    [ "type", "a00052.html#a1be734b14f34cc71d8ac372316d45ede", null ],
+    [ "version", "a00052.html#a2cc59bed88c3b56fca85bd850613de6d", null ]
 ];

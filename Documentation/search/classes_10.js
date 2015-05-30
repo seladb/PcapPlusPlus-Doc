@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['winpcaplivedevice',['WinPcapLiveDevice',['../a00068.html',1,'']]]
+  ['winpcaplivedevice',['WinPcapLiveDevice',['../a00073.html',1,'']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: vlan_header Struct Reference</title>
+<title>PcapPlusPlus: TcpOptionData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,77 +107,62 @@ $(document).ready(function(){initNavTree('a00065.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00169.html">List of all members</a>  </div>
+<a href="a00175.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vlan_header Struct Reference</div>  </div>
+<div class="title">TcpOptionData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00099_source.html">VlanLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00103_source.html">TcpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a10d8579a58598192a70a71bfd4e8d9ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a10d8579a58598192a70a71bfd4e8d9ae">priority</a>:3</td></tr>
-<tr class="separator:a10d8579a58598192a70a71bfd4e8d9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d82722bad771f3d87368351f17daf6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a02d82722bad771f3d87368351f17daf6">cfi</a>:1</td></tr>
-<tr class="separator:a02d82722bad771f3d87368351f17daf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a22d2e107e474e60ae539e3e4a9d07"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a>:12</td></tr>
-<tr class="separator:a86a22d2e107e474e60ae539e3e4a9d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa97a61cf68c4c74fd553211eaf69c9d0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0">etherType</a></td></tr>
-<tr class="separator:aa97a61cf68c4c74fd553211eaf69c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5c72c8e2292c114b21b458c62c7f4b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#afa5c72c8e2292c114b21b458c62c7f4b">option</a></td></tr>
+<tr class="separator:afa5c72c8e2292c114b21b458c62c7f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6797db1ebbd8aaac0e8d6e736f4dc665"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a6797db1ebbd8aaac0e8d6e736f4dc665">len</a></td></tr>
+<tr class="separator:a6797db1ebbd8aaac0e8d6e736f4dc665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3bf658d6ee18fc19e99e8e3ea24a0e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a4c3bf658d6ee18fc19e99e8e3ea24a0e">value</a> []</td></tr>
+<tr class="separator:a4c3bf658d6ee18fc19e99e8e3ea24a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a VLAN header </p>
+<div class="textblock"><p>Representing a TCP option in a TLV (type-length-value) type </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a02d82722bad771f3d87368351f17daf6"></a>
+<a class="anchor" id="a6797db1ebbd8aaac0e8d6e736f4dc665"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t vlan_header::cfi</td>
+          <td class="memname">uint8_t TcpOptionData::len</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Drop eligible indicator (DEI) - formerly CFI </p>
+<p>TCP option length </p>
 
 </div>
 </div>
-<a class="anchor" id="aa97a61cf68c4c74fd553211eaf69c9d0"></a>
+<a class="anchor" id="afa5c72c8e2292c114b21b458c62c7f4b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t vlan_header::etherType</td>
+          <td class="memname">uint8_t TcpOptionData::option</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Ethernet type for next layer </p>
+<p>TCP option type, should be on of <a class="el" href="a00103.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="a10d8579a58598192a70a71bfd4e8d9ae"></a>
+<a class="anchor" id="a4c3bf658d6ee18fc19e99e8e3ea24a0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t vlan_header::priority</td>
+          <td class="memname">uint8_t TcpOptionData::value[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Priority code point (PCP) </p>
-
-</div>
-</div>
-<a class="anchor" id="a86a22d2e107e474e60ae539e3e4a9d07"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t vlan_header::vlanID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>VLAN ID </p>
+<p>TCP option value </p>
 
 </div>
 </div>
@@ -186,8 +171,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00065.html">vlan_header</a></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00065.html">TcpOptionData</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

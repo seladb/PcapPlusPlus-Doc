@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapFileDevice.h Source File</title>
+<title>PcapPlusPlus: MacAddress.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,111 +104,71 @@ $(document).ready(function(){initNavTree('a00084_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapFileDevice.h</div>  </div>
+<div class="title">MacAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00084.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_FILE_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_FILE_DEVICE</span></div>
+<a href="a00084.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_MACADDRESS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_MACADDRESS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00083.html">PcapDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00023.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00023.html">IPcapFileDevice</a> : <span class="keyword">public</span> <a class="code" href="a00022.html">IPcapDevice</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">char</span>* m_FileName;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="a00023.html">IPcapFileDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00023.html">IPcapFileDevice</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00023.html#aeac5956145508b5f4883dbb688fdbe3b">close</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00023.html#a1fc1dbf53910c72959d967c376f254ce">   31</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00023.html#a1fc1dbf53910c72959d967c376f254ce">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00107.html">std</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00034.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00034.html">MacAddress</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00034.html">MacAddress</a>(uint8_t* addr);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="a00034.html">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00040.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00040.html">PcapFileReaderDevice</a> : <span class="keyword">public</span> <a class="code" href="a00023.html">IPcapFileDevice</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    uint32_t m_NumOfPacketsRead;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    uint32_t m_NumOfPacketsNotParsed;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a00040.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <a class="code" href="a00040.html">PcapFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00040.html">PcapFileReaderDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00040.html">PcapFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00040.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00040.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7">~PcapFileReaderDevice</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00040.html#a5318e4291eb2929233e7e77f9804c1af">getNextPacket</a>(<a class="code" href="a00053.html">RawPacket</a>&amp; rawPacket);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00034.html">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; addr);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00034.html">MacAddress</a>(uint8_t firstOctest, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="a00034.html">MacAddress</a>(<span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; other);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00034.html#a91021f00a460d32cb70c05cf08be8249">   61</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00034.html#a91021f00a460d32cb70c05cf08be8249">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; other)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">if</span> (m_Address[i] != other.m_Address[i])</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00040.html#aedd7cf41e07cd259d49fa6a20455b7f9">open</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00040.html#a831193e30603e66291dfaa9b3ab22b63">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00041.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00041.html">PcapFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="a00023.html">IPcapFileDevice</a></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    pcap_dumper_t* m_PcapDumpHandler;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    uint32_t m_NumOfPacketsWritten;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint32_t m_NumOfPacketsNotWritten;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a00041.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="a00041.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="a00041.html">PcapFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00041.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="a00041.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="a00041.html#a491876c2591081b58313da654a704f8d">~PcapFileWriterDevice</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00041.html#a6263c0850be603c60b8ba057d879a593">writePacket</a>(<a class="code" href="a00053.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00041.html#a472db9de9ac4f9f440f752385c0436e6">writePackets</a>(<span class="keyword">const</span> <a class="code" href="a00049.html">RawPacketVector</a>&amp; packets);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00041.html#a8053b6b8abafd7de893fce117b8d2413">open</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00041.html#a534e2029cb4de050e6a55de39dc9aa9a">close</a>();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00041.html#ac0c2c246a4447cc48ebae8f48f69d81d">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
-<div class="ttc" id="a00023_html"><div class="ttname"><a href="a00023.html">IPcapFileDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:12</div></div>
-<div class="ttc" id="a00040_html_a1bfe14c03e6e4ba01ada0e6b0bb765b7"><div class="ttname"><a href="a00040.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7">PcapFileReaderDevice::~PcapFileReaderDevice</a></div><div class="ttdeci">~PcapFileReaderDevice()</div></div>
-<div class="ttc" id="a00041_html"><div class="ttname"><a href="a00041.html">PcapFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:89</div></div>
-<div class="ttc" id="a00040_html_a831193e30603e66291dfaa9b3ab22b63"><div class="ttname"><a href="a00040.html#a831193e30603e66291dfaa9b3ab22b63">PcapFileReaderDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00041_html_a472db9de9ac4f9f440f752385c0436e6"><div class="ttname"><a href="a00041.html#a472db9de9ac4f9f440f752385c0436e6">PcapFileWriterDevice::writePackets</a></div><div class="ttdeci">bool writePackets(const RawPacketVector &amp;packets)</div></div>
-<div class="ttc" id="a00083_html"><div class="ttname"><a href="a00083.html">PcapDevice.h</a></div></div>
-<div class="ttc" id="a00041_html_a534e2029cb4de050e6a55de39dc9aa9a"><div class="ttname"><a href="a00041.html#a534e2029cb4de050e6a55de39dc9aa9a">PcapFileWriterDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
-<div class="ttc" id="a00041_html_a491876c2591081b58313da654a704f8d"><div class="ttname"><a href="a00041.html#a491876c2591081b58313da654a704f8d">PcapFileWriterDevice::~PcapFileWriterDevice</a></div><div class="ttdeci">~PcapFileWriterDevice()</div></div>
-<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
-<div class="ttc" id="a00040_html"><div class="ttname"><a href="a00040.html">PcapFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:38</div></div>
-<div class="ttc" id="a00041_html_a8053b6b8abafd7de893fce117b8d2413"><div class="ttname"><a href="a00041.html#a8053b6b8abafd7de893fce117b8d2413">PcapFileWriterDevice::open</a></div><div class="ttdeci">virtual bool open()</div></div>
-<div class="ttc" id="a00023_html_aeac5956145508b5f4883dbb688fdbe3b"><div class="ttname"><a href="a00023.html#aeac5956145508b5f4883dbb688fdbe3b">IPcapFileDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
-<div class="ttc" id="a00041_html_ac0c2c246a4447cc48ebae8f48f69d81d"><div class="ttname"><a href="a00041.html#ac0c2c246a4447cc48ebae8f48f69d81d">PcapFileWriterDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00040_html_aedd7cf41e07cd259d49fa6a20455b7f9"><div class="ttname"><a href="a00040.html#aedd7cf41e07cd259d49fa6a20455b7f9">PcapFileReaderDevice::open</a></div><div class="ttdeci">virtual bool open()</div></div>
-<div class="ttc" id="a00040_html_a5318e4291eb2929233e7e77f9804c1af"><div class="ttname"><a href="a00040.html#a5318e4291eb2929233e7e77f9804c1af">PcapFileReaderDevice::getNextPacket</a></div><div class="ttdeci">bool getNextPacket(RawPacket &amp;rawPacket)</div></div>
-<div class="ttc" id="a00023_html_a1fc1dbf53910c72959d967c376f254ce"><div class="ttname"><a href="a00023.html#a1fc1dbf53910c72959d967c376f254ce">IPcapFileDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:31</div></div>
-<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
-<div class="ttc" id="a00041_html_a6263c0850be603c60b8ba057d879a593"><div class="ttname"><a href="a00041.html#a6263c0850be603c60b8ba057d879a593">PcapFileWriterDevice::writePacket</a></div><div class="ttdeci">bool writePacket(RawPacket const &amp;packet)</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00034.html#a0d257e8cb737b04262354b22470ca7fb">   73</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00034.html#a0d257e8cb737b04262354b22470ca7fb">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00034.html">MacAddress</a>&amp; other) {<span class="keywordflow">return</span> !operator==(other);}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="a00034.html#a760327243ffc906fafd8fa93ff8d2223">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00034.html#a760327243ffc906fafd8fa93ff8d2223">isValid</a>() { <span class="keywordflow">return</span> m_IsValid; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">string</span> toString();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t** arr);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> copyTo(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="a00034.html#a21e6f0508b2296b0a68dbfc6f3f58999">  104</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00034.html#a21e6f0508b2296b0a68dbfc6f3f58999">Zero</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    uint8_t m_Address[6];</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> m_IsValid;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_MACADDRESS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00034_html_a760327243ffc906fafd8fa93ff8d2223"><div class="ttname"><a href="a00034.html#a760327243ffc906fafd8fa93ff8d2223">MacAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> MacAddress.h:80</div></div>
+<div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
+<div class="ttc" id="a00034_html_a91021f00a460d32cb70c05cf08be8249"><div class="ttname"><a href="a00034.html#a91021f00a460d32cb70c05cf08be8249">MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:61</div></div>
+<div class="ttc" id="a00034_html_a21e6f0508b2296b0a68dbfc6f3f58999"><div class="ttname"><a href="a00034.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:104</div></div>
+<div class="ttc" id="a00034_html_a0d257e8cb737b04262354b22470ca7fb"><div class="ttname"><a href="a00034.html#a0d257e8cb737b04262354b22470ca7fb">MacAddress::operator!=</a></div><div class="ttdeci">bool operator!=(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:73</div></div>
+<div class="ttc" id="a00107_html"><div class="ttname"><a href="a00107.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00084.html">PcapFileDevice.h</a></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00084.html">MacAddress.h</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

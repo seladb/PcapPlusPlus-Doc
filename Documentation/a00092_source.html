@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PlatformSpecificUtils.h Source File</title>
+<title>PcapPlusPlus: PcapLiveDeviceList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,39 +104,72 @@ $(document).ready(function(){initNavTree('a00092_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PlatformSpecificUtils.h</div>  </div>
+<div class="title">PcapLiveDeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PLATFORM_SPECIFIC_UTILS</span></div>
+<a href="a00092.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LIVE_DEVICE_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_LIVE_DEVICE_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;winbase.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00078.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00091.html">PcapLiveDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00106.html">WinPcapLiveDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00107.html">std</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) Sleep(seconds*1000)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PCAP_SLEEP(seconds) sleep(seconds)</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) CreateDirectory(dir, NULL)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CREATE_DIRECTORY(dir) mkdir(dir, 0777)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PLATFORM_SPECIFIC_UTILS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00043.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00043.html">PcapLiveDeviceList</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    vector&lt;PcapLiveDevice*&gt; m_LiveDeviceList;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>( <span class="keyword">const</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; other );</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; other);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// private d&#39;tor</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="a00043.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00043.html#a8543d3d93e3c5779a72820d38e52cd00">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a>&amp; <a class="code" href="a00043.html#a8543d3d93e3c5779a72820d38e52cd00">getInstance</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00043.html">PcapLiveDeviceList</a> instance;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00043.html#a654046c26d5816f95e82530a6f056451">   45</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> vector&lt;PcapLiveDevice*&gt;&amp; <a class="code" href="a00043.html#a654046c26d5816f95e82530a6f056451">getPcapLiveDevicesList</a>() { <span class="keywordflow">return</span> m_LiveDeviceList; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00021.html">IPAddress</a>* ipAddr);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00026.html">IPv4Address</a> ipAddr);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<a class="code" href="a00030.html">IPv6Address</a> ip6Addr);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByIp(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipAddrAsString);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="a00042.html">PcapLiveDevice</a>* getPcapLiveDeviceByName(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">PcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:59</div></div>
+<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:187</div></div>
+<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:19</div></div>
+<div class="ttc" id="a00043_html_a654046c26d5816f95e82530a6f056451"><div class="ttname"><a href="a00043.html#a654046c26d5816f95e82530a6f056451">PcapLiveDeviceList::getPcapLiveDevicesList</a></div><div class="ttdeci">const vector&lt; PcapLiveDevice * &gt; &amp; getPcapLiveDevicesList()</div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:45</div></div>
+<div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:19</div></div>
+<div class="ttc" id="a00106_html"><div class="ttname"><a href="a00106.html">WinPcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00026_html"><div class="ttname"><a href="a00026.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:88</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00043_html_a8543d3d93e3c5779a72820d38e52cd00"><div class="ttname"><a href="a00043.html#a8543d3d93e3c5779a72820d38e52cd00">PcapLiveDeviceList::getInstance</a></div><div class="ttdeci">static PcapLiveDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:36</div></div>
+<div class="ttc" id="a00107_html"><div class="ttname"><a href="a00107.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>PlatformSpecificUtils.h</b></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00092.html">PcapLiveDeviceList.h</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

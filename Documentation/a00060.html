@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpOptionData Struct Reference</title>
+<title>PcapPlusPlus: SystemCore Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,62 +107,47 @@ $(document).ready(function(){initNavTree('a00060.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00164.html">List of all members</a>  </div>
+<a href="a00170.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TcpOptionData Struct Reference</div>  </div>
+<div class="title">SystemCore Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00097_source.html">TcpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00102_source.html">SystemUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a119a6362e8e50d21980580c6f3a3596d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00097.html#a270f17a3bfa6bd8e991a264dbc1f61f3">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#a119a6362e8e50d21980580c6f3a3596d">option</a></td></tr>
-<tr class="separator:a119a6362e8e50d21980580c6f3a3596d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6797db1ebbd8aaac0e8d6e736f4dc665"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#a6797db1ebbd8aaac0e8d6e736f4dc665">len</a></td></tr>
-<tr class="separator:a6797db1ebbd8aaac0e8d6e736f4dc665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3bf658d6ee18fc19e99e8e3ea24a0e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#a4c3bf658d6ee18fc19e99e8e3ea24a0e">value</a> []</td></tr>
-<tr class="separator:a4c3bf658d6ee18fc19e99e8e3ea24a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#aec2a69cbcd7b7c034c44b731b5882fb4">Mask</a></td></tr>
+<tr class="separator:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a672c4cde277bcdeae49c1519415db6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#a1a672c4cde277bcdeae49c1519415db6">Id</a></td></tr>
+<tr class="separator:a1a672c4cde277bcdeae49c1519415db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Representing a TCP option in a TLV (type-length-value) type </p>
+<div class="textblock"><p>Represents data of 1 CPU core. Current implementation supports up to 32 cores </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6797db1ebbd8aaac0e8d6e736f4dc665"></a>
+<a class="anchor" id="a1a672c4cde277bcdeae49c1519415db6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t TcpOptionData::len</td>
+          <td class="memname">uint8_t SystemCore::Id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TCP option length </p>
+<p>Core ID - a value between 0 and 31 </p>
 
 </div>
 </div>
-<a class="anchor" id="a119a6362e8e50d21980580c6f3a3596d"></a>
+<a class="anchor" id="aec2a69cbcd7b7c034c44b731b5882fb4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00097.html#a270f17a3bfa6bd8e991a264dbc1f61f3">TcpOption</a> TcpOptionData::option</td>
+          <td class="memname">uint32_t SystemCore::Mask</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TCP option type, should be on of <a class="el" href="a00097.html#a270f17a3bfa6bd8e991a264dbc1f61f3">TcpOption</a> </p>
-
-</div>
-</div>
-<a class="anchor" id="a4c3bf658d6ee18fc19e99e8e3ea24a0e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t TcpOptionData::value[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TCP option value </p>
+<p>Core position in a 32-bit mask. For each core this attribute holds a 4B integer where only 1 bit is set, according to the core ID. For example: in core #0 the right-most bit will be set (meaning the number 0x01); in core #5 the 5th right-most bit will be set (meaning the number 0x20)... </p>
 
 </div>
 </div>
@@ -171,8 +156,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00060.html">TcpOptionData</a></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00060.html">SystemCore</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

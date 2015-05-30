@@ -1,6 +1,6 @@
 var a00066 =
 [
-    [ "VlanFilter", "a00066.html#a7ecef64b851197b9ffb29674acdceb53", null ],
-    [ "parseToString", "a00066.html#a0c330a0b88f36dbf29cc54d2f7a63281", null ],
-    [ "setVlanID", "a00066.html#ac28b8810c5fb2a00e194af2a217b2db1", null ]
+    [ "TcpWindowSizeFilter", "a00066.html#acc9357f2e1334c76c3d7f4080dd90565", null ],
+    [ "parseToString", "a00066.html#abbd421e2963e5e63d98220e55bacfc0f", null ],
+    [ "setWindowSize", "a00066.html#a7e660d846be42bbe1c84fe802a9cb1a5", null ]
 ];

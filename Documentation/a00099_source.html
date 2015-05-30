@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: VlanLayer.h Source File</title>
+<title>PcapPlusPlus: PPPoELayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,91 +104,226 @@ $(document).ready(function(){initNavTree('a00099_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">VlanLayer.h</div>  </div>
+<div class="title">PPPoELayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00099.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_VLAN_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_VLAN_LAYER</span></div>
+<a href="a00099.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PPPOE_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PPPOE_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00077.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00071.html">EthLayer.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00065.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00065.html">vlan_header</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">   20</a></span>&#160;    uint16_t <a class="code" href="a00065.html#a10d8579a58598192a70a71bfd4e8d9ae">priority</a>:3,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             <a class="code" href="a00065.html#a02d82722bad771f3d87368351f17daf6">cfi</a>:1,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             <a class="code" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a>:12;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    uint16_t <a class="code" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a>:12,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <a class="code" href="a00065.html#a02d82722bad771f3d87368351f17daf6">cfi</a>:1,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <a class="code" href="a00065.html#a10d8579a58598192a70a71bfd4e8d9ae">priority</a>:3;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0">   31</a></span>&#160;    uint16_t <a class="code" href="a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0">etherType</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00067.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00067.html">VlanLayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00067.html#a22ee2b78d0f211686e2f2d6c739c3ce7">   49</a></span>&#160;    <a class="code" href="a00067.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00094.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="a00067.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a>(<span class="keyword">const</span> uint16_t vlanID, <span class="keywordtype">bool</span> cfi, uint8_t priority, uint16_t etherType);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ~<a class="code" href="a00067.html">VlanLayer</a>() {}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00067.html#a1680bbebefc9c46ed461004273f4423d">   66</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00065.html">vlan_header</a>* <a class="code" href="a00067.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00065.html">vlan_header</a>*)m_Data; }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00067.html#a66c949b1b89d643d494ec5d8b59d1fba">   74</a></span>&#160;    <span class="keyword">inline</span> uint16_t <a class="code" href="a00067.html#a66c949b1b89d643d494ec5d8b59d1fba">getVlanID</a>() { <span class="keywordflow">return</span> <a class="code" href="a00067.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>()-&gt;<a class="code" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a> &gt;&gt; 4;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00067.html#ae4c992425b4519ca14408b848fde17b0">   82</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00067.html#ae4c992425b4519ca14408b848fde17b0">setVlanID</a>(uint16_t <span class="keywordtype">id</span>) { <a class="code" href="a00067.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>()-&gt;<a class="code" href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a> = ((id &lt;&lt; 4) &amp; 0xff0) | (id &gt;&gt; 8); }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00067.html#a0a88c9124f80253715489aeba93562fc">parseNextLayer</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00067.html#ab0c394d2a70fb8ef7a2940119485dd5a">   94</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00067.html#ab0c394d2a70fb8ef7a2940119485dd5a">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00065.html">vlan_header</a>); }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00067.html#aa9a69fc00dd5d19e88b6155a607a7d0f">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00067.html#aa9a69fc00dd5d19e88b6155a607a7d0f">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00067.html#a8022ec0ecee0fca9df1dc2bb01aa703d">toString</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_VLAN_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00067_html_a0a88c9124f80253715489aeba93562fc"><div class="ttname"><a href="a00067.html#a0a88c9124f80253715489aeba93562fc">VlanLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00067_html"><div class="ttname"><a href="a00067.html">VlanLayer</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:40</div></div>
-<div class="ttc" id="a00067_html_ae4c992425b4519ca14408b848fde17b0"><div class="ttname"><a href="a00067.html#ae4c992425b4519ca14408b848fde17b0">VlanLayer::setVlanID</a></div><div class="ttdeci">void setVlanID(uint16_t id)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:82</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00082.html">Layer.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00107.html">std</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00052.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00052.html">pppoe_header</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00052.html#a2cc59bed88c3b56fca85bd850613de6d">   19</a></span>&#160;    uint8_t version:4,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            type:4;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00052.html#a73a3d18e25024b25907219dc9d68553d">   23</a></span>&#160;    uint8_t <a class="code" href="a00052.html#a73a3d18e25024b25907219dc9d68553d">code</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    uint16_t version:4,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            type:4,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            code:8;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00052.html#a764afb5590237f2a44e25947a4f12f5b">   33</a></span>&#160;    uint16_t <a class="code" href="a00052.html#a764afb5590237f2a44e25947a4f12f5b">sessionId</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00052.html#ad835b1953dd25a4f2f4a44a6be3c5c28">   35</a></span>&#160;    uint16_t <a class="code" href="a00052.html#ad835b1953dd25a4f2f4a44a6be3c5c28">payloadLength</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00054.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00054.html">PPPoELayer</a> : <span class="keyword">public</span> <a class="code" href="a00032.html">Layer</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665c">   51</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoECode</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b">   54</a></span>&#160;        PPPOE_CODE_SESSION  = 0x00,</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603">   56</a></span>&#160;        PPPOE_CODE_PADO     = 0x07,</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0">   58</a></span>&#160;        PPPOE_CODE_PADI     = 0x09,</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e">   60</a></span>&#160;        PPPOE_CODE_PADG     = 0x0a,</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622">   62</a></span>&#160;        PPPOE_CODE_PADC     = 0x0b,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13">   64</a></span>&#160;        PPPOE_CODE_PADQ     = 0x0c,</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1">   66</a></span>&#160;        PPPOE_CODE_PADR     = 0x19,</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e">   68</a></span>&#160;        PPPOE_CODE_PADS     = 0x65,</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613">   70</a></span>&#160;        PPPOE_CODE_PADT     = 0xa7,</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5">   72</a></span>&#160;        PPPOE_CODE_PADM     = 0xd3,</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00054.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72">   74</a></span>&#160;        PPPOE_CODE_PADN     = 0xd4</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="a00054.html">PPPoELayer</a>() {}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00054.html#a1bb3dc226576957fb7f8d46529ac1cbf">   83</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00052.html">pppoe_header</a>* <a class="code" href="a00054.html#a1bb3dc226576957fb7f8d46529ac1cbf">getPPPoEHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00052.html">pppoe_header</a>*)m_Data; };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// abstract methods implementation</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeCalculateFields();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// protected c&#39;tor as this class shouldn&#39;t be instantiated</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="a00054.html">PPPoELayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00032.html">Layer</a>(data, dataLen, prevLayer, packet) { }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// protected c&#39;tor as this class shouldn&#39;t be instantiated</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="a00054.html">PPPoELayer</a>(uint8_t version, uint8_t type, <a class="code" href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a> code, uint16_t sessionId);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="a00055.html">  107</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00055.html">PPPoESessionLayer</a> : <span class="keyword">public</span> <a class="code" href="a00054.html">PPPoELayer</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="a00055.html#a7175a1071d860b1c164c05acb4c5c19e">  118</a></span>&#160;    <a class="code" href="a00055.html#a7175a1071d860b1c164c05acb4c5c19e">PPPoESessionLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00054.html">PPPoELayer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a5f768ac996a2687990d2a7afae050e5f">PPPoESession</a>; }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a00055.html#a65e8fa59a5550fa403d1d7626b7a62bd">  126</a></span>&#160;    <a class="code" href="a00055.html#a65e8fa59a5550fa403d1d7626b7a62bd">PPPoESessionLayer</a>(uint8_t version, uint8_t type, uint16_t sessionId) : <a class="code" href="a00054.html">PPPoELayer</a>(version, type, <a class="code" href="a00054.html">PPPoELayer</a>::PPPOE_CODE_SESSION, sessionId) {}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00055.html">PPPoESessionLayer</a>() {}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// abstract methods implementation</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> parseNextLayer();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="a00055.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed">  140</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="a00055.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00052.html">pppoe_header</a>); }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="a00055.html#add0aec7c81ba860d46c07d632e25b5cc">  142</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00055.html#add0aec7c81ba860d46c07d632e25b5cc">toString</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PPP-over-Ethernet Session&quot;</span>; }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00053.html">  151</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00053.html">PPPoEDiscoveryLayer</a> : <span class="keyword">public</span> <a class="code" href="a00054.html">PPPoELayer</a></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278">  157</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278aed65db1b25dc8c80eae59d68d9abd178">  160</a></span>&#160;        PPPOE_TAG_EOL        = 0x0000,</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a569fcff2188699328386791bf4b5509d">  162</a></span>&#160;        PPPOE_TAG_SVC_NAME   = 0x0101,</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a9da575b312dc38e1967ba1a596d28d05">  164</a></span>&#160;        PPPOE_TAG_AC_NAME    = 0x0102,</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a9a81710f4f46a15097bf729b56bd0c7d">  166</a></span>&#160;        PPPOE_TAG_HOST_UNIQ  = 0x0103,</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278ad2de0d18c3b8758af2ae8efb24529095">  168</a></span>&#160;        PPPOE_TAG_AC_COOKIE  = 0x0104,</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278abcc97b3f20fcd3dfd1361394a44701e8">  170</a></span>&#160;        PPPOE_TAG_VENDOR     = 0x0105,</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278ab5d217b999f04d47651dcf012e94671b">  172</a></span>&#160;        PPPOE_TAG_CREDITS    = 0x0106,</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278ac53f16d29ad1afd786ee5b354def5014">  174</a></span>&#160;        PPPOE_TAG_METRICS    = 0x0107,</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278abcf7e367208c8cae974709fbb9f1ef2d">  176</a></span>&#160;        PPPOE_TAG_SEQ_NUM    = 0x0108,</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278aa2627d80cf4a6203293bab6c57d8ba11">  178</a></span>&#160;        PPPOE_TAG_CRED_SCALE = 0x0109,</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a4bb1c234eba8c9c575554a22fed65432">  180</a></span>&#160;        PPPOE_TAG_RELAY_ID   = 0x0110,</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278ae2aa5607be3a08808fcad95b3675d0fd">  182</a></span>&#160;        PPPOE_TAG_HURL       = 0x0111,</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a76024ee535b70fb30a06eb725da473d8">  184</a></span>&#160;        PPPOE_TAG_MOTM       = 0x0112,</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278aac77ca5c5b963171caa66ab8dc2573e2">  186</a></span>&#160;        PPPOE_TAG_MAX_PAYLD  = 0x0120,</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278ab4a1f85d634dcd9671a1a183e1d84744">  188</a></span>&#160;        PPPOE_TAG_IP_RT_ADD  = 0x0121,</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278aeda60dc2df04d46cc2af56955b927331">  190</a></span>&#160;        PPPOE_TAG_SVC_ERR    = 0x0201,</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a6ca74d10add715e2cfe29ead1a9f9f80">  192</a></span>&#160;        PPPOE_TAG_AC_ERR     = 0x0202,</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="a00053.html#ac9403a67f69c7217b71061a233707278a37b9a810e8f22d879728e5f19f1636df">  194</a></span>&#160;        PPPOE_TAG_GENERIC_ERR= 0x0203</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    };</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="a00056.html">  201</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00056.html">PPPoETag</a></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="a00056.html#ab93bf7aa2f1c8f49ab49f203c19462ef">  206</a></span>&#160;        uint16_t <a class="code" href="a00056.html#ab93bf7aa2f1c8f49ab49f203c19462ef">tagType</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="a00056.html#aa5b5e45947fd0cfb479d71ca3770d0ef">  208</a></span>&#160;        uint16_t <a class="code" href="a00056.html#aa5b5e45947fd0cfb479d71ca3770d0ef">tagDataLength</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="a00056.html#a45ff759b7e528baccc51c4eaf6d6ba6c">  210</a></span>&#160;        uint8_t  tagData[];</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="a00056.html#a0c029c9f917e1bd1e75f89bc68b8df98">  222</a></span>&#160;        T <a class="code" href="a00056.html#a0c029c9f917e1bd1e75f89bc68b8df98">getTagDataAs</a>(<span class="keywordtype">int</span> tagDataOffset = 0)</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            T result;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            memcpy(&amp;result, tagData+tagDataOffset, <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="a00056.html#a102ac176ee5f4feb1516fe1af3a5933e">  238</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00056.html#a102ac176ee5f4feb1516fe1af3a5933e">setTagData</a>(T value, <span class="keywordtype">int</span> tagDataOffset = 0)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            memcpy(tagData+tagDataOffset, &amp;value, <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordtype">size_t</span> getTagTotalSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> getType();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="comment">// private c&#39;tor which isn&#39;t implemented to make this struct impossible to construct</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="a00056.html">PPPoETag</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    };</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="a00053.html#a758e5e06207c3a674b54be69e80c30f4">  264</a></span>&#160;    <a class="code" href="a00053.html#a758e5e06207c3a674b54be69e80c30f4">PPPoEDiscoveryLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00032.html">Layer</a>* prevLayer, <a class="code" href="a00038.html">Packet</a>* packet) : <a class="code" href="a00054.html">PPPoELayer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf">PPPoEDiscovery</a>; m_TagCount = -1; }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9">  273</a></span>&#160;    <a class="code" href="a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9">PPPoEDiscoveryLayer</a>(uint8_t version, uint8_t type, <a class="code" href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a> code, uint16_t sessionId) : <a class="code" href="a00054.html">PPPoELayer</a>(version, type, code, sessionId) { m_Protocol = <a class="code" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf">PPPoEDiscovery</a>; m_TagCount = -1; }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    PPPoETag* getTag(<a class="code" href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> tagType);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    PPPoETag* getFirstTag();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    PPPoETag* getNextTag(PPPoETag* tag);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">int</span> getTagCount();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    PPPoETag* addTag(PPPoETagTypes tagType, uint16_t tagLength, <span class="keyword">const</span> uint8_t* tagData);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    PPPoETag* addTagAfter(PPPoETagTypes tagType, uint16_t tagLength, <span class="keyword">const</span> uint8_t* tagData, PPPoETag* prevTag);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> removeTag(<a class="code" href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> tagType);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">bool</span> removeAllTags();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">// abstract methods implementation</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="a00053.html#a64762d167aea9837b261c9e785a8b60a">  344</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00053.html#a64762d167aea9837b261c9e785a8b60a">parseNextLayer</a>() {};</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> getHeaderLen();</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="a00053.html#ae7ac3ebad2bdff3dd65e7c1812658869">  351</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00053.html#ae7ac3ebad2bdff3dd65e7c1812658869">toString</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PPP-over-Ethernet Discovery (&quot;</span> + codeToString((<a class="code" href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a>)getPPPoEHeader()-&gt;code) + <span class="stringliteral">&quot;)&quot;</span>; }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordtype">int</span> m_TagCount;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    PPPoETag* addTagAt(PPPoETagTypes tagType, uint16_t tagLength, <span class="keyword">const</span> uint8_t* tagData, <span class="keywordtype">int</span> offset);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    PPPoETag* castPtrToPPPoETag(uint8_t* ptr);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    std::string codeToString(PPPoECode code);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;};</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PPPOE_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00052_html_ad835b1953dd25a4f2f4a44a6be3c5c28"><div class="ttname"><a href="a00052.html#ad835b1953dd25a4f2f4a44a6be3c5c28">pppoe_header::payloadLength</a></div><div class="ttdeci">uint16_t payloadLength</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:35</div></div>
+<div class="ttc" id="a00053_html_a64762d167aea9837b261c9e785a8b60a"><div class="ttname"><a href="a00053.html#a64762d167aea9837b261c9e785a8b60a">PPPoEDiscoveryLayer::parseNextLayer</a></div><div class="ttdeci">virtual void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:344</div></div>
+<div class="ttc" id="a00056_html"><div class="ttname"><a href="a00056.html">PPPoEDiscoveryLayer::PPPoETag</a></div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:201</div></div>
+<div class="ttc" id="a00056_html_a102ac176ee5f4feb1516fe1af3a5933e"><div class="ttname"><a href="a00056.html#a102ac176ee5f4feb1516fe1af3a5933e">PPPoEDiscoveryLayer::PPPoETag::setTagData</a></div><div class="ttdeci">void setTagData(T value, int tagDataOffset=0)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:238</div></div>
+<div class="ttc" id="a00055_html_add0aec7c81ba860d46c07d632e25b5cc"><div class="ttname"><a href="a00055.html#add0aec7c81ba860d46c07d632e25b5cc">PPPoESessionLayer::toString</a></div><div class="ttdeci">virtual std::string toString()</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:142</div></div>
+<div class="ttc" id="a00053_html_ae7ac3ebad2bdff3dd65e7c1812658869"><div class="ttname"><a href="a00053.html#ae7ac3ebad2bdff3dd65e7c1812658869">PPPoEDiscoveryLayer::toString</a></div><div class="ttdeci">virtual std::string toString()</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:351</div></div>
+<div class="ttc" id="a00055_html_a7175a1071d860b1c164c05acb4c5c19e"><div class="ttname"><a href="a00055.html#a7175a1071d860b1c164c05acb4c5c19e">PPPoESessionLayer::PPPoESessionLayer</a></div><div class="ttdeci">PPPoESessionLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:118</div></div>
+<div class="ttc" id="a00052_html_a73a3d18e25024b25907219dc9d68553d"><div class="ttname"><a href="a00052.html#a73a3d18e25024b25907219dc9d68553d">pppoe_header::code</a></div><div class="ttdeci">uint8_t code</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:23</div></div>
+<div class="ttc" id="a00055_html"><div class="ttname"><a href="a00055.html">PPPoESessionLayer</a></div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:107</div></div>
+<div class="ttc" id="a00054_html_a1bb3dc226576957fb7f8d46529ac1cbf"><div class="ttname"><a href="a00054.html#a1bb3dc226576957fb7f8d46529ac1cbf">PPPoELayer::getPPPoEHeader</a></div><div class="ttdeci">pppoe_header * getPPPoEHeader()</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:83</div></div>
+<div class="ttc" id="a00082_html"><div class="ttname"><a href="a00082.html">Layer.h</a></div></div>
+<div class="ttc" id="a00056_html_ab93bf7aa2f1c8f49ab49f203c19462ef"><div class="ttname"><a href="a00056.html#ab93bf7aa2f1c8f49ab49f203c19462ef">PPPoEDiscoveryLayer::PPPoETag::tagType</a></div><div class="ttdeci">uint16_t tagType</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:206</div></div>
 <div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00094_html_a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704"><div class="ttname"><a href="a00094.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:69</div></div>
-<div class="ttc" id="a00067_html_a66c949b1b89d643d494ec5d8b59d1fba"><div class="ttname"><a href="a00067.html#a66c949b1b89d643d494ec5d8b59d1fba">VlanLayer::getVlanID</a></div><div class="ttdeci">uint16_t getVlanID()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:74</div></div>
+<div class="ttc" id="a00053_html_ac9403a67f69c7217b71061a233707278"><div class="ttname"><a href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a></div><div class="ttdeci">PPPoETagTypes</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:157</div></div>
+<div class="ttc" id="a00053_html_a758e5e06207c3a674b54be69e80c30f4"><div class="ttname"><a href="a00053.html#a758e5e06207c3a674b54be69e80c30f4">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer</a></div><div class="ttdeci">PPPoEDiscoveryLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:264</div></div>
+<div class="ttc" id="a00053_html_aed21c1bd24fcb363a47c9f6f5843e6c9"><div class="ttname"><a href="a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer</a></div><div class="ttdeci">PPPoEDiscoveryLayer(uint8_t version, uint8_t type, PPPoELayer::PPPoECode code, uint16_t sessionId)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:273</div></div>
 <div class="ttc" id="a00032_html"><div class="ttname"><a href="a00032.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00065_html_aa97a61cf68c4c74fd553211eaf69c9d0"><div class="ttname"><a href="a00065.html#aa97a61cf68c4c74fd553211eaf69c9d0">vlan_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:31</div></div>
-<div class="ttc" id="a00067_html_a1680bbebefc9c46ed461004273f4423d"><div class="ttname"><a href="a00067.html#a1680bbebefc9c46ed461004273f4423d">VlanLayer::getVlanHeader</a></div><div class="ttdeci">vlan_header * getVlanHeader()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:66</div></div>
-<div class="ttc" id="a00065_html_a86a22d2e107e474e60ae539e3e4a9d07"><div class="ttname"><a href="a00065.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a></div><div class="ttdeci">uint16_t vlanID</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
-<div class="ttc" id="a00067_html_a8022ec0ecee0fca9df1dc2bb01aa703d"><div class="ttname"><a href="a00067.html#a8022ec0ecee0fca9df1dc2bb01aa703d">VlanLayer::toString</a></div><div class="ttdeci">string toString()</div></div>
-<div class="ttc" id="a00067_html_aa9a69fc00dd5d19e88b6155a607a7d0f"><div class="ttname"><a href="a00067.html#aa9a69fc00dd5d19e88b6155a607a7d0f">VlanLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:99</div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">Layer.h</a></div></div>
-<div class="ttc" id="a00065_html"><div class="ttname"><a href="a00065.html">vlan_header</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:17</div></div>
-<div class="ttc" id="a00067_html_a22ee2b78d0f211686e2f2d6c739c3ce7"><div class="ttname"><a href="a00067.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer::VlanLayer</a></div><div class="ttdeci">VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:49</div></div>
-<div class="ttc" id="a00065_html_a02d82722bad771f3d87368351f17daf6"><div class="ttname"><a href="a00065.html#a02d82722bad771f3d87368351f17daf6">vlan_header::cfi</a></div><div class="ttdeci">uint16_t cfi</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
-<div class="ttc" id="a00067_html_ab0c394d2a70fb8ef7a2940119485dd5a"><div class="ttname"><a href="a00067.html#ab0c394d2a70fb8ef7a2940119485dd5a">VlanLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:94</div></div>
-<div class="ttc" id="a00071_html"><div class="ttname"><a href="a00071.html">EthLayer.h</a></div></div>
-<div class="ttc" id="a00065_html_a10d8579a58598192a70a71bfd4e8d9ae"><div class="ttname"><a href="a00065.html#a10d8579a58598192a70a71bfd4e8d9ae">vlan_header::priority</a></div><div class="ttdeci">uint16_t priority</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
+<div class="ttc" id="a00055_html_a65e8fa59a5550fa403d1d7626b7a62bd"><div class="ttname"><a href="a00055.html#a65e8fa59a5550fa403d1d7626b7a62bd">PPPoESessionLayer::PPPoESessionLayer</a></div><div class="ttdeci">PPPoESessionLayer(uint8_t version, uint8_t type, uint16_t sessionId)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:126</div></div>
+<div class="ttc" id="a00100_html_a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf"><div class="ttname"><a href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf">PPPoEDiscovery</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:84</div></div>
+<div class="ttc" id="a00054_html"><div class="ttname"><a href="a00054.html">PPPoELayer</a></div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:45</div></div>
+<div class="ttc" id="a00100_html_a2b99fb4e4914a533566284f2ed3b0186a5f768ac996a2687990d2a7afae050e5f"><div class="ttname"><a href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a5f768ac996a2687990d2a7afae050e5f">PPPoESession</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:79</div></div>
+<div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">pppoe_header</a></div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:16</div></div>
+<div class="ttc" id="a00056_html_a0c029c9f917e1bd1e75f89bc68b8df98"><div class="ttname"><a href="a00056.html#a0c029c9f917e1bd1e75f89bc68b8df98">PPPoEDiscoveryLayer::PPPoETag::getTagDataAs</a></div><div class="ttdeci">T getTagDataAs(int tagDataOffset=0)</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:222</div></div>
+<div class="ttc" id="a00055_html_aa0a8cf90346c66fa6e7f1d1f10cec0ed"><div class="ttname"><a href="a00055.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed">PPPoESessionLayer::getHeaderLen</a></div><div class="ttdeci">virtual size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:140</div></div>
+<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">PPPoEDiscoveryLayer</a></div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:151</div></div>
+<div class="ttc" id="a00052_html_a764afb5590237f2a44e25947a4f12f5b"><div class="ttname"><a href="a00052.html#a764afb5590237f2a44e25947a4f12f5b">pppoe_header::sessionId</a></div><div class="ttdeci">uint16_t sessionId</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:33</div></div>
+<div class="ttc" id="a00056_html_aa5b5e45947fd0cfb479d71ca3770d0ef"><div class="ttname"><a href="a00056.html#aa5b5e45947fd0cfb479d71ca3770d0ef">PPPoEDiscoveryLayer::PPPoETag::tagDataLength</a></div><div class="ttdeci">uint16_t tagDataLength</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:208</div></div>
+<div class="ttc" id="a00054_html_a175179c8c3448839deccd3262a58665c"><div class="ttname"><a href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a></div><div class="ttdeci">PPPoECode</div><div class="ttdef"><b>Definition:</b> PPPoELayer.h:51</div></div>
+<div class="ttc" id="a00107_html"><div class="ttname"><a href="a00107.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00099.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00099.html">PPPoELayer.h</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

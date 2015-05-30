@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpFlagsFilter Class Reference</title>
+<title>PcapPlusPlus: ProtoFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,115 +106,41 @@ $(document).ready(function(){initNavTree('a00057.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00161.html">List of all members</a>  </div>
+<a href="a00167.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TcpFlagsFilter Class Reference</div>  </div>
+<div class="title">ProtoFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00085_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00090_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for TcpFlagsFilter:</div>
+Inheritance diagram for ProtoFilter:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00057.png" usemap="#TcpFlagsFilter_map" alt=""/>
-  <map id="TcpFlagsFilter_map" name="TcpFlagsFilter_map">
-<area href="a00009.html" alt="GeneralFilter" shape="rect" coords="0,0,93,24"/>
+  <img src="a00057.png" usemap="#ProtoFilter_map" alt=""/>
+  <map id="ProtoFilter_map" name="ProtoFilter_map">
+<area href="a00009.html" alt="GeneralFilter" shape="rect" coords="0,0,86,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a01b4d3bbd12609b796f887f77420fcf3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3">TcpFlags</a> { <br />
-&#160;&#160;<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a77fd7860b968c29b8f03e6da10403872">tcpFin</a> = 1, 
-<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">tcpSyn</a> = 2, 
-<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a22d79462088c6a24ea8a6904f5ad7a0c">tcpRst</a> = 4, 
-<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a26830d909b59f2fd4714fc8e201e7fd0">tcpPush</a> = 8, 
-<br />
-&#160;&#160;<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">tcpAck</a> = 16, 
-<a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">tcpUrg</a> = 32
-<br />
- }</td></tr>
-<tr class="separator:a01b4d3bbd12609b796f887f77420fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e61ffa184b83c8f33196cd1166223c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> { <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">MatchAll</a>, 
-<a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">MatchOneAtLeast</a>
- }</td></tr>
-<tr class="separator:ac6e61ffa184b83c8f33196cd1166223c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5d459bb1d81d63b13795015648f4868"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#ac5d459bb1d81d63b13795015648f4868">TcpFlagsFilter</a> (uint8_t tcpFlagBitMask, <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> matchOption)</td></tr>
-<tr class="separator:ac5d459bb1d81d63b13795015648f4868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c873bdd1989417b62bf7178fe518a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a33c873bdd1989417b62bf7178fe518a8">setTcpFlagsBitMask</a> (uint8_t tcpFlagBitMask, <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> matchOption)</td></tr>
-<tr class="separator:a33c873bdd1989417b62bf7178fe518a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52939384947878c77388490878db44ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a52939384947878c77388490878db44ba">parseToString</a> (string &amp;result)</td></tr>
-<tr class="separator:a52939384947878c77388490878db44ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f3cc0829f14ecc2bdf0b5ac09a48c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a97f3cc0829f14ecc2bdf0b5ac09a48c0">ProtoFilter</a> (<a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> proto)</td></tr>
+<tr class="separator:a97f3cc0829f14ecc2bdf0b5ac09a48c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad51db2e288a437b855fdb22bec0af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a3ad51db2e288a437b855fdb22bec0af4">parseToString</a> (string &amp;result)</td></tr>
+<tr class="separator:a3ad51db2e288a437b855fdb22bec0af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f37bd21d2182a84aab74d4c47461781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a2f37bd21d2182a84aab74d4c47461781">setProto</a> (<a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> proto)</td></tr>
+<tr class="separator:a2f37bd21d2182a84aab74d4c47461781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_a00009"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00009')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00009.html">GeneralFilter</a></td></tr>
 <tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00009"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
 <tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering only TCP packets which certain TCP flags are set in them <br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00085.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">TcpFlagsFilter::MatchOptions</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for representing 2 type of matches: match only packets that contain all flags defined in the filter or match packets that contain at least one of the flags defined in the filter </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69"></a>MatchAll&#160;</td><td class="fielddoc">
-<p>Match only packets that contain all flags defined in the filter </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520"></a>MatchOneAtLeast&#160;</td><td class="fielddoc">
-<p>Match packets that contain at least one of the flags defined in the filter </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3">TcpFlagsFilter::TcpFlags</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum of all TCP flags that can be use in the filter </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a77fd7860b968c29b8f03e6da10403872"></a>tcpFin&#160;</td><td class="fielddoc">
-<p>TCP FIN flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a"></a>tcpSyn&#160;</td><td class="fielddoc">
-<p>TCP SYN flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a22d79462088c6a24ea8a6904f5ad7a0c"></a>tcpRst&#160;</td><td class="fielddoc">
-<p>TCP RST flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a26830d909b59f2fd4714fc8e201e7fd0"></a>tcpPush&#160;</td><td class="fielddoc">
-<p>TCP PSH flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6"></a>tcpAck&#160;</td><td class="fielddoc">
-<p>TCP ACK flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695"></a>tcpUrg&#160;</td><td class="fielddoc">
-<p>TCP URG flag </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac5d459bb1d81d63b13795015648f4868"></a>
+<div class="textblock"><p>A class for filtering traffic by protocol. Notice not all protocols are supported, only the following are supported: <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186aa040cd7feeb588104634cdadf35abf1c">TCP</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a90f471bb91043604b88253b494eb971c">ICMP</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186ac7ecb5234abd540dcc2ac0c8d37e12a5">IPv4</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186aee0722baf12a9db075fb08d0734710a6">IPv6</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a>, <a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a>. <br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00090.html">PcapFilter.h</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a97f3cc0829f14ecc2bdf0b5ac09a48c0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,21 +148,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TcpFlagsFilter::TcpFlagsFilter </td>
+          <td class="memname">ProtoFilter::ProtoFilter </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tcpFlagBitMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>proto</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a>&#160;</td>
-          <td class="paramname"><em>matchOption</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -245,10 +161,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that gets a 1-byte bitmask containing all TCP flags participating in the filter and the match option, and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that gets the protocol and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpFlagBitMask</td><td>A 1-byte bitmask containing all TCP flags participating in the filter. This parameter can contain the following value for example: <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">TcpFlagsFilter::tcpSyn</a> | <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">TcpFlagsFilter::tcpAck</a> | <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">TcpFlagsFilter::tcpUrg</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matchOption</td><td>The match option: <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">TcpFlagsFilter::MatchAll</a> or <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">TcpFlagsFilter::MatchOneAtLeast</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">proto</td><td>The protocol to filter, only packets matching this protocol will be received. Please note not all protocols are supported. List of supported protocols is found in the class description </td></tr>
   </table>
   </dd>
 </dl>
@@ -256,7 +171,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a52939384947878c77388490878db44ba"></a>
+<a class="anchor" id="a3ad51db2e288a437b855fdb22bec0af4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -264,7 +179,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TcpFlagsFilter::parseToString </td>
+          <td class="memname">void ProtoFilter::parseToString </td>
           <td>(</td>
           <td class="paramtype">string &amp;&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
@@ -288,7 +203,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a33c873bdd1989417b62bf7178fe518a8"></a>
+<a class="anchor" id="a2f37bd21d2182a84aab74d4c47461781"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -296,21 +211,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TcpFlagsFilter::setTcpFlagsBitMask </td>
+          <td class="memname">void ProtoFilter::setProto </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tcpFlagBitMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00100.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>proto</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a>&#160;</td>
-          <td class="paramname"><em>matchOption</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -319,10 +224,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the TCP flags and the match option </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the protocol to filter with </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpFlagBitMask</td><td>A 1-byte bitmask containing all TCP flags participating in the filter. This parameter can contain the following value for example: <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">TcpFlagsFilter::tcpSyn</a> | <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">TcpFlagsFilter::tcpAck</a> | <a class="el" href="a00057.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">TcpFlagsFilter::tcpUrg</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matchOption</td><td>The match option: <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">TcpFlagsFilter::MatchAll</a> or <a class="el" href="a00057.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">TcpFlagsFilter::MatchOneAtLeast</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">proto</td><td>The protocol to filter, only packets matching this protocol will be received. Please note not all protocols are supported. List of supported protocols is found in the class description </td></tr>
   </table>
   </dd>
 </dl>
@@ -334,8 +238,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00057.html">TcpFlagsFilter</a></li>
-    <li class="footer">Generated on Sat May 2 2015 00:18:53 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00057.html">ProtoFilter</a></li>
+    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
