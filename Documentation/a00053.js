@@ -23,6 +23,7 @@ var a00053 =
     ] ],
     [ "PPPoEDiscoveryLayer", "a00053.html#a758e5e06207c3a674b54be69e80c30f4", null ],
     [ "PPPoEDiscoveryLayer", "a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9", null ],
+    [ "PPPoEDiscoveryLayer", "a00053.html#aad387d8a92f00bfaf948d46cfca612d5", null ],
     [ "addTag", "a00053.html#a5c86eb4350d7fa161d58e7f4f3d6521d", null ],
     [ "addTagAfter", "a00053.html#afbf207f78a0cf2c4fe642e352654ebd4", null ],
     [ "getFirstTag", "a00053.html#a8e7f5689966edb568cc52e60230d70ab", null ],

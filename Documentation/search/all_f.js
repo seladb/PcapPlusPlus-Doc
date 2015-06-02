@@ -28,6 +28,7 @@ var searchData=
   ['setopcode',['setOpCode',['../a00002.html#abb82dbe987203612ded988d8c6ec3222',1,'ArpFilter']]],
   ['setoperator',['setOperator',['../a00019.html#a6e27cbccbfa49a086067613fc7ad75fd',1,'IFilterWithOperator']]],
   ['setport',['setPort',['../a00050.html#a05281979a71c8ae1b6b28c7cf0daaaaf',1,'PortFilter']]],
+  ['setpppnextprotocol',['setPPPNextProtocol',['../a00055.html#a2c1adc1dcaf0e7933e5658223e6999a5',1,'PPPoESessionLayer']]],
   ['setproto',['setProto',['../a00057.html#a2f37bd21d2182a84aab74d4c47461781',1,'ProtoFilter']]],
   ['setrawdata',['setRawData',['../a00058.html#a18d8bdff6a85df11b08c24f7aa4fb498',1,'RawPacket']]],
   ['setsouremac',['setSoureMac',['../a00008.html#accfedc24eda9b3b4b468ed6a2b220ce2',1,'EthLayer']]],

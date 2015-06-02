@@ -167,7 +167,7 @@ template&lt;typename T &gt; </div>
 <p>A templated method to retrieve the tag data as a certain type T. For example, if tag data is 4B (integer) then this method should be used as <a class="el" href="a00056.html#a0c029c9f917e1bd1e75f89bc68b8df98">getTagDataAs&lt;int&gt;()</a> and it will return the tag data as integer.<br />
  Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tagDataOffset</td><td>An optional parameter that specifies where to start copy the tag data. For example: if tag data is 20 bytes and you need only the 4 last bytes as integer then use this method like this: getTagDataAs&lt;int&gt;(16). The default is 0 - start copy from the beginning of tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagDataOffset</td><td>An optional parameter that specifies where to start copy the tag data. For example: if tag data is 20 bytes and you need only the 4 last bytes as integer then use this method like this: getTagDataAs&lt;int&gt;(16). The default is 0 - start copy from the beginning of tag data </td></tr>
   </table>
   </dd>
 </dl>
@@ -242,8 +242,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>A templated method to copy data of type T into the tag data. For example: if tag data is 4[Bytes] long use this method like this to set an integer "num" into tag data: setTagData&lt;int&gt;(num) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value of type T to copy to tag data </td></tr>
-    <tr><td class="paramname">tagDataOffset</td><td>An optional parameter that specifies where to start set the tag data. For example: if tag data is 20 bytes and you only need to set the 4 last bytes as integer then use this method like this: setTagDataAs&lt;int&gt;(num, 16). The default is 0 - start copy to the beginning of tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value of type T to copy to tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagDataOffset</td><td>An optional parameter that specifies where to start set the tag data. For example: if tag data is 20 bytes and you only need to set the 4 last bytes as integer then use this method like this: setTagDataAs&lt;int&gt;(num, 16). The default is 0 - start copy to the beginning of tag data </td></tr>
   </table>
   </dd>
 </dl>
@@ -296,7 +296,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00053.html">PPPoEDiscoveryLayer</a></li><li class="navelem"><a class="el" href="a00056.html">PPPoETag</a></li>
-    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

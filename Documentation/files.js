@@ -50,13 +50,7 @@ var files =
     [ "PointerVector.h", "a00098.html", [
       [ "PointerVector", "a00049.html", "a00049" ]
     ] ],
-    [ "PPPoELayer.h", "a00099.html", [
-      [ "pppoe_header", "a00052.html", "a00052" ],
-      [ "PPPoELayer", "a00054.html", "a00054" ],
-      [ "PPPoESessionLayer", "a00055.html", "a00055" ],
-      [ "PPPoEDiscoveryLayer", "a00053.html", "a00053" ],
-      [ "PPPoETag", "a00056.html", "a00056" ]
-    ] ],
+    [ "PPPoELayer.h", "a00099.html", "a00099" ],
     [ "ProtocolType.h", "a00100.html", "a00100" ],
     [ "RawPacket.h", "a00101.html", "a00101" ],
     [ "SystemUtils.h", "a00102.html", "a00102" ],

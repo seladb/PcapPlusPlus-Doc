@@ -59,6 +59,7 @@ var searchData=
   ['getpfringdevicebyname',['getPfRingDeviceByName',['../a00048.html#a537a595b1e88c0e0812538073c7e9186',1,'PfRingDeviceList']]],
   ['getpfringdeviceslist',['getPfRingDevicesList',['../a00048.html#a8f39642efdb9d3a37cb38dd6ccffc4d9',1,'PfRingDeviceList']]],
   ['getpfringversion',['getPfRingVersion',['../a00048.html#a1e13133fb1bed38754cf5bb93d5b4830',1,'PfRingDeviceList']]],
+  ['getpppnextprotocol',['getPPPNextProtocol',['../a00055.html#a4552971f704480424bc4bc7368f16fda',1,'PPPoESessionLayer']]],
   ['getpppoeheader',['getPPPoEHeader',['../a00054.html#a1bb3dc226576957fb7f8d46529ac1cbf',1,'PPPoELayer']]],
   ['getprevlayer',['getPrevLayer',['../a00032.html#a1c207e783516ded3e4015d301d2811b5',1,'Layer']]],
   ['getprotocol',['getProtocol',['../a00032.html#a73eba746fd77cb88a2fb729d2698fca6',1,'Layer']]],

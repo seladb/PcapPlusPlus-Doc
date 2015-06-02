@@ -185,6 +185,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a758e5e06207c3a674b54be69e80c30f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed21c1bd24fcb363a47c9f6f5843e6c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9">PPPoEDiscoveryLayer</a> (uint8_t version, uint8_t type, <a class="el" href="a00054.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a> code, uint16_t sessionId)</td></tr>
 <tr class="separator:aed21c1bd24fcb363a47c9f6f5843e6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad387d8a92f00bfaf948d46cfca612d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#aad387d8a92f00bfaf948d46cfca612d5">PPPoEDiscoveryLayer</a> (const <a class="el" href="a00053.html">PPPoEDiscoveryLayer</a> &amp;other)</td></tr>
+<tr class="separator:aad387d8a92f00bfaf948d46cfca612d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c7b7c3a0303f04f39bc574730b18af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00056.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a59c7b7c3a0303f04f39bc574730b18af">getTag</a> (<a class="el" href="a00053.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> tagType)</td></tr>
 <tr class="separator:a59c7b7c3a0303f04f39bc574730b18af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e7f5689966edb568cc52e60230d70ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00056.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a8e7f5689966edb568cc52e60230d70ab">getFirstTag</a> ()</td></tr>
@@ -407,13 +409,38 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A constructor that allocates a new PPPoE Discovery header with version, type, PPPoE code and session ID </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">version</td><td>PPPoE version </td></tr>
-    <tr><td class="paramname">type</td><td>PPPoE type </td></tr>
-    <tr><td class="paramname">code</td><td>PPPoE code enum </td></tr>
-    <tr><td class="paramname">sessionId</td><td>PPPoE session ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>PPPoE version </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>PPPoE type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">code</td><td>PPPoE code enum </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>PPPoE session ID </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="aad387d8a92f00bfaf948d46cfca612d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00053.html">PPPoEDiscoveryLayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A copy constructor that copies the entire header from the other <a class="el" href="a00053.html">PPPoEDiscoveryLayer</a> </p>
 
 </div>
 </div>
@@ -449,9 +476,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a new tag at the end of the layer (after the last tag) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
-    <tr><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
-    <tr><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
   </table>
   </dd>
 </dl>
@@ -496,10 +523,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a new tag after an existing tag </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
-    <tr><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
-    <tr><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
-    <tr><td class="paramname">prevTag</td><td>The tag which the new added tag will come after </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevTag</td><td>The tag which the new added tag will come after </td></tr>
   </table>
   </dd>
 </dl>
@@ -564,7 +591,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the tag which come next to "tag" parameter. If "tag" is NULL or then NULL will be returned. If "tag" is the last tag NULL will be returned. Notice the return value is a pointer to the real data casted to <a class="el" href="a00056.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tag</td><td>The tag to start search </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tag</td><td>The tag to start search </td></tr>
   </table>
   </dd>
 </dl>
@@ -587,7 +614,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieve a PPPoE tag by tag type. If packet consists of multiple tags of the same type, the first tag will be returned. If packet contains no tags of the tag type NULL will be returned. Notice the return value is a pointer to the real data casted to <a class="el" href="a00056.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tagType</td><td>The type of the tag to search </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the tag to search </td></tr>
   </table>
   </dd>
 </dl>
@@ -668,7 +695,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove an existing tag. Tag will be found by the tag type </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tagType</td><td>The tag type to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The tag type to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -708,7 +735,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00053.html">PPPoEDiscoveryLayer</a></li>
-    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

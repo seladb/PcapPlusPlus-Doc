@@ -129,8 +129,12 @@ Inheritance diagram for PPPoESessionLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7175a1071d860b1c164c05acb4c5c19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a7175a1071d860b1c164c05acb4c5c19e">PPPoESessionLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00032.html">Layer</a> *prevLayer, <a class="el" href="a00038.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a7175a1071d860b1c164c05acb4c5c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e8fa59a5550fa403d1d7626b7a62bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a65e8fa59a5550fa403d1d7626b7a62bd">PPPoESessionLayer</a> (uint8_t version, uint8_t type, uint16_t sessionId)</td></tr>
-<tr class="separator:a65e8fa59a5550fa403d1d7626b7a62bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fc6d2587c8b5f188e017a4071f6b96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a94fc6d2587c8b5f188e017a4071f6b96">PPPoESessionLayer</a> (uint8_t version, uint8_t type, uint16_t sessionId, uint16_t pppNextProtocol)</td></tr>
+<tr class="separator:a94fc6d2587c8b5f188e017a4071f6b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4552971f704480424bc4bc7368f16fda"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a4552971f704480424bc4bc7368f16fda">getPPPNextProtocol</a> ()</td></tr>
+<tr class="separator:a4552971f704480424bc4bc7368f16fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1adc1dcaf0e7933e5658223e6999a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2c1adc1dcaf0e7933e5658223e6999a5">setPPPNextProtocol</a> (uint16_t nextProtocol)</td></tr>
+<tr class="separator:a2c1adc1dcaf0e7933e5658223e6999a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77561218e4a7edc464cfa3dd928faf9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a77561218e4a7edc464cfa3dd928faf9b">parseNextLayer</a> ()</td></tr>
 <tr class="separator:a77561218e4a7edc464cfa3dd928faf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a8cf90346c66fa6e7f1d1f10cec0ed"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed">getHeaderLen</a> ()</td></tr>
@@ -243,7 +247,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a65e8fa59a5550fa403d1d7626b7a62bd"></a>
+<a class="anchor" id="a94fc6d2587c8b5f188e017a4071f6b96"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,7 +270,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>sessionId</em>&#160;</td>
+          <td class="paramname"><em>sessionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pppNextProtocol</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -282,9 +292,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>A constructor that allocates a new PPPoE Session header with version, type and session ID </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">version</td><td>PPPoE version </td></tr>
-    <tr><td class="paramname">type</td><td>PPPoE type </td></tr>
-    <tr><td class="paramname">sessionId</td><td>PPPoE session ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>PPPoE version </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>PPPoE type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>PPPoE session ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pppNextProtocol</td><td>The next protocol to come after the PPPoE session header. Should be one of the PPP_* macros listed below </td></tr>
   </table>
   </dd>
 </dl>
@@ -318,6 +329,22 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4552971f704480424bc4bc7368f16fda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t PPPoESessionLayer::getPPPNextProtocol </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The protocol after the PPPoE session header. The return value is one of the PPP_* macros listed below. This method is also used when parsing a packet (this way we know which layer comes after the PPPoE session) </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a77561218e4a7edc464cfa3dd928faf9b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -338,9 +365,31 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Currently set only <a class="el" href="a00039.html">PayloadLayer</a> for the rest of the data </p>
+<p>Currently identifies the following next layers: <a class="el" href="a00028.html">IPv4Layer</a>, <a class="el" href="a00031.html">IPv6Layer</a>. Otherwise sets <a class="el" href="a00039.html">PayloadLayer</a> </p>
 
 <p>Implements <a class="el" href="a00032.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c1adc1dcaf0e7933e5658223e6999a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PPPoESessionLayer::setPPPNextProtocol </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>nextProtocol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the field that describes which header comes after the PPPoE session header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nextProtocol</td><td>The protocol value. Should be one of the PPP_* macros listed below </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -360,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -376,7 +425,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00055.html">PPPoESessionLayer</a></li>
-    <li class="footer">Generated on Sat May 30 2015 23:53:54 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
