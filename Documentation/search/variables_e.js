@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['senderipaddr',['senderIpAddr',['../a00003.html#a0ed8605408f76ce3d5881798751617ba',1,'arphdr']]],
-  ['sendermacaddr',['senderMacAddr',['../a00003.html#ae68d9afc9eb6140915847edb64954e5f',1,'arphdr']]],
-  ['sequencenumber',['sequenceNumber',['../a00063.html#a719635a7e8291064205d4e4da519a8d5',1,'tcphdr']]],
-  ['sessionid',['sessionId',['../a00052.html#a764afb5590237f2a44e25947a4f12f5b',1,'pppoe_header']]],
-  ['srcmac',['srcMac',['../a00006.html#a476baf8b22a014f9af6d15f10113b565',1,'ether_header']]],
-  ['synflag',['synFlag',['../a00063.html#a62e2fa2f073542b1a58694200b4dbf8c',1,'tcphdr']]]
+  ['recursionavailable',['recursionAvailable',['../a00006.html#afdd8970906e4ddd3de59ff0215249375',1,'dnshdr']]],
+  ['recursiondesired',['recursionDesired',['../a00006.html#aa4e36152421d21e7c9a1138a058a628c',1,'dnshdr']]],
+  ['responsecode',['responseCode',['../a00006.html#ad290f5e82ffbb3651d4b37628b396e7c',1,'dnshdr']]],
+  ['rstflag',['rstFlag',['../a00068.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]]
 ];

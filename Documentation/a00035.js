@@ -1,6 +1,14 @@
 var a00035 =
 [
-    [ "MacAddressFilter", "a00035.html#a0efbb623c6f72d72124a832241b1f628", null ],
-    [ "parseToString", "a00035.html#a3273ee2aeaf939c318bd7ea4aba73d64", null ],
-    [ "setMacAddress", "a00035.html#aa86204a955a66acd6fdfc78b754e6ed4", null ]
+    [ "IPv6Address", "a00035.html#a192408b1740d94ad024d16c18f1e5c2b", null ],
+    [ "IPv6Address", "a00035.html#a3ac0a3b10a640e08cff4dd1d7445a69a", null ],
+    [ "IPv6Address", "a00035.html#a8387436d5ffc2a5619a367f7821cea25", null ],
+    [ "IPv6Address", "a00035.html#a5211790346d336e5487dba3514c49dd6", null ],
+    [ "copyTo", "a00035.html#a3f6f2c5439e3db5717a038a69a1f21c3", null ],
+    [ "copyTo", "a00035.html#a512f02bc3c0be6ead547a7faffdc495f", null ],
+    [ "getType", "a00035.html#aae62b3c368fc0aab389570387c5baad8", null ],
+    [ "operator!=", "a00035.html#a4d2a980acceb2b2f7d6e3257ba087518", null ],
+    [ "operator=", "a00035.html#a275d8acb1a59b388d78487210e0f6fbd", null ],
+    [ "operator==", "a00035.html#ab12a2158a7f77a21830591870490c3df", null ],
+    [ "toIn6Addr", "a00035.html#aef3aee2f30589284653053e4b6406f6c", null ]
 ];

@@ -1,8 +1,6 @@
 var a00040 =
 [
-    [ "PcapFileReaderDevice", "a00040.html#a9b4477ddd07e91d123fdc3b892dccd9f", null ],
-    [ "~PcapFileReaderDevice", "a00040.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7", null ],
-    [ "getNextPacket", "a00040.html#a5318e4291eb2929233e7e77f9804c1af", null ],
-    [ "getStatistics", "a00040.html#a831193e30603e66291dfaa9b3ab22b63", null ],
-    [ "open", "a00040.html#aedd7cf41e07cd259d49fa6a20455b7f9", null ]
+    [ "MacAddressFilter", "a00040.html#a0efbb623c6f72d72124a832241b1f628", null ],
+    [ "parseToString", "a00040.html#a3273ee2aeaf939c318bd7ea4aba73d64", null ],
+    [ "setMacAddress", "a00040.html#aa86204a955a66acd6fdfc78b754e6ed4", null ]
 ];

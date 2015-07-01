@@ -1,10 +1,7 @@
 var a00056 =
 [
-    [ "getTagDataAs", "a00056.html#a0c029c9f917e1bd1e75f89bc68b8df98", null ],
-    [ "getTagTotalSize", "a00056.html#aca560e07da7a77f1bdc6546077d59485", null ],
-    [ "getType", "a00056.html#a761e0add96c8ed6e8e7227a9ab2ece8e", null ],
-    [ "setTagData", "a00056.html#a102ac176ee5f4feb1516fe1af3a5933e", null ],
-    [ "tagData", "a00056.html#a45ff759b7e528baccc51c4eaf6d6ba6c", null ],
-    [ "tagDataLength", "a00056.html#aa5b5e45947fd0cfb479d71ca3770d0ef", null ],
-    [ "tagType", "a00056.html#ab93bf7aa2f1c8f49ab49f203c19462ef", null ]
+    [ "PortRangeFilter", "a00056.html#aa1c3af8c04c1eba7c3f05e66826e9e2c", null ],
+    [ "parseToString", "a00056.html#a5e66d7b3286b5d508d0c1ea29e83c6e4", null ],
+    [ "setFromPort", "a00056.html#acd11b124c6744d6ece349e11589b9fc9", null ],
+    [ "setToPort", "a00056.html#a3937022a2fd4ab9cbfa130392749ca18", null ]
 ];

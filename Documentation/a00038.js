@@ -1,18 +1,18 @@
 var a00038 =
 [
-    [ "Packet", "a00038.html#a6757e6e85335072ed5a8c691440a35eb", null ],
-    [ "Packet", "a00038.html#a39e45ecb72e05b1dcf07afd778aa9914", null ],
-    [ "~Packet", "a00038.html#a69d431d5730177a1bf6e1f8bbbbb6066", null ],
-    [ "Packet", "a00038.html#ae8d5dfea51fa7fe55e4705b176f326ec", null ],
-    [ "computeCalculateFields", "a00038.html#a2a757b793dfce9239223f9000551a945", null ],
-    [ "getFirstLayer", "a00038.html#a84fa4ce5311673d8d0eda8a3ccd1aa65", null ],
-    [ "getLastLayer", "a00038.html#a40618d2579ceb41ccfddd1aa511e3cb0", null ],
-    [ "getLayerOfType", "a00038.html#a4684bb0c74d36f713f485b0f54d11660", null ],
-    [ "getNextLayerOfType", "a00038.html#a097782fccb489b1dae9bb827cf9b3a75", null ],
-    [ "getRawPacket", "a00038.html#a8fec1d535b7f272793a44dc754934a56", null ],
-    [ "getRawPacketReadOnly", "a00038.html#a8d73113e41efb7f2146e9058567d9827", null ],
-    [ "isPacketOfType", "a00038.html#a22bb9f62a67a053264fc81358ed9f22c", null ],
-    [ "operator=", "a00038.html#a91a6b0c6ea561b9726597468acac252d", null ],
-    [ "printToString", "a00038.html#ae1aaa31d9965585e603a348cfe4bc9aa", null ],
-    [ "printToStringList", "a00038.html#a56bf1670aa1ab99dca9fda49ec2e8283", null ]
+    [ "LogLevel", "a00038.html#aa52cd7c3af16c16af7209f5769796047", [
+      [ "Normal", "a00038.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858", null ],
+      [ "Debug", "a00038.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd", null ]
+    ] ],
+    [ "enableErrors", "a00038.html#a949a764e78f7ab3e4610e130032f9cc4", null ],
+    [ "getErrorString", "a00038.html#acc1ea00b8e216aef697e0408bf449b95", null ],
+    [ "getErrorStringLength", "a00038.html#a78215dfe2058fb59a56976ef04950f54", null ],
+    [ "getLogModulesArr", "a00038.html#a3d498104bed27d40459c0c38c1c7d68b", null ],
+    [ "isDebugEnabled", "a00038.html#a7f6c407ddd90de83220b90067b513587", null ],
+    [ "isErrorStringSet", "a00038.html#a28a3be2f5201ab478baff464d8b5df6c", null ],
+    [ "isSupressErrors", "a00038.html#a0665db5b2cc061cd022e4666f540662e", null ],
+    [ "setAllModlesToLogLevel", "a00038.html#aff10ddbdb52cc2c25fb5e450000495f7", null ],
+    [ "setErrorString", "a00038.html#a8b2e3f0c471f4391d581ed021d60f7c9", null ],
+    [ "setLogLevel", "a00038.html#a81e0fa1eef639071d680bf89efae2747", null ],
+    [ "supressErrors", "a00038.html#acbb4c2c036fd4c5a9af65ad0f20f7e94", null ]
 ];

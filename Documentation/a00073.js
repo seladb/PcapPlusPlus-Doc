@@ -1,10 +1,11 @@
 var a00073 =
 [
-    [ "getDeviceType", "a00073.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00073.html#a624f8ebd9bba9bf1123c594f55ed0094", null ],
-    [ "sendPackets", "a00073.html#ad1576486b7de3dd8dd9eca51d9bd05dc", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00073.html#aa83fab2e5462bf6952389623ba69e0ae", null ],
-    [ "startCapture", "a00073.html#a83a5805972630d6071b07bc0f1d1de27", null ],
-    [ "startCapture", "a00073.html#ad8c8c56ec5b16cdd8c423274d8b4f07d", null ],
-    [ "startCapture", "a00073.html#a79611cae573a93b09ee980c1af8f978a", null ]
+    [ "UdpLayer", "a00073.html#a719f6abc85cfbcb5b7987a5eb6a99e70", null ],
+    [ "UdpLayer", "a00073.html#aedd18d27bce546fb6b21f70915817761", null ],
+    [ "calculateChecksum", "a00073.html#adfd1035b90bc336a51bf48c824d3a62c", null ],
+    [ "computeCalculateFields", "a00073.html#a94f3dd3afe2b5ad9bda7e12d2f18c449", null ],
+    [ "getHeaderLen", "a00073.html#a9cf705e60ec95b00c594a7633e4fd1ac", null ],
+    [ "getUdpHeader", "a00073.html#abe9c14cb251e2b43f4bb1cb8849549cd", null ],
+    [ "parseNextLayer", "a00073.html#a87ca5bbf1d532555f38101b2edeeed22", null ],
+    [ "toString", "a00073.html#abee5c14ffba496d372903abe40676417", null ]
 ];

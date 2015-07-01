@@ -1,10 +1,6 @@
 var a00055 =
 [
-    [ "PPPoESessionLayer", "a00055.html#a7175a1071d860b1c164c05acb4c5c19e", null ],
-    [ "PPPoESessionLayer", "a00055.html#a94fc6d2587c8b5f188e017a4071f6b96", null ],
-    [ "getHeaderLen", "a00055.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed", null ],
-    [ "getPPPNextProtocol", "a00055.html#a4552971f704480424bc4bc7368f16fda", null ],
-    [ "parseNextLayer", "a00055.html#a77561218e4a7edc464cfa3dd928faf9b", null ],
-    [ "setPPPNextProtocol", "a00055.html#a2c1adc1dcaf0e7933e5658223e6999a5", null ],
-    [ "toString", "a00055.html#add0aec7c81ba860d46c07d632e25b5cc", null ]
+    [ "PortFilter", "a00055.html#ab5768704b25570a414757263c66029e4", null ],
+    [ "parseToString", "a00055.html#ae474743ac724b0bb59befa1286d77eb5", null ],
+    [ "setPort", "a00055.html#a05281979a71c8ae1b6b28c7cf0daaaaf", null ]
 ];

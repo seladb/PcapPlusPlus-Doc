@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDevice.h Source File</title>
+<title>PcapPlusPlus: PcapFileDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,216 +104,111 @@ $(document).ready(function(){initNavTree('a00095_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PfRingDevice.h</div>  </div>
+<div class="title">PcapFileDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00095.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PF_RING_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PF_RING_DEVICE</span></div>
+<a href="a00095.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_FILE_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_FILE_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef USE_PF_RING</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00094.html">PcapDevice.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00088.html">PcapDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00090.html">PcapFilter.h</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00084.html">MacAddress.h</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00102.html">SystemUtils.h</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00101.html">RawPacket.h</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00086.html">Packet.h</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;pfring.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00028.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00028.html">IPcapFileDevice</a> : <span class="keyword">public</span> <a class="code" href="a00027.html">IPcapDevice</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">char</span>* m_FileName;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="a00047.html">PfRingDevice</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">typedef</span> void (*OnPfRingPacketsArriveCallback)(<a class="code" href="a00058.html">RawPacket</a>* packets, uint32_t numOfPackets, uint8_t threadId, <a class="code" href="a00047.html">PfRingDevice</a>* device, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00047.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00047.html">PfRingDevice</a> : <span class="keyword">public</span> <a class="code" href="a00022.html">IPcapDevice</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00048.html">PfRingDeviceList</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">struct </span>CoreConfiguration</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        pthread_t RxThread;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        pfring* Channel;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">bool</span> IsInUse;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> IsAffinitySet;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        CoreConfiguration() : RxThread(0), Channel(NULL), IsInUse(<span class="keyword">false</span>), IsAffinitySet(<span class="keyword">true</span>) {}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> clear() { RxThread = 0; Channel = NULL; IsInUse = <span class="keyword">false</span>; IsAffinitySet = <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    pfring* m_PfRingDescriptors[MAX_NUM_RX_CHANNELS];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    uint8_t m_NumOfOpenedRxChannels;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">char</span> m_DeviceName[30];</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> m_InterfaceIndex;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00034.html">MacAddress</a> m_MacAddress;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> m_DeviceMTU;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    CoreConfiguration m_CoreConfiguration[MAX_NUM_OF_CORES];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> m_StopThread;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    OnPfRingPacketsArriveCallback m_OnPacketsArriveCallback;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span>* m_OnPacketsArriveUserCookie;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> m_ReentrantMode;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> m_HwClockEnabled;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> m_IsFilterCurrentlySet;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="a00028.html">IPcapFileDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00028.html">IPcapFileDevice</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//override methods</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00028.html#aeac5956145508b5f4883dbb688fdbe3b">close</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00028.html#a1fc1dbf53910c72959d967c376f254ce">   31</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00028.html#a1fc1dbf53910c72959d967c376f254ce">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00045.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00045.html">PcapFileReaderDevice</a> : <span class="keyword">public</span> <a class="code" href="a00028.html">IPcapFileDevice</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    uint32_t m_NumOfPacketsRead;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    uint32_t m_NumOfPacketsNotParsed;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a00045.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <a class="code" href="a00045.html">PcapFileReaderDevice</a>&amp; other);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00045.html">PcapFileReaderDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00045.html">PcapFileReaderDevice</a>&amp; other);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00045.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a00047.html">PfRingDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* deviceName);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> initCoreConfigurationByCoreMask(CoreMask coreMask);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* captureThreadMain(<span class="keywordtype">void</span> *ptr);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00045.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7">~PcapFileReaderDevice</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> openSingleRxChannel(<span class="keyword">const</span> <span class="keywordtype">char</span>* deviceName, pfring** ring);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> getIsHwClockEnable() { setPfRingDeviceAttributes(); <span class="keywordflow">return</span> m_HwClockEnabled; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> setPfRingDeviceClock(pfring* ring);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> clearCoreConfiguration();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> getCoresInUseCount();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00045.html#a5318e4291eb2929233e7e77f9804c1af">getNextPacket</a>(<a class="code" href="a00063.html">RawPacket</a>&amp; rawPacket);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> setPfRingDeviceAttributes();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//override methods</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> sendData(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">int</span> packetDataLength, <span class="keywordtype">bool</span> flushTxQueues);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="a00047.html#a859e6207223f202a35261338793c0211">   77</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00047.html#a859e6207223f202a35261338793c0211">ChannelDistribution</a></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4">   82</a></span>&#160;        <a class="code" href="a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4">RoundRobin</a>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e">   86</a></span>&#160;        <a class="code" href="a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e">PerFlow</a></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="a00047.html#af5a275b7945d22ac78f062bdaed29738">~PfRingDevice</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="a00047.html#ac7d9d311998b6bb18efe3740300e9c7c">   98</a></span>&#160;    <a class="code" href="a00034.html">MacAddress</a> <a class="code" href="a00047.html#ac7d9d311998b6bb18efe3740300e9c7c">getMacAddress</a>() { setPfRingDeviceAttributes(); <span class="keywordflow">return</span> m_MacAddress; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00045.html#aedd7cf41e07cd259d49fa6a20455b7f9">open</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00045.html#a831193e30603e66291dfaa9b3ab22b63">getStatistics</a>(pcap_stat&amp; stats);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00046.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00046.html">PcapFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="a00028.html">IPcapFileDevice</a></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    pcap_dumper_t* m_PcapDumpHandler;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    uint32_t m_NumOfPacketsWritten;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint32_t m_NumOfPacketsNotWritten;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a00046.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="a00046.html">PcapFileWriterDevice</a>&amp; other);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="a00046.html">PcapFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00046.html">PcapFileWriterDevice</a>&amp; other);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="a00047.html#a78a358734bfd45da43a221c65dfedd03">  104</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00047.html#a78a358734bfd45da43a221c65dfedd03">getInterfaceIndex</a>() { setPfRingDeviceAttributes(); <span class="keywordflow">return</span> m_InterfaceIndex; }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00047.html#a3c9cbd028dd051d2d99fe861b9ae791b">  110</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00047.html#a3c9cbd028dd051d2d99fe861b9ae791b">getMtu</a>() { setPfRingDeviceAttributes(); <span class="keywordflow">return</span> m_DeviceMTU; }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="a00047.html#a96c8422443cb1007d2551beb5d35a9b2">  117</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a96c8422443cb1007d2551beb5d35a9b2">isHwClockEnabledForDevice</a>() { setPfRingDeviceAttributes(); <span class="keywordflow">return</span> m_HwClockEnabled; }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="a00047.html#a5998d20f0f336c7743aede9bfd78b3c8">  123</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="a00047.html#a5998d20f0f336c7743aede9bfd78b3c8">getDeviceName</a>() { <span class="keywordflow">return</span> string(m_DeviceName); }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a5f50e69a577371b7ef8d5cbcbf760a3a">startCaptureSingleThread</a>(OnPfRingPacketsArriveCallback onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//  /**</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">//   * Start single-threaded capturing where all packets will be written to a RawPacket vector.</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">//   * Works with open() or openSingleRxChannel().</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">//   * ||@||param[in] capturedPacketsVector The RawPacket vector all packets will be written to</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">//   * ||@||return True if this action succeeds, false otherwise</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">//   */</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">//  bool startCaptureSingleThread(RawPacketVector&amp; capturedPacketsVector);</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a19b3f77801e4afde7a7f5e40c779d760">startCaptureMultiThread</a>(OnPfRingPacketsArriveCallback onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie, CoreMask coreMask);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00047.html#a178d4778602d4b8af1214bda067408aa">stopCapture</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">bool</span> openSingleRxChannel(uint8_t channelId);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">openMultiRxChannels</a>(<span class="keyword">const</span> uint8_t* channelIds, <span class="keywordtype">int</span> numOfChannelIds);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">openMultiRxChannels</a>(uint8_t numOfRxChannelsToOpen, <a class="code" href="a00047.html#a859e6207223f202a35261338793c0211">ChannelDistribution</a> dist);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="a00047.html#a39c45274170d16b9d9d1e0a44951ac0b">  199</a></span>&#160;    <span class="keyword">inline</span> uint8_t <a class="code" href="a00047.html#a39c45274170d16b9d9d1e0a44951ac0b">getNumOfOpenedRxChannels</a>() { <span class="keywordflow">return</span> m_NumOfOpenedRxChannels; }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    uint8_t <a class="code" href="a00047.html#a7c0a6b114545a94ab9d9a8f55c07cabe">getTotalNumOfRxChannels</a>();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="a00047.html#aea8a32e50dfb365f08f4e3f496193bd6">  213</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00060.html">SystemCore</a> <a class="code" href="a00047.html#aea8a32e50dfb365f08f4e3f496193bd6">getCurrentCoreId</a>() { <span class="keywordflow">return</span> <a class="code" href="a00061.html#a9c0aa298d90e7508756b63fe45686a10">SystemCores::IdToSystemCore</a>[sched_getcpu()]; }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00047.html#a42ec65a4ffa8d29d817d21968bc70ef7">getThreadStatistics</a>(<a class="code" href="a00060.html">SystemCore</a> core, pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00047.html#af7f4c08d8ad864818286149312f7ff96">getCurrentThreadStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#aa64effebebd1c51fd6859b65d8925fb2">open</a>();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00047.html#a25f3a3d9544e16544dc919bda44b8556">close</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00047.html#a748161ecb155fe4079bdde3c5a826ea6">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a62b9cacd2988d5fb08b7fc78e738724d">setFilter</a>(<a class="code" href="a00009.html">GeneralFilter</a>&amp; filter);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a62b9cacd2988d5fb08b7fc78e738724d">setFilter</a>(<span class="keywordtype">string</span> filterAsString);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a226f7ccbf642bd9b9afca14b02e283d4">removeFilter</a>();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a707b944d90cf16f7ecc0238c90ba3eb0">isFilterCurrentlySet</a>();</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a03a528af6feb4e6b278d4b1a2c94f778">sendPacket</a>(<span class="keyword">const</span> <a class="code" href="a00058.html">RawPacket</a>&amp; rawPacket);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a03a528af6feb4e6b278d4b1a2c94f778">sendPacket</a>(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">int</span> packetDataLength);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00047.html#a03a528af6feb4e6b278d4b1a2c94f778">sendPacket</a>(<span class="keyword">const</span> <a class="code" href="a00038.html">Packet</a>&amp; packet);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00058.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00038.html">Packet</a>** packetsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00049.html">RawPacketVector</a>&amp; rawPackets);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;};</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_PF_RING */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PF_RING_DEVICE */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
-<div class="ttc" id="a00047_html_a78a358734bfd45da43a221c65dfedd03"><div class="ttname"><a href="a00047.html#a78a358734bfd45da43a221c65dfedd03">PfRingDevice::getInterfaceIndex</a></div><div class="ttdeci">int getInterfaceIndex()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:104</div></div>
-<div class="ttc" id="a00047_html_a859e6207223f202a35261338793c0211"><div class="ttname"><a href="a00047.html#a859e6207223f202a35261338793c0211">PfRingDevice::ChannelDistribution</a></div><div class="ttdeci">ChannelDistribution</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:77</div></div>
-<div class="ttc" id="a00047_html_a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4"><div class="ttname"><a href="a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4">PfRingDevice::RoundRobin</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:82</div></div>
-<div class="ttc" id="a00047_html_a42ec65a4ffa8d29d817d21968bc70ef7"><div class="ttname"><a href="a00047.html#a42ec65a4ffa8d29d817d21968bc70ef7">PfRingDevice::getThreadStatistics</a></div><div class="ttdeci">void getThreadStatistics(SystemCore core, pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00047_html_a25f3a3d9544e16544dc919bda44b8556"><div class="ttname"><a href="a00047.html#a25f3a3d9544e16544dc919bda44b8556">PfRingDevice::close</a></div><div class="ttdeci">void close()</div></div>
-<div class="ttc" id="a00047_html_a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e"><div class="ttname"><a href="a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e">PfRingDevice::PerFlow</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:86</div></div>
-<div class="ttc" id="a00088_html"><div class="ttname"><a href="a00088.html">PcapDevice.h</a></div></div>
-<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">RawPacket.h</a></div></div>
-<div class="ttc" id="a00047_html_a226f7ccbf642bd9b9afca14b02e283d4"><div class="ttname"><a href="a00047.html#a226f7ccbf642bd9b9afca14b02e283d4">PfRingDevice::removeFilter</a></div><div class="ttdeci">bool removeFilter()</div></div>
-<div class="ttc" id="a00047_html"><div class="ttname"><a href="a00047.html">PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:26</div></div>
-<div class="ttc" id="a00047_html_af7f4c08d8ad864818286149312f7ff96"><div class="ttname"><a href="a00047.html#af7f4c08d8ad864818286149312f7ff96">PfRingDevice::getCurrentThreadStatistics</a></div><div class="ttdeci">void getCurrentThreadStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00047_html_af5a275b7945d22ac78f062bdaed29738"><div class="ttname"><a href="a00047.html#af5a275b7945d22ac78f062bdaed29738">PfRingDevice::~PfRingDevice</a></div><div class="ttdeci">~PfRingDevice()</div></div>
-<div class="ttc" id="a00047_html_a707b944d90cf16f7ecc0238c90ba3eb0"><div class="ttname"><a href="a00047.html#a707b944d90cf16f7ecc0238c90ba3eb0">PfRingDevice::isFilterCurrentlySet</a></div><div class="ttdeci">bool isFilterCurrentlySet()</div></div>
-<div class="ttc" id="a00047_html_a96c8422443cb1007d2551beb5d35a9b2"><div class="ttname"><a href="a00047.html#a96c8422443cb1007d2551beb5d35a9b2">PfRingDevice::isHwClockEnabledForDevice</a></div><div class="ttdeci">bool isHwClockEnabledForDevice()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:117</div></div>
-<div class="ttc" id="a00084_html"><div class="ttname"><a href="a00084.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00047_html_a5998d20f0f336c7743aede9bfd78b3c8"><div class="ttname"><a href="a00047.html#a5998d20f0f336c7743aede9bfd78b3c8">PfRingDevice::getDeviceName</a></div><div class="ttdeci">string getDeviceName()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:123</div></div>
-<div class="ttc" id="a00047_html_a748161ecb155fe4079bdde3c5a826ea6"><div class="ttname"><a href="a00047.html#a748161ecb155fe4079bdde3c5a826ea6">PfRingDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00047_html_a62b9cacd2988d5fb08b7fc78e738724d"><div class="ttname"><a href="a00047.html#a62b9cacd2988d5fb08b7fc78e738724d">PfRingDevice::setFilter</a></div><div class="ttdeci">bool setFilter(GeneralFilter &amp;filter)</div></div>
-<div class="ttc" id="a00047_html_a19b3f77801e4afde7a7f5e40c779d760"><div class="ttname"><a href="a00047.html#a19b3f77801e4afde7a7f5e40c779d760">PfRingDevice::startCaptureMultiThread</a></div><div class="ttdeci">bool startCaptureMultiThread(OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</div></div>
-<div class="ttc" id="a00038_html"><div class="ttname"><a href="a00038.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00009_html"><div class="ttname"><a href="a00009.html">GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:67</div></div>
-<div class="ttc" id="a00090_html"><div class="ttname"><a href="a00090.html">PcapFilter.h</a></div></div>
-<div class="ttc" id="a00047_html_a7909392eea098657e3b4baede54b63dd"><div class="ttname"><a href="a00047.html#a7909392eea098657e3b4baede54b63dd">PfRingDevice::sendPackets</a></div><div class="ttdeci">int sendPackets(const RawPacket *rawPacketsArr, int arrLength)</div></div>
-<div class="ttc" id="a00047_html_aea8a32e50dfb365f08f4e3f496193bd6"><div class="ttname"><a href="a00047.html#aea8a32e50dfb365f08f4e3f496193bd6">PfRingDevice::getCurrentCoreId</a></div><div class="ttdeci">SystemCore getCurrentCoreId()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:213</div></div>
-<div class="ttc" id="a00061_html_a9c0aa298d90e7508756b63fe45686a10"><div class="ttname"><a href="a00061.html#a9c0aa298d90e7508756b63fe45686a10">SystemCores::IdToSystemCore</a></div><div class="ttdeci">static const SystemCore IdToSystemCore[32]</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:167</div></div>
-<div class="ttc" id="a00047_html_a39c45274170d16b9d9d1e0a44951ac0b"><div class="ttname"><a href="a00047.html#a39c45274170d16b9d9d1e0a44951ac0b">PfRingDevice::getNumOfOpenedRxChannels</a></div><div class="ttdeci">uint8_t getNumOfOpenedRxChannels()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:199</div></div>
-<div class="ttc" id="a00058_html"><div class="ttname"><a href="a00058.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
-<div class="ttc" id="a00047_html_a178d4778602d4b8af1214bda067408aa"><div class="ttname"><a href="a00047.html#a178d4778602d4b8af1214bda067408aa">PfRingDevice::stopCapture</a></div><div class="ttdeci">void stopCapture()</div></div>
-<div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
-<div class="ttc" id="a00047_html_ac7d9d311998b6bb18efe3740300e9c7c"><div class="ttname"><a href="a00047.html#ac7d9d311998b6bb18efe3740300e9c7c">PfRingDevice::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:98</div></div>
-<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
-<div class="ttc" id="a00047_html_aa64effebebd1c51fd6859b65d8925fb2"><div class="ttname"><a href="a00047.html#aa64effebebd1c51fd6859b65d8925fb2">PfRingDevice::open</a></div><div class="ttdeci">bool open()</div></div>
-<div class="ttc" id="a00047_html_a03a528af6feb4e6b278d4b1a2c94f778"><div class="ttname"><a href="a00047.html#a03a528af6feb4e6b278d4b1a2c94f778">PfRingDevice::sendPacket</a></div><div class="ttdeci">bool sendPacket(const RawPacket &amp;rawPacket)</div></div>
-<div class="ttc" id="a00086_html"><div class="ttname"><a href="a00086.html">Packet.h</a></div></div>
-<div class="ttc" id="a00047_html_a24cc261e8660a8469209c2e5c2ccdb07"><div class="ttname"><a href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">PfRingDevice::openMultiRxChannels</a></div><div class="ttdeci">bool openMultiRxChannels(const uint8_t *channelIds, int numOfChannelIds)</div></div>
-<div class="ttc" id="a00060_html"><div class="ttname"><a href="a00060.html">SystemCore</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:14</div></div>
-<div class="ttc" id="a00047_html_a3c9cbd028dd051d2d99fe861b9ae791b"><div class="ttname"><a href="a00047.html#a3c9cbd028dd051d2d99fe861b9ae791b">PfRingDevice::getMtu</a></div><div class="ttdeci">int getMtu()</div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:110</div></div>
-<div class="ttc" id="a00047_html_a7c0a6b114545a94ab9d9a8f55c07cabe"><div class="ttname"><a href="a00047.html#a7c0a6b114545a94ab9d9a8f55c07cabe">PfRingDevice::getTotalNumOfRxChannels</a></div><div class="ttdeci">uint8_t getTotalNumOfRxChannels()</div></div>
-<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">SystemUtils.h</a></div></div>
-<div class="ttc" id="a00047_html_a5f50e69a577371b7ef8d5cbcbf760a3a"><div class="ttname"><a href="a00047.html#a5f50e69a577371b7ef8d5cbcbf760a3a">PfRingDevice::startCaptureSingleThread</a></div><div class="ttdeci">bool startCaptureSingleThread(OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie)</div></div>
-<div class="ttc" id="a00048_html"><div class="ttname"><a href="a00048.html">PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:15</div></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="a00046.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="a00046.html#a491876c2591081b58313da654a704f8d">~PcapFileWriterDevice</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00046.html#a6263c0850be603c60b8ba057d879a593">writePacket</a>(<a class="code" href="a00063.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00046.html#a472db9de9ac4f9f440f752385c0436e6">writePackets</a>(<span class="keyword">const</span> <a class="code" href="a00054.html">RawPacketVector</a>&amp; packets);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">//override methods</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00046.html#a8053b6b8abafd7de893fce117b8d2413">open</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00046.html#a534e2029cb4de050e6a55de39dc9aa9a">close</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00046.html#ac0c2c246a4447cc48ebae8f48f69d81d">getStatistics</a>(pcap_stat&amp; stats);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00046_html_a6263c0850be603c60b8ba057d879a593"><div class="ttname"><a href="a00046.html#a6263c0850be603c60b8ba057d879a593">PcapFileWriterDevice::writePacket</a></div><div class="ttdeci">bool writePacket(RawPacket const &amp;packet)</div></div>
+<div class="ttc" id="a00046_html_a8053b6b8abafd7de893fce117b8d2413"><div class="ttname"><a href="a00046.html#a8053b6b8abafd7de893fce117b8d2413">PcapFileWriterDevice::open</a></div><div class="ttdeci">virtual bool open()</div></div>
+<div class="ttc" id="a00027_html"><div class="ttname"><a href="a00027.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
+<div class="ttc" id="a00046_html_a491876c2591081b58313da654a704f8d"><div class="ttname"><a href="a00046.html#a491876c2591081b58313da654a704f8d">PcapFileWriterDevice::~PcapFileWriterDevice</a></div><div class="ttdeci">~PcapFileWriterDevice()</div></div>
+<div class="ttc" id="a00045_html_a831193e30603e66291dfaa9b3ab22b63"><div class="ttname"><a href="a00045.html#a831193e30603e66291dfaa9b3ab22b63">PcapFileReaderDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)</div></div>
+<div class="ttc" id="a00063_html"><div class="ttname"><a href="a00063.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
+<div class="ttc" id="a00028_html_a1fc1dbf53910c72959d967c376f254ce"><div class="ttname"><a href="a00028.html#a1fc1dbf53910c72959d967c376f254ce">IPcapFileDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:31</div></div>
+<div class="ttc" id="a00046_html"><div class="ttname"><a href="a00046.html">PcapFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:89</div></div>
+<div class="ttc" id="a00046_html_a472db9de9ac4f9f440f752385c0436e6"><div class="ttname"><a href="a00046.html#a472db9de9ac4f9f440f752385c0436e6">PcapFileWriterDevice::writePackets</a></div><div class="ttdeci">bool writePackets(const RawPacketVector &amp;packets)</div></div>
+<div class="ttc" id="a00045_html_a1bfe14c03e6e4ba01ada0e6b0bb765b7"><div class="ttname"><a href="a00045.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7">PcapFileReaderDevice::~PcapFileReaderDevice</a></div><div class="ttdeci">~PcapFileReaderDevice()</div></div>
+<div class="ttc" id="a00054_html"><div class="ttname"><a href="a00054.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00045_html_aedd7cf41e07cd259d49fa6a20455b7f9"><div class="ttname"><a href="a00045.html#aedd7cf41e07cd259d49fa6a20455b7f9">PcapFileReaderDevice::open</a></div><div class="ttdeci">virtual bool open()</div></div>
+<div class="ttc" id="a00045_html_a5318e4291eb2929233e7e77f9804c1af"><div class="ttname"><a href="a00045.html#a5318e4291eb2929233e7e77f9804c1af">PcapFileReaderDevice::getNextPacket</a></div><div class="ttdeci">bool getNextPacket(RawPacket &amp;rawPacket)</div></div>
+<div class="ttc" id="a00045_html"><div class="ttname"><a href="a00045.html">PcapFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:38</div></div>
+<div class="ttc" id="a00046_html_a534e2029cb4de050e6a55de39dc9aa9a"><div class="ttname"><a href="a00046.html#a534e2029cb4de050e6a55de39dc9aa9a">PcapFileWriterDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
+<div class="ttc" id="a00046_html_ac0c2c246a4447cc48ebae8f48f69d81d"><div class="ttname"><a href="a00046.html#ac0c2c246a4447cc48ebae8f48f69d81d">PcapFileWriterDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)</div></div>
+<div class="ttc" id="a00094_html"><div class="ttname"><a href="a00094.html">PcapDevice.h</a></div></div>
+<div class="ttc" id="a00028_html"><div class="ttname"><a href="a00028.html">IPcapFileDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:12</div></div>
+<div class="ttc" id="a00028_html_aeac5956145508b5f4883dbb688fdbe3b"><div class="ttname"><a href="a00028.html#aeac5956145508b5f4883dbb688fdbe3b">IPcapFileDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00095.html">PfRingDevice.h</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:19 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00095.html">PcapFileDevice.h</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

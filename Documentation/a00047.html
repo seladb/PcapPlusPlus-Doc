@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDevice Class Reference</title>
+<title>PcapPlusPlus: PcapLiveDevice Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,151 +106,182 @@ $(document).ready(function(){initNavTree('a00047.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="a00157.html">List of all members</a>  </div>
+<a href="a00163.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PfRingDevice Class Reference</div>  </div>
+<div class="title">PcapLiveDevice Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00095_source.html">PfRingDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00097_source.html">PcapLiveDevice.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for PfRingDevice:</div>
+Inheritance diagram for PcapLiveDevice:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00047.png" usemap="#PfRingDevice_map" alt=""/>
-  <map id="PfRingDevice_map" name="PfRingDevice_map">
-<area href="a00022.html" alt="IPcapDevice" shape="rect" coords="0,0,89,24"/>
+  <img src="a00047.png" usemap="#PcapLiveDevice_map" alt=""/>
+  <map id="PcapLiveDevice_map" name="PcapLiveDevice_map">
+<area href="a00027.html" alt="IPcapDevice" shape="rect" coords="68,0,194,24"/>
+<area href="a00050.html" alt="PcapRemoteDevice" shape="rect" coords="0,112,126,136"/>
+<area href="a00078.html" alt="WinPcapLiveDevice" shape="rect" coords="136,112,262,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a859e6207223f202a35261338793c0211"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a859e6207223f202a35261338793c0211">ChannelDistribution</a> { <a class="el" href="a00047.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4">RoundRobin</a>, 
-<a class="el" href="a00047.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e">PerFlow</a>
+<tr class="memitem:a201c04fe21184602ce48fb799b9bd7d7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a> { <a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7a63f2e3a3e267195f84cff2adb2493a6c">LibPcapDevice</a>, 
+<a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7aa09f95e4cf5b79cce8a5551e760ca204">WinPcapDevice</a>, 
+<a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2">RemoteDevice</a>
  }</td></tr>
-<tr class="separator:a859e6207223f202a35261338793c0211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a201c04fe21184602ce48fb799b9bd7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185b64fcba0e667fcc7457b2ab4a4e21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21">DeviceMode</a> { <a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21ae39fe37c3af407e1a766c43dc717e8f8">Normal</a> = 0, 
+<a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21a18306f1bc588dcecfd3c8455f779c5ec">Promiscuous</a> = 1
+ }</td></tr>
+<tr class="separator:a185b64fcba0e667fcc7457b2ab4a4e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5a275b7945d22ac78f062bdaed29738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#af5a275b7945d22ac78f062bdaed29738">~PfRingDevice</a> ()</td></tr>
-<tr class="separator:af5a275b7945d22ac78f062bdaed29738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d9d311998b6bb18efe3740300e9c7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00034.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ac7d9d311998b6bb18efe3740300e9c7c">getMacAddress</a> ()</td></tr>
-<tr class="separator:ac7d9d311998b6bb18efe3740300e9c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a358734bfd45da43a221c65dfedd03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a78a358734bfd45da43a221c65dfedd03">getInterfaceIndex</a> ()</td></tr>
-<tr class="separator:a78a358734bfd45da43a221c65dfedd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9cbd028dd051d2d99fe861b9ae791b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a3c9cbd028dd051d2d99fe861b9ae791b">getMtu</a> ()</td></tr>
-<tr class="separator:a3c9cbd028dd051d2d99fe861b9ae791b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c8422443cb1007d2551beb5d35a9b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a96c8422443cb1007d2551beb5d35a9b2">isHwClockEnabledForDevice</a> ()</td></tr>
-<tr class="separator:a96c8422443cb1007d2551beb5d35a9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5998d20f0f336c7743aede9bfd78b3c8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a5998d20f0f336c7743aede9bfd78b3c8">getDeviceName</a> ()</td></tr>
-<tr class="separator:a5998d20f0f336c7743aede9bfd78b3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f50e69a577371b7ef8d5cbcbf760a3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a5f50e69a577371b7ef8d5cbcbf760a3a">startCaptureSingleThread</a> (OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie)</td></tr>
-<tr class="separator:a5f50e69a577371b7ef8d5cbcbf760a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b3f77801e4afde7a7f5e40c779d760"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a19b3f77801e4afde7a7f5e40c779d760">startCaptureMultiThread</a> (OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</td></tr>
-<tr class="separator:a19b3f77801e4afde7a7f5e40c779d760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178d4778602d4b8af1214bda067408aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a178d4778602d4b8af1214bda067408aa">stopCapture</a> ()</td></tr>
-<tr class="separator:a178d4778602d4b8af1214bda067408aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add1ba7fba70fbcafacb115e47b4e3a82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#add1ba7fba70fbcafacb115e47b4e3a82">openSingleRxChannel</a> (uint8_t channelId)</td></tr>
-<tr class="separator:add1ba7fba70fbcafacb115e47b4e3a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24cc261e8660a8469209c2e5c2ccdb07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">openMultiRxChannels</a> (const uint8_t *channelIds, int numOfChannelIds)</td></tr>
-<tr class="separator:a24cc261e8660a8469209c2e5c2ccdb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b39725d02e5aae88ef27212c4b26af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a3b39725d02e5aae88ef27212c4b26af1">openMultiRxChannels</a> (uint8_t numOfRxChannelsToOpen, <a class="el" href="a00047.html#a859e6207223f202a35261338793c0211">ChannelDistribution</a> dist)</td></tr>
-<tr class="separator:a3b39725d02e5aae88ef27212c4b26af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c45274170d16b9d9d1e0a44951ac0b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a39c45274170d16b9d9d1e0a44951ac0b">getNumOfOpenedRxChannels</a> ()</td></tr>
-<tr class="separator:a39c45274170d16b9d9d1e0a44951ac0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0a6b114545a94ab9d9a8f55c07cabe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a7c0a6b114545a94ab9d9a8f55c07cabe">getTotalNumOfRxChannels</a> ()</td></tr>
-<tr class="separator:a7c0a6b114545a94ab9d9a8f55c07cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea8a32e50dfb365f08f4e3f496193bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00060.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aea8a32e50dfb365f08f4e3f496193bd6">getCurrentCoreId</a> ()</td></tr>
-<tr class="separator:aea8a32e50dfb365f08f4e3f496193bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ec65a4ffa8d29d817d21968bc70ef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a42ec65a4ffa8d29d817d21968bc70ef7">getThreadStatistics</a> (<a class="el" href="a00060.html">SystemCore</a> core, pcap_stat &amp;stats)</td></tr>
-<tr class="separator:a42ec65a4ffa8d29d817d21968bc70ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f4c08d8ad864818286149312f7ff96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#af7f4c08d8ad864818286149312f7ff96">getCurrentThreadStatistics</a> (pcap_stat &amp;stats)</td></tr>
-<tr class="separator:af7f4c08d8ad864818286149312f7ff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64effebebd1c51fd6859b65d8925fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aa64effebebd1c51fd6859b65d8925fb2">open</a> ()</td></tr>
-<tr class="separator:aa64effebebd1c51fd6859b65d8925fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f3a3d9544e16544dc919bda44b8556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a25f3a3d9544e16544dc919bda44b8556">close</a> ()</td></tr>
-<tr class="separator:a25f3a3d9544e16544dc919bda44b8556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a748161ecb155fe4079bdde3c5a826ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a748161ecb155fe4079bdde3c5a826ea6">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
-<tr class="separator:a748161ecb155fe4079bdde3c5a826ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b9cacd2988d5fb08b7fc78e738724d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a62b9cacd2988d5fb08b7fc78e738724d">setFilter</a> (<a class="el" href="a00009.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:a62b9cacd2988d5fb08b7fc78e738724d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64df54a9a42c46e2b055de5d63613007"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a64df54a9a42c46e2b055de5d63613007">setFilter</a> (string filterAsString)</td></tr>
-<tr class="separator:a64df54a9a42c46e2b055de5d63613007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226f7ccbf642bd9b9afca14b02e283d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a226f7ccbf642bd9b9afca14b02e283d4">removeFilter</a> ()</td></tr>
-<tr class="separator:a226f7ccbf642bd9b9afca14b02e283d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707b944d90cf16f7ecc0238c90ba3eb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a707b944d90cf16f7ecc0238c90ba3eb0">isFilterCurrentlySet</a> ()</td></tr>
-<tr class="separator:a707b944d90cf16f7ecc0238c90ba3eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a528af6feb4e6b278d4b1a2c94f778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a03a528af6feb4e6b278d4b1a2c94f778">sendPacket</a> (const <a class="el" href="a00058.html">RawPacket</a> &amp;rawPacket)</td></tr>
-<tr class="separator:a03a528af6feb4e6b278d4b1a2c94f778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32313bad71eff5bfc76871b4a91a565e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a32313bad71eff5bfc76871b4a91a565e">sendPacket</a> (const uint8_t *packetData, int packetDataLength)</td></tr>
-<tr class="separator:a32313bad71eff5bfc76871b4a91a565e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefffc60923d34e2ff680556fab2db9f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aefffc60923d34e2ff680556fab2db9f2">sendPacket</a> (const <a class="el" href="a00038.html">Packet</a> &amp;packet)</td></tr>
-<tr class="separator:aefffc60923d34e2ff680556fab2db9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7909392eea098657e3b4baede54b63dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets</a> (const <a class="el" href="a00058.html">RawPacket</a> *rawPacketsArr, int arrLength)</td></tr>
-<tr class="separator:a7909392eea098657e3b4baede54b63dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41754dd99196db97d23c367728bb8f3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a41754dd99196db97d23c367728bb8f3e">sendPackets</a> (const <a class="el" href="a00038.html">Packet</a> **packetsArr, int arrLength)</td></tr>
-<tr class="separator:a41754dd99196db97d23c367728bb8f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315848ef09c07ad2993a0fd8e886901c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a315848ef09c07ad2993a0fd8e886901c">sendPackets</a> (const <a class="el" href="a00088.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;rawPackets)</td></tr>
-<tr class="separator:a315848ef09c07ad2993a0fd8e886901c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00022"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00022')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00022.html">IPcapDevice</a></td></tr>
-<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00009.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a35e872140261fa1c824ae249f888d691">setFilter</a> (string filterAsString)</td></tr>
-<tr class="separator:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48b57cb49c1384ce3730d8e295e66fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ad48b57cb49c1384ce3730d8e295e66fd">~PcapLiveDevice</a> ()</td></tr>
+<tr class="separator:ad48b57cb49c1384ce3730d8e295e66fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee16d25dcc202dab11a0fe2d162da9d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aaee16d25dcc202dab11a0fe2d162da9d">getDeviceType</a> ()</td></tr>
+<tr class="separator:aaee16d25dcc202dab11a0fe2d162da9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59e7cc84db0987f73976573bda8e357"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#af59e7cc84db0987f73976573bda8e357">getName</a> ()</td></tr>
+<tr class="separator:af59e7cc84db0987f73976573bda8e357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300ad41766f9887818b6f6cef904e366"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a300ad41766f9887818b6f6cef904e366">getDesc</a> ()</td></tr>
+<tr class="separator:a300ad41766f9887818b6f6cef904e366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb5c7d6250a879306c7f34fa6bdb84a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a6eb5c7d6250a879306c7f34fa6bdb84a">getLoopback</a> ()</td></tr>
+<tr class="separator:a6eb5c7d6250a879306c7f34fa6bdb84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50084c4f2f34c5eea2efa7ab1b2cd05"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ac50084c4f2f34c5eea2efa7ab1b2cd05">getMtu</a> ()</td></tr>
+<tr class="separator:ac50084c4f2f34c5eea2efa7ab1b2cd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bd1951eab670a35f336773830c1f94"><td class="memItemLeft" align="right" valign="top">vector&lt; pcap_addr_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a68bd1951eab670a35f336773830c1f94">getAddresses</a> ()</td></tr>
+<tr class="separator:a68bd1951eab670a35f336773830c1f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62357fad523dfcc32b498371996f0a6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00039.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ad62357fad523dfcc32b498371996f0a6">getMacAddress</a> ()</td></tr>
+<tr class="separator:ad62357fad523dfcc32b498371996f0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b987a553170405fe71c0aa13932520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ab6b987a553170405fe71c0aa13932520">getIPv4Address</a> ()</td></tr>
+<tr class="separator:ab6b987a553170405fe71c0aa13932520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8cf27a7df25f12ba852c1cf89c7e971"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture</a> (<a class="el" href="a00097.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
+<tr class="separator:ad8cf27a7df25f12ba852c1cf89c7e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d14b58bf781afc8f357bf25b83f0091"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a0d14b58bf781afc8f357bf25b83f0091">startCapture</a> (<a class="el" href="a00097.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="a00097.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
+<tr class="separator:a0d14b58bf781afc8f357bf25b83f0091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d197b5d2162e7d5163d50761b273023"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a7d197b5d2162e7d5163d50761b273023">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="a00097.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
+<tr class="separator:a7d197b5d2162e7d5163d50761b273023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f4ae4316236d5ad016f20c0e319ec2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ae4f4ae4316236d5ad016f20c0e319ec2">startCapture</a> (<a class="el" href="a00094.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
+<tr class="separator:ae4f4ae4316236d5ad016f20c0e319ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbd3f5a02456907a5b2f81dd9741a0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture</a> ()</td></tr>
+<tr class="separator:afdbd3f5a02456907a5b2f81dd9741a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7b2d2c0a17950f59a364cc73edf79c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a6e7b2d2c0a17950f59a364cc73edf79c">sendPacket</a> (<a class="el" href="a00063.html">RawPacket</a> const &amp;rawPacket)</td></tr>
+<tr class="separator:a6e7b2d2c0a17950f59a364cc73edf79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99002c769a0f48e5a2875bba64f40db3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a99002c769a0f48e5a2875bba64f40db3">sendPacket</a> (const uint8_t *packetData, int packetDataLength)</td></tr>
+<tr class="separator:a99002c769a0f48e5a2875bba64f40db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a9fddf2bcf5f4c01c033fbf93d0453"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aa4a9fddf2bcf5f4c01c033fbf93d0453">sendPacket</a> (<a class="el" href="a00043.html">Packet</a> *packet)</td></tr>
+<tr class="separator:aa4a9fddf2bcf5f4c01c033fbf93d0453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc03317266883c255e58b7ee2ddadade"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#adc03317266883c255e58b7ee2ddadade">sendPackets</a> (<a class="el" href="a00063.html">RawPacket</a> *rawPacketsArr, int arrLength)</td></tr>
+<tr class="separator:adc03317266883c255e58b7ee2ddadade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a23fcf16c66d8489b7d70502900b1ce"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a4a23fcf16c66d8489b7d70502900b1ce">sendPackets</a> (<a class="el" href="a00043.html">Packet</a> **packetsArr, int arrLength)</td></tr>
+<tr class="separator:a4a23fcf16c66d8489b7d70502900b1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ea98417fc70ac84c0c47e95e7eb16c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a17ea98417fc70ac84c0c47e95e7eb16c">sendPackets</a> (const <a class="el" href="a00094.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;rawPackets)</td></tr>
+<tr class="separator:a17ea98417fc70ac84c0c47e95e7eb16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f7d0dcd5b00758e64e8af68d6d1e50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open</a> ()</td></tr>
+<tr class="separator:a95f7d0dcd5b00758e64e8af68d6d1e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee9fd9baee69b80f9b2d4327340f103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a4ee9fd9baee69b80f9b2d4327340f103">close</a> ()</td></tr>
+<tr class="separator:a4ee9fd9baee69b80f9b2d4327340f103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dac2e4560b2fcc31db2dd71aebaf03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a89dac2e4560b2fcc31db2dd71aebaf03">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
+<tr class="separator:a89dac2e4560b2fcc31db2dd71aebaf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4c37258548c736033818de003f4c90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a6d4c37258548c736033818de003f4c90">open</a> (<a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21">DeviceMode</a> mode)</td></tr>
+<tr class="separator:a6d4c37258548c736033818de003f4c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00027"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00027')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00027.html">IPcapDevice</a></td></tr>
+<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00013.html">GeneralFilter</a> &amp;filter)</td></tr>
+<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a35e872140261fa1c824ae249f888d691">setFilter</a> (string filterAsString)</td></tr>
+<tr class="separator:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a07e7aaa9009a94db733b709a0fd288e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07e7aaa9009a94db733b709a0fd288e7"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b></td></tr>
-<tr class="separator:a07e7aaa9009a94db733b709a0fd288e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c03ad4d351adefa4cd36ef4211ef70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14c03ad4d351adefa4cd36ef4211ef70"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>PcapLiveDeviceList</b></td></tr>
+<tr class="separator:a14c03ad4d351adefa4cd36ef4211ef70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class representing a PF_RING port </p>
+<div class="textblock"><p>A class that wraps a network interface (each of the interfaces listed in ifconfig/ipconfig). This class wraps the libpcap capabilities of capturing packets from the network, filtering packets and sending packets back to the network. This class is relevant for Linux applications only. On Windows the <a class="el" href="a00078.html">WinPcapLiveDevice</a> (which inherits this class) is used. Both classes are almost similar in capabilities, the main difference between them is adapting some capabilities to the specific OS. This class cannot be instantiated by the user (it has a private constructor), as network interfaces aren't dynamic. Instances of this class (one instance per network interface) are created by <a class="el" href="a00048.html">PcapLiveDeviceList</a> singleton on application startup and the user can get access to them by using <a class="el" href="a00048.html">PcapLiveDeviceList</a> public methods such as <a class="el" href="a00048.html#a390c2c0cd28d808021a3264f56b084de">PcapLiveDeviceList::getPcapLiveDeviceByIp()</a><br />
+ Main capabilities of this class:</p><ul>
+<li>Get all available information for this network interfaces such as name, IP addresses, MAC address, MTU, etc. This information is taken from both libpcap and the OS</li>
+<li>Capture packets from the network. Capturing is always conducted on a different thread. PcapPlusPlus creates this thread when capturing starts and kills it when capturing ends. This prevents the application from being stuck while waiting for packets or processing them. Currently only one capturing thread is allowed, so when the interface is in capture mode, no further capturing is allowed. In addition to capturing the user can get stats on packets that were received by the application, dropped by the NIC (due to full NIC buffers), etc. Stats collection can be initiated by the user by calling <a class="el" href="a00047.html#a89dac2e4560b2fcc31db2dd71aebaf03">getStatistics()</a> or be pushed to the user periodically by supplying a callback and a timeout to <a class="el" href="a00047.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture()</a></li>
+<li>Send packets back to the network. Sending the packets is done on the caller thread. No additional threads are created for this task </li>
+</ul>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a859e6207223f202a35261338793c0211"></a>
+<a class="anchor" id="a185b64fcba0e667fcc7457b2ab4a4e21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00047.html#a859e6207223f202a35261338793c0211">PfRingDevice::ChannelDistribution</a></td>
+          <td class="memname">enum <a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21">PcapLiveDevice::DeviceMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum representing the type of packet distribution between different RX channels </p>
+<p>Device capturing mode </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4"></a>RoundRobin&#160;</td><td class="fielddoc">
-<p>Packets are distributed between channels in a round-robin manner </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a185b64fcba0e667fcc7457b2ab4a4e21ae39fe37c3af407e1a766c43dc717e8f8"></a>Normal&#160;</td><td class="fielddoc">
+<p>Only packets that their destination is this NIC are captured </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e"></a>PerFlow&#160;</td><td class="fielddoc">
-<p>Packets are distributed between channels per flow (each flow goes for different channel) </p>
+<tr><td class="fieldname"><a class="anchor" id="a185b64fcba0e667fcc7457b2ab4a4e21a18306f1bc588dcecfd3c8455f779c5ec"></a>Promiscuous&#160;</td><td class="fielddoc">
+<p>All packets that arrive to the NIC are captured, even packets that their destination isn't this NIC </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a201c04fe21184602ce48fb799b9bd7d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7">PcapLiveDevice::LiveDeviceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the live device </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a201c04fe21184602ce48fb799b9bd7d7a63f2e3a3e267195f84cff2adb2493a6c"></a>LibPcapDevice&#160;</td><td class="fielddoc">
+<p>libPcap live device </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a201c04fe21184602ce48fb799b9bd7d7aa09f95e4cf5b79cce8a5551e760ca204"></a>WinPcapDevice&#160;</td><td class="fielddoc">
+<p>WinPcap live device </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2"></a>RemoteDevice&#160;</td><td class="fielddoc">
+<p>WinPcap Remote Capture device </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af5a275b7945d22ac78f062bdaed29738"></a>
+<a class="anchor" id="ad48b57cb49c1384ce3730d8e295e66fd"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PfRingDevice::~PfRingDevice </td>
+          <td class="memname">virtual PcapLiveDevice::~PcapLiveDevice </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>A destructor for <a class="el" href="a00047.html">PfRingDevice</a> class </p>
+<p>A destructor for this class </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a25f3a3d9544e16544dc919bda44b8556"></a>
+<a class="anchor" id="a4ee9fd9baee69b80f9b2d4327340f103"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +289,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PfRingDevice::close </td>
+          <td class="memname">void PcapLiveDevice::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -270,13 +301,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Closes all RX channels currently opened in device </p>
+<p>Close the device </p>
 
-<p>Implements <a class="el" href="a00022.html#ad9dd73f0310fb6e3924fabb4e2542ef0">IPcapDevice</a>.</p>
+<p>Implements <a class="el" href="a00027.html#ad9dd73f0310fb6e3924fabb4e2542ef0">IPcapDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aea8a32e50dfb365f08f4e3f496193bd6"></a>
+<a class="anchor" id="a68bd1951eab670a35f336773830c1f94"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -284,7 +315,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00060.html">SystemCore</a> PfRingDevice::getCurrentCoreId </td>
+          <td class="memname">vector&lt;pcap_addr_t&gt;&amp; PcapLiveDevice::getAddresses </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -296,250 +327,216 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the core used in the current thread context </p><dl class="section return"><dt>Returns</dt><dd>The system core used in the current thread context </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing all addresses defined for this interface, each in pcap_addr_t struct </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af7f4c08d8ad864818286149312f7ff96"></a>
+<a class="anchor" id="a300ad41766f9887818b6f6cef904e366"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* PcapLiveDevice::getDesc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A human-readable description of the device, taken from pcap_if_t-&gt;description. May be NULL in some interfaces </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaee16d25dcc202dab11a0fe2d162da9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00047.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a> PcapLiveDevice::getDeviceType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The type of the device (libPcap, WinPcap or a remote device) </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00050.html#ac09338c44301f7cdb9b833497641139f">PcapRemoteDevice</a>, and <a class="el" href="a00078.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2">WinPcapLiveDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6b987a553170405fe71c0aa13932520"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PfRingDevice::getCurrentThreadStatistics </td>
+          <td class="memname"><a class="el" href="a00031.html">IPv4Address</a> PcapLiveDevice::getIPv4Address </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The IPv4 address for this interface. If multiple IPv4 addresses are defined for this interface, the first will be picked. If no IPv4 addresses are defined, a zeroed IPv4 address (<a class="el" href="a00031.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>) will be returned </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6eb5c7d6250a879306c7f34fa6bdb84a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PcapLiveDevice::getLoopback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if this interface is a loopback interface, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad62357fad523dfcc32b498371996f0a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00039.html">MacAddress</a> PcapLiveDevice::getMacAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The MAC address for this interface </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00050.html#a57d8b6fc5eadc45214d1b1e0d166356c">PcapRemoteDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac50084c4f2f34c5eea2efa7ab1b2cd05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint16_t PcapLiveDevice::getMtu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The device's maximum transmission unit (MTU) in bytes </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00050.html#a1edc9591657c5b8551b41ee87d85a77f">PcapRemoteDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af59e7cc84db0987f73976573bda8e357"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* PcapLiveDevice::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The name of the device (e.g eth0), taken from pcap_if_t-&gt;name </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89dac2e4560b2fcc31db2dd71aebaf03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PcapLiveDevice::getStatistics </td>
           <td>(</td>
           <td class="paramtype">pcap_stat &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-<p>Get the statistics of the current thread/core (=RX channel) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>A reference for the stats object where the stats are written. Current values will be overriden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5998d20f0f336c7743aede9bfd78b3c8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string PfRingDevice::getDeviceName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the interface name (e.g eth0, eth1, etc.) </p><dl class="section return"><dt>Returns</dt><dd>The interface name </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a78a358734bfd45da43a221c65dfedd03"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PfRingDevice::getInterfaceIndex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get PF_RING interface index of the current device </p><dl class="section return"><dt>Returns</dt><dd>PF_RING interface index of the current device </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac7d9d311998b6bb18efe3740300e9c7c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00034.html">MacAddress</a> PfRingDevice::getMacAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the MAC address of the current device </p><dl class="section return"><dt>Returns</dt><dd>The MAC address of the current device </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3c9cbd028dd051d2d99fe861b9ae791b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PfRingDevice::getMtu </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get MTU of the current device </p><dl class="section return"><dt>Returns</dt><dd>Upon success return the device MTU, 0 otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a39c45274170d16b9d9d1e0a44951ac0b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t PfRingDevice::getNumOfOpenedRxChannels </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the number of RX channels currently open. RX channels aren't necessary interface's RX queues because in some cases the user asks to open several channels on the same queue. For example: if the user uses <a class="el" href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">openMultiRxChannels()</a> and asks to open 8 channels but interface has only 4 RX queues, 2 channels will be opened for each RX queue </p><dl class="section return"><dt>Returns</dt><dd>Number of opened RX channels </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a748161ecb155fe4079bdde3c5a826ea6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PfRingDevice::getStatistics </td>
-          <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the statistics for the entire device. If more than 1 RX channel is opened, this method aggregates the stats of all channels </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get statistics from device:</p><ul>
+<li>pcap_stat::ps_recv: number of packets received</li>
+<li>pcap_stat::ps_drop: number of packets dropped</li>
+<li>pcap_stat::ps_ifdorp: number of packets dropped by interface <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>A reference for the stats object where the stats are written. Current values will be overriden </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 
-<p>Implements <a class="el" href="a00022.html#abfddac7872baed093efc622259f51fc6">IPcapDevice</a>.</p>
+<p>Implements <a class="el" href="a00027.html#abfddac7872baed093efc622259f51fc6">IPcapDevice</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="a42ec65a4ffa8d29d817d21968bc70ef7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PfRingDevice::getThreadStatistics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html">SystemCore</a>&#160;</td>
-          <td class="paramname"><em>core</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the statistics of a specific thread/core (=RX channel) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">core</td><td>The requested core </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>A reference for the stats object where the stats are written. Current values will be overriden </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Reimplemented in <a class="el" href="a00050.html#a8d10ffda65b9a4ba61d0193cf6b1872d">PcapRemoteDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7c0a6b114545a94ab9d9a8f55c07cabe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t PfRingDevice::getTotalNumOfRxChannels </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the total number of RX channels (RX queues) this interface has </p><dl class="section return"><dt>Returns</dt><dd>The number of RX channels (queues) for this interface </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a707b944d90cf16f7ecc0238c90ba3eb0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::isFilterCurrentlySet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true if filter is currently set </p><dl class="section return"><dt>Returns</dt><dd>True if filter is currently set, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a96c8422443cb1007d2551beb5d35a9b2"></a>
+<a class="anchor" id="a95f7d0dcd5b00758e64e8af68d6d1e50"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -547,31 +544,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::isHwClockEnabledForDevice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return true if device supports hardware timestamping. If it does, this feature will be automatically set for this device. You can read more about this in PF_RING documentation </p><dl class="section return"><dt>Returns</dt><dd>True if device supports hardware timestamping, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa64effebebd1c51fd6859b65d8925fb2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::open </td>
+          <td class="memname">bool PcapLiveDevice::open </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -583,148 +556,72 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens the entire device (including all RX channels/queues on this interface). All packets will be received on a single thread without core affinity </p><dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
+<p>Open the device using libpcap pcap_open_live. Opening the device only makes the device ready for use, it doesn't start packet capturing. For packet capturing the user should call <a class="el" href="a00047.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture()</a>. This implies that calling this method is a must before calling <a class="el" href="a00047.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture()</a> (otherwise <a class="el" href="a00047.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture()</a> will fail with a "device not open" error). The device is opened in promiscuous mode </p><dl class="section return"><dt>Returns</dt><dd>True if the device was opened successfully, false otherwise. When opening the device fails an error will be printed to log as well </dd></dl>
 
-<p>Implements <a class="el" href="a00022.html#a94a6922dff88e4bea4b3904a60e6f0e9">IPcapDevice</a>.</p>
+<p>Implements <a class="el" href="a00027.html#a94a6922dff88e4bea4b3904a60e6f0e9">IPcapDevice</a>.</p>
+
+<p>Reimplemented in <a class="el" href="a00050.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced">PcapRemoteDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a24cc261e8660a8469209c2e5c2ccdb07"></a>
+<a class="anchor" id="a6d4c37258548c736033818de003f4c90"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::openMultiRxChannels </td>
+          <td class="memname">bool PcapLiveDevice::open </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>channelIds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00047.html#a185b64fcba0e667fcc7457b2ab4a4e21">DeviceMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numOfChannelIds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Opens a set of RX channels (=RX queues) on this interface, identified by their IDs. All packets will be received on a single thread without core affinity. If one of the channel IDs requested doesn't exist on this interface, the method will fail (return false) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Same as <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a>, but enables to open the device in normal or promiscuous mode </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelIds</td><td>An array of channel IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numOfChannelIds</td><td>The channel ID array size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Normal or promiscuous mode </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Same as <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3b39725d02e5aae88ef27212c4b26af1"></a>
+<a class="anchor" id="a6e7b2d2c0a17950f59a364cc73edf79c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::openMultiRxChannels </td>
+          <td class="memname">bool PcapLiveDevice::sendPacket </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>numOfRxChannelsToOpen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00047.html#a859e6207223f202a35261338793c0211">ChannelDistribution</a>&#160;</td>
-          <td class="paramname"><em>dist</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opens numOfRxChannelsToOpen RX channels. If numOfRxChannelsToOpen is larger than available RX queues for this interface than a number of RX channels will be opened on each RX queue. For example: if the user asks for 10 RX channels but the interface has only 4 RX queues, then 3 RX channels will be opened for RX-queue0 and RX-queue2, and 2 RX channels will be opened for RX-queue2 and RX-queue3. Packets will be distributed between different RX queues on per-flow manner, but within multiple RX channels in the same RX queue packet will be distributed according to distribution requested by "dist" </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">numOfRxChannelsToOpen</td><td>Number of RX channels to open </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>Distribution method </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="add1ba7fba70fbcafacb115e47b4e3a82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::openSingleRxChannel </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>channelId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opens a single RX channel (=RX queue) on this interface. All packets will be received on a single thread without core affinity. If the channel ID requested doesn't exist on this interface, the method will fail (return false) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelId</td><td>The requested channel ID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a226f7ccbf642bd9b9afca14b02e283d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::removeFilter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove a filter if currently set </p><dl class="section return"><dt>Returns</dt><dd>True if filter was removed successfully or if no filter was set, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a03a528af6feb4e6b278d4b1a2c94f778"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::sendPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00058.html">RawPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00063.html">RawPacket</a> const &amp;&#160;</td>
           <td class="paramname"><em>rawPacket</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a raw packet. This packet must be fully specified (the MAC address up) and it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the data in any way (hence the "const" declaration). Note this method flushes the TX queues after the data is sent. So if you want to send several packets In the burst please use <a class="el" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a <a class="el" href="a00063.html">RawPacket</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>The raw packet to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A reference to the raw packet to send. This method treats the raw packet as read-only, it doesn't change anything in it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw packet was sent completely, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
+<li>Device is not opened</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a32313bad71eff5bfc76871b4a91a565e"></a>
+<a class="anchor" id="a99002c769a0f48e5a2875bba64f40db3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::sendPacket </td>
+          <td class="memname">bool PcapLiveDevice::sendPacket </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>packetData</em>, </td>
@@ -742,48 +639,63 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send raw data. This data must be a valid and fully specified packet (the MAC address up); it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the data in any way (hence the "const" declaration). Note this method flushes the TX queues after the data is sent. So if you want to send several packets in the burst please use <a class="el" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a buffer containing packet raw data (including all layers) to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">packetData</td><td>The raw data to send </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packetDataLength</td><td>the length of packetData </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetData</td><td>The buffer containing the packet raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetDataLength</td><td>The length of the buffer </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw packet was sent completely, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
+<li>Device is not opened</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aefffc60923d34e2ff680556fab2db9f2"></a>
+<a class="anchor" id="aa4a9fddf2bcf5f4c01c033fbf93d0453"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::sendPacket </td>
+          <td class="memname">bool PcapLiveDevice::sendPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00038.html">Packet</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00043.html">Packet</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a packet. This packet must be fully specified (the MAC address up) and it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the data in any way (hence the "const" declaration). Note this method flushes the TX queues after the data is sent. So if you want to send several packets In the burst please use <a class="el" href="a00047.html#a7909392eea098657e3b4baede54b63dd">sendPackets()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a parsed <a class="el" href="a00043.html">Packet</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>The packet to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the packet to send. This method treats the packet as read-only, it doesn't change anything in it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw packet was sent completely, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
+<li>Device is not opened</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a7909392eea098657e3b4baede54b63dd"></a>
+<a class="anchor" id="adc03317266883c255e58b7ee2ddadade"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int PfRingDevice::sendPackets </td>
+          <td class="memname">virtual int PcapLiveDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00058.html">RawPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00063.html">RawPacket</a> *&#160;</td>
           <td class="paramname"><em>rawPacketsArr</em>, </td>
         </tr>
         <tr>
@@ -798,26 +710,42 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Send raw packets. All raw packets must be fully specified (the MAC address up) and it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the raw packets data in any way (hence the "const" declaration). This method flushes the TX queues only when the last packet is sent </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send an array of <a class="el" href="a00063.html">RawPacket</a> objects to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacketsArr</td><td>The <a class="el" href="a00058.html">RawPacket</a> array </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td><a class="el" href="a00058.html">RawPacket</a> array length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacketsArr</td><td>The array of <a class="el" href="a00063.html">RawPacket</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td>The length of the array </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of packets that were sent completely </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
+<li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00078.html#ad1576486b7de3dd8dd9eca51d9bd05dc">WinPcapLiveDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a41754dd99196db97d23c367728bb8f3e"></a>
+<a class="anchor" id="a4a23fcf16c66d8489b7d70502900b1ce"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int PfRingDevice::sendPackets </td>
+          <td class="memname">virtual int PcapLiveDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00038.html">Packet</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="a00043.html">Packet</a> **&#160;</td>
           <td class="paramname"><em>packetsArr</em>, </td>
         </tr>
         <tr>
@@ -832,106 +760,84 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Send packets. All packets must be fully specified (the MAC address up) and it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the packets data in any way (hence the "const" declaration). This method flushes the TX queues only when the last packet is sent </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send an array of pointers to <a class="el" href="a00043.html">Packet</a> objects to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">packetsArr</td><td>An array of pointers to <a class="el" href="a00038.html">Packet</a> objects </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td><a class="el" href="a00038.html">Packet</a> pointers array length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetsArr</td><td>The array of pointers to <a class="el" href="a00043.html">Packet</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td>The length of the array </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of packets that were sent completely </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
+<li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a315848ef09c07ad2993a0fd8e886901c"></a>
+<a class="anchor" id="a17ea98417fc70ac84c0c47e95e7eb16c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int PfRingDevice::sendPackets </td>
+          <td class="memname">virtual int PcapLiveDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00088.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00094.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>rawPackets</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Send all raw packets pointed by the RawPacketVector. All packets must be fully specified (the MAC address up) and it will be transmitted as-is without any further manipulation. This method doesn't change or manipulate the packets data in any way (hence the "const" declaration). This method flushes the TX queues only when the last packet is sent </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a vector of pointers to <a class="el" href="a00063.html">RawPacket</a> objects to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPackets</td><td>The raw packet vector </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPackets</td><td>The array of pointers to <a class="el" href="a00063.html">RawPacket</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of raw packets that were sent completely </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
+<li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is 0</li>
+<li><a class="el" href="a00043.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="a00043.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a62b9cacd2988d5fb08b7fc78e738724d"></a>
+<a class="anchor" id="ad8cf27a7df25f12ba852c1cf89c7e971"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::setFilter </td>
+          <td class="memname">virtual bool PcapLiveDevice::startCapture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">GeneralFilter</a> &amp;&#160;</td>
-          <td class="paramname"><em>filter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets a filter to the device </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a64df54a9a42c46e2b055de5d63613007"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::setFilter </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>filterAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets a BPF filter to the device </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The BPF filter in string format </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a19b3f77801e4afde7a7f5e40c779d760"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PfRingDevice::startCaptureMultiThread </td>
-          <td>(</td>
-          <td class="paramtype">OnPfRingPacketsArriveCallback&#160;</td>
-          <td class="paramname"><em>onPacketsArrive</em>, </td>
+          <td class="paramtype"><a class="el" href="a00097.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>&#160;</td>
+          <td class="paramname"><em>onPacketArrives</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onPacketsArriveUserCookie</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CoreMask&#160;</td>
-          <td class="paramname"><em>coreMask</em>&#160;</td>
+          <td class="paramname"><em>onPacketArrivesUserCookie</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -939,34 +845,64 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Start single-threaded capturing where all packets will be written to a <a class="el" href="a00058.html">RawPacket</a> vector. Works with <a class="el" href="a00047.html#aa64effebebd1c51fd6859b65d8925fb2">open()</a> or openSingleRxChannel(). ||||param[in] capturedPacketsVector The <a class="el" href="a00058.html">RawPacket</a> vector all packets will be written to ||||return True if this action succeeds, false otherwise Start multi-threaded (multi-core) capturing with callback. Works with <a class="el" href="a00047.html#a24cc261e8660a8469209c2e5c2ccdb07">openMultiRxChannels()</a>. This method will return an error if the number of opened channels is different than the number of threads/cores requested </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Start capturing packets on this network interface (device). Each time a packet is captured the onPacketArrives callback is called. The capture is done on a new thread created by this method, meaning all callback calls are done in a thread other than the caller thread. Capture process will stop and this capture thread will be terminated when calling <a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketsArrive</td><td>A callback to call whenever a packet arrives </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketsArriveUserCookie</td><td>A cookie that will be delivered to onPacketsArrive callback on every packet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">coreMask</td><td>The cores to be used as mask. For example: </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrives</td><td>A callback that is called each time a packet is captured </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrivesUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onPacketArrives callback each time it is called. This cookie is very useful for transferring objects that give context to the capture callback, for example: objects that counts packets, manages flow state or manages the application state according to the packet that was captured </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
+<li>Capture is already running</li>
+<li>Device is not opened</li>
+<li>Capture thread could not be created </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5f50e69a577371b7ef8d5cbcbf760a3a"></a>
+<a class="anchor" id="a0d14b58bf781afc8f357bf25b83f0091"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PfRingDevice::startCaptureSingleThread </td>
+          <td class="memname">virtual bool PcapLiveDevice::startCapture </td>
           <td>(</td>
-          <td class="paramtype">OnPfRingPacketsArriveCallback&#160;</td>
-          <td class="paramname"><em>onPacketsArrive</em>, </td>
+          <td class="paramtype"><a class="el" href="a00097.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>&#160;</td>
+          <td class="paramname"><em>onPacketArrives</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onPacketsArriveUserCookie</em>&#160;</td>
+          <td class="paramname"><em>onPacketArrivesUserCookie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00097.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>&#160;</td>
+          <td class="paramname"><em>onStatsUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -974,31 +910,141 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Start single-threaded capturing with callback. Works with <a class="el" href="a00047.html#aa64effebebd1c51fd6859b65d8925fb2">open()</a> or openSingleRxChannel(). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Start capturing packets on this network interface (device) with periodic stats collection. Each time a packet is captured the onPacketArrives callback is called. In addition, each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called. Both the capture and periodic stats collection are done on new threads created by this method, each on a different thread, meaning all callback calls are done in threads other than the caller thread. Capture process and stats collection will stop and threads will be terminated when calling <a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketsArrive</td><td>A callback to call whenever a packet arrives </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketsArriveUserCookie</td><td>A cookie that will be delivered to onPacketsArrive callback on every packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrives</td><td>A callback that is called each time a packet is captured </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrivesUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onPacketArrives callback each time it is called. This cookie is very useful for transferring objects that give context to the capture callback, for example: objects that counts packets, manages flow state or manages the application state according to the packet that was captured </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this action succeeds, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
+<li>Capture is already running</li>
+<li>Device is not opened</li>
+<li>Capture thread could not be created</li>
+<li>Stats collection thread could not be created </li>
+</ul>
+</dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00078.html#a83a5805972630d6071b07bc0f1d1de27">WinPcapLiveDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a178d4778602d4b8af1214bda067408aa"></a>
+<a class="anchor" id="a7d197b5d2162e7d5163d50761b273023"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PcapLiveDevice::startCapture </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00097.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>&#160;</td>
+          <td class="paramname"><em>onStatsUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start capturing packets on this network interface (device) with periodic stats collection only. This means that packets arriving to the network interface aren't delivered to the user but only counted. Each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called with the updated counters. The periodic stats collection is done on a new thread created by this method, meaning all callback calls are done in threads other than the caller thread. Stats collection will stop and threads will be terminated when calling <a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
+<li>Capture is already running</li>
+<li>Device is not opened</li>
+<li>Stats collection thread could not be created </li>
+</ul>
+</dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00078.html#ad8c8c56ec5b16cdd8c423274d8b4f07d">WinPcapLiveDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4f4ae4316236d5ad016f20c0e319ec2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PcapLiveDevice::startCapture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00094.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>capturedPacketsVector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start capturing packets on this network interface (device). All captured packets are added to capturedPacketsVector, so at the end of the capture (when calling <a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>) this vector contains pointers to all captured packets in the form of <a class="el" href="a00063.html">RawPacket</a>. The capture is done on a new thread created by this method, meaning capturedPacketsVector is updated from another thread other than the caller thread (so user should avoid changing or iterating this vector while capture is on). Capture process will stop and this capture thread will be terminated when calling <a class="el" href="a00047.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00047.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">capturedPacketsVector</td><td>A reference to a RawPacketVector, meaning a vector of pointer to <a class="el" href="a00063.html">RawPacket</a> objects </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
+<li>Capture is already running</li>
+<li>Device is not opened</li>
+<li>Capture thread could not be created </li>
+</ul>
+</dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00078.html#a79611cae573a93b09ee980c1af8f978a">WinPcapLiveDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdbd3f5a02456907a5b2f81dd9741a0c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PfRingDevice::stopCapture </td>
+          <td class="memname">void PcapLiveDevice::stopCapture </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stops capturing packets (works will all type of startCapture*) </p>
+<p>Stop a currently running packet capture. This method terminates gracefully both packet capture thread and periodic stats collection thread (both if exist) </p>
 
 </div>
 </div>
@@ -1007,8 +1053,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PfRingDeviceList</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00047.html">PfRingDevice</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00047.html">PcapLiveDevice</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

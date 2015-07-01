@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: LoggerPP Class Reference</title>
+<title>PcapPlusPlus: IPv4Layer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,86 +106,177 @@ $(document).ready(function(){initNavTree('a00033.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00143.html">List of all members</a>  </div>
+<a href="a00149.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LoggerPP Class Reference</div>  </div>
+<div class="title">IPv4Layer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00083_source.html">Logger.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00086_source.html">IPv4Layer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for IPv4Layer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00033.png" usemap="#IPv4Layer_map" alt=""/>
+  <map id="IPv4Layer_map" name="IPv4Layer_map">
+<area href="a00037.html" alt="Layer" shape="rect" coords="0,0,70,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aa52cd7c3af16c16af7209f5769796047"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> { <a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858">Normal</a>, 
-<a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd">Debug</a>
- }</td></tr>
-<tr class="separator:aa52cd7c3af16c16af7209f5769796047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a81e0fa1eef639071d680bf89efae2747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a81e0fa1eef639071d680bf89efae2747">setLogLevel</a> (<a class="el" href="a00083.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module, <a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
-<tr class="separator:a81e0fa1eef639071d680bf89efae2747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#aff10ddbdb52cc2c25fb5e450000495f7">setAllModlesToLogLevel</a> (<a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
-<tr class="separator:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6c407ddd90de83220b90067b513587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a7f6c407ddd90de83220b90067b513587">isDebugEnabled</a> (<a class="el" href="a00083.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module)</td></tr>
-<tr class="separator:a7f6c407ddd90de83220b90067b513587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d498104bed27d40459c0c38c1c7d68b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr</a> ()</td></tr>
-<tr class="separator:a3d498104bed27d40459c0c38c1c7d68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a3be2f5201ab478baff464d8b5df6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a28a3be2f5201ab478baff464d8b5df6c">isErrorStringSet</a> ()</td></tr>
-<tr class="separator:a28a3be2f5201ab478baff464d8b5df6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1ea00b8e216aef697e0408bf449b95"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#acc1ea00b8e216aef697e0408bf449b95">getErrorString</a> ()</td></tr>
-<tr class="separator:acc1ea00b8e216aef697e0408bf449b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a8b2e3f0c471f4391d581ed021d60f7c9">setErrorString</a> (char *errString, int len)</td></tr>
-<tr class="separator:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78215dfe2058fb59a56976ef04950f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a78215dfe2058fb59a56976ef04950f54">getErrorStringLength</a> ()</td></tr>
-<tr class="separator:a78215dfe2058fb59a56976ef04950f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#acbb4c2c036fd4c5a9af65ad0f20f7e94">supressErrors</a> ()</td></tr>
-<tr class="separator:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949a764e78f7ab3e4610e130032f9cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a949a764e78f7ab3e4610e130032f9cc4">enableErrors</a> ()</td></tr>
-<tr class="separator:a949a764e78f7ab3e4610e130032f9cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0665db5b2cc061cd022e4666f540662e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a0665db5b2cc061cd022e4666f540662e">isSupressErrors</a> ()</td></tr>
-<tr class="separator:a0665db5b2cc061cd022e4666f540662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ed1b706144dcc9214fad2da0349847e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00033.html">LoggerPP</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a0ed1b706144dcc9214fad2da0349847e">getInstance</a> ()</td></tr>
-<tr class="separator:a0ed1b706144dcc9214fad2da0349847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b835816502fcf60e61ecd60ecbcdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a414b835816502fcf60e61ecd60ecbcdd">IPv4Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00037.html">Layer</a> *prevLayer, <a class="el" href="a00043.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a414b835816502fcf60e61ecd60ecbcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c99914fc493045c39b48141791a6f80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a6c99914fc493045c39b48141791a6f80">IPv4Layer</a> ()</td></tr>
+<tr class="separator:a6c99914fc493045c39b48141791a6f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb80b2caa6f3b406917226d23d2c2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a46eb80b2caa6f3b406917226d23d2c2a">IPv4Layer</a> (const <a class="el" href="a00031.html">IPv4Address</a> &amp;srcIP, const <a class="el" href="a00031.html">IPv4Address</a> &amp;dstIP)</td></tr>
+<tr class="separator:a46eb80b2caa6f3b406917226d23d2c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dac299b842ec9574a4b33cc28799984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00030.html">iphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a8dac299b842ec9574a4b33cc28799984">getIPv4Header</a> ()</td></tr>
+<tr class="separator:a8dac299b842ec9574a4b33cc28799984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac478085b64fabe05f530efcf3d3e0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#aac478085b64fabe05f530efcf3d3e0fd">getSrcIpAddress</a> ()</td></tr>
+<tr class="separator:aac478085b64fabe05f530efcf3d3e0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693fbcbf941471ba08c2ecdd4057048c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a693fbcbf941471ba08c2ecdd4057048c">getDstIpAddress</a> ()</td></tr>
+<tr class="separator:a693fbcbf941471ba08c2ecdd4057048c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3331bcddca9c6c54cf754194af47713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#ac3331bcddca9c6c54cf754194af47713">parseNextLayer</a> ()</td></tr>
+<tr class="separator:ac3331bcddca9c6c54cf754194af47713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319a0b7550be3259307a866eff5c709f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a319a0b7550be3259307a866eff5c709f">getHeaderLen</a> ()</td></tr>
+<tr class="separator:a319a0b7550be3259307a866eff5c709f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56511f700cf1008caf3b906819f09cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a56511f700cf1008caf3b906819f09cae">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a56511f700cf1008caf3b906819f09cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f407a9056121ef56a434117c8436ad"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a36f407a9056121ef56a434117c8436ad">toString</a> ()</td></tr>
+<tr class="separator:a36f407a9056121ef56a434117c8436ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00037"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00037')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00037.html">Layer</a></td></tr>
+<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
+<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
+<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
+<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
+<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
+<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
+<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The PcapPlusPlus log manager class. PcapPlusPlus uses this logger to output both error and debug logs.</p>
-<p>Debug logs: PcapPlusPlus is divided into modules (described in LogModule enum). The user can set each module or all modules to output or suppress debug messages. The default is suppressing debug messages. Changing debug log level for modules can be done dynamically while application is running.</p>
-<p>Error logs: errors are printed by default to stderr. The user can change this behavior in several manners:</p><ol type="1">
-<li>Suppress errors - no errors will be printed (for all modules)</li>
-<li>Print error logs to a string provided by the user instead of stderr</li>
-</ol>
-<p>PcapPlusPlus logger is a singleton which can be reached from anywhere in the code * </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aa52cd7c3af16c16af7209f5769796047"></a>
+<div class="textblock"><p>Represents an IPv4 protocol layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a414b835816502fcf60e61ecd60ecbcdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00037.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00043.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00030.html">iphdr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00043.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c99914fc493045c39b48141791a6f80"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a></td>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum representing the log level. Currently 2 log level are supported: Normal and Debug. Normal is the default log level </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858"></a>Normal&#160;</td><td class="fielddoc">
-<p>Normal log level. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd"></a>Debug&#160;</td><td class="fielddoc">
-<p>Debug log level. </p>
-</td></tr>
-</table>
+<p>A constructor that allocates a new IPv4 header with empty fields </p>
+
+</div>
+</div>
+<a class="anchor" id="a46eb80b2caa6f3b406917226d23d2c2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPv4Layer::IPv4Layer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>dstIP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new IPv4 header with source and destination IPv4 addresses </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcIP</td><td>Source IPv4 address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstIP</td><td>Destination IPv4 address </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a949a764e78f7ab3e4610e130032f9cc4"></a>
+<a class="anchor" id="a56511f700cf1008caf3b906819f09cae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,7 +284,39 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LoggerPP::enableErrors </td>
+          <td class="memname">void IPv4Layer::computeCalculateFields </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the following fields:</p><ul>
+<li><a class="el" href="a00030.html#a9d915fa9b82de8436a7d69c4e61ff1e9">iphdr::internetHeaderLength</a> = 5</li>
+<li><a class="el" href="a00030.html#ad5c64b12356b2825743b1944b6b3dd88">iphdr::ipVersion</a> = 4;</li>
+<li><a class="el" href="a00030.html#a7ef0e303262db11e95316591e39060e3">iphdr::totalLength</a> = total packet length</li>
+<li><a class="el" href="a00030.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf">iphdr::headerChecksum</a> = calculated</li>
+<li><a class="el" href="a00030.html#a2ea68d76d49f1a2f9d2f0d7d5e12d323">iphdr::protocol</a> = calculated if next layer is known: <a class="el" href="a00086.html#adac6a7222ef5bcd336b45fb818aafc9da1d2e2b707cbf23b0efb9ddba46275874">PACKETPP_IPPROTO_TCP</a> for TCP, <a class="el" href="a00086.html#adac6a7222ef5bcd336b45fb818aafc9da555ca922a0c1b9f5249ad53df871ba5b">PACKETPP_IPPROTO_UDP</a> for UDP, <a class="el" href="a00086.html#adac6a7222ef5bcd336b45fb818aafc9dae45cf682027fcba579b2e14349b72cc4">PACKETPP_IPPROTO_ICMP</a> for ICMP </li>
+</ul>
+
+<p>Implements <a class="el" href="a00037.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a693fbcbf941471ba08c2ecdd4057048c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">IPv4Address</a> IPv4Layer::getDstIpAddress </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -205,11 +328,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Enable all errors in all PcapPlusPlusModules </p>
+<p>Get the destination IP address in the form of <a class="el" href="a00031.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00031.html">IPv4Address</a> containing the destination address </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="acc1ea00b8e216aef697e0408bf449b95"></a>
+<a class="anchor" id="a319a0b7550be3259307a866eff5c709f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -217,7 +340,33 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* LoggerPP::getErrorString </td>
+          <td class="memname">size_t IPv4Layer::getHeaderLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00030.html">iphdr</a> </dd></dl>
+
+<p>Implements <a class="el" href="a00037.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dac299b842ec9574a4b33cc28799984"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00030.html">iphdr</a>* IPv4Layer::getIPv4Header </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -229,11 +378,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the pointer to the error string set by the user. If no such pointer was provided by the user, NULL will be returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the string </dd></dl>
+<p>Get a pointer to the IPv4 header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00030.html">iphdr</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a78215dfe2058fb59a56976ef04950f54"></a>
+<a class="anchor" id="aac478085b64fabe05f530efcf3d3e0fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -241,7 +390,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int LoggerPP::getErrorStringLength </td>
+          <td class="memname"><a class="el" href="a00031.html">IPv4Address</a> IPv4Layer::getSrcIpAddress </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -253,11 +402,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the user-defined error string length. If no such pointer was provided by the user, 0 will be returned </p><dl class="section return"><dt>Returns</dt><dd>The user-defined error string length </dd></dl>
+<p>Get the source IP address in the form of <a class="el" href="a00031.html">IPv4Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00031.html">IPv4Address</a> containing the source address </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0ed1b706144dcc9214fad2da0349847e"></a>
+<a class="anchor" id="ac3331bcddca9c6c54cf754194af47713"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -265,7 +414,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00033.html">LoggerPP</a>&amp; LoggerPP::getInstance </td>
+          <td class="memname">void IPv4Layer::parseNextLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -273,16 +422,17 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get access to <a class="el" href="a00033.html">LoggerPP</a> singleton </p><dl class="todo"><dt><b><a class="el" href="a00108.html#_todo000002">Todo:</a></b></dt><dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00033.html">LoggerPP</a> singleton </dd></dl>
-</dd></dl>
+<p>Currently identifies the following next layers: <a class="el" href="a00073.html">UdpLayer</a>, <a class="el" href="a00069.html">TcpLayer</a>. Otherwise sets <a class="el" href="a00044.html">PayloadLayer</a> </p>
+
+<p>Implements <a class="el" href="a00037.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3d498104bed27d40459c0c38c1c7d68b"></a>
+<a class="anchor" id="a36f407a9056121ef56a434117c8436ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -290,7 +440,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>* LoggerPP::getLogModulesArr </td>
+          <td class="memname">string IPv4Layer::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -298,226 +448,13 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get an array that contains log level information for all modules. User can access this array with a certain PcapPlusPlus module and get the log level this module is currently in. For example: LogLevel* myLogLevelArr = <a class="el" href="a00033.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr()</a>; if (myLogLevelArr[PacketLogModuleUdpLayer] == LogLevel::Debug) .... </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the LogLevel array </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="a7f6c407ddd90de83220b90067b513587"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isDebugEnabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00083.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
-          <td class="paramname"><em>module</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check whether a certain module is set to debug log level </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this module log level is "debug". False otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a28a3be2f5201ab478baff464d8b5df6c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isErrorStringSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check whether error string was already set </p><dl class="section return"><dt>Returns</dt><dd>true if error string was already set, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0665db5b2cc061cd022e4666f540662e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isSupressErrors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get an indication if errors are currently suppressed </p><dl class="section return"><dt>Returns</dt><dd>True if errors are currently suppressed, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aff10ddbdb52cc2c25fb5e450000495f7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setAllModlesToLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set all PcapPlusPlus modules to a certain log leve </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set all modules to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8b2e3f0c471f4391d581ed021d60f7c9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setErrorString </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>errString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the error string to a string pointer provided by the user. By default all errors are printed to stderr. Using this method will cause PcapPlusPlus to output errors to the user string instead </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">errString</td><td>A string pointer provided by the user which all error messages will be print to from now on </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length of errString array. If </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a81e0fa1eef639071d680bf89efae2747"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00083.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
-          <td class="paramname"><em>module</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00033.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the log level for a certain PcapPlusPlus module </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set the module to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acbb4c2c036fd4c5a9af65ad0f20f7e94"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::supressErrors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Suppress all errors in all PcapPlusPlusModules </p>
+<p>Implements <a class="el" href="a00037.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
 
 </div>
 </div>
@@ -526,8 +463,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00033.html">LoggerPP</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00033.html">IPv4Layer</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

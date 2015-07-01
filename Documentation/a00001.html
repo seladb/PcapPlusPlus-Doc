@@ -107,38 +107,38 @@ $(document).ready(function(){initNavTree('a00001.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00111.html">List of all members</a>  </div>
+<a href="a00117.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AndFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00090_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00096_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AndFilter:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="a00001.png" usemap="#AndFilter_map" alt=""/>
   <map id="AndFilter_map" name="AndFilter_map">
-<area href="a00009.html" alt="GeneralFilter" shape="rect" coords="0,0,86,24"/>
+<area href="a00013.html" alt="GeneralFilter" shape="rect" coords="0,0,86,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7eaee6a7866dddb3f5e9886646b31fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#ae7eaee6a7866dddb3f5e9886646b31fb">AndFilter</a> (vector&lt; <a class="el" href="a00009.html">GeneralFilter</a> * &gt; &amp;filters)</td></tr>
+<tr class="memitem:ae7eaee6a7866dddb3f5e9886646b31fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#ae7eaee6a7866dddb3f5e9886646b31fb">AndFilter</a> (vector&lt; <a class="el" href="a00013.html">GeneralFilter</a> * &gt; &amp;filters)</td></tr>
 <tr class="separator:ae7eaee6a7866dddb3f5e9886646b31fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bf1e1cd09914368122652ae51a4d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a61bf1e1cd09914368122652ae51a4d8c">parseToString</a> (string &amp;result)</td></tr>
 <tr class="separator:a61bf1e1cd09914368122652ae51a4d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00009"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00009')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00009.html">GeneralFilter</a></td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00009"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00013"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00013')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00013.html">GeneralFilter</a></td></tr>
+<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00013"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for connecting several filters into one filter with logical "and" between them. For example: if the 2 filters are: "IPv4 address =
 x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x _AND_ TCP port dst = 80"<br />
  This class follows the composite design pattern<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00090.html">PcapFilter.h</a> </p><dl class="todo"><dt><b><a class="el" href="a00108.html#_todo000006">Todo:</a></b></dt><dd>add some methods: "addFilter", "removeFilter", "clearAllFilter" </dd></dl>
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00096.html">PcapFilter.h</a> </p><dl class="todo"><dt><b><a class="el" href="a00114.html#_todo000006">Todo:</a></b></dt><dd>add some methods: "addFilter", "removeFilter", "clearAllFilter" </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae7eaee6a7866dddb3f5e9886646b31fb"></a>
 <div class="memitem">
@@ -147,7 +147,7 @@ x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x
         <tr>
           <td class="memname">AndFilter::AndFilter </td>
           <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="a00009.html">GeneralFilter</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">vector&lt; <a class="el" href="a00013.html">GeneralFilter</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>filters</em></td><td>)</td>
           <td></td>
         </tr>
@@ -191,7 +191,7 @@ x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00009.html#a093d16ae026af66882af50567a75f196">GeneralFilter</a>.</p>
+<p>Implements <a class="el" href="a00013.html#a093d16ae026af66882af50567a75f196">GeneralFilter</a>.</p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00001.html">AndFilter</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

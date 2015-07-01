@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: HttpLayer.h File Reference</title>
+<title>PcapPlusPlus: VlanLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,8 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,287 +106,353 @@ $(document).ready(function(){initNavTree('a00077.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00193.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HttpLayer.h File Reference</div>  </div>
+<div class="title">VlanLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00082_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;exception&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-</div>
-<p><a href="a00077_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00111_source.html">VlanLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for VlanLayer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00077.png" usemap="#VlanLayer_map" alt=""/>
+  <map id="VlanLayer_map" name="VlanLayer_map">
+<area href="a00037.html" alt="Layer" shape="rect" coords="0,0,71,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00010.html">HttpField</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html">HttpMessage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html">HttpRequestLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html">HttpResponseLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html">HttpRequestFirstLine</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html">HttpRequestFirstLine::HttpRequestFirstLineException</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">HttpResponseFirstLine</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">HttpResponseFirstLine::HttpResponseFirstLineException</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a5b810c11cf395733a3074912853e6802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a5b810c11cf395733a3074912853e6802">HTTP_HOST_FIELD</a>&#160;&#160;&#160;&quot;Host&quot;</td></tr>
-<tr class="separator:a5b810c11cf395733a3074912853e6802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c9f765a62413668b8b3fd1fab4761d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a00c9f765a62413668b8b3fd1fab4761d">HTTP_CONNECTION_FIELD</a>&#160;&#160;&#160;&quot;Connection&quot;</td></tr>
-<tr class="separator:a00c9f765a62413668b8b3fd1fab4761d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad211616c9587553ec1bae2f8c9b080a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ad211616c9587553ec1bae2f8c9b080a7">HTTP_USER_AGENT_FIELD</a>&#160;&#160;&#160;&quot;User-Agent&quot;</td></tr>
-<tr class="separator:ad211616c9587553ec1bae2f8c9b080a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48582b75b634566f943a36e5781f323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab48582b75b634566f943a36e5781f323">HTTP_REFERER_FIELD</a>&#160;&#160;&#160;&quot;Referer&quot;</td></tr>
-<tr class="separator:ab48582b75b634566f943a36e5781f323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac74e159e3577b881e288e20f72e76e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a0ac74e159e3577b881e288e20f72e76e">HTTP_ACCEPT_FIELD</a>&#160;&#160;&#160;&quot;Accept&quot;</td></tr>
-<tr class="separator:a0ac74e159e3577b881e288e20f72e76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5192fed0880f496a4ffb7d94f7257c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a5192fed0880f496a4ffb7d94f7257c82">HTTP_ACCEPT_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Accept-Encoding&quot;</td></tr>
-<tr class="separator:a5192fed0880f496a4ffb7d94f7257c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f10ef3082efa9eb7ae874856c182c4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a6f10ef3082efa9eb7ae874856c182c4d">HTTP_ACCEPT_LANGUAGE_FIELD</a>&#160;&#160;&#160;&quot;Accept-Language&quot;</td></tr>
-<tr class="separator:a6f10ef3082efa9eb7ae874856c182c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77cf10aeec3133e43bb4a36b8b18576"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac77cf10aeec3133e43bb4a36b8b18576">HTTP_COOKIE_FIELD</a>&#160;&#160;&#160;&quot;Cookie&quot;</td></tr>
-<tr class="separator:ac77cf10aeec3133e43bb4a36b8b18576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7bee38c3d7f17eda96873e0e2e5e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a4df7bee38c3d7f17eda96873e0e2e5e7">HTTP_CONTENT_LENGTH_FIELD</a>&#160;&#160;&#160;&quot;Content-Length&quot;</td></tr>
-<tr class="separator:a4df7bee38c3d7f17eda96873e0e2e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5b794f910cb4bd782c594dc7a73858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aed5b794f910cb4bd782c594dc7a73858">HTTP_CONTENT_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Content-Encoding&quot;</td></tr>
-<tr class="separator:aed5b794f910cb4bd782c594dc7a73858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78758be3bd294794e10d5aa510433e9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a78758be3bd294794e10d5aa510433e9b">HTTP_CONTENT_TYPE_FIELD</a>&#160;&#160;&#160;&quot;Content-Type&quot;</td></tr>
-<tr class="separator:a78758be3bd294794e10d5aa510433e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb56585b5a57dd1c9dfcf76f5195b46c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#afb56585b5a57dd1c9dfcf76f5195b46c">HTTP_TRANSFER_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Transfer-Encoding&quot;</td></tr>
-<tr class="separator:afb56585b5a57dd1c9dfcf76f5195b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ef5a034c9a7d117941e2c562e12ebe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a32ef5a034c9a7d117941e2c562e12ebe">HTTP_SERVER_FIELD</a>&#160;&#160;&#160;&quot;Server&quot;</td></tr>
-<tr class="separator:a32ef5a034c9a7d117941e2c562e12ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57301f5681dddf163b56dad67240ba88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a57301f5681dddf163b56dad67240ba88">END_OF_HTTP_HEADER</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
-<tr class="separator:a57301f5681dddf163b56dad67240ba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ac870fd261da652aee69937751c6f7e7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a> { <a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac">ZeroDotNine</a>, 
-<a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7fa1813a3c2d61f6e747d4e10c38d3f2e08">OneDotZero</a>, 
-<a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7fae53ed0d836f597e6ea278f94332f3b34">OneDotOne</a>, 
-<a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd">HttpVersionUnknown</a>
- }</td></tr>
-<tr class="separator:ac870fd261da652aee69937751c6f7e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00037.html">Layer</a> *prevLayer, <a class="el" href="a00043.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4994a70468a65f5e2503079ee875f151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a4994a70468a65f5e2503079ee875f151">VlanLayer</a> (const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)</td></tr>
+<tr class="separator:a4994a70468a65f5e2503079ee875f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1680bbebefc9c46ed461004273f4423d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">vlan_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a> ()</td></tr>
+<tr class="separator:a1680bbebefc9c46ed461004273f4423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a66c949b1b89d643d494ec5d8b59d1fba">getVlanID</a> ()</td></tr>
+<tr class="separator:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c992425b4519ca14408b848fde17b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ae4c992425b4519ca14408b848fde17b0">setVlanID</a> (uint16_t id)</td></tr>
+<tr class="separator:ae4c992425b4519ca14408b848fde17b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a88c9124f80253715489aeba93562fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a0a88c9124f80253715489aeba93562fc">parseNextLayer</a> ()</td></tr>
+<tr class="separator:a0a88c9124f80253715489aeba93562fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab0c394d2a70fb8ef7a2940119485dd5a">getHeaderLen</a> ()</td></tr>
+<tr class="separator:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aa9a69fc00dd5d19e88b6155a607a7d0f">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8022ec0ecee0fca9df1dc2bb01aa703d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a8022ec0ecee0fca9df1dc2bb01aa703d">toString</a> ()</td></tr>
+<tr class="separator:a8022ec0ecee0fca9df1dc2bb01aa703d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00037"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00037')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00037.html">Layer</a></td></tr>
+<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
+<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
+<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
+<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
+<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
+<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
+<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a57301f5681dddf163b56dad67240ba88"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a VLAN tunnel layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a22ee2b78d0f211686e2f2d6c739c3ce7"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define END_OF_HTTP_HEADER&#160;&#160;&#160;&quot;&quot;</td>
+          <td class="memname">VlanLayer::VlanLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>End of HTTP header </p>
-
-</div>
-</div>
-<a class="anchor" id="a5192fed0880f496a4ffb7d94f7257c82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_ENCODING_FIELD&#160;&#160;&#160;&quot;Accept-Encoding&quot;</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>Accept-Encoding field </p>
-
-</div>
-</div>
-<a class="anchor" id="a0ac74e159e3577b881e288e20f72e76e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_FIELD&#160;&#160;&#160;&quot;Accept&quot;</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00037.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>Accept field </p>
-
-</div>
-</div>
-<a class="anchor" id="a6f10ef3082efa9eb7ae874856c182c4d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_LANGUAGE_FIELD&#160;&#160;&#160;&quot;Accept-Language&quot;</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00043.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>Accept-Language field </p>
-
-</div>
-</div>
-<a class="anchor" id="a00c9f765a62413668b8b3fd1fab4761d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_CONNECTION_FIELD&#160;&#160;&#160;&quot;Connection&quot;</td>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-<p>Connection field </p>
-
-</div>
-</div>
-<a class="anchor" id="aed5b794f910cb4bd782c594dc7a73858"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_CONTENT_ENCODING_FIELD&#160;&#160;&#160;&quot;Content-Encoding&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Content-Encoding field </p>
-
-</div>
-</div>
-<a class="anchor" id="a4df7bee38c3d7f17eda96873e0e2e5e7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_CONTENT_LENGTH_FIELD&#160;&#160;&#160;&quot;Content-Length&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Content-Length field </p>
-
-</div>
-</div>
-<a class="anchor" id="a78758be3bd294794e10d5aa510433e9b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_CONTENT_TYPE_FIELD&#160;&#160;&#160;&quot;Content-Type&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Content-Type field </p>
-
-</div>
-</div>
-<a class="anchor" id="ac77cf10aeec3133e43bb4a36b8b18576"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_COOKIE_FIELD&#160;&#160;&#160;&quot;Cookie&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Cookie field </p>
-
-</div>
-</div>
-<a class="anchor" id="a5b810c11cf395733a3074912853e6802"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_HOST_FIELD&#160;&#160;&#160;&quot;Host&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Host field </p>
-
-</div>
-</div>
-<a class="anchor" id="ab48582b75b634566f943a36e5781f323"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_REFERER_FIELD&#160;&#160;&#160;&quot;Referer&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Referer field </p>
-
-</div>
-</div>
-<a class="anchor" id="a32ef5a034c9a7d117941e2c562e12ebe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_SERVER_FIELD&#160;&#160;&#160;&quot;Server&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Server field </p>
-
-</div>
-</div>
-<a class="anchor" id="afb56585b5a57dd1c9dfcf76f5195b46c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_TRANSFER_ENCODING_FIELD&#160;&#160;&#160;&quot;Transfer-Encoding&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Transfer-Encoding field </p>
-
-</div>
-</div>
-<a class="anchor" id="ad211616c9587553ec1bae2f8c9b080a7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HTTP_USER_AGENT_FIELD&#160;&#160;&#160;&quot;User-Agent&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>User-Agent field </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ac870fd261da652aee69937751c6f7e7f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00077.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for HTTP version </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac"></a>ZeroDotNine&#160;</td><td class="fielddoc">
-<p>HTTP/0.9 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fa1813a3c2d61f6e747d4e10c38d3f2e08"></a>OneDotZero&#160;</td><td class="fielddoc">
-<p>HTTP/1.0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fae53ed0d836f597e6ea278f94332f3b34"></a>OneDotOne&#160;</td><td class="fielddoc">
-<p>HTTP/1.1 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd"></a>HttpVersionUnknown&#160;</td><td class="fielddoc">
-<p>Unknown HTTP version </p>
-</td></tr>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
 </table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00043.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4994a70468a65f5e2503079ee875f151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VlanLayer::VlanLayer </td>
+          <td>(</td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>vlanID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cfi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>etherType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new VLAN header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanID</td><td>VLAN ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfi</td><td>CFI value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>Priority value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>Protocol EtherType of the next layer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa9a69fc00dd5d19e88b6155a607a7d0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VlanLayer::computeCalculateFields </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Does nothing for this layer </p>
+
+<p>Implements <a class="el" href="a00037.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0c394d2a70fb8ef7a2940119485dd5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VlanLayer::getHeaderLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00075.html">vlan_header</a> </dd></dl>
+
+<p>Implements <a class="el" href="a00037.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1680bbebefc9c46ed461004273f4423d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">vlan_header</a>* VlanLayer::getVlanHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the VLAN header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00075.html">vlan_header</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66c949b1b89d643d494ec5d8b59d1fba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t VlanLayer::getVlanID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the VLAN ID value. This method differs from <a class="el" href="a00075.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00075.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods extracts only the 12 bit relevant for the VLAN ID </p><dl class="section return"><dt>Returns</dt><dd>VLAN ID value </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00114.html#_todo000011">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a88c9124f80253715489aeba93562fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VlanLayer::parseNextLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Currently identifies the following next layers: <a class="el" href="a00033.html">IPv4Layer</a>, <a class="el" href="a00036.html">IPv6Layer</a>, <a class="el" href="a00004.html">ArpLayer</a>, <a class="el" href="a00077.html">VlanLayer</a>. Otherwise sets <a class="el" href="a00044.html">PayloadLayer</a> </p>
+
+<p>Implements <a class="el" href="a00037.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4c992425b4519ca14408b848fde17b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VlanLayer::setVlanID </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set VLAN ID. This method differs from setting <a class="el" href="a00075.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00075.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods sets only the 12 bit relevant for the VLAN ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The VLAN ID to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a00114.html#_todo000012">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8022ec0ecee0fca9df1dc2bb01aa703d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string VlanLayer::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+
+<p>Implements <a class="el" href="a00037.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
 
 </div>
 </div>
@@ -393,8 +461,8 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00077.html">HttpLayer.h</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:19 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00077.html">VlanLayer</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

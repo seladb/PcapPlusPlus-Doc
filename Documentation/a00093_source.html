@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapRemoteDevice.h Source File</title>
+<title>PcapPlusPlus: PayloadLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,103 +104,60 @@ $(document).ready(function(){initNavTree('a00093_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapRemoteDevice.h</div>  </div>
+<div class="title">PayloadLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00093.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PCAP_REMOTE_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PCAP_REMOTE_DEVICE</span></div>
+<a href="a00093.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PAYLOAD_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PAYLOAD_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00088.html">Layer.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00091.html">PcapLiveDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="a00107.html">std</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>pcap_rmtauth;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00044.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00044.html">PcapRemoteAuthentication</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00044.html#a5daa53c06483922c9f14dd018d844940">   29</a></span>&#160;    <a class="code" href="a00044.html#a5daa53c06483922c9f14dd018d844940">PcapRemoteAuthentication</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> username, <span class="keyword">const</span> <span class="keywordtype">string</span> password) { userName = username; this-&gt;password = password; }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00044.html#aaee229ba5f3c4c0fd6040b6132ab0f5d">   35</a></span>&#160;    <a class="code" href="a00044.html#aaee229ba5f3c4c0fd6040b6132ab0f5d">PcapRemoteAuthentication</a>(<span class="keyword">const</span> <a class="code" href="a00044.html">PcapRemoteAuthentication</a>&amp; other) { userName = other.<a class="code" href="a00044.html#a1bd03f3efe382739077224990438fa66">userName</a>; password = other.<a class="code" href="a00044.html#aab0cc127150c91426bccf3ded1a2d915">password</a>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00044.html#a1bd03f3efe382739077224990438fa66">   40</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00044.html#a1bd03f3efe382739077224990438fa66">userName</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00044.html#aab0cc127150c91426bccf3ded1a2d915">   45</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00044.html#aab0cc127150c91426bccf3ded1a2d915">password</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    pcap_rmtauth getPcapRmAuth();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00045.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00045.html">PcapRemoteDevice</a> : <span class="keyword">public</span> <a class="code" href="a00042.html">PcapLiveDevice</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00046.html">PcapRemoteDeviceList</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="a00021.html">IPAddress</a>* m_RemoteMachineIpAddress;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    uint16_t m_RemoteMachinePort;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="a00044.html">PcapRemoteAuthentication</a>* m_RemoteAuthentication;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// c&#39;tor is private, as only PcapRemoteDeviceList should create instances of it, and it&#39;ll create only one for every remote interface</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="a00045.html">PcapRemoteDevice</a>(pcap_if_t* iface, <a class="code" href="a00044.html">PcapRemoteAuthentication</a>* remoteAuthentication, <a class="code" href="a00021.html">IPAddress</a>* remoteMachineIP, uint16_t remoteMachinePort);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="a00045.html">PcapRemoteDevice</a>( <span class="keyword">const</span> <a class="code" href="a00045.html">PcapRemoteDevice</a>&amp; other );</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// private assignment operator</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="a00045.html">PcapRemoteDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00045.html">PcapRemoteDevice</a>&amp; other);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* remoteDeviceCaptureThreadMain(<span class="keywordtype">void</span> *ptr);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    ThreadStart getCaptureThreadStart();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00045.html">PcapRemoteDevice</a>() {}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="a00045.html#ab909cdc8cb52deec2f6796e8dfc1bd0b">  100</a></span>&#160;    <a class="code" href="a00021.html">IPAddress</a>* <a class="code" href="a00045.html#ab909cdc8cb52deec2f6796e8dfc1bd0b">getRemoteMachineIpAddress</a>() { <span class="keywordflow">return</span> m_RemoteMachineIpAddress; }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00045.html#a22476ed79eeb632549791e8e7d5cdb88">  105</a></span>&#160;    uint16_t <a class="code" href="a00045.html#a22476ed79eeb632549791e8e7d5cdb88">getRemoteMachinePort</a>() { <span class="keywordflow">return</span> m_RemoteMachinePort; }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00045.html#ac09338c44301f7cdb9b833497641139f">  109</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00042.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a> <a class="code" href="a00045.html#ac09338c44301f7cdb9b833497641139f">getDeviceType</a>() { <span class="keywordflow">return</span> RemoteDevice; }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> uint16_t getMtu();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00034.html">MacAddress</a> getMacAddress();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> open();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> getStatistics(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // WIN32</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PCAP_REMOTE_DEVICE */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">PcapLiveDevice.h</a></div></div>
-<div class="ttc" id="a00045_html_ab909cdc8cb52deec2f6796e8dfc1bd0b"><div class="ttname"><a href="a00045.html#ab909cdc8cb52deec2f6796e8dfc1bd0b">PcapRemoteDevice::getRemoteMachineIpAddress</a></div><div class="ttdeci">IPAddress * getRemoteMachineIpAddress()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:100</div></div>
-<div class="ttc" id="a00044_html"><div class="ttname"><a href="a00044.html">PcapRemoteAuthentication</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:21</div></div>
-<div class="ttc" id="a00045_html_ac09338c44301f7cdb9b833497641139f"><div class="ttname"><a href="a00045.html#ac09338c44301f7cdb9b833497641139f">PcapRemoteDevice::getDeviceType</a></div><div class="ttdeci">virtual LiveDeviceType getDeviceType()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:109</div></div>
-<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:59</div></div>
-<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:19</div></div>
-<div class="ttc" id="a00044_html_a1bd03f3efe382739077224990438fa66"><div class="ttname"><a href="a00044.html#a1bd03f3efe382739077224990438fa66">PcapRemoteAuthentication::userName</a></div><div class="ttdeci">string userName</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:40</div></div>
-<div class="ttc" id="a00044_html_aab0cc127150c91426bccf3ded1a2d915"><div class="ttname"><a href="a00044.html#aab0cc127150c91426bccf3ded1a2d915">PcapRemoteAuthentication::password</a></div><div class="ttdeci">string password</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:45</div></div>
-<div class="ttc" id="a00046_html"><div class="ttname"><a href="a00046.html">PcapRemoteDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:21</div></div>
-<div class="ttc" id="a00034_html"><div class="ttname"><a href="a00034.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:16</div></div>
-<div class="ttc" id="a00044_html_a5daa53c06483922c9f14dd018d844940"><div class="ttname"><a href="a00044.html#a5daa53c06483922c9f14dd018d844940">PcapRemoteAuthentication::PcapRemoteAuthentication</a></div><div class="ttdeci">PcapRemoteAuthentication(const string username, const string password)</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:29</div></div>
-<div class="ttc" id="a00044_html_aaee229ba5f3c4c0fd6040b6132ab0f5d"><div class="ttname"><a href="a00044.html#aaee229ba5f3c4c0fd6040b6132ab0f5d">PcapRemoteAuthentication::PcapRemoteAuthentication</a></div><div class="ttdeci">PcapRemoteAuthentication(const PcapRemoteAuthentication &amp;other)</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:35</div></div>
-<div class="ttc" id="a00045_html"><div class="ttname"><a href="a00045.html">PcapRemoteDevice</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:73</div></div>
-<div class="ttc" id="a00045_html_a22476ed79eeb632549791e8e7d5cdb88"><div class="ttname"><a href="a00045.html#a22476ed79eeb632549791e8e7d5cdb88">PcapRemoteDevice::getRemoteMachinePort</a></div><div class="ttdeci">uint16_t getRemoteMachinePort()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:105</div></div>
-<div class="ttc" id="a00042_html_a201c04fe21184602ce48fb799b9bd7d7"><div class="ttname"><a href="a00042.html#a201c04fe21184602ce48fb799b9bd7d7">PcapLiveDevice::LiveDeviceType</a></div><div class="ttdeci">LiveDeviceType</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:104</div></div>
-<div class="ttc" id="a00107_html"><div class="ttname"><a href="a00107.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00044.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00044.html">PayloadLayer</a> : <span class="keyword">public</span> <a class="code" href="a00037.html">Layer</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00044.html#a58fcd64da3c3aa5375060efff264ed4d">   21</a></span>&#160;    <a class="code" href="a00044.html#a58fcd64da3c3aa5375060efff264ed4d">PayloadLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00037.html">Layer</a>* prevLayer, <a class="code" href="a00043.html">Packet</a>* packet) : <a class="code" href="a00037.html">Layer</a>(data, dataLen, prevLayer, packet) {}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="a00044.html#a58fcd64da3c3aa5375060efff264ed4d">PayloadLayer</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">bool</span> selfAllocated);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ~<a class="code" href="a00044.html">PayloadLayer</a>() {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00044.html#a675beffd918b11197c830c1f55bee687">   38</a></span>&#160;    <span class="keyword">inline</span> uint8_t* <a class="code" href="a00044.html#a675beffd918b11197c830c1f55bee687">getPayload</a>() { <span class="keywordflow">return</span> m_Data; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00044.html#a6437d45a1237454cd43db5ad07aa75da">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00044.html#a6437d45a1237454cd43db5ad07aa75da">getPayloadLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00044.html#ae7c40fba63c665093d3ec4a072da1e37">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00044.html#ae7c40fba63c665093d3ec4a072da1e37">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00044.html#a3e80aa14fadec268334061f9dfa6de67">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00044.html#a3e80aa14fadec268334061f9dfa6de67">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00044.html#a54f81429bd3c48d84cf53fa71ec96b5e">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00044.html#a54f81429bd3c48d84cf53fa71ec96b5e">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::string <a class="code" href="a00044.html#a48556ce0e7207fc870d8cb552489cfa0">toString</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PAYLOAD_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00044_html_a675beffd918b11197c830c1f55bee687"><div class="ttname"><a href="a00044.html#a675beffd918b11197c830c1f55bee687">PayloadLayer::getPayload</a></div><div class="ttdeci">uint8_t * getPayload()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:38</div></div>
+<div class="ttc" id="a00044_html"><div class="ttname"><a href="a00044.html">PayloadLayer</a></div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:12</div></div>
+<div class="ttc" id="a00088_html"><div class="ttname"><a href="a00088.html">Layer.h</a></div></div>
+<div class="ttc" id="a00044_html_a48556ce0e7207fc870d8cb552489cfa0"><div class="ttname"><a href="a00044.html#a48556ce0e7207fc870d8cb552489cfa0">PayloadLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00044_html_a58fcd64da3c3aa5375060efff264ed4d"><div class="ttname"><a href="a00044.html#a58fcd64da3c3aa5375060efff264ed4d">PayloadLayer::PayloadLayer</a></div><div class="ttdeci">PayloadLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:21</div></div>
+<div class="ttc" id="a00044_html_a3e80aa14fadec268334061f9dfa6de67"><div class="ttname"><a href="a00044.html#a3e80aa14fadec268334061f9dfa6de67">PayloadLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:56</div></div>
+<div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
+<div class="ttc" id="a00037_html"><div class="ttname"><a href="a00037.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
+<div class="ttc" id="a00044_html_a54f81429bd3c48d84cf53fa71ec96b5e"><div class="ttname"><a href="a00044.html#a54f81429bd3c48d84cf53fa71ec96b5e">PayloadLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:61</div></div>
+<div class="ttc" id="a00044_html_a6437d45a1237454cd43db5ad07aa75da"><div class="ttname"><a href="a00044.html#a6437d45a1237454cd43db5ad07aa75da">PayloadLayer::getPayloadLen</a></div><div class="ttdeci">size_t getPayloadLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:44</div></div>
+<div class="ttc" id="a00044_html_ae7c40fba63c665093d3ec4a072da1e37"><div class="ttname"><a href="a00044.html#ae7c40fba63c665093d3ec4a072da1e37">PayloadLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00093.html">PcapRemoteDevice.h</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:19 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00093.html">PayloadLayer.h</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

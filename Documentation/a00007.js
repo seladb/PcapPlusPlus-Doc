@@ -1,6 +1,25 @@
 var a00007 =
 [
-    [ "EtherTypeFilter", "a00007.html#a41d75299d4d6578c48d6a066dcf09d55", null ],
-    [ "parseToString", "a00007.html#a3579547291f13b66a9dd5993ec3ba33f", null ],
-    [ "setEtherType", "a00007.html#a66eb4218c64566ae93ac5acbb297ba3b", null ]
+    [ "DnsLayer", "a00007.html#a4a0655838a44f3c986a57b97264d0b9b", null ],
+    [ "computeCalculateFields", "a00007.html#a381fd7ec8713c71e0d73d19f7de2679c", null ],
+    [ "getAdditionalRecord", "a00007.html#aa880396cf24013c578b0a82f9dbb3f15", null ],
+    [ "getAdditionalRecordCount", "a00007.html#a1f5b8a5a7381cdee4f6c486c12d6efb6", null ],
+    [ "getAnswer", "a00007.html#a85bbc4b65aef255a922730a0c09305df", null ],
+    [ "getAnswerCount", "a00007.html#acad8813b1b58afb359cfe7023e53325d", null ],
+    [ "getAuthority", "a00007.html#adbff46e28e2398b37f5d8d6d2d51bebb", null ],
+    [ "getAuthorityCount", "a00007.html#ad07881b1e9ad1b77ab95dfb277575f09", null ],
+    [ "getDnsHeader", "a00007.html#a51b071c27ee38c73ad27b003126a2f19", null ],
+    [ "getFirstAdditionalRecord", "a00007.html#a3ec7afe07957c703c5f3de2737c63120", null ],
+    [ "getFirstAnswer", "a00007.html#ac93d6191d2a6690ed4eaab253ccc7a0d", null ],
+    [ "getFirstAuthority", "a00007.html#ac986b6b398c1bad84380f3b5569738db", null ],
+    [ "getFirstQuery", "a00007.html#af321625014a20e11aa15efb5510236b5", null ],
+    [ "getHeaderLen", "a00007.html#a532ae1b6869a923121d3f42c9cd4fd03", null ],
+    [ "getNextAdditionalRecord", "a00007.html#aeb026cba2e86dc95fe3b8ccc46c19eeb", null ],
+    [ "getNextAnswer", "a00007.html#af7ec5a13b8864c715a94fc4d2026ea05", null ],
+    [ "getNextAuthority", "a00007.html#a70f84af71800a5216501217904592c84", null ],
+    [ "getNextQuery", "a00007.html#ada9e713f06ff8516bfd87ddc708204b2", null ],
+    [ "getQuery", "a00007.html#ac1168057ddefee2cdf88c1ad0846490e", null ],
+    [ "getQueryCount", "a00007.html#ae1805ab3c3c95a8c9729b5389a105534", null ],
+    [ "parseNextLayer", "a00007.html#a59d246da05a21283214783247294e11e", null ],
+    [ "toString", "a00007.html#a3936febebc51025ca4c2e441a3d1c60a", null ]
 ];

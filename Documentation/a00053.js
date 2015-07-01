@@ -1,38 +1,6 @@
 var a00053 =
 [
-    [ "PPPoETag", "a00056.html", "a00056" ],
-    [ "PPPoETagTypes", "a00053.html#ac9403a67f69c7217b71061a233707278", [
-      [ "PPPOE_TAG_EOL", "a00053.html#ac9403a67f69c7217b71061a233707278aed65db1b25dc8c80eae59d68d9abd178", null ],
-      [ "PPPOE_TAG_SVC_NAME", "a00053.html#ac9403a67f69c7217b71061a233707278a569fcff2188699328386791bf4b5509d", null ],
-      [ "PPPOE_TAG_AC_NAME", "a00053.html#ac9403a67f69c7217b71061a233707278a9da575b312dc38e1967ba1a596d28d05", null ],
-      [ "PPPOE_TAG_HOST_UNIQ", "a00053.html#ac9403a67f69c7217b71061a233707278a9a81710f4f46a15097bf729b56bd0c7d", null ],
-      [ "PPPOE_TAG_AC_COOKIE", "a00053.html#ac9403a67f69c7217b71061a233707278ad2de0d18c3b8758af2ae8efb24529095", null ],
-      [ "PPPOE_TAG_VENDOR", "a00053.html#ac9403a67f69c7217b71061a233707278abcc97b3f20fcd3dfd1361394a44701e8", null ],
-      [ "PPPOE_TAG_CREDITS", "a00053.html#ac9403a67f69c7217b71061a233707278ab5d217b999f04d47651dcf012e94671b", null ],
-      [ "PPPOE_TAG_METRICS", "a00053.html#ac9403a67f69c7217b71061a233707278ac53f16d29ad1afd786ee5b354def5014", null ],
-      [ "PPPOE_TAG_SEQ_NUM", "a00053.html#ac9403a67f69c7217b71061a233707278abcf7e367208c8cae974709fbb9f1ef2d", null ],
-      [ "PPPOE_TAG_CRED_SCALE", "a00053.html#ac9403a67f69c7217b71061a233707278aa2627d80cf4a6203293bab6c57d8ba11", null ],
-      [ "PPPOE_TAG_RELAY_ID", "a00053.html#ac9403a67f69c7217b71061a233707278a4bb1c234eba8c9c575554a22fed65432", null ],
-      [ "PPPOE_TAG_HURL", "a00053.html#ac9403a67f69c7217b71061a233707278ae2aa5607be3a08808fcad95b3675d0fd", null ],
-      [ "PPPOE_TAG_MOTM", "a00053.html#ac9403a67f69c7217b71061a233707278a76024ee535b70fb30a06eb725da473d8", null ],
-      [ "PPPOE_TAG_MAX_PAYLD", "a00053.html#ac9403a67f69c7217b71061a233707278aac77ca5c5b963171caa66ab8dc2573e2", null ],
-      [ "PPPOE_TAG_IP_RT_ADD", "a00053.html#ac9403a67f69c7217b71061a233707278ab4a1f85d634dcd9671a1a183e1d84744", null ],
-      [ "PPPOE_TAG_SVC_ERR", "a00053.html#ac9403a67f69c7217b71061a233707278aeda60dc2df04d46cc2af56955b927331", null ],
-      [ "PPPOE_TAG_AC_ERR", "a00053.html#ac9403a67f69c7217b71061a233707278a6ca74d10add715e2cfe29ead1a9f9f80", null ],
-      [ "PPPOE_TAG_GENERIC_ERR", "a00053.html#ac9403a67f69c7217b71061a233707278a37b9a810e8f22d879728e5f19f1636df", null ]
-    ] ],
-    [ "PPPoEDiscoveryLayer", "a00053.html#a758e5e06207c3a674b54be69e80c30f4", null ],
-    [ "PPPoEDiscoveryLayer", "a00053.html#aed21c1bd24fcb363a47c9f6f5843e6c9", null ],
-    [ "PPPoEDiscoveryLayer", "a00053.html#aad387d8a92f00bfaf948d46cfca612d5", null ],
-    [ "addTag", "a00053.html#a5c86eb4350d7fa161d58e7f4f3d6521d", null ],
-    [ "addTagAfter", "a00053.html#afbf207f78a0cf2c4fe642e352654ebd4", null ],
-    [ "getFirstTag", "a00053.html#a8e7f5689966edb568cc52e60230d70ab", null ],
-    [ "getHeaderLen", "a00053.html#a3370421c069631a8bd3712839e7deacb", null ],
-    [ "getNextTag", "a00053.html#af164477436ff0e8d32da70766257e5b2", null ],
-    [ "getTag", "a00053.html#a59c7b7c3a0303f04f39bc574730b18af", null ],
-    [ "getTagCount", "a00053.html#a9a8bc66b1851cd819ae408e39a0e1b56", null ],
-    [ "parseNextLayer", "a00053.html#a64762d167aea9837b261c9e785a8b60a", null ],
-    [ "removeAllTags", "a00053.html#a3b058ba0eda76d8d94fb72ce30660232", null ],
-    [ "removeTag", "a00053.html#a9e4b1844f957ebbbd513b514f70a879c", null ],
-    [ "toString", "a00053.html#ae7ac3ebad2bdff3dd65e7c1812658869", null ]
+    [ "getPfRingDeviceByName", "a00053.html#a537a595b1e88c0e0812538073c7e9186", null ],
+    [ "getPfRingDevicesList", "a00053.html#a8f39642efdb9d3a37cb38dd6ccffc4d9", null ],
+    [ "getPfRingVersion", "a00053.html#a1e13133fb1bed38754cf5bb93d5b4830", null ]
 ];

@@ -1,17 +1,6 @@
 var a00011 =
 [
-    [ "addEndOfHeader", "a00011.html#aca2087c17b615dc99d625b8d3f8e9656", null ],
-    [ "addField", "a00011.html#ad38d1cd7e4373c125a24d7ff60502474", null ],
-    [ "addField", "a00011.html#a636e0e5d7f398c4937e3607dcbc598cc", null ],
-    [ "computeCalculateFields", "a00011.html#a0bd3d93bd053bd4a0a337b6f1c914a2d", null ],
-    [ "getFieldByName", "a00011.html#ac231de1fec75f1cd4dbde5617af56a3e", null ],
-    [ "getFirstField", "a00011.html#abd2014d9fb0cdb9d24bff0da8f2cebaf", null ],
-    [ "getHeaderLen", "a00011.html#ac916fcbd8c81e831d07a4bd3d14e37fe", null ],
-    [ "getNextField", "a00011.html#a4c7844dac1e382b6b3a9cdf2352cee98", null ],
-    [ "insertField", "a00011.html#ac7d929439f0168ac03a1f8ce30b83973", null ],
-    [ "insertField", "a00011.html#a3e69980de46f7039e77dd533279b76a5", null ],
-    [ "isHeaderComplete", "a00011.html#ac201377ee25141ded5a5d566ab9351cd", null ],
-    [ "parseNextLayer", "a00011.html#ad44da7ecfbb51d71ebd5ccd769c6b862", null ],
-    [ "removeField", "a00011.html#ae2ba3e006fd4866d346dda1d6d4cf3cb", null ],
-    [ "removeField", "a00011.html#a1c2e229d3dd265ce63b77f531a3bc0a2", null ]
+    [ "EtherTypeFilter", "a00011.html#a41d75299d4d6578c48d6a066dcf09d55", null ],
+    [ "parseToString", "a00011.html#a3579547291f13b66a9dd5993ec3ba33f", null ],
+    [ "setEtherType", "a00011.html#a66eb4218c64566ae93ac5acbb297ba3b", null ]
 ];

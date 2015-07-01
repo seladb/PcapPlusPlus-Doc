@@ -1,10 +1,6 @@
 var a00041 =
 [
-    [ "PcapFileWriterDevice", "a00041.html#aefaeb7785c8cd5ca8b6e074156c471ae", null ],
-    [ "~PcapFileWriterDevice", "a00041.html#a491876c2591081b58313da654a704f8d", null ],
-    [ "close", "a00041.html#a534e2029cb4de050e6a55de39dc9aa9a", null ],
-    [ "getStatistics", "a00041.html#ac0c2c246a4447cc48ebae8f48f69d81d", null ],
-    [ "open", "a00041.html#a8053b6b8abafd7de893fce117b8d2413", null ],
-    [ "writePacket", "a00041.html#a6263c0850be603c60b8ba057d879a593", null ],
-    [ "writePackets", "a00041.html#a472db9de9ac4f9f440f752385c0436e6", null ]
+    [ "NotFilter", "a00041.html#aac37a9632ce92fbb4d3a145fd6dcf13b", null ],
+    [ "parseToString", "a00041.html#a48f962202da465b86ba0fa83ad2fdf4e", null ],
+    [ "setFilter", "a00041.html#abf226875fb36db9b66ae4e06526aa695", null ]
 ];

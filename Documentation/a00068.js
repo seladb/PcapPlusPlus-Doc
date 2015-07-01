@@ -1,11 +1,19 @@
 var a00068 =
 [
-    [ "UdpLayer", "a00068.html#a719f6abc85cfbcb5b7987a5eb6a99e70", null ],
-    [ "UdpLayer", "a00068.html#aedd18d27bce546fb6b21f70915817761", null ],
-    [ "calculateChecksum", "a00068.html#adfd1035b90bc336a51bf48c824d3a62c", null ],
-    [ "computeCalculateFields", "a00068.html#a94f3dd3afe2b5ad9bda7e12d2f18c449", null ],
-    [ "getHeaderLen", "a00068.html#a9cf705e60ec95b00c594a7633e4fd1ac", null ],
-    [ "getUdpHeader", "a00068.html#abe9c14cb251e2b43f4bb1cb8849549cd", null ],
-    [ "parseNextLayer", "a00068.html#a87ca5bbf1d532555f38101b2edeeed22", null ],
-    [ "toString", "a00068.html#abee5c14ffba496d372903abe40676417", null ]
+    [ "ackFlag", "a00068.html#ad2089630e6184c407fe5f8c7b79873ee", null ],
+    [ "ackNumber", "a00068.html#af94cd4e35bcf69033b49993538c3b7d7", null ],
+    [ "cwrFlag", "a00068.html#a35739da86e2f8fef45f31e2afbaab326", null ],
+    [ "dataOffset", "a00068.html#a1cf89ec60592a853f1ca2c5a5df358b8", null ],
+    [ "eceFlag", "a00068.html#a97b2c2e4aeca5f39d05414f0e553516c", null ],
+    [ "finFlag", "a00068.html#a8c5c21a009a70af6f4cd3ce4864aec38", null ],
+    [ "headerChecksum", "a00068.html#afd17508ed468222cd27a5715b2d34dbf", null ],
+    [ "portDst", "a00068.html#ae93be0e43346ba24904df1babc4ddf6a", null ],
+    [ "portSrc", "a00068.html#a5a2d35d141208f7c0be359a8b7240560", null ],
+    [ "pshFlag", "a00068.html#a3defe5d445a1a73d1ecc78aa684d418e", null ],
+    [ "rstFlag", "a00068.html#a9c0c0af397c33a546ac0c557fe753883", null ],
+    [ "sequenceNumber", "a00068.html#a719635a7e8291064205d4e4da519a8d5", null ],
+    [ "synFlag", "a00068.html#a62e2fa2f073542b1a58694200b4dbf8c", null ],
+    [ "urgentPointer", "a00068.html#ade025d3342ca70b77c5d25f3ee04eaac", null ],
+    [ "urgFlag", "a00068.html#ac7d76fb4d7d89a8bd0d097a0730136f9", null ],
+    [ "windowSize", "a00068.html#a8a3f4cb9892c601cdc16f0db15cb1cf9", null ]
 ];

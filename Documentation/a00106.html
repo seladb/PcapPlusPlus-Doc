@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: WinPcapLiveDevice.h File Reference</title>
+<title>PcapPlusPlus: ProtocolType.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,27 +104,116 @@ $(document).ready(function(){initNavTree('a00106.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">WinPcapLiveDevice.h File Reference</div>  </div>
+<div class="title">ProtocolType.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00091_source.html">PcapLiveDevice.h</a>&gt;</code><br />
-</div>
+
 <p><a href="a00106_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">WinPcapLiveDevice</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a2b99fb4e4914a533566284f2ed3b0186"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> { <br />
+&#160;&#160;<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a4e81c184ac3ad48a389cd4454c4a05bb">Unknown</a> = 0x00, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a> = 0x01, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186ac7ecb5234abd540dcc2ac0c8d37e12a5">IPv4</a> = 0x02, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186aee0722baf12a9db075fb08d0734710a6">IPv6</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a10cc4ee62c3f31579500254afec635db">IP</a> = 0x06, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186aa040cd7feeb588104634cdadf35abf1c">TCP</a> = 0x08, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a> = 0x10, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186ab1a1c59066a45dd96c84f172f66c1268">HTTPRequest</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186aa1b719f2a2692decd287e79c7581d390">HTTPResponse</a> = 0x40, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a67e044074f46e6cea22788527da5f02e">HTTP</a> = 0x20 | 0x40, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a> = 0x80, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a> = 0x100, 
+<br />
+&#160;&#160;<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a90f471bb91043604b88253b494eb971c">ICMP</a> = 0x200, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a5f768ac996a2687990d2a7afae050e5f">PPPoESession</a> = 0x400, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf">PPPoEDiscovery</a> = 0x800, 
+<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186a152c0a3cdcc97414257f8dd21a047d48">PPPoE</a> = 0x400 | 0x800, 
+<br />
+&#160;&#160;<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186acb351e08d637347c1132ba8a73f0c812">DNS</a> = 0x1000
+<br />
+ }</td></tr>
+<tr class="separator:a2b99fb4e4914a533566284f2ed3b0186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum representing all protocols supported by PcapPlusPlus </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a4e81c184ac3ad48a389cd4454c4a05bb"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown protocol (or unsupported by PcapPlusPlus) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93"></a>Ethernet&#160;</td><td class="fielddoc">
+<p>Ethernet protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186ac7ecb5234abd540dcc2ac0c8d37e12a5"></a>IPv4&#160;</td><td class="fielddoc">
+<p>IPv4 protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186aee0722baf12a9db075fb08d0734710a6"></a>IPv6&#160;</td><td class="fielddoc">
+<p>IPv6 protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a10cc4ee62c3f31579500254afec635db"></a>IP&#160;</td><td class="fielddoc">
+<p>IP protocol (aggregation bitmask of IPv4 and IPv6 protocols) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186aa040cd7feeb588104634cdadf35abf1c"></a>TCP&#160;</td><td class="fielddoc">
+<p>TCP protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6"></a>UDP&#160;</td><td class="fielddoc">
+<p>UDP protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186ab1a1c59066a45dd96c84f172f66c1268"></a>HTTPRequest&#160;</td><td class="fielddoc">
+<p>HTTP request protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186aa1b719f2a2692decd287e79c7581d390"></a>HTTPResponse&#160;</td><td class="fielddoc">
+<p>HTTP response protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a67e044074f46e6cea22788527da5f02e"></a>HTTP&#160;</td><td class="fielddoc">
+<p>HTTP protocol (aggregation bitmask of HTTP request and HTTP response protocols) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928"></a>ARP&#160;</td><td class="fielddoc">
+<p>ARP protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704"></a>VLAN&#160;</td><td class="fielddoc">
+<p>VLAN protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a90f471bb91043604b88253b494eb971c"></a>ICMP&#160;</td><td class="fielddoc">
+<p>ICMP protocol (currently not supported by PcapPlusPlus) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a5f768ac996a2687990d2a7afae050e5f"></a>PPPoESession&#160;</td><td class="fielddoc">
+<p>PPPoE session protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a37a2e475c65bdb22b8799bff1db3e7cf"></a>PPPoEDiscovery&#160;</td><td class="fielddoc">
+<p>PPPoE discovery protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186a152c0a3cdcc97414257f8dd21a047d48"></a>PPPoE&#160;</td><td class="fielddoc">
+<p>PPPoE protocol (aggregation bitmask of PPPoESession and PPPoEDiscovery protocols) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2b99fb4e4914a533566284f2ed3b0186acb351e08d637347c1132ba8a73f0c812"></a>DNS&#160;</td><td class="fielddoc">
+<p>DNS protocol </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00106.html">WinPcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00106.html">ProtocolType.h</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

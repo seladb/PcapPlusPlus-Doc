@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapLiveDeviceList Class Reference</title>
+<title>PcapPlusPlus: Packet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,39 +107,105 @@ $(document).ready(function(){initNavTree('a00043.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00153.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="a00159.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PcapLiveDeviceList Class Reference</div>  </div>
+<div class="title">Packet Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00092_source.html">PcapLiveDeviceList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00092_source.html">Packet.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a654046c26d5816f95e82530a6f056451"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="a00042.html">PcapLiveDevice</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a654046c26d5816f95e82530a6f056451">getPcapLiveDevicesList</a> ()</td></tr>
-<tr class="separator:a654046c26d5816f95e82530a6f056451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390c2c0cd28d808021a3264f56b084de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a390c2c0cd28d808021a3264f56b084de">getPcapLiveDeviceByIp</a> (<a class="el" href="a00021.html">IPAddress</a> *ipAddr)</td></tr>
-<tr class="separator:a390c2c0cd28d808021a3264f56b084de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0440ec517b35bc43fb5d31bc14ee529e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a0440ec517b35bc43fb5d31bc14ee529e">getPcapLiveDeviceByIp</a> (<a class="el" href="a00026.html">IPv4Address</a> ipAddr)</td></tr>
-<tr class="separator:a0440ec517b35bc43fb5d31bc14ee529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa331836b6dd34bc3ecae610c84db3769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#aa331836b6dd34bc3ecae610c84db3769">getPcapLiveDeviceByIp</a> (<a class="el" href="a00030.html">IPv6Address</a> ip6Addr)</td></tr>
-<tr class="separator:aa331836b6dd34bc3ecae610c84db3769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade740e1e6614c536edfdd916535fb742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#ade740e1e6614c536edfdd916535fb742">getPcapLiveDeviceByIp</a> (const char *ipAddrAsString)</td></tr>
-<tr class="separator:ade740e1e6614c536edfdd916535fb742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195282e47899cd987964b4ee187078ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a195282e47899cd987964b4ee187078ec">getPcapLiveDeviceByName</a> (const string &amp;name)</td></tr>
-<tr class="separator:a195282e47899cd987964b4ee187078ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6757e6e85335072ed5a8c691440a35eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a6757e6e85335072ed5a8c691440a35eb">Packet</a> (size_t maxPacketLen)</td></tr>
+<tr class="separator:a6757e6e85335072ed5a8c691440a35eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e45ecb72e05b1dcf07afd778aa9914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a39e45ecb72e05b1dcf07afd778aa9914">Packet</a> (<a class="el" href="a00063.html">RawPacket</a> *rawPacket)</td></tr>
+<tr class="separator:a39e45ecb72e05b1dcf07afd778aa9914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d431d5730177a1bf6e1f8bbbbb6066"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a69d431d5730177a1bf6e1f8bbbbb6066">~Packet</a> ()</td></tr>
+<tr class="separator:a69d431d5730177a1bf6e1f8bbbbb6066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d5dfea51fa7fe55e4705b176f326ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#ae8d5dfea51fa7fe55e4705b176f326ec">Packet</a> (const <a class="el" href="a00043.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:ae8d5dfea51fa7fe55e4705b176f326ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a6b0c6ea561b9726597468acac252d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00043.html">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a91a6b0c6ea561b9726597468acac252d">operator=</a> (const <a class="el" href="a00043.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:a91a6b0c6ea561b9726597468acac252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fec1d535b7f272793a44dc754934a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00063.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a8fec1d535b7f272793a44dc754934a56">getRawPacket</a> ()</td></tr>
+<tr class="separator:a8fec1d535b7f272793a44dc754934a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d73113e41efb7f2146e9058567d9827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00063.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a8d73113e41efb7f2146e9058567d9827">getRawPacketReadOnly</a> () const </td></tr>
+<tr class="separator:a8d73113e41efb7f2146e9058567d9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fa4ce5311673d8d0eda8a3ccd1aa65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a84fa4ce5311673d8d0eda8a3ccd1aa65">getFirstLayer</a> ()</td></tr>
+<tr class="separator:a84fa4ce5311673d8d0eda8a3ccd1aa65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40618d2579ceb41ccfddd1aa511e3cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a40618d2579ceb41ccfddd1aa511e3cb0">getLastLayer</a> ()</td></tr>
+<tr class="separator:a40618d2579ceb41ccfddd1aa511e3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4684bb0c74d36f713f485b0f54d11660"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a4684bb0c74d36f713f485b0f54d11660"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00043.html#a4684bb0c74d36f713f485b0f54d11660">getLayerOfType</a> ()</td></tr>
+<tr class="separator:a4684bb0c74d36f713f485b0f54d11660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097782fccb489b1dae9bb827cf9b3a75"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a097782fccb489b1dae9bb827cf9b3a75"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00043.html#a097782fccb489b1dae9bb827cf9b3a75">getNextLayerOfType</a> (<a class="el" href="a00037.html">Layer</a> *after)</td></tr>
+<tr class="separator:a097782fccb489b1dae9bb827cf9b3a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bb9f62a67a053264fc81358ed9f22c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a22bb9f62a67a053264fc81358ed9f22c">isPacketOfType</a> (<a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> protocolType)</td></tr>
+<tr class="separator:a22bb9f62a67a053264fc81358ed9f22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a757b793dfce9239223f9000551a945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a2a757b793dfce9239223f9000551a945">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a2a757b793dfce9239223f9000551a945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1aaa31d9965585e603a348cfe4bc9aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#ae1aaa31d9965585e603a348cfe4bc9aa">printToString</a> ()</td></tr>
+<tr class="separator:ae1aaa31d9965585e603a348cfe4bc9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bf1670aa1ab99dca9fda49ec2e8283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a56bf1670aa1ab99dca9fda49ec2e8283">printToStringList</a> (std::vector&lt; std::string &gt; &amp;result)</td></tr>
+<tr class="separator:a56bf1670aa1ab99dca9fda49ec2e8283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8543d3d93e3c5779a72820d38e52cd00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00043.html">PcapLiveDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a8543d3d93e3c5779a72820d38e52cd00">getInstance</a> ()</td></tr>
-<tr class="separator:a8543d3d93e3c5779a72820d38e52cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a834e4e869446be644f61b4b456604f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834e4e869446be644f61b4b456604f31"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b></td></tr>
+<tr class="separator:a834e4e869446be644f61b4b456604f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A singleton class that creates, stores and provides access to all <a class="el" href="a00042.html">PcapLiveDevice</a> (on Linux) or <a class="el" href="a00073.html">WinPcapLiveDevice</a> (on Windows) instances. All live devices are initialized on startup and wrap the network interfaces installed on the machine. This class enables access to them through their IP addresses or get a vector of all of them so the user can search them in some other way </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8543d3d93e3c5779a72820d38e52cd00"></a>
+<div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="a00063.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="a00012.html">EthLayer</a> -&gt; <a class="el" href="a00033.html">IPv4Layer</a> -&gt; <a class="el" href="a00069.html">TcpLayer</a> -&gt; <a class="el" href="a00018.html">HttpRequestLayer</a> <br />
+ <a class="el" href="a00043.html">Packet</a> instance isn't read only. The user can add or remove layers, update current layer, etc. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6757e6e85335072ed5a8c691440a35eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxPacketLen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor for creating a new packet. Very useful when creating packets. When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="a00063.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketLen</td><td>The expected packet length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a39e45ecb72e05b1dcf07afd778aa9914"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00063.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor for creating a packet out of already allocated <a class="el" href="a00063.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="a00063.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="a00063.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a69d431d5730177a1bf6e1f8bbbbb6066"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -147,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00043.html">PcapLiveDeviceList</a>&amp; PcapLiveDeviceList::getInstance </td>
+          <td class="memname">virtual Packet::~Packet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -155,130 +221,54 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
+<p>A destructor for this class. Frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by addLayer() or insertLayer() ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor) </p>
 
 </div>
 </div>
-<a class="anchor" id="a390c2c0cd28d808021a3264f56b084de"></a>
+<a class="anchor" id="ae8d5dfea51fa7fe55e4705b176f326ec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td class="memname">Packet::Packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00021.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00043.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to the live device by its IP address. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A copy constructor for this class. This copy constructor copies all the raw data and re-create all layers. So when the original <a class="el" href="a00043.html">Packet</a> is being freed, no data will be lost in the copied instance </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address defined for the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address exists. NULL otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0440ec517b35bc43fb5d31bc14ee529e"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2a757b793dfce9239223f9000551a945"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td class="memname">void Packet::computeCalculateFields </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00026.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to the live device by its IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address defined for the device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv4 address exists. NULL otherwise </dd></dl>
+<p>Each layer can have fields that can be calculate automatically from other fields using <a class="el" href="a00037.html#aa781ec9027fb1011d9e07fefed7c908c">Layer::computeCalculateFields()</a>. This method forces all layers to calculate these fields values </p>
 
 </div>
 </div>
-<a class="anchor" id="aa331836b6dd34bc3ecae610c84db3769"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00030.html">IPv6Address</a>&#160;</td>
-          <td class="paramname"><em>ip6Addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a pointer to the live device by its IPv6 address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip6Addr</td><td>The IPv6 address defined for the device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv6 address exists. NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ade740e1e6614c536edfdd916535fb742"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ipAddrAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a pointer to the live device by its IP address represented as string. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddrAsString</td><td>The IP address defined for the device as string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address is valid and exists. NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a195282e47899cd987964b4ee187078ec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00042.html">PcapLiveDevice</a>* PcapLiveDeviceList::getPcapLiveDeviceByName </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a pointer to the live device by its name </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the interface (e.g eth0) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this name exists. NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a654046c26d5816f95e82530a6f056451"></a>
+<a class="anchor" id="a84fa4ce5311673d8d0eda8a3ccd1aa65"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -286,7 +276,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const vector&lt;<a class="el" href="a00042.html">PcapLiveDevice</a>*&gt;&amp; PcapLiveDeviceList::getPcapLiveDevicesList </td>
+          <td class="memname"><a class="el" href="a00037.html">Layer</a>* Packet::getFirstLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -298,7 +288,213 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A vector containing pointers to all live devices currently installed on the machine </dd></dl>
+<p>Get a pointer to the first (lowest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the first (lowest) layer in the packet </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40618d2579ceb41ccfddd1aa511e3cb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00037.html">Layer</a>* Packet::getLastLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the last (highest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the last (highest) layer in the packet </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4684bb0c74d36f713f485b0f54d11660"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * Packet::getLayerOfType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a097782fccb489b1dae9bb827cf9b3a75"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * Packet::getNextLayerOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00037.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>after</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="a00012.html">EthLayer</a> -&gt; <a class="el" href="a00077.html">VlanLayer(1)</a> -&gt; <a class="el" href="a00077.html">VlanLayer(2)</a> -&gt; <a class="el" href="a00077.html">VlanLayer(3)</a> -&gt; <a class="el" href="a00033.html">IPv4Layer</a> and the user put <a class="el" href="a00077.html">VlanLayer(2)</a> as a parameter and wishes to search for a <a class="el" href="a00077.html">VlanLayer</a>, <a class="el" href="a00077.html">VlanLayer(3)</a> will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the layer to start search from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fec1d535b7f272793a44dc754934a56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00063.html">RawPacket</a>* Packet::getRawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00043.html">Packet</a>'s <a class="el" href="a00063.html">RawPacket</a> </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00043.html">Packet</a>'s <a class="el" href="a00063.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d73113e41efb7f2146e9058567d9827"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00063.html">RawPacket</a>* Packet::getRawPacketReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00043.html">Packet</a>'s <a class="el" href="a00063.html">RawPacket</a> in a read-only manner </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00043.html">Packet</a>'s <a class="el" href="a00063.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22bb9f62a67a053264fc81358ed9f22c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Packet::isPacketOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>protocolType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether the packet contains a certain protocol </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocolType</td><td>The protocol type to search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet contains the protocol, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91a6b0c6ea561b9726597468acac252d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00043.html">Packet</a>&amp; Packet::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00043.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator overloading. It first frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by addLayer() or insertLayer() ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor). Afterwards it copies the data from the other packet in the same way used in the copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1aaa31d9965585e603a348cfe4bc9aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Packet::printToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Each layer can print a string representation of the layer most important data using <a class="el" href="a00037.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="section return"><dt>Returns</dt><dd>A string containing most relevant data from all layers (looks like the packet description in Wireshark) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a56bf1670aa1ab99dca9fda49ec2e8283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Packet::printToStringList </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Similar to <a class="el" href="a00043.html#ae1aaa31d9965585e603a348cfe4bc9aa">printToString()</a>, but instead of one string it outputs a list of strings, one string for every layer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>A string vector that will contain all strings </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -307,8 +503,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00043.html">PcapLiveDeviceList</a></li>
-    <li class="footer">Generated on Tue Jun 2 2015 22:22:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00043.html">Packet</a></li>
+    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
