@@ -5,6 +5,8 @@ var searchData=
   ['setaddr',['setAddr',['../a00029.html#a4eaa190041e7b19b8a69f7a067cd23d2',1,'IPFilter']]],
   ['setallmodlestologlevel',['setAllModlesToLogLevel',['../a00038.html#aff10ddbdb52cc2c25fb5e450000495f7',1,'LoggerPP']]],
   ['setcontentlength',['setContentLength',['../a00021.html#ae5161ef79bda8ab3cd9963a5e652b918',1,'HttpResponseLayer']]],
+  ['setcustomdnsclass',['setCustomDnsClass',['../a00009.html#ac13d673b2f03a88348b3d6914746a053',1,'DnsResource']]],
+  ['setdata',['setData',['../a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04',1,'DnsResource']]],
   ['setdestmac',['setDestMac',['../a00012.html#a6d4385fbb8d002040d7229602d7367fa',1,'EthLayer']]],
   ['setdirection',['setDirection',['../a00023.html#a6056e85050382814de7dd08ea56bb806',1,'IFilterWithDirection']]],
   ['setdnsclass',['setDnsClass',['../a00022.html#a0f600292495de7b4a266dbfee052452c',1,'IDnsResource']]],

@@ -68,7 +68,7 @@ var searchData=
   ['dnsauthority',['DnsAuthority',['../a00022.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8',1,'IDnsResource']]],
   ['dnsclass',['DnsClass',['../a00081.html#a26e59922d152a198d8fd9e52c97d120b',1,'DnsLayer.h']]],
   ['dnshdr',['dnshdr',['../a00006.html',1,'']]],
-  ['dnslayer',['DnsLayer',['../a00007.html',1,'DnsLayer'],['../a00007.html#a4a0655838a44f3c986a57b97264d0b9b',1,'DnsLayer::DnsLayer()']]],
+  ['dnslayer',['DnsLayer',['../a00007.html',1,'DnsLayer'],['../a00007.html#a4a0655838a44f3c986a57b97264d0b9b',1,'DnsLayer::DnsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../a00007.html#a0c0b14d0879565e64d4579373cc7189b',1,'DnsLayer::DnsLayer()'],['../a00007.html#a290fa008e75990ec2e64bc14b7250935',1,'DnsLayer::DnsLayer(const DnsLayer &amp;other)']]],
   ['dnslayer_2eh',['DnsLayer.h',['../a00081.html',1,'']]],
   ['dnsquery',['DnsQuery',['../a00008.html',1,'DnsQuery'],['../a00022.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a',1,'IDnsResource::DnsQuery()']]],
   ['dnsresource',['DnsResource',['../a00009.html',1,'']]],

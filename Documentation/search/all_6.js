@@ -13,6 +13,7 @@ var searchData=
   ['getcontentlength',['getContentLength',['../a00021.html#aa08a185d20ef503514f4e54927802eb6',1,'HttpResponseLayer']]],
   ['getcurrentcoreid',['getCurrentCoreId',['../a00052.html#aea8a32e50dfb365f08f4e3f496193bd6',1,'PfRingDevice']]],
   ['getcurrentthreadstatistics',['getCurrentThreadStatistics',['../a00052.html#af7f4c08d8ad864818286149312f7ff96',1,'PfRingDevice']]],
+  ['getcustomdnsclass',['getCustomDnsClass',['../a00009.html#a8a6fba311a92714f4655b1729e491ae6',1,'DnsResource']]],
   ['getdata',['getData',['../a00037.html#a68c8d3f62652858c92c78e87005e45c7',1,'Layer']]],
   ['getdataasstring',['getDataAsString',['../a00009.html#adc119b18faaf58592328557e79de1a34',1,'DnsResource']]],
   ['getdatalen',['getDataLen',['../a00037.html#a6b40982815cffa68db6a8f7605541807',1,'Layer']]],

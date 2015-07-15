@@ -135,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0ac34c11273dcfcb6a1c1853fd5e1dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc119b18faaf58592328557e79de1a34"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#adc119b18faaf58592328557e79de1a34">getDataAsString</a> ()</td></tr>
 <tr class="separator:adc119b18faaf58592328557e79de1a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8647c7fe6ea0bcc4a2d546f222d8eb04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04">setData</a> (const string &amp;dataAsString)</td></tr>
+<tr class="separator:a8647c7fe6ea0bcc4a2d546f222d8eb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6fba311a92714f4655b1729e491ae6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a8a6fba311a92714f4655b1729e491ae6">getCustomDnsClass</a> ()</td></tr>
+<tr class="separator:a8a6fba311a92714f4655b1729e491ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13d673b2f03a88348b3d6914746a053"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ac13d673b2f03a88348b3d6914746a053">setCustomDnsClass</a> (uint16_t customValue)</td></tr>
+<tr class="separator:ac13d673b2f03a88348b3d6914746a053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d25b471ec10385b9351422d7b1819e7"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a5d25b471ec10385b9351422d7b1819e7">getSize</a> ()</td></tr>
 <tr class="separator:a5d25b471ec10385b9351422d7b1819e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3a335cec6e57cb8e00b512226fd42b6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#aa3a335cec6e57cb8e00b512226fd42b6">getType</a> ()</td></tr>
@@ -162,16 +168,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsLayer</b></td></t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_a00022"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a00022')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="a00022.html">IDnsResource</a></td></tr>
-<tr class="memitem:aafa76f59ec543e8fe01d3534422afb9f inherit pub_types_a00022"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> { <a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a">DnsQuery</a>, 
-<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74">DnsAnswer</a>, 
-<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8">DnsAuthority</a>, 
-<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b">DnsAdditional</a>
+<tr class="memitem:aafa76f59ec543e8fe01d3534422afb9f inherit pub_types_a00022"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> { <a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a">DnsQuery</a> = 0, 
+<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74">DnsAnswer</a> = 1, 
+<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8">DnsAuthority</a> = 2, 
+<a class="el" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b">DnsAdditional</a> = 3
  }</td></tr>
 <tr class="separator:aafa76f59ec543e8fe01d3534422afb9f inherit pub_types_a00022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representing DNS record other than DNS query </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8a6fba311a92714f4655b1729e491ae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t DnsResource::getCustomDnsClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Some records don't have a DNS class and the bytes used for storing the DNS class are used for other purpose. This method enables the user to receive these bytes </p><dl class="section return"><dt>Returns</dt><dd>The value stored in this place </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="adc119b18faaf58592328557e79de1a34"></a>
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +304,58 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac13d673b2f03a88348b3d6914746a053"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DnsResource::setCustomDnsClass </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>customValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Some records don't have a DNS class and the bytes used for storing the DNS class are used for other purpose. This method enables the user to set these bytes </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">customValue</td><td>The value to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8647c7fe6ea0bcc4a2d546f222d8eb04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DnsResource::setData </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>dataAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set resource data. Data is parse from string and is validated against the DNS type of the resource. For example: if DNS type is A and data isn't a valid IPv4 address a log error will be printed and the method will return false. This method currently supports the following DNS types:<br />
+</p><ul>
+<li><a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca265b27cca3b7baa93c46988f68ddeb29">DNS_TYPE_A</a> (IPv4 address) - data is expected to be a valid IPv4 address</li>
+<li><a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ecad6f2a7e9311cfa3f2b9f4af3a0f19653">DNS_TYPE_AAAA</a> (IPv6 address) - data is expected to be a valid IPv6 address</li>
+<li><a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca4c089094c4e291f9b3e6a7fe1faf864c">DNS_TYPE_NS</a>, <a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ecad412bbe358a397a2512f9c395fd5c37e">DNS_TYPE_CNAME</a>, <a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca963351cec8f556295a3b5272bcae7a05">DNS_TYPE_DNAM</a>, <a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca928f1061e551dbd530539fdb31a1d7a2">DNS_TYPE_PTR</a>, <a class="el" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca35c9ee4ccb7a8eae9adb4ad3f3335ecb">DNS_TYPE_MX</a> (name data) - data is expected to be a valid host name, e.g: 'www.google.com'</li>
+<li>else: data is expected to be a valid hex string which starts with '0x' followed by the an even number of characters representing a valid hex data. e.g: '0x0d0a45569a9b' <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataAsString</td><td>The string representation of the relevant data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if data was properly set or false if data is illegal or method couldn't extend or shorted the packet (appropriate error log is printed in all cases) </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
 <a class="anchor" id="aad8190121beb72fd7b85fa3fb8e63685"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00009.html">DnsResource</a></li>
-    <li class="footer">Generated on Wed Jul 1 2015 23:44:31 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Jul 15 2015 23:48:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,6 +1,17 @@
 var a00007 =
 [
     [ "DnsLayer", "a00007.html#a4a0655838a44f3c986a57b97264d0b9b", null ],
+    [ "DnsLayer", "a00007.html#a0c0b14d0879565e64d4579373cc7189b", null ],
+    [ "DnsLayer", "a00007.html#a290fa008e75990ec2e64bc14b7250935", null ],
+    [ "addAdditionalRecord", "a00007.html#a149b17d2679ca75bcd840eb4351776f9", null ],
+    [ "addAdditionalRecord", "a00007.html#a86190530ac9c1ca573b39d98dd6265dd", null ],
+    [ "addAdditionalRecord", "a00007.html#a5e4def02db8b452327fbaea920f3c026", null ],
+    [ "addAnswer", "a00007.html#aad1c1ca068c7fa4810ee4ba34a0b5b26", null ],
+    [ "addAnswer", "a00007.html#a7b9c6270ecbb2efd5e882ae262259e59", null ],
+    [ "addAuthority", "a00007.html#aaa6e302896364cd0b06a95b99371e186", null ],
+    [ "addAuthority", "a00007.html#ae4d13bcf5c2ea8466d6edce91f31b84a", null ],
+    [ "addQuery", "a00007.html#a791487bfb70817e06373635dbdfd4c0f", null ],
+    [ "addQuery", "a00007.html#ae2c5015e195fca373ef02d3ed5c78192", null ],
     [ "computeCalculateFields", "a00007.html#a381fd7ec8713c71e0d73d19f7de2679c", null ],
     [ "getAdditionalRecord", "a00007.html#aa880396cf24013c578b0a82f9dbb3f15", null ],
     [ "getAdditionalRecordCount", "a00007.html#a1f5b8a5a7381cdee4f6c486c12d6efb6", null ],
@@ -20,6 +31,7 @@ var a00007 =
     [ "getNextQuery", "a00007.html#ada9e713f06ff8516bfd87ddc708204b2", null ],
     [ "getQuery", "a00007.html#ac1168057ddefee2cdf88c1ad0846490e", null ],
     [ "getQueryCount", "a00007.html#ae1805ab3c3c95a8c9729b5389a105534", null ],
+    [ "operator=", "a00007.html#a622f424ddcf624a5ca71bccdc445b510", null ],
     [ "parseNextLayer", "a00007.html#a59d246da05a21283214783247294e11e", null ],
     [ "toString", "a00007.html#a3936febebc51025ca4c2e441a3d1c60a", null ]
 ];
