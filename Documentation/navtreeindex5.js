@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"functions_func_c.html":[2,3,1,2],
+"functions_func_d.html":[2,3,1,3],
+"functions_func_e.html":[2,3,1,4],
+"functions_func_f.html":[2,3,1,5],
+"functions_func_g.html":[2,3,1,6],
+"functions_func_h.html":[2,3,1,7],
+"functions_func_i.html":[2,3,1,8],
+"functions_func_m.html":[2,3,1,9],
 "functions_func_n.html":[2,3,1,10],
 "functions_func_o.html":[2,3,1,11],
 "functions_func_p.html":[2,3,1,12],
@@ -55,8 +63,8 @@ var NAVTREEINDEX5 =
 "globals_v.html":[3,1,0,17],
 "globals_z.html":[3,1,0,18],
 "hierarchy.html":[2,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#getting_started_sec":[0,2],
 "index.html#install_sec":[0,1],
 "index.html#intro_sec":[0,0],

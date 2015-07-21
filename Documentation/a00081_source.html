@@ -361,94 +361,109 @@ $(document).ready(function(){initNavTree('a00081_source.html','');});
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
 <div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="a00007.html#a51b071c27ee38c73ad27b003126a2f19">  462</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00006.html">dnshdr</a>* <a class="code" href="a00007.html#a51b071c27ee38c73ad27b003126a2f19">getDnsHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00006.html">dnshdr</a>*)m_Data; }</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getQuery(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getFirstQuery();</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getNextQuery(<a class="code" href="a00008.html">DnsQuery</a>* query);</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordtype">size_t</span> getQueryCount();</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* addQuery(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* addQuery(<a class="code" href="a00008.html">DnsQuery</a>* <span class="keyword">const</span> copyQuery);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAnswer(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAnswer();</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAnswer(<a class="code" href="a00009.html">DnsResource</a>* answer);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordtype">size_t</span> getAnswerCount();</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getQuery(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getFirstQuery();</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* getNextQuery(<a class="code" href="a00008.html">DnsQuery</a>* query);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordtype">size_t</span> getQueryCount();</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* addQuery(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>* addQuery(<a class="code" href="a00008.html">DnsQuery</a>* <span class="keyword">const</span> copyQuery);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <span class="keywordtype">bool</span> removeQuery(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; queryNameToRemove, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordtype">bool</span> removeQuery(<a class="code" href="a00008.html">DnsQuery</a>* queryToRemove);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAnswer(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keywordtype">bool</span> exactMatch);</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAnswer(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAnswer();</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAnswer(<a class="code" href="a00009.html">DnsResource</a>* answer);</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAnswer(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAnswer);</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAuthority(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordtype">size_t</span> getAnswerCount();</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAnswer(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAuthority();</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAuthority(<a class="code" href="a00009.html">DnsResource</a>* authority);</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordtype">size_t</span> getAuthorityCount();</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAuthority(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAuthority(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAuthority);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAnswer(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAnswer);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordtype">bool</span> removeAnswer(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; answerNameToRemove, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordtype">bool</span> removeAnswer(<a class="code" href="a00009.html">DnsResource</a>* answerToRemove);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAuthority(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAuthority();</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAdditionalRecord();</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAdditionalRecord(<a class="code" href="a00009.html">DnsResource</a>* additionalRecord);</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordtype">size_t</span> getAdditionalRecordCount();</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, uint16_t customData1, uint32_t customData2, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAdditionalRecord);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00666"></a><span class="lineno"><a class="line" href="a00007.html#a59d246da05a21283214783247294e11e">  666</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00007.html#a59d246da05a21283214783247294e11e">parseNextLayer</a>() {}</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">  672</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; } <span class="comment">//No layer above DNS</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno"><a class="line" href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">  677</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordtype">string</span> toString();</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="comment">//  void removeQuery(DnsQuery* queryToRemove);</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="comment">//  void removeQuery(const string&amp; name);</span></div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <a class="code" href="a00022.html">IDnsResource</a>*   m_ResourceList;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>*       m_FirstQuery;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAnswer;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAuthority;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAdditional;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordtype">void</span> setFirstResource(<a class="code" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a> resType, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordtype">bool</span> extendLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keywordtype">bool</span> shortenLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="a00022.html">IDnsResource</a>* getResourceByName(<a class="code" href="a00022.html">IDnsResource</a>* startFrom, <span class="keywordtype">size_t</span> resourceCount, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">void</span> parseResources();</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAuthority(<a class="code" href="a00009.html">DnsResource</a>* authority);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keywordtype">size_t</span> getAuthorityCount();</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAuthority(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAuthority(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAuthority);</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordtype">bool</span> removeAuthority(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; authorityNameToRemove, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordtype">bool</span> removeAuthority(<a class="code" href="a00009.html">DnsResource</a>* authorityToRemove);</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getFirstAdditionalRecord();</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* getNextAdditionalRecord(<a class="code" href="a00009.html">DnsResource</a>* additionalRecord);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordtype">size_t</span> getAdditionalRecordCount();</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, uint16_t customData1, uint32_t customData2, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addResource(<a class="code" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a> resType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass,</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;};</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_DNS_LAYER */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addAdditionalRecord(<a class="code" href="a00009.html">DnsResource</a>* <span class="keyword">const</span> copyAdditionalRecord);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keywordtype">bool</span> removeAdditionalRecord(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; additionalRecordNameToRemove, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordtype">bool</span> removeAdditionalRecord(<a class="code" href="a00009.html">DnsResource</a>* additionalRecordToRemove);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
+<div class="line"><a name="l00729"></a><span class="lineno"><a class="line" href="a00007.html#a59d246da05a21283214783247294e11e">  729</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00007.html#a59d246da05a21283214783247294e11e">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
+<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">  735</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; } <span class="comment">//No layer above DNS</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
+<div class="line"><a name="l00740"></a><span class="lineno"><a class="line" href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">  740</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordtype">string</span> toString();</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <a class="code" href="a00022.html">IDnsResource</a>*   m_ResourceList;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <a class="code" href="a00008.html">DnsQuery</a>*       m_FirstQuery;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAnswer;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAuthority;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>*    m_FirstAdditional;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <a class="code" href="a00022.html">IDnsResource</a>* getFirstResource(<a class="code" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a> resType);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">void</span> setFirstResource(<a class="code" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a> resType, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">bool</span> extendLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordtype">bool</span> shortenLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten, <a class="code" href="a00022.html">IDnsResource</a>* resource);</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <a class="code" href="a00022.html">IDnsResource</a>* getResourceByName(<a class="code" href="a00022.html">IDnsResource</a>* startFrom, <span class="keywordtype">size_t</span> resourceCount, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keywordtype">bool</span> exactMatch);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordtype">void</span> parseResources();</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <a class="code" href="a00009.html">DnsResource</a>* addResource(<a class="code" href="a00022.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a> resType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="code" href="a00081.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass,</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            uint32_t ttl, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; data);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordtype">bool</span> removeResource(<a class="code" href="a00022.html">IDnsResource</a>* resourceToRemove);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;};</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_DNS_LAYER */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3ecac3792e6df57454ff2d6719f467366a69"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ecac3792e6df57454ff2d6719f467366a69">DNS_TYPE_MF</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:95</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca1fff3e12e13bafe7eb12f4ee63de9384"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca1fff3e12e13bafe7eb12f4ee63de9384">DNS_TYPE_NIMLOC</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:151</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3ecaac025669f844e55cc4c940bf1eb03e25"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ecaac025669f844e55cc4c940bf1eb03e25">DNS_TYPE_NULL_R</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:107</div></div>
@@ -467,12 +482,12 @@ $(document).ready(function(){initNavTree('a00081_source.html','');});
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca45f53e8cc071fce05936a356f9ff9aad"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca45f53e8cc071fce05936a356f9ff9aad">DNS_TYPE_WKS</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:109</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca261d6daf4cf28f31c9c28f0a71abe3a6"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca261d6daf4cf28f31c9c28f0a71abe3a6">DNS_TYPE_ISDN</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:127</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3ecad412bbe358a397a2512f9c395fd5c37e"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ecad412bbe358a397a2512f9c395fd5c37e">DNS_TYPE_CNAME</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:97</div></div>
-<div class="ttc" id="a00007_html_a59d246da05a21283214783247294e11e"><div class="ttname"><a href="a00007.html#a59d246da05a21283214783247294e11e">DnsLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:666</div></div>
+<div class="ttc" id="a00007_html_a59d246da05a21283214783247294e11e"><div class="ttname"><a href="a00007.html#a59d246da05a21283214783247294e11e">DnsLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:729</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca6f5598a8d8fea7fdf38db65baf06c46a"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca6f5598a8d8fea7fdf38db65baf06c46a">DNS_TYPE_EID</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:149</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca03a7703c2bc4a58e4f731431609ee37d"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca03a7703c2bc4a58e4f731431609ee37d">DNS_TYPE_KX</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:159</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca2b81f096a62a62ee72df3b3091c234e8"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca2b81f096a62a62ee72df3b3091c234e8">DNS_TYPE_TXT</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:119</div></div>
 <div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00007_html_a532ae1b6869a923121d3f42c9cd4fd03"><div class="ttname"><a href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">DnsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:672</div></div>
+<div class="ttc" id="a00007_html_a532ae1b6869a923121d3f42c9cd4fd03"><div class="ttname"><a href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">DnsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:735</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3ec"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a></div><div class="ttdeci">DnsType</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:86</div></div>
 <div class="ttc" id="a00006_html"><div class="ttname"><a href="a00006.html">dnshdr</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:22</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca3903b2df8fe77a70b01144bff708fa01"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca3903b2df8fe77a70b01144bff708fa01">DNS_TYPE_NAPTR</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:157</div></div>
@@ -502,7 +517,7 @@ $(document).ready(function(){initNavTree('a00081_source.html','');});
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca5b7c78ee2e5c039ca85069ce7f27f22a"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca5b7c78ee2e5c039ca85069ce7f27f22a">DNS_TYPE_SSHFP</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:175</div></div>
 <div class="ttc" id="a00037_html"><div class="ttname"><a href="a00037.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
 <div class="ttc" id="a00006_html_a9451141e818e15ed9015d83c97f755e2"><div class="ttname"><a href="a00006.html#a9451141e818e15ed9015d83c97f755e2">dnshdr::numberOfQuestions</a></div><div class="ttdeci">uint16_t numberOfQuestions</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:72</div></div>
-<div class="ttc" id="a00007_html_a381fd7ec8713c71e0d73d19f7de2679c"><div class="ttname"><a href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">DnsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:677</div></div>
+<div class="ttc" id="a00007_html_a381fd7ec8713c71e0d73d19f7de2679c"><div class="ttname"><a href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">DnsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> DnsLayer.h:740</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca963351cec8f556295a3b5272bcae7a05"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca963351cec8f556295a3b5272bcae7a05">DNS_TYPE_DNAM</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:165</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca0e9bf9b7914cb5f092328725e2215b7f"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca0e9bf9b7914cb5f092328725e2215b7f">DNS_TYPE_ATMA</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:155</div></div>
 <div class="ttc" id="a00081_html_a1659b09e7b08e3332c69df201f0ef3eca928f1061e551dbd530539fdb31a1d7a2"><div class="ttname"><a href="a00081.html#a1659b09e7b08e3332c69df201f0ef3eca928f1061e551dbd530539fdb31a1d7a2">DNS_TYPE_PTR</a></div><div class="ttdef"><b>Definition:</b> DnsLayer.h:111</div></div>
@@ -539,7 +554,7 @@ $(document).ready(function(){initNavTree('a00081_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00081.html">DnsLayer.h</a></li>
-    <li class="footer">Generated on Wed Jul 15 2015 23:48:33 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Jul 22 2015 00:30:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
