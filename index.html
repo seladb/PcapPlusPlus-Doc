@@ -53,9 +53,9 @@ v
 <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
 </ul>
 
-<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong> operating systems.
+<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong>.
 It was tested on Windows (32bit and 64bit), Ubuntu and Fedora, but it should work on other Linux distributions as well. Regarding Mac OS X - I tested it on Snow Leopard (10.6) 32bit, Mavericks (10.9.5) and Yosemite (10.10). I hope it would work on other Mac OS X versions as well (>= 10.6).
-Other opeating systems such as FreeBSD were never tested and compilation on those platform would probably fail</p>
+Other opeating systems such as FreeBSD were never tested and compilation on those platforms would probably fail</p>
 
 <h2>
 <a id="package-content" class="anchor" href="#package-content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package Content</h2>
@@ -66,7 +66,7 @@ Other opeating systems such as FreeBSD were never tested and compilation on thos
 <li>
 <strong>Packet++ library</strong> - a library for parsing, creating and editing packets</li>
 <li>
-<strong>Pcap++ library</strong> - a library for intercepting and sending packets. This library is actually a C++ wrapper for the libPcap and WinPcap libraries</li>
+<strong>Pcap++ library</strong> - a library for intercepting and sending packets. This library is actually a C++ wrapper for packet capturing engines such as libPcap, WinPcap and PF_RING</li>
 <li>
 <strong>Common++ library</strong> - a library with some common code utilities used both by Packet++ and Pcap++</li>
 <li>
@@ -107,9 +107,8 @@ Other opeating systems such as FreeBSD were never tested and compilation on thos
 <li>PPPoE</li>
 <li>TCP</li>
 <li>UDP</li>
-<li>DNS (currently only parsing capabilities are available. Editing capabilities will be added soon)</li>
-<li>HTTP request header</li>
-<li>HTTP response header</li>
+<li>DNS</li>
+<li>HTTP headers (request & response)</li>
 <li>Generic payload</li>
 </ol>
 
@@ -306,10 +305,10 @@ ALL TESTS PASSED<span class="pl-k">!!</span></pre></div>
 <a id="creating-applications-with-PcapPlusPlus" class="anchor" href="#creating-applications-with-PcapPlusPlus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating Applications With PcapPlusPlus</h2>
 <p>Creating applications that uses PcapPlusPlus is rather easy. To do this, please follow these steps:</p>
 <ol>
-<li>First make sure PcapPlusPlus is configured and compiles successfully</li>
+<li>First make sure PcapPlusPlus is configured and compiled successfully</li>
 <li>All you need is under the <strong>Dist/</strong> directory. You can find the PcapPlusPlus libraries, header files, code examples and helpful makefiles</li>
 <li>
-In order to compile your application with PcapPlusPlus libraries you should use the makefiles under the <strong>mk/</strong> directory. There are 2 makefiles there:
+In order to compile your application with PcapPlusPlus libraries you should use the makefiles under the <strong>Dist/mk/</strong> directory. There are 2 makefiles there:
 <ol>
 <li><em>platform.mk</em> - contains mainly platform-dependent variables such as MinGW and WinPcap directory in Windows, binary files extensions (.lib/.exe for Windows, .a/none for Linux and Mac OS X), compile utilities names (g++/g++.exe, ar/ar.exe), etc.</li>
 <li><em>PcapPlusPlus.mk</em> - contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:
