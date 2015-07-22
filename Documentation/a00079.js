@@ -1,9 +1,10 @@
 var a00079 =
 [
-    [ "arphdr", "a00003.html", "a00003" ],
-    [ "ArpLayer", "a00004.html", "a00004" ],
-    [ "ArpOpcode", "a00079.html#aefdd3857f04fba01d5122a0e34df9523", [
-      [ "ARP_REQUEST", "a00079.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61", null ],
-      [ "ARP_REPLY", "a00079.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9", null ]
-    ] ]
+    [ "getDeviceType", "a00079.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2", null ],
+    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00079.html#a624f8ebd9bba9bf1123c594f55ed0094", null ],
+    [ "sendPackets", "a00079.html#ad1576486b7de3dd8dd9eca51d9bd05dc", null ],
+    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00079.html#aa83fab2e5462bf6952389623ba69e0ae", null ],
+    [ "startCapture", "a00079.html#a83a5805972630d6071b07bc0f1d1de27", null ],
+    [ "startCapture", "a00079.html#ad8c8c56ec5b16cdd8c423274d8b4f07d", null ],
+    [ "startCapture", "a00079.html#a79611cae573a93b09ee980c1af8f978a", null ]
 ];

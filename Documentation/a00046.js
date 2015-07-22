@@ -1,10 +1,8 @@
 var a00046 =
 [
-    [ "PcapFileWriterDevice", "a00046.html#aefaeb7785c8cd5ca8b6e074156c471ae", null ],
-    [ "~PcapFileWriterDevice", "a00046.html#a491876c2591081b58313da654a704f8d", null ],
-    [ "close", "a00046.html#a534e2029cb4de050e6a55de39dc9aa9a", null ],
-    [ "getStatistics", "a00046.html#ac0c2c246a4447cc48ebae8f48f69d81d", null ],
-    [ "open", "a00046.html#a8053b6b8abafd7de893fce117b8d2413", null ],
-    [ "writePacket", "a00046.html#a6263c0850be603c60b8ba057d879a593", null ],
-    [ "writePackets", "a00046.html#a472db9de9ac4f9f440f752385c0436e6", null ]
+    [ "PcapFileReaderDevice", "a00046.html#a9b4477ddd07e91d123fdc3b892dccd9f", null ],
+    [ "~PcapFileReaderDevice", "a00046.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7", null ],
+    [ "getNextPacket", "a00046.html#a5318e4291eb2929233e7e77f9804c1af", null ],
+    [ "getStatistics", "a00046.html#a831193e30603e66291dfaa9b3ab22b63", null ],
+    [ "open", "a00046.html#aedd7cf41e07cd259d49fa6a20455b7f9", null ]
 ];

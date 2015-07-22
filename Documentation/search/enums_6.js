@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['livedevicetype',['LiveDeviceType',['../a00047.html#a201c04fe21184602ce48fb799b9bd7d7',1,'PcapLiveDevice']]],
+  ['livedevicetype',['LiveDeviceType',['../a00048.html#a201c04fe21184602ce48fb799b9bd7d7',1,'PcapLiveDevice']]],
   ['loglevel',['LogLevel',['../a00038.html#aa52cd7c3af16c16af7209f5769796047',1,'LoggerPP']]],
-  ['logmodule',['LogModule',['../a00089.html#a7e4ae98d96e7177e6c476a1bf942ed42',1,'Logger.h']]]
+  ['logmodule',['LogModule',['../a00090.html#a7e4ae98d96e7177e6c476a1bf942ed42',1,'Logger.h']]]
 ];

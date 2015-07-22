@@ -1,10 +1,8 @@
 var a00050 =
 [
-    [ "getDeviceType", "a00050.html#ac09338c44301f7cdb9b833497641139f", null ],
-    [ "getMacAddress", "a00050.html#a57d8b6fc5eadc45214d1b1e0d166356c", null ],
-    [ "getMtu", "a00050.html#a1edc9591657c5b8551b41ee87d85a77f", null ],
-    [ "getRemoteMachineIpAddress", "a00050.html#ab909cdc8cb52deec2f6796e8dfc1bd0b", null ],
-    [ "getRemoteMachinePort", "a00050.html#a22476ed79eeb632549791e8e7d5cdb88", null ],
-    [ "getStatistics", "a00050.html#a8d10ffda65b9a4ba61d0193cf6b1872d", null ],
-    [ "open", "a00050.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced", null ]
+    [ "PcapRemoteAuthentication", "a00050.html#a5daa53c06483922c9f14dd018d844940", null ],
+    [ "PcapRemoteAuthentication", "a00050.html#aaee229ba5f3c4c0fd6040b6132ab0f5d", null ],
+    [ "getPcapRmAuth", "a00050.html#a88bbf0cad6e1deafd040632500da4a00", null ],
+    [ "password", "a00050.html#aab0cc127150c91426bccf3ded1a2d915", null ],
+    [ "userName", "a00050.html#a1bd03f3efe382739077224990438fa66", null ]
 ];

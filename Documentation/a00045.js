@@ -1,8 +1,11 @@
 var a00045 =
 [
-    [ "PcapFileReaderDevice", "a00045.html#a9b4477ddd07e91d123fdc3b892dccd9f", null ],
-    [ "~PcapFileReaderDevice", "a00045.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7", null ],
-    [ "getNextPacket", "a00045.html#a5318e4291eb2929233e7e77f9804c1af", null ],
-    [ "getStatistics", "a00045.html#a831193e30603e66291dfaa9b3ab22b63", null ],
-    [ "open", "a00045.html#aedd7cf41e07cd259d49fa6a20455b7f9", null ]
+    [ "PayloadLayer", "a00045.html#a58fcd64da3c3aa5375060efff264ed4d", null ],
+    [ "PayloadLayer", "a00045.html#a7cc6f99cf4f6a31b8b3be6bde5ff2881", null ],
+    [ "computeCalculateFields", "a00045.html#a54f81429bd3c48d84cf53fa71ec96b5e", null ],
+    [ "getHeaderLen", "a00045.html#a3e80aa14fadec268334061f9dfa6de67", null ],
+    [ "getPayload", "a00045.html#a675beffd918b11197c830c1f55bee687", null ],
+    [ "getPayloadLen", "a00045.html#a6437d45a1237454cd43db5ad07aa75da", null ],
+    [ "parseNextLayer", "a00045.html#ae7c40fba63c665093d3ec4a072da1e37", null ],
+    [ "toString", "a00045.html#a48556ce0e7207fc870d8cb552489cfa0", null ]
 ];

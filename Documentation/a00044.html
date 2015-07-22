@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PayloadLayer Class Reference</title>
+<title>PcapPlusPlus: Packet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,164 +107,105 @@ $(document).ready(function(){initNavTree('a00044.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00160.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="a00162.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PayloadLayer Class Reference</div>  </div>
+<div class="title">Packet Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00093_source.html">PayloadLayer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for PayloadLayer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00044.png" usemap="#PayloadLayer_map" alt=""/>
-  <map id="PayloadLayer_map" name="PayloadLayer_map">
-<area href="a00037.html" alt="Layer" shape="rect" coords="0,0,91,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00094_source.html">Packet.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a58fcd64da3c3aa5375060efff264ed4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a58fcd64da3c3aa5375060efff264ed4d">PayloadLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00037.html">Layer</a> *prevLayer, <a class="el" href="a00043.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a58fcd64da3c3aa5375060efff264ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc6f99cf4f6a31b8b3be6bde5ff2881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a7cc6f99cf4f6a31b8b3be6bde5ff2881">PayloadLayer</a> (const uint8_t *data, size_t dataLen, bool selfAllocated)</td></tr>
-<tr class="separator:a7cc6f99cf4f6a31b8b3be6bde5ff2881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a675beffd918b11197c830c1f55bee687"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a675beffd918b11197c830c1f55bee687">getPayload</a> ()</td></tr>
-<tr class="separator:a675beffd918b11197c830c1f55bee687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6437d45a1237454cd43db5ad07aa75da"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a6437d45a1237454cd43db5ad07aa75da">getPayloadLen</a> ()</td></tr>
-<tr class="separator:a6437d45a1237454cd43db5ad07aa75da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c40fba63c665093d3ec4a072da1e37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ae7c40fba63c665093d3ec4a072da1e37">parseNextLayer</a> ()</td></tr>
-<tr class="separator:ae7c40fba63c665093d3ec4a072da1e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e80aa14fadec268334061f9dfa6de67"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a3e80aa14fadec268334061f9dfa6de67">getHeaderLen</a> ()</td></tr>
-<tr class="separator:a3e80aa14fadec268334061f9dfa6de67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f81429bd3c48d84cf53fa71ec96b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a54f81429bd3c48d84cf53fa71ec96b5e">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a54f81429bd3c48d84cf53fa71ec96b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48556ce0e7207fc870d8cb552489cfa0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a48556ce0e7207fc870d8cb552489cfa0">toString</a> ()</td></tr>
-<tr class="separator:a48556ce0e7207fc870d8cb552489cfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00037"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00037')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00037.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6757e6e85335072ed5a8c691440a35eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a6757e6e85335072ed5a8c691440a35eb">Packet</a> (size_t maxPacketLen)</td></tr>
+<tr class="separator:a6757e6e85335072ed5a8c691440a35eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e45ecb72e05b1dcf07afd778aa9914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a39e45ecb72e05b1dcf07afd778aa9914">Packet</a> (<a class="el" href="a00064.html">RawPacket</a> *rawPacket)</td></tr>
+<tr class="separator:a39e45ecb72e05b1dcf07afd778aa9914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d431d5730177a1bf6e1f8bbbbb6066"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a69d431d5730177a1bf6e1f8bbbbb6066">~Packet</a> ()</td></tr>
+<tr class="separator:a69d431d5730177a1bf6e1f8bbbbb6066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d5dfea51fa7fe55e4705b176f326ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ae8d5dfea51fa7fe55e4705b176f326ec">Packet</a> (const <a class="el" href="a00044.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:ae8d5dfea51fa7fe55e4705b176f326ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a6b0c6ea561b9726597468acac252d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00044.html">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a91a6b0c6ea561b9726597468acac252d">operator=</a> (const <a class="el" href="a00044.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:a91a6b0c6ea561b9726597468acac252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fec1d535b7f272793a44dc754934a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a8fec1d535b7f272793a44dc754934a56">getRawPacket</a> ()</td></tr>
+<tr class="separator:a8fec1d535b7f272793a44dc754934a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d73113e41efb7f2146e9058567d9827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a8d73113e41efb7f2146e9058567d9827">getRawPacketReadOnly</a> () const </td></tr>
+<tr class="separator:a8d73113e41efb7f2146e9058567d9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fa4ce5311673d8d0eda8a3ccd1aa65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a84fa4ce5311673d8d0eda8a3ccd1aa65">getFirstLayer</a> ()</td></tr>
+<tr class="separator:a84fa4ce5311673d8d0eda8a3ccd1aa65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40618d2579ceb41ccfddd1aa511e3cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a40618d2579ceb41ccfddd1aa511e3cb0">getLastLayer</a> ()</td></tr>
+<tr class="separator:a40618d2579ceb41ccfddd1aa511e3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4684bb0c74d36f713f485b0f54d11660"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a4684bb0c74d36f713f485b0f54d11660"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00044.html#a4684bb0c74d36f713f485b0f54d11660">getLayerOfType</a> ()</td></tr>
+<tr class="separator:a4684bb0c74d36f713f485b0f54d11660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097782fccb489b1dae9bb827cf9b3a75"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a097782fccb489b1dae9bb827cf9b3a75"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00044.html#a097782fccb489b1dae9bb827cf9b3a75">getNextLayerOfType</a> (<a class="el" href="a00037.html">Layer</a> *after)</td></tr>
+<tr class="separator:a097782fccb489b1dae9bb827cf9b3a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bb9f62a67a053264fc81358ed9f22c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a22bb9f62a67a053264fc81358ed9f22c">isPacketOfType</a> (<a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> protocolType)</td></tr>
+<tr class="separator:a22bb9f62a67a053264fc81358ed9f22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a757b793dfce9239223f9000551a945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a2a757b793dfce9239223f9000551a945">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a2a757b793dfce9239223f9000551a945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1aaa31d9965585e603a348cfe4bc9aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ae1aaa31d9965585e603a348cfe4bc9aa">printToString</a> ()</td></tr>
+<tr class="separator:ae1aaa31d9965585e603a348cfe4bc9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bf1670aa1ab99dca9fda49ec2e8283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a56bf1670aa1ab99dca9fda49ec2e8283">printToStringList</a> (std::vector&lt; std::string &gt; &amp;result)</td></tr>
+<tr class="separator:a56bf1670aa1ab99dca9fda49ec2e8283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a834e4e869446be644f61b4b456604f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834e4e869446be644f61b4b456604f31"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b></td></tr>
+<tr class="separator:a834e4e869446be644f61b4b456604f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a generic or unknown layer or a packet payload </p>
+<div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="a00064.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="a00012.html">EthLayer</a> -&gt; <a class="el" href="a00033.html">IPv4Layer</a> -&gt; <a class="el" href="a00070.html">TcpLayer</a> -&gt; <a class="el" href="a00018.html">HttpRequestLayer</a> <br />
+ <a class="el" href="a00044.html">Packet</a> instance isn't read only. The user can add or remove layers, update current layer, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a58fcd64da3c3aa5375060efff264ed4d"></a>
+<a class="anchor" id="a6757e6e85335072ed5a8c691440a35eb"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PayloadLayer::PayloadLayer </td>
+          <td class="memname">Packet::Packet </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>maxPacketLen</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00037.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00043.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor for creating a new packet. Very useful when creating packets. When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="a00064.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00043.html">Packet</a> instance where layer will be stored in </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketLen</td><td>The expected packet length in bytes </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a7cc6f99cf4f6a31b8b3be6bde5ff2881"></a>
+<a class="anchor" id="a39e45ecb72e05b1dcf07afd778aa9914"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PayloadLayer::PayloadLayer </td>
+          <td class="memname">Packet::Packet </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00064.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>selfAllocated</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that allocates a new payload </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor for creating a packet out of already allocated <a class="el" href="a00064.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="a00064.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="a00064.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A raw buffer that will be used as a payload. This data will be copied to the layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw buffer length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">selfAllocated</td><td>A dummy parameter to separate the constructor signature from the other constrcutor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="a00114.html#_todo000004">Todo:</a></b></dt><dd>selfAllocated is probably not necessary anymore. Remove it </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a54f81429bd3c48d84cf53fa71ec96b5e"></a>
+<a class="anchor" id="a69d431d5730177a1bf6e1f8bbbbb6066"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -272,133 +213,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PayloadLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="a00037.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3e80aa14fadec268334061f9dfa6de67"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t PayloadLayer::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Payload data length in bytes </dd></dl>
-
-<p>Implements <a class="el" href="a00037.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a675beffd918b11197c830c1f55bee687"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* PayloadLayer::getPayload </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the payload data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the payload data </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6437d45a1237454cd43db5ad07aa75da"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t PayloadLayer::getPayloadLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the payload data length </p><dl class="section return"><dt>Returns</dt><dd>The payload data length in bytes </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae7c40fba63c665093d3ec4a072da1e37"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PayloadLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="a00044.html">PayloadLayer</a> is always last) </p>
-
-<p>Implements <a class="el" href="a00037.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a48556ce0e7207fc870d8cb552489cfa0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string PayloadLayer::toString </td>
+          <td class="memname">virtual Packet::~Packet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -410,9 +225,276 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+<p>A destructor for this class. Frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by addLayer() or insertLayer() ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor) </p>
 
-<p>Implements <a class="el" href="a00037.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ae8d5dfea51fa7fe55e4705b176f326ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00044.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A copy constructor for this class. This copy constructor copies all the raw data and re-create all layers. So when the original <a class="el" href="a00044.html">Packet</a> is being freed, no data will be lost in the copied instance </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2a757b793dfce9239223f9000551a945"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Packet::computeCalculateFields </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Each layer can have fields that can be calculate automatically from other fields using <a class="el" href="a00037.html#aa781ec9027fb1011d9e07fefed7c908c">Layer::computeCalculateFields()</a>. This method forces all layers to calculate these fields values </p>
+
+</div>
+</div>
+<a class="anchor" id="a84fa4ce5311673d8d0eda8a3ccd1aa65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00037.html">Layer</a>* Packet::getFirstLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the first (lowest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the first (lowest) layer in the packet </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40618d2579ceb41ccfddd1aa511e3cb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00037.html">Layer</a>* Packet::getLastLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the last (highest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the last (highest) layer in the packet </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4684bb0c74d36f713f485b0f54d11660"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * Packet::getLayerOfType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a097782fccb489b1dae9bb827cf9b3a75"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * Packet::getNextLayerOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00037.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>after</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="a00012.html">EthLayer</a> -&gt; <a class="el" href="a00078.html">VlanLayer(1)</a> -&gt; <a class="el" href="a00078.html">VlanLayer(2)</a> -&gt; <a class="el" href="a00078.html">VlanLayer(3)</a> -&gt; <a class="el" href="a00033.html">IPv4Layer</a> and the user put <a class="el" href="a00078.html">VlanLayer(2)</a> as a parameter and wishes to search for a <a class="el" href="a00078.html">VlanLayer</a>, <a class="el" href="a00078.html">VlanLayer(3)</a> will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the layer to start search from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fec1d535b7f272793a44dc754934a56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html">RawPacket</a>* Packet::getRawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00044.html">Packet</a>'s <a class="el" href="a00064.html">RawPacket</a> </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00044.html">Packet</a>'s <a class="el" href="a00064.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d73113e41efb7f2146e9058567d9827"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html">RawPacket</a>* Packet::getRawPacketReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00044.html">Packet</a>'s <a class="el" href="a00064.html">RawPacket</a> in a read-only manner </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00044.html">Packet</a>'s <a class="el" href="a00064.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22bb9f62a67a053264fc81358ed9f22c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Packet::isPacketOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>protocolType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether the packet contains a certain protocol </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocolType</td><td>The protocol type to search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet contains the protocol, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91a6b0c6ea561b9726597468acac252d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00044.html">Packet</a>&amp; Packet::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00044.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator overloading. It first frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by addLayer() or insertLayer() ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor). Afterwards it copies the data from the other packet in the same way used in the copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1aaa31d9965585e603a348cfe4bc9aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Packet::printToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Each layer can print a string representation of the layer most important data using <a class="el" href="a00037.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="section return"><dt>Returns</dt><dd>A string containing most relevant data from all layers (looks like the packet description in Wireshark) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a56bf1670aa1ab99dca9fda49ec2e8283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Packet::printToStringList </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Similar to <a class="el" href="a00044.html#ae1aaa31d9965585e603a348cfe4bc9aa">printToString()</a>, but instead of one string it outputs a list of strings, one string for every layer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>A string vector that will contain all strings </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -421,8 +503,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00044.html">PayloadLayer</a></li>
-    <li class="footer">Generated on Wed Jul 22 2015 00:30:43 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00044.html">Packet</a></li>
+    <li class="footer">Generated on Thu Jul 23 2015 00:07:02 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
