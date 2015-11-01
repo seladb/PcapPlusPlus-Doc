@@ -4,5 +4,9 @@ var searchData=
   ['dnshdr',['dnshdr',['../a00006.html',1,'']]],
   ['dnslayer',['DnsLayer',['../a00007.html',1,'']]],
   ['dnsquery',['DnsQuery',['../a00008.html',1,'']]],
-  ['dnsresource',['DnsResource',['../a00009.html',1,'']]]
+  ['dnsresource',['DnsResource',['../a00009.html',1,'']]],
+  ['dpdkdevice',['DpdkDevice',['../a00010.html',1,'']]],
+  ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../a00011.html',1,'DpdkDevice']]],
+  ['dpdkdevicelist',['DpdkDeviceList',['../a00012.html',1,'']]],
+  ['dpdkworkerthread',['DpdkWorkerThread',['../a00013.html',1,'']]]
 ];

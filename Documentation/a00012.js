@@ -1,14 +1,12 @@
 var a00012 =
 [
-    [ "EthLayer", "a00012.html#a039c7173f98655299b58268cd35fc552", null ],
-    [ "EthLayer", "a00012.html#a53715a36ac97bc3ce42b48ffb962ff36", null ],
-    [ "computeCalculateFields", "a00012.html#a6740298bc6b49c5460a4ef4a390b9dea", null ],
-    [ "getDestMac", "a00012.html#a837f20752b1ba301fa79076ac19c80d4", null ],
-    [ "getEthHeader", "a00012.html#a406cdd38fea0b50d7c22d91e10940071", null ],
-    [ "getHeaderLen", "a00012.html#a38b96ebfded7f751a0a3e2e89b32e976", null ],
-    [ "getSourceMac", "a00012.html#a32cc8f4bd6c9642a6e7aac960cebf3d3", null ],
-    [ "parseNextLayer", "a00012.html#ac43bf749002db7b8cfc39c7b1e22eb50", null ],
-    [ "setDestMac", "a00012.html#a6d4385fbb8d002040d7229602d7367fa", null ],
-    [ "setSoureMac", "a00012.html#accfedc24eda9b3b4b468ed6a2b220ce2", null ],
-    [ "toString", "a00012.html#a170c2a168ce5ab5cb9bf470c5367df4b", null ]
+    [ "getDeviceByPciAddress", "a00012.html#a718d5fc531dc0e169fe9e75124afeae9", null ],
+    [ "getDeviceByPort", "a00012.html#ab26f5097632ccf8d5afc70c850e48e8c", null ],
+    [ "getDpdkDeviceList", "a00012.html#a3f530a9782c325de4ddb590e2f880bc6", null ],
+    [ "getDpdkLogLevel", "a00012.html#a42dcf1f6aaca95100be2db67f122c645", null ],
+    [ "getDpdkMasterCore", "a00012.html#aeadf2c180f1f71910702c41035bfde81", null ],
+    [ "setDpdkLogLevel", "a00012.html#a2a443902a887dca2e8d517761a5bc73b", null ],
+    [ "startDpdkWorkerThreads", "a00012.html#ae7f3d36811a6de704345ca6bb609891c", null ],
+    [ "stopDpdkWorkerThreads", "a00012.html#a63498b2e990805bc33de5b06ed3c882e", null ],
+    [ "writeDpdkLogToFile", "a00012.html#a3e2465fbe487bb033646774e8f701cee", null ]
 ];

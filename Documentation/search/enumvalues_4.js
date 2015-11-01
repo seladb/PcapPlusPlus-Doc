@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['greater_5for_5fequal',['GREATER_OR_EQUAL',['../a00098.html#af9e5fd8fd26fc252748d97ebd68ea6b1acfac3943e885cee7538ecd7b718dd352',1,'PcapFilter.h']]],
-  ['greater_5fthan',['GREATER_THAN',['../a00098.html#af9e5fd8fd26fc252748d97ebd68ea6b1a5fae95457121bd697edd588d1b64cc7c',1,'PcapFilter.h']]]
+  ['full_5fduplex',['FULL_DUPLEX',['../a00042.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed',1,'DpdkDevice::LinkStatus']]]
 ];

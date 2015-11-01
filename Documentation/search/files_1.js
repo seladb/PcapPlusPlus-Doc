@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['dnslayer_2eh',['DnsLayer.h',['../a00082.html',1,'']]]
+  ['dnslayer_2eh',['DnsLayer.h',['../a00089.html',1,'']]],
+  ['dpdkdevice_2eh',['DpdkDevice.h',['../a00090.html',1,'']]],
+  ['dpdkdevicelist_2eh',['DpdkDeviceList.h',['../a00091.html',1,'']]]
 ];

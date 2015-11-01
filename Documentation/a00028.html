@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IPcapFileDevice Class Reference</title>
+<title>PcapPlusPlus: IFilterWithOperator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,45 +107,42 @@ $(document).ready(function(){initNavTree('a00028.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00146.html">List of all members</a>  </div>
+<a href="a00157.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IPcapFileDevice Class Reference</div>  </div>
+<div class="title">IFilterWithOperator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00097_source.html">PcapFileDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00108_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IPcapFileDevice:</div>
+Inheritance diagram for IFilterWithOperator:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00028.png" usemap="#IPcapFileDevice_map" alt=""/>
-  <map id="IPcapFileDevice_map" name="IPcapFileDevice_map">
-<area href="a00027.html" alt="IPcapDevice" shape="rect" coords="76,0,219,24"/>
-<area href="a00046.html" alt="PcapFileReaderDevice" shape="rect" coords="0,112,143,136"/>
-<area href="a00047.html" alt="PcapFileWriterDevice" shape="rect" coords="153,112,296,136"/>
+  <img src="a00028.png" usemap="#IFilterWithOperator_map" alt=""/>
+  <map id="IFilterWithOperator_map" name="IFilterWithOperator_map">
+<area href="a00017.html" alt="GeneralFilter" shape="rect" coords="213,0,345,24"/>
+<area href="a00036.html" alt="IpV4IDFilter" shape="rect" coords="0,112,132,136"/>
+<area href="a00038.html" alt="IpV4TotalLengthFilter" shape="rect" coords="142,112,274,136"/>
+<area href="a00079.html" alt="TcpWindowSizeFilter" shape="rect" coords="284,112,416,136"/>
+<area href="a00082.html" alt="UdpLengthFilter" shape="rect" coords="426,112,558,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeac5956145508b5f4883dbb688fdbe3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aeac5956145508b5f4883dbb688fdbe3b">close</a> ()</td></tr>
-<tr class="separator:aeac5956145508b5f4883dbb688fdbe3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc1dbf53910c72959d967c376f254ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a1fc1dbf53910c72959d967c376f254ce">isOpened</a> ()</td></tr>
-<tr class="separator:a1fc1dbf53910c72959d967c376f254ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00027"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00027')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00027.html">IPcapDevice</a></td></tr>
-<tr class="memitem:a94a6922dff88e4bea4b3904a60e6f0e9 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a94a6922dff88e4bea4b3904a60e6f0e9">open</a> ()=0</td></tr>
-<tr class="separator:a94a6922dff88e4bea4b3904a60e6f0e9 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfddac7872baed093efc622259f51fc6 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#abfddac7872baed093efc622259f51fc6">getStatistics</a> (pcap_stat &amp;stats)=0</td></tr>
-<tr class="separator:abfddac7872baed093efc622259f51fc6 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00013.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a35e872140261fa1c824ae249f888d691">setFilter</a> (string filterAsString)</td></tr>
-<tr class="separator:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e27cbccbfa49a086067613fc7ad75fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a6e27cbccbfa49a086067613fc7ad75fd">setOperator</a> (<a class="el" href="a00108.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a> op)</td></tr>
+<tr class="separator:a6e27cbccbfa49a086067613fc7ad75fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00017"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00017')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00017.html">GeneralFilter</a></td></tr>
+<tr class="memitem:a093d16ae026af66882af50567a75f196 inherit pub_methods_a00017"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a093d16ae026af66882af50567a75f196">parseToString</a> (string &amp;result)=0</td></tr>
+<tr class="separator:a093d16ae026af66882af50567a75f196 inherit pub_methods_a00017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class (cannot be instantiated, has a private c'tor) that is the parent class of <a class="el" href="a00046.html">PcapFileReaderDevice</a> and <a class="el" href="a00047.html">PcapFileWriterDevice</a> </p>
+<div class="textblock"><p>An abstract class that is the base class for all filters which contain an operator (e.g X equals Y; A is greater than B; Z1 not equals Z2, etc.). This class cannot be instantiated<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00108.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeac5956145508b5f4883dbb688fdbe3b"></a>
+<a class="anchor" id="a6e27cbccbfa49a086067613fc7ad75fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -153,37 +150,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IPcapFileDevice::close </td>
+          <td class="memname">void IFilterWithOperator::setOperator </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Close the pcap file </p>
-
-<p>Implements <a class="el" href="a00027.html#ad9dd73f0310fb6e3924fabb4e2542ef0">IPcapDevice</a>.</p>
-
-<p>Reimplemented in <a class="el" href="a00047.html#a534e2029cb4de050e6a55de39dc9aa9a">PcapFileWriterDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1fc1dbf53910c72959d967c376f254ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IPcapFileDevice::isOpened </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00108.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -193,7 +163,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+<p>Set the operator for the filter </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -202,8 +177,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00028.html">IPcapFileDevice</a></li>
-    <li class="footer">Generated on Thu Jul 23 2015 00:07:02 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00028.html">IFilterWithOperator</a></li>
+    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,5 +1,18 @@
 var a00043 =
 [
-    [ "OrFilter", "a00043.html#a1f29363488b0cc989f646b983f29dacb", null ],
-    [ "parseToString", "a00043.html#afbb447dc35e78501f7ae8b4de872d14e", null ]
+    [ "LogLevel", "a00043.html#aa52cd7c3af16c16af7209f5769796047", [
+      [ "Normal", "a00043.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858", null ],
+      [ "Debug", "a00043.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd", null ]
+    ] ],
+    [ "enableErrors", "a00043.html#a949a764e78f7ab3e4610e130032f9cc4", null ],
+    [ "getErrorString", "a00043.html#acc1ea00b8e216aef697e0408bf449b95", null ],
+    [ "getErrorStringLength", "a00043.html#a78215dfe2058fb59a56976ef04950f54", null ],
+    [ "getLogModulesArr", "a00043.html#a3d498104bed27d40459c0c38c1c7d68b", null ],
+    [ "isDebugEnabled", "a00043.html#a7f6c407ddd90de83220b90067b513587", null ],
+    [ "isErrorStringSet", "a00043.html#a28a3be2f5201ab478baff464d8b5df6c", null ],
+    [ "isSupressErrors", "a00043.html#a0665db5b2cc061cd022e4666f540662e", null ],
+    [ "setAllModlesToLogLevel", "a00043.html#aff10ddbdb52cc2c25fb5e450000495f7", null ],
+    [ "setErrorString", "a00043.html#a8b2e3f0c471f4391d581ed021d60f7c9", null ],
+    [ "setLogLevel", "a00043.html#a81e0fa1eef639071d680bf89efae2747", null ],
+    [ "supressErrors", "a00043.html#acbb4c2c036fd4c5a9af65ad0f20f7e94", null ]
 ];

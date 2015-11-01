@@ -1,17 +1,17 @@
 var a00041 =
 [
-    [ "MplsLayer", "a00041.html#a7c1242fda80832940c725ead78718ccb", null ],
-    [ "MplsLayer", "a00041.html#aef5274a3dbf3b031909fe5a1aad0e4ae", null ],
-    [ "computeCalculateFields", "a00041.html#aa692c5176c8a423ccc3aaf1e8ff73dde", null ],
-    [ "getExperimentalUseValue", "a00041.html#abadc1a5849e02284f38e454996535b09", null ],
-    [ "getHeaderLen", "a00041.html#a0763de414a9b6152a7a7117981eb3195", null ],
-    [ "getMplsLabel", "a00041.html#a97237483b6c499bb71a59f0ccd44cb52", null ],
-    [ "getTTL", "a00041.html#a1f829b0f345c91b4d0e8a782243eeb40", null ],
-    [ "isBottomOfStack", "a00041.html#ae6e316a4e2569b396383daf5309c2dff", null ],
-    [ "parseNextLayer", "a00041.html#a995679f0eaa5914e004b3104678f31dc", null ],
-    [ "setBottomOfStack", "a00041.html#a69c55d61c88f514f241e88161606434a", null ],
-    [ "setExperimentalUseValue", "a00041.html#a25b18d4245324b4f4f61c793fd0a5546", null ],
-    [ "setMplsLabel", "a00041.html#a5299391966d2c40e7c270a97e123de08", null ],
-    [ "setTTL", "a00041.html#a6af98621c1057a6b37a6e4bb4bc399ad", null ],
-    [ "toString", "a00041.html#ac968fbfafb5aab1597f8712cafedb60b", null ]
+    [ "~Layer", "a00041.html#a2bac093f2a650095a5551fc455d10dc5", null ],
+    [ "computeCalculateFields", "a00041.html#aa781ec9027fb1011d9e07fefed7c908c", null ],
+    [ "copyData", "a00041.html#a3d25b188ace59350b220b79e7dd82751", null ],
+    [ "getData", "a00041.html#a68c8d3f62652858c92c78e87005e45c7", null ],
+    [ "getDataLen", "a00041.html#a6b40982815cffa68db6a8f7605541807", null ],
+    [ "getHeaderLen", "a00041.html#aadb836a85874bdf0814c07eb24d92247", null ],
+    [ "getLayerPayload", "a00041.html#a40859f34f71c6e38a6197106ea0ffac7", null ],
+    [ "getLayerPayloadSize", "a00041.html#a13b846c8ac968516446e1900e2ecd9c5", null ],
+    [ "getNextLayer", "a00041.html#a4683fd5442c279f32ad6fcd6cd87c1d7", null ],
+    [ "getPrevLayer", "a00041.html#a1c207e783516ded3e4015d301d2811b5", null ],
+    [ "getProtocol", "a00041.html#a73eba746fd77cb88a2fb729d2698fca6", null ],
+    [ "isAllocatedToPacket", "a00041.html#a312ad0f18d3200b313847f58fd8af2b3", null ],
+    [ "parseNextLayer", "a00041.html#a722ab3018fb0bca2f4543b5a1249829c", null ],
+    [ "toString", "a00041.html#a17c690bf65bce7580afa0d9425fcfbf3", null ]
 ];

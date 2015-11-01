@@ -1,10 +1,9 @@
 var a00029 =
 [
-    [ "IPFilter", "a00029.html#a8b1f5888147d3e3a530a0065a14dcf7d", null ],
-    [ "IPFilter", "a00029.html#acf13d3203aa33493e258d3f006ec35ac", null ],
-    [ "IPFilter", "a00029.html#a27e986018b365c3915634df3b6597c9f", null ],
-    [ "parseToString", "a00029.html#ab17937fd806e7f1e7d05fa16122b2ebe", null ],
-    [ "setAddr", "a00029.html#a4eaa190041e7b19b8a69f7a067cd23d2", null ],
-    [ "setLen", "a00029.html#adc446c3a334d80a9c7bdf1938360c73a", null ],
-    [ "setMask", "a00029.html#accc0ac621ca8d9281d1c2a6c96e34b09", null ]
+    [ "flowLabel", "a00029.html#a762b4f1d04aecd5ba1e56b727f429a55", null ],
+    [ "hopLimit", "a00029.html#a5fba5b3fff7592a63edff494b06c4cfd", null ],
+    [ "ipVersion", "a00029.html#abc8ebe089295de52b28f36f334b25d41", null ],
+    [ "nextHeader", "a00029.html#ad71ca13fffd4168105ad70968f3dfb9a", null ],
+    [ "payloadLength", "a00029.html#ae21ab8d7d283ccc67945b17a7c3eaea2", null ],
+    [ "trafficClass", "a00029.html#ab3e5707fe83ab95ab6990a63c2bcb9b0", null ]
 ];

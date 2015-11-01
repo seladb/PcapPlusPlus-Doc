@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: ProtoFilter Class Reference</title>
+<title>PcapPlusPlus: PortFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,63 +107,70 @@ $(document).ready(function(){initNavTree('a00063.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00181.html">List of all members</a>  </div>
+<a href="a00191.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ProtoFilter Class Reference</div>  </div>
+<div class="title">PortFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00098_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00108_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for ProtoFilter:</div>
+Inheritance diagram for PortFilter:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00063.png" usemap="#ProtoFilter_map" alt=""/>
-  <map id="ProtoFilter_map" name="ProtoFilter_map">
-<area href="a00013.html" alt="GeneralFilter" shape="rect" coords="0,0,86,24"/>
+  <img src="a00063.png" usemap="#PortFilter_map" alt=""/>
+  <map id="PortFilter_map" name="PortFilter_map">
+<area href="a00027.html" alt="IFilterWithDirection" shape="rect" coords="0,56,119,80"/>
+<area href="a00017.html" alt="GeneralFilter" shape="rect" coords="0,0,119,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a97f3cc0829f14ecc2bdf0b5ac09a48c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a97f3cc0829f14ecc2bdf0b5ac09a48c0">ProtoFilter</a> (<a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> proto)</td></tr>
-<tr class="separator:a97f3cc0829f14ecc2bdf0b5ac09a48c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad51db2e288a437b855fdb22bec0af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a3ad51db2e288a437b855fdb22bec0af4">parseToString</a> (string &amp;result)</td></tr>
-<tr class="separator:a3ad51db2e288a437b855fdb22bec0af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f37bd21d2182a84aab74d4c47461781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a2f37bd21d2182a84aab74d4c47461781">setProto</a> (<a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> proto)</td></tr>
-<tr class="separator:a2f37bd21d2182a84aab74d4c47461781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00013"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00013')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00013.html">GeneralFilter</a></td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00013"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5768704b25570a414757263c66029e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#ab5768704b25570a414757263c66029e4">PortFilter</a> (uint16_t port, <a class="el" href="a00108.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir)</td></tr>
+<tr class="separator:ab5768704b25570a414757263c66029e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae474743ac724b0bb59befa1286d77eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#ae474743ac724b0bb59befa1286d77eb5">parseToString</a> (string &amp;result)</td></tr>
+<tr class="separator:ae474743ac724b0bb59befa1286d77eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05281979a71c8ae1b6b28c7cf0daaaaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a05281979a71c8ae1b6b28c7cf0daaaaf">setPort</a> (uint16_t port)</td></tr>
+<tr class="separator:a05281979a71c8ae1b6b28c7cf0daaaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00027"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00027')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00027.html">IFilterWithDirection</a></td></tr>
+<tr class="memitem:a6056e85050382814de7dd08ea56bb806 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a6056e85050382814de7dd08ea56bb806">setDirection</a> (<a class="el" href="a00108.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir)</td></tr>
+<tr class="separator:a6056e85050382814de7dd08ea56bb806 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00017"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00017')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00017.html">GeneralFilter</a></td></tr>
+<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering traffic by protocol. Notice not all protocols are supported, only the following are supported: <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186aa040cd7feeb588104634cdadf35abf1c">TCP</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186a90f471bb91043604b88253b494eb971c">ICMP</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186ac7ecb5234abd540dcc2ac0c8d37e12a5">IPv4</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186aee0722baf12a9db075fb08d0734710a6">IPv6</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186a93bf8f1a0f7655d6a68a3fb6a22e5928">ARP</a>, <a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a>. <br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00098.html">PcapFilter.h</a> </p>
+<div class="textblock"><p>A class for filtering TCP or UDP traffic by port, for example: "dst port 80" or "src port 12345"<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00108.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a97f3cc0829f14ecc2bdf0b5ac09a48c0"></a>
+<a class="anchor" id="ab5768704b25570a414757263c66029e4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ProtoFilter::ProtoFilter </td>
+          <td class="memname">PortFilter::PortFilter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
-          <td class="paramname"><em>proto</em></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="a00108.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor that gets the protocol and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that gets the port and the direction and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">proto</td><td>The protocol to filter, only packets matching this protocol will be received. Please note not all protocols are supported. List of supported protocols is found in the class description </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port to create the filter with </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>The port direction to filter (source or destination) </td></tr>
   </table>
   </dd>
 </dl>
@@ -171,7 +178,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3ad51db2e288a437b855fdb22bec0af4"></a>
+<a class="anchor" id="ae474743ac724b0bb59befa1286d77eb5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -179,7 +186,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ProtoFilter::parseToString </td>
+          <td class="memname">void PortFilter::parseToString </td>
           <td>(</td>
           <td class="paramtype">string &amp;&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
@@ -199,11 +206,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00013.html#a093d16ae026af66882af50567a75f196">GeneralFilter</a>.</p>
+<p>Implements <a class="el" href="a00017.html#a093d16ae026af66882af50567a75f196">GeneralFilter</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2f37bd21d2182a84aab74d4c47461781"></a>
+<a class="anchor" id="a05281979a71c8ae1b6b28c7cf0daaaaf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -211,10 +218,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ProtoFilter::setProto </td>
+          <td class="memname">void PortFilter::setPort </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00108.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td>
-          <td class="paramname"><em>proto</em></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -224,9 +231,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the protocol to filter with </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the port </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">proto</td><td>The protocol to filter, only packets matching this protocol will be received. Please note not all protocols are supported. List of supported protocols is found in the class description </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port to create the filter with </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,8 +245,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00063.html">ProtoFilter</a></li>
-    <li class="footer">Generated on Thu Jul 23 2015 00:07:02 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00063.html">PortFilter</a></li>
+    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

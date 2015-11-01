@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['src',['SRC',['../a00098.html#a224b9163917ac32fc95a60d8c1eec3aaaafc38ae6a337625b99d6cd83fe7de226',1,'PcapFilter.h']]],
-  ['src_5for_5fdst',['SRC_OR_DST',['../a00098.html#a224b9163917ac32fc95a60d8c1eec3aaa5cf7c23b52b4066c34f120c6306de923',1,'PcapFilter.h']]]
+  ['remotedevice',['RemoteDevice',['../a00054.html#a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2',1,'PcapLiveDevice']]],
+  ['roundrobin',['RoundRobin',['../a00060.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]]
 ];

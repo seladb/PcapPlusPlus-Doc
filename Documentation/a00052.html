@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapRemoteDeviceList Class Reference</title>
+<title>PcapPlusPlus: PcapFileReaderDevice Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,86 +106,114 @@ $(document).ready(function(){initNavTree('a00052.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00170.html">List of all members</a>  </div>
+<a href="a00180.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PcapRemoteDeviceList Class Reference</div>  </div>
+<div class="title">PcapFileReaderDevice Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00102_source.html">PcapRemoteDeviceList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00107_source.html">PcapFileDevice.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for PcapFileReaderDevice:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00052.png" usemap="#PcapFileReaderDevice_map" alt=""/>
+  <map id="PcapFileReaderDevice_map" name="PcapFileReaderDevice_map">
+<area href="a00032.html" alt="IPcapFileDevice" shape="rect" coords="0,56,143,80"/>
+<area href="a00031.html" alt="IPcapDevice" shape="rect" coords="0,0,143,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a5562d31261ff1b70e6ee166a2d512a16"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00051.html">PcapRemoteDevice</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">RemoteDeviceListIterator</a></td></tr>
-<tr class="separator:a5562d31261ff1b70e6ee166a2d512a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab301c27343f8e260d32e0cd3d1a35f5d"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00051.html">PcapRemoteDevice</a> * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">ConstRemoteDeviceListIterator</a></td></tr>
-<tr class="separator:ab301c27343f8e260d32e0cd3d1a35f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0841d9591f84de05da7d1fc7513ea73d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">IPAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a0841d9591f84de05da7d1fc7513ea73d">getRemoteMachineIpAddress</a> ()</td></tr>
-<tr class="separator:a0841d9591f84de05da7d1fc7513ea73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b6abd7798af1988a8efb08e7b035d9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a72b6abd7798af1988a8efb08e7b035d9">getRemoteMachinePort</a> ()</td></tr>
-<tr class="separator:a72b6abd7798af1988a8efb08e7b035d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283e2ee90df6676e6d43ba461b94789e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a283e2ee90df6676e6d43ba461b94789e">getRemoteDeviceByIP</a> (<a class="el" href="a00031.html">IPv4Address</a> ip4Addr)</td></tr>
-<tr class="separator:a283e2ee90df6676e6d43ba461b94789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dce6e85f8d030703ea07e16514b8a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a2dce6e85f8d030703ea07e16514b8a5c">getRemoteDeviceByIP</a> (<a class="el" href="a00035.html">IPv6Address</a> ip6Addr)</td></tr>
-<tr class="separator:a2dce6e85f8d030703ea07e16514b8a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1dbf8f7567f44b578f1faf936c7a98b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ac1dbf8f7567f44b578f1faf936c7a98b">getRemoteDeviceByIP</a> (<a class="el" href="a00026.html">IPAddress</a> *ipAddr)</td></tr>
-<tr class="separator:ac1dbf8f7567f44b578f1faf936c7a98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e707c979642c22ba318e24c57fea3dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a3e707c979642c22ba318e24c57fea3dc">getRemoteDeviceByIP</a> (const char *ipAddrAsString)</td></tr>
-<tr class="separator:a3e707c979642c22ba318e24c57fea3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e2804175fdeda43d25265bbfe37f51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a88e2804175fdeda43d25265bbfe37f51">begin</a> ()</td></tr>
-<tr class="separator:a88e2804175fdeda43d25265bbfe37f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada80aba958271bb7c7777e98f1d80924"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ada80aba958271bb7c7777e98f1d80924">begin</a> () const </td></tr>
-<tr class="separator:ada80aba958271bb7c7777e98f1d80924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad723d8750b37f6439e1db827d4218cde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ad723d8750b37f6439e1db827d4218cde">end</a> ()</td></tr>
-<tr class="separator:ad723d8750b37f6439e1db827d4218cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84576f8c53fa515f71dc5dc47da9be3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a84576f8c53fa515f71dc5dc47da9be3f">end</a> () const </td></tr>
-<tr class="separator:a84576f8c53fa515f71dc5dc47da9be3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad786c8fb934299bd998654754504c7e7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00052.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ad786c8fb934299bd998654754504c7e7">getRemoteDeviceList</a> (<a class="el" href="a00026.html">IPAddress</a> *ipAddress, uint16_t port)</td></tr>
-<tr class="separator:ad786c8fb934299bd998654754504c7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1266358bd9f6264ed0b868cc139e8d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00052.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ac1266358bd9f6264ed0b868cc139e8d5">getRemoteDeviceList</a> (<a class="el" href="a00026.html">IPAddress</a> *ipAddress, uint16_t port, <a class="el" href="a00050.html">PcapRemoteAuthentication</a> *remoteAuth)</td></tr>
-<tr class="separator:ac1266358bd9f6264ed0b868cc139e8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4477ddd07e91d123fdc3b892dccd9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a9b4477ddd07e91d123fdc3b892dccd9f">PcapFileReaderDevice</a> (const char *fileName)</td></tr>
+<tr class="separator:a9b4477ddd07e91d123fdc3b892dccd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfe14c03e6e4ba01ada0e6b0bb765b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7">~PcapFileReaderDevice</a> ()</td></tr>
+<tr class="separator:a1bfe14c03e6e4ba01ada0e6b0bb765b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5318e4291eb2929233e7e77f9804c1af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a5318e4291eb2929233e7e77f9804c1af">getNextPacket</a> (<a class="el" href="a00071.html">RawPacket</a> &amp;rawPacket)</td></tr>
+<tr class="separator:a5318e4291eb2929233e7e77f9804c1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd7cf41e07cd259d49fa6a20455b7f9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#aedd7cf41e07cd259d49fa6a20455b7f9">open</a> ()</td></tr>
+<tr class="separator:aedd7cf41e07cd259d49fa6a20455b7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831193e30603e66291dfaa9b3ab22b63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a831193e30603e66291dfaa9b3ab22b63">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
+<tr class="separator:a831193e30603e66291dfaa9b3ab22b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00032"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00032')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00032.html">IPcapFileDevice</a></td></tr>
+<tr class="memitem:aeac5956145508b5f4883dbb688fdbe3b inherit pub_methods_a00032"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#aeac5956145508b5f4883dbb688fdbe3b">close</a> ()</td></tr>
+<tr class="separator:aeac5956145508b5f4883dbb688fdbe3b inherit pub_methods_a00032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc1dbf53910c72959d967c376f254ce inherit pub_methods_a00032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a1fc1dbf53910c72959d967c376f254ce">isOpened</a> ()</td></tr>
+<tr class="separator:a1fc1dbf53910c72959d967c376f254ce inherit pub_methods_a00032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00031"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00031')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00031.html">IPcapDevice</a></td></tr>
+<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00017.html">GeneralFilter</a> &amp;filter)</td></tr>
+<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a35e872140261fa1c824ae249f888d691">setFilter</a> (string filterAsString)</td></tr>
+<tr class="separator:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that creates, stores and provides access to all instances of <a class="el" href="a00051.html">PcapRemoteDevice</a> for a certain remote machine. To get an instance of this class use one of the static methods of <a class="el" href="a00052.html#ad786c8fb934299bd998654754504c7e7">getRemoteDeviceList()</a>. These methods creates a <a class="el" href="a00052.html">PcapRemoteDeviceList</a> instance for the certain remote machine which holds a list of <a class="el" href="a00051.html">PcapRemoteDevice</a> instances, one for each remote network interface. Note there is not a public constructor for this class, so the only way to get an instance of it is through <a class="el" href="a00052.html#ad786c8fb934299bd998654754504c7e7">getRemoteDeviceList()</a>. After getting this object, this class provides ways to access the <a class="el" href="a00051.html">PcapRemoteDevice</a> instances: either through IP address of the remote network interface or by iterating the <a class="el" href="a00051.html">PcapRemoteDevice</a> instances (through the <a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">PcapRemoteDeviceList::RemoteDeviceListIterator</a> iterator)<br />
- Since Remote Capture is supported in WinPcap only, this class is available in Windows only </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ab301c27343f8e260d32e0cd3d1a35f5d"></a>
+<div class="textblock"><p>A class for opening a pcap file in read-only mode. This class enable to open the file and read all packets, packet-by-packet </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9b4477ddd07e91d123fdc3b892dccd9f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00051.html">PcapRemoteDevice</a>*&gt;::const_iterator <a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">PcapRemoteDeviceList::ConstRemoteDeviceListIterator</a></td>
+          <td class="memname">PcapFileReaderDevice::PcapFileReaderDevice </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Const iterator object that can be used for iterating all <a class="el" href="a00051.html">PcapRemoteDevice</a> in a constant list </p>
+<p>A constructor for this class that gets the pcap full path file name to open. Notice that after calling this constructor the file isn't opened yet, so reading packets will fail. For opening the file call <a class="el" href="a00052.html#aedd7cf41e07cd259d49fa6a20455b7f9">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file to read </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a5562d31261ff1b70e6ee166a2d512a16"></a>
+<a class="anchor" id="a1bfe14c03e6e4ba01ada0e6b0bb765b7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00051.html">PcapRemoteDevice</a>*&gt;::iterator <a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">PcapRemoteDeviceList::RemoteDeviceListIterator</a></td>
+          <td class="memname">PcapFileReaderDevice::~PcapFileReaderDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Iterator object that can be used for iterating all <a class="el" href="a00051.html">PcapRemoteDevice</a> in list </p>
+<p>A destructor for this class </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a88e2804175fdeda43d25265bbfe37f51"></a>
+<a class="anchor" id="a5318e4291eb2929233e7e77f9804c1af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PcapFileReaderDevice::getNextPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00071.html">RawPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read the next packet from the file. Before using this method please verify the file is opened using <a class="el" href="a00052.html#aedd7cf41e07cd259d49fa6a20455b7f9">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rawPacket</td><td>A reference for an empty <a class="el" href="a00071.html">RawPacket</a> where the packet will be written </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was read successfully. False will be returned if the file isn't opened (also, an error log will be printed) or if reached end-of-file </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a831193e30603e66291dfaa9b3ab22b63"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,7 +221,39 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">RemoteDeviceListIterator</a> PcapRemoteDeviceList::begin </td>
+          <td class="memname">virtual void PcapFileReaderDevice::getStatistics </td>
+          <td>(</td>
+          <td class="paramtype">pcap_stat &amp;&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get statistics of packets read so far. In the pcap_stat struct, only ps_recv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00031.html#abfddac7872baed093efc622259f51fc6">IPcapDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedd7cf41e07cd259d49fa6a20455b7f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PcapFileReaderDevice::open </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -201,325 +261,13 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>An iterator object pointing to the first <a class="el" href="a00051.html">PcapRemoteDevice</a> in list </dd></dl>
+<p>Open the file name which path was specified in the constructor in a read-only mode </p><dl class="section return"><dt>Returns</dt><dd>True if file was opened successfully or if file is already opened. False if opening the file failed for some reason (for example: file path does not exist) </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="ada80aba958271bb7c7777e98f1d80924"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">ConstRemoteDeviceListIterator</a> PcapRemoteDeviceList::begin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A const iterator object pointing to the first <a class="el" href="a00051.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad723d8750b37f6439e1db827d4218cde"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00052.html#a5562d31261ff1b70e6ee166a2d512a16">RemoteDeviceListIterator</a> PcapRemoteDeviceList::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>An iterator object pointing to the last <a class="el" href="a00051.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a84576f8c53fa515f71dc5dc47da9be3f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00052.html#ab301c27343f8e260d32e0cd3d1a35f5d">ConstRemoteDeviceListIterator</a> PcapRemoteDeviceList::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A const iterator object pointing to the last <a class="el" href="a00051.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a283e2ee90df6676e6d43ba461b94789e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html">PcapRemoteDevice</a>* PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00031.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>ip4Addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00051.html">PcapRemoteDevice</a> in the list by its IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip4Addr</td><td>The IPv4 address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00051.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2dce6e85f8d030703ea07e16514b8a5c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html">PcapRemoteDevice</a>* PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00035.html">IPv6Address</a>&#160;</td>
-          <td class="paramname"><em>ip6Addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00051.html">PcapRemoteDevice</a> in the list by its IPv6 address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip6Addr</td><td>The IPv6 address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00051.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac1dbf8f7567f44b578f1faf936c7a98b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html">PcapRemoteDevice</a>* PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00026.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00051.html">PcapRemoteDevice</a> in the list by its IP address (IPv4 or IPv6) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00051.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3e707c979642c22ba318e24c57fea3dc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html">PcapRemoteDevice</a>* PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ipAddrAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00051.html">PcapRemoteDevice</a> in the list by its IP address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddrAsString</td><td>The IP address in string format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00051.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad786c8fb934299bd998654754504c7e7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00052.html">PcapRemoteDeviceList</a>* PcapRemoteDeviceList::getRemoteDeviceList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00026.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A static method for creating a <a class="el" href="a00052.html">PcapRemoteDeviceList</a> instance for a certain remote machine. This methods creates the instance, and also creates a list of <a class="el" href="a00051.html">PcapRemoteDevice</a> instances stored in it, one for each remote network interface. Notice this method allocates the <a class="el" href="a00052.html">PcapRemoteDeviceList</a> instance and returns a pointer to it. It's the user responsibility to free it when done using it<br />
- This method overload is for remote daemons which don't require authentication for accessing them. For daemons which do require authentication use the other method overload </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="a00052.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
-<li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac1266358bd9f6264ed0b868cc139e8d5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00052.html">PcapRemoteDeviceList</a>* PcapRemoteDeviceList::getRemoteDeviceList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00026.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00050.html">PcapRemoteAuthentication</a> *&#160;</td>
-          <td class="paramname"><em>remoteAuth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>An overload of the previous <a class="el" href="a00052.html#ad786c8fb934299bd998654754504c7e7">getRemoteDeviceList()</a> method but with authentication support. This method is suitable for connecting to remote daemons which require authentication for accessing them </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remoteAuth</td><td>A pointer to the authentication object which contains the username and password for connecting to the remote daemon </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="a00052.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
-<li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0841d9591f84de05da7d1fc7513ea73d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00026.html">IPAddress</a>* PcapRemoteDeviceList::getRemoteMachineIpAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IP address of the remote machine </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a72b6abd7798af1988a8efb08e7b035d9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t PcapRemoteDeviceList::getRemoteMachinePort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The port of the remote machine where packets are transmitted from the remote machine to the client machine </dd></dl>
+<p>Implements <a class="el" href="a00031.html#a94a6922dff88e4bea4b3904a60e6f0e9">IPcapDevice</a>.</p>
 
 </div>
 </div>
@@ -528,8 +276,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00052.html">PcapRemoteDeviceList</a></li>
-    <li class="footer">Generated on Thu Jul 23 2015 00:07:02 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00052.html">PcapFileReaderDevice</a></li>
+    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

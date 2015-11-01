@@ -1,10 +1,17 @@
 var a00026 =
 [
-    [ "AddressType", "a00026.html#a53caf33403beb8bbc212b7659ffa8608", [
-      [ "IPv4AddressType", "a00026.html#a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81", null ],
-      [ "IPv6AddressType", "a00026.html#a53caf33403beb8bbc212b7659ffa8608a38248c599c4324ec8e45508ee6114d43", null ]
+    [ "ResourceType", "a00026.html#aafa76f59ec543e8fe01d3534422afb9f", [
+      [ "DnsQuery", "a00026.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a", null ],
+      [ "DnsAnswer", "a00026.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74", null ],
+      [ "DnsAuthority", "a00026.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8", null ],
+      [ "DnsAdditional", "a00026.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b", null ]
     ] ],
-    [ "getType", "a00026.html#aa625e5e0220bd115d681347c4c5d17d4", null ],
-    [ "isValid", "a00026.html#aa07d8c6edd1ccab818b1d02b27062018", null ],
-    [ "toString", "a00026.html#ab61e82b8368b84f81e7d0f0f284a77f1", null ]
+    [ "getDnsClass", "a00026.html#aa9a9d7bb49fc00a0834a20a4d6d103fd", null ],
+    [ "getDnsType", "a00026.html#af93a1e4aec5be14434e7e3d93ca91b52", null ],
+    [ "getName", "a00026.html#aac3b0e8fc6645f0836bbc6da1f476bb5", null ],
+    [ "getSize", "a00026.html#ac6f5ab8bd3891faa476822bf88fb3832", null ],
+    [ "getType", "a00026.html#a16d67fb0330bdc579c2b0e4d3ceb50bb", null ],
+    [ "setDnsClass", "a00026.html#a0f600292495de7b4a266dbfee052452c", null ],
+    [ "setDnsType", "a00026.html#acfcba8f87af7a39601203b1b38c1d480", null ],
+    [ "setName", "a00026.html#aa076817b805ab35da1b7801a8dd25683", null ]
 ];

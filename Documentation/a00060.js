@@ -1,18 +1,37 @@
 var a00060 =
 [
-    [ "PPPoECode", "a00060.html#a175179c8c3448839deccd3262a58665c", [
-      [ "PPPOE_CODE_SESSION", "a00060.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b", null ],
-      [ "PPPOE_CODE_PADO", "a00060.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603", null ],
-      [ "PPPOE_CODE_PADI", "a00060.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0", null ],
-      [ "PPPOE_CODE_PADG", "a00060.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e", null ],
-      [ "PPPOE_CODE_PADC", "a00060.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622", null ],
-      [ "PPPOE_CODE_PADQ", "a00060.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13", null ],
-      [ "PPPOE_CODE_PADR", "a00060.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1", null ],
-      [ "PPPOE_CODE_PADS", "a00060.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e", null ],
-      [ "PPPOE_CODE_PADT", "a00060.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613", null ],
-      [ "PPPOE_CODE_PADM", "a00060.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5", null ],
-      [ "PPPOE_CODE_PADN", "a00060.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72", null ]
+    [ "ChannelDistribution", "a00060.html#a859e6207223f202a35261338793c0211", [
+      [ "RoundRobin", "a00060.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4", null ],
+      [ "PerFlow", "a00060.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e", null ]
     ] ],
-    [ "computeCalculateFields", "a00060.html#ae236d58b2f7287bc5fa01d7b2e194308", null ],
-    [ "getPPPoEHeader", "a00060.html#a1bb3dc226576957fb7f8d46529ac1cbf", null ]
+    [ "~PfRingDevice", "a00060.html#af5a275b7945d22ac78f062bdaed29738", null ],
+    [ "close", "a00060.html#a25f3a3d9544e16544dc919bda44b8556", null ],
+    [ "getCurrentCoreId", "a00060.html#aea8a32e50dfb365f08f4e3f496193bd6", null ],
+    [ "getCurrentThreadStatistics", "a00060.html#af7f4c08d8ad864818286149312f7ff96", null ],
+    [ "getDeviceName", "a00060.html#a5998d20f0f336c7743aede9bfd78b3c8", null ],
+    [ "getInterfaceIndex", "a00060.html#a78a358734bfd45da43a221c65dfedd03", null ],
+    [ "getMacAddress", "a00060.html#ac7d9d311998b6bb18efe3740300e9c7c", null ],
+    [ "getMtu", "a00060.html#a3c9cbd028dd051d2d99fe861b9ae791b", null ],
+    [ "getNumOfOpenedRxChannels", "a00060.html#a39c45274170d16b9d9d1e0a44951ac0b", null ],
+    [ "getStatistics", "a00060.html#a748161ecb155fe4079bdde3c5a826ea6", null ],
+    [ "getThreadStatistics", "a00060.html#a42ec65a4ffa8d29d817d21968bc70ef7", null ],
+    [ "getTotalNumOfRxChannels", "a00060.html#a7c0a6b114545a94ab9d9a8f55c07cabe", null ],
+    [ "isFilterCurrentlySet", "a00060.html#a707b944d90cf16f7ecc0238c90ba3eb0", null ],
+    [ "isHwClockEnabledForDevice", "a00060.html#a96c8422443cb1007d2551beb5d35a9b2", null ],
+    [ "open", "a00060.html#aa64effebebd1c51fd6859b65d8925fb2", null ],
+    [ "openMultiRxChannels", "a00060.html#a24cc261e8660a8469209c2e5c2ccdb07", null ],
+    [ "openMultiRxChannels", "a00060.html#a3b39725d02e5aae88ef27212c4b26af1", null ],
+    [ "openSingleRxChannel", "a00060.html#add1ba7fba70fbcafacb115e47b4e3a82", null ],
+    [ "removeFilter", "a00060.html#a226f7ccbf642bd9b9afca14b02e283d4", null ],
+    [ "sendPacket", "a00060.html#a03a528af6feb4e6b278d4b1a2c94f778", null ],
+    [ "sendPacket", "a00060.html#a32313bad71eff5bfc76871b4a91a565e", null ],
+    [ "sendPacket", "a00060.html#aefffc60923d34e2ff680556fab2db9f2", null ],
+    [ "sendPackets", "a00060.html#a7909392eea098657e3b4baede54b63dd", null ],
+    [ "sendPackets", "a00060.html#a41754dd99196db97d23c367728bb8f3e", null ],
+    [ "sendPackets", "a00060.html#a315848ef09c07ad2993a0fd8e886901c", null ],
+    [ "setFilter", "a00060.html#a62b9cacd2988d5fb08b7fc78e738724d", null ],
+    [ "setFilter", "a00060.html#a64df54a9a42c46e2b055de5d63613007", null ],
+    [ "startCaptureMultiThread", "a00060.html#a19b3f77801e4afde7a7f5e40c779d760", null ],
+    [ "startCaptureSingleThread", "a00060.html#a5f50e69a577371b7ef8d5cbcbf760a3a", null ],
+    [ "stopCapture", "a00060.html#a178d4778602d4b8af1214bda067408aa", null ]
 ];

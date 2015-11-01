@@ -1,15 +1,8 @@
 var a00031 =
 [
-    [ "IPv4Address", "a00031.html#a0b7c5296eeee807d6481553d5ae3ba87", null ],
-    [ "IPv4Address", "a00031.html#ac8d7367df8278149f3a4a424ec340d05", null ],
-    [ "IPv4Address", "a00031.html#a514667995e0a093f3acdf2323cb01a22", null ],
-    [ "IPv4Address", "a00031.html#ab6c4a77c350944fcf00767cc14558cd4", null ],
-    [ "IPv4Address", "a00031.html#afb221f895af2e151fe1f0a0453cec145", null ],
-    [ "getType", "a00031.html#abec87cb14eac7c4fce896b7249c915a7", null ],
-    [ "matchSubnet", "a00031.html#a85eb25a77a86495984a7c8da626b4271", null ],
-    [ "operator!=", "a00031.html#a448e81d6a42f54eab859da84795f2e81", null ],
-    [ "operator=", "a00031.html#a79a49cacb06d9f86a559d6597c2bb1a8", null ],
-    [ "operator==", "a00031.html#affe02b4f9f62414acf2bd24157979bdf", null ],
-    [ "toInAddr", "a00031.html#addd6ff37af6195ff5a0a6b7e3244a7cf", null ],
-    [ "toInt", "a00031.html#a72f1000006566932602a18a5e66d0917", null ]
+    [ "close", "a00031.html#ad9dd73f0310fb6e3924fabb4e2542ef0", null ],
+    [ "getStatistics", "a00031.html#abfddac7872baed093efc622259f51fc6", null ],
+    [ "open", "a00031.html#a94a6922dff88e4bea4b3904a60e6f0e9", null ],
+    [ "setFilter", "a00031.html#ac8167b330a4ee85ab759facd0d4989bd", null ],
+    [ "setFilter", "a00031.html#a35e872140261fa1c824ae249f888d691", null ]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['layer',['Layer',['../a00037.html',1,'']]],
-  ['loggerpp',['LoggerPP',['../a00038.html',1,'']]]
+  ['layer',['Layer',['../a00041.html',1,'']]],
+  ['linkstatus',['LinkStatus',['../a00042.html',1,'DpdkDevice']]],
+  ['loggerpp',['LoggerPP',['../a00043.html',1,'']]]
 ];

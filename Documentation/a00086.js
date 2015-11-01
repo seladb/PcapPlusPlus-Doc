@@ -1,11 +1,10 @@
 var a00086 =
 [
-    [ "ScalarBuffer", "a00065.html", "a00065" ],
-    [ "compute_checksum", "a00086.html#a202712529e61076e9fb0ee0682470525", null ],
-    [ "in_addr2int", "a00086.html#aca7bfc05b6c211454e0c5026f4f4e52d", null ],
-    [ "inet_ntop", "a00086.html#a2a4b830a00870799ee852d4c6a72a1eb", null ],
-    [ "inet_pton", "a00086.html#acdce1d46efd09e8485a2f682b388ebc0", null ],
-    [ "sockaddr2in6_addr", "a00086.html#a7d63f0f361b2f303b03441ee3c8fbec0", null ],
-    [ "sockaddr2in_addr", "a00086.html#a9fee5de385bbc10f6ecd65cdaf5e39d5", null ],
-    [ "sockaddr2string", "a00086.html#aaae13a5c6702dea78f79819c89d74ee5", null ]
+    [ "getDeviceType", "a00086.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2", null ],
+    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00086.html#a624f8ebd9bba9bf1123c594f55ed0094", null ],
+    [ "sendPackets", "a00086.html#ad1576486b7de3dd8dd9eca51d9bd05dc", null ],
+    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00086.html#aa83fab2e5462bf6952389623ba69e0ae", null ],
+    [ "startCapture", "a00086.html#a83a5805972630d6071b07bc0f1d1de27", null ],
+    [ "startCapture", "a00086.html#ad8c8c56ec5b16cdd8c423274d8b4f07d", null ],
+    [ "startCapture", "a00086.html#a79611cae573a93b09ee980c1af8f978a", null ]
 ];

@@ -1,10 +1,17 @@
 var a00047 =
 [
-    [ "PcapFileWriterDevice", "a00047.html#aefaeb7785c8cd5ca8b6e074156c471ae", null ],
-    [ "~PcapFileWriterDevice", "a00047.html#a491876c2591081b58313da654a704f8d", null ],
-    [ "close", "a00047.html#a534e2029cb4de050e6a55de39dc9aa9a", null ],
-    [ "getStatistics", "a00047.html#ac0c2c246a4447cc48ebae8f48f69d81d", null ],
-    [ "open", "a00047.html#a8053b6b8abafd7de893fce117b8d2413", null ],
-    [ "writePacket", "a00047.html#a6263c0850be603c60b8ba057d879a593", null ],
-    [ "writePackets", "a00047.html#a472db9de9ac4f9f440f752385c0436e6", null ]
+    [ "MplsLayer", "a00047.html#a7c1242fda80832940c725ead78718ccb", null ],
+    [ "MplsLayer", "a00047.html#aef5274a3dbf3b031909fe5a1aad0e4ae", null ],
+    [ "computeCalculateFields", "a00047.html#aa692c5176c8a423ccc3aaf1e8ff73dde", null ],
+    [ "getExperimentalUseValue", "a00047.html#abadc1a5849e02284f38e454996535b09", null ],
+    [ "getHeaderLen", "a00047.html#a0763de414a9b6152a7a7117981eb3195", null ],
+    [ "getMplsLabel", "a00047.html#a97237483b6c499bb71a59f0ccd44cb52", null ],
+    [ "getTTL", "a00047.html#a1f829b0f345c91b4d0e8a782243eeb40", null ],
+    [ "isBottomOfStack", "a00047.html#ae6e316a4e2569b396383daf5309c2dff", null ],
+    [ "parseNextLayer", "a00047.html#a995679f0eaa5914e004b3104678f31dc", null ],
+    [ "setBottomOfStack", "a00047.html#a69c55d61c88f514f241e88161606434a", null ],
+    [ "setExperimentalUseValue", "a00047.html#a25b18d4245324b4f4f61c793fd0a5546", null ],
+    [ "setMplsLabel", "a00047.html#a5299391966d2c40e7c270a97e123de08", null ],
+    [ "setTTL", "a00047.html#a6af98621c1057a6b37a6e4bb4bc399ad", null ],
+    [ "toString", "a00047.html#ac968fbfafb5aab1597f8712cafedb60b", null ]
 ];

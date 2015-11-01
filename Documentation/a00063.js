@@ -1,6 +1,6 @@
 var a00063 =
 [
-    [ "ProtoFilter", "a00063.html#a97f3cc0829f14ecc2bdf0b5ac09a48c0", null ],
-    [ "parseToString", "a00063.html#a3ad51db2e288a437b855fdb22bec0af4", null ],
-    [ "setProto", "a00063.html#a2f37bd21d2182a84aab74d4c47461781", null ]
+    [ "PortFilter", "a00063.html#ab5768704b25570a414757263c66029e4", null ],
+    [ "parseToString", "a00063.html#ae474743ac724b0bb59befa1286d77eb5", null ],
+    [ "setPort", "a00063.html#a05281979a71c8ae1b6b28c7cf0daaaaf", null ]
 ];

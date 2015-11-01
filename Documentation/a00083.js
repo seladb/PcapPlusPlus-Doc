@@ -1,19 +1,7 @@
 var a00083 =
 [
-    [ "ether_header", "a00010.html", "a00010" ],
-    [ "EthLayer", "a00012.html", "a00012" ],
-    [ "ETHERTYPE_AARP", "a00083.html#aa2692ff7ce9c6412385d9465d0d6d152", null ],
-    [ "ETHERTYPE_ARP", "a00083.html#a58349316842ce4bdc5ff10568ec5dc31", null ],
-    [ "ETHERTYPE_AT", "a00083.html#a5363e5c55bf76c08ec5ae9dcf9556e7b", null ],
-    [ "ETHERTYPE_IP", "a00083.html#ae2021b6951d9782a2ba9cb243abdea93", null ],
-    [ "ETHERTYPE_IPV6", "a00083.html#ac25537090a27d590178d14ab1b63b66b", null ],
-    [ "ETHERTYPE_IPX", "a00083.html#acd7f031a1b6e69f9b5e74c2b26edd2e8", null ],
-    [ "ETHERTYPE_LOOPBACK", "a00083.html#a9656435139954003bf149ed68fcc4ca3", null ],
-    [ "ETHERTYPE_MPLS", "a00083.html#a366bec338345160bb4022acfe49b342b", null ],
-    [ "ETHERTYPE_PPPOED", "a00083.html#a3220ecead6256e7906514961a2518d04", null ],
-    [ "ETHERTYPE_PPPOES", "a00083.html#ad775890d6c0530483264ee309fada197", null ],
-    [ "ETHERTYPE_PUP", "a00083.html#a17471f2d0d180ef15ed20835686f42bc", null ],
-    [ "ETHERTYPE_REVARP", "a00083.html#a1d8bc382d37844a65bae2006a05046f3", null ],
-    [ "ETHERTYPE_SPRITE", "a00083.html#aaf064ed783e9a594ee6cd4679085d375", null ],
-    [ "ETHERTYPE_VLAN", "a00083.html#a0eee73f1048c0756b951674570977ff9", null ]
+    [ "cfi", "a00083.html#a02d82722bad771f3d87368351f17daf6", null ],
+    [ "etherType", "a00083.html#aa97a61cf68c4c74fd553211eaf69c9d0", null ],
+    [ "priority", "a00083.html#a10d8579a58598192a70a71bfd4e8d9ae", null ],
+    [ "vlanID", "a00083.html#a86a22d2e107e474e60ae539e3e4a9d07", null ]
 ];

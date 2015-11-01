@@ -1,7 +1,6 @@
 var a00073 =
 [
-    [ "headerChecksum", "a00073.html#aa8f66911e3e8f9c6ceb9047d3de2a05b", null ],
-    [ "length", "a00073.html#a2af76d07e76ded39350f0cee2276cd9b", null ],
-    [ "portDst", "a00073.html#ab6266420dae91e2700c5596d093925d1", null ],
-    [ "portSrc", "a00073.html#ae086b88cd86b79ab903202a63ada7601", null ]
+    [ "operator==", "a00073.html#a7065c1aa702fdb428f51b47a2f27527d", null ],
+    [ "Id", "a00073.html#a1a672c4cde277bcdeae49c1519415db6", null ],
+    [ "Mask", "a00073.html#aec2a69cbcd7b7c034c44b731b5882fb4", null ]
 ];
