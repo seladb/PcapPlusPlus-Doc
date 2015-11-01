@@ -47,6 +47,7 @@ v
 
 <ul>
 <li>Designed to be lightweight and efficient</li>
+<li>Support for <strong>DPDK</strong> fast packet processing engine which enables packet capturing and transmition in line rate using kernel bypass</li>
 <li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
 <li>Support for many protocols, including HTTP protocol parsing and editing</li>
 <li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
@@ -89,6 +90,8 @@ Other opeating systems such as FreeBSD were never tested and compilation on thos
 <strong>ARP Spoofing with simple Linux makefile</strong> - same code as ARP spoofing but with simple Linux makefile (see "Creating Applications With PcapPlusPlus" section)</li>
 <li>
 <strong>Arping</strong> - an implementation of the arping utility using PcapPlusPlus</li>
+<li>
+<strong>DpdkExample-FilterTraffic</strong> - a sample application that demonstartes the PcapPlusPlus DPDK APIs</li>
 </ol>
 </li>
 </ol>
@@ -122,9 +125,115 @@ Other opeating systems such as FreeBSD were never tested and compilation on thos
 <li>libpcap live device (on Linux and Mac OS X)</li>
 <li>WinPcap live device (on Windows)</li>
 <li>Vanilla PF_RING device (on Linux)</li>
+<li>DPDK device (on Linux)</li>
 <li>Remote live device (on Windows)</li>
 <li>File devices</li>
 </ol>
+
+<h4>
+<a id="dpdk-support" class="anchor" href="#dpdk-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>DPDK support</h4>
+
+<p>The Data Plane Development Kit (DPDK) is a set of data plane libraries and network interface controller drivers for fast packet processing. The DPDK provides a programming framework for Intel x86 processors and enables faster development of high speed data packet networking applications. It is provided and supported under the open source BSD license (taken from <a href="https://en.wikipedia.org/wiki/Data_Plane_Development_Kit">Wikipedia</a> )</p>
+
+<p>DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in [DPDK's web-site](http://dpdk.org/) and get a list of supported NICs <a href="http://dpdk.org/doc/nics">here</a>.</p>
+
+<p>Also, you can get more details about DPDK and PcapPlusPlus wrap for DPDK in the documentation of DpdkDevice.h and DpdkDeviceList.h header files.</p>
+
+<p><strong><em>Download and install:</em></strong></p>
+
+<p>Download and install instructions for DPDK are on this page: <a href="http://dpdk.org/download">http://dpdk.org/download</a></p>
+
+<ul>
+<li>An easy-to-use C++ wrapper (as DPDK is written in C) that encapsulates DPDK's main functionality but doesn't hit packet procssing performance</li>
+<li>Encapsulation of DPDK's initialization process - both outside and inside the application - using simple scripts and methods</li>
+<li>A C++ class wrapper for DPDK's packet struct (mbuf) which offers most common functionality</li>
+<li>A seamless integration to other PcapPlusPlus capabilities, for example: receivce packets with DPDK, parse them with Packet++ protocol layers and save them to a pcap file</li>
+</ul>
+
+<p><strong><em>PcapPlusPlus configuration for DPDK:</em></strong></p>
+
+<ol>
+<li>Download and compile DPDK on your system (see the link above)</li>
+<li>Note that PcapPlusPlus supports DPDK version 2.1, previous (and most probably newer) versions won't work</li>
+<li>Once DPDK compiles successfully you need to run PcapPlusPlus <strong>configure-linux.sh</strong> and type "y" in "Compile PcapPlusPlus with DPDK?"</li>
+<li><strong>configure-linux.sh</strong> will ask for DPDK's path (i.e /home/user/dpdk-2.1.0) and build path (i.e i686-native-linuxapp-gcc)</li>
+<li>Then you can compile PcapPlusPlus as usual (using make, see below)</li>
+</ol>
+
+<p><strong><em>DPDK initialization with PcapPlusPlus:</em></strong></p>
+
+<p>DPDK has 2 steps of initialization: one that configures Linux to support DPDK applications and the other at application startup that configures DPDK. PcapPlusPlus wraps both of them in an easy-to-use interfaces:</p>
+
+<p><em>Before application is run</em> - DPDK requires several Linux configurations to run:</p>
+
+<ol>
+<li>DPDK uses the Linux huge-pages mechanism for faster virtual to physical page conversion resulting in better performance. So huge-pages must be set before a DPDK application is run</li>
+<li>DPDK uses a designated kernel module for the kernel-bypass mechanism. This module should be loaded into the kernel</li>
+<li>The user needs to state which NICs will move to DPDK control and which will stay under Linux control</li>
+</ol>
+
+<p>PcapPlusPlus offers a simple script that automatically configures all of these. The script is under PcapPlusPlus root directory and is called <strong>setup-dpdk.sh</strong>. The script takes as an input the following parameters:</p>
+
+<ol>
+<li>-p    : the amount of huge pages to allocate. By default each huge-page size is 2048KB</li>
+<li>-n    : a comma-separated list of all NICs that will be unbinded from Linux and move to DPDK control. Only these NICs will be used by DPDK, the others will stay under Linux control. For example: eth0,eth1 will move these 2 interfaces under DPDK control - assuming this NIC is supported by DPDK
+You can use the -h switch for help.</li>
+</ol>
+
+<p>If everything went well the system is ready to run a DPDK application and the script output should look like this:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">*******************************</span>
+PcapPlusPlus setup DPDK script 
+<span class="pl-k">*******************************</span>
+
+1. Reserve huge-pages - DONE<span class="pl-k">!</span>
+2. Install kernel module - DONE<span class="pl-k">!</span>
+3. Bind network adapters - DONE<span class="pl-k">!</span>
+
+Network devices using DPDK-compatible driver
+============================================
+0000:00:03.0 <span class="pl-s"><span class="pl-pds">'</span>82540EM Gigabit Ethernet Controller<span class="pl-pds">'</span></span> drv=igb_uio unused=e1000
+0000:00:08.0 <span class="pl-s"><span class="pl-pds">'</span>82545EM Gigabit Ethernet Controller (Copper)<span class="pl-pds">'</span></span> drv=igb_uio unused=e1000
+
+Network devices using kernel driver
+===================================
+0000:00:09.0 <span class="pl-s"><span class="pl-pds">'</span>82545EM Gigabit Ethernet Controller (Copper)<span class="pl-pds">'</span></span> if=eth2 drv=e1000 unused=igb_uio <span class="pl-k">*</span>Active<span class="pl-k">*</span>
+0000:00:0a.0 <span class="pl-s"><span class="pl-pds">'</span>82545EM Gigabit Ethernet Controller (Copper)<span class="pl-pds">'</span></span> if=eth3 drv=e1000 unused=igb_uio 
+
+Other network devices
+=====================
+<span class="pl-k">&lt;</span>none<span class="pl-k">&gt;</span>
+Setup DPDK completed</pre></div>
+
+<p><em>At application startup</em> - before using DPDK inside the application DPDK should be configured on application startup. This configuration includes:</p>
+
+<ol>
+<li>Verify huge-pages, kernel module and NICs are set</li>
+<li>Initialize DPDK internal structures and memory, poll-mode-drivers etc.</li>
+<li>Prepare CPU cores that will be used by the application</li>
+<li>Initialize packet memory pool </li>
+<li>Configure each NIC controlled by DPDK</li>
+</ol>
+
+<p>These steps are wrapped in one static method that should be called once in application startup:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-en">DpdkDeviceList::initDpdk</span>()</pre></div>
+
+<p><strong><em>Tests and limitations:</em></strong></p>
+
+<ul>
+<li>All unit-tests I perfromed are in Pcap++Test</li>
+<li>In addition you try the DPDK example application (Examples/DpdkExample-FilterTraffic)</li>
+<li>The only DPDK version supported is version 2.1 (currently the latest version)</li>
+<li>So far I managed to test the code on 2 virtual PMDs only: 
+
+<ol>
+<li>VMXNET3 - a VMWare guest driver</li>
+<li>E1000/EM - 1GbE Intel NIC but I tested it as virtual NIC in VirtualBox guest</li>
+</ol></li>
+<li>I hope I'll be able to test it on some more (preferebly non-virtual) NICs soon - I'll update if/when I do</li>
+<li>Operating systems: it was tested in Ubuntu and Fedora</li>
+</ul>
 
 <h4>
 <a id="pf_ring-support" class="anchor" href="#pf_ring-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>PF_RING support</h4>
@@ -227,6 +336,7 @@ such as apt-get:</p>
 <ol>
 <li>run the <strong>configure-linux.sh</strong> script from PcapPlusPlus main directory</li>
 <li>If you'd like to compile it with PF_RING please follow the instructions in the "PF_RING support" section above and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
+<li>If you'd like to compile it with DPDK please follow the instructions in the "DPDK support" section above and type "y" in "Compile PcapPlusPlus with DPDK?"</li>
 <li>Run <strong>make all</strong> from PcapPlusPlus main directory</li>
 <li>This should compile all libraries, unit-tests and examples</li>
 </ol>
@@ -295,10 +405,16 @@ TestPrintPacketAndLayers      <span class="pl-s3">:</span> PASSED
 TestPfRingDevice              <span class="pl-s3">:</span> PASSED
 TestPfRingDeviceSingleChannel <span class="pl-s3">:</span> PASSED
 TestPfRingMultiThreadAllCores <span class="pl-s3">:</span> PASSED
-TestPfRingMultiThreadSomeCores: PASSED
+TestPfRingMultiThreadSomeCores<span class="pl-s3">:</span> PASSED
 TestPfRingSendPacket          <span class="pl-s3">:</span> PASSED
 TestPfRingSendPackets         <span class="pl-s3">:</span> PASSED
 TestPfRingFilters             <span class="pl-s3">:</span> PASSED
+TestDnsParsing                <span class="pl-s3">:</span> PASSED
+TestDpdkDevice                <span class="pl-s3">:</span> PASSED
+TestDpdkMultiThread           <span class="pl-s3">:</span> PASSED
+TestDpdkDeviceSendPackets     <span class="pl-s3">:</span> PASSED
+TestDpdkMbufRawPacket         <span class="pl-s3">:</span> PASSED
+TestDpdkDeviceWorkerThreads   <span class="pl-s3">:</span> PASSED
 ALL TESTS PASSED<span class="pl-k">!!</span></pre></div>
 
 <p><em>Notice:</em> Pcap++Test must be run with <strong>sudo</strong> on Linux to have access to all NICs</p>
