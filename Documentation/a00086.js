@@ -1,10 +1,12 @@
 var a00086 =
 [
-    [ "getDeviceType", "a00086.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00086.html#a624f8ebd9bba9bf1123c594f55ed0094", null ],
-    [ "sendPackets", "a00086.html#ad1576486b7de3dd8dd9eca51d9bd05dc", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00086.html#aa83fab2e5462bf6952389623ba69e0ae", null ],
-    [ "startCapture", "a00086.html#a83a5805972630d6071b07bc0f1d1de27", null ],
-    [ "startCapture", "a00086.html#ad8c8c56ec5b16cdd8c423274d8b4f07d", null ],
-    [ "startCapture", "a00086.html#a79611cae573a93b09ee980c1af8f978a", null ]
+    [ "VlanLayer", "a00086.html#a22ee2b78d0f211686e2f2d6c739c3ce7", null ],
+    [ "VlanLayer", "a00086.html#a4994a70468a65f5e2503079ee875f151", null ],
+    [ "computeCalculateFields", "a00086.html#aa9a69fc00dd5d19e88b6155a607a7d0f", null ],
+    [ "getHeaderLen", "a00086.html#ab0c394d2a70fb8ef7a2940119485dd5a", null ],
+    [ "getVlanHeader", "a00086.html#a1680bbebefc9c46ed461004273f4423d", null ],
+    [ "getVlanID", "a00086.html#a66c949b1b89d643d494ec5d8b59d1fba", null ],
+    [ "parseNextLayer", "a00086.html#a0a88c9124f80253715489aeba93562fc", null ],
+    [ "setVlanID", "a00086.html#ae4c992425b4519ca14408b848fde17b0", null ],
+    [ "toString", "a00086.html#a3d8393e296a26534cf671a2d63526354", null ]
 ];

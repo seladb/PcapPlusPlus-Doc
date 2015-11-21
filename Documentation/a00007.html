@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: DnsLayer Class Reference</title>
+<title>PcapPlusPlus: dnshdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,1285 +106,243 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00135.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00136.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DnsLayer Class Reference</div>  </div>
+<div class="title">dnshdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00089_source.html">DnsLayer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for DnsLayer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00007.png" usemap="#DnsLayer_map" alt=""/>
-  <map id="DnsLayer_map" name="DnsLayer_map">
-<area href="a00041.html" alt="Layer" shape="rect" coords="0,0,67,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00090_source.html">DnsLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a0655838a44f3c986a57b97264d0b9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a4a0655838a44f3c986a57b97264d0b9b">DnsLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00041.html">Layer</a> *prevLayer, <a class="el" href="a00050.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a4a0655838a44f3c986a57b97264d0b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0b14d0879565e64d4579373cc7189b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a0c0b14d0879565e64d4579373cc7189b">DnsLayer</a> ()</td></tr>
-<tr class="separator:a0c0b14d0879565e64d4579373cc7189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a290fa008e75990ec2e64bc14b7250935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a290fa008e75990ec2e64bc14b7250935">DnsLayer</a> (const <a class="el" href="a00007.html">DnsLayer</a> &amp;other)</td></tr>
-<tr class="separator:a290fa008e75990ec2e64bc14b7250935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622f424ddcf624a5ca71bccdc445b510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">DnsLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a622f424ddcf624a5ca71bccdc445b510">operator=</a> (const <a class="el" href="a00007.html">DnsLayer</a> &amp;other)</td></tr>
-<tr class="separator:a622f424ddcf624a5ca71bccdc445b510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b071c27ee38c73ad27b003126a2f19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00006.html">dnshdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a51b071c27ee38c73ad27b003126a2f19">getDnsHeader</a> ()</td></tr>
-<tr class="separator:a51b071c27ee38c73ad27b003126a2f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79bdeb9b2e0776cac9704543bb57346f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a79bdeb9b2e0776cac9704543bb57346f">getQuery</a> (const string &amp;name, bool exactMatch)</td></tr>
-<tr class="separator:a79bdeb9b2e0776cac9704543bb57346f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af321625014a20e11aa15efb5510236b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#af321625014a20e11aa15efb5510236b5">getFirstQuery</a> ()</td></tr>
-<tr class="separator:af321625014a20e11aa15efb5510236b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9e713f06ff8516bfd87ddc708204b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ada9e713f06ff8516bfd87ddc708204b2">getNextQuery</a> (<a class="el" href="a00008.html">DnsQuery</a> *query)</td></tr>
-<tr class="separator:ada9e713f06ff8516bfd87ddc708204b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1805ab3c3c95a8c9729b5389a105534"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ae1805ab3c3c95a8c9729b5389a105534">getQueryCount</a> ()</td></tr>
-<tr class="separator:ae1805ab3c3c95a8c9729b5389a105534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a791487bfb70817e06373635dbdfd4c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a791487bfb70817e06373635dbdfd4c0f">addQuery</a> (const string &amp;name, <a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass)</td></tr>
-<tr class="separator:a791487bfb70817e06373635dbdfd4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c5015e195fca373ef02d3ed5c78192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ae2c5015e195fca373ef02d3ed5c78192">addQuery</a> (<a class="el" href="a00008.html">DnsQuery</a> *const copyQuery)</td></tr>
-<tr class="separator:ae2c5015e195fca373ef02d3ed5c78192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed01f9554f3994e1ca1db50dac77509"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#abed01f9554f3994e1ca1db50dac77509">removeQuery</a> (const string &amp;queryNameToRemove, bool exactMatch)</td></tr>
-<tr class="separator:abed01f9554f3994e1ca1db50dac77509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22efc366bb912266554d783d070a845b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a22efc366bb912266554d783d070a845b">removeQuery</a> (<a class="el" href="a00008.html">DnsQuery</a> *queryToRemove)</td></tr>
-<tr class="separator:a22efc366bb912266554d783d070a845b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a620c9f18637bf828118da3b7d3839645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a620c9f18637bf828118da3b7d3839645">getAnswer</a> (const string &amp;name, bool exactMatch)</td></tr>
-<tr class="separator:a620c9f18637bf828118da3b7d3839645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93d6191d2a6690ed4eaab253ccc7a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac93d6191d2a6690ed4eaab253ccc7a0d">getFirstAnswer</a> ()</td></tr>
-<tr class="separator:ac93d6191d2a6690ed4eaab253ccc7a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ec5a13b8864c715a94fc4d2026ea05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#af7ec5a13b8864c715a94fc4d2026ea05">getNextAnswer</a> (<a class="el" href="a00009.html">DnsResource</a> *answer)</td></tr>
-<tr class="separator:af7ec5a13b8864c715a94fc4d2026ea05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad8813b1b58afb359cfe7023e53325d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#acad8813b1b58afb359cfe7023e53325d">getAnswerCount</a> ()</td></tr>
-<tr class="separator:acad8813b1b58afb359cfe7023e53325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1c1ca068c7fa4810ee4ba34a0b5b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aad1c1ca068c7fa4810ee4ba34a0b5b26">addAnswer</a> (const string &amp;name, <a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, const string &amp;data)</td></tr>
-<tr class="separator:aad1c1ca068c7fa4810ee4ba34a0b5b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9c6270ecbb2efd5e882ae262259e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a7b9c6270ecbb2efd5e882ae262259e59">addAnswer</a> (<a class="el" href="a00009.html">DnsResource</a> *const copyAnswer)</td></tr>
-<tr class="separator:a7b9c6270ecbb2efd5e882ae262259e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03aad2646c21fcfd72110a71656cdafb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a03aad2646c21fcfd72110a71656cdafb">removeAnswer</a> (const string &amp;answerNameToRemove, bool exactMatch)</td></tr>
-<tr class="separator:a03aad2646c21fcfd72110a71656cdafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c923c958a32b8d83cebecc247764ed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a7c923c958a32b8d83cebecc247764ed1">removeAnswer</a> (<a class="el" href="a00009.html">DnsResource</a> *answerToRemove)</td></tr>
-<tr class="separator:a7c923c958a32b8d83cebecc247764ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8977a4bb82ff83df84a021841d0d662c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a8977a4bb82ff83df84a021841d0d662c">getAuthority</a> (const string &amp;name, bool exactMatch)</td></tr>
-<tr class="separator:a8977a4bb82ff83df84a021841d0d662c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac986b6b398c1bad84380f3b5569738db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac986b6b398c1bad84380f3b5569738db">getFirstAuthority</a> ()</td></tr>
-<tr class="separator:ac986b6b398c1bad84380f3b5569738db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f84af71800a5216501217904592c84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a70f84af71800a5216501217904592c84">getNextAuthority</a> (<a class="el" href="a00009.html">DnsResource</a> *authority)</td></tr>
-<tr class="separator:a70f84af71800a5216501217904592c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07881b1e9ad1b77ab95dfb277575f09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ad07881b1e9ad1b77ab95dfb277575f09">getAuthorityCount</a> ()</td></tr>
-<tr class="separator:ad07881b1e9ad1b77ab95dfb277575f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6e302896364cd0b06a95b99371e186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aaa6e302896364cd0b06a95b99371e186">addAuthority</a> (const string &amp;name, <a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, const string &amp;data)</td></tr>
-<tr class="separator:aaa6e302896364cd0b06a95b99371e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d13bcf5c2ea8466d6edce91f31b84a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ae4d13bcf5c2ea8466d6edce91f31b84a">addAuthority</a> (<a class="el" href="a00009.html">DnsResource</a> *const copyAuthority)</td></tr>
-<tr class="separator:ae4d13bcf5c2ea8466d6edce91f31b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a098db8b8d828b7acd3b4336b60360ffa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a098db8b8d828b7acd3b4336b60360ffa">removeAuthority</a> (const string &amp;authorityNameToRemove, bool exactMatch)</td></tr>
-<tr class="separator:a098db8b8d828b7acd3b4336b60360ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52205cf717ea02ae89ab17c6ca57493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac52205cf717ea02ae89ab17c6ca57493">removeAuthority</a> (<a class="el" href="a00009.html">DnsResource</a> *authorityToRemove)</td></tr>
-<tr class="separator:ac52205cf717ea02ae89ab17c6ca57493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f30c8f339c179a1032c7dae4b0c1565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a2f30c8f339c179a1032c7dae4b0c1565">getAdditionalRecord</a> (const string &amp;name, bool exactMatch)</td></tr>
-<tr class="separator:a2f30c8f339c179a1032c7dae4b0c1565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ec7afe07957c703c5f3de2737c63120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a3ec7afe07957c703c5f3de2737c63120">getFirstAdditionalRecord</a> ()</td></tr>
-<tr class="separator:a3ec7afe07957c703c5f3de2737c63120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb026cba2e86dc95fe3b8ccc46c19eeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aeb026cba2e86dc95fe3b8ccc46c19eeb">getNextAdditionalRecord</a> (<a class="el" href="a00009.html">DnsResource</a> *additionalRecord)</td></tr>
-<tr class="separator:aeb026cba2e86dc95fe3b8ccc46c19eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5b8a5a7381cdee4f6c486c12d6efb6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a1f5b8a5a7381cdee4f6c486c12d6efb6">getAdditionalRecordCount</a> ()</td></tr>
-<tr class="separator:a1f5b8a5a7381cdee4f6c486c12d6efb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149b17d2679ca75bcd840eb4351776f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a149b17d2679ca75bcd840eb4351776f9">addAdditionalRecord</a> (const string &amp;name, <a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, <a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> dnsClass, uint32_t ttl, const string &amp;data)</td></tr>
-<tr class="separator:a149b17d2679ca75bcd840eb4351776f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86190530ac9c1ca573b39d98dd6265dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a86190530ac9c1ca573b39d98dd6265dd">addAdditionalRecord</a> (const string &amp;name, <a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> dnsType, uint16_t customData1, uint32_t customData2, const string &amp;data)</td></tr>
-<tr class="separator:a86190530ac9c1ca573b39d98dd6265dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4def02db8b452327fbaea920f3c026"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a5e4def02db8b452327fbaea920f3c026">addAdditionalRecord</a> (<a class="el" href="a00009.html">DnsResource</a> *const copyAdditionalRecord)</td></tr>
-<tr class="separator:a5e4def02db8b452327fbaea920f3c026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7e6e04180ad4d1ca99a54c23bc563e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a0e7e6e04180ad4d1ca99a54c23bc563e">removeAdditionalRecord</a> (const string &amp;additionalRecordNameToRemove, bool exactMatch)</td></tr>
-<tr class="separator:a0e7e6e04180ad4d1ca99a54c23bc563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3523a1f97bc25c21de4ecd8db54d1949"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a3523a1f97bc25c21de4ecd8db54d1949">removeAdditionalRecord</a> (<a class="el" href="a00009.html">DnsResource</a> *additionalRecordToRemove)</td></tr>
-<tr class="separator:a3523a1f97bc25c21de4ecd8db54d1949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d246da05a21283214783247294e11e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a59d246da05a21283214783247294e11e">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a59d246da05a21283214783247294e11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532ae1b6869a923121d3f42c9cd4fd03"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a532ae1b6869a923121d3f42c9cd4fd03">getHeaderLen</a> ()</td></tr>
-<tr class="separator:a532ae1b6869a923121d3f42c9cd4fd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a381fd7ec8713c71e0d73d19f7de2679c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a381fd7ec8713c71e0d73d19f7de2679c">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a381fd7ec8713c71e0d73d19f7de2679c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3936febebc51025ca4c2e441a3d1c60a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a3936febebc51025ca4c2e441a3d1c60a">toString</a> ()</td></tr>
-<tr class="separator:a3936febebc51025ca4c2e441a3d1c60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00041"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00041')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00041.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:addb188e64359d4c17a575612b5fd4349"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addb188e64359d4c17a575612b5fd4349"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>IDnsResource</b></td></tr>
-<tr class="separator:addb188e64359d4c17a575612b5fd4349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6dc9215c5ccb3f945f34ed4049c44a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a6dc9215c5ccb3f945f34ed4049c44a"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsQuery</b></td></tr>
-<tr class="separator:a5a6dc9215c5ccb3f945f34ed4049c44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7050165ccbf5937a29358203cbc39b70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7050165ccbf5937a29358203cbc39b70"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsResource</b></td></tr>
-<tr class="separator:a7050165ccbf5937a29358203cbc39b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac0fc55c46b7ce65214d118cadcf3743e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac0fc55c46b7ce65214d118cadcf3743e">transactionID</a></td></tr>
+<tr class="separator:ac0fc55c46b7ce65214d118cadcf3743e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e36152421d21e7c9a1138a058a628c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aa4e36152421d21e7c9a1138a058a628c">recursionDesired</a>:1</td></tr>
+<tr class="separator:aa4e36152421d21e7c9a1138a058a628c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af177a2f1151efb57d4e314a5530923a6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#af177a2f1151efb57d4e314a5530923a6">truncation</a>:1</td></tr>
+<tr class="separator:af177a2f1151efb57d4e314a5530923a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8091e1a5ec69de641d3defdffaf81f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#afe8091e1a5ec69de641d3defdffaf81f">authoritativeAnswer</a>:1</td></tr>
+<tr class="separator:afe8091e1a5ec69de641d3defdffaf81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618179b7ad06c581e6793bba23dc9497"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a618179b7ad06c581e6793bba23dc9497">opcode</a>:4</td></tr>
+<tr class="separator:a618179b7ad06c581e6793bba23dc9497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59de79a79f3903cd3e4a22b09da695f8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a59de79a79f3903cd3e4a22b09da695f8">queryOrResponse</a>:1</td></tr>
+<tr class="separator:a59de79a79f3903cd3e4a22b09da695f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad290f5e82ffbb3651d4b37628b396e7c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ad290f5e82ffbb3651d4b37628b396e7c">responseCode</a>:4</td></tr>
+<tr class="separator:ad290f5e82ffbb3651d4b37628b396e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbefefa00eb7f2fc8cf3ec69524a4dd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aabbefefa00eb7f2fc8cf3ec69524a4dd">checkingDisabled</a>:1</td></tr>
+<tr class="separator:aabbefefa00eb7f2fc8cf3ec69524a4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa767d4775baaad41154950ce7f768fc5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aa767d4775baaad41154950ce7f768fc5">authenticData</a>:1</td></tr>
+<tr class="separator:aa767d4775baaad41154950ce7f768fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377d0d6f64514d70e3d56c1a8f7d3750"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a377d0d6f64514d70e3d56c1a8f7d3750">zero</a>:1</td></tr>
+<tr class="separator:a377d0d6f64514d70e3d56c1a8f7d3750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd8970906e4ddd3de59ff0215249375"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#afdd8970906e4ddd3de59ff0215249375">recursionAvailable</a>:1</td></tr>
+<tr class="separator:afdd8970906e4ddd3de59ff0215249375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9451141e818e15ed9015d83c97f755e2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a9451141e818e15ed9015d83c97f755e2">numberOfQuestions</a></td></tr>
+<tr class="separator:a9451141e818e15ed9015d83c97f755e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27a989052df9557e87fc8ba8175ba5c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac27a989052df9557e87fc8ba8175ba5c">numberOfAnswers</a></td></tr>
+<tr class="separator:ac27a989052df9557e87fc8ba8175ba5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd60ff564afd2e0f7457cbccb0a04451"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#afd60ff564afd2e0f7457cbccb0a04451">numberOfAuthority</a></td></tr>
+<tr class="separator:afd60ff564afd2e0f7457cbccb0a04451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d44738f4c170af4219cab033933da9c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a3d44738f4c170af4219cab033933da9c">numberOfAdditional</a></td></tr>
+<tr class="separator:a3d44738f4c170af4219cab033933da9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the DNS protocol layer.<br />
- CURRENTLY ONLY DNS PARSING IS AVAILABLE. CREATING AND EDITING DNS ATTRIBUTES WILL BE ADDED LATER </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4a0655838a44f3c986a57b97264d0b9b"></a>
+<div class="textblock"><p>Represents the fixed part of the DNS header, meaning the part that doesn't include the DNS data (queries, answers, authorities and additional records) </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa767d4775baaad41154950ce7f768fc5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DnsLayer::DnsLayer </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00041.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00050.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::authenticData</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00050.html">Packet</a> instance where layer will be stored in </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Authenticated data flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a0c0b14d0879565e64d4579373cc7189b"></a>
+<a class="anchor" id="afe8091e1a5ec69de641d3defdffaf81f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DnsLayer::DnsLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::authoritativeAnswer</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates an empty DNS layer: all members of dnshdr are set to 0 and layer will contain no records </p>
+<p>Authoritative answer flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a290fa008e75990ec2e64bc14b7250935"></a>
+<a class="anchor" id="aabbefefa00eb7f2fc8cf3ec69524a4dd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DnsLayer::DnsLayer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00007.html">DnsLayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::checkingDisabled</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A copy constructor for this layer </p>
+<p>Checking disabled flag </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a149b17d2679ca75bcd840eb4351776f9"></a>
+<a class="anchor" id="a3d44738f4c170af4219cab033933da9c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>dnsType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>dnsClass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ttl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::numberOfAdditional</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS additional record to the layer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The value that shall be set in the name field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsType</td><td>The value that shall be set in the DNS type field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsClass</td><td>The value that shall be set in the DNS class field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>The value that shall be set in the 'time-to-leave' field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The additional record data to be set. see <a class="el" href="a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04">DnsResource::setData</a> for more info of this field legal values </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Number of additional records in packet </p>
 
 </div>
 </div>
-<a class="anchor" id="a86190530ac9c1ca573b39d98dd6265dd"></a>
+<a class="anchor" id="ac27a989052df9557e87fc8ba8175ba5c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>dnsType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>customData1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>customData2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::numberOfAnswers</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS additional record to the layer that doesn't have DNS class and TTL. Instead these bytes may contains some arbitrary data. In the future I may add support for these kinds of additional data records. For now, these bytes are set as raw </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The value that shall be set in the name field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsType</td><td>The value that shall be set in the DNS type field of the additional record </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">customData1</td><td>Two bytes of the arbitrary data that will be set in the offset usually used for the DNS class </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">customData2</td><td>Four bytes of the arbitrary data that will be set in the offset usually used for the TTL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The additional record data to be set. see <a class="el" href="a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04">DnsResource::setData</a> for more info of this field legal values </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Number of DNS answer records in packet </p>
 
 </div>
 </div>
-<a class="anchor" id="a5e4def02db8b452327fbaea920f3c026"></a>
+<a class="anchor" id="afd60ff564afd2e0f7457cbccb0a04451"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *const&#160;</td>
-          <td class="paramname"><em>copyAdditionalRecord</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::numberOfAuthority</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS additional record similar to an already existing DNS additional record. All additional record fields will be copied from the existing additional record param[in] copyAdditionalRecord The record to create the new record from. copyAdditionalRecord won't be changed in any way </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Number of authority records in packet </p>
 
 </div>
 </div>
-<a class="anchor" id="aad1c1ca068c7fa4810ee4ba34a0b5b26"></a>
+<a class="anchor" id="a9451141e818e15ed9015d83c97f755e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAnswer </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>dnsType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>dnsClass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ttl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::numberOfQuestions</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS answer to the layer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The value that shall be set in the name field of the answer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsType</td><td>The value that shall be set in the DNS type field of the answer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsClass</td><td>The value that shall be set in the DNS class field of the answer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>The value that shall be set in the 'time-to-leave' field of the answer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The answer data to be set. see <a class="el" href="a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04">DnsResource::setData</a> for more info of this field legal values </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or NULL if answer could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Number of DNS query records in packet </p>
 
 </div>
 </div>
-<a class="anchor" id="a7b9c6270ecbb2efd5e882ae262259e59"></a>
+<a class="anchor" id="a618179b7ad06c581e6793bba23dc9497"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAnswer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *const&#160;</td>
-          <td class="paramname"><em>copyAnswer</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::opcode</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS answer similar to an already existing DNS answer. All answer fields will be copied from the existing answer param[in] copyAnswer The record to create the new record from. copyAnswer won't be changed in any way </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Operation Code </p>
 
 </div>
 </div>
-<a class="anchor" id="aaa6e302896364cd0b06a95b99371e186"></a>
+<a class="anchor" id="a59de79a79f3903cd3e4a22b09da695f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAuthority </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>dnsType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>dnsClass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ttl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::queryOrResponse</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS authority to the layer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The value that shall be set in the name field of the authority </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsType</td><td>The value that shall be set in the DNS type field of the authority </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsClass</td><td>The value that shall be set in the DNS class field of the authority </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>The value that shall be set in the 'time-to-leave' field of the authority </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The authority data to be set. see <a class="el" href="a00009.html#a8647c7fe6ea0bcc4a2d546f222d8eb04">DnsResource::setData</a> for more info of this field legal values </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or NULL if authority could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Query/Response flag </p>
 
 </div>
 </div>
-<a class="anchor" id="ae4d13bcf5c2ea8466d6edce91f31b84a"></a>
+<a class="anchor" id="afdd8970906e4ddd3de59ff0215249375"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::addAuthority </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *const&#160;</td>
-          <td class="paramname"><em>copyAuthority</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::recursionAvailable</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS authority similar to an already existing DNS authority. All authority fields will be copied from the existing authority param[in] copyAuthority The record to create the new record from. copyAuthority won't be changed in any way </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Recursion available flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a791487bfb70817e06373635dbdfd4c0f"></a>
+<a class="anchor" id="aa4e36152421d21e7c9a1138a058a628c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00008.html">DnsQuery</a>* DnsLayer::addQuery </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>dnsType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>dnsClass</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::recursionDesired</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS query to the layer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The value that shall be set in the name field of the query </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsType</td><td>The value that shall be set in the DNS type field of the query </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsClass</td><td>The value that shall be set in the DNS class field of the query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Recursion desired flag </p>
 
 </div>
 </div>
-<a class="anchor" id="ae2c5015e195fca373ef02d3ed5c78192"></a>
+<a class="anchor" id="ad290f5e82ffbb3651d4b37628b396e7c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00008.html">DnsQuery</a>* DnsLayer::addQuery </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00008.html">DnsQuery</a> *const&#160;</td>
-          <td class="paramname"><em>copyQuery</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::responseCode</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new DNS query similar to an already existing DNS query. All query fields will be copied from the existing query param[in] copyQuery The record to create the new record from. copyQuery won't be changed in any way </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<p>Return Code </p>
 
 </div>
 </div>
-<a class="anchor" id="a381fd7ec8713c71e0d73d19f7de2679c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DnsLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="a00041.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2f30c8f339c179a1032c7dae4b0c1565"></a>
+<a class="anchor" id="ac0fc55c46b7ce65214d118cadcf3743e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::transactionID</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS additional record by its name field. Notice this method returns only an additional record which its name equals to the requested name. If several additional records match the requested name, the first one will be returned. If no additional records match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the additional record to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS additional record or NULL if no additional records were found </dd></dl>
+<p>DNS query identification </p>
 
 </div>
 </div>
-<a class="anchor" id="a1f5b8a5a7381cdee4f6c486c12d6efb6"></a>
+<a class="anchor" id="af177a2f1151efb57d4e314a5530923a6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t DnsLayer::getAdditionalRecordCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t dnshdr::truncation</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of DNS additional records in the packet </dd></dl>
+<p>Truncated flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a620c9f18637bf828118da3b7d3839645"></a>
+<a class="anchor" id="a377d0d6f64514d70e3d56c1a8f7d3750"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getAnswer </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t dnshdr::zero</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS answer by its name field. Notice this method returns only an answer which its name equals to the requested name. If several answers match the requested name, the first one will be returned. If no answers match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the answer to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS answer or NULL if no answers were found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="acad8813b1b58afb359cfe7023e53325d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t DnsLayer::getAnswerCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of DNS answers in the packet </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8977a4bb82ff83df84a021841d0d662c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getAuthority </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Searches for a DNS authority by its name field. Notice this method returns only an authority which its name equals to the requested name. If several authorities match the requested name, the first one will be returned. If no authorities match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the authority to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS authority or NULL if no authorities were found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad07881b1e9ad1b77ab95dfb277575f09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t DnsLayer::getAuthorityCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of DNS authorities in the packet </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a51b071c27ee38c73ad27b003126a2f19"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00006.html">dnshdr</a>* DnsLayer::getDnsHeader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the DNS header (as opposed to the DNS data which is the queries, answers, etc. Data can be retrieved through the other methods of this layer. Notice the return value points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00006.html">dnshdr</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3ec7afe07957c703c5f3de2737c63120"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getFirstAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS additional record in the packet or NULL if packet doesn't contain any additional records </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac93d6191d2a6690ed4eaab253ccc7a0d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getFirstAnswer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS answer in the packet or NULL if packet doesn't contain any answers </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac986b6b398c1bad84380f3b5569738db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getFirstAuthority </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS authority in the packet or NULL if packet doesn't contain any authorities </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af321625014a20e11aa15efb5510236b5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00008.html">DnsQuery</a>* DnsLayer::getFirstQuery </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS query in the packet or NULL if packet doesn't contain any queries </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a532ae1b6869a923121d3f42c9cd4fd03"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t DnsLayer::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the size of the DNS data in the packet including he DNS header and size of all queries, answers, authorities and additional records </p>
-
-<p>Implements <a class="el" href="a00041.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeb026cba2e86dc95fe3b8ccc46c19eeb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getNextAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>additionalRecord</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the DNS additional record following a certain additional record </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">additionalRecord</td><td>A pointer to a DNS additional record that exist in the packet </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS additional record following 'additionalRecord'. If 'additionalRecord' is NULL or 'additionalRecord' is the last additional record in the packet NULL will be returned </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af7ec5a13b8864c715a94fc4d2026ea05"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getNextAnswer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>answer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the DNS answer following a certain answer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">answer</td><td>A pointer to a DNS answer that exist in the packet </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS answer following 'answer'. If 'answer' is NULL or 'answer' is the last answer in the packet NULL will be returned </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a70f84af71800a5216501217904592c84"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00009.html">DnsResource</a>* DnsLayer::getNextAuthority </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>authority</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the DNS authority following a certain authority </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">authority</td><td>A pointer to a DNS authority that exist in the packet </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS authority following 'authority'. If 'authority' is NULL or 'authority' is the last authority in the packet NULL will be returned </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ada9e713f06ff8516bfd87ddc708204b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00008.html">DnsQuery</a>* DnsLayer::getNextQuery </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the DNS query following a certain query </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>A pointer to a DNS query that exist in the packet </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS query following 'query'. If 'query' is NULL or 'query' is the last query in the packet NULL will be returned </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a79bdeb9b2e0776cac9704543bb57346f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00008.html">DnsQuery</a>* DnsLayer::getQuery </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Searches for a DNS query by its name field. Notice this method returns only a query which its name equals to the requested name. If several queries match the requested name, the first one will be returned. If no queries match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the query to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS query or NULL if no queries were found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae1805ab3c3c95a8c9729b5389a105534"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t DnsLayer::getQueryCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of DNS queries in the packet </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a622f424ddcf624a5ca71bccdc445b510"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00007.html">DnsLayer</a>&amp; DnsLayer::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00007.html">DnsLayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An assignment operator for this layer </p>
-
-</div>
-</div>
-<a class="anchor" id="a59d246da05a21283214783247294e11e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DnsLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="a00007.html">DnsLayer</a> is always last) </p>
-
-<p>Implements <a class="el" href="a00041.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0e7e6e04180ad4d1ca99a54c23bc563e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>additionalRecordNameToRemove</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing additional record by name. If several additional records matches the name, the first match will be removed </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">additionalRecordNameToRemove</td><td>The name of the additional record to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if additional record was found and successfully removed or false if additional record was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3523a1f97bc25c21de4ecd8db54d1949"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAdditionalRecord </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>additionalRecordToRemove</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing additional record </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">additionalRecordToRemove</td><td>A pointer to the additional record to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if additional record was found and successfully removed or false if additional record was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a03aad2646c21fcfd72110a71656cdafb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAnswer </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>answerNameToRemove</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing answer by name. If several answers matches the name, the first match will be removed </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">answerNameToRemove</td><td>The name of the answer to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if answer was found and successfully removed or false if answer was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7c923c958a32b8d83cebecc247764ed1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAnswer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>answerToRemove</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing answer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">answerToRemove</td><td>A pointer to the answer to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if answer was found and successfully removed or false if answer was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a098db8b8d828b7acd3b4336b60360ffa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAuthority </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>authorityNameToRemove</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing authority by name. If several authorities matches the name, the first match will be removed </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">authorityNameToRemove</td><td>The name of the authority to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if authority was found and successfully removed or false if authority was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac52205cf717ea02ae89ab17c6ca57493"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeAuthority </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">DnsResource</a> *&#160;</td>
-          <td class="paramname"><em>authorityToRemove</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing authority </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">authorityToRemove</td><td>A pointer to the authority to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if authority was found and successfully removed or false if authority was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="abed01f9554f3994e1ca1db50dac77509"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeQuery </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>queryNameToRemove</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exactMatch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing query by name. If several queries matches the name, the first match will be removed </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">queryNameToRemove</td><td>The name of the query to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if query was found and successfully removed or false if query was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a22efc366bb912266554d783d070a845b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DnsLayer::removeQuery </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00008.html">DnsQuery</a> *&#160;</td>
-          <td class="paramname"><em>queryToRemove</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an existing query </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">queryToRemove</td><td>A pointer to the query to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if query was found and successfully removed or false if query was not found or couldn't be removed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3936febebc51025ca4c2e441a3d1c60a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string DnsLayer::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
-
-<p>Implements <a class="el" href="a00041.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+<p>Zero flag (Reserved) </p>
 
 </div>
 </div>
@@ -1393,8 +351,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsResource</b></td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00007.html">DnsLayer</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:06 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00007.html">dnshdr</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,8 +1,9 @@
 var a00056 =
 [
-    [ "PcapRemoteAuthentication", "a00056.html#a5daa53c06483922c9f14dd018d844940", null ],
-    [ "PcapRemoteAuthentication", "a00056.html#aaee229ba5f3c4c0fd6040b6132ab0f5d", null ],
-    [ "getPcapRmAuth", "a00056.html#a88bbf0cad6e1deafd040632500da4a00", null ],
-    [ "password", "a00056.html#aab0cc127150c91426bccf3ded1a2d915", null ],
-    [ "userName", "a00056.html#a1bd03f3efe382739077224990438fa66", null ]
+    [ "getPcapLiveDeviceByIp", "a00056.html#a390c2c0cd28d808021a3264f56b084de", null ],
+    [ "getPcapLiveDeviceByIp", "a00056.html#a0440ec517b35bc43fb5d31bc14ee529e", null ],
+    [ "getPcapLiveDeviceByIp", "a00056.html#aa331836b6dd34bc3ecae610c84db3769", null ],
+    [ "getPcapLiveDeviceByIp", "a00056.html#ade740e1e6614c536edfdd916535fb742", null ],
+    [ "getPcapLiveDeviceByName", "a00056.html#a5c88a995825c4a767dd8cf7d644b7f97", null ],
+    [ "getPcapLiveDevicesList", "a00056.html#ac680f08d3235cf99cdc9c404f8f02815", null ]
 ];

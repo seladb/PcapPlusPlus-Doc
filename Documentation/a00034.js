@@ -1,14 +1,10 @@
 var a00034 =
 [
-    [ "fragmentOffset", "a00034.html#ac4456c60fa6bb4c96fddf8a75a98f256", null ],
-    [ "headerChecksum", "a00034.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf", null ],
-    [ "internetHeaderLength", "a00034.html#a9d915fa9b82de8436a7d69c4e61ff1e9", null ],
-    [ "ipDst", "a00034.html#af8153baec72e1a9ef86769fce9e9f50b", null ],
-    [ "ipId", "a00034.html#af732b7a37b0757eee8296bcf2abeb2de", null ],
-    [ "ipSrc", "a00034.html#ac602adb3056c456c683115b75cdce139", null ],
-    [ "ipVersion", "a00034.html#ad5c64b12356b2825743b1944b6b3dd88", null ],
-    [ "protocol", "a00034.html#a2ea68d76d49f1a2f9d2f0d7d5e12d323", null ],
-    [ "timeToLive", "a00034.html#a0c43c9ad76543bdb23848cecc09b547e", null ],
-    [ "totalLength", "a00034.html#a7ef0e303262db11e95316591e39060e3", null ],
-    [ "typeOfService", "a00034.html#a2b7b4994c197bf0752c7fac58c56515c", null ]
+    [ "IPFilter", "a00034.html#ac7b149d99bdf51cd62328046697fa39e", null ],
+    [ "IPFilter", "a00034.html#ac8ef4cec89366cd498cc63aac8413c59", null ],
+    [ "IPFilter", "a00034.html#a04daaee21dd422d9020e615483d30edc", null ],
+    [ "parseToString", "a00034.html#a7aa182a720b67924c3d5326131c3454d", null ],
+    [ "setAddr", "a00034.html#a29305d074a03750bdb9f9b0b817d506e", null ],
+    [ "setLen", "a00034.html#adc446c3a334d80a9c7bdf1938360c73a", null ],
+    [ "setMask", "a00034.html#a57900cda5ddeedc892eb47910bb571b6", null ]
 ];

@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00055.html','');});
+$(document).ready(function(){initNavTree('a00054.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,25 +106,28 @@ $(document).ready(function(){initNavTree('a00055.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapLiveDeviceList Member List</div>  </div>
+<div class="title">PcapFileWriterDevice Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00055.html">PcapLiveDeviceList</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00054.html">PcapFileWriterDevice</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00055.html#a8543d3d93e3c5779a72820d38e52cd00">getInstance</a>()</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00055.html#a390c2c0cd28d808021a3264f56b084de">getPcapLiveDeviceByIp</a>(IPAddress *ipAddr)</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00055.html#a0440ec517b35bc43fb5d31bc14ee529e">getPcapLiveDeviceByIp</a>(IPv4Address ipAddr)</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00055.html#aa331836b6dd34bc3ecae610c84db3769">getPcapLiveDeviceByIp</a>(IPv6Address ip6Addr)</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00055.html#ade740e1e6614c536edfdd916535fb742">getPcapLiveDeviceByIp</a>(const char *ipAddrAsString)</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00055.html#a195282e47899cd987964b4ee187078ec">getPcapLiveDeviceByName</a>(const string &amp;name)</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00055.html#a654046c26d5816f95e82530a6f056451">getPcapLiveDevicesList</a>()</td><td class="entry"><a class="el" href="a00055.html">PcapLiveDeviceList</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00054.html#a534e2029cb4de050e6a55de39dc9aa9a">close</a>()</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00054.html#ac0c2c246a4447cc48ebae8f48f69d81d">getStatistics</a>(pcap_stat &amp;stats)</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00033.html#a1fc1dbf53910c72959d967c376f254ce">isOpened</a>()</td><td class="entry"><a class="el" href="a00033.html">IPcapFileDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00054.html#a8053b6b8abafd7de893fce117b8d2413">open</a>()</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00054.html#aefaeb7785c8cd5ca8b6e074156c471ae">PcapFileWriterDevice</a>(const char *fileName)</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00032.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a>(GeneralFilter &amp;filter)</td><td class="entry"><a class="el" href="a00032.html">IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00032.html#a5cef54e472e5d9fdd6f20472a2b5bcd2">setFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00032.html">IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00054.html#a6263c0850be603c60b8ba057d879a593">writePacket</a>(RawPacket const &amp;packet)</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00054.html#a472db9de9ac4f9f440f752385c0436e6">writePackets</a>(const RawPacketVector &amp;packets)</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00054.html#a491876c2591081b58313da654a704f8d">~PcapFileWriterDevice</a>()</td><td class="entry"><a class="el" href="a00054.html">PcapFileWriterDevice</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

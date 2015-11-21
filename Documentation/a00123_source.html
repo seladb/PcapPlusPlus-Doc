@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: VlanLayer.h Source File</title>
+<title>PcapPlusPlus: UdpLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,91 +104,73 @@ $(document).ready(function(){initNavTree('a00123_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">VlanLayer.h</div>  </div>
+<div class="title">UdpLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00123.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_VLAN_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_VLAN_LAYER</span></div>
+<a href="a00123.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_UDP_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_UDP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00098.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00092.html">EthLayer.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00083.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00083.html">vlan_header</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">   20</a></span>&#160;    uint16_t <a class="code" href="a00083.html#a10d8579a58598192a70a71bfd4e8d9ae">priority</a>:3,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             <a class="code" href="a00083.html#a02d82722bad771f3d87368351f17daf6">cfi</a>:1,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             <a class="code" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a>:12;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    uint16_t <a class="code" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a>:12,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <a class="code" href="a00083.html#a02d82722bad771f3d87368351f17daf6">cfi</a>:1,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <a class="code" href="a00083.html#a10d8579a58598192a70a71bfd4e8d9ae">priority</a>:3;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00083.html#aa97a61cf68c4c74fd553211eaf69c9d0">   31</a></span>&#160;    uint16_t <a class="code" href="a00083.html#aa97a61cf68c4c74fd553211eaf69c9d0">etherType</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00085.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00085.html">VlanLayer</a> : <span class="keyword">public</span> <a class="code" href="a00041.html">Layer</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00085.html#a22ee2b78d0f211686e2f2d6c739c3ce7">   49</a></span>&#160;    <a class="code" href="a00085.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00041.html">Layer</a>* prevLayer, <a class="code" href="a00050.html">Packet</a>* packet) : <a class="code" href="a00041.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="a00085.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a>(<span class="keyword">const</span> uint16_t vlanID, <span class="keywordtype">bool</span> cfi, uint8_t priority, uint16_t etherType);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ~<a class="code" href="a00085.html">VlanLayer</a>() {}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00099.html">Layer.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00081.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00081.html">udphdr</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00081.html#ae086b88cd86b79ab903202a63ada7601">   15</a></span>&#160;    uint16_t <a class="code" href="a00081.html#ae086b88cd86b79ab903202a63ada7601">portSrc</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00081.html#ab6266420dae91e2700c5596d093925d1">   17</a></span>&#160;    uint16_t <a class="code" href="a00081.html#ab6266420dae91e2700c5596d093925d1">portDst</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00081.html#a2af76d07e76ded39350f0cee2276cd9b">   19</a></span>&#160;    uint16_t <a class="code" href="a00081.html#a2af76d07e76ded39350f0cee2276cd9b">length</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00081.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">   21</a></span>&#160;    uint16_t <a class="code" href="a00081.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">headerChecksum</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00082.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00082.html">UdpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00042.html">Layer</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00082.html#a719f6abc85cfbcb5b7987a5eb6a99e70">   40</a></span>&#160;    <a class="code" href="a00082.html#a719f6abc85cfbcb5b7987a5eb6a99e70">UdpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00042.html">Layer</a>* prevLayer, <a class="code" href="a00051.html">Packet</a>* packet) : <a class="code" href="a00042.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a00082.html#a719f6abc85cfbcb5b7987a5eb6a99e70">UdpLayer</a>(uint16_t portSrc, uint16_t portDst);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00082.html#abe9c14cb251e2b43f4bb1cb8849549cd">   53</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00081.html">udphdr</a>* <a class="code" href="a00082.html#abe9c14cb251e2b43f4bb1cb8849549cd">getUdpHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00081.html">udphdr</a>*)m_Data; };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    uint16_t <a class="code" href="a00082.html#adfd1035b90bc336a51bf48c824d3a62c">calculateChecksum</a>(<span class="keywordtype">bool</span> writeResultToPacket);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00085.html#a1680bbebefc9c46ed461004273f4423d">   66</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00083.html">vlan_header</a>* <a class="code" href="a00085.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00083.html">vlan_header</a>*)m_Data; }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00085.html#a66c949b1b89d643d494ec5d8b59d1fba">   74</a></span>&#160;    <span class="keyword">inline</span> uint16_t <a class="code" href="a00085.html#a66c949b1b89d643d494ec5d8b59d1fba">getVlanID</a>() { <span class="keywordflow">return</span> <a class="code" href="a00085.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>()-&gt;<a class="code" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a> &gt;&gt; 4;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00085.html#ae4c992425b4519ca14408b848fde17b0">   82</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00085.html#ae4c992425b4519ca14408b848fde17b0">setVlanID</a>(uint16_t <span class="keywordtype">id</span>) { <a class="code" href="a00085.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a>()-&gt;<a class="code" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlanID</a> = ((id &lt;&lt; 4) &amp; 0xff0) | (id &gt;&gt; 8); }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00085.html#a0a88c9124f80253715489aeba93562fc">parseNextLayer</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00085.html#ab0c394d2a70fb8ef7a2940119485dd5a">   94</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00085.html#ab0c394d2a70fb8ef7a2940119485dd5a">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00083.html">vlan_header</a>); }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00085.html#aa9a69fc00dd5d19e88b6155a607a7d0f">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00085.html#aa9a69fc00dd5d19e88b6155a607a7d0f">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="a00085.html#a8022ec0ecee0fca9df1dc2bb01aa703d">toString</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_VLAN_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00085_html_ae4c992425b4519ca14408b848fde17b0"><div class="ttname"><a href="a00085.html#ae4c992425b4519ca14408b848fde17b0">VlanLayer::setVlanID</a></div><div class="ttdeci">void setVlanID(uint16_t id)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:82</div></div>
-<div class="ttc" id="a00085_html_a8022ec0ecee0fca9df1dc2bb01aa703d"><div class="ttname"><a href="a00085.html#a8022ec0ecee0fca9df1dc2bb01aa703d">VlanLayer::toString</a></div><div class="ttdeci">string toString()</div></div>
-<div class="ttc" id="a00085_html_a66c949b1b89d643d494ec5d8b59d1fba"><div class="ttname"><a href="a00085.html#a66c949b1b89d643d494ec5d8b59d1fba">VlanLayer::getVlanID</a></div><div class="ttdeci">uint16_t getVlanID()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:74</div></div>
-<div class="ttc" id="a00085_html_a0a88c9124f80253715489aeba93562fc"><div class="ttname"><a href="a00085.html#a0a88c9124f80253715489aeba93562fc">VlanLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00050_html"><div class="ttname"><a href="a00050.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00083_html_a10d8579a58598192a70a71bfd4e8d9ae"><div class="ttname"><a href="a00083.html#a10d8579a58598192a70a71bfd4e8d9ae">vlan_header::priority</a></div><div class="ttdeci">uint16_t priority</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
-<div class="ttc" id="a00085_html_a1680bbebefc9c46ed461004273f4423d"><div class="ttname"><a href="a00085.html#a1680bbebefc9c46ed461004273f4423d">VlanLayer::getVlanHeader</a></div><div class="ttdeci">vlan_header * getVlanHeader()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:66</div></div>
-<div class="ttc" id="a00041_html"><div class="ttname"><a href="a00041.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00085_html_a22ee2b78d0f211686e2f2d6c739c3ce7"><div class="ttname"><a href="a00085.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer::VlanLayer</a></div><div class="ttdeci">VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:49</div></div>
-<div class="ttc" id="a00083_html"><div class="ttname"><a href="a00083.html">vlan_header</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:17</div></div>
-<div class="ttc" id="a00085_html_aa9a69fc00dd5d19e88b6155a607a7d0f"><div class="ttname"><a href="a00085.html#aa9a69fc00dd5d19e88b6155a607a7d0f">VlanLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:99</div></div>
-<div class="ttc" id="a00083_html_aa97a61cf68c4c74fd553211eaf69c9d0"><div class="ttname"><a href="a00083.html#aa97a61cf68c4c74fd553211eaf69c9d0">vlan_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:31</div></div>
-<div class="ttc" id="a00085_html_ab0c394d2a70fb8ef7a2940119485dd5a"><div class="ttname"><a href="a00085.html#ab0c394d2a70fb8ef7a2940119485dd5a">VlanLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:94</div></div>
-<div class="ttc" id="a00083_html_a02d82722bad771f3d87368351f17daf6"><div class="ttname"><a href="a00083.html#a02d82722bad771f3d87368351f17daf6">vlan_header::cfi</a></div><div class="ttdeci">uint16_t cfi</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
-<div class="ttc" id="a00083_html_a86a22d2e107e474e60ae539e3e4a9d07"><div class="ttname"><a href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a></div><div class="ttdeci">uint16_t vlanID</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:20</div></div>
-<div class="ttc" id="a00098_html"><div class="ttname"><a href="a00098.html">Layer.h</a></div></div>
-<div class="ttc" id="a00118_html_a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704"><div class="ttname"><a href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186a4371d03b2b43672de049099f6e0ac704">VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:69</div></div>
-<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">EthLayer.h</a></div></div>
-<div class="ttc" id="a00085_html"><div class="ttname"><a href="a00085.html">VlanLayer</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:40</div></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00082.html#a87ca5bbf1d532555f38101b2edeeed22">parseNextLayer</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00082.html#a9cf705e60ec95b00c594a7633e4fd1ac">   72</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00082.html#a9cf705e60ec95b00c594a7633e4fd1ac">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00081.html">udphdr</a>); }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00082.html#a94f3dd3afe2b5ad9bda7e12d2f18c449">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::string <a class="code" href="a00082.html#abee5c14ffba496d372903abe40676417">toString</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_UDP_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00082_html_adfd1035b90bc336a51bf48c824d3a62c"><div class="ttname"><a href="a00082.html#adfd1035b90bc336a51bf48c824d3a62c">UdpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
+<div class="ttc" id="a00082_html_abe9c14cb251e2b43f4bb1cb8849549cd"><div class="ttname"><a href="a00082.html#abe9c14cb251e2b43f4bb1cb8849549cd">UdpLayer::getUdpHeader</a></div><div class="ttdeci">udphdr * getUdpHeader()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:53</div></div>
+<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
+<div class="ttc" id="a00082_html_a719f6abc85cfbcb5b7987a5eb6a99e70"><div class="ttname"><a href="a00082.html#a719f6abc85cfbcb5b7987a5eb6a99e70">UdpLayer::UdpLayer</a></div><div class="ttdeci">UdpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:40</div></div>
+<div class="ttc" id="a00082_html"><div class="ttname"><a href="a00082.html">UdpLayer</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:30</div></div>
+<div class="ttc" id="a00082_html_a9cf705e60ec95b00c594a7633e4fd1ac"><div class="ttname"><a href="a00082.html#a9cf705e60ec95b00c594a7633e4fd1ac">UdpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:72</div></div>
+<div class="ttc" id="a00099_html"><div class="ttname"><a href="a00099.html">Layer.h</a></div></div>
+<div class="ttc" id="a00081_html_a2af76d07e76ded39350f0cee2276cd9b"><div class="ttname"><a href="a00081.html#a2af76d07e76ded39350f0cee2276cd9b">udphdr::length</a></div><div class="ttdeci">uint16_t length</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:19</div></div>
+<div class="ttc" id="a00081_html_aa8f66911e3e8f9c6ceb9047d3de2a05b"><div class="ttname"><a href="a00081.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">udphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:21</div></div>
+<div class="ttc" id="a00081_html_ab6266420dae91e2700c5596d093925d1"><div class="ttname"><a href="a00081.html#ab6266420dae91e2700c5596d093925d1">udphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:17</div></div>
+<div class="ttc" id="a00081_html"><div class="ttname"><a href="a00081.html">udphdr</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:13</div></div>
+<div class="ttc" id="a00081_html_ae086b88cd86b79ab903202a63ada7601"><div class="ttname"><a href="a00081.html#ae086b88cd86b79ab903202a63ada7601">udphdr::portSrc</a></div><div class="ttdeci">uint16_t portSrc</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:15</div></div>
+<div class="ttc" id="a00082_html_a87ca5bbf1d532555f38101b2edeeed22"><div class="ttname"><a href="a00082.html#a87ca5bbf1d532555f38101b2edeeed22">UdpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00119_html_a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6"><div class="ttname"><a href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186adb542475cf9d0636e4225e216cee9ae6">UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:44</div></div>
+<div class="ttc" id="a00082_html_a94f3dd3afe2b5ad9bda7e12d2f18c449"><div class="ttname"><a href="a00082.html#a94f3dd3afe2b5ad9bda7e12d2f18c449">UdpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
+<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
+<div class="ttc" id="a00082_html_abee5c14ffba496d372903abe40676417"><div class="ttname"><a href="a00082.html#abee5c14ffba496d372903abe40676417">UdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00123.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:06 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00123.html">UdpLayer.h</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

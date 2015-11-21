@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PPPoELayer Class Reference</title>
+<title>PcapPlusPlus: PPPoEDiscoveryLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,134 +106,210 @@ $(document).ready(function(){initNavTree('a00067.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00196.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PPPoELayer Class Reference</div>  </div>
+<div class="title">PPPoEDiscoveryLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00117_source.html">PPPoELayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00118_source.html">PPPoELayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for PPPoELayer:</div>
+Inheritance diagram for PPPoEDiscoveryLayer:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00067.png" usemap="#PPPoELayer_map" alt=""/>
-  <map id="PPPoELayer_map" name="PPPoELayer_map">
-<area href="a00041.html" alt="Layer" shape="rect" coords="76,0,218,24"/>
-<area href="a00066.html" alt="PPPoEDiscoveryLayer" shape="rect" coords="0,112,142,136"/>
-<area href="a00068.html" alt="PPPoESessionLayer" shape="rect" coords="152,112,294,136"/>
+  <img src="a00067.png" usemap="#PPPoEDiscoveryLayer_map" alt=""/>
+  <map id="PPPoEDiscoveryLayer_map" name="PPPoEDiscoveryLayer_map">
+<area href="a00068.html" alt="PPPoELayer" shape="rect" coords="0,56,142,80"/>
+<area href="a00042.html" alt="Layer" shape="rect" coords="0,0,142,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">PPPoETag</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a175179c8c3448839deccd3262a58665c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665c">PPPoECode</a> { <br />
-&#160;&#160;<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b">PPPOE_CODE_SESSION</a> = 0x00, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603">PPPOE_CODE_PADO</a> = 0x07, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0">PPPOE_CODE_PADI</a> = 0x09, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e">PPPOE_CODE_PADG</a> = 0x0a, 
+<tr class="memitem:ac9403a67f69c7217b71061a233707278"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a> { <br />
+&#160;&#160;<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278aed65db1b25dc8c80eae59d68d9abd178">PPPOE_TAG_EOL</a> = 0x0000, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a569fcff2188699328386791bf4b5509d">PPPOE_TAG_SVC_NAME</a> = 0x0101, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a9da575b312dc38e1967ba1a596d28d05">PPPOE_TAG_AC_NAME</a> = 0x0102, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a9a81710f4f46a15097bf729b56bd0c7d">PPPOE_TAG_HOST_UNIQ</a> = 0x0103, 
 <br />
-&#160;&#160;<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622">PPPOE_CODE_PADC</a> = 0x0b, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13">PPPOE_CODE_PADQ</a> = 0x0c, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1">PPPOE_CODE_PADR</a> = 0x19, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e">PPPOE_CODE_PADS</a> = 0x65, 
+&#160;&#160;<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278ad2de0d18c3b8758af2ae8efb24529095">PPPOE_TAG_AC_COOKIE</a> = 0x0104, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278abcc97b3f20fcd3dfd1361394a44701e8">PPPOE_TAG_VENDOR</a> = 0x0105, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278ab5d217b999f04d47651dcf012e94671b">PPPOE_TAG_CREDITS</a> = 0x0106, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278ac53f16d29ad1afd786ee5b354def5014">PPPOE_TAG_METRICS</a> = 0x0107, 
 <br />
-&#160;&#160;<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613">PPPOE_CODE_PADT</a> = 0xa7, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5">PPPOE_CODE_PADM</a> = 0xd3, 
-<a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72">PPPOE_CODE_PADN</a> = 0xd4
+&#160;&#160;<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278abcf7e367208c8cae974709fbb9f1ef2d">PPPOE_TAG_SEQ_NUM</a> = 0x0108, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278aa2627d80cf4a6203293bab6c57d8ba11">PPPOE_TAG_CRED_SCALE</a> = 0x0109, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a4bb1c234eba8c9c575554a22fed65432">PPPOE_TAG_RELAY_ID</a> = 0x0110, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278ae2aa5607be3a08808fcad95b3675d0fd">PPPOE_TAG_HURL</a> = 0x0111, 
+<br />
+&#160;&#160;<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a76024ee535b70fb30a06eb725da473d8">PPPOE_TAG_MOTM</a> = 0x0112, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278aac77ca5c5b963171caa66ab8dc2573e2">PPPOE_TAG_MAX_PAYLD</a> = 0x0120, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278ab4a1f85d634dcd9671a1a183e1d84744">PPPOE_TAG_IP_RT_ADD</a> = 0x0121, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278aeda60dc2df04d46cc2af56955b927331">PPPOE_TAG_SVC_ERR</a> = 0x0201, 
+<br />
+&#160;&#160;<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a6ca74d10add715e2cfe29ead1a9f9f80">PPPOE_TAG_AC_ERR</a> = 0x0202, 
+<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278a37b9a810e8f22d879728e5f19f1636df">PPPOE_TAG_GENERIC_ERR</a> = 0x0203
 <br />
  }</td></tr>
-<tr class="separator:a175179c8c3448839deccd3262a58665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac9403a67f69c7217b71061a233707278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_a00068"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a00068')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="a00068.html">PPPoELayer</a></td></tr>
+<tr class="memitem:a175179c8c3448839deccd3262a58665c inherit pub_types_a00068"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665c">PPPoECode</a> { <br />
+&#160;&#160;<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b">PPPOE_CODE_SESSION</a> = 0x00, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603">PPPOE_CODE_PADO</a> = 0x07, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0">PPPOE_CODE_PADI</a> = 0x09, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e">PPPOE_CODE_PADG</a> = 0x0a, 
+<br />
+&#160;&#160;<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622">PPPOE_CODE_PADC</a> = 0x0b, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13">PPPOE_CODE_PADQ</a> = 0x0c, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1">PPPOE_CODE_PADR</a> = 0x19, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e">PPPOE_CODE_PADS</a> = 0x65, 
+<br />
+&#160;&#160;<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613">PPPOE_CODE_PADT</a> = 0xa7, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5">PPPOE_CODE_PADM</a> = 0xd3, 
+<a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72">PPPOE_CODE_PADN</a> = 0xd4
+<br />
+ }</td></tr>
+<tr class="separator:a175179c8c3448839deccd3262a58665c inherit pub_types_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1bb3dc226576957fb7f8d46529ac1cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00065.html">pppoe_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a1bb3dc226576957fb7f8d46529ac1cbf">getPPPoEHeader</a> ()</td></tr>
-<tr class="separator:a1bb3dc226576957fb7f8d46529ac1cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae236d58b2f7287bc5fa01d7b2e194308"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ae236d58b2f7287bc5fa01d7b2e194308">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:ae236d58b2f7287bc5fa01d7b2e194308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00041"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00041')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00041.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722ab3018fb0bca2f4543b5a1249829c inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a722ab3018fb0bca2f4543b5a1249829c">parseNextLayer</a> ()=0</td></tr>
-<tr class="separator:a722ab3018fb0bca2f4543b5a1249829c inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadb836a85874bdf0814c07eb24d92247 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aadb836a85874bdf0814c07eb24d92247">getHeaderLen</a> ()=0</td></tr>
-<tr class="separator:aadb836a85874bdf0814c07eb24d92247 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c690bf65bce7580afa0d9425fcfbf3 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a17c690bf65bce7580afa0d9425fcfbf3">toString</a> ()=0</td></tr>
-<tr class="separator:a17c690bf65bce7580afa0d9425fcfbf3 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758e5e06207c3a674b54be69e80c30f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a758e5e06207c3a674b54be69e80c30f4">PPPoEDiscoveryLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00042.html">Layer</a> *prevLayer, <a class="el" href="a00051.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a758e5e06207c3a674b54be69e80c30f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed21c1bd24fcb363a47c9f6f5843e6c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aed21c1bd24fcb363a47c9f6f5843e6c9">PPPoEDiscoveryLayer</a> (uint8_t version, uint8_t type, <a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a> code, uint16_t sessionId)</td></tr>
+<tr class="separator:aed21c1bd24fcb363a47c9f6f5843e6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad387d8a92f00bfaf948d46cfca612d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aad387d8a92f00bfaf948d46cfca612d5">PPPoEDiscoveryLayer</a> (const <a class="el" href="a00067.html">PPPoEDiscoveryLayer</a> &amp;other)</td></tr>
+<tr class="separator:aad387d8a92f00bfaf948d46cfca612d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c7b7c3a0303f04f39bc574730b18af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a59c7b7c3a0303f04f39bc574730b18af">getTag</a> (<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> tagType)</td></tr>
+<tr class="separator:a59c7b7c3a0303f04f39bc574730b18af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7f5689966edb568cc52e60230d70ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a8e7f5689966edb568cc52e60230d70ab">getFirstTag</a> ()</td></tr>
+<tr class="separator:a8e7f5689966edb568cc52e60230d70ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af164477436ff0e8d32da70766257e5b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#af164477436ff0e8d32da70766257e5b2">getNextTag</a> (<a class="el" href="a00070.html">PPPoETag</a> *tag)</td></tr>
+<tr class="separator:af164477436ff0e8d32da70766257e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8bc66b1851cd819ae408e39a0e1b56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a9a8bc66b1851cd819ae408e39a0e1b56">getTagCount</a> ()</td></tr>
+<tr class="separator:a9a8bc66b1851cd819ae408e39a0e1b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c86eb4350d7fa161d58e7f4f3d6521d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5c86eb4350d7fa161d58e7f4f3d6521d">addTag</a> (<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a> tagType, uint16_t tagLength, const uint8_t *tagData)</td></tr>
+<tr class="separator:a5c86eb4350d7fa161d58e7f4f3d6521d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf207f78a0cf2c4fe642e352654ebd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#afbf207f78a0cf2c4fe642e352654ebd4">addTagAfter</a> (<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a> tagType, uint16_t tagLength, const uint8_t *tagData, <a class="el" href="a00070.html">PPPoETag</a> *prevTag)</td></tr>
+<tr class="separator:afbf207f78a0cf2c4fe642e352654ebd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4b1844f957ebbbd513b514f70a879c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a9e4b1844f957ebbbd513b514f70a879c">removeTag</a> (<a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a> tagType)</td></tr>
+<tr class="separator:a9e4b1844f957ebbbd513b514f70a879c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b058ba0eda76d8d94fb72ce30660232"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a3b058ba0eda76d8d94fb72ce30660232">removeAllTags</a> ()</td></tr>
+<tr class="separator:a3b058ba0eda76d8d94fb72ce30660232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64762d167aea9837b261c9e785a8b60a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a64762d167aea9837b261c9e785a8b60a">parseNextLayer</a> ()</td></tr>
+<tr class="separator:a64762d167aea9837b261c9e785a8b60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3370421c069631a8bd3712839e7deacb"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a3370421c069631a8bd3712839e7deacb">getHeaderLen</a> ()</td></tr>
+<tr class="separator:a3370421c069631a8bd3712839e7deacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ac3ebad2bdff3dd65e7c1812658869"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ae7ac3ebad2bdff3dd65e7c1812658869">toString</a> ()</td></tr>
+<tr class="separator:ae7ac3ebad2bdff3dd65e7c1812658869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00068"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00068')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00068.html">PPPoELayer</a></td></tr>
+<tr class="memitem:a1bb3dc226576957fb7f8d46529ac1cbf inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00066.html">pppoe_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a1bb3dc226576957fb7f8d46529ac1cbf">getPPPoEHeader</a> ()</td></tr>
+<tr class="separator:a1bb3dc226576957fb7f8d46529ac1cbf inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae236d58b2f7287bc5fa01d7b2e194308 inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ae236d58b2f7287bc5fa01d7b2e194308">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:ae236d58b2f7287bc5fa01d7b2e194308 inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00042"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00042')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00042.html">Layer</a></td></tr>
+<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
+<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
+<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
+<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
+<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
+<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
+<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class that describes the PPPoE protocol. Contains common data and logic of the two types of PPPoE packets: PPPoE session and PPPoE discovery </p>
+<div class="textblock"><p>Describes the PPPoE discovery protocol </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a175179c8c3448839deccd3262a58665c"></a>
+<a class="anchor" id="ac9403a67f69c7217b71061a233707278"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00067.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a></td>
+          <td class="memname">enum <a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>PPPoE possible codes </p>
+<p>PPPoE tag types </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b"></a>PPPOE_CODE_SESSION&#160;</td><td class="fielddoc">
-<p>PPPoE session code </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278aed65db1b25dc8c80eae59d68d9abd178"></a>PPPOE_TAG_EOL&#160;</td><td class="fielddoc">
+<p>End-Of-List tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603"></a>PPPOE_CODE_PADO&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADO </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a569fcff2188699328386791bf4b5509d"></a>PPPOE_TAG_SVC_NAME&#160;</td><td class="fielddoc">
+<p>Service-Name tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0"></a>PPPOE_CODE_PADI&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADI </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a9da575b312dc38e1967ba1a596d28d05"></a>PPPOE_TAG_AC_NAME&#160;</td><td class="fielddoc">
+<p>AC-Name tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e"></a>PPPOE_CODE_PADG&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADG </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a9a81710f4f46a15097bf729b56bd0c7d"></a>PPPOE_TAG_HOST_UNIQ&#160;</td><td class="fielddoc">
+<p>Host-Uniq tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622"></a>PPPOE_CODE_PADC&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADC </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278ad2de0d18c3b8758af2ae8efb24529095"></a>PPPOE_TAG_AC_COOKIE&#160;</td><td class="fielddoc">
+<p>AC-Cookie tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13"></a>PPPOE_CODE_PADQ&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADQ </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278abcc97b3f20fcd3dfd1361394a44701e8"></a>PPPOE_TAG_VENDOR&#160;</td><td class="fielddoc">
+<p>Vendor-Specific tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1"></a>PPPOE_CODE_PADR&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADR </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278ab5d217b999f04d47651dcf012e94671b"></a>PPPOE_TAG_CREDITS&#160;</td><td class="fielddoc">
+<p>Credits tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e"></a>PPPOE_CODE_PADS&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADS </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278ac53f16d29ad1afd786ee5b354def5014"></a>PPPOE_TAG_METRICS&#160;</td><td class="fielddoc">
+<p>Metrics tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613"></a>PPPOE_CODE_PADT&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADT </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278abcf7e367208c8cae974709fbb9f1ef2d"></a>PPPOE_TAG_SEQ_NUM&#160;</td><td class="fielddoc">
+<p>Sequence Number tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5"></a>PPPOE_CODE_PADM&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADM </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278aa2627d80cf4a6203293bab6c57d8ba11"></a>PPPOE_TAG_CRED_SCALE&#160;</td><td class="fielddoc">
+<p>Credit Scale Factor tag type </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72"></a>PPPOE_CODE_PADN&#160;</td><td class="fielddoc">
-<p>PPPoE discovery PADN </p>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a4bb1c234eba8c9c575554a22fed65432"></a>PPPOE_TAG_RELAY_ID&#160;</td><td class="fielddoc">
+<p>Relay-Session-Id tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278ae2aa5607be3a08808fcad95b3675d0fd"></a>PPPOE_TAG_HURL&#160;</td><td class="fielddoc">
+<p>HURL tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a76024ee535b70fb30a06eb725da473d8"></a>PPPOE_TAG_MOTM&#160;</td><td class="fielddoc">
+<p>MOTM tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278aac77ca5c5b963171caa66ab8dc2573e2"></a>PPPOE_TAG_MAX_PAYLD&#160;</td><td class="fielddoc">
+<p>PPP-Max-Payload tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278ab4a1f85d634dcd9671a1a183e1d84744"></a>PPPOE_TAG_IP_RT_ADD&#160;</td><td class="fielddoc">
+<p>IP_Route_Add tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278aeda60dc2df04d46cc2af56955b927331"></a>PPPOE_TAG_SVC_ERR&#160;</td><td class="fielddoc">
+<p>Service-Name-Error tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a6ca74d10add715e2cfe29ead1a9f9f80"></a>PPPOE_TAG_AC_ERR&#160;</td><td class="fielddoc">
+<p>AC-System-Error tag type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac9403a67f69c7217b71061a233707278a37b9a810e8f22d879728e5f19f1636df"></a>PPPOE_TAG_GENERIC_ERR&#160;</td><td class="fielddoc">
+<p>Generic-Error tag type </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae236d58b2f7287bc5fa01d7b2e194308"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a758e5e06207c3a674b54be69e80c30f4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -241,7 +317,248 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void PPPoELayer::computeCalculateFields </td>
+          <td class="memname">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00042.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00051.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00066.html">pppoe_header</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00051.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed21c1bd24fcb363a47c9f6f5843e6c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00068.html#a175179c8c3448839deccd3262a58665c">PPPoELayer::PPPoECode</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sessionId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new PPPoE Discovery header with version, type, PPPoE code and session ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>PPPoE version </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>PPPoE type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">code</td><td>PPPoE code enum </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sessionId</td><td>PPPoE session ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aad387d8a92f00bfaf948d46cfca612d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PPPoEDiscoveryLayer::PPPoEDiscoveryLayer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00067.html">PPPoEDiscoveryLayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A copy constructor that copies the entire header from the other <a class="el" href="a00067.html">PPPoEDiscoveryLayer</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5c86eb4350d7fa161d58e7f4f3d6521d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">PPPoETag</a>* PPPoEDiscoveryLayer::addTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a>&#160;</td>
+          <td class="paramname"><em>tagType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tagLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>tagData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a new tag at the end of the layer (after the last tag) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the new added tag. Notice this is a pointer to the real data casted to <a class="el" href="a00070.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in this return value will affect the packet data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbf207f78a0cf2c4fe642e352654ebd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">PPPoETag</a>* PPPoEDiscoveryLayer::addTagAfter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoETagTypes</a>&#160;</td>
+          <td class="paramname"><em>tagType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tagLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>tagData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td>
+          <td class="paramname"><em>prevTag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a new tag after an existing tag </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the added tag </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagLength</td><td>The length of the tag data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagData</td><td>A pointer to the tag data. This data will be copied to added tag data. Notice the length of tagData must be tagLength </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevTag</td><td>The tag which the new added tag will come after </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the new added tag. Notice this is a pointer to the real data casted to <a class="el" href="a00070.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in this return value will affect the packet data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e7f5689966edb568cc52e60230d70ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">PPPoETag</a>* PPPoEDiscoveryLayer::getFirstTag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The first tag in the PPPoE discovery layer, or NULL if no tags exist. Notice the return value is a pointer to the real data casted to <a class="el" href="a00070.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in the return value will affect the packet data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3370421c069631a8bd3712839e7deacb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t PPPoEDiscoveryLayer::getHeaderLen </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -253,13 +570,75 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Calculate <a class="el" href="a00065.html#ad835b1953dd25a4f2f4a44a6be3c5c28">pppoe_header::payloadLength</a> field </p>
+<dl class="section return"><dt>Returns</dt><dd>The header length which is size of strcut <a class="el" href="a00066.html">pppoe_header</a> plus the total size of tags </dd></dl>
 
-<p>Implements <a class="el" href="a00041.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+<p>Implements <a class="el" href="a00042.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1bb3dc226576957fb7f8d46529ac1cbf"></a>
+<a class="anchor" id="af164477436ff0e8d32da70766257e5b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">PPPoETag</a>* PPPoEDiscoveryLayer::getNextTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00070.html">PPPoETag</a> *&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the tag which come next to "tag" parameter. If "tag" is NULL or then NULL will be returned. If "tag" is the last tag NULL will be returned. Notice the return value is a pointer to the real data casted to <a class="el" href="a00070.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tag</td><td>The tag to start search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next tag or NULL if "tag" is NULL or "tag" is the last tag </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a59c7b7c3a0303f04f39bc574730b18af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">PPPoETag</a>* PPPoEDiscoveryLayer::getTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a>&#160;</td>
+          <td class="paramname"><em>tagType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a PPPoE tag by tag type. If packet consists of multiple tags of the same type, the first tag will be returned. If packet contains no tags of the tag type NULL will be returned. Notice the return value is a pointer to the real data casted to <a class="el" href="a00070.html">PPPoETag</a> type (as opposed to a copy of the tag data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The type of the tag to search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the tag data casted to PPPoETag* </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a8bc66b1851cd819ae408e39a0e1b56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PPPoEDiscoveryLayer::getTagCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The number of tags in this layer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64762d167aea9837b261c9e785a8b60a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -267,7 +646,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00065.html">pppoe_header</a>* PPPoELayer::getPPPoEHeader </td>
+          <td class="memname">virtual void PPPoEDiscoveryLayer::parseNextLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -275,11 +654,78 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a pointer to the PPPoE header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00065.html">pppoe_header</a> </dd></dl>
+<p>Does nothing for this layer (PPPoE discovery is always the last layer) </p>
+
+<p>Implements <a class="el" href="a00042.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b058ba0eda76d8d94fb72ce30660232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PPPoEDiscoveryLayer::removeAllTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove all tags in this layer </p><dl class="section return"><dt>Returns</dt><dd>True if all tags were successfully or false if removal failed for some reason (a proper error will be written to log) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e4b1844f957ebbbd513b514f70a879c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PPPoEDiscoveryLayer::removeTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html#ac9403a67f69c7217b71061a233707278">PPPoEDiscoveryLayer::PPPoETagTypes</a>&#160;</td>
+          <td class="paramname"><em>tagType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove an existing tag. Tag will be found by the tag type </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tagType</td><td>The tag type to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if tag was removed or false if tag wasn't found or if tag removal failed (in each case a proper error will be written to log) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae7ac3ebad2bdff3dd65e7c1812658869"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string PPPoEDiscoveryLayer::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+
+<p>Implements <a class="el" href="a00042.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
 
 </div>
 </div>
@@ -288,8 +734,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00067.html">PPPoELayer</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00067.html">PPPoEDiscoveryLayer</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

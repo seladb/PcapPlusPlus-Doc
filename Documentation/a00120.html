@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SystemUtils.h File Reference</title>
+<title>PcapPlusPlus: RawPacket.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,171 +105,38 @@ $(document).ready(function(){initNavTree('a00120.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">SystemUtils.h File Reference</div>  </div>
+<div class="title">RawPacket.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="a00120_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">SystemCore</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html">SystemCores</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">RawPacket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6253c79b461ea620034cc52398473809"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a6253c79b461ea620034cc52398473809">getNumOfCores</a> ()</td></tr>
-<tr class="separator:a6253c79b461ea620034cc52398473809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c7f1e2cae1d7e64ffab7471577f670"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#af5c7f1e2cae1d7e64ffab7471577f670">getCoreMaskForAllMachineCores</a> ()</td></tr>
-<tr class="separator:af5c7f1e2cae1d7e64ffab7471577f670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fa1e8a13fe4bf304823d089c42dce2f"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a5fa1e8a13fe4bf304823d089c42dce2f">createCoreMaskFromCoreVector</a> (std::vector&lt; <a class="el" href="a00073.html">SystemCore</a> &gt; cores)</td></tr>
-<tr class="separator:a5fa1e8a13fe4bf304823d089c42dce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd401902ab2933c496a591e4423416ae"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#abd401902ab2933c496a591e4423416ae">createCoreMaskFromCoreIds</a> (std::vector&lt; int &gt; coreIds)</td></tr>
-<tr class="separator:abd401902ab2933c496a591e4423416ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70495d1e5de6e83cb2ecd66581232858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a70495d1e5de6e83cb2ecd66581232858">createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; <a class="el" href="a00073.html">SystemCore</a> &gt; &amp;resultVec)</td></tr>
-<tr class="separator:a70495d1e5de6e83cb2ecd66581232858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b50adac7b5cb12a07253e33f8114e09"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a3b50adac7b5cb12a07253e33f8114e09">executeShellCommand</a> (const std::string command)</td></tr>
-<tr class="separator:a3b50adac7b5cb12a07253e33f8114e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a879456c3b8e2853f7044d764e9c180d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>&#160;&#160;&#160;65536</td></tr>
+<tr class="separator:a879456c3b8e2853f7044d764e9c180d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="abd401902ab2933c496a591e4423416ae"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a879456c3b8e2853f7044d764e9c180d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CoreMask createCoreMaskFromCoreIds </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
-          <td class="paramname"><em>coreIds</em></td><td>)</td>
-          <td></td>
+          <td class="memname">#define MAX_PACKET_SIZE&#160;&#160;&#160;65536</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a core mask from a vector of core IDs </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coreIds</td><td>A vector of core IDs </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A core mask representing these cores </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5fa1e8a13fe4bf304823d089c42dce2f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CoreMask createCoreMaskFromCoreVector </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="a00073.html">SystemCore</a> &gt;&#160;</td>
-          <td class="paramname"><em>cores</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create a core mask from a vector of system cores </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cores</td><td>A vector of <a class="el" href="a00073.html">SystemCore</a> instances </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A core mask representing these cores </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a70495d1e5de6e83cb2ecd66581232858"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void createCoreVectorFromCoreMask </td>
-          <td>(</td>
-          <td class="paramtype">CoreMask&#160;</td>
-          <td class="paramname"><em>coreMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="a00073.html">SystemCore</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>resultVec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Covert a core mask into a vector of its appropriate system cores </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coreMask</td><td>The input core mask </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">resultVec</td><td>The vector that will contain the system cores </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a3b50adac7b5cb12a07253e33f8114e09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string executeShellCommand </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Execute a shell command and return its output </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>The command to run </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The output of the command (both stdout and stderr) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af5c7f1e2cae1d7e64ffab7471577f670"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CoreMask getCoreMaskForAllMachineCores </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create a core mask for all cores available on machine </p><dl class="section return"><dt>Returns</dt><dd>A core mask for all cores available on machine </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6253c79b461ea620034cc52398473809"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getNumOfCores </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get total number of cores on device </p><dl class="section return"><dt>Returns</dt><dd>Total number of CPU cores on device </dd></dl>
+<p>Max packet size supported </p>
 
 </div>
 </div>
@@ -278,8 +145,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00120.html">SystemUtils.h</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:06 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00120.html">RawPacket.h</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

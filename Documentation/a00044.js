@@ -1,14 +1,18 @@
 var a00044 =
 [
-    [ "MacAddress", "a00044.html#a32025c7fafe053c9e4c5cc7ec9572ca1", null ],
-    [ "MacAddress", "a00044.html#a7a1fe4f543efee0fc5be11e2982eac16", null ],
-    [ "MacAddress", "a00044.html#ac2db2e0c925202c2ca9d2de6490e7507", null ],
-    [ "MacAddress", "a00044.html#a8f90c1646ac04862a9b738ee404de4ad", null ],
-    [ "MacAddress", "a00044.html#ae3288c4111b007a73889c50566f72deb", null ],
-    [ "copyTo", "a00044.html#a9823260693c248a92c9457b25fb19cc4", null ],
-    [ "copyTo", "a00044.html#a60dac5e875c813300e5d0a9ce8b49ba0", null ],
-    [ "isValid", "a00044.html#a760327243ffc906fafd8fa93ff8d2223", null ],
-    [ "operator!=", "a00044.html#a0d257e8cb737b04262354b22470ca7fb", null ],
-    [ "operator==", "a00044.html#a91021f00a460d32cb70c05cf08be8249", null ],
-    [ "toString", "a00044.html#ab12ea635d7135ed9bff333efe336fc13", null ]
+    [ "LogLevel", "a00044.html#aa52cd7c3af16c16af7209f5769796047", [
+      [ "Normal", "a00044.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858", null ],
+      [ "Debug", "a00044.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd", null ]
+    ] ],
+    [ "enableErrors", "a00044.html#a949a764e78f7ab3e4610e130032f9cc4", null ],
+    [ "getErrorString", "a00044.html#acc1ea00b8e216aef697e0408bf449b95", null ],
+    [ "getErrorStringLength", "a00044.html#a78215dfe2058fb59a56976ef04950f54", null ],
+    [ "getLogModulesArr", "a00044.html#a3d498104bed27d40459c0c38c1c7d68b", null ],
+    [ "isDebugEnabled", "a00044.html#a7f6c407ddd90de83220b90067b513587", null ],
+    [ "isErrorStringSet", "a00044.html#a28a3be2f5201ab478baff464d8b5df6c", null ],
+    [ "isSupressErrors", "a00044.html#a0665db5b2cc061cd022e4666f540662e", null ],
+    [ "setAllModlesToLogLevel", "a00044.html#aff10ddbdb52cc2c25fb5e450000495f7", null ],
+    [ "setErrorString", "a00044.html#a8b2e3f0c471f4391d581ed021d60f7c9", null ],
+    [ "setLogLevel", "a00044.html#a81e0fa1eef639071d680bf89efae2747", null ],
+    [ "supressErrors", "a00044.html#acbb4c2c036fd4c5a9af65ad0f20f7e94", null ]
 ];

@@ -1,8 +1,10 @@
 var a00031 =
 [
-    [ "close", "a00031.html#ad9dd73f0310fb6e3924fabb4e2542ef0", null ],
-    [ "getStatistics", "a00031.html#abfddac7872baed093efc622259f51fc6", null ],
-    [ "open", "a00031.html#a94a6922dff88e4bea4b3904a60e6f0e9", null ],
-    [ "setFilter", "a00031.html#ac8167b330a4ee85ab759facd0d4989bd", null ],
-    [ "setFilter", "a00031.html#a35e872140261fa1c824ae249f888d691", null ]
+    [ "AddressType", "a00031.html#a53caf33403beb8bbc212b7659ffa8608", [
+      [ "IPv4AddressType", "a00031.html#a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81", null ],
+      [ "IPv6AddressType", "a00031.html#a53caf33403beb8bbc212b7659ffa8608a38248c599c4324ec8e45508ee6114d43", null ]
+    ] ],
+    [ "getType", "a00031.html#aa625e5e0220bd115d681347c4c5d17d4", null ],
+    [ "isValid", "a00031.html#aa07d8c6edd1ccab818b1d02b27062018", null ],
+    [ "toString", "a00031.html#a7c460135aeae3272b302b361f806e7cb", null ]
 ];

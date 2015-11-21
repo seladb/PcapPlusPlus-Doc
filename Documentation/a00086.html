@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: WinPcapLiveDevice Class Reference</title>
+<title>PcapPlusPlus: VlanLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,109 +107,69 @@ $(document).ready(function(){initNavTree('a00086.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00214.html">List of all members</a>  </div>
+<a href="a00215.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">WinPcapLiveDevice Class Reference</div>  </div>
+<div class="title">VlanLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00124_source.html">WinPcapLiveDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00124_source.html">VlanLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for WinPcapLiveDevice:</div>
+Inheritance diagram for VlanLayer:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00086.png" usemap="#WinPcapLiveDevice_map" alt=""/>
-  <map id="WinPcapLiveDevice_map" name="WinPcapLiveDevice_map">
-<area href="a00054.html" alt="PcapLiveDevice" shape="rect" coords="0,56,126,80"/>
-<area href="a00031.html" alt="IPcapDevice" shape="rect" coords="0,0,126,24"/>
+  <img src="a00086.png" usemap="#VlanLayer_map" alt=""/>
+  <map id="VlanLayer_map" name="VlanLayer_map">
+<area href="a00042.html" alt="Layer" shape="rect" coords="0,0,71,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad85b0bda8aa32772c3c0b4ddd6a36ea2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2">getDeviceType</a> ()</td></tr>
-<tr class="separator:ad85b0bda8aa32772c3c0b4ddd6a36ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a5805972630d6071b07bc0f1d1de27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a83a5805972630d6071b07bc0f1d1de27">startCapture</a> (<a class="el" href="a00109.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="a00109.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUsrrCookie)</td></tr>
-<tr class="separator:a83a5805972630d6071b07bc0f1d1de27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c8c56ec5b16cdd8c423274d8b4f07d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ad8c8c56ec5b16cdd8c423274d8b4f07d">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="a00109.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
-<tr class="separator:ad8c8c56ec5b16cdd8c423274d8b4f07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79611cae573a93b09ee980c1af8f978a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a79611cae573a93b09ee980c1af8f978a">startCapture</a> (<a class="el" href="a00106.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
-<tr class="separator:a79611cae573a93b09ee980c1af8f978a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1576486b7de3dd8dd9eca51d9bd05dc"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ad1576486b7de3dd8dd9eca51d9bd05dc">sendPackets</a> (<a class="el" href="a00071.html">RawPacket</a> *rawPacketsArr, int arrLength)</td></tr>
-<tr class="separator:ad1576486b7de3dd8dd9eca51d9bd05dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa83fab2e5462bf6952389623ba69e0ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa83fab2e5462bf6952389623ba69e0ae">setMinAmountOfDataToCopyFromKernelToApplication</a> (int size)</td></tr>
-<tr class="separator:aa83fab2e5462bf6952389623ba69e0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a624f8ebd9bba9bf1123c594f55ed0094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a624f8ebd9bba9bf1123c594f55ed0094">getMinAmountOfDataToCopyFromKernelToApplication</a> ()</td></tr>
-<tr class="separator:a624f8ebd9bba9bf1123c594f55ed0094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00054"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00054')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00054.html">PcapLiveDevice</a></td></tr>
-<tr class="memitem:ad48b57cb49c1384ce3730d8e295e66fd inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ad48b57cb49c1384ce3730d8e295e66fd">~PcapLiveDevice</a> ()</td></tr>
-<tr class="separator:ad48b57cb49c1384ce3730d8e295e66fd inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59e7cc84db0987f73976573bda8e357 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#af59e7cc84db0987f73976573bda8e357">getName</a> ()</td></tr>
-<tr class="separator:af59e7cc84db0987f73976573bda8e357 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300ad41766f9887818b6f6cef904e366 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a300ad41766f9887818b6f6cef904e366">getDesc</a> ()</td></tr>
-<tr class="separator:a300ad41766f9887818b6f6cef904e366 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb5c7d6250a879306c7f34fa6bdb84a inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6eb5c7d6250a879306c7f34fa6bdb84a">getLoopback</a> ()</td></tr>
-<tr class="separator:a6eb5c7d6250a879306c7f34fa6bdb84a inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50084c4f2f34c5eea2efa7ab1b2cd05 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ac50084c4f2f34c5eea2efa7ab1b2cd05">getMtu</a> ()</td></tr>
-<tr class="separator:ac50084c4f2f34c5eea2efa7ab1b2cd05 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68bd1951eab670a35f336773830c1f94 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">vector&lt; pcap_addr_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a68bd1951eab670a35f336773830c1f94">getAddresses</a> ()</td></tr>
-<tr class="separator:a68bd1951eab670a35f336773830c1f94 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62357fad523dfcc32b498371996f0a6 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00044.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ad62357fad523dfcc32b498371996f0a6">getMacAddress</a> ()</td></tr>
-<tr class="separator:ad62357fad523dfcc32b498371996f0a6 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b987a553170405fe71c0aa13932520 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00035.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ab6b987a553170405fe71c0aa13932520">getIPv4Address</a> ()</td></tr>
-<tr class="separator:ab6b987a553170405fe71c0aa13932520 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8cf27a7df25f12ba852c1cf89c7e971 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture</a> (<a class="el" href="a00109.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
-<tr class="separator:ad8cf27a7df25f12ba852c1cf89c7e971 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbd3f5a02456907a5b2f81dd9741a0c inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture</a> ()</td></tr>
-<tr class="separator:afdbd3f5a02456907a5b2f81dd9741a0c inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7b2d2c0a17950f59a364cc73edf79c inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6e7b2d2c0a17950f59a364cc73edf79c">sendPacket</a> (<a class="el" href="a00071.html">RawPacket</a> const &amp;rawPacket)</td></tr>
-<tr class="separator:a6e7b2d2c0a17950f59a364cc73edf79c inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99002c769a0f48e5a2875bba64f40db3 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a99002c769a0f48e5a2875bba64f40db3">sendPacket</a> (const uint8_t *packetData, int packetDataLength)</td></tr>
-<tr class="separator:a99002c769a0f48e5a2875bba64f40db3 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a9fddf2bcf5f4c01c033fbf93d0453 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aa4a9fddf2bcf5f4c01c033fbf93d0453">sendPacket</a> (<a class="el" href="a00050.html">Packet</a> *packet)</td></tr>
-<tr class="separator:aa4a9fddf2bcf5f4c01c033fbf93d0453 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a23fcf16c66d8489b7d70502900b1ce inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a4a23fcf16c66d8489b7d70502900b1ce">sendPackets</a> (<a class="el" href="a00050.html">Packet</a> **packetsArr, int arrLength)</td></tr>
-<tr class="separator:a4a23fcf16c66d8489b7d70502900b1ce inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17ea98417fc70ac84c0c47e95e7eb16c inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a17ea98417fc70ac84c0c47e95e7eb16c">sendPackets</a> (const <a class="el" href="a00106.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;rawPackets)</td></tr>
-<tr class="separator:a17ea98417fc70ac84c0c47e95e7eb16c inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f7d0dcd5b00758e64e8af68d6d1e50 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open</a> ()</td></tr>
-<tr class="separator:a95f7d0dcd5b00758e64e8af68d6d1e50 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee9fd9baee69b80f9b2d4327340f103 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a4ee9fd9baee69b80f9b2d4327340f103">close</a> ()</td></tr>
-<tr class="separator:a4ee9fd9baee69b80f9b2d4327340f103 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dac2e4560b2fcc31db2dd71aebaf03 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a89dac2e4560b2fcc31db2dd71aebaf03">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
-<tr class="separator:a89dac2e4560b2fcc31db2dd71aebaf03 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4c37258548c736033818de003f4c90 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6d4c37258548c736033818de003f4c90">open</a> (<a class="el" href="a00054.html#a185b64fcba0e667fcc7457b2ab4a4e21">DeviceMode</a> mode)</td></tr>
-<tr class="separator:a6d4c37258548c736033818de003f4c90 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00031"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00031')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00031.html">IPcapDevice</a></td></tr>
-<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00017.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd inherit pub_methods_a00031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a35e872140261fa1c824ae249f888d691">setFilter</a> (string filterAsString)</td></tr>
-<tr class="separator:a35e872140261fa1c824ae249f888d691 inherit pub_methods_a00031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a14c03ad4d351adefa4cd36ef4211ef70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14c03ad4d351adefa4cd36ef4211ef70"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>PcapLiveDeviceList</b></td></tr>
-<tr class="separator:a14c03ad4d351adefa4cd36ef4211ef70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_a00054"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a00054')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="a00054.html">PcapLiveDevice</a></td></tr>
-<tr class="memitem:a201c04fe21184602ce48fb799b9bd7d7 inherit pub_types_a00054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a> { <a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7a63f2e3a3e267195f84cff2adb2493a6c">LibPcapDevice</a>, 
-<a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7aa09f95e4cf5b79cce8a5551e760ca204">WinPcapDevice</a>, 
-<a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2">RemoteDevice</a>
- }</td></tr>
-<tr class="separator:a201c04fe21184602ce48fb799b9bd7d7 inherit pub_types_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185b64fcba0e667fcc7457b2ab4a4e21 inherit pub_types_a00054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a185b64fcba0e667fcc7457b2ab4a4e21">DeviceMode</a> { <a class="el" href="a00054.html#a185b64fcba0e667fcc7457b2ab4a4e21ae39fe37c3af407e1a766c43dc717e8f8">Normal</a> = 0, 
-<a class="el" href="a00054.html#a185b64fcba0e667fcc7457b2ab4a4e21a18306f1bc588dcecfd3c8455f779c5ec">Promiscuous</a> = 1
- }</td></tr>
-<tr class="separator:a185b64fcba0e667fcc7457b2ab4a4e21 inherit pub_types_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00042.html">Layer</a> *prevLayer, <a class="el" href="a00051.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4994a70468a65f5e2503079ee875f151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a4994a70468a65f5e2503079ee875f151">VlanLayer</a> (const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)</td></tr>
+<tr class="separator:a4994a70468a65f5e2503079ee875f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1680bbebefc9c46ed461004273f4423d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00084.html">vlan_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a> ()</td></tr>
+<tr class="separator:a1680bbebefc9c46ed461004273f4423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a66c949b1b89d643d494ec5d8b59d1fba">getVlanID</a> ()</td></tr>
+<tr class="separator:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c992425b4519ca14408b848fde17b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ae4c992425b4519ca14408b848fde17b0">setVlanID</a> (uint16_t id)</td></tr>
+<tr class="separator:ae4c992425b4519ca14408b848fde17b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a88c9124f80253715489aeba93562fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a0a88c9124f80253715489aeba93562fc">parseNextLayer</a> ()</td></tr>
+<tr class="separator:a0a88c9124f80253715489aeba93562fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ab0c394d2a70fb8ef7a2940119485dd5a">getHeaderLen</a> ()</td></tr>
+<tr class="separator:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa9a69fc00dd5d19e88b6155a607a7d0f">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8393e296a26534cf671a2d63526354"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a3d8393e296a26534cf671a2d63526354">toString</a> ()</td></tr>
+<tr class="separator:a3d8393e296a26534cf671a2d63526354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00042"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00042')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00042.html">Layer</a></td></tr>
+<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
+<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
+<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
+<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
+<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
+<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
+<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that wraps a Windows network interface (each of the interfaces listed in ipconfig). This class is almost similar in its capabilities to <a class="el" href="a00054.html">PcapLiveDevice</a> (its parent class) with some small changes that mainly result from differences between libpcap and WinPcap. Please see the reference for <a class="el" href="a00054.html">PcapLiveDevice</a> for more details </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad85b0bda8aa32772c3c0b4ddd6a36ea2"></a>
+<div class="textblock"><p>Represents a VLAN tunnel layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a22ee2b78d0f211686e2f2d6c739c3ce7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -217,7 +177,110 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00054.html#a201c04fe21184602ce48fb799b9bd7d7">LiveDeviceType</a> WinPcapLiveDevice::getDeviceType </td>
+          <td class="memname">VlanLayer::VlanLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00042.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00051.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00051.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4994a70468a65f5e2503079ee875f151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VlanLayer::VlanLayer </td>
+          <td>(</td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>vlanID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cfi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>etherType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new VLAN header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanID</td><td>VLAN ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfi</td><td>CFI value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>Priority value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>Protocol EtherType of the next layer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa9a69fc00dd5d19e88b6155a607a7d0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VlanLayer::computeCalculateFields </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -229,13 +292,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The type of the device (libPcap, WinPcap or a remote device) </dd></dl>
+<p>Does nothing for this layer </p>
 
-<p>Reimplemented from <a class="el" href="a00054.html#aaee16d25dcc202dab11a0fe2d162da9d">PcapLiveDevice</a>.</p>
+<p>Implements <a class="el" href="a00042.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a624f8ebd9bba9bf1123c594f55ed0094"></a>
+<a class="anchor" id="ab0c394d2a70fb8ef7a2940119485dd5a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -243,7 +306,33 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int WinPcapLiveDevice::getMinAmountOfDataToCopyFromKernelToApplication </td>
+          <td class="memname">size_t VlanLayer::getHeaderLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00084.html">vlan_header</a> </dd></dl>
+
+<p>Implements <a class="el" href="a00042.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1680bbebefc9c46ed461004273f4423d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00084.html">vlan_header</a>* VlanLayer::getVlanHeader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -255,11 +344,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The current amount of data in the kernel buffer that causes a read from the application to return (see also <a class="el" href="a00086.html#aa83fab2e5462bf6952389623ba69e0ae">setMinAmountOfDataToCopyFromKernelToApplication()</a>) </dd></dl>
+<p>Get a pointer to the VLAN header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00084.html">vlan_header</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad1576486b7de3dd8dd9eca51d9bd05dc"></a>
+<a class="anchor" id="a66c949b1b89d643d494ec5d8b59d1fba"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -267,21 +356,35 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int WinPcapLiveDevice::sendPackets </td>
+          <td class="memname">uint16_t VlanLayer::getVlanID </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00071.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacketsArr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arrLength</em>&#160;</td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the VLAN ID value. This method differs from <a class="el" href="a00084.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00084.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods extracts only the 12 bit relevant for the VLAN ID </p><dl class="section return"><dt>Returns</dt><dd>VLAN ID value </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00127.html#_todo000012">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a88c9124f80253715489aeba93562fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
+          <td class="memname">void VlanLayer::parseNextLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -290,49 +393,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Send an array of <a class="el" href="a00071.html">RawPacket</a> objects to the network </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacketsArr</td><td>The array of <a class="el" href="a00071.html">RawPacket</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td>The length of the array </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
-<li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
-<li><a class="el" href="a00050.html">Packet</a> length is 0</li>
-<li><a class="el" href="a00050.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="a00050.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
-</ul>
-</dd></dl>
+<p>Currently identifies the following next layers: <a class="el" href="a00038.html">IPv4Layer</a>, <a class="el" href="a00041.html">IPv6Layer</a>, <a class="el" href="a00005.html">ArpLayer</a>, <a class="el" href="a00086.html">VlanLayer</a>, <a class="el" href="a00048.html">MplsLayer</a>. Otherwise sets <a class="el" href="a00052.html">PayloadLayer</a> </p>
 
-<p>Reimplemented from <a class="el" href="a00054.html#adc03317266883c255e58b7ee2ddadade">PcapLiveDevice</a>.</p>
+<p>Implements <a class="el" href="a00042.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa83fab2e5462bf6952389623ba69e0ae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool WinPcapLiveDevice::setMinAmountOfDataToCopyFromKernelToApplication </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>WinPcap has an ability (that doesn't exist in libpcap) to change the minimum amount of data in the kernel buffer that causes a read from the application to return (unless the timeout expires). Please see documentation for pcap_setmintocopy for more info. This method enables the user to change this size. Note the device must be open for this method to work </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size to set in bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if set succeeded, false if the device is closed or if pcap_setmintocopy failed </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a83a5805972630d6071b07bc0f1d1de27"></a>
+<a class="anchor" id="ae4c992425b4519ca14408b848fde17b0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -340,39 +407,41 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool WinPcapLiveDevice::startCapture </td>
+          <td class="memname">void VlanLayer::setVlanID </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00109.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>&#160;</td>
-          <td class="paramname"><em>onPacketArrives</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onPacketArrivesUserCookie</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set VLAN ID. This method differs from setting <a class="el" href="a00084.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00084.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods sets only the 12 bit relevant for the VLAN ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The VLAN ID to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a00127.html#_todo000013">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d8393e296a26534cf671a2d63526354"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">std::string VlanLayer::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00109.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>&#160;</td>
-          <td class="paramname"><em>onStatsUpdate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -381,119 +450,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start capturing packets on this network interface (device) with periodic stats collection. Each time a packet is captured the onPacketArrives callback is called. In addition, each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called. Both the capture and periodic stats collection are done on new threads created by this method, each on a different thread, meaning all callback calls are done in threads other than the caller thread. Capture process and stats collection will stop and threads will be terminated when calling <a class="el" href="a00054.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00054.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrives</td><td>A callback that is called each time a packet is captured </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrivesUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onPacketArrives callback each time it is called. This cookie is very useful for transferring objects that give context to the capture callback, for example: objects that counts packets, manages flow state or manages the application state according to the packet that was captured </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Capture thread could not be created</li>
-<li>Stats collection thread could not be created </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
 
-<p>Reimplemented from <a class="el" href="a00054.html#a0d14b58bf781afc8f357bf25b83f0091">PcapLiveDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad8c8c56ec5b16cdd8c423274d8b4f07d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool WinPcapLiveDevice::startCapture </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00109.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>&#160;</td>
-          <td class="paramname"><em>onStatsUpdate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start capturing packets on this network interface (device) with periodic stats collection only. This means that packets arriving to the network interface aren't delivered to the user but only counted. Each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called with the updated counters. The periodic stats collection is done on a new thread created by this method, meaning all callback calls are done in threads other than the caller thread. Stats collection will stop and threads will be terminated when calling <a class="el" href="a00054.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00054.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Stats collection thread could not be created </li>
-</ul>
-</dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00054.html#a7d197b5d2162e7d5163d50761b273023">PcapLiveDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a79611cae573a93b09ee980c1af8f978a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool WinPcapLiveDevice::startCapture </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00106.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>capturedPacketsVector</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start capturing packets on this network interface (device). All captured packets are added to capturedPacketsVector, so at the end of the capture (when calling <a class="el" href="a00054.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>) this vector contains pointers to all captured packets in the form of <a class="el" href="a00071.html">RawPacket</a>. The capture is done on a new thread created by this method, meaning capturedPacketsVector is updated from another thread other than the caller thread (so user should avoid changing or iterating this vector while capture is on). Capture process will stop and this capture thread will be terminated when calling <a class="el" href="a00054.html#afdbd3f5a02456907a5b2f81dd9741a0c">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="a00054.html#a95f7d0dcd5b00758e64e8af68d6d1e50">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">capturedPacketsVector</td><td>A reference to a RawPacketVector, meaning a vector of pointer to <a class="el" href="a00071.html">RawPacket</a> objects </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Capture thread could not be created </li>
-</ul>
-</dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00054.html#ae4f4ae4316236d5ad016f20c0e319ec2">PcapLiveDevice</a>.</p>
+<p>Implements <a class="el" href="a00042.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
 
 </div>
 </div>
@@ -502,8 +461,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00086.html">WinPcapLiveDevice</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00086.html">VlanLayer</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

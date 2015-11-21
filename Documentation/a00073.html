@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SystemCore Struct Reference</title>
+<title>PcapPlusPlus: ScalarBuffer Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,80 +106,48 @@ $(document).ready(function(){initNavTree('a00073.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00201.html">List of all members</a>  </div>
+<a href="a00202.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SystemCore Struct Reference</div>  </div>
+<div class="title">ScalarBuffer Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00120_source.html">SystemUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00096_source.html">IpUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7065c1aa702fdb428f51b47a2f27527d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a7065c1aa702fdb428f51b47a2f27527d">operator==</a> (const <a class="el" href="a00073.html">SystemCore</a> &amp;other) const </td></tr>
-<tr class="separator:a7065c1aa702fdb428f51b47a2f27527d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#aec2a69cbcd7b7c034c44b731b5882fb4">Mask</a></td></tr>
-<tr class="separator:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a672c4cde277bcdeae49c1519415db6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a1a672c4cde277bcdeae49c1519415db6">Id</a></td></tr>
-<tr class="separator:a1a672c4cde277bcdeae49c1519415db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b62dc703c8ca44c28a24b80ba7c23e"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ab9b62dc703c8ca44c28a24b80ba7c23e">buffer</a></td></tr>
+<tr class="separator:ab9b62dc703c8ca44c28a24b80ba7c23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378572e46319cfe0acbdb221937861ba"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a378572e46319cfe0acbdb221937861ba">len</a></td></tr>
+<tr class="separator:a378572e46319cfe0acbdb221937861ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents data of 1 CPU core. Current implementation supports up to 32 cores </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7065c1aa702fdb428f51b47a2f27527d"></a>
+<div class="textblock"><p>A struct that represent a single buffer </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab9b62dc703c8ca44c28a24b80ba7c23e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool SystemCore::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00073.html">SystemCore</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
+          <td class="memname">uint16_t* ScalarBuffer::buffer</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload of the comparison operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are equal. False otherwise </dd></dl>
+<p>The pointer to the buffer </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1a672c4cde277bcdeae49c1519415db6"></a>
+<a class="anchor" id="a378572e46319cfe0acbdb221937861ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t SystemCore::Id</td>
+          <td class="memname">size_t ScalarBuffer::len</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Core ID - a value between 0 and 31 </p>
-
-</div>
-</div>
-<a class="anchor" id="aec2a69cbcd7b7c034c44b731b5882fb4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SystemCore::Mask</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Core position in a 32-bit mask. For each core this attribute holds a 4B integer where only 1 bit is set, according to the core ID. For example: in core #0 the right-most bit will be set (meaning the number 0x01); in core #5 the 5th right-most bit will be set (meaning the number 0x20)... </p>
+<p>Buffer length </p>
 
 </div>
 </div>
@@ -188,8 +156,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00073.html">SystemCore</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00073.html">ScalarBuffer</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: HttpField Class Reference</title>
+<title>PcapPlusPlus: GeneralFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,114 +107,69 @@ $(document).ready(function(){initNavTree('a00018.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00147.html">List of all members</a>  </div>
+<a href="a00148.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HttpField Class Reference</div>  </div>
+<div class="title">GeneralFilter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00093_source.html">HttpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00109_source.html">PcapFilter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for GeneralFilter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00018.png" usemap="#GeneralFilter_map" alt=""/>
+  <map id="GeneralFilter_map" name="GeneralFilter_map">
+<area href="a00001.html" alt="AndFilter" shape="rect" coords="129,56,248,80"/>
+<area href="a00003.html" alt="ArpFilter" shape="rect" coords="129,112,248,136"/>
+<area href="a00016.html" alt="EtherTypeFilter" shape="rect" coords="129,168,248,192"/>
+<area href="a00028.html" alt="IFilterWithDirection" shape="rect" coords="129,224,248,248"/>
+<area href="a00029.html" alt="IFilterWithOperator" shape="rect" coords="129,280,248,304"/>
+<area href="a00049.html" alt="NotFilter" shape="rect" coords="129,336,248,360"/>
+<area href="a00050.html" alt="OrFilter" shape="rect" coords="129,392,248,416"/>
+<area href="a00071.html" alt="ProtoFilter" shape="rect" coords="129,448,248,472"/>
+<area href="a00076.html" alt="TcpFlagsFilter" shape="rect" coords="129,504,248,528"/>
+<area href="a00085.html" alt="VlanFilter" shape="rect" coords="129,560,248,584"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a254bc5ababe8fff328ce5b6af9ba4a05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a254bc5ababe8fff328ce5b6af9ba4a05">HttpField</a> (std::string name, std::string value)</td></tr>
-<tr class="separator:a254bc5ababe8fff328ce5b6af9ba4a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28e18af5a261131bc104d5aefbbb2ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a28e18af5a261131bc104d5aefbbb2ca8">HttpField</a> (const <a class="el" href="a00018.html">HttpField</a> &amp;other)</td></tr>
-<tr class="separator:a28e18af5a261131bc104d5aefbbb2ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb45e26225a9fae173e912dc1dd6601c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#adb45e26225a9fae173e912dc1dd6601c">getFieldSize</a> ()</td></tr>
-<tr class="separator:adb45e26225a9fae173e912dc1dd6601c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd25b5fc92eea6ac540ea9f8b2ee2a4b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#acd25b5fc92eea6ac540ea9f8b2ee2a4b">getFieldName</a> () const </td></tr>
-<tr class="separator:acd25b5fc92eea6ac540ea9f8b2ee2a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5084c15dc10a2015015802be9a276601"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a5084c15dc10a2015015802be9a276601">getFieldValue</a> () const </td></tr>
-<tr class="separator:a5084c15dc10a2015015802be9a276601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53197b39fd5a5003261dac2400588451"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a53197b39fd5a5003261dac2400588451">setFieldValue</a> (std::string newValue)</td></tr>
-<tr class="separator:a53197b39fd5a5003261dac2400588451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af479c6998cd5929b50e8e2b1a9b3dc0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#af479c6998cd5929b50e8e2b1a9b3dc0b">isEndOfHeader</a> ()</td></tr>
-<tr class="separator:af479c6998cd5929b50e8e2b1a9b3dc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa96189b2404a4d80006a66d52aa56298"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa96189b2404a4d80006a66d52aa56298"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMessage</b></td></tr>
-<tr class="separator:aa96189b2404a4d80006a66d52aa56298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06daa42299619bacf929a1249a6594dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a06daa42299619bacf929a1249a6594dc">parseToString</a> (std::string &amp;result)=0</td></tr>
+<tr class="separator:a06daa42299619bacf929a1249a6594dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for each HTTP header field, e.g "Host", "Cookie", "Content-Length", etc. Each field contains a name (e.g "Host") and a value (e.g "www.wikipedia.org"). The user can get and set both of them through dedicated methods. The separator between HTTP header fields is either CRLF ("\r\n\") or LF ("\n") in more rare cases, which means every <a class="el" href="a00018.html">HttpField</a> instance is responsible for wrapping and parsing a HTTP header field from the previous CRLF (not inclusive) until the next CRLF/LF (inclusive) A special case is with the end of an HTTP header, meaning 2 consecutive CRLFs ("\r\n\r\n") or consecutive LFs ("\n\n"). PcapPlusPlus treats the first CRLF/LF as part of the last field in the header, and the second CRLF is an <a class="el" href="a00018.html">HttpField</a> instance of its own which name and values are an empty string ("") or <a class="el" href="a00093.html#a57301f5681dddf163b56dad67240ba88">END_OF_HTTP_HEADER</a> </p>
+<div class="textblock"><p>The base class for all filter classes. This class is virtual and abstract, hence cannot be instantiated.<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00109.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a254bc5ababe8fff328ce5b6af9ba4a05"></a>
+<a class="anchor" id="ae8d63f148f20cfcfe9878bbb4391966c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HttpField::HttpField </td>
+          <td class="memname">virtual GeneralFilter::~GeneralFilter </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor for creating a new <a class="el" href="a00018.html">HttpField</a>, not from an existing packet. This constructor can be used to create HTTP fields for a new HTTP message or to add new HTTP fields to a current message. The constructor that is used for parsing an existing packet is private and used by <a class="el" href="a00019.html">HttpMessage</a> in the process of parsing the HTTP header </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The field name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The field value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a28e18af5a261131bc104d5aefbbb2ca8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HttpField::HttpField </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00018.html">HttpField</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>A copy constructor that creates a new instance out of an existing <a class="el" href="a00018.html">HttpField</a> instance. The copied instance will not have shared resources with the original instance, meaning all members and properties are copied </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The original instance to copy from </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Virtual destructor, does nothing for this class </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acd25b5fc92eea6ac540ea9f8b2ee2a4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string HttpField::getFieldName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The field name as string. Notice the return data is copied data, so changing it won't change the packet data </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="adb45e26225a9fae173e912dc1dd6601c"></a>
+<a class="anchor" id="a06daa42299619bacf929a1249a6594dc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,81 +177,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMessage</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t HttpField::getFieldSize </td>
+          <td class="memname">virtual void GeneralFilter::parseToString </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The field length in bytes, meaning count of all characters from the previous CRLF (not inclusive) until the next CRLF (inclusive) For example: the field "Host: www.wikipedia.org\r\n" will have the length of 25 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5084c15dc10a2015015802be9a276601"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string HttpField::getFieldValue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The field value as string. Notice the return data is copied data, so changing it won't change the packet data </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af479c6998cd5929b50e8e2b1a9b3dc0b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool HttpField::isEndOfHeader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get an indication whether the field is a field that ends the header (meaning contain only CRLF - see class explanation) </p><dl class="section return"><dt>Returns</dt><dd>True if this is a end-of-header field, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a53197b39fd5a5003261dac2400588451"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool HttpField::setFieldValue </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>newValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A setter for field value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newValue</td><td>The new value to set to the field. Old value will be deleted </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implemented in <a class="el" href="a00083.html#a7b68c862f7e1695c29a3d185fc04bf5e">UdpLengthFilter</a>, <a class="el" href="a00080.html#a7d92c9daba6ce4377d0a205cbfd501b5">TcpWindowSizeFilter</a>, <a class="el" href="a00076.html#abf7c9eee2b595df0e1ad0c1b12cfde76">TcpFlagsFilter</a>, <a class="el" href="a00085.html#a82ce71c7bafe21a02c8707aa0f8155e7">VlanFilter</a>, <a class="el" href="a00003.html#a5ebb1b5d6ec9f265e81a82c98c841a16">ArpFilter</a>, <a class="el" href="a00071.html#a51afb3f62f52f56ea1264552a41dcd7d">ProtoFilter</a>, <a class="el" href="a00049.html#a010030e43ac96922c9b0236c1d37c0da">NotFilter</a>, <a class="el" href="a00050.html#ab2ef7c72c011b1ff039bfbefa8258c91">OrFilter</a>, <a class="el" href="a00001.html#a78c680adec70e3e36708380e03a2f8b1">AndFilter</a>, <a class="el" href="a00016.html#afdbcc63602085a4ad80c66f289f6a7b1">EtherTypeFilter</a>, <a class="el" href="a00046.html#a01de5ecf70fda666bf11be1b874694e0">MacAddressFilter</a>, <a class="el" href="a00065.html#a5fface08b3e7b88be70f1c8408c0caf4">PortRangeFilter</a>, <a class="el" href="a00064.html#a83e2d62861cb906943ac12895485d6c2">PortFilter</a>, <a class="el" href="a00039.html#a7bd0ed5598fda15cdfa82c79343d7e8c">IpV4TotalLengthFilter</a>, <a class="el" href="a00037.html#a776f9707159fb12c953746ac872b665a">IpV4IDFilter</a>, and <a class="el" href="a00034.html#a7aa182a720b67924c3d5326131c3454d">IPFilter</a>.</p>
 
 </div>
 </div>
@@ -305,8 +206,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMessage</b></td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00018.html">HttpField</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00018.html">GeneralFilter</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

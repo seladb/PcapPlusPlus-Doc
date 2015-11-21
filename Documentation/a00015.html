@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: EtherTypeFilter Class Reference</title>
+<title>PcapPlusPlus: ether_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,130 +106,63 @@ $(document).ready(function(){initNavTree('a00015.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00144.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00145.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">EtherTypeFilter Class Reference</div>  </div>
+<div class="title">ether_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00108_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for EtherTypeFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00015.png" usemap="#EtherTypeFilter_map" alt=""/>
-  <map id="EtherTypeFilter_map" name="EtherTypeFilter_map">
-<area href="a00017.html" alt="GeneralFilter" shape="rect" coords="0,0,99,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00093_source.html">EthLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a41d75299d4d6578c48d6a066dcf09d55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a41d75299d4d6578c48d6a066dcf09d55">EtherTypeFilter</a> (uint16_t etherType)</td></tr>
-<tr class="separator:a41d75299d4d6578c48d6a066dcf09d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3579547291f13b66a9dd5993ec3ba33f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a3579547291f13b66a9dd5993ec3ba33f">parseToString</a> (string &amp;result)</td></tr>
-<tr class="separator:a3579547291f13b66a9dd5993ec3ba33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66eb4218c64566ae93ac5acbb297ba3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a66eb4218c64566ae93ac5acbb297ba3b">setEtherType</a> (uint16_t etherType)</td></tr>
-<tr class="separator:a66eb4218c64566ae93ac5acbb297ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00017"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00017')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00017.html">GeneralFilter</a></td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6c28900ad0b09ce7585dae662ed1829f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6c28900ad0b09ce7585dae662ed1829f">dstMac</a> [6]</td></tr>
+<tr class="separator:a6c28900ad0b09ce7585dae662ed1829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476baf8b22a014f9af6d15f10113b565"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a476baf8b22a014f9af6d15f10113b565">srcMac</a> [6]</td></tr>
+<tr class="separator:a476baf8b22a014f9af6d15f10113b565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac116a63a9555eb93785b43c95a7099ff"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac116a63a9555eb93785b43c95a7099ff">etherType</a></td></tr>
+<tr class="separator:ac116a63a9555eb93785b43c95a7099ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering by EtherType field of the Ethernet protocol. This enables to filter packets from certain protocols, such as ARP, IPv4, IPv6, VLAN tags, etc.<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00108.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a41d75299d4d6578c48d6a066dcf09d55"></a>
+<div class="textblock"><p>Represents an Ethernet header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6c28900ad0b09ce7585dae662ed1829f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">EtherTypeFilter::EtherTypeFilter </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>etherType</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ether_header::dstMac[6]</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor that gets the EtherType and creates the filter with it </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>The EtherType value to create the filter with </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Destination MAC </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3579547291f13b66a9dd5993ec3ba33f"></a>
+<a class="anchor" id="ac116a63a9555eb93785b43c95a7099ff"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void EtherTypeFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t ether_header::etherType</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00017.html#a093d16ae026af66882af50567a75f196">GeneralFilter</a>.</p>
+<p>EtherType </p>
 
 </div>
 </div>
-<a class="anchor" id="a66eb4218c64566ae93ac5acbb297ba3b"></a>
+<a class="anchor" id="a476baf8b22a014f9af6d15f10113b565"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void EtherTypeFilter::setEtherType </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>etherType</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ether_header::srcMac[6]</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Set the EtherType value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>The EtherType value to create the filter with </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Source MAC </p>
 
 </div>
 </div>
@@ -238,8 +171,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00015.html">EtherTypeFilter</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00015.html">ether_header</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

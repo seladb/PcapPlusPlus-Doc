@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: EthLayer.h File Reference</title>
+<title>PcapPlusPlus: DpdkDeviceList.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,245 +104,34 @@ $(document).ready(function(){initNavTree('a00092.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">EthLayer.h File Reference</div>  </div>
+<div class="title">DpdkDeviceList.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00098_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00100_source.html">MacAddress.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="a00121_source.html">SystemUtils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00091_source.html">DpdkDevice.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00100_source.html">Logger.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="a00092_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html">ether_header</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html">DpdkWorkerThread</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">EthLayer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html">DpdkDeviceList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a17471f2d0d180ef15ed20835686f42bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a17471f2d0d180ef15ed20835686f42bc">ETHERTYPE_PUP</a>&#160;&#160;&#160;0x0200</td></tr>
-<tr class="separator:a17471f2d0d180ef15ed20835686f42bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf064ed783e9a594ee6cd4679085d375"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aaf064ed783e9a594ee6cd4679085d375">ETHERTYPE_SPRITE</a>&#160;&#160;&#160;0x0500</td></tr>
-<tr class="separator:aaf064ed783e9a594ee6cd4679085d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2021b6951d9782a2ba9cb243abdea93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ae2021b6951d9782a2ba9cb243abdea93">ETHERTYPE_IP</a>&#160;&#160;&#160;0x0800</td></tr>
-<tr class="separator:ae2021b6951d9782a2ba9cb243abdea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58349316842ce4bdc5ff10568ec5dc31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a58349316842ce4bdc5ff10568ec5dc31">ETHERTYPE_ARP</a>&#160;&#160;&#160;0x0806</td></tr>
-<tr class="separator:a58349316842ce4bdc5ff10568ec5dc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d8bc382d37844a65bae2006a05046f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a1d8bc382d37844a65bae2006a05046f3">ETHERTYPE_REVARP</a>&#160;&#160;&#160;0x8035</td></tr>
-<tr class="separator:a1d8bc382d37844a65bae2006a05046f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5363e5c55bf76c08ec5ae9dcf9556e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a5363e5c55bf76c08ec5ae9dcf9556e7b">ETHERTYPE_AT</a>&#160;&#160;&#160;0x809B</td></tr>
-<tr class="separator:a5363e5c55bf76c08ec5ae9dcf9556e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2692ff7ce9c6412385d9465d0d6d152"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aa2692ff7ce9c6412385d9465d0d6d152">ETHERTYPE_AARP</a>&#160;&#160;&#160;0x80F3</td></tr>
-<tr class="separator:aa2692ff7ce9c6412385d9465d0d6d152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eee73f1048c0756b951674570977ff9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a0eee73f1048c0756b951674570977ff9">ETHERTYPE_VLAN</a>&#160;&#160;&#160;0x8100</td></tr>
-<tr class="separator:a0eee73f1048c0756b951674570977ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7f031a1b6e69f9b5e74c2b26edd2e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#acd7f031a1b6e69f9b5e74c2b26edd2e8">ETHERTYPE_IPX</a>&#160;&#160;&#160;0x8137</td></tr>
-<tr class="separator:acd7f031a1b6e69f9b5e74c2b26edd2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25537090a27d590178d14ab1b63b66b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ac25537090a27d590178d14ab1b63b66b">ETHERTYPE_IPV6</a>&#160;&#160;&#160;0x86dd</td></tr>
-<tr class="separator:ac25537090a27d590178d14ab1b63b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9656435139954003bf149ed68fcc4ca3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a9656435139954003bf149ed68fcc4ca3">ETHERTYPE_LOOPBACK</a>&#160;&#160;&#160;0x9000</td></tr>
-<tr class="separator:a9656435139954003bf149ed68fcc4ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3220ecead6256e7906514961a2518d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a3220ecead6256e7906514961a2518d04">ETHERTYPE_PPPOED</a>&#160;&#160;&#160;0x8863</td></tr>
-<tr class="separator:a3220ecead6256e7906514961a2518d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad775890d6c0530483264ee309fada197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ad775890d6c0530483264ee309fada197">ETHERTYPE_PPPOES</a>&#160;&#160;&#160;0x8864</td></tr>
-<tr class="separator:ad775890d6c0530483264ee309fada197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a366bec338345160bb4022acfe49b342b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a366bec338345160bb4022acfe49b342b">ETHERTYPE_MPLS</a>&#160;&#160;&#160;0x8847</td></tr>
-<tr class="separator:a366bec338345160bb4022acfe49b342b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aa2692ff7ce9c6412385d9465d0d6d152"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_AARP&#160;&#160;&#160;0x80F3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AppleTalk ARP </p>
-
-</div>
-</div>
-<a class="anchor" id="a58349316842ce4bdc5ff10568ec5dc31"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_ARP&#160;&#160;&#160;0x0806</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Address resolution </p>
-
-</div>
-</div>
-<a class="anchor" id="a5363e5c55bf76c08ec5ae9dcf9556e7b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_AT&#160;&#160;&#160;0x809B</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AppleTalk protocol </p>
-
-</div>
-</div>
-<a class="anchor" id="ae2021b6951d9782a2ba9cb243abdea93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_IP&#160;&#160;&#160;0x0800</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP </p>
-
-</div>
-</div>
-<a class="anchor" id="ac25537090a27d590178d14ab1b63b66b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_IPV6&#160;&#160;&#160;0x86dd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP protocol version 6 </p>
-
-</div>
-</div>
-<a class="anchor" id="acd7f031a1b6e69f9b5e74c2b26edd2e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_IPX&#160;&#160;&#160;0x8137</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IPX </p>
-
-</div>
-</div>
-<a class="anchor" id="a9656435139954003bf149ed68fcc4ca3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_LOOPBACK&#160;&#160;&#160;0x9000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>used to test interfaces </p>
-
-</div>
-</div>
-<a class="anchor" id="a366bec338345160bb4022acfe49b342b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_MPLS&#160;&#160;&#160;0x8847</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MPLS </p>
-
-</div>
-</div>
-<a class="anchor" id="a3220ecead6256e7906514961a2518d04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_PPPOED&#160;&#160;&#160;0x8863</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PPPoE discovery </p>
-
-</div>
-</div>
-<a class="anchor" id="ad775890d6c0530483264ee309fada197"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_PPPOES&#160;&#160;&#160;0x8864</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PPPoE session </p>
-
-</div>
-</div>
-<a class="anchor" id="a17471f2d0d180ef15ed20835686f42bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_PUP&#160;&#160;&#160;0x0200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Xerox PUP </p>
-
-</div>
-</div>
-<a class="anchor" id="a1d8bc382d37844a65bae2006a05046f3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_REVARP&#160;&#160;&#160;0x8035</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reverse ARP </p>
-
-</div>
-</div>
-<a class="anchor" id="aaf064ed783e9a594ee6cd4679085d375"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_SPRITE&#160;&#160;&#160;0x0500</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sprite </p>
-
-</div>
-</div>
-<a class="anchor" id="a0eee73f1048c0756b951674570977ff9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETHERTYPE_VLAN&#160;&#160;&#160;0x8100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IEEE 802.1Q VLAN tagging </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For details about PcapPlusPlus support for DPDK see <a class="el" href="a00091.html">DpdkDevice.h</a> file description </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00092.html">EthLayer.h</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:06 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00092.html">DpdkDeviceList.h</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

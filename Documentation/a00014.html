@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: ether_header Struct Reference</title>
+<title>PcapPlusPlus: DpdkWorkerThread Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,63 +106,130 @@ $(document).ready(function(){initNavTree('a00014.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00143.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00144.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ether_header Struct Reference</div>  </div>
+<div class="title">DpdkWorkerThread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00092_source.html">EthLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00092_source.html">DpdkDeviceList.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a6c28900ad0b09ce7585dae662ed1829f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a6c28900ad0b09ce7585dae662ed1829f">dstMac</a> [6]</td></tr>
-<tr class="separator:a6c28900ad0b09ce7585dae662ed1829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476baf8b22a014f9af6d15f10113b565"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a476baf8b22a014f9af6d15f10113b565">srcMac</a> [6]</td></tr>
-<tr class="separator:a476baf8b22a014f9af6d15f10113b565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac116a63a9555eb93785b43c95a7099ff"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#ac116a63a9555eb93785b43c95a7099ff">etherType</a></td></tr>
-<tr class="separator:ac116a63a9555eb93785b43c95a7099ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afc2bb8d873a19ff3c88ed5d7a5901883"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#afc2bb8d873a19ff3c88ed5d7a5901883">~DpdkWorkerThread</a> ()</td></tr>
+<tr class="separator:afc2bb8d873a19ff3c88ed5d7a5901883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a334d6164a2b0a61a18914483af112"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#ad5a334d6164a2b0a61a18914483af112">run</a> (uint32_t coreId)=0</td></tr>
+<tr class="separator:ad5a334d6164a2b0a61a18914483af112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42c6e0a118f46037d9c8f87d2f460ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#aa42c6e0a118f46037d9c8f87d2f460ec">stop</a> ()=0</td></tr>
+<tr class="separator:aa42c6e0a118f46037d9c8f87d2f460ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d632c3af6d49ef6e7cbedec6233630"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a94d632c3af6d49ef6e7cbedec6233630">getCoreId</a> ()=0</td></tr>
+<tr class="separator:a94d632c3af6d49ef6e7cbedec6233630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an Ethernet header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6c28900ad0b09ce7585dae662ed1829f"></a>
+<div class="textblock"><p>There are two ways to capture packets using <a class="el" href="a00011.html">DpdkDevice</a>: one of them is using worker threads and the other way is using a callback which is invoked on each a burst of packets are captured (see <a class="el" href="a00011.html#ace5f6abf542473c697f42a3d42ca71cc">DpdkDevice::startCaptureSingleThread()</a> ). This class is a base class for implementing workers. A worker is basically a class that is activated by <a class="el" href="a00013.html#a8b48a118567a58351cccb8e15fb261b4">DpdkDeviceList::startDpdkWorkerThreads()</a> and runs on a designated core. When it runs it can do whatever the user wants it to do. The most common use it running in an endless loop and receive, analyze and send packets using one or more <a class="el" href="a00011.html">DpdkDevice</a> instances. It can do all kinds of processing for these packets. The only restriction for a worker class is that it must implement the 3 abstract methods stated in this class-interface for start running, stop running and get the core ID the worker is running on. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afc2bb8d873a19ff3c88ed5d7a5901883"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t ether_header::dstMac[6]</td>
+          <td class="memname">virtual DpdkWorkerThread::~DpdkWorkerThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Destination MAC </p>
+<p>A virtual d'tor. Can be overridden by child class if needed </p>
 
 </div>
 </div>
-<a class="anchor" id="ac116a63a9555eb93785b43c95a7099ff"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a94d632c3af6d49ef6e7cbedec6233630"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t ether_header::etherType</td>
+          <td class="memname">virtual uint32_t DpdkWorkerThread::getCoreId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>EtherType </p>
+<p>An abstract method that must be implemented by child class. Get the core ID the worker is running on (as sent to the <a class="el" href="a00014.html#ad5a334d6164a2b0a61a18914483af112">run()</a> method as a parameter) </p><dl class="section return"><dt>Returns</dt><dd>The core ID the worker is running on </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a476baf8b22a014f9af6d15f10113b565"></a>
+<a class="anchor" id="ad5a334d6164a2b0a61a18914483af112"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t ether_header::srcMac[6]</td>
+          <td class="memname">virtual bool DpdkWorkerThread::run </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>coreId</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Source MAC </p>
+<p>An abstract method that must be implemented by child class. It's the indication for the worker to start running </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coreId</td><td>The core ID the worker is running on (should be returned in <a class="el" href="a00014.html#a94d632c3af6d49ef6e7cbedec6233630">getCoreId()</a> ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all went well or false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa42c6e0a118f46037d9c8f87d2f460ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DpdkWorkerThread::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An abstract method that must be implemented by child class. It's the indication for the worker to stop running. After this method is called the caller expects the worker to stop running as fast as possible </p>
 
 </div>
 </div>
@@ -171,8 +238,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00014.html">ether_header</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00014.html">DpdkWorkerThread</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

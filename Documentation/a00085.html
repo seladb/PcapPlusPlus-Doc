@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: VlanLayer Class Reference</title>
+<title>PcapPlusPlus: VlanFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,69 +107,40 @@ $(document).ready(function(){initNavTree('a00085.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00213.html">List of all members</a>  </div>
+<a href="a00214.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">VlanLayer Class Reference</div>  </div>
+<div class="title">VlanFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00123_source.html">VlanLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00109_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for VlanLayer:</div>
+Inheritance diagram for VlanFilter:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00085.png" usemap="#VlanLayer_map" alt=""/>
-  <map id="VlanLayer_map" name="VlanLayer_map">
-<area href="a00041.html" alt="Layer" shape="rect" coords="0,0,71,24"/>
+  <img src="a00085.png" usemap="#VlanFilter_map" alt=""/>
+  <map id="VlanFilter_map" name="VlanFilter_map">
+<area href="a00018.html" alt="GeneralFilter" shape="rect" coords="0,0,86,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a22ee2b78d0f211686e2f2d6c739c3ce7">VlanLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00041.html">Layer</a> *prevLayer, <a class="el" href="a00050.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a22ee2b78d0f211686e2f2d6c739c3ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4994a70468a65f5e2503079ee875f151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a4994a70468a65f5e2503079ee875f151">VlanLayer</a> (const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)</td></tr>
-<tr class="separator:a4994a70468a65f5e2503079ee875f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1680bbebefc9c46ed461004273f4423d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">vlan_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a1680bbebefc9c46ed461004273f4423d">getVlanHeader</a> ()</td></tr>
-<tr class="separator:a1680bbebefc9c46ed461004273f4423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a66c949b1b89d643d494ec5d8b59d1fba">getVlanID</a> ()</td></tr>
-<tr class="separator:a66c949b1b89d643d494ec5d8b59d1fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c992425b4519ca14408b848fde17b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ae4c992425b4519ca14408b848fde17b0">setVlanID</a> (uint16_t id)</td></tr>
-<tr class="separator:ae4c992425b4519ca14408b848fde17b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a88c9124f80253715489aeba93562fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a0a88c9124f80253715489aeba93562fc">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a0a88c9124f80253715489aeba93562fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ab0c394d2a70fb8ef7a2940119485dd5a">getHeaderLen</a> ()</td></tr>
-<tr class="separator:ab0c394d2a70fb8ef7a2940119485dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#aa9a69fc00dd5d19e88b6155a607a7d0f">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:aa9a69fc00dd5d19e88b6155a607a7d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8022ec0ecee0fca9df1dc2bb01aa703d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a8022ec0ecee0fca9df1dc2bb01aa703d">toString</a> ()</td></tr>
-<tr class="separator:a8022ec0ecee0fca9df1dc2bb01aa703d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00041"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00041')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00041.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecef64b851197b9ffb29674acdceb53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a7ecef64b851197b9ffb29674acdceb53">VlanFilter</a> (uint16_t vlanId)</td></tr>
+<tr class="separator:a7ecef64b851197b9ffb29674acdceb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ce71c7bafe21a02c8707aa0f8155e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a82ce71c7bafe21a02c8707aa0f8155e7">parseToString</a> (std::string &amp;result)</td></tr>
+<tr class="separator:a82ce71c7bafe21a02c8707aa0f8155e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28b8810c5fb2a00e194af2a217b2db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ac28b8810c5fb2a00e194af2a217b2db1">setVlanID</a> (uint16_t vlanId)</td></tr>
+<tr class="separator:ac28b8810c5fb2a00e194af2a217b2db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">GeneralFilter</a></td></tr>
+<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a VLAN tunnel layer </p>
+<div class="textblock"><p>A class for filtering VLAN tagged packets by VLAN ID. When using this filter only packets tagged with VLAN which has the specific VLAN ID will be received <br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00109.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a22ee2b78d0f211686e2f2d6c739c3ce7"></a>
+<a class="anchor" id="a7ecef64b851197b9ffb29674acdceb53"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -177,33 +148,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VlanLayer::VlanLayer </td>
+          <td class="memname">VlanFilter::VlanFilter </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlanId</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00041.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00050.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -212,59 +161,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor the gets the VLAN ID and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00050.html">Packet</a> instance where layer will be stored in </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4994a70468a65f5e2503079ee875f151"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VlanLayer::VlanLayer </td>
-          <td>(</td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>vlanID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>cfi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>priority</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>etherType</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that allocates a new VLAN header </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vlanID</td><td>VLAN ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cfi</td><td>CFI value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>Priority value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>Protocol EtherType of the next layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,7 +171,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa9a69fc00dd5d19e88b6155a607a7d0f"></a>
+<a class="anchor" id="a82ce71c7bafe21a02c8707aa0f8155e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -280,110 +179,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void VlanLayer::computeCalculateFields </td>
+          <td class="memname">void VlanFilter::parseToString </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="a00041.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab0c394d2a70fb8ef7a2940119485dd5a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t VlanLayer::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00083.html">vlan_header</a> </dd></dl>
-
-<p>Implements <a class="el" href="a00041.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1680bbebefc9c46ed461004273f4423d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00083.html">vlan_header</a>* VlanLayer::getVlanHeader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the VLAN header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00083.html">vlan_header</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a66c949b1b89d643d494ec5d8b59d1fba"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t VlanLayer::getVlanID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the VLAN ID value. This method differs from <a class="el" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods extracts only the 12 bit relevant for the VLAN ID </p><dl class="section return"><dt>Returns</dt><dd>VLAN ID value </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00126.html#_todo000012">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0a88c9124f80253715489aeba93562fc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VlanLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -393,44 +192,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a00037.html">IPv4Layer</a>, <a class="el" href="a00040.html">IPv6Layer</a>, <a class="el" href="a00004.html">ArpLayer</a>, <a class="el" href="a00085.html">VlanLayer</a>, <a class="el" href="a00047.html">MplsLayer</a>. Otherwise sets <a class="el" href="a00051.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="a00041.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae4c992425b4519ca14408b848fde17b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VlanLayer::setVlanID </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set VLAN ID. This method differs from setting <a class="el" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> because <a class="el" href="a00083.html#a86a22d2e107e474e60ae539e3e4a9d07">vlan_header::vlanID</a> is 12 bits long in a 16 bit field. This methods sets only the 12 bit relevant for the VLAN ID </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The VLAN ID to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="a00126.html#_todo000013">Todo:</a></b></dt><dd>Verify it works in big endian machines as well </dd></dl>
+
+<p>Implements <a class="el" href="a00018.html#a06daa42299619bacf929a1249a6594dc">GeneralFilter</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8022ec0ecee0fca9df1dc2bb01aa703d"></a>
+<a class="anchor" id="ac28b8810c5fb2a00e194af2a217b2db1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -438,21 +211,25 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string VlanLayer::toString </td>
+          <td class="memname">void VlanFilter::setVlanID </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlanId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
-
-<p>Implements <a class="el" href="a00041.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+<p>Set the VLAN ID of the filter </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -461,8 +238,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00085.html">VlanLayer</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00085.html">VlanFilter</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

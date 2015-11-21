@@ -1,6 +1,10 @@
 var a00070 =
 [
-    [ "ProtoFilter", "a00070.html#a97f3cc0829f14ecc2bdf0b5ac09a48c0", null ],
-    [ "parseToString", "a00070.html#a3ad51db2e288a437b855fdb22bec0af4", null ],
-    [ "setProto", "a00070.html#a2f37bd21d2182a84aab74d4c47461781", null ]
+    [ "getTagDataAs", "a00070.html#a0c029c9f917e1bd1e75f89bc68b8df98", null ],
+    [ "getTagTotalSize", "a00070.html#aca560e07da7a77f1bdc6546077d59485", null ],
+    [ "getType", "a00070.html#a761e0add96c8ed6e8e7227a9ab2ece8e", null ],
+    [ "setTagData", "a00070.html#a102ac176ee5f4feb1516fe1af3a5933e", null ],
+    [ "tagData", "a00070.html#a45ff759b7e528baccc51c4eaf6d6ba6c", null ],
+    [ "tagDataLength", "a00070.html#aa5b5e45947fd0cfb479d71ca3770d0ef", null ],
+    [ "tagType", "a00070.html#ab93bf7aa2f1c8f49ab49f203c19462ef", null ]
 ];

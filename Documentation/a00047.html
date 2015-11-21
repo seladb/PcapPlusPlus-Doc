@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: MplsLayer Class Reference</title>
+<title>PcapPlusPlus: MBufRawPacket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,81 +106,88 @@ $(document).ready(function(){initNavTree('a00047.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00175.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="a00176.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MplsLayer Class Reference</div>  </div>
+<div class="title">MBufRawPacket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00102_source.html">MplsLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00091_source.html">DpdkDevice.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for MplsLayer:</div>
+Inheritance diagram for MBufRawPacket:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00047.png" usemap="#MplsLayer_map" alt=""/>
-  <map id="MplsLayer_map" name="MplsLayer_map">
-<area href="a00041.html" alt="Layer" shape="rect" coords="0,0,72,24"/>
+  <img src="a00047.png" usemap="#MBufRawPacket_map" alt=""/>
+  <map id="MBufRawPacket_map" name="MBufRawPacket_map">
+<area href="a00072.html" alt="RawPacket" shape="rect" coords="0,0,104,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c1242fda80832940c725ead78718ccb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a7c1242fda80832940c725ead78718ccb">MplsLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00041.html">Layer</a> *prevLayer, <a class="el" href="a00050.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a7c1242fda80832940c725ead78718ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5274a3dbf3b031909fe5a1aad0e4ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aef5274a3dbf3b031909fe5a1aad0e4ae">MplsLayer</a> (uint32_t mplsLabel, uint8_t ttl, uint8_t expermentalUseValue, bool bottomOfStack)</td></tr>
-<tr class="separator:aef5274a3dbf3b031909fe5a1aad0e4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f829b0f345c91b4d0e8a782243eeb40"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a1f829b0f345c91b4d0e8a782243eeb40">getTTL</a> ()</td></tr>
-<tr class="separator:a1f829b0f345c91b4d0e8a782243eeb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af98621c1057a6b37a6e4bb4bc399ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a6af98621c1057a6b37a6e4bb4bc399ad">setTTL</a> (uint8_t ttl)</td></tr>
-<tr class="separator:a6af98621c1057a6b37a6e4bb4bc399ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6e316a4e2569b396383daf5309c2dff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ae6e316a4e2569b396383daf5309c2dff">isBottomOfStack</a> ()</td></tr>
-<tr class="separator:ae6e316a4e2569b396383daf5309c2dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c55d61c88f514f241e88161606434a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a69c55d61c88f514f241e88161606434a">setBottomOfStack</a> (bool val)</td></tr>
-<tr class="separator:a69c55d61c88f514f241e88161606434a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abadc1a5849e02284f38e454996535b09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#abadc1a5849e02284f38e454996535b09">getExperimentalUseValue</a> ()</td></tr>
-<tr class="separator:abadc1a5849e02284f38e454996535b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b18d4245324b4f4f61c793fd0a5546"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a25b18d4245324b4f4f61c793fd0a5546">setExperimentalUseValue</a> (uint8_t val)</td></tr>
-<tr class="separator:a25b18d4245324b4f4f61c793fd0a5546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97237483b6c499bb71a59f0ccd44cb52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a97237483b6c499bb71a59f0ccd44cb52">getMplsLabel</a> ()</td></tr>
-<tr class="separator:a97237483b6c499bb71a59f0ccd44cb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5299391966d2c40e7c270a97e123de08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a5299391966d2c40e7c270a97e123de08">setMplsLabel</a> (uint32_t label)</td></tr>
-<tr class="separator:a5299391966d2c40e7c270a97e123de08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995679f0eaa5914e004b3104678f31dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a995679f0eaa5914e004b3104678f31dc">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a995679f0eaa5914e004b3104678f31dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0763de414a9b6152a7a7117981eb3195"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a0763de414a9b6152a7a7117981eb3195">getHeaderLen</a> ()</td></tr>
-<tr class="separator:a0763de414a9b6152a7a7117981eb3195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa692c5176c8a423ccc3aaf1e8ff73dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#aa692c5176c8a423ccc3aaf1e8ff73dde">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:aa692c5176c8a423ccc3aaf1e8ff73dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac968fbfafb5aab1597f8712cafedb60b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ac968fbfafb5aab1597f8712cafedb60b">toString</a> ()</td></tr>
-<tr class="separator:ac968fbfafb5aab1597f8712cafedb60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00041"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00041')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00041.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00041.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcef9c1bd21cdf35469811455ef5f778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#adcef9c1bd21cdf35469811455ef5f778">MBufRawPacket</a> ()</td></tr>
+<tr class="separator:adcef9c1bd21cdf35469811455ef5f778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fde934861efc316b3f69213ecdf04d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a1fde934861efc316b3f69213ecdf04d3">~MBufRawPacket</a> ()</td></tr>
+<tr class="separator:a1fde934861efc316b3f69213ecdf04d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dd220c8b27a10740dce87890f54b5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#ad1dd220c8b27a10740dce87890f54b5e">MBufRawPacket</a> (const <a class="el" href="a00047.html">MBufRawPacket</a> &amp;other)</td></tr>
+<tr class="separator:ad1dd220c8b27a10740dce87890f54b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23ac949f3a2125342a0b228349785ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#af23ac949f3a2125342a0b228349785ec">init</a> (<a class="el" href="a00011.html">DpdkDevice</a> *device)</td></tr>
+<tr class="separator:af23ac949f3a2125342a0b228349785ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fd26da490cb43fa3d879b89d4af58f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00047.html">MBufRawPacket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a91fd26da490cb43fa3d879b89d4af58f">operator=</a> (const <a class="el" href="a00047.html">MBufRawPacket</a> &amp;other)</td></tr>
+<tr class="separator:a91fd26da490cb43fa3d879b89d4af58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a024d8bf207e59f824e07f2500c47f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a9a024d8bf207e59f824e07f2500c47f6">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp)</td></tr>
+<tr class="separator:a9a024d8bf207e59f824e07f2500c47f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404d5486c9fb0d3cfdec3b461e8bb049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a404d5486c9fb0d3cfdec3b461e8bb049">clear</a> ()</td></tr>
+<tr class="separator:a404d5486c9fb0d3cfdec3b461e8bb049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab3107dfd8405e3af05395960aa558b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a3ab3107dfd8405e3af05395960aa558b">appendData</a> (const uint8_t *dataToAppend, size_t dataToAppendLen)</td></tr>
+<tr class="separator:a3ab3107dfd8405e3af05395960aa558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e821d9b0fd8933820ff863c05f06c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a5e821d9b0fd8933820ff863c05f06c7f">insertData</a> (int atIndex, const uint8_t *dataToInsert, size_t dataToInsertLen)</td></tr>
+<tr class="separator:a5e821d9b0fd8933820ff863c05f06c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6bbf54f8461a4d9eaa805640cbc9a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#a8b6bbf54f8461a4d9eaa805640cbc9a8">removeData</a> (int atIndex, size_t numOfBytesToRemove)</td></tr>
+<tr class="separator:a8b6bbf54f8461a4d9eaa805640cbc9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2e61a48aa187d5620f0ca646842744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html#acb2e61a48aa187d5620f0ca646842744">reallocateData</a> (size_t newBufferLength)</td></tr>
+<tr class="separator:acb2e61a48aa187d5620f0ca646842744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00072"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00072')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00072.html">RawPacket</a></td></tr>
+<tr class="memitem:abd3f1c07c2d7a85bbcfe3994dd1161e6 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#abd3f1c07c2d7a85bbcfe3994dd1161e6">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor)</td></tr>
+<tr class="separator:abd3f1c07c2d7a85bbcfe3994dd1161e6 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cd28744cc38377744b685a03a3caaf inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a89cd28744cc38377744b685a03a3caaf">RawPacket</a> ()</td></tr>
+<tr class="separator:a89cd28744cc38377744b685a03a3caaf inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa363311e6a8c5e061ad30a814c60301 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#afa363311e6a8c5e061ad30a814c60301">~RawPacket</a> ()</td></tr>
+<tr class="separator:afa363311e6a8c5e061ad30a814c60301 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75d6d55c4481bb828c1a6153622f084 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ad75d6d55c4481bb828c1a6153622f084">RawPacket</a> (const <a class="el" href="a00072.html">RawPacket</a> &amp;other)</td></tr>
+<tr class="separator:ad75d6d55c4481bb828c1a6153622f084 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01c7f5767e7110773f5ea2aa5ac351c inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00072.html">RawPacket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ac01c7f5767e7110773f5ea2aa5ac351c">operator=</a> (const <a class="el" href="a00072.html">RawPacket</a> &amp;other)</td></tr>
+<tr class="separator:ac01c7f5767e7110773f5ea2aa5ac351c inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad939e08a8c61635bafbf5d01ca3011b7 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ad939e08a8c61635bafbf5d01ca3011b7">getRawData</a> ()</td></tr>
+<tr class="separator:ad939e08a8c61635bafbf5d01ca3011b7 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590a2f8d285e6158af3d1dfd013552e9 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a590a2f8d285e6158af3d1dfd013552e9">getRawDataReadOnly</a> () const </td></tr>
+<tr class="separator:a590a2f8d285e6158af3d1dfd013552e9 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98299dc951ac4eaa5364b5dbb9f3ff88 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a98299dc951ac4eaa5364b5dbb9f3ff88">getRawDataLen</a> () const </td></tr>
+<tr class="separator:a98299dc951ac4eaa5364b5dbb9f3ff88 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808262a20ed8401ea1ab9f73495040af inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a808262a20ed8401ea1ab9f73495040af">getPacketTimeStamp</a> ()</td></tr>
+<tr class="separator:a808262a20ed8401ea1ab9f73495040af inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecda6b74e4c0ce3264fc0bf69b689567 inherit pub_methods_a00072"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#aecda6b74e4c0ce3264fc0bf69b689567">isPacketSet</a> ()</td></tr>
+<tr class="separator:aecda6b74e4c0ce3264fc0bf69b689567 inherit pub_methods_a00072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a78fb549b90c001fff930a0a57b060f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78fb549b90c001fff930a0a57b060f9f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DpdkDevice</b></td></tr>
+<tr class="separator:a78fb549b90c001fff930a0a57b060f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a MPLS (Multi-Protocol Label Switching) layer </p>
+<div class="textblock"><p>A class that inherits <a class="el" href="a00072.html">RawPacket</a> and wraps DPDK's mbuf object (see some info about mbuf in <a class="el" href="a00091.html">DpdkDevice.h</a>) but is compatible with PcapPlusPlus framework. Using <a class="el" href="a00047.html">MBufRawPacket</a> is be almost similar to using <a class="el" href="a00072.html">RawPacket</a>, the implementation differences are encapsulated in the class implementation. For example: user can create and manipulate a <a class="el" href="a00051.html">Packet</a> object from <a class="el" href="a00047.html">MBufRawPacket</a> the same way it is done with <a class="el" href="a00072.html">RawPacket</a>; User can use <a class="el" href="a00054.html">PcapFileWriterDevice</a> to save <a class="el" href="a00047.html">MBufRawPacket</a> to pcap the same way it's used with <a class="el" href="a00072.html">RawPacket</a>; etc.<br />
+ The main difference is that <a class="el" href="a00072.html">RawPacket</a> contains a pointer to the data itself and <a class="el" href="a00047.html">MBufRawPacket</a> is holding a pointer to an mbuf object which contains a pointer to the data. This implies that <a class="el" href="a00047.html">MBufRawPacket</a> without an mbuf allocated to it is not usable. Getting instances of <a class="el" href="a00047.html">MBufRawPacket</a> can be done in one to the following ways:</p><ul>
+<li>Receiving packets from <a class="el" href="a00011.html">DpdkDevice</a>. In this case <a class="el" href="a00011.html">DpdkDevice</a> takes care of getting the mbuf from DPDK and wrapping it with <a class="el" href="a00047.html">MBufRawPacket</a></li>
+<li>Creating <a class="el" href="a00047.html">MBufRawPacket</a> from scratch (in order to send it with <a class="el" href="a00011.html">DpdkDevice</a>, for example). In this case the user should call the <a class="el" href="a00047.html#af23ac949f3a2125342a0b228349785ec">init()</a> method after constructing the object in order to allocate a new mbuf from DPDK port pool (encapsulated by <a class="el" href="a00011.html">DpdkDevice</a>)</li>
+</ul>
+<p>Limitations of this class:</p><ul>
+<li>Currently chained mbufs are not supported. An mbuf has the capability to be linked to another mbuf and create a linked list of mbufs. This is good for Jumbo packets or other uses. <a class="el" href="a00047.html">MBufRawPacket</a> doesn't support this capability so there is no way to access the mbufs linked to the mbuf wrapped by <a class="el" href="a00047.html">MBufRawPacket</a> instance. I hope I'll be able to add this support in the future </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7c1242fda80832940c725ead78718ccb"></a>
+<a class="anchor" id="adcef9c1bd21cdf35469811455ef5f778"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,33 +195,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MplsLayer::MplsLayer </td>
+          <td class="memname">MBufRawPacket::MBufRawPacket </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00041.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00050.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -223,59 +207,50 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00050.html">Packet</a> instance where layer will be stored in </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>A default c'tor for this class. Constructs an instance of this class without an mbuf attached to it. In order to allocate an mbuf the user should call the <a class="el" href="a00047.html#af23ac949f3a2125342a0b228349785ec">init()</a> method. Without calling <a class="el" href="a00047.html#af23ac949f3a2125342a0b228349785ec">init()</a> the instance of this class is not usable. This c'tor can be used for initializing an array of <a class="el" href="a00047.html">MBufRawPacket</a> (which requires an empty c'tor) </p>
 
 </div>
 </div>
-<a class="anchor" id="aef5274a3dbf3b031909fe5a1aad0e4ae"></a>
+<a class="anchor" id="a1fde934861efc316b3f69213ecdf04d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MBufRawPacket::~MBufRawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A d'tor for this class. Once called it frees the mbuf attached to it (returning it back to the mbuf pool it was allocated from) </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1dd220c8b27a10740dce87890f54b5e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MplsLayer::MplsLayer </td>
+          <td class="memname">MBufRawPacket::MBufRawPacket </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mplsLabel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="a00047.html">MBufRawPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>ttl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>expermentalUseValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bottomOfStack</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that allocates a new MPLS header </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A copy c'tor for this class. The copy c'tor allocates a new mbuf from the same pool the original mbuf was allocated from, attaches the new mbuf to this instance of <a class="el" href="a00047.html">MBufRawPacket</a> and copies the data from the original mbuf to the new mbuf </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mplsLabel</td><td>MPLS label </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>Time-to-leave value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">expermentalUseValue</td><td>Experimental use value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bottomOfStack</td><td>Bottom-of-stack value which indicate whether the next layer will also be a MPLS label or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The <a class="el" href="a00047.html">MBufRawPacket</a> instance to copy from </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,7 +258,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa692c5176c8a423ccc3aaf1e8ff73dde"></a>
+<a class="anchor" id="a3ab3107dfd8405e3af05395960aa558b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -291,7 +266,50 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MplsLayer::computeCalculateFields </td>
+          <td class="memname">void MBufRawPacket::appendData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>dataToAppend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataToAppendLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append packet data at the end of current data. This method uses the same mbuf already allocated and tries to append more space and copy the data to it. If <a class="el" href="a00047.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppend</td><td>A pointer to the data to append </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppendLen</td><td>Length in bytes of dataToAppend </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="a00072.html#a086e619e43dadced165725ddf95d4c18">RawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a404d5486c9fb0d3cfdec3b461e8bb049"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MBufRawPacket::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -303,29 +321,36 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set/unset the bottom-of-stack bit according to next layer: if it's a MPLS layer then bottom-of-stack will be unset. If it's not a MPLS layer this bit will be set </p>
+<p>Clears the object and frees the mbuf </p>
 
-<p>Implements <a class="el" href="a00041.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a00072.html#a271ce177253f94371369d2b9cd0758ff">RawPacket</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abadc1a5849e02284f38e454996535b09"></a>
+<a class="anchor" id="af23ac949f3a2125342a0b228349785ec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t MplsLayer::getExperimentalUseValue </td>
+          <td class="memname">bool MBufRawPacket::init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00011.html">DpdkDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The exp value (3 bits) of the MPLS label </dd></dl>
+<p>Initialize an instance of this class. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="a00011.html">DpdkDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="a00011.html">DpdkDevice</a> which has the pool to allocate the mbuf from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attched) or if allocating an mbuf from the pool failed for some reason </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0763de414a9b6152a7a7117981eb3195"></a>
+<a class="anchor" id="a5e821d9b0fd8933820ff863c05f06c7f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -333,41 +358,71 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t MplsLayer::getHeaderLen </td>
+          <td class="memname">void MBufRawPacket::insertData </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>dataToInsert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataToInsertLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Size of MPLS header (4 bytes) </dd></dl>
+<p>Insert raw data at some index of the current data and shift the remaining data to the end. This method uses the same mbuf already allocated and tries to append more space to it. Then it just copies dataToAppend at the relevant index and shifts the remaining data to the end. If <a class="el" href="a00047.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to insert the new data to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsert</td><td>A pointer to the new data to insert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsertLen</td><td>Length in bytes of dataToInsert </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="a00041.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a00072.html#a508de0c720563e7b109307412400810b">RawPacket</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a97237483b6c499bb71a59f0ccd44cb52"></a>
+<a class="anchor" id="a91fd26da490cb43fa3d879b89d4af58f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t MplsLayer::getMplsLabel </td>
+          <td class="memname"><a class="el" href="a00047.html">MBufRawPacket</a>&amp; MBufRawPacket::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00047.html">MBufRawPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The MPLS label value (20 bits) </dd></dl>
+<p>An assignment operator for this class. Copies the data from the mbuf attached to the other <a class="el" href="a00047.html">MBufRawPacket</a> to the mbuf attached to this instance. If instance is not initialized (meaning no mbuf is attached) nothing will be copied and instance will remain uninitialized (also, an error will be printed) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The <a class="el" href="a00047.html">MBufRawPacket</a> to assign data from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a1f829b0f345c91b4d0e8a782243eeb40"></a>
+<a class="anchor" id="acb2e61a48aa187d5620f0ca646842744"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -375,49 +430,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t MplsLayer::getTTL </td>
+          <td class="memname">bool MBufRawPacket::reallocateData </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>TTL value of the MPLS header </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae6e316a4e2569b396383daf5309c2dff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MplsLayer::isBottomOfStack </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get an indication whether the next layer is also be a MPLS label or not </p><dl class="section return"><dt>Returns</dt><dd>True if it's the last MPLS layer, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a995679f0eaa5914e004b3104678f31dc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MplsLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>newBufferLength</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -427,81 +443,19 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a00037.html">IPv4Layer</a>, <a class="el" href="a00040.html">IPv6Layer</a>, <a class="el" href="a00047.html">MplsLayer</a>. Otherwise sets <a class="el" href="a00051.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="a00041.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a69c55d61c88f514f241e88161606434a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MplsLayer::setBottomOfStack </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the bottom-of-stack bit in the MPLS label </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This overridden method,in contrast to its ancestor <a class="el" href="a00072.html#a7a71a1178b795515aeee0192c8635699">RawPacket::reallocateData()</a> doesn't need to do anything because mbuf is already allocated to its maximum extent. So it only performs a check to verify the size after re-allocation doesn't exceed mbuf max size </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Set or unset the bit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newBufferLength</td><td>The new buffer length as required by the user </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if new size is larger than current size but smaller than mbuf max size, false otherwise </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a00072.html#a7a71a1178b795515aeee0192c8635699">RawPacket</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a25b18d4245324b4f4f61c793fd0a5546"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MplsLayer::setExperimentalUseValue </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the exp value (3 bits) of the MPLS label </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The exp value to set. val must be a valid number meaning between 0 and 7 (inclusive) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if exp value was set successfully or false if val has invalid value </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5299391966d2c40e7c270a97e123de08"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MplsLayer::setMplsLabel </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>label</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the MPLS label (20 bits) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>The label to set. label must be a valid number meaning between 0 and 0xFFFFF (inclusive) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if label was set successfully or false if label has invalid value </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6af98621c1057a6b37a6e4bb4bc399ad"></a>
+<a class="anchor" id="a8b6bbf54f8461a4d9eaa805640cbc9a8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -509,40 +463,21 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MplsLayer::setTTL </td>
+          <td class="memname">bool MBufRawPacket::removeData </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>ttl</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atIndex</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the TTL value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>The TTL value to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac968fbfafb5aab1597f8712cafedb60b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">string MplsLayer::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numOfBytesToRemove</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -551,9 +486,67 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+<p>Remove certain number of bytes from current raw data buffer. All data after the removed bytes will be shifted back. This method uses the mbuf already allocated and tries to trim space from it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to start removing bytes from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numOfBytesToRemove</td><td>Number of bytes to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all bytes were removed successfully, or false if <a class="el" href="a00047.html">MBufRawPacket</a> is not initialize (mbuf is NULL), mbuf trim failed or logatIndex+numOfBytesToRemove is out-of-bounds of the raw data buffer. In all of these cases an error is printed to log </dd></dl>
 
-<p>Implements <a class="el" href="a00041.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a00072.html#a7a5d8a17fb2b356416065fa4274c7f08">RawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a024d8bf207e59f824e07f2500c47f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MBufRawPacket::setRawData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timeval&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set raw data to the mbuf by copying the data to it. In order to stay compatible with the ancestor method which takes control of the data pointer and frees it when <a class="el" href="a00072.html">RawPacket</a> is destroyed, this method frees this pointer right away after data is copied to the mbuf. So when using this method please notice that after it's called pRawData memory is free, don't use this pointer again. In addition, if raw packet isn't initialized (mbuf is NULL), this method will call the <a class="el" href="a00047.html#af23ac949f3a2125342a0b228349785ec">init()</a> method </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if raw data was copied to the mbuf successfully, false if rawDataLen is larger than mbuf max size, if initialization failed or if copying the data to the mbuf failed. In all of these cases an error will be printed to log </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a00072.html#a08a2ed4ed7ba33f50b4bd5a8b77f02ca">RawPacket</a>.</p>
 
 </div>
 </div>
@@ -562,8 +555,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00047.html">MplsLayer</a></li>
-    <li class="footer">Generated on Sun Nov 1 2015 23:08:07 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00047.html">MBufRawPacket</a></li>
+    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

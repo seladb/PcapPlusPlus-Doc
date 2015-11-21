@@ -1,16 +1,19 @@
 var a00077 =
 [
-    [ "TcpLayer", "a00077.html#ae3850a3c19cf04908b85e61b58e205e1", null ],
-    [ "TcpLayer", "a00077.html#a75fc30bde3207ab648e51ed22798c48c", null ],
-    [ "TcpLayer", "a00077.html#a9709376eedfc31327e214f8ce73f1d32", null ],
-    [ "TcpLayer", "a00077.html#a04734fd0ba4cfdffd10ec9ca535467ad", null ],
-    [ "calculateChecksum", "a00077.html#ac9f22d245631b261c0d2fc72cbfa5ad9", null ],
-    [ "computeCalculateFields", "a00077.html#ac651dc5dee18295894f69922c7997df0", null ],
-    [ "getHeaderLen", "a00077.html#aaea30d75a26555048d8089e9de3c51e2", null ],
-    [ "getTcpHeader", "a00077.html#ae7055966bc059ef64ad6105e96d45eb3", null ],
-    [ "getTcpOptionData", "a00077.html#ade8e35b6e5ef7ca15c411cf0e06a5a93", null ],
-    [ "getTcpOptionsCount", "a00077.html#affbf3461de826d95fd76af38f4646b83", null ],
-    [ "operator=", "a00077.html#a35e847982a29c79f82dad46a72194328", null ],
-    [ "parseNextLayer", "a00077.html#a5142a7faf0be900aa5ea38c50a4c8b80", null ],
-    [ "toString", "a00077.html#a3a0bef30fc37635d331e73cc720f5351", null ]
+    [ "ackFlag", "a00077.html#ad2089630e6184c407fe5f8c7b79873ee", null ],
+    [ "ackNumber", "a00077.html#af94cd4e35bcf69033b49993538c3b7d7", null ],
+    [ "cwrFlag", "a00077.html#a35739da86e2f8fef45f31e2afbaab326", null ],
+    [ "dataOffset", "a00077.html#a1cf89ec60592a853f1ca2c5a5df358b8", null ],
+    [ "eceFlag", "a00077.html#a97b2c2e4aeca5f39d05414f0e553516c", null ],
+    [ "finFlag", "a00077.html#a8c5c21a009a70af6f4cd3ce4864aec38", null ],
+    [ "headerChecksum", "a00077.html#afd17508ed468222cd27a5715b2d34dbf", null ],
+    [ "portDst", "a00077.html#ae93be0e43346ba24904df1babc4ddf6a", null ],
+    [ "portSrc", "a00077.html#a5a2d35d141208f7c0be359a8b7240560", null ],
+    [ "pshFlag", "a00077.html#a3defe5d445a1a73d1ecc78aa684d418e", null ],
+    [ "rstFlag", "a00077.html#a9c0c0af397c33a546ac0c557fe753883", null ],
+    [ "sequenceNumber", "a00077.html#a719635a7e8291064205d4e4da519a8d5", null ],
+    [ "synFlag", "a00077.html#a62e2fa2f073542b1a58694200b4dbf8c", null ],
+    [ "urgentPointer", "a00077.html#ade025d3342ca70b77c5d25f3ee04eaac", null ],
+    [ "urgFlag", "a00077.html#ac7d76fb4d7d89a8bd0d097a0730136f9", null ],
+    [ "windowSize", "a00077.html#a8a3f4cb9892c601cdc16f0db15cb1cf9", null ]
 ];
