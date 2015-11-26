@@ -1,6 +1,37 @@
 var a00062 =
 [
-    [ "getPfRingDeviceByName", "a00062.html#a103a39d5141eb566750966f467e5b82b", null ],
-    [ "getPfRingDevicesList", "a00062.html#acc39d122c465d0c0706e08d4f63d7387", null ],
-    [ "getPfRingVersion", "a00062.html#a2ab60a48579d1b2bc233336f243f622e", null ]
+    [ "ChannelDistribution", "a00062.html#a859e6207223f202a35261338793c0211", [
+      [ "RoundRobin", "a00062.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4", null ],
+      [ "PerFlow", "a00062.html#a859e6207223f202a35261338793c0211a88ad5c719b3a08d892e5dc70c780643e", null ]
+    ] ],
+    [ "~PfRingDevice", "a00062.html#af5a275b7945d22ac78f062bdaed29738", null ],
+    [ "close", "a00062.html#a25f3a3d9544e16544dc919bda44b8556", null ],
+    [ "getCurrentCoreId", "a00062.html#aea8a32e50dfb365f08f4e3f496193bd6", null ],
+    [ "getCurrentThreadStatistics", "a00062.html#af7f4c08d8ad864818286149312f7ff96", null ],
+    [ "getDeviceName", "a00062.html#a40aaae071f2159b0d3e1338dc6f0b43f", null ],
+    [ "getInterfaceIndex", "a00062.html#a78a358734bfd45da43a221c65dfedd03", null ],
+    [ "getMacAddress", "a00062.html#ac7d9d311998b6bb18efe3740300e9c7c", null ],
+    [ "getMtu", "a00062.html#a3c9cbd028dd051d2d99fe861b9ae791b", null ],
+    [ "getNumOfOpenedRxChannels", "a00062.html#a39c45274170d16b9d9d1e0a44951ac0b", null ],
+    [ "getStatistics", "a00062.html#a748161ecb155fe4079bdde3c5a826ea6", null ],
+    [ "getThreadStatistics", "a00062.html#a42ec65a4ffa8d29d817d21968bc70ef7", null ],
+    [ "getTotalNumOfRxChannels", "a00062.html#a7c0a6b114545a94ab9d9a8f55c07cabe", null ],
+    [ "isFilterCurrentlySet", "a00062.html#a707b944d90cf16f7ecc0238c90ba3eb0", null ],
+    [ "isHwClockEnabledForDevice", "a00062.html#a96c8422443cb1007d2551beb5d35a9b2", null ],
+    [ "open", "a00062.html#aa64effebebd1c51fd6859b65d8925fb2", null ],
+    [ "openMultiRxChannels", "a00062.html#a24cc261e8660a8469209c2e5c2ccdb07", null ],
+    [ "openMultiRxChannels", "a00062.html#a3b39725d02e5aae88ef27212c4b26af1", null ],
+    [ "openSingleRxChannel", "a00062.html#add1ba7fba70fbcafacb115e47b4e3a82", null ],
+    [ "removeFilter", "a00062.html#a226f7ccbf642bd9b9afca14b02e283d4", null ],
+    [ "sendPacket", "a00062.html#a03a528af6feb4e6b278d4b1a2c94f778", null ],
+    [ "sendPacket", "a00062.html#a32313bad71eff5bfc76871b4a91a565e", null ],
+    [ "sendPacket", "a00062.html#aefffc60923d34e2ff680556fab2db9f2", null ],
+    [ "sendPackets", "a00062.html#a7909392eea098657e3b4baede54b63dd", null ],
+    [ "sendPackets", "a00062.html#a41754dd99196db97d23c367728bb8f3e", null ],
+    [ "sendPackets", "a00062.html#a315848ef09c07ad2993a0fd8e886901c", null ],
+    [ "setFilter", "a00062.html#a62b9cacd2988d5fb08b7fc78e738724d", null ],
+    [ "setFilter", "a00062.html#a8f3c2928e314601a28d7b0f42c0fbdc3", null ],
+    [ "startCaptureMultiThread", "a00062.html#a19b3f77801e4afde7a7f5e40c779d760", null ],
+    [ "startCaptureSingleThread", "a00062.html#a5f50e69a577371b7ef8d5cbcbf760a3a", null ],
+    [ "stopCapture", "a00062.html#a178d4778602d4b8af1214bda067408aa", null ]
 ];

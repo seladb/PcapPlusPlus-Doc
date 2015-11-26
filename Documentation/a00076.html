@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpFlagsFilter Class Reference</title>
+<title>PcapPlusPlus: SystemCores Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,115 +106,88 @@ $(document).ready(function(){initNavTree('a00076.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00205.html">List of all members</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00207.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TcpFlagsFilter Class Reference</div>  </div>
+<div class="title">SystemCores Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00109_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TcpFlagsFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00076.png" usemap="#TcpFlagsFilter_map" alt=""/>
-  <map id="TcpFlagsFilter_map" name="TcpFlagsFilter_map">
-<area href="a00018.html" alt="GeneralFilter" shape="rect" coords="0,0,93,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00123_source.html">SystemUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a01b4d3bbd12609b796f887f77420fcf3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3">TcpFlags</a> { <br />
-&#160;&#160;<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a77fd7860b968c29b8f03e6da10403872">tcpFin</a> = 1, 
-<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">tcpSyn</a> = 2, 
-<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a22d79462088c6a24ea8a6904f5ad7a0c">tcpRst</a> = 4, 
-<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a26830d909b59f2fd4714fc8e201e7fd0">tcpPush</a> = 8, 
-<br />
-&#160;&#160;<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">tcpAck</a> = 16, 
-<a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">tcpUrg</a> = 32
-<br />
- }</td></tr>
-<tr class="separator:a01b4d3bbd12609b796f887f77420fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e61ffa184b83c8f33196cd1166223c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> { <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">MatchAll</a>, 
-<a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">MatchOneAtLeast</a>
- }</td></tr>
-<tr class="separator:ac6e61ffa184b83c8f33196cd1166223c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5d459bb1d81d63b13795015648f4868"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ac5d459bb1d81d63b13795015648f4868">TcpFlagsFilter</a> (uint8_t tcpFlagBitMask, <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> matchOption)</td></tr>
-<tr class="separator:ac5d459bb1d81d63b13795015648f4868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c873bdd1989417b62bf7178fe518a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a33c873bdd1989417b62bf7178fe518a8">setTcpFlagsBitMask</a> (uint8_t tcpFlagBitMask, <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a> matchOption)</td></tr>
-<tr class="separator:a33c873bdd1989417b62bf7178fe518a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7c9eee2b595df0e1ad0c1b12cfde76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#abf7c9eee2b595df0e1ad0c1b12cfde76">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:abf7c9eee2b595df0e1ad0c1b12cfde76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">GeneralFilter</a></td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a838dcb60f73d803c39c9e7feac86b959"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a838dcb60f73d803c39c9e7feac86b959">Core0</a></td></tr>
+<tr class="separator:a838dcb60f73d803c39c9e7feac86b959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4dcc19666dfbc3bfad4c2354c1f0b8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a5b4dcc19666dfbc3bfad4c2354c1f0b8">Core1</a></td></tr>
+<tr class="separator:a5b4dcc19666dfbc3bfad4c2354c1f0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac796d20df330882b1335cd8adcbab1f8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ac796d20df330882b1335cd8adcbab1f8">Core2</a></td></tr>
+<tr class="separator:ac796d20df330882b1335cd8adcbab1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3086d039d5ed9bcf96aed119ba46b6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a2d3086d039d5ed9bcf96aed119ba46b6">Core3</a></td></tr>
+<tr class="separator:a2d3086d039d5ed9bcf96aed119ba46b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97566998efddbefb55a03e012041eaf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#aa97566998efddbefb55a03e012041eaf">Core4</a></td></tr>
+<tr class="separator:aa97566998efddbefb55a03e012041eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437f0a2a76d1afc48d1709df6fb788db"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a437f0a2a76d1afc48d1709df6fb788db">Core5</a></td></tr>
+<tr class="separator:a437f0a2a76d1afc48d1709df6fb788db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55915f90ae97330fa928c0f40ee85677"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a55915f90ae97330fa928c0f40ee85677">Core6</a></td></tr>
+<tr class="separator:a55915f90ae97330fa928c0f40ee85677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43aaa7c40fbdb832c8b3e4c44ce4d8de"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a43aaa7c40fbdb832c8b3e4c44ce4d8de">Core7</a></td></tr>
+<tr class="separator:a43aaa7c40fbdb832c8b3e4c44ce4d8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4bff935862ee6eda818746698ece9d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a4e4bff935862ee6eda818746698ece9d">Core8</a></td></tr>
+<tr class="separator:a4e4bff935862ee6eda818746698ece9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9323beb0c0dd042644ce747074c0d72a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a9323beb0c0dd042644ce747074c0d72a">Core9</a></td></tr>
+<tr class="separator:a9323beb0c0dd042644ce747074c0d72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ec6ea079f8df71429f480e1c7730c4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a96ec6ea079f8df71429f480e1c7730c4">Core10</a></td></tr>
+<tr class="separator:a96ec6ea079f8df71429f480e1c7730c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8aa578250cf34646572a2e8f1950db8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab8aa578250cf34646572a2e8f1950db8">Core11</a></td></tr>
+<tr class="separator:ab8aa578250cf34646572a2e8f1950db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b86fd793a8432dd257e97c7b9f3e6a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a56b86fd793a8432dd257e97c7b9f3e6a">Core12</a></td></tr>
+<tr class="separator:a56b86fd793a8432dd257e97c7b9f3e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970e251e1026d4b393df28bb0a518b3b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a970e251e1026d4b393df28bb0a518b3b">Core13</a></td></tr>
+<tr class="separator:a970e251e1026d4b393df28bb0a518b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec03f0a7158fd0b0613b6a86510ff908"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#aec03f0a7158fd0b0613b6a86510ff908">Core14</a></td></tr>
+<tr class="separator:aec03f0a7158fd0b0613b6a86510ff908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5279f6ebeedf57303e04ecf3acb703"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a4a5279f6ebeedf57303e04ecf3acb703">Core15</a></td></tr>
+<tr class="separator:a4a5279f6ebeedf57303e04ecf3acb703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638c010a7232b80fa2140790a3972d71"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a638c010a7232b80fa2140790a3972d71">Core16</a></td></tr>
+<tr class="separator:a638c010a7232b80fa2140790a3972d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b91013f18677c587e892aa74412b99"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a94b91013f18677c587e892aa74412b99">Core17</a></td></tr>
+<tr class="separator:a94b91013f18677c587e892aa74412b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10753983f5763cebe735fe99a85960dd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a10753983f5763cebe735fe99a85960dd">Core18</a></td></tr>
+<tr class="separator:a10753983f5763cebe735fe99a85960dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5140a2e48509978db5f667c0c2215f5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#af5140a2e48509978db5f667c0c2215f5">Core19</a></td></tr>
+<tr class="separator:af5140a2e48509978db5f667c0c2215f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0d529e45a01d6cd2a6fb93cfd4ec47"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a8b0d529e45a01d6cd2a6fb93cfd4ec47">Core20</a></td></tr>
+<tr class="separator:a8b0d529e45a01d6cd2a6fb93cfd4ec47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7daf00379949828a2c7fd9c3f6266c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a7a7daf00379949828a2c7fd9c3f6266c">Core21</a></td></tr>
+<tr class="separator:a7a7daf00379949828a2c7fd9c3f6266c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcc8326da1797f670926b2cbed899b6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#aadcc8326da1797f670926b2cbed899b6">Core22</a></td></tr>
+<tr class="separator:aadcc8326da1797f670926b2cbed899b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dd9cc77a168ef447c3ef15b0016e78"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a76dd9cc77a168ef447c3ef15b0016e78">Core23</a></td></tr>
+<tr class="separator:a76dd9cc77a168ef447c3ef15b0016e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac750d29e9e00580e8d17744e536d8201"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ac750d29e9e00580e8d17744e536d8201">Core24</a></td></tr>
+<tr class="separator:ac750d29e9e00580e8d17744e536d8201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e092b808b5611ec8ecd63df6159c823"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a0e092b808b5611ec8ecd63df6159c823">Core25</a></td></tr>
+<tr class="separator:a0e092b808b5611ec8ecd63df6159c823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb94cbd13957f1b49104ffa93fef149"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a7bb94cbd13957f1b49104ffa93fef149">Core26</a></td></tr>
+<tr class="separator:a7bb94cbd13957f1b49104ffa93fef149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae697bbd9f467856b45927cefb44849"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a2ae697bbd9f467856b45927cefb44849">Core27</a></td></tr>
+<tr class="separator:a2ae697bbd9f467856b45927cefb44849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f08dbe7a0dc428e44ade676e6a74fa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a41f08dbe7a0dc428e44ade676e6a74fa">Core28</a></td></tr>
+<tr class="separator:a41f08dbe7a0dc428e44ade676e6a74fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507669054f37c37613e50eb3a63c2f0b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a507669054f37c37613e50eb3a63c2f0b">Core29</a></td></tr>
+<tr class="separator:a507669054f37c37613e50eb3a63c2f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b87b195f70740ce3509f4e89335fcae"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a7b87b195f70740ce3509f4e89335fcae">Core30</a></td></tr>
+<tr class="separator:a7b87b195f70740ce3509f4e89335fcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659764c3f82300fbec56d3ca891ebd28"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a659764c3f82300fbec56d3ca891ebd28">Core31</a></td></tr>
+<tr class="separator:a659764c3f82300fbec56d3ca891ebd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0aa298d90e7508756b63fe45686a10"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a9c0aa298d90e7508756b63fe45686a10">IdToSystemCore</a> [32]</td></tr>
+<tr class="separator:a9c0aa298d90e7508756b63fe45686a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering only TCP packets which certain TCP flags are set in them <br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00109.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">TcpFlagsFilter::MatchOptions</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for representing 2 type of matches: match only packets that contain all flags defined in the filter or match packets that contain at least one of the flags defined in the filter </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69"></a>MatchAll&#160;</td><td class="fielddoc">
-<p>Match only packets that contain all flags defined in the filter </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520"></a>MatchOneAtLeast&#160;</td><td class="fielddoc">
-<p>Match packets that contain at least one of the flags defined in the filter </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3">TcpFlagsFilter::TcpFlags</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum of all TCP flags that can be use in the filter </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a77fd7860b968c29b8f03e6da10403872"></a>tcpFin&#160;</td><td class="fielddoc">
-<p>TCP FIN flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a"></a>tcpSyn&#160;</td><td class="fielddoc">
-<p>TCP SYN flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a22d79462088c6a24ea8a6904f5ad7a0c"></a>tcpRst&#160;</td><td class="fielddoc">
-<p>TCP RST flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a26830d909b59f2fd4714fc8e201e7fd0"></a>tcpPush&#160;</td><td class="fielddoc">
-<p>TCP PSH flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6"></a>tcpAck&#160;</td><td class="fielddoc">
-<p>TCP ACK flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695"></a>tcpUrg&#160;</td><td class="fielddoc">
-<p>TCP URG flag </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac5d459bb1d81d63b13795015648f4868"></a>
+<div class="textblock"><p>Contains static representation to all 32 cores and a static array to map core ID (integer) to a <a class="el" href="a00075.html">SystemCore</a> struct </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a838dcb60f73d803c39c9e7feac86b959"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,41 +195,20 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TcpFlagsFilter::TcpFlagsFilter </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tcpFlagBitMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a>&#160;</td>
-          <td class="paramname"><em>matchOption</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that gets a 1-byte bitmask containing all TCP flags participating in the filter and the match option, and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpFlagBitMask</td><td>A 1-byte bitmask containing all TCP flags participating in the filter. This parameter can contain the following value for example: <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">TcpFlagsFilter::tcpSyn</a> | <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">TcpFlagsFilter::tcpAck</a> | <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">TcpFlagsFilter::tcpUrg</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matchOption</td><td>The match option: <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">TcpFlagsFilter::MatchAll</a> or <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">TcpFlagsFilter::MatchOneAtLeast</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Static representation of core #0 </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abf7c9eee2b595df0e1ad0c1b12cfde76"></a>
+<a class="anchor" id="a5b4dcc19666dfbc3bfad4c2354c1f0b8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -264,31 +216,20 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TcpFlagsFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core1</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00018.html#a06daa42299619bacf929a1249a6594dc">GeneralFilter</a>.</p>
+<p>Static representation of core #1 </p>
 
 </div>
 </div>
-<a class="anchor" id="a33c873bdd1989417b62bf7178fe518a8"></a>
+<a class="anchor" id="a96ec6ea079f8df71429f480e1c7730c4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -296,36 +237,646 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TcpFlagsFilter::setTcpFlagsBitMask </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tcpFlagBitMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223c">MatchOptions</a>&#160;</td>
-          <td class="paramname"><em>matchOption</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core10</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the TCP flags and the match option </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpFlagBitMask</td><td>A 1-byte bitmask containing all TCP flags participating in the filter. This parameter can contain the following value for example: <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a">TcpFlagsFilter::tcpSyn</a> | <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6">TcpFlagsFilter::tcpAck</a> | <a class="el" href="a00076.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695">TcpFlagsFilter::tcpUrg</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matchOption</td><td>The match option: <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69">TcpFlagsFilter::MatchAll</a> or <a class="el" href="a00076.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520">TcpFlagsFilter::MatchOneAtLeast</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Static representation of core #10 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8aa578250cf34646572a2e8f1950db8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #11 </p>
+
+</div>
+</div>
+<a class="anchor" id="a56b86fd793a8432dd257e97c7b9f3e6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #12 </p>
+
+</div>
+</div>
+<a class="anchor" id="a970e251e1026d4b393df28bb0a518b3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core13</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #13 </p>
+
+</div>
+</div>
+<a class="anchor" id="aec03f0a7158fd0b0613b6a86510ff908"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core14</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #14 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a5279f6ebeedf57303e04ecf3acb703"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #15 </p>
+
+</div>
+</div>
+<a class="anchor" id="a638c010a7232b80fa2140790a3972d71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #16 </p>
+
+</div>
+</div>
+<a class="anchor" id="a94b91013f18677c587e892aa74412b99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core17</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #17 </p>
+
+</div>
+</div>
+<a class="anchor" id="a10753983f5763cebe735fe99a85960dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core18</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #18 </p>
+
+</div>
+</div>
+<a class="anchor" id="af5140a2e48509978db5f667c0c2215f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core19</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #19 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac796d20df330882b1335cd8adcbab1f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #2 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b0d529e45a01d6cd2a6fb93cfd4ec47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #20 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a7daf00379949828a2c7fd9c3f6266c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core21</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #21 </p>
+
+</div>
+</div>
+<a class="anchor" id="aadcc8326da1797f670926b2cbed899b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core22</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #22 </p>
+
+</div>
+</div>
+<a class="anchor" id="a76dd9cc77a168ef447c3ef15b0016e78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core23</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #23 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac750d29e9e00580e8d17744e536d8201"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #24 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e092b808b5611ec8ecd63df6159c823"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core25</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #25 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7bb94cbd13957f1b49104ffa93fef149"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core26</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #26 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ae697bbd9f467856b45927cefb44849"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core27</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #27 </p>
+
+</div>
+</div>
+<a class="anchor" id="a41f08dbe7a0dc428e44ade676e6a74fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core28</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #28 </p>
+
+</div>
+</div>
+<a class="anchor" id="a507669054f37c37613e50eb3a63c2f0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core29</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #29 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d3086d039d5ed9bcf96aed119ba46b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #3 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b87b195f70740ce3509f4e89335fcae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core30</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #30 </p>
+
+</div>
+</div>
+<a class="anchor" id="a659764c3f82300fbec56d3ca891ebd28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core31</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #31 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa97566998efddbefb55a03e012041eaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #4 </p>
+
+</div>
+</div>
+<a class="anchor" id="a437f0a2a76d1afc48d1709df6fb788db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #5 </p>
+
+</div>
+</div>
+<a class="anchor" id="a55915f90ae97330fa928c0f40ee85677"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #6 </p>
+
+</div>
+</div>
+<a class="anchor" id="a43aaa7c40fbdb832c8b3e4c44ce4d8de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #7 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e4bff935862ee6eda818746698ece9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #8 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9323beb0c0dd042644ce747074c0d72a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::Core9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static representation of core #9 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c0aa298d90e7508756b63fe45686a10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00075.html">SystemCore</a> SystemCores::IdToSystemCore[32]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static array for mapping core ID (integer) to the corresponding static <a class="el" href="a00075.html">SystemCore</a> representation </p>
 
 </div>
 </div>
@@ -334,8 +885,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00076.html">TcpFlagsFilter</a></li>
-    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00076.html">SystemCores</a></li>
+    <li class="footer">Generated on Fri Nov 27 2015 00:11:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

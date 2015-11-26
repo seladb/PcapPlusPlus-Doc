@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['tagdata',['tagData',['../a00070.html#a45ff759b7e528baccc51c4eaf6d6ba6c',1,'PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagdatalength',['tagDataLength',['../a00070.html#aa5b5e45947fd0cfb479d71ca3770d0ef',1,'PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagtype',['tagType',['../a00070.html#ab93bf7aa2f1c8f49ab49f203c19462ef',1,'PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagdata',['tagData',['../a00071.html#a45ff759b7e528baccc51c4eaf6d6ba6c',1,'PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagdatalength',['tagDataLength',['../a00071.html#aa5b5e45947fd0cfb479d71ca3770d0ef',1,'PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagtype',['tagType',['../a00071.html#ab93bf7aa2f1c8f49ab49f203c19462ef',1,'PPPoEDiscoveryLayer::PPPoETag']]],
   ['targetipaddr',['targetIpAddr',['../a00004.html#aa233f68b3551587155f596d4370b2b09',1,'arphdr']]],
   ['targetmacaddr',['targetMacAddr',['../a00004.html#a82c7864540ab1a624fcd8d1b163a1b11',1,'arphdr']]],
   ['timetolive',['timeToLive',['../a00035.html#a0c43c9ad76543bdb23848cecc09b547e',1,'iphdr']]],
@@ -11,6 +11,6 @@ var searchData=
   ['transactionid',['transactionID',['../a00007.html#ac0fc55c46b7ce65214d118cadcf3743e',1,'dnshdr']]],
   ['transmitdescriptorsnumber',['transmitDescriptorsNumber',['../a00012.html#a853660fdd507c3ece716e94f76880b76',1,'DpdkDevice::DpdkDeviceConfiguration']]],
   ['truncation',['truncation',['../a00007.html#af177a2f1151efb57d4e314a5530923a6',1,'dnshdr']]],
-  ['type',['type',['../a00066.html#a1be734b14f34cc71d8ac372316d45ede',1,'pppoe_header']]],
+  ['type',['type',['../a00067.html#a1be734b14f34cc71d8ac372316d45ede',1,'pppoe_header']]],
   ['typeofservice',['typeOfService',['../a00035.html#a2b7b4994c197bf0752c7fac58c56515c',1,'iphdr']]]
 ];

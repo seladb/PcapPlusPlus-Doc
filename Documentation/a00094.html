@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: HttpLayer.h File Reference</title>
+<title>PcapPlusPlus: EthLayer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,286 +105,234 @@ $(document).ready(function(){initNavTree('a00094.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">HttpLayer.h File Reference</div>  </div>
+<div class="title">EthLayer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00099_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;exception&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00100_source.html">Layer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00102_source.html">MacAddress.h</a>&quot;</code><br />
 </div>
 <p><a href="a00094_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html">HttpField</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">ether_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">HttpMessage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">HttpRequestLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html">HttpResponseLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">HttpRequestFirstLine</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html">HttpRequestFirstLine::HttpRequestFirstLineException</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html">HttpResponseFirstLine</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html">HttpResponseFirstLine::HttpResponseFirstLineException</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html">EthLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5b810c11cf395733a3074912853e6802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a5b810c11cf395733a3074912853e6802">HTTP_HOST_FIELD</a>&#160;&#160;&#160;&quot;Host&quot;</td></tr>
-<tr class="separator:a5b810c11cf395733a3074912853e6802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c9f765a62413668b8b3fd1fab4761d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a00c9f765a62413668b8b3fd1fab4761d">HTTP_CONNECTION_FIELD</a>&#160;&#160;&#160;&quot;Connection&quot;</td></tr>
-<tr class="separator:a00c9f765a62413668b8b3fd1fab4761d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad211616c9587553ec1bae2f8c9b080a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ad211616c9587553ec1bae2f8c9b080a7">HTTP_USER_AGENT_FIELD</a>&#160;&#160;&#160;&quot;User-Agent&quot;</td></tr>
-<tr class="separator:ad211616c9587553ec1bae2f8c9b080a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48582b75b634566f943a36e5781f323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ab48582b75b634566f943a36e5781f323">HTTP_REFERER_FIELD</a>&#160;&#160;&#160;&quot;Referer&quot;</td></tr>
-<tr class="separator:ab48582b75b634566f943a36e5781f323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac74e159e3577b881e288e20f72e76e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a0ac74e159e3577b881e288e20f72e76e">HTTP_ACCEPT_FIELD</a>&#160;&#160;&#160;&quot;Accept&quot;</td></tr>
-<tr class="separator:a0ac74e159e3577b881e288e20f72e76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5192fed0880f496a4ffb7d94f7257c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a5192fed0880f496a4ffb7d94f7257c82">HTTP_ACCEPT_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Accept-Encoding&quot;</td></tr>
-<tr class="separator:a5192fed0880f496a4ffb7d94f7257c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f10ef3082efa9eb7ae874856c182c4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a6f10ef3082efa9eb7ae874856c182c4d">HTTP_ACCEPT_LANGUAGE_FIELD</a>&#160;&#160;&#160;&quot;Accept-Language&quot;</td></tr>
-<tr class="separator:a6f10ef3082efa9eb7ae874856c182c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77cf10aeec3133e43bb4a36b8b18576"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ac77cf10aeec3133e43bb4a36b8b18576">HTTP_COOKIE_FIELD</a>&#160;&#160;&#160;&quot;Cookie&quot;</td></tr>
-<tr class="separator:ac77cf10aeec3133e43bb4a36b8b18576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7bee38c3d7f17eda96873e0e2e5e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a4df7bee38c3d7f17eda96873e0e2e5e7">HTTP_CONTENT_LENGTH_FIELD</a>&#160;&#160;&#160;&quot;Content-Length&quot;</td></tr>
-<tr class="separator:a4df7bee38c3d7f17eda96873e0e2e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5b794f910cb4bd782c594dc7a73858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#aed5b794f910cb4bd782c594dc7a73858">HTTP_CONTENT_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Content-Encoding&quot;</td></tr>
-<tr class="separator:aed5b794f910cb4bd782c594dc7a73858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78758be3bd294794e10d5aa510433e9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a78758be3bd294794e10d5aa510433e9b">HTTP_CONTENT_TYPE_FIELD</a>&#160;&#160;&#160;&quot;Content-Type&quot;</td></tr>
-<tr class="separator:a78758be3bd294794e10d5aa510433e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb56585b5a57dd1c9dfcf76f5195b46c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#afb56585b5a57dd1c9dfcf76f5195b46c">HTTP_TRANSFER_ENCODING_FIELD</a>&#160;&#160;&#160;&quot;Transfer-Encoding&quot;</td></tr>
-<tr class="separator:afb56585b5a57dd1c9dfcf76f5195b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ef5a034c9a7d117941e2c562e12ebe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a32ef5a034c9a7d117941e2c562e12ebe">HTTP_SERVER_FIELD</a>&#160;&#160;&#160;&quot;Server&quot;</td></tr>
-<tr class="separator:a32ef5a034c9a7d117941e2c562e12ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57301f5681dddf163b56dad67240ba88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a57301f5681dddf163b56dad67240ba88">END_OF_HTTP_HEADER</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
-<tr class="separator:a57301f5681dddf163b56dad67240ba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ac870fd261da652aee69937751c6f7e7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a> { <a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac">ZeroDotNine</a>, 
-<a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7fa1813a3c2d61f6e747d4e10c38d3f2e08">OneDotZero</a>, 
-<a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7fae53ed0d836f597e6ea278f94332f3b34">OneDotOne</a>, 
-<a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd">HttpVersionUnknown</a>
- }</td></tr>
-<tr class="separator:ac870fd261da652aee69937751c6f7e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17471f2d0d180ef15ed20835686f42bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a17471f2d0d180ef15ed20835686f42bc">ETHERTYPE_PUP</a>&#160;&#160;&#160;0x0200</td></tr>
+<tr class="separator:a17471f2d0d180ef15ed20835686f42bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf064ed783e9a594ee6cd4679085d375"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#aaf064ed783e9a594ee6cd4679085d375">ETHERTYPE_SPRITE</a>&#160;&#160;&#160;0x0500</td></tr>
+<tr class="separator:aaf064ed783e9a594ee6cd4679085d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2021b6951d9782a2ba9cb243abdea93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ae2021b6951d9782a2ba9cb243abdea93">ETHERTYPE_IP</a>&#160;&#160;&#160;0x0800</td></tr>
+<tr class="separator:ae2021b6951d9782a2ba9cb243abdea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58349316842ce4bdc5ff10568ec5dc31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a58349316842ce4bdc5ff10568ec5dc31">ETHERTYPE_ARP</a>&#160;&#160;&#160;0x0806</td></tr>
+<tr class="separator:a58349316842ce4bdc5ff10568ec5dc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8bc382d37844a65bae2006a05046f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a1d8bc382d37844a65bae2006a05046f3">ETHERTYPE_REVARP</a>&#160;&#160;&#160;0x8035</td></tr>
+<tr class="separator:a1d8bc382d37844a65bae2006a05046f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5363e5c55bf76c08ec5ae9dcf9556e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a5363e5c55bf76c08ec5ae9dcf9556e7b">ETHERTYPE_AT</a>&#160;&#160;&#160;0x809B</td></tr>
+<tr class="separator:a5363e5c55bf76c08ec5ae9dcf9556e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2692ff7ce9c6412385d9465d0d6d152"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#aa2692ff7ce9c6412385d9465d0d6d152">ETHERTYPE_AARP</a>&#160;&#160;&#160;0x80F3</td></tr>
+<tr class="separator:aa2692ff7ce9c6412385d9465d0d6d152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eee73f1048c0756b951674570977ff9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a0eee73f1048c0756b951674570977ff9">ETHERTYPE_VLAN</a>&#160;&#160;&#160;0x8100</td></tr>
+<tr class="separator:a0eee73f1048c0756b951674570977ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7f031a1b6e69f9b5e74c2b26edd2e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#acd7f031a1b6e69f9b5e74c2b26edd2e8">ETHERTYPE_IPX</a>&#160;&#160;&#160;0x8137</td></tr>
+<tr class="separator:acd7f031a1b6e69f9b5e74c2b26edd2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25537090a27d590178d14ab1b63b66b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ac25537090a27d590178d14ab1b63b66b">ETHERTYPE_IPV6</a>&#160;&#160;&#160;0x86dd</td></tr>
+<tr class="separator:ac25537090a27d590178d14ab1b63b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9656435139954003bf149ed68fcc4ca3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a9656435139954003bf149ed68fcc4ca3">ETHERTYPE_LOOPBACK</a>&#160;&#160;&#160;0x9000</td></tr>
+<tr class="separator:a9656435139954003bf149ed68fcc4ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3220ecead6256e7906514961a2518d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a3220ecead6256e7906514961a2518d04">ETHERTYPE_PPPOED</a>&#160;&#160;&#160;0x8863</td></tr>
+<tr class="separator:a3220ecead6256e7906514961a2518d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad775890d6c0530483264ee309fada197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#ad775890d6c0530483264ee309fada197">ETHERTYPE_PPPOES</a>&#160;&#160;&#160;0x8864</td></tr>
+<tr class="separator:ad775890d6c0530483264ee309fada197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366bec338345160bb4022acfe49b342b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a366bec338345160bb4022acfe49b342b">ETHERTYPE_MPLS</a>&#160;&#160;&#160;0x8847</td></tr>
+<tr class="separator:a366bec338345160bb4022acfe49b342b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a57301f5681dddf163b56dad67240ba88"></a>
+<a class="anchor" id="aa2692ff7ce9c6412385d9465d0d6d152"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define END_OF_HTTP_HEADER&#160;&#160;&#160;&quot;&quot;</td>
+          <td class="memname">#define ETHERTYPE_AARP&#160;&#160;&#160;0x80F3</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>End of HTTP header </p>
+<p>AppleTalk ARP </p>
 
 </div>
 </div>
-<a class="anchor" id="a5192fed0880f496a4ffb7d94f7257c82"></a>
+<a class="anchor" id="a58349316842ce4bdc5ff10568ec5dc31"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_ENCODING_FIELD&#160;&#160;&#160;&quot;Accept-Encoding&quot;</td>
+          <td class="memname">#define ETHERTYPE_ARP&#160;&#160;&#160;0x0806</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Accept-Encoding field </p>
+<p>Address resolution </p>
 
 </div>
 </div>
-<a class="anchor" id="a0ac74e159e3577b881e288e20f72e76e"></a>
+<a class="anchor" id="a5363e5c55bf76c08ec5ae9dcf9556e7b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_FIELD&#160;&#160;&#160;&quot;Accept&quot;</td>
+          <td class="memname">#define ETHERTYPE_AT&#160;&#160;&#160;0x809B</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Accept field </p>
+<p>AppleTalk protocol </p>
 
 </div>
 </div>
-<a class="anchor" id="a6f10ef3082efa9eb7ae874856c182c4d"></a>
+<a class="anchor" id="ae2021b6951d9782a2ba9cb243abdea93"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_ACCEPT_LANGUAGE_FIELD&#160;&#160;&#160;&quot;Accept-Language&quot;</td>
+          <td class="memname">#define ETHERTYPE_IP&#160;&#160;&#160;0x0800</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Accept-Language field </p>
+<p>IP </p>
 
 </div>
 </div>
-<a class="anchor" id="a00c9f765a62413668b8b3fd1fab4761d"></a>
+<a class="anchor" id="ac25537090a27d590178d14ab1b63b66b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_CONNECTION_FIELD&#160;&#160;&#160;&quot;Connection&quot;</td>
+          <td class="memname">#define ETHERTYPE_IPV6&#160;&#160;&#160;0x86dd</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Connection field </p>
+<p>IP protocol version 6 </p>
 
 </div>
 </div>
-<a class="anchor" id="aed5b794f910cb4bd782c594dc7a73858"></a>
+<a class="anchor" id="acd7f031a1b6e69f9b5e74c2b26edd2e8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_CONTENT_ENCODING_FIELD&#160;&#160;&#160;&quot;Content-Encoding&quot;</td>
+          <td class="memname">#define ETHERTYPE_IPX&#160;&#160;&#160;0x8137</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Content-Encoding field </p>
+<p>IPX </p>
 
 </div>
 </div>
-<a class="anchor" id="a4df7bee38c3d7f17eda96873e0e2e5e7"></a>
+<a class="anchor" id="a9656435139954003bf149ed68fcc4ca3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_CONTENT_LENGTH_FIELD&#160;&#160;&#160;&quot;Content-Length&quot;</td>
+          <td class="memname">#define ETHERTYPE_LOOPBACK&#160;&#160;&#160;0x9000</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Content-Length field </p>
+<p>used to test interfaces </p>
 
 </div>
 </div>
-<a class="anchor" id="a78758be3bd294794e10d5aa510433e9b"></a>
+<a class="anchor" id="a366bec338345160bb4022acfe49b342b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_CONTENT_TYPE_FIELD&#160;&#160;&#160;&quot;Content-Type&quot;</td>
+          <td class="memname">#define ETHERTYPE_MPLS&#160;&#160;&#160;0x8847</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Content-Type field </p>
+<p>MPLS </p>
 
 </div>
 </div>
-<a class="anchor" id="ac77cf10aeec3133e43bb4a36b8b18576"></a>
+<a class="anchor" id="a3220ecead6256e7906514961a2518d04"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_COOKIE_FIELD&#160;&#160;&#160;&quot;Cookie&quot;</td>
+          <td class="memname">#define ETHERTYPE_PPPOED&#160;&#160;&#160;0x8863</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cookie field </p>
+<p>PPPoE discovery </p>
 
 </div>
 </div>
-<a class="anchor" id="a5b810c11cf395733a3074912853e6802"></a>
+<a class="anchor" id="ad775890d6c0530483264ee309fada197"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_HOST_FIELD&#160;&#160;&#160;&quot;Host&quot;</td>
+          <td class="memname">#define ETHERTYPE_PPPOES&#160;&#160;&#160;0x8864</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Host field </p>
+<p>PPPoE session </p>
 
 </div>
 </div>
-<a class="anchor" id="ab48582b75b634566f943a36e5781f323"></a>
+<a class="anchor" id="a17471f2d0d180ef15ed20835686f42bc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_REFERER_FIELD&#160;&#160;&#160;&quot;Referer&quot;</td>
+          <td class="memname">#define ETHERTYPE_PUP&#160;&#160;&#160;0x0200</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Referer field </p>
+<p>Xerox PUP </p>
 
 </div>
 </div>
-<a class="anchor" id="a32ef5a034c9a7d117941e2c562e12ebe"></a>
+<a class="anchor" id="a1d8bc382d37844a65bae2006a05046f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_SERVER_FIELD&#160;&#160;&#160;&quot;Server&quot;</td>
+          <td class="memname">#define ETHERTYPE_REVARP&#160;&#160;&#160;0x8035</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Server field </p>
+<p>Reverse ARP </p>
 
 </div>
 </div>
-<a class="anchor" id="afb56585b5a57dd1c9dfcf76f5195b46c"></a>
+<a class="anchor" id="aaf064ed783e9a594ee6cd4679085d375"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_TRANSFER_ENCODING_FIELD&#160;&#160;&#160;&quot;Transfer-Encoding&quot;</td>
+          <td class="memname">#define ETHERTYPE_SPRITE&#160;&#160;&#160;0x0500</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Transfer-Encoding field </p>
+<p>Sprite </p>
 
 </div>
 </div>
-<a class="anchor" id="ad211616c9587553ec1bae2f8c9b080a7"></a>
+<a class="anchor" id="a0eee73f1048c0756b951674570977ff9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HTTP_USER_AGENT_FIELD&#160;&#160;&#160;&quot;User-Agent&quot;</td>
+          <td class="memname">#define ETHERTYPE_VLAN&#160;&#160;&#160;0x8100</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>User-Agent field </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ac870fd261da652aee69937751c6f7e7f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00094.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for HTTP version </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac"></a>ZeroDotNine&#160;</td><td class="fielddoc">
-<p>HTTP/0.9 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fa1813a3c2d61f6e747d4e10c38d3f2e08"></a>OneDotZero&#160;</td><td class="fielddoc">
-<p>HTTP/1.0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7fae53ed0d836f597e6ea278f94332f3b34"></a>OneDotOne&#160;</td><td class="fielddoc">
-<p>HTTP/1.1 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd"></a>HttpVersionUnknown&#160;</td><td class="fielddoc">
-<p>Unknown HTTP version </p>
-</td></tr>
-</table>
+<p>IEEE 802.1Q VLAN tagging </p>
 
 </div>
 </div>
@@ -393,8 +341,8 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00094.html">HttpLayer.h</a></li>
-    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00094.html">EthLayer.h</a></li>
+    <li class="footer">Generated on Fri Nov 27 2015 00:11:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

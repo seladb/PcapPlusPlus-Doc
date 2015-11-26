@@ -1,5 +1,6 @@
 var a00050 =
 [
-    [ "OrFilter", "a00050.html#a9bdfad5061c09add3a74352766ff148e", null ],
-    [ "parseToString", "a00050.html#ab2ef7c72c011b1ff039bfbefa8258c91", null ]
+    [ "NotFilter", "a00050.html#aac37a9632ce92fbb4d3a145fd6dcf13b", null ],
+    [ "parseToString", "a00050.html#a010030e43ac96922c9b0236c1d37c0da", null ],
+    [ "setFilter", "a00050.html#abf226875fb36db9b66ae4e06526aa695", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: EthLayer.h Source File</title>
+<title>PcapPlusPlus: DpdkDeviceList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,115 +104,117 @@ $(document).ready(function(){initNavTree('a00093_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">EthLayer.h</div>  </div>
+<div class="title">DpdkDeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00093.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_ETH_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_ETH_LAYER</span></div>
+<a href="a00093.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DPDK_DEVICE_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DPDK_DEVICE_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00099.html">Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00101.html">MacAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00015.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00015.html">ether_header</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00015.html#a6c28900ad0b09ce7585dae662ed1829f">   16</a></span>&#160;    uint8_t <a class="code" href="a00015.html#a6c28900ad0b09ce7585dae662ed1829f">dstMac</a>[6];</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00015.html#a476baf8b22a014f9af6d15f10113b565">   18</a></span>&#160;    uint8_t <a class="code" href="a00015.html#a476baf8b22a014f9af6d15f10113b565">srcMac</a>[6];</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00015.html#ac116a63a9555eb93785b43c95a7099ff">   20</a></span>&#160;    uint16_t <a class="code" href="a00015.html#ac116a63a9555eb93785b43c95a7099ff">etherType</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* Ethernet protocol ID&#39;s */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00093.html#a17471f2d0d180ef15ed20835686f42bc">   27</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_PUP       0x0200</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00093.html#aaf064ed783e9a594ee6cd4679085d375">   29</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_SPRITE    0x0500</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00093.html#ae2021b6951d9782a2ba9cb243abdea93">   31</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IP        0x0800</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00093.html#a58349316842ce4bdc5ff10568ec5dc31">   33</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_ARP       0x0806</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00093.html#a1d8bc382d37844a65bae2006a05046f3">   35</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_REVARP    0x8035</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00093.html#a5363e5c55bf76c08ec5ae9dcf9556e7b">   37</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AT        0x809B</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00093.html#aa2692ff7ce9c6412385d9465d0d6d152">   39</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_AARP      0x80F3</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef USE_DPDK</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00123.html">SystemUtils.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00092.html">DpdkDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00101.html">Logger.h</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00014.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00014.html">DpdkWorkerThread</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00014.html#afc2bb8d873a19ff3c88ed5d7a5901883">   32</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00014.html#afc2bb8d873a19ff3c88ed5d7a5901883">~DpdkWorkerThread</a>() {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00014.html#ad5a334d6164a2b0a61a18914483af112">run</a>(uint32_t coreId) = 0;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00093.html#a0eee73f1048c0756b951674570977ff9">   41</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_VLAN      0x8100</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00093.html#acd7f031a1b6e69f9b5e74c2b26edd2e8">   43</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPX       0x8137</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00093.html#ac25537090a27d590178d14ab1b63b66b">   45</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_IPV6      0x86dd</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00014.html#aa42c6e0a118f46037d9c8f87d2f460ec">stop</a>() = 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00093.html#a9656435139954003bf149ed68fcc4ca3">   47</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_LOOPBACK  0x9000</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00093.html#a3220ecead6256e7906514961a2518d04">   49</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_PPPOED    0x8863</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00093.html#ad775890d6c0530483264ee309fada197">   51</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_PPPOES    0x8864</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00093.html#a366bec338345160bb4022acfe49b342b">   53</a></span>&#160;<span class="preprocessor">#define ETHERTYPE_MPLS      0x8847</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> uint32_t <a class="code" href="a00014.html#a94d632c3af6d49ef6e7cbedec6233630">getCoreId</a>() = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00017.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00017.html">EthLayer</a> : <span class="keyword">public</span> <a class="code" href="a00042.html">Layer</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00017.html#a039c7173f98655299b58268cd35fc552">   69</a></span>&#160;    <a class="code" href="a00017.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00051.html">Packet</a>* packet) : <a class="code" href="a00042.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a>; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="a00017.html#a039c7173f98655299b58268cd35fc552">EthLayer</a>(<a class="code" href="a00045.html">MacAddress</a>&amp; sourceMac, <a class="code" href="a00045.html">MacAddress</a>&amp; destMac, uint16_t etherType);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ~<a class="code" href="a00017.html">EthLayer</a>() {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00013.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00013.html">DpdkDeviceList</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> m_IsInitialized;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> m_IsDpdkInitialized;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> uint32_t m_MBufPoolSizePerDevice;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> CoreMask m_CoreMask;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::vector&lt;DpdkDevice*&gt; m_DpdkDeviceList;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::vector&lt;DpdkWorkerThread*&gt; m_WorkerThreads;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="a00013.html">DpdkDeviceList</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> isInitialized() { <span class="keywordflow">return</span> (m_IsInitialized &amp;&amp; m_IsDpdkInitialized); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> initDpdkDevices(uint32_t mBufPoolSizePerDevice);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> verifyHugePagesAndDpdkDriver();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">   85</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00015.html">ether_header</a>* <a class="code" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00015.html">ether_header</a>*)m_Data; };</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00017.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">   91</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00045.html">MacAddress</a> <a class="code" href="a00017.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">getSourceMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00045.html">MacAddress</a>(<a class="code" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;srcMac); };</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00017.html#accfedc24eda9b3b4b468ed6a2b220ce2">   97</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00017.html#accfedc24eda9b3b4b468ed6a2b220ce2">setSoureMac</a>(<span class="keyword">const</span> <a class="code" href="a00045.html">MacAddress</a>&amp; sourceMac) { sourceMac.<a class="code" href="a00045.html#a9823260693c248a92c9457b25fb19cc4">copyTo</a>(<a class="code" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;srcMac); }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00017.html#a837f20752b1ba301fa79076ac19c80d4">  103</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00045.html">MacAddress</a> <a class="code" href="a00017.html#a837f20752b1ba301fa79076ac19c80d4">getDestMac</a>() { <span class="keywordflow">return</span> <a class="code" href="a00045.html">MacAddress</a>(<a class="code" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;dstMac); };</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00017.html#a6d4385fbb8d002040d7229602d7367fa">  109</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00017.html#a6d4385fbb8d002040d7229602d7367fa">setDestMac</a>(<span class="keyword">const</span> <a class="code" href="a00045.html">MacAddress</a>&amp; destMac) { destMac.<a class="code" href="a00045.html#a9823260693c248a92c9457b25fb19cc4">copyTo</a>(<a class="code" href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">getEthHeader</a>()-&gt;dstMac); }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00017.html#ac43bf749002db7b8cfc39c7b1e22eb50">parseNextLayer</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="a00017.html#a38b96ebfded7f751a0a3e2e89b32e976">  123</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00017.html#a38b96ebfded7f751a0a3e2e89b32e976">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00015.html">ether_header</a>); }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00017.html#a6740298bc6b49c5460a4ef4a390b9dea">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::string <a class="code" href="a00017.html#ab8202ef4d58a378749e14c09747029bd">toString</a>();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_ETH_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00119_html_a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93"><div class="ttname"><a href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186a58f510ba234a404ba398720021e75a93">Ethernet</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:19</div></div>
-<div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">ether_header</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:14</div></div>
-<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00017_html_a6d4385fbb8d002040d7229602d7367fa"><div class="ttname"><a href="a00017.html#a6d4385fbb8d002040d7229602d7367fa">EthLayer::setDestMac</a></div><div class="ttdeci">void setDestMac(const MacAddress &amp;destMac)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:109</div></div>
-<div class="ttc" id="a00017_html_ab8202ef4d58a378749e14c09747029bd"><div class="ttname"><a href="a00017.html#ab8202ef4d58a378749e14c09747029bd">EthLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00099_html"><div class="ttname"><a href="a00099.html">Layer.h</a></div></div>
-<div class="ttc" id="a00017_html_a6740298bc6b49c5460a4ef4a390b9dea"><div class="ttname"><a href="a00017.html#a6740298bc6b49c5460a4ef4a390b9dea">EthLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00017_html"><div class="ttname"><a href="a00017.html">EthLayer</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:60</div></div>
-<div class="ttc" id="a00015_html_ac116a63a9555eb93785b43c95a7099ff"><div class="ttname"><a href="a00015.html#ac116a63a9555eb93785b43c95a7099ff">ether_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> EthLayer.h:20</div></div>
-<div class="ttc" id="a00017_html_ac43bf749002db7b8cfc39c7b1e22eb50"><div class="ttname"><a href="a00017.html#ac43bf749002db7b8cfc39c7b1e22eb50">EthLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00015_html_a476baf8b22a014f9af6d15f10113b565"><div class="ttname"><a href="a00015.html#a476baf8b22a014f9af6d15f10113b565">ether_header::srcMac</a></div><div class="ttdeci">uint8_t srcMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:18</div></div>
-<div class="ttc" id="a00017_html_a38b96ebfded7f751a0a3e2e89b32e976"><div class="ttname"><a href="a00017.html#a38b96ebfded7f751a0a3e2e89b32e976">EthLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:123</div></div>
-<div class="ttc" id="a00017_html_accfedc24eda9b3b4b468ed6a2b220ce2"><div class="ttname"><a href="a00017.html#accfedc24eda9b3b4b468ed6a2b220ce2">EthLayer::setSoureMac</a></div><div class="ttdeci">void setSoureMac(const MacAddress &amp;sourceMac)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:97</div></div>
-<div class="ttc" id="a00045_html"><div class="ttname"><a href="a00045.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:14</div></div>
-<div class="ttc" id="a00017_html_a039c7173f98655299b58268cd35fc552"><div class="ttname"><a href="a00017.html#a039c7173f98655299b58268cd35fc552">EthLayer::EthLayer</a></div><div class="ttdeci">EthLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:69</div></div>
-<div class="ttc" id="a00017_html_a837f20752b1ba301fa79076ac19c80d4"><div class="ttname"><a href="a00017.html#a837f20752b1ba301fa79076ac19c80d4">EthLayer::getDestMac</a></div><div class="ttdeci">MacAddress getDestMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:103</div></div>
-<div class="ttc" id="a00045_html_a9823260693c248a92c9457b25fb19cc4"><div class="ttname"><a href="a00045.html#a9823260693c248a92c9457b25fb19cc4">MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr)</div></div>
-<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00017_html_a406cdd38fea0b50d7c22d91e10940071"><div class="ttname"><a href="a00017.html#a406cdd38fea0b50d7c22d91e10940071">EthLayer::getEthHeader</a></div><div class="ttdeci">ether_header * getEthHeader()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:85</div></div>
-<div class="ttc" id="a00017_html_a32cc8f4bd6c9642a6e7aac960cebf3d3"><div class="ttname"><a href="a00017.html#a32cc8f4bd6c9642a6e7aac960cebf3d3">EthLayer::getSourceMac</a></div><div class="ttdeci">MacAddress getSourceMac()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:91</div></div>
-<div class="ttc" id="a00015_html_a6c28900ad0b09ce7585dae662ed1829f"><div class="ttname"><a href="a00015.html#a6c28900ad0b09ce7585dae662ed1829f">ether_header::dstMac</a></div><div class="ttdeci">uint8_t dstMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:16</div></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> dpdkWorkerThreadStart(<span class="keywordtype">void</span> *ptr);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ~<a class="code" href="a00013.html">DpdkDeviceList</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00013.html#ae5c20926fd3d3391ba5576fdc039ee1b">   91</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00013.html">DpdkDeviceList</a>&amp; <a class="code" href="a00013.html#ae5c20926fd3d3391ba5576fdc039ee1b">getInstance</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00013.html">DpdkDeviceList</a> instance;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (!instance.isInitialized())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            instance.initDpdkDevices(DpdkDeviceList::m_MBufPoolSizePerDevice);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="a00013.html#acf98453d53266ec5fbe762974a5d1864">initDpdk</a>(CoreMask coreMask, uint32_t mBufPoolSizePerDevice);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="a00011.html">DpdkDevice</a>* <a class="code" href="a00013.html#ab26f5097632ccf8d5afc70c850e48e8c">getDeviceByPort</a>(<span class="keywordtype">int</span> portId);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="a00011.html">DpdkDevice</a>* <a class="code" href="a00013.html#a718d5fc531dc0e169fe9e75124afeae9">getDeviceByPciAddress</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">PciAddress</a>&amp; pciAddr);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00013.html#a1817d25d1dae8873fe135eba090d3f2f">  138</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;DpdkDevice*&gt;&amp; <a class="code" href="a00013.html#a1817d25d1dae8873fe135eba090d3f2f">getDpdkDeviceList</a>() { <span class="keywordflow">return</span> m_DpdkDeviceList; }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="a00075.html">SystemCore</a> <a class="code" href="a00013.html#aeadf2c180f1f71910702c41035bfde81">getDpdkMasterCore</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00013.html#a2a443902a887dca2e8d517761a5bc73b">setDpdkLogLevel</a>(<a class="code" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a> logLevel);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a> <a class="code" href="a00013.html#a42dcf1f6aaca95100be2db67f122c645">getDpdkLogLevel</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00013.html#a3e2465fbe487bb033646774e8f701cee">writeDpdkLogToFile</a>(FILE* logFile);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00013.html#a8b48a118567a58351cccb8e15fb261b4">startDpdkWorkerThreads</a>(CoreMask coreMask, std::vector&lt;DpdkWorkerThread*&gt;&amp; workerThreadsVec);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00013.html#a63498b2e990805bc33de5b06ed3c882e">stopDpdkWorkerThreads</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_DPDK */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_DPDK_DEVICE_LIST */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00013_html_ae5c20926fd3d3391ba5576fdc039ee1b"><div class="ttname"><a href="a00013.html#ae5c20926fd3d3391ba5576fdc039ee1b">DpdkDeviceList::getInstance</a></div><div class="ttdeci">static DpdkDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:91</div></div>
+<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">Logger.h</a></div></div>
+<div class="ttc" id="a00013_html_a1817d25d1dae8873fe135eba090d3f2f"><div class="ttname"><a href="a00013.html#a1817d25d1dae8873fe135eba090d3f2f">DpdkDeviceList::getDpdkDeviceList</a></div><div class="ttdeci">const std::vector&lt; DpdkDevice * &gt; &amp; getDpdkDeviceList()</div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:138</div></div>
+<div class="ttc" id="a00013_html_a2a443902a887dca2e8d517761a5bc73b"><div class="ttname"><a href="a00013.html#a2a443902a887dca2e8d517761a5bc73b">DpdkDeviceList::setDpdkLogLevel</a></div><div class="ttdeci">void setDpdkLogLevel(LoggerPP::LogLevel logLevel)</div></div>
+<div class="ttc" id="a00123_html"><div class="ttname"><a href="a00123.html">SystemUtils.h</a></div></div>
+<div class="ttc" id="a00013_html_a8b48a118567a58351cccb8e15fb261b4"><div class="ttname"><a href="a00013.html#a8b48a118567a58351cccb8e15fb261b4">DpdkDeviceList::startDpdkWorkerThreads</a></div><div class="ttdeci">bool startDpdkWorkerThreads(CoreMask coreMask, std::vector&lt; DpdkWorkerThread * &gt; &amp;workerThreadsVec)</div></div>
+<div class="ttc" id="a00014_html_afc2bb8d873a19ff3c88ed5d7a5901883"><div class="ttname"><a href="a00014.html#afc2bb8d873a19ff3c88ed5d7a5901883">DpdkWorkerThread::~DpdkWorkerThread</a></div><div class="ttdeci">virtual ~DpdkWorkerThread()</div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:32</div></div>
+<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">SystemCore</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:20</div></div>
+<div class="ttc" id="a00014_html_ad5a334d6164a2b0a61a18914483af112"><div class="ttname"><a href="a00014.html#ad5a334d6164a2b0a61a18914483af112">DpdkWorkerThread::run</a></div><div class="ttdeci">virtual bool run(uint32_t coreId)=0</div></div>
+<div class="ttc" id="a00013_html_a718d5fc531dc0e169fe9e75124afeae9"><div class="ttname"><a href="a00013.html#a718d5fc531dc0e169fe9e75124afeae9">DpdkDeviceList::getDeviceByPciAddress</a></div><div class="ttdeci">DpdkDevice * getDeviceByPciAddress(const PciAddress &amp;pciAddr)</div></div>
+<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">PciAddress</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:250</div></div>
+<div class="ttc" id="a00013_html_a3e2465fbe487bb033646774e8f701cee"><div class="ttname"><a href="a00013.html#a3e2465fbe487bb033646774e8f701cee">DpdkDeviceList::writeDpdkLogToFile</a></div><div class="ttdeci">bool writeDpdkLogToFile(FILE *logFile)</div></div>
+<div class="ttc" id="a00014_html"><div class="ttname"><a href="a00014.html">DpdkWorkerThread</a></div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:26</div></div>
+<div class="ttc" id="a00013_html_a63498b2e990805bc33de5b06ed3c882e"><div class="ttname"><a href="a00013.html#a63498b2e990805bc33de5b06ed3c882e">DpdkDeviceList::stopDpdkWorkerThreads</a></div><div class="ttdeci">void stopDpdkWorkerThreads()</div></div>
+<div class="ttc" id="a00014_html_a94d632c3af6d49ef6e7cbedec6233630"><div class="ttname"><a href="a00014.html#a94d632c3af6d49ef6e7cbedec6233630">DpdkWorkerThread::getCoreId</a></div><div class="ttdeci">virtual uint32_t getCoreId()=0</div></div>
+<div class="ttc" id="a00014_html_aa42c6e0a118f46037d9c8f87d2f460ec"><div class="ttname"><a href="a00014.html#aa42c6e0a118f46037d9c8f87d2f460ec">DpdkWorkerThread::stop</a></div><div class="ttdeci">virtual void stop()=0</div></div>
+<div class="ttc" id="a00013_html"><div class="ttname"><a href="a00013.html">DpdkDeviceList</a></div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:65</div></div>
+<div class="ttc" id="a00011_html"><div class="ttname"><a href="a00011.html">DpdkDevice</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:335</div></div>
+<div class="ttc" id="a00013_html_acf98453d53266ec5fbe762974a5d1864"><div class="ttname"><a href="a00013.html#acf98453d53266ec5fbe762974a5d1864">DpdkDeviceList::initDpdk</a></div><div class="ttdeci">static bool initDpdk(CoreMask coreMask, uint32_t mBufPoolSizePerDevice)</div></div>
+<div class="ttc" id="a00044_html_aa52cd7c3af16c16af7209f5769796047"><div class="ttname"><a href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdef"><b>Definition:</b> Logger.h:64</div></div>
+<div class="ttc" id="a00013_html_aeadf2c180f1f71910702c41035bfde81"><div class="ttname"><a href="a00013.html#aeadf2c180f1f71910702c41035bfde81">DpdkDeviceList::getDpdkMasterCore</a></div><div class="ttdeci">SystemCore getDpdkMasterCore()</div></div>
+<div class="ttc" id="a00013_html_a42dcf1f6aaca95100be2db67f122c645"><div class="ttname"><a href="a00013.html#a42dcf1f6aaca95100be2db67f122c645">DpdkDeviceList::getDpdkLogLevel</a></div><div class="ttdeci">LoggerPP::LogLevel getDpdkLogLevel()</div></div>
+<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">DpdkDevice.h</a></div></div>
+<div class="ttc" id="a00013_html_ab26f5097632ccf8d5afc70c850e48e8c"><div class="ttname"><a href="a00013.html#ab26f5097632ccf8d5afc70c850e48e8c">DpdkDeviceList::getDeviceByPort</a></div><div class="ttdeci">DpdkDevice * getDeviceByPort(int portId)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00093.html">EthLayer.h</a></li>
-    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00093.html">DpdkDeviceList.h</a></li>
+    <li class="footer">Generated on Fri Nov 27 2015 00:11:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

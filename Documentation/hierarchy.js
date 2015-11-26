@@ -19,20 +19,20 @@ var hierarchy =
       [ "IFilterWithDirection", "a00028.html", [
         [ "IPFilter", "a00034.html", null ],
         [ "MacAddressFilter", "a00046.html", null ],
-        [ "PortFilter", "a00064.html", null ],
-        [ "PortRangeFilter", "a00065.html", null ]
+        [ "PortFilter", "a00065.html", null ],
+        [ "PortRangeFilter", "a00066.html", null ]
       ] ],
       [ "IFilterWithOperator", "a00029.html", [
         [ "IpV4IDFilter", "a00037.html", null ],
         [ "IpV4TotalLengthFilter", "a00039.html", null ],
-        [ "TcpWindowSizeFilter", "a00080.html", null ],
-        [ "UdpLengthFilter", "a00083.html", null ]
+        [ "TcpWindowSizeFilter", "a00081.html", null ],
+        [ "UdpLengthFilter", "a00084.html", null ]
       ] ],
-      [ "NotFilter", "a00049.html", null ],
-      [ "OrFilter", "a00050.html", null ],
-      [ "ProtoFilter", "a00071.html", null ],
-      [ "TcpFlagsFilter", "a00076.html", null ],
-      [ "VlanFilter", "a00085.html", null ]
+      [ "NotFilter", "a00050.html", null ],
+      [ "OrFilter", "a00051.html", null ],
+      [ "ProtoFilter", "a00072.html", null ],
+      [ "TcpFlagsFilter", "a00077.html", null ],
+      [ "VlanFilter", "a00086.html", null ]
     ] ],
     [ "HttpField", "a00019.html", null ],
     [ "HttpRequestFirstLine", "a00021.html", null ],
@@ -49,14 +49,14 @@ var hierarchy =
     [ "IPcapDevice", "a00032.html", [
       [ "DpdkDevice", "a00011.html", null ],
       [ "IPcapFileDevice", "a00033.html", [
-        [ "PcapFileReaderDevice", "a00053.html", null ],
-        [ "PcapFileWriterDevice", "a00054.html", null ]
+        [ "PcapFileReaderDevice", "a00054.html", null ],
+        [ "PcapFileWriterDevice", "a00055.html", null ]
       ] ],
-      [ "PcapLiveDevice", "a00055.html", [
-        [ "PcapRemoteDevice", "a00058.html", null ],
-        [ "WinPcapLiveDevice", "a00087.html", null ]
+      [ "PcapLiveDevice", "a00056.html", [
+        [ "PcapRemoteDevice", "a00059.html", null ],
+        [ "WinPcapLiveDevice", "a00088.html", null ]
       ] ],
-      [ "PfRingDevice", "a00061.html", null ]
+      [ "PfRingDevice", "a00062.html", null ]
     ] ],
     [ "iphdr", "a00035.html", null ],
     [ "Layer", "a00042.html", [
@@ -70,35 +70,36 @@ var hierarchy =
       [ "IPv4Layer", "a00038.html", null ],
       [ "IPv6Layer", "a00041.html", null ],
       [ "MplsLayer", "a00048.html", null ],
-      [ "PayloadLayer", "a00052.html", null ],
-      [ "PPPoELayer", "a00068.html", [
-        [ "PPPoEDiscoveryLayer", "a00067.html", null ],
-        [ "PPPoESessionLayer", "a00069.html", null ]
+      [ "PayloadLayer", "a00053.html", null ],
+      [ "PPPoELayer", "a00069.html", [
+        [ "PPPoEDiscoveryLayer", "a00068.html", null ],
+        [ "PPPoESessionLayer", "a00070.html", null ]
       ] ],
-      [ "TcpLayer", "a00078.html", null ],
-      [ "UdpLayer", "a00082.html", null ],
-      [ "VlanLayer", "a00086.html", null ]
+      [ "TcpLayer", "a00079.html", null ],
+      [ "UdpLayer", "a00083.html", null ],
+      [ "VlanLayer", "a00087.html", null ]
     ] ],
     [ "DpdkDevice::LinkStatus", "a00043.html", null ],
     [ "LoggerPP", "a00044.html", null ],
     [ "MacAddress", "a00045.html", null ],
-    [ "Packet", "a00051.html", null ],
-    [ "PcapLiveDeviceList", "a00056.html", null ],
-    [ "PcapRemoteAuthentication", "a00057.html", null ],
-    [ "PcapRemoteDeviceList", "a00059.html", null ],
-    [ "PciAddress", "a00060.html", null ],
-    [ "PfRingDeviceList", "a00062.html", null ],
-    [ "PointerVector< T >", "a00063.html", null ],
-    [ "pppoe_header", "a00066.html", null ],
-    [ "PPPoEDiscoveryLayer::PPPoETag", "a00070.html", null ],
-    [ "RawPacket", "a00072.html", [
+    [ "NetworkUtils", "a00049.html", null ],
+    [ "Packet", "a00052.html", null ],
+    [ "PcapLiveDeviceList", "a00057.html", null ],
+    [ "PcapRemoteAuthentication", "a00058.html", null ],
+    [ "PcapRemoteDeviceList", "a00060.html", null ],
+    [ "PciAddress", "a00061.html", null ],
+    [ "PfRingDeviceList", "a00063.html", null ],
+    [ "PointerVector< T >", "a00064.html", null ],
+    [ "pppoe_header", "a00067.html", null ],
+    [ "PPPoEDiscoveryLayer::PPPoETag", "a00071.html", null ],
+    [ "RawPacket", "a00073.html", [
       [ "MBufRawPacket", "a00047.html", null ]
     ] ],
-    [ "ScalarBuffer", "a00073.html", null ],
-    [ "SystemCore", "a00074.html", null ],
-    [ "SystemCores", "a00075.html", null ],
-    [ "tcphdr", "a00077.html", null ],
-    [ "TcpOptionData", "a00079.html", null ],
-    [ "udphdr", "a00081.html", null ],
-    [ "vlan_header", "a00084.html", null ]
+    [ "ScalarBuffer", "a00074.html", null ],
+    [ "SystemCore", "a00075.html", null ],
+    [ "SystemCores", "a00076.html", null ],
+    [ "tcphdr", "a00078.html", null ],
+    [ "TcpOptionData", "a00080.html", null ],
+    [ "udphdr", "a00082.html", null ],
+    [ "vlan_header", "a00085.html", null ]
 ];

@@ -1,7 +1,6 @@
 var a00081 =
 [
-    [ "headerChecksum", "a00081.html#aa8f66911e3e8f9c6ceb9047d3de2a05b", null ],
-    [ "length", "a00081.html#a2af76d07e76ded39350f0cee2276cd9b", null ],
-    [ "portDst", "a00081.html#ab6266420dae91e2700c5596d093925d1", null ],
-    [ "portSrc", "a00081.html#ae086b88cd86b79ab903202a63ada7601", null ]
+    [ "TcpWindowSizeFilter", "a00081.html#acc9357f2e1334c76c3d7f4080dd90565", null ],
+    [ "parseToString", "a00081.html#a7d92c9daba6ce4377d0a205cbfd501b5", null ],
+    [ "setWindowSize", "a00081.html#a7e660d846be42bbe1c84fe802a9cb1a5", null ]
 ];

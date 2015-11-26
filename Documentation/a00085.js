@@ -1,6 +1,7 @@
 var a00085 =
 [
-    [ "VlanFilter", "a00085.html#a7ecef64b851197b9ffb29674acdceb53", null ],
-    [ "parseToString", "a00085.html#a82ce71c7bafe21a02c8707aa0f8155e7", null ],
-    [ "setVlanID", "a00085.html#ac28b8810c5fb2a00e194af2a217b2db1", null ]
+    [ "cfi", "a00085.html#a02d82722bad771f3d87368351f17daf6", null ],
+    [ "etherType", "a00085.html#aa97a61cf68c4c74fd553211eaf69c9d0", null ],
+    [ "priority", "a00085.html#a10d8579a58598192a70a71bfd4e8d9ae", null ],
+    [ "vlanID", "a00085.html#a86a22d2e107e474e60ae539e3e4a9d07", null ]
 ];

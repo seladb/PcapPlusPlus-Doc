@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PacketUtils.h Source File</title>
+<title>PcapPlusPlus: NetworkUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,28 +104,57 @@ $(document).ready(function(){initNavTree('a00105_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PacketUtils.h</div>  </div>
+<div class="title">NetworkUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00105.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PACKET_UTILS</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PACKET_UTILS</span></div>
+<a href="a00105.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_NETWORK_UTILS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_NETWORK_UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00104.html">Packet.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00102.html">MacAddress.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00096.html">IpAddress.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00112.html">PcapLiveDevice.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="a00105.html#a846ce7b8db1f8a4f14fde67f9574260e">hash5Tuple</a>(<a class="code" href="a00051.html">Packet</a>* packet);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PACKET_UTILS */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00105_html_a846ce7b8db1f8a4f14fde67f9574260e"><div class="ttname"><a href="a00105.html#a846ce7b8db1f8a4f14fde67f9574260e">hash5Tuple</a></div><div class="ttdeci">size_t hash5Tuple(Packet *packet)</div></div>
-<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">Packet.h</a></div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00049.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00049.html">NetworkUtils</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00049.html#a85120ac78c019808c93b6e81f757a268">   24</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00049.html">NetworkUtils</a>&amp; <a class="code" href="a00049.html#a85120ac78c019808c93b6e81f757a268">getInstance</a>()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00049.html">NetworkUtils</a> instance;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00045.html">MacAddress</a> <a class="code" href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">getMacAddress</a>(<a class="code" href="a00036.html">IPv4Address</a> ipAddr, <a class="code" href="a00056.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; arpResponseTimeMS,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="a00045.html">MacAddress</a> sourceMac = <a class="code" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a>, <a class="code" href="a00036.html">IPv4Address</a> sourceIP = <a class="code" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, <span class="keywordtype">int</span> arpTimeout = -1);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00049.html">NetworkUtils</a>() {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_NETWORK_UTILS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00045_html_a21e6f0508b2296b0a68dbfc6f3f58999"><div class="ttname"><a href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:102</div></div>
+<div class="ttc" id="a00056_html"><div class="ttname"><a href="a00056.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:58</div></div>
+<div class="ttc" id="a00036_html_a29833df4aff7a34168268bfb739ef759"><div class="ttname"><a href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:174</div></div>
+<div class="ttc" id="a00096_html"><div class="ttname"><a href="a00096.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00049_html_a85120ac78c019808c93b6e81f757a268"><div class="ttname"><a href="a00049.html#a85120ac78c019808c93b6e81f757a268">NetworkUtils::getInstance</a></div><div class="ttdeci">static NetworkUtils &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:24</div></div>
+<div class="ttc" id="a00112_html"><div class="ttname"><a href="a00112.html">PcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">NetworkUtils</a></div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:16</div></div>
+<div class="ttc" id="a00049_html_ae2dec7e712784572b1c9c552cd395e5f"><div class="ttname"><a href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">NetworkUtils::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress(IPv4Address ipAddr, PcapLiveDevice *device, double &amp;arpResponseTimeMS, MacAddress sourceMac=MacAddress::Zero, IPv4Address sourceIP=IPv4Address::Zero, int arpTimeout=-1)</div></div>
+<div class="ttc" id="a00045_html"><div class="ttname"><a href="a00045.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:14</div></div>
+<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">MacAddress.h</a></div></div>
+<div class="ttc" id="a00036_html"><div class="ttname"><a href="a00036.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00105.html">PacketUtils.h</a></li>
-    <li class="footer">Generated on Sun Nov 22 2015 00:19:49 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00105.html">NetworkUtils.h</a></li>
+    <li class="footer">Generated on Fri Nov 27 2015 00:11:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

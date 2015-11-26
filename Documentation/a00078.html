@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpLayer Class Reference</title>
+<title>PcapPlusPlus: tcphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,435 +106,258 @@ $(document).ready(function(){initNavTree('a00078.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00207.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00209.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TcpLayer Class Reference</div>  </div>
+<div class="title">tcphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00122_source.html">TcpLayer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for TcpLayer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00078.png" usemap="#TcpLayer_map" alt=""/>
-  <map id="TcpLayer_map" name="TcpLayer_map">
-<area href="a00042.html" alt="Layer" shape="rect" coords="0,0,66,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00124_source.html">TcpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3850a3c19cf04908b85e61b58e205e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00042.html">Layer</a> *prevLayer, <a class="el" href="a00051.html">Packet</a> *packet)</td></tr>
-<tr class="separator:ae3850a3c19cf04908b85e61b58e205e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75fc30bde3207ab648e51ed22798c48c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a75fc30bde3207ab648e51ed22798c48c">TcpLayer</a> (int tcpOptionsCount,...)</td></tr>
-<tr class="separator:a75fc30bde3207ab648e51ed22798c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9709376eedfc31327e214f8ce73f1d32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a9709376eedfc31327e214f8ce73f1d32">TcpLayer</a> (uint16_t portSrc, uint16_t portDst, int tcpOptionsCount,...)</td></tr>
-<tr class="separator:a9709376eedfc31327e214f8ce73f1d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04734fd0ba4cfdffd10ec9ca535467ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a04734fd0ba4cfdffd10ec9ca535467ad">TcpLayer</a> (const <a class="el" href="a00078.html">TcpLayer</a> &amp;other)</td></tr>
-<tr class="separator:a04734fd0ba4cfdffd10ec9ca535467ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e847982a29c79f82dad46a72194328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00078.html">TcpLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a35e847982a29c79f82dad46a72194328">operator=</a> (const <a class="el" href="a00078.html">TcpLayer</a> &amp;other)</td></tr>
-<tr class="separator:a35e847982a29c79f82dad46a72194328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7055966bc059ef64ad6105e96d45eb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html">tcphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ae7055966bc059ef64ad6105e96d45eb3">getTcpHeader</a> ()</td></tr>
-<tr class="separator:ae7055966bc059ef64ad6105e96d45eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8e35b6e5ef7ca15c411cf0e06a5a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00079.html">TcpOptionData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">getTcpOptionData</a> (<a class="el" href="a00122.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> option)</td></tr>
-<tr class="separator:ade8e35b6e5ef7ca15c411cf0e06a5a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affbf3461de826d95fd76af38f4646b83"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#affbf3461de826d95fd76af38f4646b83">getTcpOptionsCount</a> ()</td></tr>
-<tr class="separator:affbf3461de826d95fd76af38f4646b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f22d245631b261c0d2fc72cbfa5ad9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ac9f22d245631b261c0d2fc72cbfa5ad9">calculateChecksum</a> (bool writeResultToPacket)</td></tr>
-<tr class="separator:ac9f22d245631b261c0d2fc72cbfa5ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5142a7faf0be900aa5ea38c50a4c8b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a5142a7faf0be900aa5ea38c50a4c8b80">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a5142a7faf0be900aa5ea38c50a4c8b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea30d75a26555048d8089e9de3c51e2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#aaea30d75a26555048d8089e9de3c51e2">getHeaderLen</a> ()</td></tr>
-<tr class="separator:aaea30d75a26555048d8089e9de3c51e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac651dc5dee18295894f69922c7997df0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ac651dc5dee18295894f69922c7997df0">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:ac651dc5dee18295894f69922c7997df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0bef30fc37635d331e73cc720f5351"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a3a0bef30fc37635d331e73cc720f5351">toString</a> ()</td></tr>
-<tr class="separator:a3a0bef30fc37635d331e73cc720f5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00042"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00042')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00042.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00042.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00119.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5a2d35d141208f7c0be359a8b7240560"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a5a2d35d141208f7c0be359a8b7240560">portSrc</a></td></tr>
+<tr class="separator:a5a2d35d141208f7c0be359a8b7240560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93be0e43346ba24904df1babc4ddf6a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ae93be0e43346ba24904df1babc4ddf6a">portDst</a></td></tr>
+<tr class="separator:ae93be0e43346ba24904df1babc4ddf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719635a7e8291064205d4e4da519a8d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a719635a7e8291064205d4e4da519a8d5">sequenceNumber</a></td></tr>
+<tr class="separator:a719635a7e8291064205d4e4da519a8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94cd4e35bcf69033b49993538c3b7d7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#af94cd4e35bcf69033b49993538c3b7d7">ackNumber</a></td></tr>
+<tr class="separator:af94cd4e35bcf69033b49993538c3b7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf89ec60592a853f1ca2c5a5df358b8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a1cf89ec60592a853f1ca2c5a5df358b8">dataOffset</a>:4</td></tr>
+<tr class="separator:a1cf89ec60592a853f1ca2c5a5df358b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5c21a009a70af6f4cd3ce4864aec38"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a8c5c21a009a70af6f4cd3ce4864aec38">finFlag</a>:1</td></tr>
+<tr class="separator:a8c5c21a009a70af6f4cd3ce4864aec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e2fa2f073542b1a58694200b4dbf8c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a62e2fa2f073542b1a58694200b4dbf8c">synFlag</a>:1</td></tr>
+<tr class="separator:a62e2fa2f073542b1a58694200b4dbf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0c0af397c33a546ac0c557fe753883"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a9c0c0af397c33a546ac0c557fe753883">rstFlag</a>:1</td></tr>
+<tr class="separator:a9c0c0af397c33a546ac0c557fe753883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3defe5d445a1a73d1ecc78aa684d418e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a3defe5d445a1a73d1ecc78aa684d418e">pshFlag</a>:1</td></tr>
+<tr class="separator:a3defe5d445a1a73d1ecc78aa684d418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2089630e6184c407fe5f8c7b79873ee"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ad2089630e6184c407fe5f8c7b79873ee">ackFlag</a>:1</td></tr>
+<tr class="separator:ad2089630e6184c407fe5f8c7b79873ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d76fb4d7d89a8bd0d097a0730136f9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">urgFlag</a>:1</td></tr>
+<tr class="separator:ac7d76fb4d7d89a8bd0d097a0730136f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b2c2e4aeca5f39d05414f0e553516c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a97b2c2e4aeca5f39d05414f0e553516c">eceFlag</a>:1</td></tr>
+<tr class="separator:a97b2c2e4aeca5f39d05414f0e553516c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35739da86e2f8fef45f31e2afbaab326"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a35739da86e2f8fef45f31e2afbaab326">cwrFlag</a>:1</td></tr>
+<tr class="separator:a35739da86e2f8fef45f31e2afbaab326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3f4cb9892c601cdc16f0db15cb1cf9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a8a3f4cb9892c601cdc16f0db15cb1cf9">windowSize</a></td></tr>
+<tr class="separator:a8a3f4cb9892c601cdc16f0db15cb1cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd17508ed468222cd27a5715b2d34dbf"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#afd17508ed468222cd27a5715b2d34dbf">headerChecksum</a></td></tr>
+<tr class="separator:afd17508ed468222cd27a5715b2d34dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade025d3342ca70b77c5d25f3ee04eaac"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ade025d3342ca70b77c5d25f3ee04eaac">urgentPointer</a></td></tr>
+<tr class="separator:ade025d3342ca70b77c5d25f3ee04eaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a TCP (Transmission Control Protocol) protocol layer </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae3850a3c19cf04908b85e61b58e205e1"></a>
+<div class="textblock"><p>Represents an TCP protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad2089630e6184c407fe5f8c7b79873ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00042.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00051.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t tcphdr::ackFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00077.html">tcphdr</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00051.html">Packet</a> instance where layer will be stored in </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>ACK flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a75fc30bde3207ab648e51ed22798c48c"></a>
+<a class="anchor" id="af94cd4e35bcf69033b49993538c3b7d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tcpOptionsCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint32_t tcphdr::ackNumber</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that allocates a new TCP header with zero or more TCP options. TCP options will be created as part of the header and the user can get them through <a class="el" href="a00078.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">getTcpOptionData()</a>. TCP options created will have no value (just type and length) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpOptionsCount</td><td>Number of TCP options to create </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>A list of 'tcpOptionsCount' TCP options of type <a class="el" href="a00122.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Acknowledgment number </p>
 
 </div>
 </div>
-<a class="anchor" id="a9709376eedfc31327e214f8ce73f1d32"></a>
+<a class="anchor" id="a35739da86e2f8fef45f31e2afbaab326"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>portSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>portDst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tcpOptionsCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t tcphdr::cwrFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that allocates a new TCP header with source port and destination port and zero or more TCP options. TCP options will be created as part of the header and the user can get them through <a class="el" href="a00078.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">getTcpOptionData()</a>. TCP options created will have no value (just type and length) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">portSrc</td><td>Source port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">portDst</td><td>Destination port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpOptionsCount</td><td>Number of TCP options to create </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>A list of 'tcpOptionsCount' TCP options of type <a class="el" href="a00122.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>CWR flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a04734fd0ba4cfdffd10ec9ca535467ad"></a>
+<a class="anchor" id="a1cf89ec60592a853f1ca2c5a5df358b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00078.html">TcpLayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::dataOffset</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A copy constructor that copy the entire header from the other <a class="el" href="a00078.html">TcpLayer</a> (including TCP options) </p>
+<p>Specifies the size of the TCP header in 32-bit words </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9f22d245631b261c0d2fc72cbfa5ad9"></a>
+<a class="anchor" id="a97b2c2e4aeca5f39d05414f0e553516c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t TcpLayer::calculateChecksum </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>writeResultToPacket</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::eceFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the checksum from header and data and possibly write the result to <a class="el" href="a00077.html#afd17508ed468222cd27a5715b2d34dbf">tcphdr::headerChecksum</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">writeResultToPacket</td><td>If set to true then checksum result will be written to <a class="el" href="a00077.html#afd17508ed468222cd27a5715b2d34dbf">tcphdr::headerChecksum</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The checksum result </dd></dl>
+<p>ECE flag </p>
 
 </div>
 </div>
-<a class="anchor" id="ac651dc5dee18295894f69922c7997df0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TcpLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate <a class="el" href="a00077.html#afd17508ed468222cd27a5715b2d34dbf">tcphdr::headerChecksum</a> field </p>
-
-<p>Implements <a class="el" href="a00042.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaea30d75a26555048d8089e9de3c51e2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t TcpLayer::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00077.html">tcphdr</a> + all TCP options </dd></dl>
-
-<p>Implements <a class="el" href="a00042.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae7055966bc059ef64ad6105e96d45eb3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00077.html">tcphdr</a>* TcpLayer::getTcpHeader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the TCP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00077.html">tcphdr</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ade8e35b6e5ef7ca15c411cf0e06a5a93"></a>
+<a class="anchor" id="a8c5c21a009a70af6f4cd3ce4864aec38"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00079.html">TcpOptionData</a>* TcpLayer::getTcpOptionData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00122.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a>&#160;</td>
-          <td class="paramname"><em>option</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::finFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to a TCP option. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>The TCP option to get </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the TCP option location in the packet </dd></dl>
+<p>FIN flag </p>
 
 </div>
 </div>
-<a class="anchor" id="affbf3461de826d95fd76af38f4646b83"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t TcpLayer::getTcpOptionsCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of TCP options on packet </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a35e847982a29c79f82dad46a72194328"></a>
+<a class="anchor" id="afd17508ed468222cd27a5715b2d34dbf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00078.html">TcpLayer</a>&amp; TcpLayer::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00078.html">TcpLayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::headerChecksum</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An assignment operator that first delete all data from current layer and then copy the entire header from the other <a class="el" href="a00078.html">TcpLayer</a> (including TCP options) </p>
+<p>The 16-bit checksum field is used for error-checking of the header and data </p>
 
 </div>
 </div>
-<a class="anchor" id="a5142a7faf0be900aa5ea38c50a4c8b80"></a>
+<a class="anchor" id="ae93be0e43346ba24904df1babc4ddf6a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TcpLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::portDst</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a00023.html">HttpRequestLayer</a>, <a class="el" href="a00026.html">HttpResponseLayer</a>. Otherwise sets <a class="el" href="a00052.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="a00042.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
+<p>Destination TCP port </p>
 
 </div>
 </div>
-<a class="anchor" id="a3a0bef30fc37635d331e73cc720f5351"></a>
+<a class="anchor" id="a5a2d35d141208f7c0be359a8b7240560"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string TcpLayer::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t tcphdr::portSrc</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+<p>Source TCP port </p>
 
-<p>Implements <a class="el" href="a00042.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a3defe5d445a1a73d1ecc78aa684d418e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::pshFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PSH flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c0c0af397c33a546ac0c557fe753883"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::rstFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RST flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a719635a7e8291064205d4e4da519a8d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t tcphdr::sequenceNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sequence number </p>
+
+</div>
+</div>
+<a class="anchor" id="a62e2fa2f073542b1a58694200b4dbf8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::synFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SYN flag </p>
+
+</div>
+</div>
+<a class="anchor" id="ade025d3342ca70b77c5d25f3ee04eaac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::urgentPointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the URG flag (<a class="el" href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">tcphdr::urgFlag</a>) is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7d76fb4d7d89a8bd0d097a0730136f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::urgFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>URG flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a3f4cb9892c601cdc16f0db15cb1cf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tcphdr::windowSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The size of the receive window, which specifies the number of window size units (by default, bytes) </p>
 
 </div>
 </div>
@@ -543,8 +366,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00078.html">TcpLayer</a></li>
-    <li class="footer">Generated on Sun Nov 22 2015 00:19:50 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00078.html">tcphdr</a></li>
+    <li class="footer">Generated on Fri Nov 27 2015 00:11:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
