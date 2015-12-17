@@ -126,25 +126,33 @@ $(document).ready(function(){initNavTree('a00105_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> instance;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00045.html">MacAddress</a> <a class="code" href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">getMacAddress</a>(<a class="code" href="a00036.html">IPv4Address</a> ipAddr, <a class="code" href="a00056.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; arpResponseTimeMS,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="a00045.html">MacAddress</a> sourceMac = <a class="code" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a>, <a class="code" href="a00036.html">IPv4Address</a> sourceIP = <a class="code" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, <span class="keywordtype">int</span> arpTimeout = -1);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// private c&#39;tor</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00049.html">NetworkUtils</a>() {}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00049.html#a76efa16b2baae038fe2c2ced06054b31">   33</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="a00049.html#a76efa16b2baae038fe2c2ced06054b31">DefaultTimeout</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00045.html">MacAddress</a> <a class="code" href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">getMacAddress</a>(<a class="code" href="a00036.html">IPv4Address</a> ipAddr, <a class="code" href="a00056.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; arpResponseTimeMS,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="a00045.html">MacAddress</a> sourceMac = <a class="code" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a>, <a class="code" href="a00036.html">IPv4Address</a> sourceIP = <a class="code" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, <span class="keywordtype">int</span> arpTimeout = -1);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_NETWORK_UTILS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="a00036.html">IPv4Address</a> <a class="code" href="a00049.html#ae56be29200e694fbde61b77fe1687f8b">getIPv4Address</a>(std::string hostname, <a class="code" href="a00056.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; dnsResponseTimeMS, uint32_t&amp; dnsTTL,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">int</span> dnsTimeout = -1, <a class="code" href="a00036.html">IPv4Address</a> dnsServerIP = <a class="code" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, <a class="code" href="a00036.html">IPv4Address</a> gatewayIP = <a class="code" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="a00049.html">NetworkUtils</a>() {}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_NETWORK_UTILS */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a00045_html_a21e6f0508b2296b0a68dbfc6f3f58999"><div class="ttname"><a href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:102</div></div>
 <div class="ttc" id="a00056_html"><div class="ttname"><a href="a00056.html">PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:58</div></div>
 <div class="ttc" id="a00036_html_a29833df4aff7a34168268bfb739ef759"><div class="ttname"><a href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:174</div></div>
 <div class="ttc" id="a00096_html"><div class="ttname"><a href="a00096.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00049_html_ae56be29200e694fbde61b77fe1687f8b"><div class="ttname"><a href="a00049.html#ae56be29200e694fbde61b77fe1687f8b">NetworkUtils::getIPv4Address</a></div><div class="ttdeci">IPv4Address getIPv4Address(std::string hostname, PcapLiveDevice *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, IPv4Address dnsServerIP=IPv4Address::Zero, IPv4Address gatewayIP=IPv4Address::Zero)</div></div>
 <div class="ttc" id="a00049_html_a85120ac78c019808c93b6e81f757a268"><div class="ttname"><a href="a00049.html#a85120ac78c019808c93b6e81f757a268">NetworkUtils::getInstance</a></div><div class="ttdeci">static NetworkUtils &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:24</div></div>
 <div class="ttc" id="a00112_html"><div class="ttname"><a href="a00112.html">PcapLiveDevice.h</a></div></div>
 <div class="ttc" id="a00049_html"><div class="ttname"><a href="a00049.html">NetworkUtils</a></div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:16</div></div>
 <div class="ttc" id="a00049_html_ae2dec7e712784572b1c9c552cd395e5f"><div class="ttname"><a href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">NetworkUtils::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress(IPv4Address ipAddr, PcapLiveDevice *device, double &amp;arpResponseTimeMS, MacAddress sourceMac=MacAddress::Zero, IPv4Address sourceIP=IPv4Address::Zero, int arpTimeout=-1)</div></div>
+<div class="ttc" id="a00049_html_a76efa16b2baae038fe2c2ced06054b31"><div class="ttname"><a href="a00049.html#a76efa16b2baae038fe2c2ced06054b31">NetworkUtils::DefaultTimeout</a></div><div class="ttdeci">static const int DefaultTimeout</div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:33</div></div>
 <div class="ttc" id="a00045_html"><div class="ttname"><a href="a00045.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:14</div></div>
 <div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">MacAddress.h</a></div></div>
 <div class="ttc" id="a00036_html"><div class="ttname"><a href="a00036.html">IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:86</div></div>
@@ -154,7 +162,7 @@ $(document).ready(function(){initNavTree('a00105_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00105.html">NetworkUtils.h</a></li>
-    <li class="footer">Generated on Fri Nov 27 2015 00:11:52 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

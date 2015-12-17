@@ -12,6 +12,7 @@ var a00056 =
     [ "~PcapLiveDevice", "a00056.html#ad48b57cb49c1384ce3730d8e295e66fd", null ],
     [ "close", "a00056.html#a4ee9fd9baee69b80f9b2d4327340f103", null ],
     [ "getAddresses", "a00056.html#aad93e4ae406104e4627b911c5d3768c8", null ],
+    [ "getDefaultGateway", "a00056.html#ab24ee66cf26df433bc453716fcbdfa32", null ],
     [ "getDesc", "a00056.html#a300ad41766f9887818b6f6cef904e366", null ],
     [ "getDeviceType", "a00056.html#aaee16d25dcc202dab11a0fe2d162da9d", null ],
     [ "getIPv4Address", "a00056.html#ab6b987a553170405fe71c0aa13932520", null ],

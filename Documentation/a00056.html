@@ -160,6 +160,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad62357fad523dfcc32b498371996f0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b987a553170405fe71c0aa13932520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#ab6b987a553170405fe71c0aa13932520">getIPv4Address</a> ()</td></tr>
 <tr class="separator:ab6b987a553170405fe71c0aa13932520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24ee66cf26df433bc453716fcbdfa32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#ab24ee66cf26df433bc453716fcbdfa32">getDefaultGateway</a> ()</td></tr>
+<tr class="separator:ab24ee66cf26df433bc453716fcbdfa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8cf27a7df25f12ba852c1cf89c7e971"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#ad8cf27a7df25f12ba852c1cf89c7e971">startCapture</a> (<a class="el" href="a00112.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
 <tr class="separator:ad8cf27a7df25f12ba852c1cf89c7e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d14b58bf781afc8f357bf25b83f0091"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a0d14b58bf781afc8f357bf25b83f0091">startCapture</a> (<a class="el" href="a00112.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="a00112.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
@@ -330,6 +332,22 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PcapLiveDeviceList</
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A vector containing all addresses defined for this interface, each in pcap_addr_t struct </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab24ee66cf26df433bc453716fcbdfa32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00036.html">IPv4Address</a> PcapLiveDevice::getDefaultGateway </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The default gateway defined for this interface. If no default gateway is defined, if it's not IPv4 or if couldn't extract default gateway <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> will be returned. If multiple gateways were defined the first one will be returned </dd></dl>
 
 </div>
 </div>
@@ -1056,7 +1074,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PcapLiveDeviceList</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00056.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Fri Nov 27 2015 00:11:53 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Dec 17 2015 22:24:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -23,6 +23,7 @@ var a00101 =
       [ "PcapLogModuleLiveDevice", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42a7716b50f29d6ed5682578d84c352c1ee", null ],
       [ "PcapLogModuleFileDevice", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42af115e9bda85149fbb7d5cb4f9deb1c0b", null ],
       [ "PcapLogModulePfRingDevice", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42af61743915ea353b4a102bc521aca2460", null ],
-      [ "PcapLogModuleDpdkDevice", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42a863ed179ae595e1bb262be9c24016080", null ]
+      [ "PcapLogModuleDpdkDevice", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42a863ed179ae595e1bb262be9c24016080", null ],
+      [ "NetworkUtils", "a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42ad97572bbb967c94b210d930a6dc88050", null ]
     ] ]
 ];
