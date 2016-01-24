@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: ArpLayer.h File Reference</title>
+<title>PcapPlusPlus: SystemCore Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,8 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,51 +106,80 @@ $(document).ready(function(){initNavTree('a00089.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00235.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ArpLayer.h File Reference</div>  </div>
+<div class="title">SystemCore Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00100_source.html">Layer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00096_source.html">IpAddress.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00102_source.html">MacAddress.h</a>&gt;</code><br />
-</div>
-<p><a href="a00089_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00138_source.html">SystemUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html">arphdr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html">ArpLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7065c1aa702fdb428f51b47a2f27527d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a7065c1aa702fdb428f51b47a2f27527d">operator==</a> (const <a class="el" href="a00089.html">SystemCore</a> &amp;other) const </td></tr>
+<tr class="separator:a7065c1aa702fdb428f51b47a2f27527d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:aefdd3857f04fba01d5122a0e34df9523"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> { <a class="el" href="a00089.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61">ARP_REQUEST</a> = 0x0001, 
-<a class="el" href="a00089.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9">ARP_REPLY</a> = 0x0002
- }</td></tr>
-<tr class="separator:aefdd3857f04fba01d5122a0e34df9523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aec2a69cbcd7b7c034c44b731b5882fb4">Mask</a></td></tr>
+<tr class="separator:aec2a69cbcd7b7c034c44b731b5882fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a672c4cde277bcdeae49c1519415db6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a1a672c4cde277bcdeae49c1519415db6">Id</a></td></tr>
+<tr class="separator:a1a672c4cde277bcdeae49c1519415db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="aefdd3857f04fba01d5122a0e34df9523"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents data of 1 CPU core. Current implementation supports up to 32 cores </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7065c1aa702fdb428f51b47a2f27527d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SystemCore::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00089.html">SystemCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the comparison operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are equal. False otherwise </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1a672c4cde277bcdeae49c1519415db6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00089.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a></td>
+          <td class="memname">uint8_t SystemCore::Id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum for ARP message type </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61"></a>ARP_REQUEST&#160;</td><td class="fielddoc">
-<p>ARP request. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9"></a>ARP_REPLY&#160;</td><td class="fielddoc">
-<p>ARP reply (response) </p>
-</td></tr>
-</table>
+<p>Core ID - a value between 0 and 31 </p>
+
+</div>
+</div>
+<a class="anchor" id="aec2a69cbcd7b7c034c44b731b5882fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SystemCore::Mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Core position in a 32-bit mask. For each core this attribute holds a 4B integer where only 1 bit is set, according to the core ID. For example: in core #0 the right-most bit will be set (meaning the number 0x01); in core #5 the 5th right-most bit will be set (meaning the number 0x20)... </p>
 
 </div>
 </div>
@@ -157,8 +188,8 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00089.html">ArpLayer.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00089.html">SystemCore</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

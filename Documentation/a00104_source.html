@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: MplsLayer.h Source File</title>
+<title>PcapPlusPlus: debug_new.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,91 +104,92 @@ $(document).ready(function(){initNavTree('a00104_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">MplsLayer.h</div>  </div>
+<div class="title">debug_new.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00104.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_MPLS_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_MPLS_LAYER</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00100.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00048.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00048.html">MplsLayer</a> : <span class="keyword">public</span> <a class="code" href="a00042.html">Layer</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">struct </span>mpls_header</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        uint16_t    hiLabel;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        uint8_t     misc;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        uint8_t     ttl;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #pragma pack(pop)</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * debug_new.h  1.7 2003/07/03</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Header file for checking leakage by operator new</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * By Wu Yongwei</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef _DEBUG_NEW_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define _DEBUG_NEW_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;new&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/* Prototypes */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> start_leak_check();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">bool</span> check_leaks();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef NO_PLACEMENT_DELETE</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* pointer, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* pointer, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // NO_PLACEMENT_DELETE</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span>*);  <span class="comment">// MSVC 6 requires this declaration</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">inline</span> mpls_header* getMplsHeader() { <span class="keywordflow">return</span> (mpls_header*)m_Data; };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00048.html#a7c1242fda80832940c725ead78718ccb">   35</a></span>&#160;    <a class="code" href="a00048.html#a7c1242fda80832940c725ead78718ccb">MplsLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00042.html">Layer</a>* prevLayer, <a class="code" href="a00052.html">Packet</a>* packet) : <a class="code" href="a00042.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00121.html#a2b99fb4e4914a533566284f2ed3b0186ac242e6752216370a3f79578eb37ff39e">MPLS</a>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00048.html#a7c1242fda80832940c725ead78718ccb">MplsLayer</a>(uint32_t mplsLabel, uint8_t ttl, uint8_t expermentalUseValue, <span class="keywordtype">bool</span> bottomOfStack);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00048.html">MplsLayer</a>() {}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00048.html#a1f829b0f345c91b4d0e8a782243eeb40">   51</a></span>&#160;    <span class="keyword">inline</span> uint8_t <a class="code" href="a00048.html#a1f829b0f345c91b4d0e8a782243eeb40">getTTL</a>() { <span class="keywordflow">return</span> getMplsHeader()-&gt;ttl; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* Macros */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef DEBUG_NEW_NO_NEW_REDEFINITION</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define new DEBUG_NEW</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define DEBUG_NEW new(__FILE__, __LINE__)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define debug_new new</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define debug_new new(__FILE__, __LINE__)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // DEBUG_NEW_NO_NEW_REDEFINITION</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef DEBUG_NEW_EMULATE_MALLOC</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define malloc(s) ((void*)(debug_new char[s]))</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define free(p) delete[] (char*)(p)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // DEBUG_NEW_EMULATE_MALLOC</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* Control flags */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> new_verbose_flag;   <span class="comment">// default to false: no verbose information</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> new_autocheck_flag; <span class="comment">// default to true: call check_leaks() on exit</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00006.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00006.html">debug_new_counter</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> _S_count;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00006.html">debug_new_counter</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ++_S_count;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00048.html#a6af98621c1057a6b37a6e4bb4bc399ad">   57</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00048.html#a6af98621c1057a6b37a6e4bb4bc399ad">setTTL</a>(uint8_t ttl) { getMplsHeader()-&gt;ttl = ttl; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00048.html#ae6e316a4e2569b396383daf5309c2dff">isBottomOfStack</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00048.html#a69c55d61c88f514f241e88161606434a">setBottomOfStack</a>(<span class="keywordtype">bool</span> val);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ~<a class="code" href="a00006.html">debug_new_counter</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (--_S_count == 0 &amp;&amp; new_autocheck_flag)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (check_leaks())</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                new_verbose_flag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    #if defined(__GNUC__) &amp;&amp; __GNUC__ == 3</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> (!getenv(<span class="stringliteral">&quot;GLIBCPP_FORCE_NEW&quot;</span>) &amp;&amp; !getenv(<span class="stringliteral">&quot;GLIBCXX_FORCE_NEW&quot;</span>))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    fprintf(new_output_fp,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="stringliteral">&quot;*** WARNING:  GCC 3 is detected, please make sure the environment\n&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="stringliteral">&quot;    variable GLIBCPP_FORCE_NEW (GCC 3.2 and 3.3) or GLIBCXX_FORCE_NEW\n&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="stringliteral">&quot;    (GCC 3.4) is defined.  Check the README file for details.\n&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    uint8_t <a class="code" href="a00048.html#abadc1a5849e02284f38e454996535b09">getExperimentalUseValue</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> debug_new_counter::_S_count = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <a class="code" href="a00006.html">debug_new_counter</a> __debug_new_count;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00048.html#a25b18d4245324b4f4f61c793fd0a5546">setExperimentalUseValue</a>(uint8_t val);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    uint32_t <a class="code" href="a00048.html#a97237483b6c499bb71a59f0ccd44cb52">getMplsLabel</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00048.html#a5299391966d2c40e7c270a97e123de08">setMplsLabel</a>(uint32_t label);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00048.html#a995679f0eaa5914e004b3104678f31dc">parseNextLayer</a>();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00048.html#a0763de414a9b6152a7a7117981eb3195">  105</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00048.html#a0763de414a9b6152a7a7117981eb3195">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(mpls_header); }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00048.html#aa692c5176c8a423ccc3aaf1e8ff73dde">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::string <a class="code" href="a00048.html#af1f34bcc4170ae4df03f04072ec84b44">toString</a>();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_MPLS_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00048_html_af1f34bcc4170ae4df03f04072ec84b44"><div class="ttname"><a href="a00048.html#af1f34bcc4170ae4df03f04072ec84b44">MplsLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00048_html_aa692c5176c8a423ccc3aaf1e8ff73dde"><div class="ttname"><a href="a00048.html#aa692c5176c8a423ccc3aaf1e8ff73dde">MplsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00048_html_a995679f0eaa5914e004b3104678f31dc"><div class="ttname"><a href="a00048.html#a995679f0eaa5914e004b3104678f31dc">MplsLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00048_html_a97237483b6c499bb71a59f0ccd44cb52"><div class="ttname"><a href="a00048.html#a97237483b6c499bb71a59f0ccd44cb52">MplsLayer::getMplsLabel</a></div><div class="ttdeci">uint32_t getMplsLabel()</div></div>
-<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00048_html_a1f829b0f345c91b4d0e8a782243eeb40"><div class="ttname"><a href="a00048.html#a1f829b0f345c91b4d0e8a782243eeb40">MplsLayer::getTTL</a></div><div class="ttdeci">uint8_t getTTL()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:51</div></div>
-<div class="ttc" id="a00048_html_a7c1242fda80832940c725ead78718ccb"><div class="ttname"><a href="a00048.html#a7c1242fda80832940c725ead78718ccb">MplsLayer::MplsLayer</a></div><div class="ttdeci">MplsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:35</div></div>
-<div class="ttc" id="a00048_html_abadc1a5849e02284f38e454996535b09"><div class="ttname"><a href="a00048.html#abadc1a5849e02284f38e454996535b09">MplsLayer::getExperimentalUseValue</a></div><div class="ttdeci">uint8_t getExperimentalUseValue()</div></div>
-<div class="ttc" id="a00048_html_a6af98621c1057a6b37a6e4bb4bc399ad"><div class="ttname"><a href="a00048.html#a6af98621c1057a6b37a6e4bb4bc399ad">MplsLayer::setTTL</a></div><div class="ttdeci">void setTTL(uint8_t ttl)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:57</div></div>
-<div class="ttc" id="a00100_html"><div class="ttname"><a href="a00100.html">Layer.h</a></div></div>
-<div class="ttc" id="a00121_html_a2b99fb4e4914a533566284f2ed3b0186ac242e6752216370a3f79578eb37ff39e"><div class="ttname"><a href="a00121.html#a2b99fb4e4914a533566284f2ed3b0186ac242e6752216370a3f79578eb37ff39e">MPLS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:99</div></div>
-<div class="ttc" id="a00048_html_a69c55d61c88f514f241e88161606434a"><div class="ttname"><a href="a00048.html#a69c55d61c88f514f241e88161606434a">MplsLayer::setBottomOfStack</a></div><div class="ttdeci">void setBottomOfStack(bool val)</div></div>
-<div class="ttc" id="a00048_html_a5299391966d2c40e7c270a97e123de08"><div class="ttname"><a href="a00048.html#a5299391966d2c40e7c270a97e123de08">MplsLayer::setMplsLabel</a></div><div class="ttdeci">bool setMplsLabel(uint32_t label)</div></div>
-<div class="ttc" id="a00048_html_a0763de414a9b6152a7a7117981eb3195"><div class="ttname"><a href="a00048.html#a0763de414a9b6152a7a7117981eb3195">MplsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:105</div></div>
-<div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00048_html_ae6e316a4e2569b396383daf5309c2dff"><div class="ttname"><a href="a00048.html#ae6e316a4e2569b396383daf5309c2dff">MplsLayer::isBottomOfStack</a></div><div class="ttdeci">bool isBottomOfStack()</div></div>
-<div class="ttc" id="a00048_html_a25b18d4245324b4f4f61c793fd0a5546"><div class="ttname"><a href="a00048.html#a25b18d4245324b4f4f61c793fd0a5546">MplsLayer::setExperimentalUseValue</a></div><div class="ttdeci">bool setExperimentalUseValue(uint8_t val)</div></div>
-<div class="ttc" id="a00048_html"><div class="ttname"><a href="a00048.html">MplsLayer</a></div><div class="ttdef"><b>Definition:</b> MplsLayer.h:13</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // _DEBUG_NEW_H</span></div>
+<div class="ttc" id="a00006_html"><div class="ttname"><a href="a00006.html">debug_new_counter</a></div><div class="ttdef"><b>Definition:</b> debug_new.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00104.html">MplsLayer.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>debug_new.h</b></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

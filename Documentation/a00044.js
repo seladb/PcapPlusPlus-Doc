@@ -1,18 +1,9 @@
 var a00044 =
 [
-    [ "LogLevel", "a00044.html#aa52cd7c3af16c16af7209f5769796047", [
-      [ "Normal", "a00044.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858", null ],
-      [ "Debug", "a00044.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd", null ]
-    ] ],
-    [ "enableErrors", "a00044.html#a949a764e78f7ab3e4610e130032f9cc4", null ],
-    [ "getErrorString", "a00044.html#acc1ea00b8e216aef697e0408bf449b95", null ],
-    [ "getErrorStringLength", "a00044.html#a78215dfe2058fb59a56976ef04950f54", null ],
-    [ "getLogModulesArr", "a00044.html#a3d498104bed27d40459c0c38c1c7d68b", null ],
-    [ "isDebugEnabled", "a00044.html#a7f6c407ddd90de83220b90067b513587", null ],
-    [ "isErrorStringSet", "a00044.html#a28a3be2f5201ab478baff464d8b5df6c", null ],
-    [ "isSupressErrors", "a00044.html#a0665db5b2cc061cd022e4666f540662e", null ],
-    [ "setAllModlesToLogLevel", "a00044.html#aff10ddbdb52cc2c25fb5e450000495f7", null ],
-    [ "setErrorString", "a00044.html#a8b2e3f0c471f4391d581ed021d60f7c9", null ],
-    [ "setLogLevel", "a00044.html#a81e0fa1eef639071d680bf89efae2747", null ],
-    [ "supressErrors", "a00044.html#acbb4c2c036fd4c5a9af65ad0f20f7e94", null ]
+    [ "flowLabel", "a00044.html#a762b4f1d04aecd5ba1e56b727f429a55", null ],
+    [ "hopLimit", "a00044.html#a5fba5b3fff7592a63edff494b06c4cfd", null ],
+    [ "ipVersion", "a00044.html#abc8ebe089295de52b28f36f334b25d41", null ],
+    [ "nextHeader", "a00044.html#ad71ca13fffd4168105ad70968f3dfb9a", null ],
+    [ "payloadLength", "a00044.html#ae21ab8d7d283ccc67945b17a7c3eaea2", null ],
+    [ "trafficClass", "a00044.html#ab3e5707fe83ab95ab6990a63c2bcb9b0", null ]
 ];

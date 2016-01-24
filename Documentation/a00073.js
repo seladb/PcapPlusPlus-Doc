@@ -1,19 +1,10 @@
 var a00073 =
 [
-    [ "RawPacket", "a00073.html#abd3f1c07c2d7a85bbcfe3994dd1161e6", null ],
-    [ "RawPacket", "a00073.html#a89cd28744cc38377744b685a03a3caaf", null ],
-    [ "~RawPacket", "a00073.html#afa363311e6a8c5e061ad30a814c60301", null ],
-    [ "RawPacket", "a00073.html#ad75d6d55c4481bb828c1a6153622f084", null ],
-    [ "appendData", "a00073.html#a086e619e43dadced165725ddf95d4c18", null ],
-    [ "clear", "a00073.html#a271ce177253f94371369d2b9cd0758ff", null ],
-    [ "getPacketTimeStamp", "a00073.html#a808262a20ed8401ea1ab9f73495040af", null ],
-    [ "getRawData", "a00073.html#ad939e08a8c61635bafbf5d01ca3011b7", null ],
-    [ "getRawDataLen", "a00073.html#a98299dc951ac4eaa5364b5dbb9f3ff88", null ],
-    [ "getRawDataReadOnly", "a00073.html#a590a2f8d285e6158af3d1dfd013552e9", null ],
-    [ "insertData", "a00073.html#a508de0c720563e7b109307412400810b", null ],
-    [ "isPacketSet", "a00073.html#aecda6b74e4c0ce3264fc0bf69b689567", null ],
-    [ "operator=", "a00073.html#ac01c7f5767e7110773f5ea2aa5ac351c", null ],
-    [ "reallocateData", "a00073.html#a7a71a1178b795515aeee0192c8635699", null ],
-    [ "removeData", "a00073.html#a7a5d8a17fb2b356416065fa4274c7f08", null ],
-    [ "setRawData", "a00073.html#a08a2ed4ed7ba33f50b4bd5a8b77f02ca", null ]
+    [ "getDeviceType", "a00073.html#ac09338c44301f7cdb9b833497641139f", null ],
+    [ "getMacAddress", "a00073.html#a57d8b6fc5eadc45214d1b1e0d166356c", null ],
+    [ "getMtu", "a00073.html#a1edc9591657c5b8551b41ee87d85a77f", null ],
+    [ "getRemoteMachineIpAddress", "a00073.html#ab909cdc8cb52deec2f6796e8dfc1bd0b", null ],
+    [ "getRemoteMachinePort", "a00073.html#a22476ed79eeb632549791e8e7d5cdb88", null ],
+    [ "getStatistics", "a00073.html#a8d10ffda65b9a4ba61d0193cf6b1872d", null ],
+    [ "open", "a00073.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced", null ]
 ];

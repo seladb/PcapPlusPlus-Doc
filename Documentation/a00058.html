@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapRemoteAuthentication Struct Reference</title>
+<title>PcapPlusPlus: LoggerPP Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,36 +106,86 @@ $(document).ready(function(){initNavTree('a00058.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00189.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00204.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PcapRemoteAuthentication Struct Reference</div>  </div>
+<div class="title">LoggerPP Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00114_source.html">PcapRemoteDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00116_source.html">Logger.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa52cd7c3af16c16af7209f5769796047"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> { <a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858">Normal</a>, 
+<a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd">Debug</a>
+ }</td></tr>
+<tr class="separator:aa52cd7c3af16c16af7209f5769796047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a663b9a8a1c13d300671d2dc0dbe32e73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a663b9a8a1c13d300671d2dc0dbe32e73">PcapRemoteAuthentication</a> (const std::string username, const std::string <a class="el" href="a00058.html#ac2ac1b15fff978114886e224786c46b7">password</a>)</td></tr>
-<tr class="separator:a663b9a8a1c13d300671d2dc0dbe32e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee229ba5f3c4c0fd6040b6132ab0f5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#aaee229ba5f3c4c0fd6040b6132ab0f5d">PcapRemoteAuthentication</a> (const <a class="el" href="a00058.html">PcapRemoteAuthentication</a> &amp;other)</td></tr>
-<tr class="separator:aaee229ba5f3c4c0fd6040b6132ab0f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bbf0cad6e1deafd040632500da4a00"><td class="memItemLeft" align="right" valign="top">pcap_rmtauth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a88bbf0cad6e1deafd040632500da4a00">getPcapRmAuth</a> ()</td></tr>
-<tr class="separator:a88bbf0cad6e1deafd040632500da4a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e0fa1eef639071d680bf89efae2747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a81e0fa1eef639071d680bf89efae2747">setLogLevel</a> (<a class="el" href="a00116.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module, <a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
+<tr class="separator:a81e0fa1eef639071d680bf89efae2747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#aff10ddbdb52cc2c25fb5e450000495f7">setAllModlesToLogLevel</a> (<a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
+<tr class="separator:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6c407ddd90de83220b90067b513587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a7f6c407ddd90de83220b90067b513587">isDebugEnabled</a> (<a class="el" href="a00116.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module)</td></tr>
+<tr class="separator:a7f6c407ddd90de83220b90067b513587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d498104bed27d40459c0c38c1c7d68b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr</a> ()</td></tr>
+<tr class="separator:a3d498104bed27d40459c0c38c1c7d68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a3be2f5201ab478baff464d8b5df6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a28a3be2f5201ab478baff464d8b5df6c">isErrorStringSet</a> ()</td></tr>
+<tr class="separator:a28a3be2f5201ab478baff464d8b5df6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1ea00b8e216aef697e0408bf449b95"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#acc1ea00b8e216aef697e0408bf449b95">getErrorString</a> ()</td></tr>
+<tr class="separator:acc1ea00b8e216aef697e0408bf449b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a8b2e3f0c471f4391d581ed021d60f7c9">setErrorString</a> (char *errString, int len)</td></tr>
+<tr class="separator:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78215dfe2058fb59a56976ef04950f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a78215dfe2058fb59a56976ef04950f54">getErrorStringLength</a> ()</td></tr>
+<tr class="separator:a78215dfe2058fb59a56976ef04950f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#acbb4c2c036fd4c5a9af65ad0f20f7e94">supressErrors</a> ()</td></tr>
+<tr class="separator:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a764e78f7ab3e4610e130032f9cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a949a764e78f7ab3e4610e130032f9cc4">enableErrors</a> ()</td></tr>
+<tr class="separator:a949a764e78f7ab3e4610e130032f9cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0665db5b2cc061cd022e4666f540662e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a0665db5b2cc061cd022e4666f540662e">isSupressErrors</a> ()</td></tr>
+<tr class="separator:a0665db5b2cc061cd022e4666f540662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a0a2c5a5e64fb0c39dae67dd1a267be0c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a0a2c5a5e64fb0c39dae67dd1a267be0c">userName</a></td></tr>
-<tr class="separator:a0a2c5a5e64fb0c39dae67dd1a267be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac1b15fff978114886e224786c46b7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#ac2ac1b15fff978114886e224786c46b7">password</a></td></tr>
-<tr class="separator:ac2ac1b15fff978114886e224786c46b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ed1b706144dcc9214fad2da0349847e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00058.html">LoggerPP</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a0ed1b706144dcc9214fad2da0349847e">getInstance</a> ()</td></tr>
+<tr class="separator:a0ed1b706144dcc9214fad2da0349847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The remote daemon (rpcapd) can be configured to require authentication before allowing a client to connect. This is done for security reasons of course. This struct wraps the WinPcap authentication object (pcap_rmtauth) and can (but not must) be given to <a class="el" href="a00060.html">PcapRemoteDeviceList</a> when initiating a connection to the remote daemon </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a663b9a8a1c13d300671d2dc0dbe32e73"></a>
+<div class="textblock"><p>The PcapPlusPlus log manager class. PcapPlusPlus uses this logger to output both error and debug logs.</p>
+<p>Debug logs: PcapPlusPlus is divided into modules (described in LogModule enum). The user can set each module or all modules to output or suppress debug messages. The default is suppressing debug messages. Changing debug log level for modules can be done dynamically while application is running.</p>
+<p>Error logs: errors are printed by default to stderr. The user can change this behavior in several manners:</p><ol type="1">
+<li>Suppress errors - no errors will be printed (for all modules)</li>
+<li>Print error logs to a string provided by the user instead of stderr</li>
+</ol>
+<p>PcapPlusPlus logger is a singleton which can be reached from anywhere in the code * </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="aa52cd7c3af16c16af7209f5769796047"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum representing the log level. Currently 2 log level are supported: Normal and Debug. Normal is the default log level </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858"></a>Normal&#160;</td><td class="fielddoc">
+<p>Normal log level. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd"></a>Debug&#160;</td><td class="fielddoc">
+<p>Debug log level. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a949a764e78f7ab3e4610e130032f9cc4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -143,16 +193,246 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PcapRemoteAuthentication::PcapRemoteAuthentication </td>
+          <td class="memname">void LoggerPP::enableErrors </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>username</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable all errors in all PcapPlusPlusModules </p>
+
+</div>
+</div>
+<a class="anchor" id="acc1ea00b8e216aef697e0408bf449b95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* LoggerPP::getErrorString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the pointer to the error string set by the user. If no such pointer was provided by the user, NULL will be returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the string </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78215dfe2058fb59a56976ef04950f54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoggerPP::getErrorStringLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the user-defined error string length. If no such pointer was provided by the user, 0 will be returned </p><dl class="section return"><dt>Returns</dt><dd>The user-defined error string length </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ed1b706144dcc9214fad2da0349847e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00058.html">LoggerPP</a>&amp; LoggerPP::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get access to <a class="el" href="a00058.html">LoggerPP</a> singleton </p><dl class="todo"><dt><b><a class="el" href="a00144.html#_todo000003">Todo:</a></b></dt><dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00058.html">LoggerPP</a> singleton </dd></dl>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d498104bed27d40459c0c38c1c7d68b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>* LoggerPP::getLogModulesArr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an array that contains log level information for all modules. User can access this array with a certain PcapPlusPlus module and get the log level this module is currently in. For example: LogLevel* myLogLevelArr = <a class="el" href="a00058.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr()</a>; if (myLogLevelArr[PacketLogModuleUdpLayer] == LogLevel::Debug) .... </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the LogLevel array </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f6c407ddd90de83220b90067b513587"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LoggerPP::isDebugEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00116.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether a certain module is set to debug log level </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this module log level is "debug". False otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a28a3be2f5201ab478baff464d8b5df6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LoggerPP::isErrorStringSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether error string was already set </p><dl class="section return"><dt>Returns</dt><dd>true if error string was already set, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0665db5b2cc061cd022e4666f540662e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LoggerPP::isSupressErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an indication if errors are currently suppressed </p><dl class="section return"><dt>Returns</dt><dd>True if errors are currently suppressed, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff10ddbdb52cc2c25fb5e450000495f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoggerPP::setAllModlesToLogLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set all PcapPlusPlus modules to a certain log leve </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set all modules to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b2e3f0c471f4391d581ed021d60f7c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoggerPP::setErrorString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>errString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -166,17 +446,17 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that sets username and password </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the error string to a string pointer provided by the user. By default all errors are printed to stderr. Using this method will cause PcapPlusPlus to output errors to the user string instead </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">username</td><td>The username for authentication with the remote daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>The password for authentication with the remote daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">errString</td><td>A string pointer provided by the user which all error messages will be print to from now on </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length of errString array. If </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aaee229ba5f3c4c0fd6040b6132ab0f5d"></a>
+<a class="anchor" id="a81e0fa1eef639071d680bf89efae2747"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -184,10 +464,50 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PcapRemoteAuthentication::PcapRemoteAuthentication </td>
+          <td class="memname">void LoggerPP::setLogLevel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00058.html">PcapRemoteAuthentication</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00116.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00058.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the log level for a certain PcapPlusPlus module </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set the module to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acbb4c2c036fd4c5a9af65ad0f20f7e94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoggerPP::supressErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,56 +517,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A copy c'tor for this object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The object to copy from </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a88bbf0cad6e1deafd040632500da4a00"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcap_rmtauth PcapRemoteAuthentication::getPcapRmAuth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A conversion method from <a class="el" href="a00058.html">PcapRemoteAuthentication</a> to pcap_rmtauth. Note: the char* pointers of the returned pcap_rmtauth points to the same places in memory as <a class="el" href="a00058.html#a0a2c5a5e64fb0c39dae67dd1a267be0c">PcapRemoteAuthentication::userName</a> and <a class="el" href="a00058.html#ac2ac1b15fff978114886e224786c46b7">PcapRemoteAuthentication::password</a> so the user should avoid freeing this memory </p><dl class="section return"><dt>Returns</dt><dd>A pcap_rmtauth that is converted from this class </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ac2ac1b15fff978114886e224786c46b7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string PcapRemoteAuthentication::password</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The password for authentication </p>
-
-</div>
-</div>
-<a class="anchor" id="a0a2c5a5e64fb0c39dae67dd1a267be0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string PcapRemoteAuthentication::userName</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The username for authentication </p>
+<p>Suppress all errors in all PcapPlusPlusModules </p>
 
 </div>
 </div>
@@ -255,8 +526,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00058.html">PcapRemoteAuthentication</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:21 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00058.html">LoggerPP</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

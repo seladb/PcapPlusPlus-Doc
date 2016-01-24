@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDeviceList.h Source File</title>
+<title>PcapPlusPlus: MacAddress.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,63 +104,71 @@ $(document).ready(function(){initNavTree('a00117_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PfRingDeviceList.h</div>  </div>
+<div class="title">MacAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00117.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PF_RING_DEVICE_LIST</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PF_RING_DEVICE_LIST</span></div>
+<a href="a00117.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_MACADDRESS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_MACADDRESS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef USE_PF_RING</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00116.html">PfRingDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00063.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00063.html">PfRingDeviceList</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;PfRingDevice*&gt; m_PfRingDeviceList;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::string m_PfRingVersion;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="a00063.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="a00063.html">PfRingDeviceList</a>(<span class="keyword">const</span> <a class="code" href="a00063.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="a00063.html">PfRingDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00063.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// private d&#39;tor</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="a00063.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> calcPfRingVersion(<span class="keywordtype">void</span>* ring);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00063.html#a69a328dd6c0f9b4acb8ab46652bf675a">   34</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00063.html">PfRingDeviceList</a>&amp; <a class="code" href="a00063.html#a69a328dd6c0f9b4acb8ab46652bf675a">getInstance</a>()</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00063.html">PfRingDeviceList</a> instance;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00063.html#acc39d122c465d0c0706e08d4f63d7387">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;PfRingDevice*&gt;&amp; <a class="code" href="a00063.html#acc39d122c465d0c0706e08d4f63d7387">getPfRingDevicesList</a>() { <span class="keywordflow">return</span> m_PfRingDeviceList; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="a00062.html">PfRingDevice</a>* <a class="code" href="a00063.html#a103a39d5141eb566750966f467e5b82b">getPfRingDeviceByName</a>(<span class="keyword">const</span> std::string devName);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00063.html#a2ab60a48579d1b2bc233336f243f622e">   58</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00063.html#a2ab60a48579d1b2bc233336f243f622e">getPfRingVersion</a>() { <span class="keywordflow">return</span> m_PfRingVersion; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_PF_RING */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PF_RING_DEVICE_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00063_html_a103a39d5141eb566750966f467e5b82b"><div class="ttname"><a href="a00063.html#a103a39d5141eb566750966f467e5b82b">PfRingDeviceList::getPfRingDeviceByName</a></div><div class="ttdeci">PfRingDevice * getPfRingDeviceByName(const std::string devName)</div></div>
-<div class="ttc" id="a00062_html"><div class="ttname"><a href="a00062.html">PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:26</div></div>
-<div class="ttc" id="a00063_html_a2ab60a48579d1b2bc233336f243f622e"><div class="ttname"><a href="a00063.html#a2ab60a48579d1b2bc233336f243f622e">PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">std::string getPfRingVersion()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:58</div></div>
-<div class="ttc" id="a00063_html_acc39d122c465d0c0706e08d4f63d7387"><div class="ttname"><a href="a00063.html#acc39d122c465d0c0706e08d4f63d7387">PfRingDeviceList::getPfRingDevicesList</a></div><div class="ttdeci">const std::vector&lt; PfRingDevice * &gt; &amp; getPfRingDevicesList()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:44</div></div>
-<div class="ttc" id="a00063_html"><div class="ttname"><a href="a00063.html">PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:15</div></div>
-<div class="ttc" id="a00063_html_a69a328dd6c0f9b4acb8ab46652bf675a"><div class="ttname"><a href="a00063.html#a69a328dd6c0f9b4acb8ab46652bf675a">PfRingDeviceList::getInstance</a></div><div class="ttdeci">static PfRingDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:34</div></div>
-<div class="ttc" id="a00116_html"><div class="ttname"><a href="a00116.html">PfRingDevice.h</a></div></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00059.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00059.html">MacAddress</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a>(uint8_t* addr);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a>(<span class="keyword">const</span> std::string&amp; addr);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a>(uint8_t firstOctest, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a>(<span class="keyword">const</span> <a class="code" href="a00059.html">MacAddress</a>&amp; other);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00059.html#a91021f00a460d32cb70c05cf08be8249">   59</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00059.html#a91021f00a460d32cb70c05cf08be8249">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00059.html">MacAddress</a>&amp; other)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">if</span> (m_Address[i] != other.m_Address[i])</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00059.html#a0d257e8cb737b04262354b22470ca7fb">   71</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00059.html#a0d257e8cb737b04262354b22470ca7fb">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00059.html">MacAddress</a>&amp; other) {<span class="keywordflow">return</span> !<a class="code" href="a00059.html#a91021f00a460d32cb70c05cf08be8249">operator==</a>(other);}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00059.html#a760327243ffc906fafd8fa93ff8d2223">   78</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00059.html#a760327243ffc906fafd8fa93ff8d2223">isValid</a>() { <span class="keywordflow">return</span> m_IsValid; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::string <a class="code" href="a00059.html#a5dc7173bea05e90e8a71f58bfb985d63">toString</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00059.html#a9823260693c248a92c9457b25fb19cc4">copyTo</a>(uint8_t** arr);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00059.html#a9823260693c248a92c9457b25fb19cc4">copyTo</a>(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="a00059.html#a21e6f0508b2296b0a68dbfc6f3f58999">  102</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00059.html">MacAddress</a> <a class="code" href="a00059.html#a21e6f0508b2296b0a68dbfc6f3f58999">Zero</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    uint8_t m_Address[6];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> m_IsValid;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_MACADDRESS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00059_html"><div class="ttname"><a href="a00059.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:14</div></div>
+<div class="ttc" id="a00059_html_a9823260693c248a92c9457b25fb19cc4"><div class="ttname"><a href="a00059.html#a9823260693c248a92c9457b25fb19cc4">MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr)</div></div>
+<div class="ttc" id="a00059_html_a21e6f0508b2296b0a68dbfc6f3f58999"><div class="ttname"><a href="a00059.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:102</div></div>
+<div class="ttc" id="a00059_html_a0d257e8cb737b04262354b22470ca7fb"><div class="ttname"><a href="a00059.html#a0d257e8cb737b04262354b22470ca7fb">MacAddress::operator!=</a></div><div class="ttdeci">bool operator!=(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:71</div></div>
+<div class="ttc" id="a00059_html_a91021f00a460d32cb70c05cf08be8249"><div class="ttname"><a href="a00059.html#a91021f00a460d32cb70c05cf08be8249">MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:59</div></div>
+<div class="ttc" id="a00059_html_a5dc7173bea05e90e8a71f58bfb985d63"><div class="ttname"><a href="a00059.html#a5dc7173bea05e90e8a71f58bfb985d63">MacAddress::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00059_html_a32025c7fafe053c9e4c5cc7ec9572ca1"><div class="ttname"><a href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(uint8_t *addr)</div></div>
+<div class="ttc" id="a00059_html_a760327243ffc906fafd8fa93ff8d2223"><div class="ttname"><a href="a00059.html#a760327243ffc906fafd8fa93ff8d2223">MacAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> MacAddress.h:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00117.html">PfRingDeviceList.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00117.html">MacAddress.h</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

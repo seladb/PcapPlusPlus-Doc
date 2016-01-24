@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapFileDevice.h File Reference</title>
+<title>PcapPlusPlus: IcmpLayer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,31 +104,328 @@ $(document).ready(function(){initNavTree('a00110.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">PcapFileDevice.h File Reference</div>  </div>
+<div class="title">IcmpLayer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00109_source.html">PcapDevice.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="a00115_source.html">Layer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00113_source.html">IPv4Layer.h</a>&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="a00110_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">IPcapFileDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html">icmphdr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html">PcapFileReaderDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html">icmp_echo_hdr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html">PcapFileWriterDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html">icmp_echo_request</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html">icmp_timestamp_request</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html">icmp_destination_unreachable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html">icmp_time_exceeded</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">icmp_param_problem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">icmp_redirect</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html">icmp_router_address_structure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">icmp_router_advertisement_hdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html">icmp_router_advertisement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html">icmp_address_mask_request</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html">icmp_info_request</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00040.html">IcmpLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae3f6626a7aa1f6e91c8221db6582c695"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00030.html">icmp_echo_request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#ae3f6626a7aa1f6e91c8221db6582c695">icmp_echo_reply</a></td></tr>
+<tr class="separator:ae3f6626a7aa1f6e91c8221db6582c695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2848d8455bdbe147f49f0926a8bb35"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00038.html">icmp_timestamp_request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#acd2848d8455bdbe147f49f0926a8bb35">icmp_timestamp_reply</a></td></tr>
+<tr class="separator:acd2848d8455bdbe147f49f0926a8bb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697a92f11fcb8e4744a0d161eb18eac2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00037.html">icmp_time_exceeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a697a92f11fcb8e4744a0d161eb18eac2">icmp_source_quench</a></td></tr>
+<tr class="separator:a697a92f11fcb8e4744a0d161eb18eac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377de16581d6d20dcd935e0559d57540"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00039.html">icmphdr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a377de16581d6d20dcd935e0559d57540">icmp_router_solicitation</a></td></tr>
+<tr class="separator:a377de16581d6d20dcd935e0559d57540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb9fa39b63222cd9f3cd36ca0f57b41"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00027.html">icmp_address_mask_request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a4eb9fa39b63222cd9f3cd36ca0f57b41">icmp_address_mask_reply</a></td></tr>
+<tr class="separator:a4eb9fa39b63222cd9f3cd36ca0f57b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212d5864735cd74e8d0e6dc5f091d9cd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00031.html">icmp_info_request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a212d5864735cd74e8d0e6dc5f091d9cd">icmp_info_reply</a></td></tr>
+<tr class="separator:a212d5864735cd74e8d0e6dc5f091d9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a183b28b622f4006de9d3e6e528ac58e2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2">IcmpMessageType</a> { <br />
+&#160;&#160;<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a040ff029e5746bdc1b9fd08db66b3b47">ICMP_ECHO_REPLY</a> = 0, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a9d4b54feff428d6c9690a9041f85bd6b">ICMP_DEST_UNREACHABLE</a> = 3, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a9482e19785a9717d473cc2226756d4d3">ICMP_SOURCE_QUENCH</a> = 4, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a5956db2beb3fbfef02b0b50fed21ec0b">ICMP_REDIRECT</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a65c0b673722ac5aa7f38ee101a0a2e0a">ICMP_ECHO_REQUEST</a> = 8, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a425673daf8c218e5f20152f546efe9e4">ICMP_ROUTER_ADV</a> = 9, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a61684de28a3011e899c1f36f4daa5e9c">ICMP_ROUTER_SOL</a> = 10, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a828813505e7f882556a4400c9edae078">ICMP_TIME_EXCEEDED</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a8fa1ad17fb0ac6dc99c69abe3a7e041e">ICMP_PARAM_PROBLEM</a> = 12, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a75d1135ac7040855a486048eb7182b0c">ICMP_TIMESTAMP_REQUEST</a> = 13, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2ad882d3d3fdbb9b12371ba3d066bdc6a5">ICMP_TIMESTAMP_REPLY</a> = 14, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a50ff8d941b461ab0dbb0348a127c6832">ICMP_INFO_REQUEST</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2ab138dc4c972d497992cb11626ddeb972">ICMP_INFO_REPLY</a> = 16, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a05167c2ee054a472e3caf912c86875c4">ICMP_ADDRESS_MASK_REQUEST</a> = 17, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a20832422e3c56506954ed8de7dd4f026">ICMP_ADDRESS_MASK_REPLY</a> = 18, 
+<a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2a483ee94e7b7dbb7770fb8ef02a6ba113">ICMP_UNSUPPORTED</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a183b28b622f4006de9d3e6e528ac58e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af961f8a049e57bfbc2a5c141e6ec1db1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1">IcmpDestUnreachableCodes</a> { <br />
+&#160;&#160;<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a49e2d7b9e0d86b9c0452bc3637fee2bb">IcmpNetworkUnreachable</a> = 0, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a39faa8e572220ee8f82006b83d46a0d1">IcmpHostUnreachable</a> = 1, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a39c4fe15dc06eda5a158f0bc8010e1bd">IcmpProtocolUnreachable</a> = 2, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a9a80d1359b095b251990a30541fbea2a">IcmpPortUnreachable</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a0147c319437494ac4b5b2e970ab039bd">IcmpDatagramTooBig</a> = 4, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a4a39c4f1081f94b8a6535b8dab6556c7">IcmpSourceRouteFailed</a> = 5, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a9fb177e3666814013b029114fbfa4101">IcmpDestinationNetworkUnknown</a> = 6, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a3b1396b73036230dc23cd9d34727b50d">IcmpDestinationHostUnknown</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a9190e6dcd8bea5f38c5c69947ea8f96c">IcmpSourceHostIsolated</a> = 8, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1af194b8c69ea9a8d8b30bd9ba2c63a3ee">IcmpDestinationNetworkProhibited</a> = 9, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1acc15d5f051e3c08ad5017a4999a58b9c">IcmpDestinationHostProhibited</a> = 10, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a1997049b445bdc02f3726f5ae1ceda89">IcmpNetworkUnreachableForTypeOfService</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1aae0d7ba4ca24d60444f603ac875e12f3">IcmpHostUnreachableForTypeOfService</a> = 12, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1a64640b86163dae1c96aa01450b9a5036">IcmpCommunicationProhibited</a> = 13, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1aeecd87b627ebfab71d153d5bd6288ad2">IcmpHostPrecedenceViolation</a> = 14, 
+<a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1aadfa046a9dcb2f5a858364e237307305">IcmpPrecedenceCutoff</a> = 15
+<br />
+ }</td></tr>
+<tr class="separator:af961f8a049e57bfbc2a5c141e6ec1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a4eb9fa39b63222cd9f3cd36ca0f57b41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#a4eb9fa39b63222cd9f3cd36ca0f57b41">icmp_address_mask_reply</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP address mask reply message structure, same as <a class="el" href="a00027.html">icmp_address_mask_request</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3f6626a7aa1f6e91c8221db6582c695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#ae3f6626a7aa1f6e91c8221db6582c695">icmp_echo_reply</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP echo (ping) reply message structure, same as <a class="el" href="a00030.html">icmp_echo_request</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a212d5864735cd74e8d0e6dc5f091d9cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#a212d5864735cd74e8d0e6dc5f091d9cd">icmp_info_reply</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP information reply message structure, same as <a class="el" href="a00031.html">icmp_info_request</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a377de16581d6d20dcd935e0559d57540"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#a377de16581d6d20dcd935e0559d57540">icmp_router_solicitation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP router solicitation message structure, same as icmphdr </p>
+
+</div>
+</div>
+<a class="anchor" id="a697a92f11fcb8e4744a0d161eb18eac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#a697a92f11fcb8e4744a0d161eb18eac2">icmp_source_quench</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP source quence message structure, same as <a class="el" href="a00037.html">icmp_time_exceeded</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="acd2848d8455bdbe147f49f0926a8bb35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00110.html#acd2848d8455bdbe147f49f0926a8bb35">icmp_timestamp_reply</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP timestamp reply message structure, same as <a class="el" href="a00038.html">icmp_timestamp_request</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00110.html#af961f8a049e57bfbc2a5c141e6ec1db1">IcmpDestUnreachableCodes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum for all possible codes for a destination unreachable message type Documentation is taken from Wikipedia: <a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a49e2d7b9e0d86b9c0452bc3637fee2bb"></a>IcmpNetworkUnreachable&#160;</td><td class="fielddoc">
+<p>Network unreachable error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a39faa8e572220ee8f82006b83d46a0d1"></a>IcmpHostUnreachable&#160;</td><td class="fielddoc">
+<p>Host unreachable error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a39c4fe15dc06eda5a158f0bc8010e1bd"></a>IcmpProtocolUnreachable&#160;</td><td class="fielddoc">
+<p>Protocol unreachable error (the designated transport protocol is not supported) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a9a80d1359b095b251990a30541fbea2a"></a>IcmpPortUnreachable&#160;</td><td class="fielddoc">
+<p>Port unreachable error (the designated protocol is unable to inform the host of the incoming message) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a0147c319437494ac4b5b2e970ab039bd"></a>IcmpDatagramTooBig&#160;</td><td class="fielddoc">
+<p>The datagram is too big. <a class="el" href="a00066.html">Packet</a> fragmentation is required but the 'don't fragment' (DF) flag is on </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a4a39c4f1081f94b8a6535b8dab6556c7"></a>IcmpSourceRouteFailed&#160;</td><td class="fielddoc">
+<p>Source route failed error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a9fb177e3666814013b029114fbfa4101"></a>IcmpDestinationNetworkUnknown&#160;</td><td class="fielddoc">
+<p>Destination network unknown error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a3b1396b73036230dc23cd9d34727b50d"></a>IcmpDestinationHostUnknown&#160;</td><td class="fielddoc">
+<p>Destination host unknown error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a9190e6dcd8bea5f38c5c69947ea8f96c"></a>IcmpSourceHostIsolated&#160;</td><td class="fielddoc">
+<p>Source host isolated error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1af194b8c69ea9a8d8b30bd9ba2c63a3ee"></a>IcmpDestinationNetworkProhibited&#160;</td><td class="fielddoc">
+<p>The destination network is administratively prohibited </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1acc15d5f051e3c08ad5017a4999a58b9c"></a>IcmpDestinationHostProhibited&#160;</td><td class="fielddoc">
+<p>The destination host is administratively prohibited </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a1997049b445bdc02f3726f5ae1ceda89"></a>IcmpNetworkUnreachableForTypeOfService&#160;</td><td class="fielddoc">
+<p>The network is unreachable for Type Of Service </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1aae0d7ba4ca24d60444f603ac875e12f3"></a>IcmpHostUnreachableForTypeOfService&#160;</td><td class="fielddoc">
+<p>The host is unreachable for Type Of Service </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1a64640b86163dae1c96aa01450b9a5036"></a>IcmpCommunicationProhibited&#160;</td><td class="fielddoc">
+<p>Communication administratively prohibited (administrative filtering prevents packet from being forwarded) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1aeecd87b627ebfab71d153d5bd6288ad2"></a>IcmpHostPrecedenceViolation&#160;</td><td class="fielddoc">
+<p>Host precedence violation (indicates the requested precedence is not permitted for the combination of host or network and port) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af961f8a049e57bfbc2a5c141e6ec1db1aadfa046a9dcb2f5a858364e237307305"></a>IcmpPrecedenceCutoff&#160;</td><td class="fielddoc">
+<p>Precedence cutoff in effect (precedence of datagram is below the level set by the network administrators) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00110.html#a183b28b622f4006de9d3e6e528ac58e2">IcmpMessageType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum of all supported ICMP message types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a040ff029e5746bdc1b9fd08db66b3b47"></a>ICMP_ECHO_REPLY&#160;</td><td class="fielddoc">
+<p>ICMP echo (ping) reply message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a9d4b54feff428d6c9690a9041f85bd6b"></a>ICMP_DEST_UNREACHABLE&#160;</td><td class="fielddoc">
+<p>ICMP destination unreachable message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a9482e19785a9717d473cc2226756d4d3"></a>ICMP_SOURCE_QUENCH&#160;</td><td class="fielddoc">
+<p>ICMP source quench message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a5956db2beb3fbfef02b0b50fed21ec0b"></a>ICMP_REDIRECT&#160;</td><td class="fielddoc">
+<p>ICMP redirect message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a65c0b673722ac5aa7f38ee101a0a2e0a"></a>ICMP_ECHO_REQUEST&#160;</td><td class="fielddoc">
+<p>ICMP echo (ping) request message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a425673daf8c218e5f20152f546efe9e4"></a>ICMP_ROUTER_ADV&#160;</td><td class="fielddoc">
+<p>ICMP router advertisement message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a61684de28a3011e899c1f36f4daa5e9c"></a>ICMP_ROUTER_SOL&#160;</td><td class="fielddoc">
+<p>ICMP router soliciatation message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a828813505e7f882556a4400c9edae078"></a>ICMP_TIME_EXCEEDED&#160;</td><td class="fielddoc">
+<p>ICMP time-to-live excceded message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a8fa1ad17fb0ac6dc99c69abe3a7e041e"></a>ICMP_PARAM_PROBLEM&#160;</td><td class="fielddoc">
+<p>ICMP parameter problem message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a75d1135ac7040855a486048eb7182b0c"></a>ICMP_TIMESTAMP_REQUEST&#160;</td><td class="fielddoc">
+<p>ICMP timestamp request message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2ad882d3d3fdbb9b12371ba3d066bdc6a5"></a>ICMP_TIMESTAMP_REPLY&#160;</td><td class="fielddoc">
+<p>ICMP timestamp reply message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a50ff8d941b461ab0dbb0348a127c6832"></a>ICMP_INFO_REQUEST&#160;</td><td class="fielddoc">
+<p>ICMP information request message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2ab138dc4c972d497992cb11626ddeb972"></a>ICMP_INFO_REPLY&#160;</td><td class="fielddoc">
+<p>ICMP information reply message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a05167c2ee054a472e3caf912c86875c4"></a>ICMP_ADDRESS_MASK_REQUEST&#160;</td><td class="fielddoc">
+<p>ICMP address mask request message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a20832422e3c56506954ed8de7dd4f026"></a>ICMP_ADDRESS_MASK_REPLY&#160;</td><td class="fielddoc">
+<p>ICMP address mask reply message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a183b28b622f4006de9d3e6e528ac58e2a483ee94e7b7dbb7770fb8ef02a6ba113"></a>ICMP_UNSUPPORTED&#160;</td><td class="fielddoc">
+<p>ICMP message type unsupported by PcapPlusPlus </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00110.html">PcapFileDevice.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00110.html">IcmpLayer.h</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,9 +1,10 @@
 var a00057 =
 [
-    [ "getPcapLiveDeviceByIp", "a00057.html#a390c2c0cd28d808021a3264f56b084de", null ],
-    [ "getPcapLiveDeviceByIp", "a00057.html#a0440ec517b35bc43fb5d31bc14ee529e", null ],
-    [ "getPcapLiveDeviceByIp", "a00057.html#aa331836b6dd34bc3ecae610c84db3769", null ],
-    [ "getPcapLiveDeviceByIp", "a00057.html#ade740e1e6614c536edfdd916535fb742", null ],
-    [ "getPcapLiveDeviceByName", "a00057.html#a5c88a995825c4a767dd8cf7d644b7f97", null ],
-    [ "getPcapLiveDevicesList", "a00057.html#ac680f08d3235cf99cdc9c404f8f02815", null ]
+    [ "LinkDuplex", "a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ece", [
+      [ "FULL_DUPLEX", "a00057.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed", null ],
+      [ "HALF_DUPLEX", "a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a", null ]
+    ] ],
+    [ "linkDuplex", "a00057.html#a2fe00365f2bb962a4caabc710fd9ff3d", null ],
+    [ "linkSpeedMbps", "a00057.html#a4c400cc354ff9149b6354e1bb877f3aa", null ],
+    [ "linkUp", "a00057.html#a42ef9fde494269d3f672fc01799416a1", null ]
 ];

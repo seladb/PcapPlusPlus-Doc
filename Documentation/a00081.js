@@ -1,6 +1,8 @@
 var a00081 =
 [
-    [ "TcpWindowSizeFilter", "a00081.html#acc9357f2e1334c76c3d7f4080dd90565", null ],
-    [ "parseToString", "a00081.html#a7d92c9daba6ce4377d0a205cbfd501b5", null ],
-    [ "setWindowSize", "a00081.html#a7e660d846be42bbe1c84fe802a9cb1a5", null ]
+    [ "code", "a00081.html#a73a3d18e25024b25907219dc9d68553d", null ],
+    [ "payloadLength", "a00081.html#ad835b1953dd25a4f2f4a44a6be3c5c28", null ],
+    [ "sessionId", "a00081.html#a764afb5590237f2a44e25947a4f12f5b", null ],
+    [ "type", "a00081.html#a1be734b14f34cc71d8ac372316d45ede", null ],
+    [ "version", "a00081.html#a2cc59bed88c3b56fca85bd850613de6d", null ]
 ];

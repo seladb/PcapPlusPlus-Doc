@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['senderipaddr',['senderIpAddr',['../a00004.html#a0ed8605408f76ce3d5881798751617ba',1,'arphdr']]],
-  ['sendermacaddr',['senderMacAddr',['../a00004.html#ae68d9afc9eb6140915847edb64954e5f',1,'arphdr']]],
-  ['sequencenumber',['sequenceNumber',['../a00078.html#a719635a7e8291064205d4e4da519a8d5',1,'tcphdr']]],
-  ['sessionid',['sessionId',['../a00067.html#a764afb5590237f2a44e25947a4f12f5b',1,'pppoe_header']]],
-  ['srcmac',['srcMac',['../a00015.html#a476baf8b22a014f9af6d15f10113b565',1,'ether_header']]],
-  ['synflag',['synFlag',['../a00078.html#a62e2fa2f073542b1a58694200b4dbf8c',1,'tcphdr']]]
+  ['receivedescriptorsnumber',['receiveDescriptorsNumber',['../a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb',1,'DpdkDevice::DpdkDeviceConfiguration']]],
+  ['receivetimestamp',['receiveTimestamp',['../a00038.html#a76a71564692bf4a69c8467c46678b838',1,'icmp_timestamp_request']]],
+  ['recursionavailable',['recursionAvailable',['../a00007.html#afdd8970906e4ddd3de59ff0215249375',1,'dnshdr']]],
+  ['recursiondesired',['recursionDesired',['../a00007.html#aa4e36152421d21e7c9a1138a058a628c',1,'dnshdr']]],
+  ['responsecode',['responseCode',['../a00007.html#ad290f5e82ffbb3651d4b37628b396e7c',1,'dnshdr']]],
+  ['routeraddress',['routerAddress',['../a00034.html#a2021159051fd93746277cfa8cfe02bae',1,'icmp_router_address_structure']]],
+  ['rstflag',['rstFlag',['../a00092.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]]
 ];

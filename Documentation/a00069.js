@@ -1,18 +1,10 @@
 var a00069 =
 [
-    [ "PPPoECode", "a00069.html#a175179c8c3448839deccd3262a58665c", [
-      [ "PPPOE_CODE_SESSION", "a00069.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b", null ],
-      [ "PPPOE_CODE_PADO", "a00069.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603", null ],
-      [ "PPPOE_CODE_PADI", "a00069.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0", null ],
-      [ "PPPOE_CODE_PADG", "a00069.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e", null ],
-      [ "PPPOE_CODE_PADC", "a00069.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622", null ],
-      [ "PPPOE_CODE_PADQ", "a00069.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13", null ],
-      [ "PPPOE_CODE_PADR", "a00069.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1", null ],
-      [ "PPPOE_CODE_PADS", "a00069.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e", null ],
-      [ "PPPOE_CODE_PADT", "a00069.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613", null ],
-      [ "PPPOE_CODE_PADM", "a00069.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5", null ],
-      [ "PPPOE_CODE_PADN", "a00069.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72", null ]
-    ] ],
-    [ "computeCalculateFields", "a00069.html#ae236d58b2f7287bc5fa01d7b2e194308", null ],
-    [ "getPPPoEHeader", "a00069.html#a1bb3dc226576957fb7f8d46529ac1cbf", null ]
+    [ "PcapFileWriterDevice", "a00069.html#aefaeb7785c8cd5ca8b6e074156c471ae", null ],
+    [ "~PcapFileWriterDevice", "a00069.html#a491876c2591081b58313da654a704f8d", null ],
+    [ "close", "a00069.html#a534e2029cb4de050e6a55de39dc9aa9a", null ],
+    [ "getStatistics", "a00069.html#ac0c2c246a4447cc48ebae8f48f69d81d", null ],
+    [ "open", "a00069.html#a8053b6b8abafd7de893fce117b8d2413", null ],
+    [ "writePacket", "a00069.html#a6263c0850be603c60b8ba057d879a593", null ],
+    [ "writePackets", "a00069.html#a472db9de9ac4f9f440f752385c0436e6", null ]
 ];

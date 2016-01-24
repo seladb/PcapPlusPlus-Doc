@@ -6,7 +6,7 @@ var NAVTREE =
       [ "Installation", "index.html#install_sec", null ],
       [ "Getting Started", "index.html#getting_started_sec", null ]
     ] ],
-    [ "Todo List", "a00130.html", null ],
+    [ "Todo List", "a00145.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -27,7 +27,7 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -38,10 +38,11 @@ var NAVTREEINDEX =
 [
 "a00001.html",
 "a00026.html#aa08a185d20ef503514f4e54927802eb6",
-"a00045.html#a9823260693c248a92c9457b25fb19cc4",
-"a00068.html#ac9403a67f69c7217b71061a233707278aa2627d80cf4a6203293bab6c57d8ba11",
-"a00092.html#a5a850880eb1247949ec592ae602a0eb7a79b4351e4c092116558cab950859feef",
-"a00120.html#a8f6858dfddf0e7c455f4317af70a6753"
+"a00051.html#a776f9707159fb12c953746ac872b665a",
+"a00075.html#ad671350174da6421a12bb228bd8e3e61",
+"a00101.html#a1680bbebefc9c46ed461004273f4423d",
+"a00116.html#a7e4ae98d96e7177e6c476a1bf942ed42af8deb7ac8f18d254f681b4bf5293fbb9",
+"a00139.html#a686bb27f0dec18a97b42ac2e118d72b8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

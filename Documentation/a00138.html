@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: SystemUtils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,10 +69,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -87,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00007.html','');});
+$(document).ready(function(){initNavTree('a00138.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -105,34 +103,187 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dnshdr Member List</div>  </div>
+<div class="title">SystemUtils.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div>
+<p><a href="a00138_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html">SystemCore</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html">SystemCores</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html">ApplicationEventHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6253c79b461ea620034cc52398473809"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#a6253c79b461ea620034cc52398473809">getNumOfCores</a> ()</td></tr>
+<tr class="separator:a6253c79b461ea620034cc52398473809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c7f1e2cae1d7e64ffab7471577f670"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#af5c7f1e2cae1d7e64ffab7471577f670">getCoreMaskForAllMachineCores</a> ()</td></tr>
+<tr class="separator:af5c7f1e2cae1d7e64ffab7471577f670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa1e8a13fe4bf304823d089c42dce2f"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#a5fa1e8a13fe4bf304823d089c42dce2f">createCoreMaskFromCoreVector</a> (std::vector&lt; <a class="el" href="a00089.html">SystemCore</a> &gt; cores)</td></tr>
+<tr class="separator:a5fa1e8a13fe4bf304823d089c42dce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd401902ab2933c496a591e4423416ae"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#abd401902ab2933c496a591e4423416ae">createCoreMaskFromCoreIds</a> (std::vector&lt; int &gt; coreIds)</td></tr>
+<tr class="separator:abd401902ab2933c496a591e4423416ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70495d1e5de6e83cb2ecd66581232858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#a70495d1e5de6e83cb2ecd66581232858">createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; <a class="el" href="a00089.html">SystemCore</a> &gt; &amp;resultVec)</td></tr>
+<tr class="separator:a70495d1e5de6e83cb2ecd66581232858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50adac7b5cb12a07253e33f8114e09"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html#a3b50adac7b5cb12a07253e33f8114e09">executeShellCommand</a> (const std::string command)</td></tr>
+<tr class="separator:a3b50adac7b5cb12a07253e33f8114e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="abd401902ab2933c496a591e4423416ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CoreMask createCoreMaskFromCoreIds </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>coreIds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a core mask from a vector of core IDs </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coreIds</td><td>A vector of core IDs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A core mask representing these cores </dd></dl>
 
-<p>This is the complete list of members for <a class="el" href="a00007.html">dnshdr</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#aa767d4775baaad41154950ce7f768fc5">authenticData</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#afe8091e1a5ec69de641d3defdffaf81f">authoritativeAnswer</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#aabbefefa00eb7f2fc8cf3ec69524a4dd">checkingDisabled</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#a3d44738f4c170af4219cab033933da9c">numberOfAdditional</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#ac27a989052df9557e87fc8ba8175ba5c">numberOfAnswers</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#afd60ff564afd2e0f7457cbccb0a04451">numberOfAuthority</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#a9451141e818e15ed9015d83c97f755e2">numberOfQuestions</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#a618179b7ad06c581e6793bba23dc9497">opcode</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#a59de79a79f3903cd3e4a22b09da695f8">queryOrResponse</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#afdd8970906e4ddd3de59ff0215249375">recursionAvailable</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#aa4e36152421d21e7c9a1138a058a628c">recursionDesired</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#ad290f5e82ffbb3651d4b37628b396e7c">responseCode</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#ac0fc55c46b7ce65214d118cadcf3743e">transactionID</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00007.html#af177a2f1151efb57d4e314a5530923a6">truncation</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00007.html#a377d0d6f64514d70e3d56c1a8f7d3750">zero</a></td><td class="entry"><a class="el" href="a00007.html">dnshdr</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+</div>
+</div>
+<a class="anchor" id="a5fa1e8a13fe4bf304823d089c42dce2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CoreMask createCoreMaskFromCoreVector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a00089.html">SystemCore</a> &gt;&#160;</td>
+          <td class="paramname"><em>cores</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a core mask from a vector of system cores </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cores</td><td>A vector of <a class="el" href="a00089.html">SystemCore</a> instances </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A core mask representing these cores </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a70495d1e5de6e83cb2ecd66581232858"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createCoreVectorFromCoreMask </td>
+          <td>(</td>
+          <td class="paramtype">CoreMask&#160;</td>
+          <td class="paramname"><em>coreMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a00089.html">SystemCore</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resultVec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Covert a core mask into a vector of its appropriate system cores </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coreMask</td><td>The input core mask </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resultVec</td><td>The vector that will contain the system cores </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b50adac7b5cb12a07253e33f8114e09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string executeShellCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Execute a shell command and return its output </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>The command to run </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The output of the command (both stdout and stderr) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af5c7f1e2cae1d7e64ffab7471577f670"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CoreMask getCoreMaskForAllMachineCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a core mask for all cores available on machine </p><dl class="section return"><dt>Returns</dt><dd>A core mask for all cores available on machine </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6253c79b461ea620034cc52398473809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getNumOfCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get total number of cores on device </p><dl class="section return"><dt>Returns</dt><dd>Total number of CPU cores on device </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00138.html">SystemUtils.h</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

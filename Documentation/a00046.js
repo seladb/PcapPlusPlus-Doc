@@ -1,6 +1,9 @@
 var a00046 =
 [
-    [ "MacAddressFilter", "a00046.html#a0efbb623c6f72d72124a832241b1f628", null ],
-    [ "parseToString", "a00046.html#a01de5ecf70fda666bf11be1b874694e0", null ],
-    [ "setMacAddress", "a00046.html#aa86204a955a66acd6fdfc78b754e6ed4", null ]
+    [ "close", "a00046.html#ad9dd73f0310fb6e3924fabb4e2542ef0", null ],
+    [ "getStatistics", "a00046.html#abfddac7872baed093efc622259f51fc6", null ],
+    [ "isOpened", "a00046.html#a9f54bb88194b3374e92ab6533138a0a7", null ],
+    [ "open", "a00046.html#a94a6922dff88e4bea4b3904a60e6f0e9", null ],
+    [ "setFilter", "a00046.html#ac8167b330a4ee85ab759facd0d4989bd", null ],
+    [ "setFilter", "a00046.html#a5cef54e472e5d9fdd6f20472a2b5bcd2", null ]
 ];

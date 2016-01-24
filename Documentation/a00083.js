@@ -1,11 +1,18 @@
 var a00083 =
 [
-    [ "UdpLayer", "a00083.html#a719f6abc85cfbcb5b7987a5eb6a99e70", null ],
-    [ "UdpLayer", "a00083.html#aedd18d27bce546fb6b21f70915817761", null ],
-    [ "calculateChecksum", "a00083.html#adfd1035b90bc336a51bf48c824d3a62c", null ],
-    [ "computeCalculateFields", "a00083.html#a94f3dd3afe2b5ad9bda7e12d2f18c449", null ],
-    [ "getHeaderLen", "a00083.html#a9cf705e60ec95b00c594a7633e4fd1ac", null ],
-    [ "getUdpHeader", "a00083.html#abe9c14cb251e2b43f4bb1cb8849549cd", null ],
-    [ "parseNextLayer", "a00083.html#a87ca5bbf1d532555f38101b2edeeed22", null ],
-    [ "toString", "a00083.html#abee5c14ffba496d372903abe40676417", null ]
+    [ "PPPoECode", "a00083.html#a175179c8c3448839deccd3262a58665c", [
+      [ "PPPOE_CODE_SESSION", "a00083.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b", null ],
+      [ "PPPOE_CODE_PADO", "a00083.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603", null ],
+      [ "PPPOE_CODE_PADI", "a00083.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0", null ],
+      [ "PPPOE_CODE_PADG", "a00083.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e", null ],
+      [ "PPPOE_CODE_PADC", "a00083.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622", null ],
+      [ "PPPOE_CODE_PADQ", "a00083.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13", null ],
+      [ "PPPOE_CODE_PADR", "a00083.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1", null ],
+      [ "PPPOE_CODE_PADS", "a00083.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e", null ],
+      [ "PPPOE_CODE_PADT", "a00083.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613", null ],
+      [ "PPPOE_CODE_PADM", "a00083.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5", null ],
+      [ "PPPOE_CODE_PADN", "a00083.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72", null ]
+    ] ],
+    [ "computeCalculateFields", "a00083.html#ae236d58b2f7287bc5fa01d7b2e194308", null ],
+    [ "getPPPoEHeader", "a00083.html#a1bb3dc226576957fb7f8d46529ac1cbf", null ]
 ];

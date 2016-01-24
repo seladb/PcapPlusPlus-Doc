@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IpAddress.h File Reference</title>
+<title>PcapPlusPlus: udphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,8 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,33 +106,88 @@ $(document).ready(function(){initNavTree('a00096.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00242.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IpAddress.h File Reference</div>  </div>
+<div class="title">udphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-</div>
-<p><a href="a00096_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00140_source.html">UdpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html">IPAddress</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">IPv4Address</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00040.html">IPv6Address</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae086b88cd86b79ab903202a63ada7601"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#ae086b88cd86b79ab903202a63ada7601">portSrc</a></td></tr>
+<tr class="separator:ae086b88cd86b79ab903202a63ada7601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6266420dae91e2700c5596d093925d1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#ab6266420dae91e2700c5596d093925d1">portDst</a></td></tr>
+<tr class="separator:ab6266420dae91e2700c5596d093925d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af76d07e76ded39350f0cee2276cd9b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#a2af76d07e76ded39350f0cee2276cd9b">length</a></td></tr>
+<tr class="separator:a2af76d07e76ded39350f0cee2276cd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f66911e3e8f9c6ceb9047d3de2a05b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#aa8f66911e3e8f9c6ceb9047d3de2a05b">headerChecksum</a></td></tr>
+<tr class="separator:aa8f66911e3e8f9c6ceb9047d3de2a05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an UDP protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa8f66911e3e8f9c6ceb9047d3de2a05b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t udphdr::headerChecksum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Error-checking of the header and data </p>
+
+</div>
+</div>
+<a class="anchor" id="a2af76d07e76ded39350f0cee2276cd9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t udphdr::length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Length of header and payload in bytes </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6266420dae91e2700c5596d093925d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t udphdr::portDst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destination port </p>
+
+</div>
+</div>
+<a class="anchor" id="ae086b88cd86b79ab903202a63ada7601"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t udphdr::portSrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Source port </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00096.html">IpAddress.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00096.html">udphdr</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Packet.h Source File</title>
+<title>PcapPlusPlus: DpdkDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,136 +104,382 @@ $(document).ready(function(){initNavTree('a00106_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Packet.h</div>  </div>
+<div class="title">DpdkDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00106.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PACKET</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PACKET</span></div>
+<a href="a00106.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DPDK_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DPDK_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00122.html">RawPacket.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00100.html">Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00117.html">MacAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00138.html">SystemUtils.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00137.html">RawPacket.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00127.html">PcapLiveDevice.h</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00052.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00052.html">Packet</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00042.html">Layer</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="a00073.html">RawPacket</a>* m_RawPacket;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="a00042.html">Layer</a>* m_FirstLayer;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="a00042.html">Layer</a>* m_LastLayer;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    uint64_t m_ProtocolTypes;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">size_t</span> m_MaxPacketLen;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;Layer*&gt; m_LayersAllocatedInPacket;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> m_FreeRawPacket;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a00052.html#afd4ea74ad9e1a7603f4a35f9c80ead56">Packet</a>(<span class="keywordtype">size_t</span> maxPacketLen = 1);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a00052.html#afd4ea74ad9e1a7603f4a35f9c80ead56">Packet</a>(<a class="code" href="a00073.html">RawPacket</a>* rawPacket);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="a00052.html#afd4ea74ad9e1a7603f4a35f9c80ead56">Packet</a>(<a class="code" href="a00073.html">RawPacket</a>* rawPacket, <span class="keywordtype">bool</span> freeRawPacket);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00052.html#a69d431d5730177a1bf6e1f8bbbbb6066">~Packet</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="a00052.html#afd4ea74ad9e1a7603f4a35f9c80ead56">Packet</a>(<span class="keyword">const</span> <a class="code" href="a00052.html">Packet</a>&amp; other);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="a00052.html">Packet</a>&amp; <a class="code" href="a00052.html#a91a6b0c6ea561b9726597468acac252d">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00052.html">Packet</a>&amp; other);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00052.html#a8fec1d535b7f272793a44dc754934a56">   84</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00073.html">RawPacket</a>* <a class="code" href="a00052.html#a8fec1d535b7f272793a44dc754934a56">getRawPacket</a>() { <span class="keywordflow">return</span> m_RawPacket; }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00052.html#a8f2b2ceea57492d2ab90eea55a48abe4">setRawPacket</a>(<a class="code" href="a00073.html">RawPacket</a>* rawPacket, <span class="keywordtype">bool</span> freeRawPacket);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00052.html#a8d73113e41efb7f2146e9058567d9827">   97</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00073.html">RawPacket</a>* <a class="code" href="a00052.html#a8d73113e41efb7f2146e9058567d9827">getRawPacketReadOnly</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_RawPacket; }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00052.html#a84fa4ce5311673d8d0eda8a3ccd1aa65">  103</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00042.html">Layer</a>* <a class="code" href="a00052.html#a84fa4ce5311673d8d0eda8a3ccd1aa65">getFirstLayer</a>() { <span class="keywordflow">return</span> m_FirstLayer; }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00052.html#a40618d2579ceb41ccfddd1aa511e3cb0">  109</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00042.html">Layer</a>* <a class="code" href="a00052.html#a40618d2579ceb41ccfddd1aa511e3cb0">getLastLayer</a>() { <span class="keywordflow">return</span> m_LastLayer; }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> addLayer(<a class="code" href="a00042.html">Layer</a>* newLayer);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> insertLayer(<a class="code" href="a00042.html">Layer</a>* prevLayer, <a class="code" href="a00042.html">Layer</a>* newLayer);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> removeLayer(<a class="code" href="a00042.html">Layer</a>* layer);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    TLayer* <a class="code" href="a00052.html#a4684bb0c74d36f713f485b0f54d11660">getLayerOfType</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    TLayer* <a class="code" href="a00052.html#a097782fccb489b1dae9bb827cf9b3a75">getNextLayerOfType</a>(<a class="code" href="a00042.html">Layer</a>* after);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00052.html#a22bb9f62a67a053264fc81358ed9f22c">  138</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00052.html#a22bb9f62a67a053264fc81358ed9f22c">isPacketOfType</a>(<a class="code" href="a00121.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a> protocolType) { <span class="keywordflow">return</span> m_ProtocolTypes &amp; protocolType; }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00052.html#a2a757b793dfce9239223f9000551a945">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">class </span><a class="code" href="a00013.html">DpdkDeviceList</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">class </span><a class="code" href="a00011.html">DpdkDevice</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7">   61</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7">DpdkPMDType</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae6b952d3ce07bb2b2560bed29d8d7d23">   63</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae6b952d3ce07bb2b2560bed29d8d7d23">PMD_UNKNOWN</a>,</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7aa88bb57d6948f95812eec545a5dbb821">   65</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7aa88bb57d6948f95812eec545a5dbb821">PMD_BOND</a>,</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae3d0907512b073d4dcd8a15137b88f40">   67</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae3d0907512b073d4dcd8a15137b88f40">PMD_E1000EM</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae875bd298f4f76c1d30c3675af0b90a6">   69</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae875bd298f4f76c1d30c3675af0b90a6">PMD_IGB</a>,</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a2b30059e14629c6cb434016ed8abcd5f">   71</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a2b30059e14629c6cb434016ed8abcd5f">PMD_IGBVF</a>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7adbbf74f5a79902db3f58eace4f5d049b">   73</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7adbbf74f5a79902db3f58eace4f5d049b">PMD_ENIC</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a58c253db61bdb4b876b79b7ddfc67050">   75</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a58c253db61bdb4b876b79b7ddfc67050">PMD_FM10K</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a181a46f9a82009630ed648bae649287e">   77</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a181a46f9a82009630ed648bae649287e">PMD_I40E</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a84c787e99b97350cacfc63e71aa3ddab">   79</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a84c787e99b97350cacfc63e71aa3ddab">PMD_I40EVF</a>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a97a4d8749f5fded3f5b5007b8d1b33ee">   81</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a97a4d8749f5fded3f5b5007b8d1b33ee">PMD_IXGBE</a>,</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a3e2a16360b4f17c9e237e7cdfb76daa5">   83</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a3e2a16360b4f17c9e237e7cdfb76daa5">PMD_IXGBEVF</a>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a5efa00728e6ccf81ac0772ce49c094c2">   85</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a5efa00728e6ccf81ac0772ce49c094c2">PMD_MLX4</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a79b4351e4c092116558cab950859feef">   87</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a79b4351e4c092116558cab950859feef">PMD_NULL</a>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a46bec11af518e70cf1b5215e90c519f4">   89</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a46bec11af518e70cf1b5215e90c519f4">PMD_PCAP</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a20a1e56ea9b529b4c94cf9c74a93d97e">   91</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a20a1e56ea9b529b4c94cf9c74a93d97e">PMD_RING</a>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ad249302193324f1322b7cf15eaf35f91">   93</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ad249302193324f1322b7cf15eaf35f91">PMD_VIRTIO</a>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ab715bc7e04a202eda944d2c1338121f7">   95</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ab715bc7e04a202eda944d2c1338121f7">PMD_VMXNET3</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a6a658e6451ad269f5a7dacbd517baf86">   97</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a6a658e6451ad269f5a7dacbd517baf86">PMD_XENVIRT</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a92708c2223970546ff2dbdbf72ebe8e5">   99</a></span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a92708c2223970546ff2dbdbf72ebe8e5">PMD_AF_PACKET</a></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">struct </span>rte_mbuf;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">struct </span>rte_mempool;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">struct </span>rte_eth_conf;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">class </span><a class="code" href="a00011.html">DpdkDevice</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="a00061.html">  128</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00061.html">MBufRawPacket</a> : <span class="keyword">public</span> <a class="code" href="a00087.html">RawPacket</a></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00011.html">DpdkDevice</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">struct </span>rte_mbuf* m_MBuf;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="a00011.html">DpdkDevice</a>* m_Device;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> setMBuf(<span class="keyword">struct</span> rte_mbuf* mBuf, timeval timestamp);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="a00061.html#adcef9c1bd21cdf35469811455ef5f778">  144</a></span>&#160;    <a class="code" href="a00061.html#adcef9c1bd21cdf35469811455ef5f778">MBufRawPacket</a>() : <a class="code" href="a00087.html">RawPacket</a>(), m_MBuf(NULL), m_Device(NULL) { m_DeleteRawDataAtDestructor = <span class="keyword">false</span>; }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::string <a class="code" href="a00052.html#ae1aaa31d9965585e603a348cfe4bc9aa">printToString</a>();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00052.html#a56bf1670aa1ab99dca9fda49ec2e8283">printToStringList</a>(std::vector&lt;std::string&gt;&amp; result);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00061.html#a1fde934861efc316b3f69213ecdf04d3">~MBufRawPacket</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="a00061.html#adcef9c1bd21cdf35469811455ef5f778">MBufRawPacket</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">MBufRawPacket</a>&amp; other);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="a00052.html">Packet</a>&amp; other);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">void</span> destructPacketData();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">bool</span> extendLayer(<a class="code" href="a00042.html">Layer</a>* layer, <span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">bool</span> shortenLayer(<a class="code" href="a00042.html">Layer</a>* layer, <span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> reallocateRawData(<span class="keywordtype">size_t</span> newSize);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::string printPacketInfo();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="a00052.html#a4684bb0c74d36f713f485b0f54d11660">  173</a></span>&#160;TLayer* <a class="code" href="a00052.html#a4684bb0c74d36f713f485b0f54d11660">Packet::getLayerOfType</a>()</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span> (dynamic_cast&lt;TLayer*&gt;(m_FirstLayer) != NULL)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">return</span> (TLayer*)m_FirstLayer;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00061.html#af23ac949f3a2125342a0b228349785ec">init</a>(<a class="code" href="a00011.html">DpdkDevice</a>* device);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">// overridden methods</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="a00061.html">MBufRawPacket</a>&amp; <a class="code" href="a00061.html#a91fd26da490cb43fa3d879b89d4af58f">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">MBufRawPacket</a>&amp; other);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> getNextLayerOfType&lt;TLayer&gt;(m_FirstLayer);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00052.html#a097782fccb489b1dae9bb827cf9b3a75">  182</a></span>&#160;TLayer* <a class="code" href="a00052.html#a097782fccb489b1dae9bb827cf9b3a75">Packet::getNextLayerOfType</a>(<a class="code" href="a00042.html">Layer</a>* after)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (after == NULL)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="a00042.html">Layer</a>* curLayer = after-&gt;<a class="code" href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a>();</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">while</span> ((curLayer != NULL) &amp;&amp; (dynamic_cast&lt;TLayer*&gt;(curLayer) == NULL))</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        curLayer = curLayer-&gt;<a class="code" href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a>();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> (TLayer*)curLayer;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00061.html#a9a024d8bf207e59f824e07f2500c47f6">setRawData</a>(<span class="keyword">const</span> uint8_t* pRawData, <span class="keywordtype">int</span> rawDataLen, timeval timestamp);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00061.html#a404d5486c9fb0d3cfdec3b461e8bb049">clear</a>();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PACKET */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00122_html"><div class="ttname"><a href="a00122.html">RawPacket.h</a></div></div>
-<div class="ttc" id="a00052_html_a8f2b2ceea57492d2ab90eea55a48abe4"><div class="ttname"><a href="a00052.html#a8f2b2ceea57492d2ab90eea55a48abe4">Packet::setRawPacket</a></div><div class="ttdeci">void setRawPacket(RawPacket *rawPacket, bool freeRawPacket)</div></div>
-<div class="ttc" id="a00052_html_a2a757b793dfce9239223f9000551a945"><div class="ttname"><a href="a00052.html#a2a757b793dfce9239223f9000551a945">Packet::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00052_html_a8d73113e41efb7f2146e9058567d9827"><div class="ttname"><a href="a00052.html#a8d73113e41efb7f2146e9058567d9827">Packet::getRawPacketReadOnly</a></div><div class="ttdeci">RawPacket * getRawPacketReadOnly() const </div><div class="ttdef"><b>Definition:</b> Packet.h:97</div></div>
-<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00052_html_a40618d2579ceb41ccfddd1aa511e3cb0"><div class="ttname"><a href="a00052.html#a40618d2579ceb41ccfddd1aa511e3cb0">Packet::getLastLayer</a></div><div class="ttdeci">Layer * getLastLayer()</div><div class="ttdef"><b>Definition:</b> Packet.h:109</div></div>
-<div class="ttc" id="a00052_html_afd4ea74ad9e1a7603f4a35f9c80ead56"><div class="ttname"><a href="a00052.html#afd4ea74ad9e1a7603f4a35f9c80ead56">Packet::Packet</a></div><div class="ttdeci">Packet(size_t maxPacketLen=1)</div></div>
-<div class="ttc" id="a00052_html_ae1aaa31d9965585e603a348cfe4bc9aa"><div class="ttname"><a href="a00052.html#ae1aaa31d9965585e603a348cfe4bc9aa">Packet::printToString</a></div><div class="ttdeci">std::string printToString()</div></div>
-<div class="ttc" id="a00042_html_a4683fd5442c279f32ad6fcd6cd87c1d7"><div class="ttname"><a href="a00042.html#a4683fd5442c279f32ad6fcd6cd87c1d7">Layer::getNextLayer</a></div><div class="ttdeci">Layer * getNextLayer()</div><div class="ttdef"><b>Definition:</b> Layer.h:56</div></div>
-<div class="ttc" id="a00100_html"><div class="ttname"><a href="a00100.html">Layer.h</a></div></div>
-<div class="ttc" id="a00052_html_a097782fccb489b1dae9bb827cf9b3a75"><div class="ttname"><a href="a00052.html#a097782fccb489b1dae9bb827cf9b3a75">Packet::getNextLayerOfType</a></div><div class="ttdeci">TLayer * getNextLayerOfType(Layer *after)</div><div class="ttdef"><b>Definition:</b> Packet.h:182</div></div>
-<div class="ttc" id="a00052_html_a91a6b0c6ea561b9726597468acac252d"><div class="ttname"><a href="a00052.html#a91a6b0c6ea561b9726597468acac252d">Packet::operator=</a></div><div class="ttdeci">Packet &amp; operator=(const Packet &amp;other)</div></div>
-<div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00052_html_a4684bb0c74d36f713f485b0f54d11660"><div class="ttname"><a href="a00052.html#a4684bb0c74d36f713f485b0f54d11660">Packet::getLayerOfType</a></div><div class="ttdeci">TLayer * getLayerOfType()</div><div class="ttdef"><b>Definition:</b> Packet.h:173</div></div>
-<div class="ttc" id="a00052_html_a84fa4ce5311673d8d0eda8a3ccd1aa65"><div class="ttname"><a href="a00052.html#a84fa4ce5311673d8d0eda8a3ccd1aa65">Packet::getFirstLayer</a></div><div class="ttdeci">Layer * getFirstLayer()</div><div class="ttdef"><b>Definition:</b> Packet.h:103</div></div>
-<div class="ttc" id="a00052_html_a22bb9f62a67a053264fc81358ed9f22c"><div class="ttname"><a href="a00052.html#a22bb9f62a67a053264fc81358ed9f22c">Packet::isPacketOfType</a></div><div class="ttdeci">bool isPacketOfType(ProtocolType protocolType)</div><div class="ttdef"><b>Definition:</b> Packet.h:138</div></div>
-<div class="ttc" id="a00052_html_a56bf1670aa1ab99dca9fda49ec2e8283"><div class="ttname"><a href="a00052.html#a56bf1670aa1ab99dca9fda49ec2e8283">Packet::printToStringList</a></div><div class="ttdeci">void printToStringList(std::vector&lt; std::string &gt; &amp;result)</div></div>
-<div class="ttc" id="a00052_html_a69d431d5730177a1bf6e1f8bbbbb6066"><div class="ttname"><a href="a00052.html#a69d431d5730177a1bf6e1f8bbbbb6066">Packet::~Packet</a></div><div class="ttdeci">virtual ~Packet()</div></div>
-<div class="ttc" id="a00052_html_a8fec1d535b7f272793a44dc754934a56"><div class="ttname"><a href="a00052.html#a8fec1d535b7f272793a44dc754934a56">Packet::getRawPacket</a></div><div class="ttdeci">RawPacket * getRawPacket()</div><div class="ttdef"><b>Definition:</b> Packet.h:84</div></div>
-<div class="ttc" id="a00073_html"><div class="ttname"><a href="a00073.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
-<div class="ttc" id="a00121_html_a2b99fb4e4914a533566284f2ed3b0186"><div class="ttname"><a href="a00121.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:9</div></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00061.html#a3ab3107dfd8405e3af05395960aa558b">appendData</a>(<span class="keyword">const</span> uint8_t* dataToAppend, <span class="keywordtype">size_t</span> dataToAppendLen);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00061.html#a5e821d9b0fd8933820ff863c05f06c7f">insertData</a>(<span class="keywordtype">int</span> atIndex, <span class="keyword">const</span> uint8_t* dataToInsert, <span class="keywordtype">size_t</span> dataToInsertLen);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00061.html#a8b6bbf54f8461a4d9eaa805640cbc9a8">removeData</a>(<span class="keywordtype">int</span> atIndex, <span class="keywordtype">size_t</span> numOfBytesToRemove);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00061.html#acb2e61a48aa187d5620f0ca646842744">reallocateData</a>(<span class="keywordtype">size_t</span> newBufferLength);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="a00106.html#a724aa307337830ce639fbe2aed7721ed">  242</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="a00106.html#a724aa307337830ce639fbe2aed7721ed">OnDpdkPacketsArriveCallback</a>)(<a class="code" href="a00061.html">MBufRawPacket</a>* packets, uint32_t numOfPackets, uint8_t threadId, <a class="code" href="a00011.html">DpdkDevice</a>* device, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="a00075.html">  248</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00075.html">PciAddress</a></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="a00075.html#a75e61605e8c14b226e92e31c4cb570ea">  254</a></span>&#160;    <a class="code" href="a00075.html#a75e61605e8c14b226e92e31c4cb570ea">PciAddress</a>() { <a class="code" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">domain</a> = 0; <a class="code" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">bus</a> = 0; <a class="code" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">devid</a> = 0; <span class="keyword">function</span> = 0; }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="a00075.html#ad671350174da6421a12bb228bd8e3e61">  263</a></span>&#160;    <a class="code" href="a00075.html#ad671350174da6421a12bb228bd8e3e61">PciAddress</a>(uint16_t <a class="code" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">domain</a>, uint8_t <a class="code" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">bus</a>, uint8_t <a class="code" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">devid</a>, uint8_t <span class="keyword">function</span>)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        this-&gt;domain = <a class="code" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">domain</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        this-&gt;bus = <a class="code" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">bus</a>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        this-&gt;devid = <a class="code" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">devid</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        this-&gt;<span class="keyword">function</span> = <span class="keyword">function</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">  272</a></span>&#160;    uint16_t <a class="code" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">domain</a>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">  274</a></span>&#160;    uint8_t <a class="code" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">bus</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">  276</a></span>&#160;    uint8_t <a class="code" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">devid</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="a00075.html#ae112ca4a72480e807de61b225f364108">  278</a></span>&#160;    uint8_t <span class="keyword">function</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="a00075.html#af9379849b7ab839d6dba0dabd73c4348">  283</a></span>&#160;    std::string <a class="code" href="a00075.html#af9379849b7ab839d6dba0dabd73c4348">toString</a>()</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordtype">char</span> pciString[15];</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        snprintf(pciString, 15, <span class="stringliteral">&quot;%04x:%02x:%02x.%x&quot;</span>, domain, bus, devid, <span class="keyword">function</span>);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> std::string(pciString);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="a00075.html#a79f69a853e1fdf83e99a8a3c1eb0c407">  293</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00075.html#a79f69a853e1fdf83e99a8a3c1eb0c407">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00075.html">PciAddress</a> &amp;other)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> (domain == other.<a class="code" href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">domain</a> &amp;&amp; bus == other.<a class="code" href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">bus</a> &amp;&amp; devid == other.<a class="code" href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">devid</a> &amp;&amp; <span class="keyword">function</span> == other.<a class="code" href="a00075.html#ae112ca4a72480e807de61b225f364108">function</a>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="a00011.html">  333</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00011.html">DpdkDevice</a> : <span class="keyword">public</span> <a class="code" href="a00046.html">IPcapDevice</a></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00013.html">DpdkDeviceList</a>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00061.html">MBufRawPacket</a>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="a00012.html">  344</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00012.html">DpdkDeviceConfiguration</a></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    {</div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb">  350</a></span>&#160;        uint16_t <a class="code" href="a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb">receiveDescriptorsNumber</a>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="a00012.html#a853660fdd507c3ece716e94f76880b76">  356</a></span>&#160;        uint16_t <a class="code" href="a00012.html#a853660fdd507c3ece716e94f76880b76">transmitDescriptorsNumber</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="a00012.html#abacd84f55ae7bb18cfd4ae452257b3f9">  365</a></span>&#160;        <a class="code" href="a00012.html#abacd84f55ae7bb18cfd4ae452257b3f9">DpdkDeviceConfiguration</a>(uint16_t receiveDescriptorsNumber = 128, uint16_t transmitDescriptorsNumber = 512)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            this-&gt;receiveDescriptorsNumber = <a class="code" href="a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb">receiveDescriptorsNumber</a>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            this-&gt;transmitDescriptorsNumber = <a class="code" href="a00012.html#a853660fdd507c3ece716e94f76880b76">transmitDescriptorsNumber</a>;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    };</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="a00057.html">  376</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00057.html">LinkStatus</a></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    {</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ece">  379</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ece">LinkDuplex</a> </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        {</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed">  382</a></span>&#160;            <a class="code" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed">FULL_DUPLEX</a>, </div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a">  384</a></span>&#160;            <a class="code" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a">HALF_DUPLEX</a> </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        };</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="a00057.html#a42ef9fde494269d3f672fc01799416a1">  388</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00057.html#a42ef9fde494269d3f672fc01799416a1">linkUp</a>;</div>
+<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="a00057.html#a4c400cc354ff9149b6354e1bb877f3aa">  390</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00057.html#a4c400cc354ff9149b6354e1bb877f3aa">linkSpeedMbps</a>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="a00057.html#a2fe00365f2bb962a4caabc710fd9ff3d">  392</a></span>&#160;        <a class="code" href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ece">LinkDuplex</a> <a class="code" href="a00057.html#a2fe00365f2bb962a4caabc710fd9ff3d">linkDuplex</a>;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    };</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00011.html">DpdkDevice</a>() {}</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="a00011.html#ad41195d30d682b8c5bb4cf1a5adfbfff">  400</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="a00011.html#ad41195d30d682b8c5bb4cf1a5adfbfff">getDeviceId</a>() { <span class="keywordflow">return</span> m_Id; }</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="a00011.html#a71c9381c8b607fcc8a68623cd3789aef">  404</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00011.html#a71c9381c8b607fcc8a68623cd3789aef">getDeviceName</a>() { <span class="keywordflow">return</span> std::string(m_DeviceName); }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="a00011.html#a96292ecf2f66f47d005e62d644ba9d6c">  409</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00059.html">MacAddress</a> <a class="code" href="a00011.html#a96292ecf2f66f47d005e62d644ba9d6c">getMacAddress</a>() { <span class="keywordflow">return</span> m_MacAddress; }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="a00011.html#acdc8f7895de72a3d63a9bf1bb236853c">  415</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00011.html#acdc8f7895de72a3d63a9bf1bb236853c">getPMDName</a>() { <span class="keywordflow">return</span> m_PMDName; }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="a00011.html#ac89ee6ca2516fd145193a2f6fbc6c369">  421</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7">DpdkPMDType</a> <a class="code" href="a00011.html#ac89ee6ca2516fd145193a2f6fbc6c369">getPMDType</a>() { <span class="keywordflow">return</span> m_PMDType; }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="a00011.html#acd3c2e89ead886d87ef52f6731f38a81">  426</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00075.html">PciAddress</a> <a class="code" href="a00011.html#acd3c2e89ead886d87ef52f6731f38a81">getPciAddress</a>() { <span class="keywordflow">return</span> m_PciAddress; }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="a00011.html#aea78e2dc009db1ea6b2922f6d817bac1">  431</a></span>&#160;    <span class="keyword">inline</span> uint16_t <a class="code" href="a00011.html#aea78e2dc009db1ea6b2922f6d817bac1">getMtu</a>() { <span class="keywordflow">return</span> m_DeviceMtu; }</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a5fecb7d7c464b341c3c913acb2e2cd2d">setMtu</a>(uint16_t newMtu);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#aae390a1e082dc27b7bc76557827dcc1f">isVirtual</a>();</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00011.html#a7bcd551c282c9b9444d3f1a9ac4b2d1f">getLinkStatus</a>(LinkStatus&amp; linkStatus);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    uint32_t <a class="code" href="a00011.html#a91b652f5b00d2f5aa075612c72597593">getCurrentCoreId</a>();</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno"><a class="line" href="a00011.html#a59be3970d179ef8d0ddb7ceeae74b3f6">  459</a></span>&#160;    uint16_t <a class="code" href="a00011.html#a59be3970d179ef8d0ddb7ceeae74b3f6">getNumOfOpenedRxQueues</a>() { <span class="keywordflow">return</span> m_NumOfRxQueuesOpened; }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="a00011.html#a74ea210926fcddf3d3ae922abfb7c161">  464</a></span>&#160;    uint16_t <a class="code" href="a00011.html#a74ea210926fcddf3d3ae922abfb7c161">getNumOfOpenedTxQueues</a>() { <span class="keywordflow">return</span> m_NumOfTxQueuesOpened; }</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00469"></a><span class="lineno"><a class="line" href="a00011.html#a1ad3ad4f5d3e9a105e7770e089ca8dc7">  469</a></span>&#160;    uint16_t <a class="code" href="a00011.html#a1ad3ad4f5d3e9a105e7770e089ca8dc7">getTotalNumOfRxQueues</a>() { <span class="keywordflow">return</span> m_TotalAvailableRxQueues; }</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno"><a class="line" href="a00011.html#a0e941400e58e4d6e19e474a9c7628f51">  474</a></span>&#160;    uint16_t <a class="code" href="a00011.html#a0e941400e58e4d6e19e474a9c7628f51">getTotalNumOfTxQueues</a>() { <span class="keywordflow">return</span> m_TotalAvailableTxQueues; }</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3">receivePackets</a>(<a class="code" href="a00078.html">RawPacketVector</a>&amp; rawPacketsArr, uint16_t rxQueueId);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3">receivePackets</a>(<a class="code" href="a00061.html">MBufRawPacket</a>** rawPacketsArr, <span class="keywordtype">int</span>&amp; rawPacketArrLength, uint16_t rxQueueId);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3">receivePackets</a>(<a class="code" href="a00066.html">Packet</a>** packetsArr, <span class="keywordtype">int</span>&amp; packetsArrLength, uint16_t rxQueueId);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00011.html#af6c8e14aee4acb0ddbb9e4946b824051">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00087.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00011.html#af6c8e14aee4acb0ddbb9e4946b824051">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00066.html">Packet</a>** packetsArr, <span class="keywordtype">int</span> arrLength, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00011.html#af6c8e14aee4acb0ddbb9e4946b824051">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="a00078.html">RawPacketVector</a>&amp; rawPacketsVec, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a2394d5f7686d12095aa1c53c1b91fbe0">sendPacket</a>(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">int</span> packetDataLength, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a2394d5f7686d12095aa1c53c1b91fbe0">sendPacket</a>(<span class="keyword">const</span> <a class="code" href="a00087.html">RawPacket</a>&amp; rawPacket, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a2394d5f7686d12095aa1c53c1b91fbe0">sendPacket</a>(<span class="keyword">const</span> <a class="code" href="a00066.html">Packet</a>&amp; packet, uint16_t txQueueId = 0);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ad6baba70b8788968a404f00c884553e2">setFilter</a>(<a class="code" href="a00018.html">GeneralFilter</a>&amp; filter);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ad6baba70b8788968a404f00c884553e2">setFilter</a>(std::string filterAsString);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a19d51b1edd2dc34a13fe5629f1416ffa">openMultiQueues</a>(uint16_t numOfRxQueuesToOpen, uint16_t numOfTxQueuesToOpen, <span class="keyword">const</span> DpdkDeviceConfiguration&amp; config = DpdkDeviceConfiguration());</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#ace5f6abf542473c697f42a3d42ca71cc">startCaptureSingleThread</a>(<a class="code" href="a00106.html#a724aa307337830ce639fbe2aed7721ed">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a2714b20b2ff8c2df9c45fd68d08064ba">startCaptureMultiThreads</a>(<a class="code" href="a00106.html#a724aa307337830ce639fbe2aed7721ed">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie, CoreMask coreMask);</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00011.html#acd6998dd6580ad1f72ddcff3bfde3a19">stopCapture</a>();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00011.html#ad9149570e54b7907cd0ffea18d5f4852">getAmountOfFreeMbufs</a>();</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00011.html#a1e30446ba470cc24ca7d41357d11229e">getAmountOfMbufsInUse</a>();</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="comment">//overridden methods</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno"><a class="line" href="a00011.html#a97d19bcb492eacbd9a581b01ce05fcbc">  668</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00011.html#a97d19bcb492eacbd9a581b01ce05fcbc">open</a>() { <span class="keywordflow">return</span> <a class="code" href="a00011.html#a19d51b1edd2dc34a13fe5629f1416ffa">openMultiQueues</a>(1, 1); };</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00011.html#a025216cc18ed1232d212ab59a66eb016">close</a>();</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00011.html#a51b9dfcbbfffe3eb4b48d50bd13b845b">getStatistics</a>(pcap_stat&amp; stats);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <span class="keyword">struct </span>DpdkCoreConfiguration</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    {</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="keywordtype">int</span> RxQueueId;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordtype">bool</span> IsCoreInUse;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        <span class="keywordtype">void</span> clear() { RxQueueId = -1; IsCoreInUse = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        DpdkCoreConfiguration() : RxQueueId(-1), IsCoreInUse(false) {}</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    };</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <a class="code" href="a00011.html">DpdkDevice</a>(<span class="keywordtype">int</span> port, uint32_t mBufPoolSize);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keywordtype">bool</span> initMemPool(<span class="keyword">struct</span> rte_mempool*&amp; memPool, <span class="keyword">const</span> <span class="keywordtype">char</span>* mempoolName, uint32_t mBufPoolSize);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <span class="keywordtype">bool</span> configurePort(uint8_t numOfRxQueues, uint8_t numOfTxQueues);</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordtype">bool</span> initQueues(uint8_t numOfRxQueuesToInit, uint8_t numOfTxQueuesToInit);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">bool</span> startDevice();</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> dpdkCaptureThreadMain(<span class="keywordtype">void</span> *ptr);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordtype">void</span> clearCoreConfiguration();</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keywordtype">bool</span> initCoreConfigurationByCoreMask(CoreMask coreMask);</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordtype">int</span> getCoresInUseCount();</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="keywordtype">void</span> setDeviceInfo();</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="a00087.html">RawPacket</a>* (*packetIterator)(<span class="keywordtype">void</span>* packetStorage, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordtype">int</span> sendPacketsInner(uint16_t txQueueId, <span class="keywordtype">void</span>* packetStorage, packetIterator iter, <span class="keywordtype">int</span> arrLength);</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordtype">char</span> m_DeviceName[30];</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <a class="code" href="a00106.html#a5a850880eb1247949ec592ae602a0eb7">DpdkPMDType</a> m_PMDType;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    std::string m_PMDName;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <a class="code" href="a00075.html">PciAddress</a> m_PciAddress;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    DpdkDeviceConfiguration m_Config;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordtype">int</span> m_Id;</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <a class="code" href="a00059.html">MacAddress</a> m_MacAddress;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    uint16_t m_DeviceMtu;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keyword">struct </span>rte_mempool* m_MBufMempool;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keyword">struct </span>rte_mbuf* m_mBufArray[256];</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    DpdkCoreConfiguration m_CoreConfiguration[MAX_NUM_OF_CORES];</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    uint16_t m_TotalAvailableRxQueues;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    uint16_t m_TotalAvailableTxQueues;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    uint16_t m_NumOfRxQueuesOpened;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    uint16_t m_NumOfTxQueuesOpened;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <a class="code" href="a00106.html#a724aa307337830ce639fbe2aed7721ed">OnDpdkPacketsArriveCallback</a> m_OnPacketsArriveCallback;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordtype">void</span>* m_OnPacketsArriveUserCookie;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordtype">bool</span> m_StopThread;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordtype">bool</span> m_WasOpened;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;     <span class="comment">// RSS key used by the NIC for load balancing the packets between cores</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keyword">static</span> uint8_t m_RSSKey[40];</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;};</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_DPDK_DEVICE */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00075_html_a157c1e7aca8af7ab1fe86497db832556"><div class="ttname"><a href="a00075.html#a157c1e7aca8af7ab1fe86497db832556">PciAddress::devid</a></div><div class="ttdeci">uint8_t devid</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:276</div></div>
+<div class="ttc" id="a00061_html_adcef9c1bd21cdf35469811455ef5f778"><div class="ttname"><a href="a00061.html#adcef9c1bd21cdf35469811455ef5f778">MBufRawPacket::MBufRawPacket</a></div><div class="ttdeci">MBufRawPacket()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:144</div></div>
+<div class="ttc" id="a00057_html_a4dc6a3d2ba99ca851fca21ca81d03ece"><div class="ttname"><a href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ece">DpdkDevice::LinkStatus::LinkDuplex</a></div><div class="ttdeci">LinkDuplex</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:379</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7aa88bb57d6948f95812eec545a5dbb821"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7aa88bb57d6948f95812eec545a5dbb821">PMD_BOND</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:65</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7adbbf74f5a79902db3f58eace4f5d049b"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7adbbf74f5a79902db3f58eace4f5d049b">PMD_ENIC</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:73</div></div>
+<div class="ttc" id="a00057_html_a2fe00365f2bb962a4caabc710fd9ff3d"><div class="ttname"><a href="a00057.html#a2fe00365f2bb962a4caabc710fd9ff3d">DpdkDevice::LinkStatus::linkDuplex</a></div><div class="ttdeci">LinkDuplex linkDuplex</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:392</div></div>
+<div class="ttc" id="a00011_html_a2714b20b2ff8c2df9c45fd68d08064ba"><div class="ttname"><a href="a00011.html#a2714b20b2ff8c2df9c45fd68d08064ba">DpdkDevice::startCaptureMultiThreads</a></div><div class="ttdeci">bool startCaptureMultiThreads(OnDpdkPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</div></div>
+<div class="ttc" id="a00061_html_a3ab3107dfd8405e3af05395960aa558b"><div class="ttname"><a href="a00061.html#a3ab3107dfd8405e3af05395960aa558b">MBufRawPacket::appendData</a></div><div class="ttdeci">void appendData(const uint8_t *dataToAppend, size_t dataToAppendLen)</div></div>
+<div class="ttc" id="a00127_html"><div class="ttname"><a href="a00127.html">PcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00011_html_a71c9381c8b607fcc8a68623cd3789aef"><div class="ttname"><a href="a00011.html#a71c9381c8b607fcc8a68623cd3789aef">DpdkDevice::getDeviceName</a></div><div class="ttdeci">std::string getDeviceName()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:404</div></div>
+<div class="ttc" id="a00012_html_abacd84f55ae7bb18cfd4ae452257b3f9"><div class="ttname"><a href="a00012.html#abacd84f55ae7bb18cfd4ae452257b3f9">DpdkDevice::DpdkDeviceConfiguration::DpdkDeviceConfiguration</a></div><div class="ttdeci">DpdkDeviceConfiguration(uint16_t receiveDescriptorsNumber=128, uint16_t transmitDescriptorsNumber=512)</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:365</div></div>
+<div class="ttc" id="a00011_html_ad41195d30d682b8c5bb4cf1a5adfbfff"><div class="ttname"><a href="a00011.html#ad41195d30d682b8c5bb4cf1a5adfbfff">DpdkDevice::getDeviceId</a></div><div class="ttdeci">int getDeviceId()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:400</div></div>
+<div class="ttc" id="a00061_html_a91fd26da490cb43fa3d879b89d4af58f"><div class="ttname"><a href="a00061.html#a91fd26da490cb43fa3d879b89d4af58f">MBufRawPacket::operator=</a></div><div class="ttdeci">MBufRawPacket &amp; operator=(const MBufRawPacket &amp;other)</div></div>
+<div class="ttc" id="a00059_html"><div class="ttname"><a href="a00059.html">MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:14</div></div>
+<div class="ttc" id="a00011_html_acd6998dd6580ad1f72ddcff3bfde3a19"><div class="ttname"><a href="a00011.html#acd6998dd6580ad1f72ddcff3bfde3a19">DpdkDevice::stopCapture</a></div><div class="ttdeci">void stopCapture()</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a5efa00728e6ccf81ac0772ce49c094c2"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a5efa00728e6ccf81ac0772ce49c094c2">PMD_MLX4</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:85</div></div>
+<div class="ttc" id="a00061_html_af23ac949f3a2125342a0b228349785ec"><div class="ttname"><a href="a00061.html#af23ac949f3a2125342a0b228349785ec">MBufRawPacket::init</a></div><div class="ttdeci">bool init(DpdkDevice *device)</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7ae6b952d3ce07bb2b2560bed29d8d7d23"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae6b952d3ce07bb2b2560bed29d8d7d23">PMD_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:63</div></div>
+<div class="ttc" id="a00011_html_af6c8e14aee4acb0ddbb9e4946b824051"><div class="ttname"><a href="a00011.html#af6c8e14aee4acb0ddbb9e4946b824051">DpdkDevice::sendPackets</a></div><div class="ttdeci">int sendPackets(const RawPacket *rawPacketsArr, int arrLength, uint16_t txQueueId=0)</div></div>
+<div class="ttc" id="a00075_html_a75e61605e8c14b226e92e31c4cb570ea"><div class="ttname"><a href="a00075.html#a75e61605e8c14b226e92e31c4cb570ea">PciAddress::PciAddress</a></div><div class="ttdeci">PciAddress()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:254</div></div>
+<div class="ttc" id="a00011_html_aae390a1e082dc27b7bc76557827dcc1f"><div class="ttname"><a href="a00011.html#aae390a1e082dc27b7bc76557827dcc1f">DpdkDevice::isVirtual</a></div><div class="ttdeci">bool isVirtual()</div></div>
+<div class="ttc" id="a00011_html_a5fecb7d7c464b341c3c913acb2e2cd2d"><div class="ttname"><a href="a00011.html#a5fecb7d7c464b341c3c913acb2e2cd2d">DpdkDevice::setMtu</a></div><div class="ttdeci">bool setMtu(uint16_t newMtu)</div></div>
+<div class="ttc" id="a00011_html_ae97844b1142bef140f4e3a60e4f2c0e3"><div class="ttname"><a href="a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3">DpdkDevice::receivePackets</a></div><div class="ttdeci">bool receivePackets(RawPacketVector &amp;rawPacketsArr, uint16_t rxQueueId)</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7ab715bc7e04a202eda944d2c1338121f7"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ab715bc7e04a202eda944d2c1338121f7">PMD_VMXNET3</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:95</div></div>
+<div class="ttc" id="a00011_html_a0e941400e58e4d6e19e474a9c7628f51"><div class="ttname"><a href="a00011.html#a0e941400e58e4d6e19e474a9c7628f51">DpdkDevice::getTotalNumOfTxQueues</a></div><div class="ttdeci">uint16_t getTotalNumOfTxQueues()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:474</div></div>
+<div class="ttc" id="a00057_html_a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed"><div class="ttname"><a href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed">DpdkDevice::LinkStatus::FULL_DUPLEX</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:382</div></div>
+<div class="ttc" id="a00012_html_a853660fdd507c3ece716e94f76880b76"><div class="ttname"><a href="a00012.html#a853660fdd507c3ece716e94f76880b76">DpdkDevice::DpdkDeviceConfiguration::transmitDescriptorsNumber</a></div><div class="ttdeci">uint16_t transmitDescriptorsNumber</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:356</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a20a1e56ea9b529b4c94cf9c74a93d97e"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a20a1e56ea9b529b4c94cf9c74a93d97e">PMD_RING</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:91</div></div>
+<div class="ttc" id="a00018_html"><div class="ttname"><a href="a00018.html">GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:66</div></div>
+<div class="ttc" id="a00106_html_a724aa307337830ce639fbe2aed7721ed"><div class="ttname"><a href="a00106.html#a724aa307337830ce639fbe2aed7721ed">OnDpdkPacketsArriveCallback</a></div><div class="ttdeci">void(* OnDpdkPacketsArriveCallback)(MBufRawPacket *packets, uint32_t numOfPackets, uint8_t threadId, DpdkDevice *device, void *userCookie)</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:242</div></div>
+<div class="ttc" id="a00011_html_a59be3970d179ef8d0ddb7ceeae74b3f6"><div class="ttname"><a href="a00011.html#a59be3970d179ef8d0ddb7ceeae74b3f6">DpdkDevice::getNumOfOpenedRxQueues</a></div><div class="ttdeci">uint16_t getNumOfOpenedRxQueues()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:459</div></div>
+<div class="ttc" id="a00011_html_a2394d5f7686d12095aa1c53c1b91fbe0"><div class="ttname"><a href="a00011.html#a2394d5f7686d12095aa1c53c1b91fbe0">DpdkDevice::sendPacket</a></div><div class="ttdeci">bool sendPacket(const uint8_t *packetData, int packetDataLength, uint16_t txQueueId=0)</div></div>
+<div class="ttc" id="a00087_html"><div class="ttname"><a href="a00087.html">RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:21</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7ae3d0907512b073d4dcd8a15137b88f40"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae3d0907512b073d4dcd8a15137b88f40">PMD_E1000EM</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:67</div></div>
+<div class="ttc" id="a00075_html_afa626b570ed7593119ce8b63c5dd4ecf"><div class="ttname"><a href="a00075.html#afa626b570ed7593119ce8b63c5dd4ecf">PciAddress::domain</a></div><div class="ttdeci">uint16_t domain</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:272</div></div>
+<div class="ttc" id="a00012_html_a2f1f9d17d8e2f5d939763e834cda76fb"><div class="ttname"><a href="a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb">DpdkDevice::DpdkDeviceConfiguration::receiveDescriptorsNumber</a></div><div class="ttdeci">uint16_t receiveDescriptorsNumber</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:350</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7ae875bd298f4f76c1d30c3675af0b90a6"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ae875bd298f4f76c1d30c3675af0b90a6">PMD_IGB</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:69</div></div>
+<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">PciAddress</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:248</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a92708c2223970546ff2dbdbf72ebe8e5"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a92708c2223970546ff2dbdbf72ebe8e5">PMD_AF_PACKET</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:99</div></div>
+<div class="ttc" id="a00138_html"><div class="ttname"><a href="a00138.html">SystemUtils.h</a></div></div>
+<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">MBufRawPacket</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:128</div></div>
+<div class="ttc" id="a00061_html_acb2e61a48aa187d5620f0ca646842744"><div class="ttname"><a href="a00061.html#acb2e61a48aa187d5620f0ca646842744">MBufRawPacket::reallocateData</a></div><div class="ttdeci">bool reallocateData(size_t newBufferLength)</div></div>
+<div class="ttc" id="a00011_html_aea78e2dc009db1ea6b2922f6d817bac1"><div class="ttname"><a href="a00011.html#aea78e2dc009db1ea6b2922f6d817bac1">DpdkDevice::getMtu</a></div><div class="ttdeci">uint16_t getMtu()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:431</div></div>
+<div class="ttc" id="a00075_html_ae112ca4a72480e807de61b225f364108"><div class="ttname"><a href="a00075.html#ae112ca4a72480e807de61b225f364108">PciAddress::function</a></div><div class="ttdeci">uint8_t function</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:278</div></div>
+<div class="ttc" id="a00011_html_a1e30446ba470cc24ca7d41357d11229e"><div class="ttname"><a href="a00011.html#a1e30446ba470cc24ca7d41357d11229e">DpdkDevice::getAmountOfMbufsInUse</a></div><div class="ttdeci">int getAmountOfMbufsInUse()</div></div>
+<div class="ttc" id="a00012_html"><div class="ttname"><a href="a00012.html">DpdkDevice::DpdkDeviceConfiguration</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:344</div></div>
+<div class="ttc" id="a00011_html_a91b652f5b00d2f5aa075612c72597593"><div class="ttname"><a href="a00011.html#a91b652f5b00d2f5aa075612c72597593">DpdkDevice::getCurrentCoreId</a></div><div class="ttdeci">uint32_t getCurrentCoreId()</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a84c787e99b97350cacfc63e71aa3ddab"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a84c787e99b97350cacfc63e71aa3ddab">PMD_I40EVF</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:79</div></div>
+<div class="ttc" id="a00011_html_ac89ee6ca2516fd145193a2f6fbc6c369"><div class="ttname"><a href="a00011.html#ac89ee6ca2516fd145193a2f6fbc6c369">DpdkDevice::getPMDType</a></div><div class="ttdeci">DpdkPMDType getPMDType()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:421</div></div>
+<div class="ttc" id="a00061_html_a5e821d9b0fd8933820ff863c05f06c7f"><div class="ttname"><a href="a00061.html#a5e821d9b0fd8933820ff863c05f06c7f">MBufRawPacket::insertData</a></div><div class="ttdeci">void insertData(int atIndex, const uint8_t *dataToInsert, size_t dataToInsertLen)</div></div>
+<div class="ttc" id="a00075_html_ad671350174da6421a12bb228bd8e3e61"><div class="ttname"><a href="a00075.html#ad671350174da6421a12bb228bd8e3e61">PciAddress::PciAddress</a></div><div class="ttdeci">PciAddress(uint16_t domain, uint8_t bus, uint8_t devid, uint8_t function)</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:263</div></div>
+<div class="ttc" id="a00011_html_acd3c2e89ead886d87ef52f6731f38a81"><div class="ttname"><a href="a00011.html#acd3c2e89ead886d87ef52f6731f38a81">DpdkDevice::getPciAddress</a></div><div class="ttdeci">PciAddress getPciAddress()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:426</div></div>
+<div class="ttc" id="a00046_html"><div class="ttname"><a href="a00046.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7ad249302193324f1322b7cf15eaf35f91"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7ad249302193324f1322b7cf15eaf35f91">PMD_VIRTIO</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:93</div></div>
+<div class="ttc" id="a00117_html"><div class="ttname"><a href="a00117.html">MacAddress.h</a></div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a97a4d8749f5fded3f5b5007b8d1b33ee"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a97a4d8749f5fded3f5b5007b8d1b33ee">PMD_IXGBE</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:81</div></div>
+<div class="ttc" id="a00011_html_ad9149570e54b7907cd0ffea18d5f4852"><div class="ttname"><a href="a00011.html#ad9149570e54b7907cd0ffea18d5f4852">DpdkDevice::getAmountOfFreeMbufs</a></div><div class="ttdeci">int getAmountOfFreeMbufs()</div></div>
+<div class="ttc" id="a00075_html_af9379849b7ab839d6dba0dabd73c4348"><div class="ttname"><a href="a00075.html#af9379849b7ab839d6dba0dabd73c4348">PciAddress::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:283</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7">DpdkPMDType</a></div><div class="ttdeci">DpdkPMDType</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:61</div></div>
+<div class="ttc" id="a00061_html_a404d5486c9fb0d3cfdec3b461e8bb049"><div class="ttname"><a href="a00061.html#a404d5486c9fb0d3cfdec3b461e8bb049">MBufRawPacket::clear</a></div><div class="ttdeci">void clear()</div></div>
+<div class="ttc" id="a00057_html_a4c400cc354ff9149b6354e1bb877f3aa"><div class="ttname"><a href="a00057.html#a4c400cc354ff9149b6354e1bb877f3aa">DpdkDevice::LinkStatus::linkSpeedMbps</a></div><div class="ttdeci">int linkSpeedMbps</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:390</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00066_html"><div class="ttname"><a href="a00066.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
+<div class="ttc" id="a00137_html"><div class="ttname"><a href="a00137.html">RawPacket.h</a></div></div>
+<div class="ttc" id="a00061_html_a8b6bbf54f8461a4d9eaa805640cbc9a8"><div class="ttname"><a href="a00061.html#a8b6bbf54f8461a4d9eaa805640cbc9a8">MBufRawPacket::removeData</a></div><div class="ttdeci">bool removeData(int atIndex, size_t numOfBytesToRemove)</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a181a46f9a82009630ed648bae649287e"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a181a46f9a82009630ed648bae649287e">PMD_I40E</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:77</div></div>
+<div class="ttc" id="a00013_html"><div class="ttname"><a href="a00013.html">DpdkDeviceList</a></div><div class="ttdef"><b>Definition:</b> DpdkDeviceList.h:63</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a58c253db61bdb4b876b79b7ddfc67050"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a58c253db61bdb4b876b79b7ddfc67050">PMD_FM10K</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:75</div></div>
+<div class="ttc" id="a00011_html_a1ad3ad4f5d3e9a105e7770e089ca8dc7"><div class="ttname"><a href="a00011.html#a1ad3ad4f5d3e9a105e7770e089ca8dc7">DpdkDevice::getTotalNumOfRxQueues</a></div><div class="ttdeci">uint16_t getTotalNumOfRxQueues()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:469</div></div>
+<div class="ttc" id="a00011_html"><div class="ttname"><a href="a00011.html">DpdkDevice</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:333</div></div>
+<div class="ttc" id="a00011_html_ace5f6abf542473c697f42a3d42ca71cc"><div class="ttname"><a href="a00011.html#ace5f6abf542473c697f42a3d42ca71cc">DpdkDevice::startCaptureSingleThread</a></div><div class="ttdeci">bool startCaptureSingleThread(OnDpdkPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie)</div></div>
+<div class="ttc" id="a00011_html_a19d51b1edd2dc34a13fe5629f1416ffa"><div class="ttname"><a href="a00011.html#a19d51b1edd2dc34a13fe5629f1416ffa">DpdkDevice::openMultiQueues</a></div><div class="ttdeci">bool openMultiQueues(uint16_t numOfRxQueuesToOpen, uint16_t numOfTxQueuesToOpen, const DpdkDeviceConfiguration &amp;config=DpdkDeviceConfiguration())</div></div>
+<div class="ttc" id="a00011_html_a96292ecf2f66f47d005e62d644ba9d6c"><div class="ttname"><a href="a00011.html#a96292ecf2f66f47d005e62d644ba9d6c">DpdkDevice::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:409</div></div>
+<div class="ttc" id="a00057_html"><div class="ttname"><a href="a00057.html">DpdkDevice::LinkStatus</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:376</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a3e2a16360b4f17c9e237e7cdfb76daa5"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a3e2a16360b4f17c9e237e7cdfb76daa5">PMD_IXGBEVF</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:83</div></div>
+<div class="ttc" id="a00057_html_a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a"><div class="ttname"><a href="a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a">DpdkDevice::LinkStatus::HALF_DUPLEX</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:384</div></div>
+<div class="ttc" id="a00011_html_a025216cc18ed1232d212ab59a66eb016"><div class="ttname"><a href="a00011.html#a025216cc18ed1232d212ab59a66eb016">DpdkDevice::close</a></div><div class="ttdeci">void close()</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a79b4351e4c092116558cab950859feef"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a79b4351e4c092116558cab950859feef">PMD_NULL</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:87</div></div>
+<div class="ttc" id="a00011_html_a74ea210926fcddf3d3ae922abfb7c161"><div class="ttname"><a href="a00011.html#a74ea210926fcddf3d3ae922abfb7c161">DpdkDevice::getNumOfOpenedTxQueues</a></div><div class="ttdeci">uint16_t getNumOfOpenedTxQueues()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:464</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a6a658e6451ad269f5a7dacbd517baf86"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a6a658e6451ad269f5a7dacbd517baf86">PMD_XENVIRT</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:97</div></div>
+<div class="ttc" id="a00075_html_a95bc8e4c0d1a0557a1b3bf794c034c87"><div class="ttname"><a href="a00075.html#a95bc8e4c0d1a0557a1b3bf794c034c87">PciAddress::bus</a></div><div class="ttdeci">uint8_t bus</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:274</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a46bec11af518e70cf1b5215e90c519f4"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a46bec11af518e70cf1b5215e90c519f4">PMD_PCAP</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:89</div></div>
+<div class="ttc" id="a00106_html_a5a850880eb1247949ec592ae602a0eb7a2b30059e14629c6cb434016ed8abcd5f"><div class="ttname"><a href="a00106.html#a5a850880eb1247949ec592ae602a0eb7a2b30059e14629c6cb434016ed8abcd5f">PMD_IGBVF</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:71</div></div>
+<div class="ttc" id="a00057_html_a42ef9fde494269d3f672fc01799416a1"><div class="ttname"><a href="a00057.html#a42ef9fde494269d3f672fc01799416a1">DpdkDevice::LinkStatus::linkUp</a></div><div class="ttdeci">bool linkUp</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:388</div></div>
+<div class="ttc" id="a00011_html_a7bcd551c282c9b9444d3f1a9ac4b2d1f"><div class="ttname"><a href="a00011.html#a7bcd551c282c9b9444d3f1a9ac4b2d1f">DpdkDevice::getLinkStatus</a></div><div class="ttdeci">void getLinkStatus(LinkStatus &amp;linkStatus)</div></div>
+<div class="ttc" id="a00011_html_acdc8f7895de72a3d63a9bf1bb236853c"><div class="ttname"><a href="a00011.html#acdc8f7895de72a3d63a9bf1bb236853c">DpdkDevice::getPMDName</a></div><div class="ttdeci">std::string getPMDName()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:415</div></div>
+<div class="ttc" id="a00061_html_a1fde934861efc316b3f69213ecdf04d3"><div class="ttname"><a href="a00061.html#a1fde934861efc316b3f69213ecdf04d3">MBufRawPacket::~MBufRawPacket</a></div><div class="ttdeci">virtual ~MBufRawPacket()</div></div>
+<div class="ttc" id="a00061_html_a9a024d8bf207e59f824e07f2500c47f6"><div class="ttname"><a href="a00061.html#a9a024d8bf207e59f824e07f2500c47f6">MBufRawPacket::setRawData</a></div><div class="ttdeci">bool setRawData(const uint8_t *pRawData, int rawDataLen, timeval timestamp)</div></div>
+<div class="ttc" id="a00011_html_a51b9dfcbbfffe3eb4b48d50bd13b845b"><div class="ttname"><a href="a00011.html#a51b9dfcbbfffe3eb4b48d50bd13b845b">DpdkDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats)</div></div>
+<div class="ttc" id="a00011_html_ad6baba70b8788968a404f00c884553e2"><div class="ttname"><a href="a00011.html#ad6baba70b8788968a404f00c884553e2">DpdkDevice::setFilter</a></div><div class="ttdeci">bool setFilter(GeneralFilter &amp;filter)</div></div>
+<div class="ttc" id="a00011_html_a97d19bcb492eacbd9a581b01ce05fcbc"><div class="ttname"><a href="a00011.html#a97d19bcb492eacbd9a581b01ce05fcbc">DpdkDevice::open</a></div><div class="ttdeci">bool open()</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:668</div></div>
+<div class="ttc" id="a00075_html_a79f69a853e1fdf83e99a8a3c1eb0c407"><div class="ttname"><a href="a00075.html#a79f69a853e1fdf83e99a8a3c1eb0c407">PciAddress::operator==</a></div><div class="ttdeci">bool operator==(const PciAddress &amp;other) const </div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:293</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00106.html">Packet.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00106.html">DpdkDevice.h</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

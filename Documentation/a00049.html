@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: NetworkUtils Class Reference</title>
+<title>PcapPlusPlus: iphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,211 +106,183 @@ $(document).ready(function(){initNavTree('a00049.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00180.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00196.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">NetworkUtils Class Reference</div>  </div>
+<div class="title">iphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00105_source.html">NetworkUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00113_source.html">IPv4Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2dec7e712784572b1c9c552cd395e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00045.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">getMacAddress</a> (<a class="el" href="a00036.html">IPv4Address</a> ipAddr, <a class="el" href="a00056.html">PcapLiveDevice</a> *device, double &amp;arpResponseTimeMS, <a class="el" href="a00045.html">MacAddress</a> sourceMac=<a class="el" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a>, <a class="el" href="a00036.html">IPv4Address</a> sourceIP=<a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, int arpTimeout=-1)</td></tr>
-<tr class="separator:ae2dec7e712784572b1c9c552cd395e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae56be29200e694fbde61b77fe1687f8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ae56be29200e694fbde61b77fe1687f8b">getIPv4Address</a> (std::string hostname, <a class="el" href="a00056.html">PcapLiveDevice</a> *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, <a class="el" href="a00036.html">IPv4Address</a> dnsServerIP=<a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>, <a class="el" href="a00036.html">IPv4Address</a> gatewayIP=<a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a>)</td></tr>
-<tr class="separator:ae56be29200e694fbde61b77fe1687f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a85120ac78c019808c93b6e81f757a268"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00049.html">NetworkUtils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a85120ac78c019808c93b6e81f757a268">getInstance</a> ()</td></tr>
-<tr class="separator:a85120ac78c019808c93b6e81f757a268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a76efa16b2baae038fe2c2ced06054b31"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a76efa16b2baae038fe2c2ced06054b31">DefaultTimeout</a></td></tr>
-<tr class="separator:a76efa16b2baae038fe2c2ced06054b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a9d915fa9b82de8436a7d69c4e61ff1e9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a9d915fa9b82de8436a7d69c4e61ff1e9">internetHeaderLength</a>:4</td></tr>
+<tr class="separator:a9d915fa9b82de8436a7d69c4e61ff1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c64b12356b2825743b1944b6b3dd88"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ad5c64b12356b2825743b1944b6b3dd88">ipVersion</a>:4</td></tr>
+<tr class="separator:ad5c64b12356b2825743b1944b6b3dd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7b4994c197bf0752c7fac58c56515c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a2b7b4994c197bf0752c7fac58c56515c">typeOfService</a></td></tr>
+<tr class="separator:a2b7b4994c197bf0752c7fac58c56515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef0e303262db11e95316591e39060e3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a7ef0e303262db11e95316591e39060e3">totalLength</a></td></tr>
+<tr class="separator:a7ef0e303262db11e95316591e39060e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af732b7a37b0757eee8296bcf2abeb2de"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#af732b7a37b0757eee8296bcf2abeb2de">ipId</a></td></tr>
+<tr class="separator:af732b7a37b0757eee8296bcf2abeb2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4456c60fa6bb4c96fddf8a75a98f256"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ac4456c60fa6bb4c96fddf8a75a98f256">fragmentOffset</a></td></tr>
+<tr class="separator:ac4456c60fa6bb4c96fddf8a75a98f256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c43c9ad76543bdb23848cecc09b547e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a0c43c9ad76543bdb23848cecc09b547e">timeToLive</a></td></tr>
+<tr class="separator:a0c43c9ad76543bdb23848cecc09b547e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea68d76d49f1a2f9d2f0d7d5e12d323"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a2ea68d76d49f1a2f9d2f0d7d5e12d323">protocol</a></td></tr>
+<tr class="separator:a2ea68d76d49f1a2f9d2f0d7d5e12d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c50f2c9c0a31ce72d68ba3ed7bc0bcf"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf">headerChecksum</a></td></tr>
+<tr class="separator:a6c50f2c9c0a31ce72d68ba3ed7bc0bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac602adb3056c456c683115b75cdce139"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ac602adb3056c456c683115b75cdce139">ipSrc</a></td></tr>
+<tr class="separator:ac602adb3056c456c683115b75cdce139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8153baec72e1a9ef86769fce9e9f50b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#af8153baec72e1a9ef86769fce9e9f50b">ipDst</a></td></tr>
+<tr class="separator:af8153baec72e1a9ef86769fce9e9f50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class bundles several network utilities that are very common and useful. These utilities use Pcap++ and Packet++ packet crafting and processing capabilities. This class is a singleton and can be access by <a class="el" href="a00049.html#a85120ac78c019808c93b6e81f757a268">getInstance()</a> only </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a85120ac78c019808c93b6e81f757a268"></a>
+<div class="textblock"><p>Represents an IPv4 protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac4456c60fa6bb4c96fddf8a75a98f256"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00049.html">NetworkUtils</a>&amp; NetworkUtils::getInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t iphdr::fragmentOffset</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
+<p>Fragment offset field, measured in units of eight-byte blocks (64 bits) </p>
 
 </div>
 </div>
-<a class="anchor" id="ae56be29200e694fbde61b77fe1687f8b"></a>
+<a class="anchor" id="a6c50f2c9c0a31ce72d68ba3ed7bc0bcf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00036.html">IPv4Address</a> NetworkUtils::getIPv4Address </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>hostname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00056.html">PcapLiveDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>dnsResponseTimeMS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>dnsTTL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dnsTimeout</em> = <code>-1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>dnsServerIP</em> = <code><a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>gatewayIP</em> = <code><a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t iphdr::headerChecksum</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resolve an IPv4 address for a given hostname. Resolving is done in multiple phases: first resolving the LAN gateway MAC address (or default gateway if a gateway isn't provided) using ARP protocol (by using <a class="el" href="a00049.html#ae2dec7e712784572b1c9c552cd395e5f">NetworkUtils::getMacAddress()</a> ). Then a DNS request is sent to a DNS server (if specified) or to the LAN gateway (if DNS server is not specified). The DNS response is decoded and the IPv4 address is determined. In addition the method outputs the time it took the DNS response to arrive and the DNS TTL written on the DNS response. If DNS response doesn't contain an IPv4 address resolving an <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>The hostname to resolve </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive packets on </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dnsResponseTimeMS</td><td>When method returns successfully will contain the time it took to receive the DNS response (in milli-seconds) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dnsTTL</td><td>When method returns successfully will contain The DNS TTL written in the DNS response </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsTimeout</td><td>An optional parameter to specify the timeout to wait for a DNS response. If not specified the default timeout is 5 sec </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsServerIP</td><td>An optional parameter to specify the DNS server IP to send the DNS request to. If not specified or specified with <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> the DNS request will be sent to the LAN gateway </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gatewayIP</td><td>An optional parameter to specify the LAN gateway to send the DNS request through. If not specified or specified with <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> the interface's default gateway will be used </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resolved IPv4 address or <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> if something went wrong (in this case an error will be printed to log) </dd></dl>
+<p>Error-checking of the header </p>
 
 </div>
 </div>
-<a class="anchor" id="ae2dec7e712784572b1c9c552cd395e5f"></a>
+<a class="anchor" id="a9d915fa9b82de8436a7d69c4e61ff1e9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00045.html">MacAddress</a> NetworkUtils::getMacAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>ipAddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00056.html">PcapLiveDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>arpResponseTimeMS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00045.html">MacAddress</a>&#160;</td>
-          <td class="paramname"><em>sourceMac</em> = <code><a class="el" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00036.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>sourceIP</em> = <code><a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arpTimeout</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint8_t iphdr::internetHeaderLength</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resolve the MAC address for a given IPv4 address. It's done using the ARP protocol: send an ARP request and interpret the response </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address to resolve MAC address to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive the ARP packets on </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">arpResponseTimeMS</td><td>An output parameter that will contain the time in milliseconds that took the ARP response to arrive </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>An optional parameter to set the source MAC address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a> the MAC address of the interface will be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceIP</td><td>An optional parameter to set the source IPv4 address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00036.html#a29833df4aff7a34168268bfb739ef759">IPv4Address::Zero</a> the default IPv4 address of the interface will be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arpTimeout</td><td>An optional parameter to set the timeout to wait for the ARP response to return. If this parameter isn't set or set with a number smaller than 0, a default timeout of 5 seconds will be set </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resolved MAC address or <a class="el" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">MacAddress::Zero</a> if an error occurred or address could not be resolved. Errors will be printed to log </dd></dl>
+<p>IP header length, has the value of 5 for IPv4 </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a76efa16b2baae038fe2c2ced06054b31"></a>
+<a class="anchor" id="af8153baec72e1a9ef86769fce9e9f50b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int NetworkUtils::DefaultTimeout</td>
+          <td class="memname">uint32_t iphdr::ipDst</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Default timeout used for several utilities. Currently set to 5 seconds </p>
+<p>IPv4 address of the receiver of the packet </p>
+
+</div>
+</div>
+<a class="anchor" id="af732b7a37b0757eee8296bcf2abeb2de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t iphdr::ipId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identification field. Primarily used for uniquely identifying the group of fragments of a single IP datagram </p>
+
+</div>
+</div>
+<a class="anchor" id="ac602adb3056c456c683115b75cdce139"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t iphdr::ipSrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv4 address of the sender of the packet </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5c64b12356b2825743b1944b6b3dd88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t iphdr::ipVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IP version number, has the value of 4 for IPv4 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ea68d76d49f1a2f9d2f0d7d5e12d323"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t iphdr::protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines the protocol used in the data portion of the IP datagram. Must be one of <a class="el" href="a00113.html#adac6a7222ef5bcd336b45fb818aafc9d">IPProtocolTypes</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c43c9ad76543bdb23848cecc09b547e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t iphdr::timeToLive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An eight-bit time to live field helps prevent datagrams from persisting (e.g. going in circles) on an internet. In practice, the field has become a hop count </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ef0e303262db11e95316591e39060e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t iphdr::totalLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Entire packet (fragment) size, including header and data, in bytes </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b7b4994c197bf0752c7fac58c56515c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t iphdr::typeOfService</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>type of service, same as Differentiated Services Code Point (DSCP) </p>
 
 </div>
 </div>
@@ -319,8 +291,8 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00049.html">NetworkUtils</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:21 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00049.html">iphdr</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpLayer.h Source File</title>
+<title>PcapPlusPlus: PcapDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,259 +104,65 @@ $(document).ready(function(){initNavTree('a00124_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">TcpLayer.h</div>  </div>
+<div class="title">PcapDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00124.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_TCP_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_TCP_LAYER</span></div>
+<a href="a00124.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00100.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00137.html">RawPacket.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00126.html">PcapFilter.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00134.html">PointerVector.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;pcap.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00078.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00078.html">tcphdr</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00078.html#a5a2d35d141208f7c0be359a8b7240560">   16</a></span>&#160;    uint16_t <a class="code" href="a00078.html#a5a2d35d141208f7c0be359a8b7240560">portSrc</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00078.html#ae93be0e43346ba24904df1babc4ddf6a">   18</a></span>&#160;    uint16_t <a class="code" href="a00078.html#ae93be0e43346ba24904df1babc4ddf6a">portDst</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00078.html#a719635a7e8291064205d4e4da519a8d5">   20</a></span>&#160;    uint32_t <a class="code" href="a00078.html#a719635a7e8291064205d4e4da519a8d5">sequenceNumber</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00078.html#af94cd4e35bcf69033b49993538c3b7d7">   22</a></span>&#160;    uint32_t <a class="code" href="a00078.html#af94cd4e35bcf69033b49993538c3b7d7">ackNumber</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">   24</a></span>&#160;    uint16_t reserved:4,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="a00078.html#a1cf89ec60592a853f1ca2c5a5df358b8">dataOffset</a>:4,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="a00078.html#a8c5c21a009a70af6f4cd3ce4864aec38">finFlag</a>:1,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00078.html#a62e2fa2f073542b1a58694200b4dbf8c">synFlag</a>:1,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="a00078.html#a9c0c0af397c33a546ac0c557fe753883">rstFlag</a>:1,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="a00078.html#a3defe5d445a1a73d1ecc78aa684d418e">pshFlag</a>:1,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="a00078.html#ad2089630e6184c407fe5f8c7b79873ee">ackFlag</a>:1,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">urgFlag</a>:1,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="a00078.html#a97b2c2e4aeca5f39d05414f0e553516c">eceFlag</a>:1,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="a00078.html#a35739da86e2f8fef45f31e2afbaab326">cwrFlag</a>:1;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#elif (BYTE_ORDER == BIG_ENDIAN)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    uint16_t <a class="code" href="a00078.html#a1cf89ec60592a853f1ca2c5a5df358b8">dataOffset</a>:4,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        reserved:4,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="a00078.html#a35739da86e2f8fef45f31e2afbaab326">cwrFlag</a>:1,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="a00078.html#a97b2c2e4aeca5f39d05414f0e553516c">eceFlag</a>:1,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">urgFlag</a>:1,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="a00078.html#ad2089630e6184c407fe5f8c7b79873ee">ackFlag</a>:1,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="a00078.html#a3defe5d445a1a73d1ecc78aa684d418e">pshFlag</a>:1,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="a00078.html#a9c0c0af397c33a546ac0c557fe753883">rstFlag</a>:1,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="a00078.html#a62e2fa2f073542b1a58694200b4dbf8c">synFlag</a>:1,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="a00078.html#a8c5c21a009a70af6f4cd3ce4864aec38">finFlag</a>:1;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#error  &quot;Endian is not LE nor BE...&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00078.html#a8a3f4cb9892c601cdc16f0db15cb1cf9">   67</a></span>&#160;    uint16_t    <a class="code" href="a00078.html#a8a3f4cb9892c601cdc16f0db15cb1cf9">windowSize</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00078.html#afd17508ed468222cd27a5715b2d34dbf">   69</a></span>&#160;    uint16_t    <a class="code" href="a00078.html#afd17508ed468222cd27a5715b2d34dbf">headerChecksum</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00078.html#ade025d3342ca70b77c5d25f3ee04eaac">   71</a></span>&#160;    uint16_t    <a class="code" href="a00078.html#ade025d3342ca70b77c5d25f3ee04eaac">urgentPointer</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">   79</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> {</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa682bd9838970ff1f5f28fab654360100">   81</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa682bd9838970ff1f5f28fab654360100">TCPOPT_NOP</a> =            1,</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa5615c2b79a8a23c8ee964599e998fafc">   83</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa5615c2b79a8a23c8ee964599e998fafc">TCPOPT_EOL</a> =            0,</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa02faa383b54d4f322bb3824e000e4e4c">   85</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa02faa383b54d4f322bb3824e000e4e4c">TCPOPT_MSS</a> =            2,</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa25555621d8a6d191d68a1d8c870cb57a">   87</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa25555621d8a6d191d68a1d8c870cb57a">TCPOPT_WINDOW</a> =         3,</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa178c7af2aae8c33fba30715be0123a3a">   89</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa178c7af2aae8c33fba30715be0123a3a">TCPOPT_SACK_PERM</a> =      4,</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa06041d5174df02086604e23f1d357cb3">   91</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa06041d5174df02086604e23f1d357cb3">TCPOPT_SACK</a> =           5,</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa6cbedf55bb542f9812c0e0f76509743c">   93</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa6cbedf55bb542f9812c0e0f76509743c">TCPOPT_ECHO</a> =           6,</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa0227d373209173d130d0d38f90d0be25">   95</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa0227d373209173d130d0d38f90d0be25">TCPOPT_ECHOREPLY</a> =      7,</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4a2e138ed478cc6e1a254d4e4e24613c">   97</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4a2e138ed478cc6e1a254d4e4e24613c">TCPOPT_TIMESTAMP</a> =      8,</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaed606a5a0d80fcee394a9d6a3924245d">   99</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaed606a5a0d80fcee394a9d6a3924245d">TCPOPT_CC</a> =             11,</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaa2a992abc1e08c83f76785278bf5abd3">  101</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaa2a992abc1e08c83f76785278bf5abd3">TCPOPT_CCNEW</a> =          12,</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4995b6c67b14d71cfab676f81b0ca084">  103</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4995b6c67b14d71cfab676f81b0ca084">TCPOPT_CCECHO</a> =         13,</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae96626bd7fcff278549ea78b861ab442">  105</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae96626bd7fcff278549ea78b861ab442">TCPOPT_MD5</a> =            19,</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa288af1c9756f13aaa3fb65d3854ed743">  107</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa288af1c9756f13aaa3fb65d3854ed743">TCPOPT_MPTCP</a> =          0x1e,</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa307a8b09e57499e955e4ba746336bf3d">  109</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa307a8b09e57499e955e4ba746336bf3d">TCPOPT_SCPS</a> =           20,</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae5449964daad3f0041a09cea30a46808">  111</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae5449964daad3f0041a09cea30a46808">TCPOPT_SNACK</a> =          21,</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa9788375f3db69225445c959ea99004dd">  113</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa9788375f3db69225445c959ea99004dd">TCPOPT_RECBOUND</a> =       22,</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aadaea77b4256e19254c499529722ccd81">  115</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aadaea77b4256e19254c499529722ccd81">TCPOPT_CORREXP</a> =        23,</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2e126d8f3b97abbb41eaaf8ed2857ecd">  117</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2e126d8f3b97abbb41eaaf8ed2857ecd">TCPOPT_QS</a> =             27,</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaeb7dd8b4cdd41f75fee957ddbb3a076f">  119</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaeb7dd8b4cdd41f75fee957ddbb3a076f">TCPOPT_USER_TO</a> =        28,</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa65423b44db42ed17da3dea742da70b2d">  121</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa65423b44db42ed17da3dea742da70b2d">TCPOPT_EXP_FD</a> =         0xfd,</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa31a0d92f0c7cbc22765f24b6b8fb5081">  123</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa31a0d92f0c7cbc22765f24b6b8fb5081">TCPOPT_EXP_FE</a> =         0xfe,</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa80896ad5651e47910240be2b0062f4e7">  125</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa80896ad5651e47910240be2b0062f4e7">TCPOPT_RVBD_PROBE</a> =     76,</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2ea49e5b5f9338959dcfcd3c19576625">  127</a></span>&#160;    <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2ea49e5b5f9338959dcfcd3c19576625">TCPOPT_RVBD_TRPY</a> =      78</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="a00124.html#abe5da1f501a3b0cd8ddd653a5560a8c2">  131</a></span>&#160;<span class="preprocessor">#define TCP_OPTIONS_COUNT 24</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">// TCP option lengths</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="a00124.html#acbd328014d1e943d05757e1572755555">  137</a></span>&#160;<span class="preprocessor">#define TCPOLEN_MSS            4</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00124.html#a6f029b7382e65fbe2eacd4a855f953a1">  139</a></span>&#160;<span class="preprocessor">#define TCPOLEN_WINDOW         3</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="a00124.html#a76dfa2a2ad1833a7abd613b2e3d596f5">  141</a></span>&#160;<span class="preprocessor">#define TCPOLEN_SACK_PERM      2</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="a00124.html#a052cf5f9371e91f2a6e35d4915f73502">  143</a></span>&#160;<span class="preprocessor">#define TCPOLEN_SACK_MIN       2</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00124.html#ad45cd6756ebc4c72e9e5436e1159a4a9">  145</a></span>&#160;<span class="preprocessor">#define TCPOLEN_ECHO           6</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="a00124.html#a70514b4cc64efeae05488a3cea31ea71">  147</a></span>&#160;<span class="preprocessor">#define TCPOLEN_ECHOREPLY      6</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00124.html#a41d659d2c831b3141b9ca767eddb89cd">  149</a></span>&#160;<span class="preprocessor">#define TCPOLEN_TIMESTAMP     10</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00124.html#aac000a05cc660e7410800a9c473abf91">  151</a></span>&#160;<span class="preprocessor">#define TCPOLEN_CC             6</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="a00124.html#a755cca42b5a0062b2939d4cefd6a7e7f">  153</a></span>&#160;<span class="preprocessor">#define TCPOLEN_CCNEW          6</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="a00124.html#a06ce6ef698d0cad029956ddd1fd5a76b">  155</a></span>&#160;<span class="preprocessor">#define TCPOLEN_CCECHO         6</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="a00124.html#a686bb27f0dec18a97b42ac2e118d72b8">  157</a></span>&#160;<span class="preprocessor">#define TCPOLEN_MD5           18</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="a00124.html#a80b2ca60c2a5ee39a97bc4260b4d4942">  159</a></span>&#160;<span class="preprocessor">#define TCPOLEN_MPTCP_MIN      8</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="a00124.html#a0949080db29385c77d9b1d8c9fe93480">  161</a></span>&#160;<span class="preprocessor">#define TCPOLEN_SCPS           4</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="a00124.html#a5a6882fe128010fc1ab97d33a70ef500">  163</a></span>&#160;<span class="preprocessor">#define TCPOLEN_SNACK          6</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="a00124.html#a99e27a53f6b3f2360a7a9682c364cead">  165</a></span>&#160;<span class="preprocessor">#define TCPOLEN_RECBOUND       2</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="a00124.html#a27870b20261285cedfcd4e50d0311f56">  167</a></span>&#160;<span class="preprocessor">#define TCPOLEN_CORREXP        2</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="a00124.html#af96f534f45281366f2428b996cd0ba56">  169</a></span>&#160;<span class="preprocessor">#define TCPOLEN_QS             8</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="a00124.html#acf91b0f27ce51ce16b7a8e3e385c2bea">  171</a></span>&#160;<span class="preprocessor">#define TCPOLEN_USER_TO        4</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="a00124.html#ab7bd18b4563a5eb6bebaa2c41abd909a">  173</a></span>&#160;<span class="preprocessor">#define TCPOLEN_RVBD_PROBE_MIN 3</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="a00124.html#a08aa576c74ffe236f36098e1fe0ee5bd">  175</a></span>&#160;<span class="preprocessor">#define TCPOLEN_RVBD_TRPY_MIN 16</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="a00124.html#ac9e0333a8475360b60d71f70e65fea48">  177</a></span>&#160;<span class="preprocessor">#define TCPOLEN_EXP_MIN        2</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="a00080.html">  183</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00080.html">TcpOptionData</a></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="a00080.html#afa5c72c8e2292c114b21b458c62c7f4b">  186</a></span>&#160;    uint8_t <a class="code" href="a00080.html#afa5c72c8e2292c114b21b458c62c7f4b">option</a>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="a00080.html#a6797db1ebbd8aaac0e8d6e736f4dc665">  188</a></span>&#160;    uint8_t <a class="code" href="a00080.html#a6797db1ebbd8aaac0e8d6e736f4dc665">len</a>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="a00080.html#a4c3bf658d6ee18fc19e99e8e3ea24a0e">  190</a></span>&#160;    uint8_t <a class="code" href="a00080.html#a4c3bf658d6ee18fc19e99e8e3ea24a0e">value</a>[];</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;};</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="a00124.html#af7bf839fc893aaf8bd9f63c96aa40514">  194</a></span>&#160;<span class="preprocessor">#define MAX_SUPPORTED_TCP_OPTIONS 100</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="a00079.html">  200</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00079.html">TcpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00042.html">Layer</a></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="a00079.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00042.html">Layer</a>* prevLayer, <a class="code" href="a00052.html">Packet</a>* packet);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="a00079.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer</a>(<span class="keywordtype">int</span> tcpOptionsCount, ...);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="a00079.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer</a>(uint16_t portSrc, uint16_t portDst, <span class="keywordtype">int</span> tcpOptionsCount, ...);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    ~<a class="code" href="a00079.html">TcpLayer</a>();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="a00079.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer</a>(<span class="keyword">const</span> <a class="code" href="a00079.html">TcpLayer</a>&amp; other);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="a00079.html">TcpLayer</a>&amp; <a class="code" href="a00079.html#a35e847982a29c79f82dad46a72194328">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00079.html">TcpLayer</a>&amp; other);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="a00079.html#ae7055966bc059ef64ad6105e96d45eb3">  246</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00078.html">tcphdr</a>* <a class="code" href="a00079.html#ae7055966bc059ef64ad6105e96d45eb3">getTcpHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00078.html">tcphdr</a>*)m_Data; };</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="a00080.html">TcpOptionData</a>* <a class="code" href="a00079.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">getTcpOptionData</a>(<a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> option);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="a00079.html#affbf3461de826d95fd76af38f4646b83">  258</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00079.html#affbf3461de826d95fd76af38f4646b83">getTcpOptionsCount</a>() { <span class="keywordflow">return</span> m_TcpOptionsInLayerCount; }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    uint16_t <a class="code" href="a00079.html#ac9f22d245631b261c0d2fc72cbfa5ad9">calculateChecksum</a>(<span class="keywordtype">bool</span> writeResultToPacket);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00079.html#a5142a7faf0be900aa5ea38c50a4c8b80">parseNextLayer</a>();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="a00079.html#aaea30d75a26555048d8089e9de3c51e2">  277</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00079.html#aaea30d75a26555048d8089e9de3c51e2">getHeaderLen</a>() { <span class="keywordflow">return</span> m_HeaderLen;}</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00079.html#ac651dc5dee18295894f69922c7997df0">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    std::string <a class="code" href="a00079.html#a3a0bef30fc37635d331e73cc720f5351">toString</a>();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00080.html">TcpOptionData</a> TcpOptions[<a class="code" href="a00124.html#abe5da1f501a3b0cd8ddd653a5560a8c2">TCP_OPTIONS_COUNT</a>];</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">struct </span>TcpOptionPtr</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> option;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordtype">int</span> dataOffset;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    };</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    TcpOptionPtr* m_TcpOptionsInLayer;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">size_t</span> m_TcpOptionsInLayerCount;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">size_t</span> m_HeaderLen;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> initLayer(<span class="keywordtype">int</span> tcpOptionsCount, va_list paramsList);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">const</span> <a class="code" href="a00080.html">TcpOptionData</a>&amp; getTcpOptionRawData(<a class="code" href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a> option);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> copyLayerData(<span class="keyword">const</span> <a class="code" href="a00079.html">TcpLayer</a>&amp; other);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;};</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00078_html_afd17508ed468222cd27a5715b2d34dbf"><div class="ttname"><a href="a00078.html#afd17508ed468222cd27a5715b2d34dbf">tcphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:69</div></div>
-<div class="ttc" id="a00078_html_a719635a7e8291064205d4e4da519a8d5"><div class="ttname"><a href="a00078.html#a719635a7e8291064205d4e4da519a8d5">tcphdr::sequenceNumber</a></div><div class="ttdeci">uint32_t sequenceNumber</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:20</div></div>
-<div class="ttc" id="a00079_html_ac651dc5dee18295894f69922c7997df0"><div class="ttname"><a href="a00079.html#ac651dc5dee18295894f69922c7997df0">TcpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00079_html_ac9f22d245631b261c0d2fc72cbfa5ad9"><div class="ttname"><a href="a00079.html#ac9f22d245631b261c0d2fc72cbfa5ad9">TcpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
-<div class="ttc" id="a00042_html"><div class="ttname"><a href="a00042.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:45</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa65423b44db42ed17da3dea742da70b2d"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa65423b44db42ed17da3dea742da70b2d">TCPOPT_EXP_FD</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:121</div></div>
-<div class="ttc" id="a00078_html_ac7d76fb4d7d89a8bd0d097a0730136f9"><div class="ttname"><a href="a00078.html#ac7d76fb4d7d89a8bd0d097a0730136f9">tcphdr::urgFlag</a></div><div class="ttdeci">uint16_t urgFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa0227d373209173d130d0d38f90d0be25"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa0227d373209173d130d0d38f90d0be25">TCPOPT_ECHOREPLY</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:95</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aae96626bd7fcff278549ea78b861ab442"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae96626bd7fcff278549ea78b861ab442">TCPOPT_MD5</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:105</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa80896ad5651e47910240be2b0062f4e7"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa80896ad5651e47910240be2b0062f4e7">TCPOPT_RVBD_PROBE</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:125</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aae5449964daad3f0041a09cea30a46808"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aae5449964daad3f0041a09cea30a46808">TCPOPT_SNACK</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:111</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa2ea49e5b5f9338959dcfcd3c19576625"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2ea49e5b5f9338959dcfcd3c19576625">TCPOPT_RVBD_TRPY</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:127</div></div>
-<div class="ttc" id="a00079_html"><div class="ttname"><a href="a00079.html">TcpLayer</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:200</div></div>
-<div class="ttc" id="a00079_html_a3a0bef30fc37635d331e73cc720f5351"><div class="ttname"><a href="a00079.html#a3a0bef30fc37635d331e73cc720f5351">TcpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00078_html_ade025d3342ca70b77c5d25f3ee04eaac"><div class="ttname"><a href="a00078.html#ade025d3342ca70b77c5d25f3ee04eaac">tcphdr::urgentPointer</a></div><div class="ttdeci">uint16_t urgentPointer</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:71</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aaed606a5a0d80fcee394a9d6a3924245d"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaed606a5a0d80fcee394a9d6a3924245d">TCPOPT_CC</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:99</div></div>
-<div class="ttc" id="a00078_html_a5a2d35d141208f7c0be359a8b7240560"><div class="ttname"><a href="a00078.html#a5a2d35d141208f7c0be359a8b7240560">tcphdr::portSrc</a></div><div class="ttdeci">uint16_t portSrc</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:16</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa682bd9838970ff1f5f28fab654360100"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa682bd9838970ff1f5f28fab654360100">TCPOPT_NOP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:81</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa06041d5174df02086604e23f1d357cb3"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa06041d5174df02086604e23f1d357cb3">TCPOPT_SACK</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:91</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa25555621d8a6d191d68a1d8c870cb57a"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa25555621d8a6d191d68a1d8c870cb57a">TCPOPT_WINDOW</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:87</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aaeb7dd8b4cdd41f75fee957ddbb3a076f"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaeb7dd8b4cdd41f75fee957ddbb3a076f">TCPOPT_USER_TO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:119</div></div>
-<div class="ttc" id="a00078_html_a8c5c21a009a70af6f4cd3ce4864aec38"><div class="ttname"><a href="a00078.html#a8c5c21a009a70af6f4cd3ce4864aec38">tcphdr::finFlag</a></div><div class="ttdeci">uint16_t finFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00078_html_a1cf89ec60592a853f1ca2c5a5df358b8"><div class="ttname"><a href="a00078.html#a1cf89ec60592a853f1ca2c5a5df358b8">tcphdr::dataOffset</a></div><div class="ttdeci">uint16_t dataOffset</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00079_html_affbf3461de826d95fd76af38f4646b83"><div class="ttname"><a href="a00079.html#affbf3461de826d95fd76af38f4646b83">TcpLayer::getTcpOptionsCount</a></div><div class="ttdeci">size_t getTcpOptionsCount()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:258</div></div>
-<div class="ttc" id="a00078_html_a9c0c0af397c33a546ac0c557fe753883"><div class="ttname"><a href="a00078.html#a9c0c0af397c33a546ac0c557fe753883">tcphdr::rstFlag</a></div><div class="ttdeci">uint16_t rstFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa9788375f3db69225445c959ea99004dd"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa9788375f3db69225445c959ea99004dd">TCPOPT_RECBOUND</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:113</div></div>
-<div class="ttc" id="a00080_html_a6797db1ebbd8aaac0e8d6e736f4dc665"><div class="ttname"><a href="a00080.html#a6797db1ebbd8aaac0e8d6e736f4dc665">TcpOptionData::len</a></div><div class="ttdeci">uint8_t len</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:188</div></div>
-<div class="ttc" id="a00100_html"><div class="ttname"><a href="a00100.html">Layer.h</a></div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790a"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790a">TcpOption</a></div><div class="ttdeci">TcpOption</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:79</div></div>
-<div class="ttc" id="a00080_html_afa5c72c8e2292c114b21b458c62c7f4b"><div class="ttname"><a href="a00080.html#afa5c72c8e2292c114b21b458c62c7f4b">TcpOptionData::option</a></div><div class="ttdeci">uint8_t option</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:186</div></div>
-<div class="ttc" id="a00078_html_a35739da86e2f8fef45f31e2afbaab326"><div class="ttname"><a href="a00078.html#a35739da86e2f8fef45f31e2afbaab326">tcphdr::cwrFlag</a></div><div class="ttdeci">uint16_t cwrFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00079_html_a5142a7faf0be900aa5ea38c50a4c8b80"><div class="ttname"><a href="a00079.html#a5142a7faf0be900aa5ea38c50a4c8b80">TcpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">tcphdr</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:14</div></div>
-<div class="ttc" id="a00078_html_ad2089630e6184c407fe5f8c7b79873ee"><div class="ttname"><a href="a00078.html#ad2089630e6184c407fe5f8c7b79873ee">tcphdr::ackFlag</a></div><div class="ttdeci">uint16_t ackFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa02faa383b54d4f322bb3824e000e4e4c"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa02faa383b54d4f322bb3824e000e4e4c">TCPOPT_MSS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:85</div></div>
-<div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:19</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aadaea77b4256e19254c499529722ccd81"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aadaea77b4256e19254c499529722ccd81">TCPOPT_CORREXP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:115</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa6cbedf55bb542f9812c0e0f76509743c"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa6cbedf55bb542f9812c0e0f76509743c">TCPOPT_ECHO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:93</div></div>
-<div class="ttc" id="a00078_html_a3defe5d445a1a73d1ecc78aa684d418e"><div class="ttname"><a href="a00078.html#a3defe5d445a1a73d1ecc78aa684d418e">tcphdr::pshFlag</a></div><div class="ttdeci">uint16_t pshFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa4995b6c67b14d71cfab676f81b0ca084"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4995b6c67b14d71cfab676f81b0ca084">TCPOPT_CCECHO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:103</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa4a2e138ed478cc6e1a254d4e4e24613c"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa4a2e138ed478cc6e1a254d4e4e24613c">TCPOPT_TIMESTAMP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:97</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa178c7af2aae8c33fba30715be0123a3a"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa178c7af2aae8c33fba30715be0123a3a">TCPOPT_SACK_PERM</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:89</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa307a8b09e57499e955e4ba746336bf3d"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa307a8b09e57499e955e4ba746336bf3d">TCPOPT_SCPS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:109</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa5615c2b79a8a23c8ee964599e998fafc"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa5615c2b79a8a23c8ee964599e998fafc">TCPOPT_EOL</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:83</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa2e126d8f3b97abbb41eaaf8ed2857ecd"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa2e126d8f3b97abbb41eaaf8ed2857ecd">TCPOPT_QS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:117</div></div>
-<div class="ttc" id="a00079_html_ae7055966bc059ef64ad6105e96d45eb3"><div class="ttname"><a href="a00079.html#ae7055966bc059ef64ad6105e96d45eb3">TcpLayer::getTcpHeader</a></div><div class="ttdeci">tcphdr * getTcpHeader()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:246</div></div>
-<div class="ttc" id="a00079_html_a35e847982a29c79f82dad46a72194328"><div class="ttname"><a href="a00079.html#a35e847982a29c79f82dad46a72194328">TcpLayer::operator=</a></div><div class="ttdeci">TcpLayer &amp; operator=(const TcpLayer &amp;other)</div></div>
-<div class="ttc" id="a00079_html_ae3850a3c19cf04908b85e61b58e205e1"><div class="ttname"><a href="a00079.html#ae3850a3c19cf04908b85e61b58e205e1">TcpLayer::TcpLayer</a></div><div class="ttdeci">TcpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div></div>
-<div class="ttc" id="a00079_html_ade8e35b6e5ef7ca15c411cf0e06a5a93"><div class="ttname"><a href="a00079.html#ade8e35b6e5ef7ca15c411cf0e06a5a93">TcpLayer::getTcpOptionData</a></div><div class="ttdeci">TcpOptionData * getTcpOptionData(TcpOption option)</div></div>
-<div class="ttc" id="a00078_html_a62e2fa2f073542b1a58694200b4dbf8c"><div class="ttname"><a href="a00078.html#a62e2fa2f073542b1a58694200b4dbf8c">tcphdr::synFlag</a></div><div class="ttdeci">uint16_t synFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa288af1c9756f13aaa3fb65d3854ed743"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa288af1c9756f13aaa3fb65d3854ed743">TCPOPT_MPTCP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:107</div></div>
-<div class="ttc" id="a00078_html_af94cd4e35bcf69033b49993538c3b7d7"><div class="ttname"><a href="a00078.html#af94cd4e35bcf69033b49993538c3b7d7">tcphdr::ackNumber</a></div><div class="ttdeci">uint32_t ackNumber</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:22</div></div>
-<div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">TcpOptionData</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:183</div></div>
-<div class="ttc" id="a00078_html_a97b2c2e4aeca5f39d05414f0e553516c"><div class="ttname"><a href="a00078.html#a97b2c2e4aeca5f39d05414f0e553516c">tcphdr::eceFlag</a></div><div class="ttdeci">uint16_t eceFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:24</div></div>
-<div class="ttc" id="a00078_html_ae93be0e43346ba24904df1babc4ddf6a"><div class="ttname"><a href="a00078.html#ae93be0e43346ba24904df1babc4ddf6a">tcphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:18</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aaa2a992abc1e08c83f76785278bf5abd3"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aaa2a992abc1e08c83f76785278bf5abd3">TCPOPT_CCNEW</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:101</div></div>
-<div class="ttc" id="a00080_html_a4c3bf658d6ee18fc19e99e8e3ea24a0e"><div class="ttname"><a href="a00080.html#a4c3bf658d6ee18fc19e99e8e3ea24a0e">TcpOptionData::value</a></div><div class="ttdeci">uint8_t value[]</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:190</div></div>
-<div class="ttc" id="a00079_html_aaea30d75a26555048d8089e9de3c51e2"><div class="ttname"><a href="a00079.html#aaea30d75a26555048d8089e9de3c51e2">TcpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:277</div></div>
-<div class="ttc" id="a00124_html_abe5da1f501a3b0cd8ddd653a5560a8c2"><div class="ttname"><a href="a00124.html#abe5da1f501a3b0cd8ddd653a5560a8c2">TCP_OPTIONS_COUNT</a></div><div class="ttdeci">#define TCP_OPTIONS_COUNT</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:131</div></div>
-<div class="ttc" id="a00124_html_a39a173d12314222a6c2b43c4cd66790aa31a0d92f0c7cbc22765f24b6b8fb5081"><div class="ttname"><a href="a00124.html#a39a173d12314222a6c2b43c4cd66790aa31a0d92f0c7cbc22765f24b6b8fb5081">TCPOPT_EXP_FE</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:123</div></div>
-<div class="ttc" id="a00078_html_a8a3f4cb9892c601cdc16f0db15cb1cf9"><div class="ttname"><a href="a00078.html#a8a3f4cb9892c601cdc16f0db15cb1cf9">tcphdr::windowSize</a></div><div class="ttdeci">uint16_t windowSize</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:67</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00124.html#aa1427ba2ba13978d3b19b3fc7f25c15d">   12</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="a00078.html">PointerVector&lt;RawPacket&gt;</a> <a class="code" href="a00124.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00046.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00046.html">IPcapDevice</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    pcap_t* m_PcapDescriptor;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// c&#39;tor should not be public</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="a00046.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00046.html">IPcapDevice</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00046.html#a94a6922dff88e4bea4b3904a60e6f0e9">open</a>() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00046.html#ad9dd73f0310fb6e3924fabb4e2542ef0">close</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00046.html#a9f54bb88194b3374e92ab6533138a0a7">   45</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00046.html#a9f54bb88194b3374e92ab6533138a0a7">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00046.html#abfddac7872baed093efc622259f51fc6">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00046.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a>(<a class="code" href="a00018.html">GeneralFilter</a>&amp; filter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00046.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a>(std::string filterAsString);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00046_html_a94a6922dff88e4bea4b3904a60e6f0e9"><div class="ttname"><a href="a00046.html#a94a6922dff88e4bea4b3904a60e6f0e9">IPcapDevice::open</a></div><div class="ttdeci">virtual bool open()=0</div></div>
+<div class="ttc" id="a00046_html_ad9dd73f0310fb6e3924fabb4e2542ef0"><div class="ttname"><a href="a00046.html#ad9dd73f0310fb6e3924fabb4e2542ef0">IPcapDevice::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
+<div class="ttc" id="a00018_html"><div class="ttname"><a href="a00018.html">GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:66</div></div>
+<div class="ttc" id="a00046_html_a9f54bb88194b3374e92ab6533138a0a7"><div class="ttname"><a href="a00046.html#a9f54bb88194b3374e92ab6533138a0a7">IPcapDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:45</div></div>
+<div class="ttc" id="a00126_html"><div class="ttname"><a href="a00126.html">PcapFilter.h</a></div></div>
+<div class="ttc" id="a00046_html"><div class="ttname"><a href="a00046.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
+<div class="ttc" id="a00134_html"><div class="ttname"><a href="a00134.html">PointerVector.h</a></div></div>
+<div class="ttc" id="a00046_html_ac8167b330a4ee85ab759facd0d4989bd"><div class="ttname"><a href="a00046.html#ac8167b330a4ee85ab759facd0d4989bd">IPcapDevice::setFilter</a></div><div class="ttdeci">bool setFilter(GeneralFilter &amp;filter)</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00137_html"><div class="ttname"><a href="a00137.html">RawPacket.h</a></div></div>
+<div class="ttc" id="a00124_html_aa1427ba2ba13978d3b19b3fc7f25c15d"><div class="ttname"><a href="a00124.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a></div><div class="ttdeci">PointerVector&lt; RawPacket &gt; RawPacketVector</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:12</div></div>
+<div class="ttc" id="a00046_html_abfddac7872baed093efc622259f51fc6"><div class="ttname"><a href="a00046.html#abfddac7872baed093efc622259f51fc6">IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00124.html">TcpLayer.h</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:20 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00124.html">PcapDevice.h</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

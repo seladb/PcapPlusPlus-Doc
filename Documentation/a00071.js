@@ -1,10 +1,10 @@
 var a00071 =
 [
-    [ "getTagDataAs", "a00071.html#a0c029c9f917e1bd1e75f89bc68b8df98", null ],
-    [ "getTagTotalSize", "a00071.html#aca560e07da7a77f1bdc6546077d59485", null ],
-    [ "getType", "a00071.html#a761e0add96c8ed6e8e7227a9ab2ece8e", null ],
-    [ "setTagData", "a00071.html#a102ac176ee5f4feb1516fe1af3a5933e", null ],
-    [ "tagData", "a00071.html#a45ff759b7e528baccc51c4eaf6d6ba6c", null ],
-    [ "tagDataLength", "a00071.html#aa5b5e45947fd0cfb479d71ca3770d0ef", null ],
-    [ "tagType", "a00071.html#ab93bf7aa2f1c8f49ab49f203c19462ef", null ]
+    [ "getDnsServers", "a00071.html#a36a2359a127e74dca52608486cc10f51", null ],
+    [ "getPcapLiveDeviceByIp", "a00071.html#a390c2c0cd28d808021a3264f56b084de", null ],
+    [ "getPcapLiveDeviceByIp", "a00071.html#a0440ec517b35bc43fb5d31bc14ee529e", null ],
+    [ "getPcapLiveDeviceByIp", "a00071.html#aa331836b6dd34bc3ecae610c84db3769", null ],
+    [ "getPcapLiveDeviceByIp", "a00071.html#ade740e1e6614c536edfdd916535fb742", null ],
+    [ "getPcapLiveDeviceByName", "a00071.html#a5c88a995825c4a767dd8cf7d644b7f97", null ],
+    [ "getPcapLiveDevicesList", "a00071.html#ac680f08d3235cf99cdc9c404f8f02815", null ]
 ];

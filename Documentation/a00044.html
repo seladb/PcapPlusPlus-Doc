@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: LoggerPP Class Reference</title>
+<title>PcapPlusPlus: ip6_hdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,418 +106,108 @@ $(document).ready(function(){initNavTree('a00044.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00175.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00191.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LoggerPP Class Reference</div>  </div>
+<div class="title">ip6_hdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00101_source.html">Logger.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00114_source.html">IPv6Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aa52cd7c3af16c16af7209f5769796047"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> { <a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858">Normal</a>, 
-<a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd">Debug</a>
- }</td></tr>
-<tr class="separator:aa52cd7c3af16c16af7209f5769796047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a81e0fa1eef639071d680bf89efae2747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a81e0fa1eef639071d680bf89efae2747">setLogLevel</a> (<a class="el" href="a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module, <a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
-<tr class="separator:a81e0fa1eef639071d680bf89efae2747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#aff10ddbdb52cc2c25fb5e450000495f7">setAllModlesToLogLevel</a> (<a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> level)</td></tr>
-<tr class="separator:aff10ddbdb52cc2c25fb5e450000495f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6c407ddd90de83220b90067b513587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a7f6c407ddd90de83220b90067b513587">isDebugEnabled</a> (<a class="el" href="a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a> module)</td></tr>
-<tr class="separator:a7f6c407ddd90de83220b90067b513587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d498104bed27d40459c0c38c1c7d68b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr</a> ()</td></tr>
-<tr class="separator:a3d498104bed27d40459c0c38c1c7d68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a3be2f5201ab478baff464d8b5df6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a28a3be2f5201ab478baff464d8b5df6c">isErrorStringSet</a> ()</td></tr>
-<tr class="separator:a28a3be2f5201ab478baff464d8b5df6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1ea00b8e216aef697e0408bf449b95"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#acc1ea00b8e216aef697e0408bf449b95">getErrorString</a> ()</td></tr>
-<tr class="separator:acc1ea00b8e216aef697e0408bf449b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a8b2e3f0c471f4391d581ed021d60f7c9">setErrorString</a> (char *errString, int len)</td></tr>
-<tr class="separator:a8b2e3f0c471f4391d581ed021d60f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78215dfe2058fb59a56976ef04950f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a78215dfe2058fb59a56976ef04950f54">getErrorStringLength</a> ()</td></tr>
-<tr class="separator:a78215dfe2058fb59a56976ef04950f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#acbb4c2c036fd4c5a9af65ad0f20f7e94">supressErrors</a> ()</td></tr>
-<tr class="separator:acbb4c2c036fd4c5a9af65ad0f20f7e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949a764e78f7ab3e4610e130032f9cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a949a764e78f7ab3e4610e130032f9cc4">enableErrors</a> ()</td></tr>
-<tr class="separator:a949a764e78f7ab3e4610e130032f9cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0665db5b2cc061cd022e4666f540662e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a0665db5b2cc061cd022e4666f540662e">isSupressErrors</a> ()</td></tr>
-<tr class="separator:a0665db5b2cc061cd022e4666f540662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ed1b706144dcc9214fad2da0349847e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00044.html">LoggerPP</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a0ed1b706144dcc9214fad2da0349847e">getInstance</a> ()</td></tr>
-<tr class="separator:a0ed1b706144dcc9214fad2da0349847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab3e5707fe83ab95ab6990a63c2bcb9b0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ab3e5707fe83ab95ab6990a63c2bcb9b0">trafficClass</a>:4</td></tr>
+<tr class="separator:ab3e5707fe83ab95ab6990a63c2bcb9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8ebe089295de52b28f36f334b25d41"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#abc8ebe089295de52b28f36f334b25d41">ipVersion</a>:4</td></tr>
+<tr class="separator:abc8ebe089295de52b28f36f334b25d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762b4f1d04aecd5ba1e56b727f429a55"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a762b4f1d04aecd5ba1e56b727f429a55">flowLabel</a> [3]</td></tr>
+<tr class="separator:a762b4f1d04aecd5ba1e56b727f429a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21ab8d7d283ccc67945b17a7c3eaea2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ae21ab8d7d283ccc67945b17a7c3eaea2">payloadLength</a></td></tr>
+<tr class="separator:ae21ab8d7d283ccc67945b17a7c3eaea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71ca13fffd4168105ad70968f3dfb9a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ad71ca13fffd4168105ad70968f3dfb9a">nextHeader</a></td></tr>
+<tr class="separator:ad71ca13fffd4168105ad70968f3dfb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fba5b3fff7592a63edff494b06c4cfd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a5fba5b3fff7592a63edff494b06c4cfd">hopLimit</a></td></tr>
+<tr class="separator:a5fba5b3fff7592a63edff494b06c4cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The PcapPlusPlus log manager class. PcapPlusPlus uses this logger to output both error and debug logs.</p>
-<p>Debug logs: PcapPlusPlus is divided into modules (described in LogModule enum). The user can set each module or all modules to output or suppress debug messages. The default is suppressing debug messages. Changing debug log level for modules can be done dynamically while application is running.</p>
-<p>Error logs: errors are printed by default to stderr. The user can change this behavior in several manners:</p><ol type="1">
-<li>Suppress errors - no errors will be printed (for all modules)</li>
-<li>Print error logs to a string provided by the user instead of stderr</li>
-</ol>
-<p>PcapPlusPlus logger is a singleton which can be reached from anywhere in the code * </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aa52cd7c3af16c16af7209f5769796047"></a>
+<div class="textblock"><p>Represents an IPv6 protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a762b4f1d04aecd5ba1e56b727f429a55"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LoggerPP::LogLevel</a></td>
+          <td class="memname">uint8_t ip6_hdr::flowLabel[3]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum representing the log level. Currently 2 log level are supported: Normal and Debug. Normal is the default log level </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858"></a>Normal&#160;</td><td class="fielddoc">
-<p>Normal log level. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd"></a>Debug&#160;</td><td class="fielddoc">
-<p>Debug log level. </p>
-</td></tr>
-</table>
+<p>Flow label </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a949a764e78f7ab3e4610e130032f9cc4"></a>
+<a class="anchor" id="a5fba5b3fff7592a63edff494b06c4cfd"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LoggerPP::enableErrors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ip6_hdr::hopLimit</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Enable all errors in all PcapPlusPlusModules </p>
+<p>Replaces the time to live field of IPv4 </p>
 
 </div>
 </div>
-<a class="anchor" id="acc1ea00b8e216aef697e0408bf449b95"></a>
+<a class="anchor" id="abc8ebe089295de52b28f36f334b25d41"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* LoggerPP::getErrorString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ip6_hdr::ipVersion</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get the pointer to the error string set by the user. If no such pointer was provided by the user, NULL will be returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the string </dd></dl>
+<p>IP version number, has the value of 6 for IPv6 </p>
 
 </div>
 </div>
-<a class="anchor" id="a78215dfe2058fb59a56976ef04950f54"></a>
+<a class="anchor" id="ad71ca13fffd4168105ad70968f3dfb9a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int LoggerPP::getErrorStringLength </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ip6_hdr::nextHeader</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get the user-defined error string length. If no such pointer was provided by the user, 0 will be returned </p><dl class="section return"><dt>Returns</dt><dd>The user-defined error string length </dd></dl>
+<p>Specifies the type of the next header (protocol). Must be one of <a class="el" href="a00113.html#adac6a7222ef5bcd336b45fb818aafc9d">IPProtocolTypes</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="a0ed1b706144dcc9214fad2da0349847e"></a>
+<a class="anchor" id="ae21ab8d7d283ccc67945b17a7c3eaea2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00044.html">LoggerPP</a>&amp; LoggerPP::getInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t ip6_hdr::payloadLength</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get access to <a class="el" href="a00044.html">LoggerPP</a> singleton </p><dl class="todo"><dt><b><a class="el" href="a00129.html#_todo000003">Todo:</a></b></dt><dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00044.html">LoggerPP</a> singleton </dd></dl>
-</dd></dl>
+<p>The size of the payload in octets, including any extension headers </p>
 
 </div>
 </div>
-<a class="anchor" id="a3d498104bed27d40459c0c38c1c7d68b"></a>
+<a class="anchor" id="ab3e5707fe83ab95ab6990a63c2bcb9b0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>* LoggerPP::getLogModulesArr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t ip6_hdr::trafficClass</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get an array that contains log level information for all modules. User can access this array with a certain PcapPlusPlus module and get the log level this module is currently in. For example: LogLevel* myLogLevelArr = <a class="el" href="a00044.html#a3d498104bed27d40459c0c38c1c7d68b">getLogModulesArr()</a>; if (myLogLevelArr[PacketLogModuleUdpLayer] == LogLevel::Debug) .... </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the LogLevel array </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7f6c407ddd90de83220b90067b513587"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isDebugEnabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
-          <td class="paramname"><em>module</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check whether a certain module is set to debug log level </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if this module log level is "debug". False otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a28a3be2f5201ab478baff464d8b5df6c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isErrorStringSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check whether error string was already set </p><dl class="section return"><dt>Returns</dt><dd>true if error string was already set, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0665db5b2cc061cd022e4666f540662e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoggerPP::isSupressErrors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get an indication if errors are currently suppressed </p><dl class="section return"><dt>Returns</dt><dd>True if errors are currently suppressed, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aff10ddbdb52cc2c25fb5e450000495f7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setAllModlesToLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set all PcapPlusPlus modules to a certain log leve </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set all modules to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8b2e3f0c471f4391d581ed021d60f7c9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setErrorString </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>errString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the error string to a string pointer provided by the user. By default all errors are printed to stderr. Using this method will cause PcapPlusPlus to output errors to the user string instead </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">errString</td><td>A string pointer provided by the user which all error messages will be print to from now on </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length of errString array. If </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a81e0fa1eef639071d680bf89efae2747"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::setLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00101.html#a7e4ae98d96e7177e6c476a1bf942ed42">LogModule</a>&#160;</td>
-          <td class="paramname"><em>module</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00044.html#aa52cd7c3af16c16af7209f5769796047">LogLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the log level for a certain PcapPlusPlus module </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>PcapPlusPlus module </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The log level to set the module to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acbb4c2c036fd4c5a9af65ad0f20f7e94"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggerPP::supressErrors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Suppress all errors in all PcapPlusPlusModules </p>
+<p>Traffic class </p>
 
 </div>
 </div>
@@ -526,8 +216,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00044.html">LoggerPP</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:21 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00044.html">ip6_hdr</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

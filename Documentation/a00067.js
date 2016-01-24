@@ -1,8 +1,11 @@
 var a00067 =
 [
-    [ "code", "a00067.html#a73a3d18e25024b25907219dc9d68553d", null ],
-    [ "payloadLength", "a00067.html#ad835b1953dd25a4f2f4a44a6be3c5c28", null ],
-    [ "sessionId", "a00067.html#a764afb5590237f2a44e25947a4f12f5b", null ],
-    [ "type", "a00067.html#a1be734b14f34cc71d8ac372316d45ede", null ],
-    [ "version", "a00067.html#a2cc59bed88c3b56fca85bd850613de6d", null ]
+    [ "PayloadLayer", "a00067.html#a58fcd64da3c3aa5375060efff264ed4d", null ],
+    [ "PayloadLayer", "a00067.html#a7cc6f99cf4f6a31b8b3be6bde5ff2881", null ],
+    [ "computeCalculateFields", "a00067.html#a54f81429bd3c48d84cf53fa71ec96b5e", null ],
+    [ "getHeaderLen", "a00067.html#a3e80aa14fadec268334061f9dfa6de67", null ],
+    [ "getPayload", "a00067.html#a675beffd918b11197c830c1f55bee687", null ],
+    [ "getPayloadLen", "a00067.html#a6437d45a1237454cd43db5ad07aa75da", null ],
+    [ "parseNextLayer", "a00067.html#ae7c40fba63c665093d3ec4a072da1e37", null ],
+    [ "toString", "a00067.html#a48556ce0e7207fc870d8cb552489cfa0", null ]
 ];

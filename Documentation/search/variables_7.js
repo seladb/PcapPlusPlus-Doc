@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['id',['Id',['../a00075.html#a1a672c4cde277bcdeae49c1519415db6',1,'SystemCore']]],
-  ['idtosystemcore',['IdToSystemCore',['../a00076.html#a9c0aa298d90e7508756b63fe45686a10',1,'SystemCores']]],
-  ['internetheaderlength',['internetHeaderLength',['../a00035.html#a9d915fa9b82de8436a7d69c4e61ff1e9',1,'iphdr']]],
-  ['ipdst',['ipDst',['../a00035.html#af8153baec72e1a9ef86769fce9e9f50b',1,'iphdr']]],
-  ['ipid',['ipId',['../a00035.html#af732b7a37b0757eee8296bcf2abeb2de',1,'iphdr']]],
-  ['ipsrc',['ipSrc',['../a00035.html#ac602adb3056c456c683115b75cdce139',1,'iphdr']]],
-  ['ipversion',['ipVersion',['../a00035.html#ad5c64b12356b2825743b1944b6b3dd88',1,'iphdr::ipVersion()'],['../a00030.html#abc8ebe089295de52b28f36f334b25d41',1,'ip6_hdr::ipVersion()']]]
+  ['hardwaresize',['hardwareSize',['../a00004.html#a063950a907fa90a513310b3bcf033eec',1,'arphdr']]],
+  ['hardwaretype',['hardwareType',['../a00004.html#a002dea7054111568b4c06487028b0da2',1,'arphdr']]],
+  ['header',['header',['../a00030.html#a2ff600fd3d1cb623c0435c734e3f8121',1,'icmp_echo_request::header()'],['../a00035.html#a98fd3dba7819f67211d9af46fa3c2c70',1,'icmp_router_advertisement::header()']]],
+  ['headerchecksum',['headerChecksum',['../a00049.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf',1,'iphdr::headerChecksum()'],['../a00092.html#afd17508ed468222cd27a5715b2d34dbf',1,'tcphdr::headerChecksum()'],['../a00096.html#aa8f66911e3e8f9c6ceb9047d3de2a05b',1,'udphdr::headerChecksum()']]],
+  ['hoplimit',['hopLimit',['../a00044.html#a5fba5b3fff7592a63edff494b06c4cfd',1,'ip6_hdr']]]
 ];

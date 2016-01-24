@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['half_5fduplex',['HALF_DUPLEX',['../a00043.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a',1,'DpdkDevice::LinkStatus']]],
-  ['http',['HTTP',['../a00121.html#a2b99fb4e4914a533566284f2ed3b0186a67e044074f46e6cea22788527da5f02e',1,'ProtocolType.h']]],
+  ['half_5fduplex',['HALF_DUPLEX',['../a00057.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a',1,'DpdkDevice::LinkStatus']]],
+  ['http',['HTTP',['../a00136.html#a2b99fb4e4914a533566284f2ed3b0186a67e044074f46e6cea22788527da5f02e',1,'ProtocolType.h']]],
   ['http100continue',['Http100Continue',['../a00026.html#abcd60d041754a01d761c3277ba937b78afcf05219e1f866ce9a371555c3b9724a',1,'HttpResponseLayer']]],
   ['http101switchingprotocols',['Http101SwitchingProtocols',['../a00026.html#abcd60d041754a01d761c3277ba937b78adc98a4bae60a48a3d2282d3d32f25511',1,'HttpResponseLayer']]],
   ['http102processing',['Http102Processing',['../a00026.html#abcd60d041754a01d761c3277ba937b78a94899c573c20ce2404022b4104e5e15e',1,'HttpResponseLayer']]],
@@ -91,9 +91,9 @@ var searchData=
   ['httppatch',['HttpPATCH',['../a00023.html#a1b8a0c702576a3c150f7c650842420d9af385746be644e46f68eee936820504a2',1,'HttpRequestLayer']]],
   ['httppost',['HttpPOST',['../a00023.html#a1b8a0c702576a3c150f7c650842420d9aa42ff27148dee93551b8653616143059',1,'HttpRequestLayer']]],
   ['httpput',['HttpPUT',['../a00023.html#a1b8a0c702576a3c150f7c650842420d9a23f8f2e8cda124673d9964bccb38247b',1,'HttpRequestLayer']]],
-  ['httprequest',['HTTPRequest',['../a00121.html#a2b99fb4e4914a533566284f2ed3b0186ab1a1c59066a45dd96c84f172f66c1268',1,'ProtocolType.h']]],
-  ['httpresponse',['HTTPResponse',['../a00121.html#a2b99fb4e4914a533566284f2ed3b0186aa1b719f2a2692decd287e79c7581d390',1,'ProtocolType.h']]],
+  ['httprequest',['HTTPRequest',['../a00136.html#a2b99fb4e4914a533566284f2ed3b0186ab1a1c59066a45dd96c84f172f66c1268',1,'ProtocolType.h']]],
+  ['httpresponse',['HTTPResponse',['../a00136.html#a2b99fb4e4914a533566284f2ed3b0186aa1b719f2a2692decd287e79c7581d390',1,'ProtocolType.h']]],
   ['httpstatuscodeunknown',['HttpStatusCodeUnknown',['../a00026.html#abcd60d041754a01d761c3277ba937b78adac707cabc687ef6d01322a67444d239',1,'HttpResponseLayer']]],
   ['httptrace',['HttpTRACE',['../a00023.html#a1b8a0c702576a3c150f7c650842420d9a0b296ffe42e6525e4444d2c8bab487c0',1,'HttpRequestLayer']]],
-  ['httpversionunknown',['HttpVersionUnknown',['../a00095.html#ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd',1,'HttpLayer.h']]]
+  ['httpversionunknown',['HttpVersionUnknown',['../a00109.html#ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd',1,'HttpLayer.h']]]
 ];

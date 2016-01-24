@@ -1,14 +1,10 @@
 var a00045 =
 [
-    [ "MacAddress", "a00045.html#a32025c7fafe053c9e4c5cc7ec9572ca1", null ],
-    [ "MacAddress", "a00045.html#a7a1fe4f543efee0fc5be11e2982eac16", null ],
-    [ "MacAddress", "a00045.html#a9f4cb711e88d2ba3b1d6de2bcbc683f0", null ],
-    [ "MacAddress", "a00045.html#a8f90c1646ac04862a9b738ee404de4ad", null ],
-    [ "MacAddress", "a00045.html#ae3288c4111b007a73889c50566f72deb", null ],
-    [ "copyTo", "a00045.html#a9823260693c248a92c9457b25fb19cc4", null ],
-    [ "copyTo", "a00045.html#a60dac5e875c813300e5d0a9ce8b49ba0", null ],
-    [ "isValid", "a00045.html#a760327243ffc906fafd8fa93ff8d2223", null ],
-    [ "operator!=", "a00045.html#a0d257e8cb737b04262354b22470ca7fb", null ],
-    [ "operator==", "a00045.html#a91021f00a460d32cb70c05cf08be8249", null ],
-    [ "toString", "a00045.html#a5dc7173bea05e90e8a71f58bfb985d63", null ]
+    [ "AddressType", "a00045.html#a53caf33403beb8bbc212b7659ffa8608", [
+      [ "IPv4AddressType", "a00045.html#a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81", null ],
+      [ "IPv6AddressType", "a00045.html#a53caf33403beb8bbc212b7659ffa8608a38248c599c4324ec8e45508ee6114d43", null ]
+    ] ],
+    [ "getType", "a00045.html#aa625e5e0220bd115d681347c4c5d17d4", null ],
+    [ "isValid", "a00045.html#aa07d8c6edd1ccab818b1d02b27062018", null ],
+    [ "toString", "a00045.html#a7c460135aeae3272b302b361f806e7cb", null ]
 ];

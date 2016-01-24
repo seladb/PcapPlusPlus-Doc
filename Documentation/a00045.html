@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: MacAddress Class Reference</title>
+<title>PcapPlusPlus: IPAddress Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,243 +106,76 @@ $(document).ready(function(){initNavTree('a00045.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00176.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00192.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MacAddress Class Reference</div>  </div>
+<div class="title">IPAddress Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00102_source.html">MacAddress.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00111_source.html">IpAddress.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for IPAddress:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00045.png" usemap="#IPAddress_map" alt=""/>
+  <map id="IPAddress_map" name="IPAddress_map">
+<area href="a00050.html" alt="IPv4Address" shape="rect" coords="0,56,84,80"/>
+<area href="a00054.html" alt="IPv6Address" shape="rect" coords="94,56,178,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a53caf33403beb8bbc212b7659ffa8608"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608">AddressType</a> { <a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81">IPv4AddressType</a>, 
+<a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608a38248c599c4324ec8e45508ee6114d43">IPv6AddressType</a>
+ }</td></tr>
+<tr class="separator:a53caf33403beb8bbc212b7659ffa8608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32025c7fafe053c9e4c5cc7ec9572ca1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress</a> (uint8_t *addr)</td></tr>
-<tr class="separator:a32025c7fafe053c9e4c5cc7ec9572ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a1fe4f543efee0fc5be11e2982eac16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a7a1fe4f543efee0fc5be11e2982eac16">MacAddress</a> (const char *addr)</td></tr>
-<tr class="separator:a7a1fe4f543efee0fc5be11e2982eac16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f4cb711e88d2ba3b1d6de2bcbc683f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a9f4cb711e88d2ba3b1d6de2bcbc683f0">MacAddress</a> (const std::string &amp;addr)</td></tr>
-<tr class="separator:a9f4cb711e88d2ba3b1d6de2bcbc683f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f90c1646ac04862a9b738ee404de4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a8f90c1646ac04862a9b738ee404de4ad">MacAddress</a> (uint8_t firstOctest, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet)</td></tr>
-<tr class="separator:a8f90c1646ac04862a9b738ee404de4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3288c4111b007a73889c50566f72deb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#ae3288c4111b007a73889c50566f72deb">MacAddress</a> (const <a class="el" href="a00045.html">MacAddress</a> &amp;other)</td></tr>
-<tr class="separator:ae3288c4111b007a73889c50566f72deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91021f00a460d32cb70c05cf08be8249"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a91021f00a460d32cb70c05cf08be8249">operator==</a> (const <a class="el" href="a00045.html">MacAddress</a> &amp;other)</td></tr>
-<tr class="separator:a91021f00a460d32cb70c05cf08be8249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d257e8cb737b04262354b22470ca7fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a0d257e8cb737b04262354b22470ca7fb">operator!=</a> (const <a class="el" href="a00045.html">MacAddress</a> &amp;other)</td></tr>
-<tr class="separator:a0d257e8cb737b04262354b22470ca7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a760327243ffc906fafd8fa93ff8d2223"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a760327243ffc906fafd8fa93ff8d2223">isValid</a> ()</td></tr>
-<tr class="separator:a760327243ffc906fafd8fa93ff8d2223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc7173bea05e90e8a71f58bfb985d63"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a5dc7173bea05e90e8a71f58bfb985d63">toString</a> ()</td></tr>
-<tr class="separator:a5dc7173bea05e90e8a71f58bfb985d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9823260693c248a92c9457b25fb19cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a9823260693c248a92c9457b25fb19cc4">copyTo</a> (uint8_t **arr)</td></tr>
-<tr class="separator:a9823260693c248a92c9457b25fb19cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60dac5e875c813300e5d0a9ce8b49ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a60dac5e875c813300e5d0a9ce8b49ba0">copyTo</a> (uint8_t *arr) const </td></tr>
-<tr class="separator:a60dac5e875c813300e5d0a9ce8b49ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa625e5e0220bd115d681347c4c5d17d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#aa625e5e0220bd115d681347c4c5d17d4">getType</a> () const =0</td></tr>
+<tr class="separator:aa625e5e0220bd115d681347c4c5d17d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c460135aeae3272b302b361f806e7cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a7c460135aeae3272b302b361f806e7cb">toString</a> () const </td></tr>
+<tr class="separator:a7c460135aeae3272b302b361f806e7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07d8c6edd1ccab818b1d02b27062018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#aa07d8c6edd1ccab818b1d02b27062018">isValid</a> ()</td></tr>
+<tr class="separator:aa07d8c6edd1ccab818b1d02b27062018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a21e6f0508b2296b0a68dbfc6f3f58999"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00045.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a21e6f0508b2296b0a68dbfc6f3f58999">Zero</a></td></tr>
-<tr class="separator:a21e6f0508b2296b0a68dbfc6f3f58999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad24a9290ee581f63ab8c3bb06d888cd0"><td class="memItemLeft" align="right" valign="top">static std::auto_ptr&lt; <a class="el" href="a00045.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#ad24a9290ee581f63ab8c3bb06d888cd0">fromString</a> (char *addressAsString)</td></tr>
+<tr class="separator:ad24a9290ee581f63ab8c3bb06d888cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64056adc030a3c31d6c803234eab28a1"><td class="memItemLeft" align="right" valign="top">static std::auto_ptr&lt; <a class="el" href="a00045.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html#a64056adc030a3c31d6c803234eab28a1">fromString</a> (std::string addressAsString)</td></tr>
+<tr class="separator:a64056adc030a3c31d6c803234eab28a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents L2 MAC addresses. Can be constructed from string or a series of 6 byte octets </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a32025c7fafe053c9e4c5cc7ec9572ca1"></a>
+<div class="textblock"><p>Base class for <a class="el" href="a00050.html">IPv4Address</a> and <a class="el" href="a00054.html">IPv6Address</a>. It's an abstract class and cannot be used as is. The only useful method in this class are the 2 static methods that constructs an IP address class from string </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a53caf33403beb8bbc212b7659ffa8608"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MacAddress::MacAddress </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>addr</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608">IPAddress::AddressType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of a byte array. The byte array length must be equal or greater to 6 (as MAC address is 6-byte long) </p><dl class="todo"><dt><b><a class="el" href="a00129.html#_todo000004">Todo:</a></b></dt><dd>there is no verification array length &gt;= 6. If this is not the case, address will read uninitialized memory <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the byte array containing 6 bytes representing the MAC address </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7a1fe4f543efee0fc5be11e2982eac16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MacAddress::MacAddress </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of a (char*) string. If the string doesn't represent a valid MAC address, instance will be invalid, meaning <a class="el" href="a00045.html#a760327243ffc906fafd8fa93ff8d2223">isValid()</a> will return false </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the (char*) string </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9f4cb711e88d2ba3b1d6de2bcbc683f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MacAddress::MacAddress </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of a std::string. If the string doesn't represent a valid MAC address, instance will be invalid, meaning <a class="el" href="a00045.html#a760327243ffc906fafd8fa93ff8d2223">isValid()</a> will return false</p><ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the string </td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="a8f90c1646ac04862a9b738ee404de4ad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MacAddress::MacAddress </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>firstOctest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>secondOctet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>thirdOctet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fourthOctet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fifthOctet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sixthOctet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates an instance of 6 bytes representing the MAC address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">firstOctest</td><td>Represent the first octet in the address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">secondOctet</td><td>Represent the second octet in the address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">thirdOctet</td><td>Represent the third octet in the address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fourthOctet</td><td>Represent the fourth octet in the address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fifthOctet</td><td>Represent the fifth octet in the address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sixthOctet</td><td>Represent the sixth octet in the address </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ae3288c4111b007a73889c50566f72deb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MacAddress::MacAddress </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00045.html">MacAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A copy constructor for this class </p>
+<p>An enum representing the address type: IPv4 or IPv6 </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a53caf33403beb8bbc212b7659ffa8608aa98b70ba57d695bb5ddb8ae5568b4b81"></a>IPv4AddressType&#160;</td><td class="fielddoc">
+<p>IPv4 address type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a53caf33403beb8bbc212b7659ffa8608a38248c599c4324ec8e45508ee6114d43"></a>IPv6AddressType&#160;</td><td class="fielddoc">
+<p>IPv6 address type </p>
+</td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9823260693c248a92c9457b25fb19cc4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MacAddress::copyTo </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>arr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Allocates a byte array of length 6 and copies address value into it. Array deallocation is user responsibility </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>A pointer to where array will be allocated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a60dac5e875c813300e5d0a9ce8b49ba0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MacAddress::copyTo </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>arr</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets a pointer to an already allocated byte array and copies the address value to it. This method assumes array allocated size is at least 6 (the size of a MAC address) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>A pointer to the array which address will be copied to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a760327243ffc906fafd8fa93ff8d2223"></a>
+<a class="anchor" id="ad24a9290ee581f63ab8c3bb06d888cd0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -350,98 +183,11 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool MacAddress::isValid </td>
+          <td class="memname">static std::auto_ptr&lt;<a class="el" href="a00045.html">IPAddress</a>&gt; IPAddress::fromString </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get an indication whether the MAC address is valid. An address can be invalid if it was constructed from illegal input, for example: invalid string </p><dl class="section return"><dt>Returns</dt><dd>True if the address is valid, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0d257e8cb737b04262354b22470ca7fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MacAddress::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00045.html">MacAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overload of the not-equal operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are not equal. False otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a91021f00a460d32cb70c05cf08be8249"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MacAddress::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00045.html">MacAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overload of the comparison operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are equal. False otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5dc7173bea05e90e8a71f58bfb985d63"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string MacAddress::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns a std::string representation of the address </p><dl class="section return"><dt>Returns</dt><dd>A string representation of the address </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a21e6f0508b2296b0a68dbfc6f3f58999"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00045.html">MacAddress</a> MacAddress::Zero</td>
         </tr>
       </table>
   </td>
@@ -450,7 +196,118 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A static value representing a zero value of MAC address, meaning address of value "00:00:00:00:00:00" </p>
+<p>Constructs an IP address of type IPv4 or IPv6 from a string (char*) representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in string (char*) representation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00050.html">IPv4Address</a> or <a class="el" href="a00054.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64056adc030a3c31d6c803234eab28a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::auto_ptr&lt;<a class="el" href="a00045.html">IPAddress</a>&gt; IPAddress::fromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an IP address of type IPv4 or IPv6 from a std::string representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in std::string representation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00050.html">IPv4Address</a> or <a class="el" href="a00054.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa625e5e0220bd115d681347c4c5d17d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00045.html#a53caf33403beb8bbc212b7659ffa8608">AddressType</a> IPAddress::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the address type: IPv4 or IPv6 </p><dl class="section return"><dt>Returns</dt><dd>The address type </dd></dl>
+
+<p>Implemented in <a class="el" href="a00054.html#aae62b3c368fc0aab389570387c5baad8">IPv6Address</a>, and <a class="el" href="a00050.html#abec87cb14eac7c4fce896b7249c915a7">IPv4Address</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa07d8c6edd1ccab818b1d02b27062018"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPAddress::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an indication if the address is valid. An address can be invalid if it was constructed from illegal input, for example: An IPv4 address that was constructed form the string "999.999.999.999" </p><dl class="section return"><dt>Returns</dt><dd>True if the address is valid, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c460135aeae3272b302b361f806e7cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string IPAddress::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a std::string representation of the address </p><dl class="section return"><dt>Returns</dt><dd>A string representation of the address </dd></dl>
 
 </div>
 </div>
@@ -459,8 +316,8 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00045.html">MacAddress</a></li>
-    <li class="footer">Generated on Thu Dec 17 2015 22:24:21 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00045.html">IPAddress</a></li>
+    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
