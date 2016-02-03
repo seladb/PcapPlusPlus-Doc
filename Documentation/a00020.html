@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: HttpMessage Class Reference</title>
+<title>PcapPlusPlus: gre_basic_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,453 +106,177 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00167.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00175.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HttpMessage Class Reference</div>  </div>
+<div class="title">gre_basic_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00109_source.html">HttpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00116_source.html">GreLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for HttpMessage:</div>
+Inheritance diagram for gre_basic_header:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00020.png" usemap="#HttpMessage_map" alt=""/>
-  <map id="HttpMessage_map" name="HttpMessage_map">
-<area href="a00056.html" alt="Layer" shape="rect" coords="66,0,188,24"/>
-<area href="a00023.html" alt="HttpRequestLayer" shape="rect" coords="0,112,122,136"/>
-<area href="a00026.html" alt="HttpResponseLayer" shape="rect" coords="132,112,254,136"/>
+  <img src="a00020.png" usemap="#gre_basic_header_map" alt=""/>
+  <map id="gre_basic_header_map" name="gre_basic_header_map">
+<area href="a00019.html" alt="gre1_header" shape="rect" coords="0,56,115,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac231de1fec75f1cd4dbde5617af56a3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac231de1fec75f1cd4dbde5617af56a3e">getFieldByName</a> (std::string fieldName)</td></tr>
-<tr class="separator:ac231de1fec75f1cd4dbde5617af56a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2014d9fb0cdb9d24bff0da8f2cebaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#abd2014d9fb0cdb9d24bff0da8f2cebaf">getFirstField</a> ()</td></tr>
-<tr class="separator:abd2014d9fb0cdb9d24bff0da8f2cebaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7844dac1e382b6b3a9cdf2352cee98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a4c7844dac1e382b6b3a9cdf2352cee98">getNextField</a> (<a class="el" href="a00019.html">HttpField</a> *prevField)</td></tr>
-<tr class="separator:a4c7844dac1e382b6b3a9cdf2352cee98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38d1cd7e4373c125a24d7ff60502474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad38d1cd7e4373c125a24d7ff60502474">addField</a> (const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
-<tr class="separator:ad38d1cd7e4373c125a24d7ff60502474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636e0e5d7f398c4937e3607dcbc598cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a636e0e5d7f398c4937e3607dcbc598cc">addField</a> (const <a class="el" href="a00019.html">HttpField</a> &amp;newField)</td></tr>
-<tr class="separator:a636e0e5d7f398c4937e3607dcbc598cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2087c17b615dc99d625b8d3f8e9656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aca2087c17b615dc99d625b8d3f8e9656">addEndOfHeader</a> ()</td></tr>
-<tr class="separator:aca2087c17b615dc99d625b8d3f8e9656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d929439f0168ac03a1f8ce30b83973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac7d929439f0168ac03a1f8ce30b83973">insertField</a> (<a class="el" href="a00019.html">HttpField</a> *prevField, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
-<tr class="separator:ac7d929439f0168ac03a1f8ce30b83973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e69980de46f7039e77dd533279b76a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a3e69980de46f7039e77dd533279b76a5">insertField</a> (<a class="el" href="a00019.html">HttpField</a> *prevField, const <a class="el" href="a00019.html">HttpField</a> &amp;newField)</td></tr>
-<tr class="separator:a3e69980de46f7039e77dd533279b76a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2ba3e006fd4866d346dda1d6d4cf3cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae2ba3e006fd4866d346dda1d6d4cf3cb">removeField</a> (<a class="el" href="a00019.html">HttpField</a> *fieldToRemove)</td></tr>
-<tr class="separator:ae2ba3e006fd4866d346dda1d6d4cf3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2e229d3dd265ce63b77f531a3bc0a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a1c2e229d3dd265ce63b77f531a3bc0a2">removeField</a> (std::string fieldName)</td></tr>
-<tr class="separator:a1c2e229d3dd265ce63b77f531a3bc0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac201377ee25141ded5a5d566ab9351cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac201377ee25141ded5a5d566ab9351cd">isHeaderComplete</a> ()</td></tr>
-<tr class="separator:ac201377ee25141ded5a5d566ab9351cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44da7ecfbb51d71ebd5ccd769c6b862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad44da7ecfbb51d71ebd5ccd769c6b862">parseNextLayer</a> ()</td></tr>
-<tr class="separator:ad44da7ecfbb51d71ebd5ccd769c6b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac916fcbd8c81e831d07a4bd3d14e37fe"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac916fcbd8c81e831d07a4bd3d14e37fe">getHeaderLen</a> ()</td></tr>
-<tr class="separator:ac916fcbd8c81e831d07a4bd3d14e37fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bd3d93bd053bd4a0a337b6f1c914a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a0bd3d93bd053bd4a0a337b6f1c914a2d">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a0bd3d93bd053bd4a0a337b6f1c914a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00056"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00056')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00056.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00056.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00056.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00136.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c690bf65bce7580afa0d9425fcfbf3 inherit pub_methods_a00056"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a17c690bf65bce7580afa0d9425fcfbf3">toString</a> ()=0</td></tr>
-<tr class="separator:a17c690bf65bce7580afa0d9425fcfbf3 inherit pub_methods_a00056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ac348fc0e606cb82dc739748526f8898f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac348fc0e606cb82dc739748526f8898f"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpField</b></td></tr>
-<tr class="separator:ac348fc0e606cb82dc739748526f8898f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0517b804716eb287310867d77e78abbc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a0517b804716eb287310867d77e78abbc">recursionControl</a>:3</td></tr>
+<tr class="separator:a0517b804716eb287310867d77e78abbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955de401453ac75a7a2e264c1e79413a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a955de401453ac75a7a2e264c1e79413a">strictSourceRouteBit</a>:1</td></tr>
+<tr class="separator:a955de401453ac75a7a2e264c1e79413a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96476a82b5a08c127944f626ff28427c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a96476a82b5a08c127944f626ff28427c">sequenceNumBit</a>:1</td></tr>
+<tr class="separator:a96476a82b5a08c127944f626ff28427c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7237683104c0da3dd8a950a6c0b4102a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a7237683104c0da3dd8a950a6c0b4102a">keyBit</a>:1</td></tr>
+<tr class="separator:a7237683104c0da3dd8a950a6c0b4102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaedc575af53152ae79ac557568f2a49"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#abaedc575af53152ae79ac557568f2a49">routingBit</a>:1</td></tr>
+<tr class="separator:abaedc575af53152ae79ac557568f2a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab52439e25975c969c0f4279cc3c5924"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aab52439e25975c969c0f4279cc3c5924">checksumBit</a>:1</td></tr>
+<tr class="separator:aab52439e25975c969c0f4279cc3c5924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad773ac19c33381fe90b8545d045d08b4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad773ac19c33381fe90b8545d045d08b4">version</a>:3</td></tr>
+<tr class="separator:ad773ac19c33381fe90b8545d045d08b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11fa128c6031643f007f0544e74ce554"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a11fa128c6031643f007f0544e74ce554">flags</a>:4</td></tr>
+<tr class="separator:a11fa128c6031643f007f0544e74ce554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca95d0bc9062b770c7965f1692f44da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#adca95d0bc9062b770c7965f1692f44da">ackSequenceNumBit</a>:1</td></tr>
+<tr class="separator:adca95d0bc9062b770c7965f1692f44da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b3c46c666c7a70dcfa08622464d839"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aa2b3c46c666c7a70dcfa08622464d839">protocol</a></td></tr>
+<tr class="separator:aa2b3c46c666c7a70dcfa08622464d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class that wraps HTTP header layers (both request and response). It is the base class for <a class="el" href="a00023.html">HttpRequestLayer</a> and <a class="el" href="a00026.html">HttpResponseLayer</a>. This class is not abstract but it's not meant to be instantiated, hence the protected c'tor </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aca2087c17b615dc99d625b8d3f8e9656"></a>
+<div class="textblock"><p>Represents GRE basic protocol header (common for GREv0 and GREv1) </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="adca95d0bc9062b770c7965f1692f44da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::addEndOfHeader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::ackSequenceNumBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the special end-of-header HTTP field (see the explanation in <a class="el" href="a00019.html">HttpField</a>) </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created HTTP field, or NULL if the field could not be created </dd></dl>
+<p>Set if acknowledgment number is set (GRE v1 only) </p>
 
 </div>
 </div>
-<a class="anchor" id="ad38d1cd7e4373c125a24d7ff60502474"></a>
+<a class="anchor" id="aab52439e25975c969c0f4279cc3c5924"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::addField </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fieldName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fieldValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint8_t gre_basic_header::checksumBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new HTTP field to this message. This field will be added last (before the end-of-header field) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created HTTP field, or NULL if the field could not be created </dd></dl>
+<p>Set if checksum exists (GRE v0 only) </p>
 
 </div>
 </div>
-<a class="anchor" id="a636e0e5d7f398c4937e3607dcbc598cc"></a>
+<a class="anchor" id="a11fa128c6031643f007f0544e74ce554"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::addField </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00019.html">HttpField</a> &amp;&#160;</td>
-          <td class="paramname"><em>newField</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::flags</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new HTTP field to this message. This field will be added last (before the end-of-header field) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newField</td><td>The HTTP field to add </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created HTTP field, or NULL if the field could not be created </dd></dl>
+<p>Reserved </p>
 
 </div>
 </div>
-<a class="anchor" id="a0bd3d93bd053bd4a0a337b6f1c914a2d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HttpMessage::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this class </p>
-
-<p>Implements <a class="el" href="a00056.html#aa781ec9027fb1011d9e07fefed7c908c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac231de1fec75f1cd4dbde5617af56a3e"></a>
+<a class="anchor" id="a7237683104c0da3dd8a950a6c0b4102a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::getFieldByName </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>fieldName</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::keyBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to an HTTP header field by name. The search is case insensitive, meaning if a field with name "Host" exists and the fieldName parameter is "host" (all letter are lower case), this method will return a pointer to "Host" field </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to an <a class="el" href="a00019.html">HttpField</a> instance, or NULL if field doesn't exist </dd></dl>
+<p>Set if key exists </p>
 
 </div>
 </div>
-<a class="anchor" id="abd2014d9fb0cdb9d24bff0da8f2cebaf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::getFirstField </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the first HTTP field exists in this HTTP message, or NULL if no fields exist </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac916fcbd8c81e831d07a4bd3d14e37fe"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t HttpMessage::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The HTTP header length </dd></dl>
-
-<p>Implements <a class="el" href="a00056.html#aadb836a85874bdf0814c07eb24d92247">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c7844dac1e382b6b3a9cdf2352cee98"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::getNextField </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html">HttpField</a> *&#160;</td>
-          <td class="paramname"><em>prevField</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the field which appears after a certain field </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the field </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The field after prevField or NULL if prevField is the last field. If prevField is NULL, this method will return NULL </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac7d929439f0168ac03a1f8ce30b83973"></a>
+<a class="anchor" id="aa2b3c46c666c7a70dcfa08622464d839"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::insertField </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html">HttpField</a> *&#160;</td>
-          <td class="paramname"><em>prevField</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fieldName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fieldValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t gre_basic_header::protocol</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created HTTP field, or NULL if the field could not be created </dd></dl>
+<p>Protocol type of the next layer </p>
 
 </div>
 </div>
-<a class="anchor" id="a3e69980de46f7039e77dd533279b76a5"></a>
+<a class="anchor" id="a0517b804716eb287310867d77e78abbc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">HttpField</a>* HttpMessage::insertField </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html">HttpField</a> *&#160;</td>
-          <td class="paramname"><em>prevField</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00019.html">HttpField</a> &amp;&#160;</td>
-          <td class="paramname"><em>newField</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint8_t gre_basic_header::recursionControl</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newField</td><td>The HTTP field to add </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created HTTP field, or NULL if the field could not be created </dd></dl>
+<p>Number of additional encapsulations which are permitted. 0 is the default value </p>
 
 </div>
 </div>
-<a class="anchor" id="ac201377ee25141ded5a5d566ab9351cd"></a>
+<a class="anchor" id="abaedc575af53152ae79ac557568f2a49"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool HttpMessage::isHeaderComplete </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::routingBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indicate whether the header is complete (ending with end-of-header "\r\n\r\n" or "\n\n") or spread over more packets </p><dl class="section return"><dt>Returns</dt><dd>True if the header is complete or false if not </dd></dl>
+<p>Set if routing exists (GRE v0 only) </p>
 
 </div>
 </div>
-<a class="anchor" id="ad44da7ecfbb51d71ebd5ccd769c6b862"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HttpMessage::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Currently set only <a class="el" href="a00067.html">PayloadLayer</a> for the rest of the data </p>
-
-<p>Implements <a class="el" href="a00056.html#a722ab3018fb0bca2f4543b5a1249829c">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae2ba3e006fd4866d346dda1d6d4cf3cb"></a>
+<a class="anchor" id="a96476a82b5a08c127944f626ff28427c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool HttpMessage::removeField </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html">HttpField</a> *&#160;</td>
-          <td class="paramname"><em>fieldToRemove</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::sequenceNumBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove a field from the HTTP message </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldToRemove</td><td>A pointer to the field that should be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the field was removed successfully, or false otherwise (for example: if fieldToRemove is NULL, if it doesn't exist in the message, or if the removal failed) </dd></dl>
+<p>Set if sequence number exists </p>
 
 </div>
 </div>
-<a class="anchor" id="a1c2e229d3dd265ce63b77f531a3bc0a2"></a>
+<a class="anchor" id="a955de401453ac75a7a2e264c1e79413a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool HttpMessage::removeField </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>fieldName</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t gre_basic_header::strictSourceRouteBit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove a field from the HTTP message </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The name of the field that should be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the field was removed successfully, or false otherwise (for example: if fieldName doesn't exist in the message, or if the removal failed) </dd></dl>
+<p>Strict source routing bit (GRE v0 only) </p>
+
+</div>
+</div>
+<a class="anchor" id="ad773ac19c33381fe90b8545d045d08b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t gre_basic_header::version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GRE version - can be 0 or 1 </p>
 
 </div>
 </div>
@@ -561,8 +285,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpField</b></td></
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00020.html">HttpMessage</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00020.html">gre_basic_header</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

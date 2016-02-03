@@ -1,14 +1,17 @@
 var a00061 =
 [
-    [ "MBufRawPacket", "a00061.html#adcef9c1bd21cdf35469811455ef5f778", null ],
-    [ "~MBufRawPacket", "a00061.html#a1fde934861efc316b3f69213ecdf04d3", null ],
-    [ "MBufRawPacket", "a00061.html#ad1dd220c8b27a10740dce87890f54b5e", null ],
-    [ "appendData", "a00061.html#a3ab3107dfd8405e3af05395960aa558b", null ],
-    [ "clear", "a00061.html#a404d5486c9fb0d3cfdec3b461e8bb049", null ],
-    [ "init", "a00061.html#af23ac949f3a2125342a0b228349785ec", null ],
-    [ "insertData", "a00061.html#a5e821d9b0fd8933820ff863c05f06c7f", null ],
-    [ "operator=", "a00061.html#a91fd26da490cb43fa3d879b89d4af58f", null ],
-    [ "reallocateData", "a00061.html#acb2e61a48aa187d5620f0ca646842744", null ],
-    [ "removeData", "a00061.html#a8b6bbf54f8461a4d9eaa805640cbc9a8", null ],
-    [ "setRawData", "a00061.html#a9a024d8bf207e59f824e07f2500c47f6", null ]
+    [ "~Layer", "a00061.html#a2bac093f2a650095a5551fc455d10dc5", null ],
+    [ "computeCalculateFields", "a00061.html#aa781ec9027fb1011d9e07fefed7c908c", null ],
+    [ "copyData", "a00061.html#a3d25b188ace59350b220b79e7dd82751", null ],
+    [ "getData", "a00061.html#a68c8d3f62652858c92c78e87005e45c7", null ],
+    [ "getDataLen", "a00061.html#a6b40982815cffa68db6a8f7605541807", null ],
+    [ "getHeaderLen", "a00061.html#aadb836a85874bdf0814c07eb24d92247", null ],
+    [ "getLayerPayload", "a00061.html#a40859f34f71c6e38a6197106ea0ffac7", null ],
+    [ "getLayerPayloadSize", "a00061.html#a13b846c8ac968516446e1900e2ecd9c5", null ],
+    [ "getNextLayer", "a00061.html#a4683fd5442c279f32ad6fcd6cd87c1d7", null ],
+    [ "getPrevLayer", "a00061.html#a1c207e783516ded3e4015d301d2811b5", null ],
+    [ "getProtocol", "a00061.html#a73eba746fd77cb88a2fb729d2698fca6", null ],
+    [ "isAllocatedToPacket", "a00061.html#a312ad0f18d3200b313847f58fd8af2b3", null ],
+    [ "parseNextLayer", "a00061.html#a722ab3018fb0bca2f4543b5a1249829c", null ],
+    [ "toString", "a00061.html#a17c690bf65bce7580afa0d9425fcfbf3", null ]
 ];

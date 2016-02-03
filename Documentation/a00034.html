@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: icmp_router_address_structure Struct Reference</title>
+<title>PcapPlusPlus: icmp_echo_hdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,106 +106,79 @@ $(document).ready(function(){initNavTree('a00034.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00181.html">List of all members</a>  </div>
+<a href="a00189.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">icmp_router_address_structure Struct Reference</div>  </div>
+<div class="title">icmp_echo_hdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00110_source.html">IcmpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00118_source.html">IcmpLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for icmp_echo_hdr:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00034.png" usemap="#icmp_echo_hdr_map" alt=""/>
+  <map id="icmp_echo_hdr_map" name="icmp_echo_hdr_map">
+<area href="a00044.html" alt="icmphdr" shape="rect" coords="0,0,99,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4472c346da55cbf0e7dab22498fd3b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a4472c346da55cbf0e7dab22498fd3b1c">setRouterAddress</a> (<a class="el" href="a00050.html">IPv4Address</a> addr, uint32_t preference)</td></tr>
-<tr class="separator:a4472c346da55cbf0e7dab22498fd3b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e9f3b04a342de951c2f5b893d94b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00050.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ab9e9f3b04a342de951c2f5b893d94b6d">getAddress</a> ()</td></tr>
-<tr class="separator:ab9e9f3b04a342de951c2f5b893d94b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2021159051fd93746277cfa8cfe02bae"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a2021159051fd93746277cfa8cfe02bae">routerAddress</a></td></tr>
-<tr class="separator:a2021159051fd93746277cfa8cfe02bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63bec312f6a0c188fb61798906b53ee9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a63bec312f6a0c188fb61798906b53ee9">preferenceLevel</a></td></tr>
-<tr class="separator:a63bec312f6a0c188fb61798906b53ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614c30769c59e862f596d68805772f6f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a614c30769c59e862f596d68805772f6f">id</a></td></tr>
+<tr class="separator:a614c30769c59e862f596d68805772f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac936770569f4c676a9ec1df70246bb67"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ac936770569f4c676a9ec1df70246bb67">sequence</a></td></tr>
+<tr class="separator:ac936770569f4c676a9ec1df70246bb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7176dbbb31e3a2ffb1c3562f97cd69"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a9d7176dbbb31e3a2ffb1c3562f97cd69">timestamp</a></td></tr>
+<tr class="separator:a9d7176dbbb31e3a2ffb1c3562f97cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_a00044"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00044')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="a00044.html">icmphdr</a></td></tr>
+<tr class="memitem:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a70ae4477546c46f5d2ebb4d72e551223">type</a></td></tr>
+<tr class="separator:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a95e15c8a254d6db2e2fab31b48b03433">code</a></td></tr>
+<tr class="separator:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a646ca3a419713963a900cf7a966cf7ae">checksum</a></td></tr>
+<tr class="separator:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Router address structure, relevant for ICMP router advertisement message type (<a class="el" href="a00035.html">icmp_router_advertisement</a>) </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab9e9f3b04a342de951c2f5b893d94b6d"></a>
+<div class="textblock"><p>ICMP echo (ping) request/reply message structure </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a614c30769c59e862f596d68805772f6f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00050.html">IPv4Address</a> icmp_router_address_structure::getAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t icmp_echo_hdr::id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IPv4 address extracted from <a class="el" href="a00034.html#a2021159051fd93746277cfa8cfe02bae">icmp_router_address_structure::routerAddress</a> field </dd></dl>
+<p>the echo (ping) request identifier </p>
 
 </div>
 </div>
-<a class="anchor" id="a4472c346da55cbf0e7dab22498fd3b1c"></a>
+<a class="anchor" id="ac936770569f4c676a9ec1df70246bb67"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void icmp_router_address_structure::setRouterAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00050.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>preference</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t icmp_echo_hdr::sequence</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set router address structure from a given IPv4 address and preference level </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>IPv4 address to set </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">preference</td><td>Preference level to set </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>the echo (ping) request sequence number </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a63bec312f6a0c188fb61798906b53ee9"></a>
+<a class="anchor" id="a9d7176dbbb31e3a2ffb1c3562f97cd69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t icmp_router_address_structure::preferenceLevel</td>
+          <td class="memname">uint64_t icmp_echo_hdr::timestamp</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The preferability of the router address as a default router address, relative to other router addresses on the same subnet. This is a twos-complement value where higher values indicate that the route is more preferable </p>
-
-</div>
-</div>
-<a class="anchor" id="a2021159051fd93746277cfa8cfe02bae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t icmp_router_address_structure::routerAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the IPv4 address of the advertised router </p>
+<p>a timestamp of when the message was sent </p>
 
 </div>
 </div>
@@ -214,8 +187,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00034.html">icmp_router_address_structure</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00034.html">icmp_echo_hdr</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

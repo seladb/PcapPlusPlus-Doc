@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Todo List</title>
+<title>PcapPlusPlus: RawPacket.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,9 +46,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,6 +65,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -97,65 +103,50 @@ $(document).ready(function(){initNavTree('a00145.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Todo List </div>  </div>
+<div class="title">RawPacket.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000007"></a>Class <a class="el" href="a00001.html">AndFilter</a>  </dt>
-<dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="a00011.html#a51b9dfcbbfffe3eb4b48d50bd13b845b">DpdkDevice::getStatistics</a>  (pcap_stat &amp;stats)</dt>
-<dd>pcap_stat is a poor struct that doesn't contain all the information DPDK can provide. Consider using a more extensive struct  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="a00048.html">IPFilter</a>  </dt>
-<dd>Add IPv6 filtering support  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="a00050.html#a0b7c5296eeee807d6481553d5ae3ba87">IPv4Address::IPv4Address</a>  (uint32_t addressAsInt)</dt>
-<dd>consider endianess in this method <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsInt</td><td>The address as 4-byte integer  </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="a00058.html#a0ed1b706144dcc9214fad2da0349847e">LoggerPP::getInstance</a>  ()</dt>
-<dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00058.html">LoggerPP</a> singleton  </dd></dl>
-</dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="a00059.html#a32025c7fafe053c9e4c5cc7ec9572ca1">MacAddress::MacAddress</a>  (uint8_t *addr)</dt>
-<dd>there is no verification array length &gt;= 6. If this is not the case, address will read uninitialized memory <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the byte array containing 6 bytes representing the MAC address  </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd>
-<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="a00065.html">OrFilter</a>  </dt>
-<dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="a00067.html#a7cc6f99cf4f6a31b8b3be6bde5ff2881">PayloadLayer::PayloadLayer</a>  (const uint8_t *data, size_t dataLen, bool selfAllocated)</dt>
-<dd>selfAllocated is probably not necessary anymore. Remove it  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="a00087.html#a271ce177253f94371369d2b9cd0758ff">RawPacket::clear</a>  ()</dt>
-<dd><p class="startdd">deleteRawDataAtDestructor was set to 'true', don't free the raw data </p>
-<p class="enddd">set timestamp to a default value as well  </p>
-</dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="a00087.html#ac01c7f5767e7110773f5ea2aa5ac351c">RawPacket::operator=</a>  (const <a class="el" href="a00087.html">RawPacket</a> &amp;other)</dt>
-<dd>free raw data only if deleteRawDataAtDestructor was set to 'true' <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from  </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="a00087.html#a89cd28744cc38377744b685a03a3caaf">RawPacket::RawPacket</a>  ()</dt>
-<dd>timestamp isn't set here to a default value  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="a00101.html#a66c949b1b89d643d494ec5d8b59d1fba">VlanLayer::getVlanID</a>  ()</dt>
-<dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="a00101.html#ae4c992425b4519ca14408b848fde17b0">VlanLayer::setVlanID</a>  (uint16_t id)</dt>
-<dd>Verify it works in big endian machines as well </dd>
-</dl>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div>
+<p><a href="a00145_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html">RawPacket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a879456c3b8e2853f7044d764e9c180d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>&#160;&#160;&#160;65536</td></tr>
+<tr class="separator:a879456c3b8e2853f7044d764e9c180d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a879456c3b8e2853f7044d764e9c180d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PACKET_SIZE&#160;&#160;&#160;65536</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Max packet size supported </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00145.html">RawPacket.h</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

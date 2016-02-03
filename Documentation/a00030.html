@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: icmp_echo_request Struct Reference</title>
+<title>PcapPlusPlus: HttpResponseFirstLine::HttpResponseFirstLineException Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,73 +106,30 @@ $(document).ready(function(){initNavTree('a00030.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00177.html">List of all members</a>  </div>
+<a href="a00185.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">icmp_echo_request Struct Reference</div>  </div>
+<div class="title">HttpResponseFirstLine::HttpResponseFirstLineException Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00110_source.html">IcmpLayer.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a2ff600fd3d1cb623c0435c734e3f8121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00029.html">icmp_echo_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a2ff600fd3d1cb623c0435c734e3f8121">header</a></td></tr>
-<tr class="separator:a2ff600fd3d1cb623c0435c734e3f8121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4fdcb45ee3c2c113f63b8a65357a53"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#aae4fdcb45ee3c2c113f63b8a65357a53">dataLength</a></td></tr>
-<tr class="separator:aae4fdcb45ee3c2c113f63b8a65357a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80491ea40531003d2af236db418f0041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a80491ea40531003d2af236db418f0041">data</a></td></tr>
-<tr class="separator:a80491ea40531003d2af236db418f0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p><code>#include &lt;<a class="el" href="a00117_source.html">HttpLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for HttpResponseFirstLine::HttpResponseFirstLineException:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00030.png" usemap="#HttpResponseFirstLine::HttpResponseFirstLineException_map" alt=""/>
+  <map id="HttpResponseFirstLine::HttpResponseFirstLineException_map" name="HttpResponseFirstLine::HttpResponseFirstLineException_map">
+</map>
+ </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ICMP echo (ping) request/reply message structure </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a80491ea40531003d2af236db418f0041"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* icmp_echo_request::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>most echo requests/replies contain some payload data. This is a pointer to this data </p>
-
-</div>
-</div>
-<a class="anchor" id="aae4fdcb45ee3c2c113f63b8a65357a53"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t icmp_echo_request::dataLength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>most echo requests/replies contain some payload data. This is the data length </p>
-
-</div>
-</div>
-<a class="anchor" id="a2ff600fd3d1cb623c0435c734e3f8121"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00029.html">icmp_echo_hdr</a>* icmp_echo_request::header</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>a pointer to the header data </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>This exception can be thrown while constructing <a class="el" href="a00029.html">HttpResponseFirstLine</a> (the constructor is private, so the construction happens only in <a class="el" href="a00031.html">HttpResponseLayer</a>). This kind of exception will be thrown if trying to construct with HTTP status code of <a class="el" href="a00031.html#abcd60d041754a01d761c3277ba937b78adac707cabc687ef6d01322a67444d239">HttpResponseLayer::HttpStatusCodeUnknown</a> or with undefined HTTP version <a class="el" href="a00117.html#ac870fd261da652aee69937751c6f7e7faa2873cb666f67d555454e8f856efa0fd">HttpVersionUnknown</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00030.html">icmp_echo_request</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00029.html">HttpResponseFirstLine</a></li><li class="navelem"><a class="el" href="a00030.html">HttpResponseFirstLineException</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

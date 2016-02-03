@@ -1,4 +1,5 @@
 var a00033 =
 [
-    [ "gatewayAddress", "a00033.html#ad179cd772103aad61c20354664ab3556", null ]
+    [ "nextHopMTU", "a00033.html#a403b18f4694ee6abab0d43237ad41bc4", null ],
+    [ "unused", "a00033.html#ad4202db26391049de1103d72b2f81add", null ]
 ];

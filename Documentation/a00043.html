@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IFilterWithOperator Class Reference</title>
+<title>PcapPlusPlus: icmp_timestamp_request Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,69 +106,109 @@ $(document).ready(function(){initNavTree('a00043.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00190.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00198.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IFilterWithOperator Class Reference</div>  </div>
+<div class="title">icmp_timestamp_request Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00126_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00118_source.html">IcmpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IFilterWithOperator:</div>
+Inheritance diagram for icmp_timestamp_request:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00043.png" usemap="#IFilterWithOperator_map" alt=""/>
-  <map id="IFilterWithOperator_map" name="IFilterWithOperator_map">
-<area href="a00018.html" alt="GeneralFilter" shape="rect" coords="213,0,345,24"/>
-<area href="a00051.html" alt="IpV4IDFilter" shape="rect" coords="0,112,132,136"/>
-<area href="a00053.html" alt="IpV4TotalLengthFilter" shape="rect" coords="142,112,274,136"/>
-<area href="a00095.html" alt="TcpWindowSizeFilter" shape="rect" coords="284,112,416,136"/>
-<area href="a00098.html" alt="UdpLengthFilter" shape="rect" coords="426,112,558,136"/>
+  <img src="a00043.png" usemap="#icmp_timestamp_request_map" alt=""/>
+  <map id="icmp_timestamp_request_map" name="icmp_timestamp_request_map">
+<area href="a00044.html" alt="icmphdr" shape="rect" coords="0,0,147,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e27cbccbfa49a086067613fc7ad75fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a6e27cbccbfa49a086067613fc7ad75fd">setOperator</a> (<a class="el" href="a00126.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a> op)</td></tr>
-<tr class="separator:a6e27cbccbfa49a086067613fc7ad75fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">GeneralFilter</a></td></tr>
-<tr class="memitem:a06daa42299619bacf929a1249a6594dc inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a06daa42299619bacf929a1249a6594dc">parseToString</a> (std::string &amp;result)=0</td></tr>
-<tr class="separator:a06daa42299619bacf929a1249a6594dc inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a306816d6c7cc448f91db78d2b4e74d52"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a306816d6c7cc448f91db78d2b4e74d52">id</a></td></tr>
+<tr class="separator:a306816d6c7cc448f91db78d2b4e74d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03edf3049b5fa70ee3db62ab7f0ab948"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a03edf3049b5fa70ee3db62ab7f0ab948">sequence</a></td></tr>
+<tr class="separator:a03edf3049b5fa70ee3db62ab7f0ab948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4936c6abedfbf488e28c18ced1a35c11"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a4936c6abedfbf488e28c18ced1a35c11">originateTimestamp</a></td></tr>
+<tr class="separator:a4936c6abedfbf488e28c18ced1a35c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a71564692bf4a69c8467c46678b838"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a76a71564692bf4a69c8467c46678b838">receiveTimestamp</a></td></tr>
+<tr class="separator:a76a71564692bf4a69c8467c46678b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebcfe68292faad32ed53c5c2d70ef7a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#aeebcfe68292faad32ed53c5c2d70ef7a">transmitTimestamp</a></td></tr>
+<tr class="separator:aeebcfe68292faad32ed53c5c2d70ef7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_a00044"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00044')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="a00044.html">icmphdr</a></td></tr>
+<tr class="memitem:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a70ae4477546c46f5d2ebb4d72e551223">type</a></td></tr>
+<tr class="separator:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a95e15c8a254d6db2e2fab31b48b03433">code</a></td></tr>
+<tr class="separator:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a646ca3a419713963a900cf7a966cf7ae">checksum</a></td></tr>
+<tr class="separator:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class that is the base class for all filters which contain an operator (e.g X equals Y; A is greater than B; Z1 not equals Z2, etc.). This class cannot be instantiated<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00126.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6e27cbccbfa49a086067613fc7ad75fd"></a>
+<div class="textblock"><p>ICMP timestamp request message structure </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a306816d6c7cc448f91db78d2b4e74d52"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void IFilterWithOperator::setOperator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00126.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a>&#160;</td>
-          <td class="paramname"><em>op</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t icmp_timestamp_request::id</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Set the operator for the filter </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to set </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>the timestamp request identifier </p>
+
+</div>
+</div>
+<a class="anchor" id="a4936c6abedfbf488e28c18ced1a35c11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t icmp_timestamp_request::originateTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the time (in milliseconds since midnight) the sender last touched the packet </p>
+
+</div>
+</div>
+<a class="anchor" id="a76a71564692bf4a69c8467c46678b838"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t icmp_timestamp_request::receiveTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>relevant for timestamp reply only - the time the echoer first touched it on receipt </p>
+
+</div>
+</div>
+<a class="anchor" id="a03edf3049b5fa70ee3db62ab7f0ab948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t icmp_timestamp_request::sequence</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the timestamp request sequence number </p>
+
+</div>
+</div>
+<a class="anchor" id="aeebcfe68292faad32ed53c5c2d70ef7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t icmp_timestamp_request::transmitTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>relevant for timestamp reply only - the time the echoer last touched the message on sending it </p>
 
 </div>
 </div>
@@ -177,8 +217,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00043.html">IFilterWithOperator</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00043.html">icmp_timestamp_request</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,18 +1,10 @@
 var a00091 =
 [
-    [ "MatchOptions", "a00091.html#ac6e61ffa184b83c8f33196cd1166223c", [
-      [ "MatchAll", "a00091.html#ac6e61ffa184b83c8f33196cd1166223ca1ef0c40d1629f36292567be9cf2cad69", null ],
-      [ "MatchOneAtLeast", "a00091.html#ac6e61ffa184b83c8f33196cd1166223caf11f3172b6d3620df5bf47ac3758a520", null ]
-    ] ],
-    [ "TcpFlags", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3", [
-      [ "tcpFin", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a77fd7860b968c29b8f03e6da10403872", null ],
-      [ "tcpSyn", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a2648c2eb11c785c557f84d7ce47a5e6a", null ],
-      [ "tcpRst", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a22d79462088c6a24ea8a6904f5ad7a0c", null ],
-      [ "tcpPush", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a26830d909b59f2fd4714fc8e201e7fd0", null ],
-      [ "tcpAck", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a1bd36b814de7dd0a395a6515e0bc64e6", null ],
-      [ "tcpUrg", "a00091.html#a01b4d3bbd12609b796f887f77420fcf3a9a8d560a431f18cf7ef9e1d7d8f13695", null ]
-    ] ],
-    [ "TcpFlagsFilter", "a00091.html#ac5d459bb1d81d63b13795015648f4868", null ],
-    [ "parseToString", "a00091.html#abf7c9eee2b595df0e1ad0c1b12cfde76", null ],
-    [ "setTcpFlagsBitMask", "a00091.html#a33c873bdd1989417b62bf7178fe518a8", null ]
+    [ "PPPoESessionLayer", "a00091.html#a7175a1071d860b1c164c05acb4c5c19e", null ],
+    [ "PPPoESessionLayer", "a00091.html#a94fc6d2587c8b5f188e017a4071f6b96", null ],
+    [ "getHeaderLen", "a00091.html#aa0a8cf90346c66fa6e7f1d1f10cec0ed", null ],
+    [ "getPPPNextProtocol", "a00091.html#a4552971f704480424bc4bc7368f16fda", null ],
+    [ "parseNextLayer", "a00091.html#a77561218e4a7edc464cfa3dd928faf9b", null ],
+    [ "setPPPNextProtocol", "a00091.html#a2c1adc1dcaf0e7933e5658223e6999a5", null ],
+    [ "toString", "a00091.html#add0aec7c81ba860d46c07d632e25b5cc", null ]
 ];

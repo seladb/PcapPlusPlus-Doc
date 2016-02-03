@@ -1,10 +1,8 @@
 var a00073 =
 [
-    [ "getDeviceType", "a00073.html#ac09338c44301f7cdb9b833497641139f", null ],
-    [ "getMacAddress", "a00073.html#a57d8b6fc5eadc45214d1b1e0d166356c", null ],
-    [ "getMtu", "a00073.html#a1edc9591657c5b8551b41ee87d85a77f", null ],
-    [ "getRemoteMachineIpAddress", "a00073.html#ab909cdc8cb52deec2f6796e8dfc1bd0b", null ],
-    [ "getRemoteMachinePort", "a00073.html#a22476ed79eeb632549791e8e7d5cdb88", null ],
-    [ "getStatistics", "a00073.html#a8d10ffda65b9a4ba61d0193cf6b1872d", null ],
-    [ "open", "a00073.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced", null ]
+    [ "PcapFileReaderDevice", "a00073.html#a9b4477ddd07e91d123fdc3b892dccd9f", null ],
+    [ "~PcapFileReaderDevice", "a00073.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7", null ],
+    [ "getNextPacket", "a00073.html#a5318e4291eb2929233e7e77f9804c1af", null ],
+    [ "getStatistics", "a00073.html#a831193e30603e66291dfaa9b3ab22b63", null ],
+    [ "open", "a00073.html#aedd7cf41e07cd259d49fa6a20455b7f9", null ]
 ];

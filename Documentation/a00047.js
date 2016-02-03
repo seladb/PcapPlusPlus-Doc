@@ -1,4 +1,4 @@
 var a00047 =
 [
-    [ "close", "a00047.html#aeac5956145508b5f4883dbb688fdbe3b", null ]
+    [ "setDirection", "a00047.html#a6056e85050382814de7dd08ea56bb806", null ]
 ];

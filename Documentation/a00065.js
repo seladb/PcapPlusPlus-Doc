@@ -1,5 +1,6 @@
 var a00065 =
 [
-    [ "OrFilter", "a00065.html#a9bdfad5061c09add3a74352766ff148e", null ],
-    [ "parseToString", "a00065.html#ab2ef7c72c011b1ff039bfbefa8258c91", null ]
+    [ "MacAddressFilter", "a00065.html#a0efbb623c6f72d72124a832241b1f628", null ],
+    [ "parseToString", "a00065.html#a01de5ecf70fda666bf11be1b874694e0", null ],
+    [ "setMacAddress", "a00065.html#aa86204a955a66acd6fdfc78b754e6ed4", null ]
 ];

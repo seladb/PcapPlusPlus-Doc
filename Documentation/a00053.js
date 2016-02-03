@@ -1,6 +1,10 @@
 var a00053 =
 [
-    [ "IpV4TotalLengthFilter", "a00053.html#abef055c6303a5eef9464d84e2e7d071c", null ],
-    [ "parseToString", "a00053.html#a7bd0ed5598fda15cdfa82c79343d7e8c", null ],
-    [ "setTotalLength", "a00053.html#a7bb3459eee0993c6c13f56f4eb42aa52", null ]
+    [ "IPFilter", "a00053.html#ac7b149d99bdf51cd62328046697fa39e", null ],
+    [ "IPFilter", "a00053.html#ac8ef4cec89366cd498cc63aac8413c59", null ],
+    [ "IPFilter", "a00053.html#a04daaee21dd422d9020e615483d30edc", null ],
+    [ "parseToString", "a00053.html#a7aa182a720b67924c3d5326131c3454d", null ],
+    [ "setAddr", "a00053.html#a29305d074a03750bdb9f9b0b817d506e", null ],
+    [ "setLen", "a00053.html#adc446c3a334d80a9c7bdf1938360c73a", null ],
+    [ "setMask", "a00053.html#a57900cda5ddeedc892eb47910bb571b6", null ]
 ];

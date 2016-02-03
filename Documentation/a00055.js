@@ -1,13 +1,15 @@
 var a00055 =
 [
-    [ "IPv6Layer", "a00055.html#a5f0f2249102f495546b5bbe33a7586cd", null ],
-    [ "IPv6Layer", "a00055.html#ad5a9ac1a62f54a05ba88aea97757478a", null ],
-    [ "IPv6Layer", "a00055.html#a27dd67024d4686c2994f09994ba07d82", null ],
-    [ "computeCalculateFields", "a00055.html#ab34b0327e7eb03d0fbc8cbc15af820d0", null ],
-    [ "getDstIpAddress", "a00055.html#a7c4901b4215e9894901cc86526d850ba", null ],
-    [ "getHeaderLen", "a00055.html#a4bfcc6a200345275097406e8931ed19d", null ],
-    [ "getIPv6Header", "a00055.html#a061c956a2aed9906ae3bb54cb2892ce7", null ],
-    [ "getSrcIpAddress", "a00055.html#a468b2f35d3249b092aa6f24aff0315b1", null ],
-    [ "parseNextLayer", "a00055.html#a8bb48a29e3fec01a832add0056af84f8", null ],
-    [ "toString", "a00055.html#adb1514855ffd5a1bb162c01de9a6083d", null ]
+    [ "IPv4Address", "a00055.html#a0b7c5296eeee807d6481553d5ae3ba87", null ],
+    [ "IPv4Address", "a00055.html#ac8d7367df8278149f3a4a424ec340d05", null ],
+    [ "IPv4Address", "a00055.html#afa779c8f3982d142b673622d5d836900", null ],
+    [ "IPv4Address", "a00055.html#ab6c4a77c350944fcf00767cc14558cd4", null ],
+    [ "IPv4Address", "a00055.html#afb221f895af2e151fe1f0a0453cec145", null ],
+    [ "getType", "a00055.html#abec87cb14eac7c4fce896b7249c915a7", null ],
+    [ "matchSubnet", "a00055.html#a48018ec603485ddc908ae2d269e3193e", null ],
+    [ "operator!=", "a00055.html#a448e81d6a42f54eab859da84795f2e81", null ],
+    [ "operator=", "a00055.html#a79a49cacb06d9f86a559d6597c2bb1a8", null ],
+    [ "operator==", "a00055.html#affe02b4f9f62414acf2bd24157979bdf", null ],
+    [ "toInAddr", "a00055.html#addd6ff37af6195ff5a0a6b7e3244a7cf", null ],
+    [ "toInt", "a00055.html#a72f1000006566932602a18a5e66d0917", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDeviceList.h Source File</title>
+<title>PcapPlusPlus: PcapDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,59 +104,65 @@ $(document).ready(function(){initNavTree('a00132_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PfRingDeviceList.h</div>  </div>
+<div class="title">PcapDevice.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00132.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PF_RING_DEVICE_LIST</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PF_RING_DEVICE_LIST</span></div>
+<a href="a00132.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DEVICE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DEVICE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00131.html">PfRingDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00077.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00077.html">PfRingDeviceList</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::vector&lt;PfRingDevice*&gt; m_PfRingDeviceList;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::string m_PfRingVersion;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="a00077.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="a00077.html">PfRingDeviceList</a>(<span class="keyword">const</span> <a class="code" href="a00077.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="a00077.html">PfRingDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00077.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// private d&#39;tor</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="a00077.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> calcPfRingVersion(<span class="keywordtype">void</span>* ring);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00077.html#a69a328dd6c0f9b4acb8ab46652bf675a">   32</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00077.html">PfRingDeviceList</a>&amp; <a class="code" href="a00077.html#a69a328dd6c0f9b4acb8ab46652bf675a">getInstance</a>()</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00077.html">PfRingDeviceList</a> instance;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00077.html#acc39d122c465d0c0706e08d4f63d7387">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;PfRingDevice*&gt;&amp; <a class="code" href="a00077.html#acc39d122c465d0c0706e08d4f63d7387">getPfRingDevicesList</a>() { <span class="keywordflow">return</span> m_PfRingDeviceList; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00076.html">PfRingDevice</a>* <a class="code" href="a00077.html#a103a39d5141eb566750966f467e5b82b">getPfRingDeviceByName</a>(<span class="keyword">const</span> std::string devName);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00077.html#a2ab60a48579d1b2bc233336f243f622e">   56</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00077.html#a2ab60a48579d1b2bc233336f243f622e">getPfRingVersion</a>() { <span class="keywordflow">return</span> m_PfRingVersion; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PF_RING_DEVICE_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00077_html_a2ab60a48579d1b2bc233336f243f622e"><div class="ttname"><a href="a00077.html#a2ab60a48579d1b2bc233336f243f622e">PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">std::string getPfRingVersion()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:56</div></div>
-<div class="ttc" id="a00076_html"><div class="ttname"><a href="a00076.html">PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:27</div></div>
-<div class="ttc" id="a00077_html_acc39d122c465d0c0706e08d4f63d7387"><div class="ttname"><a href="a00077.html#acc39d122c465d0c0706e08d4f63d7387">PfRingDeviceList::getPfRingDevicesList</a></div><div class="ttdeci">const std::vector&lt; PfRingDevice * &gt; &amp; getPfRingDevicesList()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:42</div></div>
-<div class="ttc" id="a00131_html"><div class="ttname"><a href="a00131.html">PfRingDevice.h</a></div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:13</div></div>
-<div class="ttc" id="a00077_html_a69a328dd6c0f9b4acb8ab46652bf675a"><div class="ttname"><a href="a00077.html#a69a328dd6c0f9b4acb8ab46652bf675a">PfRingDeviceList::getInstance</a></div><div class="ttdeci">static PfRingDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:32</div></div>
-<div class="ttc" id="a00077_html_a103a39d5141eb566750966f467e5b82b"><div class="ttname"><a href="a00077.html#a103a39d5141eb566750966f467e5b82b">PfRingDeviceList::getPfRingDeviceByName</a></div><div class="ttdeci">PfRingDevice * getPfRingDeviceByName(const std::string devName)</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00145.html">RawPacket.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00134.html">PcapFilter.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00142.html">PointerVector.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;pcap.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00132.html#aa1427ba2ba13978d3b19b3fc7f25c15d">   12</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="a00083.html">PointerVector&lt;RawPacket&gt;</a> <a class="code" href="a00132.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00051.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00051.html">IPcapDevice</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    pcap_t* m_PcapDescriptor;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// c&#39;tor should not be public</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="a00051.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00051.html">IPcapDevice</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#a94a6922dff88e4bea4b3904a60e6f0e9">open</a>() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#ad9dd73f0310fb6e3924fabb4e2542ef0">close</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00051.html#a9f54bb88194b3374e92ab6533138a0a7">   45</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#a9f54bb88194b3374e92ab6533138a0a7">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#abfddac7872baed093efc622259f51fc6">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00051.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a>(<a class="code" href="a00018.html">GeneralFilter</a>&amp; filter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00051.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a>(std::string filterAsString);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00142_html"><div class="ttname"><a href="a00142.html">PointerVector.h</a></div></div>
+<div class="ttc" id="a00051_html_abfddac7872baed093efc622259f51fc6"><div class="ttname"><a href="a00051.html#abfddac7872baed093efc622259f51fc6">IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)=0</div></div>
+<div class="ttc" id="a00018_html"><div class="ttname"><a href="a00018.html">GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:66</div></div>
+<div class="ttc" id="a00051_html_ad9dd73f0310fb6e3924fabb4e2542ef0"><div class="ttname"><a href="a00051.html#ad9dd73f0310fb6e3924fabb4e2542ef0">IPcapDevice::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
+<div class="ttc" id="a00051_html_a94a6922dff88e4bea4b3904a60e6f0e9"><div class="ttname"><a href="a00051.html#a94a6922dff88e4bea4b3904a60e6f0e9">IPcapDevice::open</a></div><div class="ttdeci">virtual bool open()=0</div></div>
+<div class="ttc" id="a00051_html_ac8167b330a4ee85ab759facd0d4989bd"><div class="ttname"><a href="a00051.html#ac8167b330a4ee85ab759facd0d4989bd">IPcapDevice::setFilter</a></div><div class="ttdeci">bool setFilter(GeneralFilter &amp;filter)</div></div>
+<div class="ttc" id="a00083_html"><div class="ttname"><a href="a00083.html">PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:17</div></div>
+<div class="ttc" id="a00134_html"><div class="ttname"><a href="a00134.html">PcapFilter.h</a></div></div>
+<div class="ttc" id="a00145_html"><div class="ttname"><a href="a00145.html">RawPacket.h</a></div></div>
+<div class="ttc" id="a00132_html_aa1427ba2ba13978d3b19b3fc7f25c15d"><div class="ttname"><a href="a00132.html#aa1427ba2ba13978d3b19b3fc7f25c15d">RawPacketVector</a></div><div class="ttdeci">PointerVector&lt; RawPacket &gt; RawPacketVector</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:12</div></div>
+<div class="ttc" id="a00051_html_a9f54bb88194b3374e92ab6533138a0a7"><div class="ttname"><a href="a00051.html#a9f54bb88194b3374e92ab6533138a0a7">IPcapDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:45</div></div>
+<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00132.html">PfRingDeviceList.h</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00132.html">PcapDevice.h</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

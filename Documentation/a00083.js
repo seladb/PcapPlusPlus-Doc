@@ -1,18 +1,19 @@
 var a00083 =
 [
-    [ "PPPoECode", "a00083.html#a175179c8c3448839deccd3262a58665c", [
-      [ "PPPOE_CODE_SESSION", "a00083.html#a175179c8c3448839deccd3262a58665ca67b4ae475bab2c664550b8d917b1e36b", null ],
-      [ "PPPOE_CODE_PADO", "a00083.html#a175179c8c3448839deccd3262a58665caedd7ec3e05497143a41d493bfe9af603", null ],
-      [ "PPPOE_CODE_PADI", "a00083.html#a175179c8c3448839deccd3262a58665cac8e73e49d5e5948dd946a973db89d6d0", null ],
-      [ "PPPOE_CODE_PADG", "a00083.html#a175179c8c3448839deccd3262a58665ca2d230e29be6e0a00a8eb9a34a50a183e", null ],
-      [ "PPPOE_CODE_PADC", "a00083.html#a175179c8c3448839deccd3262a58665ca671054a081fe6d2e25459b98fea75622", null ],
-      [ "PPPOE_CODE_PADQ", "a00083.html#a175179c8c3448839deccd3262a58665cae229b8547f04c4d7b352c5fea3d0af13", null ],
-      [ "PPPOE_CODE_PADR", "a00083.html#a175179c8c3448839deccd3262a58665ca9c63ba63295a04ab45cbd714c4ad5dd1", null ],
-      [ "PPPOE_CODE_PADS", "a00083.html#a175179c8c3448839deccd3262a58665ca758678dbadf4fcbfe443a3d5c2b2877e", null ],
-      [ "PPPOE_CODE_PADT", "a00083.html#a175179c8c3448839deccd3262a58665ca1c50f7ef5fa6e101055757956084a613", null ],
-      [ "PPPOE_CODE_PADM", "a00083.html#a175179c8c3448839deccd3262a58665ca0e60352fe93e347d9aa8a1b215a9acc5", null ],
-      [ "PPPOE_CODE_PADN", "a00083.html#a175179c8c3448839deccd3262a58665ca5ab2ea1ebe4fa69f71ec4dc9434dce72", null ]
-    ] ],
-    [ "computeCalculateFields", "a00083.html#ae236d58b2f7287bc5fa01d7b2e194308", null ],
-    [ "getPPPoEHeader", "a00083.html#a1bb3dc226576957fb7f8d46529ac1cbf", null ]
+    [ "ConstVectorIterator", "a00083.html#a57d53b31aff3473d26d2949e2d432db1", null ],
+    [ "VectorIterator", "a00083.html#a397409f07927eb1495cec3977d5c8fb4", null ],
+    [ "PointerVector", "a00083.html#a44ef76bb36f22d17606d8af8ef12d499", null ],
+    [ "~PointerVector", "a00083.html#a5fd5c0d94cdb693be9a8bb5c2b3e305c", null ],
+    [ "PointerVector", "a00083.html#ac5991e6cb288eeac69aec4fc36650ad2", null ],
+    [ "at", "a00083.html#ab29980d1325418ed44233847323c2bd9", null ],
+    [ "begin", "a00083.html#a7f87781e254ceca54f855078eb4db78c", null ],
+    [ "begin", "a00083.html#a302b5f7030a3f143663deb7236e8a6c6", null ],
+    [ "clear", "a00083.html#a9f708acfaa3ce26d14b02d8e285c8729", null ],
+    [ "end", "a00083.html#aa37f4d8ebbc3e1d57cbdac06b2fa8ad2", null ],
+    [ "end", "a00083.html#a101a07fa07aea0c2f615d20c6940d0a1", null ],
+    [ "erase", "a00083.html#ae3d514e47d3e5e5ae887fd70da7bc25c", null ],
+    [ "front", "a00083.html#ad3623c746b3a09fd9254af9d6c354589", null ],
+    [ "getAndRemoveFromVector", "a00083.html#a745d3f5f92401a8b1bfba3bb24282127", null ],
+    [ "pushBack", "a00083.html#ae018616cc4eaed20d191372cd383a520", null ],
+    [ "size", "a00083.html#a65263559ccd6a9eac2904c691453867b", null ]
 ];

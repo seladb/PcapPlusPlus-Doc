@@ -1,6 +1,6 @@
 var a00032 =
 [
-    [ "pointer", "a00032.html#a764161017094fc317b30160da9454c1e", null ],
-    [ "unused1", "a00032.html#a6ef384c7f3f1b4bc5b2c3deff890aeaf", null ],
-    [ "unused2", "a00032.html#a2906efc4ea939974afd344e8f861f5aa", null ]
+    [ "addressMask", "a00032.html#a942431702c9c4b51bbef8b485d05f6b3", null ],
+    [ "id", "a00032.html#ab1c7034baf68e20bc8aec04e616978f2", null ],
+    [ "sequence", "a00032.html#af6d5afcbf0fc4851afb7d619c43bc3e4", null ]
 ];

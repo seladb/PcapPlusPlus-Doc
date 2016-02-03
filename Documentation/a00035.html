@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: icmp_router_advertisement Struct Reference</title>
+<title>PcapPlusPlus: icmp_echo_request Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,63 +106,63 @@ $(document).ready(function(){initNavTree('a00035.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00182.html">List of all members</a>  </div>
+<a href="a00190.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">icmp_router_advertisement Struct Reference</div>  </div>
+<div class="title">icmp_echo_request Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00110_source.html">IcmpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00118_source.html">IcmpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a2660acd2ac6336af3267261d19009d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00034.html">icmp_router_address_structure</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a2660acd2ac6336af3267261d19009d6b">getRouterAddress</a> (int index)</td></tr>
-<tr class="separator:a2660acd2ac6336af3267261d19009d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a98fd3dba7819f67211d9af46fa3c2c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00036.html">icmp_router_advertisement_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a98fd3dba7819f67211d9af46fa3c2c70">header</a></td></tr>
-<tr class="separator:a98fd3dba7819f67211d9af46fa3c2c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff600fd3d1cb623c0435c734e3f8121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00034.html">icmp_echo_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a2ff600fd3d1cb623c0435c734e3f8121">header</a></td></tr>
+<tr class="separator:a2ff600fd3d1cb623c0435c734e3f8121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4fdcb45ee3c2c113f63b8a65357a53"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#aae4fdcb45ee3c2c113f63b8a65357a53">dataLength</a></td></tr>
+<tr class="separator:aae4fdcb45ee3c2c113f63b8a65357a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80491ea40531003d2af236db418f0041"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a80491ea40531003d2af236db418f0041">data</a></td></tr>
+<tr class="separator:a80491ea40531003d2af236db418f0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ICMP router advertisement message structure </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2660acd2ac6336af3267261d19009d6b"></a>
+<div class="textblock"><p>ICMP echo (ping) request/reply message structure </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a80491ea40531003d2af236db418f0041"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00034.html">icmp_router_address_structure</a>* icmp_router_advertisement::getRouterAddress </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t* icmp_echo_request::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Extract router advertisement at a given index </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the router advertisement </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the router advertisement on the packet or null if index is out of range (less than zero or greater than the number of router advertisement records on this message, determined by advertisementCount field) </dd></dl>
+<p>most echo requests/replies contain some payload data. This is a pointer to this data </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a98fd3dba7819f67211d9af46fa3c2c70"></a>
+<a class="anchor" id="aae4fdcb45ee3c2c113f63b8a65357a53"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00036.html">icmp_router_advertisement_hdr</a>* icmp_router_advertisement::header</td>
+          <td class="memname">uint8_t icmp_echo_request::dataLength</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>a pointer to the header data on the packet </p>
+<p>most echo requests/replies contain some payload data. This is the data length </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ff600fd3d1cb623c0435c734e3f8121"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00034.html">icmp_echo_hdr</a>* icmp_echo_request::header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>a pointer to the header data </p>
 
 </div>
 </div>
@@ -171,8 +171,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00035.html">icmp_router_advertisement</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:54 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00035.html">icmp_echo_request</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

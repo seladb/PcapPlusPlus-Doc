@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IPcapDevice Class Reference</title>
+<title>PcapPlusPlus: IDnsResource Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,113 +106,125 @@ $(document).ready(function(){initNavTree('a00046.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00193.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="a00201.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IPcapDevice Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">IDnsResource Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00124_source.html">PcapDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00112_source.html">DnsLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IPcapDevice:</div>
+Inheritance diagram for IDnsResource:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00046.png" usemap="#IPcapDevice_map" alt=""/>
-  <map id="IPcapDevice_map" name="IPcapDevice_map">
-<area href="a00011.html" alt="DpdkDevice" shape="rect" coords="0,56,143,80"/>
-<area href="a00047.html" alt="IPcapFileDevice" shape="rect" coords="153,56,296,80"/>
-<area href="a00070.html" alt="PcapLiveDevice" shape="rect" coords="459,56,602,80"/>
-<area href="a00076.html" alt="PfRingDevice" shape="rect" coords="612,56,755,80"/>
-<area href="a00068.html" alt="PcapFileReaderDevice" shape="rect" coords="76,112,219,136"/>
-<area href="a00069.html" alt="PcapFileWriterDevice" shape="rect" coords="229,112,372,136"/>
-<area href="a00073.html" alt="PcapRemoteDevice" shape="rect" coords="382,112,525,136"/>
-<area href="a00102.html" alt="WinPcapLiveDevice" shape="rect" coords="535,112,678,136"/>
+  <img src="a00046.png" usemap="#IDnsResource_map" alt=""/>
+  <map id="IDnsResource_map" name="IDnsResource_map">
+<area href="a00009.html" alt="DnsQuery" shape="rect" coords="0,56,91,80"/>
+<area href="a00010.html" alt="DnsResource" shape="rect" coords="101,56,192,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aafa76f59ec543e8fe01d3534422afb9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> { <a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a">DnsQuery</a> = 0, 
+<a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74">DnsAnswer</a> = 1, 
+<a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8">DnsAuthority</a> = 2, 
+<a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b">DnsAdditional</a> = 3
+ }</td></tr>
+<tr class="separator:aafa76f59ec543e8fe01d3534422afb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a94a6922dff88e4bea4b3904a60e6f0e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a94a6922dff88e4bea4b3904a60e6f0e9">open</a> ()=0</td></tr>
-<tr class="separator:a94a6922dff88e4bea4b3904a60e6f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dd73f0310fb6e3924fabb4e2542ef0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#ad9dd73f0310fb6e3924fabb4e2542ef0">close</a> ()=0</td></tr>
-<tr class="separator:ad9dd73f0310fb6e3924fabb4e2542ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f54bb88194b3374e92ab6533138a0a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a9f54bb88194b3374e92ab6533138a0a7">isOpened</a> ()</td></tr>
-<tr class="separator:a9f54bb88194b3374e92ab6533138a0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfddac7872baed093efc622259f51fc6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#abfddac7872baed093efc622259f51fc6">getStatistics</a> (pcap_stat &amp;stats)=0</td></tr>
-<tr class="separator:abfddac7872baed093efc622259f51fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00018.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cef54e472e5d9fdd6f20472a2b5bcd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a5cef54e472e5d9fdd6f20472a2b5bcd2">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a5cef54e472e5d9fdd6f20472a2b5bcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93a1e4aec5be14434e7e3d93ca91b52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00112.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#af93a1e4aec5be14434e7e3d93ca91b52">getDnsType</a> ()</td></tr>
+<tr class="separator:af93a1e4aec5be14434e7e3d93ca91b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcba8f87af7a39601203b1b38c1d480"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#acfcba8f87af7a39601203b1b38c1d480">setDnsType</a> (<a class="el" href="a00112.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> newType)</td></tr>
+<tr class="separator:acfcba8f87af7a39601203b1b38c1d480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a9d7bb49fc00a0834a20a4d6d103fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00112.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#aa9a9d7bb49fc00a0834a20a4d6d103fd">getDnsClass</a> ()</td></tr>
+<tr class="separator:aa9a9d7bb49fc00a0834a20a4d6d103fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f600292495de7b4a266dbfee052452c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a0f600292495de7b4a266dbfee052452c">setDnsClass</a> (<a class="el" href="a00112.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> newClass)</td></tr>
+<tr class="separator:a0f600292495de7b4a266dbfee052452c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65f16ee6f5f8c28c906cf76b18673a6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#aa65f16ee6f5f8c28c906cf76b18673a6">getName</a> ()</td></tr>
+<tr class="separator:aa65f16ee6f5f8c28c906cf76b18673a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0395cbf5f88a6fe001d406309440aa9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a0395cbf5f88a6fe001d406309440aa9d">setName</a> (const std::string &amp;newName)</td></tr>
+<tr class="separator:a0395cbf5f88a6fe001d406309440aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f5ab8bd3891faa476822bf88fb3832"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#ac6f5ab8bd3891faa476822bf88fb3832">getSize</a> ()=0</td></tr>
+<tr class="separator:ac6f5ab8bd3891faa476822bf88fb3832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d67fb0330bdc579c2b0e4d3ceb50bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a16d67fb0330bdc579c2b0e4d3ceb50bb">getType</a> ()=0</td></tr>
+<tr class="separator:a16d67fb0330bdc579c2b0e4d3ceb50bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a729a4979969e1739683cc47c87281a66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a729a4979969e1739683cc47c87281a66"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsLayer</b></td></tr>
+<tr class="separator:a729a4979969e1739683cc47c87281a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class representing all possible packet capturing devices: files, libPcap, WinPcap, RemoteCapture, PF_RING, etc. This class cannot obviously be instantiated </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad9dd73f0310fb6e3924fabb4e2542ef0"></a>
+<div class="textblock"><p>An abstract class for representing all types of DNS records. This class gives access to all available record data such as DNS type, class, name, type of record, etc. The <a class="el" href="a00008.html">DnsLayer</a> holds an instance of (inherited type of) this class for each DNS record in the DNS packet </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IPcapDevice::close </td>
+          <td class="memname">enum <a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum for representing the 4 types of possible DNS records </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a"></a>DnsQuery&#160;</td><td class="fielddoc">
+<p>DNS query record </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74"></a>DnsAnswer&#160;</td><td class="fielddoc">
+<p>DNS answer record </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8"></a>DnsAuthority&#160;</td><td class="fielddoc">
+<p>DNS authority record </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b"></a>DnsAdditional&#160;</td><td class="fielddoc">
+<p>DNS additional record </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa9a9d7bb49fc00a0834a20a4d6d103fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00112.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> IDnsResource::getDnsClass </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Close the device </p>
-
-<p>Implemented in <a class="el" href="a00011.html#a025216cc18ed1232d212ab59a66eb016">DpdkDevice</a>, <a class="el" href="a00070.html#a4ee9fd9baee69b80f9b2d4327340f103">PcapLiveDevice</a>, <a class="el" href="a00076.html#a25f3a3d9544e16544dc919bda44b8556">PfRingDevice</a>, <a class="el" href="a00069.html#a534e2029cb4de050e6a55de39dc9aa9a">PcapFileWriterDevice</a>, and <a class="el" href="a00047.html#aeac5956145508b5f4883dbb688fdbe3b">IPcapFileDevice</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The DNS class of this record </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abfddac7872baed093efc622259f51fc6"></a>
+<a class="anchor" id="af93a1e4aec5be14434e7e3d93ca91b52"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IPcapDevice::getStatistics </td>
+          <td class="memname"><a class="el" href="a00112.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> IDnsResource::getDnsType </td>
           <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get statistics from device:</p><ul>
-<li>pcap_stat::ps_recv: number of packets received</li>
-<li>pcap_stat::ps_drop: number of packets dropped</li>
-<li>pcap_stat::ps_ifdorp: number of packets dropped by interface <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
-</ul>
-
-<p>Implemented in <a class="el" href="a00011.html#a51b9dfcbbfffe3eb4b48d50bd13b845b">DpdkDevice</a>, <a class="el" href="a00070.html#a89dac2e4560b2fcc31db2dd71aebaf03">PcapLiveDevice</a>, <a class="el" href="a00076.html#a748161ecb155fe4079bdde3c5a826ea6">PfRingDevice</a>, <a class="el" href="a00069.html#ac0c2c246a4447cc48ebae8f48f69d81d">PcapFileWriterDevice</a>, <a class="el" href="a00073.html#a8d10ffda65b9a4ba61d0193cf6b1872d">PcapRemoteDevice</a>, and <a class="el" href="a00068.html#a831193e30603e66291dfaa9b3ab22b63">PcapFileReaderDevice</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The DNS type of this record </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a9f54bb88194b3374e92ab6533138a0a7"></a>
+<a class="anchor" id="aa65f16ee6f5f8c28c906cf76b18673a6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -220,7 +232,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool IPcapDevice::isOpened </td>
+          <td class="memname">std::string IDnsResource::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -232,11 +244,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of this record </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a94a6922dff88e4bea4b3904a60e6f0e9"></a>
+<a class="anchor" id="ac6f5ab8bd3891faa476822bf88fb3832"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -244,7 +256,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool IPcapDevice::open </td>
+          <td class="memname">virtual size_t IDnsResource::getSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -256,55 +268,101 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Open the device </p><dl class="section return"><dt>Returns</dt><dd>True if device was opened successfully, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The total size in bytes of this record </dd></dl>
 
-<p>Implemented in <a class="el" href="a00011.html#a97d19bcb492eacbd9a581b01ce05fcbc">DpdkDevice</a>, <a class="el" href="a00070.html#a95f7d0dcd5b00758e64e8af68d6d1e50">PcapLiveDevice</a>, <a class="el" href="a00076.html#aa64effebebd1c51fd6859b65d8925fb2">PfRingDevice</a>, <a class="el" href="a00069.html#a8053b6b8abafd7de893fce117b8d2413">PcapFileWriterDevice</a>, <a class="el" href="a00073.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced">PcapRemoteDevice</a>, and <a class="el" href="a00068.html#aedd7cf41e07cd259d49fa6a20455b7f9">PcapFileReaderDevice</a>.</p>
+<p>Implemented in <a class="el" href="a00010.html#a5d25b471ec10385b9351422d7b1819e7">DnsResource</a>, and <a class="el" href="a00009.html#ac7820ded83852f957d4a4420bab775fd">DnsQuery</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac8167b330a4ee85ab759facd0d4989bd"></a>
+<a class="anchor" id="a16d67fb0330bdc579c2b0e4d3ceb50bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> IDnsResource::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The type of this record (query, answer, authority, additional) </dd></dl>
+
+<p>Implemented in <a class="el" href="a00010.html#aa3a335cec6e57cb8e00b512226fd42b6">DnsResource</a>, and <a class="el" href="a00009.html#abad36ff180a509f53736452b3a661aa9">DnsQuery</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f600292495de7b4a266dbfee052452c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool IPcapDevice::setFilter </td>
+          <td class="memname">void IDnsResource::setDnsClass </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00018.html">GeneralFilter</a> &amp;&#160;</td>
-          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00112.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
+          <td class="paramname"><em>newClass</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set DNS class for this record </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to be set in PcapPlusPlus' <a class="el" href="a00018.html">GeneralFilter</a> format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newClass</td><td>The class to set </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5cef54e472e5d9fdd6f20472a2b5bcd2"></a>
+<a class="anchor" id="acfcba8f87af7a39601203b1b38c1d480"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool IPcapDevice::setFilter </td>
+          <td class="memname">void IDnsResource::setDnsType </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00112.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
+          <td class="paramname"><em>newType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set DNS type for this record </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter to be set in Berkeley Packet Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newType</td><td>The type to set </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0395cbf5f88a6fe001d406309440aa9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IDnsResource::setName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>newName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the name of this record. Note the new name can be shorter or longer of the old name, so this method can cause the packet to be shorten or extended </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>The name to set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -313,8 +371,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00046.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00046.html">IDnsResource</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

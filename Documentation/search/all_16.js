@@ -1,14 +1,5 @@
 var searchData=
 [
-  ['_7edpdkworkerthread',['~DpdkWorkerThread',['../a00014.html#afc2bb8d873a19ff3c88ed5d7a5901883',1,'DpdkWorkerThread']]],
-  ['_7egeneralfilter',['~GeneralFilter',['../a00018.html#ae8d63f148f20cfcfe9878bbb4391966c',1,'GeneralFilter']]],
-  ['_7elayer',['~Layer',['../a00056.html#a2bac093f2a650095a5551fc455d10dc5',1,'Layer']]],
-  ['_7embufrawpacket',['~MBufRawPacket',['../a00061.html#a1fde934861efc316b3f69213ecdf04d3',1,'MBufRawPacket']]],
-  ['_7epacket',['~Packet',['../a00066.html#a69d431d5730177a1bf6e1f8bbbbb6066',1,'Packet']]],
-  ['_7epcapfilereaderdevice',['~PcapFileReaderDevice',['../a00068.html#a1bfe14c03e6e4ba01ada0e6b0bb765b7',1,'PcapFileReaderDevice']]],
-  ['_7epcapfilewriterdevice',['~PcapFileWriterDevice',['../a00069.html#a491876c2591081b58313da654a704f8d',1,'PcapFileWriterDevice']]],
-  ['_7epcaplivedevice',['~PcapLiveDevice',['../a00070.html#ad48b57cb49c1384ce3730d8e295e66fd',1,'PcapLiveDevice']]],
-  ['_7epfringdevice',['~PfRingDevice',['../a00076.html#af5a275b7945d22ac78f062bdaed29738',1,'PfRingDevice']]],
-  ['_7epointervector',['~PointerVector',['../a00078.html#a5fd5c0d94cdb693be9a8bb5c2b3e305c',1,'PointerVector']]],
-  ['_7erawpacket',['~RawPacket',['../a00087.html#afa363311e6a8c5e061ad30a814c60301',1,'RawPacket']]]
+  ['zero',['Zero',['../a00055.html#a29833df4aff7a34168268bfb739ef759',1,'IPv4Address::Zero()'],['../a00059.html#ac9b78400c6dd8dd7a7d96339bb46f916',1,'IPv6Address::Zero()'],['../a00064.html#a21e6f0508b2296b0a68dbfc6f3f58999',1,'MacAddress::Zero()'],['../a00007.html#a377d0d6f64514d70e3d56c1a8f7d3750',1,'dnshdr::zero()']]],
+  ['zerodotnine',['ZeroDotNine',['../a00117.html#ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac',1,'HttpLayer.h']]]
 ];

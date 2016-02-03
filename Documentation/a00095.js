@@ -1,6 +1,5 @@
 var a00095 =
 [
-    [ "TcpWindowSizeFilter", "a00095.html#acc9357f2e1334c76c3d7f4080dd90565", null ],
-    [ "parseToString", "a00095.html#a7d92c9daba6ce4377d0a205cbfd501b5", null ],
-    [ "setWindowSize", "a00095.html#a7e660d846be42bbe1c84fe802a9cb1a5", null ]
+    [ "buffer", "a00095.html#ab9b62dc703c8ca44c28a24b80ba7c23e", null ],
+    [ "len", "a00095.html#a378572e46319cfe0acbdb221937861ba", null ]
 ];

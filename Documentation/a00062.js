@@ -1,17 +1,10 @@
 var a00062 =
 [
-    [ "MplsLayer", "a00062.html#a7c1242fda80832940c725ead78718ccb", null ],
-    [ "MplsLayer", "a00062.html#aef5274a3dbf3b031909fe5a1aad0e4ae", null ],
-    [ "computeCalculateFields", "a00062.html#aa692c5176c8a423ccc3aaf1e8ff73dde", null ],
-    [ "getExperimentalUseValue", "a00062.html#abadc1a5849e02284f38e454996535b09", null ],
-    [ "getHeaderLen", "a00062.html#a0763de414a9b6152a7a7117981eb3195", null ],
-    [ "getMplsLabel", "a00062.html#a97237483b6c499bb71a59f0ccd44cb52", null ],
-    [ "getTTL", "a00062.html#a1f829b0f345c91b4d0e8a782243eeb40", null ],
-    [ "isBottomOfStack", "a00062.html#ae6e316a4e2569b396383daf5309c2dff", null ],
-    [ "parseNextLayer", "a00062.html#a995679f0eaa5914e004b3104678f31dc", null ],
-    [ "setBottomOfStack", "a00062.html#a69c55d61c88f514f241e88161606434a", null ],
-    [ "setExperimentalUseValue", "a00062.html#a25b18d4245324b4f4f61c793fd0a5546", null ],
-    [ "setMplsLabel", "a00062.html#a5299391966d2c40e7c270a97e123de08", null ],
-    [ "setTTL", "a00062.html#a6af98621c1057a6b37a6e4bb4bc399ad", null ],
-    [ "toString", "a00062.html#af1f34bcc4170ae4df03f04072ec84b44", null ]
+    [ "LinkDuplex", "a00062.html#a4dc6a3d2ba99ca851fca21ca81d03ece", [
+      [ "FULL_DUPLEX", "a00062.html#a4dc6a3d2ba99ca851fca21ca81d03eceafb5ede7b21bfcdb233768926dc4657ed", null ],
+      [ "HALF_DUPLEX", "a00062.html#a4dc6a3d2ba99ca851fca21ca81d03ecea16059d8568e109fb41180871d6b68e2a", null ]
+    ] ],
+    [ "linkDuplex", "a00062.html#a2fe00365f2bb962a4caabc710fd9ff3d", null ],
+    [ "linkSpeedMbps", "a00062.html#a4c400cc354ff9149b6354e1bb877f3aa", null ],
+    [ "linkUp", "a00062.html#a42ef9fde494269d3f672fc01799416a1", null ]
 ];

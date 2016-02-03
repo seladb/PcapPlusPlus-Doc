@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['zero',['Zero',['../a00050.html#a29833df4aff7a34168268bfb739ef759',1,'IPv4Address::Zero()'],['../a00054.html#ac9b78400c6dd8dd7a7d96339bb46f916',1,'IPv6Address::Zero()'],['../a00059.html#a21e6f0508b2296b0a68dbfc6f3f58999',1,'MacAddress::Zero()'],['../a00007.html#a377d0d6f64514d70e3d56c1a8f7d3750',1,'dnshdr::zero()']]],
-  ['zerodotnine',['ZeroDotNine',['../a00109.html#ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac',1,'HttpLayer.h']]]
+  ['windowsize',['windowSize',['../a00099.html#a8a3f4cb9892c601cdc16f0db15cb1cf9',1,'tcphdr']]],
+  ['winpcapdevice',['WinPcapDevice',['../a00075.html#a201c04fe21184602ce48fb799b9bd7d7aa09f95e4cf5b79cce8a5551e760ca204',1,'PcapLiveDevice']]],
+  ['winpcaplivedevice',['WinPcapLiveDevice',['../a00109.html',1,'']]],
+  ['winpcaplivedevice_2eh',['WinPcapLiveDevice.h',['../a00150.html',1,'']]],
+  ['writedpdklogtofile',['writeDpdkLogToFile',['../a00013.html#a3e2465fbe487bb033646774e8f701cee',1,'DpdkDeviceList']]],
+  ['writepacket',['writePacket',['../a00074.html#a6263c0850be603c60b8ba057d879a593',1,'PcapFileWriterDevice']]],
+  ['writepackets',['writePackets',['../a00074.html#a472db9de9ac4f9f440f752385c0436e6',1,'PcapFileWriterDevice']]]
 ];

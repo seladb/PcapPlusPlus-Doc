@@ -1,22 +1,11 @@
 var a00023 =
 [
-    [ "HttpMethod", "a00023.html#a1b8a0c702576a3c150f7c650842420d9", [
-      [ "HttpGET", "a00023.html#a1b8a0c702576a3c150f7c650842420d9aad9f1595e6631a059349849c18fdc6de", null ],
-      [ "HttpHEAD", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a7fdb612dea0e4dfeb88cdc63fdac7ac9", null ],
-      [ "HttpPOST", "a00023.html#a1b8a0c702576a3c150f7c650842420d9aa42ff27148dee93551b8653616143059", null ],
-      [ "HttpPUT", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a23f8f2e8cda124673d9964bccb38247b", null ],
-      [ "HttpDELETE", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a9e6e83df24218dd0f9dc73056468c3f3", null ],
-      [ "HttpTRACE", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a0b296ffe42e6525e4444d2c8bab487c0", null ],
-      [ "HttpOPTIONS", "a00023.html#a1b8a0c702576a3c150f7c650842420d9aeb818c13f5129af90e12855c9c9dd154", null ],
-      [ "HttpCONNECT", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a9d44b5e3d57d63bc9ca68a9501a36336", null ],
-      [ "HttpPATCH", "a00023.html#a1b8a0c702576a3c150f7c650842420d9af385746be644e46f68eee936820504a2", null ],
-      [ "HttpMethodUnknown", "a00023.html#a1b8a0c702576a3c150f7c650842420d9a10d4b6991947cba24e580f9bdea2e812", null ]
-    ] ],
-    [ "HttpRequestLayer", "a00023.html#a082236b6d6c2da7a222331fcd6410dc3", null ],
-    [ "HttpRequestLayer", "a00023.html#a13b0419861baa3985b95663ae8f9bb2d", null ],
-    [ "HttpRequestLayer", "a00023.html#aca4e93356cb2bc6f95020d27c9fb0d62", null ],
-    [ "getFirstLine", "a00023.html#af9483a07320ddd70a22971cd41b07815", null ],
-    [ "getUrl", "a00023.html#ac3a15c95c373b2150b1febe3e5ef575b", null ],
-    [ "operator=", "a00023.html#ae072a18512fe933a3464d7a4015139a7", null ],
-    [ "toString", "a00023.html#a6df2333eeb8fbd55b8632cd74ce79355", null ]
+    [ "GREv1Layer", "a00023.html#ac121ad6d1c736f648fd0c4b4774d684b", null ],
+    [ "GREv1Layer", "a00023.html#ac3ee726e3c5cfa22b5cc416250999211", null ],
+    [ "computeCalculateFields", "a00023.html#a634128ae7464e94dfc21fa1b35b5f172", null ],
+    [ "getAcknowledgmentNum", "a00023.html#add0f65a4f15367de5ee3b43b087cb67e", null ],
+    [ "getGreHeader", "a00023.html#adfe615ff5f0574e6ed4dd81ec8937444", null ],
+    [ "setAcknowledgmentNum", "a00023.html#a42ee270199fa6e8d003b6af034233ed3", null ],
+    [ "toString", "a00023.html#afe14ac2aebc7ee9639c184789a136611", null ],
+    [ "unsetAcknowledgmentNum", "a00023.html#a710f8d758651efc3bae6dc86ef8cba77", null ]
 ];

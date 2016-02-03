@@ -1,14 +1,9 @@
 var a00049 =
 [
-    [ "fragmentOffset", "a00049.html#ac4456c60fa6bb4c96fddf8a75a98f256", null ],
-    [ "headerChecksum", "a00049.html#a6c50f2c9c0a31ce72d68ba3ed7bc0bcf", null ],
-    [ "internetHeaderLength", "a00049.html#a9d915fa9b82de8436a7d69c4e61ff1e9", null ],
-    [ "ipDst", "a00049.html#af8153baec72e1a9ef86769fce9e9f50b", null ],
-    [ "ipId", "a00049.html#af732b7a37b0757eee8296bcf2abeb2de", null ],
-    [ "ipSrc", "a00049.html#ac602adb3056c456c683115b75cdce139", null ],
-    [ "ipVersion", "a00049.html#ad5c64b12356b2825743b1944b6b3dd88", null ],
-    [ "protocol", "a00049.html#a2ea68d76d49f1a2f9d2f0d7d5e12d323", null ],
-    [ "timeToLive", "a00049.html#a0c43c9ad76543bdb23848cecc09b547e", null ],
-    [ "totalLength", "a00049.html#a7ef0e303262db11e95316591e39060e3", null ],
-    [ "typeOfService", "a00049.html#a2b7b4994c197bf0752c7fac58c56515c", null ]
+    [ "flowLabel", "a00049.html#a762b4f1d04aecd5ba1e56b727f429a55", null ],
+    [ "hopLimit", "a00049.html#a5fba5b3fff7592a63edff494b06c4cfd", null ],
+    [ "ipVersion", "a00049.html#abc8ebe089295de52b28f36f334b25d41", null ],
+    [ "nextHeader", "a00049.html#ad71ca13fffd4168105ad70968f3dfb9a", null ],
+    [ "payloadLength", "a00049.html#ae21ab8d7d283ccc67945b17a7c3eaea2", null ],
+    [ "trafficClass", "a00049.html#ab3e5707fe83ab95ab6990a63c2bcb9b0", null ]
 ];

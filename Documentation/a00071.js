@@ -1,10 +1,23 @@
 var a00071 =
 [
-    [ "getDnsServers", "a00071.html#a36a2359a127e74dca52608486cc10f51", null ],
-    [ "getPcapLiveDeviceByIp", "a00071.html#a390c2c0cd28d808021a3264f56b084de", null ],
-    [ "getPcapLiveDeviceByIp", "a00071.html#a0440ec517b35bc43fb5d31bc14ee529e", null ],
-    [ "getPcapLiveDeviceByIp", "a00071.html#aa331836b6dd34bc3ecae610c84db3769", null ],
-    [ "getPcapLiveDeviceByIp", "a00071.html#ade740e1e6614c536edfdd916535fb742", null ],
-    [ "getPcapLiveDeviceByName", "a00071.html#a5c88a995825c4a767dd8cf7d644b7f97", null ],
-    [ "getPcapLiveDevicesList", "a00071.html#ac680f08d3235cf99cdc9c404f8f02815", null ]
+    [ "Packet", "a00071.html#afd4ea74ad9e1a7603f4a35f9c80ead56", null ],
+    [ "Packet", "a00071.html#a39e45ecb72e05b1dcf07afd778aa9914", null ],
+    [ "Packet", "a00071.html#a1a13717504c74fcf8eff1139588d17b4", null ],
+    [ "~Packet", "a00071.html#a69d431d5730177a1bf6e1f8bbbbb6066", null ],
+    [ "Packet", "a00071.html#ae8d5dfea51fa7fe55e4705b176f326ec", null ],
+    [ "addLayer", "a00071.html#affb29cab28a3423b67d22a0cb3cc7e9d", null ],
+    [ "computeCalculateFields", "a00071.html#a2a757b793dfce9239223f9000551a945", null ],
+    [ "getFirstLayer", "a00071.html#a84fa4ce5311673d8d0eda8a3ccd1aa65", null ],
+    [ "getLastLayer", "a00071.html#a40618d2579ceb41ccfddd1aa511e3cb0", null ],
+    [ "getLayerOfType", "a00071.html#a4684bb0c74d36f713f485b0f54d11660", null ],
+    [ "getNextLayerOfType", "a00071.html#a097782fccb489b1dae9bb827cf9b3a75", null ],
+    [ "getRawPacket", "a00071.html#a8fec1d535b7f272793a44dc754934a56", null ],
+    [ "getRawPacketReadOnly", "a00071.html#a8d73113e41efb7f2146e9058567d9827", null ],
+    [ "insertLayer", "a00071.html#ad786f32e36e360172b9ededab89a182c", null ],
+    [ "isPacketOfType", "a00071.html#a22bb9f62a67a053264fc81358ed9f22c", null ],
+    [ "operator=", "a00071.html#a91a6b0c6ea561b9726597468acac252d", null ],
+    [ "printToString", "a00071.html#ae1aaa31d9965585e603a348cfe4bc9aa", null ],
+    [ "printToStringList", "a00071.html#a56bf1670aa1ab99dca9fda49ec2e8283", null ],
+    [ "removeLayer", "a00071.html#adf83da292024e1ef513213a6a380775d", null ],
+    [ "setRawPacket", "a00071.html#a8f2b2ceea57492d2ab90eea55a48abe4", null ]
 ];

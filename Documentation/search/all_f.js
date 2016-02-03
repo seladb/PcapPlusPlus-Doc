@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['rawpacket',['RawPacket',['../a00087.html',1,'RawPacket'],['../a00087.html#abd3f1c07c2d7a85bbcfe3994dd1161e6',1,'RawPacket::RawPacket(const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor)'],['../a00087.html#a89cd28744cc38377744b685a03a3caaf',1,'RawPacket::RawPacket()'],['../a00087.html#ad75d6d55c4481bb828c1a6153622f084',1,'RawPacket::RawPacket(const RawPacket &amp;other)']]],
-  ['rawpacket_2eh',['RawPacket.h',['../a00137.html',1,'']]],
-  ['rawpacketvector',['RawPacketVector',['../a00124.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]],
-  ['reallocatedata',['reallocateData',['../a00061.html#acb2e61a48aa187d5620f0ca646842744',1,'MBufRawPacket::reallocateData()'],['../a00087.html#a7a71a1178b795515aeee0192c8635699',1,'RawPacket::reallocateData()']]],
-  ['receivedescriptorsnumber',['receiveDescriptorsNumber',['../a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb',1,'DpdkDevice::DpdkDeviceConfiguration']]],
-  ['receivepackets',['receivePackets',['../a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3',1,'DpdkDevice::receivePackets(RawPacketVector &amp;rawPacketsArr, uint16_t rxQueueId)'],['../a00011.html#abb2b74735db10cd91cf322f4a0117788',1,'DpdkDevice::receivePackets(MBufRawPacket **rawPacketsArr, int &amp;rawPacketArrLength, uint16_t rxQueueId)'],['../a00011.html#ac1bc2c9fb2234e994911cfbf7efa4a42',1,'DpdkDevice::receivePackets(Packet **packetsArr, int &amp;packetsArrLength, uint16_t rxQueueId)']]],
-  ['receivetimestamp',['receiveTimestamp',['../a00038.html#a76a71564692bf4a69c8467c46678b838',1,'icmp_timestamp_request']]],
-  ['recursionavailable',['recursionAvailable',['../a00007.html#afdd8970906e4ddd3de59ff0215249375',1,'dnshdr']]],
-  ['recursiondesired',['recursionDesired',['../a00007.html#aa4e36152421d21e7c9a1138a058a628c',1,'dnshdr']]],
-  ['remotedevice',['RemoteDevice',['../a00070.html#a201c04fe21184602ce48fb799b9bd7d7a9fb6a9d0724e2c3698dbccd775bd66a2',1,'PcapLiveDevice']]],
-  ['remotedevicelistiterator',['RemoteDeviceListIterator',['../a00074.html#a5562d31261ff1b70e6ee166a2d512a16',1,'PcapRemoteDeviceList']]],
-  ['removeadditionalrecord',['removeAdditionalRecord',['../a00008.html#a350725623ef0316c4a316a63260c21d0',1,'DnsLayer::removeAdditionalRecord(const std::string &amp;additionalRecordNameToRemove, bool exactMatch)'],['../a00008.html#a3523a1f97bc25c21de4ecd8db54d1949',1,'DnsLayer::removeAdditionalRecord(DnsResource *additionalRecordToRemove)']]],
-  ['removealltags',['removeAllTags',['../a00082.html#a3b058ba0eda76d8d94fb72ce30660232',1,'PPPoEDiscoveryLayer']]],
-  ['removeanswer',['removeAnswer',['../a00008.html#a863450b650065c01d4274baa2eb4d7f4',1,'DnsLayer::removeAnswer(const std::string &amp;answerNameToRemove, bool exactMatch)'],['../a00008.html#a7c923c958a32b8d83cebecc247764ed1',1,'DnsLayer::removeAnswer(DnsResource *answerToRemove)']]],
-  ['removeauthority',['removeAuthority',['../a00008.html#a491a32b6a5a11b5c5037f7191761282a',1,'DnsLayer::removeAuthority(const std::string &amp;authorityNameToRemove, bool exactMatch)'],['../a00008.html#ac52205cf717ea02ae89ab17c6ca57493',1,'DnsLayer::removeAuthority(DnsResource *authorityToRemove)']]],
-  ['removedata',['removeData',['../a00061.html#a8b6bbf54f8461a4d9eaa805640cbc9a8',1,'MBufRawPacket::removeData()'],['../a00087.html#a7a5d8a17fb2b356416065fa4274c7f08',1,'RawPacket::removeData()']]],
-  ['removefield',['removeField',['../a00020.html#ae2ba3e006fd4866d346dda1d6d4cf3cb',1,'HttpMessage::removeField(HttpField *fieldToRemove)'],['../a00020.html#a1c2e229d3dd265ce63b77f531a3bc0a2',1,'HttpMessage::removeField(std::string fieldName)']]],
-  ['removefilter',['removeFilter',['../a00076.html#a226f7ccbf642bd9b9afca14b02e283d4',1,'PfRingDevice']]],
-  ['removelayer',['removeLayer',['../a00066.html#adf83da292024e1ef513213a6a380775d',1,'Packet']]],
-  ['removequery',['removeQuery',['../a00008.html#a7e764affe3b30dabb97ffd4ddb5d8b62',1,'DnsLayer::removeQuery(const std::string &amp;queryNameToRemove, bool exactMatch)'],['../a00008.html#a22efc366bb912266554d783d070a845b',1,'DnsLayer::removeQuery(DnsQuery *queryToRemove)']]],
-  ['removetag',['removeTag',['../a00082.html#a9e4b1844f957ebbbd513b514f70a879c',1,'PPPoEDiscoveryLayer']]],
-  ['resourcetype',['ResourceType',['../a00041.html#aafa76f59ec543e8fe01d3534422afb9f',1,'IDnsResource']]],
-  ['responsecode',['responseCode',['../a00007.html#ad290f5e82ffbb3651d4b37628b396e7c',1,'dnshdr']]],
-  ['roundrobin',['RoundRobin',['../a00076.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]],
-  ['routeraddress',['routerAddress',['../a00034.html#a2021159051fd93746277cfa8cfe02bae',1,'icmp_router_address_structure']]],
-  ['rstflag',['rstFlag',['../a00092.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]],
-  ['run',['run',['../a00014.html#ad5a334d6164a2b0a61a18914483af112',1,'DpdkWorkerThread']]]
+  ['queryorresponse',['queryOrResponse',['../a00007.html#a59de79a79f3903cd3e4a22b09da695f8',1,'dnshdr']]]
 ];

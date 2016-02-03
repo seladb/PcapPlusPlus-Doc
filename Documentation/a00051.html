@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IpV4IDFilter Class Reference</title>
+<title>PcapPlusPlus: IPcapDevice Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,44 +107,49 @@ $(document).ready(function(){initNavTree('a00051.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00198.html">List of all members</a>  </div>
+<a href="a00206.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IpV4IDFilter Class Reference</div>  </div>
+<div class="title">IPcapDevice Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00126_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00132_source.html">PcapDevice.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IpV4IDFilter:</div>
+Inheritance diagram for IPcapDevice:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00051.png" usemap="#IpV4IDFilter_map" alt=""/>
-  <map id="IpV4IDFilter_map" name="IpV4IDFilter_map">
-<area href="a00043.html" alt="IFilterWithOperator" shape="rect" coords="0,56,119,80"/>
-<area href="a00018.html" alt="GeneralFilter" shape="rect" coords="0,0,119,24"/>
+  <img src="a00051.png" usemap="#IPcapDevice_map" alt=""/>
+  <map id="IPcapDevice_map" name="IPcapDevice_map">
+<area href="a00011.html" alt="DpdkDevice" shape="rect" coords="0,56,143,80"/>
+<area href="a00052.html" alt="IPcapFileDevice" shape="rect" coords="153,56,296,80"/>
+<area href="a00075.html" alt="PcapLiveDevice" shape="rect" coords="459,56,602,80"/>
+<area href="a00081.html" alt="PfRingDevice" shape="rect" coords="612,56,755,80"/>
+<area href="a00073.html" alt="PcapFileReaderDevice" shape="rect" coords="76,112,219,136"/>
+<area href="a00074.html" alt="PcapFileWriterDevice" shape="rect" coords="229,112,372,136"/>
+<area href="a00078.html" alt="PcapRemoteDevice" shape="rect" coords="382,112,525,136"/>
+<area href="a00109.html" alt="WinPcapLiveDevice" shape="rect" coords="535,112,678,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b071d1365fc0877e9c49ddd6042f34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a2b071d1365fc0877e9c49ddd6042f34e">IpV4IDFilter</a> (uint16_t ipID, <a class="el" href="a00126.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a> op)</td></tr>
-<tr class="separator:a2b071d1365fc0877e9c49ddd6042f34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776f9707159fb12c953746ac872b665a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a776f9707159fb12c953746ac872b665a">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:a776f9707159fb12c953746ac872b665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2408b5c9ac8553bb8a6d7b1fce8f933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#aa2408b5c9ac8553bb8a6d7b1fce8f933">setIpID</a> (uint16_t ipID)</td></tr>
-<tr class="separator:aa2408b5c9ac8553bb8a6d7b1fce8f933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00043"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00043')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00043.html">IFilterWithOperator</a></td></tr>
-<tr class="memitem:a6e27cbccbfa49a086067613fc7ad75fd inherit pub_methods_a00043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html#a6e27cbccbfa49a086067613fc7ad75fd">setOperator</a> (<a class="el" href="a00126.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a> op)</td></tr>
-<tr class="separator:a6e27cbccbfa49a086067613fc7ad75fd inherit pub_methods_a00043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">GeneralFilter</a></td></tr>
-<tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a6922dff88e4bea4b3904a60e6f0e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a94a6922dff88e4bea4b3904a60e6f0e9">open</a> ()=0</td></tr>
+<tr class="separator:a94a6922dff88e4bea4b3904a60e6f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9dd73f0310fb6e3924fabb4e2542ef0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#ad9dd73f0310fb6e3924fabb4e2542ef0">close</a> ()=0</td></tr>
+<tr class="separator:ad9dd73f0310fb6e3924fabb4e2542ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f54bb88194b3374e92ab6533138a0a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a9f54bb88194b3374e92ab6533138a0a7">isOpened</a> ()</td></tr>
+<tr class="separator:a9f54bb88194b3374e92ab6533138a0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfddac7872baed093efc622259f51fc6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#abfddac7872baed093efc622259f51fc6">getStatistics</a> (pcap_stat &amp;stats)=0</td></tr>
+<tr class="separator:abfddac7872baed093efc622259f51fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8167b330a4ee85ab759facd0d4989bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#ac8167b330a4ee85ab759facd0d4989bd">setFilter</a> (<a class="el" href="a00018.html">GeneralFilter</a> &amp;filter)</td></tr>
+<tr class="separator:ac8167b330a4ee85ab759facd0d4989bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cef54e472e5d9fdd6f20472a2b5bcd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a5cef54e472e5d9fdd6f20472a2b5bcd2">setFilter</a> (std::string filterAsString)</td></tr>
+<tr class="separator:a5cef54e472e5d9fdd6f20472a2b5bcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering IPv4 traffic by IP ID field of the IPv4 protocol, For example: "filter only IPv4 traffic which IP ID is greater than 1234"<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00126.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2b071d1365fc0877e9c49ddd6042f34e"></a>
+<div class="textblock"><p>An abstract class representing all possible packet capturing devices: files, libPcap, WinPcap, RemoteCapture, PF_RING, etc. This class cannot obviously be instantiated </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad9dd73f0310fb6e3924fabb4e2542ef0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -152,73 +157,25 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IpV4IDFilter::IpV4IDFilter </td>
+          <td class="memname">virtual void IPcapDevice::close </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ipID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00126.html#af9e5fd8fd26fc252748d97ebd68ea6b1">FilterOperator</a>&#160;</td>
-          <td class="paramname"><em>op</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A constructor that gets the IP ID to filter and the operator and creates the filter out of them </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipID</td><td>The IP ID to filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to use (e.g "equal", "greater than", etc.) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a776f9707159fb12c953746ac872b665a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IpV4IDFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Close the device </p>
 
-<p>Implements <a class="el" href="a00018.html#a06daa42299619bacf929a1249a6594dc">GeneralFilter</a>.</p>
+<p>Implemented in <a class="el" href="a00011.html#a025216cc18ed1232d212ab59a66eb016">DpdkDevice</a>, <a class="el" href="a00075.html#a4ee9fd9baee69b80f9b2d4327340f103">PcapLiveDevice</a>, <a class="el" href="a00081.html#a25f3a3d9544e16544dc919bda44b8556">PfRingDevice</a>, <a class="el" href="a00074.html#a534e2029cb4de050e6a55de39dc9aa9a">PcapFileWriterDevice</a>, and <a class="el" href="a00052.html#aeac5956145508b5f4883dbb688fdbe3b">IPcapFileDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa2408b5c9ac8553bb8a6d7b1fce8f933"></a>
+<a class="anchor" id="abfddac7872baed093efc622259f51fc6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -226,10 +183,46 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void IpV4IDFilter::setIpID </td>
+          <td class="memname">virtual void IPcapDevice::getStatistics </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ipID</em></td><td>)</td>
+          <td class="paramtype">pcap_stat &amp;&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get statistics from device:</p><ul>
+<li>pcap_stat::ps_recv: number of packets received</li>
+<li>pcap_stat::ps_drop: number of packets dropped</li>
+<li>pcap_stat::ps_ifdorp: number of packets dropped by interface <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p>Implemented in <a class="el" href="a00011.html#a51b9dfcbbfffe3eb4b48d50bd13b845b">DpdkDevice</a>, <a class="el" href="a00075.html#a89dac2e4560b2fcc31db2dd71aebaf03">PcapLiveDevice</a>, <a class="el" href="a00081.html#a748161ecb155fe4079bdde3c5a826ea6">PfRingDevice</a>, <a class="el" href="a00074.html#ac0c2c246a4447cc48ebae8f48f69d81d">PcapFileWriterDevice</a>, <a class="el" href="a00078.html#a8d10ffda65b9a4ba61d0193cf6b1872d">PcapRemoteDevice</a>, and <a class="el" href="a00073.html#a831193e30603e66291dfaa9b3ab22b63">PcapFileReaderDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f54bb88194b3374e92ab6533138a0a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPcapDevice::isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -239,12 +232,79 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the IP ID to filter </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94a6922dff88e4bea4b3904a60e6f0e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IPcapDevice::open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Open the device </p><dl class="section return"><dt>Returns</dt><dd>True if device was opened successfully, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="a00011.html#a97d19bcb492eacbd9a581b01ce05fcbc">DpdkDevice</a>, <a class="el" href="a00075.html#a95f7d0dcd5b00758e64e8af68d6d1e50">PcapLiveDevice</a>, <a class="el" href="a00081.html#aa64effebebd1c51fd6859b65d8925fb2">PfRingDevice</a>, <a class="el" href="a00074.html#a8053b6b8abafd7de893fce117b8d2413">PcapFileWriterDevice</a>, <a class="el" href="a00078.html#a2168e1c6e841dd9a9a5dcb8f0bb66ced">PcapRemoteDevice</a>, and <a class="el" href="a00073.html#aedd7cf41e07cd259d49fa6a20455b7f9">PcapFileReaderDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8167b330a4ee85ab759facd0d4989bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPcapDevice::setFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00018.html">GeneralFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipID</td><td>The IP ID to filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to be set in PcapPlusPlus' <a class="el" href="a00018.html">GeneralFilter</a> format </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5cef54e472e5d9fdd6f20472a2b5bcd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPcapDevice::setFilter </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filterAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter to be set in Berkeley Packet Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -253,8 +313,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00051.html">IpV4IDFilter</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00051.html">IPcapDevice</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

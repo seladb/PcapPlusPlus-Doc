@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IDnsResource Class Reference</title>
+<title>PcapPlusPlus: icmp_router_advertisement_hdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,263 +106,79 @@ $(document).ready(function(){initNavTree('a00041.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00188.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00196.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IDnsResource Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">icmp_router_advertisement_hdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00105_source.html">DnsLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00118_source.html">IcmpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IDnsResource:</div>
+Inheritance diagram for icmp_router_advertisement_hdr:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00041.png" usemap="#IDnsResource_map" alt=""/>
-  <map id="IDnsResource_map" name="IDnsResource_map">
-<area href="a00009.html" alt="DnsQuery" shape="rect" coords="0,56,91,80"/>
-<area href="a00010.html" alt="DnsResource" shape="rect" coords="101,56,192,80"/>
+  <img src="a00041.png" usemap="#icmp_router_advertisement_hdr_map" alt=""/>
+  <map id="icmp_router_advertisement_hdr_map" name="icmp_router_advertisement_hdr_map">
+<area href="a00044.html" alt="icmphdr" shape="rect" coords="0,0,190,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aafa76f59ec543e8fe01d3534422afb9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> { <a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a">DnsQuery</a> = 0, 
-<a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74">DnsAnswer</a> = 1, 
-<a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8">DnsAuthority</a> = 2, 
-<a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b">DnsAdditional</a> = 3
- }</td></tr>
-<tr class="separator:aafa76f59ec543e8fe01d3534422afb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af93a1e4aec5be14434e7e3d93ca91b52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00105.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#af93a1e4aec5be14434e7e3d93ca91b52">getDnsType</a> ()</td></tr>
-<tr class="separator:af93a1e4aec5be14434e7e3d93ca91b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfcba8f87af7a39601203b1b38c1d480"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#acfcba8f87af7a39601203b1b38c1d480">setDnsType</a> (<a class="el" href="a00105.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> newType)</td></tr>
-<tr class="separator:acfcba8f87af7a39601203b1b38c1d480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a9d7bb49fc00a0834a20a4d6d103fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00105.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aa9a9d7bb49fc00a0834a20a4d6d103fd">getDnsClass</a> ()</td></tr>
-<tr class="separator:aa9a9d7bb49fc00a0834a20a4d6d103fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f600292495de7b4a266dbfee052452c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a0f600292495de7b4a266dbfee052452c">setDnsClass</a> (<a class="el" href="a00105.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> newClass)</td></tr>
-<tr class="separator:a0f600292495de7b4a266dbfee052452c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65f16ee6f5f8c28c906cf76b18673a6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aa65f16ee6f5f8c28c906cf76b18673a6">getName</a> ()</td></tr>
-<tr class="separator:aa65f16ee6f5f8c28c906cf76b18673a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0395cbf5f88a6fe001d406309440aa9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a0395cbf5f88a6fe001d406309440aa9d">setName</a> (const std::string &amp;newName)</td></tr>
-<tr class="separator:a0395cbf5f88a6fe001d406309440aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6f5ab8bd3891faa476822bf88fb3832"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#ac6f5ab8bd3891faa476822bf88fb3832">getSize</a> ()=0</td></tr>
-<tr class="separator:ac6f5ab8bd3891faa476822bf88fb3832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d67fb0330bdc579c2b0e4d3ceb50bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#a16d67fb0330bdc579c2b0e4d3ceb50bb">getType</a> ()=0</td></tr>
-<tr class="separator:a16d67fb0330bdc579c2b0e4d3ceb50bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a729a4979969e1739683cc47c87281a66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a729a4979969e1739683cc47c87281a66"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsLayer</b></td></tr>
-<tr class="separator:a729a4979969e1739683cc47c87281a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa8800122a2477ae21b9654a447605083"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aa8800122a2477ae21b9654a447605083">advertisementCount</a></td></tr>
+<tr class="separator:aa8800122a2477ae21b9654a447605083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff96af85769b6c28f56aa94b4d4e806d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#aff96af85769b6c28f56aa94b4d4e806d">addressEntrySize</a></td></tr>
+<tr class="separator:aff96af85769b6c28f56aa94b4d4e806d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288602ab55e106d22ed60cad431d9db"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html#ae288602ab55e106d22ed60cad431d9db">lifetime</a></td></tr>
+<tr class="separator:ae288602ab55e106d22ed60cad431d9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_a00044"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00044')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="a00044.html">icmphdr</a></td></tr>
+<tr class="memitem:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a70ae4477546c46f5d2ebb4d72e551223">type</a></td></tr>
+<tr class="separator:a70ae4477546c46f5d2ebb4d72e551223 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a95e15c8a254d6db2e2fab31b48b03433">code</a></td></tr>
+<tr class="separator:a95e15c8a254d6db2e2fab31b48b03433 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a646ca3a419713963a900cf7a966cf7ae">checksum</a></td></tr>
+<tr class="separator:a646ca3a419713963a900cf7a966cf7ae inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class for representing all types of DNS records. This class gives access to all available record data such as DNS type, class, name, type of record, etc. The <a class="el" href="a00008.html">DnsLayer</a> holds an instance of (inherited type of) this class for each DNS record in the DNS packet </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9f"></a>
+<div class="textblock"><p>ICMP router advertisement message structure </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aff96af85769b6c28f56aa94b4d4e806d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9f">IDnsResource::ResourceType</a></td>
+          <td class="memname">uint8_t icmp_router_advertisement_hdr::addressEntrySize</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum for representing the 4 types of possible DNS records </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a"></a>DnsQuery&#160;</td><td class="fielddoc">
-<p>DNS query record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74"></a>DnsAnswer&#160;</td><td class="fielddoc">
-<p>DNS answer record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8"></a>DnsAuthority&#160;</td><td class="fielddoc">
-<p>DNS authority record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b"></a>DnsAdditional&#160;</td><td class="fielddoc">
-<p>DNS additional record </p>
-</td></tr>
-</table>
+<p>the number of 32-bit words of information for each router address entry in the list. The value is normally set to 2 (router address + preference level) </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa9a9d7bb49fc00a0834a20a4d6d103fd"></a>
+<a class="anchor" id="aa8800122a2477ae21b9654a447605083"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00105.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a> IDnsResource::getDnsClass </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t icmp_router_advertisement_hdr::advertisementCount</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The DNS class of this record </dd></dl>
+<p>the number of router advertisements in this message. Each advertisement contains one router address/preference level pair </p>
 
 </div>
 </div>
-<a class="anchor" id="af93a1e4aec5be14434e7e3d93ca91b52"></a>
+<a class="anchor" id="ae288602ab55e106d22ed60cad431d9db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00105.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a> IDnsResource::getDnsType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t icmp_router_advertisement_hdr::lifetime</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The DNS type of this record </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa65f16ee6f5f8c28c906cf76b18673a6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string IDnsResource::getName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The name of this record </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac6f5ab8bd3891faa476822bf88fb3832"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual size_t IDnsResource::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The total size in bytes of this record </dd></dl>
-
-<p>Implemented in <a class="el" href="a00010.html#a5d25b471ec10385b9351422d7b1819e7">DnsResource</a>, and <a class="el" href="a00009.html#ac7820ded83852f957d4a4420bab775fd">DnsQuery</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a16d67fb0330bdc579c2b0e4d3ceb50bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00041.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> IDnsResource::getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The type of this record (query, answer, authority, additional) </dd></dl>
-
-<p>Implemented in <a class="el" href="a00010.html#aa3a335cec6e57cb8e00b512226fd42b6">DnsResource</a>, and <a class="el" href="a00009.html#abad36ff180a509f53736452b3a661aa9">DnsQuery</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0f600292495de7b4a266dbfee052452c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDnsResource::setDnsClass </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00105.html#a26e59922d152a198d8fd9e52c97d120b">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>newClass</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set DNS class for this record </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newClass</td><td>The class to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acfcba8f87af7a39601203b1b38c1d480"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDnsResource::setDnsType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00105.html#a1659b09e7b08e3332c69df201f0ef3ec">DnsType</a>&#160;</td>
-          <td class="paramname"><em>newType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set DNS type for this record </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newType</td><td>The type to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a0395cbf5f88a6fe001d406309440aa9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IDnsResource::setName </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>newName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the name of this record. Note the new name can be shorter or longer of the old name, so this method can cause the packet to be shorten or extended </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>The name to set </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>the maximum number of seconds that the router addresses in this list may be considered valid </p>
 
 </div>
 </div>
@@ -371,8 +187,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DnsLayer</b></td></t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00041.html">IDnsResource</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 15:20:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00041.html">icmp_router_advertisement_hdr</a></li>
+    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
