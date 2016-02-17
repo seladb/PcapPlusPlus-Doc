@@ -1,0 +1,250 @@
+<head>
+  <title>PcapPlusPlus</title>
+  <meta name="description" content="PcapPlusPlus website" />
+  <meta name="keywords" content="PcapPlusPlus, network, packet, crafting, parsing, protocol, lightweight, efficient, multi-platform, c++, pcap, libpcap, WinPcap, DPDK, PF_RING" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+            google.load('visualization', '1.0', {'packages':['corechart']});
+            google.setOnLoadCallback(draw_charts);
+            
+            function find_upper_bound(input) {
+                maximum = 0;
+                for(i = 0; i < input.length; ++i) {
+                    if(input[i][0] != "scapy" && input[i][1] > maximum) {
+                        maximum = input[i][1];
+                    }
+                }
+                return maximum * 1.05;
+            }
+            
+            function convert_to_seconds(input) {
+                for(i = 0; i < input.length; ++i) {
+                    input[i][1] = (input[i][1] / 1000);
+                }
+                return input;
+            }
+            
+            function draw_graphic(name, output_div, input) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Library');
+                data.addColumn('number', 'Seconds');
+                input.sort(
+                    function(a, b) {
+                        return a[1] > b[1];
+                    }
+                );
+                data.addRows(convert_to_seconds(input));
+
+                // Set chart options
+                var options = {
+                    'title' : name,
+                    'width' : 650,
+                    'height' : 450,
+					'left' : 0,
+					chartArea: {
+					    left : 0
+					},
+                    vAxis: { 
+                        viewWindowMode: 'explicit',
+                        viewWindow:{
+                            max:find_upper_bound(input),
+                            min:0
+                        }
+                    },
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById(output_div)
+                );
+                chart.draw(data, options);                
+            }
+
+            function draw_charts() {
+                draw_graphic('Graphic view', 'tcp_no_options', [['libcrafter', 21627],['PcapPlusPlus', 661],['libtins', 844],['libpcap', 208]]);
+                draw_graphic('Graphic view', 'tcp_with_options', [['libcrafter', 35142],['PcapPlusPlus', 869],['libtins', 1862],['libpcap', 252]]);
+                draw_graphic('Graphic view', 'dns', [['libcrafter', 23289],['PcapPlusPlus', 976],['libtins', 1109],['libpcap', 76]]);
+            }
+  </script>  
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Pcap<a href="#">PlusPlus</a></h1>
+        <!--div class="slogan">Cool slogan goes here!</div-->
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="Documentation/index.html">Documentation</a></li>
+          <li><a href="examples.html">Examples</a></li>
+		  <li class="current"><a href="benchmark.html">Benchmarks</a></li>
+		  <li><a href="dpdk-pf_ring.html">DPDK & PF_RING</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Project on GitHub</h3>
+		<p><a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></p>
+		</div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <h3>Download</h3>
+		<h4>Source code:</h4>
+        <p><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a>, <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a></p>
+		<h4>Latest release:</h4>
+		<p><a href="https://github.com/seladb/PcapPlusPlus/releases/tag/v16.02">February 2016 release (16.02)</a></p>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Support</h3>
+		  <h4>PcapPlusPlus Google group:</h4>
+          <p><a href="https://groups.google.com/d/forum/pcapplusplus-support">https://groups.google.com/d/forum/pcapplusplus-support</a></p>
+  		  <h4>Email:</h4>
+          <p><a href="mailto:pcapplusplus@gmail.com">pcapplusplus@gmail.com</a></p>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Benchmarks</h1>
+		<p>I used <a href="https://github.com/mfontanini/packet-capture-benchmarks">Matias Fontanini's packet-capture-benchmarks project</a> to compare the performance of PcapPlusPlus with other similar C++ libraries (libtins and libcrafter)</p>
+        <h2>Testing environment</h2>
+		<p>I ran all 3 benchmarks provided in packet-capture-benchmarks on the following environment:</p>
+		<ul>
+		  <li>Linux Ubuntu 12.04 32-bit running as a VirtualBox VM</li>
+		  <li>Compiler is GCC 4.6.3</li>
+		  <li>Host platform is a dual-core Intel Core i5 760 2.8GHz with 4GB RAM system running Windows 7 32-bit</li>
+		</ul>
+		<p>The benchmark application can be found in <a href="examples.html#benchmark">PcapPlusPlus examples</a></p>
+		<h2>Tested libraries</h2>
+		<p>I decided to compare PcapPlusPlus only to similar C++ libraries such as <a href="http://libtins.github.io/">libtins</a> and <a href="https://code.google.com/archive/p/libcrafter/">libcrafter</a>. That's because Python or Java libraries cannot compete with native code libraries in terms of performance. Tests results are as follows:</p>
+        <h2>Benchmark #1 - Interpretting TCP</h2>
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Library</th>
+		      <th align="right">Time taken(seconds)</th>
+		      <th align="right">Packets per second</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>libpcap</td>
+		      <td align="right">0.208</td>
+		      <td align="right">2403846</td>
+		    </tr>
+		    <tr>
+		      <td><strong>PcapPlusPlus</strong></td>
+		      <td align="right"><strong>0.661</strong></td>
+		      <td align="right"><strong>756429</strong></td>
+		    </tr>
+		    <tr>
+		      <td>libtins</td>
+		      <td align="right">0.844</td>
+		      <td align="right">592417</td>
+		    </tr>
+		    <tr>
+		      <td>libcrafter</td>
+		      <td align="right">21.627</td>
+		      <td align="right">23119</td>
+		    </tr>
+		  </tbody>
+        </table>
+		<div id="tcp_no_options"></div>
+        <hr>
+        <p>As you can see PcapPlusPlus is <strong>~27% faster</strong> than libtins and <strong>~x32 faster</strong> than libcrafter</p>
+		
+		<h2>Benchmark #2 - Interpretting TCP + TCP Options</h2>
+        <table>
+		  <thead>
+            <tr>
+              <th>Library</th>
+              <th align="right">Time taken(seconds)</th>
+              <th align="right">Packets per second</th>
+            </tr>
+          </thead>
+		  <tbody>
+            <tr>
+              <td>libpcap</td>
+              <td align="right">0.252</td>
+              <td align="right">1984126</td>
+            </tr>
+            <tr>
+              <td><strong>PcapPlusPlus</strong></td>
+              <td align="right"><strong>0.869</strong></td>
+              <td align="right"><strong>575373</strong></td>
+            </tr>
+            <tr>
+              <td>libtins</td>
+              <td align="right">1.862</td>
+              <td align="right">268528</td>
+            </tr>
+            <tr>
+              <td>libcrafter</td>
+              <td align="right">35.142</td>
+              <td align="right">14227</td>
+            </tr>
+          </tbody>
+		</table>
+		<div id="tcp_with_options"></div>
+		<hr>
+		<p>As you can see PcapPlusPlus is <strong>~x2 faster</strong> than libtins and <strong>~x40 faster</strong> than libcrafter</p>
+		
+		<h2>Benchmark #3 - Interpretting DNS</h2>
+        <table>
+          <thead>
+            <tr>
+            <th>Library</th>
+            <th align="right">Time taken(seconds)</th>
+            <th align="right">Packets per second</th>
+            </tr>
+          </thead>
+	      <tbody>
+            <tr>
+              <td>libpcap</td>
+              <td align="right">0.076</td>
+              <td align="right">6578947</td>
+            </tr>
+            <tr>
+              <td><strong>PcapPlusPlus</strong></td>
+              <td align="right"><strong>0.976</strong></td>
+              <td align="right"><strong>512295</strong></td>
+            </tr>
+            <tr>
+              <td>libtins</td>
+              <td align="right">1.109</td>
+              <td align="right">450856</td>
+            </tr>
+            <tr>
+              <td>libcrafter</td>
+              <td align="right">23.289</td>
+              <td align="right">21469</td>
+            </tr>
+          </tbody>
+        </table>
+		<div id="dns"></div>
+        <hr>
+        <p>As you can see PcapPlusPlus is <strong>~13% faster</strong> than libtins and <strong>~x24 faster</strong> than libcrafter</p>		
+      </div>
+    </div>
+    <div id="footer">
+      <p>PcapPlusPlus web-site | Template taken from <a href="http://www.html5webtemplates.co.uk/templates/simplestyle_7/index.html">HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
