@@ -1,16 +1,6 @@
 var a00100 =
 [
-    [ "TcpLayer", "a00100.html#ae3850a3c19cf04908b85e61b58e205e1", null ],
-    [ "TcpLayer", "a00100.html#a75fc30bde3207ab648e51ed22798c48c", null ],
-    [ "TcpLayer", "a00100.html#a9709376eedfc31327e214f8ce73f1d32", null ],
-    [ "TcpLayer", "a00100.html#a04734fd0ba4cfdffd10ec9ca535467ad", null ],
-    [ "calculateChecksum", "a00100.html#ac9f22d245631b261c0d2fc72cbfa5ad9", null ],
-    [ "computeCalculateFields", "a00100.html#ac651dc5dee18295894f69922c7997df0", null ],
-    [ "getHeaderLen", "a00100.html#aaea30d75a26555048d8089e9de3c51e2", null ],
-    [ "getTcpHeader", "a00100.html#ae7055966bc059ef64ad6105e96d45eb3", null ],
-    [ "getTcpOptionData", "a00100.html#ade8e35b6e5ef7ca15c411cf0e06a5a93", null ],
-    [ "getTcpOptionsCount", "a00100.html#affbf3461de826d95fd76af38f4646b83", null ],
-    [ "operator=", "a00100.html#a35e847982a29c79f82dad46a72194328", null ],
-    [ "parseNextLayer", "a00100.html#a5142a7faf0be900aa5ea38c50a4c8b80", null ],
-    [ "toString", "a00100.html#a3a0bef30fc37635d331e73cc720f5351", null ]
+    [ "length", "a00100.html#a9903e842bccbbf3daea3ff58c51fc3b0", null ],
+    [ "recordType", "a00100.html#a80d7398ce7dbbec674129127d71333c3", null ],
+    [ "recordVersion", "a00100.html#a4cd4895503704e06ca6d67bfa584634b", null ]
 ];

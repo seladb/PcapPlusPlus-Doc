@@ -1,12 +1,15 @@
 var searchData=
 [
+  ['random',['random',['../a00098.html#a0956ebf65860bcce11b8045eb7587c73',1,'ssl_tls_client_server_hello']]],
   ['rawpacket',['RawPacket',['../a00094.html',1,'RawPacket'],['../a00094.html#abd3f1c07c2d7a85bbcfe3994dd1161e6',1,'RawPacket::RawPacket(const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor)'],['../a00094.html#a89cd28744cc38377744b685a03a3caaf',1,'RawPacket::RawPacket()'],['../a00094.html#ad75d6d55c4481bb828c1a6153622f084',1,'RawPacket::RawPacket(const RawPacket &amp;other)']]],
-  ['rawpacket_2eh',['RawPacket.h',['../a00145.html',1,'']]],
-  ['rawpacketvector',['RawPacketVector',['../a00132.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]],
+  ['rawpacket_2eh',['RawPacket.h',['../a00173.html',1,'']]],
+  ['rawpacketvector',['RawPacketVector',['../a00160.html#aa1427ba2ba13978d3b19b3fc7f25c15d',1,'PcapDevice.h']]],
   ['reallocatedata',['reallocateData',['../a00066.html#acb2e61a48aa187d5620f0ca646842744',1,'MBufRawPacket::reallocateData()'],['../a00094.html#a7a71a1178b795515aeee0192c8635699',1,'RawPacket::reallocateData()']]],
   ['receivedescriptorsnumber',['receiveDescriptorsNumber',['../a00012.html#a2f1f9d17d8e2f5d939763e834cda76fb',1,'DpdkDevice::DpdkDeviceConfiguration']]],
   ['receivepackets',['receivePackets',['../a00011.html#ae97844b1142bef140f4e3a60e4f2c0e3',1,'DpdkDevice::receivePackets(RawPacketVector &amp;rawPacketsArr, uint16_t rxQueueId)'],['../a00011.html#abb2b74735db10cd91cf322f4a0117788',1,'DpdkDevice::receivePackets(MBufRawPacket **rawPacketsArr, int &amp;rawPacketArrLength, uint16_t rxQueueId)'],['../a00011.html#ac1bc2c9fb2234e994911cfbf7efa4a42',1,'DpdkDevice::receivePackets(Packet **packetsArr, int &amp;packetsArrLength, uint16_t rxQueueId)']]],
   ['receivetimestamp',['receiveTimestamp',['../a00043.html#a76a71564692bf4a69c8467c46678b838',1,'icmp_timestamp_request']]],
+  ['recordtype',['recordType',['../a00100.html#a80d7398ce7dbbec674129127d71333c3',1,'ssl_tls_record_layer']]],
+  ['recordversion',['recordVersion',['../a00100.html#a4cd4895503704e06ca6d67bfa584634b',1,'ssl_tls_record_layer']]],
   ['recursionavailable',['recursionAvailable',['../a00007.html#afdd8970906e4ddd3de59ff0215249375',1,'dnshdr']]],
   ['recursioncontrol',['recursionControl',['../a00020.html#a0517b804716eb287310867d77e78abbc',1,'gre_basic_header']]],
   ['recursiondesired',['recursionDesired',['../a00007.html#aa4e36152421d21e7c9a1138a058a628c',1,'dnshdr']]],
@@ -27,6 +30,6 @@ var searchData=
   ['roundrobin',['RoundRobin',['../a00081.html#a859e6207223f202a35261338793c0211a542a2d9df178dd0e8113f733d9a14da4',1,'PfRingDevice']]],
   ['routeraddress',['routerAddress',['../a00039.html#a2021159051fd93746277cfa8cfe02bae',1,'icmp_router_address_structure']]],
   ['routingbit',['routingBit',['../a00020.html#abaedc575af53152ae79ac557568f2a49',1,'gre_basic_header']]],
-  ['rstflag',['rstFlag',['../a00099.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]],
+  ['rstflag',['rstFlag',['../a00127.html#a9c0c0af397c33a546ac0c557fe753883',1,'tcphdr']]],
   ['run',['run',['../a00014.html#ad5a334d6164a2b0a61a18914483af112',1,'DpdkWorkerThread']]]
 ];

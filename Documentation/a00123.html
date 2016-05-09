@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Layer.h File Reference</title>
+<title>PcapPlusPlus: SSLx509Certificate Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,8 +69,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,30 +106,157 @@ $(document).ready(function(){initNavTree('a00123.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00308.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Layer.h File Reference</div>  </div>
+<div class="title">SSLx509Certificate Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00144_source.html">ProtocolType.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
-</div>
-<p><a href="a00123_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00175_source.html">SSLHandshake.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html">Layer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acea0536e479a4201c0391cc95a9611e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00123.html#acea0536e479a4201c0391cc95a9611e0">SSLx509Certificate</a> (uint8_t *data, size_t dataLen, bool <a class="el" href="a00123.html#a01342f2a37cf0ffda5950ee16baaf02c">allDataExists</a>)</td></tr>
+<tr class="separator:acea0536e479a4201c0391cc95a9611e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e030d37f69db6ad0589aeba2bd0fa76"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00123.html#a8e030d37f69db6ad0589aeba2bd0fa76">getData</a> ()</td></tr>
+<tr class="separator:a8e030d37f69db6ad0589aeba2bd0fa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348fd9a7509eabef9c54e6279bbeb008"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00123.html#a348fd9a7509eabef9c54e6279bbeb008">getDataLength</a> ()</td></tr>
+<tr class="separator:a348fd9a7509eabef9c54e6279bbeb008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01342f2a37cf0ffda5950ee16baaf02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00123.html#a01342f2a37cf0ffda5950ee16baaf02c">allDataExists</a> ()</td></tr>
+<tr class="separator:a01342f2a37cf0ffda5950ee16baaf02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a x509v3 certificate. the <a class="el" href="a00103.html">SSLCertificateMessage</a> class returns an instance of this class as the certificate. Currently this class doesn't do much as it doesn't parse the certificate. It only acts as container to the raw data and returns general info as data as raw, length, etc. In the future I may add full parsing of the certificate </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acea0536e479a4201c0391cc95a9611e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSLx509Certificate::SSLx509Certificate </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allDataExists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>C'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data of the certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length in bytes of the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allDataExists</td><td>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This field indicates whether the raw data contains all ceritificate data of just a part of it </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a01342f2a37cf0ffda5950ee16baaf02c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLx509Certificate::allDataExists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This method provides an indication whether all certificate data exists or only part of it </p><dl class="section return"><dt>Returns</dt><dd>True if this data contains all certificate data, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e030d37f69db6ad0589aeba2bd0fa76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* SSLx509Certificate::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the raw data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a348fd9a7509eabef9c54e6279bbeb008"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t SSLx509Certificate::getDataLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Raw data length </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00123.html">Layer.h</a></li>
-    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00123.html">SSLx509Certificate</a></li>
+    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

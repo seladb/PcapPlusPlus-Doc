@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('a00024.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="a00179.html">List of all members</a>  </div>
+<a href="a00210.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HttpField Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00117_source.html">HttpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00145_source.html">HttpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,7 +140,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMessage</b></td>
 <tr class="separator:aa96189b2404a4d80006a66d52aa56298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for each HTTP header field, e.g "Host", "Cookie", "Content-Length", etc. Each field contains a name (e.g "Host") and a value (e.g "www.wikipedia.org"). The user can get and set both of them through dedicated methods. The separator between HTTP header fields is either CRLF ("\r\n\") or LF ("\n") in more rare cases, which means every <a class="el" href="a00024.html">HttpField</a> instance is responsible for wrapping and parsing a HTTP header field from the previous CRLF (not inclusive) until the next CRLF/LF (inclusive) A special case is with the end of an HTTP header, meaning 2 consecutive CRLFs ("\r\n\r\n") or consecutive LFs ("\n\n"). PcapPlusPlus treats the first CRLF/LF as part of the last field in the header, and the second CRLF is an <a class="el" href="a00024.html">HttpField</a> instance of its own which name and values are an empty string ("") or <a class="el" href="a00117.html#a57301f5681dddf163b56dad67240ba88">END_OF_HTTP_HEADER</a> </p>
+<div class="textblock"><p>A wrapper class for each HTTP header field, e.g "Host", "Cookie", "Content-Length", etc. Each field contains a name (e.g "Host") and a value (e.g "www.wikipedia.org"). The user can get and set both of them through dedicated methods. The separator between HTTP header fields is either CRLF ("\r\n\") or LF ("\n") in more rare cases, which means every <a class="el" href="a00024.html">HttpField</a> instance is responsible for wrapping and parsing a HTTP header field from the previous CRLF (not inclusive) until the next CRLF/LF (inclusive) A special case is with the end of an HTTP header, meaning 2 consecutive CRLFs ("\r\n\r\n") or consecutive LFs ("\n\n"). PcapPlusPlus treats the first CRLF/LF as part of the last field in the header, and the second CRLF is an <a class="el" href="a00024.html">HttpField</a> instance of its own which name and values are an empty string ("") or <a class="el" href="a00145.html#a57301f5681dddf163b56dad67240ba88">END_OF_HTTP_HEADER</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a254bc5ababe8fff328ce5b6af9ba4a05"></a>
 <div class="memitem">
@@ -306,7 +306,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMessage</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00024.html">HttpField</a></li>
-    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

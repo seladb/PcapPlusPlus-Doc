@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('a00003.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00157.html">List of all members</a>  </div>
+<a href="a00188.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ArpFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00134_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00162_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ArpFilter:</div>
 <div class="dyncontent">
@@ -126,11 +126,11 @@ Inheritance diagram for ArpFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aefa93dbbd151d739d650f988353d462e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#aefa93dbbd151d739d650f988353d462e">ArpFilter</a> (<a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode)</td></tr>
+<tr class="memitem:aefa93dbbd151d739d650f988353d462e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#aefa93dbbd151d739d650f988353d462e">ArpFilter</a> (<a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode)</td></tr>
 <tr class="separator:aefa93dbbd151d739d650f988353d462e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ebb1b5d6ec9f265e81a82c98c841a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a5ebb1b5d6ec9f265e81a82c98c841a16">parseToString</a> (std::string &amp;result)</td></tr>
 <tr class="separator:a5ebb1b5d6ec9f265e81a82c98c841a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb82dbe987203612ded988d8c6ec3222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#abb82dbe987203612ded988d8c6ec3222">setOpCode</a> (<a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode)</td></tr>
+<tr class="memitem:abb82dbe987203612ded988d8c6ec3222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#abb82dbe987203612ded988d8c6ec3222">setOpCode</a> (<a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a> opCode)</td></tr>
 <tr class="separator:abb82dbe987203612ded988d8c6ec3222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">GeneralFilter</a></td></tr>
 <tr class="memitem:ae8d63f148f20cfcfe9878bbb4391966c inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#ae8d63f148f20cfcfe9878bbb4391966c">~GeneralFilter</a> ()</td></tr>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for filtering ARP packets according the ARP opcode. When using this filter only ARP packets with the relevant opcode will be received <br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00134.html">PcapFilter.h</a> </p>
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00162.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aefa93dbbd151d739d650f988353d462e"></a>
 <div class="memitem">
@@ -150,7 +150,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">ArpFilter::ArpFilter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a>&#160;</td>
           <td class="paramname"><em>opCode</em></td><td>)</td>
           <td></td>
         </tr>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A constructor that get the ARP opcode and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>The ARP opcode: <a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61" title="ARP request. ">ARP_REQUEST</a> or <a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9" title="ARP reply (response) ">ARP_REPLY</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>The ARP opcode: <a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61" title="ARP request. ">ARP_REQUEST</a> or <a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9" title="ARP reply (response) ">ARP_REPLY</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -213,7 +213,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ArpFilter::setOpCode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523">ArpOpcode</a>&#160;</td>
           <td class="paramname"><em>opCode</em></td><td>)</td>
           <td></td>
         </tr>
@@ -226,7 +226,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the ARP opcode </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>The ARP opcode: <a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61" title="ARP request. ">ARP_REQUEST</a> or <a class="el" href="a00110.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9" title="ARP reply (response) ">ARP_REPLY</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>The ARP opcode: <a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523afb58ccf8b7b11505ff2117a10bf6ff61" title="ARP request. ">ARP_REQUEST</a> or <a class="el" href="a00138.html#aefdd3857f04fba01d5122a0e34df9523a8bb24a026264a5b22435864179f874d9" title="ARP reply (response) ">ARP_REPLY</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00003.html">ArpFilter</a></li>
-    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00038.html','');});
+$(document).ready(function(){initNavTree('a00008.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,22 +106,70 @@ $(document).ready(function(){initNavTree('a00038.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">icmp_redirect Member List</div>  </div>
+<div class="title">DnsLayer Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00038.html">icmp_redirect</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00008.html">DnsLayer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00044.html#a646ca3a419713963a900cf7a966cf7ae">checksum</a></td><td class="entry"><a class="el" href="a00044.html">icmphdr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00044.html#a95e15c8a254d6db2e2fab31b48b03433">code</a></td><td class="entry"><a class="el" href="a00044.html">icmphdr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00038.html#ad179cd772103aad61c20354664ab3556">gatewayAddress</a></td><td class="entry"><a class="el" href="a00038.html">icmp_redirect</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00044.html#a70ae4477546c46f5d2ebb4d72e551223">type</a></td><td class="entry"><a class="el" href="a00044.html">icmphdr</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#af90df1e74815e9843ba1f0493171d87b">addAdditionalRecord</a>(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass, uint32_t ttl, const std::string &amp;data)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a6e02801b20c3201491a15c3a642e4f0b">addAdditionalRecord</a>(const std::string &amp;name, DnsType dnsType, uint16_t customData1, uint32_t customData2, const std::string &amp;data)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a5e4def02db8b452327fbaea920f3c026">addAdditionalRecord</a>(DnsResource *const copyAdditionalRecord)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#aa2797212c328000c180c21da0c62b3fe">addAnswer</a>(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass, uint32_t ttl, const std::string &amp;data)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a7b9c6270ecbb2efd5e882ae262259e59">addAnswer</a>(DnsResource *const copyAnswer)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a467eac7500f0118815faf0104c01d40e">addAuthority</a>(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass, uint32_t ttl, const std::string &amp;data)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ae4d13bcf5c2ea8466d6edce91f31b84a">addAuthority</a>(DnsResource *const copyAuthority)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#adff8815a23af7beb95e032df9e501f93">addQuery</a>(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ae2c5015e195fca373ef02d3ed5c78192">addQuery</a>(DnsQuery *const copyQuery)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a381fd7ec8713c71e0d73d19f7de2679c">computeCalculateFields</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a3d25b188ace59350b220b79e7dd82751">copyData</a>(uint8_t *toArr)</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a4a0655838a44f3c986a57b97264d0b9b">DnsLayer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a0c0b14d0879565e64d4579373cc7189b">DnsLayer</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a290fa008e75990ec2e64bc14b7250935">DnsLayer</a>(const DnsLayer &amp;other)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a9a85375adf376aae35fbbce77e780825">getAdditionalRecord</a>(const std::string &amp;name, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a1f5b8a5a7381cdee4f6c486c12d6efb6">getAdditionalRecordCount</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a75fd26a01ac9ba5dcfc4f6e69690ebf9">getAnswer</a>(const std::string &amp;name, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#acad8813b1b58afb359cfe7023e53325d">getAnswerCount</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#addbcda3a124697f2bc1fc2d84c007d0e">getAuthority</a>(const std::string &amp;name, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#ad07881b1e9ad1b77ab95dfb277575f09">getAuthorityCount</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a68c8d3f62652858c92c78e87005e45c7">getData</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a51b071c27ee38c73ad27b003126a2f19">getDnsHeader</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a3ec7afe07957c703c5f3de2737c63120">getFirstAdditionalRecord</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ac93d6191d2a6690ed4eaab253ccc7a0d">getFirstAnswer</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#ac986b6b398c1bad84380f3b5569738db">getFirstAuthority</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#af321625014a20e11aa15efb5510236b5">getFirstQuery</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a532ae1b6869a923121d3f42c9cd4fd03">getHeaderLen</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#aeb026cba2e86dc95fe3b8ccc46c19eeb">getNextAdditionalRecord</a>(DnsResource *additionalRecord)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#af7ec5a13b8864c715a94fc4d2026ea05">getNextAnswer</a>(DnsResource *answer)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a70f84af71800a5216501217904592c84">getNextAuthority</a>(DnsResource *authority)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ada9e713f06ff8516bfd87ddc708204b2">getNextQuery</a>(DnsQuery *query)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a64d0f2c5025ee609a1fd949d190d559f">getQuery</a>(const std::string &amp;name, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ae1805ab3c3c95a8c9729b5389a105534">getQueryCount</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a622f424ddcf624a5ca71bccdc445b510">operator=</a>(const DnsLayer &amp;other)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a59d246da05a21283214783247294e11e">parseNextLayer</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a350725623ef0316c4a316a63260c21d0">removeAdditionalRecord</a>(const std::string &amp;additionalRecordNameToRemove, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a3523a1f97bc25c21de4ecd8db54d1949">removeAdditionalRecord</a>(DnsResource *additionalRecordToRemove)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a863450b650065c01d4274baa2eb4d7f4">removeAnswer</a>(const std::string &amp;answerNameToRemove, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a7c923c958a32b8d83cebecc247764ed1">removeAnswer</a>(DnsResource *answerToRemove)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a491a32b6a5a11b5c5037f7191761282a">removeAuthority</a>(const std::string &amp;authorityNameToRemove, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#ac52205cf717ea02ae89ab17c6ca57493">removeAuthority</a>(DnsResource *authorityToRemove)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a7e764affe3b30dabb97ffd4ddb5d8b62">removeQuery</a>(const std::string &amp;queryNameToRemove, bool exactMatch)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00008.html#a22efc366bb912266554d783d070a845b">removeQuery</a>(DnsQuery *queryToRemove)</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a2a66a68c9759cfe111320692ed39edbf">toString</a>()</td><td class="entry"><a class="el" href="a00008.html">DnsLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a>()</td><td class="entry"><a class="el" href="a00061.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

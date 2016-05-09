@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: PcapLiveDevice.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,10 +69,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -87,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00009.html','');});
+$(document).ready(function(){initNavTree('a00163.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -105,32 +103,80 @@ $(document).ready(function(){initNavTree('a00009.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">DnsQuery Member List</div>  </div>
+<div class="title">PcapLiveDevice.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="a00160_source.html">PcapDevice.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00147_source.html">IpAddress.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="a00157_source.html">Packet.h</a>&gt;</code><br />
+</div>
+<p><a href="a00163_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">PcapLiveDevice</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a27f147465834b511910945added98cfa"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>) (<a class="el" href="a00094.html">RawPacket</a> *pPacket, <a class="el" href="a00075.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
+<tr class="separator:a27f147465834b511910945added98cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
+<tr class="separator:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a27f147465834b511910945added98cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OnPacketArrivesCallback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A callback that is called when a packet is captured by <a class="el" href="a00075.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="a00075.html">PcapLiveDevice</a> instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>This is the complete list of members for <a class="el" href="a00009.html">DnsQuery</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b">DnsAdditional</a> enum value</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74">DnsAnswer</a> enum value</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8">DnsAuthority</a> enum value</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a">IDnsResource::DnsQuery</a> enum value</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#aa9a9d7bb49fc00a0834a20a4d6d103fd">getDnsClass</a>()</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00046.html#af93a1e4aec5be14434e7e3d93ca91b52">getDnsType</a>()</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#aa65f16ee6f5f8c28c906cf76b18673a6">getName</a>()</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00009.html#ac7820ded83852f957d4a4420bab775fd">getSize</a>()</td><td class="entry"><a class="el" href="a00009.html">DnsQuery</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00009.html#abad36ff180a509f53736452b3a661aa9">getType</a>()</td><td class="entry"><a class="el" href="a00009.html">DnsQuery</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00046.html#aafa76f59ec543e8fe01d3534422afb9f">ResourceType</a> enum name</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a0f600292495de7b4a266dbfee052452c">setDnsClass</a>(DnsClass newClass)</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00046.html#acfcba8f87af7a39601203b1b38c1d480">setDnsType</a>(DnsType newType)</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a0395cbf5f88a6fe001d406309440aa9d">setName</a>(const std::string &amp;newName)</td><td class="entry"><a class="el" href="a00046.html">IDnsResource</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+</div>
+</div>
+<a class="anchor" id="a13a3124ab2d11ed3e37951e51dba5ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OnStatsUpdateCallback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A callback that is called periodically for stats collection if user asked to start packet capturing with periodic stats collection </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stats</td><td>A reference to the most updated stats </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 3 2016 13:43:08 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00163.html">PcapLiveDevice.h</a></li>
+    <li class="footer">Generated on Mon May 9 2016 23:10:03 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
