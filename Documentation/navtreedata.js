@@ -6,7 +6,17 @@ var NAVTREE =
       [ "Installation", "index.html#install_sec", null ],
       [ "Getting Started", "index.html#getting_started_sec", null ]
     ] ],
-    [ "Todo List", "a00184.html", null ],
+    [ "Todo List", "a00185.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", "namespacemembers_eval" ]
+      ] ]
+    ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -23,11 +33,8 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", "globals_eval" ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -37,14 +44,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00001.html",
-"a00026.html#a5eedbf96dd679f6ec39e0aa7caab6cff",
-"a00051.html#a94a6922dff88e4bea4b3904a60e6f0e9",
-"a00075.html#ad48b57cb49c1384ce3730d8e295e66fd",
+"a00026.html#a5833180521a889af5707e6137bf53a73",
+"a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56",
+"a00075.html#aacdd1317bb1387a067bfd21d49e5b059",
 "a00103.html",
-"a00140.html#a1659b09e7b08e3332c69df201f0ef3eca1fff3e12e13bafe7eb12f4ee63de9384",
-"a00162.html#a224b9163917ac32fc95a60d8c1eec3aaaafc38ae6a337625b99d6cd83fe7de226",
-"a00174.html#a9d97fe4a90a81796d52c2da751a549d9a6751c794bec88fd657a36bccedb0bc64",
-"globals_eval_l.html"
+"a00140.html#ad888578fe7df9849bbfbb10cdf245886a067eec57e575691c727d2f76daea12e1",
+"a00162.html#a236073670782cc577b097b2fef4c7d62a6a699f41533a623a8af26d1da6bef2d9",
+"a00174.html#a8d875ad42e200ba191c7cf29c7f469d9a4dbc414b7e85a4f55804cbee1c29941f",
+"namespacemembers_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

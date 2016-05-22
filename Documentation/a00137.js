@@ -1,10 +1,10 @@
 var a00137 =
 [
-    [ "getDeviceType", "a00137.html#ad85b0bda8aa32772c3c0b4ddd6a36ea2", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00137.html#a624f8ebd9bba9bf1123c594f55ed0094", null ],
-    [ "sendPackets", "a00137.html#ad1576486b7de3dd8dd9eca51d9bd05dc", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00137.html#aa83fab2e5462bf6952389623ba69e0ae", null ],
-    [ "startCapture", "a00137.html#a83a5805972630d6071b07bc0f1d1de27", null ],
-    [ "startCapture", "a00137.html#ad8c8c56ec5b16cdd8c423274d8b4f07d", null ],
-    [ "startCapture", "a00137.html#a79611cae573a93b09ee980c1af8f978a", null ]
+    [ "getDeviceType", "a00137.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
+    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00137.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
+    [ "sendPackets", "a00137.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
+    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00137.html#aebff78da9d57c6ec9046de32746943bd", null ],
+    [ "startCapture", "a00137.html#af22e2966176d4127e69300cd4b208758", null ],
+    [ "startCapture", "a00137.html#a70126c098779937e5ce88360966c7aa1", null ],
+    [ "startCapture", "a00137.html#a74824694b8f72f687dec10557a196675", null ]
 ];

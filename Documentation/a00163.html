@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -105,6 +106,7 @@ $(document).ready(function(){initNavTree('a00163.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">PcapLiveDevice.h File Reference</div>  </div>
@@ -120,63 +122,29 @@ $(document).ready(function(){initNavTree('a00163.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">PcapLiveDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">pcpp::PcapLiveDevice</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00182"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html">pcpp</a></td></tr>
+<tr class="memdesc:a00182"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a27f147465834b511910945added98cfa"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a27f147465834b511910945added98cfa">OnPacketArrivesCallback</a>) (<a class="el" href="a00094.html">RawPacket</a> *pPacket, <a class="el" href="a00075.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
-<tr class="separator:a27f147465834b511910945added98cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a13a3124ab2d11ed3e37951e51dba5ebc">OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
-<tr class="separator:a13a3124ab2d11ed3e37951e51dba5ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07524ba3fd4932968d2c302a936ae10"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html#aa07524ba3fd4932968d2c302a936ae10">pcpp::OnPacketArrivesCallback</a>) (RawPacket *pPacket, PcapLiveDevice *pDevice, void *userCookie)</td></tr>
+<tr class="separator:aa07524ba3fd4932968d2c302a936ae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af797dbce1a97d45a6b86cdedb6d627da"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html#af797dbce1a97d45a6b86cdedb6d627da">pcpp::OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
+<tr class="separator:af797dbce1a97d45a6b86cdedb6d627da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a27f147465834b511910945added98cfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OnPacketArrivesCallback</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A callback that is called when a packet is captured by <a class="el" href="a00075.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="a00075.html">PcapLiveDevice</a> instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a13a3124ab2d11ed3e37951e51dba5ebc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OnStatsUpdateCallback</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A callback that is called periodically for stats collection if user asked to start packet capturing with periodic stats collection </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">stats</td><td>A reference to the most updated stats </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00163.html">PcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Mon May 9 2016 23:10:03 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 23 2016 00:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

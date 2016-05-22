@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: HttpRequestLayer Class Reference</title>
+<title>PcapPlusPlus: pcpp::HttpRequestLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,159 +109,152 @@ $(document).ready(function(){initNavTree('a00028.html','');});
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
-<a href="a00214.html">List of all members</a>  </div>
+<a href="a00215.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HttpRequestLayer Class Reference</div>  </div>
+<div class="title">pcpp::HttpRequestLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00145_source.html">HttpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for HttpRequestLayer:</div>
+Inheritance diagram for pcpp::HttpRequestLayer:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00028.png" usemap="#HttpRequestLayer_map" alt=""/>
-  <map id="HttpRequestLayer_map" name="HttpRequestLayer_map">
-<area href="a00025.html" alt="HttpMessage" shape="rect" coords="0,56,111,80"/>
-<area href="a00061.html" alt="Layer" shape="rect" coords="0,0,111,24"/>
+  <img src="a00028.png" usemap="#pcpp::HttpRequestLayer_map" alt=""/>
+  <map id="pcpp::HttpRequestLayer_map" name="pcpp::HttpRequestLayer_map">
+<area href="a00025.html" alt="pcpp::HttpMessage" shape="rect" coords="0,56,145,80"/>
+<area href="a00061.html" alt="pcpp::Layer" shape="rect" coords="0,0,145,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1b8a0c702576a3c150f7c650842420d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9">HttpMethod</a> { <br />
-&#160;&#160;<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9aad9f1595e6631a059349849c18fdc6de">HttpGET</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a7fdb612dea0e4dfeb88cdc63fdac7ac9">HttpHEAD</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9aa42ff27148dee93551b8653616143059">HttpPOST</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a23f8f2e8cda124673d9964bccb38247b">HttpPUT</a>, 
+<tr class="memitem:a71d3731486391e8356628dae79023fd6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6">HttpMethod</a> { <br />
+&#160;&#160;<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c">HttpGET</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd">HttpHEAD</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c">HttpPOST</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2">HttpPUT</a>, 
 <br />
-&#160;&#160;<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a9e6e83df24218dd0f9dc73056468c3f3">HttpDELETE</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a0b296ffe42e6525e4444d2c8bab487c0">HttpTRACE</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9aeb818c13f5129af90e12855c9c9dd154">HttpOPTIONS</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a9d44b5e3d57d63bc9ca68a9501a36336">HttpCONNECT</a>, 
+&#160;&#160;<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68">HttpDELETE</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c">HttpTRACE</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf">HttpOPTIONS</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511">HttpCONNECT</a>, 
 <br />
-&#160;&#160;<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9af385746be644e46f68eee936820504a2">HttpPATCH</a>, 
-<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9a10d4b6991947cba24e580f9bdea2e812">HttpMethodUnknown</a>
+&#160;&#160;<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022">HttpPATCH</a>, 
+<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84">HttpMethodUnknown</a>
 <br />
  }</td></tr>
-<tr class="separator:a1b8a0c702576a3c150f7c650842420d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a71d3731486391e8356628dae79023fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a082236b6d6c2da7a222331fcd6410dc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a082236b6d6c2da7a222331fcd6410dc3">HttpRequestLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00061.html">Layer</a> *prevLayer, <a class="el" href="a00071.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a082236b6d6c2da7a222331fcd6410dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b0419861baa3985b95663ae8f9bb2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a13b0419861baa3985b95663ae8f9bb2d">HttpRequestLayer</a> (<a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9">HttpMethod</a> method, std::string uri, <a class="el" href="a00145.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a> version)</td></tr>
-<tr class="separator:a13b0419861baa3985b95663ae8f9bb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4e93356cb2bc6f95020d27c9fb0d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aca4e93356cb2bc6f95020d27c9fb0d62">HttpRequestLayer</a> (const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;other)</td></tr>
-<tr class="separator:aca4e93356cb2bc6f95020d27c9fb0d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae072a18512fe933a3464d7a4015139a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00028.html">HttpRequestLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ae072a18512fe933a3464d7a4015139a7">operator=</a> (const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;other)</td></tr>
-<tr class="separator:ae072a18512fe933a3464d7a4015139a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9483a07320ddd70a22971cd41b07815"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">HttpRequestFirstLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#af9483a07320ddd70a22971cd41b07815">getFirstLine</a> ()</td></tr>
-<tr class="separator:af9483a07320ddd70a22971cd41b07815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a15c95c373b2150b1febe3e5ef575b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ac3a15c95c373b2150b1febe3e5ef575b">getUrl</a> ()</td></tr>
-<tr class="separator:ac3a15c95c373b2150b1febe3e5ef575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df2333eeb8fbd55b8632cd74ce79355"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a6df2333eeb8fbd55b8632cd74ce79355">toString</a> ()</td></tr>
-<tr class="separator:a6df2333eeb8fbd55b8632cd74ce79355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00025"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00025')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00025.html">HttpMessage</a></td></tr>
-<tr class="memitem:ac231de1fec75f1cd4dbde5617af56a3e inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac231de1fec75f1cd4dbde5617af56a3e">getFieldByName</a> (std::string fieldName)</td></tr>
-<tr class="separator:ac231de1fec75f1cd4dbde5617af56a3e inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2014d9fb0cdb9d24bff0da8f2cebaf inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#abd2014d9fb0cdb9d24bff0da8f2cebaf">getFirstField</a> ()</td></tr>
-<tr class="separator:abd2014d9fb0cdb9d24bff0da8f2cebaf inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7844dac1e382b6b3a9cdf2352cee98 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a4c7844dac1e382b6b3a9cdf2352cee98">getNextField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField)</td></tr>
-<tr class="separator:a4c7844dac1e382b6b3a9cdf2352cee98 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38d1cd7e4373c125a24d7ff60502474 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad38d1cd7e4373c125a24d7ff60502474">addField</a> (const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
-<tr class="separator:ad38d1cd7e4373c125a24d7ff60502474 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636e0e5d7f398c4937e3607dcbc598cc inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a636e0e5d7f398c4937e3607dcbc598cc">addField</a> (const <a class="el" href="a00024.html">HttpField</a> &amp;newField)</td></tr>
-<tr class="separator:a636e0e5d7f398c4937e3607dcbc598cc inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2087c17b615dc99d625b8d3f8e9656 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aca2087c17b615dc99d625b8d3f8e9656">addEndOfHeader</a> ()</td></tr>
-<tr class="separator:aca2087c17b615dc99d625b8d3f8e9656 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d929439f0168ac03a1f8ce30b83973 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac7d929439f0168ac03a1f8ce30b83973">insertField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
-<tr class="separator:ac7d929439f0168ac03a1f8ce30b83973 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e69980de46f7039e77dd533279b76a5 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a3e69980de46f7039e77dd533279b76a5">insertField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField, const <a class="el" href="a00024.html">HttpField</a> &amp;newField)</td></tr>
-<tr class="separator:a3e69980de46f7039e77dd533279b76a5 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2ba3e006fd4866d346dda1d6d4cf3cb inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ae2ba3e006fd4866d346dda1d6d4cf3cb">removeField</a> (<a class="el" href="a00024.html">HttpField</a> *fieldToRemove)</td></tr>
-<tr class="separator:ae2ba3e006fd4866d346dda1d6d4cf3cb inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2e229d3dd265ce63b77f531a3bc0a2 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a1c2e229d3dd265ce63b77f531a3bc0a2">removeField</a> (std::string fieldName)</td></tr>
-<tr class="separator:a1c2e229d3dd265ce63b77f531a3bc0a2 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac201377ee25141ded5a5d566ab9351cd inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac201377ee25141ded5a5d566ab9351cd">isHeaderComplete</a> ()</td></tr>
-<tr class="separator:ac201377ee25141ded5a5d566ab9351cd inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44da7ecfbb51d71ebd5ccd769c6b862 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad44da7ecfbb51d71ebd5ccd769c6b862">parseNextLayer</a> ()</td></tr>
-<tr class="separator:ad44da7ecfbb51d71ebd5ccd769c6b862 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac916fcbd8c81e831d07a4bd3d14e37fe inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac916fcbd8c81e831d07a4bd3d14e37fe">getHeaderLen</a> ()</td></tr>
-<tr class="separator:ac916fcbd8c81e831d07a4bd3d14e37fe inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bd3d93bd053bd4a0a337b6f1c914a2d inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a0bd3d93bd053bd4a0a337b6f1c914a2d">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a0bd3d93bd053bd4a0a337b6f1c914a2d inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00061"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00061')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00061.html">Layer</a></td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a4683fd5442c279f32ad6fcd6cd87c1d7">getNextLayer</a> ()</td></tr>
-<tr class="separator:a4683fd5442c279f32ad6fcd6cd87c1d7 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a1c207e783516ded3e4015d301d2811b5">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a1c207e783516ded3e4015d301d2811b5 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00172.html#a2b99fb4e4914a533566284f2ed3b0186">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a73eba746fd77cb88a2fb729d2698fca6">getProtocol</a> ()</td></tr>
-<tr class="separator:a73eba746fd77cb88a2fb729d2698fca6 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a68c8d3f62652858c92c78e87005e45c7">getData</a> ()</td></tr>
-<tr class="separator:a68c8d3f62652858c92c78e87005e45c7 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a6b40982815cffa68db6a8f7605541807">getDataLen</a> ()</td></tr>
-<tr class="separator:a6b40982815cffa68db6a8f7605541807 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a40859f34f71c6e38a6197106ea0ffac7">getLayerPayload</a> ()</td></tr>
-<tr class="separator:a40859f34f71c6e38a6197106ea0ffac7 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a13b846c8ac968516446e1900e2ecd9c5">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:a13b846c8ac968516446e1900e2ecd9c5 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a312ad0f18d3200b313847f58fd8af2b3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a312ad0f18d3200b313847f58fd8af2b3 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a3d25b188ace59350b220b79e7dd82751">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a3d25b188ace59350b220b79e7dd82751 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ae5fde190d55cdea06000cc6a45ec91af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5fde190d55cdea06000cc6a45ec91af"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine</b></td></tr>
-<tr class="separator:ae5fde190d55cdea06000cc6a45ec91af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9176b25290460e34e8bf5bab481ac866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a9176b25290460e34e8bf5bab481ac866">HttpRequestLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00061.html">Layer</a> *prevLayer, <a class="el" href="a00071.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a9176b25290460e34e8bf5bab481ac866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5bc6ab39eb8b300af00abd5802c1f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aab5bc6ab39eb8b300af00abd5802c1f6">HttpRequestLayer</a> (<a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6">HttpMethod</a> method, std::string uri, <a class="el" href="a00182.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> version)</td></tr>
+<tr class="separator:aab5bc6ab39eb8b300af00abd5802c1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09a5aec4ff2ba350bd173f04e731764"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aa09a5aec4ff2ba350bd173f04e731764">HttpRequestLayer</a> (const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;other)</td></tr>
+<tr class="separator:aa09a5aec4ff2ba350bd173f04e731764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56153c001fed50c2cc0a4697640fd048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00028.html">HttpRequestLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a56153c001fed50c2cc0a4697640fd048">operator=</a> (const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;other)</td></tr>
+<tr class="separator:a56153c001fed50c2cc0a4697640fd048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa1f4a481537b60fd3dca97fcc4f274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">HttpRequestFirstLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a3aa1f4a481537b60fd3dca97fcc4f274">getFirstLine</a> ()</td></tr>
+<tr class="separator:a3aa1f4a481537b60fd3dca97fcc4f274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae3fd000ba6754e9476fb41691b7583"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a2ae3fd000ba6754e9476fb41691b7583">getUrl</a> ()</td></tr>
+<tr class="separator:a2ae3fd000ba6754e9476fb41691b7583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432ab3edcd973f498e9da8d067a6f631"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a432ab3edcd973f498e9da8d067a6f631">toString</a> ()</td></tr>
+<tr class="separator:a432ab3edcd973f498e9da8d067a6f631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00025"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00025')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00025.html">pcpp::HttpMessage</a></td></tr>
+<tr class="memitem:aeb6887ff8d98eeb2d39ffe43aaaa7347 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aeb6887ff8d98eeb2d39ffe43aaaa7347">getFieldByName</a> (std::string fieldName)</td></tr>
+<tr class="separator:aeb6887ff8d98eeb2d39ffe43aaaa7347 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b2f5228e83f0e5c6832778a3c45039 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ae3b2f5228e83f0e5c6832778a3c45039">getFirstField</a> ()</td></tr>
+<tr class="separator:ae3b2f5228e83f0e5c6832778a3c45039 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1026dd3bf19b3ad1b9668a6184ae426 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac1026dd3bf19b3ad1b9668a6184ae426">getNextField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField)</td></tr>
+<tr class="separator:ac1026dd3bf19b3ad1b9668a6184ae426 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6579bb70d24048ae36bd458b42efb6 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a3b6579bb70d24048ae36bd458b42efb6">addField</a> (const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
+<tr class="separator:a3b6579bb70d24048ae36bd458b42efb6 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0b282e761a5db8f57e832d2598b475 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aec0b282e761a5db8f57e832d2598b475">addField</a> (const <a class="el" href="a00024.html">HttpField</a> &amp;newField)</td></tr>
+<tr class="separator:aec0b282e761a5db8f57e832d2598b475 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9d95e780e0eaf2b85cdc334f6584a3 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a2d9d95e780e0eaf2b85cdc334f6584a3">addEndOfHeader</a> ()</td></tr>
+<tr class="separator:a2d9d95e780e0eaf2b85cdc334f6584a3 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ed432d6d32ba9d8119a706fbd5bd6a inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac6ed432d6d32ba9d8119a706fbd5bd6a">insertField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
+<tr class="separator:ac6ed432d6d32ba9d8119a706fbd5bd6a inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee0d8f4e54aba90aec8e2d2e9616a8a inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00024.html">HttpField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aaee0d8f4e54aba90aec8e2d2e9616a8a">insertField</a> (<a class="el" href="a00024.html">HttpField</a> *prevField, const <a class="el" href="a00024.html">HttpField</a> &amp;newField)</td></tr>
+<tr class="separator:aaee0d8f4e54aba90aec8e2d2e9616a8a inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d6704a10718ef9c705858bd3985ac1 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a11d6704a10718ef9c705858bd3985ac1">removeField</a> (<a class="el" href="a00024.html">HttpField</a> *fieldToRemove)</td></tr>
+<tr class="separator:a11d6704a10718ef9c705858bd3985ac1 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5ced67d64e890431755bac0779f3d3 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ada5ced67d64e890431755bac0779f3d3">removeField</a> (std::string fieldName)</td></tr>
+<tr class="separator:ada5ced67d64e890431755bac0779f3d3 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701003b87156e45c8cf4e87fcad94200 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a701003b87156e45c8cf4e87fcad94200">isHeaderComplete</a> ()</td></tr>
+<tr class="separator:a701003b87156e45c8cf4e87fcad94200 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e61f9320fa4fdd338430d365360aaa inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad2e61f9320fa4fdd338430d365360aaa">parseNextLayer</a> ()</td></tr>
+<tr class="separator:ad2e61f9320fa4fdd338430d365360aaa inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ecb8aa9b390e0bdb7c2e505c8e59b7 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a78ecb8aa9b390e0bdb7c2e505c8e59b7">getHeaderLen</a> ()</td></tr>
+<tr class="separator:a78ecb8aa9b390e0bdb7c2e505c8e59b7 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58400c654a5544deb9583e2ad6bc9982 inherit pub_methods_a00025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a58400c654a5544deb9583e2ad6bc9982">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a58400c654a5544deb9583e2ad6bc9982 inherit pub_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00061"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00061')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00061.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
+<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
+<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
+<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
+<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
+<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
+<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an HTTP request header and inherits all basic functionality of <a class="el" href="a00025.html">HttpMessage</a>. The functionality that is added for this class is the HTTP first line consept. An HTTP request has the following first line: <em>GET /bla/blabla.asp HTTP/1.1</em> Since it's not an "ordinary" HTTP field, it requires a special treatment and gets a class of it's own: <a class="el" href="a00026.html">HttpRequestFirstLine</a>. Unlike most L2-4 protocols, an HTTP request header can spread over more than 1 packet. PcapPlusPlus currently doesn't support a header that is spread over more than 1 packet so in such cases: 1) only the first packet will be parsed as <a class="el" href="a00028.html">HttpRequestLayer</a> (the other packets won't be recognized as <a class="el" href="a00028.html">HttpRequestLayer</a>) and 2) the HTTP header for the first packet won't be complete (as it continues in the following packets), this why PcapPlusPlus can indicate that HTTP request header is complete or not(doesn't end with "\r\n\r\n" or "\n\n") using <a class="el" href="a00025.html#ac201377ee25141ded5a5d566ab9351cd">HttpMessage::isHeaderComplete()</a> </p>
+<div class="textblock"><p>Represents an HTTP request header and inherits all basic functionality of <a class="el" href="a00025.html">HttpMessage</a>. The functionality that is added for this class is the HTTP first line consept. An HTTP request has the following first line: <em>GET /bla/blabla.asp HTTP/1.1</em> Since it's not an "ordinary" HTTP field, it requires a special treatment and gets a class of it's own: <a class="el" href="a00026.html">HttpRequestFirstLine</a>. Unlike most L2-4 protocols, an HTTP request header can spread over more than 1 packet. PcapPlusPlus currently doesn't support a header that is spread over more than 1 packet so in such cases: 1) only the first packet will be parsed as <a class="el" href="a00028.html">HttpRequestLayer</a> (the other packets won't be recognized as <a class="el" href="a00028.html">HttpRequestLayer</a>) and 2) the HTTP header for the first packet won't be complete (as it continues in the following packets), this why PcapPlusPlus can indicate that HTTP request header is complete or not(doesn't end with "\r\n\r\n" or "\n\n") using <a class="el" href="a00025.html#a701003b87156e45c8cf4e87fcad94200">HttpMessage::isHeaderComplete()</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9"></a>
+<a class="anchor" id="a71d3731486391e8356628dae79023fd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9">HttpRequestLayer::HttpMethod</a></td>
+          <td class="memname">enum <a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6">pcpp::HttpRequestLayer::HttpMethod</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>HTTP request methods </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9aad9f1595e6631a059349849c18fdc6de"></a>HttpGET&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c"></a>HttpGET&#160;</td><td class="fielddoc">
 <p>GET </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a7fdb612dea0e4dfeb88cdc63fdac7ac9"></a>HttpHEAD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd"></a>HttpHEAD&#160;</td><td class="fielddoc">
 <p>HEAD </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9aa42ff27148dee93551b8653616143059"></a>HttpPOST&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c"></a>HttpPOST&#160;</td><td class="fielddoc">
 <p>POST </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a23f8f2e8cda124673d9964bccb38247b"></a>HttpPUT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2"></a>HttpPUT&#160;</td><td class="fielddoc">
 <p>PUT </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a9e6e83df24218dd0f9dc73056468c3f3"></a>HttpDELETE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68"></a>HttpDELETE&#160;</td><td class="fielddoc">
 <p>DELETE </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a0b296ffe42e6525e4444d2c8bab487c0"></a>HttpTRACE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c"></a>HttpTRACE&#160;</td><td class="fielddoc">
 <p>TRACE </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9aeb818c13f5129af90e12855c9c9dd154"></a>HttpOPTIONS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf"></a>HttpOPTIONS&#160;</td><td class="fielddoc">
 <p>OPTIONS </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a9d44b5e3d57d63bc9ca68a9501a36336"></a>HttpCONNECT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511"></a>HttpCONNECT&#160;</td><td class="fielddoc">
 <p>CONNECT </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9af385746be644e46f68eee936820504a2"></a>HttpPATCH&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022"></a>HttpPATCH&#160;</td><td class="fielddoc">
 <p>PATCH </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1b8a0c702576a3c150f7c650842420d9a10d4b6991947cba24e580f9bdea2e812"></a>HttpMethodUnknown&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84"></a>HttpMethodUnknown&#160;</td><td class="fielddoc">
 <p>Unknow HTTP method </p>
 </td></tr>
 </table>
@@ -268,12 +262,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a082236b6d6c2da7a222331fcd6410dc3"></a>
+<a class="anchor" id="a9176b25290460e34e8bf5bab481ac866"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HttpRequestLayer::HttpRequestLayer </td>
+          <td class="memname">pcpp::HttpRequestLayer::HttpRequestLayer </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -315,14 +309,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 
 </div>
 </div>
-<a class="anchor" id="a13b0419861baa3985b95663ae8f9bb2d"></a>
+<a class="anchor" id="aab5bc6ab39eb8b300af00abd5802c1f6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HttpRequestLayer::HttpRequestLayer </td>
+          <td class="memname">pcpp::HttpRequestLayer::HttpRequestLayer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00028.html#a1b8a0c702576a3c150f7c650842420d9">HttpMethod</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00028.html#a71d3731486391e8356628dae79023fd6">HttpMethod</a>&#160;</td>
           <td class="paramname"><em>method</em>, </td>
         </tr>
         <tr>
@@ -334,7 +328,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00145.html#ac870fd261da652aee69937751c6f7e7f">HttpVersion</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00182.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td>
           <td class="paramname"><em>version</em>&#160;</td>
         </tr>
         <tr>
@@ -344,7 +338,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that allocates a new HTTP request header with only the first line filled. Object will be created without further fields. The user can then ass fields using <a class="el" href="a00025.html#ad38d1cd7e4373c125a24d7ff60502474">addField()</a> methods </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that allocates a new HTTP request header with only the first line filled. Object will be created without further fields. The user can then ass fields using <a class="el" href="a00025.html#a3b6579bb70d24048ae36bd458b42efb6">addField()</a> methods </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">method</td><td>The HTTP method used in this HTTP request </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>The URI of the first line </td></tr>
@@ -355,12 +349,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 
 </div>
 </div>
-<a class="anchor" id="aca4e93356cb2bc6f95020d27c9fb0d62"></a>
+<a class="anchor" id="aa09a5aec4ff2ba350bd173f04e731764"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HttpRequestLayer::HttpRequestLayer </td>
+          <td class="memname">pcpp::HttpRequestLayer::HttpRequestLayer </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -378,7 +372,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af9483a07320ddd70a22971cd41b07815"></a>
+<a class="anchor" id="a3aa1f4a481537b60fd3dca97fcc4f274"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -386,7 +380,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00026.html">HttpRequestFirstLine</a>* HttpRequestLayer::getFirstLine </td>
+          <td class="memname"><a class="el" href="a00026.html">HttpRequestFirstLine</a>* pcpp::HttpRequestLayer::getFirstLine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -402,12 +396,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 
 </div>
 </div>
-<a class="anchor" id="ac3a15c95c373b2150b1febe3e5ef575b"></a>
+<a class="anchor" id="a2ae3fd000ba6754e9476fb41691b7583"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string HttpRequestLayer::getUrl </td>
+          <td class="memname">std::string pcpp::HttpRequestLayer::getUrl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -418,12 +412,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 
 </div>
 </div>
-<a class="anchor" id="ae072a18512fe933a3464d7a4015139a7"></a>
+<a class="anchor" id="a56153c001fed50c2cc0a4697640fd048"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00028.html">HttpRequestLayer</a>&amp; HttpRequestLayer::operator= </td>
+          <td class="memname"><a class="el" href="a00028.html">HttpRequestLayer</a>&amp; pcpp::HttpRequestLayer::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00028.html">HttpRequestLayer</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -440,7 +434,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 
 </div>
 </div>
-<a class="anchor" id="a6df2333eeb8fbd55b8632cd74ce79355"></a>
+<a class="anchor" id="a432ab3edcd973f498e9da8d067a6f631"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -448,7 +442,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string HttpRequestLayer::toString </td>
+          <td class="memname">std::string pcpp::HttpRequestLayer::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -462,7 +456,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
 
-<p>Implements <a class="el" href="a00061.html#a17c690bf65bce7580afa0d9425fcfbf3">Layer</a>.</p>
+<p>Implements <a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -471,8 +465,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequestFirstLine
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00028.html">HttpRequestLayer</a></li>
-    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00182.html">pcpp</a></li><li class="navelem"><a class="el" href="a00028.html">HttpRequestLayer</a></li>
+    <li class="footer">Generated on Mon May 23 2016 00:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

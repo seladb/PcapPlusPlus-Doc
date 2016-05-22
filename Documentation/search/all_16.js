@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zero',['zero',['../a00007.html#a377d0d6f64514d70e3d56c1a8f7d3750',1,'dnshdr::zero()'],['../a00055.html#a29833df4aff7a34168268bfb739ef759',1,'IPv4Address::Zero()'],['../a00059.html#ac9b78400c6dd8dd7a7d96339bb46f916',1,'IPv6Address::Zero()'],['../a00064.html#a21e6f0508b2296b0a68dbfc6f3f58999',1,'MacAddress::Zero()']]],
-  ['zerodotnine',['ZeroDotNine',['../a00145.html#ac870fd261da652aee69937751c6f7e7fa9f28f0e196bb62b494da944775347bac',1,'HttpLayer.h']]]
+  ['zero',['Zero',['../a00055.html#ab1fdcb75a0d28033e51770605ec978cb',1,'pcpp::IPv4Address::Zero()'],['../a00059.html#a01d0b4399914ea40cba0d826484e9479',1,'pcpp::IPv6Address::Zero()'],['../a00064.html#a1b210f1cf39a31d9ea947c57e6c65e2e',1,'pcpp::MacAddress::Zero()'],['../a00007.html#a4f951f5089275a84bb124a2e3127f3ba',1,'pcpp::dnshdr::zero()']]],
+  ['zerodotnine',['ZeroDotNine',['../a00182.html#a7680d508534c12b5ab8bcbe4cae06932a9e548b54e33e8673bfd2c3e5bdef3fe3',1,'pcpp']]]
 ];

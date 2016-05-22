@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['httpmethod',['HttpMethod',['../a00028.html#a1b8a0c702576a3c150f7c650842420d9',1,'HttpRequestLayer']]],
-  ['httpresponsestatuscode',['HttpResponseStatusCode',['../a00031.html#abcd60d041754a01d761c3277ba937b78',1,'HttpResponseLayer']]],
-  ['httpversion',['HttpVersion',['../a00145.html#ac870fd261da652aee69937751c6f7e7f',1,'HttpLayer.h']]]
+  ['httpmethod',['HttpMethod',['../a00028.html#a71d3731486391e8356628dae79023fd6',1,'pcpp::HttpRequestLayer']]],
+  ['httpresponsestatuscode',['HttpResponseStatusCode',['../a00031.html#ab5bbbd02f36805001550d1168f1412bc',1,'pcpp::HttpResponseLayer']]],
+  ['httpversion',['HttpVersion',['../a00182.html#a7680d508534c12b5ab8bcbe4cae06932',1,'pcpp']]]
 ];

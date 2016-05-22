@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['addresstype',['AddressType',['../a00050.html#a53caf33403beb8bbc212b7659ffa8608',1,'IPAddress']]],
-  ['arpopcode',['ArpOpcode',['../a00138.html#aefdd3857f04fba01d5122a0e34df9523',1,'ArpLayer.h']]]
+  ['addresstype',['AddressType',['../a00050.html#ac389e5507d75b60d2b0ca939db195231',1,'pcpp::IPAddress']]],
+  ['arpopcode',['ArpOpcode',['../a00182.html#a078cb0044494dbde4a73f32cbff6184e',1,'pcpp']]]
 ];

@@ -1,17 +1,17 @@
 var a00046 =
 [
-    [ "ResourceType", "a00046.html#aafa76f59ec543e8fe01d3534422afb9f", [
-      [ "DnsQuery", "a00046.html#aafa76f59ec543e8fe01d3534422afb9fa9246fba2531df46cf54e93d5a6740b5a", null ],
-      [ "DnsAnswer", "a00046.html#aafa76f59ec543e8fe01d3534422afb9fa31e5b91ce62f82910fa557361f60dc74", null ],
-      [ "DnsAuthority", "a00046.html#aafa76f59ec543e8fe01d3534422afb9fa359e0d26eb01e70c087249084017c7d8", null ],
-      [ "DnsAdditional", "a00046.html#aafa76f59ec543e8fe01d3534422afb9fa57731744534678cacbde28cede66321b", null ]
+    [ "ResourceType", "a00046.html#a31f2e8268a4850da83b3d85c17d99d96", [
+      [ "DnsQuery", "a00046.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5", null ],
+      [ "DnsAnswer", "a00046.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca", null ],
+      [ "DnsAuthority", "a00046.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d", null ],
+      [ "DnsAdditional", "a00046.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226", null ]
     ] ],
-    [ "getDnsClass", "a00046.html#aa9a9d7bb49fc00a0834a20a4d6d103fd", null ],
-    [ "getDnsType", "a00046.html#af93a1e4aec5be14434e7e3d93ca91b52", null ],
-    [ "getName", "a00046.html#aa65f16ee6f5f8c28c906cf76b18673a6", null ],
-    [ "getSize", "a00046.html#ac6f5ab8bd3891faa476822bf88fb3832", null ],
-    [ "getType", "a00046.html#a16d67fb0330bdc579c2b0e4d3ceb50bb", null ],
-    [ "setDnsClass", "a00046.html#a0f600292495de7b4a266dbfee052452c", null ],
-    [ "setDnsType", "a00046.html#acfcba8f87af7a39601203b1b38c1d480", null ],
-    [ "setName", "a00046.html#a0395cbf5f88a6fe001d406309440aa9d", null ]
+    [ "getDnsClass", "a00046.html#a6c4a6e1550c6de7ebdf0188bb80ce484", null ],
+    [ "getDnsType", "a00046.html#ae44ba669fc827f7b8bb6c8f9ce783d8d", null ],
+    [ "getName", "a00046.html#a5042b3c8948096ff808d9d4c4a5c4ef0", null ],
+    [ "getSize", "a00046.html#a0581453e507b721f27eb2e148bc45ef9", null ],
+    [ "getType", "a00046.html#a70bf0be92f655fcf024d5c60eb1cba32", null ],
+    [ "setDnsClass", "a00046.html#ad9c0a3adac252a14a48502ae8a43afe5", null ],
+    [ "setDnsType", "a00046.html#a15c4d0513904997e4b77cc11526d204e", null ],
+    [ "setName", "a00046.html#af08da68e8e0133db0723fd117be4217e", null ]
 ];

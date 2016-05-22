@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['buffer',['buffer',['../a00095.html#ab9b62dc703c8ca44c28a24b80ba7c23e',1,'ScalarBuffer']]],
-  ['bus',['bus',['../a00080.html#a95bc8e4c0d1a0557a1b3bf794c034c87',1,'PciAddress']]]
+  ['buffer',['buffer',['../a00095.html#a68b9da0e897fa630c85e59ef903c2032',1,'pcpp::ScalarBuffer']]],
+  ['bus',['bus',['../a00080.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e',1,'pcpp::PciAddress']]]
 ];

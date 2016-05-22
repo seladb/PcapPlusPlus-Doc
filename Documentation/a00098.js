@@ -1,5 +1,5 @@
 var a00098 =
 [
-    [ "handshakeVersion", "a00098.html#a2d5e2200c9c552d5c60e917f918f748e", null ],
-    [ "random", "a00098.html#a0956ebf65860bcce11b8045eb7587c73", null ]
+    [ "handshakeVersion", "a00098.html#aa7f3e7a1886a78bf528650958c167d72", null ],
+    [ "random", "a00098.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
 ];

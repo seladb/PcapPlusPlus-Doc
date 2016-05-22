@@ -1,6 +1,6 @@
 var a00099 =
 [
-    [ "handshakeType", "a00099.html#a451a2b923650f87f8f075deacad9b3d5", null ],
-    [ "length1", "a00099.html#ae4ca8ab814309cf4675f1416b5436e66", null ],
-    [ "length2", "a00099.html#af7bd9b09525bbebe76ca97d08095f88c", null ]
+    [ "handshakeType", "a00099.html#a9a456a315b65d5e41587b83972471398", null ],
+    [ "length1", "a00099.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
+    [ "length2", "a00099.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
 ];

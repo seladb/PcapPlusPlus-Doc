@@ -1,5 +1,5 @@
 var a00095 =
 [
-    [ "buffer", "a00095.html#ab9b62dc703c8ca44c28a24b80ba7c23e", null ],
-    [ "len", "a00095.html#a378572e46319cfe0acbdb221937861ba", null ]
+    [ "buffer", "a00095.html#a68b9da0e897fa630c85e59ef903c2032", null ],
+    [ "len", "a00095.html#a1c8125a1f13948809eaa1c33a350675a", null ]
 ];

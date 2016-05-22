@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectoriterator',['VectorIterator',['../a00083.html#a397409f07927eb1495cec3977d5c8fb4',1,'PointerVector']]]
+  ['vectoriterator',['VectorIterator',['../a00083.html#acf7704583e3f0dd0bce8adbe4d78c5b0',1,'pcpp::PointerVector']]]
 ];

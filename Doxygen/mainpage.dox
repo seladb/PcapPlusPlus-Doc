@@ -14,44 +14,44 @@
 * \section getting_started_sec Getting Started
 *
 * <b>%Packet capturing engines (Pcap++):</b>
-*   - PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
-*   - WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap engine (Windows)
-*   - PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap(Windows)
-*   - PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
-*   - DpdkDevice, DpdkDevice.h - DPDK device (Linux)
+*   - pcpp::PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
+*   - pcpp::WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap engine (Windows)
+*   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap(Windows)
+*   - pcpp::PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
+*   - pcpp::DpdkDevice, DpdkDevice.h - DPDK device (Linux)
 *   - PcapFilter.h - structured filter engine
 *
 * <b>Pcap file wrappers (Pcap++):</b>
-*   - PcapFileReaderDevice, PcapFileDevice.h - read Pcap files
-*   - PcapFileWriterDevice, PcapFileDevice.h - write Pcap files
+*   - pcpp::PcapFileReaderDevice, PcapFileDevice.h - read Pcap files
+*   - pcpp::PcapFileWriterDevice, PcapFileDevice.h - write Pcap files
 *
 * <b>%Packet parsing and manipulation (Packet++):</b>
-*   - RawPacket, RawPacket.h - raw data class
-*   - Packet, Packet.h - parsed packet class
-*   - Layer, Layer.h - protocol base class
+*   - pcpp::RawPacket, RawPacket.h - raw data class
+*   - pcpp::Packet, Packet.h - parsed packet class
+*   - pcpp::Layer, Layer.h - protocol base class
 *
 * <b>Supported protocols (Packet++):</b>
-*   - EthLayer, EthLayer.h - Ethernet protocol
-*   - ArpLayer, ArpLayer.h - ARP protocol
-*   - VlanLayer, VlanLayer.h - VLAN protocol
-*   - MplsLayer, MplsLayer.h - MPLS protocol
-*   - PPPoESessionLayer, PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
-*   - GREv0Layer, GREv1Layer, PPP_PPTPLayer, GreLayer.h - GRE and PPTP protocol
-*   - IPv4Layer, IPv4Layer.h - IPv4 protocol
-*   - IPv6Layer, IPv6Layer.h - IPv6 protocol
-*   - TcpLayer, TcpLayer.h - TCP protocol
-*   - UdpLayer, UdpLayer.h - UDP protocol
-*   - IcmpLayer, IcmpLayer.h - ICMP protocol
-*   - DnsLayer, DnsLayer.h - DNS protocol
-*   - HttpRequestLayer, HttpLayer.h - HTTP request protocol
-*   - HttpResponseLayer, HttpLayer.h - HTTP response protocol
-*   - SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
-*   - PayloadLayer, PayloadLayer.h - unknown layer or payload
+*   - pcpp::EthLayer, EthLayer.h - Ethernet protocol
+*   - pcpp::ArpLayer, ArpLayer.h - ARP protocol
+*   - pcpp::VlanLayer, VlanLayer.h - VLAN protocol
+*   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
+*   - pcpp::PPPoESessionLayer, pcpp::PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
+*   - pcpp::GREv0Layer, pcpp::GREv1Layer, pcpp::PPP_PPTPLayer, GreLayer.h - GRE and PPTP protocol
+*   - pcpp::IPv4Layer, IPv4Layer.h - IPv4 protocol
+*   - pcpp::IPv6Layer, IPv6Layer.h - IPv6 protocol
+*   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
+*   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
+*   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
+*   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
+*   - pcpp::HttpRequestLayer, HttpLayer.h - HTTP request protocol
+*   - pcpp::HttpResponseLayer, HttpLayer.h - HTTP response protocol
+*   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
+*   - pcpp::PayloadLayer, PayloadLayer.h - unknown layer or payload
 *
 * <b>Common utilities and infrastructure (Common++, Pcap++):</b>
-*   - IPv4Address, IPv6Address, IpAddress.h - IP address wrapper classes
-*   - MacAddress, MacAddress.h - MAC address wrapper class
-*   - LoggerPP, Logger.h - PcapPlusPlus logger
+*   - pcpp::IPv4Address, pcpp::IPv6Address, IpAddress.h - IP address wrapper classes
+*   - pcpp::MacAddress, MacAddress.h - MAC address wrapper class
+*   - pcpp::LoggerPP, Logger.h - PcapPlusPlus logger
 *   - IpUtils.h - all kinds of network helpful utilities
 *   - NetworkUtils.h - several useful and common network utilities
 */

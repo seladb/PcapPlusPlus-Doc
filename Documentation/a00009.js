@@ -1,5 +1,5 @@
 var a00009 =
 [
-    [ "getSize", "a00009.html#ac7820ded83852f957d4a4420bab775fd", null ],
-    [ "getType", "a00009.html#abad36ff180a509f53736452b3a661aa9", null ]
+    [ "getSize", "a00009.html#aa58a85121063a1df0d91e04df7f2ff0d", null ],
+    [ "getType", "a00009.html#a09231b2035b920aa5d36f76f420613f6", null ]
 ];

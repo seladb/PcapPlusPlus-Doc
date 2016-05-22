@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resourcetype',['ResourceType',['../a00046.html#aafa76f59ec543e8fe01d3534422afb9f',1,'IDnsResource']]]
+  ['resourcetype',['ResourceType',['../a00046.html#a31f2e8268a4850da83b3d85c17d99d96',1,'pcpp::IDnsResource']]]
 ];

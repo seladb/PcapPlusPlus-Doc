@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['nextheader',['nextHeader',['../a00049.html#ad71ca13fffd4168105ad70968f3dfb9a',1,'ip6_hdr']]],
-  ['nexthopmtu',['nextHopMTU',['../a00033.html#a403b18f4694ee6abab0d43237ad41bc4',1,'icmp_destination_unreachable']]],
-  ['numberofadditional',['numberOfAdditional',['../a00007.html#a3d44738f4c170af4219cab033933da9c',1,'dnshdr']]],
-  ['numberofanswers',['numberOfAnswers',['../a00007.html#ac27a989052df9557e87fc8ba8175ba5c',1,'dnshdr']]],
-  ['numberofauthority',['numberOfAuthority',['../a00007.html#afd60ff564afd2e0f7457cbccb0a04451',1,'dnshdr']]],
-  ['numberofquestions',['numberOfQuestions',['../a00007.html#a9451141e818e15ed9015d83c97f755e2',1,'dnshdr']]]
+  ['nextheader',['nextHeader',['../a00049.html#aee8e571549e08804cbf245c37eed7cfa',1,'pcpp::ip6_hdr']]],
+  ['nexthopmtu',['nextHopMTU',['../a00033.html#a55e8c3c3cffaff9d7207b3902ec9634a',1,'pcpp::icmp_destination_unreachable']]],
+  ['numberofadditional',['numberOfAdditional',['../a00007.html#a9e3f93ab8cf39ecc8b261b99df182fb7',1,'pcpp::dnshdr']]],
+  ['numberofanswers',['numberOfAnswers',['../a00007.html#ac1c882f5f9bd83d50a671b09a08683bf',1,'pcpp::dnshdr']]],
+  ['numberofauthority',['numberOfAuthority',['../a00007.html#a6d7eb212fa99e55db2dd9683a3c99ece',1,'pcpp::dnshdr']]],
+  ['numberofquestions',['numberOfQuestions',['../a00007.html#af22351368a518e3597634f9ad6338952',1,'pcpp::dnshdr']]]
 ];

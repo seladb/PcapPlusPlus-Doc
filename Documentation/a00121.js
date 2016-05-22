@@ -1,5 +1,5 @@
 var a00121 =
 [
-    [ "SSLServerNameIndicationExtension", "a00121.html#a5026f7b6f6f360eaa89ec535a7f546da", null ],
-    [ "getHostName", "a00121.html#ae8173f1f61105e4a214a8058b822d59a", null ]
+    [ "SSLServerNameIndicationExtension", "a00121.html#af05391f55be98d6aa8b5192c6a170e60", null ],
+    [ "getHostName", "a00121.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
 ];

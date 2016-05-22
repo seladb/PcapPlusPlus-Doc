@@ -1,12 +1,12 @@
 var a00010 =
 [
-    [ "getCustomDnsClass", "a00010.html#a8a6fba311a92714f4655b1729e491ae6", null ],
-    [ "getDataAsString", "a00010.html#a8e359da356036f06f4623b0e048fb87f", null ],
-    [ "getDataLength", "a00010.html#a0ac34c11273dcfcb6a1c1853fd5e1dd3", null ],
-    [ "getSize", "a00010.html#a5d25b471ec10385b9351422d7b1819e7", null ],
-    [ "getTTL", "a00010.html#a66fdec8cd60cc56b6a4b161c61577469", null ],
-    [ "getType", "a00010.html#aa3a335cec6e57cb8e00b512226fd42b6", null ],
-    [ "setCustomDnsClass", "a00010.html#ac13d673b2f03a88348b3d6914746a053", null ],
-    [ "setData", "a00010.html#affaaf70e215e1006d6cdb0bd2cc55d87", null ],
-    [ "setTTL", "a00010.html#aad8190121beb72fd7b85fa3fb8e63685", null ]
+    [ "getCustomDnsClass", "a00010.html#ac223a326142de6d1dc1fe7975436b7a2", null ],
+    [ "getDataAsString", "a00010.html#a9b36e9f38af1a6210ad6d81655b14da1", null ],
+    [ "getDataLength", "a00010.html#ac688df931aa666a232fc7006c75971e2", null ],
+    [ "getSize", "a00010.html#a9e624aed896eeea88916ba4b3c2f23cd", null ],
+    [ "getTTL", "a00010.html#a5182a292b41e1ac3d5b7edc67ce72d6d", null ],
+    [ "getType", "a00010.html#a75c1006edcc7273dbfc6bdc7e9245113", null ],
+    [ "setCustomDnsClass", "a00010.html#a502a8a0fcfc2853b6b08d00c6f877d46", null ],
+    [ "setData", "a00010.html#af27876b34431904ce10e2f48f6193b77", null ],
+    [ "setTTL", "a00010.html#a2f99de92eb4dd8f82d9fbbdecedc2f12", null ]
 ];

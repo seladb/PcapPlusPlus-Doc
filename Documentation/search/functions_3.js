@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dnslayer',['DnsLayer',['../a00008.html#a4a0655838a44f3c986a57b97264d0b9b',1,'DnsLayer::DnsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../a00008.html#a0c0b14d0879565e64d4579373cc7189b',1,'DnsLayer::DnsLayer()'],['../a00008.html#a290fa008e75990ec2e64bc14b7250935',1,'DnsLayer::DnsLayer(const DnsLayer &amp;other)']]],
-  ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../a00012.html#abacd84f55ae7bb18cfd4ae452257b3f9',1,'DpdkDevice::DpdkDeviceConfiguration']]]
+  ['dnslayer',['DnsLayer',['../a00008.html#a0436e0ee0837c38dea261bba282186f5',1,'pcpp::DnsLayer::DnsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../a00008.html#a265b0721e4d566fc58a5407dd343fa14',1,'pcpp::DnsLayer::DnsLayer()'],['../a00008.html#a86121249746b9e95024788b6ef398a72',1,'pcpp::DnsLayer::DnsLayer(const DnsLayer &amp;other)']]],
+  ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../a00012.html#ae9343bc64a2b34c9940adc355a225b52',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]]
 ];

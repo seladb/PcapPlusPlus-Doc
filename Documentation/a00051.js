@@ -1,9 +1,9 @@
 var a00051 =
 [
-    [ "close", "a00051.html#ad9dd73f0310fb6e3924fabb4e2542ef0", null ],
-    [ "getStatistics", "a00051.html#abfddac7872baed093efc622259f51fc6", null ],
-    [ "isOpened", "a00051.html#a9f54bb88194b3374e92ab6533138a0a7", null ],
-    [ "open", "a00051.html#a94a6922dff88e4bea4b3904a60e6f0e9", null ],
-    [ "setFilter", "a00051.html#ac8167b330a4ee85ab759facd0d4989bd", null ],
-    [ "setFilter", "a00051.html#a5cef54e472e5d9fdd6f20472a2b5bcd2", null ]
+    [ "close", "a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56", null ],
+    [ "getStatistics", "a00051.html#ace3640f2330899687e34aa3789f4cd05", null ],
+    [ "isOpened", "a00051.html#a22b03cdabb9f359c6bed0728c3614789", null ],
+    [ "open", "a00051.html#aa7d1358756653febf63d23b21447649c", null ],
+    [ "setFilter", "a00051.html#aadba6a20265dca6ba29b548325a798fe", null ],
+    [ "setFilter", "a00051.html#aa33400a37378ceb807228c43efbff47e", null ]
 ];

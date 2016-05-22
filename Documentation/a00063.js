@@ -1,18 +1,18 @@
 var a00063 =
 [
-    [ "LogLevel", "a00063.html#aa52cd7c3af16c16af7209f5769796047", [
-      [ "Normal", "a00063.html#aa52cd7c3af16c16af7209f5769796047a9afa3ff2b111f2c5ed4cf0b52f7d6858", null ],
-      [ "Debug", "a00063.html#aa52cd7c3af16c16af7209f5769796047a93120095a4775ee74bbebdb5b815c9fd", null ]
+    [ "LogLevel", "a00063.html#a522254c250da7b12b5b4817b84c208b6", [
+      [ "Normal", "a00063.html#a522254c250da7b12b5b4817b84c208b6a58e6375bc77510a75bee39cb4356ad7e", null ],
+      [ "Debug", "a00063.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397", null ]
     ] ],
-    [ "enableErrors", "a00063.html#a949a764e78f7ab3e4610e130032f9cc4", null ],
-    [ "getErrorString", "a00063.html#acc1ea00b8e216aef697e0408bf449b95", null ],
-    [ "getErrorStringLength", "a00063.html#a78215dfe2058fb59a56976ef04950f54", null ],
-    [ "getLogModulesArr", "a00063.html#a3d498104bed27d40459c0c38c1c7d68b", null ],
-    [ "isDebugEnabled", "a00063.html#a7f6c407ddd90de83220b90067b513587", null ],
-    [ "isErrorStringSet", "a00063.html#a28a3be2f5201ab478baff464d8b5df6c", null ],
-    [ "isSupressErrors", "a00063.html#a0665db5b2cc061cd022e4666f540662e", null ],
-    [ "setAllModlesToLogLevel", "a00063.html#aff10ddbdb52cc2c25fb5e450000495f7", null ],
-    [ "setErrorString", "a00063.html#a8b2e3f0c471f4391d581ed021d60f7c9", null ],
-    [ "setLogLevel", "a00063.html#a81e0fa1eef639071d680bf89efae2747", null ],
-    [ "supressErrors", "a00063.html#acbb4c2c036fd4c5a9af65ad0f20f7e94", null ]
+    [ "enableErrors", "a00063.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91", null ],
+    [ "getErrorString", "a00063.html#a96821970d89017f19ad24c024198e3a3", null ],
+    [ "getErrorStringLength", "a00063.html#a2ed51d61daff5222c4069cff3e245a83", null ],
+    [ "getLogModulesArr", "a00063.html#adc348d135eeef86271a100d3741ebb60", null ],
+    [ "isDebugEnabled", "a00063.html#a9b53774d0be75118413fcb3903e0da1b", null ],
+    [ "isErrorStringSet", "a00063.html#acde976836742578a55d778444d2dbcd6", null ],
+    [ "isSupressErrors", "a00063.html#ab1634894a477fbd9bccf8df68326d6d2", null ],
+    [ "setAllModlesToLogLevel", "a00063.html#a031c0e504a537e5921687ab2450bbc04", null ],
+    [ "setErrorString", "a00063.html#a99c1db3a69ae2f55b08df135ee706080", null ],
+    [ "setLogLevel", "a00063.html#a8869da5bc6e76719c57942b12f8f36f6", null ],
+    [ "supressErrors", "a00063.html#a84be0ff3175c243ca493975222aa199b", null ]
 ];

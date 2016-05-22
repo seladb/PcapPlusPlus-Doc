@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['devicemode',['DeviceMode',['../a00075.html#a185b64fcba0e667fcc7457b2ab4a4e21',1,'PcapLiveDevice']]],
-  ['direction',['Direction',['../a00162.html#a224b9163917ac32fc95a60d8c1eec3aa',1,'PcapFilter.h']]],
-  ['dnsclass',['DnsClass',['../a00140.html#a26e59922d152a198d8fd9e52c97d120b',1,'DnsLayer.h']]],
-  ['dnstype',['DnsType',['../a00140.html#a1659b09e7b08e3332c69df201f0ef3ec',1,'DnsLayer.h']]],
-  ['dpdkpmdtype',['DpdkPMDType',['../a00141.html#a5a850880eb1247949ec592ae602a0eb7',1,'DpdkDevice.h']]]
+  ['devicemode',['DeviceMode',['../a00075.html#a2381e7f053285090f0f9620bcbd8f0f3',1,'pcpp::PcapLiveDevice']]],
+  ['direction',['Direction',['../a00182.html#a966edb536b73cf93cbc9b83f9c64930a',1,'pcpp']]],
+  ['dnsclass',['DnsClass',['../a00182.html#a9a53cd13fb37fed91d2acda175bee7b9',1,'pcpp']]],
+  ['dnstype',['DnsType',['../a00182.html#ad888578fe7df9849bbfbb10cdf245886',1,'pcpp']]],
+  ['dpdkpmdtype',['DpdkPMDType',['../a00182.html#adb43f1f8284d4e0b74d1c77b70152fa9',1,'pcpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['winpcapdevice',['WinPcapDevice',['../a00075.html#a201c04fe21184602ce48fb799b9bd7d7aa09f95e4cf5b79cce8a5551e760ca204',1,'PcapLiveDevice']]]
+  ['winpcapdevice',['WinPcapDevice',['../a00075.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6',1,'pcpp::PcapLiveDevice']]]
 ];

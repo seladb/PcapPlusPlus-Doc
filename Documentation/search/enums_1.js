@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['channeldistribution',['ChannelDistribution',['../a00081.html#a859e6207223f202a35261338793c0211',1,'PfRingDevice']]]
+  ['channeldistribution',['ChannelDistribution',['../a00081.html#a2a7113725490fea52c9702998e6a8f78',1,'pcpp::PfRingDevice']]]
 ];

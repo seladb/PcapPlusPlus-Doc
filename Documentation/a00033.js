@@ -1,5 +1,5 @@
 var a00033 =
 [
-    [ "nextHopMTU", "a00033.html#a403b18f4694ee6abab0d43237ad41bc4", null ],
-    [ "unused", "a00033.html#ad4202db26391049de1103d72b2f81add", null ]
+    [ "nextHopMTU", "a00033.html#a55e8c3c3cffaff9d7207b3902ec9634a", null ],
+    [ "unused", "a00033.html#a04f434cf79f3a4e52a654dd664f08de3", null ]
 ];

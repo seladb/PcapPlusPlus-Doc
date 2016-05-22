@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -87,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00026.html','');});
+$(document).ready(function(){initNavTree('a00025.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,27 +107,43 @@ $(document).ready(function(){initNavTree('a00026.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">HttpRequestFirstLine Member List</div>  </div>
+<div class="title">pcpp::HttpMessage Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00026.html">HttpRequestFirstLine</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00025.html">pcpp::HttpMessage</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00026.html#af2debcd82357fb0281c268504205e9cd">getMethod</a>()</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00026.html#a951579f173d0b07cadcbd98fc6cf8b40">getSize</a>()</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00026.html#a5eedbf96dd679f6ec39e0aa7caab6cff">getUri</a>()</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00026.html#ab0b103e4d1d7a7f93eb39323b2f80ffb">getVersion</a>()</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00026.html#aa62ccd41ee77d36891a951caffec98c8">isComplete</a>()</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00026.html#a67822a230abf7215785a71c8ebf9ddb8">parseMethod</a>(char *data, size_t dataLen)</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00026.html#ada32c58bdd03b60ca0058294d48776d3">setMethod</a>(HttpRequestLayer::HttpMethod newMethod)</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00026.html#a0157bf03b8dc15abc8f7ba62afe3b164">setUri</a>(std::string newUri)</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00026.html#ae410c4528efcf74143c5bf24a463ac17">setVersion</a>(HttpVersion newVersion)</td><td class="entry"><a class="el" href="a00026.html">HttpRequestFirstLine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#a2d9d95e780e0eaf2b85cdc334f6584a3">addEndOfHeader</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#a3b6579bb70d24048ae36bd458b42efb6">addField</a>(const std::string &amp;fieldName, const std::string &amp;fieldValue)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#aec0b282e761a5db8f57e832d2598b475">addField</a>(const HttpField &amp;newField)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#a58400c654a5544deb9583e2ad6bc9982">computeCalculateFields</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a658e543c6c13707f8f624957cadc19e9">copyData</a>(uint8_t *toArr)</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#aeb6887ff8d98eeb2d39ffe43aaaa7347">getFieldByName</a>(std::string fieldName)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#ae3b2f5228e83f0e5c6832778a3c45039">getFirstField</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#a78ecb8aa9b390e0bdb7c2e505c8e59b7">getHeaderLen</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#ac1026dd3bf19b3ad1b9668a6184ae426">getNextField</a>(HttpField *prevField)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#ac6ed432d6d32ba9d8119a706fbd5bd6a">insertField</a>(HttpField *prevField, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#aaee0d8f4e54aba90aec8e2d2e9616a8a">insertField</a>(HttpField *prevField, const HttpField &amp;newField)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#a701003b87156e45c8cf4e87fcad94200">isHeaderComplete</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#ad2e61f9320fa4fdd338430d365360aaa">parseNextLayer</a>()</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00025.html#a11d6704a10718ef9c705858bd3985ac1">removeField</a>(HttpField *fieldToRemove)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00025.html#ada5ced67d64e890431755bac0779f3d3">removeField</a>(std::string fieldName)</td><td class="entry"><a class="el" href="a00025.html">pcpp::HttpMessage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">toString</a>()=0</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00061.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a>()</td><td class="entry"><a class="el" href="a00061.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 9 2016 23:10:04 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 23 2016 00:43:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
