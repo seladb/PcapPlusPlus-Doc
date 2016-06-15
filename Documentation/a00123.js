@@ -1,7 +1,5 @@
 var a00123 =
 [
-    [ "SSLx509Certificate", "a00123.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
-    [ "allDataExists", "a00123.html#ae4182828228a1e402626560090d3cdb6", null ],
-    [ "getData", "a00123.html#a4d9c58672e41a057dc53d4923af3992f", null ],
-    [ "getDataLength", "a00123.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
+    [ "SSLServerNameIndicationExtension", "a00123.html#af05391f55be98d6aa8b5192c6a170e60", null ],
+    [ "getHostName", "a00123.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
 ];

@@ -1,7 +1,7 @@
 var a00122 =
 [
-    [ "SSLUnknownMessage", "a00122.html#a7dc53bdee48e90df1b6a3c553dfb245b", null ],
-    [ "getHandshakeType", "a00122.html#a84538f3ce34865d7c6956a6c239ffa37", null ],
-    [ "getMessageLength", "a00122.html#ae3fa59951f9a9036a14120451f70d046", null ],
-    [ "toString", "a00122.html#aab56dd7d4e29722be66481e2b5bbc139", null ]
+    [ "SSLServerKeyExchangeMessage", "a00122.html#a1218714d90696a235404f70b41e70b41", null ],
+    [ "getServerKeyExchangeParams", "a00122.html#ad7c8c6d0bc49a7951fdc60923789de6b", null ],
+    [ "getServerKeyExchangeParamsLength", "a00122.html#a0661186c198209c8a71294fe372aae48", null ],
+    [ "toString", "a00122.html#acae0392cfe821a9acd35e247e24e012b", null ]
 ];

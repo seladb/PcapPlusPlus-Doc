@@ -1,5 +1,8 @@
 var a00096 =
 [
-    [ "alertDescription", "a00096.html#ac4c45f54bcc165e118945b4abd60c453", null ],
-    [ "alertLevel", "a00096.html#a0acc72153dcbe55e0f453461cd856346", null ]
+    [ "ARPHRD_type", "a00096.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
+    [ "link_layer_addr", "a00096.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
+    [ "link_layer_addr_len", "a00096.html#ac253e0a098c39f46d192619ed5d229bf", null ],
+    [ "packet_type", "a00096.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
+    [ "protocol_type", "a00096.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
 ];

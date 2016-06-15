@@ -1,6 +1,6 @@
 var a00074 =
 [
-    [ "PcapFileWriterDevice", "a00074.html#a565c205a684627a2f168d958ac61a2ae", null ],
+    [ "PcapFileWriterDevice", "a00074.html#a49bbe926cbd9be0cfde7b96974e5785a", null ],
     [ "~PcapFileWriterDevice", "a00074.html#ac3aa347668d24475e9f750fcb5959d93", null ],
     [ "close", "a00074.html#a60b102a04429b8baba0637c3505f6448", null ],
     [ "getStatistics", "a00074.html#a3f72c11bc118609f84c5b462f27cdc1f", null ],

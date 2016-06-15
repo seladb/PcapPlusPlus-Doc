@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['random',['random',['../a00098.html#a81da9a7d83f33c7a1809fdd919d05d6e',1,'pcpp::ssl_tls_client_server_hello']]],
-  ['rawpacket',['RawPacket',['../a00094.html#abfdc11ceebcaffe321dca50e0fffd933',1,'pcpp::RawPacket::RawPacket(const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor)'],['../a00094.html#acc12f855f36a798ce0e8c7dc8a4618f9',1,'pcpp::RawPacket::RawPacket()'],['../a00094.html#a38d24eda21061c53f0801f3bcbe34193',1,'pcpp::RawPacket::RawPacket(const RawPacket &amp;other)']]],
+  ['random',['random',['../a00100.html#a81da9a7d83f33c7a1809fdd919d05d6e',1,'pcpp::ssl_tls_client_server_hello']]],
+  ['rawpacket',['RawPacket',['../a00094.html#a8834cea9fc72516c3d22a841479ee684',1,'pcpp::RawPacket::RawPacket(const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor, LinkLayerType layerType=LINKTYPE_ETHERNET)'],['../a00094.html#acc12f855f36a798ce0e8c7dc8a4618f9',1,'pcpp::RawPacket::RawPacket()'],['../a00094.html#a38d24eda21061c53f0801f3bcbe34193',1,'pcpp::RawPacket::RawPacket(const RawPacket &amp;other)']]],
   ['rawpacket',['RawPacket',['../a00094.html',1,'pcpp']]],
-  ['rawpacket_2eh',['RawPacket.h',['../a00173.html',1,'']]],
-  ['rawpacketvector',['RawPacketVector',['../a00182.html#a4c0775fb93a0867d2afa7992d55957f0',1,'pcpp']]],
+  ['rawpacket_2eh',['RawPacket.h',['../a00175.html',1,'']]],
+  ['rawpacketvector',['RawPacketVector',['../a00185.html#a4c0775fb93a0867d2afa7992d55957f0',1,'pcpp']]],
   ['reallocatedata',['reallocateData',['../a00066.html#ac8984ba4413680165a38d13bdd853987',1,'pcpp::MBufRawPacket::reallocateData()'],['../a00094.html#acd9248a47bd60427e2a3ef34b379a28e',1,'pcpp::RawPacket::reallocateData()']]],
   ['receivedescriptorsnumber',['receiveDescriptorsNumber',['../a00012.html#af0f377c2974af2766ffcb3bd54ed7e2d',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]],
   ['receivepackets',['receivePackets',['../a00011.html#a1459cfd1875c5033398a1ac7c00f3394',1,'pcpp::DpdkDevice::receivePackets(RawPacketVector &amp;rawPacketsArr, uint16_t rxQueueId)'],['../a00011.html#a8b8dc9d0c67e4d5c1d55f4a32e2e7c6c',1,'pcpp::DpdkDevice::receivePackets(MBufRawPacket **rawPacketsArr, int &amp;rawPacketArrLength, uint16_t rxQueueId)'],['../a00011.html#a4c9a34cc0c4144dbbfa567747ebedef2',1,'pcpp::DpdkDevice::receivePackets(Packet **packetsArr, int &amp;packetsArrLength, uint16_t rxQueueId)']]],
   ['receivetimestamp',['receiveTimestamp',['../a00043.html#ad6c33b9a1da04e9e692b35575828747d',1,'pcpp::icmp_timestamp_request']]],
-  ['recordtype',['recordType',['../a00100.html#a77fe184eb1e2f559b4ed1395cc015ab7',1,'pcpp::ssl_tls_record_layer']]],
-  ['recordversion',['recordVersion',['../a00100.html#ac3a7e87ce16dec3662286d0a94686de6',1,'pcpp::ssl_tls_record_layer']]],
+  ['recordtype',['recordType',['../a00102.html#a77fe184eb1e2f559b4ed1395cc015ab7',1,'pcpp::ssl_tls_record_layer']]],
+  ['recordversion',['recordVersion',['../a00102.html#ac3a7e87ce16dec3662286d0a94686de6',1,'pcpp::ssl_tls_record_layer']]],
   ['recursionavailable',['recursionAvailable',['../a00007.html#accb70bf9b2e440c94820dd8e22651326',1,'pcpp::dnshdr']]],
   ['recursioncontrol',['recursionControl',['../a00020.html#a01d91f77713e08fe2c8baef6580b522c',1,'pcpp::gre_basic_header']]],
   ['recursiondesired',['recursionDesired',['../a00007.html#adfb415bb642ceba8a9d8e826bd95830a',1,'pcpp::dnshdr']]],
@@ -31,6 +31,6 @@ var searchData=
   ['roundrobin',['RoundRobin',['../a00081.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
   ['routeraddress',['routerAddress',['../a00039.html#a5d698807f7397470f2c04a54fe862e37',1,'pcpp::icmp_router_address_structure']]],
   ['routingbit',['routingBit',['../a00020.html#a58ed856400ff63a74bd1f6b4d08ea6c8',1,'pcpp::gre_basic_header']]],
-  ['rstflag',['rstFlag',['../a00127.html#a36a5abf30794062f32de013b6ddf39c9',1,'pcpp::tcphdr']]],
+  ['rstflag',['rstFlag',['../a00129.html#a36a5abf30794062f32de013b6ddf39c9',1,'pcpp::tcphdr']]],
   ['run',['run',['../a00014.html#adf8c2b08e51679b20e9f56e166483492',1,'pcpp::DpdkWorkerThread']]]
 ];

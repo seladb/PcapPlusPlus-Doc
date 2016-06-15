@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('a00074.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00260.html">List of all members</a>  </div>
+<a href="a00263.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::PcapFileWriterDevice Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00161_source.html">PcapFileDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00163_source.html">PcapFileDevice.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for pcpp::PcapFileWriterDevice:</div>
 <div class="dyncontent">
@@ -128,13 +128,13 @@ Inheritance diagram for pcpp::PcapFileWriterDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a565c205a684627a2f168d958ac61a2ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a565c205a684627a2f168d958ac61a2ae">PcapFileWriterDevice</a> (const char *fileName)</td></tr>
-<tr class="separator:a565c205a684627a2f168d958ac61a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bbe926cbd9be0cfde7b96974e5785a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a49bbe926cbd9be0cfde7b96974e5785a">PcapFileWriterDevice</a> (const char *fileName, PcapLinkLayerType linkLayerType=PCAP_LINKTYPE_ETHERNET)</td></tr>
+<tr class="separator:a49bbe926cbd9be0cfde7b96974e5785a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3aa347668d24475e9f750fcb5959d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ac3aa347668d24475e9f750fcb5959d93">~PcapFileWriterDevice</a> ()</td></tr>
 <tr class="separator:ac3aa347668d24475e9f750fcb5959d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add964c71699315d457a33b22998501fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#add964c71699315d457a33b22998501fd">writePacket</a> (<a class="el" href="a00094.html">RawPacket</a> const &amp;packet)</td></tr>
 <tr class="separator:add964c71699315d457a33b22998501fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e22200a6da2898262499699c001430"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ac2e22200a6da2898262499699c001430">writePackets</a> (const <a class="el" href="a00182.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets)</td></tr>
+<tr class="memitem:ac2e22200a6da2898262499699c001430"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ac2e22200a6da2898262499699c001430">writePackets</a> (const <a class="el" href="a00185.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets)</td></tr>
 <tr class="separator:ac2e22200a6da2898262499699c001430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c5ea38028c05717dd2957c4be08296"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ab9c5ea38028c05717dd2957c4be08296">open</a> ()</td></tr>
 <tr class="separator:ab9c5ea38028c05717dd2957c4be08296"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for opening a pcap file for writing or create a new pcap file and write packets to it </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a565c205a684627a2f168d958ac61a2ae"></a>
+<a class="anchor" id="a49bbe926cbd9be0cfde7b96974e5785a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -161,14 +161,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pcpp::PcapFileWriterDevice::PcapFileWriterDevice </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">PcapLinkLayerType&#160;</td>
+          <td class="paramname"><em>linkLayerType</em> = <code>PCAP_LINKTYPE_ETHERNET</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>A constructor for this class that gets the pcap full path file name to open for writing or create. Notice that after calling this constructor the file isn't opened yet, so writing packets will fail. For opening the file call <a class="el" href="a00074.html#ab9c5ea38028c05717dd2957c4be08296">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkLayerType</td><td>The link layer type all packet in this file will be based on. The default is Ethernet </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,7 +306,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if a packet was written successfully. False will be returned if the file isn't opened (also, an error will be printed to log) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was written successfully. False will be returned if the file isn't opened or if the packet link layer type is different than the one defined for the file (in all cases, an error will be printed to log) </dd></dl>
 
 </div>
 </div>
@@ -306,7 +317,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::PcapFileWriterDevice::writePackets </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00182.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00185.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>packets</em></td><td>)</td>
           <td></td>
         </tr>
@@ -327,8 +338,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00182.html">pcpp</a></li><li class="navelem"><a class="el" href="a00074.html">PcapFileWriterDevice</a></li>
-    <li class="footer">Generated on Mon May 23 2016 00:43:09 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00185.html">pcpp</a></li><li class="navelem"><a class="el" href="a00074.html">PcapFileWriterDevice</a></li>
+    <li class="footer">Generated on Wed Jun 15 2016 22:13:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

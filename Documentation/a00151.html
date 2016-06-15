@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Layer.h File Reference</title>
+<title>PcapPlusPlus: IPv4Layer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,36 +106,70 @@ $(document).ready(function(){initNavTree('a00151.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Layer.h File Reference</div>  </div>
+<div class="title">IPv4Layer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00172_source.html">ProtocolType.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00153_source.html">Layer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00149_source.html">IpAddress.h</a>&quot;</code><br />
 </div>
 <p><a href="a00151_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html">pcpp::iphdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html">pcpp::IPv4Layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00182"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html">pcpp</a></td></tr>
-<tr class="memdesc:a00182"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00185"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html">pcpp</a></td></tr>
+<tr class="memdesc:a00185"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ace8e2e21b82a8adc602f561e1e612fb0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0">pcpp::IPProtocolTypes</a> { <br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a37ebd16dbd9fae867a264e290501dd0d">pcpp::PACKETPP_IPPROTO_IP</a> = 0, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0ab4b438a108e462f86dc5d62f51d105dc">pcpp::PACKETPP_IPPROTO_HOPOPTS</a> = 0, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a027db1494ff303416341ffb814c17dfa">pcpp::PACKETPP_IPPROTO_ICMP</a> = 1, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a4a4dbf2992a8132fa14bb414b8bc2766">pcpp::PACKETPP_IPPROTO_IGMP</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a085980e09e408abae0d98cd37ef44f1a">pcpp::PACKETPP_IPPROTO_IPIP</a> = 4, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a5dffe1f660439e4cbde02f6df7125c05">pcpp::PACKETPP_IPPROTO_TCP</a> = 6, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a96638308145652889be03ab78e3c2568">pcpp::PACKETPP_IPPROTO_EGP</a> = 8, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a8ccae1eb803bbf3b8e07eea30d310a9d">pcpp::PACKETPP_IPPROTO_PUP</a> = 12, 
+<br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a37bdb863a039ad4072f57ab7c10f9d5d">pcpp::PACKETPP_IPPROTO_UDP</a> = 17, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a96435254e0cef23a1eab3153fdc3cbfe">pcpp::PACKETPP_IPPROTO_IDP</a> = 22, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0afc03c7e8eb3dc25345bdbbaa0e148c69">pcpp::PACKETPP_IPPROTO_IPV6</a> = 41, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a00a5aa163aa7b7fd4f76178b22156831">pcpp::PACKETPP_IPPROTO_ROUTING</a> = 43, 
+<br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a2e3b8ae9b97750a4512bf5aae24b7710">pcpp::PACKETPP_IPPROTO_FRAGMENT</a> = 44, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a50ba6b3e134f18b8e3f9bf492e6e6273">pcpp::PACKETPP_IPPROTO_GRE</a> = 47, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a4791d404d67873fc51c48d600c838998">pcpp::PACKETPP_IPPROTO_ESP</a> = 50, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a018524a2341f1c23dde17e2c385193b9">pcpp::PACKETPP_IPPROTO_AH</a> = 51, 
+<br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0a81cfda499cc9e38aeb886f4fdafd9e9d">pcpp::PACKETPP_IPPROTO_ICMPV6</a> = 58, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0af526200e5e89dfb3596f0b119d4b20bc">pcpp::PACKETPP_IPPROTO_NONE</a> = 59, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0ad59abbf5fc384899c3d484987e5becc4">pcpp::PACKETPP_IPPROTO_DSTOPTS</a> = 60, 
+<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0af29fae046d1c041be606aec6b905b5b2">pcpp::PACKETPP_IPPROTO_RAW</a> = 255, 
+<br />
+&#160;&#160;<a class="el" href="a00185.html#ace8e2e21b82a8adc602f561e1e612fb0af9c6e2fb2f497c363bfb861abd2ca29e">pcpp::PACKETPP_IPPROTO_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:ace8e2e21b82a8adc602f561e1e612fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00151.html">Layer.h</a></li>
-    <li class="footer">Generated on Mon May 23 2016 00:43:08 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00151.html">IPv4Layer.h</a></li>
+    <li class="footer">Generated on Wed Jun 15 2016 22:13:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

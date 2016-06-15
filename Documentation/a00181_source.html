@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: WinPcapLiveDevice.h Source File</title>
+<title>PcapPlusPlus: TcpLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,76 +105,264 @@ $(document).ready(function(){initNavTree('a00181_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">WinPcapLiveDevice.h</div>  </div>
+<div class="title">TcpLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00181.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPP_WINPCAP_LIVE_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPP_WINPCAP_LIVE_DEVICE</span></div>
+<a href="a00181.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_TCP_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_TCP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00163.html">PcapLiveDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00182.html">pcpp</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00137.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00137.html">WinPcapLiveDevice</a> : <span class="keyword">public</span> <a class="code" href="a00075.html">PcapLiveDevice</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00076.html">PcapLiveDeviceList</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> m_MinAmountOfDataToCopyFromKernelToApplication;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// c&#39;tor is not public, there should be only one for every interface (created by PcapLiveDeviceList)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00137.html">WinPcapLiveDevice</a>(pcap_if_t* iface, <span class="keywordtype">bool</span> calculateMTU, <span class="keywordtype">bool</span> calculateMacAddress, <span class="keywordtype">bool</span> calculateDefaultGateway);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// copy c&#39;tor is not public</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="a00137.html">WinPcapLiveDevice</a>( <span class="keyword">const</span> <a class="code" href="a00137.html">WinPcapLiveDevice</a>&amp; other );</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="a00137.html">WinPcapLiveDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00137.html">WinPcapLiveDevice</a>&amp; other);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00137.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">   36</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00075.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a> <a class="code" href="a00137.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">getDeviceType</a>() { <span class="keywordflow">return</span> <a class="code" href="a00075.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6">WinPcapDevice</a>; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00137.html#af22e2966176d4127e69300cd4b208758">startCapture</a>(<a class="code" href="a00182.html#aa07524ba3fd4932968d2c302a936ae10">OnPacketArrivesCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie, <span class="keywordtype">int</span> intervalInSecondsToUpdateStats, <a class="code" href="a00182.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUsrrCookie);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00137.html#af22e2966176d4127e69300cd4b208758">startCapture</a>(<span class="keywordtype">int</span> intervalInSecondsToUpdateStats, <a class="code" href="a00182.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUserCookie);</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00137.html#a74824694b8f72f687dec10557a196675">   40</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00137.html#a74824694b8f72f687dec10557a196675">startCapture</a>(<a class="code" href="a00083.html">RawPacketVector</a>&amp; capturedPacketsVector) { <span class="keywordflow">return</span> <a class="code" href="a00075.html#a349b001c38b0f1e43a1691fedbd1b0cc">PcapLiveDevice::startCapture</a>(capturedPacketsVector); }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="a00137.html#a8f0f1d43beaf1e839959ec51838a246f">sendPackets</a>(<a class="code" href="a00094.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00137.html#aebff78da9d57c6ec9046de32746943bd">setMinAmountOfDataToCopyFromKernelToApplication</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00137.html#a8dfdf0d5b3e54235756d9695b90f3ef7">   57</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00137.html#a8dfdf0d5b3e54235756d9695b90f3ef7">getMinAmountOfDataToCopyFromKernelToApplication</a>() { <span class="keywordflow">return</span> m_MinAmountOfDataToCopyFromKernelToApplication; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // WIN32</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPP_WINPCAP_LIVE_DEVICE */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00076_html"><div class="ttname"><a href="a00076.html">pcpp::PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:25</div></div>
-<div class="ttc" id="a00137_html_acc1fc2d75dc09c9e3920c6c1d3f0ce37"><div class="ttname"><a href="a00137.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">pcpp::WinPcapLiveDevice::getDeviceType</a></div><div class="ttdeci">virtual LiveDeviceType getDeviceType()</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:36</div></div>
-<div class="ttc" id="a00137_html_a8f0f1d43beaf1e839959ec51838a246f"><div class="ttname"><a href="a00137.html#a8f0f1d43beaf1e839959ec51838a246f">pcpp::WinPcapLiveDevice::sendPackets</a></div><div class="ttdeci">virtual int sendPackets(RawPacket *rawPacketsArr, int arrLength)</div></div>
-<div class="ttc" id="a00182_html"><div class="ttname"><a href="a00182.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00075_html_a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6"><div class="ttname"><a href="a00075.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6">pcpp::PcapLiveDevice::WinPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:116</div></div>
-<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">pcpp::PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:65</div></div>
-<div class="ttc" id="a00163_html"><div class="ttname"><a href="a00163.html">PcapLiveDevice.h</a></div></div>
-<div class="ttc" id="a00137_html_a74824694b8f72f687dec10557a196675"><div class="ttname"><a href="a00137.html#a74824694b8f72f687dec10557a196675">pcpp::WinPcapLiveDevice::startCapture</a></div><div class="ttdeci">bool startCapture(RawPacketVector &amp;capturedPacketsVector)</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:40</div></div>
-<div class="ttc" id="a00083_html"><div class="ttname"><a href="a00083.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
-<div class="ttc" id="a00182_html_aa07524ba3fd4932968d2c302a936ae10"><div class="ttname"><a href="a00182.html#aa07524ba3fd4932968d2c302a936ae10">pcpp::OnPacketArrivesCallback</a></div><div class="ttdeci">void(* OnPacketArrivesCallback)(RawPacket *pPacket, PcapLiveDevice *pDevice, void *userCookie)</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:30</div></div>
-<div class="ttc" id="a00075_html_a0e343585711ee4e02d4b9507467135ab"><div class="ttname"><a href="a00075.html#a0e343585711ee4e02d4b9507467135ab">pcpp::PcapLiveDevice::LiveDeviceType</a></div><div class="ttdeci">LiveDeviceType</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:112</div></div>
-<div class="ttc" id="a00137_html"><div class="ttname"><a href="a00137.html">pcpp::WinPcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:23</div></div>
-<div class="ttc" id="a00137_html_a8dfdf0d5b3e54235756d9695b90f3ef7"><div class="ttname"><a href="a00137.html#a8dfdf0d5b3e54235756d9695b90f3ef7">pcpp::WinPcapLiveDevice::getMinAmountOfDataToCopyFromKernelToApplication</a></div><div class="ttdeci">int getMinAmountOfDataToCopyFromKernelToApplication()</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:57</div></div>
-<div class="ttc" id="a00137_html_af22e2966176d4127e69300cd4b208758"><div class="ttname"><a href="a00137.html#af22e2966176d4127e69300cd4b208758">pcpp::WinPcapLiveDevice::startCapture</a></div><div class="ttdeci">bool startCapture(OnPacketArrivesCallback onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, void *onStatsUpdateUsrrCookie)</div></div>
-<div class="ttc" id="a00075_html_a349b001c38b0f1e43a1691fedbd1b0cc"><div class="ttname"><a href="a00075.html#a349b001c38b0f1e43a1691fedbd1b0cc">pcpp::PcapLiveDevice::startCapture</a></div><div class="ttdeci">virtual bool startCapture(OnPacketArrivesCallback onPacketArrives, void *onPacketArrivesUserCookie)</div></div>
-<div class="ttc" id="a00137_html_aebff78da9d57c6ec9046de32746943bd"><div class="ttname"><a href="a00137.html#aebff78da9d57c6ec9046de32746943bd">pcpp::WinPcapLiveDevice::setMinAmountOfDataToCopyFromKernelToApplication</a></div><div class="ttdeci">bool setMinAmountOfDataToCopyFromKernelToApplication(int size)</div></div>
-<div class="ttc" id="a00094_html"><div class="ttname"><a href="a00094.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:28</div></div>
-<div class="ttc" id="a00182_html_af797dbce1a97d45a6b86cdedb6d627da"><div class="ttname"><a href="a00182.html#af797dbce1a97d45a6b86cdedb6d627da">pcpp::OnStatsUpdateCallback</a></div><div class="ttdeci">void(* OnStatsUpdateCallback)(pcap_stat &amp;stats, void *userCookie)</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:38</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00153.html">Layer.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00185.html">pcpp</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00129.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00129.html">tcphdr</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00129.html#a4ba66caaf79a20c53a8e92f7537d50a6">   23</a></span>&#160;        uint16_t <a class="code" href="a00129.html#a4ba66caaf79a20c53a8e92f7537d50a6">portSrc</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00129.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">   25</a></span>&#160;        uint16_t <a class="code" href="a00129.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">portDst</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00129.html#a2edb7c27d93777ae552eca417cf118d0">   27</a></span>&#160;        uint32_t <a class="code" href="a00129.html#a2edb7c27d93777ae552eca417cf118d0">sequenceNumber</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00129.html#ae54a29e632cb6526df4a7e2e79261ad7">   29</a></span>&#160;        uint32_t <a class="code" href="a00129.html#ae54a29e632cb6526df4a7e2e79261ad7">ackNumber</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00129.html#a2e2c38c9079e807f366b3cc62669b09c">   31</a></span>&#160;        uint16_t reserved:4,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="a00129.html#a593a30084c297a99ea01b76fce5c5b11">dataOffset</a>:4,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="a00129.html#aa76c48fa043559ec4b0b90fa9535feeb">finFlag</a>:1,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="a00129.html#a469f06456ae6eaf39e764d7f30c06dc3">synFlag</a>:1,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="a00129.html#a36a5abf30794062f32de013b6ddf39c9">rstFlag</a>:1,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="a00129.html#a1561eb6d029e00fe449bbaac3be8d705">pshFlag</a>:1,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="a00129.html#abf1b2600722973e7c2e6f4e05e34c93b">ackFlag</a>:1,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="a00129.html#a2e2c38c9079e807f366b3cc62669b09c">urgFlag</a>:1,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="a00129.html#a607801a4305ecb6d4ab234a6755b78e7">eceFlag</a>:1,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="a00129.html#a26d5425128be717916096e577f2561fe">cwrFlag</a>:1;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#elif (BYTE_ORDER == BIG_ENDIAN)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        uint16_t <a class="code" href="a00129.html#a593a30084c297a99ea01b76fce5c5b11">dataOffset</a>:4,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            reserved:4,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="a00129.html#a26d5425128be717916096e577f2561fe">cwrFlag</a>:1,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="a00129.html#a607801a4305ecb6d4ab234a6755b78e7">eceFlag</a>:1,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="a00129.html#a2e2c38c9079e807f366b3cc62669b09c">urgFlag</a>:1,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="a00129.html#abf1b2600722973e7c2e6f4e05e34c93b">ackFlag</a>:1,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="a00129.html#a1561eb6d029e00fe449bbaac3be8d705">pshFlag</a>:1,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="a00129.html#a36a5abf30794062f32de013b6ddf39c9">rstFlag</a>:1,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="a00129.html#a469f06456ae6eaf39e764d7f30c06dc3">synFlag</a>:1,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="a00129.html#aa76c48fa043559ec4b0b90fa9535feeb">finFlag</a>:1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#error  &quot;Endian is not LE nor BE...&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00129.html#a62ab389980bbae1e81846792a1c8846a">   74</a></span>&#160;        uint16_t    <a class="code" href="a00129.html#a62ab389980bbae1e81846792a1c8846a">windowSize</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00129.html#af25c27d92c75ab68816d23c3ead02d5a">   76</a></span>&#160;        uint16_t    <a class="code" href="a00129.html#af25c27d92c75ab68816d23c3ead02d5a">headerChecksum</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00129.html#a43efd09b5aad3f50f38bf2a689cc790c">   78</a></span>&#160;        uint16_t    <a class="code" href="a00129.html#a43efd09b5aad3f50f38bf2a689cc790c">urgentPointer</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286">   86</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286">TcpOption</a> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a991573205e9cf18408ffd3e778c9fa0d">   88</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a991573205e9cf18408ffd3e778c9fa0d">TCPOPT_NOP</a> =            1,</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a7f46a56345a2578b198c23f1ebe1b2df">   90</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a7f46a56345a2578b198c23f1ebe1b2df">TCPOPT_EOL</a> =            0,</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a2e397d517856130b7b8015a2a5116702">   92</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a2e397d517856130b7b8015a2a5116702">TCPOPT_MSS</a> =            2,</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286abcb138280171cf47d23a02d8ed092394">   94</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286abcb138280171cf47d23a02d8ed092394">TCPOPT_WINDOW</a> =         3,</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286ae8a33bd70ab512bd473f1ba75038285d">   96</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286ae8a33bd70ab512bd473f1ba75038285d">TCPOPT_SACK_PERM</a> =      4,</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a55320d634ee7d7e760d56266d568482c">   98</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a55320d634ee7d7e760d56266d568482c">TCPOPT_SACK</a> =           5,</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a">  100</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a">TCPOPT_ECHO</a> =           6,</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e">  102</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e">TCPOPT_ECHOREPLY</a> =      7,</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286aafc99955610a21dd420bbc7acf9dbfbd">  104</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286aafc99955610a21dd420bbc7acf9dbfbd">TCPOPT_TIMESTAMP</a> =      8,</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29">  106</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29">TCPOPT_CC</a> =             11,</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a39a5d63627b15bff0bd86fe2157dbe20">  108</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a39a5d63627b15bff0bd86fe2157dbe20">TCPOPT_CCNEW</a> =          12,</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286aecbe259aa1fb8dff733084929a25ca27">  110</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286aecbe259aa1fb8dff733084929a25ca27">TCPOPT_CCECHO</a> =         13,</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286acf51a70b96198793030c576bf48111f6">  112</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286acf51a70b96198793030c576bf48111f6">TCPOPT_MD5</a> =            19,</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a6a8400173edfca48e2e795c1e9afc862">  114</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a6a8400173edfca48e2e795c1e9afc862">TCPOPT_MPTCP</a> =          0x1e,</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3">  116</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3">TCPOPT_SCPS</a> =           20,</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286acfa8aa4d4604c71338bae5270e3df540">  118</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286acfa8aa4d4604c71338bae5270e3df540">TCPOPT_SNACK</a> =          21,</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a">  120</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a">TCPOPT_RECBOUND</a> =       22,</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286ad997623b58c2d423f13721d5570484b8">  122</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286ad997623b58c2d423f13721d5570484b8">TCPOPT_CORREXP</a> =        23,</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a368220fcd77a952c25993ff0d328b34d">  124</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a368220fcd77a952c25993ff0d328b34d">TCPOPT_QS</a> =             27,</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b">  126</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b">TCPOPT_USER_TO</a> =        28,</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a0205491540fd32d17506aba9d94af517">  128</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a0205491540fd32d17506aba9d94af517">TCPOPT_EXP_FD</a> =         0xfd,</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2">  130</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2">TCPOPT_EXP_FE</a> =         0xfe,</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286abd01da185004dc3f371e2ec536c1bfd7">  132</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286abd01da185004dc3f371e2ec536c1bfd7">TCPOPT_RVBD_PROBE</a> =     76,</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="a00185.html#a540c8f1aff318621afb964481749f286a448a533dced328df05277c2daf60fb1d">  134</a></span>&#160;        <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286a448a533dced328df05277c2daf60fb1d">TCPOPT_RVBD_TRPY</a> =      78</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    };</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00181.html#ad066265ec5012e69a9abe1cdba749587">  138</a></span>&#160;<span class="preprocessor">#define PCPP_TCP_OPTIONS_COUNT 24</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// TCP option lengths</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="a00181.html#a89f2dcf43fbf2f9c0e03043368b6fb37">  144</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_MSS            4</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00181.html#a7ce30dd81cb66c2576ac968c4e9fc33f">  146</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_WINDOW         3</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="a00181.html#a64a2bcb1a1f4fe9e51aa6d9f00fa9780">  148</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_SACK_PERM      2</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="a00181.html#aacff66e946d05e033507f036972e3aaf">  150</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_SACK_MIN       2</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="a00181.html#a264a0d34df22cad1fee1523a4e01d7ba">  152</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_ECHO           6</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="a00181.html#aca033eac3c97bee9bc70499262d5bac8">  154</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_ECHOREPLY      6</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="a00181.html#ae0fd18fd227d9cf40fd0176dce1ed2e4">  156</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_TIMESTAMP     10</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="a00181.html#a2ba3f9ff28dbd65780526d5306b653a0">  158</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_CC             6</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="a00181.html#afc4ee0fb5f33243d1cd7cd9c856ea5b7">  160</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_CCNEW          6</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00181.html#ab5e2e3231f1117d3735a163fb160dee6">  162</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_CCECHO         6</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="a00181.html#a1ed2c7c3e37b9977037e94daf2813b6b">  164</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_MD5           18</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a00181.html#ad0f72fa987aaa8599d7553a189c7417b">  166</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_MPTCP_MIN      8</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="a00181.html#a2dc1861d1e3032581bdfa540422aadfd">  168</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_SCPS           4</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="a00181.html#a4edf9f057a86313f3bc5c68148bd5499">  170</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_SNACK          6</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="a00181.html#a816a3d38e1261a2fc8ef7a0a6d412678">  172</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_RECBOUND       2</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00181.html#abe0508763fac22e8bd23fc336049f681">  174</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_CORREXP        2</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="a00181.html#a6004efca801f4107e709b57f650757c4">  176</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_QS             8</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="a00181.html#a1eec6154f51bfe9616c3e0f4768c6804">  178</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_USER_TO        4</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="a00181.html#a6838e204cbc45a08c94333d4a41efa17">  180</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_RVBD_PROBE_MIN 3</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00181.html#a590e0f3a1b3237e82fb353e50cfd2835">  182</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_RVBD_TRPY_MIN 16</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00181.html#afe8197703959f102d53f2d773114e1e8">  184</a></span>&#160;<span class="preprocessor">#define PCPP_TCPOLEN_EXP_MIN        2</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="a00131.html">  190</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00131.html">TcpOptionData</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="a00131.html#a33d7eb2c21b7cbb8a629ea91a7df4c26">  193</a></span>&#160;        uint8_t <a class="code" href="a00131.html#a33d7eb2c21b7cbb8a629ea91a7df4c26">option</a>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="a00131.html#a722a42e1ceef77b984bfe06c33d77ab3">  195</a></span>&#160;        uint8_t <a class="code" href="a00131.html#a722a42e1ceef77b984bfe06c33d77ab3">len</a>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="a00131.html#ae4d31ebb49c6bae190edd6d51a8c1757">  197</a></span>&#160;        uint8_t <a class="code" href="a00131.html#ae4d31ebb49c6bae190edd6d51a8c1757">value</a>[];</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    };</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="a00181.html#a2c3f2e65cd3ace89c5a366aee64c967b">  201</a></span>&#160;<span class="preprocessor">#define PCPP_MAX_SUPPORTED_TCP_OPTIONS 100</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="a00130.html">  207</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00130.html">TcpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00061.html">Layer</a></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="a00130.html#a586788dd716915a61f263996ebaae626">TcpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00061.html">Layer</a>* prevLayer, <a class="code" href="a00071.html">Packet</a>* packet);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="a00130.html#a586788dd716915a61f263996ebaae626">TcpLayer</a>(<span class="keywordtype">int</span> tcpOptionsCount, ...);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="a00130.html#a586788dd716915a61f263996ebaae626">TcpLayer</a>(uint16_t portSrc, uint16_t portDst, <span class="keywordtype">int</span> tcpOptionsCount, ...);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        ~<a class="code" href="a00130.html">TcpLayer</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="a00130.html#a586788dd716915a61f263996ebaae626">TcpLayer</a>(<span class="keyword">const</span> <a class="code" href="a00130.html">TcpLayer</a>&amp; other);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="a00130.html">TcpLayer</a>&amp; <a class="code" href="a00130.html#a7dea7265510eda5cd67b984c2634ef19">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00130.html">TcpLayer</a>&amp; other);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="a00130.html#a351dbc0708b8930036940ff93abb362f">  253</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00129.html">tcphdr</a>* <a class="code" href="a00130.html#a351dbc0708b8930036940ff93abb362f">getTcpHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00129.html">tcphdr</a>*)m_Data; };</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="a00131.html">TcpOptionData</a>* <a class="code" href="a00130.html#a1b427e3e350460835e76d315c0f0b4bb">getTcpOptionData</a>(<a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286">TcpOption</a> option);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="a00130.html#a5f4221c3c8c65f55e21c2db0e87b566a">  265</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00130.html#a5f4221c3c8c65f55e21c2db0e87b566a">getTcpOptionsCount</a>() { <span class="keywordflow">return</span> m_TcpOptionsInLayerCount; }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        uint16_t <a class="code" href="a00130.html#abf39676d5adf4e2b3b2d90a616428780">calculateChecksum</a>(<span class="keywordtype">bool</span> writeResultToPacket);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00130.html#ab26777b6ea7d6bfaed5032b20630fc72">parseNextLayer</a>();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="a00130.html#a5d81b7bed2f5c4389b5b80c9282493e6">  284</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00130.html#a5d81b7bed2f5c4389b5b80c9282493e6">getHeaderLen</a>() { <span class="keywordflow">return</span> m_HeaderLen;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00130.html#a500d6585f588aaed9c73c2872c581e02">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        std::string <a class="code" href="a00130.html#a73e8482bed0fbb00e7a7ba87699df92f">toString</a>();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00131.html">TcpOptionData</a> TcpOptions[<a class="code" href="a00181.html#ad066265ec5012e69a9abe1cdba749587">PCPP_TCP_OPTIONS_COUNT</a>];</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keyword">struct </span>TcpOptionPtr</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286">TcpOption</a> option;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordtype">int</span> dataOffset;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        };</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        TcpOptionPtr* m_TcpOptionsInLayer;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordtype">size_t</span> m_TcpOptionsInLayerCount;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordtype">size_t</span> m_HeaderLen;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordtype">void</span> initLayer(<span class="keywordtype">int</span> tcpOptionsCount, va_list paramsList);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keyword">const</span> TcpOptionData&amp; getTcpOptionRawData(<a class="code" href="a00185.html#a540c8f1aff318621afb964481749f286">TcpOption</a> option);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordtype">void</span> copyLayerData(<span class="keyword">const</span> <a class="code" href="a00130.html#a586788dd716915a61f263996ebaae626">TcpLayer</a>&amp; other);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    };</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3">pcpp::TCPOPT_SCPS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:116</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29">pcpp::TCPOPT_CC</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:106</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a368220fcd77a952c25993ff0d328b34d"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a368220fcd77a952c25993ff0d328b34d">pcpp::TCPOPT_QS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:124</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a55320d634ee7d7e760d56266d568482c"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a55320d634ee7d7e760d56266d568482c">pcpp::TCPOPT_SACK</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:98</div></div>
+<div class="ttc" id="a00129_html_a62ab389980bbae1e81846792a1c8846a"><div class="ttname"><a href="a00129.html#a62ab389980bbae1e81846792a1c8846a">pcpp::tcphdr::windowSize</a></div><div class="ttdeci">uint16_t windowSize</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:74</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a">pcpp::TCPOPT_RECBOUND</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:120</div></div>
+<div class="ttc" id="a00130_html_a586788dd716915a61f263996ebaae626"><div class="ttname"><a href="a00130.html#a586788dd716915a61f263996ebaae626">pcpp::TcpLayer::TcpLayer</a></div><div class="ttdeci">TcpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div></div>
+<div class="ttc" id="a00131_html_ae4d31ebb49c6bae190edd6d51a8c1757"><div class="ttname"><a href="a00131.html#ae4d31ebb49c6bae190edd6d51a8c1757">pcpp::TcpOptionData::value</a></div><div class="ttdeci">uint8_t value[]</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:197</div></div>
+<div class="ttc" id="a00129_html_a4ba66caaf79a20c53a8e92f7537d50a6"><div class="ttname"><a href="a00129.html#a4ba66caaf79a20c53a8e92f7537d50a6">pcpp::tcphdr::portSrc</a></div><div class="ttdeci">uint16_t portSrc</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:23</div></div>
+<div class="ttc" id="a00129_html_a1561eb6d029e00fe449bbaac3be8d705"><div class="ttname"><a href="a00129.html#a1561eb6d029e00fe449bbaac3be8d705">pcpp::tcphdr::pshFlag</a></div><div class="ttdeci">uint16_t pshFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00130_html_a5d81b7bed2f5c4389b5b80c9282493e6"><div class="ttname"><a href="a00130.html#a5d81b7bed2f5c4389b5b80c9282493e6">pcpp::TcpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:284</div></div>
+<div class="ttc" id="a00130_html"><div class="ttname"><a href="a00130.html">pcpp::TcpLayer</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:207</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a448a533dced328df05277c2daf60fb1d"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a448a533dced328df05277c2daf60fb1d">pcpp::TCPOPT_RVBD_TRPY</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:134</div></div>
+<div class="ttc" id="a00131_html_a33d7eb2c21b7cbb8a629ea91a7df4c26"><div class="ttname"><a href="a00131.html#a33d7eb2c21b7cbb8a629ea91a7df4c26">pcpp::TcpOptionData::option</a></div><div class="ttdeci">uint8_t option</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:193</div></div>
+<div class="ttc" id="a00129_html_a607801a4305ecb6d4ab234a6755b78e7"><div class="ttname"><a href="a00129.html#a607801a4305ecb6d4ab234a6755b78e7">pcpp::tcphdr::eceFlag</a></div><div class="ttdeci">uint16_t eceFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00129_html_af25c27d92c75ab68816d23c3ead02d5a"><div class="ttname"><a href="a00129.html#af25c27d92c75ab68816d23c3ead02d5a">pcpp::tcphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:76</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286ae8a33bd70ab512bd473f1ba75038285d"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286ae8a33bd70ab512bd473f1ba75038285d">pcpp::TCPOPT_SACK_PERM</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:96</div></div>
+<div class="ttc" id="a00129_html_a43efd09b5aad3f50f38bf2a689cc790c"><div class="ttname"><a href="a00129.html#a43efd09b5aad3f50f38bf2a689cc790c">pcpp::tcphdr::urgentPointer</a></div><div class="ttdeci">uint16_t urgentPointer</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:78</div></div>
+<div class="ttc" id="a00130_html_abf39676d5adf4e2b3b2d90a616428780"><div class="ttname"><a href="a00130.html#abf39676d5adf4e2b3b2d90a616428780">pcpp::TcpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286aecbe259aa1fb8dff733084929a25ca27"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286aecbe259aa1fb8dff733084929a25ca27">pcpp::TCPOPT_CCECHO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:110</div></div>
+<div class="ttc" id="a00130_html_ab26777b6ea7d6bfaed5032b20630fc72"><div class="ttname"><a href="a00130.html#ab26777b6ea7d6bfaed5032b20630fc72">pcpp::TcpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a7f46a56345a2578b198c23f1ebe1b2df"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a7f46a56345a2578b198c23f1ebe1b2df">pcpp::TCPOPT_EOL</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:90</div></div>
+<div class="ttc" id="a00129_html_aa76c48fa043559ec4b0b90fa9535feeb"><div class="ttname"><a href="a00129.html#aa76c48fa043559ec4b0b90fa9535feeb">pcpp::tcphdr::finFlag</a></div><div class="ttdeci">uint16_t finFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a39a5d63627b15bff0bd86fe2157dbe20"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a39a5d63627b15bff0bd86fe2157dbe20">pcpp::TCPOPT_CCNEW</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:108</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2">pcpp::TCPOPT_EXP_FE</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:130</div></div>
+<div class="ttc" id="a00129_html_a4ae26537b0e824c5b0fc1bcf9adf2fdc"><div class="ttname"><a href="a00129.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">pcpp::tcphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:25</div></div>
+<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e">pcpp::TCPOPT_ECHOREPLY</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:102</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286aafc99955610a21dd420bbc7acf9dbfbd"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286aafc99955610a21dd420bbc7acf9dbfbd">pcpp::TCPOPT_TIMESTAMP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:104</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286acf51a70b96198793030c576bf48111f6"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286acf51a70b96198793030c576bf48111f6">pcpp::TCPOPT_MD5</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:112</div></div>
+<div class="ttc" id="a00129_html"><div class="ttname"><a href="a00129.html">pcpp::tcphdr</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:21</div></div>
+<div class="ttc" id="a00129_html_a469f06456ae6eaf39e764d7f30c06dc3"><div class="ttname"><a href="a00129.html#a469f06456ae6eaf39e764d7f30c06dc3">pcpp::tcphdr::synFlag</a></div><div class="ttdeci">uint16_t synFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00130_html_a5f4221c3c8c65f55e21c2db0e87b566a"><div class="ttname"><a href="a00130.html#a5f4221c3c8c65f55e21c2db0e87b566a">pcpp::TcpLayer::getTcpOptionsCount</a></div><div class="ttdeci">size_t getTcpOptionsCount()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:265</div></div>
+<div class="ttc" id="a00129_html_ae54a29e632cb6526df4a7e2e79261ad7"><div class="ttname"><a href="a00129.html#ae54a29e632cb6526df4a7e2e79261ad7">pcpp::tcphdr::ackNumber</a></div><div class="ttdeci">uint32_t ackNumber</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:29</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286abcb138280171cf47d23a02d8ed092394"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286abcb138280171cf47d23a02d8ed092394">pcpp::TCPOPT_WINDOW</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:94</div></div>
+<div class="ttc" id="a00129_html_a2edb7c27d93777ae552eca417cf118d0"><div class="ttname"><a href="a00129.html#a2edb7c27d93777ae552eca417cf118d0">pcpp::tcphdr::sequenceNumber</a></div><div class="ttdeci">uint32_t sequenceNumber</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:27</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286ad997623b58c2d423f13721d5570484b8"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286ad997623b58c2d423f13721d5570484b8">pcpp::TCPOPT_CORREXP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:122</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a2e397d517856130b7b8015a2a5116702"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a2e397d517856130b7b8015a2a5116702">pcpp::TCPOPT_MSS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:92</div></div>
+<div class="ttc" id="a00131_html_a722a42e1ceef77b984bfe06c33d77ab3"><div class="ttname"><a href="a00131.html#a722a42e1ceef77b984bfe06c33d77ab3">pcpp::TcpOptionData::len</a></div><div class="ttdeci">uint8_t len</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:195</div></div>
+<div class="ttc" id="a00130_html_a7dea7265510eda5cd67b984c2634ef19"><div class="ttname"><a href="a00130.html#a7dea7265510eda5cd67b984c2634ef19">pcpp::TcpLayer::operator=</a></div><div class="ttdeci">TcpLayer &amp; operator=(const TcpLayer &amp;other)</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a6a8400173edfca48e2e795c1e9afc862"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a6a8400173edfca48e2e795c1e9afc862">pcpp::TCPOPT_MPTCP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:114</div></div>
+<div class="ttc" id="a00129_html_a26d5425128be717916096e577f2561fe"><div class="ttname"><a href="a00129.html#a26d5425128be717916096e577f2561fe">pcpp::tcphdr::cwrFlag</a></div><div class="ttdeci">uint16_t cwrFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286">pcpp::TcpOption</a></div><div class="ttdeci">TcpOption</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:86</div></div>
+<div class="ttc" id="a00131_html"><div class="ttname"><a href="a00131.html">pcpp::TcpOptionData</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:190</div></div>
+<div class="ttc" id="a00129_html_abf1b2600722973e7c2e6f4e05e34c93b"><div class="ttname"><a href="a00129.html#abf1b2600722973e7c2e6f4e05e34c93b">pcpp::tcphdr::ackFlag</a></div><div class="ttdeci">uint16_t ackFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286abd01da185004dc3f371e2ec536c1bfd7"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286abd01da185004dc3f371e2ec536c1bfd7">pcpp::TCPOPT_RVBD_PROBE</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:132</div></div>
+<div class="ttc" id="a00181_html_ad066265ec5012e69a9abe1cdba749587"><div class="ttname"><a href="a00181.html#ad066265ec5012e69a9abe1cdba749587">PCPP_TCP_OPTIONS_COUNT</a></div><div class="ttdeci">#define PCPP_TCP_OPTIONS_COUNT</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:138</div></div>
+<div class="ttc" id="a00129_html_a2e2c38c9079e807f366b3cc62669b09c"><div class="ttname"><a href="a00129.html#a2e2c38c9079e807f366b3cc62669b09c">pcpp::tcphdr::urgFlag</a></div><div class="ttdeci">uint16_t urgFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a0205491540fd32d17506aba9d94af517"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a0205491540fd32d17506aba9d94af517">pcpp::TCPOPT_EXP_FD</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:128</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b">pcpp::TCPOPT_USER_TO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:126</div></div>
+<div class="ttc" id="a00153_html"><div class="ttname"><a href="a00153.html">Layer.h</a></div></div>
+<div class="ttc" id="a00130_html_a1b427e3e350460835e76d315c0f0b4bb"><div class="ttname"><a href="a00130.html#a1b427e3e350460835e76d315c0f0b4bb">pcpp::TcpLayer::getTcpOptionData</a></div><div class="ttdeci">TcpOptionData * getTcpOptionData(TcpOption option)</div></div>
+<div class="ttc" id="a00130_html_a73e8482bed0fbb00e7a7ba87699df92f"><div class="ttname"><a href="a00130.html#a73e8482bed0fbb00e7a7ba87699df92f">pcpp::TcpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00130_html_a351dbc0708b8930036940ff93abb362f"><div class="ttname"><a href="a00130.html#a351dbc0708b8930036940ff93abb362f">pcpp::TcpLayer::getTcpHeader</a></div><div class="ttdeci">tcphdr * getTcpHeader()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:253</div></div>
+<div class="ttc" id="a00130_html_a500d6585f588aaed9c73c2872c581e02"><div class="ttname"><a href="a00130.html#a500d6585f588aaed9c73c2872c581e02">pcpp::TcpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
+<div class="ttc" id="a00129_html_a36a5abf30794062f32de013b6ddf39c9"><div class="ttname"><a href="a00129.html#a36a5abf30794062f32de013b6ddf39c9">pcpp::tcphdr::rstFlag</a></div><div class="ttdeci">uint16_t rstFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html"><div class="ttname"><a href="a00185.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00129_html_a593a30084c297a99ea01b76fce5c5b11"><div class="ttname"><a href="a00129.html#a593a30084c297a99ea01b76fce5c5b11">pcpp::tcphdr::dataOffset</a></div><div class="ttdeci">uint16_t dataOffset</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a">pcpp::TCPOPT_ECHO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:100</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286acfa8aa4d4604c71338bae5270e3df540"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286acfa8aa4d4604c71338bae5270e3df540">pcpp::TCPOPT_SNACK</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:118</div></div>
+<div class="ttc" id="a00071_html"><div class="ttname"><a href="a00071.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00185_html_a540c8f1aff318621afb964481749f286a991573205e9cf18408ffd3e778c9fa0d"><div class="ttname"><a href="a00185.html#a540c8f1aff318621afb964481749f286a991573205e9cf18408ffd3e778c9fa0d">pcpp::TCPOPT_NOP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:88</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00181.html">WinPcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Mon May 23 2016 00:43:08 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00181.html">TcpLayer.h</a></li>
+    <li class="footer">Generated on Wed Jun 15 2016 22:13:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::udphdr Struct Reference</title>
+<title>PcapPlusPlus: pcpp::TcpOptionData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,77 +108,62 @@ $(document).ready(function(){initNavTree('a00131.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00317.html">List of all members</a>  </div>
+<a href="a00320.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::udphdr Struct Reference</div>  </div>
+<div class="title">pcpp::TcpOptionData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00179_source.html">UdpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00181_source.html">TcpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a72a8d8ad99698271461762079d3758a9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a72a8d8ad99698271461762079d3758a9">portSrc</a></td></tr>
-<tr class="separator:a72a8d8ad99698271461762079d3758a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2760968de55386f04539019f5a677e5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#ab2760968de55386f04539019f5a677e5">portDst</a></td></tr>
-<tr class="separator:ab2760968de55386f04539019f5a677e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68edfe2e8136453d69b7a457461f379d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a68edfe2e8136453d69b7a457461f379d">length</a></td></tr>
-<tr class="separator:a68edfe2e8136453d69b7a457461f379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a4b110e652e51a0f32d4e6c7740354"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#af1a4b110e652e51a0f32d4e6c7740354">headerChecksum</a></td></tr>
-<tr class="separator:af1a4b110e652e51a0f32d4e6c7740354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d7eb2c21b7cbb8a629ea91a7df4c26"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a33d7eb2c21b7cbb8a629ea91a7df4c26">option</a></td></tr>
+<tr class="separator:a33d7eb2c21b7cbb8a629ea91a7df4c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722a42e1ceef77b984bfe06c33d77ab3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a722a42e1ceef77b984bfe06c33d77ab3">len</a></td></tr>
+<tr class="separator:a722a42e1ceef77b984bfe06c33d77ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d31ebb49c6bae190edd6d51a8c1757"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#ae4d31ebb49c6bae190edd6d51a8c1757">value</a> []</td></tr>
+<tr class="separator:ae4d31ebb49c6bae190edd6d51a8c1757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an UDP protocol header </p>
+<div class="textblock"><p>Representing a TCP option in a TLV (type-length-value) type </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af1a4b110e652e51a0f32d4e6c7740354"></a>
+<a class="anchor" id="a722a42e1ceef77b984bfe06c33d77ab3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::headerChecksum</td>
+          <td class="memname">uint8_t pcpp::TcpOptionData::len</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Error-checking of the header and data </p>
+<p>TCP option length </p>
 
 </div>
 </div>
-<a class="anchor" id="a68edfe2e8136453d69b7a457461f379d"></a>
+<a class="anchor" id="a33d7eb2c21b7cbb8a629ea91a7df4c26"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::length</td>
+          <td class="memname">uint8_t pcpp::TcpOptionData::option</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Length of header and payload in bytes </p>
+<p>TCP option type, should be on of <a class="el" href="a00185.html#a540c8f1aff318621afb964481749f286">TcpOption</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="ab2760968de55386f04539019f5a677e5"></a>
+<a class="anchor" id="ae4d31ebb49c6bae190edd6d51a8c1757"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portDst</td>
+          <td class="memname">uint8_t pcpp::TcpOptionData::value[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destination port </p>
-
-</div>
-</div>
-<a class="anchor" id="a72a8d8ad99698271461762079d3758a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portSrc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Source port </p>
+<p>TCP option value </p>
 
 </div>
 </div>
@@ -187,8 +172,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00182.html">pcpp</a></li><li class="navelem"><a class="el" href="a00131.html">udphdr</a></li>
-    <li class="footer">Generated on Mon May 23 2016 00:43:09 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00185.html">pcpp</a></li><li class="navelem"><a class="el" href="a00131.html">TcpOptionData</a></li>
+    <li class="footer">Generated on Wed Jun 15 2016 22:13:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
