@@ -122,126 +122,34 @@ $(document).ready(function(){initNavTree('a00162_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00185.html#a4c0775fb93a0867d2afa7992d55957f0">   19</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="a00083.html">PointerVector&lt;RawPacket&gt;</a> <a class="code" href="a00185.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">enum</span> PcapLinkLayerType</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        PCAP_LINKTYPE_NULL = 0,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        PCAP_LINKTYPE_ETHERNET = 1,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        PCAP_LINKTYPE_AX25 = 3,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        PCAP_LINKTYPE_IEEE802_5 = 6,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        PCAP_LINKTYPE_ARCNET_BSD = 7,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        PCAP_LINKTYPE_SLIP = 8,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        PCAP_LINKTYPE_PPP = 9,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        PCAP_LINKTYPE_FDDI = 10,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        PCAP_LINKTYPE_PPP_HDLC = 50,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        PCAP_LINKTYPE_PPP_ETHER = 51,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        PCAP_LINKTYPE_ATM_RFC1483 = 100,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        PCAP_LINKTYPE_RAW = 101,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        PCAP_LINKTYPE_C_HDLC = 104,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        PCAP_LINKTYPE_IEEE802_11 = 105,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        PCAP_LINKTYPE_FRELAY = 107,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        PCAP_LINKTYPE_LOOP = 108,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        PCAP_LINKTYPE_LINUX_SLL = 113,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        PCAP_LINKTYPE_LTALK = 114,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        PCAP_LINKTYPE_PFLOG = 117,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        PCAP_LINKTYPE_IEEE802_11_PRISM = 119,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        PCAP_LINKTYPE_IP_OVER_FC = 122,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        PCAP_LINKTYPE_SUNATM = 123,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        PCAP_LINKTYPE_IEEE802_11_RADIOTAP = 127,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        PCAP_LINKTYPE_ARCNET_LINUX = 129,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        PCAP_LINKTYPE_APPLE_IP_OVER_IEEE1394 = 138,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        PCAP_LINKTYPE_MTP2_WITH_PHDR = 139,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        PCAP_LINKTYPE_MTP2 = 140,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        PCAP_LINKTYPE_MTP3 = 141,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        PCAP_LINKTYPE_SCCP = 142,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        PCAP_LINKTYPE_DOCSIS = 143,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        PCAP_LINKTYPE_LINUX_IRDA = 144,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        PCAP_LINKTYPE_IEEE802_11_AVS = 163,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        PCAP_LINKTYPE_BACNET_MS_TP = 165,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        PCAP_LINKTYPE_PPP_PPPD = 166,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        PCAP_LINKTYPE_GPRS_LLC = 169,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        PCAP_LINKTYPE_GPF_T = 170,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        PCAP_LINKTYPE_GPF_F = 171,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        PCAP_LINKTYPE_LINUX_LAPD = 177,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_HCI_H4 = 187,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        PCAP_LINKTYPE_USB_LINUX = 189,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        PCAP_LINKTYPE_PPI = 192,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        PCAP_LINKTYPE_IEEE802_15_4 = 195,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        PCAP_LINKTYPE_SITA = 196,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        PCAP_LINKTYPE_ERF = 197,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_HCI_H4_WITH_PHDR = 201,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        PCAP_LINKTYPE_AX25_KISS = 202,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        PCAP_LINKTYPE_LAPD = 203,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        PCAP_LINKTYPE_PPP_WITH_DIR = 204,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        PCAP_LINKTYPE_C_HDLC_WITH_DIR = 205,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        PCAP_LINKTYPE_FRELAY_WITH_DIR = 206,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        PCAP_LINKTYPE_IPMB_LINUX = 209,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        PCAP_LINKTYPE_IEEE802_15_4_NONASK_PHY = 215,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        PCAP_LINKTYPE_USB_LINUX_MMAPPED = 220,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        PCAP_LINKTYPE_FC_2 = 224,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        PCAP_LINKTYPE_FC_2_WITH_FRAME_DELIMS = 225,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        PCAP_LINKTYPE_IPNET = 226,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        PCAP_LINKTYPE_CAN_SOCKETCAN = 227,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        PCAP_LINKTYPE_IPV4 = 228,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        PCAP_LINKTYPE_IPV6 = 229,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        PCAP_LINKTYPE_IEEE802_15_4_NOFCS = 230,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        PCAP_LINKTYPE_DBUS = 231,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        PCAP_LINKTYPE_DVB_CI = 235,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        PCAP_LINKTYPE_MUX27010 = 236,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        PCAP_LINKTYPE_STANAG_5066_D_PDU = 237,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        PCAP_LINKTYPE_NFLOG = 239,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        PCAP_LINKTYPE_NETANALYZER = 240,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        PCAP_LINKTYPE_NETANALYZER_TRANSPARENT = 241,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        PCAP_LINKTYPE_IPOIB = 242,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        PCAP_LINKTYPE_MPEG_2_TS = 243,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        PCAP_LINKTYPE_NG40 = 244,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        PCAP_LINKTYPE_NFC_LLCP = 245,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        PCAP_LINKTYPE_INFINIBAND = 247,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        PCAP_LINKTYPE_SCTP = 248,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        PCAP_LINKTYPE_USBPCAP = 249,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        PCAP_LINKTYPE_RTAC_SERIAL = 250,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_LE_LL = 251,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        PCAP_LINKTYPE_NETLINK = 253,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_LINUX_MONITOR = 254,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_BREDR_BB = 255,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        PCAP_LINKTYPE_BLUETOOTH_LE_LL_WITH_PHDR = 256,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        PCAP_LINKTYPE_PROFIBUS_DL = 257,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        PCAP_LINKTYPE_PKTAP = 258,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        PCAP_LINKTYPE_EPON = 259,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        PCAP_LINKTYPE_IPMI_HPM_2 = 260,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        PCAP_LINKTYPE_ZWAVE_R1_R2 = 261,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        PCAP_LINKTYPE_ZWAVE_R3 = 262,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        PCAP_LINKTYPE_WATTSTOPPER_DLM = 263,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        PCAP_LINKTYPE_ISO_14443 = 264</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    };</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="a00051.html">  118</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00051.html">IPcapDevice</a></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        pcap_t* m_PcapDescriptor;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">// c&#39;tor should not be public</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="a00051.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00051.html">IPcapDevice</a>();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aa7d1358756653febf63d23b21447649c">open</a>() = 0;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>() = 0;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">  144</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(<a class="code" href="a00018.html">GeneralFilter</a>&amp; filter);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(std::string filterAsString);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    };</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00051.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00051.html">IPcapDevice</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        pcap_t* m_PcapDescriptor;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// c&#39;tor should not be public</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="a00051.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00051.html">IPcapDevice</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aa7d1358756653febf63d23b21447649c">open</a>() = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>() = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">   52</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00051.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(<a class="code" href="a00018.html">GeneralFilter</a>&amp; filter);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00051.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(std::string filterAsString);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a00051_html_a5ce8877d4e047f11a3cb8d0f4f527e56"><div class="ttname"><a href="a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56">pcpp::IPcapDevice::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
 <div class="ttc" id="a00164_html"><div class="ttname"><a href="a00164.html">PcapFilter.h</a></div></div>
 <div class="ttc" id="a00018_html"><div class="ttname"><a href="a00018.html">pcpp::GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:72</div></div>
@@ -252,16 +160,16 @@ $(document).ready(function(){initNavTree('a00162_source.html','');});
 <div class="ttc" id="a00051_html_ace3640f2330899687e34aa3789f4cd05"><div class="ttname"><a href="a00051.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)=0</div></div>
 <div class="ttc" id="a00051_html_aa7d1358756653febf63d23b21447649c"><div class="ttname"><a href="a00051.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice::open</a></div><div class="ttdeci">virtual bool open()=0</div></div>
 <div class="ttc" id="a00172_html"><div class="ttname"><a href="a00172.html">PointerVector.h</a></div></div>
-<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">pcpp::IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:118</div></div>
+<div class="ttc" id="a00051_html"><div class="ttname"><a href="a00051.html">pcpp::IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:26</div></div>
 <div class="ttc" id="a00185_html"><div class="ttname"><a href="a00185.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00051_html_a22b03cdabb9f359c6bed0728c3614789"><div class="ttname"><a href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">pcpp::IPcapDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:144</div></div>
+<div class="ttc" id="a00051_html_a22b03cdabb9f359c6bed0728c3614789"><div class="ttname"><a href="a00051.html#a22b03cdabb9f359c6bed0728c3614789">pcpp::IPcapDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00162.html">PcapDevice.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2016 22:13:40 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Jun 18 2016 23:24:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
