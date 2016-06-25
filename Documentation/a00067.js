@@ -1,17 +1,14 @@
 var a00067 =
 [
-    [ "MplsLayer", "a00067.html#a78a145f83cfa7322875f9b6ea16e7b01", null ],
-    [ "MplsLayer", "a00067.html#afc1254a5d18cad8700d059c12de135c9", null ],
-    [ "computeCalculateFields", "a00067.html#ad02e5db78fb0b48d558d06ed3ea4f289", null ],
-    [ "getExperimentalUseValue", "a00067.html#a08c0c29fd77546f79fd04e3f72ff560c", null ],
-    [ "getHeaderLen", "a00067.html#acfcd645a870d558cf79f618c67d411f4", null ],
-    [ "getMplsLabel", "a00067.html#a81a078482749d623c7717e0ca6caa1c5", null ],
-    [ "getTTL", "a00067.html#a86338975aee81b97c266fd3c352f1822", null ],
-    [ "isBottomOfStack", "a00067.html#a5a158dfd712e5e75c6abed56d3e5ad19", null ],
-    [ "parseNextLayer", "a00067.html#ac39bfa71fcf5e63cb711334262458c51", null ],
-    [ "setBottomOfStack", "a00067.html#ad36043d44c2a5c3dbb0a9809756ccbc6", null ],
-    [ "setExperimentalUseValue", "a00067.html#a6d47d4dbc8d592c384577dd87726ded7", null ],
-    [ "setMplsLabel", "a00067.html#a21cf86ca8c689c68d70a6451e337a706", null ],
-    [ "setTTL", "a00067.html#a89c20c7d9d47206e52ddb51c536b79c8", null ],
-    [ "toString", "a00067.html#ac8c2d27147757ed9f51f629990514f81", null ]
+    [ "MBufRawPacket", "a00067.html#aaf206811e019a695318954e65b044f96", null ],
+    [ "~MBufRawPacket", "a00067.html#a696d9e42af3f7b8ea296e4137a019a13", null ],
+    [ "MBufRawPacket", "a00067.html#a0b2a21888dbcbdc2e50c703938de6804", null ],
+    [ "appendData", "a00067.html#af1c5144634729ce1ab2da2aa89946e89", null ],
+    [ "clear", "a00067.html#a265214f9d02a63d0cff85b4e1a93c396", null ],
+    [ "init", "a00067.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
+    [ "insertData", "a00067.html#a12e04aa6f066e6971946cc033fb2bdf9", null ],
+    [ "operator=", "a00067.html#ab194bcba22f170560890ee3f73faa027", null ],
+    [ "reallocateData", "a00067.html#ac8984ba4413680165a38d13bdd853987", null ],
+    [ "removeData", "a00067.html#a3895fef553d8345e18b7f97e52f1a10d", null ],
+    [ "setRawData", "a00067.html#a412aebf582fc8e9b5bbb6dfe8206c301", null ]
 ];

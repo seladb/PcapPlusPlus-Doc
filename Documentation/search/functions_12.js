@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['writedpdklogtofile',['writeDpdkLogToFile',['../a00013.html#ad23f3dc15588208e77f524864eb2ec16',1,'pcpp::DpdkDeviceList']]],
-  ['writepacket',['writePacket',['../a00074.html#add964c71699315d457a33b22998501fd',1,'pcpp::PcapFileWriterDevice']]],
-  ['writepackets',['writePackets',['../a00074.html#ac2e22200a6da2898262499699c001430',1,'pcpp::PcapFileWriterDevice']]]
+  ['vlanfilter',['VlanFilter',['../a00138.html#a0fe4f5f6ee92f8cf92dc98338a5128d6',1,'pcpp::VlanFilter']]],
+  ['vlanlayer',['VlanLayer',['../a00139.html#a5f6f8f15642dd1f0a88550bde0fb51b0',1,'pcpp::VlanLayer::VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../a00139.html#a35cf7eaece6f8eec9d722dfbc24cf8f0',1,'pcpp::VlanLayer::VlanLayer(const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)']]]
 ];

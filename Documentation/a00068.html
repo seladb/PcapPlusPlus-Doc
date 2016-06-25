@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::NetworkUtils Class Reference</title>
+<title>PcapPlusPlus: pcpp::MplsLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,38 +107,81 @@ $(document).ready(function(){initNavTree('a00068.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00257.html">List of all members</a>  </div>
+<a href="a00259.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::NetworkUtils Class Reference</div>  </div>
+<div class="title">pcpp::MplsLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00158_source.html">NetworkUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00159_source.html">MplsLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::MplsLayer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00068.png" usemap="#pcpp::MplsLayer_map" alt=""/>
+  <map id="pcpp::MplsLayer_map" name="pcpp::MplsLayer_map">
+<area href="a00061.html" alt="pcpp::Layer" shape="rect" coords="0,0,106,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25604394245462fc413cadb5ede6740b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a25604394245462fc413cadb5ede6740b">getMacAddress</a> (<a class="el" href="a00055.html">IPv4Address</a> ipAddr, <a class="el" href="a00075.html">PcapLiveDevice</a> *device, double &amp;arpResponseTimeMS, <a class="el" href="a00064.html">MacAddress</a> sourceMac=<a class="el" href="a00064.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a>, <a class="el" href="a00055.html">IPv4Address</a> sourceIP=<a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, int arpTimeout=-1)</td></tr>
-<tr class="separator:a25604394245462fc413cadb5ede6740b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812b40c3fd9ccfd3065c698010876c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00055.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a812b40c3fd9ccfd3065c698010876c13">getIPv4Address</a> (std::string hostname, <a class="el" href="a00075.html">PcapLiveDevice</a> *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, <a class="el" href="a00055.html">IPv4Address</a> dnsServerIP=<a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, <a class="el" href="a00055.html">IPv4Address</a> gatewayIP=<a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>)</td></tr>
-<tr class="separator:a812b40c3fd9ccfd3065c698010876c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0151f86bc3e98d50004bcf97d18517c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00068.html">NetworkUtils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ac0151f86bc3e98d50004bcf97d18517c">getInstance</a> ()</td></tr>
-<tr class="separator:ac0151f86bc3e98d50004bcf97d18517c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a6c8310c11abf274e400a9b2be59ab873"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a6c8310c11abf274e400a9b2be59ab873">DefaultTimeout</a></td></tr>
-<tr class="separator:a6c8310c11abf274e400a9b2be59ab873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a145f83cfa7322875f9b6ea16e7b01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a78a145f83cfa7322875f9b6ea16e7b01">MplsLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00061.html">Layer</a> *prevLayer, <a class="el" href="a00072.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a78a145f83cfa7322875f9b6ea16e7b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1254a5d18cad8700d059c12de135c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#afc1254a5d18cad8700d059c12de135c9">MplsLayer</a> (uint32_t mplsLabel, uint8_t ttl, uint8_t expermentalUseValue, bool bottomOfStack)</td></tr>
+<tr class="separator:afc1254a5d18cad8700d059c12de135c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86338975aee81b97c266fd3c352f1822"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a86338975aee81b97c266fd3c352f1822">getTTL</a> ()</td></tr>
+<tr class="separator:a86338975aee81b97c266fd3c352f1822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c20c7d9d47206e52ddb51c536b79c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a89c20c7d9d47206e52ddb51c536b79c8">setTTL</a> (uint8_t ttl)</td></tr>
+<tr class="separator:a89c20c7d9d47206e52ddb51c536b79c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a158dfd712e5e75c6abed56d3e5ad19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5a158dfd712e5e75c6abed56d3e5ad19">isBottomOfStack</a> ()</td></tr>
+<tr class="separator:a5a158dfd712e5e75c6abed56d3e5ad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36043d44c2a5c3dbb0a9809756ccbc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ad36043d44c2a5c3dbb0a9809756ccbc6">setBottomOfStack</a> (bool val)</td></tr>
+<tr class="separator:ad36043d44c2a5c3dbb0a9809756ccbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c0c29fd77546f79fd04e3f72ff560c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a08c0c29fd77546f79fd04e3f72ff560c">getExperimentalUseValue</a> ()</td></tr>
+<tr class="separator:a08c0c29fd77546f79fd04e3f72ff560c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d47d4dbc8d592c384577dd87726ded7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a6d47d4dbc8d592c384577dd87726ded7">setExperimentalUseValue</a> (uint8_t val)</td></tr>
+<tr class="separator:a6d47d4dbc8d592c384577dd87726ded7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a078482749d623c7717e0ca6caa1c5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a81a078482749d623c7717e0ca6caa1c5">getMplsLabel</a> ()</td></tr>
+<tr class="separator:a81a078482749d623c7717e0ca6caa1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21cf86ca8c689c68d70a6451e337a706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a21cf86ca8c689c68d70a6451e337a706">setMplsLabel</a> (uint32_t label)</td></tr>
+<tr class="separator:a21cf86ca8c689c68d70a6451e337a706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39bfa71fcf5e63cb711334262458c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ac39bfa71fcf5e63cb711334262458c51">parseNextLayer</a> ()</td></tr>
+<tr class="separator:ac39bfa71fcf5e63cb711334262458c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd645a870d558cf79f618c67d411f4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#acfcd645a870d558cf79f618c67d411f4">getHeaderLen</a> ()</td></tr>
+<tr class="separator:acfcd645a870d558cf79f618c67d411f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02e5db78fb0b48d558d06ed3ea4f289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ad02e5db78fb0b48d558d06ed3ea4f289">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:ad02e5db78fb0b48d558d06ed3ea4f289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c2d27147757ed9f51f629990514f81"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ac8c2d27147757ed9f51f629990514f81">toString</a> ()</td></tr>
+<tr class="separator:ac8c2d27147757ed9f51f629990514f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00061"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00061')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00061.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
+<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
+<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00061.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
+<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
+<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
+<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
+<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class bundles several network utilities that are very common and useful. These utilities use Pcap++ and Packet++ packet crafting and processing capabilities. This class is a singleton and can be access by <a class="el" href="a00068.html#ac0151f86bc3e98d50004bcf97d18517c">getInstance()</a> only </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac0151f86bc3e98d50004bcf97d18517c"></a>
+<div class="textblock"><p>Represents a MPLS (Multi-Protocol Label Switching) layer </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a78a145f83cfa7322875f9b6ea16e7b01"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -146,7 +189,110 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00068.html">NetworkUtils</a>&amp; pcpp::NetworkUtils::getInstance </td>
+          <td class="memname">pcpp::MplsLayer::MplsLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00061.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00072.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afc1254a5d18cad8700d059c12de135c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::MplsLayer::MplsLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mplsLabel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ttl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>expermentalUseValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bottomOfStack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new MPLS header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mplsLabel</td><td>MPLS label </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>Time-to-leave value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">expermentalUseValue</td><td>Experimental use value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bottomOfStack</td><td>Bottom-of-stack value which indicate whether the next layer will also be a MPLS label or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad02e5db78fb0b48d558d06ed3ea4f289"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::MplsLayer::computeCalculateFields </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -154,147 +300,33 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
+<p>Set/unset the bottom-of-stack bit according to next layer: if it's a MPLS layer then bottom-of-stack will be unset. If it's not a MPLS layer this bit will be set </p>
+
+<p>Implements <a class="el" href="a00061.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a812b40c3fd9ccfd3065c698010876c13"></a>
+<a class="anchor" id="a08c0c29fd77546f79fd04e3f72ff560c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">IPv4Address</a> pcpp::NetworkUtils::getIPv4Address </td>
+          <td class="memname">uint8_t pcpp::MplsLayer::getExperimentalUseValue </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>hostname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00075.html">PcapLiveDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>dnsResponseTimeMS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>dnsTTL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dnsTimeout</em> = <code>-1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00055.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>dnsServerIP</em> = <code><a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00055.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>gatewayIP</em> = <code><a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resolve an IPv4 address for a given hostname. Resolving is done in multiple phases: first resolving the LAN gateway MAC address (or default gateway if a gateway isn't provided) using ARP protocol (by using <a class="el" href="a00068.html#a25604394245462fc413cadb5ede6740b">NetworkUtils::getMacAddress()</a> ). Then a DNS request is sent to a DNS server (if specified) or to the LAN gateway (if DNS server is not specified). The DNS response is decoded and the IPv4 address is determined. In addition the method outputs the time it took the DNS response to arrive and the DNS TTL written on the DNS response. If DNS response doesn't contain an IPv4 address resolving an <a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>The hostname to resolve </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive packets on </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dnsResponseTimeMS</td><td>When method returns successfully will contain the time it took to receive the DNS response (in milli-seconds) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dnsTTL</td><td>When method returns successfully will contain The DNS TTL written in the DNS response </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsTimeout</td><td>An optional parameter to specify the timeout to wait for a DNS response. If not specified the default timeout is 5 sec </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dnsServerIP</td><td>An optional parameter to specify the DNS server IP to send the DNS request to. If not specified or specified with <a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the DNS request will be sent to the default DNS server configured in the system </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gatewayIP</td><td>An optional parameter to specify the LAN gateway to send the DNS request through. If not specified or specified with <a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the interface's default gateway will be used </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resolved IPv4 address or <a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> if something went wrong (in this case an error will be printed to log) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The exp value (3 bits) of the MPLS label </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a25604394245462fc413cadb5ede6740b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00064.html">MacAddress</a> pcpp::NetworkUtils::getMacAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00055.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>ipAddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00075.html">PcapLiveDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>arpResponseTimeMS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00064.html">MacAddress</a>&#160;</td>
-          <td class="paramname"><em>sourceMac</em> = <code><a class="el" href="a00064.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00055.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>sourceIP</em> = <code><a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arpTimeout</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resolve the MAC address for a given IPv4 address. It's done using the ARP protocol: send an ARP request and interpret the response </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address to resolve MAC address to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive the ARP packets on </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">arpResponseTimeMS</td><td>An output parameter that will contain the time in milliseconds that took the ARP response to arrive </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>An optional parameter to set the source MAC address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00064.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a> the MAC address of the interface will be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceIP</td><td>An optional parameter to set the source IPv4 address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00055.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the default IPv4 address of the interface will be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arpTimeout</td><td>An optional parameter to set the timeout to wait for the ARP response to return. If this parameter isn't set or set with a number smaller than 0, a default timeout of 5 seconds will be set </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resolved MAC address or <a class="el" href="a00064.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a> if an error occurred or address could not be resolved. Errors will be printed to log </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6c8310c11abf274e400a9b2be59ab873"></a>
+<a class="anchor" id="acfcd645a870d558cf79f618c67d411f4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -302,16 +334,227 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int pcpp::NetworkUtils::DefaultTimeout</td>
+          <td class="memname">size_t pcpp::MplsLayer::getHeaderLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default timeout used for several utilities. Currently set to 5 seconds </p>
+<dl class="section return"><dt>Returns</dt><dd>Size of MPLS header (4 bytes) </dd></dl>
+
+<p>Implements <a class="el" href="a00061.html#ae2746ac75563d4ed44632ff06b5a2666">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81a078482749d623c7717e0ca6caa1c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::MplsLayer::getMplsLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The MPLS label value (20 bits) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86338975aee81b97c266fd3c352f1822"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::MplsLayer::getTTL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>TTL value of the MPLS header </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5a158dfd712e5e75c6abed56d3e5ad19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::MplsLayer::isBottomOfStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get an indication whether the next layer is also be a MPLS label or not </p><dl class="section return"><dt>Returns</dt><dd>True if it's the last MPLS layer, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac39bfa71fcf5e63cb711334262458c51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::MplsLayer::parseNextLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Currently identifies the following next layers: <a class="el" href="a00057.html">IPv4Layer</a>, <a class="el" href="a00060.html">IPv6Layer</a>, <a class="el" href="a00068.html">MplsLayer</a>. Otherwise sets <a class="el" href="a00073.html">PayloadLayer</a> </p>
+
+<p>Implements <a class="el" href="a00061.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad36043d44c2a5c3dbb0a9809756ccbc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::MplsLayer::setBottomOfStack </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the bottom-of-stack bit in the MPLS label </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Set or unset the bit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d47d4dbc8d592c384577dd87726ded7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::MplsLayer::setExperimentalUseValue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the exp value (3 bits) of the MPLS label </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The exp value to set. val must be a valid number meaning between 0 and 7 (inclusive) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if exp value was set successfully or false if val has invalid value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a21cf86ca8c689c68d70a6451e337a706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::MplsLayer::setMplsLabel </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the MPLS label (20 bits) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>The label to set. label must be a valid number meaning between 0 and 0xFFFFF (inclusive) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if label was set successfully or false if label has invalid value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89c20c7d9d47206e52ddb51c536b79c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::MplsLayer::setTTL </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ttl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the TTL value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>The TTL value to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac8c2d27147757ed9f51f629990514f81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string pcpp::MplsLayer::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+
+<p>Implements <a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -320,8 +563,8 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00185.html">pcpp</a></li><li class="navelem"><a class="el" href="a00068.html">NetworkUtils</a></li>
-    <li class="footer">Generated on Sat Jun 18 2016 23:24:05 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00068.html">MplsLayer</a></li>
+    <li class="footer">Generated on Sun Jun 26 2016 01:02:17 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

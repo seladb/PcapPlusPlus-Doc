@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: MplsLayer.h Source File</title>
+<title>PcapPlusPlus: MacAddress.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,96 +105,77 @@ $(document).ready(function(){initNavTree('a00157_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">MplsLayer.h</div>  </div>
+<div class="title">MacAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00157.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_MPLS_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_MPLS_LAYER</span></div>
+<a href="a00157.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_MACADDRESS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_MACADDRESS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00153.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00185.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00067.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00067.html">MplsLayer</a> : <span class="keyword">public</span> <a class="code" href="a00061.html">Layer</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        #pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">struct </span>mpls_header</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            uint16_t    hiLabel;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            uint8_t     misc;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            uint8_t     ttl;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        #pragma pack(pop)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00187.html">pcpp</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00065.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00065.html">MacAddress</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(uint8_t* addr);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">inline</span> mpls_header* getMplsHeader() { <span class="keywordflow">return</span> (mpls_header*)m_Data; };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00067.html#a78a145f83cfa7322875f9b6ea16e7b01">   41</a></span>&#160;        <a class="code" href="a00067.html#a78a145f83cfa7322875f9b6ea16e7b01">MplsLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00061.html">Layer</a>* prevLayer, <a class="code" href="a00071.html">Packet</a>* packet) : <a class="code" href="a00061.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00185.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">MPLS</a>; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="a00067.html#a78a145f83cfa7322875f9b6ea16e7b01">MplsLayer</a>(uint32_t mplsLabel, uint8_t ttl, uint8_t expermentalUseValue, <span class="keywordtype">bool</span> bottomOfStack);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00067.html">MplsLayer</a>() {}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00067.html#a86338975aee81b97c266fd3c352f1822">   57</a></span>&#160;        <span class="keyword">inline</span> uint8_t <a class="code" href="a00067.html#a86338975aee81b97c266fd3c352f1822">getTTL</a>() { <span class="keywordflow">return</span> getMplsHeader()-&gt;ttl; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00067.html#a89c20c7d9d47206e52ddb51c536b79c8">   63</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00067.html#a89c20c7d9d47206e52ddb51c536b79c8">setTTL</a>(uint8_t ttl) { getMplsHeader()-&gt;ttl = ttl; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a5a158dfd712e5e75c6abed56d3e5ad19">isBottomOfStack</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00067.html#ad36043d44c2a5c3dbb0a9809756ccbc6">setBottomOfStack</a>(<span class="keywordtype">bool</span> val);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        uint8_t <a class="code" href="a00067.html#a08c0c29fd77546f79fd04e3f72ff560c">getExperimentalUseValue</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a6d47d4dbc8d592c384577dd87726ded7">setExperimentalUseValue</a>(uint8_t val);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        uint32_t <a class="code" href="a00067.html#a81a078482749d623c7717e0ca6caa1c5">getMplsLabel</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a21cf86ca8c689c68d70a6451e337a706">setMplsLabel</a>(uint32_t label);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00067.html#ac39bfa71fcf5e63cb711334262458c51">parseNextLayer</a>();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00067.html#acfcd645a870d558cf79f618c67d411f4">  111</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00067.html#acfcd645a870d558cf79f618c67d411f4">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(mpls_header); }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00067.html#ad02e5db78fb0b48d558d06ed3ea4f289">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        std::string <a class="code" href="a00067.html#ac8c2d27147757ed9f51f629990514f81">toString</a>();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    };</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_MPLS_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00067_html_ad02e5db78fb0b48d558d06ed3ea4f289"><div class="ttname"><a href="a00067.html#ad02e5db78fb0b48d558d06ed3ea4f289">pcpp::MplsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00067_html_ac8c2d27147757ed9f51f629990514f81"><div class="ttname"><a href="a00067.html#ac8c2d27147757ed9f51f629990514f81">pcpp::MplsLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00067_html_a78a145f83cfa7322875f9b6ea16e7b01"><div class="ttname"><a href="a00067.html#a78a145f83cfa7322875f9b6ea16e7b01">pcpp::MplsLayer::MplsLayer</a></div><div class="ttdeci">MplsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:41</div></div>
-<div class="ttc" id="a00067_html_a21cf86ca8c689c68d70a6451e337a706"><div class="ttname"><a href="a00067.html#a21cf86ca8c689c68d70a6451e337a706">pcpp::MplsLayer::setMplsLabel</a></div><div class="ttdeci">bool setMplsLabel(uint32_t label)</div></div>
-<div class="ttc" id="a00067_html_a5a158dfd712e5e75c6abed56d3e5ad19"><div class="ttname"><a href="a00067.html#a5a158dfd712e5e75c6abed56d3e5ad19">pcpp::MplsLayer::isBottomOfStack</a></div><div class="ttdeci">bool isBottomOfStack()</div></div>
-<div class="ttc" id="a00067_html"><div class="ttname"><a href="a00067.html">pcpp::MplsLayer</a></div><div class="ttdef"><b>Definition:</b> MplsLayer.h:19</div></div>
-<div class="ttc" id="a00067_html_a89c20c7d9d47206e52ddb51c536b79c8"><div class="ttname"><a href="a00067.html#a89c20c7d9d47206e52ddb51c536b79c8">pcpp::MplsLayer::setTTL</a></div><div class="ttdeci">void setTTL(uint8_t ttl)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:63</div></div>
-<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00067_html_ac39bfa71fcf5e63cb711334262458c51"><div class="ttname"><a href="a00067.html#ac39bfa71fcf5e63cb711334262458c51">pcpp::MplsLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00067_html_a08c0c29fd77546f79fd04e3f72ff560c"><div class="ttname"><a href="a00067.html#a08c0c29fd77546f79fd04e3f72ff560c">pcpp::MplsLayer::getExperimentalUseValue</a></div><div class="ttdeci">uint8_t getExperimentalUseValue()</div></div>
-<div class="ttc" id="a00185_html_a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34"><div class="ttname"><a href="a00185.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:106</div></div>
-<div class="ttc" id="a00067_html_a86338975aee81b97c266fd3c352f1822"><div class="ttname"><a href="a00067.html#a86338975aee81b97c266fd3c352f1822">pcpp::MplsLayer::getTTL</a></div><div class="ttdeci">uint8_t getTTL()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:57</div></div>
-<div class="ttc" id="a00067_html_a6d47d4dbc8d592c384577dd87726ded7"><div class="ttname"><a href="a00067.html#a6d47d4dbc8d592c384577dd87726ded7">pcpp::MplsLayer::setExperimentalUseValue</a></div><div class="ttdeci">bool setExperimentalUseValue(uint8_t val)</div></div>
-<div class="ttc" id="a00067_html_ad36043d44c2a5c3dbb0a9809756ccbc6"><div class="ttname"><a href="a00067.html#ad36043d44c2a5c3dbb0a9809756ccbc6">pcpp::MplsLayer::setBottomOfStack</a></div><div class="ttdeci">void setBottomOfStack(bool val)</div></div>
-<div class="ttc" id="a00153_html"><div class="ttname"><a href="a00153.html">Layer.h</a></div></div>
-<div class="ttc" id="a00067_html_acfcd645a870d558cf79f618c67d411f4"><div class="ttname"><a href="a00067.html#acfcd645a870d558cf79f618c67d411f4">pcpp::MplsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:111</div></div>
-<div class="ttc" id="a00067_html_a81a078482749d623c7717e0ca6caa1c5"><div class="ttname"><a href="a00067.html#a81a078482749d623c7717e0ca6caa1c5">pcpp::MplsLayer::getMplsLabel</a></div><div class="ttdeci">uint32_t getMplsLabel()</div></div>
-<div class="ttc" id="a00185_html"><div class="ttname"><a href="a00185.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00071_html"><div class="ttname"><a href="a00071.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> std::string&amp; addr);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(uint8_t firstOctest, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> <a class="code" href="a00065.html">MacAddress</a>&amp; other);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00065.html#ac0bde13868f7e7bdbe2b750233d33941">   66</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00065.html#ac0bde13868f7e7bdbe2b750233d33941">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00065.html">MacAddress</a>&amp; other)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        <span class="keywordflow">if</span> (m_Address[i] != other.m_Address[i])</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00065.html#a6497d0796bb0d06997a1e399817ba078">   78</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00065.html#a6497d0796bb0d06997a1e399817ba078">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00065.html">MacAddress</a>&amp; other) {<span class="keywordflow">return</span> !<a class="code" href="a00065.html#ac0bde13868f7e7bdbe2b750233d33941">operator==</a>(other);}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00065.html#afe46520073e14b9e02bb368627896f4a">   85</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00065.html#afe46520073e14b9e02bb368627896f4a">isValid</a>() { <span class="keywordflow">return</span> m_IsValid; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::string <a class="code" href="a00065.html#afc022ce0c71beaf15bccdbacd50c58b8">toString</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00065.html#abd24a366974f3bc8b2d78b65de07c926">copyTo</a>(uint8_t** arr);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00065.html#abd24a366974f3bc8b2d78b65de07c926">copyTo</a>(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00065.html#a1b210f1cf39a31d9ea947c57e6c65e2e">  109</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00065.html">MacAddress</a> <a class="code" href="a00065.html#a1b210f1cf39a31d9ea947c57e6c65e2e">Zero</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        uint8_t m_Address[6];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">bool</span> m_IsValid;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_MACADDRESS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00065_html_ac0bde13868f7e7bdbe2b750233d33941"><div class="ttname"><a href="a00065.html#ac0bde13868f7e7bdbe2b750233d33941">pcpp::MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:66</div></div>
+<div class="ttc" id="a00065_html_a1b210f1cf39a31d9ea947c57e6c65e2e"><div class="ttname"><a href="a00065.html#a1b210f1cf39a31d9ea947c57e6c65e2e">pcpp::MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:109</div></div>
+<div class="ttc" id="a00065_html_a6497d0796bb0d06997a1e399817ba078"><div class="ttname"><a href="a00065.html#a6497d0796bb0d06997a1e399817ba078">pcpp::MacAddress::operator!=</a></div><div class="ttdeci">bool operator!=(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:78</div></div>
+<div class="ttc" id="a00065_html_abd24a366974f3bc8b2d78b65de07c926"><div class="ttname"><a href="a00065.html#abd24a366974f3bc8b2d78b65de07c926">pcpp::MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr)</div></div>
+<div class="ttc" id="a00187_html"><div class="ttname"><a href="a00187.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00065_html_afc022ce0c71beaf15bccdbacd50c58b8"><div class="ttname"><a href="a00065.html#afc022ce0c71beaf15bccdbacd50c58b8">pcpp::MacAddress::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00065_html_afe46520073e14b9e02bb368627896f4a"><div class="ttname"><a href="a00065.html#afe46520073e14b9e02bb368627896f4a">pcpp::MacAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> MacAddress.h:85</div></div>
+<div class="ttc" id="a00065_html_a9b56a6c1bfa240b58548035db404bcbc"><div class="ttname"><a href="a00065.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(uint8_t *addr)</div></div>
+<div class="ttc" id="a00065_html"><div class="ttname"><a href="a00065.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00157.html">MplsLayer.h</a></li>
-    <li class="footer">Generated on Sat Jun 18 2016 23:24:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00157.html">MacAddress.h</a></li>
+    <li class="footer">Generated on Sun Jun 26 2016 01:02:15 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
