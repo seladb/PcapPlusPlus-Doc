@@ -71,6 +71,7 @@ var searchData=
   ['settotallength',['setTotalLength',['../a00058.html#a997e5331286af0eb0bbb8a67355a97a9',1,'pcpp::IpV4TotalLengthFilter']]],
   ['setttl',['setTTL',['../a00010.html#a2f99de92eb4dd8f82d9fbbdecedc2f12',1,'pcpp::DnsResource::setTTL()'],['../a00068.html#a89c20c7d9d47206e52ddb51c536b79c8',1,'pcpp::MplsLayer::setTTL()']]],
   ['seturi',['setUri',['../a00026.html#aa31083ea230c4cf5e1fe27608a76f6b0',1,'pcpp::HttpRequestFirstLine']]],
+  ['setvalue',['setValue',['../a00132.html#aaa3ce2fbd266fde95d8e7c57fd091d4f',1,'pcpp::TcpOptionData']]],
   ['setversion',['setVersion',['../a00026.html#ac9b66f371b763217776c4eaec0f9a14c',1,'pcpp::HttpRequestFirstLine::setVersion()'],['../a00029.html#ad38cc7272f790b1653cc1b7b4c58bec6',1,'pcpp::HttpResponseFirstLine::setVersion()']]],
   ['setvlanid',['setVlanID',['../a00138.html#a71b1fd58f036b4ee5a77ce34b443aa42',1,'pcpp::VlanFilter::setVlanID()'],['../a00139.html#aeb6dcaefa11775c2b64e0be74094116d',1,'pcpp::VlanLayer::setVlanID()']]],
   ['setwindowsize',['setWindowSize',['../a00133.html#a2e9938b5041e9e0e51c9530e34c8b6d3',1,'pcpp::TcpWindowSizeFilter']]],

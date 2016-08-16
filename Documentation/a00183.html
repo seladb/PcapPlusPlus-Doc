@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('a00183.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="a00154_source.html">Layer.h</a>&gt;</code><br />
-<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div>
 <p><a href="a00183_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -135,8 +135,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad066265ec5012e69a9abe1cdba749587"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#ad066265ec5012e69a9abe1cdba749587">PCPP_TCP_OPTIONS_COUNT</a>&#160;&#160;&#160;24</td></tr>
-<tr class="separator:ad066265ec5012e69a9abe1cdba749587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea4e7b13e9341a4ba6362805b9290f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#adea4e7b13e9341a4ba6362805b9290f2">PCPP_TCPOLEN_NOP</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:adea4e7b13e9341a4ba6362805b9290f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2c95f87257bb4300ab47db1d3fea79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a0d2c95f87257bb4300ab47db1d3fea79">PCPP_TCPOLEN_EOL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0d2c95f87257bb4300ab47db1d3fea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f2dcf43fbf2f9c0e03043368b6fb37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a89f2dcf43fbf2f9c0e03043368b6fb37">PCPP_TCPOLEN_MSS</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a89f2dcf43fbf2f9c0e03043368b6fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce30dd81cb66c2576ac968c4e9fc33f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a7ce30dd81cb66c2576ac968c4e9fc33f">PCPP_TCPOLEN_WINDOW</a>&#160;&#160;&#160;3</td></tr>
@@ -179,8 +181,6 @@ Macros</h2></td></tr>
 <tr class="separator:a590e0f3a1b3237e82fb353e50cfd2835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8197703959f102d53f2d773114e1e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#afe8197703959f102d53f2d773114e1e8">PCPP_TCPOLEN_EXP_MIN</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:afe8197703959f102d53f2d773114e1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3f2e65cd3ace89c5a366aee64c967b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html#a2c3f2e65cd3ace89c5a366aee64c967b">PCPP_MAX_SUPPORTED_TCP_OPTIONS</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a2c3f2e65cd3ace89c5a366aee64c967b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -219,32 +219,6 @@ Enumerations</h2></td></tr>
 <tr class="separator:a540c8f1aff318621afb964481749f286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a2c3f2e65cd3ace89c5a366aee64c967b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_MAX_SUPPORTED_TCP_OPTIONS&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PcapPlusPlus supports up to 100 TCP options per packet </p>
-
-</div>
-</div>
-<a class="anchor" id="ad066265ec5012e69a9abe1cdba749587"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCP_OPTIONS_COUNT&#160;&#160;&#160;24</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of TCP options </p>
-
-</div>
-</div>
 <a class="anchor" id="a2ba3f9ff28dbd65780526d5306b653a0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -323,6 +297,19 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0d2c95f87257bb4300ab47db1d3fea79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_TCPOLEN_EOL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="a00187.html#a540c8f1aff318621afb964481749f286a7f46a56345a2578b198c23f1ebe1b2df">pcpp::TCPOPT_EOL</a> length </p>
+
+</div>
+</div>
 <a class="anchor" id="afe8197703959f102d53f2d773114e1e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -372,6 +359,19 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="a00187.html#a540c8f1aff318621afb964481749f286a2e397d517856130b7b8015a2a5116702">pcpp::TCPOPT_MSS</a> length </p>
+
+</div>
+</div>
+<a class="anchor" id="adea4e7b13e9341a4ba6362805b9290f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_TCPOLEN_NOP&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="a00187.html#a540c8f1aff318621afb964481749f286a991573205e9cf18408ffd3e778c9fa0d">pcpp::TCPOPT_NOP</a> length </p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00183.html">TcpLayer.h</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 23:43:53 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Aug 17 2016 00:06:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

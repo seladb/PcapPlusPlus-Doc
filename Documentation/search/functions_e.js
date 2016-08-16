@@ -5,6 +5,7 @@ var searchData=
   ['receivepackets',['receivePackets',['../a00011.html#a1459cfd1875c5033398a1ac7c00f3394',1,'pcpp::DpdkDevice::receivePackets(RawPacketVector &amp;rawPacketsArr, uint16_t rxQueueId)'],['../a00011.html#a8b8dc9d0c67e4d5c1d55f4a32e2e7c6c',1,'pcpp::DpdkDevice::receivePackets(MBufRawPacket **rawPacketsArr, int &amp;rawPacketArrLength, uint16_t rxQueueId)'],['../a00011.html#a4c9a34cc0c4144dbbfa567747ebedef2',1,'pcpp::DpdkDevice::receivePackets(Packet **packetsArr, int &amp;packetsArrLength, uint16_t rxQueueId)']]],
   ['removeadditionalrecord',['removeAdditionalRecord',['../a00008.html#ad8bf786e4e820138e07eb1a242d7af20',1,'pcpp::DnsLayer::removeAdditionalRecord(const std::string &amp;additionalRecordNameToRemove, bool exactMatch)'],['../a00008.html#a523b41db73c4105c0d9627cd2b02294d',1,'pcpp::DnsLayer::removeAdditionalRecord(DnsResource *additionalRecordToRemove)']]],
   ['removealltags',['removeAllTags',['../a00090.html#a8d139ed7175ce23efc4d2882fc008950',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['removealltcpoptions',['removeAllTcpOptions',['../a00131.html#a54812a58a88be8978b3e609f32504a87',1,'pcpp::TcpLayer']]],
   ['removeanswer',['removeAnswer',['../a00008.html#adad4f490b373d2f5ecc70ceebdb2cf11',1,'pcpp::DnsLayer::removeAnswer(const std::string &amp;answerNameToRemove, bool exactMatch)'],['../a00008.html#ac8d534e0aac68d7b07af23f50dfb7c3d',1,'pcpp::DnsLayer::removeAnswer(DnsResource *answerToRemove)']]],
   ['removeauthority',['removeAuthority',['../a00008.html#a9274ccfb5fe3f407e8b05367f59072c7',1,'pcpp::DnsLayer::removeAuthority(const std::string &amp;authorityNameToRemove, bool exactMatch)'],['../a00008.html#ae957f7b50adade0c014ab8007f4009bd',1,'pcpp::DnsLayer::removeAuthority(DnsResource *authorityToRemove)']]],
   ['removedata',['removeData',['../a00067.html#a3895fef553d8345e18b7f97e52f1a10d',1,'pcpp::MBufRawPacket::removeData()'],['../a00095.html#a9cf289e6bbf461f55c20784615c899ce',1,'pcpp::RawPacket::removeData()']]],
@@ -13,5 +14,6 @@ var searchData=
   ['removelayer',['removeLayer',['../a00072.html#ab751fc35d7e7b8a86e3f1fdbd2c30685',1,'pcpp::Packet']]],
   ['removequery',['removeQuery',['../a00008.html#a5952988d68c6a82e38347a403f43f389',1,'pcpp::DnsLayer::removeQuery(const std::string &amp;queryNameToRemove, bool exactMatch)'],['../a00008.html#aa62ae344b6dd0ff36ac17242ba7971e2',1,'pcpp::DnsLayer::removeQuery(DnsQuery *queryToRemove)']]],
   ['removetag',['removeTag',['../a00090.html#aaa3f807f3db2c33ae7bf157a2ecae951',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['removetcpoption',['removeTcpOption',['../a00131.html#addfb058ef0cd1b7fa3963b8889e7d5b6',1,'pcpp::TcpLayer']]],
   ['run',['run',['../a00014.html#adf8c2b08e51679b20e9f56e166483492',1,'pcpp::DpdkWorkerThread']]]
 ];

@@ -212,6 +212,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
 <tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_a00025"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00025')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00025.html">pcpp::HttpMessage</a></td></tr>
+<tr class="memitem:aca42f6b13b45da870a9f014886cff56b inherit pub_static_methods_a00025"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aca42f6b13b45da870a9f014886cff56b">getHTTPPortMap</a> ()</td></tr>
+<tr class="separator:aca42f6b13b45da870a9f014886cff56b inherit pub_static_methods_a00025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an HTTP request header and inherits all basic functionality of <a class="el" href="a00025.html">HttpMessage</a>. The functionality that is added for this class is the HTTP first line consept. An HTTP request has the following first line: <em>GET /bla/blabla.asp HTTP/1.1</em> Since it's not an "ordinary" HTTP field, it requires a special treatment and gets a class of it's own: <a class="el" href="a00026.html">HttpRequestFirstLine</a>. Unlike most L2-4 protocols, an HTTP request header can spread over more than 1 packet. PcapPlusPlus currently doesn't support a header that is spread over more than 1 packet so in such cases: 1) only the first packet will be parsed as <a class="el" href="a00028.html">HttpRequestLayer</a> (the other packets won't be recognized as <a class="el" href="a00028.html">HttpRequestLayer</a>) and 2) the HTTP header for the first packet won't be complete (as it continues in the following packets), this why PcapPlusPlus can indicate that HTTP request header is complete or not(doesn't end with "\r\n\r\n" or "\n\n") using <a class="el" href="a00025.html#a701003b87156e45c8cf4e87fcad94200">HttpMessage::isHeaderComplete()</a> </p>
@@ -466,7 +472,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00028.html">HttpRequestLayer</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 23:43:53 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Aug 17 2016 00:06:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

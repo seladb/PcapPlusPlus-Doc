@@ -9,6 +9,8 @@ var searchData=
   ['addquery',['addQuery',['../a00008.html#a80db9f0dfb1b6c4641a0357b54e47138',1,'pcpp::DnsLayer::addQuery(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass)'],['../a00008.html#a3d36a88b61c4cf83ef5b20748d589ab8',1,'pcpp::DnsLayer::addQuery(DnsQuery *const copyQuery)']]],
   ['addtag',['addTag',['../a00090.html#a090600ca117327539dc8ac9f678bb0e1',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['addtagafter',['addTagAfter',['../a00090.html#af7312700ff11218fa02a81d33608730a',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['addtcpoption',['addTcpOption',['../a00131.html#a1a05337e558a7f7b8420911d2f0f8e44',1,'pcpp::TcpLayer']]],
+  ['addtcpoptionafter',['addTcpOptionAfter',['../a00131.html#aa38d093ade5504875801fc74762e6cf6',1,'pcpp::TcpLayer']]],
   ['alldataexists',['allDataExists',['../a00126.html#ae4182828228a1e402626560090d3cdb6',1,'pcpp::SSLx509Certificate']]],
   ['andfilter',['AndFilter',['../a00001.html#a663de154b20959cc253d18bbbe2e081d',1,'pcpp::AndFilter']]],
   ['appenddata',['appendData',['../a00067.html#af1c5144634729ce1ab2da2aa89946e89',1,'pcpp::MBufRawPacket::appendData()'],['../a00095.html#a6ed098d0dfcf60fa561b56e6c73bed9c',1,'pcpp::RawPacket::appendData()']]],

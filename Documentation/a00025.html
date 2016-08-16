@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('a00025.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a00217.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::HttpMessage Class Reference</div>  </div>
@@ -180,6 +181,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3acb12ad2f7e10ed03fc3dd0ae22dbf7 inherit pub_methods_a00061"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">toString</a> ()=0</td></tr>
 <tr class="separator:a3acb12ad2f7e10ed03fc3dd0ae22dbf7 inherit pub_methods_a00061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aca42f6b13b45da870a9f014886cff56b"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aca42f6b13b45da870a9f014886cff56b">getHTTPPortMap</a> ()</td></tr>
+<tr class="separator:aca42f6b13b45da870a9f014886cff56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class that wraps HTTP header layers (both request and response). It is the base class for <a class="el" href="a00028.html">HttpRequestLayer</a> and <a class="el" href="a00031.html">HttpResponseLayer</a>. This class is not abstract but it's not meant to be instantiated, hence the protected c'tor </p>
@@ -356,6 +362,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aca42f6b13b45da870a9f014886cff56b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::map&lt;uint16_t, bool&gt;* pcpp::HttpMessage::getHTTPPortMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a map containing all TCP ports recognize as HTTP </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac1026dd3bf19b3ad1b9668a6184ae426"></a>
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +448,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field. If it's NULL the new field will be added as first field </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
   </table>
@@ -556,7 +586,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00025.html">HttpMessage</a></li>
-    <li class="footer">Generated on Tue Jul 5 2016 23:43:53 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Aug 17 2016 00:06:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
