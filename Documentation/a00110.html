@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('a00110.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c14f214cc7d712886720ad0cbda00d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a4c14f214cc7d712886720ad0cbda00d6">SSLCipherSuite</a> (uint16_t id, <a class="el" href="a00187.html#a772441779227e48ac030428c10455d9c">SSLKeyExchangeAlgorithm</a> keyExAlg, <a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189">SSLAuthenticationAlgorithm</a> authAlg, <a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7">SSLSymetricEncryptionAlgorithm</a> symKeyAlg, <a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afa">SSLHashingAlgorithm</a> MACAlg, std::string name)</td></tr>
-<tr class="separator:a4c14f214cc7d712886720ad0cbda00d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a906a5f733f3afab0b6706e6641e16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a91a906a5f733f3afab0b6706e6641e16">SSLCipherSuite</a> (uint16_t id, <a class="el" href="a00187.html#a772441779227e48ac030428c10455d9c">SSLKeyExchangeAlgorithm</a> keyExAlg, <a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189">SSLAuthenticationAlgorithm</a> authAlg, <a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7">SSLSymetricEncryptionAlgorithm</a> symKeyAlg, <a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afa">SSLHashingAlgorithm</a> MACAlg, const char *name)</td></tr>
+<tr class="separator:a91a906a5f733f3afab0b6706e6641e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09959781bd410417c7bc4e337f32b708"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a09959781bd410417c7bc4e337f32b708">getID</a> ()</td></tr>
 <tr class="separator:a09959781bd410417c7bc4e337f32b708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc805ee667a9ffaa0d4c9146460312df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#afc805ee667a9ffaa0d4c9146460312df">asString</a> ()</td></tr>
@@ -144,7 +144,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a cipher-suite and enables access all information about it such as all algorithms it encapsulates, its ID (as appears in the client-hello or server-hello messages), its name (e.g "TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA") etc. PcapPlusPlus contains static instances of this type for all known cipher-suites and enables access to them through name or ID (see <a class="el" href="a00110.html#acca352789e2b4cf2e36f55fb6f478dc3">getCipherSuiteByID()</a> and <a class="el" href="a00110.html#abf719d779ffdaf62afa45475f2c76597">getCipherSuiteByName()</a> ). List of cipher-suite was taken from here: <a href="http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml">http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4c14f214cc7d712886720ad0cbda00d6"></a>
+<a class="anchor" id="a91a906a5f733f3afab0b6706e6641e16"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -184,7 +184,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
@@ -426,7 +426,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00110.html">SSLCipherSuite</a></li>
-    <li class="footer">Generated on Wed Aug 17 2016 00:06:52 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Sep 13 2016 00:13:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

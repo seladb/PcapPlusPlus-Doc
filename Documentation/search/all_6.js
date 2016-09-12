@@ -56,6 +56,7 @@ var searchData=
   ['getdevicetype',['getDeviceType',['../a00076.html#a70b3e39208905585907c3557971b71e8',1,'pcpp::PcapLiveDevice::getDeviceType()'],['../a00079.html#af5518431a35a7f94b6ee8551061eee18',1,'pcpp::PcapRemoteDevice::getDeviceType()'],['../a00140.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37',1,'pcpp::WinPcapLiveDevice::getDeviceType()']]],
   ['getdnsclass',['getDnsClass',['../a00046.html#a6c4a6e1550c6de7ebdf0188bb80ce484',1,'pcpp::IDnsResource']]],
   ['getdnsheader',['getDnsHeader',['../a00008.html#a6e23bb3a23aa5f658705170da12d8490',1,'pcpp::DnsLayer']]],
+  ['getdnsportmap',['getDNSPortMap',['../a00008.html#ad72c1f31f614575add8b12ebf4828335',1,'pcpp::DnsLayer']]],
   ['getdnsservers',['getDnsServers',['../a00076.html#a89cdf86d684d71cf556cd9dd98f1a9c6',1,'pcpp::PcapLiveDevice::getDnsServers()'],['../a00077.html#a2cefca3fa33b793cdfb1b58c3883f25b',1,'pcpp::PcapLiveDeviceList::getDnsServers()']]],
   ['getdnstype',['getDnsType',['../a00046.html#ae44ba669fc827f7b8bb6c8f9ce783d8d',1,'pcpp::IDnsResource']]],
   ['getdpdkdevicelist',['getDpdkDeviceList',['../a00013.html#a86087a708113697332e06343b52682e8',1,'pcpp::DpdkDeviceList']]],

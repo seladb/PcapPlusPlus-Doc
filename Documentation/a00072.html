@@ -156,10 +156,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a90b12946df5f2e6077e32620389a3c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab19addb15ea46927076227436fde753e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ab19addb15ea46927076227436fde753e">computeCalculateFields</a> ()</td></tr>
 <tr class="separator:ab19addb15ea46927076227436fde753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2ddb9a9ec2939b4f304129d691bdc9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a5e2ddb9a9ec2939b4f304129d691bdc9">printToString</a> ()</td></tr>
-<tr class="separator:a5e2ddb9a9ec2939b4f304129d691bdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda6fc1afa7d8f3662360a927bec7f82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#adda6fc1afa7d8f3662360a927bec7f82">printToStringList</a> (std::vector&lt; std::string &gt; &amp;result)</td></tr>
-<tr class="separator:adda6fc1afa7d8f3662360a927bec7f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba43ff35340215d5091a894b996f38d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#aba43ff35340215d5091a894b996f38d6">printToString</a> (bool timeAsLocalTime=true)</td></tr>
+<tr class="separator:aba43ff35340215d5091a894b996f38d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c8f43decffe58a25a9b6d612873ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a57c8f43decffe58a25a9b6d612873ca5">printToStringList</a> (std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true)</td></tr>
+<tr class="separator:a57c8f43decffe58a25a9b6d612873ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="a00095.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="a00017.html">EthLayer</a> -&gt; <a class="el" href="a00057.html">IPv4Layer</a> -&gt; <a class="el" href="a00131.html">TcpLayer</a> -&gt; <a class="el" href="a00028.html">HttpRequestLayer</a> <br />
@@ -554,23 +554,30 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5e2ddb9a9ec2939b4f304129d691bdc9"></a>
+<a class="anchor" id="aba43ff35340215d5091a894b996f38d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::string pcpp::Packet::printToString </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timeAsLocalTime</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Each layer can print a string representation of the layer most important data using <a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="section return"><dt>Returns</dt><dd>A string containing most relevant data from all layers (looks like the packet description in Wireshark) </dd></dl>
+<p>Each layer can print a string representation of the layer most important data using <a class="el" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeAsLocalTime</td><td>Print time as local time or GMT. Default (true value) is local time, for GMT set to false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing most relevant data from all layers (looks like the packet description in Wireshark) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="adda6fc1afa7d8f3662360a927bec7f82"></a>
+<a class="anchor" id="a57c8f43decffe58a25a9b6d612873ca5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -578,14 +585,25 @@ template&lt;class TLayer &gt; </div>
           <td class="memname">void pcpp::Packet::printToStringList </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timeAsLocalTime</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Similar to <a class="el" href="a00072.html#a5e2ddb9a9ec2939b4f304129d691bdc9">printToString()</a>, but instead of one string it outputs a list of strings, one string for every layer </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Similar to <a class="el" href="a00072.html#aba43ff35340215d5091a894b996f38d6">printToString()</a>, but instead of one string it outputs a list of strings, one string for every layer </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>A string vector that will contain all strings </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeAsLocalTime</td><td>Print time as local time or GMT. Default (true value) is local time, for GMT set to false </td></tr>
   </table>
   </dd>
 </dl>
@@ -654,7 +672,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00072.html">Packet</a></li>
-    <li class="footer">Generated on Wed Aug 17 2016 00:06:52 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Sep 13 2016 00:13:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

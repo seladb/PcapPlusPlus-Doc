@@ -86,7 +86,7 @@ var searchData=
   ['sslcertificaterequestmessage',['SSLCertificateRequestMessage',['../a00107.html#ae85b37b12ff7e387b3d3513ec7170558',1,'pcpp::SSLCertificateRequestMessage']]],
   ['sslcertificateverifymessage',['SSLCertificateVerifyMessage',['../a00108.html#a364e17c73fd7cbb9460d75029cace69e',1,'pcpp::SSLCertificateVerifyMessage']]],
   ['sslchangecipherspeclayer',['SSLChangeCipherSpecLayer',['../a00109.html#a7c8ad60a5877520ba242db95471fb8c2',1,'pcpp::SSLChangeCipherSpecLayer']]],
-  ['sslciphersuite',['SSLCipherSuite',['../a00110.html#a4c14f214cc7d712886720ad0cbda00d6',1,'pcpp::SSLCipherSuite']]],
+  ['sslciphersuite',['SSLCipherSuite',['../a00110.html#a91a906a5f733f3afab0b6706e6641e16',1,'pcpp::SSLCipherSuite']]],
   ['sslclienthellomessage',['SSLClientHelloMessage',['../a00111.html#a3924029c72b57cee6f2dd62b4f64f2dc',1,'pcpp::SSLClientHelloMessage']]],
   ['sslclientkeyexchangemessage',['SSLClientKeyExchangeMessage',['../a00112.html#a6bb93f9682449bf3aa27b3302b07f1a2',1,'pcpp::SSLClientKeyExchangeMessage']]],
   ['sslextension',['SSLExtension',['../a00113.html#a5b18ea8242d5a74d79e7631abe189153',1,'pcpp::SSLExtension']]],

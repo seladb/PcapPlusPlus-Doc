@@ -272,7 +272,7 @@ var searchData=
   ['sslcertificateverifymessage',['SSLCertificateVerifyMessage',['../a00108.html',1,'pcpp']]],
   ['sslchangecipherspeclayer',['SSLChangeCipherSpecLayer',['../a00109.html#a7c8ad60a5877520ba242db95471fb8c2',1,'pcpp::SSLChangeCipherSpecLayer']]],
   ['sslchangecipherspeclayer',['SSLChangeCipherSpecLayer',['../a00109.html',1,'pcpp']]],
-  ['sslciphersuite',['SSLCipherSuite',['../a00110.html#a4c14f214cc7d712886720ad0cbda00d6',1,'pcpp::SSLCipherSuite']]],
+  ['sslciphersuite',['SSLCipherSuite',['../a00110.html#a91a906a5f733f3afab0b6706e6641e16',1,'pcpp::SSLCipherSuite']]],
   ['sslciphersuite',['SSLCipherSuite',['../a00110.html',1,'pcpp']]],
   ['sslclientcertificatetype',['SSLClientCertificateType',['../a00187.html#a9de558bc6ff79cd1503e919ea6d63c26',1,'pcpp']]],
   ['sslclienthellomessage',['SSLClientHelloMessage',['../a00111.html#a3924029c72b57cee6f2dd62b4f64f2dc',1,'pcpp::SSLClientHelloMessage']]],
