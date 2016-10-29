@@ -34,5 +34,6 @@ var a00076 =
     [ "startCapture", "a00076.html#a78306fe44879e457df4043a117f6863a", null ],
     [ "startCapture", "a00076.html#a2933139d284d7c167283982ec8b56559", null ],
     [ "startCapture", "a00076.html#a821bbac1ffad5a75c6a0be1ff362eb9f", null ],
+    [ "startCaptureBlockingMode", "a00076.html#ae479987f8faf52328061e18af2addcc5", null ],
     [ "stopCapture", "a00076.html#a818da3e11e0c953385badf6233ee0f43", null ]
 ];

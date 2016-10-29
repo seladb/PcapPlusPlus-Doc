@@ -9,6 +9,7 @@ var searchData=
   ['checksum',['checksum',['../a00044.html#afc53df5a90f51ecf5d3e517f730f3e9f',1,'pcpp::icmphdr']]],
   ['checksumbit',['checksumBit',['../a00020.html#af12d9d73804241f3e31a70cfb8afc5af',1,'pcpp::gre_basic_header']]],
   ['clear',['clear',['../a00067.html#a265214f9d02a63d0cff85b4e1a93c396',1,'pcpp::MBufRawPacket::clear()'],['../a00084.html#ad6b5d1fb386f9d3fe9a9916058875433',1,'pcpp::PointerVector::clear()'],['../a00095.html#ab6b169b02bda40e90279e7d8f6816e41',1,'pcpp::RawPacket::clear()']]],
+  ['clearfilter',['clearFilter',['../a00051.html#aba28d535c6aa05e9f9492c82ece25de7',1,'pcpp::IPcapDevice']]],
   ['close',['close',['../a00011.html#ab772ecb6a13f970a1671a143dfcf8edc',1,'pcpp::DpdkDevice::close()'],['../a00051.html#a5ce8877d4e047f11a3cb8d0f4f527e56',1,'pcpp::IPcapDevice::close()'],['../a00052.html#af10a3575cbb418b222f0421356bf6245',1,'pcpp::IPcapFileDevice::close()'],['../a00075.html#a60b102a04429b8baba0637c3505f6448',1,'pcpp::PcapFileWriterDevice::close()'],['../a00076.html#ad7ccb5eac1b23651e7b157b628435528',1,'pcpp::PcapLiveDevice::close()'],['../a00082.html#ad9df26e45654c94c08bfd73c0c18474d',1,'pcpp::PfRingDevice::close()']]],
   ['code',['code',['../a00044.html#a6a428f920e2143563b39327b37985fea',1,'pcpp::icmphdr::code()'],['../a00089.html#ab7f6d4c3dba01ad2212e4a71e738161c',1,'pcpp::pppoe_header::code()']]],
   ['commonlogmoduleiputils',['CommonLogModuleIpUtils',['../a00187.html#ac6557f5dc8fcb14858f231b12bdc1c1aa488fbdb95747a99c14eed410adaedeba',1,'pcpp']]],

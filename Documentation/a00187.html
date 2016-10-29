@@ -406,6 +406,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4c0775fb93a0867d2afa7992d55957f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07524ba3fd4932968d2c302a936ae10"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#aa07524ba3fd4932968d2c302a936ae10">OnPacketArrivesCallback</a>) (<a class="el" href="a00095.html">RawPacket</a> *pPacket, <a class="el" href="a00076.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
 <tr class="separator:aa07524ba3fd4932968d2c302a936ae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb7ed19d0cb6b09ab2b1d0570b64cb4"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a1fb7ed19d0cb6b09ab2b1d0570b64cb4">OnPacketArrivesStopBlocking</a>) (<a class="el" href="a00095.html">RawPacket</a> *pPacket, <a class="el" href="a00076.html">PcapLiveDevice</a> *pDevice, void *userData)</td></tr>
+<tr class="separator:a1fb7ed19d0cb6b09ab2b1d0570b64cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af797dbce1a97d45a6b86cdedb6d627da"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
 <tr class="separator:af797dbce1a97d45a6b86cdedb6d627da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1223,6 +1225,27 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fb7ed19d0cb6b09ab2b1d0570b64cb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::OnPacketArrivesStopBlocking</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A callback that is called when a packet is captured by <a class="el" href="a00076.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="a00076.html">PcapLiveDevice</a> instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when main thread should stop blocking or false otherwise </dd></dl>
 
 </div>
 </div>
@@ -3449,7 +3472,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li>
-    <li class="footer">Generated on Tue Sep 13 2016 00:13:26 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Oct 30 2016 00:50:03 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
