@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Layer.h Source File</title>
+<title>PcapPlusPlus: IpAddress.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,113 +105,160 @@ $(document).ready(function(){initNavTree('a00154_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Layer.h</div>  </div>
+<div class="title">IpAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00154.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_LAYER</span></div>
+<a href="a00154.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_IPADDRESS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_IPADDRESS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00176.html">ProtocolType.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00187.html">pcpp</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span>Packet;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00061.html">   52</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00061.html">Layer</a> {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00072.html">Packet</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00061.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">   63</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00061.html">Layer</a>* <a class="code" href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a>() { <span class="keywordflow">return</span> m_NextLayer; }</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define MAX_ADDR_STRING_LEN 40 //xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct </span>in_addr;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>in6_addr;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00191.html">pcpp</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00053.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00053.html">IPAddress</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> m_IsValid;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">char</span> m_AddressAsString[MAX_ADDR_STRING_LEN];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// protected c&#39;tor</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="a00053.html">IPAddress</a>() : m_IsValid(<span class="keyword">false</span>) {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00053.html#ac389e5507d75b60d2b0ca939db195231">   40</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">   44</a></span>&#160;            <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">IPv4AddressType</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">   48</a></span>&#160;            <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">IPv6AddressType</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00053.html">IPAddress</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> <a class="code" href="a00053.html#a85a3e43774848c93585f97bdef6ec73d">getType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00053.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">   63</a></span>&#160;        std::string <a class="code" href="a00053.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">toString</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::string(m_AddressAsString); }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">   68</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00061.html">Layer</a>* <a class="code" href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a>() { <span class="keywordflow">return</span> m_PrevLayer; }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">   73</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> <a class="code" href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a>() { <span class="keywordflow">return</span> m_Protocol; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">   78</a></span>&#160;        <span class="keyword">inline</span> uint8_t* <a class="code" href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a>() { <span class="keywordflow">return</span> m_Data; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="a00053.html#a2d6b031d025c3ef287584a605b64d750">   70</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00053.html#a2d6b031d025c3ef287584a605b64d750">isValid</a>() { <span class="keywordflow">return</span> m_IsValid; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">static</span> std::auto_ptr&lt;IPAddress&gt; <a class="code" href="a00053.html#adda7dc3cc9ea734a41af60ac51832c17">fromString</a>(<span class="keywordtype">char</span>* addressAsString);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">   83</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">   88</a></span>&#160;        uint8_t* <a class="code" href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a>() { <span class="keywordflow">return</span> m_Data + <a class="code" href="a00061.html#ae2746ac75563d4ed44632ff06b5a2666">getHeaderLen</a>(); }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">   93</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a>() { <span class="keywordflow">return</span> m_DataLen - <a class="code" href="a00061.html#ae2746ac75563d4ed44632ff06b5a2666">getHeaderLen</a>(); }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">  103</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a>() { <span class="keywordflow">return</span> m_Packet != NULL; }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00061.html#a658e543c6c13707f8f624957cadc19e9">copyData</a>(uint8_t* toArr);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// abstract methods</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">static</span> std::auto_ptr&lt;IPAddress&gt; <a class="code" href="a00053.html#adda7dc3cc9ea734a41af60ac51832c17">fromString</a>(std::string addressAsString);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00057.html">   94</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00057.html">IPv4Address</a> : <span class="keyword">public</span> <a class="code" href="a00053.html">IPAddress</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        in_addr* m_pInAddr;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span> init(<span class="keywordtype">char</span>* addressAsString);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="a00057.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a>(uint32_t addressAsInt);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="a00057.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a>(<span class="keywordtype">char</span>* addressAsString);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00061.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a>() = 0;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="a00061.html#ae2746ac75563d4ed44632ff06b5a2666">getHeaderLen</a>() = 0;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00061.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a>() = 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="a00057.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a>(std::string addressAsString);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="a00057.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a>(in_addr* inAddr);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        ~<a class="code" href="a00057.html">IPv4Address</a>();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">toString</a>() = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="a00057.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a>(<span class="keyword">const</span> <a class="code" href="a00057.html">IPv4Address</a>&amp; other);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        uint8_t* m_Data;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">size_t</span> m_DataLen;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="a00072.html">Packet</a>* m_Packet;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> m_Protocol;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="a00061.html">Layer</a>* m_NextLayer;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="a00061.html">Layer</a>* m_PrevLayer;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="a00061.html">Layer</a>() : m_Data(NULL), m_DataLen(0), m_Packet(NULL), m_Protocol(<a class="code" href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">Unknown</a>), m_NextLayer(NULL), m_PrevLayer(NULL) { }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        Layer(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, Layer* prevLayer, Packet* packet) :</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            m_Data(data), m_DataLen(dataLen),</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            m_Packet(packet), m_Protocol(<a class="code" href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">Unknown</a>),</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            m_NextLayer(NULL), m_PrevLayer(prevLayer) {}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">// Copy c&#39;tor</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        Layer(<span class="keyword">const</span> Layer&amp; other);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        Layer&amp; operator=(<span class="keyword">const</span> Layer&amp; other);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> setNextLayer(Layer* nextLayer) { m_NextLayer = nextLayer; }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> setPrevLayer(Layer* prevLayer) { m_PrevLayer = prevLayer; }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> extendLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> shortenLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    };</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00187_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:16</div></div>
-<div class="ttc" id="a00176_html"><div class="ttname"><a href="a00176.html">ProtocolType.h</a></div></div>
-<div class="ttc" id="a00061_html_a3064f6bfadcc96b1fcb0d28aa1afe8a3"><div class="ttname"><a href="a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">pcpp::Layer::isAllocatedToPacket</a></div><div class="ttdeci">bool isAllocatedToPacket()</div><div class="ttdef"><b>Definition:</b> Layer.h:103</div></div>
-<div class="ttc" id="a00061_html_aa6b3d4c2c2b85b8211d2b9544194d20e"><div class="ttname"><a href="a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e">pcpp::Layer::getLayerPayloadSize</a></div><div class="ttdeci">size_t getLayerPayloadSize()</div><div class="ttdef"><b>Definition:</b> Layer.h:93</div></div>
-<div class="ttc" id="a00061_html_a9d02400f5421309786e1ea6c031c8d19"><div class="ttname"><a href="a00061.html#a9d02400f5421309786e1ea6c031c8d19">pcpp::Layer::~Layer</a></div><div class="ttdeci">virtual ~Layer()</div></div>
-<div class="ttc" id="a00061_html_ae2746ac75563d4ed44632ff06b5a2666"><div class="ttname"><a href="a00061.html#ae2746ac75563d4ed44632ff06b5a2666">pcpp::Layer::getHeaderLen</a></div><div class="ttdeci">virtual size_t getHeaderLen()=0</div></div>
-<div class="ttc" id="a00187_html"><div class="ttname"><a href="a00187.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00061_html_a8bcc2c5c58c42f15a38f4b92a631c82e"><div class="ttname"><a href="a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e">pcpp::Layer::getNextLayer</a></div><div class="ttdeci">Layer * getNextLayer()</div><div class="ttdef"><b>Definition:</b> Layer.h:63</div></div>
-<div class="ttc" id="a00061_html_abea112176d18e896f48214ca7accac71"><div class="ttname"><a href="a00061.html#abea112176d18e896f48214ca7accac71">pcpp::Layer::computeCalculateFields</a></div><div class="ttdeci">virtual void computeCalculateFields()=0</div></div>
-<div class="ttc" id="a00061_html_a6a8410015168a7fa42a7d71ac5b86673"><div class="ttname"><a href="a00061.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer::parseNextLayer</a></div><div class="ttdeci">virtual void parseNextLayer()=0</div></div>
-<div class="ttc" id="a00061_html_a2fe84819a0d4734612bd4adaf152adc0"><div class="ttname"><a href="a00061.html#a2fe84819a0d4734612bd4adaf152adc0">pcpp::Layer::getPrevLayer</a></div><div class="ttdeci">Layer * getPrevLayer()</div><div class="ttdef"><b>Definition:</b> Layer.h:68</div></div>
-<div class="ttc" id="a00061_html_af529fae0ddcfd57db8d6118e6e8ceeb6"><div class="ttname"><a href="a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6">pcpp::Layer::getProtocol</a></div><div class="ttdeci">ProtocolType getProtocol()</div><div class="ttdef"><b>Definition:</b> Layer.h:73</div></div>
-<div class="ttc" id="a00061_html_a7153407f6e0e38a9e72e9d5019e6889a"><div class="ttname"><a href="a00061.html#a7153407f6e0e38a9e72e9d5019e6889a">pcpp::Layer::getDataLen</a></div><div class="ttdeci">size_t getDataLen()</div><div class="ttdef"><b>Definition:</b> Layer.h:83</div></div>
-<div class="ttc" id="a00072_html"><div class="ttname"><a href="a00072.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00061_html_a658e543c6c13707f8f624957cadc19e9"><div class="ttname"><a href="a00061.html#a658e543c6c13707f8f624957cadc19e9">pcpp::Layer::copyData</a></div><div class="ttdeci">void copyData(uint8_t *toArr)</div></div>
-<div class="ttc" id="a00061_html_ad5d8b96d3cd71d4669ddfb8b22368a28"><div class="ttname"><a href="a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28">pcpp::Layer::getData</a></div><div class="ttdeci">uint8_t * getData()</div><div class="ttdef"><b>Definition:</b> Layer.h:78</div></div>
-<div class="ttc" id="a00061_html_a3acb12ad2f7e10ed03fc3dd0ae22dbf7"><div class="ttname"><a href="a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer::toString</a></div><div class="ttdeci">virtual std::string toString()=0</div></div>
-<div class="ttc" id="a00187_html_a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3"><div class="ttname"><a href="a00187.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">pcpp::Unknown</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:21</div></div>
-<div class="ttc" id="a00061_html_aa2cede93f23dc2afd032fa589e22cd7d"><div class="ttname"><a href="a00061.html#aa2cede93f23dc2afd032fa589e22cd7d">pcpp::Layer::getLayerPayload</a></div><div class="ttdeci">uint8_t * getLayerPayload()</div><div class="ttdef"><b>Definition:</b> Layer.h:88</div></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="a00057.html#a17308b1152e801d0ed68ed0a63b6077f">  137</a></span>&#160;        <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> <a class="code" href="a00057.html#a17308b1152e801d0ed68ed0a63b6077f">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">IPv4AddressType</a>; }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        uint32_t <a class="code" href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00057.html#a00a39c8f5d881a3fddfff5f6163c7370">  149</a></span>&#160;        in_addr* <a class="code" href="a00057.html#a00a39c8f5d881a3fddfff5f6163c7370">toInAddr</a>() { <span class="keywordflow">return</span> m_pInAddr; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="a00057.html#ab244cc421284de22fdad9fc9a77a306f">  155</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00057.html#ab244cc421284de22fdad9fc9a77a306f">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00057.html">IPv4Address</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a>() == other.<a class="code" href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a>(); }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="a00057.html#a8160f16543866740b00e8350f617442e">  161</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00057.html#a8160f16543866740b00e8350f617442e">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00057.html">IPv4Address</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a>() != other.<a class="code" href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a>(); }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="a00057.html">IPv4Address</a>&amp; <a class="code" href="a00057.html#a086c40b049355635699e3b3c18678fb6">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00057.html">IPv4Address</a>&amp; other);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00057.html#a5551eda249276e8676675e5d0184bb49">matchSubnet</a>(<span class="keyword">const</span> <a class="code" href="a00057.html">IPv4Address</a>&amp; subnet, <span class="keyword">const</span> std::string&amp; subnetMask);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00057.html#ab1fdcb75a0d28033e51770605ec978cb">  182</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00057.html">IPv4Address</a> <a class="code" href="a00057.html#ab1fdcb75a0d28033e51770605ec978cb">Zero</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    };</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="a00061.html">  191</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00061.html">IPv6Address</a> : <span class="keyword">public</span> <a class="code" href="a00053.html">IPAddress</a></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        in6_addr* m_pInAddr;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">void</span> init(<span class="keywordtype">char</span>* addressAsString);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        ~<a class="code" href="a00061.html">IPv6Address</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9">IPv6Address</a>(uint8_t* addressAsUintArr);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <a class="code" href="a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9">IPv6Address</a>(<span class="keywordtype">char</span>* addressAsString);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9">IPv6Address</a>(std::string addressAsString);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9">IPv6Address</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="a00061.html#a2a899e36131b3ac54d94de99e6e67f2b">  228</a></span>&#160;        <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> <a class="code" href="a00061.html#a2a899e36131b3ac54d94de99e6e67f2b">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="a00053.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">IPv6AddressType</a>; }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="a00061.html#a1d4c09c0982b5b3905f53493489e7383">  234</a></span>&#160;        in6_addr* <a class="code" href="a00061.html#a1d4c09c0982b5b3905f53493489e7383">toIn6Addr</a>() { <span class="keywordflow">return</span> m_pInAddr; }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00061.html#ade7dd5e08fa04101f72f60cbed397b7d">copyTo</a>(uint8_t** arr, <span class="keywordtype">size_t</span>&amp; length);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00061.html#ade7dd5e08fa04101f72f60cbed397b7d">copyTo</a>(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00061.html#a8cb10edb19cbb534c0e1f3b540ad7567">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00061.html#a2ce04912047630b1c2442bebb87dabb2">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="a00061.html">IPv6Address</a>&amp; <a class="code" href="a00061.html#a6f3b86e75434f2c106d341736151a464">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00061.html">IPv6Address</a>&amp; other);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="a00061.html#a01d0b4399914ea40cba0d826484e9479">  271</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00061.html">IPv6Address</a> <a class="code" href="a00061.html#a01d0b4399914ea40cba0d826484e9479">Zero</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    };</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_IPADDRESS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00057_html_a5551eda249276e8676675e5d0184bb49"><div class="ttname"><a href="a00057.html#a5551eda249276e8676675e5d0184bb49">pcpp::IPv4Address::matchSubnet</a></div><div class="ttdeci">bool matchSubnet(const IPv4Address &amp;subnet, const std::string &amp;subnetMask)</div></div>
+<div class="ttc" id="a00057_html_afe150ecb366ca60577da2cc426ed2c97"><div class="ttname"><a href="a00057.html#afe150ecb366ca60577da2cc426ed2c97">pcpp::IPv4Address::toInt</a></div><div class="ttdeci">uint32_t toInt() const </div></div>
+<div class="ttc" id="a00053_html_ac389e5507d75b60d2b0ca939db195231"><div class="ttname"><a href="a00053.html#ac389e5507d75b60d2b0ca939db195231">pcpp::IPAddress::AddressType</a></div><div class="ttdeci">AddressType</div><div class="ttdef"><b>Definition:</b> IpAddress.h:40</div></div>
+<div class="ttc" id="a00053_html_ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838"><div class="ttname"><a href="a00053.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">pcpp::IPAddress::IPv6AddressType</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:48</div></div>
+<div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00061_html_a01d0b4399914ea40cba0d826484e9479"><div class="ttname"><a href="a00061.html#a01d0b4399914ea40cba0d826484e9479">pcpp::IPv6Address::Zero</a></div><div class="ttdeci">static IPv6Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:271</div></div>
+<div class="ttc" id="a00057_html_ab1fdcb75a0d28033e51770605ec978cb"><div class="ttname"><a href="a00057.html#ab1fdcb75a0d28033e51770605ec978cb">pcpp::IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:182</div></div>
+<div class="ttc" id="a00061_html_a2ce04912047630b1c2442bebb87dabb2"><div class="ttname"><a href="a00061.html#a2ce04912047630b1c2442bebb87dabb2">pcpp::IPv6Address::operator!=</a></div><div class="ttdeci">bool operator!=(const IPv6Address &amp;other)</div></div>
+<div class="ttc" id="a00053_html_a85a3e43774848c93585f97bdef6ec73d"><div class="ttname"><a href="a00053.html#a85a3e43774848c93585f97bdef6ec73d">pcpp::IPAddress::getType</a></div><div class="ttdeci">virtual AddressType getType() const =0</div></div>
+<div class="ttc" id="a00057_html_ab244cc421284de22fdad9fc9a77a306f"><div class="ttname"><a href="a00057.html#ab244cc421284de22fdad9fc9a77a306f">pcpp::IPv4Address::operator==</a></div><div class="ttdeci">bool operator==(const IPv4Address &amp;other) const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:155</div></div>
+<div class="ttc" id="a00053_html_a39eeb2c3b4ec235f8c938ec1b77fe2ac"><div class="ttname"><a href="a00053.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">pcpp::IPAddress::toString</a></div><div class="ttdeci">std::string toString() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:63</div></div>
+<div class="ttc" id="a00061_html_a6f3b86e75434f2c106d341736151a464"><div class="ttname"><a href="a00061.html#a6f3b86e75434f2c106d341736151a464">pcpp::IPv6Address::operator=</a></div><div class="ttdeci">IPv6Address &amp; operator=(const IPv6Address &amp;other)</div></div>
+<div class="ttc" id="a00057_html_a8160f16543866740b00e8350f617442e"><div class="ttname"><a href="a00057.html#a8160f16543866740b00e8350f617442e">pcpp::IPv4Address::operator!=</a></div><div class="ttdeci">bool operator!=(const IPv4Address &amp;other) const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:161</div></div>
+<div class="ttc" id="a00057_html_a17308b1152e801d0ed68ed0a63b6077f"><div class="ttname"><a href="a00057.html#a17308b1152e801d0ed68ed0a63b6077f">pcpp::IPv4Address::getType</a></div><div class="ttdeci">AddressType getType() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:137</div></div>
+<div class="ttc" id="a00057_html_a7eef864e1a372d665a27de6189901e1e"><div class="ttname"><a href="a00057.html#a7eef864e1a372d665a27de6189901e1e">pcpp::IPv4Address::IPv4Address</a></div><div class="ttdeci">IPv4Address(uint32_t addressAsInt)</div></div>
+<div class="ttc" id="a00057_html_a086c40b049355635699e3b3c18678fb6"><div class="ttname"><a href="a00057.html#a086c40b049355635699e3b3c18678fb6">pcpp::IPv4Address::operator=</a></div><div class="ttdeci">IPv4Address &amp; operator=(const IPv4Address &amp;other)</div></div>
+<div class="ttc" id="a00061_html"><div class="ttname"><a href="a00061.html">pcpp::IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:191</div></div>
+<div class="ttc" id="a00061_html_ade7dd5e08fa04101f72f60cbed397b7d"><div class="ttname"><a href="a00061.html#ade7dd5e08fa04101f72f60cbed397b7d">pcpp::IPv6Address::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr, size_t &amp;length)</div></div>
+<div class="ttc" id="a00061_html_a8cb10edb19cbb534c0e1f3b540ad7567"><div class="ttname"><a href="a00061.html#a8cb10edb19cbb534c0e1f3b540ad7567">pcpp::IPv6Address::operator==</a></div><div class="ttdeci">bool operator==(const IPv6Address &amp;other)</div></div>
+<div class="ttc" id="a00053_html_adda7dc3cc9ea734a41af60ac51832c17"><div class="ttname"><a href="a00053.html#adda7dc3cc9ea734a41af60ac51832c17">pcpp::IPAddress::fromString</a></div><div class="ttdeci">static std::auto_ptr&lt; IPAddress &gt; fromString(char *addressAsString)</div></div>
+<div class="ttc" id="a00061_html_a1d4c09c0982b5b3905f53493489e7383"><div class="ttname"><a href="a00061.html#a1d4c09c0982b5b3905f53493489e7383">pcpp::IPv6Address::toIn6Addr</a></div><div class="ttdeci">in6_addr * toIn6Addr()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:234</div></div>
+<div class="ttc" id="a00061_html_a2a899e36131b3ac54d94de99e6e67f2b"><div class="ttname"><a href="a00061.html#a2a899e36131b3ac54d94de99e6e67f2b">pcpp::IPv6Address::getType</a></div><div class="ttdeci">AddressType getType() const </div><div class="ttdef"><b>Definition:</b> IpAddress.h:228</div></div>
+<div class="ttc" id="a00057_html"><div class="ttname"><a href="a00057.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:94</div></div>
+<div class="ttc" id="a00057_html_a00a39c8f5d881a3fddfff5f6163c7370"><div class="ttname"><a href="a00057.html#a00a39c8f5d881a3fddfff5f6163c7370">pcpp::IPv4Address::toInAddr</a></div><div class="ttdeci">in_addr * toInAddr()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:149</div></div>
+<div class="ttc" id="a00053_html_ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383"><div class="ttname"><a href="a00053.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">pcpp::IPAddress::IPv4AddressType</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:44</div></div>
+<div class="ttc" id="a00061_html_ad86bb8f234fe5d5b8327902fe04b3af9"><div class="ttname"><a href="a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9">pcpp::IPv6Address::IPv6Address</a></div><div class="ttdeci">IPv6Address(uint8_t *addressAsUintArr)</div></div>
+<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">pcpp::IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:27</div></div>
+<div class="ttc" id="a00053_html_a2d6b031d025c3ef287584a605b64d750"><div class="ttname"><a href="a00053.html#a2d6b031d025c3ef287584a605b64d750">pcpp::IPAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00154.html">Layer.h</a></li>
-    <li class="footer">Generated on Sun Oct 30 2016 00:50:03 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00154.html">IpAddress.h</a></li>
+    <li class="footer">Generated on Thu Nov 24 2016 21:56:36 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

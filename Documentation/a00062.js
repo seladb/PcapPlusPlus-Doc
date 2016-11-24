@@ -1,10 +1,13 @@
 var a00062 =
 [
-    [ "LinkDuplex", "a00062.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
-      [ "FULL_DUPLEX", "a00062.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
-      [ "HALF_DUPLEX", "a00062.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
-    ] ],
-    [ "linkDuplex", "a00062.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
-    [ "linkSpeedMbps", "a00062.html#a6177ed98446f18d57be88d8c2411a473", null ],
-    [ "linkUp", "a00062.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
+    [ "IPv6Layer", "a00062.html#ad2545ecbcd8e42b449366237745f0774", null ],
+    [ "IPv6Layer", "a00062.html#a959b6e8d2698d12418b301e15fbbf446", null ],
+    [ "IPv6Layer", "a00062.html#a16dddacbec4de2d1905cedbebc663400", null ],
+    [ "computeCalculateFields", "a00062.html#aaba2a45fa6e2cc43edab9a548773faf1", null ],
+    [ "getDstIpAddress", "a00062.html#a436faafdf30e810e3a8d96e74f256c74", null ],
+    [ "getHeaderLen", "a00062.html#acee75c2ab7ef3112b58ebe3c73a1c4ce", null ],
+    [ "getIPv6Header", "a00062.html#acacfbacbed97b015fb54326f914e3bae", null ],
+    [ "getSrcIpAddress", "a00062.html#a8080e3a1ef1cd7fe81cd36033bbc52df", null ],
+    [ "parseNextLayer", "a00062.html#a494abc8a7bfc1a520c86e61fee3a2f46", null ],
+    [ "toString", "a00062.html#af2abd76cb9650332abde50e5040aed1d", null ]
 ];

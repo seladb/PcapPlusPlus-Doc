@@ -1,30 +1,10 @@
 var a00144 =
 [
-    [ "MBufRawPacket", "a00067.html", "a00067" ],
-    [ "PciAddress", "a00081.html", "a00081" ],
-    [ "DpdkDevice", "a00011.html", "a00011" ],
-    [ "DpdkDeviceConfiguration", "a00012.html", "a00012" ],
-    [ "LinkStatus", "a00062.html", "a00062" ],
-    [ "OnDpdkPacketsArriveCallback", "a00144.html#aebc46b2f805a197cd4b79316a9237c26", null ],
-    [ "DpdkPMDType", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9", [
-      [ "PMD_UNKNOWN", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068", null ],
-      [ "PMD_BOND", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a5ea9f73f02ab060961507d00b0116c3a", null ],
-      [ "PMD_E1000EM", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a897a951640e193c23e5551ff6d262721", null ],
-      [ "PMD_IGB", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c", null ],
-      [ "PMD_IGBVF", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4", null ],
-      [ "PMD_ENIC", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9ab78a0d3109436b0b81bd74f3da4aeb4f", null ],
-      [ "PMD_FM10K", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9aa5cf85f23e598984e33982f43bf68336", null ],
-      [ "PMD_I40E", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a74b4ff3e1cfac5e22e15a9e70ef16c85", null ],
-      [ "PMD_I40EVF", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a72526282b86fa593ae6e558ed0a9da53", null ],
-      [ "PMD_IXGBE", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9aa98f261841430d2b8c0317f2fc7a8019", null ],
-      [ "PMD_IXGBEVF", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a5a0f116ac9d5559dbb4639e246441682", null ],
-      [ "PMD_MLX4", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6", null ],
-      [ "PMD_NULL", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9", null ],
-      [ "PMD_PCAP", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a8d00786a5d2f4e3ff6170c428878219e", null ],
-      [ "PMD_RING", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a53259a7926134fe9f6e8902fa92b07fe", null ],
-      [ "PMD_VIRTIO", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580", null ],
-      [ "PMD_VMXNET3", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9ab1cf6b5ef8ce9b1dd85a96784ea87779", null ],
-      [ "PMD_XENVIRT", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9aa64fbbe7b368497e49e6bbcf0d839858", null ],
-      [ "PMD_AF_PACKET", "a00144.html#adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c", null ]
-    ] ]
+    [ "getDeviceType", "a00144.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
+    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00144.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
+    [ "sendPackets", "a00144.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
+    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00144.html#aebff78da9d57c6ec9046de32746943bd", null ],
+    [ "startCapture", "a00144.html#af22e2966176d4127e69300cd4b208758", null ],
+    [ "startCapture", "a00144.html#a70126c098779937e5ce88360966c7aa1", null ],
+    [ "startCapture", "a00144.html#a74824694b8f72f687dec10557a196675", null ]
 ];

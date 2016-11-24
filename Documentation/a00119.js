@@ -1,8 +1,7 @@
 var a00119 =
 [
-    [ "getHeaderLen", "a00119.html#afd062c291faff189eff54e987885e3f6", null ],
-    [ "getRecordLayer", "a00119.html#a693e2da655cd33a4906bcbcffb394126", null ],
-    [ "getRecordType", "a00119.html#af0bff83614a0641b170e8fb4734178bd", null ],
-    [ "getRecordVersion", "a00119.html#a56f3a017783ffc524463a5691959ae5a", null ],
-    [ "parseNextLayer", "a00119.html#acc45ce490c60762cf4be2da0a4d57723", null ]
+    [ "SSLFinishedMessage", "a00119.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
+    [ "getSignedHash", "a00119.html#afae04041b9e28633f6a2b15807307791", null ],
+    [ "getSignedHashLength", "a00119.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
+    [ "toString", "a00119.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
 ];

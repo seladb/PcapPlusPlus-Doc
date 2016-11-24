@@ -1,10 +1,10 @@
 var a00092 =
 [
-    [ "PPPoESessionLayer", "a00092.html#a433678572ac1217a16a38e6aa8ade4f2", null ],
-    [ "PPPoESessionLayer", "a00092.html#ac9e2dcfee946bc38c1deefe557606188", null ],
-    [ "getHeaderLen", "a00092.html#a07941bb7f6351ca4cd9d3c3b583a0168", null ],
-    [ "getPPPNextProtocol", "a00092.html#a4521d824fcc13fa995376ba4757953d7", null ],
-    [ "parseNextLayer", "a00092.html#a68ee818cde48545d0d4cfa701bef6a0e", null ],
-    [ "setPPPNextProtocol", "a00092.html#adad1131f1a337c499577510c35383fb8", null ],
-    [ "toString", "a00092.html#a1938913dc6bed3dd7b443ddcd052b5e3", null ]
+    [ "PPP_PPTPLayer", "a00092.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
+    [ "PPP_PPTPLayer", "a00092.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
+    [ "computeCalculateFields", "a00092.html#a989b126eecc1536b660d46dda3e5a795", null ],
+    [ "getHeaderLen", "a00092.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
+    [ "getPPP_PPTPHeader", "a00092.html#aa9707853653d941e1ae0a8727b281191", null ],
+    [ "parseNextLayer", "a00092.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
+    [ "toString", "a00092.html#a92c398562bc0be52b28dce752c669d70", null ]
 ];

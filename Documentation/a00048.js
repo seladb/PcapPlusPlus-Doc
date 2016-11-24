@@ -1,4 +1,5 @@
 var a00048 =
 [
-    [ "setOperator", "a00048.html#ae6bd275b11802dec7f9bc1a7baaf6d19", null ]
+    [ "IFileReaderDevice", "a00048.html#a0292cb89821cdbdb5914d4ed76c5e0f1", null ],
+    [ "~IFileReaderDevice", "a00048.html#acdc7b6e2db17994aaf167c081ddfaafb", null ]
 ];

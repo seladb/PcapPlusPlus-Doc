@@ -1,8 +1,10 @@
 var a00117 =
 [
-    [ "getContainingLayer", "a00117.html#a4342813d150cb1cec2911b59b99e0418", null ],
-    [ "getHandshakeType", "a00117.html#a31089d536fc762b283d30d7c36e3584b", null ],
-    [ "getMessageLength", "a00117.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
-    [ "isMessageComplete", "a00117.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
-    [ "toString", "a00117.html#a17b72bf10472c67d0044006099c6ea5a", null ]
+    [ "SSLExtensionStruct", "a00118.html", "a00118" ],
+    [ "SSLExtension", "a00117.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "getData", "a00117.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
+    [ "getLength", "a00117.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
+    [ "getTotalLength", "a00117.html#a84c6e634a3738b65cb9b7210124abca5", null ],
+    [ "getType", "a00117.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
+    [ "getTypeAsInt", "a00117.html#a1be433ad3fff137428f270e6f30f09c7", null ]
 ];

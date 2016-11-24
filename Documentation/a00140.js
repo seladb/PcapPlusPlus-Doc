@@ -1,10 +1,6 @@
 var a00140 =
 [
-    [ "getDeviceType", "a00140.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00140.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
-    [ "sendPackets", "a00140.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00140.html#aebff78da9d57c6ec9046de32746943bd", null ],
-    [ "startCapture", "a00140.html#af22e2966176d4127e69300cd4b208758", null ],
-    [ "startCapture", "a00140.html#a70126c098779937e5ce88360966c7aa1", null ],
-    [ "startCapture", "a00140.html#a74824694b8f72f687dec10557a196675", null ]
+    [ "UdpLengthFilter", "a00140.html#a88d3430d89616c9229ac814c2f5eedf5", null ],
+    [ "parseToString", "a00140.html#a438eb7a89725685d7f98f069ce76b966", null ],
+    [ "setLength", "a00140.html#a4094e3387c71ba0c72086c34cf9d4665", null ]
 ];

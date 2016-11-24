@@ -1,6 +1,10 @@
 var a00114 =
 [
-    [ "extensionData", "a00114.html#a058c404f39c4b185647f5fc6cade65d4", null ],
-    [ "extensionDataLength", "a00114.html#af116e93a2decd3c986ae109b16c12b28", null ],
-    [ "extensionType", "a00114.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
+    [ "SSLCipherSuite", "a00114.html#a91a906a5f733f3afab0b6706e6641e16", null ],
+    [ "asString", "a00114.html#afc805ee667a9ffaa0d4c9146460312df", null ],
+    [ "getAuthAlg", "a00114.html#ae072d7734dc748e94133c3ad6c3b026c", null ],
+    [ "getID", "a00114.html#a09959781bd410417c7bc4e337f32b708", null ],
+    [ "getKeyExchangeAlg", "a00114.html#a56322a3bb08908c7b68c286c9fdd8fcd", null ],
+    [ "getMACAlg", "a00114.html#aedcc0ac097c43786c40a858171db2197", null ],
+    [ "getSymKeyAlg", "a00114.html#acdb497b3a27bff5fa936458876c5f7d4", null ]
 ];

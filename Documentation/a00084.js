@@ -1,19 +1,15 @@
 var a00084 =
 [
-    [ "ConstVectorIterator", "a00084.html#ae21ecab0276bc0be1ab9a86df6622386", null ],
-    [ "VectorIterator", "a00084.html#acf7704583e3f0dd0bce8adbe4d78c5b0", null ],
-    [ "PointerVector", "a00084.html#a1df9cfd5c3e97fdedf5a654351a385a8", null ],
-    [ "~PointerVector", "a00084.html#a848d21f6b51f10f8207197ea2609a85d", null ],
-    [ "PointerVector", "a00084.html#a6528e240e35f7ee2407d22f24c3dd644", null ],
-    [ "at", "a00084.html#a992816f6d10f86ccafca4b36991378dc", null ],
-    [ "begin", "a00084.html#a15e41c4b220465138e47b5083098e30e", null ],
-    [ "begin", "a00084.html#aed89fdafea5a2c7f946eec79ce6719ea", null ],
-    [ "clear", "a00084.html#ad6b5d1fb386f9d3fe9a9916058875433", null ],
-    [ "end", "a00084.html#adff5df71707ed082640407949028c334", null ],
-    [ "end", "a00084.html#ae5a728c8465d9b8af4d0e3e116256bd0", null ],
-    [ "erase", "a00084.html#a548970610623b300fd3f65ff65f325e3", null ],
-    [ "front", "a00084.html#aa3a724c88f399524a10853bfa5c28dd3", null ],
-    [ "getAndRemoveFromVector", "a00084.html#a496fc8a59393820699c9af6f99ef8fa1", null ],
-    [ "pushBack", "a00084.html#ad5f6f474c257f00373c049f32fe9c653", null ],
-    [ "size", "a00084.html#a4af9c26478016cf873f2e9d886de5403", null ]
+    [ "ConstRemoteDeviceListIterator", "a00084.html#a9cfb21ecc08849c812b6ab6115071969", null ],
+    [ "RemoteDeviceListIterator", "a00084.html#a17e3146371657cb2bf427c345ef8701a", null ],
+    [ "begin", "a00084.html#af155f1d0d02b252b968f8bfc60bfa285", null ],
+    [ "begin", "a00084.html#a3e6eec736e7d88dc2a9dfe413089dbdf", null ],
+    [ "end", "a00084.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1", null ],
+    [ "end", "a00084.html#a4384231f937c67a346698218c6cc4818", null ],
+    [ "getRemoteDeviceByIP", "a00084.html#a95cc401d327933db99d1dd1cb639bcb7", null ],
+    [ "getRemoteDeviceByIP", "a00084.html#ad1c6086cfdceb29c6cc88e4ae19d78ab", null ],
+    [ "getRemoteDeviceByIP", "a00084.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4", null ],
+    [ "getRemoteDeviceByIP", "a00084.html#aafbda2e1b2c4ec3cc9a2d42aded206df", null ],
+    [ "getRemoteMachineIpAddress", "a00084.html#a6204e7c89ccce39c4aa3e355988f5ab6", null ],
+    [ "getRemoteMachinePort", "a00084.html#a1e1971b1f2432aa1837af7e2cbce17e2", null ]
 ];

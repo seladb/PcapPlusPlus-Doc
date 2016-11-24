@@ -1,9 +1,7 @@
 var a00141 =
 [
-    [ "arphdr", "a00004.html", "a00004" ],
-    [ "ArpLayer", "a00005.html", "a00005" ],
-    [ "ArpOpcode", "a00141.html#a078cb0044494dbde4a73f32cbff6184e", [
-      [ "ARP_REQUEST", "a00141.html#a078cb0044494dbde4a73f32cbff6184ea1af8ec60de1d0747f88beedec5bd7d87", null ],
-      [ "ARP_REPLY", "a00141.html#a078cb0044494dbde4a73f32cbff6184ea454be5e5734b03b8e54c8c419e030f09", null ]
-    ] ]
+    [ "cfi", "a00141.html#a1cba4c151a11a2527eccb5c472be835b", null ],
+    [ "etherType", "a00141.html#a790a917cc070fb1ace8c77a7a12d0870", null ],
+    [ "priority", "a00141.html#a0b9c3a2edf23468ea5df60fee1903485", null ],
+    [ "vlanID", "a00141.html#ab970b63b8440a00efe46f60838b5ce04", null ]
 ];

@@ -1,5 +1,5 @@
 var a00071 =
 [
-    [ "OrFilter", "a00071.html#acd0bc5b4a037e198510571ce5298b6a1", null ],
-    [ "parseToString", "a00071.html#a6552bb49fddc97e6e2f8ef0833c45b36", null ]
+    [ "getIPv4Address", "a00071.html#a812b40c3fd9ccfd3065c698010876c13", null ],
+    [ "getMacAddress", "a00071.html#a25604394245462fc413cadb5ede6740b", null ]
 ];

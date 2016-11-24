@@ -1,10 +1,8 @@
 var a00093 =
 [
-    [ "getTagDataAs", "a00093.html#a90c9d117f0227b28315f66fb86621894", null ],
-    [ "getTagTotalSize", "a00093.html#ae0a0ec3151b3be1dc391bd9ebb1a2d15", null ],
-    [ "getType", "a00093.html#ad721e2c2e3dbb15efae5e700120f1bd9", null ],
-    [ "setTagData", "a00093.html#a058a53a2eac30209abaec60f70e7ad63", null ],
-    [ "tagData", "a00093.html#a859b9c75b9f17f734c42b9bdc7ac1ad3", null ],
-    [ "tagDataLength", "a00093.html#ae4e187f3ca9a2b81adaa193823bf2a2a", null ],
-    [ "tagType", "a00093.html#a53236fe2fd4cf146334cdc19ffc01192", null ]
+    [ "code", "a00093.html#ab7f6d4c3dba01ad2212e4a71e738161c", null ],
+    [ "payloadLength", "a00093.html#a08e5841209e619cc327971361264f02e", null ],
+    [ "sessionId", "a00093.html#acff911ee6da20c9101981d1396562ab3", null ],
+    [ "type", "a00093.html#a696c4e1cd2f66f95923d7c310df1d043", null ],
+    [ "version", "a00093.html#a99482acf563e69e4a318992715742a08", null ]
 ];

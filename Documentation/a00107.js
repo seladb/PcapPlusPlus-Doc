@@ -1,8 +1,6 @@
 var a00107 =
 [
-    [ "SSLCertificateRequestMessage", "a00107.html#ae85b37b12ff7e387b3d3513ec7170558", null ],
-    [ "getCertificateAuthorityData", "a00107.html#a3939ecbf00de57ea722e8cf5005c0717", null ],
-    [ "getCertificateAuthorityLength", "a00107.html#a68ce41ecc995e5b8bab7a333a72334b3", null ],
-    [ "getCertificateTypes", "a00107.html#a2d6091acdd00f6e43544890ccf951e2a", null ],
-    [ "toString", "a00107.html#ae1e7664638e7d2df1baa6e8e96a29c4f", null ]
+    [ "length", "a00107.html#ad0988dfc40b111270d4c447293218d1c", null ],
+    [ "recordType", "a00107.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
+    [ "recordVersion", "a00107.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
 ];

@@ -1,14 +1,14 @@
 var a00067 =
 [
-    [ "MBufRawPacket", "a00067.html#aaf206811e019a695318954e65b044f96", null ],
-    [ "~MBufRawPacket", "a00067.html#a696d9e42af3f7b8ea296e4137a019a13", null ],
-    [ "MBufRawPacket", "a00067.html#a0b2a21888dbcbdc2e50c703938de6804", null ],
-    [ "appendData", "a00067.html#af1c5144634729ce1ab2da2aa89946e89", null ],
-    [ "clear", "a00067.html#a265214f9d02a63d0cff85b4e1a93c396", null ],
-    [ "init", "a00067.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
-    [ "insertData", "a00067.html#a12e04aa6f066e6971946cc033fb2bdf9", null ],
-    [ "operator=", "a00067.html#ab194bcba22f170560890ee3f73faa027", null ],
-    [ "reallocateData", "a00067.html#ac8984ba4413680165a38d13bdd853987", null ],
-    [ "removeData", "a00067.html#a3895fef553d8345e18b7f97e52f1a10d", null ],
-    [ "setRawData", "a00067.html#a412aebf582fc8e9b5bbb6dfe8206c301", null ]
+    [ "MacAddress", "a00067.html#a9b56a6c1bfa240b58548035db404bcbc", null ],
+    [ "MacAddress", "a00067.html#a73460f086b972df4e264d267adc2d92d", null ],
+    [ "MacAddress", "a00067.html#a257d6fd3d08de6766389f15423ca3e22", null ],
+    [ "MacAddress", "a00067.html#af9130892a0dcc4c931aac84d86e4f7cd", null ],
+    [ "MacAddress", "a00067.html#a51128dc96a7f443ba5e05e94dd169071", null ],
+    [ "copyTo", "a00067.html#abd24a366974f3bc8b2d78b65de07c926", null ],
+    [ "copyTo", "a00067.html#a36d261838f53468acdb7b46208c97dcf", null ],
+    [ "isValid", "a00067.html#afe46520073e14b9e02bb368627896f4a", null ],
+    [ "operator!=", "a00067.html#a6497d0796bb0d06997a1e399817ba078", null ],
+    [ "operator==", "a00067.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
+    [ "toString", "a00067.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
 ];

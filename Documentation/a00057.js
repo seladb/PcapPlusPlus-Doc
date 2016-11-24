@@ -1,20 +1,15 @@
 var a00057 =
 [
-    [ "IPv4Layer", "a00057.html#a4f0053a3866503b87803140b5ea2b8fe", null ],
-    [ "IPv4Layer", "a00057.html#a0e84eff3c7ac732a1a934ee507fdb2ce", null ],
-    [ "IPv4Layer", "a00057.html#a4adc5b7767e069f468a70f63a798088b", null ],
-    [ "computeCalculateFields", "a00057.html#a9c38910febddbfb9c7bfc75dbe79db03", null ],
-    [ "getDstIpAddress", "a00057.html#aab76c05ad561b9e5e972304d7133b553", null ],
-    [ "getFragmentFlags", "a00057.html#aa229d54f2b7d4e36bdc933eb403dc93e", null ],
-    [ "getFragmentOffset", "a00057.html#a92e987742cfff29e77301614bc83e2a9", null ],
-    [ "getHeaderLen", "a00057.html#a9766c4a1ddafd7b710a8a66d54092c50", null ],
-    [ "getIPv4Header", "a00057.html#a71529ce3ada4376096ab322447576d10", null ],
-    [ "getSrcIpAddress", "a00057.html#a5b99c00dd6a8bf7603be7ddfb4989c4c", null ],
-    [ "isFirstFragment", "a00057.html#af305f9dfe6d714aaff3144dc29b2b723", null ],
-    [ "isFragment", "a00057.html#a83b019f924b8eaab625ff3206d2f85e3", null ],
-    [ "isLastFragment", "a00057.html#ad0768083f4257013d21ac21c5493f339", null ],
-    [ "parseNextLayer", "a00057.html#a0862e0c98bed9b90d8115f8af9287ac2", null ],
-    [ "setDstIpAddress", "a00057.html#aea29d148475ef75477cc03ea1ae3d553", null ],
-    [ "setSrcIpAddress", "a00057.html#af665bf79bbceb52374a24eeb4e766bf4", null ],
-    [ "toString", "a00057.html#ae36ba08fd6e60a4d5ee4920cdfe8aa35", null ]
+    [ "IPv4Address", "a00057.html#a7eef864e1a372d665a27de6189901e1e", null ],
+    [ "IPv4Address", "a00057.html#a1ec2cd8425ee7d92b1f95cde69650df7", null ],
+    [ "IPv4Address", "a00057.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
+    [ "IPv4Address", "a00057.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
+    [ "IPv4Address", "a00057.html#a133598783690be861bd41452680b2290", null ],
+    [ "getType", "a00057.html#a17308b1152e801d0ed68ed0a63b6077f", null ],
+    [ "matchSubnet", "a00057.html#a5551eda249276e8676675e5d0184bb49", null ],
+    [ "operator!=", "a00057.html#a8160f16543866740b00e8350f617442e", null ],
+    [ "operator=", "a00057.html#a086c40b049355635699e3b3c18678fb6", null ],
+    [ "operator==", "a00057.html#ab244cc421284de22fdad9fc9a77a306f", null ],
+    [ "toInAddr", "a00057.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
+    [ "toInt", "a00057.html#afe150ecb366ca60577da2cc426ed2c97", null ]
 ];

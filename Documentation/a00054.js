@@ -1,14 +1,10 @@
 var a00054 =
 [
-    [ "fragmentOffset", "a00054.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
-    [ "headerChecksum", "a00054.html#a724ead037aaf6310e5b9ebceba77f922", null ],
-    [ "internetHeaderLength", "a00054.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
-    [ "ipDst", "a00054.html#a2722895dc1ed669dd9b241fc472a284f", null ],
-    [ "ipId", "a00054.html#a9d50037f1b02307d20dc8a113207dbce", null ],
-    [ "ipSrc", "a00054.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
-    [ "ipVersion", "a00054.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
-    [ "protocol", "a00054.html#a9600c9b8e380ba5468763cdf648d043c", null ],
-    [ "timeToLive", "a00054.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
-    [ "totalLength", "a00054.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
-    [ "typeOfService", "a00054.html#a229d7a9444c63a92532cd17b16e9de70", null ]
+    [ "clearFilter", "a00054.html#aba28d535c6aa05e9f9492c82ece25de7", null ],
+    [ "close", "a00054.html#a5ce8877d4e047f11a3cb8d0f4f527e56", null ],
+    [ "getStatistics", "a00054.html#ace3640f2330899687e34aa3789f4cd05", null ],
+    [ "isOpened", "a00054.html#a22b03cdabb9f359c6bed0728c3614789", null ],
+    [ "open", "a00054.html#aa7d1358756653febf63d23b21447649c", null ],
+    [ "setFilter", "a00054.html#aadba6a20265dca6ba29b548325a798fe", null ],
+    [ "setFilter", "a00054.html#aa33400a37378ceb807228c43efbff47e", null ]
 ];

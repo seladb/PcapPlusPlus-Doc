@@ -1,6 +1,10 @@
 var a00083 =
 [
-    [ "getPfRingDeviceByName", "a00083.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
-    [ "getPfRingDevicesList", "a00083.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
-    [ "getPfRingVersion", "a00083.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
+    [ "getDeviceType", "a00083.html#af5518431a35a7f94b6ee8551061eee18", null ],
+    [ "getMacAddress", "a00083.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
+    [ "getMtu", "a00083.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
+    [ "getRemoteMachineIpAddress", "a00083.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
+    [ "getRemoteMachinePort", "a00083.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
+    [ "getStatistics", "a00083.html#ac4f3b9ace451b38aa9930950dc695273", null ],
+    [ "open", "a00083.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
 ];

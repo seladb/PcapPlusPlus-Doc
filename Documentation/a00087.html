@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::ppp_pptp_header Struct Reference</title>
+<title>PcapPlusPlus: pcpp::PfRingDeviceList Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,63 +107,119 @@ $(document).ready(function(){initNavTree('a00087.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00278.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00282.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ppp_pptp_header Struct Reference</div>  </div>
+<div class="title">pcpp::PfRingDeviceList Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00147_source.html">GreLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00176_source.html">PfRingDeviceList.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ab0d4dbeb685845400c93be1636b9b2fb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ab0d4dbeb685845400c93be1636b9b2fb">address</a></td></tr>
-<tr class="separator:ab0d4dbeb685845400c93be1636b9b2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae925aba063d9662de4efe5151c128372"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ae925aba063d9662de4efe5151c128372">control</a></td></tr>
-<tr class="separator:ae925aba063d9662de4efe5151c128372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e49420e46bdc801452f9c30ef5b8659"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a9e49420e46bdc801452f9c30ef5b8659">protocol</a></td></tr>
-<tr class="separator:a9e49420e46bdc801452f9c30ef5b8659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aaf4ca5719934a1320d22ad470fa3441e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00086.html">PfRingDevice</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#aaf4ca5719934a1320d22ad470fa3441e">getPfRingDevicesList</a> ()</td></tr>
+<tr class="separator:aaf4ca5719934a1320d22ad470fa3441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6980c295b2294ffc337cf0b69bd6e20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html">PfRingDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ac6980c295b2294ffc337cf0b69bd6e20">getPfRingDeviceByName</a> (const std::string devName)</td></tr>
+<tr class="separator:ac6980c295b2294ffc337cf0b69bd6e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8cec8374cbb122940b8f6d4e6e17c0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a2e8cec8374cbb122940b8f6d4e6e17c0">getPfRingVersion</a> ()</td></tr>
+<tr class="separator:a2e8cec8374cbb122940b8f6d4e6e17c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac54f6f37245641b2ae23bd82c3bb1313"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00087.html">PfRingDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ac54f6f37245641b2ae23bd82c3bb1313">getInstance</a> ()</td></tr>
+<tr class="separator:ac54f6f37245641b2ae23bd82c3bb1313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents PPP layer that comes after GREv1 as part of PPTP protocol </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab0d4dbeb685845400c93be1636b9b2fb"></a>
+<div class="textblock"><p>A singleton class that holds all available PF_RING devices. Through this class the user can iterate all PF_RING devices or find a specific device by name </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac54f6f37245641b2ae23bd82c3bb1313"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::ppp_pptp_header::address</td>
+          <td class="memname">static <a class="el" href="a00087.html">PfRingDeviceList</a>&amp; pcpp::PfRingDeviceList::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Broadcast address </p>
+<p>A static method that returns the singleton object for <a class="el" href="a00087.html">PfRingDeviceList</a> </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="a00087.html">PfRingDeviceList</a> singleton </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ae925aba063d9662de4efe5151c128372"></a>
+<a class="anchor" id="ac6980c295b2294ffc337cf0b69bd6e20"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::ppp_pptp_header::control</td>
+          <td class="memname"><a class="el" href="a00086.html">PfRingDevice</a>* pcpp::PfRingDeviceList::getPfRingDeviceByName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>devName</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Control byte </p>
+<p>Get a PF_RING device by name. The name is the Linux interface name which appears in ifconfig (e.g eth0, eth1, etc.) </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the PF_RING device </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a9e49420e46bdc801452f9c30ef5b8659"></a>
+<a class="anchor" id="aaf4ca5719934a1320d22ad470fa3441e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::ppp_pptp_header::protocol</td>
+          <td class="memname">const std::vector&lt;<a class="el" href="a00086.html">PfRingDevice</a>*&gt;&amp; pcpp::PfRingDeviceList::getPfRingDevicesList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Protocol type of the next layer (see PPP_* macros at <a class="el" href="a00175.html">PPPoELayer.h</a>) </p>
+<p>Return a list of all available PF_RING devices </p><dl class="section return"><dt>Returns</dt><dd>a list of all available PF_RING devices </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e8cec8374cbb122940b8f6d4e6e17c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string pcpp::PfRingDeviceList::getPfRingVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get installed PF_RING version </p><dl class="section return"><dt>Returns</dt><dd>A string representing PF_RING version </dd></dl>
 
 </div>
 </div>
@@ -172,8 +228,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00087.html">ppp_pptp_header</a></li>
-    <li class="footer">Generated on Sun Oct 30 2016 00:50:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00087.html">PfRingDeviceList</a></li>
+    <li class="footer">Generated on Thu Nov 24 2016 21:56:38 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

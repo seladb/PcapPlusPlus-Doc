@@ -1,10 +1,7 @@
 var a00116 =
 [
-    [ "SSLHandshakeLayer", "a00116.html#a0b37d33d8342f166a5a1746820aa0c0b", null ],
-    [ "computeCalculateFields", "a00116.html#ab9db43d75aec58260e33cbce36f969bb", null ],
-    [ "getHandshakeMessageAt", "a00116.html#ac8d1ae87429f17ad41ca8aa4b4231fa8", null ],
-    [ "getHandshakeMessageOfType", "a00116.html#a4a40a448fd7234eb08c95b5032e64974", null ],
-    [ "getHandshakeMessagesCount", "a00116.html#a9f7c42970ded74d0fee34103e51f7632", null ],
-    [ "getNextHandshakeMessageOfType", "a00116.html#ac1659f58a8e3ed9ed506df80d91c7dbb", null ],
-    [ "toString", "a00116.html#a33923287a108f28edc654c5120cf6158", null ]
+    [ "SSLClientKeyExchangeMessage", "a00116.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
+    [ "getClientKeyExchangeParams", "a00116.html#a23584b393dea97a6d249c750b99f4c5f", null ],
+    [ "getClientKeyExchangeParamsLength", "a00116.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
+    [ "toString", "a00116.html#ada71ea045d9dbfd57484a156a108c00b", null ]
 ];

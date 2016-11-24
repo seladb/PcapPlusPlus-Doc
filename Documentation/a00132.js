@@ -1,10 +1,7 @@
 var a00132 =
 [
-    [ "getTotalSize", "a00132.html#aeaabc88782fc7026cf1340b775831ea8", null ],
-    [ "getType", "a00132.html#a3d561ce1356aa17068d970b57723a6d7", null ],
-    [ "getValueAs", "a00132.html#a49cb10f4e52cf92178725fae9d5ec469", null ],
-    [ "setValue", "a00132.html#aaa3ce2fbd266fde95d8e7c57fd091d4f", null ],
-    [ "len", "a00132.html#a722a42e1ceef77b984bfe06c33d77ab3", null ],
-    [ "option", "a00132.html#a33d7eb2c21b7cbb8a629ea91a7df4c26", null ],
-    [ "value", "a00132.html#ae4d31ebb49c6bae190edd6d51a8c1757", null ]
+    [ "SSLx509Certificate", "a00132.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
+    [ "allDataExists", "a00132.html#ae4182828228a1e402626560090d3cdb6", null ],
+    [ "getData", "a00132.html#a4d9c58672e41a057dc53d4923af3992f", null ],
+    [ "getDataLength", "a00132.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
 ];

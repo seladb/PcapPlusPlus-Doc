@@ -1,7 +1,8 @@
 var a00123 =
 [
-    [ "SSLServerKeyExchangeMessage", "a00123.html#a1218714d90696a235404f70b41e70b41", null ],
-    [ "getServerKeyExchangeParams", "a00123.html#ad7c8c6d0bc49a7951fdc60923789de6b", null ],
-    [ "getServerKeyExchangeParamsLength", "a00123.html#a0661186c198209c8a71294fe372aae48", null ],
-    [ "toString", "a00123.html#acae0392cfe821a9acd35e247e24e012b", null ]
+    [ "getHeaderLen", "a00123.html#afd062c291faff189eff54e987885e3f6", null ],
+    [ "getRecordLayer", "a00123.html#a693e2da655cd33a4906bcbcffb394126", null ],
+    [ "getRecordType", "a00123.html#af0bff83614a0641b170e8fb4734178bd", null ],
+    [ "getRecordVersion", "a00123.html#a56f3a017783ffc524463a5691959ae5a", null ],
+    [ "parseNextLayer", "a00123.html#acc45ce490c60762cf4be2da0a4d57723", null ]
 ];

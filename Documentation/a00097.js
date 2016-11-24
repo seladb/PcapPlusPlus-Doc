@@ -1,8 +1,10 @@
 var a00097 =
 [
-    [ "ARPHRD_type", "a00097.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
-    [ "link_layer_addr", "a00097.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
-    [ "link_layer_addr_len", "a00097.html#ac253e0a098c39f46d192619ed5d229bf", null ],
-    [ "packet_type", "a00097.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
-    [ "protocol_type", "a00097.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
+    [ "getTagDataAs", "a00097.html#a90c9d117f0227b28315f66fb86621894", null ],
+    [ "getTagTotalSize", "a00097.html#ae0a0ec3151b3be1dc391bd9ebb1a2d15", null ],
+    [ "getType", "a00097.html#ad721e2c2e3dbb15efae5e700120f1bd9", null ],
+    [ "setTagData", "a00097.html#a058a53a2eac30209abaec60f70e7ad63", null ],
+    [ "tagData", "a00097.html#a859b9c75b9f17f734c42b9bdc7ac1ad3", null ],
+    [ "tagDataLength", "a00097.html#ae4e187f3ca9a2b81adaa193823bf2a2a", null ],
+    [ "tagType", "a00097.html#a53236fe2fd4cf146334cdc19ffc01192", null ]
 ];

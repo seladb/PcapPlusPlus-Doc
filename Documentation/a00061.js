@@ -1,17 +1,14 @@
 var a00061 =
 [
-    [ "~Layer", "a00061.html#a9d02400f5421309786e1ea6c031c8d19", null ],
-    [ "computeCalculateFields", "a00061.html#abea112176d18e896f48214ca7accac71", null ],
-    [ "copyData", "a00061.html#a658e543c6c13707f8f624957cadc19e9", null ],
-    [ "getData", "a00061.html#ad5d8b96d3cd71d4669ddfb8b22368a28", null ],
-    [ "getDataLen", "a00061.html#a7153407f6e0e38a9e72e9d5019e6889a", null ],
-    [ "getHeaderLen", "a00061.html#ae2746ac75563d4ed44632ff06b5a2666", null ],
-    [ "getLayerPayload", "a00061.html#aa2cede93f23dc2afd032fa589e22cd7d", null ],
-    [ "getLayerPayloadSize", "a00061.html#aa6b3d4c2c2b85b8211d2b9544194d20e", null ],
-    [ "getNextLayer", "a00061.html#a8bcc2c5c58c42f15a38f4b92a631c82e", null ],
-    [ "getPrevLayer", "a00061.html#a2fe84819a0d4734612bd4adaf152adc0", null ],
-    [ "getProtocol", "a00061.html#af529fae0ddcfd57db8d6118e6e8ceeb6", null ],
-    [ "isAllocatedToPacket", "a00061.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3", null ],
-    [ "parseNextLayer", "a00061.html#a6a8410015168a7fa42a7d71ac5b86673", null ],
-    [ "toString", "a00061.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7", null ]
+    [ "IPv6Address", "a00061.html#ad86bb8f234fe5d5b8327902fe04b3af9", null ],
+    [ "IPv6Address", "a00061.html#a40d009ad41c7a05fd3b566f6f460e870", null ],
+    [ "IPv6Address", "a00061.html#ae7b6883d2ee46444059a33cd3be73f38", null ],
+    [ "IPv6Address", "a00061.html#a325c75bccad81bda34ce148f291a999c", null ],
+    [ "copyTo", "a00061.html#ade7dd5e08fa04101f72f60cbed397b7d", null ],
+    [ "copyTo", "a00061.html#a54ed6cb154a9687ad675ef95e40a212b", null ],
+    [ "getType", "a00061.html#a2a899e36131b3ac54d94de99e6e67f2b", null ],
+    [ "operator!=", "a00061.html#a2ce04912047630b1c2442bebb87dabb2", null ],
+    [ "operator=", "a00061.html#a6f3b86e75434f2c106d341736151a464", null ],
+    [ "operator==", "a00061.html#a8cb10edb19cbb534c0e1f3b540ad7567", null ],
+    [ "toIn6Addr", "a00061.html#a1d4c09c0982b5b3905f53493489e7383", null ]
 ];

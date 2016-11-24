@@ -1,8 +1,5 @@
 var a00105 =
 [
-    [ "SSLApplicationDataLayer", "a00105.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
-    [ "computeCalculateFields", "a00105.html#a26b335b7dff7b46724894cad71ee56eb", null ],
-    [ "getEncrpytedData", "a00105.html#a5aee5cb13e0c078fb4c4e24c5fbac99e", null ],
-    [ "getEncrpytedDataLen", "a00105.html#ab078cc94b266ccb418e3047db02b6130", null ],
-    [ "toString", "a00105.html#a9676cb9040c57b7f4929c450d4e952f8", null ]
+    [ "handshakeVersion", "a00105.html#aa7f3e7a1886a78bf528650958c167d72", null ],
+    [ "random", "a00105.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
 ];

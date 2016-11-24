@@ -1,7 +1,6 @@
 var a00106 =
 [
-    [ "SSLCertificateMessage", "a00106.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
-    [ "getCertificate", "a00106.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
-    [ "getNumOfCertificates", "a00106.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
-    [ "toString", "a00106.html#a3efa384d6853e29d9448269fd1a00b20", null ]
+    [ "handshakeType", "a00106.html#a9a456a315b65d5e41587b83972471398", null ],
+    [ "length1", "a00106.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
+    [ "length2", "a00106.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
 ];

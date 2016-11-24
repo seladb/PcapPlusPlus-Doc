@@ -1,10 +1,10 @@
 var a00053 =
 [
-    [ "IPFilter", "a00053.html#a953d29c9f7d99369acea260016ab6825", null ],
-    [ "IPFilter", "a00053.html#aee54dc6a3492eee05f53c80e44ab9b08", null ],
-    [ "IPFilter", "a00053.html#a68c98982c7c42c9397c2ed84f0a863ac", null ],
-    [ "parseToString", "a00053.html#a9244dc71714f73d8e215498c7c3b0f23", null ],
-    [ "setAddr", "a00053.html#a41a8a2bdad3732f03639ab5009c8e10c", null ],
-    [ "setLen", "a00053.html#af9b725cf2a44144a36d9775ea9e36c5c", null ],
-    [ "setMask", "a00053.html#a7e47d6b236db754fe0463e8f011edd79", null ]
+    [ "AddressType", "a00053.html#ac389e5507d75b60d2b0ca939db195231", [
+      [ "IPv4AddressType", "a00053.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "a00053.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    ] ],
+    [ "getType", "a00053.html#a85a3e43774848c93585f97bdef6ec73d", null ],
+    [ "isValid", "a00053.html#a2d6b031d025c3ef287584a605b64d750", null ],
+    [ "toString", "a00053.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
 ];

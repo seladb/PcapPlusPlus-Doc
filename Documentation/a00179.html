@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SSLCommon.h File Reference</title>
+<title>PcapPlusPlus: PPPoELayer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,278 +107,2042 @@ $(document).ready(function(){initNavTree('a00179.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">SSLCommon.h File Reference</div>  </div>
+<div class="title">PPPoELayer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;<a class="el" href="a00158_source.html">Layer.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
 <p><a href="a00179_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html">pcpp::ssl_tls_record_layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html">pcpp::pppoe_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00102.html">pcpp::ssl_tls_handshake_layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html">pcpp::PPPoELayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">pcpp::ssl_tls_client_server_hello</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html">pcpp::PPPoESessionLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00100.html">pcpp::ssl_tls_change_cipher_spec</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html">pcpp::PPPoEDiscoveryLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html">pcpp::ssl_tls_alert</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00097.html">pcpp::PPPoEDiscoveryLayer::PPPoETag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00187"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html">pcpp</a></td></tr>
-<tr class="memdesc:a00187"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00191"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00191.html">pcpp</a></td></tr>
+<tr class="memdesc:a00191"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a8009288902cf5a1c0be461f28e82ab3b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a8009288902cf5a1c0be461f28e82ab3b">pcpp::SSLRecordType</a> { <a class="el" href="a00187.html#a8009288902cf5a1c0be461f28e82ab3bace1af865775a8ea1b4db22d4bc59fb49">pcpp::SSL_CHANGE_CIPHER_SPEC</a> = 20, 
-<a class="el" href="a00187.html#a8009288902cf5a1c0be461f28e82ab3ba1083eb75cd4d782433022e14a4bfb5a3">pcpp::SSL_ALERT</a> = 21, 
-<a class="el" href="a00187.html#a8009288902cf5a1c0be461f28e82ab3bad306914feb12cd312e23ddb852d2a951">pcpp::SSL_HANDSHAKE</a> = 22, 
-<a class="el" href="a00187.html#a8009288902cf5a1c0be461f28e82ab3baf58f457a5e7200ce2db683090c4b588d">pcpp::SSL_APPLICATION_DATA</a> = 23
- }</td></tr>
-<tr class="separator:a8009288902cf5a1c0be461f28e82ab3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57308ea55d838a37e7f2951ab950b6b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0">pcpp::SSLVersion</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0a49c5cd3ae218b40aba1faa56929644f5">pcpp::SSL2</a> = 0x0200, 
-<a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0abf5b63391ea66fedfda51ca741ac0ada">pcpp::SSL3</a> = 0x0300, 
-<a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0adf11d6dcccd5d4ea83785777de7283af">pcpp::TLS1_0</a> = 0x0301, 
-<a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0a3e325fbf6fe79db7fe3a6408ef52a58a">pcpp::TLS1_1</a> = 0x0302, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a57308ea55d838a37e7f2951ab950b6b0af155751e58775241d60ecd1c43d75dac">pcpp::TLS1_2</a> = 0x0303
-<br />
- }</td></tr>
-<tr class="separator:a57308ea55d838a37e7f2951ab950b6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0fad0f4f978c2fec3de006703aac92c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92c">pcpp::SSLHandshakeType</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92cafe35d342c55842c17b4583c377d8f890">pcpp::SSL_HELLO_REQUEST</a> = 0, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca938b7b9acdd80099be909ab23da599e1">pcpp::SSL_CLIENT_HELLO</a> = 1, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92cad2e85752954240d228d263a483fe18ae">pcpp::SSL_SERVER_HELLO</a> = 2, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92caff7d1c067ae193c91f7dd54ea867bc2a">pcpp::SSL_NEW_SESSION_TICKET</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca0ef7574c60118baccacf760f852bf628">pcpp::SSL_CERTIFICATE</a> = 11, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92caa7b4ce8f0e8d63492df1c278e537368e">pcpp::SSL_SERVER_KEY_EXCHANGE</a> = 12, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca5ee4d111269380104bfddb9416cf51ef">pcpp::SSL_CERTIFICATE_REQUEST</a> = 13, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca5e6a212094d53aba617699a712ef0298">pcpp::SSL_SERVER_DONE</a> = 14, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca3938618fc2cc2161fd2bb42cde20d55e">pcpp::SSL_CERTIFICATE_VERIFY</a> = 15, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92ca6208a80225f8656ad668748e7fa11d5d">pcpp::SSL_CLIENT_KEY_EXCHANGE</a> = 16, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92cab714fed7bd7746d132f41758791adaa5">pcpp::SSL_FINISHED</a> = 20, 
-<a class="el" href="a00187.html#ae0fad0f4f978c2fec3de006703aac92cae086a1e23820326257451942eb63e9ef">pcpp::SSL_HANDSHAKE_UNKNOWN</a> = 255
-<br />
- }</td></tr>
-<tr class="separator:ae0fad0f4f978c2fec3de006703aac92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ca83a56e04fa5115ce2f2084a24b3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#ab3ca83a56e04fa5115ce2f2084a24b3c">pcpp::SSLAlertLevel</a> { <a class="el" href="a00187.html#ab3ca83a56e04fa5115ce2f2084a24b3cac2c742c7966ff9bb51eedd9487b1183d">pcpp::SSL_ALERT_LEVEL_WARNING</a> = 1, 
-<a class="el" href="a00187.html#ab3ca83a56e04fa5115ce2f2084a24b3cab25c6b68c56305df9f4bc43fd9f7ee38">pcpp::SSL_ALERT_LEVEL_FATAL</a> = 2, 
-<a class="el" href="a00187.html#ab3ca83a56e04fa5115ce2f2084a24b3cad88deab3ab72ce524eaaebbaeecbd7f6">pcpp::SSL_ALERT_LEVEL_ENCRYPTED</a> = 255
- }</td></tr>
-<tr class="separator:ab3ca83a56e04fa5115ce2f2084a24b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ab6e738d527b3e3fbbe112eed0fc32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32">pcpp::SSLAlertDescription</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a91c58774f1fa9808a75bf3b0818f5568">pcpp::SSL_ALERT_CLOSE_NOTIFY</a> = 0, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a381781b9cfc968ebb6b9d7b9dc6affdb">pcpp::SSL_ALERT_UNEXPECTED_MESSAGE</a> = 10, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a9672e2e9e4d3a1b3480b8958222b7881">pcpp::SSL_ALERT_BAD_RECORD_MAC</a> = 20, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a0b8759a3806ce4ad2ceea771d5bbc7a8">pcpp::SSL_ALERT_DECRYPTION_FAILED</a> = 21
-, <br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a1a9218f00851f1f10d3ddd91db5424a7">pcpp::SSL_ALERT_DECOMPRESSION_FAILURE</a> = 30, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a97fce394b85fadcbac9bc5e6d87e970d">pcpp::SSL_ALERT_HANDSHAKE_FAILURE</a> = 40, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a16e247ed29d112baab9fd8fcdfadeb77">pcpp::SSL_ALERT_NO_CERTIFICATE</a> = 41, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a3f014db34f77b1489700d74b15b1de51">pcpp::SSL_ALERT_BAD_CERTIFICATE</a> = 42, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a8e96ccce8bfa26f92259d544e970e827">pcpp::SSL_ALERT_UNSUPPORTED_CERTIFICATE</a> = 43, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32aebf7646831b4f14e0d9ed005090b2333">pcpp::SSL_ALERT_CERTIFICATE_REVOKED</a> = 44, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a7a25c7dd001def7f3c207fb3dc1c3612">pcpp::SSL_ALERT_CERTIFICATE_EXPIRED</a> = 45, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a86e2e0153dcef87b4c0568d861396905">pcpp::SSL_ALERT_CERTIFICATE_UNKNOWN</a> = 46, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a403e917deb7545c86d05728cfb311935">pcpp::SSL_ALERT_ILLEGAL_PARAMETER</a> = 47, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32ab6f34eccb075bf3374fa8e3e5e9cff93">pcpp::SSL_ALERT_UNKNOWN_CA</a> = 48, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a362893f7c5f1dd5c2490daed58a1c85e">pcpp::SSL_ALERT_ACCESS_DENIED</a> = 49, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32ad9ffec0fbb0cbc5c882dd25dea3bedcb">pcpp::SSL_ALERT_DECODE_ERROR</a> = 50, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32af79a3a2eb86cc6fd6909cc5ad85f70cf">pcpp::SSL_ALERT_DECRYPT_ERROR</a> = 51, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32af441e772c9729621851e607ea17eebfe">pcpp::SSL_ALERT_EXPORT_RESTRICTION</a> = 60, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32adc180999237658d6a0b52bc355b3c638">pcpp::SSL_ALERT_PROTOCOL_VERSION</a> = 70, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a4184fc8117713ad6feb877c1b3b661ae">pcpp::SSL_ALERT_INSUFFICIENT_SECURITY</a> = 71, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a4bc83fe5e23d359afdcaffe0b49b8876">pcpp::SSL_ALERT_INTERNAL_ERROR</a> = 80, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a60bb635fc9579ff5ed79956ebc5225c6">pcpp::SSL_ALERT_USER_CANCELLED</a> = 90, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32ac68ce68bb3205b056332d91119f84d1c">pcpp::SSL_ALERT_NO_RENEGOTIATION</a> = 100, 
-<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a3eb72d02a539df5fd30a94281dd9d0cb">pcpp::SSL_ALERT_UNSUPPORTED_EXTENSION</a> = 110, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a49ab6e738d527b3e3fbbe112eed0fc32a72d0b1c3c8db0a9987befcdfef98d472">pcpp::SSL_ALERT_ENCRYPRED</a> = 255
-<br />
- }</td></tr>
-<tr class="separator:a49ab6e738d527b3e3fbbe112eed0fc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a772441779227e48ac030428c10455d9c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a772441779227e48ac030428c10455d9c">pcpp::SSLKeyExchangeAlgorithm</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9cadfc1304f378f90494af7728e34b6f418">pcpp::SSL_KEYX_NULL</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9caaf9a321f1458c8439993d115160e6c5e">pcpp::SSL_KEYX_RSA</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca2f7a85b1968f7184170464fbdef281ab">pcpp::SSL_KEYX_DH</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca4ed4b7f3674479d52f6c973fc3714d07">pcpp::SSL_KEYX_DHE</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca6c1b27fd2e8c7bb3e08633986b87ba25">pcpp::SSL_KEYX_ECDH</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca9a5329f64f19457768f775307faa00e2">pcpp::SSL_KEYX_ECDHE</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca95a72a4ca8d7c14c076760bb3ef196ce">pcpp::SSL_KEYX_FORTEZZA</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca697719f2adcf32051a514bbd30528cd9">pcpp::SSL_KEYX_KRB5</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca7468e61ac6acef3fa90c815bad391913">pcpp::SSL_KEYX_PSK</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca3c332f02ef9e5b93309390dfbb6fa6dc">pcpp::SSL_KEYX_GOST</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9cab52554e25c669fbd18239757c166b5c1">pcpp::SSL_KEYX_SRP</a>, 
-<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca48e093ee625b53c4d924eef4f90acd25">pcpp::SSL_KEYX_PCT</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a772441779227e48ac030428c10455d9ca49b727d25e6df449a725de0bc40e23b4">pcpp::SSL_KEYX_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:a772441779227e48ac030428c10455d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69d37a9aeebc03af63de459ec6b5189"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189">pcpp::SSLAuthenticationAlgorithm</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189aa71c2d44de5356fca899c32b64ae73b4">pcpp::SSL_AUTH_NULL</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a591ad839aebf408d8bb0391e377f7b84">pcpp::SSL_AUTH_RSA</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a9e860838a7c8accdfc286dd4e00a27f5">pcpp::SSL_AUTH_DSS</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189ade732c967b2ff6de17467144d25f3ac3">pcpp::SSL_AUTH_anon</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189abd2a0d7f056baa020533fc112602c5cc">pcpp::SSL_AUTH_KEA</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a8ae129924f3f050f54d4b5742aee80c3">pcpp::SSL_AUTH_KRB5</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a5d46a7239b0a6140a2cb5947f81e720c">pcpp::SSL_AUTH_PSK</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a751aeb350b3e543a83852a5070423970">pcpp::SSL_AUTH_ECDSA</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a5fd468d6fada07de74c922aee0947c43">pcpp::SSL_AUTH_GOST</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a57b10734edb14ab15db80e63d1e98cd9">pcpp::SSL_AUTH_SHA</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a7a2dbf31a8de24bc06d729947a15b6b4">pcpp::SSL_AUTH_PCT</a>, 
-<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a9d07005626c219800845c71900a04646">pcpp::SSL_AUTH_DHE</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac69d37a9aeebc03af63de459ec6b5189a1a2af17608127174375a9dcd471ed2c1">pcpp::SSL_AUTH_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:ac69d37a9aeebc03af63de459ec6b5189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f9e906dad88c5eb6a34390e5ea54b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7">pcpp::SSLSymetricEncryptionAlgorithm</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7aab3cd85229cf3b4efd96dc0aae2b8e03">pcpp::SSL_SYM_NULL</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a502e0b6014b015307e9f60cc2475f7ad">pcpp::SSL_SYM_RC4_40</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7adb05ac8f8f3af24c98f619fb5a246ca9">pcpp::SSL_SYM_RC4_128</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a20b88661acfd021f45dbbcdf2c13785e">pcpp::SSL_SYM_RC2_CBC_40</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a3444b8f1d3053fe62aa25404dbd66250">pcpp::SSL_SYM_IDEA_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac2da350c757c7c61ce872338b5444b02">pcpp::SSL_SYM_DES40_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7af70a32b18ca2c9c069ae4fd0e575a2d0">pcpp::SSL_SYM_DES_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7f393fc4c9b13f7787bdd30c7b8e4a85">pcpp::SSL_SYM_3DES_EDE_CBC</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a6d729a917dbbac7d23e25e8347193b39">pcpp::SSL_SYM_FORTEZZA_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7abd715cc7bc1ab05936f7cc9a9fa6de4f">pcpp::SSL_SYM_DES_CBC_40</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a60620469b50971e8d74d9534cedadf4a">pcpp::SSL_SYM_AES_128_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a38f9672e3f028a9c014bd89e24d04a81">pcpp::SSL_SYM_AES_256_CBC</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7bbb0ae814fafbce00ba2de4240a4be2">pcpp::SSL_SYM_CAMELLIA_128_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac191e34ae4721160868947be578dd96c">pcpp::SSL_SYM_CAMELLIA_128_GCM</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7abdfdee83df956423b35efc6d538c6331">pcpp::SSL_SYM_CAMELLIA_256_GCM</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7acf6b205f2624cd8418aea321ff669566">pcpp::SSL_SYM_RC4_56</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7aafa31db4503927c3dff1731286a96219">pcpp::SSL_SYM_RC2_CBC_56</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a17eb2a6634cab679489f3a04fb6a6798">pcpp::SSL_SYM_GOST28147</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a094a5e6dcae91b402fb6d9a4fc72173e">pcpp::SSL_SYM_CAMELLIA_256_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a662e340d72350b0df86797fef643335e">pcpp::SSL_SYM_SEED_CBC</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7077a502b872dcb0c41803b0a348c2a0">pcpp::SSL_SYM_AES_128</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7acfdd527032cdae1521634a4a199ef52a">pcpp::SSL_SYM_AES_256</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac25b6ba75c213cd4d3ba923e67f42ec1">pcpp::SSL_SYM_AES_128_GCM</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a8c6ddd13a5694c0aca928b41064b5e4e">pcpp::SSL_SYM_AES_256_GCM</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad27a76a5a4cf668bef685ab6383c4877">pcpp::SSL_SYM_RC4_128_EXPORT40</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1f5bf3c3b70fb07789cc0fbd9071370a">pcpp::SSL_SYM_RC2_CBC_128_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a9877f338e16135eebe8024101b55c899">pcpp::SSL_SYM_IDEA_128_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad1d51daf1570d84087bcd59226514748">pcpp::SSL_SYM_DES_64_CBC</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad8873faca6c666aa2f5ee29f5272595d">pcpp::SSL_SYM_DES_192_EDE3_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1df9d18335cf429bf1d83a7f8ed662a5">pcpp::SSL_SYM_RC4_64</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a4257bb00a0f184fe13b095ad3c12a5b2">pcpp::SSL_SYM_ARIA_128_CBC</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a92f5f71abd1bbf8e4ef4dd704e8a9e1a">pcpp::SSL_SYM_ARIA_256_CBC</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7ab63644aadcb749e34d2649ee3e266889">pcpp::SSL_SYM_ARIA_128_GCM</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7a21c4070230ec1524cc14155aa0c2e351">pcpp::SSL_SYM_ARIA_256_GCM</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7aad408ebc9eac82d3d70db4e75d054bb3">pcpp::SSL_SYM_CHACHA20_POLY1305</a>, 
-<a class="el" href="a00187.html#ac4f9e906dad88c5eb6a34390e5ea54b7adeb4feda65f41612cd9d614bc1115790">pcpp::SSL_SYM_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:ac4f9e906dad88c5eb6a34390e5ea54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae983b30bc6e1c3461d5f81eb50a56afa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afa">pcpp::SSLHashingAlgorithm</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa7565ce3d2cad884fb60a117282ef6c5a">pcpp::SSL_HASH_NULL</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaab5c0e104a849cbc439ae28ef3213b103">pcpp::SSL_HASH_MD5</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaaffa969b986d4207a70f125df26b65f2d">pcpp::SSL_HASH_SHA</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa56ecd3c32a86b9a3eed749de38cd4f7d">pcpp::SSL_HASH_SHA256</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaad26f0ea138984025d3fce0a50d4bd84c">pcpp::SSL_HASH_GOST28147</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa7620d425a4f2e540ec1bbdf095d33eb3">pcpp::SSL_HASH_GOSTR3411</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa1976295d926b13f7c1f0d27d74e0c95c">pcpp::SSL_HASH_SHA384</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa28ec423ff778e2e43711a83e5f99ea20">pcpp::SSL_HASH_CCM</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaa88706263e6b6bc327638c047c11763b3">pcpp::SSL_HASH_CCM_8</a>, 
-<a class="el" href="a00187.html#ae983b30bc6e1c3461d5f81eb50a56afaaae3c4658a7e7b076c970f4fa73b25553">pcpp::SSL_HASH_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:ae983b30bc6e1c3461d5f81eb50a56afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d875ad42e200ba191c7cf29c7f469d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9">pcpp::SSLExtensionType</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a1bde145ea6ef5bdda45d96381c8cafec">pcpp::SSL_EXT_SERVER_NAME</a> = 0, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a5bb9f5c02342f4333d011f05713a5262">pcpp::SSL_EXT_MAX_FRAGMENT_LENGTH</a> = 1, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9aa35c482e425ca9d56b86378db0d20591">pcpp::SSL_EXT_CLIENT_CERTIFICATE_URL</a> = 2, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9af0b3319b185e9d75555db9a50721106d">pcpp::SSL_EXT_TRUSTED_CA_KEYS</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a94950fb4a40a98dcf61ea8e747bb33f5">pcpp::SSL_EXT_TRUNCATED_HMAC</a> = 4, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a399dcff664c8de866a11124e9a4bbd80">pcpp::SSL_EXT_STATUS_REQUEST</a> = 5, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9af2a4ff1f8c4ca219ee6045cf66ff09d7">pcpp::SSL_EXT_USER_MAPPING</a> = 6, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9aa613fa73541bcffa9260b3cb4ee933aa">pcpp::SSL_EXT_CLIENT_AUTHZ</a> = 7, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a1872aaf9f6f70944fd8810b9a3e69c9e">pcpp::SSL_EXT_SERVER_AUTHZ</a> = 8, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a7b082001fd82dc484a8d5eee5be0f276">pcpp::SSL_EXT_CERT_TYPE</a> = 9, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a5e90a2594500e1e428b162240e41253c">pcpp::SSL_EXT_ELLIPTIC_CURVES</a> = 10, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a0b616507d4f8bf5f208aebcc33ace826">pcpp::SSL_EXT_EC_POINT_FORMATS</a> = 11, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9af0b15bfcd88c85eccaa106d832a3250d">pcpp::SSL_EXT_SRP</a> = 12, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a8aae971284f54c0a57d3b5dc53e77207">pcpp::SSL_EXT_SIGNATURE_ALGORITHMS</a> = 13, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9ab24301789a515b4a36b985f2128b0273">pcpp::SSL_EXT_USE_SRTP</a> = 14, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a3278650009178a291fef958ae2aad516">pcpp::SSL_EXT_HEARTBEAT</a> = 15, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a4dbc414b7e85a4f55804cbee1c29941f">pcpp::SSL_EXT_APPLICATION_LAYER_PROTOCOL_NEGOTIATION</a> = 16, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a9a25a177aaa29fadc88cf5dc4e2ce20f">pcpp::SSL_EXT_STATUS_REQUEST_V2</a> = 17, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a81dda68b2fbd0763cb3508b2507913e5">pcpp::SSL_EXT_SIGNED_CERTIFICATE_TIMESTAMP</a> = 18, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9abdb7c3ea164e2c2857297dfdcfaccdd3">pcpp::SSL_EXT_CLIENT_CERTIFICATE_TYPE</a> = 19, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a8df4d3ead16ba6cf1b62f0ef29b597d6">pcpp::SSL_EXT_SERVER_CERTIFICATE_TYPE</a> = 20, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9ac109700eb37361200c23798b316ad1f9">pcpp::SSL_EXT_PADDING</a> = 21, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a0463f0c26dff23c27ccfc182e3a6e5b9">pcpp::SSL_EXT_ENCRYPT_THEN_MAC</a> = 22, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9a1e99c247005d7b547782299552126223">pcpp::SSL_EXT_EXTENDED_MASTER_SECRET</a> = 23, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9ae027545d04e071996a387241a8a74644">pcpp::SSL_EXT_TOKEN_BINDING</a> = 24, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9ab62b8cb5f2970e6ad049dd16266060b6">pcpp::SSL_EXT_SESSIONTICKET_TLS</a> = 35, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9adfbdc0f1032393786554eb4a80188436">pcpp::SSL_EXT_RENEGOTIATION_INFO</a> = 65281, 
-<a class="el" href="a00187.html#a8d875ad42e200ba191c7cf29c7f469d9ac0a4355d57d0406918d4ac96440d442a">pcpp::SSL_EXT_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:a8d875ad42e200ba191c7cf29c7f469d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de558bc6ff79cd1503e919ea6d63c26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26">pcpp::SSLClientCertificateType</a> { <br />
-&#160;&#160;<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a4f1fbe29ac64e0ff6650f6bc292388c9">pcpp::SSL_CCT_RSA_SIGN</a> = 1, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a48ef6ccef19428ae7ebf8a2740a74e8e">pcpp::SSL_CCT_DSS_SIGN</a> = 2, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a0a4fe405b240d2e556780dd0f0bc3769">pcpp::SSL_CCT_RSA_FIXED_DH</a> = 3, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a7bda4f6e28a67ac3ba71fe963443d686">pcpp::SSL_CCT_DSS_FIXED_DH</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a56a93afdd02b6a29e2a7541be7fc4a0e">pcpp::SSL_CCT_RSA_EPHEMERAL_DH_RESERVED</a> = 5, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26aa55b561d13632fbea4cd4ec1facac8e9">pcpp::SSL_CCT_DSS_EPHEMERAL_DH_RESERVED</a> = 6, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26adbe0d98140c6116d1305a377ac2553fa">pcpp::SSL_CCT_FORTEZZA_DMS_RESERVED</a> = 20, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a00fe70c9388800e2c3869f175a6b0aab">pcpp::SSL_CCT_ECDSA_SIGN</a> = 64, 
-<br />
-&#160;&#160;<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26afff38633e45c2b5199d745400cafe238">pcpp::SSL_CCT_RSA_FIXED_ECDH</a> = 65, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26ab4c6502c057f05b6e8f033a5fc32f10a">pcpp::SSL_CCT_ECDSA_FIXED_ECDH</a> = 66, 
-<a class="el" href="a00187.html#a9de558bc6ff79cd1503e919ea6d63c26a9fa86aef02e929756607db326dbb9fbc">pcpp::SSL_CCT_UNKNOWN</a>
-<br />
- }</td></tr>
-<tr class="separator:a9de558bc6ff79cd1503e919ea6d63c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab4ad295396200fdd7c3446dba1f3e533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab4ad295396200fdd7c3446dba1f3e533">PCPP_PPP_PADDING</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ab4ad295396200fdd7c3446dba1f3e533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06500d6a7a01c5974de7389580697f03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a06500d6a7a01c5974de7389580697f03">PCPP_PPP_ROHC_SCID</a>&#160;&#160;&#160;0x3</td></tr>
+<tr class="separator:a06500d6a7a01c5974de7389580697f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2592c57db42b276d22e3f8d9e5f283b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac2592c57db42b276d22e3f8d9e5f283b">PCPP_PPP_ROHC_LCID</a>&#160;&#160;&#160;0x5</td></tr>
+<tr class="separator:ac2592c57db42b276d22e3f8d9e5f283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b81be607096210242dc4e192b7296b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a99b81be607096210242dc4e192b7296b">PCPP_PPP_IP</a>&#160;&#160;&#160;0x21</td></tr>
+<tr class="separator:a99b81be607096210242dc4e192b7296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181718c7dd4710c8bc1b3413c89ba91d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a181718c7dd4710c8bc1b3413c89ba91d">PCPP_PPP_OSI</a>&#160;&#160;&#160;0x23</td></tr>
+<tr class="separator:a181718c7dd4710c8bc1b3413c89ba91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132d65bcf174b7ddb8ae7bcfac028181"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a132d65bcf174b7ddb8ae7bcfac028181">PCPP_PPP_XNSIDP</a>&#160;&#160;&#160;0x25</td></tr>
+<tr class="separator:a132d65bcf174b7ddb8ae7bcfac028181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4afc712090c1e9863e2820c5caeb18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a3e4afc712090c1e9863e2820c5caeb18">PCPP_PPP_DEC4</a>&#160;&#160;&#160;0x27</td></tr>
+<tr class="separator:a3e4afc712090c1e9863e2820c5caeb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f4f8381e81ec962c5c64f7577bd6c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a07f4f8381e81ec962c5c64f7577bd6c0">PCPP_PPP_AT</a>&#160;&#160;&#160;0x29</td></tr>
+<tr class="separator:a07f4f8381e81ec962c5c64f7577bd6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d672684c1f8cb2a57b79471a8a05729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8d672684c1f8cb2a57b79471a8a05729">PCPP_PPP_IPX</a>&#160;&#160;&#160;0x2b</td></tr>
+<tr class="separator:a8d672684c1f8cb2a57b79471a8a05729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21856bf132fb947f7cd265a79ddcbf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae21856bf132fb947f7cd265a79ddcbf6">PCPP_PPP_VJC_COMP</a>&#160;&#160;&#160;0x2d</td></tr>
+<tr class="separator:ae21856bf132fb947f7cd265a79ddcbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff36e62fd5b3bdc276b36ac70495768"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#adff36e62fd5b3bdc276b36ac70495768">PCPP_PPP_VJC_UNCOMP</a>&#160;&#160;&#160;0x2f</td></tr>
+<tr class="separator:adff36e62fd5b3bdc276b36ac70495768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972a622a462668ae6e64587fbc3b4638"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a972a622a462668ae6e64587fbc3b4638">PCPP_PPP_BCP</a>&#160;&#160;&#160;0x31</td></tr>
+<tr class="separator:a972a622a462668ae6e64587fbc3b4638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ee8b746a2f7a9ef8e1ba3be8958099"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad4ee8b746a2f7a9ef8e1ba3be8958099">PCPP_PPP_ST</a>&#160;&#160;&#160;0x33</td></tr>
+<tr class="separator:ad4ee8b746a2f7a9ef8e1ba3be8958099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e4c3e7af273fac8a449fc65442ddb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af4e4c3e7af273fac8a449fc65442ddb8">PCPP_PPP_VINES</a>&#160;&#160;&#160;0x35</td></tr>
+<tr class="separator:af4e4c3e7af273fac8a449fc65442ddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf604ed81da3abcc360a47792b51579b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#adf604ed81da3abcc360a47792b51579b">PCPP_PPP_AT_EDDP</a>&#160;&#160;&#160;0x39</td></tr>
+<tr class="separator:adf604ed81da3abcc360a47792b51579b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2131f9dc7e8c717833a727f157d6df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5e2131f9dc7e8c717833a727f157d6df">PCPP_PPP_AT_SB</a>&#160;&#160;&#160;0x3b</td></tr>
+<tr class="separator:a5e2131f9dc7e8c717833a727f157d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae72dbaaa1497b18c15580adb96b8b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0ae72dbaaa1497b18c15580adb96b8b3">PCPP_PPP_MP</a>&#160;&#160;&#160;0x3d</td></tr>
+<tr class="separator:a0ae72dbaaa1497b18c15580adb96b8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abecbfc6fbdd32a447d7eaaf8a80a7ec9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#abecbfc6fbdd32a447d7eaaf8a80a7ec9">PCPP_PPP_NB</a>&#160;&#160;&#160;0x3f</td></tr>
+<tr class="separator:abecbfc6fbdd32a447d7eaaf8a80a7ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a16867156c9db1ab60b75481870e189"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9a16867156c9db1ab60b75481870e189">PCPP_PPP_CISCO</a>&#160;&#160;&#160;0x41</td></tr>
+<tr class="separator:a9a16867156c9db1ab60b75481870e189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f7e5d9185e01b85d2cecd0c883c410"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a26f7e5d9185e01b85d2cecd0c883c410">PCPP_PPP_ASCOM</a>&#160;&#160;&#160;0x43</td></tr>
+<tr class="separator:a26f7e5d9185e01b85d2cecd0c883c410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cf33b601dfc3a6e7ba52b53ff2b08b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af0cf33b601dfc3a6e7ba52b53ff2b08b">PCPP_PPP_LBLB</a>&#160;&#160;&#160;0x45</td></tr>
+<tr class="separator:af0cf33b601dfc3a6e7ba52b53ff2b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b62a8cee0a25edece4422b10419656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aa4b62a8cee0a25edece4422b10419656">PCPP_PPP_RL</a>&#160;&#160;&#160;0x47</td></tr>
+<tr class="separator:aa4b62a8cee0a25edece4422b10419656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab2530c9023e1ccd93d73062158d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5ab2530c9023e1ccd93d73062158d9fd">PCPP_PPP_SDTP</a>&#160;&#160;&#160;0x49</td></tr>
+<tr class="separator:a5ab2530c9023e1ccd93d73062158d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfe9d33cc40b4408c64cac7b84f8c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2bfe9d33cc40b4408c64cac7b84f8c9f">PCPP_PPP_LLC</a>&#160;&#160;&#160;0x4b</td></tr>
+<tr class="separator:a2bfe9d33cc40b4408c64cac7b84f8c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae959bcbcbba33cebf8ed758fc9e0b512"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae959bcbcbba33cebf8ed758fc9e0b512">PCPP_PPP_SNA</a>&#160;&#160;&#160;0x4d</td></tr>
+<tr class="separator:ae959bcbcbba33cebf8ed758fc9e0b512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2842f4ebac035b7d624b02aa456feaba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2842f4ebac035b7d624b02aa456feaba">PCPP_PPP_IPV6HC</a>&#160;&#160;&#160;0x4f</td></tr>
+<tr class="separator:a2842f4ebac035b7d624b02aa456feaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149f0a5c056a5730fa1fdc160b36ff0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1149f0a5c056a5730fa1fdc160b36ff0">PCPP_PPP_KNX</a>&#160;&#160;&#160;0x51</td></tr>
+<tr class="separator:a1149f0a5c056a5730fa1fdc160b36ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6bc8e91ca6217214b19b259b608f9ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab6bc8e91ca6217214b19b259b608f9ad">PCPP_PPP_ENCRYPT</a>&#160;&#160;&#160;0x53</td></tr>
+<tr class="separator:ab6bc8e91ca6217214b19b259b608f9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd7b5aaf94274e393c893bd3b95aae5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0cd7b5aaf94274e393c893bd3b95aae5">PCPP_PPP_ILE</a>&#160;&#160;&#160;0x55</td></tr>
+<tr class="separator:a0cd7b5aaf94274e393c893bd3b95aae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4de9ba8b85cfecb322b1fc72a87ed8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8c4de9ba8b85cfecb322b1fc72a87ed8">PCPP_PPP_IPV6</a>&#160;&#160;&#160;0x57</td></tr>
+<tr class="separator:a8c4de9ba8b85cfecb322b1fc72a87ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629958bbc99f0e03e47478df721ee304"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a629958bbc99f0e03e47478df721ee304">PCPP_PPP_MUX</a>&#160;&#160;&#160;0x59</td></tr>
+<tr class="separator:a629958bbc99f0e03e47478df721ee304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d23219c9ea64e8c429d120c475d05be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4d23219c9ea64e8c429d120c475d05be">PCPP_PPP_VSNP</a>&#160;&#160;&#160;0x5b</td></tr>
+<tr class="separator:a4d23219c9ea64e8c429d120c475d05be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb65a71e2220c104b2aabd81512a6754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#adb65a71e2220c104b2aabd81512a6754">PCPP_PPP_TNP</a>&#160;&#160;&#160;0x5d</td></tr>
+<tr class="separator:adb65a71e2220c104b2aabd81512a6754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681bad8e5aa58bd3bf58af85c277fc14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a681bad8e5aa58bd3bf58af85c277fc14">PCPP_PPP_RTP_FH</a>&#160;&#160;&#160;0x61</td></tr>
+<tr class="separator:a681bad8e5aa58bd3bf58af85c277fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91e102f57e5c2c2a9bae31de57a5701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac91e102f57e5c2c2a9bae31de57a5701">PCPP_PPP_RTP_CTCP</a>&#160;&#160;&#160;0x63</td></tr>
+<tr class="separator:ac91e102f57e5c2c2a9bae31de57a5701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cab1616122ef8066886efeb54e14c68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a3cab1616122ef8066886efeb54e14c68">PCPP_PPP_RTP_CNTCP</a>&#160;&#160;&#160;0x65</td></tr>
+<tr class="separator:a3cab1616122ef8066886efeb54e14c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a701afbc2ec1767eb57c616846fc31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac6a701afbc2ec1767eb57c616846fc31">PCPP_PPP_RTP_CUDP8</a>&#160;&#160;&#160;0x67</td></tr>
+<tr class="separator:ac6a701afbc2ec1767eb57c616846fc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445f9c289f00e0b7bdb5f27fb875f3cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a445f9c289f00e0b7bdb5f27fb875f3cf">PCPP_PPP_RTP_CRTP8</a>&#160;&#160;&#160;0x69</td></tr>
+<tr class="separator:a445f9c289f00e0b7bdb5f27fb875f3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9011c61d251494c206b5c9d401313ef4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9011c61d251494c206b5c9d401313ef4">PCPP_PPP_STAMPEDE</a>&#160;&#160;&#160;0x6f</td></tr>
+<tr class="separator:a9011c61d251494c206b5c9d401313ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ed28b6ebf9572a16c77f38e728d6fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad8ed28b6ebf9572a16c77f38e728d6fc">PCPP_PPP_MPPLUS</a>&#160;&#160;&#160;0x73</td></tr>
+<tr class="separator:ad8ed28b6ebf9572a16c77f38e728d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f9c6fb2dcad9cec8e8efe8e9fba2bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a74f9c6fb2dcad9cec8e8efe8e9fba2bc">PCPP_PPP_NTCITS_IPI</a>&#160;&#160;&#160;0xc1</td></tr>
+<tr class="separator:a74f9c6fb2dcad9cec8e8efe8e9fba2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75dc5caa1ee131176147567dcc07ba2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac75dc5caa1ee131176147567dcc07ba2">PCPP_PPP_ML_SLCOMP</a>&#160;&#160;&#160;0xfb</td></tr>
+<tr class="separator:ac75dc5caa1ee131176147567dcc07ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15747d2da428f6c709fa2fa110a8c694"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a15747d2da428f6c709fa2fa110a8c694">PCPP_PPP_COMP</a>&#160;&#160;&#160;0xfd</td></tr>
+<tr class="separator:a15747d2da428f6c709fa2fa110a8c694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d0b39e2db29579e6dff314d6c883b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af1d0b39e2db29579e6dff314d6c883b4">PCPP_PPP_STP_HELLO</a>&#160;&#160;&#160;0x0201</td></tr>
+<tr class="separator:af1d0b39e2db29579e6dff314d6c883b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cff54b2d7beda2d42778909e79745bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1cff54b2d7beda2d42778909e79745bc">PCPP_PPP_IBM_SR</a>&#160;&#160;&#160;0x0203</td></tr>
+<tr class="separator:a1cff54b2d7beda2d42778909e79745bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8e0721ae18fc9929075af8cf7e9755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aee8e0721ae18fc9929075af8cf7e9755">PCPP_PPP_DEC_LB</a>&#160;&#160;&#160;0x0205</td></tr>
+<tr class="separator:aee8e0721ae18fc9929075af8cf7e9755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609f54383b3689efda1ac995d0ab8aaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a609f54383b3689efda1ac995d0ab8aaa">PCPP_PPP_CDP</a>&#160;&#160;&#160;0x0207</td></tr>
+<tr class="separator:a609f54383b3689efda1ac995d0ab8aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230b3345906779d96e461dcf4cea5ff8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a230b3345906779d96e461dcf4cea5ff8">PCPP_PPP_NETCS</a>&#160;&#160;&#160;0x0209</td></tr>
+<tr class="separator:a230b3345906779d96e461dcf4cea5ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd041a0dede5e7f6f09a2de55be7d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#abfd041a0dede5e7f6f09a2de55be7d2d">PCPP_PPP_STP</a>&#160;&#160;&#160;0x020b</td></tr>
+<tr class="separator:abfd041a0dede5e7f6f09a2de55be7d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681b0bc4fa35e59073785410a239d58a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a681b0bc4fa35e59073785410a239d58a">PCPP_PPP_EDP</a>&#160;&#160;&#160;0x020d</td></tr>
+<tr class="separator:a681b0bc4fa35e59073785410a239d58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386e5c73bfaa1506b107696f9a9cb21a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a386e5c73bfaa1506b107696f9a9cb21a">PCPP_PPP_OSCP</a>&#160;&#160;&#160;0x0211</td></tr>
+<tr class="separator:a386e5c73bfaa1506b107696f9a9cb21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd77282170fe908a4c543c3468c8c8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#abdd77282170fe908a4c543c3468c8c8c">PCPP_PPP_OSCP2</a>&#160;&#160;&#160;0x0213</td></tr>
+<tr class="separator:abdd77282170fe908a4c543c3468c8c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa636214b4a77fa0c2f261f42077002c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aaa636214b4a77fa0c2f261f42077002c">PCPP_PPP_LUXCOM</a>&#160;&#160;&#160;0x0231</td></tr>
+<tr class="separator:aaa636214b4a77fa0c2f261f42077002c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c950fc407e8511a057ec432c8eb21d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2c950fc407e8511a057ec432c8eb21d5">PCPP_PPP_SIGMA</a>&#160;&#160;&#160;0x0233</td></tr>
+<tr class="separator:a2c950fc407e8511a057ec432c8eb21d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634242ecff91dc9975ac68599b283e33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a634242ecff91dc9975ac68599b283e33">PCPP_PPP_ACSP</a>&#160;&#160;&#160;0x0235</td></tr>
+<tr class="separator:a634242ecff91dc9975ac68599b283e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d043fa13f2d4ac17439053da00894a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a13d043fa13f2d4ac17439053da00894a">PCPP_PPP_MPLS_UNI</a>&#160;&#160;&#160;0x0281</td></tr>
+<tr class="separator:a13d043fa13f2d4ac17439053da00894a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9dabdd3259eff0805af213b94b527a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a7b9dabdd3259eff0805af213b94b527a">PCPP_PPP_MPLS_MULTI</a>&#160;&#160;&#160;0x0283</td></tr>
+<tr class="separator:a7b9dabdd3259eff0805af213b94b527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c2c0a36b06e3c49be9aac84131d07f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a07c2c0a36b06e3c49be9aac84131d07f">PCPP_PPP_P12844</a>&#160;&#160;&#160;0x0285</td></tr>
+<tr class="separator:a07c2c0a36b06e3c49be9aac84131d07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac7b28f376364a30da23b027c86d4d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a7ac7b28f376364a30da23b027c86d4d7">PCPP_PPP_TETRA</a>&#160;&#160;&#160;0x0287</td></tr>
+<tr class="separator:a7ac7b28f376364a30da23b027c86d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20ea71b7e52b6d518c50b403cda5bf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af20ea71b7e52b6d518c50b403cda5bf6">PCPP_PPP_MFTP</a>&#160;&#160;&#160;0x0289</td></tr>
+<tr class="separator:af20ea71b7e52b6d518c50b403cda5bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67bbb461027348c798d0e159c1b74ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac67bbb461027348c798d0e159c1b74ff">PCPP_PPP_RTP_CTCPND</a>&#160;&#160;&#160;0x2063</td></tr>
+<tr class="separator:ac67bbb461027348c798d0e159c1b74ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9596dce00b4b2f56ff8a8f8cc3bc97b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9596dce00b4b2f56ff8a8f8cc3bc97b8">PCPP_PPP_RTP_CS</a>&#160;&#160;&#160;0x2065</td></tr>
+<tr class="separator:a9596dce00b4b2f56ff8a8f8cc3bc97b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1219d9d58fcda44e9549418484fa9e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae1219d9d58fcda44e9549418484fa9e2">PCPP_PPP_RTP_CUDP16</a>&#160;&#160;&#160;0x2067</td></tr>
+<tr class="separator:ae1219d9d58fcda44e9549418484fa9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9d0cc2e2ec920f8d8941a4b57b9f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a3c9d0cc2e2ec920f8d8941a4b57b9f68">PCPP_PPP_RTP_CRDP16</a>&#160;&#160;&#160;0x2069</td></tr>
+<tr class="separator:a3c9d0cc2e2ec920f8d8941a4b57b9f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffe4149694ed99b620b9af98bb67656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#afffe4149694ed99b620b9af98bb67656">PCPP_PPP_CCCP</a>&#160;&#160;&#160;0x4001</td></tr>
+<tr class="separator:afffe4149694ed99b620b9af98bb67656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3497b3704db30b5f84c6450901d6e7d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a3497b3704db30b5f84c6450901d6e7d2">PCPP_PPP_CDPD_MNRP</a>&#160;&#160;&#160;0x4003</td></tr>
+<tr class="separator:a3497b3704db30b5f84c6450901d6e7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0ae604dbea471f256d0a7e3f788c45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2b0ae604dbea471f256d0a7e3f788c45">PCPP_PPP_EXPANDAP</a>&#160;&#160;&#160;0x4005</td></tr>
+<tr class="separator:a2b0ae604dbea471f256d0a7e3f788c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ea13c1c060b43a61c59b570da8f92a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aa6ea13c1c060b43a61c59b570da8f92a">PCPP_PPP_ODSICP</a>&#160;&#160;&#160;0x4007</td></tr>
+<tr class="separator:aa6ea13c1c060b43a61c59b570da8f92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a525939870c5c6fd59c66da87d42c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af7a525939870c5c6fd59c66da87d42c6">PCPP_PPP_DOCSIS</a>&#160;&#160;&#160;0x4009</td></tr>
+<tr class="separator:af7a525939870c5c6fd59c66da87d42c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e92e9d47983b93332ab41c15445376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a76e92e9d47983b93332ab41c15445376">PCPP_PPP_CETACEANNDP</a>&#160;&#160;&#160;0x400b</td></tr>
+<tr class="separator:a76e92e9d47983b93332ab41c15445376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea437de3faaae3a1da4eeab7a51007d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8ea437de3faaae3a1da4eeab7a51007d">PCPP_PPP_LZS</a>&#160;&#160;&#160;0x4021</td></tr>
+<tr class="separator:a8ea437de3faaae3a1da4eeab7a51007d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2d2ae7dcce9b4c3ff825e4d91788a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aec2d2ae7dcce9b4c3ff825e4d91788a0">PCPP_PPP_REFTEK</a>&#160;&#160;&#160;0x4023</td></tr>
+<tr class="separator:aec2d2ae7dcce9b4c3ff825e4d91788a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9449281c99c065448ffde38b1ac7e755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9449281c99c065448ffde38b1ac7e755">PCPP_PPP_FC</a>&#160;&#160;&#160;0x4025</td></tr>
+<tr class="separator:a9449281c99c065448ffde38b1ac7e755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784bf5b2412ddc4b014c46d9bc50b7a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a784bf5b2412ddc4b014c46d9bc50b7a1">PCPP_PPP_EMIT</a>&#160;&#160;&#160;0x4027</td></tr>
+<tr class="separator:a784bf5b2412ddc4b014c46d9bc50b7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef24fc255ec379e08fbbaec410f76952"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aef24fc255ec379e08fbbaec410f76952">PCPP_PPP_VSP</a>&#160;&#160;&#160;0x405b</td></tr>
+<tr class="separator:aef24fc255ec379e08fbbaec410f76952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5595de766e1c7e47df73593bcc4ce5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab5595de766e1c7e47df73593bcc4ce5a">PCPP_PPP_TLSP</a>&#160;&#160;&#160;0x405d</td></tr>
+<tr class="separator:ab5595de766e1c7e47df73593bcc4ce5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e1319a62873e9f959c94f93ed45963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a19e1319a62873e9f959c94f93ed45963">PCPP_PPP_IPCP</a>&#160;&#160;&#160;0x8021</td></tr>
+<tr class="separator:a19e1319a62873e9f959c94f93ed45963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149bcf2eb4233890138a10385ee956fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a149bcf2eb4233890138a10385ee956fa">PCPP_PPP_OSINLCP</a>&#160;&#160;&#160;0x8023</td></tr>
+<tr class="separator:a149bcf2eb4233890138a10385ee956fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2fdf4b6741329483507c57a4cd840f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a3a2fdf4b6741329483507c57a4cd840f">PCPP_PPP_XNSIDPCP</a>&#160;&#160;&#160;0x8025</td></tr>
+<tr class="separator:a3a2fdf4b6741329483507c57a4cd840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20f3776a0cb3b1c3741748daf168983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad20f3776a0cb3b1c3741748daf168983">PCPP_PPP_DECNETCP</a>&#160;&#160;&#160;0x8027</td></tr>
+<tr class="separator:ad20f3776a0cb3b1c3741748daf168983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29925f43e140096f40cda010f6332932"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a29925f43e140096f40cda010f6332932">PCPP_PPP_ATCP</a>&#160;&#160;&#160;0x8029</td></tr>
+<tr class="separator:a29925f43e140096f40cda010f6332932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c16e08d64f1c2b08ce04a1825078f18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2c16e08d64f1c2b08ce04a1825078f18">PCPP_PPP_IPXCP</a>&#160;&#160;&#160;0x802b</td></tr>
+<tr class="separator:a2c16e08d64f1c2b08ce04a1825078f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e6388caf861336560ed42d94c489a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af0e6388caf861336560ed42d94c489a7">PCPP_PPP_BRIDGENCP</a>&#160;&#160;&#160;0x8031</td></tr>
+<tr class="separator:af0e6388caf861336560ed42d94c489a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c95a5c195585f0bd0036f2e1f97ae0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1c95a5c195585f0bd0036f2e1f97ae0d">PCPP_PPP_SPCP</a>&#160;&#160;&#160;0x8033</td></tr>
+<tr class="separator:a1c95a5c195585f0bd0036f2e1f97ae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525ad2fd4bf7335e819b3c8123b0aa09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a525ad2fd4bf7335e819b3c8123b0aa09">PCPP_PPP_BVCP</a>&#160;&#160;&#160;0x8035</td></tr>
+<tr class="separator:a525ad2fd4bf7335e819b3c8123b0aa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37736776b35e9536b83938b93f6cc989"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a37736776b35e9536b83938b93f6cc989">PCPP_PPP_MLCP</a>&#160;&#160;&#160;0x803d</td></tr>
+<tr class="separator:a37736776b35e9536b83938b93f6cc989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67dca0fe1888d1e91f96a0d8fb102ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac67dca0fe1888d1e91f96a0d8fb102ee">PCPP_PPP_NBCP</a>&#160;&#160;&#160;0x803f</td></tr>
+<tr class="separator:ac67dca0fe1888d1e91f96a0d8fb102ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ef01a2a39d92eacc4f415409ae40e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab2ef01a2a39d92eacc4f415409ae40e7">PCPP_PPP_CISCOCP</a>&#160;&#160;&#160;0x8041</td></tr>
+<tr class="separator:ab2ef01a2a39d92eacc4f415409ae40e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fadcf23075539e951b7819bedae251"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a01fadcf23075539e951b7819bedae251">PCPP_PPP_ASCOMCP</a>&#160;&#160;&#160;0x8043</td></tr>
+<tr class="separator:a01fadcf23075539e951b7819bedae251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99b0dd432a5c2621690c21cd903a6fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac99b0dd432a5c2621690c21cd903a6fe">PCPP_PPP_LBLBCP</a>&#160;&#160;&#160;0x8045</td></tr>
+<tr class="separator:ac99b0dd432a5c2621690c21cd903a6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd7dc81d665b907ab18b63fe79f8858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4fd7dc81d665b907ab18b63fe79f8858">PCPP_PPP_RLNCP</a>&#160;&#160;&#160;0x8047</td></tr>
+<tr class="separator:a4fd7dc81d665b907ab18b63fe79f8858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2c0aa0d36bbb4a0c929b557232b944"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#abe2c0aa0d36bbb4a0c929b557232b944">PCPP_PPP_SDCP</a>&#160;&#160;&#160;0x8049</td></tr>
+<tr class="separator:abe2c0aa0d36bbb4a0c929b557232b944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb016146e25bf4ff8e29956adae0fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8bb016146e25bf4ff8e29956adae0fd3">PCPP_PPP_LLCCP</a>&#160;&#160;&#160;0x804b</td></tr>
+<tr class="separator:a8bb016146e25bf4ff8e29956adae0fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c134c557ab4a02707e1d4fb1dcba607"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8c134c557ab4a02707e1d4fb1dcba607">PCPP_PPP_SNACP</a>&#160;&#160;&#160;0x804d</td></tr>
+<tr class="separator:a8c134c557ab4a02707e1d4fb1dcba607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e37f559836cc2619a933bfd100a575c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4e37f559836cc2619a933bfd100a575c">PCPP_PPP_IP6HCCP</a>&#160;&#160;&#160;0x804f</td></tr>
+<tr class="separator:a4e37f559836cc2619a933bfd100a575c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b7c0d5c4d0585552627ec16ef74287"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad7b7c0d5c4d0585552627ec16ef74287">PCPP_PPP_KNXCP</a>&#160;&#160;&#160;0x8051</td></tr>
+<tr class="separator:ad7b7c0d5c4d0585552627ec16ef74287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9652bd98786b38a7ff8cf6d85fd80d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9652bd98786b38a7ff8cf6d85fd80d2e">PCPP_PPP_ECP</a>&#160;&#160;&#160;0x8053</td></tr>
+<tr class="separator:a9652bd98786b38a7ff8cf6d85fd80d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e873f4f6135539bb17c0a592ea88fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae2e873f4f6135539bb17c0a592ea88fb">PCPP_PPP_ILECP</a>&#160;&#160;&#160;0x8055</td></tr>
+<tr class="separator:ae2e873f4f6135539bb17c0a592ea88fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e02af79a0c3d19252feeb228c7894e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#af5e02af79a0c3d19252feeb228c7894e">PCPP_PPP_IPV6CP</a>&#160;&#160;&#160;0x8057</td></tr>
+<tr class="separator:af5e02af79a0c3d19252feeb228c7894e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e262fc8786959cd7e6297cee75234d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a07e262fc8786959cd7e6297cee75234d">PCPP_PPP_MUXCP</a>&#160;&#160;&#160;0x8059</td></tr>
+<tr class="separator:a07e262fc8786959cd7e6297cee75234d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d3d636f15fc3187c5caae704313eed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ac4d3d636f15fc3187c5caae704313eed">PCPP_PPP_VSNCP</a>&#160;&#160;&#160;0x805b</td></tr>
+<tr class="separator:ac4d3d636f15fc3187c5caae704313eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2268a3b7c68c774f06ba9f249c96198c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2268a3b7c68c774f06ba9f249c96198c">PCPP_PPP_TNCP</a>&#160;&#160;&#160;0x805d</td></tr>
+<tr class="separator:a2268a3b7c68c774f06ba9f249c96198c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef1690fee944adf863d5ca5e50ff6e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8ef1690fee944adf863d5ca5e50ff6e5">PCPP_PPP_STAMPEDECP</a>&#160;&#160;&#160;0x806f</td></tr>
+<tr class="separator:a8ef1690fee944adf863d5ca5e50ff6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0237faf7643b52dacf8faf99bc132f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aae0237faf7643b52dacf8faf99bc132f">PCPP_PPP_MPPCP</a>&#160;&#160;&#160;0x8073</td></tr>
+<tr class="separator:aae0237faf7643b52dacf8faf99bc132f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2289da762dd17a1d23250af54cbef1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#afe2289da762dd17a1d23250af54cbef1">PCPP_PPP_IPICP</a>&#160;&#160;&#160;0x80c1</td></tr>
+<tr class="separator:afe2289da762dd17a1d23250af54cbef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb03d2c1ec841cab43f7c4608136e62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2fb03d2c1ec841cab43f7c4608136e62">PCPP_PPP_SLCC</a>&#160;&#160;&#160;0x80fb</td></tr>
+<tr class="separator:a2fb03d2c1ec841cab43f7c4608136e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b82515e11c70db37de082099a8a4bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a48b82515e11c70db37de082099a8a4bb">PCPP_PPP_CCP</a>&#160;&#160;&#160;0x80fd</td></tr>
+<tr class="separator:a48b82515e11c70db37de082099a8a4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b322519147a20e39fab04ee76fd478e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a6b322519147a20e39fab04ee76fd478e">PCPP_PPP_CDPCP</a>&#160;&#160;&#160;0x8207</td></tr>
+<tr class="separator:a6b322519147a20e39fab04ee76fd478e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab389ede3b98405af8131fb091812fbfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab389ede3b98405af8131fb091812fbfc">PCPP_PPP_NETCSCP</a>&#160;&#160;&#160;0x8209</td></tr>
+<tr class="separator:ab389ede3b98405af8131fb091812fbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff860ad621ab055a050bff277b517533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aff860ad621ab055a050bff277b517533">PCPP_PPP_STPCP</a>&#160;&#160;&#160;0x820b</td></tr>
+<tr class="separator:aff860ad621ab055a050bff277b517533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2692c5642b661c9394d732a45d759385"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a2692c5642b661c9394d732a45d759385">PCPP_PPP_EDPCP</a>&#160;&#160;&#160;0x820d</td></tr>
+<tr class="separator:a2692c5642b661c9394d732a45d759385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e8f9f639154e2aff01663e2ec7ce61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae5e8f9f639154e2aff01663e2ec7ce61">PCPP_PPP_ACSPC</a>&#160;&#160;&#160;0x8235</td></tr>
+<tr class="separator:ae5e8f9f639154e2aff01663e2ec7ce61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1601751992c245de037e7bf89b85d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aca1601751992c245de037e7bf89b85d1">PCPP_PPP_MPLSCP</a>&#160;&#160;&#160;0x8281</td></tr>
+<tr class="separator:aca1601751992c245de037e7bf89b85d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a583d7cc03dedd1732224017f4a3ccb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a7a583d7cc03dedd1732224017f4a3ccb">PCPP_PPP_P12844CP</a>&#160;&#160;&#160;0x8285</td></tr>
+<tr class="separator:a7a583d7cc03dedd1732224017f4a3ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9dfe2255db68e9ec43001db725d96f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aba9dfe2255db68e9ec43001db725d96f">PCPP_PPP_TETRACP</a>&#160;&#160;&#160;0x8287</td></tr>
+<tr class="separator:aba9dfe2255db68e9ec43001db725d96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fef3acc932680eb596856f2eeb36aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a16fef3acc932680eb596856f2eeb36aa">PCPP_PPP_MFTPCP</a>&#160;&#160;&#160;0x8289</td></tr>
+<tr class="separator:a16fef3acc932680eb596856f2eeb36aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5c044905357f340aefc1b46a81efb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1b5c044905357f340aefc1b46a81efb7">PCPP_PPP_LCP</a>&#160;&#160;&#160;0xc021</td></tr>
+<tr class="separator:a1b5c044905357f340aefc1b46a81efb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cf2df075fdc35c5e78c6a7ccd3dd9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a98cf2df075fdc35c5e78c6a7ccd3dd9e">PCPP_PPP_PAP</a>&#160;&#160;&#160;0xc023</td></tr>
+<tr class="separator:a98cf2df075fdc35c5e78c6a7ccd3dd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447a296d0d3f0846068aa6c39d437fca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a447a296d0d3f0846068aa6c39d437fca">PCPP_PPP_LQR</a>&#160;&#160;&#160;0xc025</td></tr>
+<tr class="separator:a447a296d0d3f0846068aa6c39d437fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ed043ac55a9424343e53871d06456e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a51ed043ac55a9424343e53871d06456e">PCPP_PPP_SPAP</a>&#160;&#160;&#160;0xc027</td></tr>
+<tr class="separator:a51ed043ac55a9424343e53871d06456e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d62bdc1dcd5374271432d208ed165e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0d62bdc1dcd5374271432d208ed165e8">PCPP_PPP_CBCP</a>&#160;&#160;&#160;0xc029</td></tr>
+<tr class="separator:a0d62bdc1dcd5374271432d208ed165e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7351fc443e8e623d0b1ae4a2b7748a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aa7351fc443e8e623d0b1ae4a2b7748a8">PCPP_PPP_BACP</a>&#160;&#160;&#160;0xc02b</td></tr>
+<tr class="separator:aa7351fc443e8e623d0b1ae4a2b7748a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af4ade53b17c32a8dffb2da47efcb69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1af4ade53b17c32a8dffb2da47efcb69">PCPP_PPP_BAP</a>&#160;&#160;&#160;0xc02d</td></tr>
+<tr class="separator:a1af4ade53b17c32a8dffb2da47efcb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab621d49aeadd85a2154e9d870b00d408"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab621d49aeadd85a2154e9d870b00d408">PCPP_PPP_VSAP</a>&#160;&#160;&#160;0xc05b</td></tr>
+<tr class="separator:ab621d49aeadd85a2154e9d870b00d408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667177495549863edae150021333b659"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a667177495549863edae150021333b659">PCPP_PPP_CONTCP</a>&#160;&#160;&#160;0xc081</td></tr>
+<tr class="separator:a667177495549863edae150021333b659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948ac0f36528bcd8d244a614d4bee4c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a948ac0f36528bcd8d244a614d4bee4c1">PCPP_PPP_CHAP</a>&#160;&#160;&#160;0xc223</td></tr>
+<tr class="separator:a948ac0f36528bcd8d244a614d4bee4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56cfebcb95fcfa48bc676f7a6c335135"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a56cfebcb95fcfa48bc676f7a6c335135">PCPP_PPP_RSAAP</a>&#160;&#160;&#160;0xc225</td></tr>
+<tr class="separator:a56cfebcb95fcfa48bc676f7a6c335135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f7669b075cd0c846b697b917a50b11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a97f7669b075cd0c846b697b917a50b11">PCPP_PPP_EAP</a>&#160;&#160;&#160;0xc227</td></tr>
+<tr class="separator:a97f7669b075cd0c846b697b917a50b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06743cd890bd78bc7758eecd1098e4a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a06743cd890bd78bc7758eecd1098e4a4">PCPP_PPP_SIEP</a>&#160;&#160;&#160;0xc229</td></tr>
+<tr class="separator:a06743cd890bd78bc7758eecd1098e4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fb9a511a43a52e2f8ff305cf74b61b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a98fb9a511a43a52e2f8ff305cf74b61b">PCPP_PPP_SBAP</a>&#160;&#160;&#160;0xc26f</td></tr>
+<tr class="separator:a98fb9a511a43a52e2f8ff305cf74b61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8aed2d073f12ccb051bf1f3d08b781"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4b8aed2d073f12ccb051bf1f3d08b781">PCPP_PPP_PRPAP</a>&#160;&#160;&#160;0xc281</td></tr>
+<tr class="separator:a4b8aed2d073f12ccb051bf1f3d08b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52170a14f225a2894fd340bc4d9a6d3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a52170a14f225a2894fd340bc4d9a6d3a">PCPP_PPP_PRPAP2</a>&#160;&#160;&#160;0xc283</td></tr>
+<tr class="separator:a52170a14f225a2894fd340bc4d9a6d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978061b01d53747e9d802453f0e4b457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a978061b01d53747e9d802453f0e4b457">PCPP_PPP_PRPNIAP</a>&#160;&#160;&#160;0xc481</td></tr>
+<tr class="separator:a978061b01d53747e9d802453f0e4b457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>See detailed explanation of the TLS/SSL protocol support in PcapPlusPlus in <a class="el" href="a00181.html">SSLLayer.h</a> </p>
-</div></div><!-- contents -->
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a634242ecff91dc9975ac68599b283e33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ACSP&#160;&#160;&#160;0x0235</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apple Client Server Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5e8f9f639154e2aff01663e2ec7ce61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ACSPC&#160;&#160;&#160;0x8235</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apple Client Server Protocol Control </p>
+
+</div>
+</div>
+<a class="anchor" id="a26f7e5d9185e01b85d2cecd0c883c410"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ASCOM&#160;&#160;&#160;0x43</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ascom Timeplex </p>
+
+</div>
+</div>
+<a class="anchor" id="a01fadcf23075539e951b7819bedae251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ASCOMCP&#160;&#160;&#160;0x8043</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ascom Timeplex Control Protocol (?) </p>
+
+</div>
+</div>
+<a class="anchor" id="a07f4f8381e81ec962c5c64f7577bd6c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_AT&#160;&#160;&#160;0x29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AppleTalk </p>
+
+</div>
+</div>
+<a class="anchor" id="adf604ed81da3abcc360a47792b51579b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_AT_EDDP&#160;&#160;&#160;0x39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AppleTalk EDDP </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e2131f9dc7e8c717833a727f157d6df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_AT_SB&#160;&#160;&#160;0x3b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AppleTalk SmartBuffered </p>
+
+</div>
+</div>
+<a class="anchor" id="a29925f43e140096f40cda010f6332932"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ATCP&#160;&#160;&#160;0x8029</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AppleTalk Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7351fc443e8e623d0b1ae4a2b7748a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_BACP&#160;&#160;&#160;0xc02b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BACP Bandwidth Allocation Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a1af4ade53b17c32a8dffb2da47efcb69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_BAP&#160;&#160;&#160;0xc02d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BAP Bandwidth Allocation Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a972a622a462668ae6e64587fbc3b4638"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_BCP&#160;&#160;&#160;0x31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bridging PDU </p>
+
+</div>
+</div>
+<a class="anchor" id="af0e6388caf861336560ed42d94c489a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_BRIDGENCP&#160;&#160;&#160;0x8031</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bridging NCP </p>
+
+</div>
+</div>
+<a class="anchor" id="a525ad2fd4bf7335e819b3c8123b0aa09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_BVCP&#160;&#160;&#160;0x8035</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Banyan Vines Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d62bdc1dcd5374271432d208ed165e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CBCP&#160;&#160;&#160;0xc029</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CallBack Control Protocol (CBCP) </p>
+
+</div>
+</div>
+<a class="anchor" id="afffe4149694ed99b620b9af98bb67656"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CCCP&#160;&#160;&#160;0x4001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cray Communications Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a48b82515e11c70db37de082099a8a4bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CCP&#160;&#160;&#160;0x80fd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compression Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a609f54383b3689efda1ac995d0ab8aaa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CDP&#160;&#160;&#160;0x0207</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cisco Discovery Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b322519147a20e39fab04ee76fd478e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CDPCP&#160;&#160;&#160;0x8207</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cisco Discovery Protocol Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a3497b3704db30b5f84c6450901d6e7d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CDPD_MNRP&#160;&#160;&#160;0x4003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CDPD Mobile Network Registration Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a76e92e9d47983b93332ab41c15445376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CETACEANNDP&#160;&#160;&#160;0x400b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cetacean Network Detection Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a948ac0f36528bcd8d244a614d4bee4c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CHAP&#160;&#160;&#160;0xc223</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Challenge Handshake Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a16867156c9db1ab60b75481870e189"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CISCO&#160;&#160;&#160;0x41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cisco Systems </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2ef01a2a39d92eacc4f415409ae40e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CISCOCP&#160;&#160;&#160;0x8041</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cisco Systems Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a15747d2da428f6c709fa2fa110a8c694"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_COMP&#160;&#160;&#160;0xfd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compressed datagram </p>
+
+</div>
+</div>
+<a class="anchor" id="a667177495549863edae150021333b659"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_CONTCP&#160;&#160;&#160;0xc081</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Container Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e4afc712090c1e9863e2820c5caeb18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_DEC4&#160;&#160;&#160;0x27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DECnet Phase IV </p>
+
+</div>
+</div>
+<a class="anchor" id="aee8e0721ae18fc9929075af8cf7e9755"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_DEC_LB&#160;&#160;&#160;0x0205</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DEC LANBridge100 Spanning Tree </p>
+
+</div>
+</div>
+<a class="anchor" id="ad20f3776a0cb3b1c3741748daf168983"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_DECNETCP&#160;&#160;&#160;0x8027</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DECnet Phase IV Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="af7a525939870c5c6fd59c66da87d42c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_DOCSIS&#160;&#160;&#160;0x4009</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DOCSIS DLL </p>
+
+</div>
+</div>
+<a class="anchor" id="a97f7669b075cd0c846b697b917a50b11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_EAP&#160;&#160;&#160;0xc227</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Extensible Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a9652bd98786b38a7ff8cf6d85fd80d2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ECP&#160;&#160;&#160;0x8053</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encryption Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a681b0bc4fa35e59073785410a239d58a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_EDP&#160;&#160;&#160;0x020d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EDP - Extreme Discovery Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a2692c5642b661c9394d732a45d759385"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_EDPCP&#160;&#160;&#160;0x820d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EDPCP - Extreme Discovery Protocol Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a784bf5b2412ddc4b014c46d9bc50b7a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_EMIT&#160;&#160;&#160;0x4027</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EMIT Protocols </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6bc8e91ca6217214b19b259b608f9ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ENCRYPT&#160;&#160;&#160;0x53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encryption </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b0ae604dbea471f256d0a7e3f788c45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_EXPANDAP&#160;&#160;&#160;0x4005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expand accelerator protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a9449281c99c065448ffde38b1ac7e755"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_FC&#160;&#160;&#160;0x4025</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fibre Channel </p>
+
+</div>
+</div>
+<a class="anchor" id="a1cff54b2d7beda2d42778909e79745bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IBM_SR&#160;&#160;&#160;0x0203</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IBM Source Routing BPDU </p>
+
+</div>
+</div>
+<a class="anchor" id="a0cd7b5aaf94274e393c893bd3b95aae5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ILE&#160;&#160;&#160;0x55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Individual Link Encryption </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2e873f4f6135539bb17c0a592ea88fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ILECP&#160;&#160;&#160;0x8055</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Individual Link Encryption Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a99b81be607096210242dc4e192b7296b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IP&#160;&#160;&#160;0x21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Internet Protocol version 4 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e37f559836cc2619a933bfd100a575c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IP6HCCP&#160;&#160;&#160;0x804f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IP6 Header Compression Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a19e1319a62873e9f959c94f93ed45963"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPCP&#160;&#160;&#160;0x8021</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Internet Protocol Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="afe2289da762dd17a1d23250af54cbef1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPICP&#160;&#160;&#160;0x80c1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NTCITS IPI Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c4de9ba8b85cfecb322b1fc72a87ed8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPV6&#160;&#160;&#160;0x57</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Internet Protocol version 6 </p>
+
+</div>
+</div>
+<a class="anchor" id="af5e02af79a0c3d19252feeb228c7894e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPV6CP&#160;&#160;&#160;0x8057</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv6 Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a2842f4ebac035b7d624b02aa456feaba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPV6HC&#160;&#160;&#160;0x4f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv6 Header Compression </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d672684c1f8cb2a57b79471a8a05729"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPX&#160;&#160;&#160;0x2b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Novell IPX </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c16e08d64f1c2b08ce04a1825078f18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_IPXCP&#160;&#160;&#160;0x802b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Novell IPX Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a1149f0a5c056a5730fa1fdc160b36ff0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_KNX&#160;&#160;&#160;0x51</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>KNX Bridging Data </p>
+
+</div>
+</div>
+<a class="anchor" id="ad7b7c0d5c4d0585552627ec16ef74287"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_KNXCP&#160;&#160;&#160;0x8051</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>KNX Bridging Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="af0cf33b601dfc3a6e7ba52b53ff2b08b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LBLB&#160;&#160;&#160;0x45</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fujitsu Link Backup and Load Balancing </p>
+
+</div>
+</div>
+<a class="anchor" id="ac99b0dd432a5c2621690c21cd903a6fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LBLBCP&#160;&#160;&#160;0x8045</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fujitsu LBLB Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b5c044905357f340aefc1b46a81efb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LCP&#160;&#160;&#160;0xc021</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Link Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bfe9d33cc40b4408c64cac7b84f8c9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LLC&#160;&#160;&#160;0x4b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SNA over 802.2 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8bb016146e25bf4ff8e29956adae0fd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LLCCP&#160;&#160;&#160;0x804b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SNA over 802.2 Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a447a296d0d3f0846068aa6c39d437fca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LQR&#160;&#160;&#160;0xc025</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Link Quality Report </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa636214b4a77fa0c2f261f42077002c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LUXCOM&#160;&#160;&#160;0x0231</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Luxcom </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ea437de3faaae3a1da4eeab7a51007d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_LZS&#160;&#160;&#160;0x4021</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stacker LZS </p>
+
+</div>
+</div>
+<a class="anchor" id="af20ea71b7e52b6d518c50b403cda5bf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MFTP&#160;&#160;&#160;0x0289</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multichannel Flow Treatment Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a16fef3acc932680eb596856f2eeb36aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MFTPCP&#160;&#160;&#160;0x8289</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multichannel Flow Treatment Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ac75dc5caa1ee131176147567dcc07ba2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ML_SLCOMP&#160;&#160;&#160;0xfb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Single link compression in multilink </p>
+
+</div>
+</div>
+<a class="anchor" id="a37736776b35e9536b83938b93f6cc989"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MLCP&#160;&#160;&#160;0x803d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multi-Link Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ae72dbaaa1497b18c15580adb96b8b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MP&#160;&#160;&#160;0x3d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multi-Link </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b9dabdd3259eff0805af213b94b527a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MPLS_MULTI&#160;&#160;&#160;0x0283</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MPLS Multicast </p>
+
+</div>
+</div>
+<a class="anchor" id="a13d043fa13f2d4ac17439053da00894a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MPLS_UNI&#160;&#160;&#160;0x0281</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MPLS Unicast </p>
+
+</div>
+</div>
+<a class="anchor" id="aca1601751992c245de037e7bf89b85d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MPLSCP&#160;&#160;&#160;0x8281</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MPLS Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="aae0237faf7643b52dacf8faf99bc132f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MPPCP&#160;&#160;&#160;0x8073</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MP+ Contorol Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ad8ed28b6ebf9572a16c77f38e728d6fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MPPLUS&#160;&#160;&#160;0x73</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MP+ Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a629958bbc99f0e03e47478df721ee304"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MUX&#160;&#160;&#160;0x59</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPP Muxing </p>
+
+</div>
+</div>
+<a class="anchor" id="a07e262fc8786959cd7e6297cee75234d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_MUXCP&#160;&#160;&#160;0x8059</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPP Muxing Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="abecbfc6fbdd32a447d7eaaf8a80a7ec9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_NB&#160;&#160;&#160;0x3f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NETBIOS Framing </p>
+
+</div>
+</div>
+<a class="anchor" id="ac67dca0fe1888d1e91f96a0d8fb102ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_NBCP&#160;&#160;&#160;0x803f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NETBIOS Framing Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a230b3345906779d96e461dcf4cea5ff8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_NETCS&#160;&#160;&#160;0x0209</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Netcs Twin Routing </p>
+
+</div>
+</div>
+<a class="anchor" id="ab389ede3b98405af8131fb091812fbfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_NETCSCP&#160;&#160;&#160;0x8209</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Netcs Twin Routing </p>
+
+</div>
+</div>
+<a class="anchor" id="a74f9c6fb2dcad9cec8e8efe8e9fba2bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_NTCITS_IPI&#160;&#160;&#160;0xc1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NTCITS IPI </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6ea13c1c060b43a61c59b570da8f92a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ODSICP&#160;&#160;&#160;0x4007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ODSICP NCP </p>
+
+</div>
+</div>
+<a class="anchor" id="a386e5c73bfaa1506b107696f9a9cb21a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_OSCP&#160;&#160;&#160;0x0211</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optical Supervisory Channel Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="abdd77282170fe908a4c543c3468c8c8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_OSCP2&#160;&#160;&#160;0x0213</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optical Supervisory Channel Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a181718c7dd4710c8bc1b3413c89ba91d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_OSI&#160;&#160;&#160;0x23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OSI Network Layer </p>
+
+</div>
+</div>
+<a class="anchor" id="a149bcf2eb4233890138a10385ee956fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_OSINLCP&#160;&#160;&#160;0x8023</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OSI Network Layer Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a07c2c0a36b06e3c49be9aac84131d07f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_P12844&#160;&#160;&#160;0x0285</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IEEE p1284.4 standard - data packets </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a583d7cc03dedd1732224017f4a3ccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_P12844CP&#160;&#160;&#160;0x8285</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IEEE p1284.4 standard - Protocol Control </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4ad295396200fdd7c3446dba1f3e533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_PADDING&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Padding Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a98cf2df075fdc35c5e78c6a7ccd3dd9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_PAP&#160;&#160;&#160;0xc023</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Password Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b8aed2d073f12ccb051bf1f3d08b781"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_PRPAP&#160;&#160;&#160;0xc281</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proprietary Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a52170a14f225a2894fd340bc4d9a6d3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_PRPAP2&#160;&#160;&#160;0xc283</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proprietary Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a978061b01d53747e9d802453f0e4b457"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_PRPNIAP&#160;&#160;&#160;0xc481</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proprietary Node ID Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="aec2d2ae7dcce9b4c3ff825e4d91788a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_REFTEK&#160;&#160;&#160;0x4023</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RefTek Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4b62a8cee0a25edece4422b10419656"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RL&#160;&#160;&#160;0x47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DCA Remote Lan </p>
+
+</div>
+</div>
+<a class="anchor" id="a4fd7dc81d665b907ab18b63fe79f8858"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RLNCP&#160;&#160;&#160;0x8047</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DCA Remote Lan Network Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ac2592c57db42b276d22e3f8d9e5f283b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ROHC_LCID&#160;&#160;&#160;0x5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ROHC large-CID </p>
+
+</div>
+</div>
+<a class="anchor" id="a06500d6a7a01c5974de7389580697f03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ROHC_SCID&#160;&#160;&#160;0x3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ROHC small-CID </p>
+
+</div>
+</div>
+<a class="anchor" id="a56cfebcb95fcfa48bc676f7a6c335135"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RSAAP&#160;&#160;&#160;0xc225</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RSA Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a3cab1616122ef8066886efeb54e14c68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CNTCP&#160;&#160;&#160;0x65</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed Non TCP </p>
+
+</div>
+</div>
+<a class="anchor" id="a3c9d0cc2e2ec920f8d8941a4b57b9f68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CRDP16&#160;&#160;&#160;0x2069</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed RTP 16 </p>
+
+</div>
+</div>
+<a class="anchor" id="a445f9c289f00e0b7bdb5f27fb875f3cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CRTP8&#160;&#160;&#160;0x69</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed RTP 8 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9596dce00b4b2f56ff8a8f8cc3bc97b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CS&#160;&#160;&#160;0x2065</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Context State </p>
+
+</div>
+</div>
+<a class="anchor" id="ac91e102f57e5c2c2a9bae31de57a5701"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CTCP&#160;&#160;&#160;0x63</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed TCP </p>
+
+</div>
+</div>
+<a class="anchor" id="ac67bbb461027348c798d0e159c1b74ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CTCPND&#160;&#160;&#160;0x2063</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed TCP No Delta </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1219d9d58fcda44e9549418484fa9e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CUDP16&#160;&#160;&#160;0x2067</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed UDP 16 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a701afbc2ec1767eb57c616846fc31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_CUDP8&#160;&#160;&#160;0x67</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Compressed UDP 8 </p>
+
+</div>
+</div>
+<a class="anchor" id="a681bad8e5aa58bd3bf58af85c277fc14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_RTP_FH&#160;&#160;&#160;0x61</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RTP IPHC Full Header </p>
+
+</div>
+</div>
+<a class="anchor" id="a98fb9a511a43a52e2f8ff305cf74b61b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SBAP&#160;&#160;&#160;0xc26f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stampede Bridging Authorization Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="abe2c0aa0d36bbb4a0c929b557232b944"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SDCP&#160;&#160;&#160;0x8049</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Serial Data Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ab2530c9023e1ccd93d73062158d9fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SDTP&#160;&#160;&#160;0x49</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Serial Data Transport Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a06743cd890bd78bc7758eecd1098e4a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SIEP&#160;&#160;&#160;0xc229</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mitsubishi Security Information Exchange Protocol (SIEP) </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c950fc407e8511a057ec432c8eb21d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SIGMA&#160;&#160;&#160;0x0233</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sigma Network Systems </p>
+
+</div>
+</div>
+<a class="anchor" id="a2fb03d2c1ec841cab43f7c4608136e62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SLCC&#160;&#160;&#160;0x80fb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Single link compression in multilink control </p>
+
+</div>
+</div>
+<a class="anchor" id="ae959bcbcbba33cebf8ed758fc9e0b512"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SNA&#160;&#160;&#160;0x4d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SNA </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c134c557ab4a02707e1d4fb1dcba607"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SNACP&#160;&#160;&#160;0x804d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SNA Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a51ed043ac55a9424343e53871d06456e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SPAP&#160;&#160;&#160;0xc027</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shiva Password Authentication Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a1c95a5c195585f0bd0036f2e1f97ae0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_SPCP&#160;&#160;&#160;0x8033</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stream Protocol Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4ee8b746a2f7a9ef8e1ba3be8958099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_ST&#160;&#160;&#160;0x33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stream Protocol (ST-II) </p>
+
+</div>
+</div>
+<a class="anchor" id="a9011c61d251494c206b5c9d401313ef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_STAMPEDE&#160;&#160;&#160;0x6f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stampede Bridging </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ef1690fee944adf863d5ca5e50ff6e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_STAMPEDECP&#160;&#160;&#160;0x806f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stampede Bridging Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="abfd041a0dede5e7f6f09a2de55be7d2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_STP&#160;&#160;&#160;0x020b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>STP - Scheduled Transfer Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="af1d0b39e2db29579e6dff314d6c883b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_STP_HELLO&#160;&#160;&#160;0x0201</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>802.1d Hello Packets </p>
+
+</div>
+</div>
+<a class="anchor" id="aff860ad621ab055a050bff277b517533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_STPCP&#160;&#160;&#160;0x820b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>STP - Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ac7b28f376364a30da23b027c86d4d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_TETRA&#160;&#160;&#160;0x0287</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ETSI TETRA Network Procotol Type 1 </p>
+
+</div>
+</div>
+<a class="anchor" id="aba9dfe2255db68e9ec43001db725d96f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_TETRACP&#160;&#160;&#160;0x8287</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ETSI TETRA TNP1 Control Protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="ab5595de766e1c7e47df73593bcc4ce5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_TLSP&#160;&#160;&#160;0x405d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRILL Link State Protocol (TLSP) </p>
+
+</div>
+</div>
+<a class="anchor" id="a2268a3b7c68c774f06ba9f249c96198c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_TNCP&#160;&#160;&#160;0x805d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRILL Network Control Protocol (TNCP) </p>
+
+</div>
+</div>
+<a class="anchor" id="adb65a71e2220c104b2aabd81512a6754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_TNP&#160;&#160;&#160;0x5d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRILL Network Protocol (TNP) </p>
+
+</div>
+</div>
+<a class="anchor" id="af4e4c3e7af273fac8a449fc65442ddb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VINES&#160;&#160;&#160;0x35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Banyan Vines </p>
+
+</div>
+</div>
+<a class="anchor" id="ae21856bf132fb947f7cd265a79ddcbf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VJC_COMP&#160;&#160;&#160;0x2d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Van Jacobson Compressed TCP/IP </p>
+
+</div>
+</div>
+<a class="anchor" id="adff36e62fd5b3bdc276b36ac70495768"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VJC_UNCOMP&#160;&#160;&#160;0x2f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Van Jacobson Uncompressed TCP/IP </p>
+
+</div>
+</div>
+<a class="anchor" id="ab621d49aeadd85a2154e9d870b00d408"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VSAP&#160;&#160;&#160;0xc05b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vendor-Specific Authentication Protocol (VSAP) </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4d3d636f15fc3187c5caae704313eed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VSNCP&#160;&#160;&#160;0x805b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vendor-Specific Network Control Protocol (VSNCP) [RFC3772] </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d23219c9ea64e8c429d120c475d05be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VSNP&#160;&#160;&#160;0x5b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vendor-Specific Network Protocol (VSNP) </p>
+
+</div>
+</div>
+<a class="anchor" id="aef24fc255ec379e08fbbaec410f76952"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_VSP&#160;&#160;&#160;0x405b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vendor-Specific Protocol (VSP) </p>
+
+</div>
+</div>
+<a class="anchor" id="a132d65bcf174b7ddb8ae7bcfac028181"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_XNSIDP&#160;&#160;&#160;0x25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Xerox NS IDP </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a2fdf4b6741329483507c57a4cd840f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_PPP_XNSIDPCP&#160;&#160;&#160;0x8025</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Xerox NS IDP Control Protocol </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">SSLCommon.h</a></li>
-    <li class="footer">Generated on Sun Oct 30 2016 00:50:03 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">PPPoELayer.h</a></li>
+    <li class="footer">Generated on Thu Nov 24 2016 21:56:37 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

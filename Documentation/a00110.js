@@ -1,10 +1,7 @@
 var a00110 =
 [
-    [ "SSLCipherSuite", "a00110.html#a91a906a5f733f3afab0b6706e6641e16", null ],
-    [ "asString", "a00110.html#afc805ee667a9ffaa0d4c9146460312df", null ],
-    [ "getAuthAlg", "a00110.html#ae072d7734dc748e94133c3ad6c3b026c", null ],
-    [ "getID", "a00110.html#a09959781bd410417c7bc4e337f32b708", null ],
-    [ "getKeyExchangeAlg", "a00110.html#a56322a3bb08908c7b68c286c9fdd8fcd", null ],
-    [ "getMACAlg", "a00110.html#aedcc0ac097c43786c40a858171db2197", null ],
-    [ "getSymKeyAlg", "a00110.html#acdb497b3a27bff5fa936458876c5f7d4", null ]
+    [ "SSLCertificateMessage", "a00110.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
+    [ "getCertificate", "a00110.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
+    [ "getNumOfCertificates", "a00110.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
+    [ "toString", "a00110.html#a3efa384d6853e29d9448269fd1a00b20", null ]
 ];

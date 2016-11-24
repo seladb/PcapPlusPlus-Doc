@@ -1,15 +1,14 @@
 var a00080 =
 [
-    [ "ConstRemoteDeviceListIterator", "a00080.html#a9cfb21ecc08849c812b6ab6115071969", null ],
-    [ "RemoteDeviceListIterator", "a00080.html#a17e3146371657cb2bf427c345ef8701a", null ],
-    [ "begin", "a00080.html#af155f1d0d02b252b968f8bfc60bfa285", null ],
-    [ "begin", "a00080.html#a3e6eec736e7d88dc2a9dfe413089dbdf", null ],
-    [ "end", "a00080.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1", null ],
-    [ "end", "a00080.html#a4384231f937c67a346698218c6cc4818", null ],
-    [ "getRemoteDeviceByIP", "a00080.html#a95cc401d327933db99d1dd1cb639bcb7", null ],
-    [ "getRemoteDeviceByIP", "a00080.html#ad1c6086cfdceb29c6cc88e4ae19d78ab", null ],
-    [ "getRemoteDeviceByIP", "a00080.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4", null ],
-    [ "getRemoteDeviceByIP", "a00080.html#aafbda2e1b2c4ec3cc9a2d42aded206df", null ],
-    [ "getRemoteMachineIpAddress", "a00080.html#a6204e7c89ccce39c4aa3e355988f5ab6", null ],
-    [ "getRemoteMachinePort", "a00080.html#a1e1971b1f2432aa1837af7e2cbce17e2", null ]
+    [ "PcapNgFileReaderDevice", "a00080.html#ab654df3ff52249cf56fddd2a12aa6df4", null ],
+    [ "~PcapNgFileReaderDevice", "a00080.html#a3fdac9f71c23e6c973f6bb119d1ce75d", null ],
+    [ "close", "a00080.html#a637743eb1a25fde92af7aeca8879fc02", null ],
+    [ "getCaptureApplication", "a00080.html#a41bf41e1e995dd48d5263b2c04ad4d02", null ],
+    [ "getCaptureFileComment", "a00080.html#a4b71f490244ab2a59033e7d6d94227bb", null ],
+    [ "getHardware", "a00080.html#a448bef18de4a0d9777161c114bd5c684", null ],
+    [ "getNextPacket", "a00080.html#a9bf1e61be8334e31a329451ad2397b27", null ],
+    [ "getNextPacket", "a00080.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
+    [ "getOS", "a00080.html#a2ac993cca52aac490c4d60562370f317", null ],
+    [ "getStatistics", "a00080.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
+    [ "open", "a00080.html#aea89bc17fd3b560576a20afc6da1d304", null ]
 ];

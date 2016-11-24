@@ -1,6 +1,6 @@
 var a00087 =
 [
-    [ "address", "a00087.html#ab0d4dbeb685845400c93be1636b9b2fb", null ],
-    [ "control", "a00087.html#ae925aba063d9662de4efe5151c128372", null ],
-    [ "protocol", "a00087.html#a9e49420e46bdc801452f9c30ef5b8659", null ]
+    [ "getPfRingDeviceByName", "a00087.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
+    [ "getPfRingDevicesList", "a00087.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
+    [ "getPfRingVersion", "a00087.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IpV4IDFilter Class Reference</title>
+<title>PcapPlusPlus: pcpp::iphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,145 +107,183 @@ $(document).ready(function(){initNavTree('a00056.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00248.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00252.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IpV4IDFilter Class Reference</div>  </div>
+<div class="title">pcpp::iphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00166_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::IpV4IDFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00056.png" usemap="#pcpp::IpV4IDFilter_map" alt=""/>
-  <map id="pcpp::IpV4IDFilter_map" name="pcpp::IpV4IDFilter_map">
-<area href="a00048.html" alt="pcpp::IFilterWithOperator" shape="rect" coords="0,56,153,80"/>
-<area href="a00018.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,153,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00156_source.html">IPv4Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b3ea370a73c59e0f575070fdf3ee382"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a6b3ea370a73c59e0f575070fdf3ee382">IpV4IDFilter</a> (uint16_t ipID, <a class="el" href="a00187.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
-<tr class="separator:a6b3ea370a73c59e0f575070fdf3ee382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af718627a6c4f2bd003a87a7d310d9c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#af718627a6c4f2bd003a87a7d310d9c7e">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:af718627a6c4f2bd003a87a7d310d9c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c37eabbe0212f02d254f1ab0d091c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a3c37eabbe0212f02d254f1ab0d091c98">setIpID</a> (uint16_t ipID)</td></tr>
-<tr class="separator:a3c37eabbe0212f02d254f1ab0d091c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00048"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00048')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00048.html">pcpp::IFilterWithOperator</a></td></tr>
-<tr class="memitem:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_a00048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00048.html#ae6bd275b11802dec7f9bc1a7baaf6d19">setOperator</a> (<a class="el" href="a00187.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
-<tr class="separator:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_a00048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00018"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00018')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00018.html">pcpp::GeneralFilter</a></td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00018"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aafb906cd9dd7be5a3443f5fe6c7dad09">internetHeaderLength</a>:4</td></tr>
+<tr class="separator:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7">ipVersion</a>:4</td></tr>
+<tr class="separator:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229d7a9444c63a92532cd17b16e9de70"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a229d7a9444c63a92532cd17b16e9de70">typeOfService</a></td></tr>
+<tr class="separator:a229d7a9444c63a92532cd17b16e9de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aab4d8ad9872f38be7fb53dd2ec45c63a">totalLength</a></td></tr>
+<tr class="separator:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d50037f1b02307d20dc8a113207dbce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9d50037f1b02307d20dc8a113207dbce">ipId</a></td></tr>
+<tr class="separator:a9d50037f1b02307d20dc8a113207dbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9b98fc149f9d262fbdfe2e4f92595c24">fragmentOffset</a></td></tr>
+<tr class="separator:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa374efc60c926ef18055a84bdbe55bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aaa374efc60c926ef18055a84bdbe55bc">timeToLive</a></td></tr>
+<tr class="separator:aaa374efc60c926ef18055a84bdbe55bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9600c9b8e380ba5468763cdf648d043c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9600c9b8e380ba5468763cdf648d043c">protocol</a></td></tr>
+<tr class="separator:a9600c9b8e380ba5468763cdf648d043c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724ead037aaf6310e5b9ebceba77f922"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a724ead037aaf6310e5b9ebceba77f922">headerChecksum</a></td></tr>
+<tr class="separator:a724ead037aaf6310e5b9ebceba77f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da8d9dc60a51c873500c175f6c65c52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a7da8d9dc60a51c873500c175f6c65c52">ipSrc</a></td></tr>
+<tr class="separator:a7da8d9dc60a51c873500c175f6c65c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2722895dc1ed669dd9b241fc472a284f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a2722895dc1ed669dd9b241fc472a284f">ipDst</a></td></tr>
+<tr class="separator:a2722895dc1ed669dd9b241fc472a284f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering IPv4 traffic by IP ID field of the IPv4 protocol, For example: "filter only IPv4 traffic which IP ID is greater than 1234"<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00166.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6b3ea370a73c59e0f575070fdf3ee382"></a>
+<div class="textblock"><p>Represents an IPv4 protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9b98fc149f9d262fbdfe2e4f92595c24"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::IpV4IDFilter::IpV4IDFilter </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ipID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00187.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a>&#160;</td>
-          <td class="paramname"><em>op</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t pcpp::iphdr::fragmentOffset</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor that gets the IP ID to filter and the operator and creates the filter out of them </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipID</td><td>The IP ID to filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to use (e.g "equal", "greater than", etc.) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Fragment offset field, measured in units of eight-byte blocks (64 bits) </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af718627a6c4f2bd003a87a7d310d9c7e"></a>
+<a class="anchor" id="a724ead037aaf6310e5b9ebceba77f922"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IpV4IDFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t pcpp::iphdr::headerChecksum</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00018.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
+<p>Error-checking of the header </p>
 
 </div>
 </div>
-<a class="anchor" id="a3c37eabbe0212f02d254f1ab0d091c98"></a>
+<a class="anchor" id="aafb906cd9dd7be5a3443f5fe6c7dad09"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IpV4IDFilter::setIpID </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ipID</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t pcpp::iphdr::internetHeaderLength</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Set the IP ID to filter </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipID</td><td>The IP ID to filter </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>IP header length, has the value of 5 for IPv4 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2722895dc1ed669dd9b241fc472a284f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::iphdr::ipDst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv4 address of the receiver of the packet </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d50037f1b02307d20dc8a113207dbce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::iphdr::ipId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identification field. Primarily used for uniquely identifying the group of fragments of a single IP datagram </p>
+
+</div>
+</div>
+<a class="anchor" id="a7da8d9dc60a51c873500c175f6c65c52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::iphdr::ipSrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv4 address of the sender of the packet </p>
+
+</div>
+</div>
+<a class="anchor" id="a74b5c1fbf03d4ebbd3d6ea2d263237b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::iphdr::ipVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IP version number, has the value of 4 for IPv4 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9600c9b8e380ba5468763cdf648d043c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::iphdr::protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines the protocol used in the data portion of the IP datagram. Must be one of <a class="el" href="a00191.html#ace8e2e21b82a8adc602f561e1e612fb0">IPProtocolTypes</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa374efc60c926ef18055a84bdbe55bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::iphdr::timeToLive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An eight-bit time to live field helps prevent datagrams from persisting (e.g. going in circles) on an internet. In practice, the field has become a hop count </p>
+
+</div>
+</div>
+<a class="anchor" id="aab4d8ad9872f38be7fb53dd2ec45c63a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::iphdr::totalLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Entire packet (fragment) size, including header and data, in bytes </p>
+
+</div>
+</div>
+<a class="anchor" id="a229d7a9444c63a92532cd17b16e9de70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::iphdr::typeOfService</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>type of service, same as Differentiated Services Code Point (DSCP) </p>
 
 </div>
 </div>
@@ -254,8 +292,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00056.html">IpV4IDFilter</a></li>
-    <li class="footer">Generated on Sun Oct 30 2016 00:50:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00056.html">iphdr</a></li>
+    <li class="footer">Generated on Thu Nov 24 2016 21:56:37 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

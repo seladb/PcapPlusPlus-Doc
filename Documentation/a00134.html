@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::udphdr Struct Reference</title>
+<title>PcapPlusPlus: pcpp::tcphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,77 +108,257 @@ $(document).ready(function(){initNavTree('a00134.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00325.html">List of all members</a>  </div>
+<a href="a00329.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::udphdr Struct Reference</div>  </div>
+<div class="title">pcpp::tcphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00184_source.html">UdpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00187_source.html">TcpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a72a8d8ad99698271461762079d3758a9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a72a8d8ad99698271461762079d3758a9">portSrc</a></td></tr>
-<tr class="separator:a72a8d8ad99698271461762079d3758a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2760968de55386f04539019f5a677e5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#ab2760968de55386f04539019f5a677e5">portDst</a></td></tr>
-<tr class="separator:ab2760968de55386f04539019f5a677e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68edfe2e8136453d69b7a457461f379d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a68edfe2e8136453d69b7a457461f379d">length</a></td></tr>
-<tr class="separator:a68edfe2e8136453d69b7a457461f379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a4b110e652e51a0f32d4e6c7740354"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#af1a4b110e652e51a0f32d4e6c7740354">headerChecksum</a></td></tr>
-<tr class="separator:af1a4b110e652e51a0f32d4e6c7740354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba66caaf79a20c53a8e92f7537d50a6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a4ba66caaf79a20c53a8e92f7537d50a6">portSrc</a></td></tr>
+<tr class="separator:a4ba66caaf79a20c53a8e92f7537d50a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae26537b0e824c5b0fc1bcf9adf2fdc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">portDst</a></td></tr>
+<tr class="separator:a4ae26537b0e824c5b0fc1bcf9adf2fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2edb7c27d93777ae552eca417cf118d0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a2edb7c27d93777ae552eca417cf118d0">sequenceNumber</a></td></tr>
+<tr class="separator:a2edb7c27d93777ae552eca417cf118d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54a29e632cb6526df4a7e2e79261ad7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#ae54a29e632cb6526df4a7e2e79261ad7">ackNumber</a></td></tr>
+<tr class="separator:ae54a29e632cb6526df4a7e2e79261ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593a30084c297a99ea01b76fce5c5b11"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a593a30084c297a99ea01b76fce5c5b11">dataOffset</a>:4</td></tr>
+<tr class="separator:a593a30084c297a99ea01b76fce5c5b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76c48fa043559ec4b0b90fa9535feeb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#aa76c48fa043559ec4b0b90fa9535feeb">finFlag</a>:1</td></tr>
+<tr class="separator:aa76c48fa043559ec4b0b90fa9535feeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469f06456ae6eaf39e764d7f30c06dc3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a469f06456ae6eaf39e764d7f30c06dc3">synFlag</a>:1</td></tr>
+<tr class="separator:a469f06456ae6eaf39e764d7f30c06dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a5abf30794062f32de013b6ddf39c9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a36a5abf30794062f32de013b6ddf39c9">rstFlag</a>:1</td></tr>
+<tr class="separator:a36a5abf30794062f32de013b6ddf39c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1561eb6d029e00fe449bbaac3be8d705"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a1561eb6d029e00fe449bbaac3be8d705">pshFlag</a>:1</td></tr>
+<tr class="separator:a1561eb6d029e00fe449bbaac3be8d705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1b2600722973e7c2e6f4e05e34c93b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#abf1b2600722973e7c2e6f4e05e34c93b">ackFlag</a>:1</td></tr>
+<tr class="separator:abf1b2600722973e7c2e6f4e05e34c93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2c38c9079e807f366b3cc62669b09c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a2e2c38c9079e807f366b3cc62669b09c">urgFlag</a>:1</td></tr>
+<tr class="separator:a2e2c38c9079e807f366b3cc62669b09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607801a4305ecb6d4ab234a6755b78e7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a607801a4305ecb6d4ab234a6755b78e7">eceFlag</a>:1</td></tr>
+<tr class="separator:a607801a4305ecb6d4ab234a6755b78e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d5425128be717916096e577f2561fe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a26d5425128be717916096e577f2561fe">cwrFlag</a>:1</td></tr>
+<tr class="separator:a26d5425128be717916096e577f2561fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ab389980bbae1e81846792a1c8846a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a62ab389980bbae1e81846792a1c8846a">windowSize</a></td></tr>
+<tr class="separator:a62ab389980bbae1e81846792a1c8846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25c27d92c75ab68816d23c3ead02d5a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#af25c27d92c75ab68816d23c3ead02d5a">headerChecksum</a></td></tr>
+<tr class="separator:af25c27d92c75ab68816d23c3ead02d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43efd09b5aad3f50f38bf2a689cc790c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a43efd09b5aad3f50f38bf2a689cc790c">urgentPointer</a></td></tr>
+<tr class="separator:a43efd09b5aad3f50f38bf2a689cc790c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an UDP protocol header </p>
+<div class="textblock"><p>Represents an TCP protocol header </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af1a4b110e652e51a0f32d4e6c7740354"></a>
+<a class="anchor" id="abf1b2600722973e7c2e6f4e05e34c93b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::headerChecksum</td>
+          <td class="memname">uint16_t pcpp::tcphdr::ackFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Error-checking of the header and data </p>
+<p>ACK flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a68edfe2e8136453d69b7a457461f379d"></a>
+<a class="anchor" id="ae54a29e632cb6526df4a7e2e79261ad7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::length</td>
+          <td class="memname">uint32_t pcpp::tcphdr::ackNumber</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Length of header and payload in bytes </p>
+<p>Acknowledgment number </p>
 
 </div>
 </div>
-<a class="anchor" id="ab2760968de55386f04539019f5a677e5"></a>
+<a class="anchor" id="a26d5425128be717916096e577f2561fe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portDst</td>
+          <td class="memname">uint16_t pcpp::tcphdr::cwrFlag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destination port </p>
+<p>CWR flag </p>
 
 </div>
 </div>
-<a class="anchor" id="a72a8d8ad99698271461762079d3758a9"></a>
+<a class="anchor" id="a593a30084c297a99ea01b76fce5c5b11"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portSrc</td>
+          <td class="memname">uint16_t pcpp::tcphdr::dataOffset</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Source port </p>
+<p>Specifies the size of the TCP header in 32-bit words </p>
+
+</div>
+</div>
+<a class="anchor" id="a607801a4305ecb6d4ab234a6755b78e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::eceFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ECE flag </p>
+
+</div>
+</div>
+<a class="anchor" id="aa76c48fa043559ec4b0b90fa9535feeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::finFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>FIN flag </p>
+
+</div>
+</div>
+<a class="anchor" id="af25c27d92c75ab68816d23c3ead02d5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::headerChecksum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The 16-bit checksum field is used for error-checking of the header and data </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ae26537b0e824c5b0fc1bcf9adf2fdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::portDst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destination TCP port </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ba66caaf79a20c53a8e92f7537d50a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::portSrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Source TCP port </p>
+
+</div>
+</div>
+<a class="anchor" id="a1561eb6d029e00fe449bbaac3be8d705"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::pshFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PSH flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a36a5abf30794062f32de013b6ddf39c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::rstFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RST flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a2edb7c27d93777ae552eca417cf118d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::tcphdr::sequenceNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sequence number </p>
+
+</div>
+</div>
+<a class="anchor" id="a469f06456ae6eaf39e764d7f30c06dc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::synFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SYN flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a43efd09b5aad3f50f38bf2a689cc790c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::urgentPointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the URG flag (<a class="el" href="a00134.html#a2e2c38c9079e807f366b3cc62669b09c">tcphdr::urgFlag</a>) is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e2c38c9079e807f366b3cc62669b09c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::urgFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>URG flag </p>
+
+</div>
+</div>
+<a class="anchor" id="a62ab389980bbae1e81846792a1c8846a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::windowSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The size of the receive window, which specifies the number of window size units (by default, bytes) </p>
 
 </div>
 </div>
@@ -187,8 +367,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00187.html">pcpp</a></li><li class="navelem"><a class="el" href="a00134.html">udphdr</a></li>
-    <li class="footer">Generated on Sun Oct 30 2016 00:50:05 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00134.html">tcphdr</a></li>
+    <li class="footer">Generated on Thu Nov 24 2016 21:56:38 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

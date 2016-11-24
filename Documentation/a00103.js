@@ -1,6 +1,5 @@
 var a00103 =
 [
-    [ "length", "a00103.html#ad0988dfc40b111270d4c447293218d1c", null ],
-    [ "recordType", "a00103.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
-    [ "recordVersion", "a00103.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
+    [ "alertDescription", "a00103.html#ac4c45f54bcc165e118945b4abd60c453", null ],
+    [ "alertLevel", "a00103.html#a0acc72153dcbe55e0f453461cd856346", null ]
 ];

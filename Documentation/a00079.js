@@ -1,10 +1,10 @@
 var a00079 =
 [
-    [ "getDeviceType", "a00079.html#af5518431a35a7f94b6ee8551061eee18", null ],
-    [ "getMacAddress", "a00079.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
-    [ "getMtu", "a00079.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
-    [ "getRemoteMachineIpAddress", "a00079.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
-    [ "getRemoteMachinePort", "a00079.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
-    [ "getStatistics", "a00079.html#ac4f3b9ace451b38aa9930950dc695273", null ],
-    [ "open", "a00079.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
+    [ "getDnsServers", "a00079.html#a2cefca3fa33b793cdfb1b58c3883f25b", null ],
+    [ "getPcapLiveDeviceByIp", "a00079.html#a1ab7bad31dbb97247648d1a149d2f612", null ],
+    [ "getPcapLiveDeviceByIp", "a00079.html#a55fd8d0f7a2a6d507bcdcb2836325be2", null ],
+    [ "getPcapLiveDeviceByIp", "a00079.html#a00b3cad054b24d8868cbf141c654c614", null ],
+    [ "getPcapLiveDeviceByIp", "a00079.html#aeffe9373b73371e24023ae30f36ead62", null ],
+    [ "getPcapLiveDeviceByName", "a00079.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
+    [ "getPcapLiveDevicesList", "a00079.html#a993aefeec8551a21171a0d5cfdd78675", null ]
 ];

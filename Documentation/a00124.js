@@ -1,5 +1,7 @@
 var a00124 =
 [
-    [ "SSLServerNameIndicationExtension", "a00124.html#af05391f55be98d6aa8b5192c6a170e60", null ],
-    [ "getHostName", "a00124.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
+    [ "SSLNewSessionTicketMessage", "a00124.html#a55d2fff5ceb20ca419344ced210606a4", null ],
+    [ "getSessionTicketData", "a00124.html#a1d30391db4fdab5edae186d9355ad95d", null ],
+    [ "getSessionTicketDataLength", "a00124.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
+    [ "toString", "a00124.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
 ];

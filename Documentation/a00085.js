@@ -1,6 +1,11 @@
 var a00085 =
 [
-    [ "PortFilter", "a00085.html#a5ea132bbeb522071dd39a3063f473b3f", null ],
-    [ "parseToString", "a00085.html#afd42f1ac6f213c3f347f7b5efbafdbef", null ],
-    [ "setPort", "a00085.html#af1a2f77c5a9d96d23991bd28cc9413c6", null ]
+    [ "PciAddress", "a00085.html#aa862db5500aabff5532409ae4bb55018", null ],
+    [ "PciAddress", "a00085.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
+    [ "operator==", "a00085.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
+    [ "toString", "a00085.html#a490f65c9da811959b78cd92cf2f1812a", null ],
+    [ "bus", "a00085.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
+    [ "devid", "a00085.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
+    [ "domain", "a00085.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
+    [ "function", "a00085.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
 ];

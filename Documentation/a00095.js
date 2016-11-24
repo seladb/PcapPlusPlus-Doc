@@ -1,20 +1,18 @@
 var a00095 =
 [
-    [ "RawPacket", "a00095.html#a8834cea9fc72516c3d22a841479ee684", null ],
-    [ "RawPacket", "a00095.html#acc12f855f36a798ce0e8c7dc8a4618f9", null ],
-    [ "~RawPacket", "a00095.html#abb8b8a3574217ab88b406cba3d2551fb", null ],
-    [ "RawPacket", "a00095.html#a38d24eda21061c53f0801f3bcbe34193", null ],
-    [ "appendData", "a00095.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
-    [ "clear", "a00095.html#ab6b169b02bda40e90279e7d8f6816e41", null ],
-    [ "getLinkLayerType", "a00095.html#a0986e059e7357842d6a4b45695a7b2f7", null ],
-    [ "getPacketTimeStamp", "a00095.html#a6d71610f601b3de6bbd38bd45bf95504", null ],
-    [ "getRawData", "a00095.html#ac6448bbdb926de421a6e26cc3e2aa860", null ],
-    [ "getRawDataLen", "a00095.html#a88543611741cc88d70ff27c995cc5922", null ],
-    [ "getRawDataReadOnly", "a00095.html#a35366699f27979fa43dddc2e22ca16f9", null ],
-    [ "insertData", "a00095.html#a3563f649177826c9e4f649eec7b35887", null ],
-    [ "isPacketSet", "a00095.html#a829ca934f43a2a3610d81d481c4303dd", null ],
-    [ "operator=", "a00095.html#afc8278a0208727a579a122f197c4d02e", null ],
-    [ "reallocateData", "a00095.html#acd9248a47bd60427e2a3ef34b379a28e", null ],
-    [ "removeData", "a00095.html#a9cf289e6bbf461f55c20784615c899ce", null ],
-    [ "setRawData", "a00095.html#ac058ba68afbbba933dd8a2101619cea5", null ]
+    [ "PPPoECode", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cb", [
+      [ "PPPOE_CODE_SESSION", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6", null ],
+      [ "PPPOE_CODE_PADO", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6", null ],
+      [ "PPPOE_CODE_PADI", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df", null ],
+      [ "PPPOE_CODE_PADG", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b", null ],
+      [ "PPPOE_CODE_PADC", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683", null ],
+      [ "PPPOE_CODE_PADQ", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab", null ],
+      [ "PPPOE_CODE_PADR", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157", null ],
+      [ "PPPOE_CODE_PADS", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232", null ],
+      [ "PPPOE_CODE_PADT", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52", null ],
+      [ "PPPOE_CODE_PADM", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3", null ],
+      [ "PPPOE_CODE_PADN", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
+    ] ],
+    [ "computeCalculateFields", "a00095.html#aea130ab24ed851b7d2ffab48db145d16", null ],
+    [ "getPPPoEHeader", "a00095.html#ac6084aea472a3b84f5c60e2a7d77079d", null ]
 ];

@@ -1,11 +1,13 @@
 var a00081 =
 [
-    [ "PciAddress", "a00081.html#aa862db5500aabff5532409ae4bb55018", null ],
-    [ "PciAddress", "a00081.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
-    [ "operator==", "a00081.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
-    [ "toString", "a00081.html#a490f65c9da811959b78cd92cf2f1812a", null ],
-    [ "bus", "a00081.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
-    [ "devid", "a00081.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
-    [ "domain", "a00081.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
-    [ "function", "a00081.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
+    [ "PcapNgFileWriterDevice", "a00081.html#abf641b890d2089eb4090cf67920c2882", null ],
+    [ "~PcapNgFileWriterDevice", "a00081.html#a93312aab61a193df522f8046af6d291e", null ],
+    [ "close", "a00081.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
+    [ "getStatistics", "a00081.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
+    [ "open", "a00081.html#adca940885348d13ae58865ff5011e6fd", null ],
+    [ "open", "a00081.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
+    [ "open", "a00081.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "writePacket", "a00081.html#a81069d1681efd6adf22e6ae80f300993", null ],
+    [ "writePacket", "a00081.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
+    [ "writePackets", "a00081.html#a214c363a167e1538d9ea29a58efd9640", null ]
 ];
