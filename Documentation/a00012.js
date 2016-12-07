@@ -1,6 +1,5 @@
 var a00012 =
 [
-    [ "DpdkDeviceConfiguration", "a00012.html#ae9343bc64a2b34c9940adc355a225b52", null ],
-    [ "receiveDescriptorsNumber", "a00012.html#af0f377c2974af2766ffcb3bd54ed7e2d", null ],
-    [ "transmitDescriptorsNumber", "a00012.html#a43841be287a4fc02b76d06c1eabcc83c", null ]
+    [ "getSize", "a00012.html#aa58a85121063a1df0d91e04df7f2ff0d", null ],
+    [ "getType", "a00012.html#a09231b2035b920aa5d36f76f420613f6", null ]
 ];

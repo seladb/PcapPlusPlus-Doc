@@ -1,14 +1,10 @@
 var a00056 =
 [
-    [ "fragmentOffset", "a00056.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
-    [ "headerChecksum", "a00056.html#a724ead037aaf6310e5b9ebceba77f922", null ],
-    [ "internetHeaderLength", "a00056.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
-    [ "ipDst", "a00056.html#a2722895dc1ed669dd9b241fc472a284f", null ],
-    [ "ipId", "a00056.html#a9d50037f1b02307d20dc8a113207dbce", null ],
-    [ "ipSrc", "a00056.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
-    [ "ipVersion", "a00056.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
-    [ "protocol", "a00056.html#a9600c9b8e380ba5468763cdf648d043c", null ],
-    [ "timeToLive", "a00056.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
-    [ "totalLength", "a00056.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
-    [ "typeOfService", "a00056.html#a229d7a9444c63a92532cd17b16e9de70", null ]
+    [ "AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231", [
+      [ "IPv4AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    ] ],
+    [ "getType", "a00056.html#a85a3e43774848c93585f97bdef6ec73d", null ],
+    [ "isValid", "a00056.html#a2d6b031d025c3ef287584a605b64d750", null ],
+    [ "toString", "a00056.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
 ];

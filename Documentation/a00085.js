@@ -1,11 +1,8 @@
 var a00085 =
 [
-    [ "PciAddress", "a00085.html#aa862db5500aabff5532409ae4bb55018", null ],
-    [ "PciAddress", "a00085.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
-    [ "operator==", "a00085.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
-    [ "toString", "a00085.html#a490f65c9da811959b78cd92cf2f1812a", null ],
-    [ "bus", "a00085.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
-    [ "devid", "a00085.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
-    [ "domain", "a00085.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
-    [ "function", "a00085.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
+    [ "PcapRemoteAuthentication", "a00085.html#a239165d4eaaf752899e7656439f8f19e", null ],
+    [ "PcapRemoteAuthentication", "a00085.html#a7f1d4e564af1f378e6778d71910d1581", null ],
+    [ "getPcapRmAuth", "a00085.html#a6690ebfa8d5de408a635fed992c50999", null ],
+    [ "password", "a00085.html#a2f464437d3df5c609c4f91675ea73a63", null ],
+    [ "userName", "a00085.html#ab20a5fd24c937d1432587cbec80a14a7", null ]
 ];

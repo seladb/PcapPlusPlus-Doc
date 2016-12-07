@@ -1,18 +1,5 @@
 var searchData=
 [
-  ['_7edpdkworkerthread',['~DpdkWorkerThread',['../a00014.html#afee1cd32d8aa6bbb639f7e45ca85e68d',1,'pcpp::DpdkWorkerThread']]],
-  ['_7egeneralfilter',['~GeneralFilter',['../a00018.html#aba731757009c1ce8db973aa334634765',1,'pcpp::GeneralFilter']]],
-  ['_7eifilereaderdevice',['~IFileReaderDevice',['../a00048.html#acdc7b6e2db17994aaf167c081ddfaafb',1,'pcpp::IFileReaderDevice']]],
-  ['_7eifilewriterdevice',['~IFileWriterDevice',['../a00049.html#ad1efdc8f258b6981d0429c61992f2e13',1,'pcpp::IFileWriterDevice']]],
-  ['_7elayer',['~Layer',['../a00063.html#a9d02400f5421309786e1ea6c031c8d19',1,'pcpp::Layer']]],
-  ['_7embufrawpacket',['~MBufRawPacket',['../a00069.html#a696d9e42af3f7b8ea296e4137a019a13',1,'pcpp::MBufRawPacket']]],
-  ['_7epacket',['~Packet',['../a00074.html#a54ccf8336cf3c3f6a5ad58ad12f06656',1,'pcpp::Packet']]],
-  ['_7epcapfilereaderdevice',['~PcapFileReaderDevice',['../a00076.html#aa6c4637873a1a830372449a81f048ab2',1,'pcpp::PcapFileReaderDevice']]],
-  ['_7epcapfilewriterdevice',['~PcapFileWriterDevice',['../a00077.html#ac3aa347668d24475e9f750fcb5959d93',1,'pcpp::PcapFileWriterDevice']]],
-  ['_7epcaplivedevice',['~PcapLiveDevice',['../a00078.html#a0172bbe45fb66f4722bf2bd4847c91fe',1,'pcpp::PcapLiveDevice']]],
-  ['_7epcapngfilereaderdevice',['~PcapNgFileReaderDevice',['../a00080.html#a3fdac9f71c23e6c973f6bb119d1ce75d',1,'pcpp::PcapNgFileReaderDevice']]],
-  ['_7epcapngfilewriterdevice',['~PcapNgFileWriterDevice',['../a00081.html#a93312aab61a193df522f8046af6d291e',1,'pcpp::PcapNgFileWriterDevice']]],
-  ['_7epfringdevice',['~PfRingDevice',['../a00086.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
-  ['_7epointervector',['~PointerVector',['../a00088.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
-  ['_7erawpacket',['~RawPacket',['../a00099.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]]
+  ['zero',['zero',['../a00010.html#a4f951f5089275a84bb124a2e3127f3ba',1,'pcpp::dnshdr::zero()'],['../a00060.html#ab1fdcb75a0d28033e51770605ec978cb',1,'pcpp::IPv4Address::Zero()'],['../a00064.html#a01d0b4399914ea40cba0d826484e9479',1,'pcpp::IPv6Address::Zero()'],['../a00070.html#a1b210f1cf39a31d9ea947c57e6c65e2e',1,'pcpp::MacAddress::Zero()']]],
+  ['zerodotnine',['ZeroDotNine',['../a00195.html#a7680d508534c12b5ab8bcbe4cae06932a9e548b54e33e8673bfd2c3e5bdef3fe3',1,'pcpp']]]
 ];

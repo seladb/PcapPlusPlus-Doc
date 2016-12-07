@@ -1,7 +1,5 @@
 var a00039 =
 [
-    [ "getAddress", "a00039.html#ae5ae631ed39889e1e1173782a0036168", null ],
-    [ "setRouterAddress", "a00039.html#a0e6269c0e36f52dbea0ba6dd9ca7ceaa", null ],
-    [ "preferenceLevel", "a00039.html#ad9c6d64fbf2388f90eacfc4d0e3269ca", null ],
-    [ "routerAddress", "a00039.html#a5d698807f7397470f2c04a54fe862e37", null ]
+    [ "id", "a00039.html#acdde59e7b8ebd9e3cd7b52ce5cc3a108", null ],
+    [ "sequence", "a00039.html#a04e519c8c310e680af34ead3c5bd3d5f", null ]
 ];

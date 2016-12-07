@@ -1,8 +1,7 @@
 var a00093 =
 [
-    [ "code", "a00093.html#ab7f6d4c3dba01ad2212e4a71e738161c", null ],
-    [ "payloadLength", "a00093.html#a08e5841209e619cc327971361264f02e", null ],
-    [ "sessionId", "a00093.html#acff911ee6da20c9101981d1396562ab3", null ],
-    [ "type", "a00093.html#a696c4e1cd2f66f95923d7c310df1d043", null ],
-    [ "version", "a00093.html#a99482acf563e69e4a318992715742a08", null ]
+    [ "PortRangeFilter", "a00093.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
+    [ "parseToString", "a00093.html#a267adc124537789fd02510b61e2b4905", null ],
+    [ "setFromPort", "a00093.html#ae68efea901b4af50277b64632bc91d19", null ],
+    [ "setToPort", "a00093.html#a568420221c6f509bcdb58c937d0c683d", null ]
 ];

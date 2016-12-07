@@ -1,6 +1,7 @@
 var a00113 =
 [
-    [ "SSLChangeCipherSpecLayer", "a00113.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
-    [ "computeCalculateFields", "a00113.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
-    [ "toString", "a00113.html#a25cb2a35845fa1e357e06330d958f53c", null ]
+    [ "SSLCertificateMessage", "a00113.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
+    [ "getCertificate", "a00113.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
+    [ "getNumOfCertificates", "a00113.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
+    [ "toString", "a00113.html#a3efa384d6853e29d9448269fd1a00b20", null ]
 ];

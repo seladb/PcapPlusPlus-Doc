@@ -1,20 +1,14 @@
 var a00059 =
 [
-    [ "IPv4Layer", "a00059.html#a4f0053a3866503b87803140b5ea2b8fe", null ],
-    [ "IPv4Layer", "a00059.html#a0e84eff3c7ac732a1a934ee507fdb2ce", null ],
-    [ "IPv4Layer", "a00059.html#a4adc5b7767e069f468a70f63a798088b", null ],
-    [ "computeCalculateFields", "a00059.html#a9c38910febddbfb9c7bfc75dbe79db03", null ],
-    [ "getDstIpAddress", "a00059.html#aab76c05ad561b9e5e972304d7133b553", null ],
-    [ "getFragmentFlags", "a00059.html#aa229d54f2b7d4e36bdc933eb403dc93e", null ],
-    [ "getFragmentOffset", "a00059.html#a92e987742cfff29e77301614bc83e2a9", null ],
-    [ "getHeaderLen", "a00059.html#a9766c4a1ddafd7b710a8a66d54092c50", null ],
-    [ "getIPv4Header", "a00059.html#a71529ce3ada4376096ab322447576d10", null ],
-    [ "getSrcIpAddress", "a00059.html#a5b99c00dd6a8bf7603be7ddfb4989c4c", null ],
-    [ "isFirstFragment", "a00059.html#af305f9dfe6d714aaff3144dc29b2b723", null ],
-    [ "isFragment", "a00059.html#a83b019f924b8eaab625ff3206d2f85e3", null ],
-    [ "isLastFragment", "a00059.html#ad0768083f4257013d21ac21c5493f339", null ],
-    [ "parseNextLayer", "a00059.html#a0862e0c98bed9b90d8115f8af9287ac2", null ],
-    [ "setDstIpAddress", "a00059.html#aea29d148475ef75477cc03ea1ae3d553", null ],
-    [ "setSrcIpAddress", "a00059.html#af665bf79bbceb52374a24eeb4e766bf4", null ],
-    [ "toString", "a00059.html#ae36ba08fd6e60a4d5ee4920cdfe8aa35", null ]
+    [ "fragmentOffset", "a00059.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
+    [ "headerChecksum", "a00059.html#a724ead037aaf6310e5b9ebceba77f922", null ],
+    [ "internetHeaderLength", "a00059.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
+    [ "ipDst", "a00059.html#a2722895dc1ed669dd9b241fc472a284f", null ],
+    [ "ipId", "a00059.html#a9d50037f1b02307d20dc8a113207dbce", null ],
+    [ "ipSrc", "a00059.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
+    [ "ipVersion", "a00059.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
+    [ "protocol", "a00059.html#a9600c9b8e380ba5468763cdf648d043c", null ],
+    [ "timeToLive", "a00059.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
+    [ "totalLength", "a00059.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
+    [ "typeOfService", "a00059.html#a229d7a9444c63a92532cd17b16e9de70", null ]
 ];

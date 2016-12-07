@@ -1,18 +1,18 @@
 var a00007 =
 [
-    [ "authenticData", "a00007.html#ac7e51ef9ae04bec1e3ce7530e39d53d8", null ],
-    [ "authoritativeAnswer", "a00007.html#a36e1dea9807654d43ddbc82e60cf557b", null ],
-    [ "checkingDisabled", "a00007.html#ab01657453ab6e8bb16fd6ac9338ad37c", null ],
-    [ "numberOfAdditional", "a00007.html#a9e3f93ab8cf39ecc8b261b99df182fb7", null ],
-    [ "numberOfAnswers", "a00007.html#ac1c882f5f9bd83d50a671b09a08683bf", null ],
-    [ "numberOfAuthority", "a00007.html#a6d7eb212fa99e55db2dd9683a3c99ece", null ],
-    [ "numberOfQuestions", "a00007.html#af22351368a518e3597634f9ad6338952", null ],
-    [ "opcode", "a00007.html#ac9995bbebc0af173ef829ad425e385f4", null ],
-    [ "queryOrResponse", "a00007.html#a3f1015b3db91aac75caa0e42d93efef4", null ],
-    [ "recursionAvailable", "a00007.html#accb70bf9b2e440c94820dd8e22651326", null ],
-    [ "recursionDesired", "a00007.html#adfb415bb642ceba8a9d8e826bd95830a", null ],
-    [ "responseCode", "a00007.html#a13e46f496586640b3f2810601f4200c4", null ],
-    [ "transactionID", "a00007.html#a5f061194ac1009cd5a8fc521f3f2abfc", null ],
-    [ "truncation", "a00007.html#a8cca9968cb3832318147243698c973cc", null ],
-    [ "zero", "a00007.html#a4f951f5089275a84bb124a2e3127f3ba", null ]
+    [ "bootFilename", "a00007.html#a83ee48b1a65ede211b9a8270f2902377", null ],
+    [ "clientHardwareAddress", "a00007.html#a2ea9fd0603bf581cf73667dda1026c64", null ],
+    [ "clientIpAddress", "a00007.html#a9d8d81e0d19830b1c2f6a46d6a1570ba", null ],
+    [ "flags", "a00007.html#ac8e28cee3c5b4992085fcceb05650960", null ],
+    [ "gatewayIpAddress", "a00007.html#ade1ca44a5ac2e3dcbe6474100504c6c7", null ],
+    [ "hardwareAddressLength", "a00007.html#ab6fbc12e2855f2624f14e2c38ea0f0d1", null ],
+    [ "hardwareType", "a00007.html#ad9c62ab931aa53c3f62c66764ba5efaa", null ],
+    [ "hops", "a00007.html#a05c26611075d3f99ba396fab90e8bb31", null ],
+    [ "magicNumber", "a00007.html#aa76c834507dac0606f5eac689dfc15b5", null ],
+    [ "opCode", "a00007.html#a80580aa4a00a6440403ea48ce0b2a9ce", null ],
+    [ "secondsElapsed", "a00007.html#a00543e44a7bbc904944ef84592f7ab5a", null ],
+    [ "serverIpAddress", "a00007.html#ade1684e6b6b9f3f56ab9d021115b6fd2", null ],
+    [ "serverName", "a00007.html#ae78af21d7f8d2432ea88a61e69f87dd5", null ],
+    [ "transactionID", "a00007.html#a7085af4bf469c3005a78051123aa278f", null ],
+    [ "yourIpAddress", "a00007.html#a703af808aeef6a0fa2ad317d52df98f0", null ]
 ];

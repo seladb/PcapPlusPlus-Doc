@@ -1,12 +1,12 @@
 var a00029 =
 [
-    [ "HttpResponseFirstLineException", "a00030.html", null ],
-    [ "getSize", "a00029.html#ab6a8292b6bf8801787ec007b1c0bc713", null ],
-    [ "getStatusCode", "a00029.html#ae35360d5e3655fa9f46faca62af76317", null ],
-    [ "getStatusCodeAsInt", "a00029.html#ae5c584fcbd30273e841fc71795e20e04", null ],
-    [ "getStatusCodeString", "a00029.html#a2f29d9228033a2789435d83ab4bf0c5b", null ],
-    [ "getVersion", "a00029.html#a495bd8dc68098f9362367c872bef0d2e", null ],
-    [ "isComplete", "a00029.html#a36102ce77daf724790211cb6d21cf405", null ],
-    [ "setStatusCode", "a00029.html#addb0a9537ba67e4f1d86e11fcd71d02c", null ],
-    [ "setVersion", "a00029.html#ad38cc7272f790b1653cc1b7b4c58bec6", null ]
+    [ "HttpRequestFirstLineException", "a00030.html", null ],
+    [ "getMethod", "a00029.html#a5833180521a889af5707e6137bf53a73", null ],
+    [ "getSize", "a00029.html#afc8a656cffd44c4d4a50bb983dca319c", null ],
+    [ "getUri", "a00029.html#ade4bc4f1ed7a3aec29d95455c4c24a70", null ],
+    [ "getVersion", "a00029.html#ae9774e0c16a4983e9ab77a6779c444c7", null ],
+    [ "isComplete", "a00029.html#a8dac35f7b7227a2a18320d00616d3be8", null ],
+    [ "setMethod", "a00029.html#a056c5df1c6732b666b28852f68836e6e", null ],
+    [ "setUri", "a00029.html#aa31083ea230c4cf5e1fe27608a76f6b0", null ],
+    [ "setVersion", "a00029.html#ac9b66f371b763217776c4eaec0f9a14c", null ]
 ];

@@ -1,5 +1,6 @@
 var a00018 =
 [
-    [ "~GeneralFilter", "a00018.html#aba731757009c1ce8db973aa334634765", null ],
-    [ "parseToString", "a00018.html#ae38fb802a74a1d9b7d7025b1b5cb83e5", null ]
+    [ "dstMac", "a00018.html#a6fbac47e840aa3f6055d0b97c684bd45", null ],
+    [ "etherType", "a00018.html#a3200f5fc394812077b6c96d2b15f7658", null ],
+    [ "srcMac", "a00018.html#a466d328a654e445f4d9cb594ff1486ff", null ]
 ];

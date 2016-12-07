@@ -1,6 +1,18 @@
 var a00118 =
 [
-    [ "extensionData", "a00118.html#a058c404f39c4b185647f5fc6cade65d4", null ],
-    [ "extensionDataLength", "a00118.html#af116e93a2decd3c986ae109b16c12b28", null ],
-    [ "extensionType", "a00118.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
+    [ "SSLClientHelloMessage", "a00118.html#a3924029c72b57cee6f2dd62b4f64f2dc", null ],
+    [ "getCipherSuite", "a00118.html#aa64bd1a68e76e2be414a38f6eb580486", null ],
+    [ "getCipherSuiteCount", "a00118.html#a0ba32d03d991bc3bcf1b2cc9c9287b80", null ],
+    [ "getClientHelloHeader", "a00118.html#abe34e212201e7f5af859de2ff328bde2", null ],
+    [ "getCompressionMethodsValue", "a00118.html#a388d82c71b2a4e3a595e52c8fe831ac4", null ],
+    [ "getExtension", "a00118.html#a6524de241525ebb27fbe007c040190e0", null ],
+    [ "getExtensionCount", "a00118.html#ab4ba807d5c659e70d14beef727b005af", null ],
+    [ "getExtensionOfType", "a00118.html#ad2dbb97936a31c01ed205fc192fac8ba", null ],
+    [ "getExtensionOfType", "a00118.html#a436dec8f52e84ac994cb36eb6de51efd", null ],
+    [ "getExtensionOfType", "a00118.html#a0647bfdab89e32e6d375555a9f5055f5", null ],
+    [ "getExtensionsLenth", "a00118.html#abba3dfa226812e3076bf10422fee8152", null ],
+    [ "getHandshakeVersion", "a00118.html#a90dfa6a04e721d49368c35f39dca5a6d", null ],
+    [ "getSessionID", "a00118.html#a184db75cdb1f74e0e8b388eccfc59de1", null ],
+    [ "getSessionIDLength", "a00118.html#a506053dfdcb25222975d285bb20ca98a", null ],
+    [ "toString", "a00118.html#a4525dd29e48f1dcea786e8c889c368e1", null ]
 ];

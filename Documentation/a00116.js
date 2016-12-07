@@ -1,7 +1,6 @@
 var a00116 =
 [
-    [ "SSLClientKeyExchangeMessage", "a00116.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
-    [ "getClientKeyExchangeParams", "a00116.html#a23584b393dea97a6d249c750b99f4c5f", null ],
-    [ "getClientKeyExchangeParamsLength", "a00116.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
-    [ "toString", "a00116.html#ada71ea045d9dbfd57484a156a108c00b", null ]
+    [ "SSLChangeCipherSpecLayer", "a00116.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
+    [ "computeCalculateFields", "a00116.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
+    [ "toString", "a00116.html#a25cb2a35845fa1e357e06330d958f53c", null ]
 ];

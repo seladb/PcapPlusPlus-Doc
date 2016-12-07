@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['resourcetype',['ResourceType',['../a00046.html#a31f2e8268a4850da83b3d85c17d99d96',1,'pcpp::IDnsResource']]]
+  ['pppoecode',['PPPoECode',['../a00098.html#aa170ba4bb5e03d3ac1dddb45118ed9cb',1,'pcpp::PPPoELayer']]],
+  ['pppoetagtypes',['PPPoETagTypes',['../a00097.html#ac761ea9a8298b8ee8614da86de314876',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['protocoltype',['ProtocolType',['../a00195.html#a1d761f7cf37d3b1efb1574fb1177e6eb',1,'pcpp']]]
 ];

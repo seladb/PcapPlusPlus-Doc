@@ -1,8 +1,5 @@
 var a00043 =
 [
-    [ "id", "a00043.html#a26bbc51803f744df65d517483a7bc0ae", null ],
-    [ "originateTimestamp", "a00043.html#af9ae072cf3636b545d2c2fc1babb3964", null ],
-    [ "receiveTimestamp", "a00043.html#ad6c33b9a1da04e9e692b35575828747d", null ],
-    [ "sequence", "a00043.html#a717104fa64883aec168e2d99581698d2", null ],
-    [ "transmitTimestamp", "a00043.html#a68e8720ae016dc5d2b9c3c0f2f068fea", null ]
+    [ "getRouterAddress", "a00043.html#af6f853469b90b89693da08bba1886b65", null ],
+    [ "header", "a00043.html#a3d7ac9a46e261e4710db729aed32361d", null ]
 ];

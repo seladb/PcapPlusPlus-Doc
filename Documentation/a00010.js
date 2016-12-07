@@ -1,12 +1,18 @@
 var a00010 =
 [
-    [ "getCustomDnsClass", "a00010.html#ac223a326142de6d1dc1fe7975436b7a2", null ],
-    [ "getDataAsString", "a00010.html#a9b36e9f38af1a6210ad6d81655b14da1", null ],
-    [ "getDataLength", "a00010.html#ac688df931aa666a232fc7006c75971e2", null ],
-    [ "getSize", "a00010.html#a9e624aed896eeea88916ba4b3c2f23cd", null ],
-    [ "getTTL", "a00010.html#a5182a292b41e1ac3d5b7edc67ce72d6d", null ],
-    [ "getType", "a00010.html#a75c1006edcc7273dbfc6bdc7e9245113", null ],
-    [ "setCustomDnsClass", "a00010.html#a502a8a0fcfc2853b6b08d00c6f877d46", null ],
-    [ "setData", "a00010.html#af27876b34431904ce10e2f48f6193b77", null ],
-    [ "setTTL", "a00010.html#a2f99de92eb4dd8f82d9fbbdecedc2f12", null ]
+    [ "authenticData", "a00010.html#ac7e51ef9ae04bec1e3ce7530e39d53d8", null ],
+    [ "authoritativeAnswer", "a00010.html#a36e1dea9807654d43ddbc82e60cf557b", null ],
+    [ "checkingDisabled", "a00010.html#ab01657453ab6e8bb16fd6ac9338ad37c", null ],
+    [ "numberOfAdditional", "a00010.html#a9e3f93ab8cf39ecc8b261b99df182fb7", null ],
+    [ "numberOfAnswers", "a00010.html#ac1c882f5f9bd83d50a671b09a08683bf", null ],
+    [ "numberOfAuthority", "a00010.html#a6d7eb212fa99e55db2dd9683a3c99ece", null ],
+    [ "numberOfQuestions", "a00010.html#af22351368a518e3597634f9ad6338952", null ],
+    [ "opcode", "a00010.html#ac9995bbebc0af173ef829ad425e385f4", null ],
+    [ "queryOrResponse", "a00010.html#a3f1015b3db91aac75caa0e42d93efef4", null ],
+    [ "recursionAvailable", "a00010.html#accb70bf9b2e440c94820dd8e22651326", null ],
+    [ "recursionDesired", "a00010.html#adfb415bb642ceba8a9d8e826bd95830a", null ],
+    [ "responseCode", "a00010.html#a13e46f496586640b3f2810601f4200c4", null ],
+    [ "transactionID", "a00010.html#a5f061194ac1009cd5a8fc521f3f2abfc", null ],
+    [ "truncation", "a00010.html#a8cca9968cb3832318147243698c973cc", null ],
+    [ "zero", "a00010.html#a4f951f5089275a84bb124a2e3127f3ba", null ]
 ];

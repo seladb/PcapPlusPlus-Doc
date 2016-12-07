@@ -1,6 +1,6 @@
 var a00015 =
 [
-    [ "dstMac", "a00015.html#a6fbac47e840aa3f6055d0b97c684bd45", null ],
-    [ "etherType", "a00015.html#a3200f5fc394812077b6c96d2b15f7658", null ],
-    [ "srcMac", "a00015.html#a466d328a654e445f4d9cb594ff1486ff", null ]
+    [ "DpdkDeviceConfiguration", "a00015.html#ae9343bc64a2b34c9940adc355a225b52", null ],
+    [ "receiveDescriptorsNumber", "a00015.html#af0f377c2974af2766ffcb3bd54ed7e2d", null ],
+    [ "transmitDescriptorsNumber", "a00015.html#a43841be287a4fc02b76d06c1eabcc83c", null ]
 ];

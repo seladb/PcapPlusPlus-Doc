@@ -1,10 +1,8 @@
 var a00096 =
 [
-    [ "PPPoESessionLayer", "a00096.html#a433678572ac1217a16a38e6aa8ade4f2", null ],
-    [ "PPPoESessionLayer", "a00096.html#ac9e2dcfee946bc38c1deefe557606188", null ],
-    [ "getHeaderLen", "a00096.html#a07941bb7f6351ca4cd9d3c3b583a0168", null ],
-    [ "getPPPNextProtocol", "a00096.html#a4521d824fcc13fa995376ba4757953d7", null ],
-    [ "parseNextLayer", "a00096.html#a68ee818cde48545d0d4cfa701bef6a0e", null ],
-    [ "setPPPNextProtocol", "a00096.html#adad1131f1a337c499577510c35383fb8", null ],
-    [ "toString", "a00096.html#a1938913dc6bed3dd7b443ddcd052b5e3", null ]
+    [ "code", "a00096.html#ab7f6d4c3dba01ad2212e4a71e738161c", null ],
+    [ "payloadLength", "a00096.html#a08e5841209e619cc327971361264f02e", null ],
+    [ "sessionId", "a00096.html#acff911ee6da20c9101981d1396562ab3", null ],
+    [ "type", "a00096.html#a696c4e1cd2f66f95923d7c310df1d043", null ],
+    [ "version", "a00096.html#a99482acf563e69e4a318992715742a08", null ]
 ];

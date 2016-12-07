@@ -1,7 +1,7 @@
 var a00130 =
 [
-    [ "SSLx509Certificate", "a00130.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
-    [ "allDataExists", "a00130.html#ae4182828228a1e402626560090d3cdb6", null ],
-    [ "getData", "a00130.html#a4d9c58672e41a057dc53d4923af3992f", null ],
-    [ "getDataLength", "a00130.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
+    [ "SSLServerKeyExchangeMessage", "a00130.html#a1218714d90696a235404f70b41e70b41", null ],
+    [ "getServerKeyExchangeParams", "a00130.html#ad7c8c6d0bc49a7951fdc60923789de6b", null ],
+    [ "getServerKeyExchangeParamsLength", "a00130.html#a0661186c198209c8a71294fe372aae48", null ],
+    [ "toString", "a00130.html#acae0392cfe821a9acd35e247e24e012b", null ]
 ];

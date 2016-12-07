@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::icmp_redirect Struct Reference</title>
+<title>PcapPlusPlus: pcpp::icmp_echo_request Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,48 +108,62 @@ $(document).ready(function(){initNavTree('a00038.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00234.html">List of all members</a>  </div>
+<a href="a00238.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::icmp_redirect Struct Reference</div>  </div>
+<div class="title">pcpp::icmp_echo_request Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00153_source.html">IcmpLayer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::icmp_redirect:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00038.png" usemap="#pcpp::icmp_redirect_map" alt=""/>
-  <map id="pcpp::icmp_redirect_map" name="pcpp::icmp_redirect_map">
-<area href="a00044.html" alt="pcpp::icmphdr" shape="rect" coords="0,0,123,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00157_source.html">IcmpLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a73f73378fb2364a1ac1ccac3100f6b91"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a73f73378fb2364a1ac1ccac3100f6b91">gatewayAddress</a></td></tr>
-<tr class="separator:a73f73378fb2364a1ac1ccac3100f6b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_a00044"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00044')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="a00044.html">pcpp::icmphdr</a></td></tr>
-<tr class="memitem:aee18974a6f35dba7ec638d25681756b7 inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#aee18974a6f35dba7ec638d25681756b7">type</a></td></tr>
-<tr class="separator:aee18974a6f35dba7ec638d25681756b7 inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a428f920e2143563b39327b37985fea inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a6a428f920e2143563b39327b37985fea">code</a></td></tr>
-<tr class="separator:a6a428f920e2143563b39327b37985fea inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc53df5a90f51ecf5d3e517f730f3e9f inherit pub_attribs_a00044"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#afc53df5a90f51ecf5d3e517f730f3e9f">checksum</a></td></tr>
-<tr class="separator:afc53df5a90f51ecf5d3e517f730f3e9f inherit pub_attribs_a00044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294b798279892837efdf0e44ddf9d04b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00037.html">icmp_echo_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a294b798279892837efdf0e44ddf9d04b">header</a></td></tr>
+<tr class="separator:a294b798279892837efdf0e44ddf9d04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed0221d15cb8465ae37cb8cc4311386"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a4ed0221d15cb8465ae37cb8cc4311386">dataLength</a></td></tr>
+<tr class="separator:a4ed0221d15cb8465ae37cb8cc4311386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae817d79a4d209c620bdf074ddc2c5a52"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#ae817d79a4d209c620bdf074ddc2c5a52">data</a></td></tr>
+<tr class="separator:ae817d79a4d209c620bdf074ddc2c5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ICMP redirect message structure </p>
+<div class="textblock"><p>ICMP echo (ping) request/reply message structure </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a73f73378fb2364a1ac1ccac3100f6b91"></a>
+<a class="anchor" id="ae817d79a4d209c620bdf074ddc2c5a52"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pcpp::icmp_redirect::gatewayAddress</td>
+          <td class="memname">uint8_t* pcpp::icmp_echo_request::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>an IPv4 address of the gateway to which the redirection should be sent </p>
+<p>most echo requests/replies contain some payload data. This is a pointer to this data </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ed0221d15cb8465ae37cb8cc4311386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::icmp_echo_request::dataLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>most echo requests/replies contain some payload data. This is the data length </p>
+
+</div>
+</div>
+<a class="anchor" id="a294b798279892837efdf0e44ddf9d04b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00037.html">icmp_echo_hdr</a>* pcpp::icmp_echo_request::header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>a pointer to the header data </p>
 
 </div>
 </div>
@@ -158,8 +172,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00038.html">icmp_redirect</a></li>
-    <li class="footer">Generated on Thu Nov 24 2016 21:56:37 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00038.html">icmp_echo_request</a></li>
+    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

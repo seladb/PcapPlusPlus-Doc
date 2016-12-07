@@ -1,10 +1,7 @@
 var a00144 =
 [
-    [ "getDeviceType", "a00144.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00144.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
-    [ "sendPackets", "a00144.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00144.html#aebff78da9d57c6ec9046de32746943bd", null ],
-    [ "startCapture", "a00144.html#af22e2966176d4127e69300cd4b208758", null ],
-    [ "startCapture", "a00144.html#a70126c098779937e5ce88360966c7aa1", null ],
-    [ "startCapture", "a00144.html#a74824694b8f72f687dec10557a196675", null ]
+    [ "cfi", "a00144.html#a1cba4c151a11a2527eccb5c472be835b", null ],
+    [ "etherType", "a00144.html#a790a917cc070fb1ace8c77a7a12d0870", null ],
+    [ "priority", "a00144.html#a0b9c3a2edf23468ea5df60fee1903485", null ],
+    [ "vlanID", "a00144.html#ab970b63b8440a00efe46f60838b5ce04", null ]
 ];

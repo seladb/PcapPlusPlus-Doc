@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['linkduplex',['LinkDuplex',['../a00064.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus']]],
-  ['linklayertype',['LinkLayerType',['../a00191.html#ab3f43dd3ccd8c93acac8b67909be02be',1,'pcpp']]],
-  ['livedevicetype',['LiveDeviceType',['../a00078.html#a0e343585711ee4e02d4b9507467135ab',1,'pcpp::PcapLiveDevice']]],
-  ['loglevel',['LogLevel',['../a00065.html#a522254c250da7b12b5b4817b84c208b6',1,'pcpp::LoggerPP']]],
-  ['logmodule',['LogModule',['../a00191.html#ac6557f5dc8fcb14858f231b12bdc1c1a',1,'pcpp']]]
+  ['icmpdestunreachablecodes',['IcmpDestUnreachableCodes',['../a00195.html#a8495fd519ac2e6c6eeb85307e8aa2c48',1,'pcpp']]],
+  ['icmpmessagetype',['IcmpMessageType',['../a00195.html#a47224d4b3b96e54be24ea2a6ddee8e27',1,'pcpp']]],
+  ['ipprotocoltypes',['IPProtocolTypes',['../a00195.html#ace8e2e21b82a8adc602f561e1e612fb0',1,'pcpp']]]
 ];

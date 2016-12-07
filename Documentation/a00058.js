@@ -1,6 +1,10 @@
 var a00058 =
 [
-    [ "IpV4IDFilter", "a00058.html#a6b3ea370a73c59e0f575070fdf3ee382", null ],
-    [ "parseToString", "a00058.html#af718627a6c4f2bd003a87a7d310d9c7e", null ],
-    [ "setIpID", "a00058.html#a3c37eabbe0212f02d254f1ab0d091c98", null ]
+    [ "IPFilter", "a00058.html#a953d29c9f7d99369acea260016ab6825", null ],
+    [ "IPFilter", "a00058.html#aee54dc6a3492eee05f53c80e44ab9b08", null ],
+    [ "IPFilter", "a00058.html#a68c98982c7c42c9397c2ed84f0a863ac", null ],
+    [ "parseToString", "a00058.html#a9244dc71714f73d8e215498c7c3b0f23", null ],
+    [ "setAddr", "a00058.html#a41a8a2bdad3732f03639ab5009c8e10c", null ],
+    [ "setLen", "a00058.html#af9b725cf2a44144a36d9775ea9e36c5c", null ],
+    [ "setMask", "a00058.html#a7e47d6b236db754fe0463e8f011edd79", null ]
 ];

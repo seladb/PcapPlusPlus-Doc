@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::PcapRemoteDeviceList Class Reference</title>
+<title>PcapPlusPlus: pcpp::PcapNgFileWriterDevice Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,86 +107,120 @@ $(document).ready(function(){initNavTree('a00084.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00279.html">List of all members</a>  </div>
+<a href="a00283.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::PcapRemoteDeviceList Class Reference</div>  </div>
+<div class="title">pcpp::PcapNgFileWriterDevice Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00174_source.html">PcapRemoteDeviceList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00173_source.html">PcapFileDevice.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::PcapNgFileWriterDevice:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00084.png" usemap="#pcpp::PcapNgFileWriterDevice_map" alt=""/>
+  <map id="pcpp::PcapNgFileWriterDevice_map" name="pcpp::PcapNgFileWriterDevice_map">
+<area href="a00052.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="0,112,186,136"/>
+<area href="a00050.html" alt="pcpp::IFileDevice" shape="rect" coords="0,56,186,80"/>
+<area href="a00057.html" alt="pcpp::IPcapDevice" shape="rect" coords="0,0,186,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a17e3146371657cb2bf427c345ef8701a"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00083.html">PcapRemoteDevice</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a></td></tr>
-<tr class="separator:a17e3146371657cb2bf427c345ef8701a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cfb21ecc08849c812b6ab6115071969"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00083.html">PcapRemoteDevice</a> * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a></td></tr>
-<tr class="separator:a9cfb21ecc08849c812b6ab6115071969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6204e7c89ccce39c4aa3e355988f5ab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00053.html">IPAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a6204e7c89ccce39c4aa3e355988f5ab6">getRemoteMachineIpAddress</a> ()</td></tr>
-<tr class="separator:a6204e7c89ccce39c4aa3e355988f5ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1971b1f2432aa1837af7e2cbce17e2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a1e1971b1f2432aa1837af7e2cbce17e2">getRemoteMachinePort</a> ()</td></tr>
-<tr class="separator:a1e1971b1f2432aa1837af7e2cbce17e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95cc401d327933db99d1dd1cb639bcb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a95cc401d327933db99d1dd1cb639bcb7">getRemoteDeviceByIP</a> (<a class="el" href="a00057.html">IPv4Address</a> ip4Addr)</td></tr>
-<tr class="separator:a95cc401d327933db99d1dd1cb639bcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1c6086cfdceb29c6cc88e4ae19d78ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#ad1c6086cfdceb29c6cc88e4ae19d78ab">getRemoteDeviceByIP</a> (<a class="el" href="a00061.html">IPv6Address</a> ip6Addr)</td></tr>
-<tr class="separator:ad1c6086cfdceb29c6cc88e4ae19d78ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9c6eab485ddc4d8b0c54f56a2cb5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4">getRemoteDeviceByIP</a> (<a class="el" href="a00053.html">IPAddress</a> *ipAddr)</td></tr>
-<tr class="separator:aaa9c6eab485ddc4d8b0c54f56a2cb5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbda2e1b2c4ec3cc9a2d42aded206df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#aafbda2e1b2c4ec3cc9a2d42aded206df">getRemoteDeviceByIP</a> (const char *ipAddrAsString)</td></tr>
-<tr class="separator:aafbda2e1b2c4ec3cc9a2d42aded206df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af155f1d0d02b252b968f8bfc60bfa285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#af155f1d0d02b252b968f8bfc60bfa285">begin</a> ()</td></tr>
-<tr class="separator:af155f1d0d02b252b968f8bfc60bfa285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6eec736e7d88dc2a9dfe413089dbdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a3e6eec736e7d88dc2a9dfe413089dbdf">begin</a> () const </td></tr>
-<tr class="separator:a3e6eec736e7d88dc2a9dfe413089dbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2fb3ae2a7acc851d7e2e57b87cd2f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">end</a> ()</td></tr>
-<tr class="separator:abc2fb3ae2a7acc851d7e2e57b87cd2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4384231f937c67a346698218c6cc4818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a4384231f937c67a346698218c6cc4818">end</a> () const </td></tr>
-<tr class="separator:a4384231f937c67a346698218c6cc4818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf641b890d2089eb4090cf67920c2882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#abf641b890d2089eb4090cf67920c2882">PcapNgFileWriterDevice</a> (const char *fileName)</td></tr>
+<tr class="separator:abf641b890d2089eb4090cf67920c2882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93312aab61a193df522f8046af6d291e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a93312aab61a193df522f8046af6d291e">~PcapNgFileWriterDevice</a> ()</td></tr>
+<tr class="separator:a93312aab61a193df522f8046af6d291e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca940885348d13ae58865ff5011e6fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#adca940885348d13ae58865ff5011e6fd">open</a> (const char *os, const char *hardware, const char *captureApp, const char *fileComment)</td></tr>
+<tr class="separator:adca940885348d13ae58865ff5011e6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81069d1681efd6adf22e6ae80f300993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a> (<a class="el" href="a00102.html">RawPacket</a> const &amp;packet, const char *comment)</td></tr>
+<tr class="separator:a81069d1681efd6adf22e6ae80f300993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c7f060803d907e7e7f3c00d3c2891b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a25c7f060803d907e7e7f3c00d3c2891b">writePacket</a> (<a class="el" href="a00102.html">RawPacket</a> const &amp;packet)</td></tr>
+<tr class="separator:a25c7f060803d907e7e7f3c00d3c2891b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214c363a167e1538d9ea29a58efd9640"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a214c363a167e1538d9ea29a58efd9640">writePackets</a> (const <a class="el" href="a00195.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets)</td></tr>
+<tr class="separator:a214c363a167e1538d9ea29a58efd9640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c709c035f8ba98682693a248d6d1e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open</a> ()</td></tr>
+<tr class="separator:a9c709c035f8ba98682693a248d6d1e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ab330b859dc45892f3d7666b7b0671"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a69ab330b859dc45892f3d7666b7b0671">open</a> (bool appendMode)</td></tr>
+<tr class="separator:a69ab330b859dc45892f3d7666b7b0671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cdcca0ace3ba4ccbaad4093def33a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a> ()</td></tr>
+<tr class="separator:a87cdcca0ace3ba4ccbaad4093def33a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a11ff6431efc054fd4a47bbaab9852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a55a11ff6431efc054fd4a47bbaab9852">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
+<tr class="separator:a55a11ff6431efc054fd4a47bbaab9852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00052"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00052')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00052.html">pcpp::IFileWriterDevice</a></td></tr>
+<tr class="memitem:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a00052"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#ad1efdc8f258b6981d0429c61992f2e13">~IFileWriterDevice</a> ()</td></tr>
+<tr class="separator:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a00052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00057"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00057')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00057.html">pcpp::IPcapDevice</a></td></tr>
+<tr class="memitem:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00057"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a> ()</td></tr>
+<tr class="separator:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00057"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a> (<a class="el" href="a00021.html">GeneralFilter</a> &amp;filter)</td></tr>
+<tr class="separator:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33400a37378ceb807228c43efbff47e inherit pub_methods_a00057"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#aa33400a37378ceb807228c43efbff47e">setFilter</a> (std::string filterAsString)</td></tr>
+<tr class="separator:aa33400a37378ceb807228c43efbff47e inherit pub_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a> ()</td></tr>
+<tr class="separator:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1655fb0326960cceec95db75ddaed0a3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00084.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList</a> (<a class="el" href="a00053.html">IPAddress</a> *ipAddress, uint16_t port)</td></tr>
-<tr class="separator:a1655fb0326960cceec95db75ddaed0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa273eab3f181516fa00f3f04de58602a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00084.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#aa273eab3f181516fa00f3f04de58602a">getRemoteDeviceList</a> (<a class="el" href="a00053.html">IPAddress</a> *ipAddress, uint16_t port, <a class="el" href="a00082.html">PcapRemoteAuthentication</a> *remoteAuth)</td></tr>
-<tr class="separator:aa273eab3f181516fa00f3f04de58602a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_a00057"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00057')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00057.html">pcpp::IPcapDevice</a></td></tr>
+<tr class="memitem:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00057"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
+<tr class="separator:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00057"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a00102.html">RawPacket</a> *rawPacket)</td></tr>
+<tr class="separator:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that creates, stores and provides access to all instances of <a class="el" href="a00083.html">PcapRemoteDevice</a> for a certain remote machine. To get an instance of this class use one of the static methods of <a class="el" href="a00084.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList()</a>. These methods creates a <a class="el" href="a00084.html">PcapRemoteDeviceList</a> instance for the certain remote machine which holds a list of <a class="el" href="a00083.html">PcapRemoteDevice</a> instances, one for each remote network interface. Note there is not a public constructor for this class, so the only way to get an instance of it is through <a class="el" href="a00084.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList()</a>. After getting this object, this class provides ways to access the <a class="el" href="a00083.html">PcapRemoteDevice</a> instances: either through IP address of the remote network interface or by iterating the <a class="el" href="a00083.html">PcapRemoteDevice</a> instances (through the <a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">PcapRemoteDeviceList::RemoteDeviceListIterator</a> iterator)<br />
- Since Remote Capture is supported in WinPcap only, this class is available in Windows only </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a9cfb21ecc08849c812b6ab6115071969"></a>
+<div class="textblock"><p>A class for opening a pcap-ng file for writing or creating a new pcap-ng file and write packets to it. This class adds unique capabilities such as writing metadata attributes into the file header, adding comments per packet and opening the file in append mode where packets are added to a file instead of overriding it. This capabilities are part of the pcap-ng standard but aren't supported in most tools and libraries </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abf641b890d2089eb4090cf67920c2882"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00083.html">PcapRemoteDevice</a>*&gt;::const_iterator <a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">pcpp::PcapRemoteDeviceList::ConstRemoteDeviceListIterator</a></td>
+          <td class="memname">pcpp::PcapNgFileWriterDevice::PcapNgFileWriterDevice </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Const iterator object that can be used for iterating all <a class="el" href="a00083.html">PcapRemoteDevice</a> in a constant list </p>
+<p>A constructor for this class that gets the pcap-ng full path file name to open for writing or create. Notice that after calling this constructor the file isn't opened yet, so writing packets will fail. For opening the file call <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a17e3146371657cb2bf427c345ef8701a"></a>
+<a class="anchor" id="a93312aab61a193df522f8046af6d291e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00083.html">PcapRemoteDevice</a>*&gt;::iterator <a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">pcpp::PcapRemoteDeviceList::RemoteDeviceListIterator</a></td>
+          <td class="memname">virtual pcpp::PcapNgFileWriterDevice::~PcapNgFileWriterDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Iterator object that can be used for iterating all <a class="el" href="a00083.html">PcapRemoteDevice</a> in list </p>
+<p>A destructor for this class </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af155f1d0d02b252b968f8bfc60bfa285"></a>
+<a class="anchor" id="a87cdcca0ace3ba4ccbaad4093def33a8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
+          <td class="memname">void pcpp::PcapNgFileWriterDevice::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -202,15 +236,17 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>An iterator object pointing to the first <a class="el" href="a00083.html">PcapRemoteDevice</a> in list </dd></dl>
+<p>Flush and close the pacp-ng file </p>
+
+<p>Reimplemented from <a class="el" href="a00050.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3e6eec736e7d88dc2a9dfe413089dbdf"></a>
+<a class="anchor" id="a55a11ff6431efc054fd4a47bbaab9852"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -218,180 +254,57 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
+          <td class="memname">void pcpp::PcapNgFileWriterDevice::getStatistics </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A const iterator object pointing to the first <a class="el" href="a00083.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="abc2fb3ae2a7acc851d7e2e57b87cd2f1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00084.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">pcap_stat &amp;&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>An iterator object pointing to the last <a class="el" href="a00083.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4384231f937c67a346698218c6cc4818"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00084.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A const iterator object pointing to the last <a class="el" href="a00083.html">PcapRemoteDevice</a> in list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a95cc401d327933db99d1dd1cb639bcb7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00083.html">PcapRemoteDevice</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html">IPv4Address</a>&#160;</td>
-          <td class="paramname"><em>ip4Addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00083.html">PcapRemoteDevice</a> in the list by its IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get statistics of packets written so far. In the pcap_stat struct, only ps_recv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip4Addr</td><td>The IPv4 address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00083.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
+
+<p>Implements <a class="el" href="a00057.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad1c6086cfdceb29c6cc88e4ae19d78ab"></a>
+<a class="anchor" id="adca940885348d13ae58865ff5011e6fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00083.html">PcapRemoteDevice</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00061.html">IPv6Address</a>&#160;</td>
-          <td class="paramname"><em>ip6Addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00083.html">PcapRemoteDevice</a> in the list by its IPv6 address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip6Addr</td><td>The IPv6 address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00083.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aaa9c6eab485ddc4d8b0c54f56a2cb5e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00083.html">PcapRemoteDevice</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00053.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00083.html">PcapRemoteDevice</a> in the list by its IP address (IPv4 or IPv6) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00083.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aafbda2e1b2c4ec3cc9a2d42aded206df"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00083.html">PcapRemoteDevice</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP </td>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::open </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ipAddrAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Search a <a class="el" href="a00083.html">PcapRemoteDevice</a> in the list by its IP address </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddrAsString</td><td>The IP address in string format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00083.html">PcapRemoteDevice</a> if found, NULL otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1655fb0326960cceec95db75ddaed0a3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00084.html">PcapRemoteDeviceList</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00053.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddress</em>, </td>
+          <td class="paramname"><em>os</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hardware</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>captureApp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileComment</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -399,30 +312,21 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A static method for creating a <a class="el" href="a00084.html">PcapRemoteDeviceList</a> instance for a certain remote machine. This methods creates the instance, and also creates a list of <a class="el" href="a00083.html">PcapRemoteDevice</a> instances stored in it, one for each remote network interface. Notice this method allocates the <a class="el" href="a00084.html">PcapRemoteDeviceList</a> instance and returns a pointer to it. It's the user responsibility to free it when done using it<br />
- This method overload is for remote daemons which don't require authentication for accessing them. For daemons which do require authentication use the other method overload </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Open the file in a write mode. If file doesn't exist, it will be created. If it does exist it will be overwritten, meaning all its current content will be deleted. As opposed to <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>, this method also allows writing several metadata attributes that will be stored in the header of the file </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">os</td><td>A string describing the operating system that was used to capture the packets. If this string is empty or null it will be ignored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>A string describing the hardware that was used to capture the packets. If this string is empty or null it will be ignored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">captureApp</td><td>A string describing the application that was used to capture the packets. If this string is empty or null it will be ignored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileComment</td><td>A string containing a user-defined comment that will be part of the metadata of the file. If this string is empty or null it will be ignored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="a00084.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
-<li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if file was opened/created successfully or if file is already opened. False if opening the file failed for some reason (an error will be printed to log) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa273eab3f181516fa00f3f04de58602a"></a>
+<a class="anchor" id="a9c709c035f8ba98682693a248d6d1e5d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -430,22 +334,72 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00084.html">PcapRemoteDeviceList</a>* pcpp::PcapRemoteDeviceList::getRemoteDeviceList </td>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00053.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>ipAddress</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Open the file in a write mode. If file doesn't exist, it will be created. If it does exist it will be overwritten, meaning all its current content will be deleted </p><dl class="section return"><dt>Returns</dt><dd>True if file was opened/created successfully or if file is already opened. False if opening the file failed for some reason (an error will be printed to log) </dd></dl>
+
+<p>Implements <a class="el" href="a00057.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69ab330b859dc45892f3d7666b7b0671"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::open </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appendMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>, but enables to open the file in append mode in which packets will be appended to the file instead of overwrite its current content. In append mode file must exist, otherwise opening will fail </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">appendMode</td><td>A boolean indicating whether to open the file in append mode or not. If set to false this method will act exactly like <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>. If set to true, file will be opened in append mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True of managed to open the file successfully. In case appendMode is set to true, false will be returned if file wasn't found or couldn't be read, if file type is not pcap-ng. In case appendMode is set to false, please refer to <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a> for return values </dd></dl>
+
+<p>Implements <a class="el" href="a00052.html">pcpp::IFileWriterDevice</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81069d1681efd6adf22e6ae80f300993"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::writePacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00102.html">RawPacket</a> const &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00082.html">PcapRemoteAuthentication</a> *&#160;</td>
-          <td class="paramname"><em>remoteAuth</em>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -453,30 +407,19 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>An overload of the previous <a class="el" href="a00084.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList()</a> method but with authentication support. This method is suitable for connecting to remote daemons which require authentication for accessing them </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The pcap-ng format allows adding a user-defined comment for each stored packet. This method writes a <a class="el" href="a00102.html">RawPacket</a> to the file and adds a comment to it. Before using this method please verify the file is opened using <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>. This method won't change the written packet or the input comment </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remoteAuth</td><td>A pointer to the authentication object which contains the username and password for connecting to the remote daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A reference for an existing RawPcket to write to the file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comment</td><td>The comment to be written for the packet. If this string is empty or null it will be ignored </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="a00084.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
-<li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was written successfully. False will be returned if the file isn't opened (an error will be printed to log) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6204e7c89ccce39c4aa3e355988f5ab6"></a>
+<a class="anchor" id="a25c7f060803d907e7e7f3c00d3c2891b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -484,23 +427,32 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00053.html">IPAddress</a>* pcpp::PcapRemoteDeviceList::getRemoteMachineIpAddress </td>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::writePacket </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00102.html">RawPacket</a> const &amp;&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IP address of the remote machine </dd></dl>
+<p>Write a <a class="el" href="a00102.html">RawPacket</a> to the file. Before using this method please verify the file is opened using <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>. This method won't change the written packet </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A reference for an existing RawPcket to write to the file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was written successfully. False will be returned if the file isn't opened (an error will be printed to log) </dd></dl>
+
+<p>Implements <a class="el" href="a00052.html">pcpp::IFileWriterDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1e1971b1f2432aa1837af7e2cbce17e2"></a>
+<a class="anchor" id="a214c363a167e1538d9ea29a58efd9640"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -508,19 +460,28 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::PcapRemoteDeviceList::getRemoteMachinePort </td>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::writePackets </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00195.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>packets</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The port of the remote machine where packets are transmitted from the remote machine to the client machine </dd></dl>
+<p>Write multiple <a class="el" href="a00102.html">RawPacket</a> to the file. Before using this method please verify the file is opened using <a class="el" href="a00084.html#a9c709c035f8ba98682693a248d6d1e5d">open()</a>. This method won't change the written packets or the RawPacketVector instance </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packets</td><td>A reference for an existing RawPcketVector, all of its packets will be written to the file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all packets were written successfully to the file. False will be returned if the file isn't opened (also, an error log will be printed) or if at least one of the packets wasn't written successfully to the file </dd></dl>
+
+<p>Implements <a class="el" href="a00052.html">pcpp::IFileWriterDevice</a>.</p>
 
 </div>
 </div>
@@ -529,8 +490,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00084.html">PcapRemoteDeviceList</a></li>
-    <li class="footer">Generated on Thu Nov 24 2016 21:56:38 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00084.html">PcapNgFileWriterDevice</a></li>
+    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,18 +1,13 @@
 var a00065 =
 [
-    [ "LogLevel", "a00065.html#a522254c250da7b12b5b4817b84c208b6", [
-      [ "Normal", "a00065.html#a522254c250da7b12b5b4817b84c208b6a58e6375bc77510a75bee39cb4356ad7e", null ],
-      [ "Debug", "a00065.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397", null ]
-    ] ],
-    [ "enableErrors", "a00065.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91", null ],
-    [ "getErrorString", "a00065.html#a96821970d89017f19ad24c024198e3a3", null ],
-    [ "getErrorStringLength", "a00065.html#a2ed51d61daff5222c4069cff3e245a83", null ],
-    [ "getLogModulesArr", "a00065.html#adc348d135eeef86271a100d3741ebb60", null ],
-    [ "isDebugEnabled", "a00065.html#a9b53774d0be75118413fcb3903e0da1b", null ],
-    [ "isErrorStringSet", "a00065.html#acde976836742578a55d778444d2dbcd6", null ],
-    [ "isSupressErrors", "a00065.html#ab1634894a477fbd9bccf8df68326d6d2", null ],
-    [ "setAllModlesToLogLevel", "a00065.html#a031c0e504a537e5921687ab2450bbc04", null ],
-    [ "setErrorString", "a00065.html#a99c1db3a69ae2f55b08df135ee706080", null ],
-    [ "setLogLevel", "a00065.html#a8869da5bc6e76719c57942b12f8f36f6", null ],
-    [ "supressErrors", "a00065.html#a84be0ff3175c243ca493975222aa199b", null ]
+    [ "IPv6Layer", "a00065.html#ad2545ecbcd8e42b449366237745f0774", null ],
+    [ "IPv6Layer", "a00065.html#a959b6e8d2698d12418b301e15fbbf446", null ],
+    [ "IPv6Layer", "a00065.html#a16dddacbec4de2d1905cedbebc663400", null ],
+    [ "computeCalculateFields", "a00065.html#aaba2a45fa6e2cc43edab9a548773faf1", null ],
+    [ "getDstIpAddress", "a00065.html#a436faafdf30e810e3a8d96e74f256c74", null ],
+    [ "getHeaderLen", "a00065.html#acee75c2ab7ef3112b58ebe3c73a1c4ce", null ],
+    [ "getIPv6Header", "a00065.html#acacfbacbed97b015fb54326f914e3bae", null ],
+    [ "getSrcIpAddress", "a00065.html#a8080e3a1ef1cd7fe81cd36033bbc52df", null ],
+    [ "parseNextLayer", "a00065.html#a494abc8a7bfc1a520c86e61fee3a2f46", null ],
+    [ "toString", "a00065.html#af2abd76cb9650332abde50e5040aed1d", null ]
 ];

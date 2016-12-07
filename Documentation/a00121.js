@@ -1,8 +1,6 @@
 var a00121 =
 [
-    [ "getContainingLayer", "a00121.html#a4342813d150cb1cec2911b59b99e0418", null ],
-    [ "getHandshakeType", "a00121.html#a31089d536fc762b283d30d7c36e3584b", null ],
-    [ "getMessageLength", "a00121.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
-    [ "isMessageComplete", "a00121.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
-    [ "toString", "a00121.html#a17b72bf10472c67d0044006099c6ea5a", null ]
+    [ "extensionData", "a00121.html#a058c404f39c4b185647f5fc6cade65d4", null ],
+    [ "extensionDataLength", "a00121.html#af116e93a2decd3c986ae109b16c12b28", null ],
+    [ "extensionType", "a00121.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
 ];

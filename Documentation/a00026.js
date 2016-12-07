@@ -1,12 +1,11 @@
 var a00026 =
 [
-    [ "HttpRequestFirstLineException", "a00027.html", null ],
-    [ "getMethod", "a00026.html#a5833180521a889af5707e6137bf53a73", null ],
-    [ "getSize", "a00026.html#afc8a656cffd44c4d4a50bb983dca319c", null ],
-    [ "getUri", "a00026.html#ade4bc4f1ed7a3aec29d95455c4c24a70", null ],
-    [ "getVersion", "a00026.html#ae9774e0c16a4983e9ab77a6779c444c7", null ],
-    [ "isComplete", "a00026.html#a8dac35f7b7227a2a18320d00616d3be8", null ],
-    [ "setMethod", "a00026.html#a056c5df1c6732b666b28852f68836e6e", null ],
-    [ "setUri", "a00026.html#aa31083ea230c4cf5e1fe27608a76f6b0", null ],
-    [ "setVersion", "a00026.html#ac9b66f371b763217776c4eaec0f9a14c", null ]
+    [ "GREv1Layer", "a00026.html#affdd47adeca80911b621a14421853e8e", null ],
+    [ "GREv1Layer", "a00026.html#a9c118e97790a83bf6d22592191d2f453", null ],
+    [ "computeCalculateFields", "a00026.html#aa2b638c7d16b9475222dd0d0696a3514", null ],
+    [ "getAcknowledgmentNum", "a00026.html#a7f14840cae9c48e13afb7716411e6934", null ],
+    [ "getGreHeader", "a00026.html#ab3913842456c877137d5a2e921d97007", null ],
+    [ "setAcknowledgmentNum", "a00026.html#a5adce7bc05cabe68f5680b44fb5a0d12", null ],
+    [ "toString", "a00026.html#a94273542f85918215b272ae98b5ade35", null ],
+    [ "unsetAcknowledgmentNum", "a00026.html#ab5c8246ba3b77d8ac14644801dd8ebda", null ]
 ];

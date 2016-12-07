@@ -1,17 +1,15 @@
 var a00025 =
 [
-    [ "addEndOfHeader", "a00025.html#a2d9d95e780e0eaf2b85cdc334f6584a3", null ],
-    [ "addField", "a00025.html#a3b6579bb70d24048ae36bd458b42efb6", null ],
-    [ "addField", "a00025.html#aec0b282e761a5db8f57e832d2598b475", null ],
-    [ "computeCalculateFields", "a00025.html#a58400c654a5544deb9583e2ad6bc9982", null ],
-    [ "getFieldByName", "a00025.html#aeb6887ff8d98eeb2d39ffe43aaaa7347", null ],
-    [ "getFirstField", "a00025.html#ae3b2f5228e83f0e5c6832778a3c45039", null ],
-    [ "getHeaderLen", "a00025.html#a78ecb8aa9b390e0bdb7c2e505c8e59b7", null ],
-    [ "getNextField", "a00025.html#ac1026dd3bf19b3ad1b9668a6184ae426", null ],
-    [ "insertField", "a00025.html#ac6ed432d6d32ba9d8119a706fbd5bd6a", null ],
-    [ "insertField", "a00025.html#aaee0d8f4e54aba90aec8e2d2e9616a8a", null ],
-    [ "isHeaderComplete", "a00025.html#a701003b87156e45c8cf4e87fcad94200", null ],
-    [ "parseNextLayer", "a00025.html#ad2e61f9320fa4fdd338430d365360aaa", null ],
-    [ "removeField", "a00025.html#a11d6704a10718ef9c705858bd3985ac1", null ],
-    [ "removeField", "a00025.html#ada5ced67d64e890431755bac0779f3d3", null ]
+    [ "GREv0Layer", "a00025.html#a8cab834d500d69bd53ea9f980080aa66", null ],
+    [ "GREv0Layer", "a00025.html#a4e6349fa245ab6fec55236aeeff2e79e", null ],
+    [ "computeCalculateFields", "a00025.html#a8dadeabbc9e1bcce8c8030bfed2cfde9", null ],
+    [ "getChecksum", "a00025.html#a7a31ac3661be643b434564a0275cd044", null ],
+    [ "getGreHeader", "a00025.html#abc3ca19c4b7da40c91bac6bfd64fcadb", null ],
+    [ "getKey", "a00025.html#af38425c78abd54d4c3b3e7c696d675c1", null ],
+    [ "getOffset", "a00025.html#a954bd499950709dc21235a75e4e54a41", null ],
+    [ "setChecksum", "a00025.html#ac8e0328698bf7208f6a68c828a36a91b", null ],
+    [ "setKey", "a00025.html#a8658b40f8017cf2f91eb292a7d9fee16", null ],
+    [ "toString", "a00025.html#a2d09f08dccb71119e0db999d31bf22b5", null ],
+    [ "unsetChecksum", "a00025.html#a165866e7549b82b339eb4cd26bd27ee9", null ],
+    [ "unsetKey", "a00025.html#a601b518f0c43ea4c96254b089759a8e5", null ]
 ];

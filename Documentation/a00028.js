@@ -1,22 +1,17 @@
 var a00028 =
 [
-    [ "HttpMethod", "a00028.html#a71d3731486391e8356628dae79023fd6", [
-      [ "HttpGET", "a00028.html#a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c", null ],
-      [ "HttpHEAD", "a00028.html#a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd", null ],
-      [ "HttpPOST", "a00028.html#a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c", null ],
-      [ "HttpPUT", "a00028.html#a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2", null ],
-      [ "HttpDELETE", "a00028.html#a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68", null ],
-      [ "HttpTRACE", "a00028.html#a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c", null ],
-      [ "HttpOPTIONS", "a00028.html#a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf", null ],
-      [ "HttpCONNECT", "a00028.html#a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511", null ],
-      [ "HttpPATCH", "a00028.html#a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022", null ],
-      [ "HttpMethodUnknown", "a00028.html#a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84", null ]
-    ] ],
-    [ "HttpRequestLayer", "a00028.html#a9176b25290460e34e8bf5bab481ac866", null ],
-    [ "HttpRequestLayer", "a00028.html#aab5bc6ab39eb8b300af00abd5802c1f6", null ],
-    [ "HttpRequestLayer", "a00028.html#aa09a5aec4ff2ba350bd173f04e731764", null ],
-    [ "getFirstLine", "a00028.html#a3aa1f4a481537b60fd3dca97fcc4f274", null ],
-    [ "getUrl", "a00028.html#a2ae3fd000ba6754e9476fb41691b7583", null ],
-    [ "operator=", "a00028.html#a56153c001fed50c2cc0a4697640fd048", null ],
-    [ "toString", "a00028.html#a432ab3edcd973f498e9da8d067a6f631", null ]
+    [ "addEndOfHeader", "a00028.html#a2d9d95e780e0eaf2b85cdc334f6584a3", null ],
+    [ "addField", "a00028.html#a3b6579bb70d24048ae36bd458b42efb6", null ],
+    [ "addField", "a00028.html#aec0b282e761a5db8f57e832d2598b475", null ],
+    [ "computeCalculateFields", "a00028.html#a58400c654a5544deb9583e2ad6bc9982", null ],
+    [ "getFieldByName", "a00028.html#aeb6887ff8d98eeb2d39ffe43aaaa7347", null ],
+    [ "getFirstField", "a00028.html#ae3b2f5228e83f0e5c6832778a3c45039", null ],
+    [ "getHeaderLen", "a00028.html#a78ecb8aa9b390e0bdb7c2e505c8e59b7", null ],
+    [ "getNextField", "a00028.html#ac1026dd3bf19b3ad1b9668a6184ae426", null ],
+    [ "insertField", "a00028.html#ac6ed432d6d32ba9d8119a706fbd5bd6a", null ],
+    [ "insertField", "a00028.html#aaee0d8f4e54aba90aec8e2d2e9616a8a", null ],
+    [ "isHeaderComplete", "a00028.html#a701003b87156e45c8cf4e87fcad94200", null ],
+    [ "parseNextLayer", "a00028.html#ad2e61f9320fa4fdd338430d365360aaa", null ],
+    [ "removeField", "a00028.html#a11d6704a10718ef9c705858bd3985ac1", null ],
+    [ "removeField", "a00028.html#ada5ced67d64e890431755bac0779f3d3", null ]
 ];

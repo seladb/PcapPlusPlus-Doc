@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['icmpdestunreachablecodes',['IcmpDestUnreachableCodes',['../a00191.html#a8495fd519ac2e6c6eeb85307e8aa2c48',1,'pcpp']]],
-  ['icmpmessagetype',['IcmpMessageType',['../a00191.html#a47224d4b3b96e54be24ea2a6ddee8e27',1,'pcpp']]],
-  ['ipprotocoltypes',['IPProtocolTypes',['../a00191.html#ace8e2e21b82a8adc602f561e1e612fb0',1,'pcpp']]]
+  ['httpmethod',['HttpMethod',['../a00031.html#a71d3731486391e8356628dae79023fd6',1,'pcpp::HttpRequestLayer']]],
+  ['httpresponsestatuscode',['HttpResponseStatusCode',['../a00034.html#ab5bbbd02f36805001550d1168f1412bc',1,'pcpp::HttpResponseLayer']]],
+  ['httpversion',['HttpVersion',['../a00195.html#a7680d508534c12b5ab8bcbe4cae06932',1,'pcpp']]]
 ];

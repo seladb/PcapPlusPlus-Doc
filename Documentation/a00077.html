@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::PcapFileWriterDevice Class Reference</title>
+<title>PcapPlusPlus: pcpp::Packet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,82 +108,122 @@ $(document).ready(function(){initNavTree('a00077.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00272.html">List of all members</a>  </div>
+<a href="a00276.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::PcapFileWriterDevice Class Reference</div>  </div>
+<div class="title">pcpp::Packet Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00169_source.html">PcapFileDevice.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::PcapFileWriterDevice:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00077.png" usemap="#pcpp::PcapFileWriterDevice_map" alt=""/>
-  <map id="pcpp::PcapFileWriterDevice_map" name="pcpp::PcapFileWriterDevice_map">
-<area href="a00049.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="0,112,170,136"/>
-<area href="a00047.html" alt="pcpp::IFileDevice" shape="rect" coords="0,56,170,80"/>
-<area href="a00054.html" alt="pcpp::IPcapDevice" shape="rect" coords="0,0,170,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00169_source.html">Packet.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a46b3b5c1ffed33d3540fa40db94010e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a46b3b5c1ffed33d3540fa40db94010e2">PcapFileWriterDevice</a> (const char *fileName, <a class="el" href="a00191.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType=<a class="el" href="a00191.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
-<tr class="separator:a46b3b5c1ffed33d3540fa40db94010e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3aa347668d24475e9f750fcb5959d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac3aa347668d24475e9f750fcb5959d93">~PcapFileWriterDevice</a> ()</td></tr>
-<tr class="separator:ac3aa347668d24475e9f750fcb5959d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add964c71699315d457a33b22998501fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#add964c71699315d457a33b22998501fd">writePacket</a> (<a class="el" href="a00099.html">RawPacket</a> const &amp;packet)</td></tr>
-<tr class="separator:add964c71699315d457a33b22998501fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e22200a6da2898262499699c001430"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac2e22200a6da2898262499699c001430">writePackets</a> (const <a class="el" href="a00191.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets)</td></tr>
-<tr class="separator:ac2e22200a6da2898262499699c001430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c5ea38028c05717dd2957c4be08296"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open</a> ()</td></tr>
-<tr class="separator:ab9c5ea38028c05717dd2957c4be08296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fee40c9c768596aab93c2a4d1b0cae3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a0fee40c9c768596aab93c2a4d1b0cae3">open</a> (bool appendMode)</td></tr>
-<tr class="separator:a0fee40c9c768596aab93c2a4d1b0cae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b102a04429b8baba0637c3505f6448"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a60b102a04429b8baba0637c3505f6448">close</a> ()</td></tr>
-<tr class="separator:a60b102a04429b8baba0637c3505f6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f72c11bc118609f84c5b462f27cdc1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a3f72c11bc118609f84c5b462f27cdc1f">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
-<tr class="separator:a3f72c11bc118609f84c5b462f27cdc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00049"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00049')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00049.html">pcpp::IFileWriterDevice</a></td></tr>
-<tr class="memitem:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a00049"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#ad1efdc8f258b6981d0429c61992f2e13">~IFileWriterDevice</a> ()</td></tr>
-<tr class="separator:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a00049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00054"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00054')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00054.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a> ()</td></tr>
-<tr class="separator:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a> (<a class="el" href="a00018.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33400a37378ceb807228c43efbff47e inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aa33400a37378ceb807228c43efbff47e">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:aa33400a37378ceb807228c43efbff47e inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a> ()</td></tr>
-<tr class="separator:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_a00054"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00054')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00054.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00054"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00054"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a00099.html">RawPacket</a> *rawPacket)</td></tr>
-<tr class="separator:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a> (size_t maxPacketLen=1)</td></tr>
+<tr class="separator:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9bf7d18a51920fe87c54ae234941816"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab9bf7d18a51920fe87c54ae234941816">Packet</a> (<a class="el" href="a00102.html">RawPacket</a> *rawPacket)</td></tr>
+<tr class="separator:ab9bf7d18a51920fe87c54ae234941816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac072415e151c3f8b2e55df859160d4dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac072415e151c3f8b2e55df859160d4dd">Packet</a> (<a class="el" href="a00102.html">RawPacket</a> *rawPacket, bool freeRawPacket)</td></tr>
+<tr class="separator:ac072415e151c3f8b2e55df859160d4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ccf8336cf3c3f6a5ad58ad12f06656"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a54ccf8336cf3c3f6a5ad58ad12f06656">~Packet</a> ()</td></tr>
+<tr class="separator:a54ccf8336cf3c3f6a5ad58ad12f06656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d603615d2f100eec547d51b4a6282e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a11d603615d2f100eec547d51b4a6282e">Packet</a> (const <a class="el" href="a00077.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:a11d603615d2f100eec547d51b4a6282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26af180628893e454e9d6e0f2f1ebb98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a26af180628893e454e9d6e0f2f1ebb98">operator=</a> (const <a class="el" href="a00077.html">Packet</a> &amp;other)</td></tr>
+<tr class="separator:a26af180628893e454e9d6e0f2f1ebb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7727ee05d4dc422ebe74c58ddd11cb22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00102.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a7727ee05d4dc422ebe74c58ddd11cb22">getRawPacket</a> ()</td></tr>
+<tr class="separator:a7727ee05d4dc422ebe74c58ddd11cb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebf994984d94f2ffacb367172cfad08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a5ebf994984d94f2ffacb367172cfad08">setRawPacket</a> (<a class="el" href="a00102.html">RawPacket</a> *rawPacket, bool freeRawPacket)</td></tr>
+<tr class="separator:a5ebf994984d94f2ffacb367172cfad08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a88c7423642329409672f612990724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00102.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af8a88c7423642329409672f612990724">getRawPacketReadOnly</a> () const </td></tr>
+<tr class="separator:af8a88c7423642329409672f612990724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f98bcdd465eac96673752838826de4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00066.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a02f98bcdd465eac96673752838826de4">getFirstLayer</a> ()</td></tr>
+<tr class="separator:a02f98bcdd465eac96673752838826de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2dd7a761efe7393249ddc54bdd662b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00066.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a1c2dd7a761efe7393249ddc54bdd662b">getLastLayer</a> ()</td></tr>
+<tr class="separator:a1c2dd7a761efe7393249ddc54bdd662b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c12806f2b320cdddd83a2b3a1136eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer</a> (<a class="el" href="a00066.html">Layer</a> *newLayer)</td></tr>
+<tr class="separator:af4c12806f2b320cdddd83a2b3a1136eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2f9ea31fb1b7fa610db251405522f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer</a> (<a class="el" href="a00066.html">Layer</a> *prevLayer, <a class="el" href="a00066.html">Layer</a> *newLayer)</td></tr>
+<tr class="separator:a2e2f9ea31fb1b7fa610db251405522f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab751fc35d7e7b8a86e3f1fdbd2c30685"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab751fc35d7e7b8a86e3f1fdbd2c30685">removeLayer</a> (<a class="el" href="a00066.html">Layer</a> *layer)</td></tr>
+<tr class="separator:ab751fc35d7e7b8a86e3f1fdbd2c30685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d0de95b49eb313e3184021234e5c5e"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a78d0de95b49eb313e3184021234e5c5e"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00077.html#a78d0de95b49eb313e3184021234e5c5e">getLayerOfType</a> ()</td></tr>
+<tr class="separator:a78d0de95b49eb313e3184021234e5c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d545bb4bc80e5d45858c373b20befa9"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a1d545bb4bc80e5d45858c373b20befa9"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00077.html#a1d545bb4bc80e5d45858c373b20befa9">getNextLayerOfType</a> (<a class="el" href="a00066.html">Layer</a> *after)</td></tr>
+<tr class="separator:a1d545bb4bc80e5d45858c373b20befa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b12946df5f2e6077e32620389a3c32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a90b12946df5f2e6077e32620389a3c32">isPacketOfType</a> (<a class="el" href="a00195.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocolType)</td></tr>
+<tr class="separator:a90b12946df5f2e6077e32620389a3c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19addb15ea46927076227436fde753e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab19addb15ea46927076227436fde753e">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:ab19addb15ea46927076227436fde753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba43ff35340215d5091a894b996f38d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aba43ff35340215d5091a894b996f38d6">printToString</a> (bool timeAsLocalTime=true)</td></tr>
+<tr class="separator:aba43ff35340215d5091a894b996f38d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c8f43decffe58a25a9b6d612873ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a57c8f43decffe58a25a9b6d612873ca5">printToStringList</a> (std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true)</td></tr>
+<tr class="separator:a57c8f43decffe58a25a9b6d612873ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for opening a pcap file for writing or create a new pcap file and write packets to it. This class adds a unique capability that isn't supported in WinPcap and in older libpcap versions which is to open a pcap file in append mode where packets are written at the end of the pcap file instead of running it over </p>
+<div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="a00102.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="a00020.html">EthLayer</a> -&gt; <a class="el" href="a00062.html">IPv4Layer</a> -&gt; <a class="el" href="a00138.html">TcpLayer</a> -&gt; <a class="el" href="a00031.html">HttpRequestLayer</a> <br />
+ <a class="el" href="a00077.html">Packet</a> instance isn't read only. The user can add or remove layers, update current layer, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a46b3b5c1ffed33d3540fa40db94010e2"></a>
+<a class="anchor" id="a1a6d4e157661ba7ec6f552c78c82d7fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::PcapFileWriterDevice::PcapFileWriterDevice </td>
+          <td class="memname">pcpp::Packet::Packet </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxPacketLen</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor for creating a new packet. Very useful when creating packets. When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="a00102.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketLen</td><td>The expected packet length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9bf7d18a51920fe87c54ae234941816"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00102.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor for creating a packet out of already allocated <a class="el" href="a00102.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="a00102.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="a00102.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac072415e151c3f8b2e55df859160d4dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00102.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>rawPacket</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00191.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
-          <td class="paramname"><em>linkLayerType</em> = <code><a class="el" href="a00191.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>freeRawPacket</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,34 +232,103 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor for this class that gets the pcap full path file name to open for writing or create. Notice that after calling this constructor the file isn't opened yet, so writing packets will fail. For opening the file call <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor for creating a packet out of already allocated <a class="el" href="a00102.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="a00102.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="a00102.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order. In this overload of the constructor the user can specify whether to free the instance of raw packet when the <a class="el" href="a00077.html">Packet</a> is free or not </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">linkLayerType</td><td>The link layer type all packet in this file will be based on. The default is Ethernet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freeRawPacket</td><td>A flag indicating if the destructor should also call the raw packet destructor or not </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ac3aa347668d24475e9f750fcb5959d93"></a>
+<a class="anchor" id="a54ccf8336cf3c3f6a5ad58ad12f06656"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::PcapFileWriterDevice::~PcapFileWriterDevice </td>
+          <td class="memname">virtual pcpp::Packet::~Packet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>A destructor for this class </p>
+<p>A destructor for this class. Frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a00077.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer()</a> or <a class="el" href="a00077.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor) </p>
+
+</div>
+</div>
+<a class="anchor" id="a11d603615d2f100eec547d51b4a6282e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00077.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A copy constructor for this class. This copy constructor copies all the raw data and re-create all layers. So when the original <a class="el" href="a00077.html">Packet</a> is being freed, no data will be lost in the copied instance </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a60b102a04429b8baba0637c3505f6448"></a>
+<a class="anchor" id="af4c12806f2b320cdddd83a2b3a1136eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::Packet::addLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00066.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>newLayer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a new layer as the last layer in the packet. This method gets a pointer to the new layer as a parameter and attaches it to the packet. Notice after calling this method the input layer is attached to the packet so every change you make in it affect the packet; Also it cannot be attached to other packets </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newLayer</td><td>A pointer to the new layer to be added to the packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if everything went well or false otherwise (an appropriate error log message will be printed in such cases) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab19addb15ea46927076227436fde753e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Packet::computeCalculateFields </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Each layer can have fields that can be calculate automatically from other fields using <a class="el" href="a00066.html#abea112176d18e896f48214ca7accac71">Layer::computeCalculateFields()</a>. This method forces all layers to calculate these fields values </p>
+
+</div>
+</div>
+<a class="anchor" id="a02f98bcdd465eac96673752838826de4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -227,7 +336,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::PcapFileWriterDevice::close </td>
+          <td class="memname"><a class="el" href="a00066.html">Layer</a>* pcpp::Packet::getFirstLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -235,17 +344,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Flush and close the pacp file </p>
-
-<p>Reimplemented from <a class="el" href="a00047.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice</a>.</p>
+<p>Get a pointer to the first (lowest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the first (lowest) layer in the packet </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3f72c11bc118609f84c5b462f27cdc1f"></a>
+<a class="anchor" id="a1c2dd7a761efe7393249ddc54bdd662b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -253,152 +360,309 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::PcapFileWriterDevice::getStatistics </td>
+          <td class="memname"><a class="el" href="a00066.html">Layer</a>* pcpp::Packet::getLastLayer </td>
           <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get statistics of packets written so far. In the pcap_stat struct, only ps_recv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to the last (highest) layer in the packet </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the last (highest) layer in the packet </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78d0de95b49eb313e3184021234e5c5e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * pcpp::Packet::getLayerOfType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d545bb4bc80e5d45858c373b20befa9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * pcpp::Packet::getNextLayerOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00066.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>after</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="a00020.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="a00062.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="a00146.html">VlanLayer</a>, VlanLayer(3) will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the layer to start search from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7727ee05d4dc422ebe74c58ddd11cb22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00102.html">RawPacket</a>* pcpp::Packet::getRawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00077.html">Packet</a>'s <a class="el" href="a00102.html">RawPacket</a> </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00077.html">Packet</a>'s <a class="el" href="a00102.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af8a88c7423642329409672f612990724"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00102.html">RawPacket</a>* pcpp::Packet::getRawPacketReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the <a class="el" href="a00077.html">Packet</a>'s <a class="el" href="a00102.html">RawPacket</a> in a read-only manner </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00077.html">Packet</a>'s <a class="el" href="a00102.html">RawPacket</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e2f9ea31fb1b7fa610db251405522f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::Packet::insertLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00066.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00066.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>newLayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insert a new layer after an existing layer in the packet. This method gets a pointer to the new layer as a parameter and attaches it to the packet. Notice after calling this method the input layer is attached to the packet so every change you make in it affect the packet; Also it cannot be attached to other packets </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to an existing layer in the packet which the new layer should followed by. If this layer isn't attached to a packet and error will be printed to log and false will be returned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newLayer</td><td>A pointer to the new layer to be added to the packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if everything went well or false otherwise (an appropriate error log message will be printed in such cases) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90b12946df5f2e6077e32620389a3c32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::Packet::isPacketOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00195.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>protocolType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether the packet contains a certain protocol </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocolType</td><td>The protocol type to search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet contains the protocol, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26af180628893e454e9d6e0f2f1ebb98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00077.html">Packet</a>&amp; pcpp::Packet::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00077.html">Packet</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator overloading. It first frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a00077.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer()</a> or <a class="el" href="a00077.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor). Afterwards it copies the data from the other packet in the same way used in the copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00054.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ab9c5ea38028c05717dd2957c4be08296"></a>
+<a class="anchor" id="aba43ff35340215d5091a894b996f38d6"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool pcpp::PcapFileWriterDevice::open </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Open the file in a write mode. If file doesn't exist, it will be created. If it does exist it will be overwritten, meaning all its current content will be deleted </p><dl class="section return"><dt>Returns</dt><dd>True if file was opened/created successfully or if file is already opened. False if opening the file failed for some reason (an error will be printed to log) </dd></dl>
-
-<p>Implements <a class="el" href="a00054.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0fee40c9c768596aab93c2a4d1b0cae3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::PcapFileWriterDevice::open </td>
+          <td class="memname">std::string pcpp::Packet::printToString </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>appendMode</em></td><td>)</td>
+          <td class="paramname"><em>timeAsLocalTime</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Same as <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a>, but enables to open the file in append mode in which packets will be appended to the file instead of overwrite its current content. In append mode file must exist, otherwise opening will fail </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Each layer can print a string representation of the layer most important data using <a class="el" href="a00066.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">appendMode</td><td>A boolean indicating whether to open the file in append mode or not. If set to false this method will act exactly like <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a>. If set to true, file will be opened in append mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeAsLocalTime</td><td>Print time as local time or GMT. Default (true value) is local time, for GMT set to false </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True of managed to open the file successfully. In case appendMode is set to true, false will be returned if file wasn't found or couldn't be read, if file type is not pcap, or if link type specified in c'tor is different from current file link type. In case appendMode is set to false, please refer to <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a> for return values </dd></dl>
-
-<p>Implements <a class="el" href="a00049.html">pcpp::IFileWriterDevice</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>A string containing most relevant data from all layers (looks like the packet description in Wireshark) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="add964c71699315d457a33b22998501fd"></a>
+<a class="anchor" id="a57c8f43decffe58a25a9b6d612873ca5"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::PcapFileWriterDevice::writePacket </td>
+          <td class="memname">void pcpp::Packet::printToStringList </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00099.html">RawPacket</a> const &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timeAsLocalTime</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Write a <a class="el" href="a00099.html">RawPacket</a> to the file. Before using this method please verify the file is opened using <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a>. This method won't change the written packet </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Similar to <a class="el" href="a00077.html#aba43ff35340215d5091a894b996f38d6">printToString()</a>, but instead of one string it outputs a list of strings, one string for every layer </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A reference for an existing RawPcket to write to the file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>A string vector that will contain all strings </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeAsLocalTime</td><td>Print time as local time or GMT. Default (true value) is local time, for GMT set to false </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if a packet was written successfully. False will be returned if the file isn't opened or if the packet link layer type is different than the one defined for the file (in all cases, an error will be printed to log) </dd></dl>
-
-<p>Implements <a class="el" href="a00049.html">pcpp::IFileWriterDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac2e22200a6da2898262499699c001430"></a>
+<a class="anchor" id="ab751fc35d7e7b8a86e3f1fdbd2c30685"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::PcapFileWriterDevice::writePackets </td>
+          <td class="memname">bool pcpp::Packet::removeLayer </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00191.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>packets</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00066.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Write multiple <a class="el" href="a00099.html">RawPacket</a> to the file. Before using this method please verify the file is opened using <a class="el" href="a00077.html#ab9c5ea38028c05717dd2957c4be08296">open()</a>. This method won't change the written packets or the RawPacketVector instance </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Remove an existing layer from the packet </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">packets</td><td>A reference for an existing RawPcketVector, all of its packets will be written to the file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layer</td><td>The layer to remove </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all packets were written successfully to the file. False will be returned if the file isn't opened (also, an error log will be printed) or if at least one of the packets wasn't written successfully to the file </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if everything went well or false otherwise (an appropriate error log message will be printed in such cases) </dd></dl>
 
-<p>Implements <a class="el" href="a00049.html">pcpp::IFileWriterDevice</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a5ebf994984d94f2ffacb367172cfad08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Packet::setRawPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00102.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>rawPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>freeRawPacket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a <a class="el" href="a00102.html">RawPacket</a> and re-construct all packet layers </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>Raw packet to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freeRawPacket</td><td>A flag indicating if the destructor should also call the raw packet destructor or not </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -407,8 +671,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00077.html">PcapFileWriterDevice</a></li>
-    <li class="footer">Generated on Thu Nov 24 2016 21:56:38 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00077.html">Packet</a></li>
+    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

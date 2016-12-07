@@ -1,10 +1,18 @@
 var a00136 =
 [
-    [ "getTotalSize", "a00136.html#aeaabc88782fc7026cf1340b775831ea8", null ],
-    [ "getType", "a00136.html#a3d561ce1356aa17068d970b57723a6d7", null ],
-    [ "getValueAs", "a00136.html#a49cb10f4e52cf92178725fae9d5ec469", null ],
-    [ "setValue", "a00136.html#aaa3ce2fbd266fde95d8e7c57fd091d4f", null ],
-    [ "len", "a00136.html#a722a42e1ceef77b984bfe06c33d77ab3", null ],
-    [ "option", "a00136.html#a33d7eb2c21b7cbb8a629ea91a7df4c26", null ],
-    [ "value", "a00136.html#ae4d31ebb49c6bae190edd6d51a8c1757", null ]
+    [ "MatchOptions", "a00136.html#a5c46e6577ab32373602693aa2b1b25fc", [
+      [ "MatchAll", "a00136.html#a5c46e6577ab32373602693aa2b1b25fca0aac4bcfd152dfe7ca619973fb9b8d61", null ],
+      [ "MatchOneAtLeast", "a00136.html#a5c46e6577ab32373602693aa2b1b25fca88fe87162ec498bd7b05cd65d00ea866", null ]
+    ] ],
+    [ "TcpFlags", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8", [
+      [ "tcpFin", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8a427a97c7c7cac5de742260befa6a3623", null ],
+      [ "tcpSyn", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8a2e972455e93ab34790922b3bc2195e30", null ],
+      [ "tcpRst", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8aad26b70502594d3a26ea0ad38d67a219", null ],
+      [ "tcpPush", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8ab5839fbc7807f3ac3a1a2ae8a53e35b4", null ],
+      [ "tcpAck", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8a96e2dff66752cd1f1a08954c78b387b5", null ],
+      [ "tcpUrg", "a00136.html#a1ac0469b57beda847374c1d39f9b1ee8a61002e77c501f9f1d3ecd65f13a35e45", null ]
+    ] ],
+    [ "TcpFlagsFilter", "a00136.html#af34bc19a3b995a717adaaed3ef845a18", null ],
+    [ "parseToString", "a00136.html#a1c9003c27c6c52e80276cba9dd33d117", null ],
+    [ "setTcpFlagsBitMask", "a00136.html#a96f7b9ad543aff00eed99b2c43729fae", null ]
 ];

@@ -1,10 +1,8 @@
 var a00079 =
 [
-    [ "getDnsServers", "a00079.html#a2cefca3fa33b793cdfb1b58c3883f25b", null ],
-    [ "getPcapLiveDeviceByIp", "a00079.html#a1ab7bad31dbb97247648d1a149d2f612", null ],
-    [ "getPcapLiveDeviceByIp", "a00079.html#a55fd8d0f7a2a6d507bcdcb2836325be2", null ],
-    [ "getPcapLiveDeviceByIp", "a00079.html#a00b3cad054b24d8868cbf141c654c614", null ],
-    [ "getPcapLiveDeviceByIp", "a00079.html#aeffe9373b73371e24023ae30f36ead62", null ],
-    [ "getPcapLiveDeviceByName", "a00079.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
-    [ "getPcapLiveDevicesList", "a00079.html#a993aefeec8551a21171a0d5cfdd78675", null ]
+    [ "PcapFileReaderDevice", "a00079.html#a7c578fa0c04a93de4a6dc54b845fae34", null ],
+    [ "~PcapFileReaderDevice", "a00079.html#aa6c4637873a1a830372449a81f048ab2", null ],
+    [ "getNextPacket", "a00079.html#afc4c2142b7787e6c191b0d2ab6822c07", null ],
+    [ "getStatistics", "a00079.html#a6c07f1cc3675dfa8ff7157d09be311c7", null ],
+    [ "open", "a00079.html#af9e798abe511b1ba8bd14360535753a1", null ]
 ];

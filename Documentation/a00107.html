@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::ssl_tls_record_layer Struct Reference</title>
+<title>PcapPlusPlus: pcpp::ssl_tls_change_cipher_spec Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,62 +108,32 @@ $(document).ready(function(){initNavTree('a00107.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00302.html">List of all members</a>  </div>
+<a href="a00306.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ssl_tls_record_layer Struct Reference</div>  </div>
+<div class="title">pcpp::ssl_tls_change_cipher_spec Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00183_source.html">SSLCommon.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00187_source.html">SSLCommon.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a77fe184eb1e2f559b4ed1395cc015ab7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a77fe184eb1e2f559b4ed1395cc015ab7">recordType</a></td></tr>
-<tr class="separator:a77fe184eb1e2f559b4ed1395cc015ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a7e87ce16dec3662286d0a94686de6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ac3a7e87ce16dec3662286d0a94686de6">recordVersion</a></td></tr>
-<tr class="separator:ac3a7e87ce16dec3662286d0a94686de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0988dfc40b111270d4c447293218d1c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ad0988dfc40b111270d4c447293218d1c">length</a></td></tr>
-<tr class="separator:ad0988dfc40b111270d4c447293218d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188d68450805f01ee83f6660903fe2a3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a188d68450805f01ee83f6660903fe2a3">changeCipherSpec</a></td></tr>
+<tr class="separator:a188d68450805f01ee83f6660903fe2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The common part of all SSL/TLS messages </p>
+<div class="textblock"><p>SSL/TLS change-cipher-spec message structure </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad0988dfc40b111270d4c447293218d1c"></a>
+<a class="anchor" id="a188d68450805f01ee83f6660903fe2a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::ssl_tls_record_layer::length</td>
+          <td class="memname">uint8_t pcpp::ssl_tls_change_cipher_spec::changeCipherSpec</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Message (record) length in bytes </p>
-
-</div>
-</div>
-<a class="anchor" id="a77fe184eb1e2f559b4ed1395cc015ab7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::ssl_tls_record_layer::recordType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Message (record) type (one of <a class="el" href="a00191.html#a8009288902cf5a1c0be461f28e82ab3b">SSLRecordType</a>) </p>
-
-</div>
-</div>
-<a class="anchor" id="ac3a7e87ce16dec3662286d0a94686de6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::ssl_tls_record_layer::recordVersion</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Message (record) version (one of <a class="el" href="a00191.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a>) </p>
+<p>Unused byte </p>
 
 </div>
 </div>
@@ -172,8 +142,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00107.html">ssl_tls_record_layer</a></li>
-    <li class="footer">Generated on Thu Nov 24 2016 21:56:38 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00107.html">ssl_tls_change_cipher_spec</a></li>
+    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

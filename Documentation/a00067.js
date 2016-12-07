@@ -1,14 +1,10 @@
 var a00067 =
 [
-    [ "MacAddress", "a00067.html#a9b56a6c1bfa240b58548035db404bcbc", null ],
-    [ "MacAddress", "a00067.html#a73460f086b972df4e264d267adc2d92d", null ],
-    [ "MacAddress", "a00067.html#a257d6fd3d08de6766389f15423ca3e22", null ],
-    [ "MacAddress", "a00067.html#af9130892a0dcc4c931aac84d86e4f7cd", null ],
-    [ "MacAddress", "a00067.html#a51128dc96a7f443ba5e05e94dd169071", null ],
-    [ "copyTo", "a00067.html#abd24a366974f3bc8b2d78b65de07c926", null ],
-    [ "copyTo", "a00067.html#a36d261838f53468acdb7b46208c97dcf", null ],
-    [ "isValid", "a00067.html#afe46520073e14b9e02bb368627896f4a", null ],
-    [ "operator!=", "a00067.html#a6497d0796bb0d06997a1e399817ba078", null ],
-    [ "operator==", "a00067.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
-    [ "toString", "a00067.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
+    [ "LinkDuplex", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
+      [ "FULL_DUPLEX", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
+      [ "HALF_DUPLEX", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
+    ] ],
+    [ "linkDuplex", "a00067.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
+    [ "linkSpeedMbps", "a00067.html#a6177ed98446f18d57be88d8c2411a473", null ],
+    [ "linkUp", "a00067.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
 ];

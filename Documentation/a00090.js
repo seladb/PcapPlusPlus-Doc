@@ -1,7 +1,6 @@
 var a00090 =
 [
-    [ "PortRangeFilter", "a00090.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
-    [ "parseToString", "a00090.html#a267adc124537789fd02510b61e2b4905", null ],
-    [ "setFromPort", "a00090.html#ae68efea901b4af50277b64632bc91d19", null ],
-    [ "setToPort", "a00090.html#a568420221c6f509bcdb58c937d0c683d", null ]
+    [ "getPfRingDeviceByName", "a00090.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
+    [ "getPfRingDevicesList", "a00090.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
+    [ "getPfRingVersion", "a00090.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
 ];

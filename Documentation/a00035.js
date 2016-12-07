@@ -1,6 +1,6 @@
 var a00035 =
 [
-    [ "data", "a00035.html#ae817d79a4d209c620bdf074ddc2c5a52", null ],
-    [ "dataLength", "a00035.html#a4ed0221d15cb8465ae37cb8cc4311386", null ],
-    [ "header", "a00035.html#a294b798279892837efdf0e44ddf9d04b", null ]
+    [ "addressMask", "a00035.html#ac510d5502a105ee92b9a5718089a4aa4", null ],
+    [ "id", "a00035.html#a36c9a4edeb4b20a018f581a4bb8ca7a5", null ],
+    [ "sequence", "a00035.html#ab0a5755df7850387480f9fc150949ff5", null ]
 ];

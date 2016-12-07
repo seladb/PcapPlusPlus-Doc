@@ -1,7 +1,8 @@
 var a00112 =
 [
-    [ "SSLCertificateVerifyMessage", "a00112.html#a364e17c73fd7cbb9460d75029cace69e", null ],
-    [ "getSignedHash", "a00112.html#a15eac0196cce5604ad21e8b7cd70c372", null ],
-    [ "getSignedHashLength", "a00112.html#aa7a070cf7f91c37fb50e8976054a1ce4", null ],
-    [ "toString", "a00112.html#a0662a3136fca531a733055c1de84d0b7", null ]
+    [ "SSLApplicationDataLayer", "a00112.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
+    [ "computeCalculateFields", "a00112.html#a26b335b7dff7b46724894cad71ee56eb", null ],
+    [ "getEncrpytedData", "a00112.html#a5aee5cb13e0c078fb4c4e24c5fbac99e", null ],
+    [ "getEncrpytedDataLen", "a00112.html#ab078cc94b266ccb418e3047db02b6130", null ],
+    [ "toString", "a00112.html#a9676cb9040c57b7f4929c450d4e952f8", null ]
 ];

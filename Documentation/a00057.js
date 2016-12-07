@@ -1,15 +1,10 @@
 var a00057 =
 [
-    [ "IPv4Address", "a00057.html#a7eef864e1a372d665a27de6189901e1e", null ],
-    [ "IPv4Address", "a00057.html#a1ec2cd8425ee7d92b1f95cde69650df7", null ],
-    [ "IPv4Address", "a00057.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
-    [ "IPv4Address", "a00057.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
-    [ "IPv4Address", "a00057.html#a133598783690be861bd41452680b2290", null ],
-    [ "getType", "a00057.html#a17308b1152e801d0ed68ed0a63b6077f", null ],
-    [ "matchSubnet", "a00057.html#a5551eda249276e8676675e5d0184bb49", null ],
-    [ "operator!=", "a00057.html#a8160f16543866740b00e8350f617442e", null ],
-    [ "operator=", "a00057.html#a086c40b049355635699e3b3c18678fb6", null ],
-    [ "operator==", "a00057.html#ab244cc421284de22fdad9fc9a77a306f", null ],
-    [ "toInAddr", "a00057.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
-    [ "toInt", "a00057.html#afe150ecb366ca60577da2cc426ed2c97", null ]
+    [ "clearFilter", "a00057.html#aba28d535c6aa05e9f9492c82ece25de7", null ],
+    [ "close", "a00057.html#a5ce8877d4e047f11a3cb8d0f4f527e56", null ],
+    [ "getStatistics", "a00057.html#ace3640f2330899687e34aa3789f4cd05", null ],
+    [ "isOpened", "a00057.html#a22b03cdabb9f359c6bed0728c3614789", null ],
+    [ "open", "a00057.html#aa7d1358756653febf63d23b21447649c", null ],
+    [ "setFilter", "a00057.html#aadba6a20265dca6ba29b548325a798fe", null ],
+    [ "setFilter", "a00057.html#aa33400a37378ceb807228c43efbff47e", null ]
 ];

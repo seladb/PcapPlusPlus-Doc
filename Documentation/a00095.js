@@ -1,18 +1,10 @@
 var a00095 =
 [
-    [ "PPPoECode", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cb", [
-      [ "PPPOE_CODE_SESSION", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6", null ],
-      [ "PPPOE_CODE_PADO", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6", null ],
-      [ "PPPOE_CODE_PADI", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df", null ],
-      [ "PPPOE_CODE_PADG", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b", null ],
-      [ "PPPOE_CODE_PADC", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683", null ],
-      [ "PPPOE_CODE_PADQ", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab", null ],
-      [ "PPPOE_CODE_PADR", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157", null ],
-      [ "PPPOE_CODE_PADS", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232", null ],
-      [ "PPPOE_CODE_PADT", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52", null ],
-      [ "PPPOE_CODE_PADM", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3", null ],
-      [ "PPPOE_CODE_PADN", "a00095.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
-    ] ],
-    [ "computeCalculateFields", "a00095.html#aea130ab24ed851b7d2ffab48db145d16", null ],
-    [ "getPPPoEHeader", "a00095.html#ac6084aea472a3b84f5c60e2a7d77079d", null ]
+    [ "PPP_PPTPLayer", "a00095.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
+    [ "PPP_PPTPLayer", "a00095.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
+    [ "computeCalculateFields", "a00095.html#a989b126eecc1536b660d46dda3e5a795", null ],
+    [ "getHeaderLen", "a00095.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
+    [ "getPPP_PPTPHeader", "a00095.html#aa9707853653d941e1ae0a8727b281191", null ],
+    [ "parseNextLayer", "a00095.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
+    [ "toString", "a00095.html#a92c398562bc0be52b28dce752c669d70", null ]
 ];

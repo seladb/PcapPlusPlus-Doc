@@ -1,6 +1,5 @@
 var a00106 =
 [
-    [ "handshakeType", "a00106.html#a9a456a315b65d5e41587b83972471398", null ],
-    [ "length1", "a00106.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
-    [ "length2", "a00106.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
+    [ "alertDescription", "a00106.html#ac4c45f54bcc165e118945b4abd60c453", null ],
+    [ "alertLevel", "a00106.html#a0acc72153dcbe55e0f453461cd856346", null ]
 ];

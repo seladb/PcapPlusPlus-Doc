@@ -1,8 +1,8 @@
 var a00111 =
 [
-    [ "SSLCertificateRequestMessage", "a00111.html#ae85b37b12ff7e387b3d3513ec7170558", null ],
-    [ "getCertificateAuthorityData", "a00111.html#a3939ecbf00de57ea722e8cf5005c0717", null ],
-    [ "getCertificateAuthorityLength", "a00111.html#a68ce41ecc995e5b8bab7a333a72334b3", null ],
-    [ "getCertificateTypes", "a00111.html#a2d6091acdd00f6e43544890ccf951e2a", null ],
-    [ "toString", "a00111.html#ae1e7664638e7d2df1baa6e8e96a29c4f", null ]
+    [ "SSLAlertLayer", "a00111.html#aecf449f0c8f821ede816f33d6012b622", null ],
+    [ "computeCalculateFields", "a00111.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
+    [ "getAlertDescription", "a00111.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
+    [ "getAlertLevel", "a00111.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
+    [ "toString", "a00111.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
 ];

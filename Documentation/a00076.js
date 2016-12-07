@@ -1,8 +1,5 @@
 var a00076 =
 [
-    [ "PcapFileReaderDevice", "a00076.html#a7c578fa0c04a93de4a6dc54b845fae34", null ],
-    [ "~PcapFileReaderDevice", "a00076.html#aa6c4637873a1a830372449a81f048ab2", null ],
-    [ "getNextPacket", "a00076.html#afc4c2142b7787e6c191b0d2ab6822c07", null ],
-    [ "getStatistics", "a00076.html#a6c07f1cc3675dfa8ff7157d09be311c7", null ],
-    [ "open", "a00076.html#af9e798abe511b1ba8bd14360535753a1", null ]
+    [ "OrFilter", "a00076.html#acd0bc5b4a037e198510571ce5298b6a1", null ],
+    [ "parseToString", "a00076.html#a6552bb49fddc97e6e2f8ef0833c45b36", null ]
 ];

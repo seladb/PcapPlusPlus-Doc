@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::iphdr Struct Reference</title>
+<title>PcapPlusPlus: pcpp::IPAddress Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,183 +107,208 @@ $(document).ready(function(){initNavTree('a00056.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00252.html">List of all members</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00256.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::iphdr Struct Reference</div>  </div>
+<div class="title">pcpp::IPAddress Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00156_source.html">IPv4Layer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00158_source.html">IpAddress.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::IPAddress:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00056.png" usemap="#pcpp::IPAddress_map" alt=""/>
+  <map id="pcpp::IPAddress_map" name="pcpp::IPAddress_map">
+<area href="a00060.html" alt="pcpp::IPv4Address" shape="rect" coords="0,56,118,80"/>
+<area href="a00064.html" alt="pcpp::IPv6Address" shape="rect" coords="128,56,246,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aafb906cd9dd7be5a3443f5fe6c7dad09">internetHeaderLength</a>:4</td></tr>
-<tr class="separator:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7">ipVersion</a>:4</td></tr>
-<tr class="separator:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229d7a9444c63a92532cd17b16e9de70"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a229d7a9444c63a92532cd17b16e9de70">typeOfService</a></td></tr>
-<tr class="separator:a229d7a9444c63a92532cd17b16e9de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aab4d8ad9872f38be7fb53dd2ec45c63a">totalLength</a></td></tr>
-<tr class="separator:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d50037f1b02307d20dc8a113207dbce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9d50037f1b02307d20dc8a113207dbce">ipId</a></td></tr>
-<tr class="separator:a9d50037f1b02307d20dc8a113207dbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9b98fc149f9d262fbdfe2e4f92595c24">fragmentOffset</a></td></tr>
-<tr class="separator:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa374efc60c926ef18055a84bdbe55bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aaa374efc60c926ef18055a84bdbe55bc">timeToLive</a></td></tr>
-<tr class="separator:aaa374efc60c926ef18055a84bdbe55bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9600c9b8e380ba5468763cdf648d043c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9600c9b8e380ba5468763cdf648d043c">protocol</a></td></tr>
-<tr class="separator:a9600c9b8e380ba5468763cdf648d043c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724ead037aaf6310e5b9ebceba77f922"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a724ead037aaf6310e5b9ebceba77f922">headerChecksum</a></td></tr>
-<tr class="separator:a724ead037aaf6310e5b9ebceba77f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da8d9dc60a51c873500c175f6c65c52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a7da8d9dc60a51c873500c175f6c65c52">ipSrc</a></td></tr>
-<tr class="separator:a7da8d9dc60a51c873500c175f6c65c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2722895dc1ed669dd9b241fc472a284f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a2722895dc1ed669dd9b241fc472a284f">ipDst</a></td></tr>
-<tr class="separator:a2722895dc1ed669dd9b241fc472a284f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac389e5507d75b60d2b0ca939db195231"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> { <a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">IPv4AddressType</a>, 
+<a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">IPv6AddressType</a>
+ }</td></tr>
+<tr class="separator:ac389e5507d75b60d2b0ca939db195231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a85a3e43774848c93585f97bdef6ec73d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a85a3e43774848c93585f97bdef6ec73d">getType</a> () const =0</td></tr>
+<tr class="separator:a85a3e43774848c93585f97bdef6ec73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39eeb2c3b4ec235f8c938ec1b77fe2ac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">toString</a> () const </td></tr>
+<tr class="separator:a39eeb2c3b4ec235f8c938ec1b77fe2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6b031d025c3ef287584a605b64d750"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a2d6b031d025c3ef287584a605b64d750">isValid</a> ()</td></tr>
+<tr class="separator:a2d6b031d025c3ef287584a605b64d750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:adda7dc3cc9ea734a41af60ac51832c17"><td class="memItemLeft" align="right" valign="top">static std::auto_ptr&lt; <a class="el" href="a00056.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#adda7dc3cc9ea734a41af60ac51832c17">fromString</a> (char *addressAsString)</td></tr>
+<tr class="separator:adda7dc3cc9ea734a41af60ac51832c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc45526e3c3845c403a29185c941ac2"><td class="memItemLeft" align="right" valign="top">static std::auto_ptr&lt; <a class="el" href="a00056.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a0dc45526e3c3845c403a29185c941ac2">fromString</a> (std::string addressAsString)</td></tr>
+<tr class="separator:a0dc45526e3c3845c403a29185c941ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an IPv4 protocol header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9b98fc149f9d262fbdfe2e4f92595c24"></a>
+<div class="textblock"><p>Base class for <a class="el" href="a00060.html">IPv4Address</a> and <a class="el" href="a00064.html">IPv6Address</a>. It's an abstract class and cannot be used as is. The only useful method in this class are the 2 static methods that constructs an IP address class from string </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ac389e5507d75b60d2b0ca939db195231"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::iphdr::fragmentOffset</td>
+          <td class="memname">enum <a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231">pcpp::IPAddress::AddressType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fragment offset field, measured in units of eight-byte blocks (64 bits) </p>
+<p>An enum representing the address type: IPv4 or IPv6 </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383"></a>IPv4AddressType&#160;</td><td class="fielddoc">
+<p>IPv4 address type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838"></a>IPv6AddressType&#160;</td><td class="fielddoc">
+<p>IPv6 address type </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a class="anchor" id="a724ead037aaf6310e5b9ebceba77f922"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adda7dc3cc9ea734a41af60ac51832c17"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::iphdr::headerChecksum</td>
+          <td class="memname">static std::auto_ptr&lt;<a class="el" href="a00056.html">IPAddress</a>&gt; pcpp::IPAddress::fromString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Error-checking of the header </p>
+<p>Constructs an IP address of type IPv4 or IPv6 from a string (char*) representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in string (char*) representation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00060.html">IPv4Address</a> or <a class="el" href="a00064.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aafb906cd9dd7be5a3443f5fe6c7dad09"></a>
+<a class="anchor" id="a0dc45526e3c3845c403a29185c941ac2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::iphdr::internetHeaderLength</td>
+          <td class="memname">static std::auto_ptr&lt;<a class="el" href="a00056.html">IPAddress</a>&gt; pcpp::IPAddress::fromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>IP header length, has the value of 5 for IPv4 </p>
+<p>Constructs an IP address of type IPv4 or IPv6 from a std::string representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in std::string representation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00060.html">IPv4Address</a> or <a class="el" href="a00064.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a2722895dc1ed669dd9b241fc472a284f"></a>
+<a class="anchor" id="a85a3e43774848c93585f97bdef6ec73d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pcpp::iphdr::ipDst</td>
+          <td class="memname">virtual <a class="el" href="a00056.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> pcpp::IPAddress::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>IPv4 address of the receiver of the packet </p>
+<p>Gets the address type: IPv4 or IPv6 </p><dl class="section return"><dt>Returns</dt><dd>The address type </dd></dl>
+
+<p>Implemented in <a class="el" href="a00064.html#a2a899e36131b3ac54d94de99e6e67f2b">pcpp::IPv6Address</a>, and <a class="el" href="a00060.html#a17308b1152e801d0ed68ed0a63b6077f">pcpp::IPv4Address</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9d50037f1b02307d20dc8a113207dbce"></a>
+<a class="anchor" id="a2d6b031d025c3ef287584a605b64d750"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::iphdr::ipId</td>
+          <td class="memname">bool pcpp::IPAddress::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Identification field. Primarily used for uniquely identifying the group of fragments of a single IP datagram </p>
+<p>Get an indication if the address is valid. An address can be invalid if it was constructed from illegal input, for example: An IPv4 address that was constructed form the string "999.999.999.999" </p><dl class="section return"><dt>Returns</dt><dd>True if the address is valid, false otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a7da8d9dc60a51c873500c175f6c65c52"></a>
+<a class="anchor" id="a39eeb2c3b4ec235f8c938ec1b77fe2ac"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pcpp::iphdr::ipSrc</td>
+          <td class="memname">std::string pcpp::IPAddress::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>IPv4 address of the sender of the packet </p>
-
-</div>
-</div>
-<a class="anchor" id="a74b5c1fbf03d4ebbd3d6ea2d263237b7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::ipVersion</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP version number, has the value of 4 for IPv4 </p>
-
-</div>
-</div>
-<a class="anchor" id="a9600c9b8e380ba5468763cdf648d043c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::protocol</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Defines the protocol used in the data portion of the IP datagram. Must be one of <a class="el" href="a00191.html#ace8e2e21b82a8adc602f561e1e612fb0">IPProtocolTypes</a> </p>
-
-</div>
-</div>
-<a class="anchor" id="aaa374efc60c926ef18055a84bdbe55bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::timeToLive</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An eight-bit time to live field helps prevent datagrams from persisting (e.g. going in circles) on an internet. In practice, the field has become a hop count </p>
-
-</div>
-</div>
-<a class="anchor" id="aab4d8ad9872f38be7fb53dd2ec45c63a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::iphdr::totalLength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Entire packet (fragment) size, including header and data, in bytes </p>
-
-</div>
-</div>
-<a class="anchor" id="a229d7a9444c63a92532cd17b16e9de70"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::typeOfService</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>type of service, same as Differentiated Services Code Point (DSCP) </p>
+<p>Returns a std::string representation of the address </p><dl class="section return"><dt>Returns</dt><dd>A string representation of the address </dd></dl>
 
 </div>
 </div>
@@ -292,8 +317,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00191.html">pcpp</a></li><li class="navelem"><a class="el" href="a00056.html">iphdr</a></li>
-    <li class="footer">Generated on Thu Nov 24 2016 21:56:37 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00056.html">IPAddress</a></li>
+    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

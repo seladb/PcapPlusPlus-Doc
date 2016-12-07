@@ -1,10 +1,8 @@
 var a00024 =
 [
-    [ "HttpField", "a00024.html#a08df39066de069298eb2a80f6a49c01b", null ],
-    [ "HttpField", "a00024.html#a5d3761e5fa3c8d112472da6ed049e2d3", null ],
-    [ "getFieldName", "a00024.html#a2700f60a7d0439f7789a9a21b0348995", null ],
-    [ "getFieldSize", "a00024.html#ae988939aa0a937b0eee453415a900720", null ],
-    [ "getFieldValue", "a00024.html#a3b626dcc80b1bb91d42f237c9af2e40b", null ],
-    [ "isEndOfHeader", "a00024.html#a86e4239415b6859db6d9dabe77d3c43f", null ],
-    [ "setFieldValue", "a00024.html#a2e564c6a2888b094a05b626b90686710", null ]
+    [ "getHeaderLen", "a00024.html#ac7018c5b2696e7b24e4e0436b4322633", null ],
+    [ "getSequenceNumber", "a00024.html#ae57d3a2ea180cc02f7e388857dd045eb", null ],
+    [ "parseNextLayer", "a00024.html#ac00bc357027ecb088b5546f860b7a27b", null ],
+    [ "setSequenceNumber", "a00024.html#ad37a993ffd8f97f5d59925d7c1c19205", null ],
+    [ "unsetSequenceNumber", "a00024.html#a2557f69597006f086a09ba54a80a5ea7", null ]
 ];

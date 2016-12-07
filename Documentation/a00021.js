@@ -1,8 +1,5 @@
 var a00021 =
 [
-    [ "getHeaderLen", "a00021.html#ac7018c5b2696e7b24e4e0436b4322633", null ],
-    [ "getSequenceNumber", "a00021.html#ae57d3a2ea180cc02f7e388857dd045eb", null ],
-    [ "parseNextLayer", "a00021.html#ac00bc357027ecb088b5546f860b7a27b", null ],
-    [ "setSequenceNumber", "a00021.html#ad37a993ffd8f97f5d59925d7c1c19205", null ],
-    [ "unsetSequenceNumber", "a00021.html#a2557f69597006f086a09ba54a80a5ea7", null ]
+    [ "~GeneralFilter", "a00021.html#aba731757009c1ce8db973aa334634765", null ],
+    [ "parseToString", "a00021.html#ae38fb802a74a1d9b7d7025b1b5cb83e5", null ]
 ];

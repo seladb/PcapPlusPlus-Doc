@@ -1,6 +1,5 @@
 var a00131 =
 [
-    [ "operator==", "a00131.html#aa757ff97d3c182eb1f3852bd2be4d836", null ],
-    [ "Id", "a00131.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
-    [ "Mask", "a00131.html#aa76587497e2faa7f7354ca8444a9450b", null ]
+    [ "SSLServerNameIndicationExtension", "a00131.html#af05391f55be98d6aa8b5192c6a170e60", null ],
+    [ "getHostName", "a00131.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
 ];

@@ -1,5 +1,6 @@
 var a00071 =
 [
-    [ "getIPv4Address", "a00071.html#a812b40c3fd9ccfd3065c698010876c13", null ],
-    [ "getMacAddress", "a00071.html#a25604394245462fc413cadb5ede6740b", null ]
+    [ "MacAddressFilter", "a00071.html#ab652b758a699a376248c46908465d7fc", null ],
+    [ "parseToString", "a00071.html#ac94ba464b2cd6d936b87811a120f73df", null ],
+    [ "setMacAddress", "a00071.html#a960adffd3e6bb7e83b85bce6baccddf3", null ]
 ];

@@ -1,7 +1,7 @@
 var a00119 =
 [
-    [ "SSLFinishedMessage", "a00119.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
-    [ "getSignedHash", "a00119.html#afae04041b9e28633f6a2b15807307791", null ],
-    [ "getSignedHashLength", "a00119.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
-    [ "toString", "a00119.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
+    [ "SSLClientKeyExchangeMessage", "a00119.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
+    [ "getClientKeyExchangeParams", "a00119.html#a23584b393dea97a6d249c750b99f4c5f", null ],
+    [ "getClientKeyExchangeParamsLength", "a00119.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
+    [ "toString", "a00119.html#ada71ea045d9dbfd57484a156a108c00b", null ]
 ];

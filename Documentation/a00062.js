@@ -1,13 +1,20 @@
 var a00062 =
 [
-    [ "IPv6Layer", "a00062.html#ad2545ecbcd8e42b449366237745f0774", null ],
-    [ "IPv6Layer", "a00062.html#a959b6e8d2698d12418b301e15fbbf446", null ],
-    [ "IPv6Layer", "a00062.html#a16dddacbec4de2d1905cedbebc663400", null ],
-    [ "computeCalculateFields", "a00062.html#aaba2a45fa6e2cc43edab9a548773faf1", null ],
-    [ "getDstIpAddress", "a00062.html#a436faafdf30e810e3a8d96e74f256c74", null ],
-    [ "getHeaderLen", "a00062.html#acee75c2ab7ef3112b58ebe3c73a1c4ce", null ],
-    [ "getIPv6Header", "a00062.html#acacfbacbed97b015fb54326f914e3bae", null ],
-    [ "getSrcIpAddress", "a00062.html#a8080e3a1ef1cd7fe81cd36033bbc52df", null ],
-    [ "parseNextLayer", "a00062.html#a494abc8a7bfc1a520c86e61fee3a2f46", null ],
-    [ "toString", "a00062.html#af2abd76cb9650332abde50e5040aed1d", null ]
+    [ "IPv4Layer", "a00062.html#a4f0053a3866503b87803140b5ea2b8fe", null ],
+    [ "IPv4Layer", "a00062.html#a0e84eff3c7ac732a1a934ee507fdb2ce", null ],
+    [ "IPv4Layer", "a00062.html#a4adc5b7767e069f468a70f63a798088b", null ],
+    [ "computeCalculateFields", "a00062.html#a9c38910febddbfb9c7bfc75dbe79db03", null ],
+    [ "getDstIpAddress", "a00062.html#aab76c05ad561b9e5e972304d7133b553", null ],
+    [ "getFragmentFlags", "a00062.html#aa229d54f2b7d4e36bdc933eb403dc93e", null ],
+    [ "getFragmentOffset", "a00062.html#a92e987742cfff29e77301614bc83e2a9", null ],
+    [ "getHeaderLen", "a00062.html#a9766c4a1ddafd7b710a8a66d54092c50", null ],
+    [ "getIPv4Header", "a00062.html#a71529ce3ada4376096ab322447576d10", null ],
+    [ "getSrcIpAddress", "a00062.html#a5b99c00dd6a8bf7603be7ddfb4989c4c", null ],
+    [ "isFirstFragment", "a00062.html#af305f9dfe6d714aaff3144dc29b2b723", null ],
+    [ "isFragment", "a00062.html#a83b019f924b8eaab625ff3206d2f85e3", null ],
+    [ "isLastFragment", "a00062.html#ad0768083f4257013d21ac21c5493f339", null ],
+    [ "parseNextLayer", "a00062.html#a0862e0c98bed9b90d8115f8af9287ac2", null ],
+    [ "setDstIpAddress", "a00062.html#aea29d148475ef75477cc03ea1ae3d553", null ],
+    [ "setSrcIpAddress", "a00062.html#af665bf79bbceb52374a24eeb4e766bf4", null ],
+    [ "toString", "a00062.html#ae36ba08fd6e60a4d5ee4920cdfe8aa35", null ]
 ];

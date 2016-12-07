@@ -1,10 +1,10 @@
 var a00120 =
 [
-    [ "SSLHandshakeLayer", "a00120.html#a0b37d33d8342f166a5a1746820aa0c0b", null ],
-    [ "computeCalculateFields", "a00120.html#ab9db43d75aec58260e33cbce36f969bb", null ],
-    [ "getHandshakeMessageAt", "a00120.html#ac8d1ae87429f17ad41ca8aa4b4231fa8", null ],
-    [ "getHandshakeMessageOfType", "a00120.html#a4a40a448fd7234eb08c95b5032e64974", null ],
-    [ "getHandshakeMessagesCount", "a00120.html#a9f7c42970ded74d0fee34103e51f7632", null ],
-    [ "getNextHandshakeMessageOfType", "a00120.html#ac1659f58a8e3ed9ed506df80d91c7dbb", null ],
-    [ "toString", "a00120.html#a33923287a108f28edc654c5120cf6158", null ]
+    [ "SSLExtensionStruct", "a00121.html", "a00121" ],
+    [ "SSLExtension", "a00120.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "getData", "a00120.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
+    [ "getLength", "a00120.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
+    [ "getTotalLength", "a00120.html#a84c6e634a3738b65cb9b7210124abca5", null ],
+    [ "getType", "a00120.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
+    [ "getTypeAsInt", "a00120.html#a1be433ad3fff137428f270e6f30f09c7", null ]
 ];
