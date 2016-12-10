@@ -1,5 +1,7 @@
 var a00128 =
 [
-    [ "SSLServerHelloDoneMessage", "a00128.html#adb628733460d6f41737538e79b618dac", null ],
-    [ "toString", "a00128.html#a49ea62c89cad07b2c04d4184edb4989d", null ]
+    [ "SSLNewSessionTicketMessage", "a00128.html#a55d2fff5ceb20ca419344ced210606a4", null ],
+    [ "getSessionTicketData", "a00128.html#a1d30391db4fdab5edae186d9355ad95d", null ],
+    [ "getSessionTicketDataLength", "a00128.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
+    [ "toString", "a00128.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
 ];

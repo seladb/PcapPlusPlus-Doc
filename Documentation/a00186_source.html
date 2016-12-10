@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SllLayer.h Source File</title>
+<title>PcapPlusPlus: ProtocolType.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,87 +105,110 @@ $(document).ready(function(){initNavTree('a00186_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SllLayer.h</div>  </div>
+<div class="title">ProtocolType.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00186.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_SLL_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_SLL_LAYER</span></div>
+<a href="a00186.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PROTOCOL_TYPES</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PROTOCOL_TYPES</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00165.html">MacAddress.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00162.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00195.html">pcpp</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00104.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00104.html">sll_header</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00104.html#a915dd77d81fbf0e815fc8e7e268582b8">   27</a></span>&#160;        uint16_t <a class="code" href="a00104.html#a915dd77d81fbf0e815fc8e7e268582b8">packet_type</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00104.html#a8f8dbb002e720ec7700bc617d2429ab2">   29</a></span>&#160;        uint16_t <a class="code" href="a00104.html#a8f8dbb002e720ec7700bc617d2429ab2">ARPHRD_type</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00104.html#ac253e0a098c39f46d192619ed5d229bf">   31</a></span>&#160;        uint16_t <a class="code" href="a00104.html#ac253e0a098c39f46d192619ed5d229bf">link_layer_addr_len</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00104.html#afbec8e24ed690d8765fdd5ebeff649cd">   35</a></span>&#160;        uint8_t <a class="code" href="a00104.html#afbec8e24ed690d8765fdd5ebeff649cd">link_layer_addr</a>[8];</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00104.html#a133d6e18091bafa51d1a4558a9f6bda9">   37</a></span>&#160;        uint16_t <a class="code" href="a00104.html#a133d6e18091bafa51d1a4558a9f6bda9">protocol_type</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00105.html">   45</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00105.html">SllLayer</a> : <span class="keyword">public</span> <a class="code" href="a00066.html">Layer</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00105.html#af684b2025e641ddebc35fb62055a5cb8">   54</a></span>&#160;        <a class="code" href="a00105.html#af684b2025e641ddebc35fb62055a5cb8">SllLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00077.html">Packet</a>* packet) : <a class="code" href="a00066.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00195.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">SLL</a>; }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="a00105.html#af684b2025e641ddebc35fb62055a5cb8">SllLayer</a>(uint16_t packetType, uint16_t ARPHRDType);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00197.html">pcpp</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eb">   16</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">   21</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">Unknown</a> = 0x00,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">   26</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">Ethernet</a> = 0x01,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">   31</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">IPv4</a> = 0x02,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">   36</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">IPv6</a> = 0x04,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">   41</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">IP</a> = 0x06,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">   46</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">TCP</a> = 0x08,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">   51</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">UDP</a> = 0x10,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">   56</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">HTTPRequest</a> = 0x20,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">   61</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">HTTPResponse</a> = 0x40,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ~<a class="code" href="a00105.html">SllLayer</a>() {}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00105.html#a69226013847c3e90af712f731ae3272e">   69</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00104.html">sll_header</a>* <a class="code" href="a00105.html#a69226013847c3e90af712f731ae3272e">getSllHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00104.html">sll_header</a>*)m_Data; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00105.html#a78053b4433c4378a004eda79cbb29d46">setLinkLayerAddr</a>(uint8_t* addr, <span class="keywordtype">size_t</span> addrLength);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00105.html#aae8f13d547c763ec186679f72e597766">setMacAddressAsLinkLayer</a>(<a class="code" href="a00070.html">MacAddress</a> macAddr);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00105.html#a77739a7d98720c05eab96a09ce54f12d">parseNextLayer</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">   66</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">HTTP</a> = 0x20 | 0x40,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">   71</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">ARP</a> = 0x80,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">   76</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">VLAN</a> = 0x100,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">   81</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">ICMP</a> = 0x200,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">   86</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">PPPoESession</a> = 0x400,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">   91</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">PPPoEDiscovery</a> = 0x800,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00105.html#ac71b262a4181ef0cc659c902251e6790">   96</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00105.html#ac71b262a4181ef0cc659c902251e6790">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00104.html">sll_header</a>); }</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">   96</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">PPPoE</a> = 0x400 | 0x800,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00105.html#a2964574f2bc958b94d7474778f691e62">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">  101</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">DNS</a> = 0x1000,</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::string <a class="code" href="a00105.html#a7cfa1a15bfd60e2b88ad86123d818a5c">toString</a>();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    };</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">  106</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">MPLS</a> = 0x2000,</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_SLL_LAYER */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="ttc" id="a00105_html_a69226013847c3e90af712f731ae3272e"><div class="ttname"><a href="a00105.html#a69226013847c3e90af712f731ae3272e">pcpp::SllLayer::getSllHeader</a></div><div class="ttdeci">sll_header * getSllHeader()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:69</div></div>
-<div class="ttc" id="a00104_html_ac253e0a098c39f46d192619ed5d229bf"><div class="ttname"><a href="a00104.html#ac253e0a098c39f46d192619ed5d229bf">pcpp::sll_header::link_layer_addr_len</a></div><div class="ttdeci">uint16_t link_layer_addr_len</div><div class="ttdef"><b>Definition:</b> SllLayer.h:31</div></div>
-<div class="ttc" id="a00104_html_a915dd77d81fbf0e815fc8e7e268582b8"><div class="ttname"><a href="a00104.html#a915dd77d81fbf0e815fc8e7e268582b8">pcpp::sll_header::packet_type</a></div><div class="ttdeci">uint16_t packet_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:27</div></div>
-<div class="ttc" id="a00105_html_aae8f13d547c763ec186679f72e597766"><div class="ttname"><a href="a00105.html#aae8f13d547c763ec186679f72e597766">pcpp::SllLayer::setMacAddressAsLinkLayer</a></div><div class="ttdeci">bool setMacAddressAsLinkLayer(MacAddress macAddr)</div></div>
-<div class="ttc" id="a00105_html_a78053b4433c4378a004eda79cbb29d46"><div class="ttname"><a href="a00105.html#a78053b4433c4378a004eda79cbb29d46">pcpp::SllLayer::setLinkLayerAddr</a></div><div class="ttdeci">bool setLinkLayerAddr(uint8_t *addr, size_t addrLength)</div></div>
-<div class="ttc" id="a00104_html_a8f8dbb002e720ec7700bc617d2429ab2"><div class="ttname"><a href="a00104.html#a8f8dbb002e720ec7700bc617d2429ab2">pcpp::sll_header::ARPHRD_type</a></div><div class="ttdeci">uint16_t ARPHRD_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:29</div></div>
-<div class="ttc" id="a00162_html"><div class="ttname"><a href="a00162.html">Layer.h</a></div></div>
-<div class="ttc" id="a00105_html_af684b2025e641ddebc35fb62055a5cb8"><div class="ttname"><a href="a00105.html#af684b2025e641ddebc35fb62055a5cb8">pcpp::SllLayer::SllLayer</a></div><div class="ttdeci">SllLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> SllLayer.h:54</div></div>
-<div class="ttc" id="a00070_html"><div class="ttname"><a href="a00070.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
-<div class="ttc" id="a00195_html_a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744"><div class="ttname"><a href="a00195.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:136</div></div>
-<div class="ttc" id="a00195_html"><div class="ttname"><a href="a00195.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00105_html"><div class="ttname"><a href="a00105.html">pcpp::SllLayer</a></div><div class="ttdef"><b>Definition:</b> SllLayer.h:45</div></div>
-<div class="ttc" id="a00105_html_a2964574f2bc958b94d7474778f691e62"><div class="ttname"><a href="a00105.html#a2964574f2bc958b94d7474778f691e62">pcpp::SllLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00104_html_afbec8e24ed690d8765fdd5ebeff649cd"><div class="ttname"><a href="a00104.html#afbec8e24ed690d8765fdd5ebeff649cd">pcpp::sll_header::link_layer_addr</a></div><div class="ttdeci">uint8_t link_layer_addr[8]</div><div class="ttdef"><b>Definition:</b> SllLayer.h:35</div></div>
-<div class="ttc" id="a00066_html"><div class="ttname"><a href="a00066.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00105_html_a7cfa1a15bfd60e2b88ad86123d818a5c"><div class="ttname"><a href="a00105.html#a7cfa1a15bfd60e2b88ad86123d818a5c">pcpp::SllLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00104_html_a133d6e18091bafa51d1a4558a9f6bda9"><div class="ttname"><a href="a00104.html#a133d6e18091bafa51d1a4558a9f6bda9">pcpp::sll_header::protocol_type</a></div><div class="ttdeci">uint16_t protocol_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:37</div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00165_html"><div class="ttname"><a href="a00165.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::sll_header</a></div><div class="ttdef"><b>Definition:</b> SllLayer.h:21</div></div>
-<div class="ttc" id="a00105_html_ac71b262a4181ef0cc659c902251e6790"><div class="ttname"><a href="a00105.html#ac71b262a4181ef0cc659c902251e6790">pcpp::SllLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:96</div></div>
-<div class="ttc" id="a00105_html_a77739a7d98720c05eab96a09ce54f12d"><div class="ttname"><a href="a00105.html#a77739a7d98720c05eab96a09ce54f12d">pcpp::SllLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">  111</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">GREv0</a> = 0x4000,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">  116</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">GREv1</a> = 0x8000,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">  121</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">GRE</a> = 0x4000 | 0x8000,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">  126</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">PPP_PPTP</a> = 0x10000,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">  131</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">SSL</a> = 0x20000,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">  136</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">SLL</a> = 0x40000,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">  141</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">DHCP</a> = 0x80000,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">  146</a></span>&#160;        <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a> = 0x100000</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    };</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;} <span class="comment">//namespace pcpp</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">pcpp::HTTPRequest</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:56</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:36</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">pcpp::GRE</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:121</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:51</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">pcpp::ICMP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:81</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:76</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">pcpp::IP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:41</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">pcpp::GREv1</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:116</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">pcpp::PPP_PPTP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:126</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">pcpp::TCP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:46</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">pcpp::SSL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:131</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">pcpp::PPPoESession</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:86</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">pcpp::ARP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:71</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:106</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">pcpp::PPPoEDiscovery</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:91</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:146</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">pcpp::HTTPResponse</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:61</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">pcpp::DNS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:101</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">pcpp::HTTP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:66</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:26</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:16</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:136</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">pcpp::PPPoE</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:96</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:31</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">pcpp::DHCP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:141</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">pcpp::Unknown</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:21</div></div>
+<div class="ttc" id="a00197_html"><div class="ttname"><a href="a00197.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">pcpp::GREv0</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:111</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00186.html">SllLayer.h</a></li>
-    <li class="footer">Generated on Thu Dec 8 2016 00:39:25 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00186.html">ProtocolType.h</a></li>
+    <li class="footer">Generated on Sat Dec 10 2016 23:11:03 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

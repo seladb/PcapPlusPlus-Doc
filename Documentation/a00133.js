@@ -1,7 +1,7 @@
 var a00133 =
 [
-    [ "SSLx509Certificate", "a00133.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
-    [ "allDataExists", "a00133.html#ae4182828228a1e402626560090d3cdb6", null ],
-    [ "getData", "a00133.html#a4d9c58672e41a057dc53d4923af3992f", null ],
-    [ "getDataLength", "a00133.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
+    [ "SSLUnknownMessage", "a00133.html#a7dc53bdee48e90df1b6a3c553dfb245b", null ],
+    [ "getHandshakeType", "a00133.html#a84538f3ce34865d7c6956a6c239ffa37", null ],
+    [ "getMessageLength", "a00133.html#ae3fa59951f9a9036a14120451f70d046", null ],
+    [ "toString", "a00133.html#aab56dd7d4e29722be66481e2b5bbc139", null ]
 ];

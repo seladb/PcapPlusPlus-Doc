@@ -1,7 +1,6 @@
 var a00122 =
 [
-    [ "SSLFinishedMessage", "a00122.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
-    [ "getSignedHash", "a00122.html#afae04041b9e28633f6a2b15807307791", null ],
-    [ "getSignedHashLength", "a00122.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
-    [ "toString", "a00122.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
+    [ "extensionData", "a00122.html#a058c404f39c4b185647f5fc6cade65d4", null ],
+    [ "extensionDataLength", "a00122.html#af116e93a2decd3c986ae109b16c12b28", null ],
+    [ "extensionType", "a00122.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
 ];

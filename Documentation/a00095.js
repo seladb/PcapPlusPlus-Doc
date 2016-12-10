@@ -1,10 +1,6 @@
 var a00095 =
 [
-    [ "PPP_PPTPLayer", "a00095.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
-    [ "PPP_PPTPLayer", "a00095.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
-    [ "computeCalculateFields", "a00095.html#a989b126eecc1536b660d46dda3e5a795", null ],
-    [ "getHeaderLen", "a00095.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
-    [ "getPPP_PPTPHeader", "a00095.html#aa9707853653d941e1ae0a8727b281191", null ],
-    [ "parseNextLayer", "a00095.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
-    [ "toString", "a00095.html#a92c398562bc0be52b28dce752c669d70", null ]
+    [ "address", "a00095.html#ab0d4dbeb685845400c93be1636b9b2fb", null ],
+    [ "control", "a00095.html#ae925aba063d9662de4efe5151c128372", null ],
+    [ "protocol", "a00095.html#a9e49420e46bdc801452f9c30ef5b8659", null ]
 ];

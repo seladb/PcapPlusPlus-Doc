@@ -1,6 +1,7 @@
 var a00134 =
 [
-    [ "operator==", "a00134.html#aa757ff97d3c182eb1f3852bd2be4d836", null ],
-    [ "Id", "a00134.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
-    [ "Mask", "a00134.html#aa76587497e2faa7f7354ca8444a9450b", null ]
+    [ "SSLx509Certificate", "a00134.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
+    [ "allDataExists", "a00134.html#ae4182828228a1e402626560090d3cdb6", null ],
+    [ "getData", "a00134.html#a4d9c58672e41a057dc53d4923af3992f", null ],
+    [ "getDataLength", "a00134.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
 ];

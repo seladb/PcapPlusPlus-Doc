@@ -7,13 +7,14 @@ var searchData=
   ['_7eifilewriterdevice',['~IFileWriterDevice',['../a00052.html#ad1efdc8f258b6981d0429c61992f2e13',1,'pcpp::IFileWriterDevice']]],
   ['_7elayer',['~Layer',['../a00066.html#a9d02400f5421309786e1ea6c031c8d19',1,'pcpp::Layer']]],
   ['_7embufrawpacket',['~MBufRawPacket',['../a00072.html#a696d9e42af3f7b8ea296e4137a019a13',1,'pcpp::MBufRawPacket']]],
-  ['_7epacket',['~Packet',['../a00077.html#a54ccf8336cf3c3f6a5ad58ad12f06656',1,'pcpp::Packet']]],
-  ['_7epcapfilereaderdevice',['~PcapFileReaderDevice',['../a00079.html#aa6c4637873a1a830372449a81f048ab2',1,'pcpp::PcapFileReaderDevice']]],
-  ['_7epcapfilewriterdevice',['~PcapFileWriterDevice',['../a00080.html#ac3aa347668d24475e9f750fcb5959d93',1,'pcpp::PcapFileWriterDevice']]],
-  ['_7epcaplivedevice',['~PcapLiveDevice',['../a00081.html#a0172bbe45fb66f4722bf2bd4847c91fe',1,'pcpp::PcapLiveDevice']]],
-  ['_7epcapngfilereaderdevice',['~PcapNgFileReaderDevice',['../a00083.html#a3fdac9f71c23e6c973f6bb119d1ce75d',1,'pcpp::PcapNgFileReaderDevice']]],
-  ['_7epcapngfilewriterdevice',['~PcapNgFileWriterDevice',['../a00084.html#a93312aab61a193df522f8046af6d291e',1,'pcpp::PcapNgFileWriterDevice']]],
-  ['_7epfringdevice',['~PfRingDevice',['../a00089.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
-  ['_7epointervector',['~PointerVector',['../a00091.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
-  ['_7erawpacket',['~RawPacket',['../a00102.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]]
+  ['_7enullloopbacklayer',['~NullLoopbackLayer',['../a00076.html#af2da77d44b862d1f7e1b809ea6db35b4',1,'pcpp::NullLoopbackLayer']]],
+  ['_7epacket',['~Packet',['../a00078.html#a54ccf8336cf3c3f6a5ad58ad12f06656',1,'pcpp::Packet']]],
+  ['_7epcapfilereaderdevice',['~PcapFileReaderDevice',['../a00080.html#aa6c4637873a1a830372449a81f048ab2',1,'pcpp::PcapFileReaderDevice']]],
+  ['_7epcapfilewriterdevice',['~PcapFileWriterDevice',['../a00081.html#ac3aa347668d24475e9f750fcb5959d93',1,'pcpp::PcapFileWriterDevice']]],
+  ['_7epcaplivedevice',['~PcapLiveDevice',['../a00082.html#a0172bbe45fb66f4722bf2bd4847c91fe',1,'pcpp::PcapLiveDevice']]],
+  ['_7epcapngfilereaderdevice',['~PcapNgFileReaderDevice',['../a00084.html#a3fdac9f71c23e6c973f6bb119d1ce75d',1,'pcpp::PcapNgFileReaderDevice']]],
+  ['_7epcapngfilewriterdevice',['~PcapNgFileWriterDevice',['../a00085.html#a93312aab61a193df522f8046af6d291e',1,'pcpp::PcapNgFileWriterDevice']]],
+  ['_7epfringdevice',['~PfRingDevice',['../a00090.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
+  ['_7epointervector',['~PointerVector',['../a00092.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
+  ['_7erawpacket',['~RawPacket',['../a00103.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]]
 ];

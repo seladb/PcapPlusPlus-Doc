@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: WinPcapLiveDevice.h Source File</title>
+<title>PcapPlusPlus: UdpLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,76 +105,78 @@ $(document).ready(function(){initNavTree('a00194_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">WinPcapLiveDevice.h</div>  </div>
+<div class="title">UdpLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00194.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPP_WINPCAP_LIVE_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPP_WINPCAP_LIVE_DEVICE</span></div>
+<a href="a00194.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_UDP_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_UDP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00163.html">Layer.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00175.html">PcapLiveDevice.h</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00195.html">pcpp</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00147.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00147.html">WinPcapLiveDevice</a> : <span class="keyword">public</span> <a class="code" href="a00081.html">PcapLiveDevice</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00082.html">PcapLiveDeviceList</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> m_MinAmountOfDataToCopyFromKernelToApplication;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// c&#39;tor is not public, there should be only one for every interface (created by PcapLiveDeviceList)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00147.html">WinPcapLiveDevice</a>(pcap_if_t* iface, <span class="keywordtype">bool</span> calculateMTU, <span class="keywordtype">bool</span> calculateMacAddress, <span class="keywordtype">bool</span> calculateDefaultGateway);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// copy c&#39;tor is not public</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="a00147.html">WinPcapLiveDevice</a>( <span class="keyword">const</span> <a class="code" href="a00147.html">WinPcapLiveDevice</a>&amp; other );</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="a00147.html">WinPcapLiveDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00147.html">WinPcapLiveDevice</a>&amp; other);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00147.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">   36</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00081.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a> <a class="code" href="a00147.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">getDeviceType</a>() { <span class="keywordflow">return</span> <a class="code" href="a00081.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6">WinPcapDevice</a>; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00147.html#af22e2966176d4127e69300cd4b208758">startCapture</a>(<a class="code" href="a00195.html#aa07524ba3fd4932968d2c302a936ae10">OnPacketArrivesCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie, <span class="keywordtype">int</span> intervalInSecondsToUpdateStats, <a class="code" href="a00195.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUsrrCookie);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00147.html#af22e2966176d4127e69300cd4b208758">startCapture</a>(<span class="keywordtype">int</span> intervalInSecondsToUpdateStats, <a class="code" href="a00195.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, <span class="keywordtype">void</span>* onStatsUpdateUserCookie);</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00147.html#a74824694b8f72f687dec10557a196675">   40</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00147.html#a74824694b8f72f687dec10557a196675">startCapture</a>(<a class="code" href="a00091.html">RawPacketVector</a>&amp; capturedPacketsVector) { <span class="keywordflow">return</span> <a class="code" href="a00081.html#a349b001c38b0f1e43a1691fedbd1b0cc">PcapLiveDevice::startCapture</a>(capturedPacketsVector); }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="a00147.html#a8f0f1d43beaf1e839959ec51838a246f">sendPackets</a>(<a class="code" href="a00102.html">RawPacket</a>* rawPacketsArr, <span class="keywordtype">int</span> arrLength);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00147.html#aebff78da9d57c6ec9046de32746943bd">setMinAmountOfDataToCopyFromKernelToApplication</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00147.html#a8dfdf0d5b3e54235756d9695b90f3ef7">   57</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00147.html#a8dfdf0d5b3e54235756d9695b90f3ef7">getMinAmountOfDataToCopyFromKernelToApplication</a>() { <span class="keywordflow">return</span> m_MinAmountOfDataToCopyFromKernelToApplication; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00197.html">pcpp</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00142.html">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00142.html">udphdr</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00142.html#a72a8d8ad99698271461762079d3758a9">   22</a></span>&#160;        uint16_t <a class="code" href="a00142.html#a72a8d8ad99698271461762079d3758a9">portSrc</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00142.html#ab2760968de55386f04539019f5a677e5">   24</a></span>&#160;        uint16_t <a class="code" href="a00142.html#ab2760968de55386f04539019f5a677e5">portDst</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00142.html#a68edfe2e8136453d69b7a457461f379d">   26</a></span>&#160;        uint16_t <a class="code" href="a00142.html#a68edfe2e8136453d69b7a457461f379d">length</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">   28</a></span>&#160;        uint16_t <a class="code" href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">headerChecksum</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00143.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00143.html">UdpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00066.html">Layer</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00143.html#add55cec282d7f33152b83424ceb2710b">   47</a></span>&#160;        <a class="code" href="a00143.html#add55cec282d7f33152b83424ceb2710b">UdpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00066.html">Layer</a>* prevLayer, <a class="code" href="a00078.html">Packet</a>* packet) : <a class="code" href="a00066.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">UDP</a>; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="a00143.html#add55cec282d7f33152b83424ceb2710b">UdpLayer</a>(uint16_t portSrc, uint16_t portDst);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00143.html#a3962406394fce824369afc0471845b96">   60</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00142.html">udphdr</a>* <a class="code" href="a00143.html#a3962406394fce824369afc0471845b96">getUdpHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00142.html">udphdr</a>*)m_Data; };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // WIN32</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPP_WINPCAP_LIVE_DEVICE */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00081_html_a0e343585711ee4e02d4b9507467135ab"><div class="ttname"><a href="a00081.html#a0e343585711ee4e02d4b9507467135ab">pcpp::PcapLiveDevice::LiveDeviceType</a></div><div class="ttdeci">LiveDeviceType</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:126</div></div>
-<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
-<div class="ttc" id="a00147_html_a8f0f1d43beaf1e839959ec51838a246f"><div class="ttname"><a href="a00147.html#a8f0f1d43beaf1e839959ec51838a246f">pcpp::WinPcapLiveDevice::sendPackets</a></div><div class="ttdeci">virtual int sendPackets(RawPacket *rawPacketsArr, int arrLength)</div></div>
-<div class="ttc" id="a00081_html_a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6"><div class="ttname"><a href="a00081.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6">pcpp::PcapLiveDevice::WinPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:130</div></div>
-<div class="ttc" id="a00147_html"><div class="ttname"><a href="a00147.html">pcpp::WinPcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:23</div></div>
-<div class="ttc" id="a00147_html_acc1fc2d75dc09c9e3920c6c1d3f0ce37"><div class="ttname"><a href="a00147.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">pcpp::WinPcapLiveDevice::getDeviceType</a></div><div class="ttdeci">virtual LiveDeviceType getDeviceType()</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:36</div></div>
-<div class="ttc" id="a00082_html"><div class="ttname"><a href="a00082.html">pcpp::PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:25</div></div>
-<div class="ttc" id="a00175_html"><div class="ttname"><a href="a00175.html">PcapLiveDevice.h</a></div></div>
-<div class="ttc" id="a00195_html"><div class="ttname"><a href="a00195.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00081_html"><div class="ttname"><a href="a00081.html">pcpp::PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:76</div></div>
-<div class="ttc" id="a00147_html_a8dfdf0d5b3e54235756d9695b90f3ef7"><div class="ttname"><a href="a00147.html#a8dfdf0d5b3e54235756d9695b90f3ef7">pcpp::WinPcapLiveDevice::getMinAmountOfDataToCopyFromKernelToApplication</a></div><div class="ttdeci">int getMinAmountOfDataToCopyFromKernelToApplication()</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:57</div></div>
-<div class="ttc" id="a00147_html_aebff78da9d57c6ec9046de32746943bd"><div class="ttname"><a href="a00147.html#aebff78da9d57c6ec9046de32746943bd">pcpp::WinPcapLiveDevice::setMinAmountOfDataToCopyFromKernelToApplication</a></div><div class="ttdeci">bool setMinAmountOfDataToCopyFromKernelToApplication(int size)</div></div>
-<div class="ttc" id="a00081_html_a349b001c38b0f1e43a1691fedbd1b0cc"><div class="ttname"><a href="a00081.html#a349b001c38b0f1e43a1691fedbd1b0cc">pcpp::PcapLiveDevice::startCapture</a></div><div class="ttdeci">virtual bool startCapture(OnPacketArrivesCallback onPacketArrives, void *onPacketArrivesUserCookie)</div></div>
-<div class="ttc" id="a00147_html_af22e2966176d4127e69300cd4b208758"><div class="ttname"><a href="a00147.html#af22e2966176d4127e69300cd4b208758">pcpp::WinPcapLiveDevice::startCapture</a></div><div class="ttdeci">bool startCapture(OnPacketArrivesCallback onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, OnStatsUpdateCallback onStatsUpdate, void *onStatsUpdateUsrrCookie)</div></div>
-<div class="ttc" id="a00195_html_aa07524ba3fd4932968d2c302a936ae10"><div class="ttname"><a href="a00195.html#aa07524ba3fd4932968d2c302a936ae10">pcpp::OnPacketArrivesCallback</a></div><div class="ttdeci">void(* OnPacketArrivesCallback)(RawPacket *pPacket, PcapLiveDevice *pDevice, void *userCookie)</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:30</div></div>
-<div class="ttc" id="a00195_html_af797dbce1a97d45a6b86cdedb6d627da"><div class="ttname"><a href="a00195.html#af797dbce1a97d45a6b86cdedb6d627da">pcpp::OnStatsUpdateCallback</a></div><div class="ttdeci">void(* OnStatsUpdateCallback)(pcap_stat &amp;stats, void *userCookie)</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:49</div></div>
-<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:212</div></div>
-<div class="ttc" id="a00147_html_a74824694b8f72f687dec10557a196675"><div class="ttname"><a href="a00147.html#a74824694b8f72f687dec10557a196675">pcpp::WinPcapLiveDevice::startCapture</a></div><div class="ttdeci">bool startCapture(RawPacketVector &amp;capturedPacketsVector)</div><div class="ttdef"><b>Definition:</b> WinPcapLiveDevice.h:40</div></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        uint16_t <a class="code" href="a00143.html#a98ae7478c27ae01ae6be6c887506e8f4">calculateChecksum</a>(<span class="keywordtype">bool</span> writeResultToPacket);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00143.html#a35d4be6b1c091dfc743113c85ca8d596">parseNextLayer</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">   79</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00142.html">udphdr</a>); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00143.html#ac0e7ba19ff47c38eb879105ca44b3188">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::string <a class="code" href="a00143.html#a6c45f5c9bb386d5231ee485eaad26d41">toString</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_UDP_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00142_html_a72a8d8ad99698271461762079d3758a9"><div class="ttname"><a href="a00142.html#a72a8d8ad99698271461762079d3758a9">pcpp::udphdr::portSrc</a></div><div class="ttdeci">uint16_t portSrc</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:22</div></div>
+<div class="ttc" id="a00143_html_a27ce2ea24679695f2e408c575b465fbb"><div class="ttname"><a href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">pcpp::UdpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:79</div></div>
+<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:51</div></div>
+<div class="ttc" id="a00143_html_a3962406394fce824369afc0471845b96"><div class="ttname"><a href="a00143.html#a3962406394fce824369afc0471845b96">pcpp::UdpLayer::getUdpHeader</a></div><div class="ttdeci">udphdr * getUdpHeader()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:60</div></div>
+<div class="ttc" id="a00142_html"><div class="ttname"><a href="a00142.html">pcpp::udphdr</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:20</div></div>
+<div class="ttc" id="a00143_html_add55cec282d7f33152b83424ceb2710b"><div class="ttname"><a href="a00143.html#add55cec282d7f33152b83424ceb2710b">pcpp::UdpLayer::UdpLayer</a></div><div class="ttdeci">UdpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:47</div></div>
+<div class="ttc" id="a00143_html"><div class="ttname"><a href="a00143.html">pcpp::UdpLayer</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:37</div></div>
+<div class="ttc" id="a00143_html_a98ae7478c27ae01ae6be6c887506e8f4"><div class="ttname"><a href="a00143.html#a98ae7478c27ae01ae6be6c887506e8f4">pcpp::UdpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
+<div class="ttc" id="a00143_html_ac0e7ba19ff47c38eb879105ca44b3188"><div class="ttname"><a href="a00143.html#ac0e7ba19ff47c38eb879105ca44b3188">pcpp::UdpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
+<div class="ttc" id="a00163_html"><div class="ttname"><a href="a00163.html">Layer.h</a></div></div>
+<div class="ttc" id="a00143_html_a35d4be6b1c091dfc743113c85ca8d596"><div class="ttname"><a href="a00143.html#a35d4be6b1c091dfc743113c85ca8d596">pcpp::UdpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00142_html_ab2760968de55386f04539019f5a677e5"><div class="ttname"><a href="a00142.html#ab2760968de55386f04539019f5a677e5">pcpp::udphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:24</div></div>
+<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00066_html"><div class="ttname"><a href="a00066.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00142_html_af1a4b110e652e51a0f32d4e6c7740354"><div class="ttname"><a href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">pcpp::udphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:28</div></div>
+<div class="ttc" id="a00143_html_a6c45f5c9bb386d5231ee485eaad26d41"><div class="ttname"><a href="a00143.html#a6c45f5c9bb386d5231ee485eaad26d41">pcpp::UdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00197_html"><div class="ttname"><a href="a00197.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00142_html_a68edfe2e8136453d69b7a457461f379d"><div class="ttname"><a href="a00142.html#a68edfe2e8136453d69b7a457461f379d">pcpp::udphdr::length</a></div><div class="ttdeci">uint16_t length</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00194.html">WinPcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Thu Dec 8 2016 00:39:25 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00194.html">UdpLayer.h</a></li>
+    <li class="footer">Generated on Sat Dec 10 2016 23:11:03 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

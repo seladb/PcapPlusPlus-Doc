@@ -1,14 +1,10 @@
 var a00083 =
 [
-    [ "PcapNgFileReaderDevice", "a00083.html#ab654df3ff52249cf56fddd2a12aa6df4", null ],
-    [ "~PcapNgFileReaderDevice", "a00083.html#a3fdac9f71c23e6c973f6bb119d1ce75d", null ],
-    [ "close", "a00083.html#a637743eb1a25fde92af7aeca8879fc02", null ],
-    [ "getCaptureApplication", "a00083.html#a41bf41e1e995dd48d5263b2c04ad4d02", null ],
-    [ "getCaptureFileComment", "a00083.html#a4b71f490244ab2a59033e7d6d94227bb", null ],
-    [ "getHardware", "a00083.html#a448bef18de4a0d9777161c114bd5c684", null ],
-    [ "getNextPacket", "a00083.html#a9bf1e61be8334e31a329451ad2397b27", null ],
-    [ "getNextPacket", "a00083.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
-    [ "getOS", "a00083.html#a2ac993cca52aac490c4d60562370f317", null ],
-    [ "getStatistics", "a00083.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
-    [ "open", "a00083.html#aea89bc17fd3b560576a20afc6da1d304", null ]
+    [ "getDnsServers", "a00083.html#a2cefca3fa33b793cdfb1b58c3883f25b", null ],
+    [ "getPcapLiveDeviceByIp", "a00083.html#a1ab7bad31dbb97247648d1a149d2f612", null ],
+    [ "getPcapLiveDeviceByIp", "a00083.html#a55fd8d0f7a2a6d507bcdcb2836325be2", null ],
+    [ "getPcapLiveDeviceByIp", "a00083.html#a00b3cad054b24d8868cbf141c654c614", null ],
+    [ "getPcapLiveDeviceByIp", "a00083.html#aeffe9373b73371e24023ae30f36ead62", null ],
+    [ "getPcapLiveDeviceByName", "a00083.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
+    [ "getPcapLiveDevicesList", "a00083.html#a993aefeec8551a21171a0d5cfdd78675", null ]
 ];

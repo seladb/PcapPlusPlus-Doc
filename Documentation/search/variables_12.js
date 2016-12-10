@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['tagdata',['tagData',['../a00100.html#a859b9c75b9f17f734c42b9bdc7ac1ad3',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagdatalength',['tagDataLength',['../a00100.html#ae4e187f3ca9a2b81adaa193823bf2a2a',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagtype',['tagType',['../a00100.html#a53236fe2fd4cf146334cdc19ffc01192',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagdata',['tagData',['../a00101.html#a859b9c75b9f17f734c42b9bdc7ac1ad3',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagdatalength',['tagDataLength',['../a00101.html#ae4e187f3ca9a2b81adaa193823bf2a2a',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
+  ['tagtype',['tagType',['../a00101.html#a53236fe2fd4cf146334cdc19ffc01192',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
   ['targetipaddr',['targetIpAddr',['../a00004.html#a318c9f31a0d60e5e5b65ebe400be1540',1,'pcpp::arphdr']]],
   ['targetmacaddr',['targetMacAddr',['../a00004.html#a9f8954a5001ddafb365b165f30b06a12',1,'pcpp::arphdr']]],
   ['timestamp',['timestamp',['../a00037.html#aaa7c797c73f222014bcdecaca7175236',1,'pcpp::icmp_echo_hdr']]],
@@ -13,6 +13,6 @@ var searchData=
   ['transmitdescriptorsnumber',['transmitDescriptorsNumber',['../a00015.html#a43841be287a4fc02b76d06c1eabcc83c',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]],
   ['transmittimestamp',['transmitTimestamp',['../a00046.html#a68e8720ae016dc5d2b9c3c0f2f068fea',1,'pcpp::icmp_timestamp_request']]],
   ['truncation',['truncation',['../a00010.html#a8cca9968cb3832318147243698c973cc',1,'pcpp::dnshdr']]],
-  ['type',['type',['../a00047.html#aee18974a6f35dba7ec638d25681756b7',1,'pcpp::icmphdr::type()'],['../a00096.html#a696c4e1cd2f66f95923d7c310df1d043',1,'pcpp::pppoe_header::type()']]],
+  ['type',['type',['../a00047.html#aee18974a6f35dba7ec638d25681756b7',1,'pcpp::icmphdr::type()'],['../a00097.html#a696c4e1cd2f66f95923d7c310df1d043',1,'pcpp::pppoe_header::type()']]],
   ['typeofservice',['typeOfService',['../a00059.html#a229d7a9444c63a92532cd17b16e9de70',1,'pcpp::iphdr']]]
 ];

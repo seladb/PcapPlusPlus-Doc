@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</title>
+<title>PcapPlusPlus: pcpp::RawPacket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,55 +107,564 @@ $(document).ready(function(){initNavTree('a00103.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00302.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00304.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">pcpp::RawPacket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00159_source.html">IpUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00187_source.html">RawPacket.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::RawPacket:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00103.png" usemap="#pcpp::RawPacket_map" alt=""/>
+  <map id="pcpp::RawPacket_map" name="pcpp::RawPacket_map">
+<area href="a00072.html" alt="pcpp::MBufRawPacket" shape="rect" coords="0,56,138,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a43b9b1dd5d0156c85e01157a681d7150"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a43b9b1dd5d0156c85e01157a681d7150">buffer</a></td></tr>
-<tr class="separator:a43b9b1dd5d0156c85e01157a681d7150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a677d3e0fa3faf87c0f275efd1bac6abd">len</a></td></tr>
-<tr class="separator:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8834cea9fc72516c3d22a841479ee684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a8834cea9fc72516c3d22a841479ee684">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor, <a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a8834cea9fc72516c3d22a841479ee684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#acc12f855f36a798ce0e8c7dc8a4618f9">RawPacket</a> ()</td></tr>
+<tr class="separator:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8b8a3574217ab88b406cba3d2551fb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#abb8b8a3574217ab88b406cba3d2551fb">~RawPacket</a> ()</td></tr>
+<tr class="separator:abb8b8a3574217ab88b406cba3d2551fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d24eda21061c53f0801f3bcbe34193"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a38d24eda21061c53f0801f3bcbe34193">RawPacket</a> (const <a class="el" href="a00103.html">RawPacket</a> &amp;other)</td></tr>
+<tr class="separator:a38d24eda21061c53f0801f3bcbe34193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8278a0208727a579a122f197c4d02e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00103.html">RawPacket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#afc8278a0208727a579a122f197c4d02e">operator=</a> (const <a class="el" href="a00103.html">RawPacket</a> &amp;other)</td></tr>
+<tr class="separator:afc8278a0208727a579a122f197c4d02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac058ba68afbbba933dd8a2101619cea5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#ac058ba68afbbba933dd8a2101619cea5">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, <a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:ac058ba68afbbba933dd8a2101619cea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6448bbdb926de421a6e26cc3e2aa860"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#ac6448bbdb926de421a6e26cc3e2aa860">getRawData</a> ()</td></tr>
+<tr class="separator:ac6448bbdb926de421a6e26cc3e2aa860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35366699f27979fa43dddc2e22ca16f9"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a35366699f27979fa43dddc2e22ca16f9">getRawDataReadOnly</a> () const </td></tr>
+<tr class="separator:a35366699f27979fa43dddc2e22ca16f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0986e059e7357842d6a4b45695a7b2f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a0986e059e7357842d6a4b45695a7b2f7">getLinkLayerType</a> () const </td></tr>
+<tr class="separator:a0986e059e7357842d6a4b45695a7b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88543611741cc88d70ff27c995cc5922"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a88543611741cc88d70ff27c995cc5922">getRawDataLen</a> () const </td></tr>
+<tr class="separator:a88543611741cc88d70ff27c995cc5922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d71610f601b3de6bbd38bd45bf95504"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a6d71610f601b3de6bbd38bd45bf95504">getPacketTimeStamp</a> ()</td></tr>
+<tr class="separator:a6d71610f601b3de6bbd38bd45bf95504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829ca934f43a2a3610d81d481c4303dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a829ca934f43a2a3610d81d481c4303dd">isPacketSet</a> ()</td></tr>
+<tr class="separator:a829ca934f43a2a3610d81d481c4303dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b169b02bda40e90279e7d8f6816e41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#ab6b169b02bda40e90279e7d8f6816e41">clear</a> ()</td></tr>
+<tr class="separator:ab6b169b02bda40e90279e7d8f6816e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed098d0dfcf60fa561b56e6c73bed9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a6ed098d0dfcf60fa561b56e6c73bed9c">appendData</a> (const uint8_t *dataToAppend, size_t dataToAppendLen)</td></tr>
+<tr class="separator:a6ed098d0dfcf60fa561b56e6c73bed9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3563f649177826c9e4f649eec7b35887"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a3563f649177826c9e4f649eec7b35887">insertData</a> (int atIndex, const uint8_t *dataToInsert, size_t dataToInsertLen)</td></tr>
+<tr class="separator:a3563f649177826c9e4f649eec7b35887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf289e6bbf461f55c20784615c899ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a9cf289e6bbf461f55c20784615c899ce">removeData</a> (int atIndex, size_t numOfBytesToRemove)</td></tr>
+<tr class="separator:a9cf289e6bbf461f55c20784615c899ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9248a47bd60427e2a3ef34b379a28e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#acd9248a47bd60427e2a3ef34b379a28e">reallocateData</a> (size_t newBufferLength)</td></tr>
+<tr class="separator:acd9248a47bd60427e2a3ef34b379a28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-struct pcpp::ScalarBuffer&lt; T &gt;</h3>
-
-<p>A struct that represent a single buffer </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a43b9b1dd5d0156c85e01157a681d7150"></a>
+<div class="textblock"><p>This class holds the packet as raw (not parsed) data. The data is held as byte array. In addition to the data itself every instance also holds a timestamp representing the time the packet was received by the NIC. <a class="el" href="a00103.html">RawPacket</a> instance isn't read only. The user can change the packet data, add or remove data, etc. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8834cea9fc72516c3d22a841479ee684"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="a00103.html">pcpp::ScalarBuffer</a>&lt; T &gt;::buffer</td>
+          <td class="memname">pcpp::RawPacket::RawPacket </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timeval&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deleteRawDataAtDestructor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>layerType</em> = <code><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The pointer to the buffer </p>
+<p>A constructor that receives a pointer to the raw data (allocated elsewhere). This constructor is usually used when packet is captured using a packet capturing engine (like libPcap. WinPcap, PF_RING, etc.). The capturing engine allocates the raw data memory and give the user a pointer to it + a timestamp it has arrived to the device </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deleteRawDataAtDestructor</td><td>An indicator whether raw data pointer should be freed when the instance is freed or not. If set to 'true' than pRawData will be freed when instanced is being freed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type of this raw packet. The default is Ethernet </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a677d3e0fa3faf87c0f275efd1bac6abd"></a>
+<a class="anchor" id="acc12f855f36a798ce0e8c7dc8a4618f9"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a00103.html">pcpp::ScalarBuffer</a>&lt; T &gt;::len</td>
+          <td class="memname">pcpp::RawPacket::RawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Buffer length </p>
+<p>A default constructor that initializes class'es attributes to default value:</p><ul>
+<li>data pointer is set to NULL</li>
+<li>data length is set to 0</li>
+<li>deleteRawDataAtDestructor is set to 'true' <dl class="todo"><dt><b><a class="el" href="a00199.html#_todo000009">Todo:</a></b></dt><dd>timestamp isn't set here to a default value </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="abb8b8a3574217ab88b406cba3d2551fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual pcpp::RawPacket::~RawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A destructor for this class. Frees the raw data if deleteRawDataAtDestructor was set to 'true' </p>
+
+</div>
+</div>
+<a class="anchor" id="a38d24eda21061c53f0801f3bcbe34193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::RawPacket::RawPacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00103.html">RawPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A copy constructor that copies all data from another instance. Notice all raw data is copied (using memcpy), so when the original or the other instance are freed, the other won't be affected </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6ed098d0dfcf60fa561b56e6c73bed9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pcpp::RawPacket::appendData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>dataToAppend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataToAppendLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append data to the end of current data. This method works without allocating more memory, it just uses memcpy() to copy dataToAppend at the end of the current data. This means that the method assumes this memory was already allocated by the user. If it isn't the case then this method will cause memory corruption </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppend</td><td>A pointer to the data to append to current raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppendLen</td><td>Length in bytes of dataToAppend </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="a00072.html#af1c5144634729ce1ab2da2aa89946e89">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6b169b02bda40e90279e7d8f6816e41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pcpp::RawPacket::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears all members of this instance, meaning setting raw data to NULL, raw data length to 0, etc. Currently raw data is always freed, even if deleteRawDataAtDestructor was set to 'false' </p><dl class="todo"><dt><b><a class="el" href="a00199.html#_todo000011">Todo:</a></b></dt><dd><p class="startdd">deleteRawDataAtDestructor was set to 'true', don't free the raw data </p>
+<p class="enddd">set timestamp to a default value as well </p>
+</dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00072.html#a265214f9d02a63d0cff85b4e1a93c396">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0986e059e7357842d6a4b45695a7b2f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> pcpp::RawPacket::getLinkLayerType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the link layer tpye </p><dl class="section return"><dt>Returns</dt><dd>the type of the link layer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d71610f601b3de6bbd38bd45bf95504"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval pcpp::RawPacket::getPacketTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get raw data timestamp </p><dl class="section return"><dt>Returns</dt><dd>Raw data timestamp </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6448bbdb926de421a6e26cc3e2aa860"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pcpp::RawPacket::getRawData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get raw data pointer </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the raw data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a88543611741cc88d70ff27c995cc5922"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pcpp::RawPacket::getRawDataLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get raw data length in bytes </p><dl class="section return"><dt>Returns</dt><dd>Raw data length in bytes </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35366699f27979fa43dddc2e22ca16f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pcpp::RawPacket::getRawDataReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get read only raw data pointer </p><dl class="section return"><dt>Returns</dt><dd>A read-only pointer to the raw data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3563f649177826c9e4f649eec7b35887"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pcpp::RawPacket::insertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>dataToInsert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataToInsertLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Insert new data at some index of the current data and shift the remaining old data to the end. This method works without allocating more memory, it just copies dataToAppend at the relevant index and shifts the remaining data to the end. This means that the method assumes this memory was already allocated by the user. If it isn't the case then this method will cause memory corruption </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to insert the new data to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsert</td><td>A pointer to the new data to insert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsertLen</td><td>Length in bytes of dataToInsert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="a00072.html#a12e04aa6f066e6971946cc033fb2bdf9">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a829ca934f43a2a3610d81d481c4303dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::RawPacket::isPacketSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an indication whether raw data was already set for this instance. </p><dl class="section return"><dt>Returns</dt><dd>True if raw data was set for this instance. Raw data can be set using the non-default constructor, using <a class="el" href="a00103.html#ac058ba68afbbba933dd8a2101619cea5">setRawData()</a>, using the copy constructor or using the assignment operator. Returns false otherwise, for example: if the instance was created using the default constructor or <a class="el" href="a00103.html#ab6b169b02bda40e90279e7d8f6816e41">clear()</a> was called </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc8278a0208727a579a122f197c4d02e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00103.html">RawPacket</a>&amp; pcpp::RawPacket::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00103.html">RawPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator overload for this class. When using this operator on an already initialized <a class="el" href="a00103.html">RawPacket</a> instance, the original raw data is freed first. Then the other instance is copied to this instance, the same way the copy constructor works </p><dl class="todo"><dt><b><a class="el" href="a00199.html#_todo000010">Todo:</a></b></dt><dd>free raw data only if deleteRawDataAtDestructor was set to 'true' <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd9248a47bd60427e2a3ef34b379a28e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::reallocateData </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>newBufferLength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Re-allocate raw packet buffer meaning add size to it without losing the current packet data. This method allocates the required buffer size as instructed by the use and then copies the raw data from the current allocated buffer to the new one. This method can become useful if the user wants to insert or append data to the raw data, and the previous allocated buffer is too small, so the user wants to allocate a larger buffer and get <a class="el" href="a00103.html">RawPacket</a> instance to point to it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newBufferLength</td><td>The new buffer length as required by the user. The method is responsible to allocate the memory </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if data was reallocated successfully, false otherwise </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00072.html#ac8984ba4413680165a38d13bdd853987">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cf289e6bbf461f55c20784615c899ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::removeData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numOfBytesToRemove</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove certain number of bytes from current raw data buffer. All data after the removed bytes will be shifted back </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to start removing bytes from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numOfBytesToRemove</td><td>Number of bytes to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all bytes were removed successfully, or false if atIndex+numOfBytesToRemove is out-of-bounds of the raw data buffer </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00072.html#a3895fef553d8345e18b7f97e52f1a10d">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac058ba68afbbba933dd8a2101619cea5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::setRawData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timeval&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>layerType</em> = <code><a class="el" href="a00197.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set a raw data. If data was already set and deleteRawDataAtDestructor was set to 'true' the old data will be freed first </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type for this raw data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -164,8 +673,8 @@ template&lt;typename T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00195.html">pcpp</a></li><li class="navelem"><a class="el" href="a00103.html">ScalarBuffer</a></li>
-    <li class="footer">Generated on Thu Dec 8 2016 00:39:26 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00197.html">pcpp</a></li><li class="navelem"><a class="el" href="a00103.html">RawPacket</a></li>
+    <li class="footer">Generated on Sat Dec 10 2016 23:11:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

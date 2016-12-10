@@ -1,6 +1,10 @@
 var a00121 =
 [
-    [ "extensionData", "a00121.html#a058c404f39c4b185647f5fc6cade65d4", null ],
-    [ "extensionDataLength", "a00121.html#af116e93a2decd3c986ae109b16c12b28", null ],
-    [ "extensionType", "a00121.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
+    [ "SSLExtensionStruct", "a00122.html", "a00122" ],
+    [ "SSLExtension", "a00121.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "getData", "a00121.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
+    [ "getLength", "a00121.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
+    [ "getTotalLength", "a00121.html#a84c6e634a3738b65cb9b7210124abca5", null ],
+    [ "getType", "a00121.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
+    [ "getTypeAsInt", "a00121.html#a1be433ad3fff137428f270e6f30f09c7", null ]
 ];

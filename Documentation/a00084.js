@@ -1,13 +1,14 @@
 var a00084 =
 [
-    [ "PcapNgFileWriterDevice", "a00084.html#abf641b890d2089eb4090cf67920c2882", null ],
-    [ "~PcapNgFileWriterDevice", "a00084.html#a93312aab61a193df522f8046af6d291e", null ],
-    [ "close", "a00084.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
-    [ "getStatistics", "a00084.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
-    [ "open", "a00084.html#adca940885348d13ae58865ff5011e6fd", null ],
-    [ "open", "a00084.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
-    [ "open", "a00084.html#a69ab330b859dc45892f3d7666b7b0671", null ],
-    [ "writePacket", "a00084.html#a81069d1681efd6adf22e6ae80f300993", null ],
-    [ "writePacket", "a00084.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
-    [ "writePackets", "a00084.html#a214c363a167e1538d9ea29a58efd9640", null ]
+    [ "PcapNgFileReaderDevice", "a00084.html#ab654df3ff52249cf56fddd2a12aa6df4", null ],
+    [ "~PcapNgFileReaderDevice", "a00084.html#a3fdac9f71c23e6c973f6bb119d1ce75d", null ],
+    [ "close", "a00084.html#a637743eb1a25fde92af7aeca8879fc02", null ],
+    [ "getCaptureApplication", "a00084.html#a41bf41e1e995dd48d5263b2c04ad4d02", null ],
+    [ "getCaptureFileComment", "a00084.html#a4b71f490244ab2a59033e7d6d94227bb", null ],
+    [ "getHardware", "a00084.html#a448bef18de4a0d9777161c114bd5c684", null ],
+    [ "getNextPacket", "a00084.html#a9bf1e61be8334e31a329451ad2397b27", null ],
+    [ "getNextPacket", "a00084.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
+    [ "getOS", "a00084.html#a2ac993cca52aac490c4d60562370f317", null ],
+    [ "getStatistics", "a00084.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
+    [ "open", "a00084.html#aea89bc17fd3b560576a20afc6da1d304", null ]
 ];
