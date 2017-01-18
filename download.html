@@ -88,9 +88,29 @@
 		  </li>
 		</ul>
 		
-		<h2>Compiling PcapPlusPlus - Windows</h2>
+		<h2>Compiling PcapPlusPlus - Windows (Visual Studio 2015)</h2>
 		<h6><strong>Prerequisutes</strong></h6>
-		<p>In order to compile PcapPlusPlus on Windows you need the following components:</p>
+		<p>In order to build PcapPlusPlus on Windows with Visual Studio 2015 you need the following components:</p>
+		<ol>
+		  <li>Microsoft Visual Studio 2015 (can be downloaded from here: <a href="https://www.visualstudio.com/downloads/">https://www.visualstudio.com/downloads/</a>)</li>
+		  <li>Winpcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <a href="https://www.winpcap.org/devel.htm">https://www.winpcap.org/devel.htm</a></li>
+		  <li>pthread-win32 - can be downloaded from here: <a href="ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip">ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip</a></li>		  
+		</ol>
+		<h6><strong>Configuration and compilation</strong></h6>
+		<ol>
+		  <li>run the <strong>configure-windows-visual-studio.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for the locations of WinPcap developer's packet and pthreads-win32. The script will modify mk\vs2015\PcapPlusPlusPropertySheet.props file with these locations</li>
+		  <li>PcapPlusPlus contains 3 Visual Studio solutions:</li>
+		  <ul>
+		    <li><strong>mk\vs2015\PcapPlusPlus.sln</strong> - contains PcapPlusPlus libraries (Common++, Packet++ and Pcap++) and unit-tests projects</li>
+			<li><strong>mk\vs2015\PcapPlusPlus-Examples.sln</strong> - contains all PcapPlusPlus examples. Reuquires PcapPlusPlus.sln to be built</li>
+			<li><strong>mk\vs2015\ExampleProject\ExampleProject.sln</strong> - a fully configured project for working with PcapPlusPlus. You can use this project to write your own code using PcapPlusPlus. It already has all the include paths, libaray paths etc. configured and also an empty main() function. Just write your code and build. This solution is also relocatable so you can move it to wherever you want and it will still build successfully. Reuquires PcapPlusPlus.sln to be built</li>
+		  </ul>
+		  <li>All solutions support both 32-bit <strong>(x86)</strong> and 64-bit <strong>(x64)</strong> configurations as well as <strong>Debug</strong> and <strong>Release</strong> modes. So actually 4 modes are supported: x86|Debug, x86|Release, x64|Debug, x64|Release</li>		  
+		</ol>
+		
+		<h2>Compiling PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</h2>
+		<h6><strong>Prerequisutes</strong></h6>
+		<p>In order to compile PcapPlusPlus on Windows using MinGW32 or MinGW-w64 you need the following components:</p>
 		<ol>
 		  <li>The MinGW environment and compiler - this is the only environment currently supported for PcapPlusPlus. You can download and install is from <a href="www.mingw.org">www.mingw.org</a>
 		    <ul>
@@ -113,7 +133,7 @@
 		</ol>
 		<h6><strong>Configuration and compilation</strong></h6>
         <ol>
-		  <li>Run the <strong>configure-windows.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location</li>
+		  <li>Run the <strong>configure-windows-mingw.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location</li>
 		  <li>Run <strong>mingw32-make.exe</strong> all from PcapPlusPlus main directory</li>
 		  <li>This should compile all libraries, unit-tests and examples</li>
 		  <li>After compilation you can find the libraries, examples, header files and helpful makefiles under the <strong>Dist\</strong> directory</li>
