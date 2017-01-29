@@ -1,14 +1,12 @@
 var a00059 =
 [
-    [ "fragmentOffset", "a00059.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
-    [ "headerChecksum", "a00059.html#a724ead037aaf6310e5b9ebceba77f922", null ],
-    [ "internetHeaderLength", "a00059.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
-    [ "ipDst", "a00059.html#a2722895dc1ed669dd9b241fc472a284f", null ],
-    [ "ipId", "a00059.html#a9d50037f1b02307d20dc8a113207dbce", null ],
-    [ "ipSrc", "a00059.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
-    [ "ipVersion", "a00059.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
-    [ "protocol", "a00059.html#a9600c9b8e380ba5468763cdf648d043c", null ],
-    [ "timeToLive", "a00059.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
-    [ "totalLength", "a00059.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
-    [ "typeOfService", "a00059.html#a229d7a9444c63a92532cd17b16e9de70", null ]
+    [ "getMulticastAddress", "a00059.html#a7b9ad5915bd97d2d0b0dc06104dde340", null ],
+    [ "getRecordLen", "a00059.html#ab3e440bbfc112fdc3ee66fd5604f1680", null ],
+    [ "getSoruceAddressAtIndex", "a00059.html#a50d1b1a09a82ed9fd600b6323fbafa39", null ],
+    [ "getSourceAdressCount", "a00059.html#a04e2d7e436a09973609cf539663988bb", null ],
+    [ "auxDataLen", "a00059.html#a89bbec160141d8e9a6c200fda910ea6f", null ],
+    [ "multicastAddress", "a00059.html#a7ccef33a9eb41a061d180b96b8b8c41f", null ],
+    [ "numOfSources", "a00059.html#ac0a94620acece7ad93e2fe363d2f2115", null ],
+    [ "recordType", "a00059.html#a9ea96cdeb8d7e3215a3251916e738d57", null ],
+    [ "sourceAddresses", "a00059.html#a48c79e0095e98b80a4882a29073b6810", null ]
 ];

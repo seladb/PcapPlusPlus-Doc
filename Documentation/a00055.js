@@ -1,9 +1,7 @@
 var a00055 =
 [
-    [ "flowLabel", "a00055.html#a8d0d381008c855e00afd32403e4f946b", null ],
-    [ "hopLimit", "a00055.html#a9734da4d88f3f3938f12e2c71b4ac855", null ],
-    [ "ipVersion", "a00055.html#aee7025c3316d0ecbb3db29bfdecb1e25", null ],
-    [ "nextHeader", "a00055.html#aee8e571549e08804cbf245c37eed7cfa", null ],
-    [ "payloadLength", "a00055.html#ae5849394b92e6a7d3cd0b2972e30391e", null ],
-    [ "trafficClass", "a00055.html#a613b6372ccae91487cc5f3a7f14aed94", null ]
+    [ "checksum", "a00055.html#a46db4b30167d803fa9ef00f510c9a69d", null ],
+    [ "groupAddress", "a00055.html#a7cb1aa348a4ce129e4c34f05afd9bf95", null ],
+    [ "maxResponseTime", "a00055.html#a7f27621294fb1d9a9e0016150c6c4133", null ],
+    [ "type", "a00055.html#a38773a7e9464e7e366ec07b73cfbfdd2", null ]
 ];

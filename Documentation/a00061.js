@@ -1,6 +1,8 @@
 var a00061 =
 [
-    [ "IpV4IDFilter", "a00061.html#a6b3ea370a73c59e0f575070fdf3ee382", null ],
-    [ "parseToString", "a00061.html#af718627a6c4f2bd003a87a7d310d9c7e", null ],
-    [ "setIpID", "a00061.html#a3c37eabbe0212f02d254f1ab0d091c98", null ]
+    [ "checksum", "a00061.html#ae99c9328318afe39ba35e5412b7971c1", null ],
+    [ "numOfGroupRecords", "a00061.html#a43de3d4e5ee029ff4c04c49d555e9c1c", null ],
+    [ "reserved1", "a00061.html#a762ceb0f245c08c7fbfb838b13c71b13", null ],
+    [ "reserved2", "a00061.html#a8e0a855a998749d895a546ce33feef33", null ],
+    [ "type", "a00061.html#a5af52956a647d8fcef26084d188f66bd", null ]
 ];

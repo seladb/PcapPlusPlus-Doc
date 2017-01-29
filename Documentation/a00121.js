@@ -1,10 +1,8 @@
 var a00121 =
 [
-    [ "SSLExtensionStruct", "a00122.html", "a00122" ],
-    [ "SSLExtension", "a00121.html#a5b18ea8242d5a74d79e7631abe189153", null ],
-    [ "getData", "a00121.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
-    [ "getLength", "a00121.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
-    [ "getTotalLength", "a00121.html#a84c6e634a3738b65cb9b7210124abca5", null ],
-    [ "getType", "a00121.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
-    [ "getTypeAsInt", "a00121.html#a1be433ad3fff137428f270e6f30f09c7", null ]
+    [ "SSLAlertLayer", "a00121.html#aecf449f0c8f821ede816f33d6012b622", null ],
+    [ "computeCalculateFields", "a00121.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
+    [ "getAlertDescription", "a00121.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
+    [ "getAlertLevel", "a00121.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
+    [ "toString", "a00121.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
 ];

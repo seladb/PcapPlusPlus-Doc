@@ -1,7 +1,6 @@
 var a00131 =
 [
-    [ "SSLServerKeyExchangeMessage", "a00131.html#a1218714d90696a235404f70b41e70b41", null ],
-    [ "getServerKeyExchangeParams", "a00131.html#ad7c8c6d0bc49a7951fdc60923789de6b", null ],
-    [ "getServerKeyExchangeParamsLength", "a00131.html#a0661186c198209c8a71294fe372aae48", null ],
-    [ "toString", "a00131.html#acae0392cfe821a9acd35e247e24e012b", null ]
+    [ "extensionData", "a00131.html#a058c404f39c4b185647f5fc6cade65d4", null ],
+    [ "extensionDataLength", "a00131.html#af116e93a2decd3c986ae109b16c12b28", null ],
+    [ "extensionType", "a00131.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
 ];

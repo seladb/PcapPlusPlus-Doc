@@ -1,7 +1,7 @@
 var a00142 =
 [
-    [ "headerChecksum", "a00142.html#af1a4b110e652e51a0f32d4e6c7740354", null ],
-    [ "length", "a00142.html#a68edfe2e8136453d69b7a457461f379d", null ],
-    [ "portDst", "a00142.html#ab2760968de55386f04539019f5a677e5", null ],
-    [ "portSrc", "a00142.html#a72a8d8ad99698271461762079d3758a9", null ]
+    [ "SSLUnknownMessage", "a00142.html#a7dc53bdee48e90df1b6a3c553dfb245b", null ],
+    [ "getHandshakeType", "a00142.html#a84538f3ce34865d7c6956a6c239ffa37", null ],
+    [ "getMessageLength", "a00142.html#ae3fa59951f9a9036a14120451f70d046", null ],
+    [ "toString", "a00142.html#aab56dd7d4e29722be66481e2b5bbc139", null ]
 ];

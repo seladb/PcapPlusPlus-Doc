@@ -1,10 +1,10 @@
 var a00096 =
 [
-    [ "PPP_PPTPLayer", "a00096.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
-    [ "PPP_PPTPLayer", "a00096.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
-    [ "computeCalculateFields", "a00096.html#a989b126eecc1536b660d46dda3e5a795", null ],
-    [ "getHeaderLen", "a00096.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
-    [ "getPPP_PPTPHeader", "a00096.html#aa9707853653d941e1ae0a8727b281191", null ],
-    [ "parseNextLayer", "a00096.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
-    [ "toString", "a00096.html#a92c398562bc0be52b28dce752c669d70", null ]
+    [ "getDeviceType", "a00096.html#af5518431a35a7f94b6ee8551061eee18", null ],
+    [ "getMacAddress", "a00096.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
+    [ "getMtu", "a00096.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
+    [ "getRemoteMachineIpAddress", "a00096.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
+    [ "getRemoteMachinePort", "a00096.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
+    [ "getStatistics", "a00096.html#ac4f3b9ace451b38aa9930950dc695273", null ],
+    [ "open", "a00096.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
 ];

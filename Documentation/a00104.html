@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</title>
+<title>PcapPlusPlus: pcpp::ppp_pptp_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,54 +108,62 @@ $(document).ready(function(){initNavTree('a00104.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00305.html">List of all members</a>  </div>
+<a href="a00315.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">pcpp::ppp_pptp_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00160_source.html">IpUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00165_source.html">GreLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a43b9b1dd5d0156c85e01157a681d7150"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a43b9b1dd5d0156c85e01157a681d7150">buffer</a></td></tr>
-<tr class="separator:a43b9b1dd5d0156c85e01157a681d7150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a677d3e0fa3faf87c0f275efd1bac6abd">len</a></td></tr>
-<tr class="separator:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d4dbeb685845400c93be1636b9b2fb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ab0d4dbeb685845400c93be1636b9b2fb">address</a></td></tr>
+<tr class="separator:ab0d4dbeb685845400c93be1636b9b2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae925aba063d9662de4efe5151c128372"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ae925aba063d9662de4efe5151c128372">control</a></td></tr>
+<tr class="separator:ae925aba063d9662de4efe5151c128372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e49420e46bdc801452f9c30ef5b8659"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a9e49420e46bdc801452f9c30ef5b8659">protocol</a></td></tr>
+<tr class="separator:a9e49420e46bdc801452f9c30ef5b8659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-struct pcpp::ScalarBuffer&lt; T &gt;</h3>
-
-<p>A struct that represent a single buffer </p>
+<div class="textblock"><p>Represents PPP layer that comes after GREv1 as part of PPTP protocol </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a43b9b1dd5d0156c85e01157a681d7150"></a>
+<a class="anchor" id="ab0d4dbeb685845400c93be1636b9b2fb"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="a00104.html">pcpp::ScalarBuffer</a>&lt; T &gt;::buffer</td>
+          <td class="memname">uint8_t pcpp::ppp_pptp_header::address</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The pointer to the buffer </p>
+<p>Broadcast address </p>
 
 </div>
 </div>
-<a class="anchor" id="a677d3e0fa3faf87c0f275efd1bac6abd"></a>
+<a class="anchor" id="ae925aba063d9662de4efe5151c128372"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a00104.html">pcpp::ScalarBuffer</a>&lt; T &gt;::len</td>
+          <td class="memname">uint8_t pcpp::ppp_pptp_header::control</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Buffer length </p>
+<p>Control byte </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e49420e46bdc801452f9c30ef5b8659"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::ppp_pptp_header::protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Protocol type of the next layer (see PPP_* macros at <a class="el" href="a00195.html">PPPoELayer.h</a>) </p>
 
 </div>
 </div>
@@ -164,8 +172,8 @@ template&lt;typename T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00197.html">pcpp</a></li><li class="navelem"><a class="el" href="a00104.html">ScalarBuffer</a></li>
-    <li class="footer">Generated on Sat Dec 10 2016 23:11:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00207.html">pcpp</a></li><li class="navelem"><a class="el" href="a00104.html">ppp_pptp_header</a></li>
+    <li class="footer">Generated on Sun Jan 29 2017 23:59:15 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

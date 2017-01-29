@@ -1,7 +1,7 @@
 var a00123 =
 [
-    [ "SSLFinishedMessage", "a00123.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
-    [ "getSignedHash", "a00123.html#afae04041b9e28633f6a2b15807307791", null ],
-    [ "getSignedHashLength", "a00123.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
-    [ "toString", "a00123.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
+    [ "SSLCertificateMessage", "a00123.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
+    [ "getCertificate", "a00123.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
+    [ "getNumOfCertificates", "a00123.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
+    [ "toString", "a00123.html#a3efa384d6853e29d9448269fd1a00b20", null ]
 ];

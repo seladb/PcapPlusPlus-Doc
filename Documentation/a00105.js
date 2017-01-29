@@ -1,8 +1,10 @@
 var a00105 =
 [
-    [ "ARPHRD_type", "a00105.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
-    [ "link_layer_addr", "a00105.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
-    [ "link_layer_addr_len", "a00105.html#ac253e0a098c39f46d192619ed5d229bf", null ],
-    [ "packet_type", "a00105.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
-    [ "protocol_type", "a00105.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
+    [ "PPP_PPTPLayer", "a00105.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
+    [ "PPP_PPTPLayer", "a00105.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
+    [ "computeCalculateFields", "a00105.html#a989b126eecc1536b660d46dda3e5a795", null ],
+    [ "getHeaderLen", "a00105.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
+    [ "getPPP_PPTPHeader", "a00105.html#aa9707853653d941e1ae0a8727b281191", null ],
+    [ "parseNextLayer", "a00105.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
+    [ "toString", "a00105.html#a92c398562bc0be52b28dce752c669d70", null ]
 ];

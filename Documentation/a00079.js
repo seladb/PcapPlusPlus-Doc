@@ -1,11 +1,14 @@
 var a00079 =
 [
-    [ "PayloadLayer", "a00079.html#a3c34b57a284fe6e3180eb7cc79da9f24", null ],
-    [ "PayloadLayer", "a00079.html#ac2bc0db4fe8ef616edb41b486a2d7a50", null ],
-    [ "computeCalculateFields", "a00079.html#a06b137b6b0f0a81cfd6fda7f2e44640f", null ],
-    [ "getHeaderLen", "a00079.html#a03f5cea04a120367b2b1b808ec2e38ef", null ],
-    [ "getPayload", "a00079.html#af46528184f2f9cff223f631422ae8b24", null ],
-    [ "getPayloadLen", "a00079.html#aee6b8085ad904ba8044bf95b802255f5", null ],
-    [ "parseNextLayer", "a00079.html#a462003b0863dd9891d989f847608c1fb", null ],
-    [ "toString", "a00079.html#ab9117eddc57a2c6e3d3e5ef1626a4aac", null ]
+    [ "MacAddress", "a00079.html#a9b56a6c1bfa240b58548035db404bcbc", null ],
+    [ "MacAddress", "a00079.html#a73460f086b972df4e264d267adc2d92d", null ],
+    [ "MacAddress", "a00079.html#a257d6fd3d08de6766389f15423ca3e22", null ],
+    [ "MacAddress", "a00079.html#af9130892a0dcc4c931aac84d86e4f7cd", null ],
+    [ "MacAddress", "a00079.html#a51128dc96a7f443ba5e05e94dd169071", null ],
+    [ "copyTo", "a00079.html#abd24a366974f3bc8b2d78b65de07c926", null ],
+    [ "copyTo", "a00079.html#a36d261838f53468acdb7b46208c97dcf", null ],
+    [ "isValid", "a00079.html#afe46520073e14b9e02bb368627896f4a", null ],
+    [ "operator!=", "a00079.html#a6497d0796bb0d06997a1e399817ba078", null ],
+    [ "operator==", "a00079.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
+    [ "toString", "a00079.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
 ];

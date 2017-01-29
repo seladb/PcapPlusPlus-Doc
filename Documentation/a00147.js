@@ -1,16 +1,19 @@
 var a00147 =
 [
-    [ "VlanLayer", "a00147.html#a5f6f8f15642dd1f0a88550bde0fb51b0", null ],
-    [ "VlanLayer", "a00147.html#a35cf7eaece6f8eec9d722dfbc24cf8f0", null ],
-    [ "computeCalculateFields", "a00147.html#a931be22ad37fcedab548a9752d7c834a", null ],
-    [ "getCFI", "a00147.html#abe0453b916a6733faf3d658e83340db2", null ],
-    [ "getHeaderLen", "a00147.html#a9f89975517e388390c7b97d84f1bca50", null ],
-    [ "getPriority", "a00147.html#a021259caeb2905bcf0ffa0fd4debaa26", null ],
-    [ "getVlanHeader", "a00147.html#a248cdb71f54fe1d29e52c7c5f86d908c", null ],
-    [ "getVlanID", "a00147.html#a0aa76692b5502afa254931d4249937ba", null ],
-    [ "parseNextLayer", "a00147.html#a083d3c9058269a46b6874adda2930e69", null ],
-    [ "setCFI", "a00147.html#ac9702d193a250da803639863ecf12373", null ],
-    [ "setPriority", "a00147.html#a92084616cf00c45903ecaaeed0c20cd5", null ],
-    [ "setVlanID", "a00147.html#aeb6dcaefa11775c2b64e0be74094116d", null ],
-    [ "toString", "a00147.html#af9b69bf34d39563db7f140665ed322bd", null ]
+    [ "ackFlag", "a00147.html#abf1b2600722973e7c2e6f4e05e34c93b", null ],
+    [ "ackNumber", "a00147.html#ae54a29e632cb6526df4a7e2e79261ad7", null ],
+    [ "cwrFlag", "a00147.html#a26d5425128be717916096e577f2561fe", null ],
+    [ "dataOffset", "a00147.html#a593a30084c297a99ea01b76fce5c5b11", null ],
+    [ "eceFlag", "a00147.html#a607801a4305ecb6d4ab234a6755b78e7", null ],
+    [ "finFlag", "a00147.html#aa76c48fa043559ec4b0b90fa9535feeb", null ],
+    [ "headerChecksum", "a00147.html#af25c27d92c75ab68816d23c3ead02d5a", null ],
+    [ "portDst", "a00147.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc", null ],
+    [ "portSrc", "a00147.html#a4ba66caaf79a20c53a8e92f7537d50a6", null ],
+    [ "pshFlag", "a00147.html#a1561eb6d029e00fe449bbaac3be8d705", null ],
+    [ "rstFlag", "a00147.html#a36a5abf30794062f32de013b6ddf39c9", null ],
+    [ "sequenceNumber", "a00147.html#a2edb7c27d93777ae552eca417cf118d0", null ],
+    [ "synFlag", "a00147.html#a469f06456ae6eaf39e764d7f30c06dc3", null ],
+    [ "urgentPointer", "a00147.html#a43efd09b5aad3f50f38bf2a689cc790c", null ],
+    [ "urgFlag", "a00147.html#a2e2c38c9079e807f366b3cc62669b09c", null ],
+    [ "windowSize", "a00147.html#a62ab389980bbae1e81846792a1c8846a", null ]
 ];

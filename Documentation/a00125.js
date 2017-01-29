@@ -1,8 +1,7 @@
 var a00125 =
 [
-    [ "getContainingLayer", "a00125.html#a4342813d150cb1cec2911b59b99e0418", null ],
-    [ "getHandshakeType", "a00125.html#a31089d536fc762b283d30d7c36e3584b", null ],
-    [ "getMessageLength", "a00125.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
-    [ "isMessageComplete", "a00125.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
-    [ "toString", "a00125.html#a17b72bf10472c67d0044006099c6ea5a", null ]
+    [ "SSLCertificateVerifyMessage", "a00125.html#a364e17c73fd7cbb9460d75029cace69e", null ],
+    [ "getSignedHash", "a00125.html#a15eac0196cce5604ad21e8b7cd70c372", null ],
+    [ "getSignedHashLength", "a00125.html#aa7a070cf7f91c37fb50e8976054a1ce4", null ],
+    [ "toString", "a00125.html#a0662a3136fca531a733055c1de84d0b7", null ]
 ];

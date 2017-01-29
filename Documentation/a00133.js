@@ -1,7 +1,10 @@
 var a00133 =
 [
-    [ "SSLUnknownMessage", "a00133.html#a7dc53bdee48e90df1b6a3c553dfb245b", null ],
-    [ "getHandshakeType", "a00133.html#a84538f3ce34865d7c6956a6c239ffa37", null ],
-    [ "getMessageLength", "a00133.html#ae3fa59951f9a9036a14120451f70d046", null ],
-    [ "toString", "a00133.html#aab56dd7d4e29722be66481e2b5bbc139", null ]
+    [ "SSLHandshakeLayer", "a00133.html#a0b37d33d8342f166a5a1746820aa0c0b", null ],
+    [ "computeCalculateFields", "a00133.html#ab9db43d75aec58260e33cbce36f969bb", null ],
+    [ "getHandshakeMessageAt", "a00133.html#ac8d1ae87429f17ad41ca8aa4b4231fa8", null ],
+    [ "getHandshakeMessageOfType", "a00133.html#a4a40a448fd7234eb08c95b5032e64974", null ],
+    [ "getHandshakeMessagesCount", "a00133.html#a9f7c42970ded74d0fee34103e51f7632", null ],
+    [ "getNextHandshakeMessageOfType", "a00133.html#ac1659f58a8e3ed9ed506df80d91c7dbb", null ],
+    [ "toString", "a00133.html#a33923287a108f28edc654c5120cf6158", null ]
 ];

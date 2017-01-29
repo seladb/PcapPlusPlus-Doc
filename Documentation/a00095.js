@@ -1,6 +1,8 @@
 var a00095 =
 [
-    [ "address", "a00095.html#ab0d4dbeb685845400c93be1636b9b2fb", null ],
-    [ "control", "a00095.html#ae925aba063d9662de4efe5151c128372", null ],
-    [ "protocol", "a00095.html#a9e49420e46bdc801452f9c30ef5b8659", null ]
+    [ "PcapRemoteAuthentication", "a00095.html#a239165d4eaaf752899e7656439f8f19e", null ],
+    [ "PcapRemoteAuthentication", "a00095.html#a7f1d4e564af1f378e6778d71910d1581", null ],
+    [ "getPcapRmAuth", "a00095.html#a6690ebfa8d5de408a635fed992c50999", null ],
+    [ "password", "a00095.html#a2f464437d3df5c609c4f91675ea73a63", null ],
+    [ "userName", "a00095.html#ab20a5fd24c937d1432587cbec80a14a7", null ]
 ];

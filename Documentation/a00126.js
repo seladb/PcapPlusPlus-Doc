@@ -1,5 +1,6 @@
 var a00126 =
 [
-    [ "SSLHelloRequestMessage", "a00126.html#a9679be6893994e5260c41ea62a157105", null ],
-    [ "toString", "a00126.html#a6bd9593627524cdc2492b0104929e22f", null ]
+    [ "SSLChangeCipherSpecLayer", "a00126.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
+    [ "computeCalculateFields", "a00126.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
+    [ "toString", "a00126.html#a25cb2a35845fa1e357e06330d958f53c", null ]
 ];

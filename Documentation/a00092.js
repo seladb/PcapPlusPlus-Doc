@@ -1,19 +1,10 @@
 var a00092 =
 [
-    [ "ConstVectorIterator", "a00092.html#ae21ecab0276bc0be1ab9a86df6622386", null ],
-    [ "VectorIterator", "a00092.html#acf7704583e3f0dd0bce8adbe4d78c5b0", null ],
-    [ "PointerVector", "a00092.html#a1df9cfd5c3e97fdedf5a654351a385a8", null ],
-    [ "~PointerVector", "a00092.html#a848d21f6b51f10f8207197ea2609a85d", null ],
-    [ "PointerVector", "a00092.html#a6528e240e35f7ee2407d22f24c3dd644", null ],
-    [ "at", "a00092.html#a992816f6d10f86ccafca4b36991378dc", null ],
-    [ "begin", "a00092.html#a15e41c4b220465138e47b5083098e30e", null ],
-    [ "begin", "a00092.html#aed89fdafea5a2c7f946eec79ce6719ea", null ],
-    [ "clear", "a00092.html#ad6b5d1fb386f9d3fe9a9916058875433", null ],
-    [ "end", "a00092.html#adff5df71707ed082640407949028c334", null ],
-    [ "end", "a00092.html#ae5a728c8465d9b8af4d0e3e116256bd0", null ],
-    [ "erase", "a00092.html#a548970610623b300fd3f65ff65f325e3", null ],
-    [ "front", "a00092.html#aa3a724c88f399524a10853bfa5c28dd3", null ],
-    [ "getAndRemoveFromVector", "a00092.html#a496fc8a59393820699c9af6f99ef8fa1", null ],
-    [ "pushBack", "a00092.html#ad5f6f474c257f00373c049f32fe9c653", null ],
-    [ "size", "a00092.html#a4af9c26478016cf873f2e9d886de5403", null ]
+    [ "getDnsServers", "a00092.html#a2cefca3fa33b793cdfb1b58c3883f25b", null ],
+    [ "getPcapLiveDeviceByIp", "a00092.html#a1ab7bad31dbb97247648d1a149d2f612", null ],
+    [ "getPcapLiveDeviceByIp", "a00092.html#a55fd8d0f7a2a6d507bcdcb2836325be2", null ],
+    [ "getPcapLiveDeviceByIp", "a00092.html#a00b3cad054b24d8868cbf141c654c614", null ],
+    [ "getPcapLiveDeviceByIp", "a00092.html#aeffe9373b73371e24023ae30f36ead62", null ],
+    [ "getPcapLiveDeviceByName", "a00092.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
+    [ "getPcapLiveDevicesList", "a00092.html#a993aefeec8551a21171a0d5cfdd78675", null ]
 ];

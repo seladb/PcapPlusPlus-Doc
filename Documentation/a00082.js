@@ -1,39 +1,17 @@
 var a00082 =
 [
-    [ "DeviceMode", "a00082.html#a2381e7f053285090f0f9620bcbd8f0f3", [
-      [ "Normal", "a00082.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
-      [ "Promiscuous", "a00082.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]
-    ] ],
-    [ "LiveDeviceType", "a00082.html#a0e343585711ee4e02d4b9507467135ab", [
-      [ "LibPcapDevice", "a00082.html#a0e343585711ee4e02d4b9507467135aba975b2663c8a8bcc495a71af5e80f8652", null ],
-      [ "WinPcapDevice", "a00082.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6", null ],
-      [ "RemoteDevice", "a00082.html#a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c", null ]
-    ] ],
-    [ "~PcapLiveDevice", "a00082.html#a0172bbe45fb66f4722bf2bd4847c91fe", null ],
-    [ "close", "a00082.html#ad7ccb5eac1b23651e7b157b628435528", null ],
-    [ "getAddresses", "a00082.html#a5a9a1a299d54e2150eedf96f90ad5caa", null ],
-    [ "getDefaultGateway", "a00082.html#ab7df16cfa57eea8f275d8ddfecfee968", null ],
-    [ "getDesc", "a00082.html#aacdd1317bb1387a067bfd21d49e5b059", null ],
-    [ "getDeviceType", "a00082.html#a70b3e39208905585907c3557971b71e8", null ],
-    [ "getDnsServers", "a00082.html#a89cdf86d684d71cf556cd9dd98f1a9c6", null ],
-    [ "getIPv4Address", "a00082.html#a36fb6a59e454d6594451e4b285344181", null ],
-    [ "getLoopback", "a00082.html#a75748fd040d8f97f4c43b1524e4fb479", null ],
-    [ "getMacAddress", "a00082.html#a1bfa0fc4bc0374aaf9f11333a9904110", null ],
-    [ "getMtu", "a00082.html#ae9c3eb2f9d1af368fa0d9da30ef60f9b", null ],
-    [ "getName", "a00082.html#a606d887cb3005e75cc67609b957a886c", null ],
-    [ "getStatistics", "a00082.html#a68f87416b25abe3b625f0f9993bb7e1b", null ],
-    [ "open", "a00082.html#a281f2cd6062791c68ecdd82384f751f8", null ],
-    [ "open", "a00082.html#a5e61feb22fdab2bbbff8da63751169c9", null ],
-    [ "sendPacket", "a00082.html#a2e7b9be7551ad7759c32e9d5fbabd5c8", null ],
-    [ "sendPacket", "a00082.html#a2f45c8bc2c370f3f2120909f36b22802", null ],
-    [ "sendPacket", "a00082.html#aa547d006ea10328c631eb5379798dede", null ],
-    [ "sendPackets", "a00082.html#acf8df597d7d931fce5d006f20c9fbce3", null ],
-    [ "sendPackets", "a00082.html#af9efc27c7c0778d47c94dac02defa22b", null ],
-    [ "sendPackets", "a00082.html#adb039496514f3c53bc7eca2235653c70", null ],
-    [ "startCapture", "a00082.html#a349b001c38b0f1e43a1691fedbd1b0cc", null ],
-    [ "startCapture", "a00082.html#a78306fe44879e457df4043a117f6863a", null ],
-    [ "startCapture", "a00082.html#a2933139d284d7c167283982ec8b56559", null ],
-    [ "startCapture", "a00082.html#a821bbac1ffad5a75c6a0be1ff362eb9f", null ],
-    [ "startCaptureBlockingMode", "a00082.html#ae479987f8faf52328061e18af2addcc5", null ],
-    [ "stopCapture", "a00082.html#a818da3e11e0c953385badf6233ee0f43", null ]
+    [ "MplsLayer", "a00082.html#a78a145f83cfa7322875f9b6ea16e7b01", null ],
+    [ "MplsLayer", "a00082.html#afc1254a5d18cad8700d059c12de135c9", null ],
+    [ "computeCalculateFields", "a00082.html#ad02e5db78fb0b48d558d06ed3ea4f289", null ],
+    [ "getExperimentalUseValue", "a00082.html#a08c0c29fd77546f79fd04e3f72ff560c", null ],
+    [ "getHeaderLen", "a00082.html#acfcd645a870d558cf79f618c67d411f4", null ],
+    [ "getMplsLabel", "a00082.html#a81a078482749d623c7717e0ca6caa1c5", null ],
+    [ "getTTL", "a00082.html#a86338975aee81b97c266fd3c352f1822", null ],
+    [ "isBottomOfStack", "a00082.html#a5a158dfd712e5e75c6abed56d3e5ad19", null ],
+    [ "parseNextLayer", "a00082.html#ac39bfa71fcf5e63cb711334262458c51", null ],
+    [ "setBottomOfStack", "a00082.html#ad36043d44c2a5c3dbb0a9809756ccbc6", null ],
+    [ "setExperimentalUseValue", "a00082.html#a6d47d4dbc8d592c384577dd87726ded7", null ],
+    [ "setMplsLabel", "a00082.html#a21cf86ca8c689c68d70a6451e337a706", null ],
+    [ "setTTL", "a00082.html#a89c20c7d9d47206e52ddb51c536b79c8", null ],
+    [ "toString", "a00082.html#ac8c2d27147757ed9f51f629990514f81", null ]
 ];

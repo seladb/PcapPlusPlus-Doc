@@ -1,23 +1,7 @@
 var a00078 =
 [
-    [ "Packet", "a00078.html#a1a6d4e157661ba7ec6f552c78c82d7fa", null ],
-    [ "Packet", "a00078.html#ab9bf7d18a51920fe87c54ae234941816", null ],
-    [ "Packet", "a00078.html#ac072415e151c3f8b2e55df859160d4dd", null ],
-    [ "~Packet", "a00078.html#a54ccf8336cf3c3f6a5ad58ad12f06656", null ],
-    [ "Packet", "a00078.html#a11d603615d2f100eec547d51b4a6282e", null ],
-    [ "addLayer", "a00078.html#af4c12806f2b320cdddd83a2b3a1136eb", null ],
-    [ "computeCalculateFields", "a00078.html#ab19addb15ea46927076227436fde753e", null ],
-    [ "getFirstLayer", "a00078.html#a02f98bcdd465eac96673752838826de4", null ],
-    [ "getLastLayer", "a00078.html#a1c2dd7a761efe7393249ddc54bdd662b", null ],
-    [ "getLayerOfType", "a00078.html#a78d0de95b49eb313e3184021234e5c5e", null ],
-    [ "getNextLayerOfType", "a00078.html#a1d545bb4bc80e5d45858c373b20befa9", null ],
-    [ "getRawPacket", "a00078.html#a7727ee05d4dc422ebe74c58ddd11cb22", null ],
-    [ "getRawPacketReadOnly", "a00078.html#af8a88c7423642329409672f612990724", null ],
-    [ "insertLayer", "a00078.html#a2e2f9ea31fb1b7fa610db251405522f7", null ],
-    [ "isPacketOfType", "a00078.html#a90b12946df5f2e6077e32620389a3c32", null ],
-    [ "operator=", "a00078.html#a26af180628893e454e9d6e0f2f1ebb98", null ],
-    [ "printToString", "a00078.html#aba43ff35340215d5091a894b996f38d6", null ],
-    [ "printToStringList", "a00078.html#a57c8f43decffe58a25a9b6d612873ca5", null ],
-    [ "removeLayer", "a00078.html#ab751fc35d7e7b8a86e3f1fdbd2c30685", null ],
-    [ "setRawPacket", "a00078.html#a5ebf994984d94f2ffacb367172cfad08", null ]
+    [ "LRUList", "a00078.html#a0d64da0d4ca5386c8ce3f63c6409fab5", null ],
+    [ "getLRUElement", "a00078.html#adfbb5d65592bd0977de48c84ebb5fa0a", null ],
+    [ "getMRUElement", "a00078.html#a2474c4ee35a59b258995896baf5f3af4", null ],
+    [ "put", "a00078.html#a1eb4c3762735f3f49ae5b6bec3f70d58", null ]
 ];

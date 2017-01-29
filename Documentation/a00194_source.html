@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: UdpLayer.h Source File</title>
+<title>PcapPlusPlus: PointerVector.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,78 +105,126 @@ $(document).ready(function(){initNavTree('a00194_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">UdpLayer.h</div>  </div>
+<div class="title">PointerVector.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00194.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_UDP_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_UDP_LAYER</span></div>
+<a href="a00194.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_POINTER_VECTOR</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_POINTER_VECTOR</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00163.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00197.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00142.html">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00142.html">udphdr</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00142.html#a72a8d8ad99698271461762079d3758a9">   22</a></span>&#160;        uint16_t <a class="code" href="a00142.html#a72a8d8ad99698271461762079d3758a9">portSrc</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00142.html#ab2760968de55386f04539019f5a677e5">   24</a></span>&#160;        uint16_t <a class="code" href="a00142.html#ab2760968de55386f04539019f5a677e5">portDst</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00142.html#a68edfe2e8136453d69b7a457461f379d">   26</a></span>&#160;        uint16_t <a class="code" href="a00142.html#a68edfe2e8136453d69b7a457461f379d">length</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">   28</a></span>&#160;        uint16_t <a class="code" href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">headerChecksum</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00207.html">pcpp</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00101.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00101.html">PointerVector</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00101.html#acf7704583e3f0dd0bce8adbe4d78c5b0">   30</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;T*&gt;::iterator <a class="code" href="a00101.html#acf7704583e3f0dd0bce8adbe4d78c5b0">VectorIterator</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00143.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00143.html">UdpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00066.html">Layer</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00143.html#add55cec282d7f33152b83424ceb2710b">   47</a></span>&#160;        <a class="code" href="a00143.html#add55cec282d7f33152b83424ceb2710b">UdpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00066.html">Layer</a>* prevLayer, <a class="code" href="a00078.html">Packet</a>* packet) : <a class="code" href="a00066.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">UDP</a>; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="a00143.html#add55cec282d7f33152b83424ceb2710b">UdpLayer</a>(uint16_t portSrc, uint16_t portDst);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="a00143.html#a3962406394fce824369afc0471845b96">   60</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00142.html">udphdr</a>* <a class="code" href="a00143.html#a3962406394fce824369afc0471845b96">getUdpHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00142.html">udphdr</a>*)m_Data; };</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        uint16_t <a class="code" href="a00143.html#a98ae7478c27ae01ae6be6c887506e8f4">calculateChecksum</a>(<span class="keywordtype">bool</span> writeResultToPacket);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00143.html#a35d4be6b1c091dfc743113c85ca8d596">parseNextLayer</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00101.html#ae21ecab0276bc0be1ab9a86df6622386">   35</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;T*&gt;::const_iterator <a class="code" href="a00101.html#ae21ecab0276bc0be1ab9a86df6622386">ConstVectorIterator</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00101.html#a1df9cfd5c3e97fdedf5a654351a385a8">   40</a></span>&#160;        <a class="code" href="a00101.html#a1df9cfd5c3e97fdedf5a654351a385a8">PointerVector</a>() { }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00101.html#a848d21f6b51f10f8207197ea2609a85d">   45</a></span>&#160;        <a class="code" href="a00101.html#a848d21f6b51f10f8207197ea2609a85d">~PointerVector</a>()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">for</span> (VectorIterator iter = m_Vector.begin(); iter != m_Vector.end(); iter++)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keyword">delete</span> (*iter);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00101.html#a6528e240e35f7ee2407d22f24c3dd644">   57</a></span>&#160;        <a class="code" href="a00101.html#a6528e240e35f7ee2407d22f24c3dd644">PointerVector</a>(<span class="keyword">const</span> <a class="code" href="a00101.html">PointerVector</a>&amp; other)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">for</span> (ConstVectorIterator iter = other.<a class="code" href="a00101.html#a15e41c4b220465138e47b5083098e30e">begin</a>(); iter != other.<a class="code" href="a00101.html#adff5df71707ed082640407949028c334">end</a>(); iter++)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                T* objCopy = <span class="keyword">new</span> T(**iter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                m_Vector.push_back(objCopy);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00101.html#ad6b5d1fb386f9d3fe9a9916058875433">   69</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00101.html#ad6b5d1fb386f9d3fe9a9916058875433">clear</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span> (VectorIterator iter = m_Vector.begin(); iter != m_Vector.end(); iter++)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keyword">delete</span> (*iter);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">   79</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00142.html">udphdr</a>); }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00143.html#ac0e7ba19ff47c38eb879105ca44b3188">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::string <a class="code" href="a00143.html#a6c45f5c9bb386d5231ee485eaad26d41">toString</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_UDP_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00142_html_a72a8d8ad99698271461762079d3758a9"><div class="ttname"><a href="a00142.html#a72a8d8ad99698271461762079d3758a9">pcpp::udphdr::portSrc</a></div><div class="ttdeci">uint16_t portSrc</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:22</div></div>
-<div class="ttc" id="a00143_html_a27ce2ea24679695f2e408c575b465fbb"><div class="ttname"><a href="a00143.html#a27ce2ea24679695f2e408c575b465fbb">pcpp::UdpLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:79</div></div>
-<div class="ttc" id="a00197_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754"><div class="ttname"><a href="a00197.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:51</div></div>
-<div class="ttc" id="a00143_html_a3962406394fce824369afc0471845b96"><div class="ttname"><a href="a00143.html#a3962406394fce824369afc0471845b96">pcpp::UdpLayer::getUdpHeader</a></div><div class="ttdeci">udphdr * getUdpHeader()</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:60</div></div>
-<div class="ttc" id="a00142_html"><div class="ttname"><a href="a00142.html">pcpp::udphdr</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:20</div></div>
-<div class="ttc" id="a00143_html_add55cec282d7f33152b83424ceb2710b"><div class="ttname"><a href="a00143.html#add55cec282d7f33152b83424ceb2710b">pcpp::UdpLayer::UdpLayer</a></div><div class="ttdeci">UdpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:47</div></div>
-<div class="ttc" id="a00143_html"><div class="ttname"><a href="a00143.html">pcpp::UdpLayer</a></div><div class="ttdef"><b>Definition:</b> UdpLayer.h:37</div></div>
-<div class="ttc" id="a00143_html_a98ae7478c27ae01ae6be6c887506e8f4"><div class="ttname"><a href="a00143.html#a98ae7478c27ae01ae6be6c887506e8f4">pcpp::UdpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
-<div class="ttc" id="a00143_html_ac0e7ba19ff47c38eb879105ca44b3188"><div class="ttname"><a href="a00143.html#ac0e7ba19ff47c38eb879105ca44b3188">pcpp::UdpLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00163_html"><div class="ttname"><a href="a00163.html">Layer.h</a></div></div>
-<div class="ttc" id="a00143_html_a35d4be6b1c091dfc743113c85ca8d596"><div class="ttname"><a href="a00143.html#a35d4be6b1c091dfc743113c85ca8d596">pcpp::UdpLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00142_html_ab2760968de55386f04539019f5a677e5"><div class="ttname"><a href="a00142.html#ab2760968de55386f04539019f5a677e5">pcpp::udphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:24</div></div>
-<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00066_html"><div class="ttname"><a href="a00066.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00142_html_af1a4b110e652e51a0f32d4e6c7740354"><div class="ttname"><a href="a00142.html#af1a4b110e652e51a0f32d4e6c7740354">pcpp::udphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:28</div></div>
-<div class="ttc" id="a00143_html_a6c45f5c9bb386d5231ee485eaad26d41"><div class="ttname"><a href="a00143.html#a6c45f5c9bb386d5231ee485eaad26d41">pcpp::UdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00197_html"><div class="ttname"><a href="a00197.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00142_html_a68edfe2e8136453d69b7a457461f379d"><div class="ttname"><a href="a00142.html#a68edfe2e8136453d69b7a457461f379d">pcpp::udphdr::length</a></div><div class="ttdeci">uint16_t length</div><div class="ttdef"><b>Definition:</b> UdpLayer.h:26</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            m_Vector.clear();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00101.html#ad5f6f474c257f00373c049f32fe9c653">   82</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00101.html#ad5f6f474c257f00373c049f32fe9c653">pushBack</a>(T* element) { m_Vector.push_back(element); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="a00101.html#a15e41c4b220465138e47b5083098e30e">   88</a></span>&#160;        <span class="keyword">inline</span> VectorIterator <a class="code" href="a00101.html#a15e41c4b220465138e47b5083098e30e">begin</a>() { <span class="keywordflow">return</span> m_Vector.begin(); }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00101.html#aed89fdafea5a2c7f946eec79ce6719ea">   94</a></span>&#160;        <span class="keyword">inline</span> ConstVectorIterator <a class="code" href="a00101.html#aed89fdafea5a2c7f946eec79ce6719ea">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Vector.begin(); }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="a00101.html#adff5df71707ed082640407949028c334">  100</a></span>&#160;        <span class="keyword">inline</span> VectorIterator <a class="code" href="a00101.html#adff5df71707ed082640407949028c334">end</a>() { <span class="keywordflow">return</span> m_Vector.end(); }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00101.html#ae5a728c8465d9b8af4d0e3e116256bd0">  106</a></span>&#160;        <span class="keyword">inline</span> ConstVectorIterator <a class="code" href="a00101.html#ae5a728c8465d9b8af4d0e3e116256bd0">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Vector.end(); }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">//inline size_t size() { return m_Vector.size(); }</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00101.html#a4af9c26478016cf873f2e9d886de5403">  115</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00101.html#a4af9c26478016cf873f2e9d886de5403">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Vector.size(); }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00101.html#aa3a724c88f399524a10853bfa5c28dd3">  121</a></span>&#160;        <span class="keyword">inline</span> T* <a class="code" href="a00101.html#aa3a724c88f399524a10853bfa5c28dd3">front</a>() { <span class="keywordflow">return</span> m_Vector.front(); }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="a00101.html#a548970610623b300fd3f65ff65f325e3">  128</a></span>&#160;        <span class="keyword">inline</span> VectorIterator <a class="code" href="a00101.html#a548970610623b300fd3f65ff65f325e3">erase</a>(VectorIterator position)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">delete</span> (*position);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> m_Vector.erase(position);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00101.html#a496fc8a59393820699c9af6f99ef8fa1">  139</a></span>&#160;        <span class="keyword">inline</span> T* <a class="code" href="a00101.html#a496fc8a59393820699c9af6f99ef8fa1">getAndRemoveFromVector</a>(VectorIterator&amp; position)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            T* result = (*position);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            VectorIterator tempPos = position;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            tempPos = m_Vector.erase(tempPos);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            position = tempPos;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="a00101.html#a992816f6d10f86ccafca4b36991378dc">  153</a></span>&#160;        <span class="keyword">inline</span> T* <a class="code" href="a00101.html#a992816f6d10f86ccafca4b36991378dc">at</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> m_Vector.at(index);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        std::vector&lt;T*&gt; m_Vector;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    };</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_POINTER_VECTOR */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00101_html_a15e41c4b220465138e47b5083098e30e"><div class="ttname"><a href="a00101.html#a15e41c4b220465138e47b5083098e30e">pcpp::PointerVector::begin</a></div><div class="ttdeci">VectorIterator begin()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:88</div></div>
+<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
+<div class="ttc" id="a00101_html_a848d21f6b51f10f8207197ea2609a85d"><div class="ttname"><a href="a00101.html#a848d21f6b51f10f8207197ea2609a85d">pcpp::PointerVector::~PointerVector</a></div><div class="ttdeci">~PointerVector()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:45</div></div>
+<div class="ttc" id="a00101_html_ad5f6f474c257f00373c049f32fe9c653"><div class="ttname"><a href="a00101.html#ad5f6f474c257f00373c049f32fe9c653">pcpp::PointerVector::pushBack</a></div><div class="ttdeci">void pushBack(T *element)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:82</div></div>
+<div class="ttc" id="a00101_html_aa3a724c88f399524a10853bfa5c28dd3"><div class="ttname"><a href="a00101.html#aa3a724c88f399524a10853bfa5c28dd3">pcpp::PointerVector::front</a></div><div class="ttdeci">T * front()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:121</div></div>
+<div class="ttc" id="a00101_html_a1df9cfd5c3e97fdedf5a654351a385a8"><div class="ttname"><a href="a00101.html#a1df9cfd5c3e97fdedf5a654351a385a8">pcpp::PointerVector::PointerVector</a></div><div class="ttdeci">PointerVector()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:40</div></div>
+<div class="ttc" id="a00101_html_a4af9c26478016cf873f2e9d886de5403"><div class="ttname"><a href="a00101.html#a4af9c26478016cf873f2e9d886de5403">pcpp::PointerVector::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> PointerVector.h:115</div></div>
+<div class="ttc" id="a00101_html_a548970610623b300fd3f65ff65f325e3"><div class="ttname"><a href="a00101.html#a548970610623b300fd3f65ff65f325e3">pcpp::PointerVector::erase</a></div><div class="ttdeci">VectorIterator erase(VectorIterator position)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:128</div></div>
+<div class="ttc" id="a00101_html_aed89fdafea5a2c7f946eec79ce6719ea"><div class="ttname"><a href="a00101.html#aed89fdafea5a2c7f946eec79ce6719ea">pcpp::PointerVector::begin</a></div><div class="ttdeci">ConstVectorIterator begin() const </div><div class="ttdef"><b>Definition:</b> PointerVector.h:94</div></div>
+<div class="ttc" id="a00101_html_ad6b5d1fb386f9d3fe9a9916058875433"><div class="ttname"><a href="a00101.html#ad6b5d1fb386f9d3fe9a9916058875433">pcpp::PointerVector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:69</div></div>
+<div class="ttc" id="a00101_html_ae5a728c8465d9b8af4d0e3e116256bd0"><div class="ttname"><a href="a00101.html#ae5a728c8465d9b8af4d0e3e116256bd0">pcpp::PointerVector::end</a></div><div class="ttdeci">ConstVectorIterator end() const </div><div class="ttdef"><b>Definition:</b> PointerVector.h:106</div></div>
+<div class="ttc" id="a00101_html_a496fc8a59393820699c9af6f99ef8fa1"><div class="ttname"><a href="a00101.html#a496fc8a59393820699c9af6f99ef8fa1">pcpp::PointerVector::getAndRemoveFromVector</a></div><div class="ttdeci">T * getAndRemoveFromVector(VectorIterator &amp;position)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:139</div></div>
+<div class="ttc" id="a00101_html_ae21ecab0276bc0be1ab9a86df6622386"><div class="ttname"><a href="a00101.html#ae21ecab0276bc0be1ab9a86df6622386">pcpp::PointerVector::ConstVectorIterator</a></div><div class="ttdeci">std::vector&lt; T * &gt;::const_iterator ConstVectorIterator</div><div class="ttdef"><b>Definition:</b> PointerVector.h:35</div></div>
+<div class="ttc" id="a00101_html_a992816f6d10f86ccafca4b36991378dc"><div class="ttname"><a href="a00101.html#a992816f6d10f86ccafca4b36991378dc">pcpp::PointerVector::at</a></div><div class="ttdeci">T * at(int index)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:153</div></div>
+<div class="ttc" id="a00101_html_acf7704583e3f0dd0bce8adbe4d78c5b0"><div class="ttname"><a href="a00101.html#acf7704583e3f0dd0bce8adbe4d78c5b0">pcpp::PointerVector::VectorIterator</a></div><div class="ttdeci">std::vector&lt; T * &gt;::iterator VectorIterator</div><div class="ttdef"><b>Definition:</b> PointerVector.h:30</div></div>
+<div class="ttc" id="a00101_html_a6528e240e35f7ee2407d22f24c3dd644"><div class="ttname"><a href="a00101.html#a6528e240e35f7ee2407d22f24c3dd644">pcpp::PointerVector::PointerVector</a></div><div class="ttdeci">PointerVector(const PointerVector &amp;other)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:57</div></div>
+<div class="ttc" id="a00101_html_adff5df71707ed082640407949028c334"><div class="ttname"><a href="a00101.html#adff5df71707ed082640407949028c334">pcpp::PointerVector::end</a></div><div class="ttdeci">VectorIterator end()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:100</div></div>
+<div class="ttc" id="a00207_html"><div class="ttname"><a href="a00207.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00194.html">UdpLayer.h</a></li>
-    <li class="footer">Generated on Sat Dec 10 2016 23:11:03 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00194.html">PointerVector.h</a></li>
+    <li class="footer">Generated on Sun Jan 29 2017 23:59:14 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

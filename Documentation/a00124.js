@@ -1,10 +1,8 @@
 var a00124 =
 [
-    [ "SSLHandshakeLayer", "a00124.html#a0b37d33d8342f166a5a1746820aa0c0b", null ],
-    [ "computeCalculateFields", "a00124.html#ab9db43d75aec58260e33cbce36f969bb", null ],
-    [ "getHandshakeMessageAt", "a00124.html#ac8d1ae87429f17ad41ca8aa4b4231fa8", null ],
-    [ "getHandshakeMessageOfType", "a00124.html#a4a40a448fd7234eb08c95b5032e64974", null ],
-    [ "getHandshakeMessagesCount", "a00124.html#a9f7c42970ded74d0fee34103e51f7632", null ],
-    [ "getNextHandshakeMessageOfType", "a00124.html#ac1659f58a8e3ed9ed506df80d91c7dbb", null ],
-    [ "toString", "a00124.html#a33923287a108f28edc654c5120cf6158", null ]
+    [ "SSLCertificateRequestMessage", "a00124.html#ae85b37b12ff7e387b3d3513ec7170558", null ],
+    [ "getCertificateAuthorityData", "a00124.html#a3939ecbf00de57ea722e8cf5005c0717", null ],
+    [ "getCertificateAuthorityLength", "a00124.html#a68ce41ecc995e5b8bab7a333a72334b3", null ],
+    [ "getCertificateTypes", "a00124.html#a2d6091acdd00f6e43544890ccf951e2a", null ],
+    [ "toString", "a00124.html#ae1e7664638e7d2df1baa6e8e96a29c4f", null ]
 ];

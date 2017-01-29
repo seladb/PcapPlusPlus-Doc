@@ -1,6 +1,10 @@
 var a00110 =
 [
-    [ "handshakeType", "a00110.html#a9a456a315b65d5e41587b83972471398", null ],
-    [ "length1", "a00110.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
-    [ "length2", "a00110.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
+    [ "getTagDataAs", "a00110.html#a90c9d117f0227b28315f66fb86621894", null ],
+    [ "getTagTotalSize", "a00110.html#ae0a0ec3151b3be1dc391bd9ebb1a2d15", null ],
+    [ "getType", "a00110.html#ad721e2c2e3dbb15efae5e700120f1bd9", null ],
+    [ "setTagData", "a00110.html#a058a53a2eac30209abaec60f70e7ad63", null ],
+    [ "tagData", "a00110.html#a859b9c75b9f17f734c42b9bdc7ac1ad3", null ],
+    [ "tagDataLength", "a00110.html#ae4e187f3ca9a2b81adaa193823bf2a2a", null ],
+    [ "tagType", "a00110.html#a53236fe2fd4cf146334cdc19ffc01192", null ]
 ];

@@ -1,10 +1,11 @@
 var a00056 =
 [
-    [ "AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231", [
-      [ "IPv4AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
-      [ "IPv6AddressType", "a00056.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
-    ] ],
-    [ "getType", "a00056.html#a85a3e43774848c93585f97bdef6ec73d", null ],
-    [ "isValid", "a00056.html#a2d6b031d025c3ef287584a605b64d750", null ],
-    [ "toString", "a00056.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
+    [ "getGroupAddress", "a00056.html#a4aa7f64af8b5909147d6a3df382cc244", null ],
+    [ "getHeaderLen", "a00056.html#ab9f390cb7dc2e9501147d011fb34d05d", null ],
+    [ "getIgmpHeader", "a00056.html#ac6b7b7df753d5d727d3d8d18f08bd1d9", null ],
+    [ "getType", "a00056.html#ab2376bdcbcdc9c03af88a55b0c092600", null ],
+    [ "parseNextLayer", "a00056.html#a189e9eac7a558017feb2901feeabcca3", null ],
+    [ "setGroupAddress", "a00056.html#a2a09455ff572e33373e16a5eda6a4486", null ],
+    [ "setType", "a00056.html#aa5da5a6be635a67d4d1de24b74a0a6db", null ],
+    [ "toString", "a00056.html#a790ec2b31e252632c42d8829498b2ef0", null ]
 ];

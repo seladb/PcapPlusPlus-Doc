@@ -1,7 +1,6 @@
 var a00120 =
 [
-    [ "SSLClientKeyExchangeMessage", "a00120.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
-    [ "getClientKeyExchangeParams", "a00120.html#a23584b393dea97a6d249c750b99f4c5f", null ],
-    [ "getClientKeyExchangeParamsLength", "a00120.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
-    [ "toString", "a00120.html#ada71ea045d9dbfd57484a156a108c00b", null ]
+    [ "length", "a00120.html#ad0988dfc40b111270d4c447293218d1c", null ],
+    [ "recordType", "a00120.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
+    [ "recordVersion", "a00120.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
 ];

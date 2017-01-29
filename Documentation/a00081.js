@@ -1,11 +1,14 @@
 var a00081 =
 [
-    [ "PcapFileWriterDevice", "a00081.html#a46b3b5c1ffed33d3540fa40db94010e2", null ],
-    [ "~PcapFileWriterDevice", "a00081.html#ac3aa347668d24475e9f750fcb5959d93", null ],
-    [ "close", "a00081.html#a60b102a04429b8baba0637c3505f6448", null ],
-    [ "getStatistics", "a00081.html#a3f72c11bc118609f84c5b462f27cdc1f", null ],
-    [ "open", "a00081.html#ab9c5ea38028c05717dd2957c4be08296", null ],
-    [ "open", "a00081.html#a0fee40c9c768596aab93c2a4d1b0cae3", null ],
-    [ "writePacket", "a00081.html#add964c71699315d457a33b22998501fd", null ],
-    [ "writePackets", "a00081.html#ac2e22200a6da2898262499699c001430", null ]
+    [ "MBufRawPacket", "a00081.html#aaf206811e019a695318954e65b044f96", null ],
+    [ "~MBufRawPacket", "a00081.html#a696d9e42af3f7b8ea296e4137a019a13", null ],
+    [ "MBufRawPacket", "a00081.html#a0b2a21888dbcbdc2e50c703938de6804", null ],
+    [ "appendData", "a00081.html#af1c5144634729ce1ab2da2aa89946e89", null ],
+    [ "clear", "a00081.html#a265214f9d02a63d0cff85b4e1a93c396", null ],
+    [ "init", "a00081.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
+    [ "insertData", "a00081.html#a12e04aa6f066e6971946cc033fb2bdf9", null ],
+    [ "operator=", "a00081.html#ab194bcba22f170560890ee3f73faa027", null ],
+    [ "reallocateData", "a00081.html#ac8984ba4413680165a38d13bdd853987", null ],
+    [ "removeData", "a00081.html#a3895fef553d8345e18b7f97e52f1a10d", null ],
+    [ "setRawData", "a00081.html#a412aebf582fc8e9b5bbb6dfe8206c301", null ]
 ];

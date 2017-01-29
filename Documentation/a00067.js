@@ -1,10 +1,10 @@
 var a00067 =
 [
-    [ "LinkDuplex", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
-      [ "FULL_DUPLEX", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
-      [ "HALF_DUPLEX", "a00067.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
-    ] ],
-    [ "linkDuplex", "a00067.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
-    [ "linkSpeedMbps", "a00067.html#a6177ed98446f18d57be88d8c2411a473", null ],
-    [ "linkUp", "a00067.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
+    [ "IPFilter", "a00067.html#a953d29c9f7d99369acea260016ab6825", null ],
+    [ "IPFilter", "a00067.html#aee54dc6a3492eee05f53c80e44ab9b08", null ],
+    [ "IPFilter", "a00067.html#a68c98982c7c42c9397c2ed84f0a863ac", null ],
+    [ "parseToString", "a00067.html#a9244dc71714f73d8e215498c7c3b0f23", null ],
+    [ "setAddr", "a00067.html#a41a8a2bdad3732f03639ab5009c8e10c", null ],
+    [ "setLen", "a00067.html#af9b725cf2a44144a36d9775ea9e36c5c", null ],
+    [ "setMask", "a00067.html#a7e47d6b236db754fe0463e8f011edd79", null ]
 ];

@@ -1,7 +1,13 @@
 var a00094 =
 [
-    [ "PortRangeFilter", "a00094.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
-    [ "parseToString", "a00094.html#a267adc124537789fd02510b61e2b4905", null ],
-    [ "setFromPort", "a00094.html#ae68efea901b4af50277b64632bc91d19", null ],
-    [ "setToPort", "a00094.html#a568420221c6f509bcdb58c937d0c683d", null ]
+    [ "PcapNgFileWriterDevice", "a00094.html#abf641b890d2089eb4090cf67920c2882", null ],
+    [ "~PcapNgFileWriterDevice", "a00094.html#a93312aab61a193df522f8046af6d291e", null ],
+    [ "close", "a00094.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
+    [ "getStatistics", "a00094.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
+    [ "open", "a00094.html#adca940885348d13ae58865ff5011e6fd", null ],
+    [ "open", "a00094.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
+    [ "open", "a00094.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "writePacket", "a00094.html#a81069d1681efd6adf22e6ae80f300993", null ],
+    [ "writePacket", "a00094.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
+    [ "writePackets", "a00094.html#a214c363a167e1538d9ea29a58efd9640", null ]
 ];

@@ -1,13 +1,12 @@
 var a00085 =
 [
-    [ "PcapNgFileWriterDevice", "a00085.html#abf641b890d2089eb4090cf67920c2882", null ],
-    [ "~PcapNgFileWriterDevice", "a00085.html#a93312aab61a193df522f8046af6d291e", null ],
-    [ "close", "a00085.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
-    [ "getStatistics", "a00085.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
-    [ "open", "a00085.html#adca940885348d13ae58865ff5011e6fd", null ],
-    [ "open", "a00085.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
-    [ "open", "a00085.html#a69ab330b859dc45892f3d7666b7b0671", null ],
-    [ "writePacket", "a00085.html#a81069d1681efd6adf22e6ae80f300993", null ],
-    [ "writePacket", "a00085.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
-    [ "writePackets", "a00085.html#a214c363a167e1538d9ea29a58efd9640", null ]
+    [ "NullLoopbackLayer", "a00085.html#a3e7c188f2eabfc769fa1f0fa666f01ab", null ],
+    [ "NullLoopbackLayer", "a00085.html#a824ecde5c3e2f564ab50d05c0b687496", null ],
+    [ "~NullLoopbackLayer", "a00085.html#af2da77d44b862d1f7e1b809ea6db35b4", null ],
+    [ "computeCalculateFields", "a00085.html#af569f6eae1c3f3638cac65729fda7ead", null ],
+    [ "getFamily", "a00085.html#a82c2b5ee534360deb829789f8fc6bbdb", null ],
+    [ "getHeaderLen", "a00085.html#abb777e83866785f6884b9073eee28602", null ],
+    [ "parseNextLayer", "a00085.html#a6cac977c2a2227ff17b682a30587793a", null ],
+    [ "setFamily", "a00085.html#a858718a72b0563f413b8a545d2f6b9d4", null ],
+    [ "toString", "a00085.html#a60754e5840948f08bfb2860fdceb7431", null ]
 ];

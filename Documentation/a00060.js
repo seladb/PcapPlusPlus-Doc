@@ -1,15 +1,10 @@
 var a00060 =
 [
-    [ "IPv4Address", "a00060.html#a7eef864e1a372d665a27de6189901e1e", null ],
-    [ "IPv4Address", "a00060.html#a1ec2cd8425ee7d92b1f95cde69650df7", null ],
-    [ "IPv4Address", "a00060.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
-    [ "IPv4Address", "a00060.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
-    [ "IPv4Address", "a00060.html#a133598783690be861bd41452680b2290", null ],
-    [ "getType", "a00060.html#a17308b1152e801d0ed68ed0a63b6077f", null ],
-    [ "matchSubnet", "a00060.html#a5551eda249276e8676675e5d0184bb49", null ],
-    [ "operator!=", "a00060.html#a8160f16543866740b00e8350f617442e", null ],
-    [ "operator=", "a00060.html#a086c40b049355635699e3b3c18678fb6", null ],
-    [ "operator==", "a00060.html#ab244cc421284de22fdad9fc9a77a306f", null ],
-    [ "toInAddr", "a00060.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
-    [ "toInt", "a00060.html#afe150ecb366ca60577da2cc426ed2c97", null ]
+    [ "checksum", "a00060.html#adb78f71a90f2ecd2276d28258a2ce1d0", null ],
+    [ "groupAddress", "a00060.html#a8dc4203d2ced448835c4adeb44185ba6", null ],
+    [ "maxResponseTime", "a00060.html#ae1720bbb2665eca8153e26f26175ef55", null ],
+    [ "numOfSources", "a00060.html#ab81028868f6fe62669597446edbcf116", null ],
+    [ "qqic", "a00060.html#a909159a3c05865d63fc33c3e67e2bdca", null ],
+    [ "s_qrv", "a00060.html#ac039bf95f65102c14937f2e41839d3f4", null ],
+    [ "type", "a00060.html#a4fe7696bd29ced6d22ebf989e39ca985", null ]
 ];

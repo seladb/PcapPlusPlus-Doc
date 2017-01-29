@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::SSLx509Certificate Class Reference</title>
+<title>PcapPlusPlus: pcpp::SSLHandshakeMessage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,29 +108,57 @@ $(document).ready(function(){initNavTree('a00134.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00335.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00345.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::SSLx509Certificate Class Reference</div>  </div>
+<div class="title">pcpp::SSLHandshakeMessage Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00190_source.html">SSLHandshake.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00200_source.html">SSLHandshake.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::SSLHandshakeMessage:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00134.png" usemap="#pcpp::SSLHandshakeMessage_map" alt=""/>
+  <map id="pcpp::SSLHandshakeMessage_map" name="pcpp::SSLHandshakeMessage_map">
+<area href="a00123.html" alt="pcpp::SSLCertificateMessage" shape="rect" coords="247,56,484,80"/>
+<area href="a00124.html" alt="pcpp::SSLCertificateRequestMessage" shape="rect" coords="247,112,484,136"/>
+<area href="a00125.html" alt="pcpp::SSLCertificateVerifyMessage" shape="rect" coords="247,168,484,192"/>
+<area href="a00128.html" alt="pcpp::SSLClientHelloMessage" shape="rect" coords="247,224,484,248"/>
+<area href="a00129.html" alt="pcpp::SSLClientKeyExchangeMessage" shape="rect" coords="247,280,484,304"/>
+<area href="a00132.html" alt="pcpp::SSLFinishedMessage" shape="rect" coords="247,336,484,360"/>
+<area href="a00135.html" alt="pcpp::SSLHelloRequestMessage" shape="rect" coords="247,392,484,416"/>
+<area href="a00137.html" alt="pcpp::SSLNewSessionTicketMessage" shape="rect" coords="247,448,484,472"/>
+<area href="a00138.html" alt="pcpp::SSLServerHelloDoneMessage" shape="rect" coords="247,504,484,528"/>
+<area href="a00139.html" alt="pcpp::SSLServerHelloMessage" shape="rect" coords="247,560,484,584"/>
+<area href="a00140.html" alt="pcpp::SSLServerKeyExchangeMessage" shape="rect" coords="247,616,484,640"/>
+<area href="a00142.html" alt="pcpp::SSLUnknownMessage" shape="rect" coords="247,672,484,696"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a368ea567eb3154a6b44c7bbf827547ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a368ea567eb3154a6b44c7bbf827547ef">SSLx509Certificate</a> (uint8_t *data, size_t dataLen, bool <a class="el" href="a00134.html#ae4182828228a1e402626560090d3cdb6">allDataExists</a>)</td></tr>
-<tr class="separator:a368ea567eb3154a6b44c7bbf827547ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9c58672e41a057dc53d4923af3992f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a4d9c58672e41a057dc53d4923af3992f">getData</a> ()</td></tr>
-<tr class="separator:a4d9c58672e41a057dc53d4923af3992f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e16b41a4c1bd25026eb754eb8424122"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a2e16b41a4c1bd25026eb754eb8424122">getDataLength</a> ()</td></tr>
-<tr class="separator:a2e16b41a4c1bd25026eb754eb8424122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4182828228a1e402626560090d3cdb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#ae4182828228a1e402626560090d3cdb6">allDataExists</a> ()</td></tr>
-<tr class="separator:ae4182828228a1e402626560090d3cdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31089d536fc762b283d30d7c36e3584b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00207.html#ae0fad0f4f978c2fec3de006703aac92c">SSLHandshakeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a31089d536fc762b283d30d7c36e3584b">getHandshakeType</a> ()</td></tr>
+<tr class="separator:a31089d536fc762b283d30d7c36e3584b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e70c139eb98ba63175a62e87f7de78"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#ac9e70c139eb98ba63175a62e87f7de78">getMessageLength</a> ()</td></tr>
+<tr class="separator:ac9e70c139eb98ba63175a62e87f7de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dc55310a1f9160b17516a9d1b73d45"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a58dc55310a1f9160b17516a9d1b73d45">isMessageComplete</a> ()</td></tr>
+<tr class="separator:a58dc55310a1f9160b17516a9d1b73d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4342813d150cb1cec2911b59b99e0418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">SSLHandshakeLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a4342813d150cb1cec2911b59b99e0418">getContainingLayer</a> ()</td></tr>
+<tr class="separator:a4342813d150cb1cec2911b59b99e0418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b72bf10472c67d0044006099c6ea5a"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a17b72bf10472c67d0044006099c6ea5a">toString</a> ()=0</td></tr>
+<tr class="separator:a17b72bf10472c67d0044006099c6ea5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af306660713051f8884713621bbb5bb18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00134.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#af306660713051f8884713621bbb5bb18">createHandhakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00133.html">SSLHandshakeLayer</a> *container)</td></tr>
+<tr class="separator:af306660713051f8884713621bbb5bb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a x509v3 certificate. the <a class="el" href="a00114.html">SSLCertificateMessage</a> class returns an instance of this class as the certificate. Currently this class doesn't do much as it doesn't parse the certificate. It only acts as container to the raw data and returns general info as data as raw, length, etc. In the future I may add full parsing of the certificate </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a368ea567eb3154a6b44c7bbf827547ef"></a>
+<div class="textblock"><p>A base class for SSL/TLS handshake messages. This is an abstract class and cannot be instantiated. SSL/TLS handshake messages are contained in <a class="el" href="a00133.html">SSLHandshakeLayer</a>, meaning a <a class="el" href="a00133.html">SSLHandshakeLayer</a> instance can contain one or more <a class="el" href="a00134.html">SSLHandshakeMessage</a> instances. For example: one <a class="el" href="a00133.html">SSLHandshakeLayer</a> may contain a server-hello, certificate, server-key-exchange, and server-hello-done messages (although it's not such a common case, most handshake layers contain 1 handshake message only) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af306660713051f8884713621bbb5bb18"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,7 +166,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::SSLx509Certificate::SSLx509Certificate </td>
+          <td class="memname">static <a class="el" href="a00134.html">SSLHandshakeMessage</a>* pcpp::SSLHandshakeMessage::createHandhakeMessage </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -152,8 +180,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>allDataExists</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00133.html">SSLHandshakeLayer</a> *&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,23 +191,22 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>C'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A factory method for creating instances of handshake messages from raw data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data of the certificate </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length in bytes of the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">allDataExists</td><td>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This field indicates whether the raw data contains all ceritificate data of just a part of it </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data containing 1 handshake message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">container</td><td>A pointer to the <a class="el" href="a00133.html">SSLHandshakeLayer</a> instance which will contain the created message. This parameter is required because the handshake message includes a pointer to its container </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae4182828228a1e402626560090d3cdb6"></a>
+<a class="anchor" id="a4342813d150cb1cec2911b59b99e0418"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -187,7 +214,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::SSLx509Certificate::allDataExists </td>
+          <td class="memname"><a class="el" href="a00133.html">SSLHandshakeLayer</a>* pcpp::SSLHandshakeMessage::getContainingLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -199,11 +226,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This method provides an indication whether all certificate data exists or only part of it </p><dl class="section return"><dt>Returns</dt><dd>True if this data contains all certificate data, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00133.html">SSLHandshakeLayer</a> instance containing this message </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4d9c58672e41a057dc53d4923af3992f"></a>
+<a class="anchor" id="a31089d536fc762b283d30d7c36e3584b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -211,7 +238,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* pcpp::SSLx509Certificate::getData </td>
+          <td class="memname">virtual <a class="el" href="a00207.html#ae0fad0f4f978c2fec3de006703aac92c">SSLHandshakeType</a> pcpp::SSLHandshakeMessage::getHandshakeType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -219,15 +246,17 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the raw data </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The handshake message type </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00142.html#a84538f3ce34865d7c6956a6c239ffa37">pcpp::SSLUnknownMessage</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2e16b41a4c1bd25026eb754eb8424122"></a>
+<a class="anchor" id="ac9e70c139eb98ba63175a62e87f7de78"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -235,7 +264,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t pcpp::SSLx509Certificate::getDataLength </td>
+          <td class="memname">virtual size_t pcpp::SSLHandshakeMessage::getMessageLength </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -243,11 +272,63 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Raw data length </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The handshake message length in bytes. Notice that sometimes the handshake message is divided between several packets, in this case this method will return the length of part of the message in the current packet </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00142.html#ae3fa59951f9a9036a14120451f70d046">pcpp::SSLUnknownMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58dc55310a1f9160b17516a9d1b73d45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::SSLHandshakeMessage::isMessageComplete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if current packet contains the entire message or false otherwise. This method is important because sometimes handshake messages are divided in consequent packets (happens a lot in certificate messages which usually contain several KB of data which is larger than standard packet size, so the message is divided between several packets) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a17b72bf10472c67d0044006099c6ea5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string pcpp::SSLHandshakeMessage::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the message type (e.g "Client Hello message") </dd></dl>
+
+<p>Implemented in <a class="el" href="a00142.html#aab56dd7d4e29722be66481e2b5bbc139">pcpp::SSLUnknownMessage</a>, <a class="el" href="a00137.html#a2c49f187e4aac5f99e3c97178108cefc">pcpp::SSLNewSessionTicketMessage</a>, <a class="el" href="a00132.html#a614be67e42308cd5c81437ac5e2d70b8">pcpp::SSLFinishedMessage</a>, <a class="el" href="a00125.html#a0662a3136fca531a733055c1de84d0b7">pcpp::SSLCertificateVerifyMessage</a>, <a class="el" href="a00138.html#a49ea62c89cad07b2c04d4184edb4989d">pcpp::SSLServerHelloDoneMessage</a>, <a class="el" href="a00124.html#ae1e7664638e7d2df1baa6e8e96a29c4f">pcpp::SSLCertificateRequestMessage</a>, <a class="el" href="a00129.html#ada71ea045d9dbfd57484a156a108c00b">pcpp::SSLClientKeyExchangeMessage</a>, <a class="el" href="a00140.html#acae0392cfe821a9acd35e247e24e012b">pcpp::SSLServerKeyExchangeMessage</a>, <a class="el" href="a00135.html#a6bd9593627524cdc2492b0104929e22f">pcpp::SSLHelloRequestMessage</a>, <a class="el" href="a00123.html#a3efa384d6853e29d9448269fd1a00b20">pcpp::SSLCertificateMessage</a>, <a class="el" href="a00139.html#ab6d2e12e5d3aa1340faf260f29ab1e21">pcpp::SSLServerHelloMessage</a>, and <a class="el" href="a00128.html#a4525dd29e48f1dcea786e8c889c368e1">pcpp::SSLClientHelloMessage</a>.</p>
 
 </div>
 </div>
@@ -256,8 +337,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00197.html">pcpp</a></li><li class="navelem"><a class="el" href="a00134.html">SSLx509Certificate</a></li>
-    <li class="footer">Generated on Sat Dec 10 2016 23:11:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00207.html">pcpp</a></li><li class="navelem"><a class="el" href="a00134.html">SSLHandshakeMessage</a></li>
+    <li class="footer">Generated on Sun Jan 29 2017 23:59:15 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

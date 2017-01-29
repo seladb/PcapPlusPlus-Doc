@@ -1,18 +1,14 @@
 var a00068 =
 [
-    [ "LogLevel", "a00068.html#a522254c250da7b12b5b4817b84c208b6", [
-      [ "Normal", "a00068.html#a522254c250da7b12b5b4817b84c208b6a58e6375bc77510a75bee39cb4356ad7e", null ],
-      [ "Debug", "a00068.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397", null ]
-    ] ],
-    [ "enableErrors", "a00068.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91", null ],
-    [ "getErrorString", "a00068.html#a96821970d89017f19ad24c024198e3a3", null ],
-    [ "getErrorStringLength", "a00068.html#a2ed51d61daff5222c4069cff3e245a83", null ],
-    [ "getLogModulesArr", "a00068.html#adc348d135eeef86271a100d3741ebb60", null ],
-    [ "isDebugEnabled", "a00068.html#a9b53774d0be75118413fcb3903e0da1b", null ],
-    [ "isErrorStringSet", "a00068.html#acde976836742578a55d778444d2dbcd6", null ],
-    [ "isSupressErrors", "a00068.html#ab1634894a477fbd9bccf8df68326d6d2", null ],
-    [ "setAllModlesToLogLevel", "a00068.html#a031c0e504a537e5921687ab2450bbc04", null ],
-    [ "setErrorString", "a00068.html#a99c1db3a69ae2f55b08df135ee706080", null ],
-    [ "setLogLevel", "a00068.html#a8869da5bc6e76719c57942b12f8f36f6", null ],
-    [ "supressErrors", "a00068.html#a84be0ff3175c243ca493975222aa199b", null ]
+    [ "fragmentOffset", "a00068.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
+    [ "headerChecksum", "a00068.html#a724ead037aaf6310e5b9ebceba77f922", null ],
+    [ "internetHeaderLength", "a00068.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
+    [ "ipDst", "a00068.html#a2722895dc1ed669dd9b241fc472a284f", null ],
+    [ "ipId", "a00068.html#a9d50037f1b02307d20dc8a113207dbce", null ],
+    [ "ipSrc", "a00068.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
+    [ "ipVersion", "a00068.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
+    [ "protocol", "a00068.html#a9600c9b8e380ba5468763cdf648d043c", null ],
+    [ "timeToLive", "a00068.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
+    [ "totalLength", "a00068.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
+    [ "typeOfService", "a00068.html#a229d7a9444c63a92532cd17b16e9de70", null ]
 ];
