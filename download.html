@@ -112,22 +112,33 @@
 		<h6><strong>Prerequisutes</strong></h6>
 		<p>In order to compile PcapPlusPlus on Windows using MinGW32 or MinGW-w64 you need the following components:</p>
 		<ol>
-		  <li>The MinGW environment and compiler - this is the only environment currently supported for PcapPlusPlus. You can download and install is from <a href="www.mingw.org">www.mingw.org</a>
-		    <ul>
-			  <li>The fastest way I found for installing mingw32 was through this link: <a href="http://www.mingw.org/wiki/Getting_Started">http://www.mingw.org/wiki/Getting_Started</a></li>
-			  <li>Download "mingw-get-setup.exe", run it and follow the instructions</li>
-			  <li>By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with "mingw-get.exe" (MinGW installation manager)</li>
-			  <li>In the MinGW installation manager search for all packages named "mingw32-pthreads-w32" and select them</li>
-			  <li>Choose Installation->Update Catalogue</li>
-			  <li>If you prefer to install pthreads manually please follow these steps:
-			    <ul>
-				  <li>Download <a href="http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.9.1/pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma">pthreads for MinGW</a></li>
-				  <li>Extract it with 7-Zip: <strong>7z.exe e pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma -oC:\pthreads && 7z.exe x C:\pthreads\pthreads-w32-2.9.1-1-mingw32-dev.tar -oC:\pthreads</strong></li>
-				  <li>Copy the include files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\include* C:\MinGW\include</strong></li>
-				  <li>Copy the lib files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\lib* C:\MinGW\lib</strong></li>
+		  <li>MinGW32 or MinGW-w64 environment and compiler
+			<ul>  
+			  <li>Download and installation instructions for <strong>MinGW32</strong>:
+				<ul>
+				  <li>The fastest way I found for installing mingw32 was through this link: <a href="http://www.mingw.org/wiki/Getting_Started">http://www.mingw.org/wiki/Getting_Started</a></li>
+				  <li>Download "mingw-get-setup.exe", run it and follow the instructions</li>
+				  <li>By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with "mingw-get.exe" (MinGW installation manager)</li>
+				  <li>In the MinGW installation manager search for all packages named "mingw32-pthreads-w32" and select them</li>
+				  <li>Choose Installation->Update Catalogue</li>
+				  <li>If you prefer to install pthreads manually please follow these steps:
+					<ul>
+					  <li>Download <a href="http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.9.1/pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma">pthreads for MinGW</a></li>
+					  <li>Extract it with 7-Zip: <strong>7z.exe e pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma -oC:\pthreads && 7z.exe x C:\pthreads\pthreads-w32-2.9.1-1-mingw32-dev.tar -oC:\pthreads</strong></li>
+					  <li>Copy the include files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\include* C:\MinGW\include</strong></li>
+					  <li>Copy the lib files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\lib* C:\MinGW\lib</strong></li>
+					</ul>
+				  </li>
 				</ul>
 			  </li>
-		    </ul>
+			  <li>Download and installation instructions for <strong>MinGW-w64</strong>:
+			    <ul>
+				  <li>Download and run mingw-w64 installer from here: <a href="https://sourceforge.net/projects/mingw-w64/">https://sourceforge.net/projects/mingw-w64/</a></li>
+				  <li>Follow the instruction in the installation wizard. Make sure you choose POSIX threads and not win32 threads</li>
+				  <li>Make sure you also install MSYS or MSYS2. MSYS2 installer can be downloaded from here: <a href="http://msys2.github.io/">http://msys2.github.io/</a></li>
+				</ul>
+			  </li>
+			</ul>
 		  </li>
 		  <li>Winpcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <a href="https://www.winpcap.org/devel.htm">https://www.winpcap.org/devel.htm</a></li>
 		</ol>
