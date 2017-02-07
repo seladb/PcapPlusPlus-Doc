@@ -189,8 +189,7 @@ int main(int argc, char* argv[])
 		  <li>Now we need to create a makefile. First let's write the makefiles for Windows and Linux and then explain what they contains:</li>
 		  <h6><strong>Windows makefile</strong></h6>
           <pre>
-		    <code class="makefile">-include ../Dist/mk/platform.mk
--include ../Dist/mk/PcapPlusPlus.mk
+		    <code class="makefile">-include ../Dist/mk/PcapPlusPlus.mk
 
 # All Target
 all:
@@ -216,19 +215,13 @@ clean:
     rm main.o
     rm HelloWorld</code>
           </pre>
-		  <li>Now let's explore the makefile:</li>
+		  <li>Now let's explore the <em>PcapPlusPlus.mk</em> makefile - it contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:</li>
             <ol>
-              <li><em>platform.mk</em> - contains mainly platform-dependent variables such as MinGW and WinPcap directory in Windows, binary files extensions (.lib/.exe for Windows, .a/none for Linux and Mac OS X), compile utilities names (g++/g++.exe, ar/ar.exe), etc.</li>
-              <li><em>PcapPlusPlus.mk</em> - contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:
-                <ol>
-                  <li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
-                  <li><em>PCAPPP_LIBS_DIR</em> - location of all libraries needed for compiling and linking with PcapPlusPlus</li>
-                  <li><em>PCAPPP_LIBS</em> - all libraries needed for compiling and linking with PcapPlusPlus</li>
-                  <li><em>PCAPPP_POST_BUILD</em> - all post-build actions needed after compiling with PcapPlusPlus</li>
-                  <li><em>PCAPPLUSPLUS_HOME</em> - PcapPlusPlus home directory</li>
-                </ol>
-              </li>
-			  <li>These 2 makefiles are created when configuring PcapPlusPlus and exist under <strong>Dist/mk</strong> directory</li>
+              <li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
+              <li><em>PCAPPP_LIBS_DIR</em> - location of all libraries needed for compiling and linking with PcapPlusPlus</li>
+              <li><em>PCAPPP_LIBS</em> - all libraries needed for compiling and linking with PcapPlusPlus</li>
+              <li><em>PCAPPP_POST_BUILD</em> - all post-build actions needed after compiling with PcapPlusPlus</li>
+              <li><em>PCAPPLUSPLUS_HOME</em> - PcapPlusPlus home directory</li>
             </ol>
           </li>
 		  <li>We are ready for compilation! Let's compile, run and see the results:</li>
@@ -237,6 +230,7 @@ clean:
 Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'</code>
 		  </pre>
 		  <li>That's it! rather easy ha? Code, makefiles (Windows and Linux) and the pcap file I used are <a href="resources/HelloWorld.zip">here</a>. Go ahead and try it yourself</li>
+		  <li><strong>Note:</strong> You can also experience some code with the following simple examples: <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Windows">ArpSpoofing-SimpleMakefile-Windows</a> (on Windows) or <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Linux">ArpSpoofing-SimpleMakefile-Linux</a> (on Linux or Mac OS X)</li>
         </ol>
       </div>
     </div>
