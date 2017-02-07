@@ -10,5 +10,6 @@ var a00093 =
     [ "getNextPacket", "a00093.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
     [ "getOS", "a00093.html#a2ac993cca52aac490c4d60562370f317", null ],
     [ "getStatistics", "a00093.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
-    [ "open", "a00093.html#aea89bc17fd3b560576a20afc6da1d304", null ]
+    [ "open", "a00093.html#aea89bc17fd3b560576a20afc6da1d304", null ],
+    [ "setFilter", "a00093.html#af28e1f52506a83feae30e279adb538a7", null ]
 ];

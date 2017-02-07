@@ -149,8 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace3640f2330899687e34aa3789f4cd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadba6a20265dca6ba29b548325a798fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a> (<a class="el" href="a00021.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:aadba6a20265dca6ba29b548325a798fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33400a37378ceb807228c43efbff47e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html#aa33400a37378ceb807228c43efbff47e">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:aa33400a37378ceb807228c43efbff47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134f061d7883abbdb256abd48d53e66c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
+<tr class="separator:a134f061d7883abbdb256abd48d53e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba28d535c6aa05e9f9492c82ece25de7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a> ()</td></tr>
 <tr class="separator:aba28d535c6aa05e9f9492c82ece25de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -202,7 +202,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Close the device </p>
 
-<p>Implemented in <a class="el" href="a00014.html#ab772ecb6a13f970a1671a143dfcf8edc">pcpp::DpdkDevice</a>, <a class="el" href="a00094.html#a87cdcca0ace3ba4ccbaad4093def33a8">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00091.html#ad7ccb5eac1b23651e7b157b628435528">pcpp::PcapLiveDevice</a>, <a class="el" href="a00090.html#a60b102a04429b8baba0637c3505f6448">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00099.html#ad9df26e45654c94c08bfd73c0c18474d">pcpp::PfRingDevice</a>, <a class="el" href="a00093.html#a637743eb1a25fde92af7aeca8879fc02">pcpp::PcapNgFileReaderDevice</a>, and <a class="el" href="a00050.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice</a>.</p>
+<p>Implemented in <a class="el" href="a00014.html#ab772ecb6a13f970a1671a143dfcf8edc">pcpp::DpdkDevice</a>, <a class="el" href="a00094.html#a87cdcca0ace3ba4ccbaad4093def33a8">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00091.html#ad7ccb5eac1b23651e7b157b628435528">pcpp::PcapLiveDevice</a>, <a class="el" href="a00090.html#a60b102a04429b8baba0637c3505f6448">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00093.html#a637743eb1a25fde92af7aeca8879fc02">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00099.html#ad9df26e45654c94c08bfd73c0c18474d">pcpp::PfRingDevice</a>, and <a class="el" href="a00050.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice</a>.</p>
 
 </div>
 </div>
@@ -358,18 +358,26 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa33400a37378ceb807228c43efbff47e"></a>
+<a class="anchor" id="a134f061d7883abbdb256abd48d53e66c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::IPcapDevice::setFilter </td>
+          <td class="memname">virtual bool pcpp::IPcapDevice::setFilter </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filterAsString</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -378,6 +386,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00014.html#a0145dc440ebcd7c0a05709c57c2fa99d">pcpp::DpdkDevice</a>, <a class="el" href="a00099.html#addd683b41cf717a08248ddf86b08df49">pcpp::PfRingDevice</a>, and <a class="el" href="a00093.html#af28e1f52506a83feae30e279adb538a7">pcpp::PcapNgFileReaderDevice</a>.</p>
 
 </div>
 </div>
@@ -418,7 +428,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00207.html">pcpp</a></li><li class="navelem"><a class="el" href="a00066.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Sun Jan 29 2017 23:59:15 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Feb 8 2017 00:49:17 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
