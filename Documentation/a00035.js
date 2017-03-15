@@ -1,6 +1,5 @@
 var a00035 =
 [
-    [ "addressMask", "a00035.html#ac510d5502a105ee92b9a5718089a4aa4", null ],
-    [ "id", "a00035.html#a36c9a4edeb4b20a018f581a4bb8ca7a5", null ],
-    [ "sequence", "a00035.html#ab0a5755df7850387480f9fc150949ff5", null ]
+    [ "nextHopMTU", "a00035.html#a55e8c3c3cffaff9d7207b3902ec9634a", null ],
+    [ "unused", "a00035.html#a04f434cf79f3a4e52a654dd664f08de3", null ]
 ];

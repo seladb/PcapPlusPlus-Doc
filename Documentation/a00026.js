@@ -1,11 +1,10 @@
 var a00026 =
 [
-    [ "GREv1Layer", "a00026.html#affdd47adeca80911b621a14421853e8e", null ],
-    [ "GREv1Layer", "a00026.html#a9c118e97790a83bf6d22592191d2f453", null ],
-    [ "computeCalculateFields", "a00026.html#aa2b638c7d16b9475222dd0d0696a3514", null ],
-    [ "getAcknowledgmentNum", "a00026.html#a7f14840cae9c48e13afb7716411e6934", null ],
-    [ "getGreHeader", "a00026.html#ab3913842456c877137d5a2e921d97007", null ],
-    [ "setAcknowledgmentNum", "a00026.html#a5adce7bc05cabe68f5680b44fb5a0d12", null ],
-    [ "toString", "a00026.html#a94273542f85918215b272ae98b5ade35", null ],
-    [ "unsetAcknowledgmentNum", "a00026.html#ab5c8246ba3b77d8ac14644801dd8ebda", null ]
+    [ "HttpField", "a00026.html#a08df39066de069298eb2a80f6a49c01b", null ],
+    [ "HttpField", "a00026.html#a5d3761e5fa3c8d112472da6ed049e2d3", null ],
+    [ "getFieldName", "a00026.html#a2700f60a7d0439f7789a9a21b0348995", null ],
+    [ "getFieldSize", "a00026.html#ae988939aa0a937b0eee453415a900720", null ],
+    [ "getFieldValue", "a00026.html#a3b626dcc80b1bb91d42f237c9af2e40b", null ],
+    [ "isEndOfHeader", "a00026.html#a86e4239415b6859db6d9dabe77d3c43f", null ],
+    [ "setFieldValue", "a00026.html#a2e564c6a2888b094a05b626b90686710", null ]
 ];

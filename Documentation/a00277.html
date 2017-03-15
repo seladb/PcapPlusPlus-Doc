@@ -107,26 +107,27 @@ $(document).ready(function(){initNavTree('a00065.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::IPAddress Member List</div>  </div>
+<div class="title">pcpp::IPcapDevice Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00065.html">pcpp::IPAddress</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00065.html">pcpp::IPcapDevice</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00065.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> enum name</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00065.html#adda7dc3cc9ea734a41af60ac51832c17">fromString</a>(char *addressAsString)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00065.html#a0dc45526e3c3845c403a29185c941ac2">fromString</a>(std::string addressAsString)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00065.html#a85a3e43774848c93585f97bdef6ec73d">getType</a>() const =0</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00065.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">IPv4AddressType</a> enum value</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00065.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">IPv6AddressType</a> enum value</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00065.html#a2d6b031d025c3ef287584a605b64d750">isValid</a>()</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00065.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">toString</a>() const </td><td class="entry"><a class="el" href="a00065.html">pcpp::IPAddress</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00065.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a>()</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00065.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>()=0</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00065.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat &amp;stats)=0</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00065.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>()</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00065.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a>(std::string filterAsString, RawPacket *rawPacket)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00065.html#aa7d1358756653febf63d23b21447649c">open</a>()=0</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00065.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(GeneralFilter &amp;filter)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00065.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00065.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00065.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 15 2017 10:37:47 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 15 2017 09:36:46 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,10 +1,10 @@
 var a00161 =
 [
-    [ "dnshdr", "a00010.html", "a00010" ],
-    [ "IDnsResource", "a00049.html", "a00049" ],
-    [ "DnsQuery", "a00012.html", "a00012" ],
-    [ "DnsResource", "a00013.html", "a00013" ],
-    [ "DnsLayer", "a00011.html", "a00011" ],
+    [ "dnshdr", "a00009.html", "a00009" ],
+    [ "IDnsResource", "a00048.html", "a00048" ],
+    [ "DnsQuery", "a00011.html", "a00011" ],
+    [ "DnsResource", "a00012.html", "a00012" ],
+    [ "DnsLayer", "a00010.html", "a00010" ],
     [ "DnsClass", "a00161.html#a9a53cd13fb37fed91d2acda175bee7b9", [
       [ "DNS_CLASS_IN", "a00161.html#a9a53cd13fb37fed91d2acda175bee7b9a0479f887491587ab49326b6641f24a8d", null ],
       [ "DNS_CLASS_IN_QU", "a00161.html#a9a53cd13fb37fed91d2acda175bee7b9a03260bff9a57ba3c2cd4b0af90128019", null ],

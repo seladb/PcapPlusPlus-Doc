@@ -119,19 +119,19 @@ $(document).ready(function(){initNavTree('a00175_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00078.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00078.html">LRUList</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00079.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00079.html">LRUList</a></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::list&lt;T&gt;::iterator ListIterator;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;T, ListIterator&gt;::iterator MapIterator;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00078.html#a0d64da0d4ca5386c8ce3f63c6409fab5">   35</a></span>&#160;        <a class="code" href="a00078.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a>(<span class="keywordtype">size_t</span> maxSize)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00079.html#a0d64da0d4ca5386c8ce3f63c6409fab5">   35</a></span>&#160;        <a class="code" href="a00079.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a>(<span class="keywordtype">size_t</span> maxSize)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            m_MaxSize = maxSize;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00078.html#a1eb4c3762735f3f49ae5b6bec3f70d58">   49</a></span>&#160;        T* <a class="code" href="a00078.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a>(<span class="keyword">const</span> T&amp; element)</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00079.html#a1eb4c3762735f3f49ae5b6bec3f70d58">   49</a></span>&#160;        T* <a class="code" href="a00079.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a>(<span class="keyword">const</span> T&amp; element)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            m_CacheItemsList.push_front(element);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            MapIterator iter = m_CacheItemsMap.find(element);</div>
@@ -153,12 +153,12 @@ $(document).ready(function(){initNavTree('a00175_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00078.html#a2474c4ee35a59b258995896baf5f3af4">   75</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00078.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a>()</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00079.html#a2474c4ee35a59b258995896baf5f3af4">   75</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00079.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a>()</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.front();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00078.html#adfbb5d65592bd0977de48c84ebb5fa0a">   84</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00078.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a>()</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00079.html#adfbb5d65592bd0977de48c84ebb5fa0a">   84</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00079.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a>()</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.back();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
@@ -173,11 +173,11 @@ $(document).ready(function(){initNavTree('a00175_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace pcpp</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_LRU_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00078_html_adfbb5d65592bd0977de48c84ebb5fa0a"><div class="ttname"><a href="a00078.html#adfbb5d65592bd0977de48c84ebb5fa0a">pcpp::LRUList::getLRUElement</a></div><div class="ttdeci">const T &amp; getLRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:84</div></div>
-<div class="ttc" id="a00078_html_a1eb4c3762735f3f49ae5b6bec3f70d58"><div class="ttname"><a href="a00078.html#a1eb4c3762735f3f49ae5b6bec3f70d58">pcpp::LRUList::put</a></div><div class="ttdeci">T * put(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> LRUList.h:49</div></div>
-<div class="ttc" id="a00078_html_a0d64da0d4ca5386c8ce3f63c6409fab5"><div class="ttname"><a href="a00078.html#a0d64da0d4ca5386c8ce3f63c6409fab5">pcpp::LRUList::LRUList</a></div><div class="ttdeci">LRUList(size_t maxSize)</div><div class="ttdef"><b>Definition:</b> LRUList.h:35</div></div>
-<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">pcpp::LRUList</a></div><div class="ttdef"><b>Definition:</b> LRUList.h:24</div></div>
-<div class="ttc" id="a00078_html_a2474c4ee35a59b258995896baf5f3af4"><div class="ttname"><a href="a00078.html#a2474c4ee35a59b258995896baf5f3af4">pcpp::LRUList::getMRUElement</a></div><div class="ttdeci">const T &amp; getMRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:75</div></div>
+<div class="ttc" id="a00079_html"><div class="ttname"><a href="a00079.html">pcpp::LRUList</a></div><div class="ttdef"><b>Definition:</b> LRUList.h:24</div></div>
+<div class="ttc" id="a00079_html_adfbb5d65592bd0977de48c84ebb5fa0a"><div class="ttname"><a href="a00079.html#adfbb5d65592bd0977de48c84ebb5fa0a">pcpp::LRUList::getLRUElement</a></div><div class="ttdeci">const T &amp; getLRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:84</div></div>
+<div class="ttc" id="a00079_html_a0d64da0d4ca5386c8ce3f63c6409fab5"><div class="ttname"><a href="a00079.html#a0d64da0d4ca5386c8ce3f63c6409fab5">pcpp::LRUList::LRUList</a></div><div class="ttdeci">LRUList(size_t maxSize)</div><div class="ttdef"><b>Definition:</b> LRUList.h:35</div></div>
+<div class="ttc" id="a00079_html_a1eb4c3762735f3f49ae5b6bec3f70d58"><div class="ttname"><a href="a00079.html#a1eb4c3762735f3f49ae5b6bec3f70d58">pcpp::LRUList::put</a></div><div class="ttdeci">T * put(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> LRUList.h:49</div></div>
+<div class="ttc" id="a00079_html_a2474c4ee35a59b258995896baf5f3af4"><div class="ttname"><a href="a00079.html#a2474c4ee35a59b258995896baf5f3af4">pcpp::LRUList::getMRUElement</a></div><div class="ttdeci">const T &amp; getMRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:75</div></div>
 <div class="ttc" id="a00207_html"><div class="ttname"><a href="a00207.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('a00175_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00175.html">LRUList.h</a></li>
-    <li class="footer">Generated on Wed Feb 15 2017 10:37:45 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 15 2017 09:36:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

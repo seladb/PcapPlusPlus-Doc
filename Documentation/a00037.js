@@ -1,6 +1,6 @@
 var a00037 =
 [
-    [ "id", "a00037.html#ad783cd30b1cc3febd8f0e9db72ffca7a", null ],
-    [ "sequence", "a00037.html#ae4f17a2a06478c0300e64c9dacf67def", null ],
-    [ "timestamp", "a00037.html#aaa7c797c73f222014bcdecaca7175236", null ]
+    [ "data", "a00037.html#ae817d79a4d209c620bdf074ddc2c5a52", null ],
+    [ "dataLength", "a00037.html#a4ed0221d15cb8465ae37cb8cc4311386", null ],
+    [ "header", "a00037.html#a294b798279892837efdf0e44ddf9d04b", null ]
 ];

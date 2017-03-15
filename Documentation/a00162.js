@@ -1,10 +1,10 @@
 var a00162 =
 [
-    [ "MBufRawPacket", "a00081.html", "a00081" ],
-    [ "PciAddress", "a00098.html", "a00098" ],
-    [ "DpdkDevice", "a00014.html", "a00014" ],
-    [ "DpdkDeviceConfiguration", "a00015.html", "a00015" ],
-    [ "LinkStatus", "a00076.html", "a00076" ],
+    [ "MBufRawPacket", "a00082.html", "a00082" ],
+    [ "PciAddress", "a00099.html", "a00099" ],
+    [ "DpdkDevice", "a00013.html", "a00013" ],
+    [ "DpdkDeviceConfiguration", "a00014.html", "a00014" ],
+    [ "LinkStatus", "a00077.html", "a00077" ],
     [ "OnDpdkPacketsArriveCallback", "a00162.html#aebc46b2f805a197cd4b79316a9237c26", null ],
     [ "DpdkPMDType", "a00162.html#adb43f1f8284d4e0b74d1c77b70152fa9", [
       [ "PMD_UNKNOWN", "a00162.html#adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068", null ],

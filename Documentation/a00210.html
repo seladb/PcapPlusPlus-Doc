@@ -105,11 +105,11 @@ $(document).ready(function(){initNavTree('a00210.html','');});
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_todo000007"></a>Class <a class="el" href="a00001.html">pcpp::AndFilter</a>  </dt>
 <dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="a00014.html#a385533189ae3c86b503996d03b5e0d84">pcpp::DpdkDevice::getStatistics</a>  (pcap_stat &amp;stats)</dt>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="a00013.html#a385533189ae3c86b503996d03b5e0d84">pcpp::DpdkDevice::getStatistics</a>  (pcap_stat &amp;stats)</dt>
 <dd>pcap_stat is a poor struct that doesn't contain all the information DPDK can provide. Consider using a more extensive struct  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="a00067.html">pcpp::IPFilter</a>  </dt>
+<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="a00066.html">pcpp::IPFilter</a>  </dt>
 <dd>Add IPv6 filtering support  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="a00069.html#a7eef864e1a372d665a27de6189901e1e">pcpp::IPv4Address::IPv4Address</a>  (uint32_t addressAsInt)</dt>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="a00068.html#a7eef864e1a372d665a27de6189901e1e">pcpp::IPv4Address::IPv4Address</a>  (uint32_t addressAsInt)</dt>
 <dd>consider endianess in this method <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addressAsInt</td><td>The address as 4-byte integer  </td></tr>
@@ -117,10 +117,10 @@ $(document).ready(function(){initNavTree('a00210.html','');});
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="a00077.html#acfad96e288a29a2a5321723d0e41cda9">pcpp::LoggerPP::getInstance</a>  ()</dt>
-<dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00077.html">LoggerPP</a> singleton  </dd></dl>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="a00078.html#acfad96e288a29a2a5321723d0e41cda9">pcpp::LoggerPP::getInstance</a>  ()</dt>
+<dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00078.html">LoggerPP</a> singleton  </dd></dl>
 </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="a00079.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a>  (uint8_t *addr)</dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="a00080.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a>  (uint8_t *addr)</dt>
 <dd>there is no verification array length &gt;= 6. If this is not the case, address will read uninitialized memory <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the byte array containing 6 bytes representing the MAC address  </td></tr>
@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('a00210.html','');});
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="a00086.html">pcpp::OrFilter</a>  </dt>
+<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="a00087.html">pcpp::OrFilter</a>  </dt>
 <dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="a00088.html#ac2bc0db4fe8ef616edb41b486a2d7a50">pcpp::PayloadLayer::PayloadLayer</a>  (const uint8_t *data, size_t dataLen, bool selfAllocated)</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="a00089.html#ac2bc0db4fe8ef616edb41b486a2d7a50">pcpp::PayloadLayer::PayloadLayer</a>  (const uint8_t *data, size_t dataLen, bool selfAllocated)</dt>
 <dd>selfAllocated is probably not necessary anymore. Remove it  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="a00112.html#ab6b169b02bda40e90279e7d8f6816e41">pcpp::RawPacket::clear</a>  ()</dt>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="a00113.html#ab6b169b02bda40e90279e7d8f6816e41">pcpp::RawPacket::clear</a>  ()</dt>
 <dd><p class="startdd">deleteRawDataAtDestructor was set to 'true', don't free the raw data </p>
 <p class="enddd">set timestamp to a default value as well  </p>
 </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="a00112.html#afc8278a0208727a579a122f197c4d02e">pcpp::RawPacket::operator=</a>  (const <a class="el" href="a00112.html">RawPacket</a> &amp;other)</dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="a00113.html#afc8278a0208727a579a122f197c4d02e">pcpp::RawPacket::operator=</a>  (const <a class="el" href="a00113.html">RawPacket</a> &amp;other)</dt>
 <dd>free raw data only if deleteRawDataAtDestructor was set to 'true' <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from  </td></tr>
@@ -144,23 +144,23 @@ $(document).ready(function(){initNavTree('a00210.html','');});
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="a00112.html#acc12f855f36a798ce0e8c7dc8a4618f9">pcpp::RawPacket::RawPacket</a>  ()</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="a00113.html#acc12f855f36a798ce0e8c7dc8a4618f9">pcpp::RawPacket::RawPacket</a>  ()</dt>
 <dd>timestamp isn't set here to a default value  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="a00125.html">pcpp::SSLCertificateVerifyMessage</a>  </dt>
+<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="a00126.html">pcpp::SSLCertificateVerifyMessage</a>  </dt>
 <dd>This message type wasn't tested in unit-tests  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="a00132.html">pcpp::SSLFinishedMessage</a>  </dt>
+<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="a00133.html">pcpp::SSLFinishedMessage</a>  </dt>
 <dd>This message type wasn't tested in unit-tests  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="a00156.html#abe0453b916a6733faf3d658e83340db2">pcpp::VlanLayer::getCFI</a>  ()</dt>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="a00157.html#abe0453b916a6733faf3d658e83340db2">pcpp::VlanLayer::getCFI</a>  ()</dt>
 <dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="a00156.html#a021259caeb2905bcf0ffa0fd4debaa26">pcpp::VlanLayer::getPriority</a>  ()</dt>
+<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="a00157.html#a021259caeb2905bcf0ffa0fd4debaa26">pcpp::VlanLayer::getPriority</a>  ()</dt>
 <dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="a00156.html#a0aa76692b5502afa254931d4249937ba">pcpp::VlanLayer::getVlanID</a>  ()</dt>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="a00157.html#a0aa76692b5502afa254931d4249937ba">pcpp::VlanLayer::getVlanID</a>  ()</dt>
 <dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="a00156.html#ac9702d193a250da803639863ecf12373">pcpp::VlanLayer::setCFI</a>  (bool cfi)</dt>
+<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="a00157.html#ac9702d193a250da803639863ecf12373">pcpp::VlanLayer::setCFI</a>  (bool cfi)</dt>
 <dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="a00156.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a>  (uint8_t priority)</dt>
+<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="a00157.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a>  (uint8_t priority)</dt>
 <dd>Verify it works in big endian machines as well  </dd>
-<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="a00156.html#aeb6dcaefa11775c2b64e0be74094116d">pcpp::VlanLayer::setVlanID</a>  (uint16_t id)</dt>
+<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="a00157.html#aeb6dcaefa11775c2b64e0be74094116d">pcpp::VlanLayer::setVlanID</a>  (uint16_t id)</dt>
 <dd>Verify it works in big endian machines as well </dd>
 </dl>
 </div></div><!-- contents -->
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('a00210.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 15 2017 10:37:46 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 15 2017 09:36:46 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

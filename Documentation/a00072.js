@@ -1,6 +1,13 @@
 var a00072 =
 [
-    [ "IpV4TotalLengthFilter", "a00072.html#a9ccc88b9194b807ec9a87bd82675c37a", null ],
-    [ "parseToString", "a00072.html#a1621c7ded338765e9cb20213d1e996ae", null ],
-    [ "setTotalLength", "a00072.html#a997e5331286af0eb0bbb8a67355a97a9", null ]
+    [ "TimestampType", "a00072.html#a7e40161cb0427081efb75885ae38d2fb", [
+      [ "TimestampOnly", "a00072.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3", null ],
+      [ "TimestampAndIP", "a00072.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0", null ],
+      [ "TimestampsForPrespecifiedIPs", "a00072.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8", null ],
+      [ "Unknown", "a00072.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30", null ]
+    ] ],
+    [ "clear", "a00072.html#aebdf61198a25c376676deec6fc6be0ef", null ],
+    [ "ipAddresses", "a00072.html#a38f920da501372e5fdcc68200e63f316", null ],
+    [ "timestamps", "a00072.html#a99bbb61fda3f7dc4a3323b92efac8ac8", null ],
+    [ "type", "a00072.html#a145ef3773e1b0ccb3d5b2d601db3361c", null ]
 ];

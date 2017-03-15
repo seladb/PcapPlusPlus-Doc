@@ -133,46 +133,46 @@ $(document).ready(function(){initNavTree('a00180_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00180.html#aa32c8402569788e76a8da0b669d692f5">   26</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_INET6_DARWIN  30</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00085.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00085.html">NullLoopbackLayer</a> : <span class="keyword">public</span> <a class="code" href="a00075.html">Layer</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00086.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00086.html">NullLoopbackLayer</a> : <span class="keyword">public</span> <a class="code" href="a00076.html">Layer</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00085.html#a3e7c188f2eabfc769fa1f0fa666f01ab">   40</a></span>&#160;        <a class="code" href="a00085.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00087.html">Packet</a>* packet) : <a class="code" href="a00075.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00207.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00086.html#a3e7c188f2eabfc769fa1f0fa666f01ab">   40</a></span>&#160;        <a class="code" href="a00086.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00088.html">Packet</a>* packet) : <a class="code" href="a00076.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00207.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a>; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="a00085.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint32_t family);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="a00086.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint32_t family);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00085.html#af2da77d44b862d1f7e1b809ea6db35b4">   51</a></span>&#160;        <a class="code" href="a00085.html#af2da77d44b862d1f7e1b809ea6db35b4">~NullLoopbackLayer</a>() {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00086.html#af2da77d44b862d1f7e1b809ea6db35b4">   51</a></span>&#160;        <a class="code" href="a00086.html#af2da77d44b862d1f7e1b809ea6db35b4">~NullLoopbackLayer</a>() {}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        uint32_t <a class="code" href="a00085.html#a82c2b5ee534360deb829789f8fc6bbdb">getFamily</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        uint32_t <a class="code" href="a00086.html#a82c2b5ee534360deb829789f8fc6bbdb">getFamily</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00085.html#a858718a72b0563f413b8a545d2f6b9d4">setFamily</a>(uint32_t family);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00086.html#a858718a72b0563f413b8a545d2f6b9d4">setFamily</a>(uint32_t family);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// implement abstract methods</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00085.html#a6cac977c2a2227ff17b682a30587793a">parseNextLayer</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00086.html#a6cac977c2a2227ff17b682a30587793a">parseNextLayer</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00085.html#abb777e83866785f6884b9073eee28602">   78</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00085.html#abb777e83866785f6884b9073eee28602">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint32_t); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00086.html#abb777e83866785f6884b9073eee28602">   78</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00086.html#abb777e83866785f6884b9073eee28602">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint32_t); }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00085.html#af569f6eae1c3f3638cac65729fda7ead">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00085.html#af569f6eae1c3f3638cac65729fda7ead">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00086.html#af569f6eae1c3f3638cac65729fda7ead">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00086.html#af569f6eae1c3f3638cac65729fda7ead">computeCalculateFields</a>() {}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::string <a class="code" href="a00085.html#a60754e5840948f08bfb2860fdceb7431">toString</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::string <a class="code" href="a00086.html#a60754e5840948f08bfb2860fdceb7431">toString</a>();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace pcpp</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_NULL_LOOPBACK_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00085_html_a3e7c188f2eabfc769fa1f0fa666f01ab"><div class="ttname"><a href="a00085.html#a3e7c188f2eabfc769fa1f0fa666f01ab">pcpp::NullLoopbackLayer::NullLoopbackLayer</a></div><div class="ttdeci">NullLoopbackLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:40</div></div>
-<div class="ttc" id="a00085_html_a60754e5840948f08bfb2860fdceb7431"><div class="ttname"><a href="a00085.html#a60754e5840948f08bfb2860fdceb7431">pcpp::NullLoopbackLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00087_html"><div class="ttname"><a href="a00087.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00085_html_a6cac977c2a2227ff17b682a30587793a"><div class="ttname"><a href="a00085.html#a6cac977c2a2227ff17b682a30587793a">pcpp::NullLoopbackLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00085_html_a858718a72b0563f413b8a545d2f6b9d4"><div class="ttname"><a href="a00085.html#a858718a72b0563f413b8a545d2f6b9d4">pcpp::NullLoopbackLayer::setFamily</a></div><div class="ttdeci">void setFamily(uint32_t family)</div></div>
-<div class="ttc" id="a00085_html_abb777e83866785f6884b9073eee28602"><div class="ttname"><a href="a00085.html#abb777e83866785f6884b9073eee28602">pcpp::NullLoopbackLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:78</div></div>
-<div class="ttc" id="a00085_html_af569f6eae1c3f3638cac65729fda7ead"><div class="ttname"><a href="a00085.html#af569f6eae1c3f3638cac65729fda7ead">pcpp::NullLoopbackLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:83</div></div>
+<div class="ttc" id="a00086_html_abb777e83866785f6884b9073eee28602"><div class="ttname"><a href="a00086.html#abb777e83866785f6884b9073eee28602">pcpp::NullLoopbackLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:78</div></div>
+<div class="ttc" id="a00086_html_a82c2b5ee534360deb829789f8fc6bbdb"><div class="ttname"><a href="a00086.html#a82c2b5ee534360deb829789f8fc6bbdb">pcpp::NullLoopbackLayer::getFamily</a></div><div class="ttdeci">uint32_t getFamily()</div></div>
+<div class="ttc" id="a00086_html_af569f6eae1c3f3638cac65729fda7ead"><div class="ttname"><a href="a00086.html#af569f6eae1c3f3638cac65729fda7ead">pcpp::NullLoopbackLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:83</div></div>
+<div class="ttc" id="a00088_html"><div class="ttname"><a href="a00088.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00076_html"><div class="ttname"><a href="a00076.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00086_html_a6cac977c2a2227ff17b682a30587793a"><div class="ttname"><a href="a00086.html#a6cac977c2a2227ff17b682a30587793a">pcpp::NullLoopbackLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00086_html_af2da77d44b862d1f7e1b809ea6db35b4"><div class="ttname"><a href="a00086.html#af2da77d44b862d1f7e1b809ea6db35b4">pcpp::NullLoopbackLayer::~NullLoopbackLayer</a></div><div class="ttdeci">~NullLoopbackLayer()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:51</div></div>
 <div class="ttc" id="a00207_html_a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353"><div class="ttname"><a href="a00207.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:146</div></div>
-<div class="ttc" id="a00085_html_af2da77d44b862d1f7e1b809ea6db35b4"><div class="ttname"><a href="a00085.html#af2da77d44b862d1f7e1b809ea6db35b4">pcpp::NullLoopbackLayer::~NullLoopbackLayer</a></div><div class="ttdeci">~NullLoopbackLayer()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:51</div></div>
-<div class="ttc" id="a00085_html_a82c2b5ee534360deb829789f8fc6bbdb"><div class="ttname"><a href="a00085.html#a82c2b5ee534360deb829789f8fc6bbdb">pcpp::NullLoopbackLayer::getFamily</a></div><div class="ttdeci">uint32_t getFamily()</div></div>
-<div class="ttc" id="a00085_html"><div class="ttname"><a href="a00085.html">pcpp::NullLoopbackLayer</a></div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:32</div></div>
+<div class="ttc" id="a00086_html"><div class="ttname"><a href="a00086.html">pcpp::NullLoopbackLayer</a></div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:32</div></div>
+<div class="ttc" id="a00086_html_a60754e5840948f08bfb2860fdceb7431"><div class="ttname"><a href="a00086.html#a60754e5840948f08bfb2860fdceb7431">pcpp::NullLoopbackLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00086_html_a3e7c188f2eabfc769fa1f0fa666f01ab"><div class="ttname"><a href="a00086.html#a3e7c188f2eabfc769fa1f0fa666f01ab">pcpp::NullLoopbackLayer::NullLoopbackLayer</a></div><div class="ttdeci">NullLoopbackLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:40</div></div>
+<div class="ttc" id="a00086_html_a858718a72b0563f413b8a545d2f6b9d4"><div class="ttname"><a href="a00086.html#a858718a72b0563f413b8a545d2f6b9d4">pcpp::NullLoopbackLayer::setFamily</a></div><div class="ttdeci">void setFamily(uint32_t family)</div></div>
 <div class="ttc" id="a00173_html"><div class="ttname"><a href="a00173.html">Layer.h</a></div></div>
 <div class="ttc" id="a00207_html"><div class="ttname"><a href="a00207.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('a00180_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00180.html">NullLoopbackLayer.h</a></li>
-    <li class="footer">Generated on Wed Feb 15 2017 10:37:45 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 15 2017 09:36:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

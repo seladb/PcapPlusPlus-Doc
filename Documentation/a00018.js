@@ -1,6 +1,6 @@
 var a00018 =
 [
-    [ "dstMac", "a00018.html#a6fbac47e840aa3f6055d0b97c684bd45", null ],
-    [ "etherType", "a00018.html#a3200f5fc394812077b6c96d2b15f7658", null ],
-    [ "srcMac", "a00018.html#a466d328a654e445f4d9cb594ff1486ff", null ]
+    [ "EtherTypeFilter", "a00018.html#a232ed2349710314257417a2541a45358", null ],
+    [ "parseToString", "a00018.html#a3b632e6dffbdbf6264a0173f4aa0b059", null ],
+    [ "setEtherType", "a00018.html#a65af479a0460c96693a720e4f41fe0ca", null ]
 ];

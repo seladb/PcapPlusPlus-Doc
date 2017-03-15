@@ -1,5 +1,6 @@
 var a00050 =
 [
-    [ "close", "a00050.html#a65be98019748f6509445136013a0d1cb", null ],
-    [ "getFileName", "a00050.html#a62e21c94c6046f2d16a81df62b0c8d86", null ]
+    [ "IFileReaderDevice", "a00050.html#a0292cb89821cdbdb5914d4ed76c5e0f1", null ],
+    [ "~IFileReaderDevice", "a00050.html#acdc7b6e2db17994aaf167c081ddfaafb", null ],
+    [ "getFileSize", "a00050.html#a74f00fc3036c19629c3a1e6f358f9a78", null ]
 ];

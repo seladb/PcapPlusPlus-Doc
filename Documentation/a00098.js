@@ -1,11 +1,15 @@
 var a00098 =
 [
-    [ "PciAddress", "a00098.html#aa862db5500aabff5532409ae4bb55018", null ],
-    [ "PciAddress", "a00098.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
-    [ "operator==", "a00098.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
-    [ "toString", "a00098.html#a490f65c9da811959b78cd92cf2f1812a", null ],
-    [ "bus", "a00098.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
-    [ "devid", "a00098.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
-    [ "domain", "a00098.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
-    [ "function", "a00098.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
+    [ "ConstRemoteDeviceListIterator", "a00098.html#a9cfb21ecc08849c812b6ab6115071969", null ],
+    [ "RemoteDeviceListIterator", "a00098.html#a17e3146371657cb2bf427c345ef8701a", null ],
+    [ "begin", "a00098.html#af155f1d0d02b252b968f8bfc60bfa285", null ],
+    [ "begin", "a00098.html#a3e6eec736e7d88dc2a9dfe413089dbdf", null ],
+    [ "end", "a00098.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1", null ],
+    [ "end", "a00098.html#a4384231f937c67a346698218c6cc4818", null ],
+    [ "getRemoteDeviceByIP", "a00098.html#a95cc401d327933db99d1dd1cb639bcb7", null ],
+    [ "getRemoteDeviceByIP", "a00098.html#ad1c6086cfdceb29c6cc88e4ae19d78ab", null ],
+    [ "getRemoteDeviceByIP", "a00098.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4", null ],
+    [ "getRemoteDeviceByIP", "a00098.html#aafbda2e1b2c4ec3cc9a2d42aded206df", null ],
+    [ "getRemoteMachineIpAddress", "a00098.html#a6204e7c89ccce39c4aa3e355988f5ab6", null ],
+    [ "getRemoteMachinePort", "a00098.html#a1e1971b1f2432aa1837af7e2cbce17e2", null ]
 ];

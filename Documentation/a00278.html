@@ -107,27 +107,27 @@ $(document).ready(function(){initNavTree('a00066.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::IPcapDevice Member List</div>  </div>
+<div class="title">pcpp::IPFilter Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00066.html">pcpp::IPcapDevice</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00066.html">pcpp::IPFilter</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00066.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a>()</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00066.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>()=0</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00066.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat &amp;stats)=0</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00066.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>()</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00066.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a>(std::string filterAsString, RawPacket *rawPacket)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00066.html#aa7d1358756653febf63d23b21447649c">open</a>()=0</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00066.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(GeneralFilter &amp;filter)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00066.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00066.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00066.html#a953d29c9f7d99369acea260016ab6825">IPFilter</a>(const std::string &amp;ipAddress, Direction dir)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00066.html#aee54dc6a3492eee05f53c80e44ab9b08">IPFilter</a>(const std::string &amp;ipAddress, Direction dir, const std::string &amp;ipv4Mask)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00066.html#a68c98982c7c42c9397c2ed84f0a863ac">IPFilter</a>(const std::string &amp;ipAddress, Direction dir, int len)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00066.html#a9244dc71714f73d8e215498c7c3b0f23">parseToString</a>(std::string &amp;result)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00066.html#a41a8a2bdad3732f03639ab5009c8e10c">setAddr</a>(const std::string &amp;ipAddress)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00052.html#ace8adbbf3d89a745c02b353ac6f2122a">setDirection</a>(Direction dir)</td><td class="entry"><a class="el" href="a00052.html">pcpp::IFilterWithDirection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00066.html#af9b725cf2a44144a36d9775ea9e36c5c">setLen</a>(int len)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00066.html#a7e47d6b236db754fe0463e8f011edd79">setMask</a>(const std::string &amp;ipv4Mask)</td><td class="entry"><a class="el" href="a00066.html">pcpp::IPFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00020.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>()</td><td class="entry"><a class="el" href="a00020.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 15 2017 10:37:47 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 15 2017 09:36:46 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

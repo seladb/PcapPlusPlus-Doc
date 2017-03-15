@@ -1,7 +1,7 @@
 var a00202 =
 [
-    [ "SystemCore", "a00144.html", "a00144" ],
-    [ "SystemCores", "a00145.html", null ],
+    [ "SystemCore", "a00145.html", "a00145" ],
+    [ "SystemCores", "a00146.html", null ],
     [ "ApplicationEventHandler", "a00002.html", "a00002" ],
     [ "createCoreMaskFromCoreIds", "a00202.html#a572ce60b003993527593a10e6da9481b", null ],
     [ "createCoreMaskFromCoreVector", "a00202.html#ab6f336984bb48eb504d5e23f04581697", null ],

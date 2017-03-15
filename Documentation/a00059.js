@@ -1,12 +1,10 @@
 var a00059 =
 [
-    [ "getMulticastAddress", "a00059.html#a7b9ad5915bd97d2d0b0dc06104dde340", null ],
-    [ "getRecordLen", "a00059.html#ab3e440bbfc112fdc3ee66fd5604f1680", null ],
-    [ "getSoruceAddressAtIndex", "a00059.html#a50d1b1a09a82ed9fd600b6323fbafa39", null ],
-    [ "getSourceAdressCount", "a00059.html#a04e2d7e436a09973609cf539663988bb", null ],
-    [ "auxDataLen", "a00059.html#a89bbec160141d8e9a6c200fda910ea6f", null ],
-    [ "multicastAddress", "a00059.html#a7ccef33a9eb41a061d180b96b8b8c41f", null ],
-    [ "numOfSources", "a00059.html#ac0a94620acece7ad93e2fe363d2f2115", null ],
-    [ "recordType", "a00059.html#a9ea96cdeb8d7e3215a3251916e738d57", null ],
-    [ "sourceAddresses", "a00059.html#a48c79e0095e98b80a4882a29073b6810", null ]
+    [ "checksum", "a00059.html#adb78f71a90f2ecd2276d28258a2ce1d0", null ],
+    [ "groupAddress", "a00059.html#a8dc4203d2ced448835c4adeb44185ba6", null ],
+    [ "maxResponseTime", "a00059.html#ae1720bbb2665eca8153e26f26175ef55", null ],
+    [ "numOfSources", "a00059.html#ab81028868f6fe62669597446edbcf116", null ],
+    [ "qqic", "a00059.html#a909159a3c05865d63fc33c3e67e2bdca", null ],
+    [ "s_qrv", "a00059.html#ac039bf95f65102c14937f2e41839d3f4", null ],
+    [ "type", "a00059.html#a4fe7696bd29ced6d22ebf989e39ca985", null ]
 ];
