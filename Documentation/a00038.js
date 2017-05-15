@@ -1,5 +1,6 @@
 var a00038 =
 [
-    [ "id", "a00038.html#acdde59e7b8ebd9e3cd7b52ce5cc3a108", null ],
-    [ "sequence", "a00038.html#a04e519c8c310e680af34ead3c5bd3d5f", null ]
+    [ "data", "a00038.html#ae817d79a4d209c620bdf074ddc2c5a52", null ],
+    [ "dataLength", "a00038.html#a4ed0221d15cb8465ae37cb8cc4311386", null ],
+    [ "header", "a00038.html#a294b798279892837efdf0e44ddf9d04b", null ]
 ];

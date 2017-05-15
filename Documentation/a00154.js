@@ -1,6 +1,6 @@
 var a00154 =
 [
-    [ "UdpLengthFilter", "a00154.html#a88d3430d89616c9229ac814c2f5eedf5", null ],
-    [ "parseToString", "a00154.html#a438eb7a89725685d7f98f069ce76b966", null ],
-    [ "setLength", "a00154.html#a4094e3387c71ba0c72086c34cf9d4665", null ]
+    [ "TcpWindowSizeFilter", "a00154.html#ac0147c8f7cd9f7f167c0e6fc44aab634", null ],
+    [ "parseToString", "a00154.html#a8152be659392238cd28750c44d760057", null ],
+    [ "setWindowSize", "a00154.html#a2e9938b5041e9e0e51c9530e34c8b6d3", null ]
 ];

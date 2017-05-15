@@ -1,7 +1,12 @@
 var a00016 =
 [
-    [ "~DpdkWorkerThread", "a00016.html#afee1cd32d8aa6bbb639f7e45ca85e68d", null ],
-    [ "getCoreId", "a00016.html#a6516fee0ccc9d545283806a3f78ee82c", null ],
-    [ "run", "a00016.html#adf8c2b08e51679b20e9f56e166483492", null ],
-    [ "stop", "a00016.html#a7ae564e0ed9544c9e06ddbf5f1f1ecb9", null ]
+    [ "getDeviceByPciAddress", "a00016.html#a10d26c48dcd131d49d2bd87c058c520e", null ],
+    [ "getDeviceByPort", "a00016.html#aa7396105028e0b06ec205d2dc0dea868", null ],
+    [ "getDpdkDeviceList", "a00016.html#a86087a708113697332e06343b52682e8", null ],
+    [ "getDpdkLogLevel", "a00016.html#ad4f956f6d492abfe596e45fe1cdaebb8", null ],
+    [ "getDpdkMasterCore", "a00016.html#a5fb998e1ced87c149b19073669bf6ae9", null ],
+    [ "setDpdkLogLevel", "a00016.html#a550bddaf268440874c84c56a0b68672f", null ],
+    [ "startDpdkWorkerThreads", "a00016.html#a6a2d2fdf700451adb9a27567f6e6eda3", null ],
+    [ "stopDpdkWorkerThreads", "a00016.html#a231f0417a70c8b014e68dea5454b00d9", null ],
+    [ "writeDpdkLogToFile", "a00016.html#ad23f3dc15588208e77f524864eb2ec16", null ]
 ];

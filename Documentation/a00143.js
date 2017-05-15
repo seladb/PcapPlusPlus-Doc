@@ -1,7 +1,5 @@
 var a00143 =
 [
-    [ "SSLUnknownMessage", "a00143.html#a7dc53bdee48e90df1b6a3c553dfb245b", null ],
-    [ "getHandshakeType", "a00143.html#a84538f3ce34865d7c6956a6c239ffa37", null ],
-    [ "getMessageLength", "a00143.html#ae3fa59951f9a9036a14120451f70d046", null ],
-    [ "toString", "a00143.html#aab56dd7d4e29722be66481e2b5bbc139", null ]
+    [ "SSLServerNameIndicationExtension", "a00143.html#af05391f55be98d6aa8b5192c6a170e60", null ],
+    [ "getHostName", "a00143.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
 ];

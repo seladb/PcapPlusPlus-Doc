@@ -1,6 +1,7 @@
 var a00127 =
 [
-    [ "SSLChangeCipherSpecLayer", "a00127.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
-    [ "computeCalculateFields", "a00127.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
-    [ "toString", "a00127.html#a25cb2a35845fa1e357e06330d958f53c", null ]
+    [ "SSLCertificateVerifyMessage", "a00127.html#a364e17c73fd7cbb9460d75029cace69e", null ],
+    [ "getSignedHash", "a00127.html#a15eac0196cce5604ad21e8b7cd70c372", null ],
+    [ "getSignedHashLength", "a00127.html#aa7a070cf7f91c37fb50e8976054a1ce4", null ],
+    [ "toString", "a00127.html#a0662a3136fca531a733055c1de84d0b7", null ]
 ];

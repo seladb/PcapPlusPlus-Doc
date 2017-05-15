@@ -1,14 +1,7 @@
 var a00080 =
 [
-    [ "MacAddress", "a00080.html#a9b56a6c1bfa240b58548035db404bcbc", null ],
-    [ "MacAddress", "a00080.html#a73460f086b972df4e264d267adc2d92d", null ],
-    [ "MacAddress", "a00080.html#a257d6fd3d08de6766389f15423ca3e22", null ],
-    [ "MacAddress", "a00080.html#af9130892a0dcc4c931aac84d86e4f7cd", null ],
-    [ "MacAddress", "a00080.html#a51128dc96a7f443ba5e05e94dd169071", null ],
-    [ "copyTo", "a00080.html#abd24a366974f3bc8b2d78b65de07c926", null ],
-    [ "copyTo", "a00080.html#a36d261838f53468acdb7b46208c97dcf", null ],
-    [ "isValid", "a00080.html#afe46520073e14b9e02bb368627896f4a", null ],
-    [ "operator!=", "a00080.html#a6497d0796bb0d06997a1e399817ba078", null ],
-    [ "operator==", "a00080.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
-    [ "toString", "a00080.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
+    [ "LRUList", "a00080.html#a0d64da0d4ca5386c8ce3f63c6409fab5", null ],
+    [ "getLRUElement", "a00080.html#adfbb5d65592bd0977de48c84ebb5fa0a", null ],
+    [ "getMRUElement", "a00080.html#a2474c4ee35a59b258995896baf5f3af4", null ],
+    [ "put", "a00080.html#a1eb4c3762735f3f49ae5b6bec3f70d58", null ]
 ];

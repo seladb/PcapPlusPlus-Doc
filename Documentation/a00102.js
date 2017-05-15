@@ -1,19 +1,6 @@
 var a00102 =
 [
-    [ "ConstVectorIterator", "a00102.html#ae21ecab0276bc0be1ab9a86df6622386", null ],
-    [ "VectorIterator", "a00102.html#acf7704583e3f0dd0bce8adbe4d78c5b0", null ],
-    [ "PointerVector", "a00102.html#a1df9cfd5c3e97fdedf5a654351a385a8", null ],
-    [ "~PointerVector", "a00102.html#a848d21f6b51f10f8207197ea2609a85d", null ],
-    [ "PointerVector", "a00102.html#a6528e240e35f7ee2407d22f24c3dd644", null ],
-    [ "at", "a00102.html#a992816f6d10f86ccafca4b36991378dc", null ],
-    [ "begin", "a00102.html#a15e41c4b220465138e47b5083098e30e", null ],
-    [ "begin", "a00102.html#aed89fdafea5a2c7f946eec79ce6719ea", null ],
-    [ "clear", "a00102.html#ad6b5d1fb386f9d3fe9a9916058875433", null ],
-    [ "end", "a00102.html#adff5df71707ed082640407949028c334", null ],
-    [ "end", "a00102.html#ae5a728c8465d9b8af4d0e3e116256bd0", null ],
-    [ "erase", "a00102.html#a548970610623b300fd3f65ff65f325e3", null ],
-    [ "front", "a00102.html#aa3a724c88f399524a10853bfa5c28dd3", null ],
-    [ "getAndRemoveFromVector", "a00102.html#a496fc8a59393820699c9af6f99ef8fa1", null ],
-    [ "pushBack", "a00102.html#ad5f6f474c257f00373c049f32fe9c653", null ],
-    [ "size", "a00102.html#a4af9c26478016cf873f2e9d886de5403", null ]
+    [ "getPfRingDeviceByName", "a00102.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
+    [ "getPfRingDevicesList", "a00102.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
+    [ "getPfRingVersion", "a00102.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
 ];

@@ -60,7 +60,7 @@
         <p><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a>, <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a></p>
         <h4>Latest release:</h4>
         <p><a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
-        <img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" />
+        <!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
         </p>
         </div>
         <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
@@ -82,6 +82,7 @@
           <li>Support for <strong>DPDK</strong> fast packet processing engine which enables packet capturing and transmition in line rate using kernel bypass</li>
           <li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
           <li>Support for parsing and editing of many protocols, including L7 protocols like HTTP and SSL/TLS</li>
+          <li>Unique implementation of <strong>TCP reassembly</strong> logic which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</li>
           <li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
           <li>Support for reading and writing <strong>PCAPNG</strong> files (a lot more more than currently supported in WinPcap/libpcap)</li>
           <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
@@ -141,6 +142,14 @@
           <li>SSL/TLS - parsing only (no editing capabilities)</li>
           <li>Generic payload</li>
         </ul>
+        <h2 id=packet-and-network-utils>Packet And Network Utilities</h2>
+        <ul>
+          <li>TCP reassembly logic</li>
+          <li>Packet hash key creation (by 5-tuple and 2-tuple)</li>
+          <li>Retrieve remote machine MAC address using ARP protocol</li>
+          <li>Retrieve host IPv4 address by using DNS protocol</li>
+          <li>Checksum calculation</li>
+        </ul
       </div>
     </div>
     <div id="footer">

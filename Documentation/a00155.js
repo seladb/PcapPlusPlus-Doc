@@ -1,7 +1,7 @@
 var a00155 =
 [
-    [ "cfi", "a00155.html#a1cba4c151a11a2527eccb5c472be835b", null ],
-    [ "etherType", "a00155.html#a790a917cc070fb1ace8c77a7a12d0870", null ],
-    [ "priority", "a00155.html#a0b9c3a2edf23468ea5df60fee1903485", null ],
-    [ "vlanID", "a00155.html#ab970b63b8440a00efe46f60838b5ce04", null ]
+    [ "headerChecksum", "a00155.html#af1a4b110e652e51a0f32d4e6c7740354", null ],
+    [ "length", "a00155.html#a68edfe2e8136453d69b7a457461f379d", null ],
+    [ "portDst", "a00155.html#ab2760968de55386f04539019f5a677e5", null ],
+    [ "portSrc", "a00155.html#a72a8d8ad99698271461762079d3758a9", null ]
 ];

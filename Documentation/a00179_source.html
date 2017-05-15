@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: NetworkUtils.h Source File</title>
+<title>PcapPlusPlus: MacAddress.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,70 +105,77 @@ $(document).ready(function(){initNavTree('a00179_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">NetworkUtils.h</div>  </div>
+<div class="title">MacAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00179.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_NETWORK_UTILS</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_NETWORK_UTILS</span></div>
+<a href="a00179.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_MACADDRESS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_MACADDRESS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00176.html">MacAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00169.html">IpAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00187.html">PcapLiveDevice.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00207.html">pcpp</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00084.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00084.html">NetworkUtils</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00084.html#ac0151f86bc3e98d50004bcf97d18517c">   31</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00084.html">NetworkUtils</a>&amp; <a class="code" href="a00084.html#ac0151f86bc3e98d50004bcf97d18517c">getInstance</a>()</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">static</span> <a class="code" href="a00084.html">NetworkUtils</a> instance;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00084.html#a6c8310c11abf274e400a9b2be59ab873">   40</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="a00084.html#a6c8310c11abf274e400a9b2be59ab873">DefaultTimeout</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="a00080.html">MacAddress</a> <a class="code" href="a00084.html#a25604394245462fc413cadb5ede6740b">getMacAddress</a>(<a class="code" href="a00068.html">IPv4Address</a> ipAddr, <a class="code" href="a00092.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; arpResponseTimeMS,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="a00080.html">MacAddress</a> sourceMac = <a class="code" href="a00080.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a>, <a class="code" href="a00068.html">IPv4Address</a> sourceIP = <a class="code" href="a00068.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, <span class="keywordtype">int</span> arpTimeout = -1);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="a00068.html">IPv4Address</a> <a class="code" href="a00084.html#a812b40c3fd9ccfd3065c698010876c13">getIPv4Address</a>(std::string hostname, <a class="code" href="a00092.html">PcapLiveDevice</a>* device, <span class="keywordtype">double</span>&amp; dnsResponseTimeMS, uint32_t&amp; dnsTTL,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordtype">int</span> dnsTimeout = -1, <a class="code" href="a00068.html">IPv4Address</a> dnsServerIP = <a class="code" href="a00068.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, <a class="code" href="a00068.html">IPv4Address</a> gatewayIP = <a class="code" href="a00068.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// private c&#39;tor</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="a00084.html">NetworkUtils</a>() {}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_NETWORK_UTILS */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00084_html_a25604394245462fc413cadb5ede6740b"><div class="ttname"><a href="a00084.html#a25604394245462fc413cadb5ede6740b">pcpp::NetworkUtils::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress(IPv4Address ipAddr, PcapLiveDevice *device, double &amp;arpResponseTimeMS, MacAddress sourceMac=MacAddress::Zero, IPv4Address sourceIP=IPv4Address::Zero, int arpTimeout=-1)</div></div>
-<div class="ttc" id="a00068_html"><div class="ttname"><a href="a00068.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:94</div></div>
-<div class="ttc" id="a00084_html_a812b40c3fd9ccfd3065c698010876c13"><div class="ttname"><a href="a00084.html#a812b40c3fd9ccfd3065c698010876c13">pcpp::NetworkUtils::getIPv4Address</a></div><div class="ttdeci">IPv4Address getIPv4Address(std::string hostname, PcapLiveDevice *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, IPv4Address dnsServerIP=IPv4Address::Zero, IPv4Address gatewayIP=IPv4Address::Zero)</div></div>
-<div class="ttc" id="a00176_html"><div class="ttname"><a href="a00176.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00068_html_ab1fdcb75a0d28033e51770605ec978cb"><div class="ttname"><a href="a00068.html#ab1fdcb75a0d28033e51770605ec978cb">pcpp::IPv4Address::Zero</a></div><div class="ttdeci">static IPv4Address Zero</div><div class="ttdef"><b>Definition:</b> IpAddress.h:182</div></div>
-<div class="ttc" id="a00084_html"><div class="ttname"><a href="a00084.html">pcpp::NetworkUtils</a></div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:23</div></div>
-<div class="ttc" id="a00187_html"><div class="ttname"><a href="a00187.html">PcapLiveDevice.h</a></div></div>
-<div class="ttc" id="a00084_html_a6c8310c11abf274e400a9b2be59ab873"><div class="ttname"><a href="a00084.html#a6c8310c11abf274e400a9b2be59ab873">pcpp::NetworkUtils::DefaultTimeout</a></div><div class="ttdeci">static const int DefaultTimeout</div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:40</div></div>
-<div class="ttc" id="a00080_html_a1b210f1cf39a31d9ea947c57e6c65e2e"><div class="ttname"><a href="a00080.html#a1b210f1cf39a31d9ea947c57e6c65e2e">pcpp::MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:109</div></div>
-<div class="ttc" id="a00084_html_ac0151f86bc3e98d50004bcf97d18517c"><div class="ttname"><a href="a00084.html#ac0151f86bc3e98d50004bcf97d18517c">pcpp::NetworkUtils::getInstance</a></div><div class="ttdeci">static NetworkUtils &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> NetworkUtils.h:31</div></div>
-<div class="ttc" id="a00169_html"><div class="ttname"><a href="a00169.html">IpAddress.h</a></div></div>
-<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">pcpp::PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:76</div></div>
-<div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
-<div class="ttc" id="a00207_html"><div class="ttname"><a href="a00207.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00211.html">pcpp</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00081.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00081.html">MacAddress</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(uint8_t* addr);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> std::string&amp; addr);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(uint8_t firstOctest, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(<span class="keyword">const</span> <a class="code" href="a00081.html">MacAddress</a>&amp; other);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00081.html#ac0bde13868f7e7bdbe2b750233d33941">   66</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00081.html#ac0bde13868f7e7bdbe2b750233d33941">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00081.html">MacAddress</a>&amp; other)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        <span class="keywordflow">if</span> (m_Address[i] != other.m_Address[i])</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00081.html#a6497d0796bb0d06997a1e399817ba078">   78</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00081.html#a6497d0796bb0d06997a1e399817ba078">operator!=</a>(<span class="keyword">const</span> <a class="code" href="a00081.html">MacAddress</a>&amp; other) {<span class="keywordflow">return</span> !<a class="code" href="a00081.html#ac0bde13868f7e7bdbe2b750233d33941">operator==</a>(other);}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00081.html#afe46520073e14b9e02bb368627896f4a">   85</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00081.html#afe46520073e14b9e02bb368627896f4a">isValid</a>() { <span class="keywordflow">return</span> m_IsValid; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::string <a class="code" href="a00081.html#afc022ce0c71beaf15bccdbacd50c58b8">toString</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00081.html#abd24a366974f3bc8b2d78b65de07c926">copyTo</a>(uint8_t** arr);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00081.html#abd24a366974f3bc8b2d78b65de07c926">copyTo</a>(uint8_t* arr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00081.html#a1b210f1cf39a31d9ea947c57e6c65e2e">  109</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00081.html">MacAddress</a> <a class="code" href="a00081.html#a1b210f1cf39a31d9ea947c57e6c65e2e">Zero</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        uint8_t m_Address[6];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">bool</span> m_IsValid;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_MACADDRESS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00081_html_a6497d0796bb0d06997a1e399817ba078"><div class="ttname"><a href="a00081.html#a6497d0796bb0d06997a1e399817ba078">pcpp::MacAddress::operator!=</a></div><div class="ttdeci">bool operator!=(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:78</div></div>
+<div class="ttc" id="a00081_html_abd24a366974f3bc8b2d78b65de07c926"><div class="ttname"><a href="a00081.html#abd24a366974f3bc8b2d78b65de07c926">pcpp::MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr)</div></div>
+<div class="ttc" id="a00081_html_afc022ce0c71beaf15bccdbacd50c58b8"><div class="ttname"><a href="a00081.html#afc022ce0c71beaf15bccdbacd50c58b8">pcpp::MacAddress::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00081_html_a1b210f1cf39a31d9ea947c57e6c65e2e"><div class="ttname"><a href="a00081.html#a1b210f1cf39a31d9ea947c57e6c65e2e">pcpp::MacAddress::Zero</a></div><div class="ttdeci">static MacAddress Zero</div><div class="ttdef"><b>Definition:</b> MacAddress.h:109</div></div>
+<div class="ttc" id="a00081_html"><div class="ttname"><a href="a00081.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
+<div class="ttc" id="a00081_html_a9b56a6c1bfa240b58548035db404bcbc"><div class="ttname"><a href="a00081.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(uint8_t *addr)</div></div>
+<div class="ttc" id="a00211_html"><div class="ttname"><a href="a00211.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00081_html_afe46520073e14b9e02bb368627896f4a"><div class="ttname"><a href="a00081.html#afe46520073e14b9e02bb368627896f4a">pcpp::MacAddress::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> MacAddress.h:85</div></div>
+<div class="ttc" id="a00081_html_ac0bde13868f7e7bdbe2b750233d33941"><div class="ttname"><a href="a00081.html#ac0bde13868f7e7bdbe2b750233d33941">pcpp::MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">NetworkUtils.h</a></li>
-    <li class="footer">Generated on Wed Mar 15 2017 09:36:45 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">MacAddress.h</a></li>
+    <li class="footer">Generated on Mon May 15 2017 23:09:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

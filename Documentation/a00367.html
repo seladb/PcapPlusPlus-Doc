@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00156.html','');});
+$(document).ready(function(){initNavTree('a00152.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,22 +107,32 @@ $(document).ready(function(){initNavTree('a00156.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::VlanFilter Member List</div>  </div>
+<div class="title">pcpp::TcpReassembly Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00156.html">pcpp::VlanFilter</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00152.html">pcpp::TcpReassembly</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00156.html#a4d5759a458f683cebac7134668fc0c2d">parseToString</a>(std::string &amp;result)</td><td class="entry"><a class="el" href="a00156.html">pcpp::VlanFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00156.html#a71b1fd58f036b4ee5a77ce34b443aa42">setVlanID</a>(uint16_t vlanId)</td><td class="entry"><a class="el" href="a00156.html">pcpp::VlanFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00156.html#a0fe4f5f6ee92f8cf92dc98338a5128d6">VlanFilter</a>(uint16_t vlanId)</td><td class="entry"><a class="el" href="a00156.html">pcpp::VlanFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00020.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>()</td><td class="entry"><a class="el" href="a00020.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#acf940b05f75a129f595301012be46005">closeAllConnections</a>()</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a>(uint32_t flowKey)</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> enum name</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#af05c80624748539e2686d8a41d2d8219">getConnectionInformation</a>() const </td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#afb80b9ac9c6c454e5fb747a847d4d0a2">isConnectionOpen</a>(const ConnectionData &amp;connection)</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> typedef</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> typedef</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> typedef</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#a56719c498f49cc2e2e6177e705109fcf">ReassemblePacket</a>(Packet &amp;tcpData)</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#a62d6623f39621c475e5619366512889a">ReassemblePacket</a>(RawPacket *tcpRawData)</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a>(OnTcpMessageReady onMessageReadyCallback, void *userCookie=NULL, OnTcpConnectionStart onConnectionStartCallback=NULL, OnTcpConnectionEnd onConnectionEndCallback=NULL)</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a> enum value</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00152.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a> enum value</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00152.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a>()</td><td class="entry"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 15 2017 09:36:47 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 15 2017 23:09:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

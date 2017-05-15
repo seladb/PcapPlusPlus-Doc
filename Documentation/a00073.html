@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IpV4TotalLengthFilter Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPv4TimestampOptionValue Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,87 +107,72 @@ $(document).ready(function(){initNavTree('a00073.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00285.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00289.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IpV4TotalLengthFilter Class Reference</div>  </div>
+<div class="title">pcpp::IPv4TimestampOptionValue Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00186_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::IpV4TotalLengthFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00073.png" usemap="#pcpp::IpV4TotalLengthFilter_map" alt=""/>
-  <map id="pcpp::IpV4TotalLengthFilter_map" name="pcpp::IpV4TotalLengthFilter_map">
-<area href="a00053.html" alt="pcpp::IFilterWithOperator" shape="rect" coords="0,56,166,80"/>
-<area href="a00020.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,166,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00174_source.html">IPv4Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7e40161cb0427081efb75885ae38d2fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> { <a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3">TimestampOnly</a> = 0, 
+<a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0">TimestampAndIP</a> = 1, 
+<a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8">TimestampsForPrespecifiedIPs</a> = 2, 
+<a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">Unknown</a> = 3
+ }</td></tr>
+<tr class="separator:a7e40161cb0427081efb75885ae38d2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ccc88b9194b807ec9a87bd82675c37a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a9ccc88b9194b807ec9a87bd82675c37a">IpV4TotalLengthFilter</a> (uint16_t totalLength, <a class="el" href="a00207.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
-<tr class="separator:a9ccc88b9194b807ec9a87bd82675c37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1621c7ded338765e9cb20213d1e996ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a1621c7ded338765e9cb20213d1e996ae">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:a1621c7ded338765e9cb20213d1e996ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997e5331286af0eb0bbb8a67355a97a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a997e5331286af0eb0bbb8a67355a97a9">setTotalLength</a> (uint16_t totalLength)</td></tr>
-<tr class="separator:a997e5331286af0eb0bbb8a67355a97a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00053.html">pcpp::IFilterWithOperator</a></td></tr>
-<tr class="memitem:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_a00053"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#ae6bd275b11802dec7f9bc1a7baaf6d19">setOperator</a> (<a class="el" href="a00207.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
-<tr class="separator:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00020"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00020')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00020.html">pcpp::GeneralFilter</a></td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00020"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdf61198a25c376676deec6fc6be0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#aebdf61198a25c376676deec6fc6be0ef">clear</a> ()</td></tr>
+<tr class="separator:aebdf61198a25c376676deec6fc6be0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a145ef3773e1b0ccb3d5b2d601db3361c">type</a></td></tr>
+<tr class="separator:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a99bbb61fda3f7dc4a3323b92efac8ac8">timestamps</a></td></tr>
+<tr class="separator:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f920da501372e5fdcc68200e63f316"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00069.html">IPv4Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a38f920da501372e5fdcc68200e63f316">ipAddresses</a></td></tr>
+<tr class="separator:a38f920da501372e5fdcc68200e63f316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering IPv4 traffic by "total length" field of the IPv4 protocol, For example: "filter only IPv4 traffic which "total length" value is less than 60B"<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00186.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9ccc88b9194b807ec9a87bd82675c37a"></a>
+<div class="textblock"><p>A struct representing a parsed value of the IPv4 timestamp option. This struct is used returned in <a class="el" href="a00072.html#a561ef920c5f7b137c8f849946bc81e25">IPv4OptionData::getTimestampOptionValue()</a> method </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a7e40161cb0427081efb75885ae38d2fb"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::IpV4TotalLengthFilter::IpV4TotalLengthFilter </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>totalLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00207.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a>&#160;</td>
-          <td class="paramname"><em>op</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fb">pcpp::IPv4TimestampOptionValue::TimestampType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor that gets the total length to filter and the operator and creates the filter out of them </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">totalLength</td><td>The total length value to filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to use (e.g "equal", "greater than", etc.) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>An enum for IPv4 timestamp option types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3"></a>TimestampOnly&#160;</td><td class="fielddoc">
+<p>Value containing only timestamps </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0"></a>TimestampAndIP&#160;</td><td class="fielddoc">
+<p>Value containing both timestamps and IPv4 addresses </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8"></a>TimestampsForPrespecifiedIPs&#160;</td><td class="fielddoc">
+<p>The IPv4 addresses are prespecified </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Invalid or unknown value type </p>
+</td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1621c7ded338765e9cb20213d1e996ae"></a>
+<a class="anchor" id="aebdf61198a25c376676deec6fc6be0ef"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -195,42 +180,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IpV4TotalLengthFilter::parseToString </td>
+          <td class="memname">void pcpp::IPv4TimestampOptionValue::clear </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00020.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a997e5331286af0eb0bbb8a67355a97a9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IpV4TotalLengthFilter::setTotalLength </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>totalLength</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -240,12 +192,47 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the total length value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">totalLength</td><td>The total length value to filter </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Clear the structure. Clean the timestamps and IP addresses vectors and set the type as <a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">IPv4TimestampOptionValue::Unknown</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a38f920da501372e5fdcc68200e63f316"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a00069.html">IPv4Address</a>&gt; pcpp::IPv4TimestampOptionValue::ipAddresses</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A list of IPv4 addresses parsed from the IPv4 timestamp option value </p>
+
+</div>
+</div>
+<a class="anchor" id="a99bbb61fda3f7dc4a3323b92efac8ac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint32_t&gt; pcpp::IPv4TimestampOptionValue::timestamps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A list of timestamps parsed from the IPv4 timestamp option value </p>
+
+</div>
+</div>
+<a class="anchor" id="a145ef3773e1b0ccb3d5b2d601db3361c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00073.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> pcpp::IPv4TimestampOptionValue::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The timestamp value type </p>
 
 </div>
 </div>
@@ -254,8 +241,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00207.html">pcpp</a></li><li class="navelem"><a class="el" href="a00073.html">IpV4TotalLengthFilter</a></li>
-    <li class="footer">Generated on Wed Mar 15 2017 09:36:46 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00211.html">pcpp</a></li><li class="navelem"><a class="el" href="a00073.html">IPv4TimestampOptionValue</a></li>
+    <li class="footer">Generated on Mon May 15 2017 23:09:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

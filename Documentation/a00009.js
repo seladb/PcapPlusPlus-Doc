@@ -1,18 +1,15 @@
 var a00009 =
 [
-    [ "authenticData", "a00009.html#ac7e51ef9ae04bec1e3ce7530e39d53d8", null ],
-    [ "authoritativeAnswer", "a00009.html#a36e1dea9807654d43ddbc82e60cf557b", null ],
-    [ "checkingDisabled", "a00009.html#ab01657453ab6e8bb16fd6ac9338ad37c", null ],
-    [ "numberOfAdditional", "a00009.html#a9e3f93ab8cf39ecc8b261b99df182fb7", null ],
-    [ "numberOfAnswers", "a00009.html#ac1c882f5f9bd83d50a671b09a08683bf", null ],
-    [ "numberOfAuthority", "a00009.html#a6d7eb212fa99e55db2dd9683a3c99ece", null ],
-    [ "numberOfQuestions", "a00009.html#af22351368a518e3597634f9ad6338952", null ],
-    [ "opcode", "a00009.html#ac9995bbebc0af173ef829ad425e385f4", null ],
-    [ "queryOrResponse", "a00009.html#a3f1015b3db91aac75caa0e42d93efef4", null ],
-    [ "recursionAvailable", "a00009.html#accb70bf9b2e440c94820dd8e22651326", null ],
-    [ "recursionDesired", "a00009.html#adfb415bb642ceba8a9d8e826bd95830a", null ],
-    [ "responseCode", "a00009.html#a13e46f496586640b3f2810601f4200c4", null ],
-    [ "transactionID", "a00009.html#a5f061194ac1009cd5a8fc521f3f2abfc", null ],
-    [ "truncation", "a00009.html#a8cca9968cb3832318147243698c973cc", null ],
-    [ "zero", "a00009.html#a4f951f5089275a84bb124a2e3127f3ba", null ]
+    [ "getLength", "a00009.html#a46622003c92a40c40ed61d2a52418684", null ],
+    [ "getTotalSize", "a00009.html#adbe72147f441a29e41250a5db6dee642", null ],
+    [ "getType", "a00009.html#a2065c8efa4225ccb628cc00f3dc7c54f", null ],
+    [ "getValueAs", "a00009.html#aa46dc21a16859a7448d414c31f835932", null ],
+    [ "getValueAsIpAddr", "a00009.html#af30849dfd2e9974b26765e8b79769b57", null ],
+    [ "getValueAsString", "a00009.html#a026ee4ebd6c7306abed95acba6447db8", null ],
+    [ "setValue", "a00009.html#a2c94a3a4b3c22c671195a59172834fd9", null ],
+    [ "setValueIpAddr", "a00009.html#af044e3a46404b2a69c5877b14139a0bb", null ],
+    [ "setValueString", "a00009.html#a5d9282c92ec72ce847c8167cf635d8e8", null ],
+    [ "len", "a00009.html#af5c152f122a4f03fbbea001d359dde58", null ],
+    [ "opCode", "a00009.html#a1922870b0a12ba98c09fac0400946ae5", null ],
+    [ "value", "a00009.html#ae9ce16ab6f53ee701b180094320b56f1", null ]
 ];

@@ -1,8 +1,10 @@
 var a00060 =
 [
-    [ "checksum", "a00060.html#ae99c9328318afe39ba35e5412b7971c1", null ],
-    [ "numOfGroupRecords", "a00060.html#a43de3d4e5ee029ff4c04c49d555e9c1c", null ],
-    [ "reserved1", "a00060.html#a762ceb0f245c08c7fbfb838b13c71b13", null ],
-    [ "reserved2", "a00060.html#a8e0a855a998749d895a546ce33feef33", null ],
-    [ "type", "a00060.html#a5af52956a647d8fcef26084d188f66bd", null ]
+    [ "checksum", "a00060.html#adb78f71a90f2ecd2276d28258a2ce1d0", null ],
+    [ "groupAddress", "a00060.html#a8dc4203d2ced448835c4adeb44185ba6", null ],
+    [ "maxResponseTime", "a00060.html#ae1720bbb2665eca8153e26f26175ef55", null ],
+    [ "numOfSources", "a00060.html#ab81028868f6fe62669597446edbcf116", null ],
+    [ "qqic", "a00060.html#a909159a3c05865d63fc33c3e67e2bdca", null ],
+    [ "s_qrv", "a00060.html#ac039bf95f65102c14937f2e41839d3f4", null ],
+    [ "type", "a00060.html#a4fe7696bd29ced6d22ebf989e39ca985", null ]
 ];

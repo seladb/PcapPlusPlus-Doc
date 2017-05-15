@@ -1,11 +1,11 @@
 var a00153 =
 [
-    [ "UdpLayer", "a00153.html#add55cec282d7f33152b83424ceb2710b", null ],
-    [ "UdpLayer", "a00153.html#ab14e8e5fc416560f055bae317aa3ebed", null ],
-    [ "calculateChecksum", "a00153.html#a98ae7478c27ae01ae6be6c887506e8f4", null ],
-    [ "computeCalculateFields", "a00153.html#ac0e7ba19ff47c38eb879105ca44b3188", null ],
-    [ "getHeaderLen", "a00153.html#a27ce2ea24679695f2e408c575b465fbb", null ],
-    [ "getUdpHeader", "a00153.html#a3962406394fce824369afc0471845b96", null ],
-    [ "parseNextLayer", "a00153.html#a35d4be6b1c091dfc743113c85ca8d596", null ],
-    [ "toString", "a00153.html#a6c45f5c9bb386d5231ee485eaad26d41", null ]
+    [ "TcpStreamData", "a00153.html#acb6875699103b7d1967cb799f7501913", null ],
+    [ "TcpStreamData", "a00153.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
+    [ "~TcpStreamData", "a00153.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
+    [ "TcpStreamData", "a00153.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
+    [ "getConnectionData", "a00153.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getData", "a00153.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
+    [ "getDataLength", "a00153.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
+    [ "operator=", "a00153.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
 ];
