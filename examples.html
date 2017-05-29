@@ -1,157 +1,99 @@
-<head>
-  <title>PcapPlusPlus</title>
-  <meta name="description" content="PcapPlusPlus website" />
-  <meta name="keywords" content="PcapPlusPlus, network, packet, crafting, parsing, protocol, lightweight, efficient, multi-platform, c++, pcap, libpcap, WinPcap, DPDK, PF_RING" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
+---
+title: PcapPlusPlus
+layout: default
+section: examples
+---
+<h1>Using PcapPlusPlus</h1>
 
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <h1>Pcap<a href="index.html">PlusPlus</a></h1>
-        <!--div class="slogan">Cool slogan goes here!</div-->
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="Documentation/index.html">Documentation</a></li>
-          <li class="current"><a href="examples.html">Examples</a></li>
-		  <li><a href="benchmark.html">Benchmarks</a></li>
-		  <li><a href="dpdk-pf_ring.html">DPDK & PF_RING</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Project on GitHub</h3>
-		<p><a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></p>
-        <p>Build status Linux / Mac OS X:<img src="https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master"></p>
-        <p>Build status Win32:<img src="https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc/branch/master?svg=true"></p>
-		</div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <h3>Download</h3>
-		<h4>Source code:</h4>
-        <p><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a>, <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a></p>
-		<h4>Latest release:</h4>
-		<p><a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
-		<!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
-		</p>
-        </div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-          <h3>Support</h3>
-		  <h4>PcapPlusPlus Google group:</h4>
-          <p><a href="https://groups.google.com/d/forum/pcapplusplus-support">https://groups.google.com/d/forum/pcapplusplus-support</a></p>
-  		  <h4>Email:</h4>
-          <p><a href="mailto:pcapplusplus@gmail.com">pcapplusplus@gmail.com</a></p>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Using PcapPlusPlus</h1>
-		
-		<h2>Example applications</h2>
-		<p>PcapPlusPlus package already contains various example applications that make use of most PcapPlusPlus APIs and features. Although some of them may be useful on their own (like arping or arp-spoofing), their main objective is to show how to use PcapPlusPlus. All examples are well documented and contain code which is easy to understand. After compiling PcapPlusPlus all compiled applications are under <strong>Dist/examples</strong>. Here is the list of example applications:</p>
-		<ul>
-		  <li>
-		    <h4>Pcap++Examples.PacketParsing</h4>
-		    <p>a short guide for parsing packets using Pcap++ and Packet++. The application reads a file containing raw packet data in hex format (UdpPacket.dat), converts it into RawPacket object, parses it into a Packet object and then queries the packet for all sorts of data (protocols, IPs, etc.)</p>
-          </li>
-		  <li>
-            <h4>Pcap++Examples.BreakPcapFileToStreams</h4>
-            <p>an example for packet parsing and working with pcap files. This application takes a pcap file (example.pcap) and classifies all TCP/UDP packets into the streams they belong to (stream is also known as connection or flow). Then each stream is saved to a separate pcap file</p>
-          </li>
-		  <li>
-            <h4>ArpSpoofing</h4>
-            <p>an application that does ARP spoofing using Packet++ and Pcap++. You can read more about ARP spoofing <a href="https://en.wikipedia.org/wiki/ARP_spoofing">here</a></p>
-          </li>
-		  <li>
-            <h4>ArpSpoofing-SimpleMakefile-Windows</h4>
-            <p>same code as ARP spoofing but with simple Windows makefile that demonstrates how to write a working Windows makefile that uses PcapPlusPlus(see <a href="examples.html#simple-application">Writing a simple application</a>)</p>
-          </li>
-		  <li>
-            <h4>ArpSpoofing-VS2015-Project</h4>
-            <p>same code as ARP spoofing but with fully configured Visual Studio 2015 solution that demonstrates how to write code that uses PcapPlusPlus with Visual Studio 2015</p>
-          </li>
-		  <li>
-            <h4>ArpSpoofing-SimpleMakefile-Linux</h4>
-            <p>same code as ARP spoofing but with simple Linux makefile that demonstrates how to write a working Linux makefile that uses PcapPlusPlus(see <a href="examples.html#simple-application">Writing a simple application</a>)</p>
-          </li>
-		  <li>
-            <h4>Arping</h4>
-            <p>an implementation of the <a href="https://en.wikipedia.org/wiki/Arping">arping</a> utility using PcapPlusPlus</p>
-          </li>
-		  <li>
-            <h4>DnsSpoofing</h4>
-            <p>a command-line utility that does <a href="https://en.wikipedia.org/wiki/DNS_spoofing">DNS spoofing</a> using Packet++ and Pcap++</p>
-          </li>
-		  <li>
-            <h4>DNSResolver</h4>
-            <p>a command-line utility that resolves IPv4 address for an hostname using ARP and DNS protocols</p>
-          </li>
-		  <li>
-            <h4>IcmpFileTransfer</h4>
-            <p>an application that demonstrates how to transfer files between two machines using only ICMP messages. The basic idea is to use the data part of ICMP messages to transfer chunks of the file between the machines. You can read more about it <a href="http://www.unixist.com/security/data-transfer-over-icmp/index.html">here</a></p>
-          </li>
-		  <li>
-            <h4>HttpAnalyzer</h4>
-            <p>an application that analyzes HTTP traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, HTTP requests and responses count and rate, hostname histogram, content-type histogram, status code histogram and much more. Can operate on live traffic or read packets from a pcap file</li>
-          </li>
-		  <li>
-		    <h4>SSLAnalyzer</h4>
-			<p>an application that analyzes SSL/TLS traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, SSL/TLS messages count, hostname histogram, SSL/TLS version count, cipher-suite count and much more. Can operate on live traffic or read packets from a pcap file</li>
-		  </li>
-		  <li>
-            <h4>DpdkExample-FilterTraffic</h4>
-            <p>an application that demonstartes PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another DPDK port and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
-          </li>
-		  <li>
-            <h4>PfRingExample-FilterTraffic</h4>
-            <p>an application that demonstartes PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another PF_RING interface and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
-          </li>
-		  <li>
-            <h4>PcapPrinter</h4>
-            <p>a simple application that outputs packets from a pcap file as a readable string</p>
-          </li>
-		  <li>
-            <h4>PcapSplitter</h4>
-            <p>an application that splits pcap files into smaller pcap files by various criteria defined by the user like file size, packet count, split per connection, per client-ip, per server-ip, per server-port (protocol) or per IP src + IP dst (2-tuple). This application is very advanced compared to similar tools, for example: there is no limit on input file size or packet count, no technical limit on number of output files (unless the user sets a limit), support for both IPv4 and IPv6, and a lot more</p>
-          </li>
-		  <li>
-            <h4>PcapSearch</h4>
-            <p>an application that search inside pcap files in a directory/ies given by the user and counts how many packet match a user-defined pattern given in a BPF format</p>
-          </li>
-		  <li>
-            <h4>TcpReassembly</h4>
-            <p>an application that captures data transmitted as part of TCP connections, organizes the data and stores it in a way that is convenient for protocol analysis and debugging. This application reconstructs the TCP data streams and stores each connection in a separate file(s). TcpReassembly understands TCP sequence numbers and will correctly reconstruct data streams regardless of retransmissions, out-of-order delivery or data loss</p>
-          </li>		  
-		  <li>
-            <h4 id="benchmark">PcapPlusPlus-benchmark</h4>
-            <p>the benchmark application used for measuring PcapPlusPlus performance. See <a href="benchmark.html">benchmark page</a> for more details. This application currently compiles on Linux only (where benchmark was running on)</p>
-          </li>
-		</ul>
-        <h2 id="simple-application">Writing applications with PcapPlusPlus</h2>
-        <p>Creating applications using PcapPlusPlus is rather easy. Here is a guided tour demonstrating how to create a simple application:</p>
-		</ul>
-        <ol>
-          <li>First let's make sure PcapPlusPlus is configured and compiled successfully</li>
-          <li>Now all we need is under the <strong>Dist/</strong> directory. We can find the PcapPlusPlus libraries, header files under <strong>Dist/header</strong>, compiled examples under <strong>Dist/examples</strong> and helpful makefiles we'll going to user under <strong>Dist/mk</strong></li>
-		  <li>So let's write some code and put it in <strong>main.cpp</strong>:</li>
-          <pre>
-            <code class="cpp">#include &lt;RawPacket.h&gt;
+<h2>Example applications</h2>
+<p>PcapPlusPlus package already contains various example applications that make use of most PcapPlusPlus APIs and features. Although some of them may be useful on their own (like arping or arp-spoofing), their main objective is to show how to use PcapPlusPlus. All examples are well documented and contain code which is easy to understand. After compiling PcapPlusPlus all compiled applications are under <strong>Dist/examples</strong>. Here is the list of example applications:</p>
+<ul>
+  <li>
+	<h4>Pcap++Examples.PacketParsing</h4>
+	<p>a short guide for parsing packets using Pcap++ and Packet++. The application reads a file containing raw packet data in hex format (UdpPacket.dat), converts it into RawPacket object, parses it into a Packet object and then queries the packet for all sorts of data (protocols, IPs, etc.)</p>
+  </li>
+  <li>
+	<h4>Pcap++Examples.BreakPcapFileToStreams</h4>
+	<p>an example for packet parsing and working with pcap files. This application takes a pcap file (example.pcap) and classifies all TCP/UDP packets into the streams they belong to (stream is also known as connection or flow). Then each stream is saved to a separate pcap file</p>
+  </li>
+  <li>
+	<h4>ArpSpoofing</h4>
+	<p>an application that does ARP spoofing using Packet++ and Pcap++. You can read more about ARP spoofing <a href="https://en.wikipedia.org/wiki/ARP_spoofing">here</a></p>
+  </li>
+  <li>
+	<h4>ArpSpoofing-SimpleMakefile-Windows</h4>
+	<p>same code as ARP spoofing but with simple Windows makefile that demonstrates how to write a working Windows makefile that uses PcapPlusPlus(see <a href="examples.html#simple-application">Writing a simple application</a>)</p>
+  </li>
+  <li>
+	<h4>ArpSpoofing-VS2015-Project</h4>
+	<p>same code as ARP spoofing but with fully configured Visual Studio 2015 solution that demonstrates how to write code that uses PcapPlusPlus with Visual Studio 2015</p>
+  </li>
+  <li>
+	<h4>ArpSpoofing-SimpleMakefile-Linux</h4>
+	<p>same code as ARP spoofing but with simple Linux makefile that demonstrates how to write a working Linux makefile that uses PcapPlusPlus(see <a href="examples.html#simple-application">Writing a simple application</a>)</p>
+  </li>
+  <li>
+	<h4>Arping</h4>
+	<p>an implementation of the <a href="https://en.wikipedia.org/wiki/Arping">arping</a> utility using PcapPlusPlus</p>
+  </li>
+  <li>
+	<h4>DnsSpoofing</h4>
+	<p>a command-line utility that does <a href="https://en.wikipedia.org/wiki/DNS_spoofing">DNS spoofing</a> using Packet++ and Pcap++</p>
+  </li>
+  <li>
+	<h4>DNSResolver</h4>
+	<p>a command-line utility that resolves IPv4 address for an hostname using ARP and DNS protocols</p>
+  </li>
+  <li>
+	<h4>IcmpFileTransfer</h4>
+	<p>an application that demonstrates how to transfer files between two machines using only ICMP messages. The basic idea is to use the data part of ICMP messages to transfer chunks of the file between the machines. You can read more about it <a href="http://www.unixist.com/security/data-transfer-over-icmp/index.html">here</a></p>
+  </li>
+  <li>
+	<h4>HttpAnalyzer</h4>
+	<p>an application that analyzes HTTP traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, HTTP requests and responses count and rate, hostname histogram, content-type histogram, status code histogram and much more. Can operate on live traffic or read packets from a pcap file</li>
+  </li>
+  <li>
+	<h4>SSLAnalyzer</h4>
+	<p>an application that analyzes SSL/TLS traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, SSL/TLS messages count, hostname histogram, SSL/TLS version count, cipher-suite count and much more. Can operate on live traffic or read packets from a pcap file</li>
+  </li>
+  <li>
+	<h4>DpdkExample-FilterTraffic</h4>
+	<p>an application that demonstartes PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another DPDK port and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
+  </li>
+  <li>
+	<h4>PfRingExample-FilterTraffic</h4>
+	<p>an application that demonstartes PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another PF_RING interface and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
+  </li>
+  <li>
+	<h4>PcapPrinter</h4>
+	<p>a simple application that outputs packets from a pcap file as a readable string</p>
+  </li>
+  <li>
+	<h4>PcapSplitter</h4>
+	<p>an application that splits pcap files into smaller pcap files by various criteria defined by the user like file size, packet count, split per connection, per client-ip, per server-ip, per server-port (protocol) or per IP src + IP dst (2-tuple). This application is very advanced compared to similar tools, for example: there is no limit on input file size or packet count, no technical limit on number of output files (unless the user sets a limit), support for both IPv4 and IPv6, and a lot more</p>
+  </li>
+  <li>
+	<h4>PcapSearch</h4>
+	<p>an application that search inside pcap files in a directory/ies given by the user and counts how many packet match a user-defined pattern given in a BPF format</p>
+  </li>
+  <li>
+	<h4>TcpReassembly</h4>
+	<p>an application that captures data transmitted as part of TCP connections, organizes the data and stores it in a way that is convenient for protocol analysis and debugging. This application reconstructs the TCP data streams and stores each connection in a separate file(s). TcpReassembly understands TCP sequence numbers and will correctly reconstruct data streams regardless of retransmissions, out-of-order delivery or data loss</p>
+  </li>		  
+  <li>
+	<h4 id="benchmark">PcapPlusPlus-benchmark</h4>
+	<p>the benchmark application used for measuring PcapPlusPlus performance. See <a href="benchmark.html">benchmark page</a> for more details. This application currently compiles on Linux only (where benchmark was running on)</p>
+  </li>
+</ul>
+<h2 id="simple-application">Writing applications with PcapPlusPlus</h2>
+<p>Creating applications using PcapPlusPlus is rather easy. Here is a guided tour demonstrating how to create a simple application:</p>
+</ul>
+<ol>
+  <li>First let's make sure PcapPlusPlus is configured and compiled successfully</li>
+  <li>Now all we need is under the <strong>Dist/</strong> directory. We can find the PcapPlusPlus libraries, header files under <strong>Dist/header</strong>, compiled examples under <strong>Dist/examples</strong> and helpful makefiles we'll going to user under <strong>Dist/mk</strong></li>
+  <li>So let's write some code and put it in <strong>main.cpp</strong>:</li>
+  <pre>
+	<code class="cpp">#include &lt;RawPacket.h&gt;
 #include &lt;Packet.h&gt;
 #include &lt;IPv4Layer.h&gt;
 #include &lt;PcapFileDevice.h&gt;
@@ -224,30 +166,22 @@ all:
 clean:
     rm main.o
     rm HelloWorld</code>
-          </pre>
-		  <li>Now let's explore the <em>PcapPlusPlus.mk</em> makefile - it contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:</li>
-            <ol>
-              <li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
-              <li><em>PCAPPP_LIBS_DIR</em> - location of all libraries needed for compiling and linking with PcapPlusPlus</li>
-              <li><em>PCAPPP_LIBS</em> - all libraries needed for compiling and linking with PcapPlusPlus</li>
-              <li><em>PCAPPP_POST_BUILD</em> - all post-build actions needed after compiling with PcapPlusPlus</li>
-              <li><em>PCAPPLUSPLUS_HOME</em> - PcapPlusPlus home directory</li>
-            </ol>
-          </li>
-		  <li>We are ready for compilation! Let's compile, run and see the results:</li>
-		  <pre>
-		    <code class="cpp">C:\HelloWorld>HelloWorld.exe
+  </pre>
+  <li>Now let's explore the <em>PcapPlusPlus.mk</em> makefile - it contains variables that encapsulate all you need in order to compile your application with PcapPlusPlus:</li>
+	<ol>
+	  <li><em>PCAPPP_INCLUDES</em> - all includes needed</li>
+	  <li><em>PCAPPP_LIBS_DIR</em> - location of all libraries needed for compiling and linking with PcapPlusPlus</li>
+	  <li><em>PCAPPP_LIBS</em> - all libraries needed for compiling and linking with PcapPlusPlus</li>
+	  <li><em>PCAPPP_POST_BUILD</em> - all post-build actions needed after compiling with PcapPlusPlus</li>
+	  <li><em>PCAPPLUSPLUS_HOME</em> - PcapPlusPlus home directory</li>
+	</ol>
+  </li>
+  <li>We are ready for compilation! Let's compile, run and see the results:</li>
+  <pre>
+	<code class="cpp">C:\HelloWorld>HelloWorld.exe
 Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'</code>
-		  </pre>
-		  <li>That's it! rather easy ha? Code, makefiles (Windows and Linux) and the pcap file I used are <a href="resources/HelloWorld.zip">here</a>. Go ahead and try it yourself</li>
-		  <li><strong>Note:</strong> You can also experience some code with the following simple examples: <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Windows">ArpSpoofing-SimpleMakefile-Windows</a> (on Windows) or <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Linux">ArpSpoofing-SimpleMakefile-Linux</a> (on Linux or Mac OS X)</li>
-		  <li><strong>Note 2:</strong> This guide isn't relevant for writing code over Visual Studio 2015. If you want to write code over Visual Studio, just use the <strong>ArpSpoofing-VS2015-Project</strong> solution, delete the code and write you own</li>
-        </ol>
-      </div>
-    </div>
-    <div id="footer">
-      <p>PcapPlusPlus web-site | Template taken from <a href="http://www.html5webtemplates.co.uk/templates/simplestyle_7/index.html">HTML5webtemplates.co.uk</a></p>
-    </div>
-  </div>
-</body>
-</html>
+  </pre>
+  <li>That's it! rather easy ha? Code, makefiles (Windows and Linux) and the pcap file I used are <a href="resources/HelloWorld.zip">here</a>. Go ahead and try it yourself</li>
+  <li><strong>Note:</strong> You can also experience some code with the following simple examples: <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Windows">ArpSpoofing-SimpleMakefile-Windows</a> (on Windows) or <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing-SimpleMakefile-Linux">ArpSpoofing-SimpleMakefile-Linux</a> (on Linux or Mac OS X)</li>
+  <li><strong>Note 2:</strong> This guide isn't relevant for writing code over Visual Studio 2015. If you want to write code over Visual Studio, just use the <strong>ArpSpoofing-VS2015-Project</strong> solution, delete the code and write you own</li>
+</ol>
