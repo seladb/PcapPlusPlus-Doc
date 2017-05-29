@@ -1,160 +1,81 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>PcapPlusPlus</title>
-  <meta name="description" content="PcapPlusPlus website" />
-  <meta name="keywords" content="PcapPlusPlus, network, packet, crafting, parsing, protocol, lightweight, efficient, multi-platform, c++, pcap, libpcap, WinPcap, DPDK, PF_RING" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-74037205-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>  
-</head>
-
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <h1>Pcap<a href="index.html">PlusPlus</a></h1>
-        <!--div class="slogan">Cool slogan goes here!</div-->
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="Documentation/index.html">Documentation</a></li>
-          <li><a href="examples.html">Examples</a></li>
-          <li><a href="benchmark.html">Benchmarks</a></li>
-          <li><a href="dpdk-pf_ring.html">DPDK & PF_RING</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Project on GitHub</h3>
-        <p><a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></p>
-        <p>Build status Linux / Mac OS X:<img src="https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master"></p>
-        <p>Build status Win32:<img src="https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc/branch/master?svg=true"></p>
-        </div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <h3>Download</h3>
-        <h4>Source code:</h4>
-        <p><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a>, <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a></p>
-        <h4>Latest release:</h4>
-        <p><a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
-        <!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
-        </p>
-        </div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-          <h3>Support</h3>
-          <h4>PcapPlusPlus Google group:</h4>
-          <p><a href="https://groups.google.com/d/forum/pcapplusplus-support">https://groups.google.com/d/forum/pcapplusplus-support</a></p>
-          <h4>Email:</h4>
-          <p><a href="mailto:pcapplusplus@gmail.com">pcapplusplus@gmail.com</a></p>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Welcome To PcapPlusPlus Web-site</h1>
-        <p>PcapPlusPlus is a multiplatform C++ network sniffing and packet parsing and manipulation framework. It's meant to be lightweight, efficient and easy to use</p>
-        <h2>What makes PcapPlusPlus different from similar C++ wrappers for libpcap/WinPcap?</h2>
-        <ul>
-          <li>Designed to be lightweight and efficient (see <a href="benchmark.html">benchmark results</a>)</li>
-          <li>Support for <strong>DPDK</strong> fast packet processing engine which enables packet capturing and transmition in line rate using kernel bypass</li>
-          <li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
-          <li>Support for parsing and editing of many protocols, including L7 protocols like HTTP and SSL/TLS</li>
-          <li>Unique implementation of <strong>TCP reassembly</strong> logic which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</li>
-          <li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
-          <li>Support for reading and writing <strong>PCAPNG</strong> files (a lot more more than currently supported in WinPcap/libpcap)</li>
-          <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
-        </ul>
-        <h2>PcapPlusPlus is multi-platform!</h2>
-        <p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong>. It was tested on the follwoing platforms:</p>
-        <h6><strong>Windows</strong></h6>
-        <ul>
-          <li>Microsoft Visual Studio 2015 - x86 (32-bit) & x64 (64-bit) configurations</li>
-          <li>MinGW32 - x86 (32-bit) configuration only</li>
-          <li>MinGW-w64 - x86 (32-bit) configuration only</li>
-        </ul>
-        <h6><strong>Linux</strong></h6>
-        <ul>
-          <li>Ubuntu (12.04 LTS, 14.04 LTS, 16.04 LTS, 14.10)</li>
-          <li>Fedora</li>
-          <li>CentOS</li>
-          <li>It should work on other Linux distributions as well</li>
-        </ul>
-        <h6><strong>Mac OS X</strong></h6>
-        <ul>
-          <li>Yosemite (10.10)</li>
-          <li>El Capitan (10.11)</li>
-          <li>Sierra (10.12)</li>
-        </ul>
-        <h2>Supported packet capture engines</h2>
-        <p>PcapPlusPlus currently works with the following packet capture engines:</p>
-        <ul>
-          <li>libpcap live capture (on Linux and Mac OS X)</li>
-          <li>WinPcap live capture (on Windows)</li>
-          <li>ntop's Vanilla PF_RING engine (on Linux)</li>
-          <li>Intel DPDK engine (on Linux)</li>
-          <li>WinPcap Remote live capture (on Windows)</li>
-          <li>PCAP and PCAPNG file devices (reading and writing)</li>
-        </ul>
-        <h2 id=supported-protocols>Supported protocols</h2>
-        <p>The Packet++ library currently supports parsing, editing and creation of packets of the following protocols:</p>
-        <ul>
-          <li>Ethernet</li>
-          <li>SLL (Linux cooked capture)</li>
-          <li>Null/Loopback</li>
-          <li>Raw IP (IPv4 & IPv6)</li>
-          <li>IPv4</li>
-          <li>IPv6</li>
-          <li>ARP</li>
-          <li>VLAN</li>
-          <li>MPLS</li>
-          <li>PPPoE</li>
-          <li>GRE</li>
-          <li>TCP</li>
-          <li>UDP</li>
-          <li>ICMP</li>
-          <li>IGMP (IGMPv1, IGMPv2 and IGMPv3 are supported)</li>
-          <li>DNS</li>
-          <li>DHCP</li>
-          <li>HTTP headers (request & response)</li>
-          <li>SSL/TLS - parsing only (no editing capabilities)</li>
-          <li>Generic payload</li>
-        </ul>
-        <h2 id=packet-and-network-utils>Packet And Network Utilities</h2>
-        <ul>
-          <li>TCP reassembly logic</li>
-          <li>Packet hash key creation (by 5-tuple and 2-tuple)</li>
-          <li>Retrieve remote machine MAC address using ARP protocol</li>
-          <li>Retrieve host IPv4 address by using DNS protocol</li>
-          <li>Checksum calculation</li>
-        </ul
-      </div>
-    </div>
-    <div id="footer">
-      <p>PcapPlusPlus web-site | Template taken from <a href="http://www.html5webtemplates.co.uk/templates/simplestyle_7/index.html">HTML5webtemplates.co.uk</a></p>
-    </div>
-  </div>
-</body>
-</html>
+---
+title: PcapPlusPlus
+layout: default
+section: home
+---
+<h1>Welcome To PcapPlusPlus Web-site</h1>
+<p>PcapPlusPlus is a multiplatform C++ network sniffing and packet parsing and manipulation framework. It's meant to be lightweight, efficient and easy to use</p>
+<h2>What makes PcapPlusPlus different from similar C++ wrappers for libpcap/WinPcap?</h2>
+<ul>
+  <li>Designed to be lightweight and efficient (see <a href="benchmark.html">benchmark results</a>)</li>
+  <li>Support for <strong>DPDK</strong> fast packet processing engine which enables packet capturing and transmition in line rate using kernel bypass</li>
+  <li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
+  <li>Support for parsing and editing of many protocols, including L7 protocols like HTTP and SSL/TLS</li>
+  <li>Unique implementation of <strong>TCP reassembly</strong> logic which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</li>
+  <li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
+  <li>Support for reading and writing <strong>PCAPNG</strong> files (a lot more more than currently supported in WinPcap/libpcap)</li>
+  <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
+</ul>
+<h2>PcapPlusPlus is multi-platform!</h2>
+<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong>. It was tested on the follwoing platforms:</p>
+<h6><strong>Windows</strong></h6>
+<ul>
+  <li>Microsoft Visual Studio 2015 - x86 (32-bit) & x64 (64-bit) configurations</li>
+  <li>MinGW32 - x86 (32-bit) configuration only</li>
+  <li>MinGW-w64 - x86 (32-bit) configuration only</li>
+</ul>
+<h6><strong>Linux</strong></h6>
+<ul>
+  <li>Ubuntu (12.04 LTS, 14.04 LTS, 16.04 LTS, 14.10)</li>
+  <li>Fedora</li>
+  <li>CentOS</li>
+  <li>It should work on other Linux distributions as well</li>
+</ul>
+<h6><strong>Mac OS X</strong></h6>
+<ul>
+  <li>Yosemite (10.10)</li>
+  <li>El Capitan (10.11)</li>
+  <li>Sierra (10.12)</li>
+</ul>
+<h2>Supported packet capture engines</h2>
+<p>PcapPlusPlus currently works with the following packet capture engines:</p>
+<ul>
+  <li>libpcap live capture (on Linux and Mac OS X)</li>
+  <li>WinPcap live capture (on Windows)</li>
+  <li>ntop's Vanilla PF_RING engine (on Linux)</li>
+  <li>Intel DPDK engine (on Linux)</li>
+  <li>WinPcap Remote live capture (on Windows)</li>
+  <li>PCAP and PCAPNG file devices (reading and writing)</li>
+</ul>
+<h2 id=supported-protocols>Supported protocols</h2>
+<p>The Packet++ library currently supports parsing, editing and creation of packets of the following protocols:</p>
+<ul>
+  <li>Ethernet</li>
+  <li>SLL (Linux cooked capture)</li>
+  <li>Null/Loopback</li>
+  <li>Raw IP (IPv4 & IPv6)</li>
+  <li>IPv4</li>
+  <li>IPv6</li>
+  <li>ARP</li>
+  <li>VLAN</li>
+  <li>MPLS</li>
+  <li>PPPoE</li>
+  <li>GRE</li>
+  <li>TCP</li>
+  <li>UDP</li>
+  <li>ICMP</li>
+  <li>IGMP (IGMPv1, IGMPv2 and IGMPv3 are supported)</li>
+  <li>DNS</li>
+  <li>DHCP</li>
+  <li>HTTP headers (request & response)</li>
+  <li>SSL/TLS - parsing only (no editing capabilities)</li>
+  <li>Generic payload</li>
+</ul>
+<h2 id=packet-and-network-utils>Packet And Network Utilities</h2>
+<ul>
+  <li>TCP reassembly logic</li>
+  <li>Packet hash key creation (by 5-tuple and 2-tuple)</li>
+  <li>Retrieve remote machine MAC address using ARP protocol</li>
+  <li>Retrieve host IPv4 address by using DNS protocol</li>
+  <li>Checksum calculation</li>
+</ul>
