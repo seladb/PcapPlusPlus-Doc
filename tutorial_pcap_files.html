@@ -44,7 +44,7 @@ section: tutorials
 */
 int main(int argc, char* argv[])
 {
-// write your code here
+	// write your code here
 }</code>
 </pre>
 <p>Next thing would be to open a pcap file for reading. We'll assume we have a pcap file named "input.pcap" and we want to open it for reading. If we know it's a pcap file we can use the pcap reader class <code class="cpp">PcapFileReaderDevice</code>, and same for pcap-ng files we can use <code class="cpp">PcapNgFileReaderDevice</code> class.</p>
@@ -57,8 +57,8 @@ pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("input.pcap
 // verify that a reader interface was indeed created
 if (reader == NULL)
 {
-printf("Cannot determine reader for file type\n");
-exit(1);
+	printf("Cannot determine reader for file type\n");
+	exit(1);
 }</code>
 </pre>
 <p>As you can see we used the static method <code class="cpp">pcpp::IFileReaderDevice::getReader()</code> to create the interface.</p>
@@ -67,8 +67,8 @@ exit(1);
 	<code class="cpp">// open the reader for reading
 if (!reader->open())
 {
-printf("Cannot open input.pcap for reading\n");
-exit(1);
+	printf("Cannot open input.pcap for reading\n");
+	exit(1);
 }</code>
 </pre>
 <p>Now we are ready to start reading packets from the file. But before we do that let's demonstrate using file writers as well. We'll open 2 file writers: one pcap writer and one pcap-ng writer. We'll write the packets we read from the reader to both writers.</p>
@@ -81,8 +81,8 @@ pcpp::PcapFileWriterDevice pcapWriter("output.pcap", pcpp::LINKTYPE_ETHERNET);
 // try to open the file for writing
 if (!pcapWriter.open())
 {
-printf("Cannot open output.pcap for writing\n");
-exit(1);
+	printf("Cannot open output.pcap for writing\n");
+	exit(1);
 }</code>
 </pre>
 <p>As you can see we need to specify in the constructor the file name ("output.pcap") and the link type of all packets that will be written to it. That's because the pcap file format can contain single link type per file.</p>
@@ -95,8 +95,8 @@ pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
 // try to open the file for writing
 if (!pcapNgWriter.open())
 {
-printf("Cannot open output.pcapng for writing\n");
-exit(1);
+	printf("Cannot open output.pcapng for writing\n");
+	exit(1);
 }</code>
 </pre>
 <p>You can notice that in this constructor there's no need to specify the link type. That's because pcap-ng files can store multiple link types in the same file.</p>
@@ -105,8 +105,8 @@ exit(1);
 	<code class="cpp">// set a BPF filter for the reader - only packets that match the filter will be read
 if (!reader->setFilter("net 98.138.19.88"))
 {
-printf("Cannot set filter for file reader\n");
-exit(1);
+	printf("Cannot set filter for file reader\n");
+	exit(1);
 }</code>
 </pre>
 <p>Now let's start a while loop where we'll read all the packets (that match the BPF filter) and write them to both writers:</p>
@@ -118,9 +118,9 @@ pcpp::RawPacket rawPacket;
 // matching the BPF filter
 while (reader->getNextPacket(rawPacket))
 {
-// write each packet to both writers
-pcapWriter.writePacket(rawPacket);
-pcapNgWriter.writePacket(rawPacket);
+	// write each packet to both writers
+	pcapWriter.writePacket(rawPacket);
+	pcapNgWriter.writePacket(rawPacket);
 }</code>
 </pre>
 <p>We're done reading all packets that match the BPF filter and writing them to both writers.</p>
@@ -167,8 +167,8 @@ Written 10 packets successfully to pcap-ng writer and 0 packets could not be wri
 	<code class="cpp">// try to open the file for writing in append mode
 if (!pcapWriter.open(true))
 {
-printf("Cannot open output.pcap for writing in append mode\n");
-exit(1);
+	printf("Cannot open output.pcap for writing in append mode\n");
+	exit(1);
 }</code>
 </pre>
 <p>That's it! file is now opened in append mode and will not be overriden.</p>
