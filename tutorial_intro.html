@@ -1,300 +1,233 @@
-<head>
-  <title>PcapPlusPlus</title>
-  <meta name="description" content="PcapPlusPlus website" />
-  <meta name="keywords" content="PcapPlusPlus, network, packet, crafting, parsing, protocol, lightweight, efficient, multi-platform, c++, pcap, libpcap, WinPcap, DPDK, PF_RING" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <h1>Pcap<a href="index.html">PlusPlus</a></h1>
-        <!--div class="slogan">Cool slogan goes here!</div-->
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="Documentation/index.html">Documentation</a></li>
-          <li class="current"><a href="tutorials.html">Tutorials</a></li>
-		  <li><a href="examples.html">Examples</a></li>
-		  <li><a href="original.html">Benchmarks</a></li>
-		  <li><a href="dpdk-pf_ring.html">DPDK & PF_RING</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Project on GitHub</h3>
-		<p><a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></p>
-        <p>Build status Linux / Mac OS X:<img src="https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master"></p>
-        <p>Build status Win32:<img src="https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc/branch/master?svg=true"></p>
-		</div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-        <h3>Download</h3>
-		<h4>Source code:</h4>
-        <p><a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a>, <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a></p>
-		<h4>Latest release:</h4>
-		<p><a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
-		<!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
-		</p>
-        </div>
-        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
-        <div class="sidebar">
-          <h3>Support</h3>
-		  <h4>PcapPlusPlus Google group:</h4>
-          <p><a href="https://groups.google.com/d/forum/pcapplusplus-support">https://groups.google.com/d/forum/pcapplusplus-support</a></p>
-  		  <h4>Email:</h4>
-          <p><a href="mailto:pcapplusplus@gmail.com">pcapplusplus@gmail.com</a></p>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1><a href="tutorials.html">Tutorials</a></h1>
-		<h2>Part 1: Introduction and basics</h2>
-		<p>Welcome to PcapPlusPlus! This tutorial gives a basic overview on PcapPlusPlus library structure and presents its basic building blocks. At the end you'll learn how to write a simple but working "hello world" application</p>
-		<p>Table of contents:</p>
-		<ul>
-			<li>Part 1: Introduction and basics
-				<ol>
-					<li><a href="#library_structure">Library structure</a></li>
-					<li><a href="#packets_layers">Packets and Layers</a></li>
-					<li><a href="#packets_capture_engines">Packet capture engines</a></li>
-					<li><a href="#simple_app">Writing a simple app including a makefile</a></li>
-					<li><a href="#simple_app_vs2015">Writing a simple app in Visual Studio 2015</a></li>
-					<li><a href="#run_example">Running the example</a></li>
-				</ol>
-			</li>
-			<li><a href="tutorial_pcap_files.html">Part 2: Reading and writing pcap files</a></li>
-			<li><a href="tutorial_live_capture.html">Part 3: Capturing and sending packets</a></li>
-			<!--li><a href="">Part 4: Parsing and crafting packets</a></li>
-			<li><a href="">Part 5: Working with DPDK</a></li>
-			<li><a href="">Part 6: Working with PF_RING</a></li-->
-		</ul>
-		<h2 id="library_structure">Library structure</h2>
-		<p>As you could probably already notice, PcapPlusPlus is built of 3 libraries: Common++, Packet++ and Pcap++. Let's describes the purposes of each one and its main classes:</p>
-		<ul>
-			<li><strong><i>Packet++</i></strong> - a library for parsing, creating and editing packets of various <a href="index.html#supported-protocols">supported protocols</a>. This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc. Main classes and utilities:
-				<ol>
-					<li><code class="cpp">RawPacket</code> - representing the raw data captured from the network</li>
-					<li><code class="cpp">Layer</code> - the base class for all protocol layers. Each protocol layer is in-charge of parsing the specific bytes in the packet that belong to this protocol</li>
-					<li><code class="cpp">Packet</code> - representing a packet that was parsed by the different PcapPlusPlus protocol parsers and contains the different protocol layers</li>
-					<li>Protocol layers (foe example: <code class="cpp">EthLayer, IPv4Layer, IPv6Layer, TcpLayer, UdpLayer, DnsLayer, HttpRequestLayer, HttpResponseLayer, PayloadLayer</code>, etc.) - classes representing specific protocol parsers. All inherit the <code class="cpp">Layer</code> class</li>
-					<li><code class="cpp">PacketUtils</code> - a class containing several widely used utilities such as calculating a hash value based on 5-tuple or 2-tuple</li>
-					<li><code class="cpp">TcpReassembly</code> - a class for providing TCP reassembly (a.k.a TCP reconstruction) of TCP streams</li>
-				</ol>
-			</li>
-			<li><strong><i>Pcap++</i></strong> - a library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
-				<ol>
-					<li><code class="cpp">PcapLiveDevice</code> - representing a Linux/Mac OS network interface and enables capturing and sending packets as well as retrieving interface information</li>
-					<li><code class="cpp">WinPcapLiveDevice</code> - representing a Windows network interface and contains all functionality exposed in <code class="cpp">PcapLiveDevice</code>. This class actually inherits <code class="cpp">PcapLiveDevice</code> and does the relevant adjustments for WinPcap and Windows OS</li>
-					<li><code class="cpp">DpdkDevice</code> - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information</li>
-					<li><code class="cpp">PfRingDevice</code> - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information</li>
-					<li><code class="cpp">PcapRemoteDevice</code> - representing a network interface on a remote machine and enables to capture and send packets on this interface using the rpcap protocol. This class actually wraps <a href="https://www.winpcap.org/docs/docs_412/html/group__remote.html">WinPcap's Remote Capture</a> capabilities and so available only on Windows</li>
-					<li>pcap and pcap-ng file readers and writers (<code class="cpp">PcapFileReaderDevice, PcapFileWriterDevice, PcapNgFileReaderDevice, PcapNgFileWriterDevice, IFileReaderDevice, IFileWriterDevice</code>)</li>
-					<li>Packet filtering engine - a C++ API for the <a href="https://en.wikipedia.org/wiki/Berkeley_Packet_Filter">BPF (Berkeley Packet Filter)</a> format for easy-to-use packet filtering from a network interface or pcap/pcap-ng file</li>
-					<li><code class="cpp">NetworkUtils</code> - a class containing common and basic actions requiring network interaction such as discovery of a remote machine MAC address by sending ARP requests, discovery of IPv4 address from a host-name (by sending DNS requests), and so on</li>
-					<li><code class="cpp"></code></li>
-				</ol>
-			</li>
-			<li><strong><i>Common++</i></strong> - a library containing common code utilities and classes used by both Packet++ and Pcap++. Main classes and utilities:
-				<ol>
-					<li><code class="cpp">IPv4Address, IPv6Address</code> - classes representing IPv4 and IPv6 addresses accordingly</li>
-					<li><code class="cpp">MacAddress</code> - a class representing a MAC (Ethernet) address</li>
-					<li><code class="cpp">IpUtils.h</code> - all kinds of helpful network utilities</li>
-					<li><code class="cpp">LoggerPP</code> - a simple logging infrastructure used widely in PcapPlusPlus</li>
-					<li><code class="cpp">SystemUtils.h</code> - several useful utilities for interaction with the operating system</li>
-				</ol>
-			</li>
-		</ul>
-		<h2 id="packets_layers">Packets and Layers</h2>
-		<p>Parsing and crafting of packets is one of the fundamentals of PcapPlusPlus and the heart of the Packet++ library. We'll dive deep into it later, but first let's understand the basic structures as everything else is built on that.</p>
-		<h4>Raw packets vs. Parsed packets</h4>
-		<p>There are 2 types of packets in PcapPlusPlus: <strong>raw packets</strong> and <strong>parsed packets</strong>. A raw packet is the raw byte-stream that was captured from the network together with the timestamp it was captured on. A raw packet doesn't contain any data about the protocols it's built from and of course protocol data can't be added, removed or edited. On the other hand, parsed packets are packets that contain all protocol data and can be edited per protocol. This reveals one of the core functionalities of PcapPlusPlus: taking raw packets that were captured from the network and create parsed packets out of them, meaning identifying their protocols, saving meta data about these protocols, and allowing the user easy access to all of this parsed data for both reading and writing (edit, add data and remove data).</p>
-		<h4>Layers</h4>
-		<p>A layer in PcapPlusPlus means protocol layer. Parsed packets contain layers, each one represents a protocol the packet is built from. For example: an HTTP packet may contain an Ethernet layer, an IPv4 (or IPv6) layer, a TCP layer and an HTTP layer. Each supported protocol is represented by a corresponding layer class. A layer class exposes the protocol's data for the user to read and usually also to write or modify. For example: A TCP layer exposes all TCP fields like ports, flags, sequence numbers, TCP options, etc. and also allows editing of all of those fields and also adding/removing/editing TCP options. Layers inside a parsed packet are ordered in a link list so the parsed packet actually points only to the first (lowest) layer (for example: Ethernet), this layer points to the next layer (for example: IPv4), and so on. A list of all supported protocols (and layers) can be found <a href="index.html#supported-protocols">here</a>.</p>
-		<h4>Packet and Layers schematic structure</h4>
-		<p>In the following diagram you can see the relations between RawPackets, (parsed) Packets and Layers:</p>
-		<img src="resources/PacketsAndLayers.PNG" width="100%"/>
-		<p>As can be seen in this diagram, a Packet (= parsed packet) holds a pointer to the RawPacket object and to the first (lowest) Layer. Each Layer has pointers to the next layer and to the previous one.</p>
-		<p>It may be implied from this structure that the actual packet data (the raw byte stream) is duplicated between the raw packet and the various layers. This is not the case. We don't want to duplicate the data from various reasons:</p>
-		<ul>
-			<li>We don't want the packet object to take up too much memory</li>
-			<li>We would like the avoid unnecessary data coping because it's expensive</li>
-			<li>Since each layer can be edited, we would like the edited data to be written directly to the byte stream and not copied from one place to another</li>
-		</ul>
-		<p>So the raw byte stream is actually stored once, in the RawPacket object. The various layers only point to the relevant place where their data begins. Here is a diagram to visualize it:</p>
-		<img src="resources/LayersAndRawData.PNG" width="100%"/>
-		<p>As you can see in this diagram, each layer points to the place in the raw data where its data starts. In this example: Ethernet Layer points to the beginning of the raw data because it is the first layer, so it actually sees all the raw data. On the other hand, IPv4 Layer points to the place where IPv4 data begins so it doesn't see the Ethernet data. UDP Layer points to the place where UDP data starts so it doesn't see the Ethernet and IPv4 data, and so on.</p>
-		<p>All of these structures and pointers are built by PcapPlusPlus packet parsing engine residing in the Packet class. When a Packet object is created it is given a RawPacket object (which is created by the capturing engine) and the parsing process begins by understanding which protocols the packet is built of and creating the relevant Layer objects. Another option is to create an "empty" Packet object which doesn't contain any raw data and start building the layers ourselves. In that case a RawPacket object will be created and gradually built.</p>
-		<h2 id="packets_capture_engines">Packet capture engines</h2>
-		<p>Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines is sometimes very different from one another and it's difficult to keep one flow who suits them all. Also, many of the engine have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:</p>
-		<ul>
-			<li>Files (pcap and pcap-ng)</li>
-			<li>Network interfaces using libpcap or WinPcap</li>
-			<li>DPDK-enabled interfaces</li>
-			<li>PF_RING-enabled interfaces</li>
-			<li><a href="https://www.winpcap.org/docs/docs_412/html/group__remote.html">Remote packet capture</a></li>
-		</ul>
-		<p>Each packet capture engine is represented in PcapPlusPlus in a class called "Device". All devices inherit from a common abstract parent class called <code class="cpp">IPcapDevice</code> which contains a few capabilities that are common for most devices such as opening/closing the device, gathering packet statistics, setting a filter, etc. The rest is implemented in each class.</p>
-		<p>The next parts of the tutorial will dive deep into the various device types and explain how to use them.</p>
-		<h2 id="simple_app">Writing a simple app including a makefile</h2>
-		<p>Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio 2015 project.</p>
-		<p>First let's make sure PcapPlusPlus is configured and built successfully. Please follow <a href="download.html">the download page</a> for building instructions.</p>
-		<p>Another option is to download a pre-compiled version of PcapPlusPlus, please download the <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">latest release</a> for your platform and follow the instructions on how to configure it.</p>
-		<p>Now all we need is under the <code>Dist/</code> directory. We can find the PcapPlusPlus libraries, header files under <code>Dist/header</code>, compiled examples under <code>Dist/examples</code> and helpful makefiles we'll going to use under <code>Dist/mk</code></p>
-		<p>So let's write some code and put it in <code>main.cpp</code>:</p>
-		  <pre>
-			<code class="cpp">#include &lt;IPv4Layer.h&gt;
+---
+title: PcapPlusPlus
+layout: default
+section: tutorials
+---
+<h1><a href="tutorials.html">Tutorials</a></h1>
+<h2>Part 1: Introduction and basics</h2>
+<p>Welcome to PcapPlusPlus! This tutorial gives a basic overview on PcapPlusPlus library structure and presents its basic building blocks. At the end you'll learn how to write a simple but working "hello world" application</p>
+<p>Table of contents:</p>
+<ul>
+	<li>Part 1: Introduction and basics
+		<ol>
+			<li><a href="#library_structure">Library structure</a></li>
+			<li><a href="#packets_layers">Packets and Layers</a></li>
+			<li><a href="#packets_capture_engines">Packet capture engines</a></li>
+			<li><a href="#simple_app">Writing a simple app including a makefile</a></li>
+			<li><a href="#simple_app_vs2015">Writing a simple app in Visual Studio 2015</a></li>
+			<li><a href="#run_example">Running the example</a></li>
+		</ol>
+	</li>
+	<li><a href="tutorial_pcap_files.html">Part 2: Reading and writing pcap files</a></li>
+	<li><a href="tutorial_live_capture.html">Part 3: Capturing and sending packets</a></li>
+	<!--li><a href="">Part 4: Parsing and crafting packets</a></li>
+	<li><a href="">Part 5: Working with DPDK</a></li>
+	<li><a href="">Part 6: Working with PF_RING</a></li-->
+</ul>
+<h2 id="library_structure">Library structure</h2>
+<p>As you could probably already notice, PcapPlusPlus is built of 3 libraries: Common++, Packet++ and Pcap++. Let's describes the purposes of each one and its main classes:</p>
+<ul>
+	<li><strong><i>Packet++</i></strong> - a library for parsing, creating and editing packets of various <a href="index.html#supported-protocols">supported protocols</a>. This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc. Main classes and utilities:
+		<ol>
+			<li><code class="cpp">RawPacket</code> - representing the raw data captured from the network</li>
+			<li><code class="cpp">Layer</code> - the base class for all protocol layers. Each protocol layer is in-charge of parsing the specific bytes in the packet that belong to this protocol</li>
+			<li><code class="cpp">Packet</code> - representing a packet that was parsed by the different PcapPlusPlus protocol parsers and contains the different protocol layers</li>
+			<li>Protocol layers (foe example: <code class="cpp">EthLayer, IPv4Layer, IPv6Layer, TcpLayer, UdpLayer, DnsLayer, HttpRequestLayer, HttpResponseLayer, PayloadLayer</code>, etc.) - classes representing specific protocol parsers. All inherit the <code class="cpp">Layer</code> class</li>
+			<li><code class="cpp">PacketUtils</code> - a class containing several widely used utilities such as calculating a hash value based on 5-tuple or 2-tuple</li>
+			<li><code class="cpp">TcpReassembly</code> - a class for providing TCP reassembly (a.k.a TCP reconstruction) of TCP streams</li>
+		</ol>
+	</li>
+	<li><strong><i>Pcap++</i></strong> - a library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
+		<ol>
+			<li><code class="cpp">PcapLiveDevice</code> - representing a Linux/Mac OS network interface and enables capturing and sending packets as well as retrieving interface information</li>
+			<li><code class="cpp">WinPcapLiveDevice</code> - representing a Windows network interface and contains all functionality exposed in <code class="cpp">PcapLiveDevice</code>. This class actually inherits <code class="cpp">PcapLiveDevice</code> and does the relevant adjustments for WinPcap and Windows OS</li>
+			<li><code class="cpp">DpdkDevice</code> - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information</li>
+			<li><code class="cpp">PfRingDevice</code> - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information</li>
+			<li><code class="cpp">PcapRemoteDevice</code> - representing a network interface on a remote machine and enables to capture and send packets on this interface using the rpcap protocol. This class actually wraps <a href="https://www.winpcap.org/docs/docs_412/html/group__remote.html">WinPcap's Remote Capture</a> capabilities and so available only on Windows</li>
+			<li>pcap and pcap-ng file readers and writers (<code class="cpp">PcapFileReaderDevice, PcapFileWriterDevice, PcapNgFileReaderDevice, PcapNgFileWriterDevice, IFileReaderDevice, IFileWriterDevice</code>)</li>
+			<li>Packet filtering engine - a C++ API for the <a href="https://en.wikipedia.org/wiki/Berkeley_Packet_Filter">BPF (Berkeley Packet Filter)</a> format for easy-to-use packet filtering from a network interface or pcap/pcap-ng file</li>
+			<li><code class="cpp">NetworkUtils</code> - a class containing common and basic actions requiring network interaction such as discovery of a remote machine MAC address by sending ARP requests, discovery of IPv4 address from a host-name (by sending DNS requests), and so on</li>
+			<li><code class="cpp"></code></li>
+		</ol>
+	</li>
+	<li><strong><i>Common++</i></strong> - a library containing common code utilities and classes used by both Packet++ and Pcap++. Main classes and utilities:
+		<ol>
+			<li><code class="cpp">IPv4Address, IPv6Address</code> - classes representing IPv4 and IPv6 addresses accordingly</li>
+			<li><code class="cpp">MacAddress</code> - a class representing a MAC (Ethernet) address</li>
+			<li><code class="cpp">IpUtils.h</code> - all kinds of helpful network utilities</li>
+			<li><code class="cpp">LoggerPP</code> - a simple logging infrastructure used widely in PcapPlusPlus</li>
+			<li><code class="cpp">SystemUtils.h</code> - several useful utilities for interaction with the operating system</li>
+		</ol>
+	</li>
+</ul>
+<h2 id="packets_layers">Packets and Layers</h2>
+<p>Parsing and crafting of packets is one of the fundamentals of PcapPlusPlus and the heart of the Packet++ library. We'll dive deep into it later, but first let's understand the basic structures as everything else is built on that.</p>
+<h4>Raw packets vs. Parsed packets</h4>
+<p>There are 2 types of packets in PcapPlusPlus: <strong>raw packets</strong> and <strong>parsed packets</strong>. A raw packet is the raw byte-stream that was captured from the network together with the timestamp it was captured on. A raw packet doesn't contain any data about the protocols it's built from and of course protocol data can't be added, removed or edited. On the other hand, parsed packets are packets that contain all protocol data and can be edited per protocol. This reveals one of the core functionalities of PcapPlusPlus: taking raw packets that were captured from the network and create parsed packets out of them, meaning identifying their protocols, saving meta data about these protocols, and allowing the user easy access to all of this parsed data for both reading and writing (edit, add data and remove data).</p>
+<h4>Layers</h4>
+<p>A layer in PcapPlusPlus means protocol layer. Parsed packets contain layers, each one represents a protocol the packet is built from. For example: an HTTP packet may contain an Ethernet layer, an IPv4 (or IPv6) layer, a TCP layer and an HTTP layer. Each supported protocol is represented by a corresponding layer class. A layer class exposes the protocol's data for the user to read and usually also to write or modify. For example: A TCP layer exposes all TCP fields like ports, flags, sequence numbers, TCP options, etc. and also allows editing of all of those fields and also adding/removing/editing TCP options. Layers inside a parsed packet are ordered in a link list so the parsed packet actually points only to the first (lowest) layer (for example: Ethernet), this layer points to the next layer (for example: IPv4), and so on. A list of all supported protocols (and layers) can be found <a href="index.html#supported-protocols">here</a>.</p>
+<h4>Packet and Layers schematic structure</h4>
+<p>In the following diagram you can see the relations between RawPackets, (parsed) Packets and Layers:</p>
+<img src="resources/PacketsAndLayers.PNG" width="100%"/>
+<p>As can be seen in this diagram, a Packet (= parsed packet) holds a pointer to the RawPacket object and to the first (lowest) Layer. Each Layer has pointers to the next layer and to the previous one.</p>
+<p>It may be implied from this structure that the actual packet data (the raw byte stream) is duplicated between the raw packet and the various layers. This is not the case. We don't want to duplicate the data from various reasons:</p>
+<ul>
+	<li>We don't want the packet object to take up too much memory</li>
+	<li>We would like the avoid unnecessary data coping because it's expensive</li>
+	<li>Since each layer can be edited, we would like the edited data to be written directly to the byte stream and not copied from one place to another</li>
+</ul>
+<p>So the raw byte stream is actually stored once, in the RawPacket object. The various layers only point to the relevant place where their data begins. Here is a diagram to visualize it:</p>
+<img src="resources/LayersAndRawData.PNG" width="100%"/>
+<p>As you can see in this diagram, each layer points to the place in the raw data where its data starts. In this example: Ethernet Layer points to the beginning of the raw data because it is the first layer, so it actually sees all the raw data. On the other hand, IPv4 Layer points to the place where IPv4 data begins so it doesn't see the Ethernet data. UDP Layer points to the place where UDP data starts so it doesn't see the Ethernet and IPv4 data, and so on.</p>
+<p>All of these structures and pointers are built by PcapPlusPlus packet parsing engine residing in the Packet class. When a Packet object is created it is given a RawPacket object (which is created by the capturing engine) and the parsing process begins by understanding which protocols the packet is built of and creating the relevant Layer objects. Another option is to create an "empty" Packet object which doesn't contain any raw data and start building the layers ourselves. In that case a RawPacket object will be created and gradually built.</p>
+<h2 id="packets_capture_engines">Packet capture engines</h2>
+<p>Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines is sometimes very different from one another and it's difficult to keep one flow who suits them all. Also, many of the engine have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:</p>
+<ul>
+	<li>Files (pcap and pcap-ng)</li>
+	<li>Network interfaces using libpcap or WinPcap</li>
+	<li>DPDK-enabled interfaces</li>
+	<li>PF_RING-enabled interfaces</li>
+	<li><a href="https://www.winpcap.org/docs/docs_412/html/group__remote.html">Remote packet capture</a></li>
+</ul>
+<p>Each packet capture engine is represented in PcapPlusPlus in a class called "Device". All devices inherit from a common abstract parent class called <code class="cpp">IPcapDevice</code> which contains a few capabilities that are common for most devices such as opening/closing the device, gathering packet statistics, setting a filter, etc. The rest is implemented in each class.</p>
+<p>The next parts of the tutorial will dive deep into the various device types and explain how to use them.</p>
+<h2 id="simple_app">Writing a simple app including a makefile</h2>
+<p>Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio 2015 project.</p>
+<p>First let's make sure PcapPlusPlus is configured and built successfully. Please follow <a href="download.html">the download page</a> for building instructions.</p>
+<p>Another option is to download a pre-compiled version of PcapPlusPlus, please download the <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">latest release</a> for your platform and follow the instructions on how to configure it.</p>
+<p>Now all we need is under the <code>Dist/</code> directory. We can find the PcapPlusPlus libraries, header files under <code>Dist/header</code>, compiled examples under <code>Dist/examples</code> and helpful makefiles we'll going to use under <code>Dist/mk</code></p>
+<p>So let's write some code and put it in <code>main.cpp</code>:</p>
+  <pre>
+	<code class="cpp">#include &lt;IPv4Layer.h&gt;
 #include &lt;Packet.h&gt;
 #include &lt;PcapFileDevice.h&gt;
 
 int main(int argc, char* argv[])
 {
-	// open a pcap file for reading
-	pcpp::PcapFileReaderDevice reader("1_packet.pcap");
-	if (!reader.open())
-	{
-		printf("Error opening the pcap file\n");
-		return 1;
-	}
+// open a pcap file for reading
+pcpp::PcapFileReaderDevice reader("1_packet.pcap");
+if (!reader.open())
+{
+printf("Error opening the pcap file\n");
+return 1;
+}
 
-	// read the first (and only) packet from the file
-	pcpp::RawPacket rawPacket;
-	if (!reader.getNextPacket(rawPacket))
-	{
-		printf("Couldn't read the first packet in the file\n");
-		return 1;
-	}
+// read the first (and only) packet from the file
+pcpp::RawPacket rawPacket;
+if (!reader.getNextPacket(rawPacket))
+{
+printf("Couldn't read the first packet in the file\n");
+return 1;
+}
 
-	// parse the raw packet into a parsed packet
-	pcpp::Packet parsedPacket(&rawPacket);
+// parse the raw packet into a parsed packet
+pcpp::Packet parsedPacket(&rawPacket);
 
-	// verify the packet is IPv4
-	if (parsedPacket.isPacketOfType(pcpp::IPv4))
-	{
-		// extract source and dest IPs
-		pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIpAddress();
-		pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIpAddress();
+// verify the packet is IPv4
+if (parsedPacket.isPacketOfType(pcpp::IPv4))
+{
+// extract source and dest IPs
+pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIpAddress();
+pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIpAddress();
 
-		// print source and dest IPs
-		printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
-	}
+// print source and dest IPs
+printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
+}
 
-	// close the file
-	reader.close();
+// close the file
+reader.close();
 
-	return 0;
+return 0;
 }</code>
-		</pre>
-		<p>This code does the following:</p>
-		<ol>
-			<li>Opens a pcap file ("1_packet.pcap") containing only 1 packet</li>
-			<li>Reads the packet</li>
-			<li>Parses the packet (converting it from <code class="cpp">RawPacket</code> to <code class="cpp">Packet</code>)</li>
-			<li>Extracts the IPv4 layer</li>
-			<li>Reads the source and destination IPs and prints them to console</li>
-		</ol>
-		<p>This code is rather simple. Now let's see how to write a <code>Makefile</code> so this app compiles successfully:</p>
-		<h4>Windows Makefile</h4>
-		<pre>
-			<code class="makefile">include ../../../Dist/mk/PcapPlusPlus.mk
+</pre>
+<p>This code does the following:</p>
+<ol>
+	<li>Opens a pcap file ("1_packet.pcap") containing only 1 packet</li>
+	<li>Reads the packet</li>
+	<li>Parses the packet (converting it from <code class="cpp">RawPacket</code> to <code class="cpp">Packet</code>)</li>
+	<li>Extracts the IPv4 layer</li>
+	<li>Reads the source and destination IPs and prints them to console</li>
+</ol>
+<p>This code is rather simple. Now let's see how to write a <code>Makefile</code> so this app compiles successfully:</p>
+<h4>Windows Makefile</h4>
+<pre>
+	<code class="makefile">include ../../../Dist/mk/PcapPlusPlus.mk
 
 # All Target
 all:
-	g++.exe $(PCAPPP_INCLUDES) -c -o main.o main.cpp
-	g++.exe $(PCAPPP_LIBS_DIR) -static-libgcc -static-libstdc++ -o Tutorial-LiveTraffic.exe main.o $(PCAPPP_LIBS)
+g++.exe $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+g++.exe $(PCAPPP_LIBS_DIR) -static-libgcc -static-libstdc++ -o Tutorial-LiveTraffic.exe main.o $(PCAPPP_LIBS)
 
 # Clean Target
 clean:
-	del main.o
-	del Tutorial-LiveTraffic.exe</code>
-		</pre>
-		<h4>Linux and Mac OS Makefile</h4>
-		<pre>
-			<code class="makefile">include ../../../Dist/mk/PcapPlusPlus.mk
+del main.o
+del Tutorial-LiveTraffic.exe</code>
+</pre>
+<h4>Linux and Mac OS Makefile</h4>
+<pre>
+	<code class="makefile">include ../../../Dist/mk/PcapPlusPlus.mk
 
 # All Target
 all:
-	g++ $(PCAPPP_INCLUDES) -c -o main.o main.cpp
-	g++ $(PCAPPP_LIBS_DIR) -static-libstdc++ -o Tutorial-HelloWorld main.o $(PCAPPP_LIBS)
+g++ $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+g++ $(PCAPPP_LIBS_DIR) -static-libstdc++ -o Tutorial-HelloWorld main.o $(PCAPPP_LIBS)
 
 # Clean Target
 clean:
-	rm main.o
-	rm Tutorial-HelloWorld</code>
-		</pre>
-		<p>Now let's explore the <code>PcapPlusPlus.mk</code> makefile - it contains variables that encapsulate all we need in order to compile your application with PcapPlusPlus:</p>
-		<ol>
-			<li><strong><em>PCAPPP_INCLUDES</em></strong> - all the include files that are needed for compilation</li>
-			<li><strong><em>PCAPPP_LIBS_DIR</em></strong> - the location of all external libraries needed for compiling and linking with PcapPlusPlus</li>
-			<li><strong><em>PCAPPP_LIBS</em></strong> - all external libraries needed for compiling and linking with PcapPlusPlus</li>
-			<li><strong><em>PCAPPLUSPLUS_HOME</em></strong> - PcapPlusPlus home directory</li>
-		</ol>
-		<p>As you can see we used most of these variables in the Makefiles we created. The only flags we added are for static linking: <code>-static-libstdc++</code> for non-Windows and <code>-static-libgcc -static-libstdc++</code> for Windows (MinGW / MinGW-w64).</p>
-		<p>Now that we have the code and the Makefile let's compile and run the code. Here is the output:</p>
-		<pre>
-			<code>Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'</code>
-		</pre>
-		<h2 id="simple_app_vs2015">Writing a simple app in Visual Studio 2015</h2>
-		<p>So far we demonstrated how to compile using GNU compilers (<code>g++</code>). Now let's explore how to do it in Visual Studio 2015. We'll use the same code we wrote in the previous section and see how to build it using VS 2015.</p>
-		<p>There are Visual Studio 2015 solution + VC projects for all tutorials under the <code>mk\vs2015</code> directory. I strongly advise to use them as a template for your VS 2015 projects. Let's examine the <strong>Tutorial-HelloWorld.vcxproj</strong> VC project:</p>
-		<p>First of all let's take a look at the <strong>Property Manager</strong>:</p>
-		<p><img src="resources/PropertyManager.PNG" /></p>
-		<p>You can see that we added a PcapPlusPlus property sheet file: <strong>PcapPlusPlusPropertySheet.props</strong>. This file contains paths to the PcapPlusPlus libraries and other external libraries PcapPlusPlus is using. This file is generated automatically when you run the PcapPlusPlus VS2015 configuration file: <strong>configure-windows-visual-studio.bat</strong> and resides under <code>mk\vs2015</code> folder. Let's see the content of this file in my PC:</p>
-		<pre>
-			<code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+rm main.o
+rm Tutorial-HelloWorld</code>
+</pre>
+<p>Now let's explore the <code>PcapPlusPlus.mk</code> makefile - it contains variables that encapsulate all we need in order to compile your application with PcapPlusPlus:</p>
+<ol>
+	<li><strong><em>PCAPPP_INCLUDES</em></strong> - all the include files that are needed for compilation</li>
+	<li><strong><em>PCAPPP_LIBS_DIR</em></strong> - the location of all external libraries needed for compiling and linking with PcapPlusPlus</li>
+	<li><strong><em>PCAPPP_LIBS</em></strong> - all external libraries needed for compiling and linking with PcapPlusPlus</li>
+	<li><strong><em>PCAPPLUSPLUS_HOME</em></strong> - PcapPlusPlus home directory</li>
+</ol>
+<p>As you can see we used most of these variables in the Makefiles we created. The only flags we added are for static linking: <code>-static-libstdc++</code> for non-Windows and <code>-static-libgcc -static-libstdc++</code> for Windows (MinGW / MinGW-w64).</p>
+<p>Now that we have the code and the Makefile let's compile and run the code. Here is the output:</p>
+<pre>
+	<code>Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'</code>
+</pre>
+<h2 id="simple_app_vs2015">Writing a simple app in Visual Studio 2015</h2>
+<p>So far we demonstrated how to compile using GNU compilers (<code>g++</code>). Now let's explore how to do it in Visual Studio 2015. We'll use the same code we wrote in the previous section and see how to build it using VS 2015.</p>
+<p>There are Visual Studio 2015 solution + VC projects for all tutorials under the <code>mk\vs2015</code> directory. I strongly advise to use them as a template for your VS 2015 projects. Let's examine the <strong>Tutorial-HelloWorld.vcxproj</strong> VC project:</p>
+<p>First of all let's take a look at the <strong>Property Manager</strong>:</p>
+<p><img src="resources/PropertyManager.PNG" /></p>
+<p>You can see that we added a PcapPlusPlus property sheet file: <strong>PcapPlusPlusPropertySheet.props</strong>. This file contains paths to the PcapPlusPlus libraries and other external libraries PcapPlusPlus is using. This file is generated automatically when you run the PcapPlusPlus VS2015 configuration file: <strong>configure-windows-visual-studio.bat</strong> and resides under <code>mk\vs2015</code> folder. Let's see the content of this file in my PC:</p>
+<pre>
+	<code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"&gt;
-  &lt;ImportGroup Label="PropertySheets" /&gt;
-  &lt;PropertyGroup Label="UserMacros"&gt;
-    &lt;PcapPlusPlusHome&gt;D:\PcapPlusPlus&lt;/PcapPlusPlusHome&gt;
-    &lt;WinPcapHome&gt;D:\WpdPack&lt;/WinPcapHome&gt;
-    &lt;PThreadWin32Home&gt;D:\pthread-win32&lt;/PThreadWin32Home&gt;
-  &lt;/PropertyGroup&gt;
-  &lt;PropertyGroup /&gt;
-  &lt;ItemDefinitionGroup /&gt;
-  &lt;ItemGroup /&gt;
+&lt;ImportGroup Label="PropertySheets" /&gt;
+&lt;PropertyGroup Label="UserMacros"&gt;
+&lt;PcapPlusPlusHome&gt;D:\PcapPlusPlus&lt;/PcapPlusPlusHome&gt;
+&lt;WinPcapHome&gt;D:\WpdPack&lt;/WinPcapHome&gt;
+&lt;PThreadWin32Home&gt;D:\pthread-win32&lt;/PThreadWin32Home&gt;
+&lt;/PropertyGroup&gt;
+&lt;PropertyGroup /&gt;
+&lt;ItemDefinitionGroup /&gt;
+&lt;ItemGroup /&gt;
 &lt;/Project&gt;</code>
-		</pre>
-		<p>Now let's examine the project configuration changes:</p>
-		<p>First, we added the relevant include directories:</p>
-		<p><img src="resources/VS_Includes.PNG" /></p>
-		<p>Also, we added the directories of PcapPlusPlus libraries and the external libraries PcapPlusPlus is using:</p>
-		<p><img src="resources/VS_LibsDir.PNG" /></p>
-		<p>Also, we added the PcapPlusPlus libraries and the external libraries PcapPlusPlus is using:</p>
-		<p><img src="resources/VS_Libs.PNG" /></p>
-		<p>Another small configuration change is to instruct the compiler <strong>Not Using Precompiled Headers</strong>:</p>
-		<p><img src="resources/VS_PrecompiledHeaders.PNG" /></p>
-		<p>Last thing is to add a post-build event to copy <strong>pthreadVC2.dll</strong> file from the pthread-win32 directory to our output directory:</p>
-		<p><img src="resources/VS_PostBuildEvents.PNG" /></p>
-		<p>That's it! The project will now build successfully! Again, I strongly advise to use this tutorial project as a template for your VS 2015 projects, it's always easier that way (but that's my opinion)</p>
-		<h2 id="run_example">Running the example</h2>
-		<p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-HelloWorld">here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. Then follow these instruction, according to your platform:</p>
-		<ul>
-			<li>Linux and Mac OSX - either change the <code>Makefile.non_windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.non_windows all</code></li>
-			<li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.windows all</code></li>
-			<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
-		</ul>
-		<p>In all options the compiled executable will be inside the tutorial directory (<code>[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld</code>)</p>		
-		<script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
-		<p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>
-      </div>
-    </div>
-    <div id="footer">
-      <p>PcapPlusPlus web-site | Template taken from <a href="http://www.html5webtemplates.co.uk/templates/simplestyle_7/index.html">HTML5webtemplates.co.uk</a></p>
-    </div>
-  </div>
-</body>
-</html>
+</pre>
+<p>Now let's examine the project configuration changes:</p>
+<p>First, we added the relevant include directories:</p>
+<p><img src="resources/VS_Includes.PNG" /></p>
+<p>Also, we added the directories of PcapPlusPlus libraries and the external libraries PcapPlusPlus is using:</p>
+<p><img src="resources/VS_LibsDir.PNG" /></p>
+<p>Also, we added the PcapPlusPlus libraries and the external libraries PcapPlusPlus is using:</p>
+<p><img src="resources/VS_Libs.PNG" /></p>
+<p>Another small configuration change is to instruct the compiler <strong>Not Using Precompiled Headers</strong>:</p>
+<p><img src="resources/VS_PrecompiledHeaders.PNG" /></p>
+<p>Last thing is to add a post-build event to copy <strong>pthreadVC2.dll</strong> file from the pthread-win32 directory to our output directory:</p>
+<p><img src="resources/VS_PostBuildEvents.PNG" /></p>
+<p>That's it! The project will now build successfully! Again, I strongly advise to use this tutorial project as a template for your VS 2015 projects, it's always easier that way (but that's my opinion)</p>
+<h2 id="run_example">Running the example</h2>
+<p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-HelloWorld">here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. Then follow these instruction, according to your platform:</p>
+<ul>
+	<li>Linux and Mac OSX - either change the <code>Makefile.non_windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.non_windows all</code></li>
+	<li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.windows all</code></li>
+	<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
+</ul>
+<p>In all options the compiled executable will be inside the tutorial directory (<code>[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld</code>)</p>		
+<script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
+<p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>
