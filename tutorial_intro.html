@@ -155,13 +155,13 @@ int main(int argc, char* argv[])
 
 # All Target
 all:
-g++.exe $(PCAPPP_INCLUDES) -c -o main.o main.cpp
-g++.exe $(PCAPPP_LIBS_DIR) -static-libgcc -static-libstdc++ -o Tutorial-LiveTraffic.exe main.o $(PCAPPP_LIBS)
+	g++.exe $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+	g++.exe $(PCAPPP_LIBS_DIR) -static-libgcc -static-libstdc++ -o Tutorial-LiveTraffic.exe main.o $(PCAPPP_LIBS)
 
 # Clean Target
 clean:
-del main.o
-del Tutorial-LiveTraffic.exe</code>
+	del main.o
+	del Tutorial-LiveTraffic.exe</code>
 </pre>
 <h4>Linux and Mac OS Makefile</h4>
 <pre>
@@ -169,13 +169,13 @@ del Tutorial-LiveTraffic.exe</code>
 
 # All Target
 all:
-g++ $(PCAPPP_INCLUDES) -c -o main.o main.cpp
-g++ $(PCAPPP_LIBS_DIR) -static-libstdc++ -o Tutorial-HelloWorld main.o $(PCAPPP_LIBS)
+	g++ $(PCAPPP_INCLUDES) -c -o main.o main.cpp
+	g++ $(PCAPPP_LIBS_DIR) -static-libstdc++ -o Tutorial-HelloWorld main.o $(PCAPPP_LIBS)
 
 # Clean Target
 clean:
-rm main.o
-rm Tutorial-HelloWorld</code>
+	rm main.o
+	rm Tutorial-HelloWorld</code>
 </pre>
 <p>Now let's explore the <code>PcapPlusPlus.mk</code> makefile - it contains variables that encapsulate all we need in order to compile your application with PcapPlusPlus:</p>
 <ol>
