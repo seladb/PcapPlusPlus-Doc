@@ -54,7 +54,10 @@ section: tutorials
             PcapPlusPlus parse it, and see how we can retrieve data from each
             layer. Let's start by writing a <code>main</code> method and add
             the includes that we need:</p>
-          <pre>	<code class="cpp">#include "stdlib.h"
+          <pre><code class="cpp">#if !defined(WIN32) && !defined(WINx64)
+#include <in.h> // this is for using ntohs() and htons() on non-Windows OS's
+#endif
+#include "stdlib.h"
 #include "Packet.h"
 #include "EthLayer.h"
 #include "IPv4Layer.h"
