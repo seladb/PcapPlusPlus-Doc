@@ -1,0 +1,432 @@
+---
+title: PcapPlusPlus
+layout: default
+section: tutorials
+---
+          <h1><a href="tutorials.html">Tutorials</a></h1>
+          <h2>Part 4: Packet parsing</h2>
+          <p>This part explains how to parse packets and use the different
+            layers (protocol parsers)</p>
+          <p>Table of contents:</p>
+          <ul>
+            <li><a href="tutorial_intro.html">Part 1: Introduction and basics</a></li>
+            <li><a href="tutorial_pcap_files.html">Part 2: Reading and writing
+                pcap files</a></li>
+            <li><a href="tutorial_live_capture.html">Part 3: Capturing and
+                sending packets</a></li>
+            <li>Part 4: Packet parsing
+              <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#packet_parsing">Packet parsing basics</a> </li>
+                <li><a href="#parsing_eth">Parsing Ethernet</a></li>
+                <li><a href="#parsing_ipv4">Parsing IPv4</a></li>
+                <li><a href="#parsing_tcp">Parsing TCP</a></li>
+                <li><a href="#parsing_http">Parsing HTTP</a></li>
+                <li><a href="#run_example">Running the example</a></li>
+              </ol>
+            </li>
+            <li><a href="tutorial_packet_craft_n_edit.html">Part 5: Packet
+                crafting and editing</a></li>
+            <!--li><a href="">Part 5: Working with DPDK</a></li>
+	<li><a href="">Part 6: Working with PF_RING</a></li-->
+          </ul>
+          <h2 id="intro">Introduction</h2>
+          <p>Packet parsing, editing and crafting are a major part of
+            PcapPlusPlus and is the essence of the Packet++ library. There is a
+            long list of <a href="index.html#supported-protocols">protocols
+              currently supported</a>, each of them is represented by a <code class="cpp">Layer</code>
+            class which (in most cases) supports both parsing of the protocol,
+            editing and creation of new layers from scratch.</p>
+          <p>This tutorial will go through the packet parsing fundamentals and
+            the next tutorial will focus on packet crafting and editing. The
+            tutorial demonstrate parsing on a few popular protocols:</p>
+          <ul>
+            <li>Ethernet</li>
+            <li>IPv4</li>
+            <li>TCP</li>
+            <li>HTTP</li>
+          </ul>
+          <p>For further information about these protocols and the other
+            protocols supported in PcapPlusPlus please go to the <a href="Documentation/index.html">API
+              documentation</a></p>
+          <h2 id="packet_parsing">Packet parsing basics</h2>
+          <p>In this tutorial we'll read a packet from a pcap file, let
+            PcapPlusPlus parse it, and see how we can retrieve data from each
+            layer. Let's start by writing a <code>main</code> method and add
+            the includes that we need:</p>
+          <pre>	<code class="cpp">#include "stdlib.h"
+#include "Packet.h"
+#include "EthLayer.h"
+#include "IPv4Layer.h"
+#include "TcpLayer.h"
+#include "HttpLayer.h"
+#include "PcapFileDevice.h"
+
+int main(int argc, char* argv[])
+{
+	// We'll write our code here
+}
+	</code>
+</pre>
+          <p>As you can see we added an include to <code class="cpp">Packet.h</code>
+            which contains the basic parsed packet structures, to <code class="cpp">PcapFileDevice.h</code>
+            which contains the API for reading from pcap files and to all of the
+            layers which we want to retrieve information from.</p>
+          <p>Now let's read the packet from the pcap file. This pcap file
+            contains only 1 packet, so we'll open the reader, read the packet
+            and close the reader:</p>
+          <pre>	<code class="cpp">// use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
+// and create an interface instance that both readers implement
+pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("1_http_packet.pcap");
+
+// verify that a reader interface was indeed created
+if (reader == NULL)
+{
+	printf("Cannot determine reader for file type\n");
+	exit(1);
+}
+
+// open the reader for reading
+if (!reader-&gt;open())
+{
+	printf("Cannot open input.pcap for reading\n");
+	exit(1);
+}
+
+// read the first (and only) packet from the file
+pcpp::RawPacket rawPacket;
+if (!reader-&gt;getNextPacket(rawPacket))
+{
+	printf("Couldn't read the first packet in the file\n");
+	return 1;
+}
+
+// close the file reader, we don't need it anymore
+reader-&gt;close();</code>
+</pre>
+          <p>The next step is to let PcapPlusPlus parse the packet. We do this
+            by creating an instance of the <code class="cpp">Packet</code>
+            class and giving it in the constructor a pointer to the <code class="cpp">RawPacket</code>
+            instance we have:</p>
+          <pre>	<code class="cpp">// parse the raw packet into a parsed packet
+pcpp::Packet parsedPacket(&amp;rawPacket);</code>
+</pre>
+          <p>Before we dive into the protocols, let's remember how the <code class="cpp">Packet</code>
+            class is <a href="tutorial_intro.html#packets_layers">built</a>: it
+            contains a link list of <code class="cpp">Layer</code> instances,
+            each layer points to the next layer in the packet. In our example:
+            Ethernet layer will be the first one, it will point to IPv4 layer
+            which will point to TCP layer and finally we'll have HTTP request
+            layer. The <code class="cpp">Packet</code> class exposes this link
+            list so we can iterate over the layers and retrieve basic
+            information like the protocols they represent, sizes, etc. Let's see
+            the code:</p>
+          <pre>	<code class="cpp">// first let's go over the layers one by one and find out its type, its total length, its header length and its payload length
+for (pcpp::Layer* curLayer = parsedPacket.getFirstLayer(); curLayer != NULL; curLayer = curLayer-&gt;getNextLayer())
+{
+	printf("Layer type: %s; Total data: %d [bytes]; Layer data: %d [bytes]; Layer payload: %d [bytes]\n",
+			getProtocolTypeAsString(curLayer-&gt;getProtocol()).c_str(), // get layer type
+			(int)curLayer-&gt;getDataLen(),                              // get total length of the layer
+			(int)curLayer-&gt;getHeaderLen(),                            // get the header length of the layer
+			(int)curLayer-&gt;getLayerPayloadSize());                    // get the payload length of the layer (equals total length minus header length)
+}</code>
+</pre>
+          <p>As you can see, we're using the <code class="cpp">getFirstLayer()</code>
+            and <code class="cpp">getNextLayer()</code> APIs to iterate over
+            the layers. In each layer we have the following information:</p>
+          <ul>
+            <li><code class="cpp">getProtocol()</code> - get an enum of the
+              protocol the layer represents</li>
+            <li><code class="cpp">getHeaderLen()</code> - get the size of the
+              layer's header, meaning the size of the layer data</li>
+            <li><code class="cpp">getLayerPayloadSize()</code> - get the size of
+              the layer's payload, meaning the size of all layers that follows
+              this layer</li>
+            <li><code class="cpp">getDataLen()</code> - get the total size of
+              the layer: header + payload</li>
+          </ul>
+          <p>For printing the protocols I used a simple function that takes a <code
+
+              class="cpp">ProtocolType</code> enum and returns a string:</p>
+          <pre>	<code class="cpp">std::string getProtocolTypeAsString(pcpp::ProtocolType protocolType)
+{
+	switch (protocolType)
+	{
+	case pcpp::Ethernet:
+		return "Ethernet";
+	case pcpp::IPv4:
+		return "IPv4";
+	case pcpp::TCP:
+		return "TCP";
+	case pcpp::HTTPRequest:
+	case pcpp::HTTPResponse:
+		return "HTTP";
+	default:
+		return "Unknown";
+	}
+}</code>
+</pre>
+          <p>Let's see the output so far:</p>
+          <pre>	<code>Layer type: Ethernet; Total data: 443 [bytes]; Layer data: 14 [bytes]; Layer payload: 429 [bytes]
+Layer type: IPv4; Total data: 429 [bytes]; Layer data: 20 [bytes]; Layer payload: 409 [bytes]
+Layer type: TCP; Total data: 409 [bytes]; Layer data: 32 [bytes]; Layer payload: 377 [bytes]
+Layer type: HTTP; Total data: 377 [bytes]; Layer data: 377 [bytes]; Layer payload: 0 [bytes]</code>
+</pre>
+          <p> </p>
+          <h2 id="parsing_eth">Parsing Ethernet</h2>
+          <p>Now let's see what information we can get from the first layer in
+            this packet: <code class="cpp">EthLayer</code>. First let's get a
+            pointer to this layer. We can use the methods we used before and
+            cast the <code class="cpp">Layer*</code> to <code class="cpp">EthLayer*</code>
+            but the <code class="cpp">Packet</code> class offers a more
+            convenient way to do that:</p>
+          <pre>	<code class="cpp">// now let's get the Ethernet layer
+pcpp::EthLayer* ethernetLayer = parsedPacket.getLayerOfType&lt;pcpp::EthLayer&gt;();
+if (ethernetLayer == NULL)
+{
+	printf("Something went wrong, couldn't find Ethernet layer\n");
+	exit(1);
+}</code>
+</pre>
+          <p>As you can see we used the templated method <code class="cpp">getLayerOfType&lt;pcpp::EthLayer&gt;()</code>
+            which returns a pointer to <code class="cpp">EthLayer</code> if
+            exists in the packet or NULL otherwise. Now we are ready to start
+            getting some information. The Ethernet layer is quite simple so
+            there's not much information we can get. We can basically get the
+            source and destination MAC addresses and the Ether Type of the next
+            layer:</p>
+          <pre>	<code class="cpp">// print the source and dest MAC addresses and the Ether type
+printf("\nSource MAC address: %s\n", ethernetLayer-&gt;getSourceMac().toString().c_str());
+printf("Destination MAC address: %s\n", ethernetLayer-&gt;getDestMac().toString().c_str());
+printf("Ether type = 0x%X\n", ntohs(ethernetLayer-&gt;getEthHeader()-&gt;etherType));</code>
+</pre>
+          <p>For getting the source and destination MAC addresses <code class="cpp">EthLayer</code>
+            exposes methods which return an instance of type <code class="cpp">MacAddress</code>
+            which encapsulates MAC addresses and provides helper function such
+            as print the MAC address as a nice string (like we have in our code
+            example). For getting the Ether Type we call <code class="cpp">getEthHeader()</code>
+            which casts the raw packet bytes into a struct: <code class="cpp">ether_header*</code>
+            and we can read the Ether Type from this struct. Since packet raw
+            data is stored in network order, we need to convert the Ether Type
+            value from network to host order using <code class="cpp">ntohs()</code></p>
+          <p>The output is the following:</p>
+          <pre>	<code>Source MAC address: 00:50:43:01:4d:d4
+Destination MAC address: 00:90:7f:3e:02:d0
+Ether type = 0x800</code>
+</pre>
+          <p> </p>
+          <h2 id="parsing_ipv4">Parsing IPv4</h2>
+          <p>Now let's get the IPv4 layer, we'll do it in the same way as before
+            using the template <code class="cpp">getLayerOfType&lt;pcpp::IPv4Layer&gt;()</code>
+            method:</p>
+          <pre>	<code class="cpp">// let's get the IPv4 layer
+pcpp::IPv4Layer* ipLayer = parsedPacket.getLayerOfType&lt;pcpp::IPv4Layer&gt;();
+if (ipLayer == NULL)
+{
+	printf("Something went wrong, couldn't find IPv4 layer\n");
+	exit(1);
+}</code>
+</pre>
+          <p>Let's get some information from the <code class="cpp">IPv4Layer</code>:</p>
+          <pre>	<code class="cpp">// print source and dest IP addresses, IP ID and TTL
+printf("\nSource IP address: %s\n", ipLayer-&gt;getSrcIpAddress().toString().c_str());
+printf("Destination IP address: %s\n", ipLayer-&gt;getDstIpAddress().toString().c_str());
+printf("IP ID: 0x%X\n", ntohs(ipLayer-&gt;getIPv4Header()-&gt;ipId));
+printf("TTL: %d\n", ipLayer-&gt;getIPv4Header()-&gt;timeToLive);</code>
+</pre>
+          <p>As you can see this layer exposes 2 methods for reading the source
+            and destination IP addresses in an easy-to-use wrapper class called
+            <code class="cpp">IPv4Address</code>. This class provides various
+            capabilities, one of them is printing the IP address as a string.
+            Next, we use the <code class="cpp">getIPv4Header()</code> method
+            which casts the raw packet bytes to a struct called <code class="cpp">iphdr*</code>
+            and we can retrieve the rest of the data from there. Since the
+            packet data is in network order, we need to use <code class="cpp">ntohs()</code>
+            when getting data larger than 1 byte (like when reading the IP ID).</p>
+          <p>Here is the output:</p>
+          <pre>	<code>Source IP address: 172.16.133.132
+Destination IP address: 98.139.161.29
+IP ID: 0x36E4
+TTL: 64</code>
+</pre>
+          <p> </p>
+          <h2 id="parsing_tcp">Parsing TCP</h2>
+          <p>Let's get the TCP layer:</p>
+          <pre>	<code class="cpp">// let's get the TCP layer
+pcpp::TcpLayer* tcpLayer = parsedPacket.getLayerOfType&lt;pcpp::TcpLayer&gt;();
+if (tcpLayer == NULL)
+{
+	printf("Something went wrong, couldn't find TCP layer\n");
+	exit(1);
+}</code>
+</pre>
+          <p>Now let's get the TCP data:</p>
+          <pre>	<code class="cpp">// printf TCP source and dest ports, window size, and the TCP flags that are set in this layer
+printf("\nSource TCP port: %d\n", (int)ntohs(tcpLayer-&gt;getTcpHeader()-&gt;portSrc));
+printf("Destination TCP port: %d\n", (int)ntohs(tcpLayer-&gt;getTcpHeader()-&gt;portDst));
+printf("Window size: %d\n", (int)ntohs(tcpLayer-&gt;getTcpHeader()-&gt;windowSize));
+printf("TCP flags: %s\n", printTcpFlags(tcpLayer).c_str());</code>
+</pre>
+          <p>Here also, like the layers we saw before, TCP layer exposes a
+            method <code class="cpp">getTcpHeader()</code> which casts the raw
+            packet bytes to a struct <code class="cpp">tpchdr*</code> which
+            contains all of the TCP fields. That way we can get the source and
+            destination ports, the windows size and any other TCP field. Notice
+            the need of using <code class="cpp">ntohs()</code> to convert the
+            data from network to host byte order because the raw packet arrives
+            in network order. I also wrote a small function that gathers all of
+            the TCP flags on the packet and prints them nicely:</p>
+          <pre>	<code class="cpp">std::string printTcpFlags(pcpp::TcpLayer* tcpLayer)
+{
+	std::string result = "";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;synFlag == 1)
+		result += "SYN ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;ackFlag == 1)
+		result += "ACK ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;pshFlag == 1)
+		result += "PSH ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;cwrFlag == 1)
+		result += "CWR ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;urgFlag == 1)
+		result += "URG ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;eceFlag == 1)
+		result += "ECE ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;rstFlag == 1)
+		result += "RST ";
+	if (tcpLayer-&gt;getTcpHeader()-&gt;finFlag == 1)
+		result += "FIN ";
+
+	return result;
+}</code>
+</pre>
+          <p>Another cool feature <code class="cpp">TcpLayer</code> provides is
+            retrieving information about the TCP options (if exist). We can
+            iterate the TCP options using the methods <code class="cpp">getFirstTcpOptionData()</code>
+            and <code class="cpp">getNextTcpOptionData(option)</code> and
+            extract all the information on the TCP option such as type, length
+            and value. In our example let's iterate over them and print their
+            type:</p>
+          <pre>	<code class="cpp">// go over all TCP options in this layer and print its type
+printf("TCP options: ");
+for (pcpp::TcpOptionData* tcpOption = tcpLayer-&gt;getFirstTcpOptionData(); tcpOption != NULL; tcpOption = tcpLayer-&gt;getNextTcpOptionData(tcpOption))
+{
+	printf("%s ", printTcpOptionType(tcpOption-&gt;getType()).c_str());
+}
+printf("\n");</code>
+</pre>
+          <p>Let's see the method that gets the TCP option type as enum and
+            converts it to string. Notice this method handles only the TCP
+            options we have on the specific packet we're parsing, PcapPlusPlus
+            support all TCP options types:</p>
+          <pre>	<code class="cpp">std::string printTcpOptionType(pcpp::TcpOption optionType)
+{
+	switch (optionType)
+	{
+	case pcpp::PCPP_TCPOPT_NOP:
+		return "NOP";
+	case pcpp::PCPP_TCPOPT_TIMESTAMP:
+		return "Timestamp";
+	default:
+		return "Other";
+	}
+}</code>
+</pre>
+          <p> </p>
+          <h2 id="parsing_http">Parsing HTTP</h2>
+          <p>Finally, let's see the capabilities <code class="cpp">HttpRequestLayer</code>
+            has to offer. First let's extract the layer from the packet:</p>
+          <pre><code class="cpp">// let's get the HTTP request layer
+pcpp::HttpRequestLayer* httpRequestLayer = parsedPacket.getLayerOfType&lt;pcpp::httprequestlayer&gt;();
+if (httpRequestLayer == NULL)
+{
+	printf("Something went wrong, couldn't find HTTP request layer\n");
+	exit(1);
+}</code>
+</pre>
+          <p>Of course there is a similar class <code class="cpp">HttpResponseLayer</code>
+            for HTTP responses.</p>
+          <p>HTTP messages (both requests and responses) have 3 main parts:</p>
+          <ul>
+            <li>The first line (also known as request-line or status-line) which
+              includes the HTTP version, HTTP method (for requests) or status
+              code (for responses) and the URI (for requests)</li>
+            <li>Message headers which include all header fields (e.g host,
+              user-agent, cookie, content-type etc.)</li>
+            <li>Message body</li>
+          </ul>
+          <p>The HTTP layer classes provide access to all of these parts. Let's
+            start with showing how to get data from the first line:</p>
+          <pre><code class="cpp">// print HTTP method and URI. Both appear in the first line of the HTTP request
+printf("\nHTTP method: %s\n", printHttpMethod(httpRequestLayer-&gt;getFirstLine()-&gt;getMethod()).c_str());
+printf("HTTP URI: %s\n", httpRequestLayer-&gt;getFirstLine()-&gt;getUri().c_str());</code></pre>
+          <p>As you can see the <code class="cpp">HttpRequestLayer </code>class
+            exposes a getter (<code class="cpp">getFirstLine()</code>) that
+            retrieves an object of type <code class="cpp">HttpRequestFirstLine</code>
+            that contain all of the first-line data: method, URI,etc. The method
+            is returned as an enum so I added a simple function <code class="cpp">printHttpMethod</code>
+            to print it as a string:</p>
+          <pre><code class="cpp">std::string printHttpMethod(pcpp::HttpRequestLayer::HttpMethod httpMethod)
+{
+	switch (httpMethod)
+	{
+	case pcpp::HttpRequestLayer::HttpGET:
+		return "GET";
+	case pcpp::HttpRequestLayer::HttpPOST:
+		return "POST";
+	default:
+		return "Other";
+	}
+}</code>
+</pre>
+          <p>Now let's see how to get header fields data:</p>
+          <pre><code class="cpp">// print values of the following HTTP field: Host, User-Agent and Cookie
+printf("HTTP host: %s\n", httpRequestLayer-&gt;getFieldByName(PCPP_HTTP_HOST_FIELD)-&gt;getFieldValue().c_str());
+printf("HTTP user-agent: %s\n", httpRequestLayer-&gt;getFieldByName(PCPP_HTTP_USER_AGENT_FIELD)-&gt;getFieldValue().c_str());
+printf("HTTP cookie: %s\n", httpRequestLayer-&gt;getFieldByName(PCPP_HTTP_COOKIE_FIELD)-&gt;getFieldValue().c_str());</code>
+</pre>
+          <p>The HTTP request and response layers exposes a method <code>getFieldByName()</code>
+            to get a header field data by it's name. The class representing a
+            field is called <code>HttpField </code>and has some interesting
+            API, but probably the most important method for parsing is <code>getFieldValue()</code>
+            which returns the value of this header field as string. Please
+            notice that I didn't write the header field names as strings but
+            rather used a macro defined in PcapPlusPlus for some of the most
+            useful HTTP fields (like host, cookie, user-agent, etc.).</p>
+          <p>Finally, let's see another cool method in <code>HttpRequestLayer </code>which
+            is <code>getURL()</code> that forms and returns the full URL from
+            the request (including host-name from "Host" header field + URI from
+            the request-line):</p>
+          <pre><code class="cpp">// print the full URL of this request
+printf("HTTP full URL: %s\n", httpRequestLayer-&gt;getUrl().c_str());</code>
+          </pre>
+          <p>Now let's see the output:</p>
+          <pre><code>HTTP method: GET
+HTTP URI: /serv?s=19190039&amp;t=1361916157&amp;f=us-p9h3
+HTTP host: geo.yahoo.com
+HTTP user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10
+HTTP cookie: B=fdnulql8iqc6l&amp;b=3&amp;s=ps
+HTTP full URL: geo.yahoo.com/serv?s=19190039&amp;t=1361916157&amp;f=us-p9h3</code>
+          </pre>
+          <h2 id="run_example">Running the example</h2>
+          <p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-PacketParsing">here</a>.
+            In order to compile and run the code please first download and
+            compile PcapPlusPlus code or downloaded a pre-compiled version from
+            <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the
+              latest PcapPlusPlus release</a>. Then follow these instruction,
+            according to your platform:</p>
+          <ul>
+            <li>Linux and Mac OSX - either change the <code>Makefile.non_windows</code>
+              file name to <code>Makefile</code> and run <code>make all</code>,
+              or run <code>make -f Makefile.non_windows all</code></li>
+            <li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code>
+              file name to <code>Makefile</code> and run <code>make all</code>,
+              or run <code>make -f Makefile.windows all</code></li>
+            <li>Windows using Visual Studio 2015 - there is a Visual Studio 2015
+              solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>.
+              Just open it and compile all tutorials</li>
+          </ul>
+          <p>In all options the compiled executable will be inside the tutorial
+            directory (<code>[PcapPlusPlus
+              Folder]/Examples/Tutorials/Tutorial-PacketParsing</code>)</p>
+          <script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
+          <p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>
