@@ -51,7 +51,10 @@ section: tutorials
           let PcapPlusPlus parse it, and then see how we can edit and change the
           data in each layer. Let's start by writing a <code>mai<span style="font-family: &quot;trebuchet ms&quot;,arial,sans-serif;">n()</span></code>
           method and add the includes that we need:</p>
-        <pre><code class="cpp">#include "stdlib.h"
+        <pre><code class="cpp">#if !defined(WIN32) && !defined(WINx64)
+#include <in.h> // this is for using ntohs() and htons() on non-Windows OS's
+#endif
+#include "stdlib.h"
 #include "Packet.h"
 #include "EthLayer.h"
 #include "VlanLayer.h"
@@ -71,7 +74,10 @@ int main(int argc, char* argv[])
         <p>As you can see we added an include to <code class="cpp">Packet.h</code>
           which contains the basic parsed packet structures, to <code class="cpp">PcapFileDevice.h</code>
           which contains the API for reading/writing from/to pcap files and to
-          all of the layers which we will edit and add data from.</p>
+          all of the layers which we will edit and add data from. In addition we included
+          <code class="cpp">in.h</code> for using <code class="cpp">htons()</code> and
+          <code class="cpp">ntohs()</code> which we'll use later. This include is relevant for non-Windows
+          operating systems only.</p>
         <p>Now let's read the packet from the pcap file. This pcap file contains
           only 1 packet, so we'll open the reader, read the packet and close the
           reader:</p>
