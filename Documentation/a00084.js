@@ -6,6 +6,7 @@ var a00084 =
     [ "getExperimentalUseValue", "a00084.html#a08c0c29fd77546f79fd04e3f72ff560c", null ],
     [ "getHeaderLen", "a00084.html#acfcd645a870d558cf79f618c67d411f4", null ],
     [ "getMplsLabel", "a00084.html#a81a078482749d623c7717e0ca6caa1c5", null ],
+    [ "getOsiModelLayer", "a00084.html#a698af5934823addc5d3b5e9e89f4f5a5", null ],
     [ "getTTL", "a00084.html#a86338975aee81b97c266fd3c352f1822", null ],
     [ "isBottomOfStack", "a00084.html#a5a158dfd712e5e75c6abed56d3e5ad19", null ],
     [ "parseNextLayer", "a00084.html#ac39bfa71fcf5e63cb711334262458c51", null ],

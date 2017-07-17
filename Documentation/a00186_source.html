@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('a00186_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00090.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00090.html">PayloadLayer</a> : <span class="keyword">public</span> <a class="code" href="a00077.html">Layer</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">   28</a></span>&#160;        <a class="code" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00077.html">Layer</a>* prevLayer, <a class="code" href="a00089.html">Packet</a>* packet) : <a class="code" href="a00077.html">Layer</a>(data, dataLen, prevLayer, packet) {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">   28</a></span>&#160;        <a class="code" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00077.html">Layer</a>* prevLayer, <a class="code" href="a00089.html">Packet</a>* packet) : <a class="code" href="a00077.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">GenericPayolad</a>; }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">bool</span> selfAllocated);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -140,15 +140,20 @@ $(document).ready(function(){initNavTree('a00186_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::string <a class="code" href="a00090.html#ab9117eddc57a2c6e3d3e5ef1626a4aac">toString</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00090.html#ab041d609556acd4c9793e738fda27235">   72</a></span>&#160;        <a class="code" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00090.html#ab041d609556acd4c9793e738fda27235">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a>; }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PAYLOAD_LAYER */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PAYLOAD_LAYER */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a00176_html"><div class="ttname"><a href="a00176.html">Layer.h</a></div></div>
+<div class="ttc" id="a00211_html_a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4"><div class="ttname"><a href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:171</div></div>
+<div class="ttc" id="a00211_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:178</div></div>
 <div class="ttc" id="a00090_html_a06b137b6b0f0a81cfd6fda7f2e44640f"><div class="ttname"><a href="a00090.html#a06b137b6b0f0a81cfd6fda7f2e44640f">pcpp::PayloadLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:68</div></div>
 <div class="ttc" id="a00090_html_af46528184f2f9cff223f631422ae8b24"><div class="ttname"><a href="a00090.html#af46528184f2f9cff223f631422ae8b24">pcpp::PayloadLayer::getPayload</a></div><div class="ttdeci">uint8_t * getPayload()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:45</div></div>
 <div class="ttc" id="a00090_html"><div class="ttname"><a href="a00090.html">pcpp::PayloadLayer</a></div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:19</div></div>
+<div class="ttc" id="a00090_html_ab041d609556acd4c9793e738fda27235"><div class="ttname"><a href="a00090.html#ab041d609556acd4c9793e738fda27235">pcpp::PayloadLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:72</div></div>
 <div class="ttc" id="a00090_html_aee6b8085ad904ba8044bf95b802255f5"><div class="ttname"><a href="a00090.html#aee6b8085ad904ba8044bf95b802255f5">pcpp::PayloadLayer::getPayloadLen</a></div><div class="ttdeci">size_t getPayloadLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:51</div></div>
 <div class="ttc" id="a00090_html_a462003b0863dd9891d989f847608c1fb"><div class="ttname"><a href="a00090.html#a462003b0863dd9891d989f847608c1fb">pcpp::PayloadLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:58</div></div>
 <div class="ttc" id="a00211_html"><div class="ttname"><a href="a00211.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
@@ -156,6 +161,7 @@ $(document).ready(function(){initNavTree('a00186_source.html','');});
 <div class="ttc" id="a00090_html_a03f5cea04a120367b2b1b808ec2e38ef"><div class="ttname"><a href="a00090.html#a03f5cea04a120367b2b1b808ec2e38ef">pcpp::PayloadLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:63</div></div>
 <div class="ttc" id="a00089_html"><div class="ttname"><a href="a00089.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
 <div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00211_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:193</div></div>
 <div class="ttc" id="a00090_html_a3c34b57a284fe6e3180eb7cc79da9f24"><div class="ttname"><a href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">pcpp::PayloadLayer::PayloadLayer</a></div><div class="ttdeci">PayloadLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +169,7 @@ $(document).ready(function(){initNavTree('a00186_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00186.html">PayloadLayer.h</a></li>
-    <li class="footer">Generated on Tue Jun 20 2017 01:02:52 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Jul 17 2017 16:14:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

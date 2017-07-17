@@ -8,6 +8,7 @@ var a00028 =
     [ "getFirstField", "a00028.html#ae3b2f5228e83f0e5c6832778a3c45039", null ],
     [ "getHeaderLen", "a00028.html#a78ecb8aa9b390e0bdb7c2e505c8e59b7", null ],
     [ "getNextField", "a00028.html#ac1026dd3bf19b3ad1b9668a6184ae426", null ],
+    [ "getOsiModelLayer", "a00028.html#a7609cb4fbbab808fb6b1755a3a738f16", null ],
     [ "insertField", "a00028.html#ac6ed432d6d32ba9d8119a706fbd5bd6a", null ],
     [ "insertField", "a00028.html#aaee0d8f4e54aba90aec8e2d2e9616a8a", null ],
     [ "isHeaderComplete", "a00028.html#a701003b87156e45c8cf4e87fcad94200", null ],

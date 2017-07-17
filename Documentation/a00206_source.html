@@ -321,21 +321,23 @@ $(document).ready(function(){initNavTree('a00206_source.html','');});
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        std::string <a class="code" href="a00150.html#a73e8482bed0fbb00e7a7ba87699df92f">toString</a>();</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="a00150.html#ae924f98f5fb2cb2ea0f72c34f6eba322">  400</a></span>&#160;        <a class="code" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00150.html#ae924f98f5fb2cb2ea0f72c34f6eba322">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">OsiModelTransportLayer</a>; }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordtype">size_t</span> m_TcpOptionsCount;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordtype">int</span> m_NumOfTrailingBytes;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordtype">void</span> initLayer();</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <a class="code" href="a00151.html">TcpOptionData</a>* castPtrToTcpOptionData(uint8_t* ptr);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <a class="code" href="a00151.html">TcpOptionData</a>* addTcpOptionAt(<a class="code" href="a00211.html#a540c8f1aff318621afb964481749f286">TcpOption</a> optionType, uint8_t optionLength, <span class="keyword">const</span> uint8_t* optionData, <span class="keywordtype">int</span> offset);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordtype">void</span> adjustTcpOptionTrailer(<span class="keywordtype">size_t</span> totalOptSize);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordtype">void</span> copyLayerData(<span class="keyword">const</span> <a class="code" href="a00150.html">TcpLayer</a>&amp; other);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    };</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordtype">size_t</span> m_TcpOptionsCount;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordtype">int</span> m_NumOfTrailingBytes;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordtype">void</span> initLayer();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <a class="code" href="a00151.html">TcpOptionData</a>* castPtrToTcpOptionData(uint8_t* ptr);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <a class="code" href="a00151.html">TcpOptionData</a>* addTcpOptionAt(<a class="code" href="a00211.html#a540c8f1aff318621afb964481749f286">TcpOption</a> optionType, uint8_t optionLength, <span class="keyword">const</span> uint8_t* optionData, <span class="keywordtype">int</span> offset);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <span class="keywordtype">void</span> adjustTcpOptionTrailer(<span class="keywordtype">size_t</span> totalOptSize);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordtype">void</span> copyLayerData(<span class="keyword">const</span> <a class="code" href="a00150.html">TcpLayer</a>&amp; other);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    };</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_LAYER */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_LAYER */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a2c4c5fa96b5f24013ef13e8bddf232f3">pcpp::TCPOPT_SCPS</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:116</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a82a419fa83ffede0528bbe66b9eb0a29">pcpp::TCPOPT_CC</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:106</div></div>
 <div class="ttc" id="a00149_html_a1561eb6d029e00fe449bbaac3be8d705"><div class="ttname"><a href="a00149.html#a1561eb6d029e00fe449bbaac3be8d705">pcpp::tcphdr::pshFlag</a></div><div class="ttdeci">uint16_t pshFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
@@ -360,16 +362,19 @@ $(document).ready(function(){initNavTree('a00206_source.html','');});
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286af6f2d4d9c60472415287e15825eb24cf"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286af6f2d4d9c60472415287e15825eb24cf">pcpp::PCPP_TCPOPT_SACK</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:98</div></div>
 <div class="ttc" id="a00149_html_a607801a4305ecb6d4ab234a6755b78e7"><div class="ttname"><a href="a00149.html#a607801a4305ecb6d4ab234a6755b78e7">pcpp::tcphdr::eceFlag</a></div><div class="ttdeci">uint16_t eceFlag</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:31</div></div>
 <div class="ttc" id="a00149_html_af25c27d92c75ab68816d23c3ead02d5a"><div class="ttname"><a href="a00149.html#af25c27d92c75ab68816d23c3ead02d5a">pcpp::tcphdr::headerChecksum</a></div><div class="ttdeci">uint16_t headerChecksum</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:76</div></div>
+<div class="ttc" id="a00211_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:178</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286ad048b5042b768d619a7af21604d05a0d"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286ad048b5042b768d619a7af21604d05a0d">pcpp::PCPP_TCPOPT_TIMESTAMP</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:104</div></div>
 <div class="ttc" id="a00150_html_abf39676d5adf4e2b3b2d90a616428780"><div class="ttname"><a href="a00150.html#abf39676d5adf4e2b3b2d90a616428780">pcpp::TcpLayer::calculateChecksum</a></div><div class="ttdeci">uint16_t calculateChecksum(bool writeResultToPacket)</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a7419b4758897f479aa1ae84c2061ccb2">pcpp::TCPOPT_EXP_FE</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:130</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286af7e1c0704f4b2752500ea250ec05243a">pcpp::TCPOPT_ECHO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:100</div></div>
+<div class="ttc" id="a00150_html_ae924f98f5fb2cb2ea0f72c34f6eba322"><div class="ttname"><a href="a00150.html#ae924f98f5fb2cb2ea0f72c34f6eba322">pcpp::TcpLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:400</div></div>
 <div class="ttc" id="a00151_html_aaa3ce2fbd266fde95d8e7c57fd091d4f"><div class="ttname"><a href="a00151.html#aaa3ce2fbd266fde95d8e7c57fd091d4f">pcpp::TcpOptionData::setValue</a></div><div class="ttdeci">void setValue(T newValue, int valueOffset=0)</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:232</div></div>
 <div class="ttc" id="a00150_html_a5f4221c3c8c65f55e21c2db0e87b566a"><div class="ttname"><a href="a00150.html#a5f4221c3c8c65f55e21c2db0e87b566a">pcpp::TcpLayer::getTcpOptionsCount</a></div><div class="ttdeci">size_t getTcpOptionsCount()</div></div>
 <div class="ttc" id="a00149_html_a4ae26537b0e824c5b0fc1bcf9adf2fdc"><div class="ttname"><a href="a00149.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">pcpp::tcphdr::portDst</a></div><div class="ttdeci">uint16_t portDst</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:25</div></div>
 <div class="ttc" id="a00150_html_a3dfca9bce5c6ec475894d476e8372156"><div class="ttname"><a href="a00150.html#a3dfca9bce5c6ec475894d476e8372156">pcpp::TcpLayer::TcpLayer</a></div><div class="ttdeci">TcpLayer()</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286ae7b809cbdeefd6ef5caa8fda23f2c38a">pcpp::TCPOPT_RECBOUND</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:120</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a572937db672d4d69625f0662ed76b962"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a572937db672d4d69625f0662ed76b962">pcpp::PCPP_TCPOPT_EOL</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:90</div></div>
+<div class="ttc" id="a00211_html_a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc"><div class="ttname"><a href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">pcpp::OsiModelTransportLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:187</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a8e5a017910f13b5205a8109e2c898d2e">pcpp::TCPOPT_ECHOREPLY</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:102</div></div>
 <div class="ttc" id="a00151_html_a722a42e1ceef77b984bfe06c33d77ab3"><div class="ttname"><a href="a00151.html#a722a42e1ceef77b984bfe06c33d77ab3">pcpp::TcpOptionData::len</a></div><div class="ttdeci">uint8_t len</div><div class="ttdef"><b>Definition:</b> TcpLayer.h:197</div></div>
 <div class="ttc" id="a00211_html_a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b"><div class="ttname"><a href="a00211.html#a540c8f1aff318621afb964481749f286a0ea39933d465fbcf6eb99587c1ea7b7b">pcpp::TCPOPT_USER_TO</a></div><div class="ttdef"><b>Definition:</b> TcpLayer.h:126</div></div>
@@ -413,7 +418,7 @@ $(document).ready(function(){initNavTree('a00206_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00206.html">TcpLayer.h</a></li>
-    <li class="footer">Generated on Tue Jun 20 2017 01:02:52 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Jul 17 2017 16:14:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

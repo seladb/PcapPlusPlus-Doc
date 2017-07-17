@@ -123,7 +123,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a> { <br />
-&#160;&#160;<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba4c2bdeb43ce6d72baace37f4f7d8cfe3">pcpp::Unknown</a> = 0x00, 
+&#160;&#160;<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a> = 0x00, 
 <a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a> = 0x01, 
 <a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> = 0x02, 
 <a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a> = 0x04, 
@@ -159,10 +159,24 @@ Enumerations</h2></td></tr>
 <a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">pcpp::IGMPv1</a> = 0x200000, 
 <br />
 &#160;&#160;<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">pcpp::IGMPv2</a> = 0x400000, 
-<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">pcpp::IGMPv3</a> = 0x800000
+<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">pcpp::IGMPv3</a> = 0x800000, 
+<a class="el" href="a00211.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a> = 0x1000000
 <br />
  }</td></tr>
 <tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e2ee6a9dc68797612cf8dc38461025"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a> { <br />
+&#160;&#160;<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">pcpp::OsiModelPhysicalLayer</a> = 1, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a> = 2, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">pcpp::OsiModelNetworkLayer</a> = 3, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">pcpp::OsiModelTransportLayer</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a> = 5, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">pcpp::OsiModelPresentationLayer</a> = 6, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a> = 7, 
+<a class="el" href="a00211.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a69e2ee6a9dc68797612cf8dc38461025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -170,7 +184,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00199.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Tue Jun 20 2017 01:02:53 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Jul 17 2017 16:14:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

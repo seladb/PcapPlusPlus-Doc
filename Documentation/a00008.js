@@ -18,6 +18,7 @@ var a00008 =
     [ "getOpCode", "a00008.html#a59d9b7aa18f57d72ddc395349037952c", null ],
     [ "getOptionData", "a00008.html#a6d1b38d71b4cf1f800f3ef8355166d0c", null ],
     [ "getOptionsCount", "a00008.html#a60ae838afc886fdc71e404b639f9e273", null ],
+    [ "getOsiModelLayer", "a00008.html#a17f07ca8c6acb3ba73c5107209a1b513", null ],
     [ "getServerIpAddress", "a00008.html#a5ba5f1ad6418ca166f8871f6dff0cf67", null ],
     [ "getYourIpAddress", "a00008.html#ae869375ada591943a6fe58da95c7c9a4", null ],
     [ "parseNextLayer", "a00008.html#a252452218ffc43dae0de4cb8b9fb0315", null ],

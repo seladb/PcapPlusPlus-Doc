@@ -13,6 +13,7 @@ var a00048 =
     [ "getInfoReplyData", "a00048.html#a33a39382e3122b4babbc27251d6290a8", null ],
     [ "getInfoRequestData", "a00048.html#abefe7e37b10bea2fdc45f2f32d9f9260", null ],
     [ "getMessageType", "a00048.html#a6b4dbf8738f1fdadbd00acafe93cf984", null ],
+    [ "getOsiModelLayer", "a00048.html#a00f3aa3225ce99df91df39a4185a755a", null ],
     [ "getParamProblemData", "a00048.html#ad854fa2f6bfb1f33f97ec334965811e4", null ],
     [ "getRedirectData", "a00048.html#a8ed0adf59a73890c1812614f2697335f", null ],
     [ "getRouterAdvertisementData", "a00048.html#a77e4bc6d79c8b13360913eed0547c03b", null ],

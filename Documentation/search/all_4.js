@@ -10,7 +10,7 @@ var searchData=
   ['ethertype',['etherType',['../a00018.html#a3200f5fc394812077b6c96d2b15f7658',1,'pcpp::ether_header::etherType()'],['../a00158.html#a790a917cc070fb1ace8c77a7a12d0870',1,'pcpp::vlan_header::etherType()']]],
   ['ethertypefilter',['EtherTypeFilter',['../a00019.html',1,'pcpp']]],
   ['ethertypefilter',['EtherTypeFilter',['../a00019.html#a232ed2349710314257417a2541a45358',1,'pcpp::EtherTypeFilter']]],
-  ['ethlayer',['EthLayer',['../a00020.html#ae509330de4c0b0c2c52bc0ba4f1276d4',1,'pcpp::EthLayer::EthLayer(uint8_t *data, size_t dataLen, Packet *packet)'],['../a00020.html#aa74927f2950602ac5b88221d0ed9cb17',1,'pcpp::EthLayer::EthLayer(MacAddress &amp;sourceMac, MacAddress &amp;destMac, uint16_t etherType)']]],
+  ['ethlayer',['EthLayer',['../a00020.html#ae509330de4c0b0c2c52bc0ba4f1276d4',1,'pcpp::EthLayer::EthLayer(uint8_t *data, size_t dataLen, Packet *packet)'],['../a00020.html#a4fc8bd04450057d9fbb7a6764723aea7',1,'pcpp::EthLayer::EthLayer(const MacAddress &amp;sourceMac, const MacAddress &amp;destMac, uint16_t etherType=0)']]],
   ['ethlayer',['EthLayer',['../a00020.html',1,'pcpp']]],
   ['ethlayer_2eh',['EthLayer.h',['../a00167.html',1,'']]],
   ['eventhandlercallback',['EventHandlerCallback',['../a00002.html#abfff8961708dec4b1c4802fc42180284',1,'pcpp::ApplicationEventHandler']]],

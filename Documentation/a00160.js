@@ -5,6 +5,7 @@ var a00160 =
     [ "computeCalculateFields", "a00160.html#a931be22ad37fcedab548a9752d7c834a", null ],
     [ "getCFI", "a00160.html#abe0453b916a6733faf3d658e83340db2", null ],
     [ "getHeaderLen", "a00160.html#a9f89975517e388390c7b97d84f1bca50", null ],
+    [ "getOsiModelLayer", "a00160.html#aef6347664baf2caecbd033588f8fc898", null ],
     [ "getPriority", "a00160.html#a021259caeb2905bcf0ffa0fd4debaa26", null ],
     [ "getVlanHeader", "a00160.html#a248cdb71f54fe1d29e52c7c5f86d908c", null ],
     [ "getVlanID", "a00160.html#a0aa76692b5502afa254931d4249937ba", null ],

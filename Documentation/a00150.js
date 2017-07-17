@@ -11,6 +11,7 @@ var a00150 =
     [ "getFirstTcpOptionData", "a00150.html#a61378c46f72ddcc4480e15e3dee46c7d", null ],
     [ "getHeaderLen", "a00150.html#a5d81b7bed2f5c4389b5b80c9282493e6", null ],
     [ "getNextTcpOptionData", "a00150.html#ad08a096aafc4a57608336f5c7c156cf4", null ],
+    [ "getOsiModelLayer", "a00150.html#ae924f98f5fb2cb2ea0f72c34f6eba322", null ],
     [ "getTcpHeader", "a00150.html#a351dbc0708b8930036940ff93abb362f", null ],
     [ "getTcpOptionData", "a00150.html#a1b427e3e350460835e76d315c0f0b4bb", null ],
     [ "getTcpOptionsCount", "a00150.html#a5f4221c3c8c65f55e21c2db0e87b566a", null ],

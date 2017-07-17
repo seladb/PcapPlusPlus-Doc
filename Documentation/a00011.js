@@ -29,6 +29,7 @@ var a00011 =
     [ "getNextAnswer", "a00011.html#a531bebbd2335b3afe12f5375a4e87c76", null ],
     [ "getNextAuthority", "a00011.html#a7ae85a7506674202a85b1e51b2a91ae5", null ],
     [ "getNextQuery", "a00011.html#a0655e6e38dcd61af2825e0cef7c060dd", null ],
+    [ "getOsiModelLayer", "a00011.html#a2ebd2d19e043c53798ad41132f9d4dd7", null ],
     [ "getQuery", "a00011.html#a94fae8d66aca1e4ef28d64871dc4db01", null ],
     [ "getQueryCount", "a00011.html#afb70d9f1fdc965871bd7c158b26547ed", null ],
     [ "operator=", "a00011.html#ae265ed7f1e5ce8b8480db3c9b0ca6c34", null ],

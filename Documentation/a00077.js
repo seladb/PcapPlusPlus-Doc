@@ -9,6 +9,7 @@ var a00077 =
     [ "getLayerPayload", "a00077.html#aa2cede93f23dc2afd032fa589e22cd7d", null ],
     [ "getLayerPayloadSize", "a00077.html#aa6b3d4c2c2b85b8211d2b9544194d20e", null ],
     [ "getNextLayer", "a00077.html#a8bcc2c5c58c42f15a38f4b92a631c82e", null ],
+    [ "getOsiModelLayer", "a00077.html#ac505ad06f83ca3f0a2947f9063f423a5", null ],
     [ "getPrevLayer", "a00077.html#a2fe84819a0d4734612bd4adaf152adc0", null ],
     [ "getProtocol", "a00077.html#af529fae0ddcfd57db8d6118e6e8ceeb6", null ],
     [ "isAllocatedToPacket", "a00077.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3", null ],

@@ -9,6 +9,7 @@ var a00081 =
     [ "copyTo", "a00081.html#a36d261838f53468acdb7b46208c97dcf", null ],
     [ "isValid", "a00081.html#afe46520073e14b9e02bb368627896f4a", null ],
     [ "operator!=", "a00081.html#a6497d0796bb0d06997a1e399817ba078", null ],
+    [ "operator=", "a00081.html#af3dd4fde8844b4e6857530be3fd2400e", null ],
     [ "operator==", "a00081.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
     [ "toString", "a00081.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
 ];

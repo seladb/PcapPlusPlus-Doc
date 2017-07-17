@@ -20,6 +20,7 @@ var a00071 =
     [ "getNextOptionData", "a00071.html#a0d15d625843cb8b70e88904552880507", null ],
     [ "getOptionData", "a00071.html#ada94794df0faf506d413d6d1af554d93", null ],
     [ "getOptionsCount", "a00071.html#a066c1a3b47b9f20ca19b8cc93b146532", null ],
+    [ "getOsiModelLayer", "a00071.html#a96f2fb95d113009e7ad9e3245808d6d5", null ],
     [ "getSrcIpAddress", "a00071.html#a5b99c00dd6a8bf7603be7ddfb4989c4c", null ],
     [ "isFirstFragment", "a00071.html#af305f9dfe6d714aaff3144dc29b2b723", null ],
     [ "isFragment", "a00071.html#a83b019f924b8eaab625ff3206d2f85e3", null ],

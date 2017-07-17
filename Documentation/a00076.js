@@ -7,6 +7,7 @@ var a00076 =
     [ "getDstIpAddress", "a00076.html#a436faafdf30e810e3a8d96e74f256c74", null ],
     [ "getHeaderLen", "a00076.html#acee75c2ab7ef3112b58ebe3c73a1c4ce", null ],
     [ "getIPv6Header", "a00076.html#acacfbacbed97b015fb54326f914e3bae", null ],
+    [ "getOsiModelLayer", "a00076.html#aff702bd88a02c7f05a84bdf5b77a1a21", null ],
     [ "getSrcIpAddress", "a00076.html#a8080e3a1ef1cd7fe81cd36033bbc52df", null ],
     [ "parseNextLayer", "a00076.html#a494abc8a7bfc1a520c86e61fee3a2f46", null ],
     [ "toString", "a00076.html#af2abd76cb9650332abde50e5040aed1d", null ]

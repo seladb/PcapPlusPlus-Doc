@@ -4,6 +4,7 @@ var a00117 =
     [ "SllLayer", "a00117.html#a2841d88aee1ce41ffdb1d36ec60db7f5", null ],
     [ "computeCalculateFields", "a00117.html#a2964574f2bc958b94d7474778f691e62", null ],
     [ "getHeaderLen", "a00117.html#ac71b262a4181ef0cc659c902251e6790", null ],
+    [ "getOsiModelLayer", "a00117.html#a7e5b24fb74a0a6a7a026706a723293f2", null ],
     [ "getSllHeader", "a00117.html#a69226013847c3e90af712f731ae3272e", null ],
     [ "parseNextLayer", "a00117.html#a77739a7d98720c05eab96a09ce54f12d", null ],
     [ "setLinkLayerAddr", "a00117.html#a78053b4433c4378a004eda79cbb29d46", null ],

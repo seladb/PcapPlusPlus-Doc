@@ -14,5 +14,6 @@ var a00110 =
       [ "PPPOE_CODE_PADN", "a00110.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
     ] ],
     [ "computeCalculateFields", "a00110.html#aea130ab24ed851b7d2ffab48db145d16", null ],
+    [ "getOsiModelLayer", "a00110.html#a33eadab8226dcb4714ad322dfb152821", null ],
     [ "getPPPoEHeader", "a00110.html#ac6084aea472a3b84f5c60e2a7d77079d", null ]
 ];
