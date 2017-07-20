@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpReassembly.h File Reference</title>
+<title>PcapPlusPlus: SystemUtils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,73 +106,58 @@ $(document).ready(function(){initNavTree('a00207.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">TcpReassembly.h File Reference</div>  </div>
+<div class="title">SystemUtils.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00184_source.html">Packet.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00172_source.html">IpAddress.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00197_source.html">PointerVector.h</a>&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
 </div>
 <p><a href="a00207_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html">pcpp::ConnectionData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html">pcpp::SystemCore</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html">pcpp::TcpStreamData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html">pcpp::SystemCores</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00152.html">pcpp::TcpReassembly</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html">pcpp::ApplicationEventHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00211"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html">pcpp</a></td></tr>
-<tr class="memdesc:a00211"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00214"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html">pcpp</a></td></tr>
+<tr class="memdesc:a00214"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9da3b8abc599b1744dc36c64b802bbd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#a9da3b8abc599b1744dc36c64b802bbd2">pcpp::getNumOfCores</a> ()</td></tr>
+<tr class="separator:a9da3b8abc599b1744dc36c64b802bbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9b4fa3436a28221db583802b9524f5"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#a4d9b4fa3436a28221db583802b9524f5">pcpp::getCoreMaskForAllMachineCores</a> ()</td></tr>
+<tr class="separator:a4d9b4fa3436a28221db583802b9524f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f336984bb48eb504d5e23f04581697"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#ab6f336984bb48eb504d5e23f04581697">pcpp::createCoreMaskFromCoreVector</a> (std::vector&lt; SystemCore &gt; cores)</td></tr>
+<tr class="separator:ab6f336984bb48eb504d5e23f04581697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572ce60b003993527593a10e6da9481b"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#a572ce60b003993527593a10e6da9481b">pcpp::createCoreMaskFromCoreIds</a> (std::vector&lt; int &gt; coreIds)</td></tr>
+<tr class="separator:a572ce60b003993527593a10e6da9481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#a74065e37f1f7390a6ab299ebc7c4c229">pcpp::createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; SystemCore &gt; &amp;resultVec)</td></tr>
+<tr class="separator:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#ac278806cc421fd25eb61aa073fcf5e1b">pcpp::executeShellCommand</a> (const std::string command)</td></tr>
+<tr class="separator:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html#a90c94556ad172d6c3ffb766e1ab25edf">pcpp::directoryExists</a> (std::string dirPath)</td></tr>
+<tr class="separator:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is an implementation of TCP reassembly logic, which means reassembly of TCP messages spanning multiple TCP segments (or packets).<br />
- This logic can be helpful in analyzing messages for a large number of protocols implemented on top of TCP including HTTP, SSL/TLS, FTP and many many more.</p>
-<p><b>General Features:</b></p><ul>
-<li>Manage multiple TCP connections under one <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance</li>
-<li>Support TCP retransmission</li>
-<li>Support out-of-order packets</li>
-<li>Support missing TCP data</li>
-<li>TCP connections can end "naturally" (by FIN/RST packets) or manually by the user</li>
-<li>Support callbacks for new TCP data, connection start and connection end</li>
-</ul>
-<p><b>Logic Description:</b></p><ul>
-<li>The user creates an instance of the <a class="el" href="a00152.html">pcpp::TcpReassembly</a> class</li>
-<li>Then the user starts feeding it with TCP packets</li>
-<li>The <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance manages all TCP connections from the packets it's being fed. For each connection it manages its 2 sides (A-&gt;B and B-&gt;A)</li>
-<li>When a packet arrives, it is first classified to a certain TCP connection</li>
-<li>Then it is classified to a certain side of the TCP connection</li>
-<li>Then the <a class="el" href="a00152.html">pcpp::TcpReassembly</a> logic tries to understand if the data in this packet is the expected data (sequence-wise) and if it's new (e.g isn't a retransmission)</li>
-<li>If the packet data matches these criteria a callback is being invoked. This callback is supplied by the user in the creation of the <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance. This callback contains the new data (of course), but also information about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance</li>
-<li>If the data in this packet isn't new, it's being ignored</li>
-<li>If the data in this packet isn't expected (meaning this packet came out-of-order), then the data is being queued internally and will be sent to the user when its turn arrives (meaning, after the data before arrives)</li>
-<li>If the missing data doesn't arrive until a new message from the other side of the connection arrives or until the connection ends - this will be considered as missing data and the queued data will be sent to the user, but the string "[X bytes missing]" will be added to the message sent in the callback</li>
-<li><a class="el" href="a00152.html">pcpp::TcpReassembly</a> supports 2 more callbacks - one is invoked when a new TCP connection is first seen and the other when it's ended (either by a FIN/RST packet or manually by the user). Both of these callbacks contain data about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance. The end connection callback also provides the reason for closing it ("naturally" or manually)</li>
-</ul>
-<p><b>Basic Usage and APIs:</b></p><ul>
-<li><a class="el" href="a00152.html">pcpp::TcpReassembly</a> c'tor - Create an instance, provide the callbacks and the user cookie to the instance</li>
-<li><a class="el" href="a00152.html#a56719c498f49cc2e2e6177e705109fcf">pcpp::TcpReassembly::ReassemblePacket()</a> - Feed <a class="el" href="a00152.html">pcpp::TcpReassembly</a> instance with packets</li>
-<li><a class="el" href="a00152.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection()</a> - Manually close a connection by a flow key</li>
-<li><a class="el" href="a00152.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections()</a> - Manually close all currently opened connections</li>
-<li><a class="el" href="a00152.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a> callback - Invoked when new data arrives on a certain connection. Contains the new data as well as connection data (5-tuple, flow key)</li>
-<li><a class="el" href="a00152.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a> callback - Invoked when a new connection is identified</li>
-<li><a class="el" href="a00152.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a> callback - Invoked when a connection ends (either by FIN/RST or manually by the user) </li>
-</ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00207.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Mon Jul 17 2017 16:14:33 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00207.html">SystemUtils.h</a></li>
+    <li class="footer">Generated on Thu Jul 20 2017 09:34:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

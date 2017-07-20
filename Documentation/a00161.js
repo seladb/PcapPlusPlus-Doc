@@ -1,10 +1,15 @@
 var a00161 =
 [
-    [ "getDeviceType", "a00161.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00161.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
-    [ "sendPackets", "a00161.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00161.html#aebff78da9d57c6ec9046de32746943bd", null ],
-    [ "startCapture", "a00161.html#af22e2966176d4127e69300cd4b208758", null ],
-    [ "startCapture", "a00161.html#a70126c098779937e5ce88360966c7aa1", null ],
-    [ "startCapture", "a00161.html#a74824694b8f72f687dec10557a196675", null ]
+    [ "dontLearnFlag", "a00161.html#a8bf01681565ea80e389e36c7911c9c37", null ],
+    [ "gbpFlag", "a00161.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
+    [ "groupPolicyID", "a00161.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
+    [ "pad", "a00161.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
+    [ "policyAppliedFlag", "a00161.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
+    [ "reserved11_12", "a00161.html#a3335ab561fbf911e3c070c231d37669f", null ],
+    [ "reserved14_16", "a00161.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
+    [ "reserved2_4", "a00161.html#aeaec3eb74ec694974471243a35a76313", null ],
+    [ "reserved6_8", "a00161.html#ada8c68230dd90d8400398c333216a9f3", null ],
+    [ "reserved9", "a00161.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
+    [ "vni", "a00161.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
+    [ "vniPresentFlag", "a00161.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
 ];

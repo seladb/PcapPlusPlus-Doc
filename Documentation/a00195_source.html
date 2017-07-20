@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PfRingDeviceList.h Source File</title>
+<title>PcapPlusPlus: PcapRemoteDeviceList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,65 +105,103 @@ $(document).ready(function(){initNavTree('a00195_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PfRingDeviceList.h</div>  </div>
+<div class="title">PcapRemoteDeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00195.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PF_RING_DEVICE_LIST</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PF_RING_DEVICE_LIST</span></div>
+<a href="a00195.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPP_PCAP_REMOTE_DEVICE_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPP_PCAP_REMOTE_DEVICE_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00194.html">PfRingDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#if defined(WIN32) || defined(WINx64)</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00211.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00102.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00102.html">PfRingDeviceList</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::vector&lt;PfRingDevice*&gt; m_PfRingDeviceList;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::string m_PfRingVersion;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="a00102.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="a00102.html">PfRingDeviceList</a>(<span class="keyword">const</span> <a class="code" href="a00102.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="a00102.html">PfRingDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00102.html">PfRingDeviceList</a>&amp; other);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// private d&#39;tor</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        ~<a class="code" href="a00102.html">PfRingDeviceList</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> calcPfRingVersion(<span class="keywordtype">void</span>* ring);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00102.html#ac54f6f37245641b2ae23bd82c3bb1313">   39</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00102.html">PfRingDeviceList</a>&amp; <a class="code" href="a00102.html#ac54f6f37245641b2ae23bd82c3bb1313">getInstance</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keyword">static</span> <a class="code" href="a00102.html">PfRingDeviceList</a> instance;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00102.html#aaf4ca5719934a1320d22ad470fa3441e">   49</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;PfRingDevice*&gt;&amp; <a class="code" href="a00102.html#aaf4ca5719934a1320d22ad470fa3441e">getPfRingDevicesList</a>() { <span class="keywordflow">return</span> m_PfRingDeviceList; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="a00101.html">PfRingDevice</a>* <a class="code" href="a00102.html#ac6980c295b2294ffc337cf0b69bd6e20">getPfRingDeviceByName</a>(<span class="keyword">const</span> std::string devName);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00174.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00194.html">PcapRemoteDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00214.html">pcpp</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00099.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00099.html">PcapRemoteDeviceList</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::vector&lt;PcapRemoteDevice*&gt; m_RemoteDeviceList;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="a00065.html">IPAddress</a>* m_RemoteMachineIpAddress;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        uint16_t m_RemoteMachinePort;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="a00097.html">PcapRemoteAuthentication</a>* m_RemoteAuthentication;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// private c&#39;tor. User should create the list via static methods PcapRemoteDeviceList::getRemoteDeviceList()</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00099.html">PcapRemoteDeviceList</a>() : m_RemoteMachineIpAddress(NULL), m_RemoteMachinePort(0), m_RemoteAuthentication(NULL) {};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="a00099.html">PcapRemoteDeviceList</a>(<span class="keyword">const</span> <a class="code" href="a00099.html">PcapRemoteDeviceList</a>&amp; other);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="a00099.html">PcapRemoteDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00099.html">PcapRemoteDeviceList</a>&amp; other);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> setRemoteMachineIpAddress(<span class="keyword">const</span> <a class="code" href="a00065.html">IPAddress</a>* ipAddress);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> setRemoteMachinePort(uint16_t port);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> setRemoteAuthentication(<span class="keyword">const</span> <a class="code" href="a00097.html">PcapRemoteAuthentication</a>* remoteAuth);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00099.html#a17e3146371657cb2bf427c345ef8701a">   50</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;PcapRemoteDevice*&gt;::iterator <a class="code" href="a00099.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00099.html#a9cfb21ecc08849c812b6ab6115071969">   55</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;PcapRemoteDevice*&gt;::const_iterator <a class="code" href="a00099.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ~<a class="code" href="a00099.html">PcapRemoteDeviceList</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00102.html#a2e8cec8374cbb122940b8f6d4e6e17c0">   63</a></span>&#160;        <span class="keyword">inline</span> std::string <a class="code" href="a00102.html#a2e8cec8374cbb122940b8f6d4e6e17c0">getPfRingVersion</a>() { <span class="keywordflow">return</span> m_PfRingVersion; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_PF_RING_DEVICE_LIST */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00102_html_aaf4ca5719934a1320d22ad470fa3441e"><div class="ttname"><a href="a00102.html#aaf4ca5719934a1320d22ad470fa3441e">pcpp::PfRingDeviceList::getPfRingDevicesList</a></div><div class="ttdeci">const std::vector&lt; PfRingDevice * &gt; &amp; getPfRingDevicesList()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:49</div></div>
-<div class="ttc" id="a00102_html_ac54f6f37245641b2ae23bd82c3bb1313"><div class="ttname"><a href="a00102.html#ac54f6f37245641b2ae23bd82c3bb1313">pcpp::PfRingDeviceList::getInstance</a></div><div class="ttdeci">static PfRingDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:39</div></div>
-<div class="ttc" id="a00101_html"><div class="ttname"><a href="a00101.html">pcpp::PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:34</div></div>
-<div class="ttc" id="a00102_html_ac6980c295b2294ffc337cf0b69bd6e20"><div class="ttname"><a href="a00102.html#ac6980c295b2294ffc337cf0b69bd6e20">pcpp::PfRingDeviceList::getPfRingDeviceByName</a></div><div class="ttdeci">PfRingDevice * getPfRingDeviceByName(const std::string devName)</div></div>
-<div class="ttc" id="a00102_html_a2e8cec8374cbb122940b8f6d4e6e17c0"><div class="ttname"><a href="a00102.html#a2e8cec8374cbb122940b8f6d4e6e17c0">pcpp::PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">std::string getPfRingVersion()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:63</div></div>
-<div class="ttc" id="a00211_html"><div class="ttname"><a href="a00211.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00194_html"><div class="ttname"><a href="a00194.html">PfRingDevice.h</a></div></div>
-<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">pcpp::PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:20</div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00099.html">PcapRemoteDeviceList</a>* <a class="code" href="a00099.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList</a>(<a class="code" href="a00065.html">IPAddress</a>* ipAddress, uint16_t port);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00099.html">PcapRemoteDeviceList</a>* <a class="code" href="a00099.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList</a>(<a class="code" href="a00065.html">IPAddress</a>* ipAddress, uint16_t port, <a class="code" href="a00097.html">PcapRemoteAuthentication</a>* remoteAuth);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00099.html#a6204e7c89ccce39c4aa3e355988f5ab6">   91</a></span>&#160;        <a class="code" href="a00065.html">IPAddress</a>* <a class="code" href="a00099.html#a6204e7c89ccce39c4aa3e355988f5ab6">getRemoteMachineIpAddress</a>() { <span class="keywordflow">return</span> m_RemoteMachineIpAddress; }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00099.html#a1e1971b1f2432aa1837af7e2cbce17e2">   96</a></span>&#160;        uint16_t <a class="code" href="a00099.html#a1e1971b1f2432aa1837af7e2cbce17e2">getRemoteMachinePort</a>() { <span class="keywordflow">return</span> m_RemoteMachinePort; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="a00098.html">PcapRemoteDevice</a>* <a class="code" href="a00099.html#a95cc401d327933db99d1dd1cb639bcb7">getRemoteDeviceByIP</a>(<a class="code" href="a00069.html">IPv4Address</a> ip4Addr);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="a00098.html">PcapRemoteDevice</a>* <a class="code" href="a00099.html#a95cc401d327933db99d1dd1cb639bcb7">getRemoteDeviceByIP</a>(<a class="code" href="a00075.html">IPv6Address</a> ip6Addr);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="a00098.html">PcapRemoteDevice</a>* <a class="code" href="a00099.html#a95cc401d327933db99d1dd1cb639bcb7">getRemoteDeviceByIP</a>(<a class="code" href="a00065.html">IPAddress</a>* ipAddr);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="a00098.html">PcapRemoteDevice</a>* <a class="code" href="a00099.html#a95cc401d327933db99d1dd1cb639bcb7">getRemoteDeviceByIP</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipAddrAsString);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="a00099.html#af155f1d0d02b252b968f8bfc60bfa285">  129</a></span>&#160;        <span class="keyword">inline</span> RemoteDeviceListIterator <a class="code" href="a00099.html#af155f1d0d02b252b968f8bfc60bfa285">begin</a>() { <span class="keywordflow">return</span> m_RemoteDeviceList.begin(); }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="a00099.html#a3e6eec736e7d88dc2a9dfe413089dbdf">  134</a></span>&#160;        <span class="keyword">inline</span> ConstRemoteDeviceListIterator <a class="code" href="a00099.html#a3e6eec736e7d88dc2a9dfe413089dbdf">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_RemoteDeviceList.begin(); }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00099.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">  139</a></span>&#160;        <span class="keyword">inline</span> RemoteDeviceListIterator <a class="code" href="a00099.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">end</a>() { <span class="keywordflow">return</span> m_RemoteDeviceList.end(); }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="a00099.html#a4384231f937c67a346698218c6cc4818">  144</a></span>&#160;        <span class="keyword">inline</span> ConstRemoteDeviceListIterator <a class="code" href="a00099.html#a4384231f937c67a346698218c6cc4818">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_RemoteDeviceList.end(); }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    };</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif // WIN32 || WINx64</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPP_PCAP_REMOTE_DEVICE_LIST */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00099_html_a17e3146371657cb2bf427c345ef8701a"><div class="ttname"><a href="a00099.html#a17e3146371657cb2bf427c345ef8701a">pcpp::PcapRemoteDeviceList::RemoteDeviceListIterator</a></div><div class="ttdeci">std::vector&lt; PcapRemoteDevice * &gt;::iterator RemoteDeviceListIterator</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:50</div></div>
+<div class="ttc" id="a00099_html_a3e6eec736e7d88dc2a9dfe413089dbdf"><div class="ttname"><a href="a00099.html#a3e6eec736e7d88dc2a9dfe413089dbdf">pcpp::PcapRemoteDeviceList::begin</a></div><div class="ttdeci">ConstRemoteDeviceListIterator begin() const </div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:134</div></div>
+<div class="ttc" id="a00099_html_af155f1d0d02b252b968f8bfc60bfa285"><div class="ttname"><a href="a00099.html#af155f1d0d02b252b968f8bfc60bfa285">pcpp::PcapRemoteDeviceList::begin</a></div><div class="ttdeci">RemoteDeviceListIterator begin()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:129</div></div>
+<div class="ttc" id="a00099_html_a4384231f937c67a346698218c6cc4818"><div class="ttname"><a href="a00099.html#a4384231f937c67a346698218c6cc4818">pcpp::PcapRemoteDeviceList::end</a></div><div class="ttdeci">ConstRemoteDeviceListIterator end() const </div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:144</div></div>
+<div class="ttc" id="a00099_html_a6204e7c89ccce39c4aa3e355988f5ab6"><div class="ttname"><a href="a00099.html#a6204e7c89ccce39c4aa3e355988f5ab6">pcpp::PcapRemoteDeviceList::getRemoteMachineIpAddress</a></div><div class="ttdeci">IPAddress * getRemoteMachineIpAddress()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:91</div></div>
+<div class="ttc" id="a00099_html_a1e1971b1f2432aa1837af7e2cbce17e2"><div class="ttname"><a href="a00099.html#a1e1971b1f2432aa1837af7e2cbce17e2">pcpp::PcapRemoteDeviceList::getRemoteMachinePort</a></div><div class="ttdeci">uint16_t getRemoteMachinePort()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:96</div></div>
+<div class="ttc" id="a00099_html"><div class="ttname"><a href="a00099.html">pcpp::PcapRemoteDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:28</div></div>
+<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">pcpp::IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:191</div></div>
+<div class="ttc" id="a00214_html"><div class="ttname"><a href="a00214.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00099_html_a1655fb0326960cceec95db75ddaed0a3"><div class="ttname"><a href="a00099.html#a1655fb0326960cceec95db75ddaed0a3">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a></div><div class="ttdeci">static PcapRemoteDeviceList * getRemoteDeviceList(IPAddress *ipAddress, uint16_t port)</div></div>
+<div class="ttc" id="a00098_html"><div class="ttname"><a href="a00098.html">pcpp::PcapRemoteDevice</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:79</div></div>
+<div class="ttc" id="a00069_html"><div class="ttname"><a href="a00069.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:94</div></div>
+<div class="ttc" id="a00099_html_abc2fb3ae2a7acc851d7e2e57b87cd2f1"><div class="ttname"><a href="a00099.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">pcpp::PcapRemoteDeviceList::end</a></div><div class="ttdeci">RemoteDeviceListIterator end()</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:139</div></div>
+<div class="ttc" id="a00174_html"><div class="ttname"><a href="a00174.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00099_html_a95cc401d327933db99d1dd1cb639bcb7"><div class="ttname"><a href="a00099.html#a95cc401d327933db99d1dd1cb639bcb7">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a></div><div class="ttdeci">PcapRemoteDevice * getRemoteDeviceByIP(IPv4Address ip4Addr)</div></div>
+<div class="ttc" id="a00065_html"><div class="ttname"><a href="a00065.html">pcpp::IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:27</div></div>
+<div class="ttc" id="a00194_html"><div class="ttname"><a href="a00194.html">PcapRemoteDevice.h</a></div></div>
+<div class="ttc" id="a00097_html"><div class="ttname"><a href="a00097.html">pcpp::PcapRemoteAuthentication</a></div><div class="ttdef"><b>Definition:</b> PcapRemoteDevice.h:27</div></div>
+<div class="ttc" id="a00099_html_a9cfb21ecc08849c812b6ab6115071969"><div class="ttname"><a href="a00099.html#a9cfb21ecc08849c812b6ab6115071969">pcpp::PcapRemoteDeviceList::ConstRemoteDeviceListIterator</a></div><div class="ttdeci">std::vector&lt; PcapRemoteDevice * &gt;::const_iterator ConstRemoteDeviceListIterator</div><div class="ttdef"><b>Definition:</b> PcapRemoteDeviceList.h:55</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00195.html">PfRingDeviceList.h</a></li>
-    <li class="footer">Generated on Mon Jul 17 2017 16:14:33 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00195.html">PcapRemoteDeviceList.h</a></li>
+    <li class="footer">Generated on Thu Jul 20 2017 09:34:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

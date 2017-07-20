@@ -83,7 +83,7 @@ var hierarchy =
       ] ],
       [ "pcpp::PcapLiveDevice", "a00093.html", [
         [ "pcpp::PcapRemoteDevice", "a00098.html", null ],
-        [ "pcpp::WinPcapLiveDevice", "a00161.html", null ]
+        [ "pcpp::WinPcapLiveDevice", "a00163.html", null ]
       ] ],
       [ "pcpp::PfRingDevice", "a00101.html", null ]
     ] ],
@@ -129,7 +129,8 @@ var hierarchy =
       ] ],
       [ "pcpp::TcpLayer", "a00150.html", null ],
       [ "pcpp::UdpLayer", "a00156.html", null ],
-      [ "pcpp::VlanLayer", "a00160.html", null ]
+      [ "pcpp::VlanLayer", "a00160.html", null ],
+      [ "pcpp::VxlanLayer", "a00162.html", null ]
     ] ],
     [ "pcpp::DpdkDevice::LinkStatus", "a00078.html", null ],
     [ "pcpp::LoggerPP", "a00079.html", null ],
@@ -188,5 +189,6 @@ var hierarchy =
     [ "pcpp::TcpReassembly", "a00152.html", null ],
     [ "pcpp::TcpStreamData", "a00153.html", null ],
     [ "pcpp::udphdr", "a00155.html", null ],
-    [ "pcpp::vlan_header", "a00158.html", null ]
+    [ "pcpp::vlan_header", "a00158.html", null ],
+    [ "pcpp::vxlan_header", "a00161.html", null ]
 ];

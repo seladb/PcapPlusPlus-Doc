@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getDeviceType()
 : <a class="el" href="a00093.html#a70b3e39208905585907c3557971b71e8">pcpp::PcapLiveDevice</a>
 , <a class="el" href="a00098.html#af5518431a35a7f94b6ee8551061eee18">pcpp::PcapRemoteDevice</a>
-, <a class="el" href="a00161.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">pcpp::WinPcapLiveDevice</a>
+, <a class="el" href="a00163.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37">pcpp::WinPcapLiveDevice</a>
 </li>
 <li>getDhcpHeader()
 : <a class="el" href="a00008.html#ac493e2dc8ac35dddfe833eb4d72f63d2">pcpp::DhcpLayer</a>
@@ -527,6 +527,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="a00150.html#a5d81b7bed2f5c4389b5b80c9282493e6">pcpp::TcpLayer</a>
 , <a class="el" href="a00156.html#a27ce2ea24679695f2e408c575b465fbb">pcpp::UdpLayer</a>
 , <a class="el" href="a00160.html#a9f89975517e388390c7b97d84f1bca50">pcpp::VlanLayer</a>
+, <a class="el" href="a00162.html#a61796102e5c21034def5b158232bac3b">pcpp::VxlanLayer</a>
 </li>
 <li>getHostName()
 : <a class="el" href="a00143.html#a37ef3d9cccd951c27057f0c1515dab9c">pcpp::SSLServerNameIndicationExtension</a>
@@ -638,7 +639,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="a00029.html#a5833180521a889af5707e6137bf53a73">pcpp::HttpRequestFirstLine</a>
 </li>
 <li>getMinAmountOfDataToCopyFromKernelToApplication()
-: <a class="el" href="a00161.html#a8dfdf0d5b3e54235756d9695b90f3ef7">pcpp::WinPcapLiveDevice</a>
+: <a class="el" href="a00163.html#a8dfdf0d5b3e54235756d9695b90f3ef7">pcpp::WinPcapLiveDevice</a>
 </li>
 <li>getMplsLabel()
 : <a class="el" href="a00084.html#a81a078482749d623c7717e0ca6caa1c5">pcpp::MplsLayer</a>
@@ -689,7 +690,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>getNextPacket()
 : <a class="el" href="a00091.html#afc4c2142b7787e6c191b0d2ab6822c07">pcpp::PcapFileReaderDevice</a>
-, <a class="el" href="a00095.html#a9bf1e61be8334e31a329451ad2397b27">pcpp::PcapNgFileReaderDevice</a>
+, <a class="el" href="a00095.html#ac62c24f9b47ab9ef382701e6f0860b15">pcpp::PcapNgFileReaderDevice</a>
 </li>
 <li>getNextQuery()
 : <a class="el" href="a00011.html#a0655e6e38dcd61af2825e0cef7c060dd">pcpp::DnsLayer</a>
@@ -751,6 +752,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="a00150.html#ae924f98f5fb2cb2ea0f72c34f6eba322">pcpp::TcpLayer</a>
 , <a class="el" href="a00156.html#a668d1ab5abdec0157536ea11ed52e562">pcpp::UdpLayer</a>
 , <a class="el" href="a00160.html#aef6347664baf2caecbd033588f8fc898">pcpp::VlanLayer</a>
+, <a class="el" href="a00162.html#a0e45a6e3fcfcdadddc24974e3fc139c9">pcpp::VxlanLayer</a>
 </li>
 <li>getPacketTimeStamp()
 : <a class="el" href="a00114.html#a6d71610f601b3de6bbd38bd45bf95504">pcpp::RawPacket</a>
@@ -1091,6 +1093,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getVlanID()
 : <a class="el" href="a00160.html#a0aa76692b5502afa254931d4249937ba">pcpp::VlanLayer</a>
 </li>
+<li>getVNI()
+: <a class="el" href="a00162.html#a3efe820adaf6e71b04acff6f0e800674">pcpp::VxlanLayer</a>
+</li>
+<li>getVxlanHeader()
+: <a class="el" href="a00162.html#a021ee4907d7dffae04806c18269682fa">pcpp::VxlanLayer</a>
+</li>
 <li>getYourIpAddress()
 : <a class="el" href="a00008.html#ae869375ada591943a6fe58da95c7c9a4">pcpp::DhcpLayer</a>
 </li>
@@ -1098,7 +1106,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="a00025.html#a8cab834d500d69bd53ea9f980080aa66">pcpp::GREv0Layer</a>
 </li>
 <li>GREv1Layer()
-: <a class="el" href="a00026.html#affdd47adeca80911b621a14421853e8e">pcpp::GREv1Layer</a>
+: <a class="el" href="a00026.html#a9c118e97790a83bf6d22592191d2f453">pcpp::GREv1Layer</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -1106,7 +1114,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 17 2017 16:14:34 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Jul 20 2017 09:34:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

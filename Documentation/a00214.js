@@ -1,4 +1,4 @@
-var a00211 =
+var a00214 =
 [
     [ "AndFilter", "a00001.html", "a00001" ],
     [ "ApplicationEventHandler", "a00002.html", "a00002" ],
@@ -154,5 +154,7 @@ var a00211 =
     [ "vlan_header", "a00158.html", "a00158" ],
     [ "VlanFilter", "a00159.html", "a00159" ],
     [ "VlanLayer", "a00160.html", "a00160" ],
-    [ "WinPcapLiveDevice", "a00161.html", "a00161" ]
+    [ "vxlan_header", "a00161.html", "a00161" ],
+    [ "VxlanLayer", "a00162.html", "a00162" ],
+    [ "WinPcapLiveDevice", "a00163.html", "a00163" ]
 ];
