@@ -18,7 +18,7 @@ section: download
 <p>Currently the latest release is <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
 <!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
 </p>
-		
+
 <h2>Package content</h2>
 <p>The PcapPlusPlus package contains several libraries, unit-tests and example utilities:</p>
 <ul>
@@ -40,7 +40,7 @@ section: download
 <ol>
   <li>Microsoft Visual Studio 2015 (can be downloaded from here: <a href="https://www.visualstudio.com/downloads/">https://www.visualstudio.com/downloads/</a>)</li>
   <li>Winpcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <a href="https://www.winpcap.org/devel.htm">https://www.winpcap.org/devel.htm</a></li>
-  <li>pthread-win32 - can be downloaded from here: <a href="ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip">ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip</a></li>		  
+  <li>pthread-win32 - can be downloaded from here: <a href="ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip">ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip</a></li>
 </ol>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
@@ -51,7 +51,7 @@ section: download
 	<li><strong>mk\vs2015\PcapPlusPlus-Examples.sln</strong> - contains all PcapPlusPlus examples. Reuquires PcapPlusPlus.sln to be built</li>
 	<li><strong>Examples\ArpSpoofing-VS2015-Project\ArpSpoofing.sln</strong> - a fully configured project for working with PcapPlusPlus. You can use this project to write your own code using PcapPlusPlus. It already has all the include paths, libaray paths configured and also the ArpSpoofing utility code. You can build and run this code or delete it and write your own code. This solution is also relocatable so you can move it to wherever you want and it will still build successfully. Reuquires PcapPlusPlus.sln to be built</li>
   </ul>
-  <li>All solutions support both 32-bit <strong>(x86)</strong> and 64-bit <strong>(x64)</strong> configurations as well as <strong>Debug</strong> and <strong>Release</strong> modes. So actually 4 modes are supported: x86|Debug, x86|Release, x64|Debug, x64|Release</li>		  
+  <li>All solutions support both 32-bit <strong>(x86)</strong> and 64-bit <strong>(x64)</strong> configurations as well as <strong>Debug</strong> and <strong>Release</strong> modes. So actually 4 modes are supported: x86|Debug, x86|Release, x64|Debug, x64|Release</li>
 </ol>
 
 <h2>Compiling PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</h2>
@@ -59,18 +59,18 @@ section: download
 <p>In order to compile PcapPlusPlus on Windows using MinGW32 or MinGW-w64 you need the following components:</p>
 <ol>
   <li>MinGW32 or MinGW-w64 environment and compiler
-	<ul>  
+	<ul>
 	  <li>Download and installation instructions for <strong>MinGW32</strong>:
 		<ul>
 		  <li>The fastest way I found for installing mingw32 was through this link: <a href="http://www.mingw.org/wiki/Getting_Started">http://www.mingw.org/wiki/Getting_Started</a></li>
 		  <li>Download "mingw-get-setup.exe", run it and follow the instructions</li>
 		  <li>By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with "mingw-get.exe" (MinGW installation manager)</li>
-		  <li>In the MinGW installation manager search for all packages containing "pthreads" and mark them for installation</li>
+		  <li>In the MinGW installation manager search for all packages containing "pthreads" and mark them for installation. Make sure the pthreads-win32 version you install is <strong>2.10</strong> or later</li>
 		  <li>Choose Installation->Update Catalogue</li>
 		  <li>If you prefer to install pthreads manually please follow these steps:
 			<ul>
-			  <li>Download <a href="http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.9.1/pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma">pthreads for MinGW</a></li>
-			  <li>Extract it with 7-Zip: <strong>7z.exe e pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma -oC:\pthreads && 7z.exe x C:\pthreads\pthreads-w32-2.9.1-1-mingw32-dev.tar -oC:\pthreads</strong></li>
+			  <li>Download <a href="http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz">pthreads for MinGW</a></li>
+			  <li>Extract it with 7-Zip: <strong>7z.exe e pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar -oC:\pthreads && 7z.exe x C:\pthreads\pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar -oC:\pthreads</strong></li>
 			  <li>Copy the include files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\include* C:\MinGW\include</strong></li>
 			  <li>Copy the lib files to MinGW folder: <strong>xcopy /Y C:\pthreads\mingw32\lib* C:\MinGW\lib</strong></li>
 			</ul>
@@ -117,13 +117,13 @@ section: download
 <h6><strong>Prerequisutes</strong></h6>
 <ol>
   <li>In order to compile PacpPlusPlus on Mac OS X you need to make sure <a href="https://developer.apple.com/xcode/">Xcode</a> is installed. Xcode contains all prerequisites required for PcapPlusPlus:
-	<ol>		
+	<ol>
 	  <li>gcc/g++ compiler</li>
 	  <li>libpcap with all relevant header files</li>
 	</ol>
   </li>
   <li>Also make sure you have Xcode Command Line Tools. You can install it by running the following command in Terminal: <pre><code class="cpp">xcode-select --install</code></pre></li>
-</ol>  
+</ol>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
   <li>Run the <strong>configure-mac_os_x.sh</strong> script from PcapPlusPlus main directory</li>
@@ -196,4 +196,4 @@ TestHttpResponseParsing       : PASSED
 ...
 ...
 ALL TESTS PASSED!!</code>
-</pre>			
+</pre>
