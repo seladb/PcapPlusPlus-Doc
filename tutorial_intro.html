@@ -120,24 +120,24 @@ int main(int argc, char* argv[])
 		printf("Couldn't read the first packet in the file\n");
 		return 1;
 	}
-	
+
 	// parse the raw packet into a parsed packet
 	pcpp::Packet parsedPacket(&rawPacket);
-	
+
 	// verify the packet is IPv4
 	if (parsedPacket.isPacketOfType(pcpp::IPv4))
 	{
 		// extract source and dest IPs
-		pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIpAddress();
-		pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIpAddress();
-		
+		pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType&lt;pcpp::IPv4Layer&gt;()->getSrcIpAddress();
+		pcpp::IPv4Address destIP = parsedPacket.getLayerOfType&lt;pcpp::IPv4Layer&gt;()->getDstIpAddress();
+
 		// print source and dest IPs
 		printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
 	}
-	
+
 	// close the file
 	reader.close();
-	
+
 	return 0;
 }</code>
 </pre>
@@ -229,6 +229,6 @@ clean:
 	<li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.windows all</code></li>
 	<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
 </ul>
-<p>In all options the compiled executable will be inside the tutorial directory (<code>[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld</code>)</p>		
+<p>In all options the compiled executable will be inside the tutorial directory (<code>[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld</code>)</p>
 <script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
 <p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>
