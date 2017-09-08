@@ -1,8 +1,6 @@
 var a00116 =
 [
-    [ "ARPHRD_type", "a00116.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
-    [ "link_layer_addr", "a00116.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
-    [ "link_layer_addr_len", "a00116.html#ac253e0a098c39f46d192619ed5d229bf", null ],
-    [ "packet_type", "a00116.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
-    [ "protocol_type", "a00116.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
+    [ "getContentLength", "a00116.html#a1dc499aa8f68b4bcd491441ec2296bb9", null ],
+    [ "getOsiModelLayer", "a00116.html#a7cc9ff5980bc7deb8ea3e85c5b974596", null ],
+    [ "setContentLength", "a00116.html#aad79a20140f65e7cc84954ea0593636f", null ]
 ];

@@ -1,6 +1,6 @@
 var a00128 =
 [
-    [ "SSLChangeCipherSpecLayer", "a00128.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
-    [ "computeCalculateFields", "a00128.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
-    [ "toString", "a00128.html#a25cb2a35845fa1e357e06330d958f53c", null ]
+    [ "handshakeType", "a00128.html#a9a456a315b65d5e41587b83972471398", null ],
+    [ "length1", "a00128.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
+    [ "length2", "a00128.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
 ];

@@ -1,8 +1,10 @@
 var a00136 =
 [
-    [ "getContainingLayer", "a00136.html#a4342813d150cb1cec2911b59b99e0418", null ],
-    [ "getHandshakeType", "a00136.html#a31089d536fc762b283d30d7c36e3584b", null ],
-    [ "getMessageLength", "a00136.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
-    [ "isMessageComplete", "a00136.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
-    [ "toString", "a00136.html#a17b72bf10472c67d0044006099c6ea5a", null ]
+    [ "SSLCipherSuite", "a00136.html#a91a906a5f733f3afab0b6706e6641e16", null ],
+    [ "asString", "a00136.html#afc805ee667a9ffaa0d4c9146460312df", null ],
+    [ "getAuthAlg", "a00136.html#ae072d7734dc748e94133c3ad6c3b026c", null ],
+    [ "getID", "a00136.html#a09959781bd410417c7bc4e337f32b708", null ],
+    [ "getKeyExchangeAlg", "a00136.html#a56322a3bb08908c7b68c286c9fdd8fcd", null ],
+    [ "getMACAlg", "a00136.html#aedcc0ac097c43786c40a858171db2197", null ],
+    [ "getSymKeyAlg", "a00136.html#acdb497b3a27bff5fa936458876c5f7d4", null ]
 ];

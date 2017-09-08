@@ -1,11 +1,6 @@
 var a00153 =
 [
-    [ "TcpStreamData", "a00153.html#acb6875699103b7d1967cb799f7501913", null ],
-    [ "TcpStreamData", "a00153.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
-    [ "~TcpStreamData", "a00153.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
-    [ "TcpStreamData", "a00153.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
-    [ "getConnectionData", "a00153.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
-    [ "getData", "a00153.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
-    [ "getDataLength", "a00153.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
-    [ "operator=", "a00153.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
+    [ "operator==", "a00153.html#aa757ff97d3c182eb1f3852bd2be4d836", null ],
+    [ "Id", "a00153.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
+    [ "Mask", "a00153.html#aa76587497e2faa7f7354ca8444a9450b", null ]
 ];

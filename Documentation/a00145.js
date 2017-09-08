@@ -1,7 +1,9 @@
 var a00145 =
 [
-    [ "SSLx509Certificate", "a00145.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
-    [ "allDataExists", "a00145.html#ae4182828228a1e402626560090d3cdb6", null ],
-    [ "getData", "a00145.html#a4d9c58672e41a057dc53d4923af3992f", null ],
-    [ "getDataLength", "a00145.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
+    [ "getHeaderLen", "a00145.html#afd062c291faff189eff54e987885e3f6", null ],
+    [ "getOsiModelLayer", "a00145.html#af19d2257b49531b37f546810c5b788b8", null ],
+    [ "getRecordLayer", "a00145.html#a693e2da655cd33a4906bcbcffb394126", null ],
+    [ "getRecordType", "a00145.html#af0bff83614a0641b170e8fb4734178bd", null ],
+    [ "getRecordVersion", "a00145.html#a56f3a017783ffc524463a5691959ae5a", null ],
+    [ "parseNextLayer", "a00145.html#acc45ce490c60762cf4be2da0a4d57723", null ]
 ];

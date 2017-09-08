@@ -1,9 +1,7 @@
 var a00138 =
 [
-    [ "getHeaderLen", "a00138.html#afd062c291faff189eff54e987885e3f6", null ],
-    [ "getOsiModelLayer", "a00138.html#af19d2257b49531b37f546810c5b788b8", null ],
-    [ "getRecordLayer", "a00138.html#a693e2da655cd33a4906bcbcffb394126", null ],
-    [ "getRecordType", "a00138.html#af0bff83614a0641b170e8fb4734178bd", null ],
-    [ "getRecordVersion", "a00138.html#a56f3a017783ffc524463a5691959ae5a", null ],
-    [ "parseNextLayer", "a00138.html#acc45ce490c60762cf4be2da0a4d57723", null ]
+    [ "SSLClientKeyExchangeMessage", "a00138.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
+    [ "getClientKeyExchangeParams", "a00138.html#a23584b393dea97a6d249c750b99f4c5f", null ],
+    [ "getClientKeyExchangeParamsLength", "a00138.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
+    [ "toString", "a00138.html#ada71ea045d9dbfd57484a156a108c00b", null ]
 ];

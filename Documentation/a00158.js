@@ -1,7 +1,10 @@
 var a00158 =
 [
-    [ "cfi", "a00158.html#a1cba4c151a11a2527eccb5c472be835b", null ],
-    [ "etherType", "a00158.html#a790a917cc070fb1ace8c77a7a12d0870", null ],
-    [ "priority", "a00158.html#a0b9c3a2edf23468ea5df60fee1903485", null ],
-    [ "vlanID", "a00158.html#ab970b63b8440a00efe46f60838b5ce04", null ]
+    [ "getTotalSize", "a00158.html#aeaabc88782fc7026cf1340b775831ea8", null ],
+    [ "getType", "a00158.html#a3d561ce1356aa17068d970b57723a6d7", null ],
+    [ "getValueAs", "a00158.html#a49cb10f4e52cf92178725fae9d5ec469", null ],
+    [ "setValue", "a00158.html#aaa3ce2fbd266fde95d8e7c57fd091d4f", null ],
+    [ "len", "a00158.html#a722a42e1ceef77b984bfe06c33d77ab3", null ],
+    [ "option", "a00158.html#a33d7eb2c21b7cbb8a629ea91a7df4c26", null ],
+    [ "value", "a00158.html#ae4d31ebb49c6bae190edd6d51a8c1757", null ]
 ];

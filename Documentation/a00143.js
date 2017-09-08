@@ -1,5 +1,8 @@
 var a00143 =
 [
-    [ "SSLServerNameIndicationExtension", "a00143.html#af05391f55be98d6aa8b5192c6a170e60", null ],
-    [ "getHostName", "a00143.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
+    [ "getContainingLayer", "a00143.html#a4342813d150cb1cec2911b59b99e0418", null ],
+    [ "getHandshakeType", "a00143.html#a31089d536fc762b283d30d7c36e3584b", null ],
+    [ "getMessageLength", "a00143.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
+    [ "isMessageComplete", "a00143.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
+    [ "toString", "a00143.html#a17b72bf10472c67d0044006099c6ea5a", null ]
 ];

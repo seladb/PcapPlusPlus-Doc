@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: ProtocolType.h Source File</title>
+<title>PcapPlusPlus: PcapLiveDeviceList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,149 +105,84 @@ $(document).ready(function(){initNavTree('a00201_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ProtocolType.h</div>  </div>
+<div class="title">PcapLiveDeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00201.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_PROTOCOL_TYPES</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_PROTOCOL_TYPES</span></div>
+<a href="a00201.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LIVE_DEVICE_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_LIVE_DEVICE_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00214.html">pcpp</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eb">   16</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">   21</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a> = 0x00,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">   26</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">Ethernet</a> = 0x01,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">   31</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">IPv4</a> = 0x02,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">   36</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">IPv6</a> = 0x04,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">   41</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">IP</a> = 0x06,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">   46</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">TCP</a> = 0x08,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">   51</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">UDP</a> = 0x10,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">   56</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">HTTPRequest</a> = 0x20,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">   61</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">HTTPResponse</a> = 0x40,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">   66</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">HTTP</a> = 0x20 | 0x40,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">   71</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">ARP</a> = 0x80,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">   76</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">VLAN</a> = 0x100,</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00182.html">IpAddress.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00200.html">PcapLiveDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00223.html">WinPcapLiveDevice.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00224.html">pcpp</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00094.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00094.html">PcapLiveDeviceList</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::vector&lt;PcapLiveDevice*&gt; m_LiveDeviceList;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::vector&lt;IPv4Address&gt; m_DnsServers;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="a00094.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="a00094.html">PcapLiveDeviceList</a>( <span class="keyword">const</span> <a class="code" href="a00094.html">PcapLiveDeviceList</a>&amp; other );</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="a00094.html">PcapLiveDeviceList</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00094.html">PcapLiveDeviceList</a>&amp; other);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// private d&#39;tor</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        ~<a class="code" href="a00094.html">PcapLiveDeviceList</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> setDnsServers();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00094.html#a4db03635ca46c83d8edc9852bff07bb2">   46</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="a00094.html">PcapLiveDeviceList</a>&amp; <a class="code" href="a00094.html#a4db03635ca46c83d8edc9852bff07bb2">getInstance</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">static</span> <a class="code" href="a00094.html">PcapLiveDeviceList</a> instance;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00094.html#a993aefeec8551a21171a0d5cfdd78675">   55</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;PcapLiveDevice*&gt;&amp; <a class="code" href="a00094.html#a993aefeec8551a21171a0d5cfdd78675">getPcapLiveDevicesList</a>() { <span class="keywordflow">return</span> m_LiveDeviceList; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="a00093.html">PcapLiveDevice</a>* <a class="code" href="a00094.html#a1ab7bad31dbb97247648d1a149d2f612">getPcapLiveDeviceByIp</a>(<a class="code" href="a00065.html">IPAddress</a>* ipAddr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="a00093.html">PcapLiveDevice</a>* <a class="code" href="a00094.html#a1ab7bad31dbb97247648d1a149d2f612">getPcapLiveDeviceByIp</a>(<a class="code" href="a00069.html">IPv4Address</a> ipAddr);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="a00093.html">PcapLiveDevice</a>* <a class="code" href="a00094.html#a1ab7bad31dbb97247648d1a149d2f612">getPcapLiveDeviceByIp</a>(<a class="code" href="a00075.html">IPv6Address</a> ip6Addr);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">   81</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">ICMP</a> = 0x200,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">   86</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">PPPoESession</a> = 0x400,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">   91</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">PPPoEDiscovery</a> = 0x800,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">   96</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">PPPoE</a> = 0x400 | 0x800,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">  101</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">DNS</a> = 0x1000,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">  106</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">MPLS</a> = 0x2000,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">  111</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">GREv0</a> = 0x4000,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">  116</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">GREv1</a> = 0x8000,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">  121</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">GRE</a> = 0x4000 | 0x8000,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">  126</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">PPP_PPTP</a> = 0x10000,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">  131</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">SSL</a> = 0x20000,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">  136</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">SLL</a> = 0x40000,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">  141</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">DHCP</a> = 0x80000,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">  146</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a> = 0x100000,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">  151</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">IGMP</a> = 0xE00000,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">  156</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">IGMPv1</a> = 0x200000,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">  161</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">IGMPv2</a> = 0x400000,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">  166</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">IGMPv3</a> = 0x800000,</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">  171</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">GenericPayolad</a> = 0x1000000,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">  176</a></span>&#160;        <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">VXLAN</a> = 0x2000000</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    };</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">  183</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">  186</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">OsiModelPhysicalLayer</a> = 1,</div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">  188</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a> = 2,</div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">  190</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">OsiModelNetworkLayer</a> = 3,</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">  192</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">OsiModelTransportLayer</a> = 4,</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">  194</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a> = 5,</div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">  196</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">OsiModelPresentationLayer</a> = 6,</div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">  198</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a> = 7,</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">  200</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> = 8</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    };</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;} <span class="comment">//namespace pcpp</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">pcpp::OsiModelTransportLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:192</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">pcpp::IGMPv1</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:156</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">pcpp::GRE</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:121</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:21</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:188</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:194</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">pcpp::DHCP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:141</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">pcpp::GREv1</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:116</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:183</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:26</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">pcpp::IGMP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:151</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">pcpp::ICMP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:81</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:198</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">pcpp::SSL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:131</div></div>
-<div class="ttc" id="a00214_html"><div class="ttname"><a href="a00214.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:76</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">pcpp::IP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:41</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">pcpp::PPPoE</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:96</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:200</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:106</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">pcpp::TCP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:46</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">pcpp::DNS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:101</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">pcpp::HTTPResponse</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:61</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">pcpp::HTTP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:66</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">pcpp::OsiModelNetworkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:190</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:31</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:51</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">pcpp::ARP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:71</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:171</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">pcpp::PPP_PPTP</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:126</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">pcpp::PPPoESession</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:86</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:146</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:136</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:16</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">pcpp::HTTPRequest</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:56</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:36</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">pcpp::OsiModelPhysicalLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:186</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">pcpp::IGMPv3</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:166</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">pcpp::OsiModelPresentationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:196</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">pcpp::GREv0</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:111</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">pcpp::VXLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:176</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">pcpp::PPPoEDiscovery</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:91</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">pcpp::IGMPv2</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:161</div></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="a00093.html">PcapLiveDevice</a>* <a class="code" href="a00094.html#a1ab7bad31dbb97247648d1a149d2f612">getPcapLiveDeviceByIp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipAddrAsString);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="a00093.html">PcapLiveDevice</a>* <a class="code" href="a00094.html#ab421bc6f40bf1be764555fb4ab340e0a">getPcapLiveDeviceByName</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::vector&lt;IPv4Address&gt;&amp; <a class="code" href="a00094.html#a2cefca3fa33b793cdfb1b58c3883f25b">getDnsServers</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00224_html"><div class="ttname"><a href="a00224.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">pcpp::PcapLiveDevice</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:76</div></div>
+<div class="ttc" id="a00094_html_a2cefca3fa33b793cdfb1b58c3883f25b"><div class="ttname"><a href="a00094.html#a2cefca3fa33b793cdfb1b58c3883f25b">pcpp::PcapLiveDeviceList::getDnsServers</a></div><div class="ttdeci">std::vector&lt; IPv4Address &gt; &amp; getDnsServers()</div></div>
+<div class="ttc" id="a00094_html_a993aefeec8551a21171a0d5cfdd78675"><div class="ttname"><a href="a00094.html#a993aefeec8551a21171a0d5cfdd78675">pcpp::PcapLiveDeviceList::getPcapLiveDevicesList</a></div><div class="ttdeci">const std::vector&lt; PcapLiveDevice * &gt; &amp; getPcapLiveDevicesList()</div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:55</div></div>
+<div class="ttc" id="a00223_html"><div class="ttname"><a href="a00223.html">WinPcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00182_html"><div class="ttname"><a href="a00182.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00075_html"><div class="ttname"><a href="a00075.html">pcpp::IPv6Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:191</div></div>
+<div class="ttc" id="a00094_html_a4db03635ca46c83d8edc9852bff07bb2"><div class="ttname"><a href="a00094.html#a4db03635ca46c83d8edc9852bff07bb2">pcpp::PcapLiveDeviceList::getInstance</a></div><div class="ttdeci">static PcapLiveDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:46</div></div>
+<div class="ttc" id="a00200_html"><div class="ttname"><a href="a00200.html">PcapLiveDevice.h</a></div></div>
+<div class="ttc" id="a00094_html_a1ab7bad31dbb97247648d1a149d2f612"><div class="ttname"><a href="a00094.html#a1ab7bad31dbb97247648d1a149d2f612">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a></div><div class="ttdeci">PcapLiveDevice * getPcapLiveDeviceByIp(IPAddress *ipAddr)</div></div>
+<div class="ttc" id="a00069_html"><div class="ttname"><a href="a00069.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:94</div></div>
+<div class="ttc" id="a00094_html"><div class="ttname"><a href="a00094.html">pcpp::PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:25</div></div>
+<div class="ttc" id="a00065_html"><div class="ttname"><a href="a00065.html">pcpp::IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:27</div></div>
+<div class="ttc" id="a00094_html_ab421bc6f40bf1be764555fb4ab340e0a"><div class="ttname"><a href="a00094.html#ab421bc6f40bf1be764555fb4ab340e0a">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByName</a></div><div class="ttdeci">PcapLiveDevice * getPcapLiveDeviceByName(const std::string &amp;name)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00201.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Thu Jul 20 2017 09:34:51 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00201.html">PcapLiveDeviceList.h</a></li>
+    <li class="footer">Generated on Fri Sep 8 2017 23:43:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

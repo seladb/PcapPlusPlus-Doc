@@ -1,7 +1,10 @@
 var a00139 =
 [
-    [ "SSLNewSessionTicketMessage", "a00139.html#a55d2fff5ceb20ca419344ced210606a4", null ],
-    [ "getSessionTicketData", "a00139.html#a1d30391db4fdab5edae186d9355ad95d", null ],
-    [ "getSessionTicketDataLength", "a00139.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
-    [ "toString", "a00139.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
+    [ "SSLExtensionStruct", "a00140.html", "a00140" ],
+    [ "SSLExtension", "a00139.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "getData", "a00139.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
+    [ "getLength", "a00139.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
+    [ "getTotalLength", "a00139.html#a84c6e634a3738b65cb9b7210124abca5", null ],
+    [ "getType", "a00139.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
+    [ "getTypeAsInt", "a00139.html#a1be433ad3fff137428f270e6f30f09c7", null ]
 ];

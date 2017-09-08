@@ -1,20 +1,15 @@
 var a00169 =
 [
-    [ "ether_header", "a00018.html", "a00018" ],
-    [ "EthLayer", "a00020.html", "a00020" ],
-    [ "PCPP_ETHERTYPE_AARP", "a00169.html#ab8cff68aa7d47eeb5e608246c8727615", null ],
-    [ "PCPP_ETHERTYPE_ARP", "a00169.html#aa2d96bc006e5d45a033943b55c498903", null ],
-    [ "PCPP_ETHERTYPE_AT", "a00169.html#a16ad61f226417b0ec229061052e02ff5", null ],
-    [ "PCPP_ETHERTYPE_IP", "a00169.html#a31bc2379effaf5e47beb4175f5629271", null ],
-    [ "PCPP_ETHERTYPE_IPV6", "a00169.html#a97013a466ba6fe4025baaa6e52b6a83a", null ],
-    [ "PCPP_ETHERTYPE_IPX", "a00169.html#affcff8d6ce6ee0047f0ec6f44441f871", null ],
-    [ "PCPP_ETHERTYPE_LOOPBACK", "a00169.html#a8d42945cf731e4b7448b456ad4caeae6", null ],
-    [ "PCPP_ETHERTYPE_MPLS", "a00169.html#a200da35d3f8ab06ff2ad2d1030da14fa", null ],
-    [ "PCPP_ETHERTYPE_PPP", "a00169.html#aaffe96b1f9c0c40e4dff2d83961fe7d1", null ],
-    [ "PCPP_ETHERTYPE_PPPOED", "a00169.html#a04b10b583a0648c72a8763fc40e6da91", null ],
-    [ "PCPP_ETHERTYPE_PPPOES", "a00169.html#a0cf3e7c4e8751512d74f77d4e23201cf", null ],
-    [ "PCPP_ETHERTYPE_PUP", "a00169.html#a821031eca1080fbf3902fd4bccbaf7df", null ],
-    [ "PCPP_ETHERTYPE_REVARP", "a00169.html#a4a4dad83203fe8186858d1b410358f2d", null ],
-    [ "PCPP_ETHERTYPE_SPRITE", "a00169.html#a65d9a2928c78d3240d81571a331e2eca", null ],
-    [ "PCPP_ETHERTYPE_VLAN", "a00169.html#a4ae9eed713c168d2986083e7571dfeca", null ]
+    [ "dontLearnFlag", "a00169.html#a8bf01681565ea80e389e36c7911c9c37", null ],
+    [ "gbpFlag", "a00169.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
+    [ "groupPolicyID", "a00169.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
+    [ "pad", "a00169.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
+    [ "policyAppliedFlag", "a00169.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
+    [ "reserved11_12", "a00169.html#a3335ab561fbf911e3c070c231d37669f", null ],
+    [ "reserved14_16", "a00169.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
+    [ "reserved2_4", "a00169.html#aeaec3eb74ec694974471243a35a76313", null ],
+    [ "reserved6_8", "a00169.html#ada8c68230dd90d8400398c333216a9f3", null ],
+    [ "reserved9", "a00169.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
+    [ "vni", "a00169.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
+    [ "vniPresentFlag", "a00169.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
 ];

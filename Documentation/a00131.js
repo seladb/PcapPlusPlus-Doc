@@ -1,7 +1,8 @@
 var a00131 =
 [
-    [ "SSLClientKeyExchangeMessage", "a00131.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
-    [ "getClientKeyExchangeParams", "a00131.html#a23584b393dea97a6d249c750b99f4c5f", null ],
-    [ "getClientKeyExchangeParamsLength", "a00131.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
-    [ "toString", "a00131.html#ada71ea045d9dbfd57484a156a108c00b", null ]
+    [ "SSLApplicationDataLayer", "a00131.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
+    [ "computeCalculateFields", "a00131.html#a26b335b7dff7b46724894cad71ee56eb", null ],
+    [ "getEncrpytedData", "a00131.html#a5aee5cb13e0c078fb4c4e24c5fbac99e", null ],
+    [ "getEncrpytedDataLen", "a00131.html#ab078cc94b266ccb418e3047db02b6130", null ],
+    [ "toString", "a00131.html#a9676cb9040c57b7f4929c450d4e952f8", null ]
 ];

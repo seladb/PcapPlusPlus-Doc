@@ -1,7 +1,5 @@
 var a00127 =
 [
-    [ "SSLCertificateVerifyMessage", "a00127.html#a364e17c73fd7cbb9460d75029cace69e", null ],
-    [ "getSignedHash", "a00127.html#a15eac0196cce5604ad21e8b7cd70c372", null ],
-    [ "getSignedHashLength", "a00127.html#aa7a070cf7f91c37fb50e8976054a1ce4", null ],
-    [ "toString", "a00127.html#a0662a3136fca531a733055c1de84d0b7", null ]
+    [ "handshakeVersion", "a00127.html#aa7f3e7a1886a78bf528650958c167d72", null ],
+    [ "random", "a00127.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
 ];

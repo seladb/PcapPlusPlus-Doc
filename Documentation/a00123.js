@@ -1,8 +1,8 @@
 var a00123 =
 [
-    [ "SSLAlertLayer", "a00123.html#aecf449f0c8f821ede816f33d6012b622", null ],
-    [ "computeCalculateFields", "a00123.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
-    [ "getAlertDescription", "a00123.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
-    [ "getAlertLevel", "a00123.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
-    [ "toString", "a00123.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
+    [ "ARPHRD_type", "a00123.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
+    [ "link_layer_addr", "a00123.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
+    [ "link_layer_addr_len", "a00123.html#ac253e0a098c39f46d192619ed5d229bf", null ],
+    [ "packet_type", "a00123.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
+    [ "protocol_type", "a00123.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
 ];

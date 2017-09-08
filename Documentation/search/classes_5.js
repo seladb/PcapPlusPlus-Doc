@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['httpfield',['HttpField',['../a00027.html',1,'pcpp']]],
+  ['headerfield',['HeaderField',['../a00027.html',1,'pcpp']]],
   ['httpmessage',['HttpMessage',['../a00028.html',1,'pcpp']]],
   ['httprequestfirstline',['HttpRequestFirstLine',['../a00029.html',1,'pcpp']]],
   ['httprequestfirstlineexception',['HttpRequestFirstLineException',['../a00030.html',1,'pcpp::HttpRequestFirstLine']]],

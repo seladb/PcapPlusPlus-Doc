@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: MplsLayer.h Source File</title>
+<title>PcapPlusPlus: IpUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,101 +105,81 @@ $(document).ready(function(){initNavTree('a00183_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">MplsLayer.h</div>  </div>
+<div class="title">IpUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00183.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_MPLS_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_MPLS_LAYER</span></div>
+<a href="a00183.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_IP_UTILS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_IP_UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00178.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00214.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00084.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00084.html">MplsLayer</a> : <span class="keyword">public</span> <a class="code" href="a00077.html">Layer</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        #pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">struct </span>mpls_header</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            uint16_t    hiLabel;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            uint8_t     misc;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            uint8_t     ttl;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        #pragma pack(pop)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">inline</span> mpls_header* getMplsHeader() { <span class="keywordflow">return</span> (mpls_header*)m_Data; };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00084.html#a78a145f83cfa7322875f9b6ea16e7b01">   41</a></span>&#160;        <a class="code" href="a00084.html#a78a145f83cfa7322875f9b6ea16e7b01">MplsLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00077.html">Layer</a>* prevLayer, <a class="code" href="a00089.html">Packet</a>* packet) : <a class="code" href="a00077.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">MPLS</a>; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="a00084.html#a78a145f83cfa7322875f9b6ea16e7b01">MplsLayer</a>(uint32_t mplsLabel, uint8_t ttl, uint8_t expermentalUseValue, <span class="keywordtype">bool</span> bottomOfStack);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00084.html">MplsLayer</a>() {}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00084.html#a86338975aee81b97c266fd3c352f1822">   57</a></span>&#160;        <span class="keyword">inline</span> uint8_t <a class="code" href="a00084.html#a86338975aee81b97c266fd3c352f1822">getTTL</a>() { <span class="keywordflow">return</span> getMplsHeader()-&gt;ttl; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00084.html#a89c20c7d9d47206e52ddb51c536b79c8">   63</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00084.html#a89c20c7d9d47206e52ddb51c536b79c8">setTTL</a>(uint8_t ttl) { getMplsHeader()-&gt;ttl = ttl; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00084.html#a5a158dfd712e5e75c6abed56d3e5ad19">isBottomOfStack</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00084.html#ad36043d44c2a5c3dbb0a9809756ccbc6">setBottomOfStack</a>(<span class="keywordtype">bool</span> val);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        uint8_t <a class="code" href="a00084.html#a08c0c29fd77546f79fd04e3f72ff560c">getExperimentalUseValue</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00084.html#a6d47d4dbc8d592c384577dd87726ded7">setExperimentalUseValue</a>(uint8_t val);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        uint32_t <a class="code" href="a00084.html#a81a078482749d623c7717e0ca6caa1c5">getMplsLabel</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00084.html#a21cf86ca8c689c68d70a6451e337a706">setMplsLabel</a>(uint32_t label);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00084.html#ac39bfa71fcf5e63cb711334262458c51">parseNextLayer</a>();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00084.html#acfcd645a870d558cf79f618c67d411f4">  111</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00084.html#acfcd645a870d558cf79f618c67d411f4">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(mpls_header); }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00084.html#ad02e5db78fb0b48d558d06ed3ea4f289">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        std::string <a class="code" href="a00084.html#ac8c2d27147757ed9f51f629990514f81">toString</a>();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00084.html#a698af5934823addc5d3b5e9e89f4f5a5">  121</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00084.html#a698af5934823addc5d3b5e9e89f4f5a5">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">OsiModelNetworkLayer</a>; }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    };</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_MPLS_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00084_html_a78a145f83cfa7322875f9b6ea16e7b01"><div class="ttname"><a href="a00084.html#a78a145f83cfa7322875f9b6ea16e7b01">pcpp::MplsLayer::MplsLayer</a></div><div class="ttdeci">MplsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:41</div></div>
-<div class="ttc" id="a00084_html_a81a078482749d623c7717e0ca6caa1c5"><div class="ttname"><a href="a00084.html#a81a078482749d623c7717e0ca6caa1c5">pcpp::MplsLayer::getMplsLabel</a></div><div class="ttdeci">uint32_t getMplsLabel()</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:183</div></div>
-<div class="ttc" id="a00084_html"><div class="ttname"><a href="a00084.html">pcpp::MplsLayer</a></div><div class="ttdef"><b>Definition:</b> MplsLayer.h:19</div></div>
-<div class="ttc" id="a00084_html_ad36043d44c2a5c3dbb0a9809756ccbc6"><div class="ttname"><a href="a00084.html#ad36043d44c2a5c3dbb0a9809756ccbc6">pcpp::MplsLayer::setBottomOfStack</a></div><div class="ttdeci">void setBottomOfStack(bool val)</div></div>
-<div class="ttc" id="a00084_html_ac8c2d27147757ed9f51f629990514f81"><div class="ttname"><a href="a00084.html#ac8c2d27147757ed9f51f629990514f81">pcpp::MplsLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00214_html"><div class="ttname"><a href="a00214.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00084_html_a6d47d4dbc8d592c384577dd87726ded7"><div class="ttname"><a href="a00084.html#a6d47d4dbc8d592c384577dd87726ded7">pcpp::MplsLayer::setExperimentalUseValue</a></div><div class="ttdeci">bool setExperimentalUseValue(uint8_t val)</div></div>
-<div class="ttc" id="a00084_html_a5a158dfd712e5e75c6abed56d3e5ad19"><div class="ttname"><a href="a00084.html#a5a158dfd712e5e75c6abed56d3e5ad19">pcpp::MplsLayer::isBottomOfStack</a></div><div class="ttdeci">bool isBottomOfStack()</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:106</div></div>
-<div class="ttc" id="a00178_html"><div class="ttname"><a href="a00178.html">Layer.h</a></div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">pcpp::OsiModelNetworkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:190</div></div>
-<div class="ttc" id="a00084_html_a86338975aee81b97c266fd3c352f1822"><div class="ttname"><a href="a00084.html#a86338975aee81b97c266fd3c352f1822">pcpp::MplsLayer::getTTL</a></div><div class="ttdeci">uint8_t getTTL()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:57</div></div>
-<div class="ttc" id="a00089_html"><div class="ttname"><a href="a00089.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00084_html_ac39bfa71fcf5e63cb711334262458c51"><div class="ttname"><a href="a00084.html#ac39bfa71fcf5e63cb711334262458c51">pcpp::MplsLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00084_html_ad02e5db78fb0b48d558d06ed3ea4f289"><div class="ttname"><a href="a00084.html#ad02e5db78fb0b48d558d06ed3ea4f289">pcpp::MplsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00084_html_a89c20c7d9d47206e52ddb51c536b79c8"><div class="ttname"><a href="a00084.html#a89c20c7d9d47206e52ddb51c536b79c8">pcpp::MplsLayer::setTTL</a></div><div class="ttdeci">void setTTL(uint8_t ttl)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:63</div></div>
-<div class="ttc" id="a00084_html_a08c0c29fd77546f79fd04e3f72ff560c"><div class="ttname"><a href="a00084.html#a08c0c29fd77546f79fd04e3f72ff560c">pcpp::MplsLayer::getExperimentalUseValue</a></div><div class="ttdeci">uint8_t getExperimentalUseValue()</div></div>
-<div class="ttc" id="a00084_html_a21cf86ca8c689c68d70a6451e337a706"><div class="ttname"><a href="a00084.html#a21cf86ca8c689c68d70a6451e337a706">pcpp::MplsLayer::setMplsLabel</a></div><div class="ttdeci">bool setMplsLabel(uint32_t label)</div></div>
-<div class="ttc" id="a00084_html_a698af5934823addc5d3b5e9e89f4f5a5"><div class="ttname"><a href="a00084.html#a698af5934823addc5d3b5e9e89f4f5a5">pcpp::MplsLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:121</div></div>
-<div class="ttc" id="a00084_html_acfcd645a870d558cf79f618c67d411f4"><div class="ttname"><a href="a00084.html#acfcd645a870d558cf79f618c67d411f4">pcpp::MplsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:111</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifdef LINUX</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;in.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef MAC_OS_X</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if defined(WIN32) || defined(WINx64)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ws2tcpip.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#if defined(WIN32) &amp;&amp; !defined(_MSC_VER)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="a00183.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, <span class="keywordtype">char</span>* dst, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00183.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">char</span>* src, <span class="keywordtype">void</span>* dst);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00224.html">pcpp</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    in_addr* <a class="code" href="a00224.html#accf99d75d7ba993b6146e5915a7fa2db">sockaddr2in_addr</a>(<span class="keyword">struct</span> sockaddr *sa);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    in6_addr* <a class="code" href="a00224.html#acf8855571df4a1ba17129f946383f3be">sockaddr2in6_addr</a>(<span class="keyword">struct</span> sockaddr *sa);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00224.html#adca8f8917951fbfa34b0a24fab6c9152">sockaddr2string</a>(<span class="keyword">struct</span> sockaddr *sa, <span class="keywordtype">char</span>* resultString);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    uint32_t <a class="code" href="a00224.html#a0e2a6ea816a6f32ed721b4db05911b8f">in_addr2int</a>(in_addr inAddr);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00115.html">   85</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00115.html">ScalarBuffer</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00115.html#a43b9b1dd5d0156c85e01157a681d7150">   90</a></span>&#160;        T* <a class="code" href="a00115.html#a43b9b1dd5d0156c85e01157a681d7150">buffer</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="a00115.html#a677d3e0fa3faf87c0f275efd1bac6abd">   95</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="a00115.html#a677d3e0fa3faf87c0f275efd1bac6abd">len</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    };</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    uint16_t <a class="code" href="a00224.html#a27f80839f1794fa67f59d5f4046466d7">compute_checksum</a>(<a class="code" href="a00115.html">ScalarBuffer&lt;uint16_t&gt;</a> vec[], <span class="keywordtype">size_t</span> vecSize);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    uint32_t <a class="code" href="a00224.html#af5ed4e611bb0af5bade4697ff2308b18">fnv_hash</a>(<a class="code" href="a00115.html">ScalarBuffer&lt;uint8_t&gt;</a> vec[], <span class="keywordtype">size_t</span> vecSize);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    uint32_t <a class="code" href="a00224.html#af5ed4e611bb0af5bade4697ff2308b18">fnv_hash</a>(uint8_t* buffer, <span class="keywordtype">size_t</span> bufSize);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00224_html"><div class="ttname"><a href="a00224.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00115_html"><div class="ttname"><a href="a00115.html">pcpp::ScalarBuffer</a></div><div class="ttdef"><b>Definition:</b> IpUtils.h:85</div></div>
+<div class="ttc" id="a00224_html_a27f80839f1794fa67f59d5f4046466d7"><div class="ttname"><a href="a00224.html#a27f80839f1794fa67f59d5f4046466d7">pcpp::compute_checksum</a></div><div class="ttdeci">uint16_t compute_checksum(ScalarBuffer&lt; uint16_t &gt; vec[], size_t vecSize)</div></div>
+<div class="ttc" id="a00224_html_accf99d75d7ba993b6146e5915a7fa2db"><div class="ttname"><a href="a00224.html#accf99d75d7ba993b6146e5915a7fa2db">pcpp::sockaddr2in_addr</a></div><div class="ttdeci">in_addr * sockaddr2in_addr(struct sockaddr *sa)</div></div>
+<div class="ttc" id="a00224_html_af5ed4e611bb0af5bade4697ff2308b18"><div class="ttname"><a href="a00224.html#af5ed4e611bb0af5bade4697ff2308b18">pcpp::fnv_hash</a></div><div class="ttdeci">uint32_t fnv_hash(ScalarBuffer&lt; uint8_t &gt; vec[], size_t vecSize)</div></div>
+<div class="ttc" id="a00183_html_a2a4b830a00870799ee852d4c6a72a1eb"><div class="ttname"><a href="a00183.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a></div><div class="ttdeci">const char * inet_ntop(int af, const void *src, char *dst, size_t size)</div></div>
+<div class="ttc" id="a00224_html_a0e2a6ea816a6f32ed721b4db05911b8f"><div class="ttname"><a href="a00224.html#a0e2a6ea816a6f32ed721b4db05911b8f">pcpp::in_addr2int</a></div><div class="ttdeci">uint32_t in_addr2int(in_addr inAddr)</div></div>
+<div class="ttc" id="a00183_html_acdce1d46efd09e8485a2f682b388ebc0"><div class="ttname"><a href="a00183.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a></div><div class="ttdeci">int inet_pton(int af, const char *src, void *dst)</div></div>
+<div class="ttc" id="a00224_html_adca8f8917951fbfa34b0a24fab6c9152"><div class="ttname"><a href="a00224.html#adca8f8917951fbfa34b0a24fab6c9152">pcpp::sockaddr2string</a></div><div class="ttdeci">void sockaddr2string(struct sockaddr *sa, char *resultString)</div></div>
+<div class="ttc" id="a00224_html_acf8855571df4a1ba17129f946383f3be"><div class="ttname"><a href="a00224.html#acf8855571df4a1ba17129f946383f3be">pcpp::sockaddr2in6_addr</a></div><div class="ttdeci">in6_addr * sockaddr2in6_addr(struct sockaddr *sa)</div></div>
+<div class="ttc" id="a00115_html_a43b9b1dd5d0156c85e01157a681d7150"><div class="ttname"><a href="a00115.html#a43b9b1dd5d0156c85e01157a681d7150">pcpp::ScalarBuffer::buffer</a></div><div class="ttdeci">T * buffer</div><div class="ttdef"><b>Definition:</b> IpUtils.h:90</div></div>
+<div class="ttc" id="a00115_html_a677d3e0fa3faf87c0f275efd1bac6abd"><div class="ttname"><a href="a00115.html#a677d3e0fa3faf87c0f275efd1bac6abd">pcpp::ScalarBuffer::len</a></div><div class="ttdeci">size_t len</div><div class="ttdef"><b>Definition:</b> IpUtils.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00183.html">MplsLayer.h</a></li>
-    <li class="footer">Generated on Thu Jul 20 2017 09:34:51 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00183.html">IpUtils.h</a></li>
+    <li class="footer">Generated on Fri Sep 8 2017 23:43:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

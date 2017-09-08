@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PayloadLayer.h Source File</title>
+<title>PcapPlusPlus: LRUList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,71 +105,87 @@ $(document).ready(function(){initNavTree('a00188_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PayloadLayer.h</div>  </div>
+<div class="title">LRUList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00188.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PAYLOAD_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PAYLOAD_LAYER</span></div>
+<a href="a00188.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LRU_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_LRU_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00178.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00214.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00090.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00090.html">PayloadLayer</a> : <span class="keyword">public</span> <a class="code" href="a00077.html">Layer</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">   28</a></span>&#160;        <a class="code" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00077.html">Layer</a>* prevLayer, <a class="code" href="a00089.html">Packet</a>* packet) : <a class="code" href="a00077.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">GenericPayolad</a>; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">bool</span> selfAllocated);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ~<a class="code" href="a00090.html">PayloadLayer</a>() {}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00090.html#af46528184f2f9cff223f631422ae8b24">   45</a></span>&#160;        <span class="keyword">inline</span> uint8_t* <a class="code" href="a00090.html#af46528184f2f9cff223f631422ae8b24">getPayload</a>() { <span class="keywordflow">return</span> m_Data; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00090.html#aee6b8085ad904ba8044bf95b802255f5">   51</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00090.html#aee6b8085ad904ba8044bf95b802255f5">getPayloadLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00090.html#a462003b0863dd9891d989f847608c1fb">   58</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00090.html#a462003b0863dd9891d989f847608c1fb">parseNextLayer</a>() {}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00090.html#a03f5cea04a120367b2b1b808ec2e38ef">   63</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00090.html#a03f5cea04a120367b2b1b808ec2e38ef">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00224.html">pcpp</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00080.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00080.html">LRUList</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::list&lt;T&gt;::iterator ListIterator;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;T, ListIterator&gt;::iterator MapIterator;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00080.html#a0d64da0d4ca5386c8ce3f63c6409fab5">   35</a></span>&#160;        <a class="code" href="a00080.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a>(<span class="keywordtype">size_t</span> maxSize)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            m_MaxSize = maxSize;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00080.html#a1eb4c3762735f3f49ae5b6bec3f70d58">   49</a></span>&#160;        T* <a class="code" href="a00080.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a>(<span class="keyword">const</span> T&amp; element)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            m_CacheItemsList.push_front(element);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            MapIterator iter = m_CacheItemsMap.find(element);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (iter != m_CacheItemsMap.end())</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                m_CacheItemsList.erase(iter-&gt;second);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            m_CacheItemsMap[element] = m_CacheItemsList.begin();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (m_CacheItemsList.size() &gt; m_MaxSize)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                ListIterator lruIter = m_CacheItemsList.end();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                lruIter--;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                T* deletedValue = <span class="keyword">new</span> T(*lruIter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                m_CacheItemsMap.erase(*lruIter);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                m_CacheItemsList.erase(lruIter);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00090.html#a06b137b6b0f0a81cfd6fda7f2e44640f">   68</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00090.html#a06b137b6b0f0a81cfd6fda7f2e44640f">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::string <a class="code" href="a00090.html#ab9117eddc57a2c6e3d3e5ef1626a4aac">toString</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00090.html#ab041d609556acd4c9793e738fda27235">   72</a></span>&#160;        <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00090.html#ab041d609556acd4c9793e738fda27235">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a>; }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PAYLOAD_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:183</div></div>
-<div class="ttc" id="a00090_html_a06b137b6b0f0a81cfd6fda7f2e44640f"><div class="ttname"><a href="a00090.html#a06b137b6b0f0a81cfd6fda7f2e44640f">pcpp::PayloadLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:68</div></div>
-<div class="ttc" id="a00090_html_af46528184f2f9cff223f631422ae8b24"><div class="ttname"><a href="a00090.html#af46528184f2f9cff223f631422ae8b24">pcpp::PayloadLayer::getPayload</a></div><div class="ttdeci">uint8_t * getPayload()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:45</div></div>
-<div class="ttc" id="a00090_html"><div class="ttname"><a href="a00090.html">pcpp::PayloadLayer</a></div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:19</div></div>
-<div class="ttc" id="a00214_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="a00214.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:198</div></div>
-<div class="ttc" id="a00214_html"><div class="ttname"><a href="a00214.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00090_html_ab041d609556acd4c9793e738fda27235"><div class="ttname"><a href="a00090.html#ab041d609556acd4c9793e738fda27235">pcpp::PayloadLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:72</div></div>
-<div class="ttc" id="a00090_html_aee6b8085ad904ba8044bf95b802255f5"><div class="ttname"><a href="a00090.html#aee6b8085ad904ba8044bf95b802255f5">pcpp::PayloadLayer::getPayloadLen</a></div><div class="ttdeci">size_t getPayloadLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:51</div></div>
-<div class="ttc" id="a00178_html"><div class="ttname"><a href="a00178.html">Layer.h</a></div></div>
-<div class="ttc" id="a00090_html_a462003b0863dd9891d989f847608c1fb"><div class="ttname"><a href="a00090.html#a462003b0863dd9891d989f847608c1fb">pcpp::PayloadLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:58</div></div>
-<div class="ttc" id="a00090_html_ab9117eddc57a2c6e3d3e5ef1626a4aac"><div class="ttname"><a href="a00090.html#ab9117eddc57a2c6e3d3e5ef1626a4aac">pcpp::PayloadLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00214_html_a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4"><div class="ttname"><a href="a00214.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:171</div></div>
-<div class="ttc" id="a00090_html_a03f5cea04a120367b2b1b808ec2e38ef"><div class="ttname"><a href="a00090.html#a03f5cea04a120367b2b1b808ec2e38ef">pcpp::PayloadLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:63</div></div>
-<div class="ttc" id="a00089_html"><div class="ttname"><a href="a00089.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00077_html"><div class="ttname"><a href="a00077.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00090_html_a3c34b57a284fe6e3180eb7cc79da9f24"><div class="ttname"><a href="a00090.html#a3c34b57a284fe6e3180eb7cc79da9f24">pcpp::PayloadLayer::PayloadLayer</a></div><div class="ttdeci">PayloadLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:28</div></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">return</span> deletedValue;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00080.html#a2474c4ee35a59b258995896baf5f3af4">   75</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00080.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.front();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00080.html#adfbb5d65592bd0977de48c84ebb5fa0a">   84</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00080.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.back();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::list&lt;T&gt; m_CacheItemsList;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        std::map&lt;T, ListIterator&gt; m_CacheItemsMap;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">size_t</span> m_MaxSize;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_LRU_LIST */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00224_html"><div class="ttname"><a href="a00224.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00080_html_a2474c4ee35a59b258995896baf5f3af4"><div class="ttname"><a href="a00080.html#a2474c4ee35a59b258995896baf5f3af4">pcpp::LRUList::getMRUElement</a></div><div class="ttdeci">const T &amp; getMRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:75</div></div>
+<div class="ttc" id="a00080_html_adfbb5d65592bd0977de48c84ebb5fa0a"><div class="ttname"><a href="a00080.html#adfbb5d65592bd0977de48c84ebb5fa0a">pcpp::LRUList::getLRUElement</a></div><div class="ttdeci">const T &amp; getLRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:84</div></div>
+<div class="ttc" id="a00080_html_a1eb4c3762735f3f49ae5b6bec3f70d58"><div class="ttname"><a href="a00080.html#a1eb4c3762735f3f49ae5b6bec3f70d58">pcpp::LRUList::put</a></div><div class="ttdeci">T * put(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> LRUList.h:49</div></div>
+<div class="ttc" id="a00080_html_a0d64da0d4ca5386c8ce3f63c6409fab5"><div class="ttname"><a href="a00080.html#a0d64da0d4ca5386c8ce3f63c6409fab5">pcpp::LRUList::LRUList</a></div><div class="ttdeci">LRUList(size_t maxSize)</div><div class="ttdef"><b>Definition:</b> LRUList.h:35</div></div>
+<div class="ttc" id="a00080_html"><div class="ttname"><a href="a00080.html">pcpp::LRUList</a></div><div class="ttdef"><b>Definition:</b> LRUList.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00188.html">PayloadLayer.h</a></li>
-    <li class="footer">Generated on Thu Jul 20 2017 09:34:51 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00188.html">LRUList.h</a></li>
+    <li class="footer">Generated on Fri Sep 8 2017 23:43:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

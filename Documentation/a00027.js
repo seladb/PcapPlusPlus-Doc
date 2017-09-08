@@ -1,10 +1,10 @@
 var a00027 =
 [
-    [ "HttpField", "a00027.html#a08df39066de069298eb2a80f6a49c01b", null ],
-    [ "HttpField", "a00027.html#a5d3761e5fa3c8d112472da6ed049e2d3", null ],
-    [ "getFieldName", "a00027.html#a2700f60a7d0439f7789a9a21b0348995", null ],
-    [ "getFieldSize", "a00027.html#ae988939aa0a937b0eee453415a900720", null ],
-    [ "getFieldValue", "a00027.html#a3b626dcc80b1bb91d42f237c9af2e40b", null ],
-    [ "isEndOfHeader", "a00027.html#a86e4239415b6859db6d9dabe77d3c43f", null ],
-    [ "setFieldValue", "a00027.html#a2e564c6a2888b094a05b626b90686710", null ]
+    [ "HeaderField", "a00027.html#ac1f8e6a7c5c07092a5f74777835a82ff", null ],
+    [ "HeaderField", "a00027.html#adfc033ec04c1a31156bedf7273791ed0", null ],
+    [ "getFieldName", "a00027.html#a776aa57e69e9c18fc5398f62cbed046c", null ],
+    [ "getFieldSize", "a00027.html#ad8ff08cb95afb62d01caccf7edb5fd54", null ],
+    [ "getFieldValue", "a00027.html#ad3f846ebe5f87b5bc1ec452135bd7ad0", null ],
+    [ "isEndOfHeader", "a00027.html#a80a8b96e3e6cb6589799e6440ab1cf75", null ],
+    [ "setFieldValue", "a00027.html#a6c89f09744ba1ade7e75adf8fddbecbb", null ]
 ];
