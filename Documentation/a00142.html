@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::SSLHandshakeLayer Class Reference</title>
+<title>PcapPlusPlus: pcpp::SSLFinishedMessage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,123 +108,61 @@ $(document).ready(function(){initNavTree('a00142.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00370.html">List of all members</a>  </div>
+<a href="a00372.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::SSLHandshakeLayer Class Reference</div>  </div>
+<div class="title">pcpp::SSLFinishedMessage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00215_source.html">SSLLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00216_source.html">SSLHandshake.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::SSLHandshakeLayer:</div>
+Inheritance diagram for pcpp::SSLFinishedMessage:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00142.png" usemap="#pcpp::SSLHandshakeLayer_map" alt=""/>
-  <map id="pcpp::SSLHandshakeLayer_map" name="pcpp::SSLHandshakeLayer_map">
-<area href="a00145.html" alt="pcpp::SSLLayer" shape="rect" coords="0,56,165,80"/>
-<area href="a00077.html" alt="pcpp::Layer" shape="rect" coords="0,0,165,24"/>
+  <img src="a00142.png" usemap="#pcpp::SSLFinishedMessage_map" alt=""/>
+  <map id="pcpp::SSLFinishedMessage_map" name="pcpp::SSLFinishedMessage_map">
+<area href="a00144.html" alt="pcpp::SSLHandshakeMessage" shape="rect" coords="0,0,183,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b37d33d8342f166a5a1746820aa0c0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a0b37d33d8342f166a5a1746820aa0c0b">SSLHandshakeLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00077.html">Layer</a> *prevLayer, <a class="el" href="a00089.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a0b37d33d8342f166a5a1746820aa0c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7c42970ded74d0fee34103e51f7632"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a9f7c42970ded74d0fee34103e51f7632">getHandshakeMessagesCount</a> ()</td></tr>
-<tr class="separator:a9f7c42970ded74d0fee34103e51f7632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d1ae87429f17ad41ca8aa4b4231fa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00143.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#ac8d1ae87429f17ad41ca8aa4b4231fa8">getHandshakeMessageAt</a> (int index)</td></tr>
-<tr class="separator:ac8d1ae87429f17ad41ca8aa4b4231fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a40a448fd7234eb08c95b5032e64974"><td class="memTemplParams" colspan="2">template&lt;class THandshakeMessage &gt; </td></tr>
-<tr class="memitem:a4a40a448fd7234eb08c95b5032e64974"><td class="memTemplItemLeft" align="right" valign="top">THandshakeMessage *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00142.html#a4a40a448fd7234eb08c95b5032e64974">getHandshakeMessageOfType</a> ()</td></tr>
-<tr class="separator:a4a40a448fd7234eb08c95b5032e64974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1659f58a8e3ed9ed506df80d91c7dbb"><td class="memTemplParams" colspan="2">template&lt;class THandshakeMessage &gt; </td></tr>
-<tr class="memitem:ac1659f58a8e3ed9ed506df80d91c7dbb"><td class="memTemplItemLeft" align="right" valign="top">THandshakeMessage *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00142.html#ac1659f58a8e3ed9ed506df80d91c7dbb">getNextHandshakeMessageOfType</a> (<a class="el" href="a00143.html">SSLHandshakeMessage</a> *after)</td></tr>
-<tr class="separator:ac1659f58a8e3ed9ed506df80d91c7dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33923287a108f28edc654c5120cf6158"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a33923287a108f28edc654c5120cf6158">toString</a> ()</td></tr>
-<tr class="separator:a33923287a108f28edc654c5120cf6158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9db43d75aec58260e33cbce36f969bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#ab9db43d75aec58260e33cbce36f969bb">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:ab9db43d75aec58260e33cbce36f969bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00145"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00145')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00145.html">pcpp::SSLLayer</a></td></tr>
-<tr class="memitem:a693e2da655cd33a4906bcbcffb394126 inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00129.html">ssl_tls_record_layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#a693e2da655cd33a4906bcbcffb394126">getRecordLayer</a> ()</td></tr>
-<tr class="separator:a693e2da655cd33a4906bcbcffb394126 inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f3a017783ffc524463a5691959ae5a inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00224.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#a56f3a017783ffc524463a5691959ae5a">getRecordVersion</a> ()</td></tr>
-<tr class="separator:a56f3a017783ffc524463a5691959ae5a inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0bff83614a0641b170e8fb4734178bd inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00224.html#a8009288902cf5a1c0be461f28e82ab3b">SSLRecordType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#af0bff83614a0641b170e8fb4734178bd">getRecordType</a> ()</td></tr>
-<tr class="separator:af0bff83614a0641b170e8fb4734178bd inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd062c291faff189eff54e987885e3f6 inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#afd062c291faff189eff54e987885e3f6">getHeaderLen</a> ()</td></tr>
-<tr class="separator:afd062c291faff189eff54e987885e3f6 inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc45ce490c60762cf4be2da0a4d57723 inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#acc45ce490c60762cf4be2da0a4d57723">parseNextLayer</a> ()</td></tr>
-<tr class="separator:acc45ce490c60762cf4be2da0a4d57723 inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19d2257b49531b37f546810c5b788b8 inherit pub_methods_a00145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00224.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#af19d2257b49531b37f546810c5b788b8">getOsiModelLayer</a> ()</td></tr>
-<tr class="separator:af19d2257b49531b37f546810c5b788b8 inherit pub_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00077"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00077')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00077.html">pcpp::Layer</a></td></tr>
-<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
-<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
-<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00224.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
-<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
-<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
-<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
-<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa622f2b0512e51b904ce8d2d8aac85b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#aa622f2b0512e51b904ce8d2d8aac85b0">SSLFinishedMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00143.html">SSLHandshakeLayer</a> *container)</td></tr>
+<tr class="separator:aa622f2b0512e51b904ce8d2d8aac85b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae04041b9e28633f6a2b15807307791"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#afae04041b9e28633f6a2b15807307791">getSignedHash</a> ()</td></tr>
+<tr class="separator:afae04041b9e28633f6a2b15807307791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2cf5081a5b4499755a2e51cc8f4032"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a6c2cf5081a5b4499755a2e51cc8f4032">getSignedHashLength</a> ()</td></tr>
+<tr class="separator:a6c2cf5081a5b4499755a2e51cc8f4032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614be67e42308cd5c81437ac5e2d70b8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a614be67e42308cd5c81437ac5e2d70b8">toString</a> ()</td></tr>
+<tr class="separator:a614be67e42308cd5c81437ac5e2d70b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00144"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00144')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00144.html">pcpp::SSLHandshakeMessage</a></td></tr>
+<tr class="memitem:a31089d536fc762b283d30d7c36e3584b inherit pub_methods_a00144"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00226.html#ae0fad0f4f978c2fec3de006703aac92c">SSLHandshakeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00144.html#a31089d536fc762b283d30d7c36e3584b">getHandshakeType</a> ()</td></tr>
+<tr class="separator:a31089d536fc762b283d30d7c36e3584b inherit pub_methods_a00144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e70c139eb98ba63175a62e87f7de78 inherit pub_methods_a00144"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00144.html#ac9e70c139eb98ba63175a62e87f7de78">getMessageLength</a> ()</td></tr>
+<tr class="separator:ac9e70c139eb98ba63175a62e87f7de78 inherit pub_methods_a00144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dc55310a1f9160b17516a9d1b73d45 inherit pub_methods_a00144"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00144.html#a58dc55310a1f9160b17516a9d1b73d45">isMessageComplete</a> ()</td></tr>
+<tr class="separator:a58dc55310a1f9160b17516a9d1b73d45 inherit pub_methods_a00144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4342813d150cb1cec2911b59b99e0418 inherit pub_methods_a00144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00143.html">SSLHandshakeLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00144.html#a4342813d150cb1cec2911b59b99e0418">getContainingLayer</a> ()</td></tr>
+<tr class="separator:a4342813d150cb1cec2911b59b99e0418 inherit pub_methods_a00144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_a00145"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00145')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00145.html">pcpp::SSLLayer</a></td></tr>
-<tr class="memitem:a15327f1acf51062ba2852678211f8264 inherit pub_static_methods_a00145"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#a15327f1acf51062ba2852678211f8264">IsSSLMessage</a> (uint16_t srcPort, uint16_t dstPort, uint8_t *data, size_t dataLen)</td></tr>
-<tr class="separator:a15327f1acf51062ba2852678211f8264 inherit pub_static_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab475769b89eb8db08be50f96afe26450 inherit pub_static_methods_a00145"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00145.html">SSLLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00077.html">Layer</a> *prevLayer, <a class="el" href="a00089.html">Packet</a> *packet)</td></tr>
-<tr class="separator:ab475769b89eb8db08be50f96afe26450 inherit pub_static_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38f557785a417888c5a1096d8c5c52f inherit pub_static_methods_a00145"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#af38f557785a417888c5a1096d8c5c52f">sslVersionToString</a> (<a class="el" href="a00224.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> ver)</td></tr>
-<tr class="separator:af38f557785a417888c5a1096d8c5c52f inherit pub_static_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea39487affc954f5584adc260de9d02 inherit pub_static_methods_a00145"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html#a1ea39487affc954f5584adc260de9d02">getSSLPortMap</a> ()</td></tr>
-<tr class="separator:a1ea39487affc954f5584adc260de9d02 inherit pub_static_methods_a00145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_a00144"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00144')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00144.html">pcpp::SSLHandshakeMessage</a></td></tr>
+<tr class="memitem:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_a00144"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00144.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00144.html#af306660713051f8884713621bbb5bb18">createHandhakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00143.html">SSLHandshakeLayer</a> *container)</td></tr>
+<tr class="separator:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_a00144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents SSL/TLS handshake layer. This layer may contain one or more handshake messages (all of them inherit from the base class <a class="el" href="a00143.html">SSLHandshakeMessage</a>) which are the SSL/TLS handshake message sent between a client and a server until they establish a secure connection (e.g client-hello, server-hello, certificate, client-key-exchange, server-key-exchange, etc.). Usually this layer will contain just one message (as the first example below demonstrates). But there are cases a layer may contain more than 1 message. To better explain this layer structure we'll use 2 examples. The first will be client-hello message. The layer structure will look like this: </p><pre class="fragment">      |------------------- SSLHandshakeLayer ----------------------|
-      +----------------------+-------------------------------------+
-      | ssl_tls_record_layer |       SSLClientHelloMessage         |
-      |        struct        |                                     |
-      +----------------------+-------------------------------------+
-       /     |       \               |          \         \      \
-      /    version    \      |   handshake       \         \      \
-     /     TLS1_0      \            type          \         \     rest of
-    type                  \    | SSL_CLIENT_HELLO    \         \    message fields...
-SSL_HANDSHAKE           length                   handshake      \
-    (22)                 xxx   |                  version      message
-                                                 TLS1_2      length
-                             |                                yyy
-</pre><p>Second example is a multiple-message handshake layer comprises of server-hello, certificate and server-key-exchange messages:</p>
-<pre class="fragment">      |---------------------------------------------- SSLHandshakeLayer -----------------------------------------------------|
-      +----------------------+-------------------------------------+---------------------------+-----------------------------+
-      | ssl_tls_record_layer |       SSLServerHelloMessage         |   SSLCertificateMessage   | SSLServerKeyExchangeMessage |
-      |        struct        |                                     |                           |                             |
-      +----------------------+-------------------------------------+---------------------------+-----------------------------+
-       /     |       \               |          \         \               |           \               |            \
-      /    version    \      |   handshake       \        rest of  |      |          rest      |      |            rest
-     /     TLS1_0      \            type          \       message      handshake   of fields...   handshake    of fields...
-    type                  \    | SSL_SERVER_HELLO    \      fields...|     type                  |     type
-SSL_HANDSHAKE           length                   handshake             SSL_CERTIFICATE             SSL_SERVER_KEY_EXCHANGE
-    (22)                 xxx   |               version,length        |                           |
-
-                             |                                     |                           |</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0b37d33d8342f166a5a1746820aa0c0b"></a>
+<div class="textblock"><p>Represents SSL/TLS finished message (type 20). Inherits from <a class="el" href="a00144.html">SSLHandshakeMessage</a> and adds parsing functionality such as retrieving signed hash data as raw data (parsing may be added in the future) </p><dl class="todo"><dt><b><a class="el" href="a00228.html#_todo000013">Todo:</a></b></dt><dd>This message type wasn't tested in unit-tests </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa622f2b0512e51b904ce8d2d8aac85b0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::SSLHandshakeLayer::SSLHandshakeLayer </td>
+          <td class="memname">pcpp::SSLFinishedMessage::SSLFinishedMessage </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -238,14 +176,8 @@ SSL_HANDSHAKE           length                   handshake             SSL_CERTI
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00077.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00089.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00143.html">SSLHandshakeLayer</a> *&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,13 +185,17 @@ SSL_HANDSHAKE           length                   handshake             SSL_CERTI
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>C'tor for this class that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>C'tor for this class. Currently only in use in <a class="el" href="a00144.html#af306660713051f8884713621bbb5bb18">SSLHandshakeMessage::createHandhakeMessage()</a> and should be used by a user </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00089.html">Packet</a> instance where layer will be stored in </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The message as raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Message raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">container</td><td>The SSL handshake layer which shall contain this message </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,7 +203,39 @@ SSL_HANDSHAKE           length                   handshake             SSL_CERTI
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab9db43d75aec58260e33cbce36f969bb"></a>
+<a class="anchor" id="afae04041b9e28633f6a2b15807307791"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* pcpp::SSLFinishedMessage::getSignedHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the signed hash data as raw data (byte array). Parsing of this data may be added in the future. Notice that if this message is spread over several packets in a way none of the signed hash data exists in this packet, NULL will be returned </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c2cf5081a5b4499755a2e51cc8f4032"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::SSLFinishedMessage::getSignedHashLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The length of signed hash data returned by <a class="el" href="a00142.html#afae04041b9e28633f6a2b15807307791">getSignedHash()</a>. Notice that if the message is spread over several packets in a way none of this data exists in the current packet, 0 will be returned. Also, if some of the data exists in the consequent packets, the length that will be returned will be the length of data exists in the current packet only (and not the total length) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a614be67e42308cd5c81437ac5e2d70b8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,116 +243,7 @@ SSL_HANDSHAKE           length                   handshake             SSL_CERTI
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::SSLHandshakeLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>There are no calculated fields for this layer </p>
-
-<p>Implements <a class="el" href="a00077.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac8d1ae87429f17ad41ca8aa4b4231fa8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00143.html">SSLHandshakeMessage</a>* pcpp::SSLHandshakeLayer::getHandshakeMessageAt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a pointer to an handshake message by index. The message are numbered according to their order of appearance in the layer. If index is out of bounds (less than 0 or larger than total amount of message) NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the message to return </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The pointer to the message object or NULL if index is out of bounds </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4a40a448fd7234eb08c95b5032e64974"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class THandshakeMessage &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">THandshakeMessage * pcpp::SSLHandshakeLayer::getHandshakeMessageOfType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A templated method to get a message of a certain type. If no message of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, NULL if not found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9f7c42970ded74d0fee34103e51f7632"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t pcpp::SSLHandshakeLayer::getHandshakeMessagesCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of messages in this layer instance </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac1659f58a8e3ed9ed506df80d91c7dbb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class THandshakeMessage &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">THandshakeMessage * pcpp::SSLHandshakeLayer::getNextHandshakeMessageOfType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00143.html">SSLHandshakeMessage</a> *&#160;</td>
-          <td class="paramname"><em>after</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A templated method to get the first message of a certain type, starting to search from a certain message. For example: if the layer looks like: HelloRequest(1) -&gt; HelloRequest(2) and the user put HelloRequest(1) as a parameter and wishes to search for an HelloRequest message, the HelloRequest(2) will be returned.<br />
- If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the message to start search from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, NULL if not found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a33923287a108f28edc654c5120cf6158"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string pcpp::SSLHandshakeLayer::toString </td>
+          <td class="memname">std::string pcpp::SSLFinishedMessage::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -396,9 +255,9 @@ template&lt;class THandshakeMessage &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the message type (e.g "Client Hello message") </dd></dl>
 
-<p>Implements <a class="el" href="a00077.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
+<p>Implements <a class="el" href="a00144.html#a17b72bf10472c67d0044006099c6ea5a">pcpp::SSLHandshakeMessage</a>.</p>
 
 </div>
 </div>
@@ -407,8 +266,8 @@ template&lt;class THandshakeMessage &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00224.html">pcpp</a></li><li class="navelem"><a class="el" href="a00142.html">SSLHandshakeLayer</a></li>
-    <li class="footer">Generated on Fri Sep 8 2017 23:43:32 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00226.html">pcpp</a></li><li class="navelem"><a class="el" href="a00142.html">SSLFinishedMessage</a></li>
+    <li class="footer">Generated on Thu Sep 14 2017 08:29:13 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

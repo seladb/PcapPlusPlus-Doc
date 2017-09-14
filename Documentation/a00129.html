@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::ssl_tls_record_layer Struct Reference</title>
+<title>PcapPlusPlus: pcpp::ssl_tls_handshake_layer Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,62 +108,71 @@ $(document).ready(function(){initNavTree('a00129.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00357.html">List of all members</a>  </div>
+<a href="a00359.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ssl_tls_record_layer Struct Reference</div>  </div>
+<div class="title">pcpp::ssl_tls_handshake_layer Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00213_source.html">SSLCommon.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00215_source.html">SSLCommon.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::ssl_tls_handshake_layer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00129.png" usemap="#pcpp::ssl_tls_handshake_layer_map" alt=""/>
+  <map id="pcpp::ssl_tls_handshake_layer_map" name="pcpp::ssl_tls_handshake_layer_map">
+<area href="a00128.html" alt="pcpp::ssl_tls_client_server_hello" shape="rect" coords="0,56,195,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a77fe184eb1e2f559b4ed1395cc015ab7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#a77fe184eb1e2f559b4ed1395cc015ab7">recordType</a></td></tr>
-<tr class="separator:a77fe184eb1e2f559b4ed1395cc015ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a7e87ce16dec3662286d0a94686de6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#ac3a7e87ce16dec3662286d0a94686de6">recordVersion</a></td></tr>
-<tr class="separator:ac3a7e87ce16dec3662286d0a94686de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0988dfc40b111270d4c447293218d1c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#ad0988dfc40b111270d4c447293218d1c">length</a></td></tr>
-<tr class="separator:ad0988dfc40b111270d4c447293218d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a456a315b65d5e41587b83972471398"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#a9a456a315b65d5e41587b83972471398">handshakeType</a></td></tr>
+<tr class="separator:a9a456a315b65d5e41587b83972471398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f81bbd5b177a96ee7bbe5d949086e0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#ac4f81bbd5b177a96ee7bbe5d949086e0">length1</a></td></tr>
+<tr class="separator:ac4f81bbd5b177a96ee7bbe5d949086e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bf28e3b67d3c500d8b72682e123538"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00129.html#aa0bf28e3b67d3c500d8b72682e123538">length2</a></td></tr>
+<tr class="separator:aa0bf28e3b67d3c500d8b72682e123538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The common part of all SSL/TLS messages </p>
+<div class="textblock"><p>The common part of all SSL/TLS handshake message types </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad0988dfc40b111270d4c447293218d1c"></a>
+<a class="anchor" id="a9a456a315b65d5e41587b83972471398"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::ssl_tls_record_layer::length</td>
+          <td class="memname">uint8_t pcpp::ssl_tls_handshake_layer::handshakeType</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Message (record) length in bytes </p>
+<p>Type of the handshake message (one of <a class="el" href="a00226.html#ae0fad0f4f978c2fec3de006703aac92c">SSLHandshakeType</a>) </p>
 
 </div>
 </div>
-<a class="anchor" id="a77fe184eb1e2f559b4ed1395cc015ab7"></a>
+<a class="anchor" id="ac4f81bbd5b177a96ee7bbe5d949086e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::ssl_tls_record_layer::recordType</td>
+          <td class="memname">uint8_t pcpp::ssl_tls_handshake_layer::length1</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Message (record) type (one of <a class="el" href="a00224.html#a8009288902cf5a1c0be461f28e82ab3b">SSLRecordType</a>) </p>
+<p>Length of the message. Length is 3-Byte long, This is the MSB byte </p>
 
 </div>
 </div>
-<a class="anchor" id="ac3a7e87ce16dec3662286d0a94686de6"></a>
+<a class="anchor" id="aa0bf28e3b67d3c500d8b72682e123538"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::ssl_tls_record_layer::recordVersion</td>
+          <td class="memname">uint16_t pcpp::ssl_tls_handshake_layer::length2</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Message (record) version (one of <a class="el" href="a00224.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a>) </p>
+<p>Length of the message. Length is 3-Byte long, This is the 2 LSB bytes </p>
 
 </div>
 </div>
@@ -172,8 +181,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00224.html">pcpp</a></li><li class="navelem"><a class="el" href="a00129.html">ssl_tls_record_layer</a></li>
-    <li class="footer">Generated on Fri Sep 8 2017 23:43:32 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00226.html">pcpp</a></li><li class="navelem"><a class="el" href="a00129.html">ssl_tls_handshake_layer</a></li>
+    <li class="footer">Generated on Thu Sep 14 2017 08:29:13 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

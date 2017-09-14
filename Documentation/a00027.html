@@ -108,18 +108,16 @@ $(document).ready(function(){initNavTree('a00027.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00256.html">List of all members</a>  </div>
+<a href="a00258.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::HeaderField Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00219_source.html">TextBasedProtocol.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00221_source.html">TextBasedProtocol.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1f8e6a7c5c07092a5f74777835a82ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ac1f8e6a7c5c07092a5f74777835a82ff">HeaderField</a> (std::string name, std::string value)</td></tr>
-<tr class="separator:ac1f8e6a7c5c07092a5f74777835a82ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc033ec04c1a31156bedf7273791ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#adfc033ec04c1a31156bedf7273791ed0">HeaderField</a> (const <a class="el" href="a00027.html">HeaderField</a> &amp;other)</td></tr>
 <tr class="separator:adfc033ec04c1a31156bedf7273791ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ff08cb95afb62d01caccf7edb5fd54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ad8ff08cb95afb62d01caccf7edb5fd54">getFieldSize</a> ()</td></tr>
@@ -136,39 +134,6 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for each text-based-protocol header field, e.g "Host", "Cookie", "Content-Length", "Via", "Call-ID", etc. Each field contains a name (e.g "Host") and a value (e.g "www.wikipedia.org"). The user can get and set both of them through dedicated methods. The separator between header fields is either CRLF ("\r\n\") or LF ("\n") in more rare cases, which means every <a class="el" href="a00027.html">HeaderField</a> instance is responsible for wrapping and parsing a header field from the previous CRLF (not inclusive) until the next CRLF/LF (inclusive) A special case is with the end of a header, meaning 2 consecutive CRLFs ("\r\n\r\n") or consecutive LFs ("\n\n"). PcapPlusPlus treats the first CRLF/LF as part of the last field in the header, and the second CRLF is an <a class="el" href="a00027.html">HeaderField</a> instance of its own which name and values are an empty string ("") or pcpp::PCPP_END_OF_TEXT_BASED_PROTOCOL_HEADER </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac1f8e6a7c5c07092a5f74777835a82ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::HeaderField::HeaderField </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor for creating a new <a class="el" href="a00027.html">HeaderField</a>, not from an existing packet. This constructor can be used to create header fields for a new message or to add new fields to a current message. The constructor that is used for parsing an existing packet is private and used by <a class="el" href="a00162.html">TextBasedProtocolMessage</a> in the process of parsing the header </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The field name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The field value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="adfc033ec04c1a31156bedf7273791ed0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -299,8 +264,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00224.html">pcpp</a></li><li class="navelem"><a class="el" href="a00027.html">HeaderField</a></li>
-    <li class="footer">Generated on Fri Sep 8 2017 23:43:31 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00226.html">pcpp</a></li><li class="navelem"><a class="el" href="a00027.html">HeaderField</a></li>
+    <li class="footer">Generated on Thu Sep 14 2017 08:29:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

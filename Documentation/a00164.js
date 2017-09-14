@@ -1,12 +1,7 @@
 var a00164 =
 [
-    [ "UdpLayer", "a00164.html#add55cec282d7f33152b83424ceb2710b", null ],
-    [ "UdpLayer", "a00164.html#ab14e8e5fc416560f055bae317aa3ebed", null ],
-    [ "calculateChecksum", "a00164.html#a98ae7478c27ae01ae6be6c887506e8f4", null ],
-    [ "computeCalculateFields", "a00164.html#ac0e7ba19ff47c38eb879105ca44b3188", null ],
-    [ "getHeaderLen", "a00164.html#a27ce2ea24679695f2e408c575b465fbb", null ],
-    [ "getOsiModelLayer", "a00164.html#a668d1ab5abdec0157536ea11ed52e562", null ],
-    [ "getUdpHeader", "a00164.html#a3962406394fce824369afc0471845b96", null ],
-    [ "parseNextLayer", "a00164.html#a35d4be6b1c091dfc743113c85ca8d596", null ],
-    [ "toString", "a00164.html#a6c45f5c9bb386d5231ee485eaad26d41", null ]
+    [ "headerChecksum", "a00164.html#af1a4b110e652e51a0f32d4e6c7740354", null ],
+    [ "length", "a00164.html#a68edfe2e8136453d69b7a457461f379d", null ],
+    [ "portDst", "a00164.html#ab2760968de55386f04539019f5a677e5", null ],
+    [ "portSrc", "a00164.html#a72a8d8ad99698271461762079d3758a9", null ]
 ];

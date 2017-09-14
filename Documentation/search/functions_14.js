@@ -19,6 +19,6 @@ var searchData=
   ['_7epfringdevice',['~PfRingDevice',['../a00101.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
   ['_7epointervector',['~PointerVector',['../a00103.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
   ['_7erawpacket',['~RawPacket',['../a00114.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
-  ['_7etcpreassembly',['~TcpReassembly',['../a00159.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
-  ['_7etcpstreamdata',['~TcpStreamData',['../a00160.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]]
+  ['_7etcpreassembly',['~TcpReassembly',['../a00160.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
+  ['_7etcpstreamdata',['~TcpStreamData',['../a00161.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]]
 ];

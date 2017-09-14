@@ -1,5 +1,4 @@
 var a00127 =
 [
-    [ "handshakeVersion", "a00127.html#aa7f3e7a1886a78bf528650958c167d72", null ],
-    [ "random", "a00127.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
+    [ "changeCipherSpec", "a00127.html#a188d68450805f01ee83f6660903fe2a3", null ]
 ];
