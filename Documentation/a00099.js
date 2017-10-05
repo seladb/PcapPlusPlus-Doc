@@ -1,15 +1,10 @@
 var a00099 =
 [
-    [ "ConstRemoteDeviceListIterator", "a00099.html#a9cfb21ecc08849c812b6ab6115071969", null ],
-    [ "RemoteDeviceListIterator", "a00099.html#a17e3146371657cb2bf427c345ef8701a", null ],
-    [ "begin", "a00099.html#af155f1d0d02b252b968f8bfc60bfa285", null ],
-    [ "begin", "a00099.html#a3e6eec736e7d88dc2a9dfe413089dbdf", null ],
-    [ "end", "a00099.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1", null ],
-    [ "end", "a00099.html#a4384231f937c67a346698218c6cc4818", null ],
-    [ "getRemoteDeviceByIP", "a00099.html#a95cc401d327933db99d1dd1cb639bcb7", null ],
-    [ "getRemoteDeviceByIP", "a00099.html#ad1c6086cfdceb29c6cc88e4ae19d78ab", null ],
-    [ "getRemoteDeviceByIP", "a00099.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4", null ],
-    [ "getRemoteDeviceByIP", "a00099.html#aafbda2e1b2c4ec3cc9a2d42aded206df", null ],
-    [ "getRemoteMachineIpAddress", "a00099.html#a6204e7c89ccce39c4aa3e355988f5ab6", null ],
-    [ "getRemoteMachinePort", "a00099.html#a1e1971b1f2432aa1837af7e2cbce17e2", null ]
+    [ "getDeviceType", "a00099.html#af5518431a35a7f94b6ee8551061eee18", null ],
+    [ "getMacAddress", "a00099.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
+    [ "getMtu", "a00099.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
+    [ "getRemoteMachineIpAddress", "a00099.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
+    [ "getRemoteMachinePort", "a00099.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
+    [ "getStatistics", "a00099.html#ac4f3b9ace451b38aa9930950dc695273", null ],
+    [ "open", "a00099.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
 ];

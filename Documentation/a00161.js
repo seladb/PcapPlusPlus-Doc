@@ -1,11 +1,18 @@
 var a00161 =
 [
-    [ "TcpStreamData", "a00161.html#acb6875699103b7d1967cb799f7501913", null ],
-    [ "TcpStreamData", "a00161.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
-    [ "~TcpStreamData", "a00161.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
-    [ "TcpStreamData", "a00161.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
-    [ "getConnectionData", "a00161.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
-    [ "getData", "a00161.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
-    [ "getDataLength", "a00161.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
-    [ "operator=", "a00161.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
+    [ "OnTcpConnectionEnd", "a00161.html#abbcb38ac950666833df4084f80beb056", null ],
+    [ "OnTcpConnectionStart", "a00161.html#abda8219de68412e0ce7f7116601243a8", null ],
+    [ "OnTcpMessageReady", "a00161.html#ab6698eb002363dc18e664f15418fc1eb", null ],
+    [ "ConnectionEndReason", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0", [
+      [ "TcpReassemblyConnectionClosedByFIN_RST", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133", null ],
+      [ "TcpReassemblyConnectionClosedManually", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9", null ]
+    ] ],
+    [ "TcpReassembly", "a00161.html#a49281471fb379fdae6c8df5ed7844c92", null ],
+    [ "~TcpReassembly", "a00161.html#aa1797ebded60f0637ae95223653b9f78", null ],
+    [ "closeAllConnections", "a00161.html#acf940b05f75a129f595301012be46005", null ],
+    [ "closeConnection", "a00161.html#ae173fc16a427b5e46b1a5417de19d735", null ],
+    [ "getConnectionInformation", "a00161.html#af05c80624748539e2686d8a41d2d8219", null ],
+    [ "isConnectionOpen", "a00161.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
+    [ "ReassemblePacket", "a00161.html#a56719c498f49cc2e2e6177e705109fcf", null ],
+    [ "ReassemblePacket", "a00161.html#a62d6623f39621c475e5619366512889a", null ]
 ];

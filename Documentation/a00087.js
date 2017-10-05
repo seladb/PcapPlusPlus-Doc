@@ -1,13 +1,6 @@
 var a00087 =
 [
-    [ "NullLoopbackLayer", "a00087.html#a3e7c188f2eabfc769fa1f0fa666f01ab", null ],
-    [ "NullLoopbackLayer", "a00087.html#a824ecde5c3e2f564ab50d05c0b687496", null ],
-    [ "~NullLoopbackLayer", "a00087.html#af2da77d44b862d1f7e1b809ea6db35b4", null ],
-    [ "computeCalculateFields", "a00087.html#af569f6eae1c3f3638cac65729fda7ead", null ],
-    [ "getFamily", "a00087.html#a82c2b5ee534360deb829789f8fc6bbdb", null ],
-    [ "getHeaderLen", "a00087.html#abb777e83866785f6884b9073eee28602", null ],
-    [ "getOsiModelLayer", "a00087.html#a422ffca2ade943bab40c462ff64dcaf4", null ],
-    [ "parseNextLayer", "a00087.html#a6cac977c2a2227ff17b682a30587793a", null ],
-    [ "setFamily", "a00087.html#a858718a72b0563f413b8a545d2f6b9d4", null ],
-    [ "toString", "a00087.html#a60754e5840948f08bfb2860fdceb7431", null ]
+    [ "NotFilter", "a00087.html#af61317b37c81544b370424bf490371ca", null ],
+    [ "parseToString", "a00087.html#a27559a09376420b6b8466a1819b42509", null ],
+    [ "setFilter", "a00087.html#abb53fe1af021e8638c66b0b57d36f6dc", null ]
 ];

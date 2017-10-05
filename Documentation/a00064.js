@@ -1,11 +1,15 @@
 var a00064 =
 [
-    [ "flowLabel", "a00064.html#a8d0d381008c855e00afd32403e4f946b", null ],
-    [ "hopLimit", "a00064.html#a9734da4d88f3f3938f12e2c71b4ac855", null ],
-    [ "ipDst", "a00064.html#af9eaa28de54512c88c43a95ed6c2a846", null ],
-    [ "ipSrc", "a00064.html#ad49c20046e6d9a6c3526f353352f91a3", null ],
-    [ "ipVersion", "a00064.html#aee7025c3316d0ecbb3db29bfdecb1e25", null ],
-    [ "nextHeader", "a00064.html#aee8e571549e08804cbf245c37eed7cfa", null ],
-    [ "payloadLength", "a00064.html#ae5849394b92e6a7d3cd0b2972e30391e", null ],
-    [ "trafficClass", "a00064.html#a613b6372ccae91487cc5f3a7f14aed94", null ]
+    [ "IgmpV3ReportLayer", "a00064.html#a4a4471d38de1ca94ed40daa98ba887c8", null ],
+    [ "IgmpV3ReportLayer", "a00064.html#aca14573c71b42df13e3beec55d151aed", null ],
+    [ "addGroupRecord", "a00064.html#a16965c0755e315db8c53cd91c38ac8a6", null ],
+    [ "addGroupRecordAtIndex", "a00064.html#a1794a460a7850f676a2fafa1ff57f70d", null ],
+    [ "computeCalculateFields", "a00064.html#a4e41980f2b4d98c30f4caffea255b3af", null ],
+    [ "getFirstGroupRecord", "a00064.html#a54518fc6655b31f041fbc570e255fc84", null ],
+    [ "getGroupRecordCount", "a00064.html#a520b1eb367ae67b472e6cc994da588e8", null ],
+    [ "getHeaderLen", "a00064.html#a69bf1bc34b4d5b2660e8a55e96abc815", null ],
+    [ "getNextGroupRecord", "a00064.html#a8964c61b90952f84408a7bfcffd22ca9", null ],
+    [ "getReportHeader", "a00064.html#a48924861b16e9282e91c049797f0f377", null ],
+    [ "removeAllGroupRecords", "a00064.html#a949a8ed3a9091b41d03e17eef056ec07", null ],
+    [ "removeGroupRecordAtIndex", "a00064.html#a6179870d8386e1761ad9233a345e4dd9", null ]
 ];

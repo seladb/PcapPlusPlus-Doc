@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SdpLayer.h File Reference</title>
+<title>PcapPlusPlus: ProtocolType.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,266 +105,92 @@ $(document).ready(function(){initNavTree('a00212.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">SdpLayer.h File Reference</div>  </div>
+<div class="title">ProtocolType.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00183_source.html">IpAddress.h</a>&quot;</code><br />
-<code>#include &quot;TextBasedProtocol.h&quot;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-</div>
+
 <p><a href="a00212_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00116.html">pcpp::SdpLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00226"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">pcpp</a></td></tr>
-<tr class="memdesc:a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00228"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html">pcpp</a></td></tr>
+<tr class="memdesc:a00228"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a8be76a4922f6098201e92850e913ddc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a8be76a4922f6098201e92850e913ddc8">PCPP_SDP_PROTOCOL_VERSION_FIELD</a>&#160;&#160;&#160;&quot;v&quot;</td></tr>
-<tr class="separator:a8be76a4922f6098201e92850e913ddc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976f9f075cfb24ce0ddaf80f404efe42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a976f9f075cfb24ce0ddaf80f404efe42">PCPP_SDP_ORIGINATOR_FIELD</a>&#160;&#160;&#160;&quot;o&quot;</td></tr>
-<tr class="separator:a976f9f075cfb24ce0ddaf80f404efe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a766206ef6d418e2f5b8f06c392881611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a766206ef6d418e2f5b8f06c392881611">PCPP_SDP_SESSION_NAME_FIELD</a>&#160;&#160;&#160;&quot;s&quot;</td></tr>
-<tr class="separator:a766206ef6d418e2f5b8f06c392881611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b654364cc129e8a8a09d8336cee763"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a10b654364cc129e8a8a09d8336cee763">PCPP_SDP_INFO_FIELD</a>&#160;&#160;&#160;&quot;i&quot;</td></tr>
-<tr class="separator:a10b654364cc129e8a8a09d8336cee763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfcd66fe312890f3f7ff44e98ec909f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a0cfcd66fe312890f3f7ff44e98ec909f">PCPP_SDP_URI_FIELD</a>&#160;&#160;&#160;&quot;u&quot;</td></tr>
-<tr class="separator:a0cfcd66fe312890f3f7ff44e98ec909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a64a6604b467c377ec83a69c1efa8a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a5a64a6604b467c377ec83a69c1efa8a9">PCPP_SDP_EMAIL_FIELD</a>&#160;&#160;&#160;&quot;e&quot;</td></tr>
-<tr class="separator:a5a64a6604b467c377ec83a69c1efa8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2945d31c61f0c871400a2ebbc68d3a93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a2945d31c61f0c871400a2ebbc68d3a93">PCPP_SDP_PHONE_FIELD</a>&#160;&#160;&#160;&quot;p&quot;</td></tr>
-<tr class="separator:a2945d31c61f0c871400a2ebbc68d3a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c55925c55aa40dbee6c3e98fb5611c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a37c55925c55aa40dbee6c3e98fb5611c">PCPP_SDP_CONNECTION_INFO_FIELD</a>&#160;&#160;&#160;&quot;c&quot;</td></tr>
-<tr class="separator:a37c55925c55aa40dbee6c3e98fb5611c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7342cb29cdbf5457a14d26182c274b4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a7342cb29cdbf5457a14d26182c274b4e">PCPP_SDP_BANDWIDTH_FIELD</a>&#160;&#160;&#160;&quot;b&quot;</td></tr>
-<tr class="separator:a7342cb29cdbf5457a14d26182c274b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a436559034ada506e5c3a5abc0b35899b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a436559034ada506e5c3a5abc0b35899b">PCPP_SDP_TIME_FIELD</a>&#160;&#160;&#160;&quot;t&quot;</td></tr>
-<tr class="separator:a436559034ada506e5c3a5abc0b35899b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27c33e00d5080184880cd3b5dc8f222"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#ad27c33e00d5080184880cd3b5dc8f222">PCPP_SDP_REPEAT_TIMES_FIELD</a>&#160;&#160;&#160;&quot;r&quot;</td></tr>
-<tr class="separator:ad27c33e00d5080184880cd3b5dc8f222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc61e36c79f08af7bd78403817dfc26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#addc61e36c79f08af7bd78403817dfc26">PCPP_SDP_TIME_ZONE_FIELD</a>&#160;&#160;&#160;&quot;z&quot;</td></tr>
-<tr class="separator:addc61e36c79f08af7bd78403817dfc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0ebed21e39e533c37a554919f3e597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a4a0ebed21e39e533c37a554919f3e597">PCPP_SDP_ENCRYPTION_KEY_FIELD</a>&#160;&#160;&#160;&quot;k&quot;</td></tr>
-<tr class="separator:a4a0ebed21e39e533c37a554919f3e597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916b64da7dfa7de9a44d9d0650e7e34d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#a916b64da7dfa7de9a44d9d0650e7e34d">PCPP_SDP_MEDIA_ATTRIBUTE_FIELD</a>&#160;&#160;&#160;&quot;a&quot;</td></tr>
-<tr class="separator:a916b64da7dfa7de9a44d9d0650e7e34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8edc312ae073f11b132152adf6a2908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html#ad8edc312ae073f11b132152adf6a2908">PCPP_SDP_MEDIA_NAME_FIELD</a>&#160;&#160;&#160;&quot;m&quot;</td></tr>
-<tr class="separator:ad8edc312ae073f11b132152adf6a2908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a> { <br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a> = 0x00, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a> = 0x01, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> = 0x02, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">pcpp::IP</a> = 0x06, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">pcpp::TCP</a> = 0x08, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a> = 0x10, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">pcpp::HTTPRequest</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">pcpp::HTTPResponse</a> = 0x40, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">pcpp::HTTP</a> = 0x20 | 0x40, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">pcpp::ARP</a> = 0x80, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a> = 0x100, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">pcpp::ICMP</a> = 0x200, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">pcpp::PPPoESession</a> = 0x400, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">pcpp::PPPoEDiscovery</a> = 0x800, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">pcpp::PPPoE</a> = 0x400 | 0x800, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">pcpp::DNS</a> = 0x1000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a> = 0x2000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">pcpp::GREv0</a> = 0x4000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">pcpp::GREv1</a> = 0x8000, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">pcpp::GRE</a> = 0x4000 | 0x8000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">pcpp::PPP_PPTP</a> = 0x10000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">pcpp::SSL</a> = 0x20000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a> = 0x40000, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">pcpp::DHCP</a> = 0x80000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a> = 0x100000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">pcpp::IGMP</a> = 0xE00000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">pcpp::IGMPv1</a> = 0x200000, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">pcpp::IGMPv2</a> = 0x400000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">pcpp::IGMPv3</a> = 0x800000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a> = 0x1000000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">pcpp::VXLAN</a> = 0x2000000, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba4d8074af9a6b5fd0257f755cebacac9c">pcpp::SIPRequest</a> = 0x4000000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba98a84222703ef26141e127d06f3e6ddc">pcpp::SIPResponse</a> = 0x8000000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba69e4ca4f73af14bbb8aaf9a14fb1ad48">pcpp::SIP</a> = 0x4000000 | 0x8000000, 
+<a class="el" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6eba013e3d285a5d960ab902775e0cb6b9c7">pcpp::SDP</a> = 0x10000000
+<br />
+ }</td></tr>
+<tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e2ee6a9dc68797612cf8dc38461025"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a> { <br />
+&#160;&#160;<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">pcpp::OsiModelPhysicalLayer</a> = 1, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a> = 2, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">pcpp::OsiModelNetworkLayer</a> = 3, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">pcpp::OsiModelTransportLayer</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a> = 5, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">pcpp::OsiModelPresentationLayer</a> = 6, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a> = 7, 
+<a class="el" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a69e2ee6a9dc68797612cf8dc38461025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a7342cb29cdbf5457a14d26182c274b4e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_BANDWIDTH_FIELD&#160;&#160;&#160;&quot;b&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Bandwidth information (b) </p>
-
-</div>
-</div>
-<a class="anchor" id="a37c55925c55aa40dbee6c3e98fb5611c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_CONNECTION_INFO_FIELD&#160;&#160;&#160;&quot;c&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Connection information (c) </p>
-
-</div>
-</div>
-<a class="anchor" id="a5a64a6604b467c377ec83a69c1efa8a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_EMAIL_FIELD&#160;&#160;&#160;&quot;e&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Email address with optional name of contacts (e) </p>
-
-</div>
-</div>
-<a class="anchor" id="a4a0ebed21e39e533c37a554919f3e597"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_ENCRYPTION_KEY_FIELD&#160;&#160;&#160;&quot;k&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Encryption key (k) </p>
-
-</div>
-</div>
-<a class="anchor" id="a10b654364cc129e8a8a09d8336cee763"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_INFO_FIELD&#160;&#160;&#160;&quot;i&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Session title, media title or short information (i) </p>
-
-</div>
-</div>
-<a class="anchor" id="a916b64da7dfa7de9a44d9d0650e7e34d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_MEDIA_ATTRIBUTE_FIELD&#160;&#160;&#160;&quot;a&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Media attribute (a) </p>
-
-</div>
-</div>
-<a class="anchor" id="ad8edc312ae073f11b132152adf6a2908"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_MEDIA_NAME_FIELD&#160;&#160;&#160;&quot;m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Media name and transport address (m) </p>
-
-</div>
-</div>
-<a class="anchor" id="a976f9f075cfb24ce0ddaf80f404efe42"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_ORIGINATOR_FIELD&#160;&#160;&#160;&quot;o&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Originator and session identifier (o) </p>
-
-</div>
-</div>
-<a class="anchor" id="a2945d31c61f0c871400a2ebbc68d3a93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_PHONE_FIELD&#160;&#160;&#160;&quot;p&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Phone number with optional name of contacts (p) </p>
-
-</div>
-</div>
-<a class="anchor" id="a8be76a4922f6098201e92850e913ddc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_PROTOCOL_VERSION_FIELD&#160;&#160;&#160;&quot;v&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Protocol version (v) </p>
-
-</div>
-</div>
-<a class="anchor" id="ad27c33e00d5080184880cd3b5dc8f222"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_REPEAT_TIMES_FIELD&#160;&#160;&#160;&quot;r&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Repeat times (r) </p>
-
-</div>
-</div>
-<a class="anchor" id="a766206ef6d418e2f5b8f06c392881611"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_SESSION_NAME_FIELD&#160;&#160;&#160;&quot;s&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Session name (s) </p>
-
-</div>
-</div>
-<a class="anchor" id="a436559034ada506e5c3a5abc0b35899b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_TIME_FIELD&#160;&#160;&#160;&quot;t&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Time the session is active (t) </p>
-
-</div>
-</div>
-<a class="anchor" id="addc61e36c79f08af7bd78403817dfc26"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_TIME_ZONE_FIELD&#160;&#160;&#160;&quot;z&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Time zone adjustments (z) </p>
-
-</div>
-</div>
-<a class="anchor" id="a0cfcd66fe312890f3f7ff44e98ec909f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_SDP_URI_FIELD&#160;&#160;&#160;&quot;u&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>URI of description (u) </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00212.html">SdpLayer.h</a></li>
-    <li class="footer">Generated on Thu Sep 14 2017 08:32:51 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00212.html">ProtocolType.h</a></li>
+    <li class="footer">Generated on Fri Oct 6 2017 00:25:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
