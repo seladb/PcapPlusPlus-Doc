@@ -203,18 +203,18 @@ httpRequestLayer-&gt;removeField(PCPP_HTTP_COOKIE_FIELD);
 pcpp::HttpField* xForwardedForField = httpRequestLayer-&gt;insertField(httpRequestLayer-&gt;getFieldByName(PCPP_HTTP_HOST_FIELD), "X-Forwarded-For", "1.1.1.1");
 // add cache-control field
 httpRequestLayer-&gt;insertField(xForwardedForField, "Cache-Control", "max-age=0");</code></pre>
-            <p>We already discussed the highlights of the <code>HttpLayer</code> API in the 
-              <a href="tutorial_packet_parsing.html">Packet parsing</a> tutorial so we 
-              won't repeat all of it again. But as you can see the 
+            <p>We already discussed the highlights of the <code>HttpLayer</code> API in the
+              <a href="tutorial_packet_parsing.html">Packet parsing</a> tutorial so we
+              won't repeat all of it again. But as you can see the
               API provides setters for all of the relevant data:</p>
             <ul>
-              <li><code>HttpRequestFirstLine</code> exposes is a setter for the HTTP method <code>setMethod()</code> 
+              <li><code>HttpRequestFirstLine</code> exposes is a setter for the HTTP method <code>setMethod()</code>
                 where we change it to <code>TRACE</code>. Similar methods exist for the URI and version
               </li>
-              <li>When retrieving HTTP fields, the <code>HttpField</code> class exposes a method of <code>setFieldValue()</code> 
+              <li>When retrieving HTTP fields, the <code>HttpField</code> class exposes a method of <code>setFieldValue()</code>
                 for setting the field value (demonstrated above for <code>"Host"</code> and <code>"Referer"</code> fields)
               </li>
-              <li><code>HttpLayer</code> exposes methods for adding new fields: <code>insertField()</code> and <code>addField()</code>, 
+              <li><code>HttpLayer</code> exposes methods for adding new fields: <code>insertField()</code> and <code>addField()</code>,
                 and methods for removing existing fields: <code>removeField()</code>. Here we demonstrated how to add <code>"X-Forwarded-For"
                 </code> and <code>"Cache-Control"</code> header fields (and set their values) and how to remove the <code>"Cookie"</code> header field
               </li>
@@ -257,7 +257,7 @@ pcpp::IPv4Layer newIPLayer(pcpp::IPv4Address(std::string("192.168.1.1")), pcpp::
 newIPLayer.getIPv4Header()-&gt;ipId = htons(2000);
 newIPLayer.getIPv4Header()-&gt;timeToLive = 64;</code>
             </pre>
-            <p>Here we created a new instance of the <code>IPv4Layer</code> and gave it the necessary parameters which are source and dest IP addresses (both are instances of the <code>IPv4Address </code>class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the 
+            <p>Here we created a new instance of the <code>IPv4Layer</code> and gave it the necessary parameters which are source and dest IP addresses (both are instances of the <code>IPv4Address </code>class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the
               <a href="#packet_editing">Packet editing</a> part: call the <code>getIPv4Header()</code> method to get an instance of the <code>iphdr*</code> struct (which is actually a pointer to the packet raw data cast to <code>iphdr*</code>) and set the IP ID and TTL values. Since IP ID is 2-bytes long we use <code>htons()</code> to convert from host to network order.</p>
             <p>Now let's move on to the third layer - <strong>UDP</strong>:</p>
             <pre><code class="cpp">// create a new UDP layer
@@ -307,7 +307,7 @@ writer2.close();</code>
                 latest PcapPlusPlus release</a>. Then follow these instruction,
               according to your platform:</p>
             <ul>
-              <li>Linux and Mac OSX - either change the <code>Makefile.non_windows</code>
+              <li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code>Makefile.non_windows</code>
                 file name to <code>Makefile</code> and run <code>make all</code>,
                 or run <code>make -f Makefile.non_windows all</code></li>
               <li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code>
