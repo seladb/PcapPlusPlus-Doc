@@ -250,11 +250,13 @@ $(document).ready(function(){initNavTree('a00202_source.html','');});
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00094.html#a68f87416b25abe3b625f0f9993bb7e1b">getStatistics</a>(pcap_stat&amp; stats);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00094.html#a281f2cd6062791c68ecdd82384f751f8">open</a>(<a class="code" href="a00094.html#a2381e7f053285090f0f9620bcbd8f0f3">DeviceMode</a> mode);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    };</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        pcap_t* doOpen(<a class="code" href="a00094.html#a2381e7f053285090f0f9620bcbd8f0f3">DeviceMode</a> mode);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    };</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a00094_html_ae479987f8faf52328061e18af2addcc5"><div class="ttname"><a href="a00094.html#ae479987f8faf52328061e18af2addcc5">pcpp::PcapLiveDevice::startCaptureBlockingMode</a></div><div class="ttdeci">virtual int startCaptureBlockingMode(OnPacketArrivesStopBlocking onPacketArrives, void *userCookie, int timeout)</div></div>
 <div class="ttc" id="a00094_html_a1bfa0fc4bc0374aaf9f11333a9904110"><div class="ttname"><a href="a00094.html#a1bfa0fc4bc0374aaf9f11333a9904110">pcpp::PcapLiveDevice::getMacAddress</a></div><div class="ttdeci">virtual MacAddress getMacAddress()</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:183</div></div>
 <div class="ttc" id="a00115_html"><div class="ttname"><a href="a00115.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
@@ -302,7 +304,7 @@ $(document).ready(function(){initNavTree('a00202_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00202.html">PcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Fri Oct 6 2017 00:25:41 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
