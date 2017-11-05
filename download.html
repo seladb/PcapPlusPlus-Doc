@@ -5,7 +5,18 @@ section: download
 ---
 <h1>Downloading & Building PcapPlusPlus</h1>
 
-<h2>Download source code</h2>
+<h2>Table Of Contents</h2>
+<ul>
+	<li><a href="#source_code">Download Source Code</a></li>
+  <li><a href="#binaries">Download Compiled Binaries</a></li>
+  <li><a href="#package_content">Package Content</a></li>
+  <li><a href="#vs2015">Building PcapPlusPlus - Windows (Visual Studio 2015)</a></li>
+  <li><a href="#mingw32_mingww64">Building PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</a></li>
+  <li><a href="#linux">Building PcapPlusPlus - Linux</a></li>
+  <li><a href="#macosx">Building PcapPlusPlus - MacOS</a></li>
+  <li><a href="#testing">Simple Testing</a></li>
+</ul>
+<h2 id="source_code">Download Source Code</h2>
 <ul>
   <li>In <a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a> format</li>
   <li>In <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a> format</li>
@@ -13,13 +24,13 @@ section: download
   <li>Project home on GitHub: <a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></li>
 </ul>
 
-<h2>Download compiled binaries</h2>
+<h2 id="binaries">Download Compiled Binaries</h2>
 <p>I'll be releasing compiled binaries for several platforms once in a while. You can find them in the <a href="https://github.com/seladb/PcapPlusPlus/releases">releases</a> section in GitHub project home</p>
 <p>Currently the latest release is <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">February 2017 Release (17.02)</a>
 <!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
 </p>
 
-<h2>Package content</h2>
+<h2 id="package_content">Package Content</h2>
 <p>The PcapPlusPlus package contains several libraries, unit-tests and example utilities:</p>
 <ul>
   <li><strong><i>Packet++</i></strong> - a library for parsing, creating and editing packets of various <a href="index.html#supoorted-protocols">supported protocols</a>. This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc.</li>
@@ -34,7 +45,7 @@ section: download
   </li>
 </ul>
 
-<h2 id="vs2015">Compiling PcapPlusPlus - Windows (Visual Studio 2015)</h2>
+<h2 id="vs2015">Building PcapPlusPlus - Windows (Visual Studio 2015)</h2>
 <h6><strong>Prerequisites</strong></h6>
 <p>In order to build PcapPlusPlus on Windows with Visual Studio 2015 you need the following components:</p>
 <ol>
@@ -54,7 +65,7 @@ section: download
   <li>All solutions support both 32-bit <strong>(x86)</strong> and 64-bit <strong>(x64)</strong> configurations as well as <strong>Debug</strong> and <strong>Release</strong> modes. So actually 4 modes are supported: x86|Debug, x86|Release, x64|Debug, x64|Release</li>
 </ol>
 
-<h2 id="mingw32_mingww64">Compiling PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</h2>
+<h2 id="mingw32_mingww64">Building PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</h2>
 <h6><strong>Prerequisites</strong></h6>
 <p>In order to compile PcapPlusPlus on Windows using MinGW32 or MinGW-w64 you need the following components:</p>
 <ol>
@@ -96,7 +107,7 @@ section: download
   <li>After compilation you can find the libraries, examples, header files and helpful makefiles under the <strong>Dist\</strong> directory</li>
 </ol>
 
-<h2 id="linux">Compiling PcapPlusPlus - Linux</h2>
+<h2 id="linux">Building PcapPlusPlus - Linux</h2>
 <h6><strong>Prerequisites</strong></h6>
 <p>In order to compile PcapPlusPlus on Linux you need the following components:</p>
 <ol>
@@ -113,7 +124,7 @@ section: download
   <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="cpp">sudo make install</code></pre></li>
 </ol>
 
-<h2 id="macosx">Compiling PcapPlusPlus - Mac OS X</h2>
+<h2 id="macosx">Building PcapPlusPlus - MacOS</h2>
 <h6><strong>Prerequisites</strong></h6>
 <ol>
   <li>In order to compile PacpPlusPlus on Mac OS X you need to make sure <a href="https://developer.apple.com/xcode/">Xcode</a> is installed. Xcode contains all prerequisites required for PcapPlusPlus:
@@ -131,7 +142,7 @@ section: download
   <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="cpp">sudo make install</code></pre></li>
 </ol>
 
-<h2>Simple testing</h2>
+<h2 id="testing">Simple Testing</h2>
 <p>To ensure configuration and compilation went smoothly, you can run the unit-test applications for both Packet++ and Pcap++:</p>
 <pre>
   <code class="cpp">seladb@seladb:~/home/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test
