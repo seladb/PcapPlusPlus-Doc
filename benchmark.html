@@ -7,7 +7,7 @@ section: benchmark
 <script type="text/javascript">
 		google.load('visualization', '1.0', {'packages':['corechart']});
 		google.setOnLoadCallback(draw_charts);
-		
+
 		function find_upper_bound(input) {
 			maximum = 0;
 			for(i = 0; i < input.length; ++i) {
@@ -17,14 +17,14 @@ section: benchmark
 			}
 			return maximum * 1.05;
 		}
-		
+
 		function convert_to_seconds(input) {
 			for(i = 0; i < input.length; ++i) {
 				input[i][1] = (input[i][1] / 1000);
 			}
 			return input;
 		}
-		
+
 		function draw_graphic(name, output_div, input) {
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Library');
@@ -45,7 +45,7 @@ section: benchmark
 				chartArea: {
 					left : 0
 				},
-				vAxis: { 
+				vAxis: {
 					viewWindowMode: 'explicit',
 					viewWindow:{
 						max:find_upper_bound(input),
@@ -58,27 +58,34 @@ section: benchmark
 			var chart = new google.visualization.ColumnChart(
 				document.getElementById(output_div)
 			);
-			chart.draw(data, options);                
+			chart.draw(data, options);
 		}
 
 		function draw_charts() {
-			draw_graphic('Graphic view', 'tcp_no_options', [['libcrafter', 21627],['PcapPlusPlus', 661],['libtins', 844],['libpcap', 208]]);
-			draw_graphic('Graphic view', 'tcp_with_options', [['libcrafter', 35142],['PcapPlusPlus', 869],['libtins', 1862],['libpcap', 252]]);
-			draw_graphic('Graphic view', 'dns', [['libcrafter', 23289],['PcapPlusPlus', 976],['libtins', 1109],['libpcap', 76]]);
+			draw_graphic('Graphic view', 'tcp_no_options', [['libcrafter', 14401],['PcapPlusPlus', 327],['libtins', 385],['libpcap', 201]]);
+			draw_graphic('Graphic view', 'tcp_with_options', [['libcrafter', 24176],['PcapPlusPlus', 335],['libtins', 508],['libpcap', 154]]);
+			draw_graphic('Graphic view', 'dns', [['libcrafter', 15923],['PcapPlusPlus', 425],['libtins', 466],['libpcap', 50]]);
 		}
-</script>  
+</script>
 <h1>Benchmarks</h1>
 <p>I used <a href="https://github.com/mfontanini/packet-capture-benchmarks">Matias Fontanini's packet-capture-benchmarks project</a> to compare the performance of PcapPlusPlus with other similar C++ libraries (libtins and libcrafter)</p>
 <h2>Testing environment</h2>
 <p>I ran all 3 benchmarks provided in packet-capture-benchmarks on the following environment:</p>
 <ul>
-  <li>Linux Ubuntu 12.04 32-bit running as a VirtualBox VM</li>
-  <li>Compiler is GCC 4.6.3</li>
-  <li>Host platform is a dual-core Intel Core i5 760 2.8GHz with 4GB RAM system running Windows 7 32-bit</li>
+  <li>Linux Ubuntu 16.04 64-bit running as a VirtualBox VM</li>
+  <li>Compiler is GCC 5.4.0</li>
+  <li>Host platform is a dual-core Intel Core i5 760 2.8GHz with 8GB RAM system running Windows 7 64-bit</li>
 </ul>
 <p>The benchmark application can be found in <a href="examples.html#benchmark">PcapPlusPlus examples</a></p>
 <h2>Tested libraries</h2>
-<p>I decided to compare PcapPlusPlus only to similar C++ libraries such as <a href="http://libtins.github.io/">libtins</a> and <a href="https://code.google.com/archive/p/libcrafter/">libcrafter</a>. That's because Python or Java libraries cannot compete with native code libraries in terms of performance. Tests results are as follows:</p>
+<p>I decided to compare PcapPlusPlus only to similar C++ libraries such as <a href="http://libtins.github.io/">libtins</a> and <a href="https://code.google.com/archive/p/libcrafter/">libcrafter</a>. That's because Python or Java libraries cannot compete with native code libraries in terms of performance. I used the latest versions available at the time of the test (Nov 25 2017):</p>
+<ul>
+  <li>libpcap 1.8.1</li>
+  <li>PcapPlusPlus - <a href="https://github.com/seladb/PcapPlusPlus/tree/f6e04a747679d3923687fe4c964c230cd46b0e98">commit f6e04a7</a></li>
+  <li>libtins - <a href="https://github.com/mfontanini/libtins/tree/f4635a696e7f13d946c31e1ff2599e900f804d47">commit f4635a6</a></li>
+	<li>libcrafter - <a href="https://github.com/pellegre/libcrafter/tree/3db70ab6fd62ade25de7328aaf8e9ba92696c92e">commit 3db70ab</a></li>
+</ul>
+<p>Tests results are as follows:</p>
 <h2>Benchmark #1 - Interpretting TCP</h2>
 <table>
   <thead>
@@ -91,29 +98,29 @@ section: benchmark
   <tbody>
 	<tr>
 	  <td>libpcap</td>
-	  <td align="right">0.208</td>
-	  <td align="right">2403846</td>
+	  <td align="right">0.201</td>
+	  <td align="right">2487562</td>
 	</tr>
 	<tr>
 	  <td><strong>PcapPlusPlus</strong></td>
-	  <td align="right"><strong>0.661</strong></td>
-	  <td align="right"><strong>756429</strong></td>
+	  <td align="right"><strong>0.327</strong></td>
+	  <td align="right"><strong>1529051</strong></td>
 	</tr>
 	<tr>
 	  <td>libtins</td>
-	  <td align="right">0.844</td>
-	  <td align="right">592417</td>
+	  <td align="right">0.385</td>
+	  <td align="right">1298701</td>
 	</tr>
 	<tr>
 	  <td>libcrafter</td>
-	  <td align="right">21.627</td>
-	  <td align="right">23119</td>
+	  <td align="right">14.401</td>
+	  <td align="right">34719</td>
 	</tr>
   </tbody>
 </table>
 <div id="tcp_no_options"></div>
 <hr>
-<p>As you can see PcapPlusPlus is <strong>~27% faster</strong> than libtins and <strong>~x32 faster</strong> than libcrafter</p>
+<p>As you can see PcapPlusPlus is <strong>~15% faster</strong> than libtins and <strong>~x44 faster</strong> than libcrafter</p>
 
 <h2>Benchmark #2 - Interpretting TCP + TCP Options</h2>
 <table>
@@ -127,29 +134,29 @@ section: benchmark
   <tbody>
 	<tr>
 	  <td>libpcap</td>
-	  <td align="right">0.252</td>
-	  <td align="right">1984126</td>
+	  <td align="right">0.154</td>
+	  <td align="right">3246753</td>
 	</tr>
 	<tr>
 	  <td><strong>PcapPlusPlus</strong></td>
-	  <td align="right"><strong>0.869</strong></td>
-	  <td align="right"><strong>575373</strong></td>
+	  <td align="right"><strong>0.335</strong></td>
+	  <td align="right"><strong>1492537</strong></td>
 	</tr>
 	<tr>
 	  <td>libtins</td>
-	  <td align="right">1.862</td>
-	  <td align="right">268528</td>
+	  <td align="right">0.508</td>
+	  <td align="right">984251</td>
 	</tr>
 	<tr>
 	  <td>libcrafter</td>
-	  <td align="right">35.142</td>
-	  <td align="right">14227</td>
+	  <td align="right">24.176</td>
+	  <td align="right">20681</td>
 	</tr>
   </tbody>
 </table>
 <div id="tcp_with_options"></div>
 <hr>
-<p>As you can see PcapPlusPlus is <strong>~x2 faster</strong> than libtins and <strong>~x40 faster</strong> than libcrafter</p>
+<p>As you can see PcapPlusPlus is <strong>~35% faster</strong> than libtins and <strong>~x72 faster</strong> than libcrafter</p>
 
 <h2>Benchmark #3 - Interpretting DNS</h2>
 <table>
@@ -163,26 +170,26 @@ section: benchmark
   <tbody>
 	<tr>
 	  <td>libpcap</td>
-	  <td align="right">0.076</td>
-	  <td align="right">6578947</td>
+	  <td align="right">0.050</td>
+	  <td align="right">10000000</td>
 	</tr>
 	<tr>
 	  <td><strong>PcapPlusPlus</strong></td>
-	  <td align="right"><strong>0.976</strong></td>
-	  <td align="right"><strong>512295</strong></td>
+	  <td align="right"><strong>0.425</strong></td>
+	  <td align="right"><strong>1176470</strong></td>
 	</tr>
 	<tr>
 	  <td>libtins</td>
-	  <td align="right">1.109</td>
-	  <td align="right">450856</td>
+	  <td align="right">0.466</td>
+	  <td align="right">1072961</td>
 	</tr>
 	<tr>
 	  <td>libcrafter</td>
-	  <td align="right">23.289</td>
-	  <td align="right">21469</td>
+	  <td align="right">15.923</td>
+	  <td align="right">31401</td>
 	</tr>
   </tbody>
 </table>
 <div id="dns"></div>
 <hr>
-<p>As you can see PcapPlusPlus is <strong>~13% faster</strong> than libtins and <strong>~x24 faster</strong> than libcrafter</p>
+<p>As you can see PcapPlusPlus is <strong>~8% faster</strong> than libtins and <strong>~x37 faster</strong> than libcrafter</p>
