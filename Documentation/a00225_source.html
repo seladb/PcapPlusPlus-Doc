@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: VlanLayer.h Source File</title>
+<title>PcapPlusPlus: TcpReassembly.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,113 +105,194 @@ $(document).ready(function(){initNavTree('a00225_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">VlanLayer.h</div>  </div>
+<div class="title">TcpReassembly.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00225.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_VLAN_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_VLAN_LAYER</span></div>
+<a href="a00225.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_TCP_REASSEMBLY</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_TCP_REASSEMBLY</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00188.html">Layer.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00179.html">EthLayer.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(WIN32) || defined(WINx64)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00228.html">pcpp</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00168.html">   24</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00168.html">vlan_header</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if (BYTE_ORDER == LITTLE_ENDIAN)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">   27</a></span>&#160;        uint16_t <a class="code" href="a00168.html#a0b9c3a2edf23468ea5df60fee1903485">priority</a>:3,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                 <a class="code" href="a00168.html#a1cba4c151a11a2527eccb5c472be835b">cfi</a>:1,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 <a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a>:12;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        uint16_t <a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a>:12,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                 <a class="code" href="a00168.html#a1cba4c151a11a2527eccb5c472be835b">cfi</a>:1,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                 <a class="code" href="a00168.html#a0b9c3a2edf23468ea5df60fee1903485">priority</a>:3;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00168.html#a790a917cc070fb1ace8c77a7a12d0870">   38</a></span>&#160;        uint16_t <a class="code" href="a00168.html#a790a917cc070fb1ace8c77a7a12d0870">etherType</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00170.html">   47</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00170.html">VlanLayer</a> : <span class="keyword">public</span> <a class="code" href="a00078.html">Layer</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00170.html#a5f6f8f15642dd1f0a88550bde0fb51b0">   56</a></span>&#160;        <a class="code" href="a00170.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00078.html">Layer</a>* prevLayer, <a class="code" href="a00090.html">Packet</a>* packet) : <a class="code" href="a00078.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">VLAN</a>; }</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00199.html">Packet.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00186.html">IpAddress.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00213.html">PointerVector.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00231.html">pcpp</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="a00170.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a>(<span class="keyword">const</span> uint16_t vlanID, <span class="keywordtype">bool</span> cfi, uint8_t priority, uint16_t etherType);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ~<a class="code" href="a00170.html">VlanLayer</a>() {}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">   73</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00168.html">vlan_header</a>* <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00168.html">vlan_header</a>*)m_Data; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00007.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00007.html">ConnectionData</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">   65</a></span>&#160;    <a class="code" href="a00070.html">IPv4Address</a> <a class="code" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">srcIP</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">   67</a></span>&#160;    <a class="code" href="a00070.html">IPv4Address</a> <a class="code" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">dstIP</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">   69</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">srcPort</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">   71</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">dstPort</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">   73</a></span>&#160;    uint32_t <a class="code" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">flowKey</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00170.html#a0aa76692b5502afa254931d4249937ba">   81</a></span>&#160;        <span class="keyword">inline</span> uint16_t <a class="code" href="a00170.html#a0aa76692b5502afa254931d4249937ba">getVlanID</a>() { <span class="keywordflow">return</span> <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;<a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a> &gt;&gt; 4;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a00170.html#abe0453b916a6733faf3d658e83340db2">   87</a></span>&#160;        <span class="keyword">inline</span> uint8_t <a class="code" href="a00170.html#abe0453b916a6733faf3d658e83340db2">getCFI</a>() { <span class="keywordflow">return</span> <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;<a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a> &amp; 0x1; }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00170.html#a021259caeb2905bcf0ffa0fd4debaa26">   93</a></span>&#160;        <span class="keyword">inline</span> uint8_t <a class="code" href="a00170.html#a021259caeb2905bcf0ffa0fd4debaa26">getPriority</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;vlanID &amp; 0xF) &gt;&gt; 1; }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00170.html#aeb6dcaefa11775c2b64e0be74094116d">  101</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00170.html#aeb6dcaefa11775c2b64e0be74094116d">setVlanID</a>(uint16_t <span class="keywordtype">id</span>) { <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;<a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a> = ((id &lt;&lt; 4) &amp; 0xff0) | (id &gt;&gt; 8); }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00170.html#ac9702d193a250da803639863ecf12373">  108</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00170.html#ac9702d193a250da803639863ecf12373">setCFI</a>(<span class="keywordtype">bool</span> cfi) { <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;<a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a> |= cfi; }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00170.html#a92084616cf00c45903ecaaeed0c20cd5">  115</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00170.html#a92084616cf00c45903ecaaeed0c20cd5">setPriority</a>(uint8_t priority) { <a class="code" href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">getVlanHeader</a>()-&gt;<a class="code" href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">vlanID</a> |= ((priority &amp; 0x7) &lt;&lt; 1); }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00170.html#a083d3c9058269a46b6874adda2930e69">parseNextLayer</a>();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="a00170.html#a9f89975517e388390c7b97d84f1bca50">  127</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00170.html#a9f89975517e388390c7b97d84f1bca50">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00168.html">vlan_header</a>); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">   78</a></span>&#160;    <a class="code" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">ConnectionData</a>() : srcIP(<a class="code" href="a00070.html">IPv4Address</a>::Zero), dstIP(<a class="code" href="a00070.html">IPv4Address</a>::Zero), srcPort(0), dstPort(0), flowKey(0) {}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">class </span>TcpReassembly;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00164.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00164.html">TcpStreamData</a></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00163.html">TcpReassembly</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="a00164.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="a00164.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(uint8_t* tcpData, <span class="keywordtype">size_t</span> tcpDataLength, <a class="code" href="a00007.html">ConnectionData</a> connData);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="a00164.html#aacb6d4bc4dd7bf367598aa24e5d5f425">~TcpStreamData</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a00164.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(<a class="code" href="a00164.html">TcpStreamData</a>&amp; other);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="a00164.html">TcpStreamData</a>&amp; <a class="code" href="a00164.html#a23bae012dd3ef982d9f010d9afcf6690">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00164.html">TcpStreamData</a>&amp; other);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="a00170.html#a931be22ad37fcedab548a9752d7c834a">  132</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00170.html#a931be22ad37fcedab548a9752d7c834a">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        std::string <a class="code" href="a00170.html#af9b69bf34d39563db7f140665ed322bd">toString</a>();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="a00170.html#aef6347664baf2caecbd033588f8fc898">  136</a></span>&#160;        <a class="code" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00170.html#aef6347664baf2caecbd033588f8fc898">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    };</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="a00164.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">  133</a></span>&#160;    <span class="keyword">inline</span> uint8_t* <a class="code" href="a00164.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">getData</a>() { <span class="keywordflow">return</span> m_Data; }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00164.html#aeceeb369d8e8cb114f2c8682b966d1e6">  139</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00164.html#aeceeb369d8e8cb114f2c8682b966d1e6">getDataLength</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_VLAN_LAYER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00170_html_a083d3c9058269a46b6874adda2930e69"><div class="ttname"><a href="a00170.html#a083d3c9058269a46b6874adda2930e69">pcpp::VlanLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00170_html_a931be22ad37fcedab548a9752d7c834a"><div class="ttname"><a href="a00170.html#a931be22ad37fcedab548a9752d7c834a">pcpp::VlanLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:132</div></div>
-<div class="ttc" id="a00168_html"><div class="ttname"><a href="a00168.html">pcpp::vlan_header</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:24</div></div>
-<div class="ttc" id="a00170_html_aeb6dcaefa11775c2b64e0be74094116d"><div class="ttname"><a href="a00170.html#aeb6dcaefa11775c2b64e0be74094116d">pcpp::VlanLayer::setVlanID</a></div><div class="ttdeci">void setVlanID(uint16_t id)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:101</div></div>
-<div class="ttc" id="a00188_html"><div class="ttname"><a href="a00188.html">Layer.h</a></div></div>
-<div class="ttc" id="a00170_html_a5f6f8f15642dd1f0a88550bde0fb51b0"><div class="ttname"><a href="a00170.html#a5f6f8f15642dd1f0a88550bde0fb51b0">pcpp::VlanLayer::VlanLayer</a></div><div class="ttdeci">VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:56</div></div>
-<div class="ttc" id="a00170_html_a92084616cf00c45903ecaaeed0c20cd5"><div class="ttname"><a href="a00170.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a></div><div class="ttdeci">void setPriority(uint8_t priority)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:115</div></div>
-<div class="ttc" id="a00170_html_a0aa76692b5502afa254931d4249937ba"><div class="ttname"><a href="a00170.html#a0aa76692b5502afa254931d4249937ba">pcpp::VlanLayer::getVlanID</a></div><div class="ttdeci">uint16_t getVlanID()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:81</div></div>
-<div class="ttc" id="a00168_html_a1cba4c151a11a2527eccb5c472be835b"><div class="ttname"><a href="a00168.html#a1cba4c151a11a2527eccb5c472be835b">pcpp::vlan_header::cfi</a></div><div class="ttdeci">uint16_t cfi</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:27</div></div>
-<div class="ttc" id="a00179_html"><div class="ttname"><a href="a00179.html">EthLayer.h</a></div></div>
-<div class="ttc" id="a00170_html_a248cdb71f54fe1d29e52c7c5f86d908c"><div class="ttname"><a href="a00170.html#a248cdb71f54fe1d29e52c7c5f86d908c">pcpp::VlanLayer::getVlanHeader</a></div><div class="ttdeci">vlan_header * getVlanHeader()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:73</div></div>
-<div class="ttc" id="a00228_html_a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5"><div class="ttname"><a href="a00228.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:76</div></div>
-<div class="ttc" id="a00170_html"><div class="ttname"><a href="a00170.html">pcpp::VlanLayer</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:47</div></div>
-<div class="ttc" id="a00170_html_abe0453b916a6733faf3d658e83340db2"><div class="ttname"><a href="a00170.html#abe0453b916a6733faf3d658e83340db2">pcpp::VlanLayer::getCFI</a></div><div class="ttdeci">uint8_t getCFI()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:87</div></div>
-<div class="ttc" id="a00228_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:203</div></div>
-<div class="ttc" id="a00168_html_ab970b63b8440a00efe46f60838b5ce04"><div class="ttname"><a href="a00168.html#ab970b63b8440a00efe46f60838b5ce04">pcpp::vlan_header::vlanID</a></div><div class="ttdeci">uint16_t vlanID</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:27</div></div>
-<div class="ttc" id="a00090_html"><div class="ttname"><a href="a00090.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00170_html_aef6347664baf2caecbd033588f8fc898"><div class="ttname"><a href="a00170.html#aef6347664baf2caecbd033588f8fc898">pcpp::VlanLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:136</div></div>
-<div class="ttc" id="a00170_html_ac9702d193a250da803639863ecf12373"><div class="ttname"><a href="a00170.html#ac9702d193a250da803639863ecf12373">pcpp::VlanLayer::setCFI</a></div><div class="ttdeci">void setCFI(bool cfi)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:108</div></div>
-<div class="ttc" id="a00170_html_a021259caeb2905bcf0ffa0fd4debaa26"><div class="ttname"><a href="a00170.html#a021259caeb2905bcf0ffa0fd4debaa26">pcpp::VlanLayer::getPriority</a></div><div class="ttdeci">uint8_t getPriority()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:93</div></div>
-<div class="ttc" id="a00078_html"><div class="ttname"><a href="a00078.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
-<div class="ttc" id="a00168_html_a0b9c3a2edf23468ea5df60fee1903485"><div class="ttname"><a href="a00168.html#a0b9c3a2edf23468ea5df60fee1903485">pcpp::vlan_header::priority</a></div><div class="ttdeci">uint16_t priority</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:27</div></div>
-<div class="ttc" id="a00170_html_af9b69bf34d39563db7f140665ed322bd"><div class="ttname"><a href="a00170.html#af9b69bf34d39563db7f140665ed322bd">pcpp::VlanLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00168_html_a790a917cc070fb1ace8c77a7a12d0870"><div class="ttname"><a href="a00168.html#a790a917cc070fb1ace8c77a7a12d0870">pcpp::vlan_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:38</div></div>
-<div class="ttc" id="a00228_html"><div class="ttname"><a href="a00228.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00170_html_a9f89975517e388390c7b97d84f1bca50"><div class="ttname"><a href="a00170.html#a9f89975517e388390c7b97d84f1bca50">pcpp::VlanLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:127</div></div>
-<div class="ttc" id="a00228_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="a00228.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00164.html#ae7120f2faf97cfc9a560f7062daab95a">  145</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00007.html">ConnectionData</a> <a class="code" href="a00164.html#ae7120f2faf97cfc9a560f7062daab95a">getConnectionData</a>() { <span class="keywordflow">return</span> m_Connection; }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    uint8_t* m_Data;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">size_t</span> m_DataLen;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="a00007.html">ConnectionData</a> m_Connection;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> m_DeleteDataOnDestruction;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> setDeleteDataOnDestruction(<span class="keywordtype">bool</span> flag) { m_DeleteDataOnDestruction = flag; }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> copyData(<span class="keyword">const</span> <a class="code" href="a00164.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>&amp; other);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00163.html">  162</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00163.html">TcpReassembly</a></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">  169</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">  172</a></span>&#160;        <a class="code" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a>,</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">  174</a></span>&#160;        <a class="code" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    };</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00163.html#ab6698eb002363dc18e664f15418fc1eb">  184</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00163.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>)(<span class="keywordtype">int</span> side, <a class="code" href="a00164.html">TcpStreamData</a> tcpData, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="a00163.html#abda8219de68412e0ce7f7116601243a8">  192</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00163.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="a00163.html#abbcb38ac950666833df4084f80beb056">  201</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00163.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <a class="code" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="a00163.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a>(<a class="code" href="a00163.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, <span class="keywordtype">void</span>* userCookie = NULL, <a class="code" href="a00163.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback = NULL, <a class="code" href="a00163.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback = NULL);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="a00163.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00163.html#a56719c498f49cc2e2e6177e705109fcf">ReassemblePacket</a>(<a class="code" href="a00091.html">Packet</a>&amp; tcpData);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00163.html#a56719c498f49cc2e2e6177e705109fcf">ReassemblePacket</a>(<a class="code" href="a00117.html">RawPacket</a>* tcpRawData);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00163.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a>(uint32_t flowKey);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00163.html#acf940b05f75a129f595301012be46005">closeAllConnections</a>();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> std::vector&lt;ConnectionData&gt;&amp; <a class="code" href="a00163.html#af05c80624748539e2686d8a41d2d8219">getConnectionInformation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00163.html#afb80b9ac9c6c454e5fb747a847d4d0a2">isConnectionOpen</a>(<span class="keyword">const</span> <a class="code" href="a00007.html">ConnectionData</a>&amp; connection);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">struct </span>TcpFragment</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        uint32_t sequence;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">size_t</span> dataLength;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        uint8_t* data;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        TcpFragment() { sequence = 0; dataLength = 0; data = NULL; }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        ~TcpFragment() { <span class="keywordflow">if</span> (data != NULL) <span class="keyword">delete</span> [] data; }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    };</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">struct </span>TcpOneSideData</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        uint32_t srcIP;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        uint16_t srcPort;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        uint32_t sequence;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        PointerVector&lt;TcpFragment&gt; tcpFragmentList;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordtype">bool</span> gotFinOrRst;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        TcpOneSideData() { srcIP = 0; srcPort = 0; sequence = 0; gotFinOrRst = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    };</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">struct </span>TcpReassemblyData</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordtype">int</span> numOfSides;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordtype">int</span> prevSide;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        TcpOneSideData twoSides[2];</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        ConnectionData connData;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        TcpReassemblyData() { numOfSides = 0; prevSide = -1; }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    };</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="a00163.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="a00163.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> m_OnConnStart;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="a00163.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> m_OnConnEnd;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span>* m_UserCookie;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::map&lt;uint32_t, TcpReassemblyData*&gt; m_ConnectionList;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::map&lt;uint32_t, bool&gt; m_ClosedConnectionList;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    std::vector&lt;ConnectionData&gt; m_ConnectionInfo;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> checkOutOfOrderFragments(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, <span class="keywordtype">bool</span> cleanWholeFragList);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::string prepareMissingDataMessage(uint32_t missingDataLen);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> handleFinOrRst(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, uint32_t flowKey);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;};</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_REASSEMBLY */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00163_html_ae173fc16a427b5e46b1a5417de19d735"><div class="ttname"><a href="a00163.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection</a></div><div class="ttdeci">void closeConnection(uint32_t flowKey)</div></div>
+<div class="ttc" id="a00007_html_a75cd7efdfa6cf70b9aa2e19819800d4c"><div class="ttname"><a href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">pcpp::ConnectionData::dstPort</a></div><div class="ttdeci">size_t dstPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:71</div></div>
+<div class="ttc" id="a00163_html_a56719c498f49cc2e2e6177e705109fcf"><div class="ttname"><a href="a00163.html#a56719c498f49cc2e2e6177e705109fcf">pcpp::TcpReassembly::ReassemblePacket</a></div><div class="ttdeci">void ReassemblePacket(Packet &amp;tcpData)</div></div>
+<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00163_html_a49281471fb379fdae6c8df5ed7844c92"><div class="ttname"><a href="a00163.html#a49281471fb379fdae6c8df5ed7844c92">pcpp::TcpReassembly::TcpReassembly</a></div><div class="ttdeci">TcpReassembly(OnTcpMessageReady onMessageReadyCallback, void *userCookie=NULL, OnTcpConnectionStart onConnectionStartCallback=NULL, OnTcpConnectionEnd onConnectionEndCallback=NULL)</div></div>
+<div class="ttc" id="a00163_html_afb80b9ac9c6c454e5fb747a847d4d0a2"><div class="ttname"><a href="a00163.html#afb80b9ac9c6c454e5fb747a847d4d0a2">pcpp::TcpReassembly::isConnectionOpen</a></div><div class="ttdeci">int isConnectionOpen(const ConnectionData &amp;connection)</div></div>
+<div class="ttc" id="a00163_html_ab6698eb002363dc18e664f15418fc1eb"><div class="ttname"><a href="a00163.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a></div><div class="ttdeci">void(* OnTcpMessageReady)(int side, TcpStreamData tcpData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:184</div></div>
+<div class="ttc" id="a00164_html"><div class="ttname"><a href="a00164.html">pcpp::TcpStreamData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:90</div></div>
+<div class="ttc" id="a00007_html_ad5a3d88fb59140020216ac83fd12219a"><div class="ttname"><a href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">pcpp::ConnectionData::flowKey</a></div><div class="ttdeci">uint32_t flowKey</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:73</div></div>
+<div class="ttc" id="a00164_html_a23bae012dd3ef982d9f010d9afcf6690"><div class="ttname"><a href="a00164.html#a23bae012dd3ef982d9f010d9afcf6690">pcpp::TcpStreamData::operator=</a></div><div class="ttdeci">TcpStreamData &amp; operator=(const TcpStreamData &amp;other)</div></div>
+<div class="ttc" id="a00164_html_ae1f70f5bd9689c11412b2c82e1e4c4d2"><div class="ttname"><a href="a00164.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">pcpp::TcpStreamData::getData</a></div><div class="ttdeci">uint8_t * getData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:133</div></div>
+<div class="ttc" id="a00070_html"><div class="ttname"><a href="a00070.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:99</div></div>
+<div class="ttc" id="a00007_html_a0c85520b1498c5de042fb9db02a839d9"><div class="ttname"><a href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">pcpp::ConnectionData::dstIP</a></div><div class="ttdeci">IPv4Address dstIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:67</div></div>
+<div class="ttc" id="a00199_html"><div class="ttname"><a href="a00199.html">Packet.h</a></div></div>
+<div class="ttc" id="a00163_html_aa1797ebded60f0637ae95223653b9f78"><div class="ttname"><a href="a00163.html#aa1797ebded60f0637ae95223653b9f78">pcpp::TcpReassembly::~TcpReassembly</a></div><div class="ttdeci">~TcpReassembly()</div></div>
+<div class="ttc" id="a00163_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0"><div class="ttname"><a href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">pcpp::TcpReassembly::ConnectionEndReason</a></div><div class="ttdeci">ConnectionEndReason</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:169</div></div>
+<div class="ttc" id="a00163_html"><div class="ttname"><a href="a00163.html">pcpp::TcpReassembly</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:162</div></div>
+<div class="ttc" id="a00164_html_aeceeb369d8e8cb114f2c8682b966d1e6"><div class="ttname"><a href="a00164.html#aeceeb369d8e8cb114f2c8682b966d1e6">pcpp::TcpStreamData::getDataLength</a></div><div class="ttdeci">size_t getDataLength()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:139</div></div>
+<div class="ttc" id="a00117_html"><div class="ttname"><a href="a00117.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
+<div class="ttc" id="a00163_html_abbcb38ac950666833df4084f80beb056"><div class="ttname"><a href="a00163.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a></div><div class="ttdeci">void(* OnTcpConnectionEnd)(ConnectionData connectionData, ConnectionEndReason reason, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:201</div></div>
+<div class="ttc" id="a00007_html_af4a36ba152a559229a2334ad4da6f19a"><div class="ttname"><a href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">pcpp::ConnectionData::srcIP</a></div><div class="ttdeci">IPv4Address srcIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:65</div></div>
+<div class="ttc" id="a00163_html_abda8219de68412e0ce7f7116601243a8"><div class="ttname"><a href="a00163.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a></div><div class="ttdeci">void(* OnTcpConnectionStart)(ConnectionData connectionData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:192</div></div>
+<div class="ttc" id="a00164_html_aacb6d4bc4dd7bf367598aa24e5d5f425"><div class="ttname"><a href="a00164.html#aacb6d4bc4dd7bf367598aa24e5d5f425">pcpp::TcpStreamData::~TcpStreamData</a></div><div class="ttdeci">~TcpStreamData()</div></div>
+<div class="ttc" id="a00213_html"><div class="ttname"><a href="a00213.html">PointerVector.h</a></div></div>
+<div class="ttc" id="a00163_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"><div class="ttname"><a href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">pcpp::TcpReassembly::TcpReassemblyConnectionClosedManually</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:174</div></div>
+<div class="ttc" id="a00186_html"><div class="ttname"><a href="a00186.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00163_html_acf940b05f75a129f595301012be46005"><div class="ttname"><a href="a00163.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections</a></div><div class="ttdeci">void closeAllConnections()</div></div>
+<div class="ttc" id="a00164_html_ae7120f2faf97cfc9a560f7062daab95a"><div class="ttname"><a href="a00164.html#ae7120f2faf97cfc9a560f7062daab95a">pcpp::TcpStreamData::getConnectionData</a></div><div class="ttdeci">ConnectionData getConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:145</div></div>
+<div class="ttc" id="a00231_html"><div class="ttname"><a href="a00231.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00007_html_acff3614b14bd54ac98a996714a8a24b0"><div class="ttname"><a href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">pcpp::ConnectionData::ConnectionData</a></div><div class="ttdeci">ConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:78</div></div>
+<div class="ttc" id="a00007_html_acee601fef74ec911e3bcb860a3a73844"><div class="ttname"><a href="a00007.html#acee601fef74ec911e3bcb860a3a73844">pcpp::ConnectionData::srcPort</a></div><div class="ttdeci">size_t srcPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:69</div></div>
+<div class="ttc" id="a00164_html_acb6875699103b7d1967cb799f7501913"><div class="ttname"><a href="a00164.html#acb6875699103b7d1967cb799f7501913">pcpp::TcpStreamData::TcpStreamData</a></div><div class="ttdeci">TcpStreamData()</div></div>
+<div class="ttc" id="a00163_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"><div class="ttname"><a href="a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">pcpp::TcpReassembly::TcpReassemblyConnectionClosedByFIN_RST</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:172</div></div>
+<div class="ttc" id="a00163_html_af05c80624748539e2686d8a41d2d8219"><div class="ttname"><a href="a00163.html#af05c80624748539e2686d8a41d2d8219">pcpp::TcpReassembly::getConnectionInformation</a></div><div class="ttdeci">const std::vector&lt; ConnectionData &gt; &amp; getConnectionInformation() const </div></div>
+<div class="ttc" id="a00007_html"><div class="ttname"><a href="a00007.html">pcpp::ConnectionData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00225.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00225.html">TcpReassembly.h</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

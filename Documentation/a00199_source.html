@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapDevice.h Source File</title>
+<title>PcapPlusPlus: Packet.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,81 +105,151 @@ $(document).ready(function(){initNavTree('a00199_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapDevice.h</div>  </div>
+<div class="title">Packet.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00199.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_DEVICE</span></div>
+<a href="a00199.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PACKET</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PACKET</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00213.html">RawPacket.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00201.html">PcapFilter.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00210.html">PointerVector.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;pcap.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00228.html">pcpp</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00228.html#a4c0775fb93a0867d2afa7992d55957f0">   19</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="a00104.html">PointerVector&lt;RawPacket&gt;</a> <a class="code" href="a00228.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00067.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00067.html">IPcapDevice</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        pcap_t* m_PcapDescriptor;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// c&#39;tor should not be public</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="a00067.html">IPcapDevice</a>() { m_DeviceOpened = <span class="keyword">false</span>; m_PcapDescriptor = NULL; }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00067.html">IPcapDevice</a>();</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00216.html">RawPacket.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00191.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00231.html">pcpp</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00091.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00091.html">Packet</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00079.html">Layer</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="a00117.html">RawPacket</a>* m_RawPacket;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="a00079.html">Layer</a>* m_FirstLayer;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="a00079.html">Layer</a>* m_LastLayer;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        uint64_t m_ProtocolTypes;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">size_t</span> m_MaxPacketLen;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">bool</span> m_FreeRawPacket;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00067.html#aa7d1358756653febf63d23b21447649c">open</a>() = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00067.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>() = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00067.html#a22b03cdabb9f359c6bed0728c3614789">   52</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>() { <span class="keywordflow">return</span> m_DeviceOpened; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00067.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00067.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(<a class="code" href="a00022.html">GeneralFilter</a>&amp; filter);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00067.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(std::string filterAsString);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00067.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a>(std::string filterAsString);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="a00067.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a>(std::string filterAsString, <a class="code" href="a00115.html">RawPacket</a>* rawPacket);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">pcpp::GeneralFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:72</div></div>
-<div class="ttc" id="a00210_html"><div class="ttname"><a href="a00210.html">PointerVector.h</a></div></div>
-<div class="ttc" id="a00067_html_aadba6a20265dca6ba29b548325a798fe"><div class="ttname"><a href="a00067.html#aadba6a20265dca6ba29b548325a798fe">pcpp::IPcapDevice::setFilter</a></div><div class="ttdeci">bool setFilter(GeneralFilter &amp;filter)</div></div>
-<div class="ttc" id="a00115_html"><div class="ttname"><a href="a00115.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
-<div class="ttc" id="a00201_html"><div class="ttname"><a href="a00201.html">PcapFilter.h</a></div></div>
-<div class="ttc" id="a00067_html_a22b03cdabb9f359c6bed0728c3614789"><div class="ttname"><a href="a00067.html#a22b03cdabb9f359c6bed0728c3614789">pcpp::IPcapDevice::isOpened</a></div><div class="ttdeci">bool isOpened()</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:52</div></div>
-<div class="ttc" id="a00067_html_a54df47e98feadfd830789ca3a7f5f86b"><div class="ttname"><a href="a00067.html#a54df47e98feadfd830789ca3a7f5f86b">pcpp::IPcapDevice::matchPakcetWithFilter</a></div><div class="ttdeci">static bool matchPakcetWithFilter(std::string filterAsString, RawPacket *rawPacket)</div></div>
-<div class="ttc" id="a00067_html_aa7d1358756653febf63d23b21447649c"><div class="ttname"><a href="a00067.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice::open</a></div><div class="ttdeci">virtual bool open()=0</div></div>
-<div class="ttc" id="a00067_html_a5ce8877d4e047f11a3cb8d0f4f527e56"><div class="ttname"><a href="a00067.html#a5ce8877d4e047f11a3cb8d0f4f527e56">pcpp::IPcapDevice::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
-<div class="ttc" id="a00067_html"><div class="ttname"><a href="a00067.html">pcpp::IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:26</div></div>
-<div class="ttc" id="a00067_html_a5cc546829570cd981bfa762acd9759c8"><div class="ttname"><a href="a00067.html#a5cc546829570cd981bfa762acd9759c8">pcpp::IPcapDevice::verifyFilter</a></div><div class="ttdeci">static bool verifyFilter(std::string filterAsString)</div></div>
-<div class="ttc" id="a00228_html_a4c0775fb93a0867d2afa7992d55957f0"><div class="ttname"><a href="a00228.html#a4c0775fb93a0867d2afa7992d55957f0">pcpp::RawPacketVector</a></div><div class="ttdeci">PointerVector&lt; RawPacket &gt; RawPacketVector</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:19</div></div>
-<div class="ttc" id="a00067_html_ace3640f2330899687e34aa3789f4cd05"><div class="ttname"><a href="a00067.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)=0</div></div>
-<div class="ttc" id="a00213_html"><div class="ttname"><a href="a00213.html">RawPacket.h</a></div></div>
-<div class="ttc" id="a00067_html_aba28d535c6aa05e9f9492c82ece25de7"><div class="ttname"><a href="a00067.html#aba28d535c6aa05e9f9492c82ece25de7">pcpp::IPcapDevice::clearFilter</a></div><div class="ttdeci">void clearFilter()</div></div>
-<div class="ttc" id="a00228_html"><div class="ttname"><a href="a00228.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a>(<span class="keywordtype">size_t</span> maxPacketLen = 1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a>(<a class="code" href="a00117.html">RawPacket</a>* rawPacket, <span class="keywordtype">bool</span> freeRawPacket = <span class="keyword">false</span>, <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil = <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>, <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer = <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a>(<a class="code" href="a00117.html">RawPacket</a>* rawPacket, <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a>(<a class="code" href="a00117.html">RawPacket</a>* rawPacket, <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00091.html#a54ccf8336cf3c3f6a5ad58ad12f06656">~Packet</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a>(<span class="keyword">const</span> <a class="code" href="a00091.html">Packet</a>&amp; other);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="a00091.html">Packet</a>&amp; <a class="code" href="a00091.html#a26af180628893e454e9d6e0f2f1ebb98">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00091.html">Packet</a>&amp; other);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00091.html#a7727ee05d4dc422ebe74c58ddd11cb22">  110</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00117.html">RawPacket</a>* <a class="code" href="a00091.html#a7727ee05d4dc422ebe74c58ddd11cb22">getRawPacket</a>() { <span class="keywordflow">return</span> m_RawPacket; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00091.html#a1dee26fe9bb8c7ae6cd90f45e67446ef">setRawPacket</a>(<a class="code" href="a00117.html">RawPacket</a>* rawPacket, <span class="keywordtype">bool</span> freeRawPacket, <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil = <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>, <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer = <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="a00091.html#af8a88c7423642329409672f612990724">  127</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00117.html">RawPacket</a>* <a class="code" href="a00091.html#af8a88c7423642329409672f612990724">getRawPacketReadOnly</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_RawPacket; }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="a00091.html#a02f98bcdd465eac96673752838826de4">  133</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00079.html">Layer</a>* <a class="code" href="a00091.html#a02f98bcdd465eac96673752838826de4">getFirstLayer</a>() { <span class="keywordflow">return</span> m_FirstLayer; }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00091.html#a1c2dd7a761efe7393249ddc54bdd662b">  139</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00079.html">Layer</a>* <a class="code" href="a00091.html#a1c2dd7a761efe7393249ddc54bdd662b">getLastLayer</a>() { <span class="keywordflow">return</span> m_LastLayer; }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00091.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer</a>(<a class="code" href="a00079.html">Layer</a>* newLayer);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00091.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer</a>(<a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00079.html">Layer</a>* newLayer);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00091.html#ab751fc35d7e7b8a86e3f1fdbd2c30685">removeLayer</a>(<a class="code" href="a00079.html">Layer</a>* layer);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        TLayer* <a class="code" href="a00091.html#a78d0de95b49eb313e3184021234e5c5e">getLayerOfType</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        TLayer* <a class="code" href="a00091.html#a1d545bb4bc80e5d45858c373b20befa9">getNextLayerOfType</a>(<a class="code" href="a00079.html">Layer</a>* after);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="a00091.html#a90b12946df5f2e6077e32620389a3c32">  194</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="a00091.html#a90b12946df5f2e6077e32620389a3c32">isPacketOfType</a>(<a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocolType) { <span class="keywordflow">return</span> m_ProtocolTypes &amp; protocolType; }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00091.html#ab19addb15ea46927076227436fde753e">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        std::string <a class="code" href="a00091.html#aba43ff35340215d5091a894b996f38d6">printToString</a>(<span class="keywordtype">bool</span> timeAsLocalTime = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00091.html#a57c8f43decffe58a25a9b6d612873ca5">printToStringList</a>(std::vector&lt;std::string&gt;&amp; result, <span class="keywordtype">bool</span> timeAsLocalTime = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="a00091.html">Packet</a>&amp; other);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordtype">void</span> destructPacketData();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordtype">bool</span> extendLayer(<a class="code" href="a00079.html">Layer</a>* layer, <span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordtype">bool</span> shortenLayer(<a class="code" href="a00079.html">Layer</a>* layer, <span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordtype">void</span> reallocateRawData(<span class="keywordtype">size_t</span> newSize);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        std::string printPacketInfo(<span class="keywordtype">bool</span> timeAsLocalTime);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    };</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="a00091.html#a78d0de95b49eb313e3184021234e5c5e">  231</a></span>&#160;    TLayer* <a class="code" href="a00091.html#a78d0de95b49eb313e3184021234e5c5e">Packet::getLayerOfType</a>()</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (dynamic_cast&lt;TLayer*&gt;(m_FirstLayer) != NULL)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">return</span> (TLayer*)m_FirstLayer;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> getNextLayerOfType&lt;TLayer&gt;(m_FirstLayer);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TLayer&gt;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="a00091.html#a1d545bb4bc80e5d45858c373b20befa9">  240</a></span>&#160;    TLayer* <a class="code" href="a00091.html#a1d545bb4bc80e5d45858c373b20befa9">Packet::getNextLayerOfType</a>(<a class="code" href="a00079.html">Layer</a>* after)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">if</span> (after == NULL)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="a00079.html">Layer</a>* curLayer = after-&gt;<a class="code" href="a00079.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a>();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">while</span> ((curLayer != NULL) &amp;&amp; (dynamic_cast&lt;TLayer*&gt;(curLayer) == NULL))</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            curLayer = curLayer-&gt;<a class="code" href="a00079.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">return</span> (TLayer*)curLayer;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PACKET */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00091_html_a2e2f9ea31fb1b7fa610db251405522f7"><div class="ttname"><a href="a00091.html#a2e2f9ea31fb1b7fa610db251405522f7">pcpp::Packet::insertLayer</a></div><div class="ttdeci">bool insertLayer(Layer *prevLayer, Layer *newLayer)</div></div>
+<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">Layer.h</a></div></div>
+<div class="ttc" id="a00091_html_a78d0de95b49eb313e3184021234e5c5e"><div class="ttname"><a href="a00091.html#a78d0de95b49eb313e3184021234e5c5e">pcpp::Packet::getLayerOfType</a></div><div class="ttdeci">TLayer * getLayerOfType()</div><div class="ttdef"><b>Definition:</b> Packet.h:231</div></div>
+<div class="ttc" id="a00231_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:16</div></div>
+<div class="ttc" id="a00091_html_a02f98bcdd465eac96673752838826de4"><div class="ttname"><a href="a00091.html#a02f98bcdd465eac96673752838826de4">pcpp::Packet::getFirstLayer</a></div><div class="ttdeci">Layer * getFirstLayer()</div><div class="ttdef"><b>Definition:</b> Packet.h:133</div></div>
+<div class="ttc" id="a00091_html_af4c12806f2b320cdddd83a2b3a1136eb"><div class="ttname"><a href="a00091.html#af4c12806f2b320cdddd83a2b3a1136eb">pcpp::Packet::addLayer</a></div><div class="ttdeci">bool addLayer(Layer *newLayer)</div></div>
+<div class="ttc" id="a00091_html_a90b12946df5f2e6077e32620389a3c32"><div class="ttname"><a href="a00091.html#a90b12946df5f2e6077e32620389a3c32">pcpp::Packet::isPacketOfType</a></div><div class="ttdeci">bool isPacketOfType(ProtocolType protocolType)</div><div class="ttdef"><b>Definition:</b> Packet.h:194</div></div>
+<div class="ttc" id="a00231_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:203</div></div>
+<div class="ttc" id="a00091_html_a1c2dd7a761efe7393249ddc54bdd662b"><div class="ttname"><a href="a00091.html#a1c2dd7a761efe7393249ddc54bdd662b">pcpp::Packet::getLastLayer</a></div><div class="ttdeci">Layer * getLastLayer()</div><div class="ttdef"><b>Definition:</b> Packet.h:139</div></div>
+<div class="ttc" id="a00091_html_af8a88c7423642329409672f612990724"><div class="ttname"><a href="a00091.html#af8a88c7423642329409672f612990724">pcpp::Packet::getRawPacketReadOnly</a></div><div class="ttdeci">RawPacket * getRawPacketReadOnly() const </div><div class="ttdef"><b>Definition:</b> Packet.h:127</div></div>
+<div class="ttc" id="a00091_html_a7727ee05d4dc422ebe74c58ddd11cb22"><div class="ttname"><a href="a00091.html#a7727ee05d4dc422ebe74c58ddd11cb22">pcpp::Packet::getRawPacket</a></div><div class="ttdeci">RawPacket * getRawPacket()</div><div class="ttdef"><b>Definition:</b> Packet.h:110</div></div>
+<div class="ttc" id="a00079_html"><div class="ttname"><a href="a00079.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00091_html_a1d545bb4bc80e5d45858c373b20befa9"><div class="ttname"><a href="a00091.html#a1d545bb4bc80e5d45858c373b20befa9">pcpp::Packet::getNextLayerOfType</a></div><div class="ttdeci">TLayer * getNextLayerOfType(Layer *after)</div><div class="ttdef"><b>Definition:</b> Packet.h:240</div></div>
+<div class="ttc" id="a00091_html_a54ccf8336cf3c3f6a5ad58ad12f06656"><div class="ttname"><a href="a00091.html#a54ccf8336cf3c3f6a5ad58ad12f06656">pcpp::Packet::~Packet</a></div><div class="ttdeci">virtual ~Packet()</div></div>
+<div class="ttc" id="a00079_html_a8bcc2c5c58c42f15a38f4b92a631c82e"><div class="ttname"><a href="a00079.html#a8bcc2c5c58c42f15a38f4b92a631c82e">pcpp::Layer::getNextLayer</a></div><div class="ttdeci">Layer * getNextLayer()</div><div class="ttdef"><b>Definition:</b> Layer.h:63</div></div>
+<div class="ttc" id="a00091_html_ab19addb15ea46927076227436fde753e"><div class="ttname"><a href="a00091.html#ab19addb15ea46927076227436fde753e">pcpp::Packet::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
+<div class="ttc" id="a00117_html"><div class="ttname"><a href="a00117.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
+<div class="ttc" id="a00231_html_a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29"><div class="ttname"><a href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:21</div></div>
+<div class="ttc" id="a00091_html_a1a6d4e157661ba7ec6f552c78c82d7fa"><div class="ttname"><a href="a00091.html#a1a6d4e157661ba7ec6f552c78c82d7fa">pcpp::Packet::Packet</a></div><div class="ttdeci">Packet(size_t maxPacketLen=1)</div></div>
+<div class="ttc" id="a00091_html_ab751fc35d7e7b8a86e3f1fdbd2c30685"><div class="ttname"><a href="a00091.html#ab751fc35d7e7b8a86e3f1fdbd2c30685">pcpp::Packet::removeLayer</a></div><div class="ttdeci">bool removeLayer(Layer *layer)</div></div>
+<div class="ttc" id="a00231_html"><div class="ttname"><a href="a00231.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00091_html_a26af180628893e454e9d6e0f2f1ebb98"><div class="ttname"><a href="a00091.html#a26af180628893e454e9d6e0f2f1ebb98">pcpp::Packet::operator=</a></div><div class="ttdeci">Packet &amp; operator=(const Packet &amp;other)</div></div>
+<div class="ttc" id="a00091_html_aba43ff35340215d5091a894b996f38d6"><div class="ttname"><a href="a00091.html#aba43ff35340215d5091a894b996f38d6">pcpp::Packet::printToString</a></div><div class="ttdeci">std::string printToString(bool timeAsLocalTime=true)</div></div>
+<div class="ttc" id="a00091_html_a1dee26fe9bb8c7ae6cd90f45e67446ef"><div class="ttname"><a href="a00091.html#a1dee26fe9bb8c7ae6cd90f45e67446ef">pcpp::Packet::setRawPacket</a></div><div class="ttdeci">void setRawPacket(RawPacket *rawPacket, bool freeRawPacket, ProtocolType parseUntil=UnknownProtocol, OsiModelLayer parseUntilLayer=OsiModelLayerUnknown)</div></div>
+<div class="ttc" id="a00091_html_a57c8f43decffe58a25a9b6d612873ca5"><div class="ttname"><a href="a00091.html#a57c8f43decffe58a25a9b6d612873ca5">pcpp::Packet::printToStringList</a></div><div class="ttdeci">void printToStringList(std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true)</div></div>
+<div class="ttc" id="a00216_html"><div class="ttname"><a href="a00216.html">RawPacket.h</a></div></div>
+<div class="ttc" id="a00231_html_a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f"><div class="ttname"><a href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:220</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00199.html">PcapDevice.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00199.html">Packet.h</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

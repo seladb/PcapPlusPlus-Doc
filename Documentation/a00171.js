@@ -1,15 +1,6 @@
 var a00171 =
 [
-    [ "dontLearnFlag", "a00171.html#a8bf01681565ea80e389e36c7911c9c37", null ],
-    [ "gbpFlag", "a00171.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
-    [ "groupPolicyID", "a00171.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
-    [ "pad", "a00171.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
-    [ "policyAppliedFlag", "a00171.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
-    [ "reserved11_12", "a00171.html#a3335ab561fbf911e3c070c231d37669f", null ],
-    [ "reserved14_16", "a00171.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
-    [ "reserved2_4", "a00171.html#aeaec3eb74ec694974471243a35a76313", null ],
-    [ "reserved6_8", "a00171.html#ada8c68230dd90d8400398c333216a9f3", null ],
-    [ "reserved9", "a00171.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
-    [ "vni", "a00171.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
-    [ "vniPresentFlag", "a00171.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
+    [ "VlanFilter", "a00171.html#a0fe4f5f6ee92f8cf92dc98338a5128d6", null ],
+    [ "parseToString", "a00171.html#a4d5759a458f683cebac7134668fc0c2d", null ],
+    [ "setVlanID", "a00171.html#a71b1fd58f036b4ee5a77ce34b443aa42", null ]
 ];

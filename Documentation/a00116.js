@@ -1,5 +1,6 @@
 var a00116 =
 [
-    [ "buffer", "a00116.html#a43b9b1dd5d0156c85e01157a681d7150", null ],
-    [ "len", "a00116.html#a677d3e0fa3faf87c0f275efd1bac6abd", null ]
+    [ "ProtoFilter", "a00116.html#a7da0456df8d7486bfe18d31b7929baae", null ],
+    [ "parseToString", "a00116.html#a2eba86ed1facd283f54363176618d6ff", null ],
+    [ "setProto", "a00116.html#a063d8ebd0aeb25de8a33b2e4b6e6e5a1", null ]
 ];

@@ -1,6 +1,10 @@
 var a00114 =
 [
-    [ "ProtoFilter", "a00114.html#a7da0456df8d7486bfe18d31b7929baae", null ],
-    [ "parseToString", "a00114.html#a2eba86ed1facd283f54363176618d6ff", null ],
-    [ "setProto", "a00114.html#a063d8ebd0aeb25de8a33b2e4b6e6e5a1", null ]
+    [ "PPPoESessionLayer", "a00114.html#a433678572ac1217a16a38e6aa8ade4f2", null ],
+    [ "PPPoESessionLayer", "a00114.html#ac9e2dcfee946bc38c1deefe557606188", null ],
+    [ "getHeaderLen", "a00114.html#a07941bb7f6351ca4cd9d3c3b583a0168", null ],
+    [ "getPPPNextProtocol", "a00114.html#a4521d824fcc13fa995376ba4757953d7", null ],
+    [ "parseNextLayer", "a00114.html#a68ee818cde48545d0d4cfa701bef6a0e", null ],
+    [ "setPPPNextProtocol", "a00114.html#adad1131f1a337c499577510c35383fb8", null ],
+    [ "toString", "a00114.html#a1938913dc6bed3dd7b443ddcd052b5e3", null ]
 ];

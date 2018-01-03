@@ -1,19 +1,11 @@
 var a00164 =
 [
-    [ "addEndOfHeader", "a00164.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b", null ],
-    [ "addField", "a00164.html#ac997392fd26a58b63827bf81a380b031", null ],
-    [ "addField", "a00164.html#aeada4c60e7c10924b6fa82d5ddfa9908", null ],
-    [ "computeCalculateFields", "a00164.html#aab0f4a2beb4bf2a423e8b0b7c18e3645", null ],
-    [ "getFieldByName", "a00164.html#af97866e274c94d11f6c4ab782e02150c", null ],
-    [ "getFieldCount", "a00164.html#a5bd3adf2a0137c18c13cf512e9f08bb2", null ],
-    [ "getFirstField", "a00164.html#a1584cbd19a25aebb26a92b6915b69a62", null ],
-    [ "getHeaderLen", "a00164.html#abd5dcefff49b14110c9ef322b826f083", null ],
-    [ "getNextField", "a00164.html#a4b29d0cbe4cb6284a1fd7061ee9d68e5", null ],
-    [ "insertField", "a00164.html#abf28607ed41ed3bfdb1c476bda303ae9", null ],
-    [ "insertField", "a00164.html#a8917992953e2a38885af837a2c49abd0", null ],
-    [ "insertField", "a00164.html#ac0555ddcc81fffa266fbc207bf040314", null ],
-    [ "isHeaderComplete", "a00164.html#a4fbea31a4f1c5a028ce874fece1cd353", null ],
-    [ "parseNextLayer", "a00164.html#ac593024db983f68d486893c0cb2acc76", null ],
-    [ "removeField", "a00164.html#a3751401eb05f223685abd0c7c6990c66", null ],
-    [ "removeField", "a00164.html#a9712764bb961cc7485335d1d30920232", null ]
+    [ "TcpStreamData", "a00164.html#acb6875699103b7d1967cb799f7501913", null ],
+    [ "TcpStreamData", "a00164.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
+    [ "~TcpStreamData", "a00164.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
+    [ "TcpStreamData", "a00164.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
+    [ "getConnectionData", "a00164.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getData", "a00164.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
+    [ "getDataLength", "a00164.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
+    [ "operator=", "a00164.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
 ];

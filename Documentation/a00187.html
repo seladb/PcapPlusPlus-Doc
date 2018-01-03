@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IPv6Layer.h File Reference</title>
+<title>PcapPlusPlus: IpUtils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,36 +106,149 @@ $(document).ready(function(){initNavTree('a00187.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IPv6Layer.h File Reference</div>  </div>
+<div class="title">IpUtils.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00188_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00184_source.html">IpAddress.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;in.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;winsock2.h&gt;</code><br />
+<code>#include &lt;ws2tcpip.h&gt;</code><br />
 </div>
 <p><a href="a00187_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html">pcpp::ip6_hdr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">pcpp::IPv6Layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html">pcpp::ScalarBuffer&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00228"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html">pcpp</a></td></tr>
-<tr class="memdesc:a00228"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">pcpp</a></td></tr>
+<tr class="memdesc:a00231"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a> (int af, const void *src, char *dst, size_t size)</td></tr>
+<tr class="separator:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdce1d46efd09e8485a2f682b388ebc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
+<tr class="separator:acdce1d46efd09e8485a2f682b388ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf99d75d7ba993b6146e5915a7fa2db"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#accf99d75d7ba993b6146e5915a7fa2db">pcpp::sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
+<tr class="separator:accf99d75d7ba993b6146e5915a7fa2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8855571df4a1ba17129f946383f3be"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#acf8855571df4a1ba17129f946383f3be">pcpp::sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
+<tr class="separator:acf8855571df4a1ba17129f946383f3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca8f8917951fbfa34b0a24fab6c9152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#adca8f8917951fbfa34b0a24fab6c9152">pcpp::sockaddr2string</a> (struct sockaddr *sa, char *resultString)</td></tr>
+<tr class="separator:adca8f8917951fbfa34b0a24fab6c9152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2a6ea816a6f32ed721b4db05911b8f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a0e2a6ea816a6f32ed721b4db05911b8f">pcpp::in_addr2int</a> (in_addr inAddr)</td></tr>
+<tr class="separator:a0e2a6ea816a6f32ed721b4db05911b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f80839f1794fa67f59d5f4046466d7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a27f80839f1794fa67f59d5f4046466d7">pcpp::compute_checksum</a> (ScalarBuffer&lt; uint16_t &gt; vec[], size_t vecSize)</td></tr>
+<tr class="separator:a27f80839f1794fa67f59d5f4046466d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ed4e611bb0af5bade4697ff2308b18"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#af5ed4e611bb0af5bade4697ff2308b18">pcpp::fnv_hash</a> (ScalarBuffer&lt; uint8_t &gt; vec[], size_t vecSize)</td></tr>
+<tr class="separator:af5ed4e611bb0af5bade4697ff2308b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66abbe5d82d79edd056eb54e70774f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#af66abbe5d82d79edd056eb54e70774f2">pcpp::fnv_hash</a> (uint8_t *buffer, size_t bufSize)</td></tr>
+<tr class="separator:af66abbe5d82d79edd056eb54e70774f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a2a4b830a00870799ee852d4c6a72a1eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* inet_ntop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>af</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert a network format address to presentation format. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">af</td><td>Address family, can be either AF_INET (IPv4) or AF_INET6 (IPv6) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Network address structure, can be either in_addr (IPv4) or in6_addr (IPv6) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Network address string representation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>'dst' Maximum size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to presentation format address ('dst'), or NULL (see errno). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acdce1d46efd09e8485a2f682b388ebc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int inet_pton </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>af</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert from presentation format (which usually means ASCII printable) to network format (which is usually some kind of binary format). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">af</td><td>Address family, can be either AF_INET (IPv4) or AF_INET6 (IPv6) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Network address string representation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Network address structure result, can be either in_addr (IPv4) or in6_addr (IPv6) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the address was valid for the specified address family; 0 if the address wasn't valid ('dst' is untouched in this case); -1 if some other error occurred ('dst' is untouched in this case, too) </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00187.html">IPv6Layer.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00187.html">IpUtils.h</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::NotFilter Class Reference</title>
+<title>PcapPlusPlus: pcpp::NetworkUtils Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,40 +108,37 @@ $(document).ready(function(){initNavTree('a00087.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00319.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00323.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::NotFilter Class Reference</div>  </div>
+<div class="title">pcpp::NetworkUtils Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00201_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::NotFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00087.png" usemap="#pcpp::NotFilter_map" alt=""/>
-  <map id="pcpp::NotFilter_map" name="pcpp::NotFilter_map">
-<area href="a00022.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,120,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00197_source.html">NetworkUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af61317b37c81544b370424bf490371ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#af61317b37c81544b370424bf490371ca">NotFilter</a> (<a class="el" href="a00022.html">GeneralFilter</a> *filterToInverse)</td></tr>
-<tr class="separator:af61317b37c81544b370424bf490371ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27559a09376420b6b8466a1819b42509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a27559a09376420b6b8466a1819b42509">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:a27559a09376420b6b8466a1819b42509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb53fe1af021e8638c66b0b57d36f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#abb53fe1af021e8638c66b0b57d36f6dc">setFilter</a> (<a class="el" href="a00022.html">GeneralFilter</a> *filterToInverse)</td></tr>
-<tr class="separator:abb53fe1af021e8638c66b0b57d36f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00022"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00022')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00022.html">pcpp::GeneralFilter</a></td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00022"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25604394245462fc413cadb5ede6740b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a25604394245462fc413cadb5ede6740b">getMacAddress</a> (<a class="el" href="a00070.html">IPv4Address</a> ipAddr, <a class="el" href="a00096.html">PcapLiveDevice</a> *device, double &amp;arpResponseTimeMS, <a class="el" href="a00083.html">MacAddress</a> sourceMac=<a class="el" href="a00083.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a>, <a class="el" href="a00070.html">IPv4Address</a> sourceIP=<a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, int arpTimeout=-1)</td></tr>
+<tr class="separator:a25604394245462fc413cadb5ede6740b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812b40c3fd9ccfd3065c698010876c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00070.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a812b40c3fd9ccfd3065c698010876c13">getIPv4Address</a> (std::string hostname, <a class="el" href="a00096.html">PcapLiveDevice</a> *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, <a class="el" href="a00070.html">IPv4Address</a> dnsServerIP=<a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>, <a class="el" href="a00070.html">IPv4Address</a> gatewayIP=<a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>)</td></tr>
+<tr class="separator:a812b40c3fd9ccfd3065c698010876c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac0151f86bc3e98d50004bcf97d18517c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00087.html">NetworkUtils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ac0151f86bc3e98d50004bcf97d18517c">getInstance</a> ()</td></tr>
+<tr class="separator:ac0151f86bc3e98d50004bcf97d18517c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a6c8310c11abf274e400a9b2be59ab873"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a6c8310c11abf274e400a9b2be59ab873">DefaultTimeout</a></td></tr>
+<tr class="separator:a6c8310c11abf274e400a9b2be59ab873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for creating a filter which is inverse to another filter<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00201.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af61317b37c81544b370424bf490371ca"></a>
+<div class="textblock"><p>This class bundles several network utilities that are very common and useful. These utilities use Pcap++ and Packet++ packet crafting and processing capabilities. This class is a singleton and can be access by <a class="el" href="a00087.html#ac0151f86bc3e98d50004bcf97d18517c">getInstance()</a> only </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac0151f86bc3e98d50004bcf97d18517c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -149,30 +146,155 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::NotFilter::NotFilter </td>
+          <td class="memname">static <a class="el" href="a00087.html">NetworkUtils</a>&amp; pcpp::NetworkUtils::getInstance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00022.html">GeneralFilter</a> *&#160;</td>
-          <td class="paramname"><em>filterToInverse</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that gets a pointer to a filter and create the inverse version of it </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterToInverse</td><td>A pointer to filter which the created filter be the inverse of </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a27559a09376420b6b8466a1819b42509"></a>
+<a class="anchor" id="a812b40c3fd9ccfd3065c698010876c13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00070.html">IPv4Address</a> pcpp::NetworkUtils::getIPv4Address </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00096.html">PcapLiveDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dnsResponseTimeMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>dnsTTL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dnsTimeout</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00070.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>dnsServerIP</em> = <code><a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00070.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>gatewayIP</em> = <code><a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Resolve an IPv4 address for a given hostname. Resolving is done in multiple phases: first resolving the LAN gateway MAC address (or default gateway if a gateway isn't provided) using ARP protocol (by using <a class="el" href="a00087.html#a25604394245462fc413cadb5ede6740b">NetworkUtils::getMacAddress()</a> ). Then a DNS request is sent to a DNS server (if specified) or to the LAN gateway (if DNS server is not specified). The DNS response is decoded and the IPv4 address is determined. In addition the method outputs the time it took the DNS response to arrive and the DNS TTL written on the DNS response. If DNS response doesn't contain an IPv4 address resolving an <a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>The hostname to resolve </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive packets on </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dnsResponseTimeMS</td><td>When method returns successfully will contain the time it took to receive the DNS response (in milli-seconds) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dnsTTL</td><td>When method returns successfully will contain The DNS TTL written in the DNS response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dnsTimeout</td><td>An optional parameter to specify the timeout to wait for a DNS response. If not specified the default timeout is 5 sec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dnsServerIP</td><td>An optional parameter to specify the DNS server IP to send the DNS request to. If not specified or specified with <a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the DNS request will be sent to the default DNS server configured in the system </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gatewayIP</td><td>An optional parameter to specify the LAN gateway to send the DNS request through. If not specified or specified with <a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the interface's default gateway will be used </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resolved IPv4 address or <a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> if something went wrong (in this case an error will be printed to log) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25604394245462fc413cadb5ede6740b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00083.html">MacAddress</a> pcpp::NetworkUtils::getMacAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00070.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>ipAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00096.html">PcapLiveDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>arpResponseTimeMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00083.html">MacAddress</a>&#160;</td>
+          <td class="paramname"><em>sourceMac</em> = <code><a class="el" href="a00083.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00070.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>sourceIP</em> = <code><a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arpTimeout</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Resolve the MAC address for a given IPv4 address. It's done using the ARP protocol: send an ARP request and interpret the response </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address to resolve MAC address to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive the ARP packets on </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">arpResponseTimeMS</td><td>An output parameter that will contain the time in milliseconds that took the ARP response to arrive </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>An optional parameter to set the source MAC address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00083.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a> the MAC address of the interface will be used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceIP</td><td>An optional parameter to set the source IPv4 address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="a00070.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> the default IPv4 address of the interface will be used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arpTimeout</td><td>An optional parameter to set the timeout to wait for the ARP response to return. If this parameter isn't set or set with a number smaller than 0, a default timeout of 5 seconds will be set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resolved MAC address or <a class="el" href="a00083.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a> if an error occurred or address could not be resolved. Errors will be printed to log </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6c8310c11abf274e400a9b2be59ab873"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -180,57 +302,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::NotFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td class="memname">const int pcpp::NetworkUtils::DefaultTimeout</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00022.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abb53fe1af021e8638c66b0b57d36f6dc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::NotFilter::setFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00022.html">GeneralFilter</a> *&#160;</td>
-          <td class="paramname"><em>filterToInverse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set a filter to create an inverse filter from </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterToInverse</td><td>A pointer to filter which the created filter be the inverse of </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Default timeout used for several utilities. Currently set to 5 seconds </p>
 
 </div>
 </div>
@@ -239,8 +320,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00228.html">pcpp</a></li><li class="navelem"><a class="el" href="a00087.html">NotFilter</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:37 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00231.html">pcpp</a></li><li class="navelem"><a class="el" href="a00087.html">NetworkUtils</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

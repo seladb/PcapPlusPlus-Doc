@@ -1,8 +1,6 @@
 var a00109 =
 [
-    [ "code", "a00109.html#ab7f6d4c3dba01ad2212e4a71e738161c", null ],
-    [ "payloadLength", "a00109.html#a08e5841209e619cc327971361264f02e", null ],
-    [ "sessionId", "a00109.html#acff911ee6da20c9101981d1396562ab3", null ],
-    [ "type", "a00109.html#a696c4e1cd2f66f95923d7c310df1d043", null ],
-    [ "version", "a00109.html#a99482acf563e69e4a318992715742a08", null ]
+    [ "address", "a00109.html#ab0d4dbeb685845400c93be1636b9b2fb", null ],
+    [ "control", "a00109.html#ae925aba063d9662de4efe5151c128372", null ],
+    [ "protocol", "a00109.html#a9e49420e46bdc801452f9c30ef5b8659", null ]
 ];

@@ -1,8 +1,6 @@
 var a00132 =
 [
-    [ "SSLAlertLayer", "a00132.html#aecf449f0c8f821ede816f33d6012b622", null ],
-    [ "computeCalculateFields", "a00132.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
-    [ "getAlertDescription", "a00132.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
-    [ "getAlertLevel", "a00132.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
-    [ "toString", "a00132.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
+    [ "handshakeType", "a00132.html#a9a456a315b65d5e41587b83972471398", null ],
+    [ "length1", "a00132.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
+    [ "length2", "a00132.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
 ];

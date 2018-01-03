@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: EthLayer.h File Reference</title>
+<title>PcapPlusPlus: DpdkDevice.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,265 +107,100 @@ $(document).ready(function(){initNavTree('a00179.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">EthLayer.h File Reference</div>  </div>
+<div class="title">DpdkDevice.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00188_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00191_source.html">MacAddress.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00194_source.html">MacAddress.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00223_source.html">SystemUtils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00216_source.html">RawPacket.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00205_source.html">PcapLiveDevice.h</a>&quot;</code><br />
 </div>
 <p><a href="a00179_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html">pcpp::ether_header</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html">pcpp::MBufRawPacket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">pcpp::EthLayer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html">pcpp::PciAddress</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">pcpp::DpdkDevice</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">pcpp::DpdkDevice::DpdkDeviceConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html">pcpp::DpdkDevice::LinkStatus</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00228"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html">pcpp</a></td></tr>
-<tr class="memdesc:a00228"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">pcpp</a></td></tr>
+<tr class="memdesc:a00231"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a821031eca1080fbf3902fd4bccbaf7df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a821031eca1080fbf3902fd4bccbaf7df">PCPP_ETHERTYPE_PUP</a>&#160;&#160;&#160;0x0200</td></tr>
-<tr class="separator:a821031eca1080fbf3902fd4bccbaf7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d9a2928c78d3240d81571a331e2eca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a65d9a2928c78d3240d81571a331e2eca">PCPP_ETHERTYPE_SPRITE</a>&#160;&#160;&#160;0x0500</td></tr>
-<tr class="separator:a65d9a2928c78d3240d81571a331e2eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bc2379effaf5e47beb4175f5629271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a31bc2379effaf5e47beb4175f5629271">PCPP_ETHERTYPE_IP</a>&#160;&#160;&#160;0x0800</td></tr>
-<tr class="separator:a31bc2379effaf5e47beb4175f5629271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d96bc006e5d45a033943b55c498903"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aa2d96bc006e5d45a033943b55c498903">PCPP_ETHERTYPE_ARP</a>&#160;&#160;&#160;0x0806</td></tr>
-<tr class="separator:aa2d96bc006e5d45a033943b55c498903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4dad83203fe8186858d1b410358f2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4a4dad83203fe8186858d1b410358f2d">PCPP_ETHERTYPE_REVARP</a>&#160;&#160;&#160;0x8035</td></tr>
-<tr class="separator:a4a4dad83203fe8186858d1b410358f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ad61f226417b0ec229061052e02ff5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a16ad61f226417b0ec229061052e02ff5">PCPP_ETHERTYPE_AT</a>&#160;&#160;&#160;0x809B</td></tr>
-<tr class="separator:a16ad61f226417b0ec229061052e02ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8cff68aa7d47eeb5e608246c8727615"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ab8cff68aa7d47eeb5e608246c8727615">PCPP_ETHERTYPE_AARP</a>&#160;&#160;&#160;0x80F3</td></tr>
-<tr class="separator:ab8cff68aa7d47eeb5e608246c8727615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae9eed713c168d2986083e7571dfeca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4ae9eed713c168d2986083e7571dfeca">PCPP_ETHERTYPE_VLAN</a>&#160;&#160;&#160;0x8100</td></tr>
-<tr class="separator:a4ae9eed713c168d2986083e7571dfeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcff8d6ce6ee0047f0ec6f44441f871"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#affcff8d6ce6ee0047f0ec6f44441f871">PCPP_ETHERTYPE_IPX</a>&#160;&#160;&#160;0x8137</td></tr>
-<tr class="separator:affcff8d6ce6ee0047f0ec6f44441f871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97013a466ba6fe4025baaa6e52b6a83a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a97013a466ba6fe4025baaa6e52b6a83a">PCPP_ETHERTYPE_IPV6</a>&#160;&#160;&#160;0x86dd</td></tr>
-<tr class="separator:a97013a466ba6fe4025baaa6e52b6a83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d42945cf731e4b7448b456ad4caeae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8d42945cf731e4b7448b456ad4caeae6">PCPP_ETHERTYPE_LOOPBACK</a>&#160;&#160;&#160;0x9000</td></tr>
-<tr class="separator:a8d42945cf731e4b7448b456ad4caeae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b10b583a0648c72a8763fc40e6da91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a04b10b583a0648c72a8763fc40e6da91">PCPP_ETHERTYPE_PPPOED</a>&#160;&#160;&#160;0x8863</td></tr>
-<tr class="separator:a04b10b583a0648c72a8763fc40e6da91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf3e7c4e8751512d74f77d4e23201cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0cf3e7c4e8751512d74f77d4e23201cf">PCPP_ETHERTYPE_PPPOES</a>&#160;&#160;&#160;0x8864</td></tr>
-<tr class="separator:a0cf3e7c4e8751512d74f77d4e23201cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200da35d3f8ab06ff2ad2d1030da14fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a200da35d3f8ab06ff2ad2d1030da14fa">PCPP_ETHERTYPE_MPLS</a>&#160;&#160;&#160;0x8847</td></tr>
-<tr class="separator:a200da35d3f8ab06ff2ad2d1030da14fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffe96b1f9c0c40e4dff2d83961fe7d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aaffe96b1f9c0c40e4dff2d83961fe7d1">PCPP_ETHERTYPE_PPP</a>&#160;&#160;&#160;0x880B</td></tr>
-<tr class="separator:aaffe96b1f9c0c40e4dff2d83961fe7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aebc46b2f805a197cd4b79316a9237c26"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#aebc46b2f805a197cd4b79316a9237c26">pcpp::OnDpdkPacketsArriveCallback</a>) (MBufRawPacket *packets, uint32_t numOfPackets, uint8_t threadId, DpdkDevice *device, void *userCookie)</td></tr>
+<tr class="separator:aebc46b2f805a197cd4b79316a9237c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adb43f1f8284d4e0b74d1c77b70152fa9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9">pcpp::DpdkPMDType</a> { <br />
+&#160;&#160;<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068">pcpp::PMD_UNKNOWN</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a5ea9f73f02ab060961507d00b0116c3a">pcpp::PMD_BOND</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a897a951640e193c23e5551ff6d262721">pcpp::PMD_E1000EM</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c">pcpp::PMD_IGB</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4">pcpp::PMD_IGBVF</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9ab78a0d3109436b0b81bd74f3da4aeb4f">pcpp::PMD_ENIC</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9aa5cf85f23e598984e33982f43bf68336">pcpp::PMD_FM10K</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a74b4ff3e1cfac5e22e15a9e70ef16c85">pcpp::PMD_I40E</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a72526282b86fa593ae6e558ed0a9da53">pcpp::PMD_I40EVF</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9aa98f261841430d2b8c0317f2fc7a8019">pcpp::PMD_IXGBE</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a5a0f116ac9d5559dbb4639e246441682">pcpp::PMD_IXGBEVF</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6">pcpp::PMD_MLX4</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9">pcpp::PMD_NULL</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a8d00786a5d2f4e3ff6170c428878219e">pcpp::PMD_PCAP</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a53259a7926134fe9f6e8902fa92b07fe">pcpp::PMD_RING</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580">pcpp::PMD_VIRTIO</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9ab1cf6b5ef8ce9b1dd85a96784ea87779">pcpp::PMD_VMXNET3</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9aa64fbbe7b368497e49e6bbcf0d839858">pcpp::PMD_XENVIRT</a>, 
+<a class="el" href="a00231.html#adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c">pcpp::PMD_AF_PACKET</a>
+<br />
+ }</td></tr>
+<tr class="separator:adb43f1f8284d4e0b74d1c77b70152fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab8cff68aa7d47eeb5e608246c8727615"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_AARP&#160;&#160;&#160;0x80F3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AppleTalk ARP </p>
-
-</div>
-</div>
-<a class="anchor" id="aa2d96bc006e5d45a033943b55c498903"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_ARP&#160;&#160;&#160;0x0806</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Address resolution </p>
-
-</div>
-</div>
-<a class="anchor" id="a16ad61f226417b0ec229061052e02ff5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_AT&#160;&#160;&#160;0x809B</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AppleTalk protocol </p>
-
-</div>
-</div>
-<a class="anchor" id="a31bc2379effaf5e47beb4175f5629271"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_IP&#160;&#160;&#160;0x0800</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP </p>
-
-</div>
-</div>
-<a class="anchor" id="a97013a466ba6fe4025baaa6e52b6a83a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_IPV6&#160;&#160;&#160;0x86dd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP protocol version 6 </p>
-
-</div>
-</div>
-<a class="anchor" id="affcff8d6ce6ee0047f0ec6f44441f871"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_IPX&#160;&#160;&#160;0x8137</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IPX </p>
-
-</div>
-</div>
-<a class="anchor" id="a8d42945cf731e4b7448b456ad4caeae6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_LOOPBACK&#160;&#160;&#160;0x9000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>used to test interfaces </p>
-
-</div>
-</div>
-<a class="anchor" id="a200da35d3f8ab06ff2ad2d1030da14fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_MPLS&#160;&#160;&#160;0x8847</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MPLS </p>
-
-</div>
-</div>
-<a class="anchor" id="aaffe96b1f9c0c40e4dff2d83961fe7d1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_PPP&#160;&#160;&#160;0x880B</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Point-to-point protocol (PPP) </p>
-
-</div>
-</div>
-<a class="anchor" id="a04b10b583a0648c72a8763fc40e6da91"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_PPPOED&#160;&#160;&#160;0x8863</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PPPoE discovery </p>
-
-</div>
-</div>
-<a class="anchor" id="a0cf3e7c4e8751512d74f77d4e23201cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_PPPOES&#160;&#160;&#160;0x8864</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PPPoE session </p>
-
-</div>
-</div>
-<a class="anchor" id="a821031eca1080fbf3902fd4bccbaf7df"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_PUP&#160;&#160;&#160;0x0200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Xerox PUP </p>
-
-</div>
-</div>
-<a class="anchor" id="a4a4dad83203fe8186858d1b410358f2d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_REVARP&#160;&#160;&#160;0x8035</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reverse ARP </p>
-
-</div>
-</div>
-<a class="anchor" id="a65d9a2928c78d3240d81571a331e2eca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_SPRITE&#160;&#160;&#160;0x0500</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sprite </p>
-
-</div>
-</div>
-<a class="anchor" id="a4ae9eed713c168d2986083e7571dfeca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_ETHERTYPE_VLAN&#160;&#160;&#160;0x8100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IEEE 802.1Q VLAN tagging </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file and <a class="el" href="a00180.html">DpdkDeviceList.h</a> provide PcapPlusPlus C++ wrapper for DPDK (stands for data-plan development kit). What is DPDK? as quoting from <a href="http://dpdk.org:">http://dpdk.org:</a> "DPDK is a set of libraries and drivers for fast packet processing... These libraries can be used to: receive and send packets within the minimum number of CPU cycles (usually less than 80 cycles)... develop fast packet capture algorithms (tcpdump-like)... run third-party fast path stacks... Some packet processing functions have been benchmarked up to hundreds million frames per second, using 64-byte packets with a PCIe NIC"<br />
+ As DPDK API is written in C, PcapPlusPlus wraps the main functionality in a C++ easy-to-use classes which should have minimum affect on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and API so you can use DPDK together with other PcapPlusPlus features such as packet parsing and editing, etc.<br />
+ So how DPDK basically works? in order to boost packet processing performance on a commodity server DPDK is bypassing the Linux kernel. All the packet processing activity happens in the user space so basically packets are delivered from NIC hardware queues directly to user-space shared memory without going through the kernel. In addition DPDK uses polling instead of handling interrupts for each arrived packet (as interupts create some delays). Other methods to boost packets processing implemented by DPDK are using Hugepages to decrease the size of TLB that results in a much faster virtual to physical page conversion, thread affinity to bind threads to a specific core, lock-free user-space multi-core synchronization using rings data structures and NUMA awareness to avoid expensive data transfers between sockets.<br />
+ Not every NIC supports kernel-bypass capabilities so DPDK cannot work with any NIC. The list of supported NICs are in DPDK's web-site <a href="http://dpdk.org/doc/nics">http://dpdk.org/doc/nics</a> . For each such NIC the DPDK framework provides a module that called poll-mode-driver (PMD in short) that enables this NIC to the working with DPDK. PcapPlusPlus wasn't tested with most PMDs but all of them should theoretically work as PcapPlusPlus doesn't change the PMD behavior<br />
+ DPDK has another basic data-structure called mbuf. An mbuf is DPDK wrapper struct for network packets. When working with packets in DPDK you actually work with mbufs. The mbuf contains the packet data (obviously) but also some metadata on the packet such as the DPDK port it was captured on, packet ref-count (which allows it to be referenced by several objects), etc. One important concept is that DPDK doesn't allocate mbufs on-the-fly but uses mbuf pools. These pools is allocated on application startup and used throughout the application. The goal of this, of course, is increasing packet processing performance as allocating memory has its cost. So pool size is important and varies between applications. For example: an application that stores packets in memory has to have a large pool of mbufs so mbufs doesn't run-out. PcapPlusPlus enables to choose the pool size at startup<br />
+ <br />
+ PcapPlusPlus main wrapper classes for DPDK are:</p><ul>
+<li>DpdkDevice - a class that wraps a DPDK port and provides all capabilities of receiving and sending packets to this port</li>
+<li>DpdkDeviceList - a singleton class that initializes the DPDK infrastructure and creates DpdkDevice instances to all available ports. In addition it allows starting and stopping of worker threads</li>
+<li>MBufRawPacket - a child class to RawPacket which customizes it for working with mbuf</li>
+<li>In addition PcapPlusPlus provides a shell script to initialize DPDK prerequisites: setup-dpdk.sh. This is an easy-to-use script that sets up huge-pages, loads DPDK kernel module and sets up the NICs that will be used by DPDK. This script must run before an application that uses DPDK runs. If you forgot to run it the application will fail with an appropriate error that will remind</li>
+</ul>
+<p>DPDK initialization using PcapPlusPlus:</p><ul>
+<li>Before application runs: run the setup-dpdk.sh script</li>
+<li>On application startup call DpdkDeviceList::initDpdk() static method to initialize DPDK infrastructure and DpdkDevice instances</li>
+<li>Open the relevant DpdkDevice(s)</li>
+<li>Send &amp; receive packets... </li>
+</ul>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">EthLayer.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00179.html">DpdkDevice.h</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

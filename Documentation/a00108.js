@@ -1,11 +1,7 @@
 var a00108 =
 [
-    [ "PPP_PPTPLayer", "a00108.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
-    [ "PPP_PPTPLayer", "a00108.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
-    [ "computeCalculateFields", "a00108.html#a989b126eecc1536b660d46dda3e5a795", null ],
-    [ "getHeaderLen", "a00108.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
-    [ "getOsiModelLayer", "a00108.html#a160d2b07571f8dc68d01d9c425dc80f6", null ],
-    [ "getPPP_PPTPHeader", "a00108.html#aa9707853653d941e1ae0a8727b281191", null ],
-    [ "parseNextLayer", "a00108.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
-    [ "toString", "a00108.html#a92c398562bc0be52b28dce752c669d70", null ]
+    [ "PortRangeFilter", "a00108.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
+    [ "parseToString", "a00108.html#a267adc124537789fd02510b61e2b4905", null ],
+    [ "setFromPort", "a00108.html#ae68efea901b4af50277b64632bc91d19", null ],
+    [ "setToPort", "a00108.html#a568420221c6f509bcdb58c937d0c683d", null ]
 ];

@@ -1,18 +1,23 @@
 var a00161 =
 [
-    [ "OnTcpConnectionEnd", "a00161.html#abbcb38ac950666833df4084f80beb056", null ],
-    [ "OnTcpConnectionStart", "a00161.html#abda8219de68412e0ce7f7116601243a8", null ],
-    [ "OnTcpMessageReady", "a00161.html#ab6698eb002363dc18e664f15418fc1eb", null ],
-    [ "ConnectionEndReason", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0", [
-      [ "TcpReassemblyConnectionClosedByFIN_RST", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133", null ],
-      [ "TcpReassemblyConnectionClosedManually", "a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9", null ]
-    ] ],
-    [ "TcpReassembly", "a00161.html#a49281471fb379fdae6c8df5ed7844c92", null ],
-    [ "~TcpReassembly", "a00161.html#aa1797ebded60f0637ae95223653b9f78", null ],
-    [ "closeAllConnections", "a00161.html#acf940b05f75a129f595301012be46005", null ],
-    [ "closeConnection", "a00161.html#ae173fc16a427b5e46b1a5417de19d735", null ],
-    [ "getConnectionInformation", "a00161.html#af05c80624748539e2686d8a41d2d8219", null ],
-    [ "isConnectionOpen", "a00161.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
-    [ "ReassemblePacket", "a00161.html#a56719c498f49cc2e2e6177e705109fcf", null ],
-    [ "ReassemblePacket", "a00161.html#a62d6623f39621c475e5619366512889a", null ]
+    [ "TcpLayer", "a00161.html#a586788dd716915a61f263996ebaae626", null ],
+    [ "TcpLayer", "a00161.html#a3dfca9bce5c6ec475894d476e8372156", null ],
+    [ "TcpLayer", "a00161.html#a9a9a7a8f1be4cfa9a181330d48b676ef", null ],
+    [ "TcpLayer", "a00161.html#a5501475794c2db27489dcd27d01423bd", null ],
+    [ "addTcpOption", "a00161.html#a1a05337e558a7f7b8420911d2f0f8e44", null ],
+    [ "addTcpOptionAfter", "a00161.html#aa38d093ade5504875801fc74762e6cf6", null ],
+    [ "calculateChecksum", "a00161.html#abf39676d5adf4e2b3b2d90a616428780", null ],
+    [ "computeCalculateFields", "a00161.html#a500d6585f588aaed9c73c2872c581e02", null ],
+    [ "getFirstTcpOptionData", "a00161.html#a61378c46f72ddcc4480e15e3dee46c7d", null ],
+    [ "getHeaderLen", "a00161.html#a5d81b7bed2f5c4389b5b80c9282493e6", null ],
+    [ "getNextTcpOptionData", "a00161.html#ad08a096aafc4a57608336f5c7c156cf4", null ],
+    [ "getOsiModelLayer", "a00161.html#ae924f98f5fb2cb2ea0f72c34f6eba322", null ],
+    [ "getTcpHeader", "a00161.html#a351dbc0708b8930036940ff93abb362f", null ],
+    [ "getTcpOptionData", "a00161.html#a1b427e3e350460835e76d315c0f0b4bb", null ],
+    [ "getTcpOptionsCount", "a00161.html#a5f4221c3c8c65f55e21c2db0e87b566a", null ],
+    [ "operator=", "a00161.html#a7dea7265510eda5cd67b984c2634ef19", null ],
+    [ "parseNextLayer", "a00161.html#ab26777b6ea7d6bfaed5032b20630fc72", null ],
+    [ "removeAllTcpOptions", "a00161.html#a54812a58a88be8978b3e609f32504a87", null ],
+    [ "removeTcpOption", "a00161.html#addfb058ef0cd1b7fa3963b8889e7d5b6", null ],
+    [ "toString", "a00161.html#a73e8482bed0fbb00e7a7ba87699df92f", null ]
 ];

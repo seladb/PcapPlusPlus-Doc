@@ -1,15 +1,39 @@
 var a00096 =
 [
-    [ "PcapNgFileReaderDevice", "a00096.html#ab654df3ff52249cf56fddd2a12aa6df4", null ],
-    [ "~PcapNgFileReaderDevice", "a00096.html#a3fdac9f71c23e6c973f6bb119d1ce75d", null ],
-    [ "close", "a00096.html#a637743eb1a25fde92af7aeca8879fc02", null ],
-    [ "getCaptureApplication", "a00096.html#a41bf41e1e995dd48d5263b2c04ad4d02", null ],
-    [ "getCaptureFileComment", "a00096.html#a4b71f490244ab2a59033e7d6d94227bb", null ],
-    [ "getHardware", "a00096.html#a448bef18de4a0d9777161c114bd5c684", null ],
-    [ "getNextPacket", "a00096.html#a9bf1e61be8334e31a329451ad2397b27", null ],
-    [ "getNextPacket", "a00096.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
-    [ "getOS", "a00096.html#a2ac993cca52aac490c4d60562370f317", null ],
-    [ "getStatistics", "a00096.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
-    [ "open", "a00096.html#aea89bc17fd3b560576a20afc6da1d304", null ],
-    [ "setFilter", "a00096.html#af28e1f52506a83feae30e279adb538a7", null ]
+    [ "DeviceMode", "a00096.html#a2381e7f053285090f0f9620bcbd8f0f3", [
+      [ "Normal", "a00096.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
+      [ "Promiscuous", "a00096.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]
+    ] ],
+    [ "LiveDeviceType", "a00096.html#a0e343585711ee4e02d4b9507467135ab", [
+      [ "LibPcapDevice", "a00096.html#a0e343585711ee4e02d4b9507467135aba975b2663c8a8bcc495a71af5e80f8652", null ],
+      [ "WinPcapDevice", "a00096.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6", null ],
+      [ "RemoteDevice", "a00096.html#a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c", null ]
+    ] ],
+    [ "~PcapLiveDevice", "a00096.html#a0172bbe45fb66f4722bf2bd4847c91fe", null ],
+    [ "close", "a00096.html#ad7ccb5eac1b23651e7b157b628435528", null ],
+    [ "getAddresses", "a00096.html#a5a9a1a299d54e2150eedf96f90ad5caa", null ],
+    [ "getDefaultGateway", "a00096.html#ab7df16cfa57eea8f275d8ddfecfee968", null ],
+    [ "getDesc", "a00096.html#aacdd1317bb1387a067bfd21d49e5b059", null ],
+    [ "getDeviceType", "a00096.html#a70b3e39208905585907c3557971b71e8", null ],
+    [ "getDnsServers", "a00096.html#a89cdf86d684d71cf556cd9dd98f1a9c6", null ],
+    [ "getIPv4Address", "a00096.html#a36fb6a59e454d6594451e4b285344181", null ],
+    [ "getLoopback", "a00096.html#a75748fd040d8f97f4c43b1524e4fb479", null ],
+    [ "getMacAddress", "a00096.html#a1bfa0fc4bc0374aaf9f11333a9904110", null ],
+    [ "getMtu", "a00096.html#ae9c3eb2f9d1af368fa0d9da30ef60f9b", null ],
+    [ "getName", "a00096.html#a606d887cb3005e75cc67609b957a886c", null ],
+    [ "getStatistics", "a00096.html#a68f87416b25abe3b625f0f9993bb7e1b", null ],
+    [ "open", "a00096.html#a281f2cd6062791c68ecdd82384f751f8", null ],
+    [ "open", "a00096.html#a5e61feb22fdab2bbbff8da63751169c9", null ],
+    [ "sendPacket", "a00096.html#a2e7b9be7551ad7759c32e9d5fbabd5c8", null ],
+    [ "sendPacket", "a00096.html#a2f45c8bc2c370f3f2120909f36b22802", null ],
+    [ "sendPacket", "a00096.html#aa547d006ea10328c631eb5379798dede", null ],
+    [ "sendPackets", "a00096.html#acf8df597d7d931fce5d006f20c9fbce3", null ],
+    [ "sendPackets", "a00096.html#af9efc27c7c0778d47c94dac02defa22b", null ],
+    [ "sendPackets", "a00096.html#adb039496514f3c53bc7eca2235653c70", null ],
+    [ "startCapture", "a00096.html#a349b001c38b0f1e43a1691fedbd1b0cc", null ],
+    [ "startCapture", "a00096.html#a78306fe44879e457df4043a117f6863a", null ],
+    [ "startCapture", "a00096.html#a2933139d284d7c167283982ec8b56559", null ],
+    [ "startCapture", "a00096.html#a821bbac1ffad5a75c6a0be1ff362eb9f", null ],
+    [ "startCaptureBlockingMode", "a00096.html#ae479987f8faf52328061e18af2addcc5", null ],
+    [ "stopCapture", "a00096.html#a818da3e11e0c953385badf6233ee0f43", null ]
 ];

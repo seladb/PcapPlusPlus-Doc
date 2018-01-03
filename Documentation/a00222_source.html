@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpReassembly.h Source File</title>
+<title>PcapPlusPlus: SSLLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,194 +105,245 @@ $(document).ready(function(){initNavTree('a00222_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">TcpReassembly.h</div>  </div>
+<div class="title">SSLLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00222.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_TCP_REASSEMBLY</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_TCP_REASSEMBLY</span></div>
+<a href="a00222.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_SSL_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_SSL_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00196.html">Packet.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00184.html">IpAddress.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00210.html">PointerVector.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00228.html">pcpp</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00007.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00007.html">ConnectionData</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">   65</a></span>&#160;    <a class="code" href="a00070.html">IPv4Address</a> <a class="code" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">srcIP</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">   67</a></span>&#160;    <a class="code" href="a00070.html">IPv4Address</a> <a class="code" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">dstIP</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">   69</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">srcPort</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">   71</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">dstPort</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">   73</a></span>&#160;    uint32_t <a class="code" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">flowKey</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">   78</a></span>&#160;    <a class="code" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">ConnectionData</a>() : srcIP(<a class="code" href="a00070.html">IPv4Address</a>::Zero), dstIP(<a class="code" href="a00070.html">IPv4Address</a>::Zero), srcPort(0), dstPort(0), flowKey(0) {}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">class </span>TcpReassembly;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00162.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00162.html">TcpStreamData</a></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00161.html">TcpReassembly</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="a00162.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="a00162.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(uint8_t* tcpData, <span class="keywordtype">size_t</span> tcpDataLength, <a class="code" href="a00007.html">ConnectionData</a> connData);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="a00162.html#aacb6d4bc4dd7bf367598aa24e5d5f425">~TcpStreamData</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a00162.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(<a class="code" href="a00162.html">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="a00162.html">TcpStreamData</a>&amp; <a class="code" href="a00162.html#a23bae012dd3ef982d9f010d9afcf6690">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00162.html">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="a00162.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">  133</a></span>&#160;    <span class="keyword">inline</span> uint8_t* <a class="code" href="a00162.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">getData</a>() { <span class="keywordflow">return</span> m_Data; }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00162.html#aeceeb369d8e8cb114f2c8682b966d1e6">  139</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00162.html#aeceeb369d8e8cb114f2c8682b966d1e6">getDataLength</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00162.html#ae7120f2faf97cfc9a560f7062daab95a">  145</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00007.html">ConnectionData</a> <a class="code" href="a00162.html#ae7120f2faf97cfc9a560f7062daab95a">getConnectionData</a>() { <span class="keywordflow">return</span> m_Connection; }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    uint8_t* m_Data;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">size_t</span> m_DataLen;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="a00007.html">ConnectionData</a> m_Connection;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> m_DeleteDataOnDestruction;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> setDeleteDataOnDestruction(<span class="keywordtype">bool</span> flag) { m_DeleteDataOnDestruction = flag; }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> copyData(<span class="keyword">const</span> <a class="code" href="a00162.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00161.html">  162</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00161.html">TcpReassembly</a></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00213.html">PointerVector.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00191.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00220.html">SSLCommon.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00221.html">SSLHandshake.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00231.html">pcpp</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">  169</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">  172</a></span>&#160;        <a class="code" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a>,</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">  174</a></span>&#160;        <a class="code" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    };</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="a00149.html">  173</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00149.html">SSLLayer</a> : <span class="keyword">public</span> <a class="code" href="a00079.html">Layer</a></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00161.html#ab6698eb002363dc18e664f15418fc1eb">  184</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00161.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>)(<span class="keywordtype">int</span> side, <a class="code" href="a00162.html">TcpStreamData</a> tcpData, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="a00161.html#abda8219de68412e0ce7f7116601243a8">  192</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00161.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="a00161.html#abbcb38ac950666833df4084f80beb056">  201</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00161.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <a class="code" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="a00161.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a>(<a class="code" href="a00161.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, <span class="keywordtype">void</span>* userCookie = NULL, <a class="code" href="a00161.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback = NULL, <a class="code" href="a00161.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback = NULL);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="a00161.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a>();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="a00149.html#a15327f1acf51062ba2852678211f8264">IsSSLMessage</a>(uint16_t srcPort, uint16_t dstPort, uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00149.html">SSLLayer</a>* <a class="code" href="a00149.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="a00149.html#af38f557785a417888c5a1096d8c5c52f">sslVersionToString</a>(<a class="code" href="a00231.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> ver);</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00161.html#a56719c498f49cc2e2e6177e705109fcf">ReassemblePacket</a>(<a class="code" href="a00090.html">Packet</a>&amp; tcpData);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00161.html#a56719c498f49cc2e2e6177e705109fcf">ReassemblePacket</a>(<a class="code" href="a00115.html">RawPacket</a>* tcpRawData);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00161.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a>(uint32_t flowKey);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;uint16_t, bool&gt;* <a class="code" href="a00149.html#a1ea39487affc954f5584adc260de9d02">getSSLPortMap</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="a00149.html#a693e2da655cd33a4906bcbcffb394126">  227</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00133.html">ssl_tls_record_layer</a>* <a class="code" href="a00149.html#a693e2da655cd33a4906bcbcffb394126">getRecordLayer</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00133.html">ssl_tls_record_layer</a>*)m_Data; }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="a00231.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> <a class="code" href="a00149.html#a56f3a017783ffc524463a5691959ae5a">getRecordVersion</a>();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="a00231.html#a8009288902cf5a1c0be461f28e82ab3b">SSLRecordType</a> <a class="code" href="a00149.html#af0bff83614a0641b170e8fb4734178bd">getRecordType</a>();</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00161.html#acf940b05f75a129f595301012be46005">closeAllConnections</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> std::vector&lt;ConnectionData&gt;&amp; <a class="code" href="a00161.html#af05c80624748539e2686d8a41d2d8219">getConnectionInformation</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00161.html#afb80b9ac9c6c454e5fb747a847d4d0a2">isConnectionOpen</a>(<span class="keyword">const</span> <a class="code" href="a00007.html">ConnectionData</a>&amp; connection);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">struct </span>TcpFragment</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        uint32_t sequence;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">size_t</span> dataLength;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        uint8_t* data;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        TcpFragment() { sequence = 0; dataLength = 0; data = NULL; }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        ~TcpFragment() { <span class="keywordflow">if</span> (data != NULL) <span class="keyword">delete</span> [] data; }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    };</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">struct </span>TcpOneSideData</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        uint32_t srcIP;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        uint16_t srcPort;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        uint32_t sequence;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        PointerVector&lt;TcpFragment&gt; tcpFragmentList;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordtype">bool</span> gotFinOrRst;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        TcpOneSideData() { srcIP = 0; srcPort = 0; sequence = 0; gotFinOrRst = <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    };</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">struct </span>TcpReassemblyData</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordtype">int</span> numOfSides;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordtype">int</span> prevSide;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        TcpOneSideData twoSides[2];</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        ConnectionData connData;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        TcpReassemblyData() { numOfSides = 0; prevSide = -1; }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    };</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="a00161.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="a00161.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> m_OnConnStart;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="a00161.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> m_OnConnEnd;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span>* m_UserCookie;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::map&lt;uint32_t, TcpReassemblyData*&gt; m_ConnectionList;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::map&lt;uint32_t, bool&gt; m_ClosedConnectionList;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    std::vector&lt;ConnectionData&gt; m_ConnectionInfo;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> checkOutOfOrderFragments(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, <span class="keywordtype">bool</span> cleanWholeFragList);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::string prepareMissingDataMessage(uint32_t missingDataLen);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> handleFinOrRst(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, uint32_t flowKey);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;};</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_REASSEMBLY */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00007_html_a75cd7efdfa6cf70b9aa2e19819800d4c"><div class="ttname"><a href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">pcpp::ConnectionData::dstPort</a></div><div class="ttdeci">size_t dstPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:71</div></div>
-<div class="ttc" id="a00210_html"><div class="ttname"><a href="a00210.html">PointerVector.h</a></div></div>
-<div class="ttc" id="a00162_html_acb6875699103b7d1967cb799f7501913"><div class="ttname"><a href="a00162.html#acb6875699103b7d1967cb799f7501913">pcpp::TcpStreamData::TcpStreamData</a></div><div class="ttdeci">TcpStreamData()</div></div>
-<div class="ttc" id="a00115_html"><div class="ttname"><a href="a00115.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
-<div class="ttc" id="a00161_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"><div class="ttname"><a href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">pcpp::TcpReassembly::TcpReassemblyConnectionClosedManually</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:174</div></div>
-<div class="ttc" id="a00162_html_aacb6d4bc4dd7bf367598aa24e5d5f425"><div class="ttname"><a href="a00162.html#aacb6d4bc4dd7bf367598aa24e5d5f425">pcpp::TcpStreamData::~TcpStreamData</a></div><div class="ttdeci">~TcpStreamData()</div></div>
-<div class="ttc" id="a00161_html_acf940b05f75a129f595301012be46005"><div class="ttname"><a href="a00161.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections</a></div><div class="ttdeci">void closeAllConnections()</div></div>
-<div class="ttc" id="a00162_html"><div class="ttname"><a href="a00162.html">pcpp::TcpStreamData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:90</div></div>
-<div class="ttc" id="a00007_html_ad5a3d88fb59140020216ac83fd12219a"><div class="ttname"><a href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">pcpp::ConnectionData::flowKey</a></div><div class="ttdeci">uint32_t flowKey</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:73</div></div>
-<div class="ttc" id="a00196_html"><div class="ttname"><a href="a00196.html">Packet.h</a></div></div>
-<div class="ttc" id="a00184_html"><div class="ttname"><a href="a00184.html">IpAddress.h</a></div></div>
-<div class="ttc" id="a00162_html_ae7120f2faf97cfc9a560f7062daab95a"><div class="ttname"><a href="a00162.html#ae7120f2faf97cfc9a560f7062daab95a">pcpp::TcpStreamData::getConnectionData</a></div><div class="ttdeci">ConnectionData getConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:145</div></div>
-<div class="ttc" id="a00070_html"><div class="ttname"><a href="a00070.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:99</div></div>
-<div class="ttc" id="a00007_html_a0c85520b1498c5de042fb9db02a839d9"><div class="ttname"><a href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">pcpp::ConnectionData::dstIP</a></div><div class="ttdeci">IPv4Address dstIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:67</div></div>
-<div class="ttc" id="a00090_html"><div class="ttname"><a href="a00090.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00161_html"><div class="ttname"><a href="a00161.html">pcpp::TcpReassembly</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:162</div></div>
-<div class="ttc" id="a00161_html_ab6698eb002363dc18e664f15418fc1eb"><div class="ttname"><a href="a00161.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a></div><div class="ttdeci">void(* OnTcpMessageReady)(int side, TcpStreamData tcpData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:184</div></div>
-<div class="ttc" id="a00162_html_aeceeb369d8e8cb114f2c8682b966d1e6"><div class="ttname"><a href="a00162.html#aeceeb369d8e8cb114f2c8682b966d1e6">pcpp::TcpStreamData::getDataLength</a></div><div class="ttdeci">size_t getDataLength()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:139</div></div>
-<div class="ttc" id="a00161_html_aa1797ebded60f0637ae95223653b9f78"><div class="ttname"><a href="a00161.html#aa1797ebded60f0637ae95223653b9f78">pcpp::TcpReassembly::~TcpReassembly</a></div><div class="ttdeci">~TcpReassembly()</div></div>
-<div class="ttc" id="a00161_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0"><div class="ttname"><a href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">pcpp::TcpReassembly::ConnectionEndReason</a></div><div class="ttdeci">ConnectionEndReason</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:169</div></div>
-<div class="ttc" id="a00007_html_af4a36ba152a559229a2334ad4da6f19a"><div class="ttname"><a href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">pcpp::ConnectionData::srcIP</a></div><div class="ttdeci">IPv4Address srcIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:65</div></div>
-<div class="ttc" id="a00161_html_afb80b9ac9c6c454e5fb747a847d4d0a2"><div class="ttname"><a href="a00161.html#afb80b9ac9c6c454e5fb747a847d4d0a2">pcpp::TcpReassembly::isConnectionOpen</a></div><div class="ttdeci">int isConnectionOpen(const ConnectionData &amp;connection)</div></div>
-<div class="ttc" id="a00162_html_a23bae012dd3ef982d9f010d9afcf6690"><div class="ttname"><a href="a00162.html#a23bae012dd3ef982d9f010d9afcf6690">pcpp::TcpStreamData::operator=</a></div><div class="ttdeci">TcpStreamData &amp; operator=(const TcpStreamData &amp;other)</div></div>
-<div class="ttc" id="a00161_html_abbcb38ac950666833df4084f80beb056"><div class="ttname"><a href="a00161.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a></div><div class="ttdeci">void(* OnTcpConnectionEnd)(ConnectionData connectionData, ConnectionEndReason reason, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:201</div></div>
-<div class="ttc" id="a00161_html_a49281471fb379fdae6c8df5ed7844c92"><div class="ttname"><a href="a00161.html#a49281471fb379fdae6c8df5ed7844c92">pcpp::TcpReassembly::TcpReassembly</a></div><div class="ttdeci">TcpReassembly(OnTcpMessageReady onMessageReadyCallback, void *userCookie=NULL, OnTcpConnectionStart onConnectionStartCallback=NULL, OnTcpConnectionEnd onConnectionEndCallback=NULL)</div></div>
-<div class="ttc" id="a00161_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"><div class="ttname"><a href="a00161.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">pcpp::TcpReassembly::TcpReassemblyConnectionClosedByFIN_RST</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:172</div></div>
-<div class="ttc" id="a00162_html_ae1f70f5bd9689c11412b2c82e1e4c4d2"><div class="ttname"><a href="a00162.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">pcpp::TcpStreamData::getData</a></div><div class="ttdeci">uint8_t * getData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:133</div></div>
-<div class="ttc" id="a00161_html_af05c80624748539e2686d8a41d2d8219"><div class="ttname"><a href="a00161.html#af05c80624748539e2686d8a41d2d8219">pcpp::TcpReassembly::getConnectionInformation</a></div><div class="ttdeci">const std::vector&lt; ConnectionData &gt; &amp; getConnectionInformation() const </div></div>
-<div class="ttc" id="a00007_html_acff3614b14bd54ac98a996714a8a24b0"><div class="ttname"><a href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">pcpp::ConnectionData::ConnectionData</a></div><div class="ttdeci">ConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:78</div></div>
-<div class="ttc" id="a00007_html_acee601fef74ec911e3bcb860a3a73844"><div class="ttname"><a href="a00007.html#acee601fef74ec911e3bcb860a3a73844">pcpp::ConnectionData::srcPort</a></div><div class="ttdeci">size_t srcPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:69</div></div>
-<div class="ttc" id="a00228_html"><div class="ttname"><a href="a00228.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00161_html_abda8219de68412e0ce7f7116601243a8"><div class="ttname"><a href="a00161.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a></div><div class="ttdeci">void(* OnTcpConnectionStart)(ConnectionData connectionData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:192</div></div>
-<div class="ttc" id="a00161_html_ae173fc16a427b5e46b1a5417de19d735"><div class="ttname"><a href="a00161.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection</a></div><div class="ttdeci">void closeConnection(uint32_t flowKey)</div></div>
-<div class="ttc" id="a00161_html_a56719c498f49cc2e2e6177e705109fcf"><div class="ttname"><a href="a00161.html#a56719c498f49cc2e2e6177e705109fcf">pcpp::TcpReassembly::ReassemblePacket</a></div><div class="ttdeci">void ReassemblePacket(Packet &amp;tcpData)</div></div>
-<div class="ttc" id="a00007_html"><div class="ttname"><a href="a00007.html">pcpp::ConnectionData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:62</div></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="a00149.html#afd062c291faff189eff54e987885e3f6">getHeaderLen</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00149.html#acc45ce490c60762cf4be2da0a4d57723">parseNextLayer</a>();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="a00149.html#af19d2257b49531b37f546810c5b788b8">  252</a></span>&#160;        <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00149.html#af19d2257b49531b37f546810c5b788b8">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">OsiModelPresentationLayer</a>; }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="a00149.html">SSLLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet) : <a class="code" href="a00079.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">SSL</a>; }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    };</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="a00146.html">  306</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00146.html">SSLHandshakeLayer</a>: <span class="keyword">public</span> <a class="code" href="a00149.html">SSLLayer</a></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <a class="code" href="a00146.html#a0b37d33d8342f166a5a1746820aa0c0b">SSLHandshakeLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="a00146.html#a9f7c42970ded74d0fee34103e51f7632">getHandshakeMessagesCount</a>();</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="a00147.html">SSLHandshakeMessage</a>* <a class="code" href="a00146.html#ac8d1ae87429f17ad41ca8aa4b4231fa8">getHandshakeMessageAt</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> THandshakeMessage&gt;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        THandshakeMessage* <a class="code" href="a00146.html#a4a40a448fd7234eb08c95b5032e64974">getHandshakeMessageOfType</a>();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> THandshakeMessage&gt;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        THandshakeMessage* <a class="code" href="a00146.html#ac1659f58a8e3ed9ed506df80d91c7dbb">getNextHandshakeMessageOfType</a>(<a class="code" href="a00147.html">SSLHandshakeMessage</a>* after);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        std::string <a class="code" href="a00146.html#a33923287a108f28edc654c5120cf6158">toString</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="a00146.html#ab9db43d75aec58260e33cbce36f969bb">  359</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00146.html#ab9db43d75aec58260e33cbce36f969bb">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="a00106.html">PointerVector&lt;SSLHandshakeMessage&gt;</a> m_MessageList;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    };</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="a00139.html">  371</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00139.html">SSLChangeCipherSpecLayer</a> : <span class="keyword">public</span> <a class="code" href="a00149.html">SSLLayer</a></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="a00139.html#a7c8ad60a5877520ba242db95471fb8c2">  382</a></span>&#160;        <a class="code" href="a00139.html#a7c8ad60a5877520ba242db95471fb8c2">SSLChangeCipherSpecLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet)</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            : <a class="code" href="a00149.html">SSLLayer</a>(data, dataLen, prevLayer, packet) {}</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        ~<a class="code" href="a00139.html">SSLChangeCipherSpecLayer</a>() {}</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        std::string <a class="code" href="a00139.html#a25cb2a35845fa1e357e06330d958f53c">toString</a>();</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="a00139.html#a4c923d17f77571ec8c5273bfbd844ac4">  394</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00139.html#a4c923d17f77571ec8c5273bfbd844ac4">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    };</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="a00134.html">  403</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00134.html">SSLAlertLayer</a> : <span class="keyword">public</span> <a class="code" href="a00149.html">SSLLayer</a></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="a00134.html#aecf449f0c8f821ede816f33d6012b622">  414</a></span>&#160;        <a class="code" href="a00134.html#aecf449f0c8f821ede816f33d6012b622">SSLAlertLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet)</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            : <a class="code" href="a00149.html">SSLLayer</a>(data, dataLen, prevLayer, packet) {}</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        ~<a class="code" href="a00134.html">SSLAlertLayer</a>() {}</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <a class="code" href="a00231.html#ab3ca83a56e04fa5115ce2f2084a24b3c">SSLAlertLevel</a> <a class="code" href="a00134.html#a9475a8edb483087bddcdc2dbbb9aee50">getAlertLevel</a>();</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <a class="code" href="a00231.html#a49ab6e738d527b3e3fbbe112eed0fc32">SSLAlertDescription</a> <a class="code" href="a00134.html#abe330e7c044c958d5b0f2093d3572fa5">getAlertDescription</a>();</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        std::string <a class="code" href="a00134.html#a83cc6bf4395282603e1fa47c55bece5b">toString</a>();</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="a00134.html#ad0d48805edb1cb7a1820accacefb42e5">  436</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00134.html#ad0d48805edb1cb7a1820accacefb42e5">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    };</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="a00135.html">  445</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00135.html">SSLApplicationDataLayer</a> : <span class="keyword">public</span> <a class="code" href="a00149.html">SSLLayer</a></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    {</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="a00135.html#ad2d812ae6c47cb20693c81f7d0f0b76d">  456</a></span>&#160;        <a class="code" href="a00135.html#ad2d812ae6c47cb20693c81f7d0f0b76d">SSLApplicationDataLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00079.html">Layer</a>* prevLayer, <a class="code" href="a00091.html">Packet</a>* packet)</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            : <a class="code" href="a00149.html">SSLLayer</a>(data, dataLen, prevLayer, packet) {}</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        ~<a class="code" href="a00135.html">SSLApplicationDataLayer</a>() {}</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        uint8_t* <a class="code" href="a00135.html#a5aee5cb13e0c078fb4c4e24c5fbac99e">getEncrpytedData</a>();</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="a00135.html#ab078cc94b266ccb418e3047db02b6130">getEncrpytedDataLen</a>();</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        std::string <a class="code" href="a00135.html#a9676cb9040c57b7f4929c450d4e952f8">toString</a>();</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
+<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="a00135.html#a26b335b7dff7b46724894cad71ee56eb">  479</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00135.html#a26b335b7dff7b46724894cad71ee56eb">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    };</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> THandshakeMessage&gt;</div>
+<div class="line"><a name="l00483"></a><span class="lineno"><a class="line" href="a00146.html#a4a40a448fd7234eb08c95b5032e64974">  483</a></span>&#160;    THandshakeMessage* <a class="code" href="a00146.html#a4a40a448fd7234eb08c95b5032e64974">SSLHandshakeLayer::getHandshakeMessageOfType</a>()</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    {</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordtype">size_t</span> vecSize = m_MessageList.size();</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecSize; i++)</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <a class="code" href="a00147.html">SSLHandshakeMessage</a>* curElem = m_MessageList.at(i);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;             <span class="keywordflow">if</span> (dynamic_cast&lt;THandshakeMessage*&gt;(curElem) != NULL)</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                 <span class="keywordflow">return</span> (THandshakeMessage*)curElem;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="comment">// element not found</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    }</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> THandshakeMessage&gt;</div>
+<div class="line"><a name="l00498"></a><span class="lineno"><a class="line" href="a00146.html#ac1659f58a8e3ed9ed506df80d91c7dbb">  498</a></span>&#160;    THandshakeMessage* <a class="code" href="a00146.html#ac1659f58a8e3ed9ed506df80d91c7dbb">SSLHandshakeLayer::getNextHandshakeMessageOfType</a>(<a class="code" href="a00147.html">SSLHandshakeMessage</a>* after)</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    {</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <span class="keywordtype">size_t</span> vecSize = m_MessageList.size();</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="keywordtype">size_t</span> afterIndex;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="comment">// find the index of &quot;after&quot;</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="keywordflow">for</span> (afterIndex = 0; afterIndex &lt; vecSize; afterIndex++)</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            <a class="code" href="a00147.html">SSLHandshakeMessage</a>* curElem = m_MessageList.at(afterIndex);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            <span class="keywordflow">if</span> (curElem == after)</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        }</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="comment">// &quot;after&quot; not found</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keywordflow">if</span> (afterIndex == vecSize)</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = afterIndex+1; i &lt; vecSize; i++)</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;            <a class="code" href="a00147.html">SSLHandshakeMessage</a>* curElem = m_MessageList.at(i);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;             <span class="keywordflow">if</span> (dynamic_cast&lt;THandshakeMessage*&gt;(curElem) != NULL)</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                 <span class="keywordflow">return</span> (THandshakeMessage*)curElem;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        }</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        <span class="comment">// element not found</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_SSL_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00146_html_a33923287a108f28edc654c5120cf6158"><div class="ttname"><a href="a00146.html#a33923287a108f28edc654c5120cf6158">pcpp::SSLHandshakeLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00139_html"><div class="ttname"><a href="a00139.html">pcpp::SSLChangeCipherSpecLayer</a></div><div class="ttdef"><b>Definition:</b> SSLLayer.h:371</div></div>
+<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">Layer.h</a></div></div>
+<div class="ttc" id="a00231_html_a57308ea55d838a37e7f2951ab950b6b0"><div class="ttname"><a href="a00231.html#a57308ea55d838a37e7f2951ab950b6b0">pcpp::SSLVersion</a></div><div class="ttdeci">SSLVersion</div><div class="ttdef"><b>Definition:</b> SSLCommon.h:112</div></div>
+<div class="ttc" id="a00149_html_af19d2257b49531b37f546810c5b788b8"><div class="ttname"><a href="a00149.html#af19d2257b49531b37f546810c5b788b8">pcpp::SSLLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:252</div></div>
+<div class="ttc" id="a00135_html_ad2d812ae6c47cb20693c81f7d0f0b76d"><div class="ttname"><a href="a00135.html#ad2d812ae6c47cb20693c81f7d0f0b76d">pcpp::SSLApplicationDataLayer::SSLApplicationDataLayer</a></div><div class="ttdeci">SSLApplicationDataLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:456</div></div>
+<div class="ttc" id="a00135_html_ab078cc94b266ccb418e3047db02b6130"><div class="ttname"><a href="a00135.html#ab078cc94b266ccb418e3047db02b6130">pcpp::SSLApplicationDataLayer::getEncrpytedDataLen</a></div><div class="ttdeci">size_t getEncrpytedDataLen()</div></div>
+<div class="ttc" id="a00134_html_a9475a8edb483087bddcdc2dbbb9aee50"><div class="ttname"><a href="a00134.html#a9475a8edb483087bddcdc2dbbb9aee50">pcpp::SSLAlertLayer::getAlertLevel</a></div><div class="ttdeci">SSLAlertLevel getAlertLevel()</div></div>
+<div class="ttc" id="a00147_html"><div class="ttname"><a href="a00147.html">pcpp::SSLHandshakeMessage</a></div><div class="ttdef"><b>Definition:</b> SSLHandshake.h:243</div></div>
+<div class="ttc" id="a00135_html"><div class="ttname"><a href="a00135.html">pcpp::SSLApplicationDataLayer</a></div><div class="ttdef"><b>Definition:</b> SSLLayer.h:445</div></div>
+<div class="ttc" id="a00231_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:203</div></div>
+<div class="ttc" id="a00134_html_a83cc6bf4395282603e1fa47c55bece5b"><div class="ttname"><a href="a00134.html#a83cc6bf4395282603e1fa47c55bece5b">pcpp::SSLAlertLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00135_html_a26b335b7dff7b46724894cad71ee56eb"><div class="ttname"><a href="a00135.html#a26b335b7dff7b46724894cad71ee56eb">pcpp::SSLApplicationDataLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:479</div></div>
+<div class="ttc" id="a00221_html"><div class="ttname"><a href="a00221.html">SSLHandshake.h</a></div></div>
+<div class="ttc" id="a00079_html"><div class="ttname"><a href="a00079.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:52</div></div>
+<div class="ttc" id="a00149_html_acc45ce490c60762cf4be2da0a4d57723"><div class="ttname"><a href="a00149.html#acc45ce490c60762cf4be2da0a4d57723">pcpp::SSLLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00135_html_a5aee5cb13e0c078fb4c4e24c5fbac99e"><div class="ttname"><a href="a00135.html#a5aee5cb13e0c078fb4c4e24c5fbac99e">pcpp::SSLApplicationDataLayer::getEncrpytedData</a></div><div class="ttdeci">uint8_t * getEncrpytedData()</div></div>
+<div class="ttc" id="a00139_html_a4c923d17f77571ec8c5273bfbd844ac4"><div class="ttname"><a href="a00139.html#a4c923d17f77571ec8c5273bfbd844ac4">pcpp::SSLChangeCipherSpecLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:394</div></div>
+<div class="ttc" id="a00149_html_a56f3a017783ffc524463a5691959ae5a"><div class="ttname"><a href="a00149.html#a56f3a017783ffc524463a5691959ae5a">pcpp::SSLLayer::getRecordVersion</a></div><div class="ttdeci">SSLVersion getRecordVersion()</div></div>
+<div class="ttc" id="a00106_html"><div class="ttname"><a href="a00106.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
+<div class="ttc" id="a00231_html_a8009288902cf5a1c0be461f28e82ab3b"><div class="ttname"><a href="a00231.html#a8009288902cf5a1c0be461f28e82ab3b">pcpp::SSLRecordType</a></div><div class="ttdeci">SSLRecordType</div><div class="ttdef"><b>Definition:</b> SSLCommon.h:97</div></div>
+<div class="ttc" id="a00146_html_a9f7c42970ded74d0fee34103e51f7632"><div class="ttname"><a href="a00146.html#a9f7c42970ded74d0fee34103e51f7632">pcpp::SSLHandshakeLayer::getHandshakeMessagesCount</a></div><div class="ttdeci">size_t getHandshakeMessagesCount()</div></div>
+<div class="ttc" id="a00146_html_a4a40a448fd7234eb08c95b5032e64974"><div class="ttname"><a href="a00146.html#a4a40a448fd7234eb08c95b5032e64974">pcpp::SSLHandshakeLayer::getHandshakeMessageOfType</a></div><div class="ttdeci">THandshakeMessage * getHandshakeMessageOfType()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:483</div></div>
+<div class="ttc" id="a00231_html_a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af"><div class="ttname"><a href="a00231.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">pcpp::OsiModelPresentationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:216</div></div>
+<div class="ttc" id="a00146_html_ac1659f58a8e3ed9ed506df80d91c7dbb"><div class="ttname"><a href="a00146.html#ac1659f58a8e3ed9ed506df80d91c7dbb">pcpp::SSLHandshakeLayer::getNextHandshakeMessageOfType</a></div><div class="ttdeci">THandshakeMessage * getNextHandshakeMessageOfType(SSLHandshakeMessage *after)</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:498</div></div>
+<div class="ttc" id="a00149_html_af0bff83614a0641b170e8fb4734178bd"><div class="ttname"><a href="a00149.html#af0bff83614a0641b170e8fb4734178bd">pcpp::SSLLayer::getRecordType</a></div><div class="ttdeci">SSLRecordType getRecordType()</div></div>
+<div class="ttc" id="a00146_html_a0b37d33d8342f166a5a1746820aa0c0b"><div class="ttname"><a href="a00146.html#a0b37d33d8342f166a5a1746820aa0c0b">pcpp::SSLHandshakeLayer::SSLHandshakeLayer</a></div><div class="ttdeci">SSLHandshakeLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div></div>
+<div class="ttc" id="a00231_html_ab3ca83a56e04fa5115ce2f2084a24b3c"><div class="ttname"><a href="a00231.html#ab3ca83a56e04fa5115ce2f2084a24b3c">pcpp::SSLAlertLevel</a></div><div class="ttdeci">SSLAlertLevel</div><div class="ttdef"><b>Definition:</b> SSLCommon.h:160</div></div>
+<div class="ttc" id="a00146_html"><div class="ttname"><a href="a00146.html">pcpp::SSLHandshakeLayer</a></div><div class="ttdef"><b>Definition:</b> SSLLayer.h:306</div></div>
+<div class="ttc" id="a00134_html"><div class="ttname"><a href="a00134.html">pcpp::SSLAlertLayer</a></div><div class="ttdef"><b>Definition:</b> SSLLayer.h:403</div></div>
+<div class="ttc" id="a00220_html"><div class="ttname"><a href="a00220.html">SSLCommon.h</a></div></div>
+<div class="ttc" id="a00149_html"><div class="ttname"><a href="a00149.html">pcpp::SSLLayer</a></div><div class="ttdef"><b>Definition:</b> SSLLayer.h:173</div></div>
+<div class="ttc" id="a00149_html_afd062c291faff189eff54e987885e3f6"><div class="ttname"><a href="a00149.html#afd062c291faff189eff54e987885e3f6">pcpp::SSLLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div></div>
+<div class="ttc" id="a00149_html_a693e2da655cd33a4906bcbcffb394126"><div class="ttname"><a href="a00149.html#a693e2da655cd33a4906bcbcffb394126">pcpp::SSLLayer::getRecordLayer</a></div><div class="ttdeci">ssl_tls_record_layer * getRecordLayer()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:227</div></div>
+<div class="ttc" id="a00149_html_af38f557785a417888c5a1096d8c5c52f"><div class="ttname"><a href="a00149.html#af38f557785a417888c5a1096d8c5c52f">pcpp::SSLLayer::sslVersionToString</a></div><div class="ttdeci">static std::string sslVersionToString(SSLVersion ver)</div></div>
+<div class="ttc" id="a00134_html_ad0d48805edb1cb7a1820accacefb42e5"><div class="ttname"><a href="a00134.html#ad0d48805edb1cb7a1820accacefb42e5">pcpp::SSLAlertLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:436</div></div>
+<div class="ttc" id="a00134_html_abe330e7c044c958d5b0f2093d3572fa5"><div class="ttname"><a href="a00134.html#abe330e7c044c958d5b0f2093d3572fa5">pcpp::SSLAlertLayer::getAlertDescription</a></div><div class="ttdeci">SSLAlertDescription getAlertDescription()</div></div>
+<div class="ttc" id="a00213_html"><div class="ttname"><a href="a00213.html">PointerVector.h</a></div></div>
+<div class="ttc" id="a00231_html_a49ab6e738d527b3e3fbbe112eed0fc32"><div class="ttname"><a href="a00231.html#a49ab6e738d527b3e3fbbe112eed0fc32">pcpp::SSLAlertDescription</a></div><div class="ttdeci">SSLAlertDescription</div><div class="ttdef"><b>Definition:</b> SSLCommon.h:173</div></div>
+<div class="ttc" id="a00134_html_aecf449f0c8f821ede816f33d6012b622"><div class="ttname"><a href="a00134.html#aecf449f0c8f821ede816f33d6012b622">pcpp::SSLAlertLayer::SSLAlertLayer</a></div><div class="ttdeci">SSLAlertLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:414</div></div>
+<div class="ttc" id="a00139_html_a25cb2a35845fa1e357e06330d958f53c"><div class="ttname"><a href="a00139.html#a25cb2a35845fa1e357e06330d958f53c">pcpp::SSLChangeCipherSpecLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00133_html"><div class="ttname"><a href="a00133.html">pcpp::ssl_tls_record_layer</a></div><div class="ttdef"><b>Definition:</b> SSLCommon.h:22</div></div>
+<div class="ttc" id="a00149_html_a1ea39487affc954f5584adc260de9d02"><div class="ttname"><a href="a00149.html#a1ea39487affc954f5584adc260de9d02">pcpp::SSLLayer::getSSLPortMap</a></div><div class="ttdeci">static const std::map&lt; uint16_t, bool &gt; * getSSLPortMap()</div></div>
+<div class="ttc" id="a00231_html"><div class="ttname"><a href="a00231.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00149_html_ab475769b89eb8db08be50f96afe26450"><div class="ttname"><a href="a00149.html#ab475769b89eb8db08be50f96afe26450">pcpp::SSLLayer::createSSLMessage</a></div><div class="ttdeci">static SSLLayer * createSSLMessage(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div></div>
+<div class="ttc" id="a00146_html_ac8d1ae87429f17ad41ca8aa4b4231fa8"><div class="ttname"><a href="a00146.html#ac8d1ae87429f17ad41ca8aa4b4231fa8">pcpp::SSLHandshakeLayer::getHandshakeMessageAt</a></div><div class="ttdeci">SSLHandshakeMessage * getHandshakeMessageAt(int index)</div></div>
+<div class="ttc" id="a00149_html_a15327f1acf51062ba2852678211f8264"><div class="ttname"><a href="a00149.html#a15327f1acf51062ba2852678211f8264">pcpp::SSLLayer::IsSSLMessage</a></div><div class="ttdeci">static bool IsSSLMessage(uint16_t srcPort, uint16_t dstPort, uint8_t *data, size_t dataLen)</div></div>
+<div class="ttc" id="a00146_html_ab9db43d75aec58260e33cbce36f969bb"><div class="ttname"><a href="a00146.html#ab9db43d75aec58260e33cbce36f969bb">pcpp::SSLHandshakeLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:359</div></div>
+<div class="ttc" id="a00139_html_a7c8ad60a5877520ba242db95471fb8c2"><div class="ttname"><a href="a00139.html#a7c8ad60a5877520ba242db95471fb8c2">pcpp::SSLChangeCipherSpecLayer::SSLChangeCipherSpecLayer</a></div><div class="ttdeci">SSLChangeCipherSpecLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> SSLLayer.h:382</div></div>
+<div class="ttc" id="a00231_html_a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a"><div class="ttname"><a href="a00231.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">pcpp::SSL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:131</div></div>
+<div class="ttc" id="a00135_html_a9676cb9040c57b7f4929c450d4e952f8"><div class="ttname"><a href="a00135.html#a9676cb9040c57b7f4929c450d4e952f8">pcpp::SSLApplicationDataLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00222.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 00:48:36 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00222.html">SSLLayer.h</a></li>
+    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

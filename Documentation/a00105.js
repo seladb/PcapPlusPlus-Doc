@@ -1,6 +1,6 @@
 var a00105 =
 [
-    [ "PortFilter", "a00105.html#a5ea132bbeb522071dd39a3063f473b3f", null ],
-    [ "parseToString", "a00105.html#afd42f1ac6f213c3f347f7b5efbafdbef", null ],
-    [ "setPort", "a00105.html#af1a2f77c5a9d96d23991bd28cc9413c6", null ]
+    [ "getPfRingDeviceByName", "a00105.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
+    [ "getPfRingDevicesList", "a00105.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
+    [ "getPfRingVersion", "a00105.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
 ];

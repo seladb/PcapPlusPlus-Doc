@@ -1,12 +1,19 @@
 var a00166 =
 [
-    [ "UdpLayer", "a00166.html#add55cec282d7f33152b83424ceb2710b", null ],
-    [ "UdpLayer", "a00166.html#ab14e8e5fc416560f055bae317aa3ebed", null ],
-    [ "calculateChecksum", "a00166.html#a98ae7478c27ae01ae6be6c887506e8f4", null ],
-    [ "computeCalculateFields", "a00166.html#ac0e7ba19ff47c38eb879105ca44b3188", null ],
-    [ "getHeaderLen", "a00166.html#a27ce2ea24679695f2e408c575b465fbb", null ],
-    [ "getOsiModelLayer", "a00166.html#a668d1ab5abdec0157536ea11ed52e562", null ],
-    [ "getUdpHeader", "a00166.html#a3962406394fce824369afc0471845b96", null ],
-    [ "parseNextLayer", "a00166.html#a35d4be6b1c091dfc743113c85ca8d596", null ],
-    [ "toString", "a00166.html#a6c45f5c9bb386d5231ee485eaad26d41", null ]
+    [ "addEndOfHeader", "a00166.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b", null ],
+    [ "addField", "a00166.html#ac997392fd26a58b63827bf81a380b031", null ],
+    [ "addField", "a00166.html#aeada4c60e7c10924b6fa82d5ddfa9908", null ],
+    [ "computeCalculateFields", "a00166.html#aab0f4a2beb4bf2a423e8b0b7c18e3645", null ],
+    [ "getFieldByName", "a00166.html#af97866e274c94d11f6c4ab782e02150c", null ],
+    [ "getFieldCount", "a00166.html#a5bd3adf2a0137c18c13cf512e9f08bb2", null ],
+    [ "getFirstField", "a00166.html#a1584cbd19a25aebb26a92b6915b69a62", null ],
+    [ "getHeaderLen", "a00166.html#abd5dcefff49b14110c9ef322b826f083", null ],
+    [ "getNextField", "a00166.html#a4b29d0cbe4cb6284a1fd7061ee9d68e5", null ],
+    [ "insertField", "a00166.html#abf28607ed41ed3bfdb1c476bda303ae9", null ],
+    [ "insertField", "a00166.html#a8917992953e2a38885af837a2c49abd0", null ],
+    [ "insertField", "a00166.html#ac0555ddcc81fffa266fbc207bf040314", null ],
+    [ "isHeaderComplete", "a00166.html#a4fbea31a4f1c5a028ce874fece1cd353", null ],
+    [ "parseNextLayer", "a00166.html#ac593024db983f68d486893c0cb2acc76", null ],
+    [ "removeField", "a00166.html#a3751401eb05f223685abd0c7c6990c66", null ],
+    [ "removeField", "a00166.html#a9712764bb961cc7485335d1d30920232", null ]
 ];

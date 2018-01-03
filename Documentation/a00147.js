@@ -1,9 +1,8 @@
 var a00147 =
 [
-    [ "getHeaderLen", "a00147.html#afd062c291faff189eff54e987885e3f6", null ],
-    [ "getOsiModelLayer", "a00147.html#af19d2257b49531b37f546810c5b788b8", null ],
-    [ "getRecordLayer", "a00147.html#a693e2da655cd33a4906bcbcffb394126", null ],
-    [ "getRecordType", "a00147.html#af0bff83614a0641b170e8fb4734178bd", null ],
-    [ "getRecordVersion", "a00147.html#a56f3a017783ffc524463a5691959ae5a", null ],
-    [ "parseNextLayer", "a00147.html#acc45ce490c60762cf4be2da0a4d57723", null ]
+    [ "getContainingLayer", "a00147.html#a4342813d150cb1cec2911b59b99e0418", null ],
+    [ "getHandshakeType", "a00147.html#a31089d536fc762b283d30d7c36e3584b", null ],
+    [ "getMessageLength", "a00147.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
+    [ "isMessageComplete", "a00147.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
+    [ "toString", "a00147.html#a17b72bf10472c67d0044006099c6ea5a", null ]
 ];
