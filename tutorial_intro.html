@@ -36,6 +36,7 @@ section: tutorials
 			<li>Protocol layers (foe example: <code class="cpp">EthLayer, IPv4Layer, IPv6Layer, TcpLayer, UdpLayer, DnsLayer, HttpRequestLayer, HttpResponseLayer, PayloadLayer</code>, etc.) - classes representing specific protocol parsers. All inherit the <code class="cpp">Layer</code> class</li>
 			<li><code class="cpp">PacketUtils</code> - a class containing several widely used utilities such as calculating a hash value based on 5-tuple or 2-tuple</li>
 			<li><code class="cpp">TcpReassembly</code> - a class for providing TCP reassembly (a.k.a TCP reconstruction) of TCP streams</li>
+			<li><code class="cpp">IPv4Reassembly</code> - a class for providing IPv4 reassembly (a.k.a IPv4 de-fragmentation) of IPv4 packets</li>
 		</ol>
 	</li>
 	<li><strong><i>Pcap++</i></strong> - a library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
