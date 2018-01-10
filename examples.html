@@ -59,7 +59,15 @@ section: examples
   <li>
 	<h4>TcpReassembly</h4>
 	<p>an application that captures data transmitted as part of TCP connections, organizes the data and stores it in a way that is convenient for protocol analysis and debugging. This application reconstructs the TCP data streams and stores each connection in a separate file(s). TcpReassembly understands TCP sequence numbers and will correctly reconstruct data streams regardless of retransmissions, out-of-order delivery or data loss</p>
-  </li>		  
+  </li>
+  <li>
+	<h4>IPFragUtil</h4>
+	<p>A utility for splitting IP packets into fragmets. It works on pcap and pcapng files and allows the user to choose which packets to fragment and to which size. Currently works only on IPv4 packets</p>
+  </li>
+  <li>
+	<h4>IPDefragUtil</h4>
+	<p>A utility for reassembling IP fragments back to IP packets. It works on pcap and pcapng files and allows the user to choose which fragments to reassemble. Currently works only on IPv4 packets</p>
+  </li>  
   <li>
 	<h4 id="benchmark">PcapPlusPlus-benchmark</h4>
 	<p>the benchmark application used for measuring PcapPlusPlus performance. See <a href="benchmark.html">benchmark page</a> for more details. This application currently compiles on Linux only (where benchmark was running on)</p>
