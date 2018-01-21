@@ -1,13 +1,6 @@
 var a00099 =
 [
-    [ "PcapNgFileWriterDevice", "a00099.html#abf641b890d2089eb4090cf67920c2882", null ],
-    [ "~PcapNgFileWriterDevice", "a00099.html#a93312aab61a193df522f8046af6d291e", null ],
-    [ "close", "a00099.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
-    [ "getStatistics", "a00099.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
-    [ "open", "a00099.html#adca940885348d13ae58865ff5011e6fd", null ],
-    [ "open", "a00099.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
-    [ "open", "a00099.html#a69ab330b859dc45892f3d7666b7b0671", null ],
-    [ "writePacket", "a00099.html#a81069d1681efd6adf22e6ae80f300993", null ],
-    [ "writePacket", "a00099.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
-    [ "writePackets", "a00099.html#a214c363a167e1538d9ea29a58efd9640", null ]
+    [ "NotFilter", "a00099.html#af61317b37c81544b370424bf490371ca", null ],
+    [ "parseToString", "a00099.html#a27559a09376420b6b8466a1819b42509", null ],
+    [ "setFilter", "a00099.html#abb53fe1af021e8638c66b0b57d36f6dc", null ]
 ];

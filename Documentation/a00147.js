@@ -1,8 +1,7 @@
 var a00147 =
 [
-    [ "getContainingLayer", "a00147.html#a4342813d150cb1cec2911b59b99e0418", null ],
-    [ "getHandshakeType", "a00147.html#a31089d536fc762b283d30d7c36e3584b", null ],
-    [ "getMessageLength", "a00147.html#ac9e70c139eb98ba63175a62e87f7de78", null ],
-    [ "isMessageComplete", "a00147.html#a58dc55310a1f9160b17516a9d1b73d45", null ],
-    [ "toString", "a00147.html#a17b72bf10472c67d0044006099c6ea5a", null ]
+    [ "SSLCertificateMessage", "a00147.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
+    [ "getCertificate", "a00147.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
+    [ "getNumOfCertificates", "a00147.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
+    [ "toString", "a00147.html#a3efa384d6853e29d9448269fd1a00b20", null ]
 ];

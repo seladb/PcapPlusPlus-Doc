@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IcmpLayer.h File Reference</title>
+<title>PcapPlusPlus: pcpp::VlanFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -48,8 +48,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,8 +70,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,129 +107,140 @@ $(document).ready(function(){initNavTree('a00184.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00433.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IcmpLayer.h File Reference</div>  </div>
+<div class="title">pcpp::VlanFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00191_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00188_source.html">IPv4Layer.h</a>&quot;</code><br />
-<code>#include &lt;sys/time.h&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-</div>
-<p><a href="a00184_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00218_source.html">PcapFilter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::VlanFilter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00184.png" usemap="#pcpp::VlanFilter_map" alt=""/>
+  <map id="pcpp::VlanFilter_map" name="pcpp::VlanFilter_map">
+<area href="a00022.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,120,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00048.html">pcpp::icmphdr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html">pcpp::icmp_echo_hdr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html">pcpp::icmp_echo_request</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html">pcpp::icmp_timestamp_request</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html">pcpp::icmp_destination_unreachable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html">pcpp::icmp_time_exceeded</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html">pcpp::icmp_param_problem</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html">pcpp::icmp_redirect</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html">pcpp::icmp_router_address_structure</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html">pcpp::icmp_router_advertisement_hdr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html">pcpp::icmp_router_advertisement</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">pcpp::icmp_address_mask_request</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00040.html">pcpp::icmp_info_request</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html">pcpp::IcmpLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">pcpp</a></td></tr>
-<tr class="memdesc:a00231"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:adf2017ac215e1036aef59097d6ccc034"><td class="memItemLeft" align="right" valign="top">typedef icmp_echo_request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#adf2017ac215e1036aef59097d6ccc034">pcpp::icmp_echo_reply</a></td></tr>
-<tr class="separator:adf2017ac215e1036aef59097d6ccc034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707f154c2512fe045e0cab7daaa7eac9"><td class="memItemLeft" align="right" valign="top">typedef icmp_timestamp_request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a707f154c2512fe045e0cab7daaa7eac9">pcpp::icmp_timestamp_reply</a></td></tr>
-<tr class="separator:a707f154c2512fe045e0cab7daaa7eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb3ffc1143316aa2896ada631e3ba6f"><td class="memItemLeft" align="right" valign="top">typedef icmp_time_exceeded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a7fb3ffc1143316aa2896ada631e3ba6f">pcpp::icmp_source_quench</a></td></tr>
-<tr class="separator:a7fb3ffc1143316aa2896ada631e3ba6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c4ed143a16f814c234a5ecf2c2bda66"><td class="memItemLeft" align="right" valign="top">typedef icmphdr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a1c4ed143a16f814c234a5ecf2c2bda66">pcpp::icmp_router_solicitation</a></td></tr>
-<tr class="separator:a1c4ed143a16f814c234a5ecf2c2bda66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a061cad9d9ae05c46c200eb0b7ec31a53"><td class="memItemLeft" align="right" valign="top">typedef icmp_address_mask_request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a061cad9d9ae05c46c200eb0b7ec31a53">pcpp::icmp_address_mask_reply</a></td></tr>
-<tr class="separator:a061cad9d9ae05c46c200eb0b7ec31a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4338f6a7c2d4ccd9d5bb20a617bdc04f"><td class="memItemLeft" align="right" valign="top">typedef icmp_info_request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a4338f6a7c2d4ccd9d5bb20a617bdc04f">pcpp::icmp_info_reply</a></td></tr>
-<tr class="separator:a4338f6a7c2d4ccd9d5bb20a617bdc04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a47224d4b3b96e54be24ea2a6ddee8e27"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27">pcpp::IcmpMessageType</a> { <br />
-&#160;&#160;<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a9bb7f770678ca4664fefe97c64e17dd7">pcpp::ICMP_ECHO_REPLY</a> = 0, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a0b64df63da143f95116d2ad51670d527">pcpp::ICMP_DEST_UNREACHABLE</a> = 3, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27abb7ef08951bf9d14236aa0b66e59b3a8">pcpp::ICMP_SOURCE_QUENCH</a> = 4, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27ad66b5839ed56b571dea0d1bc688e9053">pcpp::ICMP_REDIRECT</a> = 5, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a631ebdb2c057ebfd19bdccaad97d8a6d">pcpp::ICMP_ECHO_REQUEST</a> = 8, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27adb7cbe38a5cb47c19585e12d3c730b06">pcpp::ICMP_ROUTER_ADV</a> = 9, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a8c2ed2a67af349357f015e35cd4bd000">pcpp::ICMP_ROUTER_SOL</a> = 10, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a3edd01308fb5ab40c0f18ad61a5c9ab4">pcpp::ICMP_TIME_EXCEEDED</a> = 11, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a70f5947a0e0f5f9334fd07bd4ee76220">pcpp::ICMP_PARAM_PROBLEM</a> = 12, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a648fe0e0932a4ede752c751fc4803905">pcpp::ICMP_TIMESTAMP_REQUEST</a> = 13, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a1c289e9ee5824620df23f5adae80bac7">pcpp::ICMP_TIMESTAMP_REPLY</a> = 14, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27aa947bdc2a5d71b002ebe5c8b5c08292e">pcpp::ICMP_INFO_REQUEST</a> = 15, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27af4cdabdfe270fb6161d3fe70f72eb739">pcpp::ICMP_INFO_REPLY</a> = 16, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27ab00f4b183423f9f36f345abff7e55398">pcpp::ICMP_ADDRESS_MASK_REQUEST</a> = 17, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a73e29ecfb3a83b6f9b7939e1e5de2599">pcpp::ICMP_ADDRESS_MASK_REPLY</a> = 18, 
-<a class="el" href="a00231.html#a47224d4b3b96e54be24ea2a6ddee8e27a69392c065faec52d150fd6bd60f14985">pcpp::ICMP_UNSUPPORTED</a> = 255
-<br />
- }</td></tr>
-<tr class="separator:a47224d4b3b96e54be24ea2a6ddee8e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8495fd519ac2e6c6eeb85307e8aa2c48"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48">pcpp::IcmpDestUnreachableCodes</a> { <br />
-&#160;&#160;<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48abbe2463e4a6c1a4f054f4af8047114bb">pcpp::IcmpNetworkUnreachable</a> = 0, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48aea0e23dcb4922ec2b4d9d639abc1cede">pcpp::IcmpHostUnreachable</a> = 1, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a8027f2a21b4f4c3a6f4568bc59d5cc48">pcpp::IcmpProtocolUnreachable</a> = 2, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a2639514f58a46ec8ca1b8a3af3d0b7ea">pcpp::IcmpPortUnreachable</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48aedf61b56a040d622123675cba2017053">pcpp::IcmpDatagramTooBig</a> = 4, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a31dc4542b172595ccbf64fe7558eef74">pcpp::IcmpSourceRouteFailed</a> = 5, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a9542a8301912f19ed0039032eaa45a38">pcpp::IcmpDestinationNetworkUnknown</a> = 6, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a72a8bbebdf6678909dc30dcb526124eb">pcpp::IcmpDestinationHostUnknown</a> = 7, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a1501f657a94a1bd077661951c76a3e02">pcpp::IcmpSourceHostIsolated</a> = 8, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a0d3ee3cad7f46c9e1b04d3b50db76720">pcpp::IcmpDestinationNetworkProhibited</a> = 9, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a6d903733b862f839a531d0d5b28c1530">pcpp::IcmpDestinationHostProhibited</a> = 10, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48ae3f5926a4d0400897d5d24fcbad97d4e">pcpp::IcmpNetworkUnreachableForTypeOfService</a> = 11, 
-<br />
-&#160;&#160;<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a48b49c9588c1b0764e9b1f57fff32b1c">pcpp::IcmpHostUnreachableForTypeOfService</a> = 12, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a81ac2ed52b4b6ba55ee8ee537673c348">pcpp::IcmpCommunicationProhibited</a> = 13, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a1c339436ff1dc220701d55fbea447ae4">pcpp::IcmpHostPrecedenceViolation</a> = 14, 
-<a class="el" href="a00231.html#a8495fd519ac2e6c6eeb85307e8aa2c48a15d9a9762a85e0bc5a5f51b6eab3cbe9">pcpp::IcmpPrecedenceCutoff</a> = 15
-<br />
- }</td></tr>
-<tr class="separator:a8495fd519ac2e6c6eeb85307e8aa2c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0fe4f5f6ee92f8cf92dc98338a5128d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#a0fe4f5f6ee92f8cf92dc98338a5128d6">VlanFilter</a> (uint16_t vlanId)</td></tr>
+<tr class="separator:a0fe4f5f6ee92f8cf92dc98338a5128d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5759a458f683cebac7134668fc0c2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#a4d5759a458f683cebac7134668fc0c2d">parseToString</a> (std::string &amp;result)</td></tr>
+<tr class="separator:a4d5759a458f683cebac7134668fc0c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b1fd58f036b4ee5a77ce34b443aa42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#a71b1fd58f036b4ee5a77ce34b443aa42">setVlanID</a> (uint16_t vlanId)</td></tr>
+<tr class="separator:a71b1fd58f036b4ee5a77ce34b443aa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00022"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00022')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00022.html">pcpp::GeneralFilter</a></td></tr>
+<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00022"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class for filtering VLAN tagged packets by VLAN ID. When using this filter only packets tagged with VLAN which has the specific VLAN ID will be received <br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00218.html">PcapFilter.h</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0fe4f5f6ee92f8cf92dc98338a5128d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::VlanFilter::VlanFilter </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlanId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor the gets the VLAN ID and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4d5759a458f683cebac7134668fc0c2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::VlanFilter::parseToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00022.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71b1fd58f036b4ee5a77ce34b443aa42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::VlanFilter::setVlanID </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlanId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the VLAN ID of the filter </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00184.html">IcmpLayer.h</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00184.html">VlanFilter</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

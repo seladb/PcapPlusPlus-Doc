@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapPlusPlusVersion.h Source File</title>
+<title>PcapPlusPlus: LRUList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,51 +105,103 @@ $(document).ready(function(){initNavTree('a00207_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapPlusPlusVersion.h</div>  </div>
+<div class="title">LRUList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00207.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_VERSION_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_VERSION_H</span></div>
+<a href="a00207.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_LRU_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_LRU_LIST</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00231.html">pcpp</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #define PCAPPLUSPLUS_VERSION &quot;17.11+&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #define PCAPPLUSPLUS_VERSION_OFFICIAL &quot;non-official release&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #define PCAPPLUSPLUS_VERSION_FULL &quot;v&quot; PCAPPLUSPLUS_VERSION &quot; (&quot; PCAPPLUSPLUS_VERSION_OFFICIAL &quot;)&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00231.html#aa818bc85ee8391b470263dc3aefa945b">   23</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00231.html#aa818bc85ee8391b470263dc3aefa945b">getPcapPlusPlusVersion</a>() { <span class="keywordflow">return</span> PCAPPLUSPLUS_VERSION; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00231.html#a405f96d13d38a7b86a8321c31edc6ef0">   29</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00231.html#a405f96d13d38a7b86a8321c31edc6ef0">getPcapPlusPlusVersionFull</a>() { <span class="keywordflow">return</span> PCAPPLUSPLUS_VERSION_FULL; }</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00245.html">pcpp</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00093.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00093.html">LRUList</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::list&lt;T&gt;::iterator ListIterator;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> std::map&lt;T, ListIterator&gt;::iterator MapIterator;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00231.html#aa6e2dd1c0d8281b957fd0a52555c9908">   34</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="a00231.html#aa6e2dd1c0d8281b957fd0a52555c9908">getBuildDateTime</a>() { <span class="keywordflow">return</span> std::string(__DATE__) + <span class="stringliteral">&quot; &quot;</span> + std::string(__TIME__); }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::string <a class="code" href="a00231.html#acae7542122e659b88073dc6b76564e6b">getGitCommit</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string <a class="code" href="a00231.html#a85b9d50917da9312e11f3373e2999073">getGitBranch</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::string <a class="code" href="a00231.html#aa1b1b04caac37857e13624c044924bf7">getGitInfo</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_VERSION_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00231_html_acae7542122e659b88073dc6b76564e6b"><div class="ttname"><a href="a00231.html#acae7542122e659b88073dc6b76564e6b">pcpp::getGitCommit</a></div><div class="ttdeci">std::string getGitCommit()</div></div>
-<div class="ttc" id="a00231_html_a405f96d13d38a7b86a8321c31edc6ef0"><div class="ttname"><a href="a00231.html#a405f96d13d38a7b86a8321c31edc6ef0">pcpp::getPcapPlusPlusVersionFull</a></div><div class="ttdeci">std::string getPcapPlusPlusVersionFull()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:29</div></div>
-<div class="ttc" id="a00231_html_aa818bc85ee8391b470263dc3aefa945b"><div class="ttname"><a href="a00231.html#aa818bc85ee8391b470263dc3aefa945b">pcpp::getPcapPlusPlusVersion</a></div><div class="ttdeci">std::string getPcapPlusPlusVersion()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:23</div></div>
-<div class="ttc" id="a00231_html_a85b9d50917da9312e11f3373e2999073"><div class="ttname"><a href="a00231.html#a85b9d50917da9312e11f3373e2999073">pcpp::getGitBranch</a></div><div class="ttdeci">std::string getGitBranch()</div></div>
-<div class="ttc" id="a00231_html_aa1b1b04caac37857e13624c044924bf7"><div class="ttname"><a href="a00231.html#aa1b1b04caac37857e13624c044924bf7">pcpp::getGitInfo</a></div><div class="ttdeci">std::string getGitInfo()</div></div>
-<div class="ttc" id="a00231_html_aa6e2dd1c0d8281b957fd0a52555c9908"><div class="ttname"><a href="a00231.html#aa6e2dd1c0d8281b957fd0a52555c9908">pcpp::getBuildDateTime</a></div><div class="ttdeci">std::string getBuildDateTime()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:34</div></div>
-<div class="ttc" id="a00231_html"><div class="ttname"><a href="a00231.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00093.html#a0d64da0d4ca5386c8ce3f63c6409fab5">   35</a></span>&#160;        <a class="code" href="a00093.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a>(<span class="keywordtype">size_t</span> maxSize)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            m_MaxSize = maxSize;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00093.html#a1eb4c3762735f3f49ae5b6bec3f70d58">   49</a></span>&#160;        T* <a class="code" href="a00093.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a>(<span class="keyword">const</span> T&amp; element)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            m_CacheItemsList.push_front(element);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            MapIterator iter = m_CacheItemsMap.find(element);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (iter != m_CacheItemsMap.end())</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                m_CacheItemsList.erase(iter-&gt;second);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            m_CacheItemsMap[element] = m_CacheItemsList.begin();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (m_CacheItemsList.size() &gt; m_MaxSize)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                ListIterator lruIter = m_CacheItemsList.end();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                lruIter--;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                T* deletedValue = <span class="keyword">new</span> T(*lruIter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                m_CacheItemsMap.erase(*lruIter);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                m_CacheItemsList.erase(lruIter);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">return</span> deletedValue;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00093.html#a2474c4ee35a59b258995896baf5f3af4">   75</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00093.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.front();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="a00093.html#adfbb5d65592bd0977de48c84ebb5fa0a">   84</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="a00093.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> m_CacheItemsList.back();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00093.html#a5682e992a5b22c9ed24242a38265ce73">   93</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00093.html#a5682e992a5b22c9ed24242a38265ce73">eraseElement</a>(<span class="keyword">const</span> T&amp; element)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            MapIterator iter = m_CacheItemsMap.find(element);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (iter == m_CacheItemsMap.end())</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            m_CacheItemsList.erase(iter-&gt;second);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            m_CacheItemsMap.erase(element);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00093.html#a158e70dab4d3e90c80018e054c571e09">  106</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00093.html#a158e70dab4d3e90c80018e054c571e09">getMaxSize</a>() { <span class="keywordflow">return</span> m_MaxSize; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00093.html#ab1c9e215f38fc45eb568506897dc4680">  111</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00093.html#ab1c9e215f38fc45eb568506897dc4680">getSize</a>() { <span class="keywordflow">return</span> m_CacheItemsMap.size(); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        std::list&lt;T&gt; m_CacheItemsList;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::map&lt;T, ListIterator&gt; m_CacheItemsMap;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">size_t</span> m_MaxSize;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    };</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_LRU_LIST */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">pcpp::LRUList</a></div><div class="ttdef"><b>Definition:</b> LRUList.h:24</div></div>
+<div class="ttc" id="a00093_html_a5682e992a5b22c9ed24242a38265ce73"><div class="ttname"><a href="a00093.html#a5682e992a5b22c9ed24242a38265ce73">pcpp::LRUList::eraseElement</a></div><div class="ttdeci">void eraseElement(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> LRUList.h:93</div></div>
+<div class="ttc" id="a00093_html_ab1c9e215f38fc45eb568506897dc4680"><div class="ttname"><a href="a00093.html#ab1c9e215f38fc45eb568506897dc4680">pcpp::LRUList::getSize</a></div><div class="ttdeci">size_t getSize()</div><div class="ttdef"><b>Definition:</b> LRUList.h:111</div></div>
+<div class="ttc" id="a00093_html_adfbb5d65592bd0977de48c84ebb5fa0a"><div class="ttname"><a href="a00093.html#adfbb5d65592bd0977de48c84ebb5fa0a">pcpp::LRUList::getLRUElement</a></div><div class="ttdeci">const T &amp; getLRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:84</div></div>
+<div class="ttc" id="a00093_html_a2474c4ee35a59b258995896baf5f3af4"><div class="ttname"><a href="a00093.html#a2474c4ee35a59b258995896baf5f3af4">pcpp::LRUList::getMRUElement</a></div><div class="ttdeci">const T &amp; getMRUElement()</div><div class="ttdef"><b>Definition:</b> LRUList.h:75</div></div>
+<div class="ttc" id="a00093_html_a1eb4c3762735f3f49ae5b6bec3f70d58"><div class="ttname"><a href="a00093.html#a1eb4c3762735f3f49ae5b6bec3f70d58">pcpp::LRUList::put</a></div><div class="ttdeci">T * put(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> LRUList.h:49</div></div>
+<div class="ttc" id="a00093_html_a0d64da0d4ca5386c8ce3f63c6409fab5"><div class="ttname"><a href="a00093.html#a0d64da0d4ca5386c8ce3f63c6409fab5">pcpp::LRUList::LRUList</a></div><div class="ttdeci">LRUList(size_t maxSize)</div><div class="ttdef"><b>Definition:</b> LRUList.h:35</div></div>
+<div class="ttc" id="a00245_html"><div class="ttname"><a href="a00245.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00093_html_a158e70dab4d3e90c80018e054c571e09"><div class="ttname"><a href="a00093.html#a158e70dab4d3e90c80018e054c571e09">pcpp::LRUList::getMaxSize</a></div><div class="ttdeci">size_t getMaxSize()</div><div class="ttdef"><b>Definition:</b> LRUList.h:106</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00207.html">PcapPlusPlusVersion.h</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00207.html">LRUList.h</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:57 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

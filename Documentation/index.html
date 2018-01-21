@@ -112,68 +112,68 @@ Installation</h1>
 <h1><a class="anchor" id="getting_started_sec"></a>
 Getting Started</h1>
 <p><b>Packet capturing engines (Pcap++):</b></p><ul>
-<li><a class="el" href="a00096.html">pcpp::PcapLiveDevice</a>, <a class="el" href="a00205.html">PcapLiveDevice.h</a> - wrapper for libPacp engine (Linux)</li>
-<li><a class="el" href="a00175.html">pcpp::WinPcapLiveDevice</a>, <a class="el" href="a00230.html">WinPcapLiveDevice.h</a> - wrapper for WinPcap engine (Windows)</li>
-<li><a class="el" href="a00101.html">pcpp::PcapRemoteDevice</a>, <a class="el" href="a00208.html">PcapRemoteDevice.h</a> - remote live device, supported by WinPcap(Windows)</li>
-<li><a class="el" href="a00104.html">pcpp::PfRingDevice</a>, <a class="el" href="a00210.html">PfRingDevice.h</a> - Vanilla PF_RING device (Linux)</li>
-<li><a class="el" href="a00015.html">pcpp::DpdkDevice</a>, <a class="el" href="a00179.html">DpdkDevice.h</a> - DPDK device (Linux)</li>
-<li><a class="el" href="a00204.html">PcapFilter.h</a> - structured filter engine</li>
+<li><a class="el" href="a00107.html">pcpp::PcapLiveDevice</a>, <a class="el" href="a00219.html">PcapLiveDevice.h</a> - wrapper for libPacp engine (Linux)</li>
+<li><a class="el" href="a00188.html">pcpp::WinPcapLiveDevice</a>, <a class="el" href="a00244.html">WinPcapLiveDevice.h</a> - wrapper for WinPcap engine (Windows)</li>
+<li><a class="el" href="a00112.html">pcpp::PcapRemoteDevice</a>, <a class="el" href="a00222.html">PcapRemoteDevice.h</a> - remote live device, supported by WinPcap(Windows)</li>
+<li><a class="el" href="a00115.html">pcpp::PfRingDevice</a>, <a class="el" href="a00224.html">PfRingDevice.h</a> - Vanilla PF_RING device (Linux)</li>
+<li><a class="el" href="a00015.html">pcpp::DpdkDevice</a>, <a class="el" href="a00192.html">DpdkDevice.h</a> - DPDK device (Linux)</li>
+<li><a class="el" href="a00218.html">PcapFilter.h</a> - structured filter engine</li>
 </ul>
 <p><b>Capture file wrappers (Pcap++):</b></p><ul>
-<li><a class="el" href="a00094.html">pcpp::PcapFileReaderDevice</a>, <a class="el" href="a00203.html">PcapFileDevice.h</a> - read Pcap files</li>
-<li><a class="el" href="a00095.html">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00203.html">PcapFileDevice.h</a> - write Pcap files</li>
-<li><a class="el" href="a00098.html">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00203.html">PcapFileDevice.h</a> - read PcapNG files</li>
-<li><a class="el" href="a00099.html">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00203.html">PcapFileDevice.h</a> - write PcapNG files</li>
+<li><a class="el" href="a00105.html">pcpp::PcapFileReaderDevice</a>, <a class="el" href="a00217.html">PcapFileDevice.h</a> - read Pcap files</li>
+<li><a class="el" href="a00106.html">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00217.html">PcapFileDevice.h</a> - write Pcap files</li>
+<li><a class="el" href="a00109.html">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00217.html">PcapFileDevice.h</a> - read PcapNG files</li>
+<li><a class="el" href="a00110.html">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00217.html">PcapFileDevice.h</a> - write PcapNG files</li>
 </ul>
 <p><b>Packet parsing and manipulation (Packet++):</b></p><ul>
-<li><a class="el" href="a00117.html">pcpp::RawPacket</a>, <a class="el" href="a00216.html">RawPacket.h</a> - raw data class</li>
-<li><a class="el" href="a00091.html">pcpp::Packet</a>, <a class="el" href="a00199.html">Packet.h</a> - parsed packet class</li>
-<li><a class="el" href="a00079.html">pcpp::Layer</a>, <a class="el" href="a00191.html">Layer.h</a> - protocol base class</li>
+<li><a class="el" href="a00128.html">pcpp::RawPacket</a>, <a class="el" href="a00230.html">RawPacket.h</a> - raw data class</li>
+<li><a class="el" href="a00102.html">pcpp::Packet</a>, <a class="el" href="a00213.html">Packet.h</a> - parsed packet class</li>
+<li><a class="el" href="a00090.html">pcpp::Layer</a>, <a class="el" href="a00205.html">Layer.h</a> - protocol base class</li>
 </ul>
 <p><b>Supported protocols (Packet++):</b></p><ul>
-<li><a class="el" href="a00021.html">pcpp::EthLayer</a>, <a class="el" href="a00181.html">EthLayer.h</a> - Ethernet protocol</li>
-<li><a class="el" href="a00128.html">pcpp::SllLayer</a>, <a class="el" href="a00219.html">SllLayer.h</a> - SLL protocol (Linux cooked capture)</li>
-<li><a class="el" href="a00089.html">pcpp::NullLoopbackLayer</a>, <a class="el" href="a00198.html">NullLoopbackLayer.h</a> - Null/Loopback</li>
-<li><a class="el" href="a00006.html">pcpp::ArpLayer</a>, <a class="el" href="a00176.html">ArpLayer.h</a> - ARP protocol</li>
-<li><a class="el" href="a00172.html">pcpp::VlanLayer</a>, <a class="el" href="a00228.html">VlanLayer.h</a> - VLAN protocol</li>
-<li><a class="el" href="a00174.html">pcpp::VxlanLayer</a>, <a class="el" href="a00229.html">VxlanLayer.h</a> - VXLAN protocol</li>
-<li><a class="el" href="a00086.html">pcpp::MplsLayer</a>, <a class="el" href="a00196.html">MplsLayer.h</a> - MPLS protocol</li>
-<li><a class="el" href="a00114.html">pcpp::PPPoESessionLayer</a>, <a class="el" href="a00112.html">pcpp::PPPoEDiscoveryLayer</a>, <a class="el" href="a00214.html">PPPoELayer.h</a> - PPPoE protocol</li>
-<li><a class="el" href="a00026.html">pcpp::GREv0Layer</a>, <a class="el" href="a00027.html">pcpp::GREv1Layer</a>, <a class="el" href="a00110.html">pcpp::PPP_PPTPLayer</a>, <a class="el" href="a00182.html">GreLayer.h</a> - GRE and PPTP protocol</li>
-<li><a class="el" href="a00072.html">pcpp::IPv4Layer</a>, <a class="el" href="a00188.html">IPv4Layer.h</a> - IPv4 protocol</li>
-<li><a class="el" href="a00078.html">pcpp::IPv6Layer</a>, <a class="el" href="a00190.html">IPv6Layer.h</a> - IPv6 protocol</li>
-<li><a class="el" href="a00161.html">pcpp::TcpLayer</a>, <a class="el" href="a00224.html">TcpLayer.h</a> - TCP protocol</li>
-<li><a class="el" href="a00168.html">pcpp::UdpLayer</a>, <a class="el" href="a00227.html">UdpLayer.h</a> - UDP protocol</li>
-<li><a class="el" href="a00049.html">pcpp::IcmpLayer</a>, <a class="el" href="a00184.html">IcmpLayer.h</a> - ICMP protocol</li>
-<li><a class="el" href="a00057.html">pcpp::IgmpLayer</a>, <a class="el" href="a00185.html">IgmpLayer.h</a> - IGMP protocol</li>
-<li><a class="el" href="a00123.html">pcpp::SipRequestLayer</a>, <a class="el" href="a00218.html">SipLayer.h</a> - SIP request protocol</li>
-<li><a class="el" href="a00126.html">pcpp::SipResponseLayer</a>, <a class="el" href="a00218.html">SipLayer.h</a> - SIP response protocol</li>
-<li><a class="el" href="a00119.html">pcpp::SdpLayer</a>, <a class="el" href="a00217.html">SdpLayer.h</a> - SDP protocol</li>
-<li><a class="el" href="a00012.html">pcpp::DnsLayer</a>, <a class="el" href="a00178.html">DnsLayer.h</a> - DNS protocol</li>
-<li><a class="el" href="a00009.html">pcpp::DhcpLayer</a>, <a class="el" href="a00177.html">DhcpLayer.h</a> - DHCP protocol</li>
-<li><a class="el" href="a00032.html">pcpp::HttpRequestLayer</a>, <a class="el" href="a00183.html">HttpLayer.h</a> - HTTP request protocol</li>
-<li><a class="el" href="a00035.html">pcpp::HttpResponseLayer</a>, <a class="el" href="a00183.html">HttpLayer.h</a> - HTTP response protocol</li>
-<li><a class="el" href="a00149.html">pcpp::SSLLayer</a>, <a class="el" href="a00222.html">SSLLayer.h</a> - SSL/TLS protocol - parsing only (no editing capabilities)</li>
-<li><a class="el" href="a00093.html">pcpp::PayloadLayer</a>, <a class="el" href="a00201.html">PayloadLayer.h</a> - unknown layer or payload</li>
+<li><a class="el" href="a00021.html">pcpp::EthLayer</a>, <a class="el" href="a00194.html">EthLayer.h</a> - Ethernet protocol</li>
+<li><a class="el" href="a00139.html">pcpp::SllLayer</a>, <a class="el" href="a00233.html">SllLayer.h</a> - SLL protocol (Linux cooked capture)</li>
+<li><a class="el" href="a00100.html">pcpp::NullLoopbackLayer</a>, <a class="el" href="a00212.html">NullLoopbackLayer.h</a> - Null/Loopback</li>
+<li><a class="el" href="a00006.html">pcpp::ArpLayer</a>, <a class="el" href="a00189.html">ArpLayer.h</a> - ARP protocol</li>
+<li><a class="el" href="a00185.html">pcpp::VlanLayer</a>, <a class="el" href="a00242.html">VlanLayer.h</a> - VLAN protocol</li>
+<li><a class="el" href="a00187.html">pcpp::VxlanLayer</a>, <a class="el" href="a00243.html">VxlanLayer.h</a> - VXLAN protocol</li>
+<li><a class="el" href="a00097.html">pcpp::MplsLayer</a>, <a class="el" href="a00210.html">MplsLayer.h</a> - MPLS protocol</li>
+<li><a class="el" href="a00125.html">pcpp::PPPoESessionLayer</a>, <a class="el" href="a00123.html">pcpp::PPPoEDiscoveryLayer</a>, <a class="el" href="a00228.html">PPPoELayer.h</a> - PPPoE protocol</li>
+<li><a class="el" href="a00026.html">pcpp::GREv0Layer</a>, <a class="el" href="a00027.html">pcpp::GREv1Layer</a>, <a class="el" href="a00121.html">pcpp::PPP_PPTPLayer</a>, <a class="el" href="a00195.html">GreLayer.h</a> - GRE and PPTP protocol</li>
+<li><a class="el" href="a00073.html">pcpp::IPv4Layer</a>, <a class="el" href="a00201.html">IPv4Layer.h</a> - IPv4 protocol</li>
+<li><a class="el" href="a00087.html">pcpp::IPv6Layer</a>, <a class="el" href="a00204.html">IPv6Layer.h</a> - IPv6 protocol</li>
+<li><a class="el" href="a00172.html">pcpp::TcpLayer</a>, <a class="el" href="a00238.html">TcpLayer.h</a> - TCP protocol</li>
+<li><a class="el" href="a00181.html">pcpp::UdpLayer</a>, <a class="el" href="a00241.html">UdpLayer.h</a> - UDP protocol</li>
+<li><a class="el" href="a00049.html">pcpp::IcmpLayer</a>, <a class="el" href="a00197.html">IcmpLayer.h</a> - ICMP protocol</li>
+<li><a class="el" href="a00058.html">pcpp::IgmpLayer</a>, <a class="el" href="a00198.html">IgmpLayer.h</a> - IGMP protocol</li>
+<li><a class="el" href="a00134.html">pcpp::SipRequestLayer</a>, <a class="el" href="a00232.html">SipLayer.h</a> - SIP request protocol</li>
+<li><a class="el" href="a00137.html">pcpp::SipResponseLayer</a>, <a class="el" href="a00232.html">SipLayer.h</a> - SIP response protocol</li>
+<li><a class="el" href="a00130.html">pcpp::SdpLayer</a>, <a class="el" href="a00231.html">SdpLayer.h</a> - SDP protocol</li>
+<li><a class="el" href="a00012.html">pcpp::DnsLayer</a>, <a class="el" href="a00191.html">DnsLayer.h</a> - DNS protocol</li>
+<li><a class="el" href="a00009.html">pcpp::DhcpLayer</a>, <a class="el" href="a00190.html">DhcpLayer.h</a> - DHCP protocol</li>
+<li><a class="el" href="a00032.html">pcpp::HttpRequestLayer</a>, <a class="el" href="a00196.html">HttpLayer.h</a> - HTTP request protocol</li>
+<li><a class="el" href="a00035.html">pcpp::HttpResponseLayer</a>, <a class="el" href="a00196.html">HttpLayer.h</a> - HTTP response protocol</li>
+<li><a class="el" href="a00160.html">pcpp::SSLLayer</a>, <a class="el" href="a00236.html">SSLLayer.h</a> - SSL/TLS protocol - parsing only (no editing capabilities)</li>
+<li><a class="el" href="a00104.html">pcpp::PayloadLayer</a>, <a class="el" href="a00215.html">PayloadLayer.h</a> - unknown layer or payload</li>
 </ul>
 <p><b>Common utilities and infrastructure (Common++, Packet++, Pcap++):</b></p><ul>
-<li><a class="el" href="a00070.html">pcpp::IPv4Address</a>, <a class="el" href="a00077.html">pcpp::IPv6Address</a>, <a class="el" href="a00186.html">IpAddress.h</a> - IP address wrapper classes</li>
-<li><a class="el" href="a00083.html">pcpp::MacAddress</a>, <a class="el" href="a00194.html">MacAddress.h</a> - MAC address wrapper class</li>
-<li><a class="el" href="a00163.html">pcpp::TcpReassembly</a>, <a class="el" href="a00225.html">TcpReassembly.h</a> - Implementation of TCP reassembly logic</li>
-<li><a class="el" href="a00074.html">pcpp::IPv4Reassembly</a>, <a class="el" href="a00189.html">IPv4Reassembly.h</a> - Implementation of IPv4 reassembly logic (a.k.a IPv4 de-fragmentation)</li>
-<li><a class="el" href="a00187.html">IpUtils.h</a> - all kinds of helpful network utilities</li>
-<li><a class="el" href="a00200.html">PacketUtils.h</a> - useful packet processing utils such as creating a hash value for a packet</li>
-<li><a class="el" href="a00197.html">NetworkUtils.h</a> - several useful and common network utilities</li>
-<li><a class="el" href="a00223.html">SystemUtils.h</a> - several useful utilities for interactiong with the operating system</li>
-<li><a class="el" href="a00081.html">pcpp::LoggerPP</a>, <a class="el" href="a00192.html">Logger.h</a> - PcapPlusPlus logger</li>
-<li><a class="el" href="a00207.html">PcapPlusPlusVersion.h</a> - version and Git info </li>
+<li><a class="el" href="a00071.html">pcpp::IPv4Address</a>, <a class="el" href="a00081.html">pcpp::IPv6Address</a>, <a class="el" href="a00199.html">IpAddress.h</a> - IP address wrapper classes</li>
+<li><a class="el" href="a00094.html">pcpp::MacAddress</a>, <a class="el" href="a00208.html">MacAddress.h</a> - MAC address wrapper class</li>
+<li><a class="el" href="a00174.html">pcpp::TcpReassembly</a>, <a class="el" href="a00239.html">TcpReassembly.h</a> - Implementation of TCP reassembly logic</li>
+<li><a class="el" href="a00075.html">pcpp::IPv4Reassembly</a>, <a class="el" href="a00202.html">IPv4Reassembly.h</a> - Implementation of IPv4 reassembly logic (a.k.a IPv4 de-fragmentation)</li>
+<li><a class="el" href="a00200.html">IpUtils.h</a> - all kinds of helpful network utilities</li>
+<li><a class="el" href="a00214.html">PacketUtils.h</a> - useful packet processing utils such as creating a hash value for a packet</li>
+<li><a class="el" href="a00211.html">NetworkUtils.h</a> - several useful and common network utilities</li>
+<li><a class="el" href="a00237.html">SystemUtils.h</a> - several useful utilities for interactiong with the operating system</li>
+<li><a class="el" href="a00092.html">pcpp::LoggerPP</a>, <a class="el" href="a00206.html">Logger.h</a> - PcapPlusPlus logger</li>
+<li><a class="el" href="a00221.html">PcapPlusPlusVersion.h</a> - version and Git info </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,11 +1,13 @@
 var a00110 =
 [
-    [ "PPP_PPTPLayer", "a00110.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
-    [ "PPP_PPTPLayer", "a00110.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
-    [ "computeCalculateFields", "a00110.html#a989b126eecc1536b660d46dda3e5a795", null ],
-    [ "getHeaderLen", "a00110.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
-    [ "getOsiModelLayer", "a00110.html#a160d2b07571f8dc68d01d9c425dc80f6", null ],
-    [ "getPPP_PPTPHeader", "a00110.html#aa9707853653d941e1ae0a8727b281191", null ],
-    [ "parseNextLayer", "a00110.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
-    [ "toString", "a00110.html#a92c398562bc0be52b28dce752c669d70", null ]
+    [ "PcapNgFileWriterDevice", "a00110.html#abf641b890d2089eb4090cf67920c2882", null ],
+    [ "~PcapNgFileWriterDevice", "a00110.html#a93312aab61a193df522f8046af6d291e", null ],
+    [ "close", "a00110.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
+    [ "getStatistics", "a00110.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
+    [ "open", "a00110.html#adca940885348d13ae58865ff5011e6fd", null ],
+    [ "open", "a00110.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
+    [ "open", "a00110.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "writePacket", "a00110.html#a81069d1681efd6adf22e6ae80f300993", null ],
+    [ "writePacket", "a00110.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
+    [ "writePackets", "a00110.html#a214c363a167e1538d9ea29a58efd9640", null ]
 ];

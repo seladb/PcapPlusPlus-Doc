@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::udphdr Struct Reference</title>
+<title>PcapPlusPlus: pcpp::SSLx509Certificate Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,78 +107,147 @@ $(document).ready(function(){initNavTree('a00167.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00402.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00418.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::udphdr Struct Reference</div>  </div>
+<div class="title">pcpp::SSLx509Certificate Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00227_source.html">UdpLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00235_source.html">SSLHandshake.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a72a8d8ad99698271461762079d3758a9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a72a8d8ad99698271461762079d3758a9">portSrc</a></td></tr>
-<tr class="separator:a72a8d8ad99698271461762079d3758a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2760968de55386f04539019f5a677e5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#ab2760968de55386f04539019f5a677e5">portDst</a></td></tr>
-<tr class="separator:ab2760968de55386f04539019f5a677e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68edfe2e8136453d69b7a457461f379d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a68edfe2e8136453d69b7a457461f379d">length</a></td></tr>
-<tr class="separator:a68edfe2e8136453d69b7a457461f379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a4b110e652e51a0f32d4e6c7740354"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#af1a4b110e652e51a0f32d4e6c7740354">headerChecksum</a></td></tr>
-<tr class="separator:af1a4b110e652e51a0f32d4e6c7740354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a368ea567eb3154a6b44c7bbf827547ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a368ea567eb3154a6b44c7bbf827547ef">SSLx509Certificate</a> (uint8_t *data, size_t dataLen, bool <a class="el" href="a00167.html#ae4182828228a1e402626560090d3cdb6">allDataExists</a>)</td></tr>
+<tr class="separator:a368ea567eb3154a6b44c7bbf827547ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9c58672e41a057dc53d4923af3992f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a4d9c58672e41a057dc53d4923af3992f">getData</a> ()</td></tr>
+<tr class="separator:a4d9c58672e41a057dc53d4923af3992f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e16b41a4c1bd25026eb754eb8424122"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a2e16b41a4c1bd25026eb754eb8424122">getDataLength</a> ()</td></tr>
+<tr class="separator:a2e16b41a4c1bd25026eb754eb8424122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4182828228a1e402626560090d3cdb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#ae4182828228a1e402626560090d3cdb6">allDataExists</a> ()</td></tr>
+<tr class="separator:ae4182828228a1e402626560090d3cdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an UDP protocol header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af1a4b110e652e51a0f32d4e6c7740354"></a>
+<div class="textblock"><p>Represents a x509v3 certificate. the <a class="el" href="a00147.html">SSLCertificateMessage</a> class returns an instance of this class as the certificate. Currently this class doesn't do much as it doesn't parse the certificate. It only acts as container to the raw data and returns general info as data as raw, length, etc. In the future I may add full parsing of the certificate </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a368ea567eb3154a6b44c7bbf827547ef"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::headerChecksum</td>
+          <td class="memname">pcpp::SSLx509Certificate::SSLx509Certificate </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allDataExists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Error-checking of the header and data </p>
+<p>C'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data of the certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length in bytes of the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allDataExists</td><td>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This field indicates whether the raw data contains all ceritificate data of just a part of it </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a68edfe2e8136453d69b7a457461f379d"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae4182828228a1e402626560090d3cdb6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::length</td>
+          <td class="memname">bool pcpp::SSLx509Certificate::allDataExists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Length of header and payload in bytes </p>
+<p>Certificate messages usually spread on more than 1 packet. So a certificate is likely to split between 2 packets or more. This method provides an indication whether all certificate data exists or only part of it </p><dl class="section return"><dt>Returns</dt><dd>True if this data contains all certificate data, false otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab2760968de55386f04539019f5a677e5"></a>
+<a class="anchor" id="a4d9c58672e41a057dc53d4923af3992f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portDst</td>
+          <td class="memname">uint8_t* pcpp::SSLx509Certificate::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Destination port </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the raw data </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a72a8d8ad99698271461762079d3758a9"></a>
+<a class="anchor" id="a2e16b41a4c1bd25026eb754eb8424122"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::udphdr::portSrc</td>
+          <td class="memname">size_t pcpp::SSLx509Certificate::getDataLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Source port </p>
+<dl class="section return"><dt>Returns</dt><dd>Raw data length </dd></dl>
 
 </div>
 </div>
@@ -187,8 +256,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00231.html">pcpp</a></li><li class="navelem"><a class="el" href="a00167.html">udphdr</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00167.html">SSLx509Certificate</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

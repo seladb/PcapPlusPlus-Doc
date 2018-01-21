@@ -1,10 +1,10 @@
 var a00068 =
 [
-    [ "IPFilter", "a00068.html#a953d29c9f7d99369acea260016ab6825", null ],
-    [ "IPFilter", "a00068.html#aee54dc6a3492eee05f53c80e44ab9b08", null ],
-    [ "IPFilter", "a00068.html#a68c98982c7c42c9397c2ed84f0a863ac", null ],
-    [ "parseToString", "a00068.html#a9244dc71714f73d8e215498c7c3b0f23", null ],
-    [ "setAddr", "a00068.html#a41a8a2bdad3732f03639ab5009c8e10c", null ],
-    [ "setLen", "a00068.html#af9b725cf2a44144a36d9775ea9e36c5c", null ],
-    [ "setMask", "a00068.html#a7e47d6b236db754fe0463e8f011edd79", null ]
+    [ "clearFilter", "a00068.html#aba28d535c6aa05e9f9492c82ece25de7", null ],
+    [ "close", "a00068.html#a5ce8877d4e047f11a3cb8d0f4f527e56", null ],
+    [ "getStatistics", "a00068.html#ace3640f2330899687e34aa3789f4cd05", null ],
+    [ "isOpened", "a00068.html#a22b03cdabb9f359c6bed0728c3614789", null ],
+    [ "open", "a00068.html#aa7d1358756653febf63d23b21447649c", null ],
+    [ "setFilter", "a00068.html#aadba6a20265dca6ba29b548325a798fe", null ],
+    [ "setFilter", "a00068.html#a134f061d7883abbdb256abd48d53e66c", null ]
 ];

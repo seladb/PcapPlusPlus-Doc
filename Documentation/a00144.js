@@ -1,6 +1,6 @@
 var a00144 =
 [
-    [ "extensionData", "a00144.html#a058c404f39c4b185647f5fc6cade65d4", null ],
-    [ "extensionDataLength", "a00144.html#af116e93a2decd3c986ae109b16c12b28", null ],
-    [ "extensionType", "a00144.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
+    [ "length", "a00144.html#ad0988dfc40b111270d4c447293218d1c", null ],
+    [ "recordType", "a00144.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
+    [ "recordVersion", "a00144.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
 ];

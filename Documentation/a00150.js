@@ -1,7 +1,6 @@
 var a00150 =
 [
-    [ "SSLNewSessionTicketMessage", "a00150.html#a55d2fff5ceb20ca419344ced210606a4", null ],
-    [ "getSessionTicketData", "a00150.html#a1d30391db4fdab5edae186d9355ad95d", null ],
-    [ "getSessionTicketDataLength", "a00150.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
-    [ "toString", "a00150.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
+    [ "SSLChangeCipherSpecLayer", "a00150.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
+    [ "computeCalculateFields", "a00150.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
+    [ "toString", "a00150.html#a25cb2a35845fa1e357e06330d958f53c", null ]
 ];

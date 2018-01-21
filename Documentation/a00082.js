@@ -1,10 +1,9 @@
 var a00082 =
 [
-    [ "LRUList", "a00082.html#a0d64da0d4ca5386c8ce3f63c6409fab5", null ],
-    [ "eraseElement", "a00082.html#a5682e992a5b22c9ed24242a38265ce73", null ],
-    [ "getLRUElement", "a00082.html#adfbb5d65592bd0977de48c84ebb5fa0a", null ],
-    [ "getMaxSize", "a00082.html#a158e70dab4d3e90c80018e054c571e09", null ],
-    [ "getMRUElement", "a00082.html#a2474c4ee35a59b258995896baf5f3af4", null ],
-    [ "getSize", "a00082.html#ab1c9e215f38fc45eb568506897dc4680", null ],
-    [ "put", "a00082.html#a1eb4c3762735f3f49ae5b6bec3f70d58", null ]
+    [ "ipv6_authentication_header", "a00078.html", "a00078" ],
+    [ "IPv6AuthenticationHeader", "a00082.html#ad914800d8707bbbcd5577be7e0b1fccd", null ],
+    [ "getAuthHeader", "a00082.html#a76fefb446b3e0ad8b995d8c2b3699dd6", null ],
+    [ "getExtensionLen", "a00082.html#a7193810da8e4fb58d5d289440d461cb7", null ],
+    [ "getIntegrityCheckValue", "a00082.html#a61b7799149e70a9e4f2a4bbda9106d5b", null ],
+    [ "getIntegrityCheckValueLength", "a00082.html#a7abbfbe2a5ecc6bf4939fd4cdcf09c48", null ]
 ];

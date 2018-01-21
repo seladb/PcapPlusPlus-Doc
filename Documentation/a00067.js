@@ -1,10 +1,10 @@
 var a00067 =
 [
-    [ "clearFilter", "a00067.html#aba28d535c6aa05e9f9492c82ece25de7", null ],
-    [ "close", "a00067.html#a5ce8877d4e047f11a3cb8d0f4f527e56", null ],
-    [ "getStatistics", "a00067.html#ace3640f2330899687e34aa3789f4cd05", null ],
-    [ "isOpened", "a00067.html#a22b03cdabb9f359c6bed0728c3614789", null ],
-    [ "open", "a00067.html#aa7d1358756653febf63d23b21447649c", null ],
-    [ "setFilter", "a00067.html#aadba6a20265dca6ba29b548325a798fe", null ],
-    [ "setFilter", "a00067.html#a134f061d7883abbdb256abd48d53e66c", null ]
+    [ "AddressType", "a00067.html#ac389e5507d75b60d2b0ca939db195231", [
+      [ "IPv4AddressType", "a00067.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "a00067.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    ] ],
+    [ "getType", "a00067.html#a85a3e43774848c93585f97bdef6ec73d", null ],
+    [ "isValid", "a00067.html#a2d6b031d025c3ef287584a605b64d750", null ],
+    [ "toString", "a00067.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
 ];

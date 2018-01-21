@@ -1,18 +1,17 @@
 var a00163 =
 [
-    [ "OnTcpConnectionEnd", "a00163.html#abbcb38ac950666833df4084f80beb056", null ],
-    [ "OnTcpConnectionStart", "a00163.html#abda8219de68412e0ce7f7116601243a8", null ],
-    [ "OnTcpMessageReady", "a00163.html#ab6698eb002363dc18e664f15418fc1eb", null ],
-    [ "ConnectionEndReason", "a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0", [
-      [ "TcpReassemblyConnectionClosedByFIN_RST", "a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133", null ],
-      [ "TcpReassemblyConnectionClosedManually", "a00163.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9", null ]
-    ] ],
-    [ "TcpReassembly", "a00163.html#a49281471fb379fdae6c8df5ed7844c92", null ],
-    [ "~TcpReassembly", "a00163.html#aa1797ebded60f0637ae95223653b9f78", null ],
-    [ "closeAllConnections", "a00163.html#acf940b05f75a129f595301012be46005", null ],
-    [ "closeConnection", "a00163.html#ae173fc16a427b5e46b1a5417de19d735", null ],
-    [ "getConnectionInformation", "a00163.html#af05c80624748539e2686d8a41d2d8219", null ],
-    [ "isConnectionOpen", "a00163.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
-    [ "ReassemblePacket", "a00163.html#a56719c498f49cc2e2e6177e705109fcf", null ],
-    [ "ReassemblePacket", "a00163.html#a62d6623f39621c475e5619366512889a", null ]
+    [ "SSLServerHelloMessage", "a00163.html#a1556f47b07981b9d6c24d0f7cd7bafb0", null ],
+    [ "getCipherSuite", "a00163.html#a2077712bafe2bdf1b5b8e808d2002692", null ],
+    [ "getCompressionMethodsValue", "a00163.html#a35a1d36501d95099afa785b816ee3ccc", null ],
+    [ "getExtension", "a00163.html#aa0a52a20c677f96efb2d6f8f2c1d0817", null ],
+    [ "getExtensionCount", "a00163.html#aa41fcaf6f5d831b9f0fdf0995972f2b0", null ],
+    [ "getExtensionOfType", "a00163.html#ac6773d4fa9bdabfdc40add0ab78a9335", null ],
+    [ "getExtensionOfType", "a00163.html#a2640d7975ecc0ac9722981e691c7b799", null ],
+    [ "getExtensionOfType", "a00163.html#a1769691cfbf5f89cee901779b2f5dbe7", null ],
+    [ "getExtensionsLenth", "a00163.html#abf96f6d167902c110f9982c9ecbf80df", null ],
+    [ "getHandshakeVersion", "a00163.html#aac4f84fa44a8b1f8812d802ce7cbcf72", null ],
+    [ "getServerHelloHeader", "a00163.html#a04b2dcc2adaf0d90f10040e2bc439961", null ],
+    [ "getSessionID", "a00163.html#ae7a95492fd974b5799f3a1a979e808ef", null ],
+    [ "getSessionIDLength", "a00163.html#a1116e3643ae6a9ccdd4eed46861f071a", null ],
+    [ "toString", "a00163.html#ab6d2e12e5d3aa1340faf260f29ab1e21", null ]
 ];

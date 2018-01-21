@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IPv4Reassembly Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPv4OptionData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,180 +107,45 @@ $(document).ready(function(){initNavTree('a00074.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00310.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00324.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPv4Reassembly Class Reference</div>  </div>
+<div class="title">pcpp::IPv4OptionData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00189_source.html">IPv4Reassembly.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00201_source.html">IPv4Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html">PacketKey</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a5904179c0ce298bc1b9c241ebc0669d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">ReassemblyStatus</a> { <br />
-&#160;&#160;<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0afff72ceb906884fa69cfa444858dd5dc">NON_IP_PACKET</a> = 0x00, 
-<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a0e3b21a64f114c28259cf4d244133485">NON_FRAGMENT</a> = 0x01, 
-<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0adc2b6181d0999bbd738b4d2c6517e098">FIRST_FRAGMENT</a> = 0x02, 
-<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a7807ff0d79c9194fdcee72ec850987bf">FRAGMENT</a> = 0x04, 
-<br />
-&#160;&#160;<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a66708b489b49e81a00c75819ad7f7c76">OUT_OF_ORDER_FRAGMENT</a> = 0x08, 
-<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a8fae72ea20bbb1a13cbde61c57249b98">MALFORMED_FRAGMENT</a> = 0x10, 
-<a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0ad963f3d6739ca4e39e41d5ddfe10c65f">REASSEMBLED</a> = 0x20
-<br />
- }</td></tr>
-<tr class="separator:a5904179c0ce298bc1b9c241ebc0669d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6a0861aec49d0e98d3c0d50057e89b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a9e6a0861aec49d0e98d3c0d50057e89b">OnFragmentsClean</a>) (const <a class="el" href="a00092.html">PacketKey</a> &amp;key, void *userCookie)</td></tr>
-<tr class="separator:a9e6a0861aec49d0e98d3c0d50057e89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8cb0b469c3f7f0617b8fa3abeb197fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ab8cb0b469c3f7f0617b8fa3abeb197fc">IPv4Reassembly</a> (<a class="el" href="a00074.html#a9e6a0861aec49d0e98d3c0d50057e89b">OnFragmentsClean</a> onFragmentsCleanCallback=NULL, void *callbackUserCookie=NULL, size_t maxPacketsToStore=500000)</td></tr>
-<tr class="separator:ab8cb0b469c3f7f0617b8fa3abeb197fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5908726fd0cec86e59835b2f340847e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#af5908726fd0cec86e59835b2f340847e">~IPv4Reassembly</a> ()</td></tr>
-<tr class="separator:af5908726fd0cec86e59835b2f340847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe46df96bbe652c1fbd2bdfdd0ff2be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00091.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#abe46df96bbe652c1fbd2bdfdd0ff2be1">processPacket</a> (<a class="el" href="a00091.html">Packet</a> *fragment, <a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">ReassemblyStatus</a> &amp;status)</td></tr>
-<tr class="separator:abe46df96bbe652c1fbd2bdfdd0ff2be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542ef8b686e84422a6c24882bef42669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00091.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a542ef8b686e84422a6c24882bef42669">processPacket</a> (<a class="el" href="a00117.html">RawPacket</a> *fragment, <a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">ReassemblyStatus</a> &amp;status)</td></tr>
-<tr class="separator:a542ef8b686e84422a6c24882bef42669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e7bf573c9fb6d773e2ae6bef7b479a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00091.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a73e7bf573c9fb6d773e2ae6bef7b479a">getCurrentPacket</a> (const <a class="el" href="a00092.html">PacketKey</a> &amp;key)</td></tr>
-<tr class="separator:a73e7bf573c9fb6d773e2ae6bef7b479a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa3ef218eacb1516d6b45bfaa1b61dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a5aa3ef218eacb1516d6b45bfaa1b61dd">removePacket</a> (const <a class="el" href="a00092.html">PacketKey</a> &amp;key)</td></tr>
-<tr class="separator:a5aa3ef218eacb1516d6b45bfaa1b61dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea1d62b50b24d3318932bea33be0610"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a8ea1d62b50b24d3318932bea33be0610">getMaxCapacity</a> ()</td></tr>
-<tr class="separator:a8ea1d62b50b24d3318932bea33be0610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a410ceeb9738d43bc835b337981d1dadc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a410ceeb9738d43bc835b337981d1dadc">getCurrentCapacity</a> ()</td></tr>
-<tr class="separator:a410ceeb9738d43bc835b337981d1dadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ae90c0ba4e04d7b2f945d40b58aebc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a82ae90c0ba4e04d7b2f945d40b58aebc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00074.html#a82ae90c0ba4e04d7b2f945d40b58aebc">getValueAs</a> (int valueOffset=0)</td></tr>
+<tr class="separator:a82ae90c0ba4e04d7b2f945d40b58aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70051c572c9a93d66bf424aa1a43ad3f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00071.html">IPv4Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a70051c572c9a93d66bf424aa1a43ad3f">getValueAsIpList</a> ()</td></tr>
+<tr class="separator:a70051c572c9a93d66bf424aa1a43ad3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561ef920c5f7b137c8f849946bc81e25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">IPv4TimestampOptionValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a561ef920c5f7b137c8f849946bc81e25">getTimestampOptionValue</a> ()</td></tr>
+<tr class="separator:a561ef920c5f7b137c8f849946bc81e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910f4bd149a924a7656c1294afc38231"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a910f4bd149a924a7656c1294afc38231">getTotalSize</a> () const </td></tr>
+<tr class="separator:a910f4bd149a924a7656c1294afc38231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2feb3f3d9ca162b9fd8b3bd96c26b08"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#aa2feb3f3d9ca162b9fd8b3bd96c26b08">getDataSize</a> ()</td></tr>
+<tr class="separator:aa2feb3f3d9ca162b9fd8b3bd96c26b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b12f6588f2625c1deff78dbeec1c726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68">IPv4OptionTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a9b12f6588f2625c1deff78dbeec1c726">getType</a> ()</td></tr>
+<tr class="separator:a9b12f6588f2625c1deff78dbeec1c726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae35c6fce1ffebcbc7e00636c68d3fd83"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ae35c6fce1ffebcbc7e00636c68d3fd83">opCode</a></td></tr>
+<tr class="separator:ae35c6fce1ffebcbc7e00636c68d3fd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9019dd1cc5a4b2c9135c20f4d52cc1d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#af9019dd1cc5a4b2c9135c20f4d52cc1d">len</a></td></tr>
+<tr class="separator:af9019dd1cc5a4b2c9135c20f4d52cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139001cb6060693fd3d5c10d0af0273e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a139001cb6060693fd3d5c10d0af0273e">value</a> []</td></tr>
+<tr class="separator:a139001cb6060693fd3d5c10d0af0273e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the IPv4 reassembly (a.k.a IPv4 de-fragmentation) mechanism. Please refer to the documentation at the top of <a class="el" href="a00189.html">IPv4Reassembly.h</a> to understand how this mechanism works. The main APIs are:</p><ul>
-<li><a class="el" href="a00074.html#abe46df96bbe652c1fbd2bdfdd0ff2be1">IPv4Reassembly::processPacket()</a> - process a fragment. This is the main method which should be called whenever a new fragment arrives. This method processes the fragment, runs the reassembly logic and returns the result packet when it's fully reassembled</li>
-<li><a class="el" href="a00074.html#a73e7bf573c9fb6d773e2ae6bef7b479a">IPv4Reassembly::getCurrentPacket()</a> - get the reassembled data that is currently available, even if reassembly process is not yet completed</li>
-<li><a class="el" href="a00074.html#a5aa3ef218eacb1516d6b45bfaa1b61dd">IPv4Reassembly::removePacket()</a> - remove all data that is currently stored for a packet, including the reassembled data that was gathered so far </li>
-</ul>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a9e6a0861aec49d0e98d3c0d50057e89b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv4Reassembly::OnFragmentsClean</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The IPv4 reassembly mechanism has a certain capacity of concurrent packets it can handle. This capacity is determined in its c'tor (default value is <a class="el" href="a00189.html#a3616655e2c19691a8175c0284714488e">PCPP_IPV4_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>). When traffic volume exceeds this capacity the mechanism starts dropping packets in a LRU manner (least recently used are dropped first). Whenever a packet is dropped this callback is fired </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The identifiers of the packet that is being dropped </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in IPv4Reassemby c'tor (or NULL if no cookie provided) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">pcpp::IPv4Reassembly::ReassemblyStatus</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum representing the status returned from processing a fragment </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0afff72ceb906884fa69cfa444858dd5dc"></a>NON_IP_PACKET&#160;</td><td class="fielddoc">
-<p>The processed packet isn't of type IPv4 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0a0e3b21a64f114c28259cf4d244133485"></a>NON_FRAGMENT&#160;</td><td class="fielddoc">
-<p>The processed packet isn't a fragment </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0adc2b6181d0999bbd738b4d2c6517e098"></a>FIRST_FRAGMENT&#160;</td><td class="fielddoc">
-<p>The processed fragment is the first fragment </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0a7807ff0d79c9194fdcee72ec850987bf"></a>FRAGMENT&#160;</td><td class="fielddoc">
-<p>The processed fragment is a fragment (but not the first one) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0a66708b489b49e81a00c75819ad7f7c76"></a>OUT_OF_ORDER_FRAGMENT&#160;</td><td class="fielddoc">
-<p>The processed fragment is not the fragment that was expected at this time </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0a8fae72ea20bbb1a13cbde61c57249b98"></a>MALFORMED_FRAGMENT&#160;</td><td class="fielddoc">
-<p>The processed fragment is malformed, meaning a fragment which has offset of zero but isn't the first fragment </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5904179c0ce298bc1b9c241ebc0669d0ad963f3d6739ca4e39e41d5ddfe10c65f"></a>REASSEMBLED&#160;</td><td class="fielddoc">
-<p><a class="el" href="a00091.html">Packet</a> is now fully reassembled </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab8cb0b469c3f7f0617b8fa3abeb197fc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv4Reassembly::IPv4Reassembly </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00074.html#a9e6a0861aec49d0e98d3c0d50057e89b">OnFragmentsClean</a>&#160;</td>
-          <td class="paramname"><em>onFragmentsCleanCallback</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callbackUserCookie</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>maxPacketsToStore</em> = <code>500000</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A c'tor for this class. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="a00189.html">IPv4Reassembly.h</a> file description. This parameter is optional, default value is NULL (no callback) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callbackUserCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the onFragmentsCleanCallback. This parameter is optional, default cookie is NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketsToStore</td><td>Set the capacity limit of the IPv4 reassembly mechanism. Default capacity is <a class="el" href="a00189.html#a3616655e2c19691a8175c0284714488e">PCPP_IPV4_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af5908726fd0cec86e59835b2f340847e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv4Reassembly::~IPv4Reassembly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A d'tor for this class </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a410ceeb9738d43bc835b337981d1dadc"></a>
+<div class="textblock"><p>Representing a IPv4 option in a TLV (type-length-value) structure </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa2feb3f3d9ca162b9fd8b3bd96c26b08"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -288,7 +153,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t pcpp::IPv4Reassembly::getCurrentCapacity </td>
+          <td class="memname">size_t pcpp::IPv4OptionData::getDataSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -300,34 +165,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the current number of packets being processed </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the option data (not containing the size of the option type and option length fields) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a73e7bf573c9fb6d773e2ae6bef7b479a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00091.html">Packet</a>* pcpp::IPv4Reassembly::getCurrentPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00092.html">PacketKey</a> &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a partially reassembled packet. This method returns all the reassembled data that was gathered so far which is obviously not a fully reassembled packet (otherwise it would have returned by <a class="el" href="a00074.html#abe46df96bbe652c1fbd2bdfdd0ff2be1">processPacket()</a>). Notice all data is being copied so the user is responsible to free the returned <a class="el" href="a00091.html">Packet</a> object when done using it. Notice#2 - calling this method doesn't interfere with the reassembly of this packet - all internal structures and data remain </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The identifiers of the packet to return </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a <a class="el" href="a00091.html">Packet</a> object containing the partially reassembled packet. Notice the user is responsible to free this object when done using it </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8ea1d62b50b24d3318932bea33be0610"></a>
+<a class="anchor" id="a561ef920c5f7b137c8f849946bc81e25"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -335,7 +177,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t pcpp::IPv4Reassembly::getMaxCapacity </td>
+          <td class="memname"><a class="el" href="a00076.html">IPv4TimestampOptionValue</a> pcpp::IPv4OptionData::getTimestampOptionValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -347,125 +189,153 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the maximum capacity as determined in the c'tor </p>
+<p>A method for parsing the IPv4 timestamp option value. This method is relevant only for IPv4 timestamp option. For other option types an empty result will be returned. The returned structure contains the timestamp value type (timestamp only, timestamp + IP addresses, etc.) as well as 2 vectors containing the list of timestamps and the list of IP addresses (if applicable for the timestamp value type). Blank timestamps or IP addresses (meaning zeroed values - timestamp=0 or IP address=0.0.0.0) will not be added to the lists. If some error occurs during the parsing or the value is invalid an empty result is returned </p><dl class="section return"><dt>Returns</dt><dd>A structured containing the IPv4 timestamp value </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abe46df96bbe652c1fbd2bdfdd0ff2be1"></a>
+<a class="anchor" id="a910f4bd149a924a7656c1294afc38231"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::IPv4OptionData::getTotalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The total size in bytes of this IPv4 option which includes: 1[Byte] (option type) + 1[Byte] (option length) + X[Bytes] (option data length). For <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68a7ed09a52eb2c2f8c0a6149d4119fb5c4">IPV4OPT_EndOfOtionsList</a> and <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68a5730c6990b55c67a401892b5a0f76f06">IPV4OPT_NOP</a> the value 1 is returned </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b12f6588f2625c1deff78dbeec1c726"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68">IPv4OptionTypes</a> pcpp::IPv4OptionData::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>IPv4 option type casted as <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68">pcpp::IPv4OptionTypes</a> enum </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82ae90c0ba4e04d7b2f945d40b58aebc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pcpp::IPv4OptionData::getValueAs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>valueOffset</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A templated method to retrieve the IPv4 option data as a certain type T. For example, if IPv4 option data is 4B (integer) then this method should be used as <a class="el" href="a00074.html#a82ae90c0ba4e04d7b2f945d40b58aebc">getValueAs&lt;int&gt;()</a> and it will return the IPv4 option data as an integer.<br />
+ Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">valueOffset</td><td>An optional parameter that specifies where to start copy the IPv4 option data. For example: if option data is 20 bytes and you need only the 4 last bytes as integer then use this method like this: getValueAs&lt;int&gt;(16). The default is 0 - start copying from the beginning of option data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IPv4 option data as type T </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a70051c572c9a93d66bf424aa1a43ad3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a00071.html">IPv4Address</a>&gt; pcpp::IPv4OptionData::getValueAsIpList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A method for parsing the IPv4 option value as an IP list. This method is relevant only for certain types of IPv4 options which their value is a list of IPv4 addresses such as <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50">IPV4OPT_RecordRoute</a>, <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68ae542288e706da4062872975d7a126ab0">IPV4OPT_StrictSourceRoute</a>, <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68a4a89e19c9e3e20847149686506190eb0">IPV4OPT_LooseSourceRoute</a>, etc. This method returns a vector of the IPv4 addresses. Blank IP addresses (meaning zeroed addresses - 0.0.0.0) will not be added to the returned list. If some error occurs during the parsing or the value is invalid an empty vector is returned </p><dl class="section return"><dt>Returns</dt><dd>A vector of IPv4 addresses parsed from the IPv4 option value </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af9019dd1cc5a4b2c9135c20f4d52cc1d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00091.html">Packet</a>* pcpp::IPv4Reassembly::processPacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00091.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>fragment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">ReassemblyStatus</a> &amp;&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint8_t pcpp::IPv4OptionData::len</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The main API that drives <a class="el" href="a00074.html">IPv4Reassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IPv4 reassembly logic that is described in <a class="el" href="a00189.html">IPv4Reassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process. Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
-<li>The input fragment is not a IPv4 packet</li>
-<li>The input fragment is not a IPv4 fragment packet</li>
-<li>The input fragment is the first fragment of the packet</li>
-<li>The input fragment is not the first or last fragment</li>
-<li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
-<li>The input fragment is malformed and will be ignored</li>
-<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><ul>
-<li>If the input fragment isn't an IPv4 packet or if it isn't an IPv4 fragment, the return value is a pointer to the input fragment</li>
-<li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
-<li>If the reassembled packet isn't ready then NULL is returned </li>
-</ul>
-</dd></dl>
+<p>IPv4 option length </p>
 
 </div>
 </div>
-<a class="anchor" id="a542ef8b686e84422a6c24882bef42669"></a>
+<a class="anchor" id="ae35c6fce1ffebcbc7e00636c68d3fd83"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00091.html">Packet</a>* pcpp::IPv4Reassembly::processPacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00117.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>fragment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00074.html#a5904179c0ce298bc1b9c241ebc0669d0">ReassemblyStatus</a> &amp;&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint8_t pcpp::IPv4OptionData::opCode</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The main API that drives <a class="el" href="a00074.html">IPv4Reassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IPv4 reassembly logic that is described in <a class="el" href="a00189.html">IPv4Reassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process. Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
-<li>The input fragment is not a IPv4 packet</li>
-<li>The input fragment is not a IPv4 fragment packet</li>
-<li>The input fragment is the first fragment of the packet</li>
-<li>The input fragment is not the first or last fragment</li>
-<li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
-<li>The input fragment is malformed and will be ignored</li>
-<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><ul>
-<li>If the input fragment isn't an IPv4 packet or if it isn't an IPv4 fragment, the return value is a pointer to a <a class="el" href="a00091.html">Packet</a> object wrapping the input fragment <a class="el" href="a00117.html">RawPacket</a> object. It's the user responsibility to free this instance</li>
-<li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
-<li>If the reassembled packet isn't ready then NULL is returned </li>
-</ul>
-</dd></dl>
+<p>IPv4 option code, should be of type <a class="el" href="a00245.html#a4ac8e7540b72db061b0078f1e2ca2b68">pcpp::IPv4OptionTypes</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="a5aa3ef218eacb1516d6b45bfaa1b61dd"></a>
+<a class="anchor" id="a139001cb6060693fd3d5c10d0af0273e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IPv4Reassembly::removePacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00092.html">PacketKey</a> &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t pcpp::IPv4OptionData::value[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove a partially reassembled packet from all internal structures. That means that if another fragment of this packet appears it will be treated as a new packet </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The identifiers of the packet to remove </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>IPv4 option value </p>
 
 </div>
 </div>
@@ -474,8 +344,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00231.html">pcpp</a></li><li class="navelem"><a class="el" href="a00074.html">IPv4Reassembly</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00074.html">IPv4OptionData</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

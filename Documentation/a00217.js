@@ -1,19 +1,12 @@
 var a00217 =
 [
-    [ "SdpLayer", "a00119.html", "a00119" ],
-    [ "PCPP_SDP_BANDWIDTH_FIELD", "a00217.html#a7342cb29cdbf5457a14d26182c274b4e", null ],
-    [ "PCPP_SDP_CONNECTION_INFO_FIELD", "a00217.html#a37c55925c55aa40dbee6c3e98fb5611c", null ],
-    [ "PCPP_SDP_EMAIL_FIELD", "a00217.html#a5a64a6604b467c377ec83a69c1efa8a9", null ],
-    [ "PCPP_SDP_ENCRYPTION_KEY_FIELD", "a00217.html#a4a0ebed21e39e533c37a554919f3e597", null ],
-    [ "PCPP_SDP_INFO_FIELD", "a00217.html#a10b654364cc129e8a8a09d8336cee763", null ],
-    [ "PCPP_SDP_MEDIA_ATTRIBUTE_FIELD", "a00217.html#a916b64da7dfa7de9a44d9d0650e7e34d", null ],
-    [ "PCPP_SDP_MEDIA_NAME_FIELD", "a00217.html#ad8edc312ae073f11b132152adf6a2908", null ],
-    [ "PCPP_SDP_ORIGINATOR_FIELD", "a00217.html#a976f9f075cfb24ce0ddaf80f404efe42", null ],
-    [ "PCPP_SDP_PHONE_FIELD", "a00217.html#a2945d31c61f0c871400a2ebbc68d3a93", null ],
-    [ "PCPP_SDP_PROTOCOL_VERSION_FIELD", "a00217.html#a8be76a4922f6098201e92850e913ddc8", null ],
-    [ "PCPP_SDP_REPEAT_TIMES_FIELD", "a00217.html#ad27c33e00d5080184880cd3b5dc8f222", null ],
-    [ "PCPP_SDP_SESSION_NAME_FIELD", "a00217.html#a766206ef6d418e2f5b8f06c392881611", null ],
-    [ "PCPP_SDP_TIME_FIELD", "a00217.html#a436559034ada506e5c3a5abc0b35899b", null ],
-    [ "PCPP_SDP_TIME_ZONE_FIELD", "a00217.html#addc61e36c79f08af7bd78403817dfc26", null ],
-    [ "PCPP_SDP_URI_FIELD", "a00217.html#a0cfcd66fe312890f3f7ff44e98ec909f", null ]
+    [ "NullLoopbackLayer", "a00101.html", "a00101" ],
+    [ "PCPP_BSD_AF_APPLETALK", "a00217.html#a071b913aa88e800c09b87bf426696fe3", null ],
+    [ "PCPP_BSD_AF_INET", "a00217.html#a72b9931b8ad1b827b2fce31ace25cd1c", null ],
+    [ "PCPP_BSD_AF_INET6_BSD", "a00217.html#a4733862a795ae56d21d1b14f5def3629", null ],
+    [ "PCPP_BSD_AF_INET6_DARWIN", "a00217.html#aa32c8402569788e76a8da0b669d692f5", null ],
+    [ "PCPP_BSD_AF_INET6_FREEBSD", "a00217.html#ae4c38fe88eaeac9592eb16619d0a8aca", null ],
+    [ "PCPP_BSD_AF_IPX", "a00217.html#ae7ce3fda5cf388ac74795c1552997ec3", null ],
+    [ "PCPP_BSD_AF_ISO", "a00217.html#aa5dd2725b050935e84ddcbc642f0ac98", null ],
+    [ "PCPP_BSD_AF_NS", "a00217.html#a25f214b48ecfdd1a8eeef7549ba07016", null ]
 ];

@@ -1,12 +1,6 @@
 var a00168 =
 [
-    [ "UdpLayer", "a00168.html#add55cec282d7f33152b83424ceb2710b", null ],
-    [ "UdpLayer", "a00168.html#ab14e8e5fc416560f055bae317aa3ebed", null ],
-    [ "calculateChecksum", "a00168.html#a98ae7478c27ae01ae6be6c887506e8f4", null ],
-    [ "computeCalculateFields", "a00168.html#ac0e7ba19ff47c38eb879105ca44b3188", null ],
-    [ "getHeaderLen", "a00168.html#a27ce2ea24679695f2e408c575b465fbb", null ],
-    [ "getOsiModelLayer", "a00168.html#a668d1ab5abdec0157536ea11ed52e562", null ],
-    [ "getUdpHeader", "a00168.html#a3962406394fce824369afc0471845b96", null ],
-    [ "parseNextLayer", "a00168.html#a35d4be6b1c091dfc743113c85ca8d596", null ],
-    [ "toString", "a00168.html#a6c45f5c9bb386d5231ee485eaad26d41", null ]
+    [ "operator==", "a00168.html#aa757ff97d3c182eb1f3852bd2be4d836", null ],
+    [ "Id", "a00168.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
+    [ "Mask", "a00168.html#aa76587497e2faa7f7354ca8444a9450b", null ]
 ];

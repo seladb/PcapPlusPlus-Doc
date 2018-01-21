@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00082.html','');});
+$(document).ready(function(){initNavTree('a00068.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,25 +107,27 @@ $(document).ready(function(){initNavTree('a00082.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::LRUList&lt; T &gt; Member List</div>  </div>
+<div class="title">pcpp::IPcapDevice Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00068.html">pcpp::IPcapDevice</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00082.html#a5682e992a5b22c9ed24242a38265ce73">eraseElement</a>(const T &amp;element)</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00082.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a>()</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00082.html#a158e70dab4d3e90c80018e054c571e09">getMaxSize</a>()</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00082.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a>()</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00082.html#ab1c9e215f38fc45eb568506897dc4680">getSize</a>()</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00082.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a>(size_t maxSize)</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00082.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a>(const T &amp;element)</td><td class="entry"><a class="el" href="a00082.html">pcpp::LRUList&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00068.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a>()</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00068.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a>()=0</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00068.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat &amp;stats)=0</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00068.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a>()</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00068.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a>(std::string filterAsString, RawPacket *rawPacket)</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00068.html#aa7d1358756653febf63d23b21447649c">open</a>()=0</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00068.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a>(GeneralFilter &amp;filter)</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00068.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00068.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a>(std::string filterAsString)</td><td class="entry"><a class="el" href="a00068.html">pcpp::IPcapDevice</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

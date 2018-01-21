@@ -1,13 +1,22 @@
 var a00075 =
 [
-    [ "TimestampType", "a00075.html#a7e40161cb0427081efb75885ae38d2fb", [
-      [ "TimestampOnly", "a00075.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3", null ],
-      [ "TimestampAndIP", "a00075.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0", null ],
-      [ "TimestampsForPrespecifiedIPs", "a00075.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8", null ],
-      [ "Unknown", "a00075.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30", null ]
+    [ "PacketKey", "a00103.html", "a00103" ],
+    [ "OnFragmentsClean", "a00075.html#a9e6a0861aec49d0e98d3c0d50057e89b", null ],
+    [ "ReassemblyStatus", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0", [
+      [ "NON_IP_PACKET", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0afff72ceb906884fa69cfa444858dd5dc", null ],
+      [ "NON_FRAGMENT", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0a0e3b21a64f114c28259cf4d244133485", null ],
+      [ "FIRST_FRAGMENT", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0adc2b6181d0999bbd738b4d2c6517e098", null ],
+      [ "FRAGMENT", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0a7807ff0d79c9194fdcee72ec850987bf", null ],
+      [ "OUT_OF_ORDER_FRAGMENT", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0a66708b489b49e81a00c75819ad7f7c76", null ],
+      [ "MALFORMED_FRAGMENT", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0a8fae72ea20bbb1a13cbde61c57249b98", null ],
+      [ "REASSEMBLED", "a00075.html#a5904179c0ce298bc1b9c241ebc0669d0ad963f3d6739ca4e39e41d5ddfe10c65f", null ]
     ] ],
-    [ "clear", "a00075.html#aebdf61198a25c376676deec6fc6be0ef", null ],
-    [ "ipAddresses", "a00075.html#a38f920da501372e5fdcc68200e63f316", null ],
-    [ "timestamps", "a00075.html#a99bbb61fda3f7dc4a3323b92efac8ac8", null ],
-    [ "type", "a00075.html#a145ef3773e1b0ccb3d5b2d601db3361c", null ]
+    [ "IPv4Reassembly", "a00075.html#ab8cb0b469c3f7f0617b8fa3abeb197fc", null ],
+    [ "~IPv4Reassembly", "a00075.html#af5908726fd0cec86e59835b2f340847e", null ],
+    [ "getCurrentCapacity", "a00075.html#a410ceeb9738d43bc835b337981d1dadc", null ],
+    [ "getCurrentPacket", "a00075.html#a73e7bf573c9fb6d773e2ae6bef7b479a", null ],
+    [ "getMaxCapacity", "a00075.html#a8ea1d62b50b24d3318932bea33be0610", null ],
+    [ "processPacket", "a00075.html#abe46df96bbe652c1fbd2bdfdd0ff2be1", null ],
+    [ "processPacket", "a00075.html#a542ef8b686e84422a6c24882bef42669", null ],
+    [ "removePacket", "a00075.html#a5aa3ef218eacb1516d6b45bfaa1b61dd", null ]
 ];

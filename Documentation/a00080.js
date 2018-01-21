@@ -1,10 +1,7 @@
 var a00080 =
 [
-    [ "LinkDuplex", "a00080.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
-      [ "FULL_DUPLEX", "a00080.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
-      [ "HALF_DUPLEX", "a00080.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
-    ] ],
-    [ "linkDuplex", "a00080.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
-    [ "linkSpeedMbps", "a00080.html#a6177ed98446f18d57be88d8c2411a473", null ],
-    [ "linkUp", "a00080.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
+    [ "headerLen", "a00080.html#ae7e5662b426aa656b4facb81bc947518", null ],
+    [ "nextHeader", "a00080.html#a4d9369b6437e7665bd8fc54a23232ef4", null ],
+    [ "routingType", "a00080.html#a7c4579b3c40ab7180339addc210d0898", null ],
+    [ "segmentsLeft", "a00080.html#a0f695f69f4ef95239ac86212a8fcd4dd", null ]
 ];

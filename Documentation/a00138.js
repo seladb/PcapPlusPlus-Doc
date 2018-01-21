@@ -1,7 +1,8 @@
 var a00138 =
 [
-    [ "SSLCertificateVerifyMessage", "a00138.html#a364e17c73fd7cbb9460d75029cace69e", null ],
-    [ "getSignedHash", "a00138.html#a15eac0196cce5604ad21e8b7cd70c372", null ],
-    [ "getSignedHashLength", "a00138.html#aa7a070cf7f91c37fb50e8976054a1ce4", null ],
-    [ "toString", "a00138.html#a0662a3136fca531a733055c1de84d0b7", null ]
+    [ "ARPHRD_type", "a00138.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
+    [ "link_layer_addr", "a00138.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
+    [ "link_layer_addr_len", "a00138.html#ac253e0a098c39f46d192619ed5d229bf", null ],
+    [ "packet_type", "a00138.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
+    [ "protocol_type", "a00138.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
 ];

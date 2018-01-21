@@ -1,10 +1,11 @@
 var a00175 =
 [
-    [ "getDeviceType", "a00175.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
-    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a00175.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
-    [ "sendPackets", "a00175.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
-    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a00175.html#aebff78da9d57c6ec9046de32746943bd", null ],
-    [ "startCapture", "a00175.html#af22e2966176d4127e69300cd4b208758", null ],
-    [ "startCapture", "a00175.html#a70126c098779937e5ce88360966c7aa1", null ],
-    [ "startCapture", "a00175.html#a74824694b8f72f687dec10557a196675", null ]
+    [ "TcpStreamData", "a00175.html#acb6875699103b7d1967cb799f7501913", null ],
+    [ "TcpStreamData", "a00175.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
+    [ "~TcpStreamData", "a00175.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
+    [ "TcpStreamData", "a00175.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
+    [ "getConnectionData", "a00175.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getData", "a00175.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
+    [ "getDataLength", "a00175.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
+    [ "operator=", "a00175.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
 ];

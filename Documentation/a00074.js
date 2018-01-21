@@ -1,22 +1,12 @@
 var a00074 =
 [
-    [ "PacketKey", "a00092.html", "a00092" ],
-    [ "OnFragmentsClean", "a00074.html#a9e6a0861aec49d0e98d3c0d50057e89b", null ],
-    [ "ReassemblyStatus", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0", [
-      [ "NON_IP_PACKET", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0afff72ceb906884fa69cfa444858dd5dc", null ],
-      [ "NON_FRAGMENT", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a0e3b21a64f114c28259cf4d244133485", null ],
-      [ "FIRST_FRAGMENT", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0adc2b6181d0999bbd738b4d2c6517e098", null ],
-      [ "FRAGMENT", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a7807ff0d79c9194fdcee72ec850987bf", null ],
-      [ "OUT_OF_ORDER_FRAGMENT", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a66708b489b49e81a00c75819ad7f7c76", null ],
-      [ "MALFORMED_FRAGMENT", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0a8fae72ea20bbb1a13cbde61c57249b98", null ],
-      [ "REASSEMBLED", "a00074.html#a5904179c0ce298bc1b9c241ebc0669d0ad963f3d6739ca4e39e41d5ddfe10c65f", null ]
-    ] ],
-    [ "IPv4Reassembly", "a00074.html#ab8cb0b469c3f7f0617b8fa3abeb197fc", null ],
-    [ "~IPv4Reassembly", "a00074.html#af5908726fd0cec86e59835b2f340847e", null ],
-    [ "getCurrentCapacity", "a00074.html#a410ceeb9738d43bc835b337981d1dadc", null ],
-    [ "getCurrentPacket", "a00074.html#a73e7bf573c9fb6d773e2ae6bef7b479a", null ],
-    [ "getMaxCapacity", "a00074.html#a8ea1d62b50b24d3318932bea33be0610", null ],
-    [ "processPacket", "a00074.html#abe46df96bbe652c1fbd2bdfdd0ff2be1", null ],
-    [ "processPacket", "a00074.html#a542ef8b686e84422a6c24882bef42669", null ],
-    [ "removePacket", "a00074.html#a5aa3ef218eacb1516d6b45bfaa1b61dd", null ]
+    [ "getDataSize", "a00074.html#aa2feb3f3d9ca162b9fd8b3bd96c26b08", null ],
+    [ "getTimestampOptionValue", "a00074.html#a561ef920c5f7b137c8f849946bc81e25", null ],
+    [ "getTotalSize", "a00074.html#a910f4bd149a924a7656c1294afc38231", null ],
+    [ "getType", "a00074.html#a9b12f6588f2625c1deff78dbeec1c726", null ],
+    [ "getValueAs", "a00074.html#a82ae90c0ba4e04d7b2f945d40b58aebc", null ],
+    [ "getValueAsIpList", "a00074.html#a70051c572c9a93d66bf424aa1a43ad3f", null ],
+    [ "len", "a00074.html#af9019dd1cc5a4b2c9135c20f4d52cc1d", null ],
+    [ "opCode", "a00074.html#ae35c6fce1ffebcbc7e00636c68d3fd83", null ],
+    [ "value", "a00074.html#a139001cb6060693fd3d5c10d0af0273e", null ]
 ];

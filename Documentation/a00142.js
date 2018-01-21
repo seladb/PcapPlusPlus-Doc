@@ -1,7 +1,5 @@
 var a00142 =
 [
-    [ "SSLClientKeyExchangeMessage", "a00142.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
-    [ "getClientKeyExchangeParams", "a00142.html#a23584b393dea97a6d249c750b99f4c5f", null ],
-    [ "getClientKeyExchangeParamsLength", "a00142.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
-    [ "toString", "a00142.html#ada71ea045d9dbfd57484a156a108c00b", null ]
+    [ "handshakeVersion", "a00142.html#aa7f3e7a1886a78bf528650958c167d72", null ],
+    [ "random", "a00142.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
 ];

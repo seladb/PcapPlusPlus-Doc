@@ -1,8 +1,8 @@
 var a00111 =
 [
-    [ "code", "a00111.html#ab7f6d4c3dba01ad2212e4a71e738161c", null ],
-    [ "payloadLength", "a00111.html#a08e5841209e619cc327971361264f02e", null ],
-    [ "sessionId", "a00111.html#acff911ee6da20c9101981d1396562ab3", null ],
-    [ "type", "a00111.html#a696c4e1cd2f66f95923d7c310df1d043", null ],
-    [ "version", "a00111.html#a99482acf563e69e4a318992715742a08", null ]
+    [ "PcapRemoteAuthentication", "a00111.html#a239165d4eaaf752899e7656439f8f19e", null ],
+    [ "PcapRemoteAuthentication", "a00111.html#a7f1d4e564af1f378e6778d71910d1581", null ],
+    [ "getPcapRmAuth", "a00111.html#a6690ebfa8d5de408a635fed992c50999", null ],
+    [ "password", "a00111.html#a2f464437d3df5c609c4f91675ea73a63", null ],
+    [ "userName", "a00111.html#ab20a5fd24c937d1432587cbec80a14a7", null ]
 ];

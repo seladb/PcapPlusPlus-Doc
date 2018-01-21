@@ -1,6 +1,11 @@
 var a00133 =
 [
-    [ "length", "a00133.html#ad0988dfc40b111270d4c447293218d1c", null ],
-    [ "recordType", "a00133.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
-    [ "recordVersion", "a00133.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
+    [ "SipRequestFirstLineException", "a00134.html", null ],
+    [ "getMethod", "a00133.html#a9f565226ddf7536aa71b59f026bbb1d9", null ],
+    [ "getSize", "a00133.html#ad4e1d8bf3f0c0046d32769a4856f1f66", null ],
+    [ "getUri", "a00133.html#a1339bbd98a849fe431781c397c3773fa", null ],
+    [ "getVersion", "a00133.html#a02f1724946ead8939303c89a8bb38763", null ],
+    [ "isComplete", "a00133.html#a0ae02e550e9c07a4d3bf4edc9fda761c", null ],
+    [ "setMethod", "a00133.html#a778f3461351cb87706186869f8bf19e0", null ],
+    [ "setUri", "a00133.html#a3eeb1c43e1098aa0ccb461debdffead1", null ]
 ];

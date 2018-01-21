@@ -1,28 +1,17 @@
 var a00185 =
 [
-    [ "igmp_header", "a00056.html", "a00056" ],
-    [ "igmpv3_query_header", "a00061.html", "a00061" ],
-    [ "igmpv3_report_header", "a00062.html", "a00062" ],
-    [ "igmpv3_group_record", "a00060.html", "a00060" ],
-    [ "IgmpLayer", "a00057.html", "a00057" ],
-    [ "IgmpV1Layer", "a00058.html", "a00058" ],
-    [ "IgmpV2Layer", "a00059.html", "a00059" ],
-    [ "IgmpV3QueryLayer", "a00063.html", "a00063" ],
-    [ "IgmpV3ReportLayer", "a00064.html", "a00064" ],
-    [ "IgmpType", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8", [
-      [ "IgmpType_Unknown", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8a521b2cf2cf22d4f523c9aa8e0003d58d", null ],
-      [ "IgmpType_MembershipQuery", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8af7e7ff46f1373500c65709de204764ab", null ],
-      [ "IgmpType_MembershipReportV1", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8ac0e6f9638e6dc5b923dd220e49773589", null ],
-      [ "IgmpType_DVMRP", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8a7f23c10d9919fbeb526fd16e5b7f5f9b", null ],
-      [ "IgmpType_P1Mv1", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8aab889c63188a54de524a3d6f84d0bf1f", null ],
-      [ "IgmpType_CiscoTrace", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8ae94ed897685f1c18d20bb48a96612e89", null ],
-      [ "IgmpType_MembershipReportV2", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8a6eddc2cabc363917fe02f5f64ca33759", null ],
-      [ "IgmpType_LeaveGroup", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8ab24d7c28937785b36830b4cddc62c131", null ],
-      [ "IgmpType_MulticastTracerouteResponse", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8afd4e7b8221744681d3dbc04c01c7eaf4", null ],
-      [ "IgmpType_MulticastTraceroute", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8aa8125e71f263d71066ca32061346fb8d", null ],
-      [ "IgmpType_MembershipReportV3", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8a87ea965de8a6018ae84bed6e76a90fd9", null ],
-      [ "IgmpType_MulticastRouterAdvertisement", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8ad0f2e2622e9a39b5815c57cd9e25e638", null ],
-      [ "IgmpType_MulticastRouterSolicitation", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8ae78029f7a76e046f9932907f14f0dae4", null ],
-      [ "IgmpType_MulticastRouterTermination", "a00185.html#ad59f90b2f755654b75205c3e06fb2bd8a388765cf096805242327676db9e319b1", null ]
-    ] ]
+    [ "VlanLayer", "a00185.html#a5f6f8f15642dd1f0a88550bde0fb51b0", null ],
+    [ "VlanLayer", "a00185.html#a35cf7eaece6f8eec9d722dfbc24cf8f0", null ],
+    [ "computeCalculateFields", "a00185.html#a931be22ad37fcedab548a9752d7c834a", null ],
+    [ "getCFI", "a00185.html#abe0453b916a6733faf3d658e83340db2", null ],
+    [ "getHeaderLen", "a00185.html#a9f89975517e388390c7b97d84f1bca50", null ],
+    [ "getOsiModelLayer", "a00185.html#aef6347664baf2caecbd033588f8fc898", null ],
+    [ "getPriority", "a00185.html#a021259caeb2905bcf0ffa0fd4debaa26", null ],
+    [ "getVlanHeader", "a00185.html#a248cdb71f54fe1d29e52c7c5f86d908c", null ],
+    [ "getVlanID", "a00185.html#a0aa76692b5502afa254931d4249937ba", null ],
+    [ "parseNextLayer", "a00185.html#a083d3c9058269a46b6874adda2930e69", null ],
+    [ "setCFI", "a00185.html#ac9702d193a250da803639863ecf12373", null ],
+    [ "setPriority", "a00185.html#a92084616cf00c45903ecaaeed0c20cd5", null ],
+    [ "setVlanID", "a00185.html#aeb6dcaefa11775c2b64e0be74094116d", null ],
+    [ "toString", "a00185.html#af9b69bf34d39563db7f140665ed322bd", null ]
 ];

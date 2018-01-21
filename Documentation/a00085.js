@@ -1,14 +1,10 @@
 var a00085 =
 [
-    [ "MBufRawPacket", "a00085.html#aaf206811e019a695318954e65b044f96", null ],
-    [ "~MBufRawPacket", "a00085.html#a696d9e42af3f7b8ea296e4137a019a13", null ],
-    [ "MBufRawPacket", "a00085.html#a0b2a21888dbcbdc2e50c703938de6804", null ],
-    [ "appendData", "a00085.html#af1c5144634729ce1ab2da2aa89946e89", null ],
-    [ "clear", "a00085.html#a265214f9d02a63d0cff85b4e1a93c396", null ],
-    [ "init", "a00085.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
-    [ "insertData", "a00085.html#a12e04aa6f066e6971946cc033fb2bdf9", null ],
-    [ "operator=", "a00085.html#ab194bcba22f170560890ee3f73faa027", null ],
-    [ "reallocateData", "a00085.html#ac8984ba4413680165a38d13bdd853987", null ],
-    [ "removeData", "a00085.html#a3895fef553d8345e18b7f97e52f1a10d", null ],
-    [ "setRawData", "a00085.html#a412aebf582fc8e9b5bbb6dfe8206c301", null ]
+    [ "ipv6_frag_header", "a00079.html", "a00079" ],
+    [ "IPv6FragmentationHeader", "a00085.html#ac563df14668decdb596f38178f4e13cf", null ],
+    [ "getFragHeader", "a00085.html#ae90efaab0592584e71ce6cb7af410c8b", null ],
+    [ "getFragmentOffset", "a00085.html#a106810c715a1a33b7ec4b2f1fc71bb64", null ],
+    [ "isFirstFragment", "a00085.html#a33c37be1e4a345b0846571a23c16e3c1", null ],
+    [ "isLastFragment", "a00085.html#ad69650a8e731145355a1da05b364b877", null ],
+    [ "isMoreFragments", "a00085.html#a7f454f2ae5fdc1757444e33a8adf98f5", null ]
 ];

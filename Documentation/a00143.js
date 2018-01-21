@@ -1,10 +1,6 @@
 var a00143 =
 [
-    [ "SSLExtensionStruct", "a00144.html", "a00144" ],
-    [ "SSLExtension", "a00143.html#a5b18ea8242d5a74d79e7631abe189153", null ],
-    [ "getData", "a00143.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
-    [ "getLength", "a00143.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
-    [ "getTotalLength", "a00143.html#a84c6e634a3738b65cb9b7210124abca5", null ],
-    [ "getType", "a00143.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
-    [ "getTypeAsInt", "a00143.html#a1be433ad3fff137428f270e6f30f09c7", null ]
+    [ "handshakeType", "a00143.html#a9a456a315b65d5e41587b83972471398", null ],
+    [ "length1", "a00143.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
+    [ "length2", "a00143.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
 ];

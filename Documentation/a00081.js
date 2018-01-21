@@ -1,18 +1,14 @@
 var a00081 =
 [
-    [ "LogLevel", "a00081.html#a522254c250da7b12b5b4817b84c208b6", [
-      [ "Normal", "a00081.html#a522254c250da7b12b5b4817b84c208b6a58e6375bc77510a75bee39cb4356ad7e", null ],
-      [ "Debug", "a00081.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397", null ]
-    ] ],
-    [ "enableErrors", "a00081.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91", null ],
-    [ "getErrorString", "a00081.html#a96821970d89017f19ad24c024198e3a3", null ],
-    [ "getErrorStringLength", "a00081.html#a2ed51d61daff5222c4069cff3e245a83", null ],
-    [ "getLogModulesArr", "a00081.html#adc348d135eeef86271a100d3741ebb60", null ],
-    [ "isDebugEnabled", "a00081.html#a9b53774d0be75118413fcb3903e0da1b", null ],
-    [ "isErrorStringSet", "a00081.html#acde976836742578a55d778444d2dbcd6", null ],
-    [ "isSupressErrors", "a00081.html#ab1634894a477fbd9bccf8df68326d6d2", null ],
-    [ "setAllModlesToLogLevel", "a00081.html#a031c0e504a537e5921687ab2450bbc04", null ],
-    [ "setErrorString", "a00081.html#a99c1db3a69ae2f55b08df135ee706080", null ],
-    [ "setLogLevel", "a00081.html#a8869da5bc6e76719c57942b12f8f36f6", null ],
-    [ "supressErrors", "a00081.html#a84be0ff3175c243ca493975222aa199b", null ]
+    [ "IPv6Address", "a00081.html#ad86bb8f234fe5d5b8327902fe04b3af9", null ],
+    [ "IPv6Address", "a00081.html#a40d009ad41c7a05fd3b566f6f460e870", null ],
+    [ "IPv6Address", "a00081.html#ae7b6883d2ee46444059a33cd3be73f38", null ],
+    [ "IPv6Address", "a00081.html#a325c75bccad81bda34ce148f291a999c", null ],
+    [ "copyTo", "a00081.html#ade7dd5e08fa04101f72f60cbed397b7d", null ],
+    [ "copyTo", "a00081.html#a54ed6cb154a9687ad675ef95e40a212b", null ],
+    [ "getType", "a00081.html#a2a899e36131b3ac54d94de99e6e67f2b", null ],
+    [ "operator!=", "a00081.html#a2ce04912047630b1c2442bebb87dabb2", null ],
+    [ "operator=", "a00081.html#a6f3b86e75434f2c106d341736151a464", null ],
+    [ "operator==", "a00081.html#a8cb10edb19cbb534c0e1f3b540ad7567", null ],
+    [ "toIn6Addr", "a00081.html#a1d4c09c0982b5b3905f53493489e7383", null ]
 ];

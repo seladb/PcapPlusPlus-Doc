@@ -1,19 +1,9 @@
 var a00160 =
 [
-    [ "ackFlag", "a00160.html#abf1b2600722973e7c2e6f4e05e34c93b", null ],
-    [ "ackNumber", "a00160.html#ae54a29e632cb6526df4a7e2e79261ad7", null ],
-    [ "cwrFlag", "a00160.html#a26d5425128be717916096e577f2561fe", null ],
-    [ "dataOffset", "a00160.html#a593a30084c297a99ea01b76fce5c5b11", null ],
-    [ "eceFlag", "a00160.html#a607801a4305ecb6d4ab234a6755b78e7", null ],
-    [ "finFlag", "a00160.html#aa76c48fa043559ec4b0b90fa9535feeb", null ],
-    [ "headerChecksum", "a00160.html#af25c27d92c75ab68816d23c3ead02d5a", null ],
-    [ "portDst", "a00160.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc", null ],
-    [ "portSrc", "a00160.html#a4ba66caaf79a20c53a8e92f7537d50a6", null ],
-    [ "pshFlag", "a00160.html#a1561eb6d029e00fe449bbaac3be8d705", null ],
-    [ "rstFlag", "a00160.html#a36a5abf30794062f32de013b6ddf39c9", null ],
-    [ "sequenceNumber", "a00160.html#a2edb7c27d93777ae552eca417cf118d0", null ],
-    [ "synFlag", "a00160.html#a469f06456ae6eaf39e764d7f30c06dc3", null ],
-    [ "urgentPointer", "a00160.html#a43efd09b5aad3f50f38bf2a689cc790c", null ],
-    [ "urgFlag", "a00160.html#a2e2c38c9079e807f366b3cc62669b09c", null ],
-    [ "windowSize", "a00160.html#a62ab389980bbae1e81846792a1c8846a", null ]
+    [ "getHeaderLen", "a00160.html#afd062c291faff189eff54e987885e3f6", null ],
+    [ "getOsiModelLayer", "a00160.html#af19d2257b49531b37f546810c5b788b8", null ],
+    [ "getRecordLayer", "a00160.html#a693e2da655cd33a4906bcbcffb394126", null ],
+    [ "getRecordType", "a00160.html#af0bff83614a0641b170e8fb4734178bd", null ],
+    [ "getRecordVersion", "a00160.html#a56f3a017783ffc524463a5691959ae5a", null ],
+    [ "parseNextLayer", "a00160.html#acc45ce490c60762cf4be2da0a4d57723", null ]
 ];

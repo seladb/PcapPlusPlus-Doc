@@ -1,7 +1,7 @@
 var a00167 =
 [
-    [ "headerChecksum", "a00167.html#af1a4b110e652e51a0f32d4e6c7740354", null ],
-    [ "length", "a00167.html#a68edfe2e8136453d69b7a457461f379d", null ],
-    [ "portDst", "a00167.html#ab2760968de55386f04539019f5a677e5", null ],
-    [ "portSrc", "a00167.html#a72a8d8ad99698271461762079d3758a9", null ]
+    [ "SSLx509Certificate", "a00167.html#a368ea567eb3154a6b44c7bbf827547ef", null ],
+    [ "allDataExists", "a00167.html#ae4182828228a1e402626560090d3cdb6", null ],
+    [ "getData", "a00167.html#a4d9c58672e41a057dc53d4923af3992f", null ],
+    [ "getDataLength", "a00167.html#a2e16b41a4c1bd25026eb754eb8424122", null ]
 ];

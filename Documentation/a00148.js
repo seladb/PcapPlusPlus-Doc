@@ -1,5 +1,8 @@
 var a00148 =
 [
-    [ "SSLHelloRequestMessage", "a00148.html#a9679be6893994e5260c41ea62a157105", null ],
-    [ "toString", "a00148.html#a6bd9593627524cdc2492b0104929e22f", null ]
+    [ "SSLCertificateRequestMessage", "a00148.html#ae85b37b12ff7e387b3d3513ec7170558", null ],
+    [ "getCertificateAuthorityData", "a00148.html#a3939ecbf00de57ea722e8cf5005c0717", null ],
+    [ "getCertificateAuthorityLength", "a00148.html#a68ce41ecc995e5b8bab7a333a72334b3", null ],
+    [ "getCertificateTypes", "a00148.html#a2d6091acdd00f6e43544890ccf951e2a", null ],
+    [ "toString", "a00148.html#ae1e7664638e7d2df1baa6e8e96a29c4f", null ]
 ];

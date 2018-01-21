@@ -1,10 +1,7 @@
 var a00101 =
 [
-    [ "getDeviceType", "a00101.html#af5518431a35a7f94b6ee8551061eee18", null ],
-    [ "getMacAddress", "a00101.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
-    [ "getMtu", "a00101.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
-    [ "getRemoteMachineIpAddress", "a00101.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
-    [ "getRemoteMachinePort", "a00101.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
-    [ "getStatistics", "a00101.html#ac4f3b9ace451b38aa9930950dc695273", null ],
-    [ "open", "a00101.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
+    [ "OrFilter", "a00101.html#ab190d9fab6cf4dbddaa3d3091eef88dd", null ],
+    [ "OrFilter", "a00101.html#acd0bc5b4a037e198510571ce5298b6a1", null ],
+    [ "addFilter", "a00101.html#abcd751c0048d632f82d8f3a1464ed257", null ],
+    [ "parseToString", "a00101.html#a6552bb49fddc97e6e2f8ef0833c45b36", null ]
 ];

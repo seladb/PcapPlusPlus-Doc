@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapDevice.h File Reference</title>
+<title>PcapPlusPlus: IPv4Reassembly.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,41 +107,72 @@ $(document).ready(function(){initNavTree('a00202.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">PcapDevice.h File Reference</div>  </div>
+<div class="title">IPv4Reassembly.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00216_source.html">RawPacket.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00204_source.html">PcapFilter.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00213_source.html">PointerVector.h</a>&quot;</code><br />
-<code>#include &lt;pcap.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00213_source.html">Packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00207_source.html">LRUList.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00199_source.html">IpAddress.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00227_source.html">PointerVector.h</a>&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="a00202_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html">pcpp::IPcapDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">pcpp::IPv4Reassembly</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html">pcpp::IPv4Reassembly::PacketKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">pcpp</a></td></tr>
-<tr class="memdesc:a00231"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">pcpp</a></td></tr>
+<tr class="memdesc:a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a4c0775fb93a0867d2afa7992d55957f0"><td class="memItemLeft" align="right" valign="top">typedef PointerVector&lt; RawPacket &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a4c0775fb93a0867d2afa7992d55957f0">pcpp::RawPacketVector</a></td></tr>
-<tr class="separator:a4c0775fb93a0867d2afa7992d55957f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3616655e2c19691a8175c0284714488e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a3616655e2c19691a8175c0284714488e">PCPP_IPV4_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>&#160;&#160;&#160;500000</td></tr>
+<tr class="separator:a3616655e2c19691a8175c0284714488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file includes an implementation of IPv4 reassembly mechanism (a.k.a IPv4 de-fragmentation), which is the mechanism of assembling IPv4 fragments back into one whole packet. You can read more about IP fragmentation here: <a href="https://en.wikipedia.org/wiki/IP_fragmentation">https://en.wikipedia.org/wiki/IP_fragmentation</a>.<br />
+ The API is rather simple and contains one main method: <a class="el" href="a00075.html#abe46df96bbe652c1fbd2bdfdd0ff2be1">pcpp::IPv4Reassembly::processPacket()</a> which gets a fragment packet as a parameter, does the reassembly and returns a fully reassembled packet when done.<br />
+</p>
+<p>The logic works as follows:</p><ul>
+<li>There is an internal map that stores the reassembly data for each packet. The key to this map, meaning the way to uniquely associate a fragment to a (reassembled) packet is the triplet of source IP, destination IP and IP ID</li>
+<li>When the first fragment arrives a new record is created in the map and the fragment data is copied</li>
+<li>With each fragment arriving the fragment data is copied right after the previous fragment and the reassembled packet is gradually being built</li>
+<li>When the last fragment arrives the packet is fully reassembled and returned to the user. Since all fragment data is copied, the packet pointer returned to the user has to be freed by the user when done using it</li>
+<li>The logic supports out-of-order fragments, meaning that a fragment which arrives out-of-order, its data will be copied to a list of out-of-order fragments where it waits for its turn. This list is observed each time a new fragment arrives to see if the next fragment(s) wait(s) in this list</li>
+<li>If a non-IPv4 packet arrives it's returned as is to the user</li>
+<li>If a non-fragment packet arrives it's returned as is to the user</li>
+</ul>
+<p>In order to limit the amount of memory used by this mechanism there is a limit to the number of concurrent packets being reassembled. The default limit is <a class="el" href="a00202.html#a3616655e2c19691a8175c0284714488e">PCPP_IPV4_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> but the user can set any value (determined in <a class="el" href="a00075.html">pcpp::IPv4Reassembly</a> c'tor). Once capacity (the number of concurrent reassembled packets) exceeds this number, the packet that was least recently used will be dropped from the map along with all the data that was reassembled so far. This means that if the next fragment from this packet suddenly appears it will be treated as a new reassembled packet (which will create another record in the map). The user can be notified when reassembled packets are removed from the map by registering to the <a class="el" href="a00075.html#a9e6a0861aec49d0e98d3c0d50057e89b">pcpp::IPv4Reassembly::OnFragmentsClean</a> callback in <a class="el" href="a00075.html">pcpp::IPv4Reassembly</a> c'tor </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a3616655e2c19691a8175c0284714488e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_IPV4_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE&#160;&#160;&#160;500000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv4 reassembly mechanism default capacity. If concurrent packet volume exceeds this numbers, packets will start to be dropped in a LRU manner </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00202.html">PcapDevice.h</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:23 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00202.html">IPv4Reassembly.h</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

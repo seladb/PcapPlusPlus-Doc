@@ -1,7 +1,8 @@
 var a00145 =
 [
-    [ "SSLFinishedMessage", "a00145.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
-    [ "getSignedHash", "a00145.html#afae04041b9e28633f6a2b15807307791", null ],
-    [ "getSignedHashLength", "a00145.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
-    [ "toString", "a00145.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
+    [ "SSLAlertLayer", "a00145.html#aecf449f0c8f821ede816f33d6012b622", null ],
+    [ "computeCalculateFields", "a00145.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
+    [ "getAlertDescription", "a00145.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
+    [ "getAlertLevel", "a00145.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
+    [ "toString", "a00145.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
 ];

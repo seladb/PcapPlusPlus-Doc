@@ -1,10 +1,11 @@
 var a00114 =
 [
-    [ "PPPoESessionLayer", "a00114.html#a433678572ac1217a16a38e6aa8ade4f2", null ],
-    [ "PPPoESessionLayer", "a00114.html#ac9e2dcfee946bc38c1deefe557606188", null ],
-    [ "getHeaderLen", "a00114.html#a07941bb7f6351ca4cd9d3c3b583a0168", null ],
-    [ "getPPPNextProtocol", "a00114.html#a4521d824fcc13fa995376ba4757953d7", null ],
-    [ "parseNextLayer", "a00114.html#a68ee818cde48545d0d4cfa701bef6a0e", null ],
-    [ "setPPPNextProtocol", "a00114.html#adad1131f1a337c499577510c35383fb8", null ],
-    [ "toString", "a00114.html#a1938913dc6bed3dd7b443ddcd052b5e3", null ]
+    [ "PciAddress", "a00114.html#aa862db5500aabff5532409ae4bb55018", null ],
+    [ "PciAddress", "a00114.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
+    [ "operator==", "a00114.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
+    [ "toString", "a00114.html#a490f65c9da811959b78cd92cf2f1812a", null ],
+    [ "bus", "a00114.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
+    [ "devid", "a00114.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
+    [ "domain", "a00114.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
+    [ "function", "a00114.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
 ];

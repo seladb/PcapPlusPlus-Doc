@@ -1,15 +1,10 @@
 var a00173 =
 [
-    [ "dontLearnFlag", "a00173.html#a8bf01681565ea80e389e36c7911c9c37", null ],
-    [ "gbpFlag", "a00173.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
-    [ "groupPolicyID", "a00173.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
-    [ "pad", "a00173.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
-    [ "policyAppliedFlag", "a00173.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
-    [ "reserved11_12", "a00173.html#a3335ab561fbf911e3c070c231d37669f", null ],
-    [ "reserved14_16", "a00173.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
-    [ "reserved2_4", "a00173.html#aeaec3eb74ec694974471243a35a76313", null ],
-    [ "reserved6_8", "a00173.html#ada8c68230dd90d8400398c333216a9f3", null ],
-    [ "reserved9", "a00173.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
-    [ "vni", "a00173.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
-    [ "vniPresentFlag", "a00173.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
+    [ "getTotalSize", "a00173.html#aeaabc88782fc7026cf1340b775831ea8", null ],
+    [ "getType", "a00173.html#a3d561ce1356aa17068d970b57723a6d7", null ],
+    [ "getValueAs", "a00173.html#a49cb10f4e52cf92178725fae9d5ec469", null ],
+    [ "setValue", "a00173.html#aaa3ce2fbd266fde95d8e7c57fd091d4f", null ],
+    [ "len", "a00173.html#a722a42e1ceef77b984bfe06c33d77ab3", null ],
+    [ "option", "a00173.html#a33d7eb2c21b7cbb8a629ea91a7df4c26", null ],
+    [ "value", "a00173.html#ae4d31ebb49c6bae190edd6d51a8c1757", null ]
 ];

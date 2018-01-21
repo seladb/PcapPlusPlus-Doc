@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::SipRequestFirstLine::SipRequestFirstLineException Class Reference</title>
+<title>PcapPlusPlus: pcpp::pppoe_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,30 +107,103 @@ $(document).ready(function(){initNavTree('a00122.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00357.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00373.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::SipRequestFirstLine::SipRequestFirstLineException Class Reference</div>  </div>
+<div class="title">pcpp::pppoe_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00218_source.html">SipLayer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::SipRequestFirstLine::SipRequestFirstLineException:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00122.png" usemap="#pcpp::SipRequestFirstLine::SipRequestFirstLineException_map" alt=""/>
-  <map id="pcpp::SipRequestFirstLine::SipRequestFirstLineException_map" name="pcpp::SipRequestFirstLine::SipRequestFirstLineException_map">
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00228_source.html">PPPoELayer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a99482acf563e69e4a318992715742a08"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a99482acf563e69e4a318992715742a08">version</a>:4</td></tr>
+<tr class="separator:a99482acf563e69e4a318992715742a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696c4e1cd2f66f95923d7c310df1d043"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a696c4e1cd2f66f95923d7c310df1d043">type</a>:4</td></tr>
+<tr class="separator:a696c4e1cd2f66f95923d7c310df1d043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f6d4c3dba01ad2212e4a71e738161c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ab7f6d4c3dba01ad2212e4a71e738161c">code</a></td></tr>
+<tr class="separator:ab7f6d4c3dba01ad2212e4a71e738161c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff911ee6da20c9101981d1396562ab3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#acff911ee6da20c9101981d1396562ab3">sessionId</a></td></tr>
+<tr class="separator:acff911ee6da20c9101981d1396562ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e5841209e619cc327971361264f02e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a08e5841209e619cc327971361264f02e">payloadLength</a></td></tr>
+<tr class="separator:a08e5841209e619cc327971361264f02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This exception can be thrown while constructing <a class="el" href="a00121.html">SipRequestFirstLine</a> (the constructor is private, so the construction happens only in <a class="el" href="a00123.html">SipRequestLayer</a>). This kind of exception is thrown if trying to construct with SIP method of <a class="el" href="a00123.html#abbc7896e37db434028fd612a74fd8c4dac63c9ad3b17728e2123b07bcdbafc8a9">SipRequestLayer::SipMethodUnknown</a> or with empty SIP version </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Represents an PPPoE protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab7f6d4c3dba01ad2212e4a71e738161c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::pppoe_header::code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE code </p>
+
+</div>
+</div>
+<a class="anchor" id="a08e5841209e619cc327971361264f02e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::pppoe_header::payloadLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Length (in bytes) of payload, not including the PPPoE header </p>
+
+</div>
+</div>
+<a class="anchor" id="acff911ee6da20c9101981d1396562ab3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::pppoe_header::sessionId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE session ID (relevant for PPPoE session packets only) </p>
+
+</div>
+</div>
+<a class="anchor" id="a696c4e1cd2f66f95923d7c310df1d043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::pppoe_header::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE type </p>
+
+</div>
+</div>
+<a class="anchor" id="a99482acf563e69e4a318992715742a08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::pppoe_header::version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE version </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00231.html">pcpp</a></li><li class="navelem"><a class="el" href="a00121.html">SipRequestFirstLine</a></li><li class="navelem"><a class="el" href="a00122.html">SipRequestFirstLineException</a></li>
-    <li class="footer">Generated on Wed Jan 3 2018 20:50:24 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00122.html">pppoe_header</a></li>
+    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

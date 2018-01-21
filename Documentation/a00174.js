@@ -1,13 +1,18 @@
 var a00174 =
 [
-    [ "VxlanLayer", "a00174.html#aea5e8a6d3cf3a9fc45bbb30030ddc8ea", null ],
-    [ "VxlanLayer", "a00174.html#a95d29aa1bc7b26c82f2f39068cdeaca0", null ],
-    [ "computeCalculateFields", "a00174.html#a1a3382f05372478fbe1b5d87ab6333e4", null ],
-    [ "getHeaderLen", "a00174.html#a61796102e5c21034def5b158232bac3b", null ],
-    [ "getOsiModelLayer", "a00174.html#a0e45a6e3fcfcdadddc24974e3fc139c9", null ],
-    [ "getVNI", "a00174.html#a3efe820adaf6e71b04acff6f0e800674", null ],
-    [ "getVxlanHeader", "a00174.html#a021ee4907d7dffae04806c18269682fa", null ],
-    [ "parseNextLayer", "a00174.html#a7c7ea9ff536dbc602dac07591de6a202", null ],
-    [ "setVNI", "a00174.html#ae03a61d99376b70b8f92b30d1a3b429e", null ],
-    [ "toString", "a00174.html#a13439c97767b4419de816e32b7759917", null ]
+    [ "OnTcpConnectionEnd", "a00174.html#abbcb38ac950666833df4084f80beb056", null ],
+    [ "OnTcpConnectionStart", "a00174.html#abda8219de68412e0ce7f7116601243a8", null ],
+    [ "OnTcpMessageReady", "a00174.html#ab6698eb002363dc18e664f15418fc1eb", null ],
+    [ "ConnectionEndReason", "a00174.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0", [
+      [ "TcpReassemblyConnectionClosedByFIN_RST", "a00174.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133", null ],
+      [ "TcpReassemblyConnectionClosedManually", "a00174.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9", null ]
+    ] ],
+    [ "TcpReassembly", "a00174.html#a49281471fb379fdae6c8df5ed7844c92", null ],
+    [ "~TcpReassembly", "a00174.html#aa1797ebded60f0637ae95223653b9f78", null ],
+    [ "closeAllConnections", "a00174.html#acf940b05f75a129f595301012be46005", null ],
+    [ "closeConnection", "a00174.html#ae173fc16a427b5e46b1a5417de19d735", null ],
+    [ "getConnectionInformation", "a00174.html#af05c80624748539e2686d8a41d2d8219", null ],
+    [ "isConnectionOpen", "a00174.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
+    [ "ReassemblePacket", "a00174.html#a56719c498f49cc2e2e6177e705109fcf", null ],
+    [ "ReassemblePacket", "a00174.html#a62d6623f39621c475e5619366512889a", null ]
 ];

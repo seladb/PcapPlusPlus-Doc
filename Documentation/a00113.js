@@ -1,19 +1,15 @@
 var a00113 =
 [
-    [ "PPPoECode", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cb", [
-      [ "PPPOE_CODE_SESSION", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6", null ],
-      [ "PPPOE_CODE_PADO", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6", null ],
-      [ "PPPOE_CODE_PADI", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df", null ],
-      [ "PPPOE_CODE_PADG", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b", null ],
-      [ "PPPOE_CODE_PADC", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683", null ],
-      [ "PPPOE_CODE_PADQ", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab", null ],
-      [ "PPPOE_CODE_PADR", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157", null ],
-      [ "PPPOE_CODE_PADS", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232", null ],
-      [ "PPPOE_CODE_PADT", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52", null ],
-      [ "PPPOE_CODE_PADM", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3", null ],
-      [ "PPPOE_CODE_PADN", "a00113.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
-    ] ],
-    [ "computeCalculateFields", "a00113.html#aea130ab24ed851b7d2ffab48db145d16", null ],
-    [ "getOsiModelLayer", "a00113.html#a33eadab8226dcb4714ad322dfb152821", null ],
-    [ "getPPPoEHeader", "a00113.html#ac6084aea472a3b84f5c60e2a7d77079d", null ]
+    [ "ConstRemoteDeviceListIterator", "a00113.html#a9cfb21ecc08849c812b6ab6115071969", null ],
+    [ "RemoteDeviceListIterator", "a00113.html#a17e3146371657cb2bf427c345ef8701a", null ],
+    [ "begin", "a00113.html#af155f1d0d02b252b968f8bfc60bfa285", null ],
+    [ "begin", "a00113.html#a3e6eec736e7d88dc2a9dfe413089dbdf", null ],
+    [ "end", "a00113.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1", null ],
+    [ "end", "a00113.html#a4384231f937c67a346698218c6cc4818", null ],
+    [ "getRemoteDeviceByIP", "a00113.html#a95cc401d327933db99d1dd1cb639bcb7", null ],
+    [ "getRemoteDeviceByIP", "a00113.html#ad1c6086cfdceb29c6cc88e4ae19d78ab", null ],
+    [ "getRemoteDeviceByIP", "a00113.html#aaa9c6eab485ddc4d8b0c54f56a2cb5e4", null ],
+    [ "getRemoteDeviceByIP", "a00113.html#aafbda2e1b2c4ec3cc9a2d42aded206df", null ],
+    [ "getRemoteMachineIpAddress", "a00113.html#a6204e7c89ccce39c4aa3e355988f5ab6", null ],
+    [ "getRemoteMachinePort", "a00113.html#a1e1971b1f2432aa1837af7e2cbce17e2", null ]
 ];
