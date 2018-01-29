@@ -1,10 +1,13 @@
 var a00112 =
 [
-    [ "getDeviceType", "a00112.html#af5518431a35a7f94b6ee8551061eee18", null ],
-    [ "getMacAddress", "a00112.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
-    [ "getMtu", "a00112.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
-    [ "getRemoteMachineIpAddress", "a00112.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
-    [ "getRemoteMachinePort", "a00112.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
-    [ "getStatistics", "a00112.html#ac4f3b9ace451b38aa9930950dc695273", null ],
-    [ "open", "a00112.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
+    [ "PcapNgFileWriterDevice", "a00112.html#abf641b890d2089eb4090cf67920c2882", null ],
+    [ "~PcapNgFileWriterDevice", "a00112.html#a93312aab61a193df522f8046af6d291e", null ],
+    [ "close", "a00112.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
+    [ "getStatistics", "a00112.html#a55a11ff6431efc054fd4a47bbaab9852", null ],
+    [ "open", "a00112.html#adca940885348d13ae58865ff5011e6fd", null ],
+    [ "open", "a00112.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
+    [ "open", "a00112.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "writePacket", "a00112.html#a81069d1681efd6adf22e6ae80f300993", null ],
+    [ "writePacket", "a00112.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
+    [ "writePackets", "a00112.html#a214c363a167e1538d9ea29a58efd9640", null ]
 ];

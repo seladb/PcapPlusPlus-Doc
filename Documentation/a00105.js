@@ -1,9 +1,7 @@
 var a00105 =
 [
-    [ "PcapFileReaderDevice", "a00105.html#a7c578fa0c04a93de4a6dc54b845fae34", null ],
-    [ "~PcapFileReaderDevice", "a00105.html#aa6c4637873a1a830372449a81f048ab2", null ],
-    [ "getLinkLayerType", "a00105.html#a68ed8a4e9fb754054c32682ac2c6411f", null ],
-    [ "getNextPacket", "a00105.html#afc4c2142b7787e6c191b0d2ab6822c07", null ],
-    [ "getStatistics", "a00105.html#a6c07f1cc3675dfa8ff7157d09be311c7", null ],
-    [ "open", "a00105.html#af9e798abe511b1ba8bd14360535753a1", null ]
+    [ "~PacketKey", "a00105.html#aa67476ed9ca9d6bf21821446d6f9af33", null ],
+    [ "clone", "a00105.html#a38bb114ec2d125fa47d7a1d113203a4c", null ],
+    [ "getHashValue", "a00105.html#abd42f4375f021a1bf7d89a151b231911", null ],
+    [ "getProtocolType", "a00105.html#a36810a692eb627629bf0db6ad04c8fb1", null ]
 ];

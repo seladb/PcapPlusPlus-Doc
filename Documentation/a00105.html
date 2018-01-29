@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::PcapFileReaderDevice Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPReassembly::PacketKey Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,101 +108,39 @@ $(document).ready(function(){initNavTree('a00105.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00356.html">List of all members</a>  </div>
+<a href="a00326.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::PcapFileReaderDevice Class Reference</div>  </div>
+<div class="title">pcpp::IPReassembly::PacketKey Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00217_source.html">PcapFileDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00202_source.html">IPReassembly.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::PcapFileReaderDevice:</div>
+Inheritance diagram for pcpp::IPReassembly::PacketKey:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00105.png" usemap="#pcpp::PcapFileReaderDevice_map" alt=""/>
-  <map id="pcpp::PcapFileReaderDevice_map" name="pcpp::PcapFileReaderDevice_map">
-<area href="a00053.html" alt="pcpp::IFileReaderDevice" shape="rect" coords="0,112,177,136"/>
-<area href="a00052.html" alt="pcpp::IFileDevice" shape="rect" coords="0,56,177,80"/>
-<area href="a00068.html" alt="pcpp::IPcapDevice" shape="rect" coords="0,0,177,24"/>
+  <img src="a00105.png" usemap="#pcpp::IPReassembly::PacketKey_map" alt=""/>
+  <map id="pcpp::IPReassembly::PacketKey_map" name="pcpp::IPReassembly::PacketKey_map">
+<area href="a00076.html" alt="pcpp::IPReassembly::IPv4PacketKey" shape="rect" coords="0,56,215,80"/>
+<area href="a00089.html" alt="pcpp::IPReassembly::IPv6PacketKey" shape="rect" coords="225,56,440,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c578fa0c04a93de4a6dc54b845fae34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a7c578fa0c04a93de4a6dc54b845fae34">PcapFileReaderDevice</a> (const char *fileName)</td></tr>
-<tr class="separator:a7c578fa0c04a93de4a6dc54b845fae34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c4637873a1a830372449a81f048ab2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#aa6c4637873a1a830372449a81f048ab2">~PcapFileReaderDevice</a> ()</td></tr>
-<tr class="separator:aa6c4637873a1a830372449a81f048ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ed8a4e9fb754054c32682ac2c6411f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a68ed8a4e9fb754054c32682ac2c6411f">getLinkLayerType</a> ()</td></tr>
-<tr class="separator:a68ed8a4e9fb754054c32682ac2c6411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#afc4c2142b7787e6c191b0d2ab6822c07">getNextPacket</a> (<a class="el" href="a00128.html">RawPacket</a> &amp;rawPacket)</td></tr>
-<tr class="separator:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e798abe511b1ba8bd14360535753a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#af9e798abe511b1ba8bd14360535753a1">open</a> ()</td></tr>
-<tr class="separator:af9e798abe511b1ba8bd14360535753a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c07f1cc3675dfa8ff7157d09be311c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a6c07f1cc3675dfa8ff7157d09be311c7">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
-<tr class="separator:a6c07f1cc3675dfa8ff7157d09be311c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00053.html">pcpp::IFileReaderDevice</a></td></tr>
-<tr class="memitem:acdc7b6e2db17994aaf167c081ddfaafb inherit pub_methods_a00053"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#acdc7b6e2db17994aaf167c081ddfaafb">~IFileReaderDevice</a> ()</td></tr>
-<tr class="separator:acdc7b6e2db17994aaf167c081ddfaafb inherit pub_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f00fc3036c19629c3a1e6f358f9a78 inherit pub_methods_a00053"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a74f00fc3036c19629c3a1e6f358f9a78">getFileSize</a> ()</td></tr>
-<tr class="separator:a74f00fc3036c19629c3a1e6f358f9a78 inherit pub_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a279a1c148671df93bd85afd43af1f958 inherit pub_methods_a00053"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a279a1c148671df93bd85afd43af1f958">getNextPackets</a> (<a class="el" href="a00245.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec, int numOfPacketsToRead=-1)</td></tr>
-<tr class="separator:a279a1c148671df93bd85afd43af1f958 inherit pub_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00052"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00052')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00052.html">pcpp::IFileDevice</a></td></tr>
-<tr class="memitem:a62e21c94c6046f2d16a81df62b0c8d86 inherit pub_methods_a00052"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a62e21c94c6046f2d16a81df62b0c8d86">getFileName</a> ()</td></tr>
-<tr class="separator:a62e21c94c6046f2d16a81df62b0c8d86 inherit pub_methods_a00052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65be98019748f6509445136013a0d1cb inherit pub_methods_a00052"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html#a65be98019748f6509445136013a0d1cb">close</a> ()</td></tr>
-<tr class="separator:a65be98019748f6509445136013a0d1cb inherit pub_methods_a00052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00068"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00068')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00068.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a> ()</td></tr>
-<tr class="separator:a22b03cdabb9f359c6bed0728c3614789 inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a> (<a class="el" href="a00022.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:aadba6a20265dca6ba29b548325a798fe inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134f061d7883abbdb256abd48d53e66c inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a134f061d7883abbdb256abd48d53e66c inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a> ()</td></tr>
-<tr class="separator:aba28d535c6aa05e9f9492c82ece25de7 inherit pub_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00053.html">pcpp::IFileReaderDevice</a></td></tr>
-<tr class="memitem:ac293a401ed1b28361cfcd984a45f1db1 inherit pub_static_methods_a00053"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00053.html">IFileReaderDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#ac293a401ed1b28361cfcd984a45f1db1">getReader</a> (const char *fileName)</td></tr>
-<tr class="separator:ac293a401ed1b28361cfcd984a45f1db1 inherit pub_static_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_a00068"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00068')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00068.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00068"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00068"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a00128.html">RawPacket</a> *rawPacket)</td></tr>
-<tr class="separator:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a00068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a00053.html">pcpp::IFileReaderDevice</a></td></tr>
-<tr class="memitem:a0292cb89821cdbdb5914d4ed76c5e0f1 inherit pro_methods_a00053"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a0292cb89821cdbdb5914d4ed76c5e0f1">IFileReaderDevice</a> (const char *fileName)</td></tr>
-<tr class="separator:a0292cb89821cdbdb5914d4ed76c5e0f1 inherit pro_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67476ed9ca9d6bf21821446d6f9af33"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#aa67476ed9ca9d6bf21821446d6f9af33">~PacketKey</a> ()</td></tr>
+<tr class="separator:aa67476ed9ca9d6bf21821446d6f9af33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd42f4375f021a1bf7d89a151b231911"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#abd42f4375f021a1bf7d89a151b231911">getHashValue</a> () const =0</td></tr>
+<tr class="separator:abd42f4375f021a1bf7d89a151b231911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36810a692eb627629bf0db6ad04c8fb1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a36810a692eb627629bf0db6ad04c8fb1">getProtocolType</a> () const =0</td></tr>
+<tr class="separator:a36810a692eb627629bf0db6ad04c8fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38bb114ec2d125fa47d7a1d113203a4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00105.html">PacketKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a38bb114ec2d125fa47d7a1d113203a4c">clone</a> () const =0</td></tr>
+<tr class="separator:a38bb114ec2d125fa47d7a1d113203a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for opening a pcap file in read-only mode. This class enable to open the file and read all packets, packet-by-packet </p>
+<div class="textblock"><p>An abstract class that represents a key that can uniquely identify an IP packet. This class cannot be instantiated or copied, only its derived classes can </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7c578fa0c04a93de4a6dc54b845fae34"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::PcapFileReaderDevice::PcapFileReaderDevice </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fileName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor for this class that gets the pcap full path file name to open. Notice that after calling this constructor the file isn't opened yet, so reading packets will fail. For opening the file call <a class="el" href="a00105.html#af9e798abe511b1ba8bd14360535753a1">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file to read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa6c4637873a1a830372449a81f048ab2"></a>
+<a class="anchor" id="aa67476ed9ca9d6bf21821446d6f9af33"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -210,7 +148,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::PcapFileReaderDevice::~PcapFileReaderDevice </td>
+          <td class="memname">virtual pcpp::IPReassembly::PacketKey::~PacketKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -222,61 +160,38 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A destructor for this class </p>
+<p>A default virtual d'tor </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a68ed8a4e9fb754054c32682ac2c6411f"></a>
+<a class="anchor" id="a38bb114ec2d125fa47d7a1d113203a4c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> pcpp::PcapFileReaderDevice::getLinkLayerType </td>
+          <td class="memname">virtual <a class="el" href="a00105.html">PacketKey</a>* pcpp::IPReassembly::PacketKey::clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The link layer type of this file </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afc4c2142b7787e6c191b0d2ab6822c07"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::PcapFileReaderDevice::getNextPacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00128.html">RawPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>rawPacket</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read the next packet from the file. Before using this method please verify the file is opened using <a class="el" href="a00105.html#af9e798abe511b1ba8bd14360535753a1">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">rawPacket</td><td>A reference for an empty <a class="el" href="a00128.html">RawPacket</a> where the packet will be written </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if a packet was read successfully. False will be returned if the file isn't opened (also, an error log will be printed) or if reached end-of-file </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new instance which is a clone of the current instance </dd></dl>
 
-<p>Implements <a class="el" href="a00053.html">pcpp::IFileReaderDevice</a>.</p>
+<p>Implemented in <a class="el" href="a00089.html#a76f2e939f51c3e58fdc4073557af6e63">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a00076.html#a6f645bb956e1ae57b79531bc769ca6d6">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6c07f1cc3675dfa8ff7157d09be311c7"></a>
+<a class="anchor" id="abd42f4375f021a1bf7d89a151b231911"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -284,53 +199,47 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::PcapFileReaderDevice::getStatistics </td>
-          <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get statistics of packets read so far. In the pcap_stat struct, only ps_recv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00068.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af9e798abe511b1ba8bd14360535753a1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::PcapFileReaderDevice::open </td>
+          <td class="memname">virtual uint32_t pcpp::IPReassembly::PacketKey::getHashValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Open the file name which path was specified in the constructor in a read-only mode </p><dl class="section return"><dt>Returns</dt><dd>True if file was opened successfully or if file is already opened. False if opening the file failed for some reason (for example: file path does not exist) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A 4-byte hash value of the packet key </dd></dl>
 
-<p>Implements <a class="el" href="a00068.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice</a>.</p>
+<p>Implemented in <a class="el" href="a00089.html#aaa3dfec807950dde35435de94f0b85a0">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a00076.html#ab16dac3a854a45bb5ff00faa92aeefd1">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36810a692eb627629bf0db6ad04c8fb1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPReassembly::PacketKey::getProtocolType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The IP protocol this key represents (<a class="el" href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> or <a class="el" href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a>) </dd></dl>
+
+<p>Implemented in <a class="el" href="a00089.html#a603caef24b352d26e6b9ce6da68ab55a">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a00076.html#aaba46cd30b67c6cea3a3a588a49f8808">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
 
 </div>
 </div>
@@ -339,8 +248,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00105.html">PcapFileReaderDevice</a></li>
-    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00247.html">pcpp</a></li><li class="navelem"><a class="el" href="a00071.html">IPReassembly</a></li><li class="navelem"><a class="el" href="a00105.html">PacketKey</a></li>
+    <li class="footer">Generated on Tue Jan 30 2018 00:34:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

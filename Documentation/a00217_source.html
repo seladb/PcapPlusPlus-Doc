@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PcapFileDevice.h Source File</title>
+<title>PcapPlusPlus: PayloadLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,283 +105,71 @@ $(document).ready(function(){initNavTree('a00217_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PcapFileDevice.h</div>  </div>
+<div class="title">PayloadLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00217.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_FILE_DEVICE</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_FILE_DEVICE</span></div>
+<a href="a00217.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PAYLOAD_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PAYLOAD_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00216.html">PcapDevice.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00230.html">RawPacket.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00245.html">pcpp</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00052.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00052.html">IFileDevice</a> : <span class="keyword">public</span> <a class="code" href="a00068.html">IPcapDevice</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">char</span>* m_FileName;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="a00052.html">IFileDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="a00052.html">IFileDevice</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00207.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00247.html">pcpp</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00106.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00106.html">PayloadLayer</a> : <span class="keyword">public</span> <a class="code" href="a00092.html">Layer</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00106.html#a3c34b57a284fe6e3180eb7cc79da9f24">   28</a></span>&#160;        <a class="code" href="a00106.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00092.html">Layer</a>* prevLayer, <a class="code" href="a00104.html">Packet</a>* packet) : <a class="code" href="a00092.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">GenericPayolad</a>; }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::string <a class="code" href="a00052.html#a62e21c94c6046f2d16a81df62b0c8d86">getFileName</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00052.html#a65be98019748f6509445136013a0d1cb">close</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00053.html">   49</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00053.html">IFileReaderDevice</a> : <span class="keyword">public</span> <a class="code" href="a00052.html">IFileDevice</a></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        uint32_t m_NumOfPacketsRead;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        uint32_t m_NumOfPacketsNotParsed;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="a00106.html#a3c34b57a284fe6e3180eb7cc79da9f24">PayloadLayer</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">bool</span> dummy);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ~<a class="code" href="a00106.html">PayloadLayer</a>() {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00106.html#af46528184f2f9cff223f631422ae8b24">   45</a></span>&#160;        <span class="keyword">inline</span> uint8_t* <a class="code" href="a00106.html#af46528184f2f9cff223f631422ae8b24">getPayload</a>() { <span class="keywordflow">return</span> m_Data; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00106.html#aee6b8085ad904ba8044bf95b802255f5">   51</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00106.html#aee6b8085ad904ba8044bf95b802255f5">getPayloadLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// implement abstract methods</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="a00053.html#a0292cb89821cdbdb5914d4ed76c5e0f1">IFileReaderDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00053.html#acdc7b6e2db17994aaf167c081ddfaafb">   67</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00053.html#acdc7b6e2db17994aaf167c081ddfaafb">~IFileReaderDevice</a>() {}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        uint64_t <a class="code" href="a00053.html#a74f00fc3036c19629c3a1e6f358f9a78">getFileSize</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00106.html#a462003b0863dd9891d989f847608c1fb">   58</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00106.html#a462003b0863dd9891d989f847608c1fb">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00106.html#a03f5cea04a120367b2b1b808ec2e38ef">   63</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00106.html#a03f5cea04a120367b2b1b808ec2e38ef">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00106.html#a06b137b6b0f0a81cfd6fda7f2e44640f">   68</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00106.html#a06b137b6b0f0a81cfd6fda7f2e44640f">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::string <a class="code" href="a00106.html#ab9117eddc57a2c6e3d3e5ef1626a4aac">toString</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00106.html#ab041d609556acd4c9793e738fda27235">   72</a></span>&#160;        <a class="code" href="a00247.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00106.html#ab041d609556acd4c9793e738fda27235">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00247.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a>; }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> getNextPacket(<a class="code" href="a00128.html">RawPacket</a>&amp; rawPacket) = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00053.html#a279a1c148671df93bd85afd43af1f958">getNextPackets</a>(<a class="code" href="a00117.html">RawPacketVector</a>&amp; packetVec, <span class="keywordtype">int</span> numOfPacketsToRead = -1);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">static</span> <a class="code" href="a00053.html">IFileReaderDevice</a>* <a class="code" href="a00053.html#ac293a401ed1b28361cfcd984a45f1db1">getReader</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00105.html">  101</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00105.html">PcapFileReaderDevice</a> : <span class="keyword">public</span> <a class="code" href="a00053.html">IFileReaderDevice</a></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> m_PcapLinkLayerType;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="a00105.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <a class="code" href="a00105.html">PcapFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="a00105.html">PcapFileReaderDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00105.html">PcapFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="a00105.html">PcapFileReaderDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00105.html#aa6c4637873a1a830372449a81f048ab2">  121</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00105.html#aa6c4637873a1a830372449a81f048ab2">~PcapFileReaderDevice</a>() {}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> <a class="code" href="a00105.html#a68ed8a4e9fb754054c32682ac2c6411f">getLinkLayerType</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00105.html#afc4c2142b7787e6c191b0d2ab6822c07">getNextPacket</a>(<a class="code" href="a00128.html">RawPacket</a>&amp; rawPacket);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00105.html#af9e798abe511b1ba8bd14360535753a1">open</a>();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00105.html#a6c07f1cc3675dfa8ff7157d09be311c7">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    };</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="a00109.html">  158</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00109.html">PcapNgFileReaderDevice</a> : <span class="keyword">public</span> <a class="code" href="a00053.html">IFileReaderDevice</a></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">void</span>* m_LightPcapNg;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">struct </span>bpf_program m_Bpf;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">bool</span> m_BpfInitialized;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">int</span> m_BpfLinkType;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::string m_CurFilter;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="a00109.html">PcapNgFileReaderDevice</a>(<span class="keyword">const</span> <a class="code" href="a00109.html">PcapNgFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="a00109.html">PcapNgFileReaderDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00109.html">PcapNgFileReaderDevice</a>&amp; other);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordtype">bool</span> matchPacketWithFilter(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">size_t</span> packetLen, timeval packetTimestamp, uint16_t linkType);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="a00109.html">PcapNgFileReaderDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00109.html#a3fdac9f71c23e6c973f6bb119d1ce75d">  184</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00109.html#a3fdac9f71c23e6c973f6bb119d1ce75d">~PcapNgFileReaderDevice</a>() { <a class="code" href="a00109.html#a637743eb1a25fde92af7aeca8879fc02">close</a>(); }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        std::string <a class="code" href="a00109.html#a2ac993cca52aac490c4d60562370f317">getOS</a>();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        std::string <a class="code" href="a00109.html#a448bef18de4a0d9777161c114bd5c684">getHardware</a>();</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        std::string <a class="code" href="a00109.html#a41bf41e1e995dd48d5263b2c04ad4d02">getCaptureApplication</a>();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        std::string <a class="code" href="a00109.html#a4b71f490244ab2a59033e7d6d94227bb">getCaptureFileComment</a>();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00109.html#a9bf1e61be8334e31a329451ad2397b27">getNextPacket</a>(<a class="code" href="a00128.html">RawPacket</a>&amp; rawPacket, std::string&amp; packetComment);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00109.html#a9bf1e61be8334e31a329451ad2397b27">getNextPacket</a>(<a class="code" href="a00128.html">RawPacket</a>&amp; rawPacket);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00109.html#aea89bc17fd3b560576a20afc6da1d304">open</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00109.html#a32ecbe14fa25297ee599a5d52c4e15e1">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00109.html#af28e1f52506a83feae30e279adb538a7">setFilter</a>(std::string filterAsString);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00109.html#a637743eb1a25fde92af7aeca8879fc02">close</a>();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    };</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="a00054.html">  269</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00054.html">IFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="a00052.html">IFileDevice</a></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        uint32_t m_NumOfPacketsWritten;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        uint32_t m_NumOfPacketsNotWritten;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="a00054.html">IFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="a00054.html#ad1efdc8f258b6981d0429c61992f2e13">  282</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00054.html#ad1efdc8f258b6981d0429c61992f2e13">~IFileWriterDevice</a>() {}</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> writePacket(<a class="code" href="a00128.html">RawPacket</a> <span class="keyword">const</span>&amp; packet) = 0;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> writePackets(<span class="keyword">const</span> <a class="code" href="a00117.html">RawPacketVector</a>&amp; packets) = 0;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keyword">using</span> <a class="code" href="a00068.html#aa7d1358756653febf63d23b21447649c">IFileDevice::open</a>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00068.html#aa7d1358756653febf63d23b21447649c">open</a>(<span class="keywordtype">bool</span> appendMode) = 0;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    };</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="a00106.html">  299</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00106.html">PcapFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="a00054.html">IFileWriterDevice</a></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        pcap_dumper_t* m_PcapDumpHandler;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> m_PcapLinkLayerType;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordtype">bool</span> m_AppendMode;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        FILE* m_File;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <a class="code" href="a00106.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="a00106.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="a00106.html">PcapFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00106.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordtype">void</span> closeFile();</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="a00106.html">PcapFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <a class="code" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType = <a class="code" href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="a00106.html#ac3aa347668d24475e9f750fcb5959d93">~PcapFileWriterDevice</a>();</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00106.html#add964c71699315d457a33b22998501fd">writePacket</a>(<a class="code" href="a00128.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00106.html#ac2e22200a6da2898262499699c001430">writePackets</a>(<span class="keyword">const</span> <a class="code" href="a00117.html">RawPacketVector</a>&amp; packets);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">//override methods</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00106.html#ab9c5ea38028c05717dd2957c4be08296">open</a>();</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00106.html#ab9c5ea38028c05717dd2957c4be08296">open</a>(<span class="keywordtype">bool</span> appendMode);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00106.html#a60b102a04429b8baba0637c3505f6448">close</a>();</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00106.html#a3f72c11bc118609f84c5b462f27cdc1f">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    };</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="a00110.html">  388</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00110.html">PcapNgFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="a00054.html">IFileWriterDevice</a></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordtype">void</span>* m_LightPcapNg;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="a00110.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="a00106.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <a class="code" href="a00110.html">PcapNgFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a00110.html">PcapNgFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <a class="code" href="a00110.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="a00110.html#a93312aab61a193df522f8046af6d291e">  410</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="a00110.html#a93312aab61a193df522f8046af6d291e">~PcapNgFileWriterDevice</a>() { <a class="code" href="a00110.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>(); }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* os, <span class="keyword">const</span> <span class="keywordtype">char</span>* hardware, <span class="keyword">const</span> <span class="keywordtype">char</span>* captureApp, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileComment);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="a00128.html">RawPacket</a> <span class="keyword">const</span>&amp; packet, <span class="keyword">const</span> <span class="keywordtype">char</span>* comment);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="a00128.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a214c363a167e1538d9ea29a58efd9640">writePackets</a>(<span class="keyword">const</span> <a class="code" href="a00117.html">RawPacketVector</a>&amp; packets);</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>();</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00110.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keywordtype">bool</span> appendMode);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00110.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>();</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00110.html#a55a11ff6431efc054fd4a47bbaab9852">getStatistics</a>(pcap_stat&amp; stats);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    };</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;}<span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a00110_html"><div class="ttname"><a href="a00110.html">pcpp::PcapNgFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:388</div></div>
-<div class="ttc" id="a00068_html"><div class="ttname"><a href="a00068.html">pcpp::IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:26</div></div>
-<div class="ttc" id="a00053_html_ac293a401ed1b28361cfcd984a45f1db1"><div class="ttname"><a href="a00053.html#ac293a401ed1b28361cfcd984a45f1db1">pcpp::IFileReaderDevice::getReader</a></div><div class="ttdeci">static IFileReaderDevice * getReader(const char *fileName)</div></div>
-<div class="ttc" id="a00105_html_afc4c2142b7787e6c191b0d2ab6822c07"><div class="ttname"><a href="a00105.html#afc4c2142b7787e6c191b0d2ab6822c07">pcpp::PcapFileReaderDevice::getNextPacket</a></div><div class="ttdeci">bool getNextPacket(RawPacket &amp;rawPacket)</div></div>
-<div class="ttc" id="a00105_html_aa6c4637873a1a830372449a81f048ab2"><div class="ttname"><a href="a00105.html#aa6c4637873a1a830372449a81f048ab2">pcpp::PcapFileReaderDevice::~PcapFileReaderDevice</a></div><div class="ttdeci">virtual ~PcapFileReaderDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:121</div></div>
-<div class="ttc" id="a00110_html_a81069d1681efd6adf22e6ae80f300993"><div class="ttname"><a href="a00110.html#a81069d1681efd6adf22e6ae80f300993">pcpp::PcapNgFileWriterDevice::writePacket</a></div><div class="ttdeci">bool writePacket(RawPacket const &amp;packet, const char *comment)</div></div>
-<div class="ttc" id="a00230_html"><div class="ttname"><a href="a00230.html">RawPacket.h</a></div></div>
-<div class="ttc" id="a00245_html_ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215"><div class="ttname"><a href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:30</div></div>
-<div class="ttc" id="a00052_html_a65be98019748f6509445136013a0d1cb"><div class="ttname"><a href="a00052.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
-<div class="ttc" id="a00110_html_a93312aab61a193df522f8046af6d291e"><div class="ttname"><a href="a00110.html#a93312aab61a193df522f8046af6d291e">pcpp::PcapNgFileWriterDevice::~PcapNgFileWriterDevice</a></div><div class="ttdeci">virtual ~PcapNgFileWriterDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:410</div></div>
-<div class="ttc" id="a00105_html_a68ed8a4e9fb754054c32682ac2c6411f"><div class="ttname"><a href="a00105.html#a68ed8a4e9fb754054c32682ac2c6411f">pcpp::PcapFileReaderDevice::getLinkLayerType</a></div><div class="ttdeci">LinkLayerType getLinkLayerType()</div></div>
-<div class="ttc" id="a00109_html_a4b71f490244ab2a59033e7d6d94227bb"><div class="ttname"><a href="a00109.html#a4b71f490244ab2a59033e7d6d94227bb">pcpp::PcapNgFileReaderDevice::getCaptureFileComment</a></div><div class="ttdeci">std::string getCaptureFileComment()</div></div>
-<div class="ttc" id="a00052_html_a62e21c94c6046f2d16a81df62b0c8d86"><div class="ttname"><a href="a00052.html#a62e21c94c6046f2d16a81df62b0c8d86">pcpp::IFileDevice::getFileName</a></div><div class="ttdeci">std::string getFileName()</div></div>
-<div class="ttc" id="a00053_html_a0292cb89821cdbdb5914d4ed76c5e0f1"><div class="ttname"><a href="a00053.html#a0292cb89821cdbdb5914d4ed76c5e0f1">pcpp::IFileReaderDevice::IFileReaderDevice</a></div><div class="ttdeci">IFileReaderDevice(const char *fileName)</div></div>
-<div class="ttc" id="a00109_html_a32ecbe14fa25297ee599a5d52c4e15e1"><div class="ttname"><a href="a00109.html#a32ecbe14fa25297ee599a5d52c4e15e1">pcpp::PcapNgFileReaderDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00109_html_a3fdac9f71c23e6c973f6bb119d1ce75d"><div class="ttname"><a href="a00109.html#a3fdac9f71c23e6c973f6bb119d1ce75d">pcpp::PcapNgFileReaderDevice::~PcapNgFileReaderDevice</a></div><div class="ttdeci">virtual ~PcapNgFileReaderDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:184</div></div>
-<div class="ttc" id="a00106_html"><div class="ttname"><a href="a00106.html">pcpp::PcapFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:299</div></div>
-<div class="ttc" id="a00105_html_a6c07f1cc3675dfa8ff7157d09be311c7"><div class="ttname"><a href="a00105.html#a6c07f1cc3675dfa8ff7157d09be311c7">pcpp::PcapFileReaderDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00109_html_a448bef18de4a0d9777161c114bd5c684"><div class="ttname"><a href="a00109.html#a448bef18de4a0d9777161c114bd5c684">pcpp::PcapNgFileReaderDevice::getHardware</a></div><div class="ttdeci">std::string getHardware()</div></div>
-<div class="ttc" id="a00110_html_a55a11ff6431efc054fd4a47bbaab9852"><div class="ttname"><a href="a00110.html#a55a11ff6431efc054fd4a47bbaab9852">pcpp::PcapNgFileWriterDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00109_html"><div class="ttname"><a href="a00109.html">pcpp::PcapNgFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:158</div></div>
-<div class="ttc" id="a00053_html_acdc7b6e2db17994aaf167c081ddfaafb"><div class="ttname"><a href="a00053.html#acdc7b6e2db17994aaf167c081ddfaafb">pcpp::IFileReaderDevice::~IFileReaderDevice</a></div><div class="ttdeci">virtual ~IFileReaderDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:67</div></div>
-<div class="ttc" id="a00109_html_a2ac993cca52aac490c4d60562370f317"><div class="ttname"><a href="a00109.html#a2ac993cca52aac490c4d60562370f317">pcpp::PcapNgFileReaderDevice::getOS</a></div><div class="ttdeci">std::string getOS()</div></div>
-<div class="ttc" id="a00109_html_aea89bc17fd3b560576a20afc6da1d304"><div class="ttname"><a href="a00109.html#aea89bc17fd3b560576a20afc6da1d304">pcpp::PcapNgFileReaderDevice::open</a></div><div class="ttdeci">bool open()</div></div>
-<div class="ttc" id="a00117_html"><div class="ttname"><a href="a00117.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:24</div></div>
-<div class="ttc" id="a00105_html"><div class="ttname"><a href="a00105.html">pcpp::PcapFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:101</div></div>
-<div class="ttc" id="a00105_html_af9e798abe511b1ba8bd14360535753a1"><div class="ttname"><a href="a00105.html#af9e798abe511b1ba8bd14360535753a1">pcpp::PcapFileReaderDevice::open</a></div><div class="ttdeci">bool open()</div></div>
-<div class="ttc" id="a00110_html_a87cdcca0ace3ba4ccbaad4093def33a8"><div class="ttname"><a href="a00110.html#a87cdcca0ace3ba4ccbaad4093def33a8">pcpp::PcapNgFileWriterDevice::close</a></div><div class="ttdeci">void close()</div></div>
-<div class="ttc" id="a00110_html_a9c709c035f8ba98682693a248d6d1e5d"><div class="ttname"><a href="a00110.html#a9c709c035f8ba98682693a248d6d1e5d">pcpp::PcapNgFileWriterDevice::open</a></div><div class="ttdeci">bool open()</div></div>
-<div class="ttc" id="a00106_html_ac3aa347668d24475e9f750fcb5959d93"><div class="ttname"><a href="a00106.html#ac3aa347668d24475e9f750fcb5959d93">pcpp::PcapFileWriterDevice::~PcapFileWriterDevice</a></div><div class="ttdeci">~PcapFileWriterDevice()</div></div>
-<div class="ttc" id="a00109_html_af28e1f52506a83feae30e279adb538a7"><div class="ttname"><a href="a00109.html#af28e1f52506a83feae30e279adb538a7">pcpp::PcapNgFileReaderDevice::setFilter</a></div><div class="ttdeci">bool setFilter(std::string filterAsString)</div></div>
-<div class="ttc" id="a00054_html"><div class="ttname"><a href="a00054.html">pcpp::IFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:269</div></div>
-<div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">pcpp::IFileDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:20</div></div>
-<div class="ttc" id="a00106_html_add964c71699315d457a33b22998501fd"><div class="ttname"><a href="a00106.html#add964c71699315d457a33b22998501fd">pcpp::PcapFileWriterDevice::writePacket</a></div><div class="ttdeci">bool writePacket(RawPacket const &amp;packet)</div></div>
-<div class="ttc" id="a00106_html_a60b102a04429b8baba0637c3505f6448"><div class="ttname"><a href="a00106.html#a60b102a04429b8baba0637c3505f6448">pcpp::PcapFileWriterDevice::close</a></div><div class="ttdeci">virtual void close()</div></div>
-<div class="ttc" id="a00110_html_a214c363a167e1538d9ea29a58efd9640"><div class="ttname"><a href="a00110.html#a214c363a167e1538d9ea29a58efd9640">pcpp::PcapNgFileWriterDevice::writePackets</a></div><div class="ttdeci">bool writePackets(const RawPacketVector &amp;packets)</div></div>
-<div class="ttc" id="a00245_html"><div class="ttname"><a href="a00245.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00109_html_a637743eb1a25fde92af7aeca8879fc02"><div class="ttname"><a href="a00109.html#a637743eb1a25fde92af7aeca8879fc02">pcpp::PcapNgFileReaderDevice::close</a></div><div class="ttdeci">void close()</div></div>
-<div class="ttc" id="a00054_html_ad1efdc8f258b6981d0429c61992f2e13"><div class="ttname"><a href="a00054.html#ad1efdc8f258b6981d0429c61992f2e13">pcpp::IFileWriterDevice::~IFileWriterDevice</a></div><div class="ttdeci">virtual ~IFileWriterDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:282</div></div>
-<div class="ttc" id="a00109_html_a41bf41e1e995dd48d5263b2c04ad4d02"><div class="ttname"><a href="a00109.html#a41bf41e1e995dd48d5263b2c04ad4d02">pcpp::PcapNgFileReaderDevice::getCaptureApplication</a></div><div class="ttdeci">std::string getCaptureApplication()</div></div>
-<div class="ttc" id="a00106_html_a3f72c11bc118609f84c5b462f27cdc1f"><div class="ttname"><a href="a00106.html#a3f72c11bc118609f84c5b462f27cdc1f">pcpp::PcapFileWriterDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)</div></div>
-<div class="ttc" id="a00068_html_aa7d1358756653febf63d23b21447649c"><div class="ttname"><a href="a00068.html#aa7d1358756653febf63d23b21447649c">pcpp::IPcapDevice::open</a></div><div class="ttdeci">virtual bool open()=0</div></div>
-<div class="ttc" id="a00053_html"><div class="ttname"><a href="a00053.html">pcpp::IFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:49</div></div>
-<div class="ttc" id="a00106_html_ab9c5ea38028c05717dd2957c4be08296"><div class="ttname"><a href="a00106.html#ab9c5ea38028c05717dd2957c4be08296">pcpp::PcapFileWriterDevice::open</a></div><div class="ttdeci">virtual bool open()</div></div>
-<div class="ttc" id="a00128_html"><div class="ttname"><a href="a00128.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
-<div class="ttc" id="a00109_html_a9bf1e61be8334e31a329451ad2397b27"><div class="ttname"><a href="a00109.html#a9bf1e61be8334e31a329451ad2397b27">pcpp::PcapNgFileReaderDevice::getNextPacket</a></div><div class="ttdeci">bool getNextPacket(RawPacket &amp;rawPacket, std::string &amp;packetComment)</div></div>
-<div class="ttc" id="a00106_html_ac2e22200a6da2898262499699c001430"><div class="ttname"><a href="a00106.html#ac2e22200a6da2898262499699c001430">pcpp::PcapFileWriterDevice::writePackets</a></div><div class="ttdeci">bool writePackets(const RawPacketVector &amp;packets)</div></div>
-<div class="ttc" id="a00216_html"><div class="ttname"><a href="a00216.html">PcapDevice.h</a></div></div>
-<div class="ttc" id="a00245_html_ab3f43dd3ccd8c93acac8b67909be02be"><div class="ttname"><a href="a00245.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a></div><div class="ttdeci">LinkLayerType</div><div class="ttdef"><b>Definition:</b> RawPacket.h:25</div></div>
-<div class="ttc" id="a00053_html_a279a1c148671df93bd85afd43af1f958"><div class="ttname"><a href="a00053.html#a279a1c148671df93bd85afd43af1f958">pcpp::IFileReaderDevice::getNextPackets</a></div><div class="ttdeci">int getNextPackets(RawPacketVector &amp;packetVec, int numOfPacketsToRead=-1)</div></div>
-<div class="ttc" id="a00053_html_a74f00fc3036c19629c3a1e6f358f9a78"><div class="ttname"><a href="a00053.html#a74f00fc3036c19629c3a1e6f358f9a78">pcpp::IFileReaderDevice::getFileSize</a></div><div class="ttdeci">uint64_t getFileSize()</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_PAYLOAD_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00247_html_a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4"><div class="ttname"><a href="a00247.html#a1d761f7cf37d3b1efb1574fb1177e6eba9d59993836b2046bd373cabc463feef4">pcpp::GenericPayolad</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:171</div></div>
+<div class="ttc" id="a00106_html_aee6b8085ad904ba8044bf95b802255f5"><div class="ttname"><a href="a00106.html#aee6b8085ad904ba8044bf95b802255f5">pcpp::PayloadLayer::getPayloadLen</a></div><div class="ttdeci">size_t getPayloadLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:51</div></div>
+<div class="ttc" id="a00106_html_a462003b0863dd9891d989f847608c1fb"><div class="ttname"><a href="a00106.html#a462003b0863dd9891d989f847608c1fb">pcpp::PayloadLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:58</div></div>
+<div class="ttc" id="a00106_html_a3c34b57a284fe6e3180eb7cc79da9f24"><div class="ttname"><a href="a00106.html#a3c34b57a284fe6e3180eb7cc79da9f24">pcpp::PayloadLayer::PayloadLayer</a></div><div class="ttdeci">PayloadLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:28</div></div>
+<div class="ttc" id="a00247_html"><div class="ttname"><a href="a00247.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00106_html_af46528184f2f9cff223f631422ae8b24"><div class="ttname"><a href="a00106.html#af46528184f2f9cff223f631422ae8b24">pcpp::PayloadLayer::getPayload</a></div><div class="ttdeci">uint8_t * getPayload()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:45</div></div>
+<div class="ttc" id="a00106_html_a03f5cea04a120367b2b1b808ec2e38ef"><div class="ttname"><a href="a00106.html#a03f5cea04a120367b2b1b808ec2e38ef">pcpp::PayloadLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:63</div></div>
+<div class="ttc" id="a00106_html_ab041d609556acd4c9793e738fda27235"><div class="ttname"><a href="a00106.html#ab041d609556acd4c9793e738fda27235">pcpp::PayloadLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:72</div></div>
+<div class="ttc" id="a00106_html"><div class="ttname"><a href="a00106.html">pcpp::PayloadLayer</a></div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:19</div></div>
+<div class="ttc" id="a00106_html_a06b137b6b0f0a81cfd6fda7f2e44640f"><div class="ttname"><a href="a00106.html#a06b137b6b0f0a81cfd6fda7f2e44640f">pcpp::PayloadLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> PayloadLayer.h:68</div></div>
+<div class="ttc" id="a00247_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="a00247.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:218</div></div>
+<div class="ttc" id="a00247_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00247.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:203</div></div>
+<div class="ttc" id="a00106_html_ab9117eddc57a2c6e3d3e5ef1626a4aac"><div class="ttname"><a href="a00106.html#ab9117eddc57a2c6e3d3e5ef1626a4aac">pcpp::PayloadLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
+<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00207_html"><div class="ttname"><a href="a00207.html">Layer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00217.html">PcapFileDevice.h</a></li>
-    <li class="footer">Generated on Sun Jan 21 2018 23:15:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00217.html">PayloadLayer.h</a></li>
+    <li class="footer">Generated on Tue Jan 30 2018 00:34:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

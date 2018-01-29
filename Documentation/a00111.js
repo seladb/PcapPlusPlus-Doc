@@ -1,8 +1,15 @@
 var a00111 =
 [
-    [ "PcapRemoteAuthentication", "a00111.html#a239165d4eaaf752899e7656439f8f19e", null ],
-    [ "PcapRemoteAuthentication", "a00111.html#a7f1d4e564af1f378e6778d71910d1581", null ],
-    [ "getPcapRmAuth", "a00111.html#a6690ebfa8d5de408a635fed992c50999", null ],
-    [ "password", "a00111.html#a2f464437d3df5c609c4f91675ea73a63", null ],
-    [ "userName", "a00111.html#ab20a5fd24c937d1432587cbec80a14a7", null ]
+    [ "PcapNgFileReaderDevice", "a00111.html#ab654df3ff52249cf56fddd2a12aa6df4", null ],
+    [ "~PcapNgFileReaderDevice", "a00111.html#a3fdac9f71c23e6c973f6bb119d1ce75d", null ],
+    [ "close", "a00111.html#a637743eb1a25fde92af7aeca8879fc02", null ],
+    [ "getCaptureApplication", "a00111.html#a41bf41e1e995dd48d5263b2c04ad4d02", null ],
+    [ "getCaptureFileComment", "a00111.html#a4b71f490244ab2a59033e7d6d94227bb", null ],
+    [ "getHardware", "a00111.html#a448bef18de4a0d9777161c114bd5c684", null ],
+    [ "getNextPacket", "a00111.html#a9bf1e61be8334e31a329451ad2397b27", null ],
+    [ "getNextPacket", "a00111.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
+    [ "getOS", "a00111.html#a2ac993cca52aac490c4d60562370f317", null ],
+    [ "getStatistics", "a00111.html#a32ecbe14fa25297ee599a5d52c4e15e1", null ],
+    [ "open", "a00111.html#aea89bc17fd3b560576a20afc6da1d304", null ],
+    [ "setFilter", "a00111.html#af28e1f52506a83feae30e279adb538a7", null ]
 ];

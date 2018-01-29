@@ -1,14 +1,7 @@
 var a00081 =
 [
-    [ "IPv6Address", "a00081.html#ad86bb8f234fe5d5b8327902fe04b3af9", null ],
-    [ "IPv6Address", "a00081.html#a40d009ad41c7a05fd3b566f6f460e870", null ],
-    [ "IPv6Address", "a00081.html#ae7b6883d2ee46444059a33cd3be73f38", null ],
-    [ "IPv6Address", "a00081.html#a325c75bccad81bda34ce148f291a999c", null ],
-    [ "copyTo", "a00081.html#ade7dd5e08fa04101f72f60cbed397b7d", null ],
-    [ "copyTo", "a00081.html#a54ed6cb154a9687ad675ef95e40a212b", null ],
-    [ "getType", "a00081.html#a2a899e36131b3ac54d94de99e6e67f2b", null ],
-    [ "operator!=", "a00081.html#a2ce04912047630b1c2442bebb87dabb2", null ],
-    [ "operator=", "a00081.html#a6f3b86e75434f2c106d341736151a464", null ],
-    [ "operator==", "a00081.html#a8cb10edb19cbb534c0e1f3b540ad7567", null ],
-    [ "toIn6Addr", "a00081.html#a1d4c09c0982b5b3905f53493489e7383", null ]
+    [ "headerLen", "a00081.html#ae7e5662b426aa656b4facb81bc947518", null ],
+    [ "nextHeader", "a00081.html#a4d9369b6437e7665bd8fc54a23232ef4", null ],
+    [ "routingType", "a00081.html#a7c4579b3c40ab7180339addc210d0898", null ],
+    [ "segmentsLeft", "a00081.html#a0f695f69f4ef95239ac86212a8fcd4dd", null ]
 ];

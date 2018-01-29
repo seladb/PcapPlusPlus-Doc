@@ -1,10 +1,10 @@
 var a00091 =
 [
-    [ "LinkDuplex", "a00091.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
-      [ "FULL_DUPLEX", "a00091.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
-      [ "HALF_DUPLEX", "a00091.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
-    ] ],
-    [ "linkDuplex", "a00091.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
-    [ "linkSpeedMbps", "a00091.html#a6177ed98446f18d57be88d8c2411a473", null ],
-    [ "linkUp", "a00091.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
+    [ "TLVOption", "a00180.html", "a00180" ],
+    [ "TLVOptionBuilder", "a00181.html", "a00181" ],
+    [ "IPv6TLVOptionHeader", "a00091.html#a299b5196ca0a47c9ac81a92a689fd9eb", null ],
+    [ "getFirstOption", "a00091.html#a4c0290e277f718900b20085179814898", null ],
+    [ "getNextOption", "a00091.html#adb9953af226ecc200c50b4c215b34676", null ],
+    [ "getOption", "a00091.html#a4bef63b0af6888fa110fdb2a36a17365", null ],
+    [ "getOptionCount", "a00091.html#adc0c471faaacd0bdb7ab3644b51c70c3", null ]
 ];

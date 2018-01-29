@@ -1,11 +1,10 @@
 var a00114 =
 [
-    [ "PciAddress", "a00114.html#aa862db5500aabff5532409ae4bb55018", null ],
-    [ "PciAddress", "a00114.html#a0da80513ce90b1e3f87b210cc049fa0b", null ],
-    [ "operator==", "a00114.html#a37a80915f0c21332c98d4c266e1afcb4", null ],
-    [ "toString", "a00114.html#a490f65c9da811959b78cd92cf2f1812a", null ],
-    [ "bus", "a00114.html#a6e3dfe2b72cf6bdbc2e4df9d225d8d0e", null ],
-    [ "devid", "a00114.html#a17156ff00832fd42ad67cf9b0ef7e66f", null ],
-    [ "domain", "a00114.html#ab5de4955b79543fff9502806e2b4fcd9", null ],
-    [ "function", "a00114.html#a86979fb0b26500db884c47f2a22d4c8e", null ]
+    [ "getDeviceType", "a00114.html#af5518431a35a7f94b6ee8551061eee18", null ],
+    [ "getMacAddress", "a00114.html#a3006b9fb3ce13dde29409e0ef47c4377", null ],
+    [ "getMtu", "a00114.html#a242bf2bdafb0b1d2aed2b266cad9e5bd", null ],
+    [ "getRemoteMachineIpAddress", "a00114.html#a9145e0ff045baaa0f3365874ca8bbab6", null ],
+    [ "getRemoteMachinePort", "a00114.html#a13638c1e7f6c0f8a6276ee7501f17d96", null ],
+    [ "getStatistics", "a00114.html#ac4f3b9ace451b38aa9930950dc695273", null ],
+    [ "open", "a00114.html#a2b9e2ac456a61dcd739cfd7de0b827df", null ]
 ];

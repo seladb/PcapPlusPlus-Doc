@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::LRUList&lt; T &gt; Class Template Reference</title>
+<title>PcapPlusPlus: pcpp::DpdkDevice::LinkStatus Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,237 +107,93 @@ $(document).ready(function(){initNavTree('a00093.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00345.html">List of all members</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00268.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::LRUList&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">pcpp::DpdkDevice::LinkStatus Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00207_source.html">LRUList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00194_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a> (size_t maxSize)</td></tr>
-<tr class="separator:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb4c3762735f3f49ae5b6bec3f70d58"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a1eb4c3762735f3f49ae5b6bec3f70d58">put</a> (const T &amp;element)</td></tr>
-<tr class="separator:a1eb4c3762735f3f49ae5b6bec3f70d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2474c4ee35a59b258995896baf5f3af4"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a2474c4ee35a59b258995896baf5f3af4">getMRUElement</a> ()</td></tr>
-<tr class="separator:a2474c4ee35a59b258995896baf5f3af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbb5d65592bd0977de48c84ebb5fa0a"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#adfbb5d65592bd0977de48c84ebb5fa0a">getLRUElement</a> ()</td></tr>
-<tr class="separator:adfbb5d65592bd0977de48c84ebb5fa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5682e992a5b22c9ed24242a38265ce73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a5682e992a5b22c9ed24242a38265ce73">eraseElement</a> (const T &amp;element)</td></tr>
-<tr class="separator:a5682e992a5b22c9ed24242a38265ce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158e70dab4d3e90c80018e054c571e09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a158e70dab4d3e90c80018e054c571e09">getMaxSize</a> ()</td></tr>
-<tr class="separator:a158e70dab4d3e90c80018e054c571e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c9e215f38fc45eb568506897dc4680"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#ab1c9e215f38fc45eb568506897dc4680">getSize</a> ()</td></tr>
-<tr class="separator:ab1c9e215f38fc45eb568506897dc4680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a67ef869fa855fbe7c29add4e9d6ac45b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a> { <a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947">FULL_DUPLEX</a>, 
+<a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14">HALF_DUPLEX</a>
+ }</td></tr>
+<tr class="separator:a67ef869fa855fbe7c29add4e9d6ac45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#ac71de439a1f9d3f7c95aadd5b20b0469">linkUp</a></td></tr>
+<tr class="separator:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6177ed98446f18d57be88d8c2411a473"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a6177ed98446f18d57be88d8c2411a473">linkSpeedMbps</a></td></tr>
+<tr class="separator:a6177ed98446f18d57be88d8c2411a473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cfc43e13a80ba49369288ad220bd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00093.html#a64cfc43e13a80ba49369288ad220bd1b">linkDuplex</a></td></tr>
+<tr class="separator:a64cfc43e13a80ba49369288ad220bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-class pcpp::LRUList&lt; T &gt;</h3>
-
-<p>A template class that implements a LRU cache with limited size. Each time the user puts an element it goes to head of the list as the most recently used element (if the element was already in the list it advances to the head of the list). The last element in the list is the one least recently used and will be pulled out of the list if it reaches its max size and a new element comes in. All actions on this LRU list are O(1) </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0d64da0d4ca5386c8ce3f63c6409fab5"></a>
+<div class="textblock"><p>A struct that contains the link status of a <a class="el" href="a00015.html">DpdkDevice</a> (DPDK port). Returned from <a class="el" href="a00015.html#a4ca58304c0df036a23e40f1505925319">DpdkDevice::getLinkStatus()</a> </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45b"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::<a class="el" href="a00093.html">LRUList</a> </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>maxSize</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45b">pcpp::DpdkDevice::LinkStatus::LinkDuplex</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A c'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">maxSize</td><td>The max size this list can go </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Enum for describing link duplex </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947"></a>FULL_DUPLEX&#160;</td><td class="fielddoc">
+<p>Full duplex </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14"></a>HALF_DUPLEX&#160;</td><td class="fielddoc">
+<p>Half duplex </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5682e992a5b22c9ed24242a38265ce73"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a64cfc43e13a80ba49369288ad220bd1b"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::eraseElement </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="a00093.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a> pcpp::DpdkDevice::LinkStatus::linkDuplex</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Erase an element from the list. If element isn't found in the list nothing happens </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element to erase </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Link duplex (half/full duplex) </p>
 
 </div>
 </div>
-<a class="anchor" id="adfbb5d65592bd0977de48c84ebb5fa0a"></a>
+<a class="anchor" id="a6177ed98446f18d57be88d8c2411a473"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const T&amp; <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::getLRUElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int pcpp::DpdkDevice::LinkStatus::linkSpeedMbps</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get the least recently used element (the one at the end of the list) </p><dl class="section return"><dt>Returns</dt><dd>The least recently used element </dd></dl>
+<p>Link speed in Mbps (for example: 10Gbe will show 10000) </p>
 
 </div>
 </div>
-<a class="anchor" id="a158e70dab4d3e90c80018e054c571e09"></a>
+<a class="anchor" id="ac71de439a1f9d3f7c95aadd5b20b0469"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::getMaxSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">bool pcpp::DpdkDevice::LinkStatus::linkUp</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The max size of this list as determined in the c'tor </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2474c4ee35a59b258995896baf5f3af4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T&amp; <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::getMRUElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the most recently used element (the one at the beginning of the list) </p><dl class="section return"><dt>Returns</dt><dd>The most recently used element </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab1c9e215f38fc45eb568506897dc4680"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The number of elements currently in this list </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1eb4c3762735f3f49ae5b6bec3f70d58"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T* <a class="el" href="a00093.html">pcpp::LRUList</a>&lt; T &gt;::put </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Puts an element in the list. This element will be inserted (or advanced if it already exists) to the head of the list as the most recently used element. If the list already reached its max size and the element is new this method will remove the least recently used element and return a pointer to it. Method complexity is O(1) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element to insert or to advance to the head of the list (if already exists) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the element that was removed from the list in case the list already reached its max size. If the list didn't reach its max size NULL will be returned. Notice it's the responsibility of the user to free this pointer's memory when done using it </dd></dl>
+<p>True if link is up, false if it's down </p>
 
 </div>
 </div>
@@ -346,8 +202,8 @@ template&lt;typename T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00245.html">pcpp</a></li><li class="navelem"><a class="el" href="a00093.html">LRUList</a></li>
-    <li class="footer">Generated on Sun Jan 21 2018 23:15:59 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00247.html">pcpp</a></li><li class="navelem"><a class="el" href="a00015.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00093.html">LinkStatus</a></li>
+    <li class="footer">Generated on Tue Jan 30 2018 00:34:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

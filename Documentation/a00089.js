@@ -1,10 +1,15 @@
 var a00089 =
 [
-    [ "TLVOption", "a00178.html", "a00178" ],
-    [ "TLVOptionBuilder", "a00179.html", "a00179" ],
-    [ "IPv6TLVOptionHeader", "a00089.html#a299b5196ca0a47c9ac81a92a689fd9eb", null ],
-    [ "getFirstOption", "a00089.html#a4c0290e277f718900b20085179814898", null ],
-    [ "getNextOption", "a00089.html#adb9953af226ecc200c50b4c215b34676", null ],
-    [ "getOption", "a00089.html#a4bef63b0af6888fa110fdb2a36a17365", null ],
-    [ "getOptionCount", "a00089.html#adc0c471faaacd0bdb7ab3644b51c70c3", null ]
+    [ "IPv6PacketKey", "a00089.html#a02c581abe18c06909870ee6b4cb87449", null ],
+    [ "IPv6PacketKey", "a00089.html#a06f16e22b0506205a1003fa7ea053fbd", null ],
+    [ "IPv6PacketKey", "a00089.html#a71ed9c8f02832f0bc61e03173fc9830c", null ],
+    [ "clone", "a00089.html#a76f2e939f51c3e58fdc4073557af6e63", null ],
+    [ "getDstIP", "a00089.html#ad741238540374f448daafa3fe6e81fa2", null ],
+    [ "getFragmentID", "a00089.html#a3055a313abafe01143447b8521d40056", null ],
+    [ "getHashValue", "a00089.html#aaa3dfec807950dde35435de94f0b85a0", null ],
+    [ "getProtocolType", "a00089.html#a603caef24b352d26e6b9ce6da68ab55a", null ],
+    [ "getSrcIP", "a00089.html#a1c5cd519b94100ab6af3f435e2d8473e", null ],
+    [ "setDstIP", "a00089.html#a6c8a2dce07c7400b8f3c65690a91bc31", null ],
+    [ "setFragmentID", "a00089.html#a119538594a7d628188a4c1d15a559f52", null ],
+    [ "setSrcIP", "a00089.html#a202e018f03c490126cabe6a5ceb07f2a", null ]
 ];

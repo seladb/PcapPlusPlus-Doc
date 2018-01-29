@@ -1,10 +1,14 @@
 var a00085 =
 [
-    [ "ipv6_frag_header", "a00079.html", "a00079" ],
-    [ "IPv6FragmentationHeader", "a00085.html#ac563df14668decdb596f38178f4e13cf", null ],
-    [ "getFragHeader", "a00085.html#ae90efaab0592584e71ce6cb7af410c8b", null ],
-    [ "getFragmentOffset", "a00085.html#a106810c715a1a33b7ec4b2f1fc71bb64", null ],
-    [ "isFirstFragment", "a00085.html#a33c37be1e4a345b0846571a23c16e3c1", null ],
-    [ "isLastFragment", "a00085.html#ad69650a8e731145355a1da05b364b877", null ],
-    [ "isMoreFragments", "a00085.html#a7f454f2ae5fdc1757444e33a8adf98f5", null ]
+    [ "IPv6ExtensionType", "a00085.html#a6b445a68c4313bfabd44a6f57de03379", [
+      [ "IPv6HopByHop", "a00085.html#a6b445a68c4313bfabd44a6f57de03379a1195489dc910590eb445dda1d992b605", null ],
+      [ "IPv6Routing", "a00085.html#a6b445a68c4313bfabd44a6f57de03379a9fcfe959d72f80e4684e00e6e9559491", null ],
+      [ "IPv6Fragmentation", "a00085.html#a6b445a68c4313bfabd44a6f57de03379aa14f4c7f39800c769a02bd032c4a5b87", null ],
+      [ "IPv6AuthenticationHdr", "a00085.html#a6b445a68c4313bfabd44a6f57de03379afb7f534eac2e9e0a1fe653669ae42d6b", null ],
+      [ "IPv6Destination", "a00085.html#a6b445a68c4313bfabd44a6f57de03379af3d807c9ff58cd2ec3ec5fc34e9efcb3", null ],
+      [ "IPv6ExtensionUnknown", "a00085.html#a6b445a68c4313bfabd44a6f57de03379ae3395e712995d3fec2e28e1b2df278db", null ]
+    ] ],
+    [ "~IPv6Extension", "a00085.html#a8925687d2b0eeae8fbdcf8999e7c60c2", null ],
+    [ "getExtensionLen", "a00085.html#a02bb5410b5504dbbdfe5b42d7f97e5fe", null ],
+    [ "getExtensionType", "a00085.html#a973139f3b152f49125f87c3b442b0b93", null ]
 ];

@@ -1,7 +1,7 @@
 var a00015 =
 [
     [ "DpdkDeviceConfiguration", "a00016.html", "a00016" ],
-    [ "LinkStatus", "a00091.html", "a00091" ],
+    [ "LinkStatus", "a00093.html", "a00093" ],
     [ "close", "a00015.html#ab772ecb6a13f970a1671a143dfcf8edc", null ],
     [ "getAmountOfFreeMbufs", "a00015.html#a745ba46c5fbc633281c211e81cd4fea0", null ],
     [ "getAmountOfMbufsInUse", "a00015.html#a24310ff4334d0defd3e46f144f7d987c", null ],

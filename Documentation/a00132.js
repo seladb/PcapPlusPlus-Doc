@@ -1,11 +1,13 @@
 var a00132 =
 [
-    [ "SipRequestFirstLineException", "a00133.html", null ],
-    [ "getMethod", "a00132.html#a9f565226ddf7536aa71b59f026bbb1d9", null ],
-    [ "getSize", "a00132.html#ad4e1d8bf3f0c0046d32769a4856f1f66", null ],
-    [ "getUri", "a00132.html#a1339bbd98a849fe431781c397c3773fa", null ],
-    [ "getVersion", "a00132.html#a02f1724946ead8939303c89a8bb38763", null ],
-    [ "isComplete", "a00132.html#a0ae02e550e9c07a4d3bf4edc9fda761c", null ],
-    [ "setMethod", "a00132.html#a778f3461351cb87706186869f8bf19e0", null ],
-    [ "setUri", "a00132.html#a3eeb1c43e1098aa0ccb461debdffead1", null ]
+    [ "SdpLayer", "a00132.html#a1e02f3e410bbaf055882040a920b6dce", null ],
+    [ "SdpLayer", "a00132.html#add15c986ba55f22fe64c9e21b0475949", null ],
+    [ "SdpLayer", "a00132.html#a5e7b8badf590bf0dc6f9dc0061319c88", null ],
+    [ "SdpLayer", "a00132.html#a5e53ceb5fbe79493f5da02d340b8bee2", null ],
+    [ "addMediaDescription", "a00132.html#a9df93bfb9cd914625bbd8f20895f8b8b", null ],
+    [ "getMediaPort", "a00132.html#a5fae788a725d57e2e9fe6a7d8f046885", null ],
+    [ "getOsiModelLayer", "a00132.html#aa9dadbd7cb435abf90f298bb2a3eb21d", null ],
+    [ "getOwnerIPv4Address", "a00132.html#a14f4a728d68929c829e93b0de336d538", null ],
+    [ "operator=", "a00132.html#aa6ca3ae82b3e5cbfa0781a68c231e605", null ],
+    [ "toString", "a00132.html#acdb3cc196fd8bb453d4293f93d5ff514", null ]
 ];

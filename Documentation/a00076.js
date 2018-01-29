@@ -1,13 +1,15 @@
 var a00076 =
 [
-    [ "TimestampType", "a00076.html#a7e40161cb0427081efb75885ae38d2fb", [
-      [ "TimestampOnly", "a00076.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3", null ],
-      [ "TimestampAndIP", "a00076.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0", null ],
-      [ "TimestampsForPrespecifiedIPs", "a00076.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8", null ],
-      [ "Unknown", "a00076.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30", null ]
-    ] ],
-    [ "clear", "a00076.html#aebdf61198a25c376676deec6fc6be0ef", null ],
-    [ "ipAddresses", "a00076.html#a38f920da501372e5fdcc68200e63f316", null ],
-    [ "timestamps", "a00076.html#a99bbb61fda3f7dc4a3323b92efac8ac8", null ],
-    [ "type", "a00076.html#a145ef3773e1b0ccb3d5b2d601db3361c", null ]
+    [ "IPv4PacketKey", "a00076.html#a99e40e4e9a816f2bfd6fac51e1db24f5", null ],
+    [ "IPv4PacketKey", "a00076.html#a6f8b3d6f45128c357ebd7b94d08f84fc", null ],
+    [ "IPv4PacketKey", "a00076.html#abcd0f53ccc2e970b9da2270819c43597", null ],
+    [ "clone", "a00076.html#a6f645bb956e1ae57b79531bc769ca6d6", null ],
+    [ "getDstIP", "a00076.html#af31f4b36d499e1ffe55bc21b6bd2c809", null ],
+    [ "getHashValue", "a00076.html#ab16dac3a854a45bb5ff00faa92aeefd1", null ],
+    [ "getIpID", "a00076.html#aff34ec616f7e53adaa5ae376cc7ce76a", null ],
+    [ "getProtocolType", "a00076.html#aaba46cd30b67c6cea3a3a588a49f8808", null ],
+    [ "getSrcIP", "a00076.html#ab96d3a442d57b860eb84cecfffc448cd", null ],
+    [ "setDstIP", "a00076.html#a3f08e39cd7a151f1006521e8b29dfd8a", null ],
+    [ "setIpID", "a00076.html#ab1b8c2f9bd9e928290667b576ed0be81", null ],
+    [ "setSrcIP", "a00076.html#a6f19f3d1f0e173d7cd36bbebc0c8f455", null ]
 ];

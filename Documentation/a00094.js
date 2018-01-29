@@ -1,15 +1,18 @@
 var a00094 =
 [
-    [ "MacAddress", "a00094.html#a9b56a6c1bfa240b58548035db404bcbc", null ],
-    [ "MacAddress", "a00094.html#a73460f086b972df4e264d267adc2d92d", null ],
-    [ "MacAddress", "a00094.html#a257d6fd3d08de6766389f15423ca3e22", null ],
-    [ "MacAddress", "a00094.html#af9130892a0dcc4c931aac84d86e4f7cd", null ],
-    [ "MacAddress", "a00094.html#a51128dc96a7f443ba5e05e94dd169071", null ],
-    [ "copyTo", "a00094.html#abd24a366974f3bc8b2d78b65de07c926", null ],
-    [ "copyTo", "a00094.html#a36d261838f53468acdb7b46208c97dcf", null ],
-    [ "isValid", "a00094.html#afe46520073e14b9e02bb368627896f4a", null ],
-    [ "operator!=", "a00094.html#a6497d0796bb0d06997a1e399817ba078", null ],
-    [ "operator=", "a00094.html#af3dd4fde8844b4e6857530be3fd2400e", null ],
-    [ "operator==", "a00094.html#ac0bde13868f7e7bdbe2b750233d33941", null ],
-    [ "toString", "a00094.html#afc022ce0c71beaf15bccdbacd50c58b8", null ]
+    [ "LogLevel", "a00094.html#a522254c250da7b12b5b4817b84c208b6", [
+      [ "Normal", "a00094.html#a522254c250da7b12b5b4817b84c208b6a58e6375bc77510a75bee39cb4356ad7e", null ],
+      [ "Debug", "a00094.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397", null ]
+    ] ],
+    [ "enableErrors", "a00094.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91", null ],
+    [ "getErrorString", "a00094.html#a96821970d89017f19ad24c024198e3a3", null ],
+    [ "getErrorStringLength", "a00094.html#a2ed51d61daff5222c4069cff3e245a83", null ],
+    [ "getLogModulesArr", "a00094.html#adc348d135eeef86271a100d3741ebb60", null ],
+    [ "isDebugEnabled", "a00094.html#a9b53774d0be75118413fcb3903e0da1b", null ],
+    [ "isErrorStringSet", "a00094.html#acde976836742578a55d778444d2dbcd6", null ],
+    [ "isSupressErrors", "a00094.html#ab1634894a477fbd9bccf8df68326d6d2", null ],
+    [ "setAllModlesToLogLevel", "a00094.html#a031c0e504a537e5921687ab2450bbc04", null ],
+    [ "setErrorString", "a00094.html#a99c1db3a69ae2f55b08df135ee706080", null ],
+    [ "setLogLevel", "a00094.html#a8869da5bc6e76719c57942b12f8f36f6", null ],
+    [ "supressErrors", "a00094.html#a84be0ff3175c243ca493975222aa199b", null ]
 ];

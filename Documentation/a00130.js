@@ -1,13 +1,21 @@
 var a00130 =
 [
-    [ "SdpLayer", "a00130.html#a1e02f3e410bbaf055882040a920b6dce", null ],
-    [ "SdpLayer", "a00130.html#add15c986ba55f22fe64c9e21b0475949", null ],
-    [ "SdpLayer", "a00130.html#a5e7b8badf590bf0dc6f9dc0061319c88", null ],
-    [ "SdpLayer", "a00130.html#a5e53ceb5fbe79493f5da02d340b8bee2", null ],
-    [ "addMediaDescription", "a00130.html#a9df93bfb9cd914625bbd8f20895f8b8b", null ],
-    [ "getMediaPort", "a00130.html#a5fae788a725d57e2e9fe6a7d8f046885", null ],
-    [ "getOsiModelLayer", "a00130.html#aa9dadbd7cb435abf90f298bb2a3eb21d", null ],
-    [ "getOwnerIPv4Address", "a00130.html#a14f4a728d68929c829e93b0de336d538", null ],
-    [ "operator=", "a00130.html#aa6ca3ae82b3e5cbfa0781a68c231e605", null ],
-    [ "toString", "a00130.html#acdb3cc196fd8bb453d4293f93d5ff514", null ]
+    [ "RawPacket", "a00130.html#a8834cea9fc72516c3d22a841479ee684", null ],
+    [ "RawPacket", "a00130.html#acc12f855f36a798ce0e8c7dc8a4618f9", null ],
+    [ "~RawPacket", "a00130.html#abb8b8a3574217ab88b406cba3d2551fb", null ],
+    [ "RawPacket", "a00130.html#a38d24eda21061c53f0801f3bcbe34193", null ],
+    [ "appendData", "a00130.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
+    [ "clear", "a00130.html#ab6b169b02bda40e90279e7d8f6816e41", null ],
+    [ "getFrameLength", "a00130.html#ab98365b7764f87bf1eb4db06f56dc659", null ],
+    [ "getLinkLayerType", "a00130.html#a0986e059e7357842d6a4b45695a7b2f7", null ],
+    [ "getPacketTimeStamp", "a00130.html#a6d71610f601b3de6bbd38bd45bf95504", null ],
+    [ "getRawData", "a00130.html#ac6448bbdb926de421a6e26cc3e2aa860", null ],
+    [ "getRawDataLen", "a00130.html#a88543611741cc88d70ff27c995cc5922", null ],
+    [ "getRawDataReadOnly", "a00130.html#a35366699f27979fa43dddc2e22ca16f9", null ],
+    [ "insertData", "a00130.html#a3563f649177826c9e4f649eec7b35887", null ],
+    [ "isPacketSet", "a00130.html#a829ca934f43a2a3610d81d481c4303dd", null ],
+    [ "operator=", "a00130.html#afc8278a0208727a579a122f197c4d02e", null ],
+    [ "reallocateData", "a00130.html#acd9248a47bd60427e2a3ef34b379a28e", null ],
+    [ "removeData", "a00130.html#a9cf289e6bbf461f55c20784615c899ce", null ],
+    [ "setRawData", "a00130.html#a6babfc371bd3b9eac8c741cba5e097f6", null ]
 ];

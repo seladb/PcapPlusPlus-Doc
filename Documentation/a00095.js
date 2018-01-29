@@ -1,6 +1,10 @@
 var a00095 =
 [
-    [ "MacAddressFilter", "a00095.html#ab652b758a699a376248c46908465d7fc", null ],
-    [ "parseToString", "a00095.html#ac94ba464b2cd6d936b87811a120f73df", null ],
-    [ "setMacAddress", "a00095.html#a960adffd3e6bb7e83b85bce6baccddf3", null ]
+    [ "LRUList", "a00095.html#a0d64da0d4ca5386c8ce3f63c6409fab5", null ],
+    [ "eraseElement", "a00095.html#a5682e992a5b22c9ed24242a38265ce73", null ],
+    [ "getLRUElement", "a00095.html#adfbb5d65592bd0977de48c84ebb5fa0a", null ],
+    [ "getMaxSize", "a00095.html#a158e70dab4d3e90c80018e054c571e09", null ],
+    [ "getMRUElement", "a00095.html#a2474c4ee35a59b258995896baf5f3af4", null ],
+    [ "getSize", "a00095.html#ab1c9e215f38fc45eb568506897dc4680", null ],
+    [ "put", "a00095.html#a1eb4c3762735f3f49ae5b6bec3f70d58", null ]
 ];

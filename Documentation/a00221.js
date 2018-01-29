@@ -1,9 +1,7 @@
 var a00221 =
 [
-    [ "getBuildDateTime", "a00221.html#aa6e2dd1c0d8281b957fd0a52555c9908", null ],
-    [ "getGitBranch", "a00221.html#a85b9d50917da9312e11f3373e2999073", null ],
-    [ "getGitCommit", "a00221.html#acae7542122e659b88073dc6b76564e6b", null ],
-    [ "getGitInfo", "a00221.html#aa1b1b04caac37857e13624c044924bf7", null ],
-    [ "getPcapPlusPlusVersion", "a00221.html#aa818bc85ee8391b470263dc3aefa945b", null ],
-    [ "getPcapPlusPlusVersionFull", "a00221.html#a405f96d13d38a7b86a8321c31edc6ef0", null ]
+    [ "PcapLiveDevice", "a00109.html", "a00109" ],
+    [ "OnPacketArrivesCallback", "a00221.html#aa07524ba3fd4932968d2c302a936ae10", null ],
+    [ "OnPacketArrivesStopBlocking", "a00221.html#a1fb7ed19d0cb6b09ab2b1d0570b64cb4", null ],
+    [ "OnStatsUpdateCallback", "a00221.html#af797dbce1a97d45a6b86cdedb6d627da", null ]
 ];
