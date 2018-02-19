@@ -26,7 +26,7 @@ section: dpdk-pfring
 <h6><strong>PcapPlusPlus configuration for DPDK</strong></h6>
 <ol>
   <li>Download and compile DPDK on your system (see the link above)</li>
-  <li>Note that PcapPlusPlus supports DPDK versions 16.11 and 17.02. Previous (and most probably newer) versions won't work</li>
+  <li>Note that PcapPlusPlus supports DPDK versions from 16.11 to 18.02 (inclusive). Previous (and maybe also newer) versions won't work</li>
   <li>Once DPDK compiles successfully you need to run PcapPlusPlus <strong>configure-linux.sh</strong> and type "y" in "Compile PcapPlusPlus with DPDK?"</li>
   <li><strong>configure-linux.sh</strong> will ask for DPDK's path (i.e /home/user/dpdk-stable-16.11.1)</li>
   <li>Then you can compile PcapPlusPlus as usual (using make, see below)</li>
@@ -91,7 +91,7 @@ Setup DPDK completed</code>
 <ul>
   <li>All unit-tests I perfromed are in Pcap++Test</li>
   <li>In addition you try the DPDK example application (Examples/DpdkExample-FilterTraffic)</li>
-  <li>The only DPDK version supported is versions 16.11 and 17.02 (currently the latest versions)</li>
+  <li>Supported DPDK versions are 16.11 to 18.02 (inclusive)</li>
   <li>So far I managed to test the code on 2 virtual PMDs only: 
 	<ol>
 	  <li>VMXNET3 - a VMWare guest driver</li>

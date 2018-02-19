@@ -13,6 +13,6 @@ var a00176 =
     [ "closeConnection", "a00176.html#ae173fc16a427b5e46b1a5417de19d735", null ],
     [ "getConnectionInformation", "a00176.html#af05c80624748539e2686d8a41d2d8219", null ],
     [ "isConnectionOpen", "a00176.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
-    [ "ReassemblePacket", "a00176.html#a56719c498f49cc2e2e6177e705109fcf", null ],
-    [ "ReassemblePacket", "a00176.html#a62d6623f39621c475e5619366512889a", null ]
+    [ "reassemblePacket", "a00176.html#acbe7a908f4367cc9234096998dc6d56e", null ],
+    [ "reassemblePacket", "a00176.html#a5f56a069fdd66f154990c35c9d462d7b", null ]
 ];
