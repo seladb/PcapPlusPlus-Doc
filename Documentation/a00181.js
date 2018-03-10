@@ -1,10 +1,9 @@
 var a00181 =
 [
-    [ "TLVOptionBuilder", "a00181.html#a6b9183956c1a7e424d25b9d640df13c0", null ],
-    [ "TLVOptionBuilder", "a00181.html#aff053627ec38aa9baa420bfd0ebefcc0", null ],
-    [ "TLVOptionBuilder", "a00181.html#a9a90c877a53f192649f4905fe4c82921", null ],
-    [ "TLVOptionBuilder", "a00181.html#a604a8f8ece188cfb59f3c124ebd71f33", null ],
-    [ "~TLVOptionBuilder", "a00181.html#a830df211046011da78f7d50b1b791176", null ],
-    [ "build", "a00181.html#a78449db60666395a6e27bde5ad86e403", null ],
-    [ "getRawBuffer", "a00181.html#a13e39a65a201427fc7b1b543e96d425c", null ]
+    [ "getDataSize", "a00181.html#a812412419d122817ba2fff05a3d17829", null ],
+    [ "getTotalSize", "a00181.html#a59d0aaf627fbc59478f8fbb982e08f4b", null ],
+    [ "getValueAs", "a00181.html#a5c40e7e42afa4e552c64f3ad5cb198c6", null ],
+    [ "optionData", "a00181.html#a79843b4fc559414130e0ba57ebcec9c7", null ],
+    [ "optionLen", "a00181.html#af18c5f82d643d3d5403b7a4ed2d49c55", null ],
+    [ "optionType", "a00181.html#a7b9ce8c300e013ae3d36ebf390d58527", null ]
 ];

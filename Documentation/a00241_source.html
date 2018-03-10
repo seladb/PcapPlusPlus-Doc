@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: TcpReassembly.h Source File</title>
+<title>PcapPlusPlus: SystemUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,194 +105,222 @@ $(document).ready(function(){initNavTree('a00241_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">TcpReassembly.h</div>  </div>
+<div class="title">SystemUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00241.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_TCP_REASSEMBLY</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_TCP_REASSEMBLY</span></div>
+<a href="a00241.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PCAPPP_SYSTEM_UTILS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PCAPPP_SYSTEM_UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00215.html">Packet.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00201.html">IpAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00229.html">PointerVector.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00247.html">pcpp</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00007.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="a00007.html">ConnectionData</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">   65</a></span>&#160;    <a class="code" href="a00072.html">IPv4Address</a> <a class="code" href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">srcIP</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">   67</a></span>&#160;    <a class="code" href="a00072.html">IPv4Address</a> <a class="code" href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">dstIP</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">   69</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#acee601fef74ec911e3bcb860a3a73844">srcPort</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">   71</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">dstPort</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">   73</a></span>&#160;    uint32_t <a class="code" href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">flowKey</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">   78</a></span>&#160;    <a class="code" href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">ConnectionData</a>() : srcIP(<a class="code" href="a00072.html">IPv4Address</a>::Zero), dstIP(<a class="code" href="a00072.html">IPv4Address</a>::Zero), srcPort(0), dstPort(0), flowKey(0) {}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">class </span>TcpReassembly;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00177.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00177.html">TcpStreamData</a></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a00176.html">TcpReassembly</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="a00177.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="a00177.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(uint8_t* tcpData, <span class="keywordtype">size_t</span> tcpDataLength, <a class="code" href="a00007.html">ConnectionData</a> connData);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="a00177.html#aacb6d4bc4dd7bf367598aa24e5d5f425">~TcpStreamData</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a00177.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>(<a class="code" href="a00177.html">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="a00177.html">TcpStreamData</a>&amp; <a class="code" href="a00177.html#a23bae012dd3ef982d9f010d9afcf6690">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00177.html">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="a00177.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">  133</a></span>&#160;    <span class="keyword">inline</span> uint8_t* <a class="code" href="a00177.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">getData</a>() { <span class="keywordflow">return</span> m_Data; }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00177.html#aeceeb369d8e8cb114f2c8682b966d1e6">  139</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00177.html#aeceeb369d8e8cb114f2c8682b966d1e6">getDataLength</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00177.html#ae7120f2faf97cfc9a560f7062daab95a">  145</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="a00007.html">ConnectionData</a> <a class="code" href="a00177.html#ae7120f2faf97cfc9a560f7062daab95a">getConnectionData</a>() { <span class="keywordflow">return</span> m_Connection; }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    uint8_t* m_Data;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">size_t</span> m_DataLen;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="a00007.html">ConnectionData</a> m_Connection;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> m_DeleteDataOnDestruction;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> setDeleteDataOnDestruction(<span class="keywordtype">bool</span> flag) { m_DeleteDataOnDestruction = flag; }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> copyData(<span class="keyword">const</span> <a class="code" href="a00177.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>&amp; other);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00176.html">  162</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00176.html">TcpReassembly</a></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">  169</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">  172</a></span>&#160;        <a class="code" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a>,</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">  174</a></span>&#160;        <a class="code" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    };</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00176.html#ab6698eb002363dc18e664f15418fc1eb">  184</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00176.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>)(<span class="keywordtype">int</span> side, <a class="code" href="a00177.html">TcpStreamData</a> tcpData, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="a00176.html#abda8219de68412e0ce7f7116601243a8">  192</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00176.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if defined(WIN32) || defined(WINx64)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define MAX_NUM_OF_CORES 32</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> gettimeofday(<span class="keyword">struct</span> timeval * tp, <span class="keyword">struct</span> timezone * tzp);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00249.html">pcpp</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00171.html">   32</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00171.html">SystemCore</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00171.html#aa76587497e2faa7f7354ca8444a9450b">   39</a></span>&#160;        uint32_t <a class="code" href="a00171.html#aa76587497e2faa7f7354ca8444a9450b">Mask</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00171.html#acf545b5f5f0fad64aee7cc3b46034a4d">   44</a></span>&#160;        uint8_t <a class="code" href="a00171.html#acf545b5f5f0fad64aee7cc3b46034a4d">Id</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00171.html#aa757ff97d3c182eb1f3852bd2be4d836">   50</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00171.html#aa757ff97d3c182eb1f3852bd2be4d836">operator==</a>(<span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Id == other.<a class="code" href="a00171.html#acf545b5f5f0fad64aee7cc3b46034a4d">Id</a>; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00172.html">   57</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00172.html">SystemCores</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00172.html#a92ed579741faa0024f6f5bdcd5e5f9e7">   62</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a92ed579741faa0024f6f5bdcd5e5f9e7">Core0</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00172.html#a330ced3414e906341f98c2f899b7f8a7">   66</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a330ced3414e906341f98c2f899b7f8a7">Core1</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="a00172.html#ae9be501c64ee82e1dd4c52fe430daf0f">   70</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ae9be501c64ee82e1dd4c52fe430daf0f">Core2</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00172.html#a77d602a2581d2329cd58a1b0bea019a6">   74</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a77d602a2581d2329cd58a1b0bea019a6">Core3</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00172.html#ad480cbb310e9332d375c057675469c45">   78</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ad480cbb310e9332d375c057675469c45">Core4</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a00172.html#af858ba1fb79f9f3d1b04c92a38fde8e8">   82</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#af858ba1fb79f9f3d1b04c92a38fde8e8">Core5</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00172.html#af8bfaa8caa4131badfa6fd8fdbfece30">   86</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#af8bfaa8caa4131badfa6fd8fdbfece30">Core6</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00172.html#ad23096f7bb9a118be25227704b709845">   90</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ad23096f7bb9a118be25227704b709845">Core7</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00172.html#a2897e8551b595b0f7f01df1e43234b00">   94</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a2897e8551b595b0f7f01df1e43234b00">Core8</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="a00172.html#a09ac98124b11cf18c33144059c8d4718">   98</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a09ac98124b11cf18c33144059c8d4718">Core9</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="a00172.html#a25d8fa04716db02dc1b7205eff0f7c0c">  102</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a25d8fa04716db02dc1b7205eff0f7c0c">Core10</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="a00172.html#ab153ff0e351e65f24e503db2bb61d3b9">  106</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ab153ff0e351e65f24e503db2bb61d3b9">Core11</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00172.html#a9bb1935dfebe41173204864809679870">  110</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a9bb1935dfebe41173204864809679870">Core12</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="a00172.html#a1b8bdfbf85c0790b14187cc7fbd5f27e">  114</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a1b8bdfbf85c0790b14187cc7fbd5f27e">Core13</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="a00172.html#a62cddeac205ecae32f1d87143f34ebcb">  118</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a62cddeac205ecae32f1d87143f34ebcb">Core14</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="a00172.html#a123e4046f111743eea93e26a2de35adf">  122</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a123e4046f111743eea93e26a2de35adf">Core15</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a00172.html#a10ed08021c6cfff0873f13b0c7dd21f8">  126</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a10ed08021c6cfff0873f13b0c7dd21f8">Core16</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="a00172.html#a58a208df1b72960954b3a7c5afd7f306">  130</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a58a208df1b72960954b3a7c5afd7f306">Core17</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="a00172.html#a8e78508d377bcf5d6cbf8b2e17d0fde3">  134</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a8e78508d377bcf5d6cbf8b2e17d0fde3">Core18</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00172.html#ad46f83e3c25a437a79a315c7051fcc20">  138</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ad46f83e3c25a437a79a315c7051fcc20">Core19</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="a00172.html#a72530a26099240d665a19780de3e2cf6">  142</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a72530a26099240d665a19780de3e2cf6">Core20</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00172.html#af9b3374e3880bed792e3186f829b54b8">  146</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#af9b3374e3880bed792e3186f829b54b8">Core21</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="a00172.html#a21dba92661ef505914b6f8fff432a206">  150</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a21dba92661ef505914b6f8fff432a206">Core22</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="a00172.html#a4a9319afca2af411c82b9cb18d77c182">  154</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a4a9319afca2af411c82b9cb18d77c182">Core23</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="a00172.html#a9e0bd4f57cbba6c4dc6865796c5e14f3">  158</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a9e0bd4f57cbba6c4dc6865796c5e14f3">Core24</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="a00172.html#a9e1e29ba77a129e14fb146fa5348e6c1">  162</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a9e1e29ba77a129e14fb146fa5348e6c1">Core25</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a00172.html#a1b606b6314b840be234265c683e6d263">  166</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a1b606b6314b840be234265c683e6d263">Core26</a>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="a00172.html#a7d5c18721417d95a50feea50bbb92f50">  170</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a7d5c18721417d95a50feea50bbb92f50">Core27</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="a00172.html#aba8491760c25df5d8bde733037478e4b">  174</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#aba8491760c25df5d8bde733037478e4b">Core28</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="a00172.html#a165f5b77963417118afa7e1e2aa44c68">  178</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a165f5b77963417118afa7e1e2aa44c68">Core29</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00172.html#a8a4887a4ddc25d8fa97a6929b2c6ba2a">  182</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#a8a4887a4ddc25d8fa97a6929b2c6ba2a">Core30</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="a00172.html#ae331a50ff9ef3a99d0606262a2c3635c">  186</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ae331a50ff9ef3a99d0606262a2c3635c">Core31</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="a00172.html#ad9df9d4bae491a4af1b1f74959051c76">  191</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="a00171.html">SystemCore</a> <a class="code" href="a00172.html#ad9df9d4bae491a4af1b1f74959051c76">IdToSystemCore</a>[MAX_NUM_OF_CORES];</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    };</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="a00176.html#abbcb38ac950666833df4084f80beb056">  201</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="a00176.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>)(<a class="code" href="a00007.html">ConnectionData</a> connectionData, <a class="code" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason, <span class="keywordtype">void</span>* userCookie);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="a00176.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a>(<a class="code" href="a00176.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, <span class="keywordtype">void</span>* userCookie = NULL, <a class="code" href="a00176.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback = NULL, <a class="code" href="a00176.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback = NULL);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="a00176.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a>();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00176.html#acbe7a908f4367cc9234096998dc6d56e">reassemblePacket</a>(<a class="code" href="a00104.html">Packet</a>&amp; tcpData);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">typedef</span> uint32_t CoreMask;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00249.html#a9da3b8abc599b1744dc36c64b802bbd2">getNumOfCores</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    CoreMask <a class="code" href="a00249.html#a4d9b4fa3436a28221db583802b9524f5">getCoreMaskForAllMachineCores</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    CoreMask <a class="code" href="a00249.html#ab6f336984bb48eb504d5e23f04581697">createCoreMaskFromCoreVector</a>(std::vector&lt;SystemCore&gt; cores);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    CoreMask <a class="code" href="a00249.html#a572ce60b003993527593a10e6da9481b">createCoreMaskFromCoreIds</a>(std::vector&lt;int&gt; coreIds);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00176.html#acbe7a908f4367cc9234096998dc6d56e">reassemblePacket</a>(<a class="code" href="a00130.html">RawPacket</a>* tcpRawData);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00249.html#a74065e37f1f7390a6ab299ebc7c4c229">createCoreVectorFromCoreMask</a>(CoreMask coreMask, std::vector&lt;SystemCore&gt;&amp; resultVec);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00176.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a>(uint32_t flowKey);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    std::string <a class="code" href="a00249.html#ac278806cc421fd25eb61aa073fcf5e1b">executeShellCommand</a>(<span class="keyword">const</span> std::string command);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00176.html#acf940b05f75a129f595301012be46005">closeAllConnections</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> std::vector&lt;ConnectionData&gt;&amp; <a class="code" href="a00176.html#af05c80624748539e2686d8a41d2d8219">getConnectionInformation</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00176.html#afb80b9ac9c6c454e5fb747a847d4d0a2">isConnectionOpen</a>(<span class="keyword">const</span> <a class="code" href="a00007.html">ConnectionData</a>&amp; connection);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">struct </span>TcpFragment</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        uint32_t sequence;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">size_t</span> dataLength;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        uint8_t* data;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        TcpFragment() { sequence = 0; dataLength = 0; data = NULL; }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        ~TcpFragment() { <span class="keywordflow">if</span> (data != NULL) <span class="keyword">delete</span> [] data; }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    };</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">struct </span>TcpOneSideData</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        uint32_t srcIP;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        uint16_t srcPort;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        uint32_t sequence;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        PointerVector&lt;TcpFragment&gt; tcpFragmentList;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordtype">bool</span> gotFinOrRst;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        TcpOneSideData() { srcIP = 0; srcPort = 0; sequence = 0; gotFinOrRst = <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    };</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">struct </span>TcpReassemblyData</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordtype">int</span> numOfSides;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordtype">int</span> prevSide;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        TcpOneSideData twoSides[2];</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        ConnectionData connData;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        TcpReassemblyData() { numOfSides = 0; prevSide = -1; }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    };</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="a00176.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="a00176.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> m_OnConnStart;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="a00176.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> m_OnConnEnd;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span>* m_UserCookie;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::map&lt;uint32_t, TcpReassemblyData*&gt; m_ConnectionList;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::map&lt;uint32_t, bool&gt; m_ClosedConnectionList;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    std::vector&lt;ConnectionData&gt; m_ConnectionInfo;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> checkOutOfOrderFragments(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, <span class="keywordtype">bool</span> cleanWholeFragList);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::string prepareMissingDataMessage(uint32_t missingDataLen);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> handleFinOrRst(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, uint32_t flowKey);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;};</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00249.html#a90c94556ad172d6c3ffb766e1ab25edf">directoryExists</a>(std::string dirPath);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="a00003.html">  251</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00003.html">AppName</a></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keyword">static</span> std::string m_AppName;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="a00003.html#a0d7ab654799ce9da628ef9e082cfd525">  262</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a00003.html#a0d7ab654799ce9da628ef9e082cfd525">init</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">if</span> (argc == 0)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                m_AppName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            m_AppName = argv[0];</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="comment">// remove Linux/Unix path</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">while</span> (m_AppName.find(<span class="stringliteral">&quot;/&quot;</span>) != std::string::npos)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                m_AppName = m_AppName.substr(m_AppName.find(<span class="stringliteral">&quot;/&quot;</span>)+1);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="comment">// remove Windows path</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">while</span> (m_AppName.find(<span class="stringliteral">&quot;\\&quot;</span>) != std::string::npos)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                m_AppName = m_AppName.substr(m_AppName.find(<span class="stringliteral">&quot;\\&quot;</span>)+1);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">// remove file extension</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            m_AppName = m_AppName.substr(0, m_AppName.find(<span class="stringliteral">&quot;.&quot;</span>));</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="a00003.html#a0e80e85c48484753f82a1d3cd2cbfb6b">  291</a></span>&#160;        <span class="keyword">static</span> std::string <span class="keyword">get</span>() { <span class="keywordflow">return</span> m_AppName; }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    };</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="a00002.html">  299</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00002.html">ApplicationEventHandler</a></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="a00002.html#abfff8961708dec4b1c4802fc42180284">  307</a></span>&#160;        <span class="keyword">typedef</span> void (*<a class="code" href="a00002.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>)(<span class="keywordtype">void</span>* cookie);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_REASSEMBLY */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a00007_html_a75cd7efdfa6cf70b9aa2e19819800d4c"><div class="ttname"><a href="a00007.html#a75cd7efdfa6cf70b9aa2e19819800d4c">pcpp::ConnectionData::dstPort</a></div><div class="ttdeci">size_t dstPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:71</div></div>
-<div class="ttc" id="a00176_html_a49281471fb379fdae6c8df5ed7844c92"><div class="ttname"><a href="a00176.html#a49281471fb379fdae6c8df5ed7844c92">pcpp::TcpReassembly::TcpReassembly</a></div><div class="ttdeci">TcpReassembly(OnTcpMessageReady onMessageReadyCallback, void *userCookie=NULL, OnTcpConnectionStart onConnectionStartCallback=NULL, OnTcpConnectionEnd onConnectionEndCallback=NULL)</div></div>
-<div class="ttc" id="a00176_html_afb80b9ac9c6c454e5fb747a847d4d0a2"><div class="ttname"><a href="a00176.html#afb80b9ac9c6c454e5fb747a847d4d0a2">pcpp::TcpReassembly::isConnectionOpen</a></div><div class="ttdeci">int isConnectionOpen(const ConnectionData &amp;connection)</div></div>
-<div class="ttc" id="a00215_html"><div class="ttname"><a href="a00215.html">Packet.h</a></div></div>
-<div class="ttc" id="a00176_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"><div class="ttname"><a href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">pcpp::TcpReassembly::TcpReassemblyConnectionClosedManually</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:174</div></div>
-<div class="ttc" id="a00130_html"><div class="ttname"><a href="a00130.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:220</div></div>
-<div class="ttc" id="a00201_html"><div class="ttname"><a href="a00201.html">IpAddress.h</a></div></div>
-<div class="ttc" id="a00176_html_ae173fc16a427b5e46b1a5417de19d735"><div class="ttname"><a href="a00176.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection</a></div><div class="ttdeci">void closeConnection(uint32_t flowKey)</div></div>
-<div class="ttc" id="a00176_html"><div class="ttname"><a href="a00176.html">pcpp::TcpReassembly</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:162</div></div>
-<div class="ttc" id="a00247_html"><div class="ttname"><a href="a00247.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00007_html_ad5a3d88fb59140020216ac83fd12219a"><div class="ttname"><a href="a00007.html#ad5a3d88fb59140020216ac83fd12219a">pcpp::ConnectionData::flowKey</a></div><div class="ttdeci">uint32_t flowKey</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:73</div></div>
-<div class="ttc" id="a00176_html_ab6698eb002363dc18e664f15418fc1eb"><div class="ttname"><a href="a00176.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a></div><div class="ttdeci">void(* OnTcpMessageReady)(int side, TcpStreamData tcpData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:184</div></div>
-<div class="ttc" id="a00176_html_aa1797ebded60f0637ae95223653b9f78"><div class="ttname"><a href="a00176.html#aa1797ebded60f0637ae95223653b9f78">pcpp::TcpReassembly::~TcpReassembly</a></div><div class="ttdeci">~TcpReassembly()</div></div>
-<div class="ttc" id="a00007_html_a0c85520b1498c5de042fb9db02a839d9"><div class="ttname"><a href="a00007.html#a0c85520b1498c5de042fb9db02a839d9">pcpp::ConnectionData::dstIP</a></div><div class="ttdeci">IPv4Address dstIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:67</div></div>
-<div class="ttc" id="a00176_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0"><div class="ttname"><a href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">pcpp::TcpReassembly::ConnectionEndReason</a></div><div class="ttdeci">ConnectionEndReason</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:169</div></div>
-<div class="ttc" id="a00176_html_abda8219de68412e0ce7f7116601243a8"><div class="ttname"><a href="a00176.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a></div><div class="ttdeci">void(* OnTcpConnectionStart)(ConnectionData connectionData, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:192</div></div>
-<div class="ttc" id="a00176_html_aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"><div class="ttname"><a href="a00176.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">pcpp::TcpReassembly::TcpReassemblyConnectionClosedByFIN_RST</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:172</div></div>
-<div class="ttc" id="a00177_html_a23bae012dd3ef982d9f010d9afcf6690"><div class="ttname"><a href="a00177.html#a23bae012dd3ef982d9f010d9afcf6690">pcpp::TcpStreamData::operator=</a></div><div class="ttdeci">TcpStreamData &amp; operator=(const TcpStreamData &amp;other)</div></div>
-<div class="ttc" id="a00229_html"><div class="ttname"><a href="a00229.html">PointerVector.h</a></div></div>
-<div class="ttc" id="a00007_html_af4a36ba152a559229a2334ad4da6f19a"><div class="ttname"><a href="a00007.html#af4a36ba152a559229a2334ad4da6f19a">pcpp::ConnectionData::srcIP</a></div><div class="ttdeci">IPv4Address srcIP</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:65</div></div>
-<div class="ttc" id="a00176_html_acbe7a908f4367cc9234096998dc6d56e"><div class="ttname"><a href="a00176.html#acbe7a908f4367cc9234096998dc6d56e">pcpp::TcpReassembly::reassemblePacket</a></div><div class="ttdeci">void reassemblePacket(Packet &amp;tcpData)</div></div>
-<div class="ttc" id="a00176_html_acf940b05f75a129f595301012be46005"><div class="ttname"><a href="a00176.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections</a></div><div class="ttdeci">void closeAllConnections()</div></div>
-<div class="ttc" id="a00177_html_aacb6d4bc4dd7bf367598aa24e5d5f425"><div class="ttname"><a href="a00177.html#aacb6d4bc4dd7bf367598aa24e5d5f425">pcpp::TcpStreamData::~TcpStreamData</a></div><div class="ttdeci">~TcpStreamData()</div></div>
-<div class="ttc" id="a00176_html_af05c80624748539e2686d8a41d2d8219"><div class="ttname"><a href="a00176.html#af05c80624748539e2686d8a41d2d8219">pcpp::TcpReassembly::getConnectionInformation</a></div><div class="ttdeci">const std::vector&lt; ConnectionData &gt; &amp; getConnectionInformation() const </div></div>
-<div class="ttc" id="a00072_html"><div class="ttname"><a href="a00072.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:99</div></div>
-<div class="ttc" id="a00177_html_ae1f70f5bd9689c11412b2c82e1e4c4d2"><div class="ttname"><a href="a00177.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">pcpp::TcpStreamData::getData</a></div><div class="ttdeci">uint8_t * getData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:133</div></div>
-<div class="ttc" id="a00177_html"><div class="ttname"><a href="a00177.html">pcpp::TcpStreamData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:90</div></div>
-<div class="ttc" id="a00177_html_aeceeb369d8e8cb114f2c8682b966d1e6"><div class="ttname"><a href="a00177.html#aeceeb369d8e8cb114f2c8682b966d1e6">pcpp::TcpStreamData::getDataLength</a></div><div class="ttdeci">size_t getDataLength()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:139</div></div>
-<div class="ttc" id="a00007_html_acff3614b14bd54ac98a996714a8a24b0"><div class="ttname"><a href="a00007.html#acff3614b14bd54ac98a996714a8a24b0">pcpp::ConnectionData::ConnectionData</a></div><div class="ttdeci">ConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:78</div></div>
-<div class="ttc" id="a00007_html_acee601fef74ec911e3bcb860a3a73844"><div class="ttname"><a href="a00007.html#acee601fef74ec911e3bcb860a3a73844">pcpp::ConnectionData::srcPort</a></div><div class="ttdeci">size_t srcPort</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:69</div></div>
-<div class="ttc" id="a00177_html_acb6875699103b7d1967cb799f7501913"><div class="ttname"><a href="a00177.html#acb6875699103b7d1967cb799f7501913">pcpp::TcpStreamData::TcpStreamData</a></div><div class="ttdeci">TcpStreamData()</div></div>
-<div class="ttc" id="a00177_html_ae7120f2faf97cfc9a560f7062daab95a"><div class="ttname"><a href="a00177.html#ae7120f2faf97cfc9a560f7062daab95a">pcpp::TcpStreamData::getConnectionData</a></div><div class="ttdeci">ConnectionData getConnectionData()</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:145</div></div>
-<div class="ttc" id="a00176_html_abbcb38ac950666833df4084f80beb056"><div class="ttname"><a href="a00176.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a></div><div class="ttdeci">void(* OnTcpConnectionEnd)(ConnectionData connectionData, ConnectionEndReason reason, void *userCookie)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:201</div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="a00007_html"><div class="ttname"><a href="a00007.html">pcpp::ConnectionData</a></div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:62</div></div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="a00002.html#a20e86342f93b84fe40ef38891a22b59a">  313</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00002.html">ApplicationEventHandler</a>&amp; <a class="code" href="a00002.html#a20e86342f93b84fe40ef38891a22b59a">getInstance</a>()</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keyword">static</span> <a class="code" href="a00002.html">ApplicationEventHandler</a> instance;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00002.html#adb15e6e3b2b082cb5eebafcc7df15aa7">onApplicationInterrupted</a>(<a class="code" href="a00002.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a> handler, <span class="keywordtype">void</span>* cookie);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="a00002.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a> m_ApplicationInterruptedHandler;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordtype">void</span>* m_ApplicationInterruptedCookie;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">// private c&#39;tor</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="a00002.html">ApplicationEventHandler</a>();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">static</span> BOOL WINAPI handlerRoutine(DWORD fdwCtrlType);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        pthread_mutex_t m_HandlerRoutineMutex;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> handlerRoutine(<span class="keywordtype">int</span> signum);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    };</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_SYSTEM_UTILS */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00172_html_ad480cbb310e9332d375c057675469c45"><div class="ttname"><a href="a00172.html#ad480cbb310e9332d375c057675469c45">pcpp::SystemCores::Core4</a></div><div class="ttdeci">static const SystemCore Core4</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:78</div></div>
+<div class="ttc" id="a00172_html_a62cddeac205ecae32f1d87143f34ebcb"><div class="ttname"><a href="a00172.html#a62cddeac205ecae32f1d87143f34ebcb">pcpp::SystemCores::Core14</a></div><div class="ttdeci">static const SystemCore Core14</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:118</div></div>
+<div class="ttc" id="a00171_html_acf545b5f5f0fad64aee7cc3b46034a4d"><div class="ttname"><a href="a00171.html#acf545b5f5f0fad64aee7cc3b46034a4d">pcpp::SystemCore::Id</a></div><div class="ttdeci">uint8_t Id</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:44</div></div>
+<div class="ttc" id="a00172_html_a58a208df1b72960954b3a7c5afd7f306"><div class="ttname"><a href="a00172.html#a58a208df1b72960954b3a7c5afd7f306">pcpp::SystemCores::Core17</a></div><div class="ttdeci">static const SystemCore Core17</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:130</div></div>
+<div class="ttc" id="a00172_html_a2897e8551b595b0f7f01df1e43234b00"><div class="ttname"><a href="a00172.html#a2897e8551b595b0f7f01df1e43234b00">pcpp::SystemCores::Core8</a></div><div class="ttdeci">static const SystemCore Core8</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:94</div></div>
+<div class="ttc" id="a00249_html_a572ce60b003993527593a10e6da9481b"><div class="ttname"><a href="a00249.html#a572ce60b003993527593a10e6da9481b">pcpp::createCoreMaskFromCoreIds</a></div><div class="ttdeci">CoreMask createCoreMaskFromCoreIds(std::vector&lt; int &gt; coreIds)</div></div>
+<div class="ttc" id="a00003_html"><div class="ttname"><a href="a00003.html">pcpp::AppName</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:251</div></div>
+<div class="ttc" id="a00172_html_af8bfaa8caa4131badfa6fd8fdbfece30"><div class="ttname"><a href="a00172.html#af8bfaa8caa4131badfa6fd8fdbfece30">pcpp::SystemCores::Core6</a></div><div class="ttdeci">static const SystemCore Core6</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:86</div></div>
+<div class="ttc" id="a00249_html_a4d9b4fa3436a28221db583802b9524f5"><div class="ttname"><a href="a00249.html#a4d9b4fa3436a28221db583802b9524f5">pcpp::getCoreMaskForAllMachineCores</a></div><div class="ttdeci">CoreMask getCoreMaskForAllMachineCores()</div></div>
+<div class="ttc" id="a00172_html_ae9be501c64ee82e1dd4c52fe430daf0f"><div class="ttname"><a href="a00172.html#ae9be501c64ee82e1dd4c52fe430daf0f">pcpp::SystemCores::Core2</a></div><div class="ttdeci">static const SystemCore Core2</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:70</div></div>
+<div class="ttc" id="a00172_html_ae331a50ff9ef3a99d0606262a2c3635c"><div class="ttname"><a href="a00172.html#ae331a50ff9ef3a99d0606262a2c3635c">pcpp::SystemCores::Core31</a></div><div class="ttdeci">static const SystemCore Core31</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:186</div></div>
+<div class="ttc" id="a00249_html_ac278806cc421fd25eb61aa073fcf5e1b"><div class="ttname"><a href="a00249.html#ac278806cc421fd25eb61aa073fcf5e1b">pcpp::executeShellCommand</a></div><div class="ttdeci">std::string executeShellCommand(const std::string command)</div></div>
+<div class="ttc" id="a00172_html_a8e78508d377bcf5d6cbf8b2e17d0fde3"><div class="ttname"><a href="a00172.html#a8e78508d377bcf5d6cbf8b2e17d0fde3">pcpp::SystemCores::Core18</a></div><div class="ttdeci">static const SystemCore Core18</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:134</div></div>
+<div class="ttc" id="a00172_html_a1b8bdfbf85c0790b14187cc7fbd5f27e"><div class="ttname"><a href="a00172.html#a1b8bdfbf85c0790b14187cc7fbd5f27e">pcpp::SystemCores::Core13</a></div><div class="ttdeci">static const SystemCore Core13</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:114</div></div>
+<div class="ttc" id="a00172_html_a4a9319afca2af411c82b9cb18d77c182"><div class="ttname"><a href="a00172.html#a4a9319afca2af411c82b9cb18d77c182">pcpp::SystemCores::Core23</a></div><div class="ttdeci">static const SystemCore Core23</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:154</div></div>
+<div class="ttc" id="a00172_html_a7d5c18721417d95a50feea50bbb92f50"><div class="ttname"><a href="a00172.html#a7d5c18721417d95a50feea50bbb92f50">pcpp::SystemCores::Core27</a></div><div class="ttdeci">static const SystemCore Core27</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:170</div></div>
+<div class="ttc" id="a00172_html_a72530a26099240d665a19780de3e2cf6"><div class="ttname"><a href="a00172.html#a72530a26099240d665a19780de3e2cf6">pcpp::SystemCores::Core20</a></div><div class="ttdeci">static const SystemCore Core20</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:142</div></div>
+<div class="ttc" id="a00172_html_a8a4887a4ddc25d8fa97a6929b2c6ba2a"><div class="ttname"><a href="a00172.html#a8a4887a4ddc25d8fa97a6929b2c6ba2a">pcpp::SystemCores::Core30</a></div><div class="ttdeci">static const SystemCore Core30</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:182</div></div>
+<div class="ttc" id="a00172_html_a123e4046f111743eea93e26a2de35adf"><div class="ttname"><a href="a00172.html#a123e4046f111743eea93e26a2de35adf">pcpp::SystemCores::Core15</a></div><div class="ttdeci">static const SystemCore Core15</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:122</div></div>
+<div class="ttc" id="a00172_html_a10ed08021c6cfff0873f13b0c7dd21f8"><div class="ttname"><a href="a00172.html#a10ed08021c6cfff0873f13b0c7dd21f8">pcpp::SystemCores::Core16</a></div><div class="ttdeci">static const SystemCore Core16</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:126</div></div>
+<div class="ttc" id="a00172_html_a25d8fa04716db02dc1b7205eff0f7c0c"><div class="ttname"><a href="a00172.html#a25d8fa04716db02dc1b7205eff0f7c0c">pcpp::SystemCores::Core10</a></div><div class="ttdeci">static const SystemCore Core10</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:102</div></div>
+<div class="ttc" id="a00172_html_a9e0bd4f57cbba6c4dc6865796c5e14f3"><div class="ttname"><a href="a00172.html#a9e0bd4f57cbba6c4dc6865796c5e14f3">pcpp::SystemCores::Core24</a></div><div class="ttdeci">static const SystemCore Core24</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:158</div></div>
+<div class="ttc" id="a00172_html_a77d602a2581d2329cd58a1b0bea019a6"><div class="ttname"><a href="a00172.html#a77d602a2581d2329cd58a1b0bea019a6">pcpp::SystemCores::Core3</a></div><div class="ttdeci">static const SystemCore Core3</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:74</div></div>
+<div class="ttc" id="a00172_html_a165f5b77963417118afa7e1e2aa44c68"><div class="ttname"><a href="a00172.html#a165f5b77963417118afa7e1e2aa44c68">pcpp::SystemCores::Core29</a></div><div class="ttdeci">static const SystemCore Core29</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:178</div></div>
+<div class="ttc" id="a00002_html_a20e86342f93b84fe40ef38891a22b59a"><div class="ttname"><a href="a00002.html#a20e86342f93b84fe40ef38891a22b59a">pcpp::ApplicationEventHandler::getInstance</a></div><div class="ttdeci">static ApplicationEventHandler &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:313</div></div>
+<div class="ttc" id="a00002_html_adb15e6e3b2b082cb5eebafcc7df15aa7"><div class="ttname"><a href="a00002.html#adb15e6e3b2b082cb5eebafcc7df15aa7">pcpp::ApplicationEventHandler::onApplicationInterrupted</a></div><div class="ttdeci">void onApplicationInterrupted(EventHandlerCallback handler, void *cookie)</div></div>
+<div class="ttc" id="a00172_html_a09ac98124b11cf18c33144059c8d4718"><div class="ttname"><a href="a00172.html#a09ac98124b11cf18c33144059c8d4718">pcpp::SystemCores::Core9</a></div><div class="ttdeci">static const SystemCore Core9</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:98</div></div>
+<div class="ttc" id="a00172_html_ab153ff0e351e65f24e503db2bb61d3b9"><div class="ttname"><a href="a00172.html#ab153ff0e351e65f24e503db2bb61d3b9">pcpp::SystemCores::Core11</a></div><div class="ttdeci">static const SystemCore Core11</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:106</div></div>
+<div class="ttc" id="a00249_html_a90c94556ad172d6c3ffb766e1ab25edf"><div class="ttname"><a href="a00249.html#a90c94556ad172d6c3ffb766e1ab25edf">pcpp::directoryExists</a></div><div class="ttdeci">bool directoryExists(std::string dirPath)</div></div>
+<div class="ttc" id="a00171_html_aa76587497e2faa7f7354ca8444a9450b"><div class="ttname"><a href="a00171.html#aa76587497e2faa7f7354ca8444a9450b">pcpp::SystemCore::Mask</a></div><div class="ttdeci">uint32_t Mask</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:39</div></div>
+<div class="ttc" id="a00172_html_af858ba1fb79f9f3d1b04c92a38fde8e8"><div class="ttname"><a href="a00172.html#af858ba1fb79f9f3d1b04c92a38fde8e8">pcpp::SystemCores::Core5</a></div><div class="ttdeci">static const SystemCore Core5</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:82</div></div>
+<div class="ttc" id="a00249_html"><div class="ttname"><a href="a00249.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00172_html_a21dba92661ef505914b6f8fff432a206"><div class="ttname"><a href="a00172.html#a21dba92661ef505914b6f8fff432a206">pcpp::SystemCores::Core22</a></div><div class="ttdeci">static const SystemCore Core22</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:150</div></div>
+<div class="ttc" id="a00172_html_a1b606b6314b840be234265c683e6d263"><div class="ttname"><a href="a00172.html#a1b606b6314b840be234265c683e6d263">pcpp::SystemCores::Core26</a></div><div class="ttdeci">static const SystemCore Core26</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:166</div></div>
+<div class="ttc" id="a00172_html_ad46f83e3c25a437a79a315c7051fcc20"><div class="ttname"><a href="a00172.html#ad46f83e3c25a437a79a315c7051fcc20">pcpp::SystemCores::Core19</a></div><div class="ttdeci">static const SystemCore Core19</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:138</div></div>
+<div class="ttc" id="a00003_html_a0d7ab654799ce9da628ef9e082cfd525"><div class="ttname"><a href="a00003.html#a0d7ab654799ce9da628ef9e082cfd525">pcpp::AppName::init</a></div><div class="ttdeci">static void init(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:262</div></div>
+<div class="ttc" id="a00172_html_aba8491760c25df5d8bde733037478e4b"><div class="ttname"><a href="a00172.html#aba8491760c25df5d8bde733037478e4b">pcpp::SystemCores::Core28</a></div><div class="ttdeci">static const SystemCore Core28</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:174</div></div>
+<div class="ttc" id="a00171_html_aa757ff97d3c182eb1f3852bd2be4d836"><div class="ttname"><a href="a00171.html#aa757ff97d3c182eb1f3852bd2be4d836">pcpp::SystemCore::operator==</a></div><div class="ttdeci">bool operator==(const SystemCore &amp;other) const </div><div class="ttdef"><b>Definition:</b> SystemUtils.h:50</div></div>
+<div class="ttc" id="a00172_html"><div class="ttname"><a href="a00172.html">pcpp::SystemCores</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:57</div></div>
+<div class="ttc" id="a00002_html_abfff8961708dec4b1c4802fc42180284"><div class="ttname"><a href="a00002.html#abfff8961708dec4b1c4802fc42180284">pcpp::ApplicationEventHandler::EventHandlerCallback</a></div><div class="ttdeci">void(* EventHandlerCallback)(void *cookie)</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:307</div></div>
+<div class="ttc" id="a00172_html_af9b3374e3880bed792e3186f829b54b8"><div class="ttname"><a href="a00172.html#af9b3374e3880bed792e3186f829b54b8">pcpp::SystemCores::Core21</a></div><div class="ttdeci">static const SystemCore Core21</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:146</div></div>
+<div class="ttc" id="a00249_html_a9da3b8abc599b1744dc36c64b802bbd2"><div class="ttname"><a href="a00249.html#a9da3b8abc599b1744dc36c64b802bbd2">pcpp::getNumOfCores</a></div><div class="ttdeci">int getNumOfCores()</div></div>
+<div class="ttc" id="a00249_html_a74065e37f1f7390a6ab299ebc7c4c229"><div class="ttname"><a href="a00249.html#a74065e37f1f7390a6ab299ebc7c4c229">pcpp::createCoreVectorFromCoreMask</a></div><div class="ttdeci">void createCoreVectorFromCoreMask(CoreMask coreMask, std::vector&lt; SystemCore &gt; &amp;resultVec)</div></div>
+<div class="ttc" id="a00172_html_a330ced3414e906341f98c2f899b7f8a7"><div class="ttname"><a href="a00172.html#a330ced3414e906341f98c2f899b7f8a7">pcpp::SystemCores::Core1</a></div><div class="ttdeci">static const SystemCore Core1</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:66</div></div>
+<div class="ttc" id="a00172_html_a92ed579741faa0024f6f5bdcd5e5f9e7"><div class="ttname"><a href="a00172.html#a92ed579741faa0024f6f5bdcd5e5f9e7">pcpp::SystemCores::Core0</a></div><div class="ttdeci">static const SystemCore Core0</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:62</div></div>
+<div class="ttc" id="a00172_html_ad9df9d4bae491a4af1b1f74959051c76"><div class="ttname"><a href="a00172.html#ad9df9d4bae491a4af1b1f74959051c76">pcpp::SystemCores::IdToSystemCore</a></div><div class="ttdeci">static const SystemCore IdToSystemCore[32]</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:191</div></div>
+<div class="ttc" id="a00172_html_a9bb1935dfebe41173204864809679870"><div class="ttname"><a href="a00172.html#a9bb1935dfebe41173204864809679870">pcpp::SystemCores::Core12</a></div><div class="ttdeci">static const SystemCore Core12</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:110</div></div>
+<div class="ttc" id="a00002_html"><div class="ttname"><a href="a00002.html">pcpp::ApplicationEventHandler</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:299</div></div>
+<div class="ttc" id="a00249_html_ab6f336984bb48eb504d5e23f04581697"><div class="ttname"><a href="a00249.html#ab6f336984bb48eb504d5e23f04581697">pcpp::createCoreMaskFromCoreVector</a></div><div class="ttdeci">CoreMask createCoreMaskFromCoreVector(std::vector&lt; SystemCore &gt; cores)</div></div>
+<div class="ttc" id="a00172_html_ad23096f7bb9a118be25227704b709845"><div class="ttname"><a href="a00172.html#ad23096f7bb9a118be25227704b709845">pcpp::SystemCores::Core7</a></div><div class="ttdeci">static const SystemCore Core7</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:90</div></div>
+<div class="ttc" id="a00171_html"><div class="ttname"><a href="a00171.html">pcpp::SystemCore</a></div><div class="ttdef"><b>Definition:</b> SystemUtils.h:32</div></div>
+<div class="ttc" id="a00172_html_a9e1e29ba77a129e14fb146fa5348e6c1"><div class="ttname"><a href="a00172.html#a9e1e29ba77a129e14fb146fa5348e6c1">pcpp::SystemCores::Core25</a></div><div class="ttdeci">static const SystemCore Core25</div><div class="ttdef"><b>Definition:</b> SystemUtils.h:162</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00241.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Mon Feb 19 2018 10:09:18 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00241.html">SystemUtils.h</a></li>
+    <li class="footer">Generated on Sun Mar 11 2018 01:07:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

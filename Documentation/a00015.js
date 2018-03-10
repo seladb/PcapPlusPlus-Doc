@@ -23,7 +23,7 @@ var a00015 =
     [ "open", "a00015.html#ad5717b8aa18dbb657e4c346adbb38163", null ],
     [ "openMultiQueues", "a00015.html#afae6116f6d0d7f515acb1c327fdcebbb", null ],
     [ "receivePackets", "a00015.html#a1459cfd1875c5033398a1ac7c00f3394", null ],
-    [ "receivePackets", "a00015.html#a8b8dc9d0c67e4d5c1d55f4a32e2e7c6c", null ],
+    [ "receivePackets", "a00015.html#a30a6ec5e7b77ccd5a5a17c5a95242421", null ],
     [ "receivePackets", "a00015.html#a4c9a34cc0c4144dbbfa567747ebedef2", null ],
     [ "sendPacket", "a00015.html#a80b57e22a8ecf001ea2ca9dbd023d277", null ],
     [ "sendPacket", "a00015.html#aced19469d7bb32b147d1a7aadbe4aa37", null ],

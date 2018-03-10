@@ -2,5 +2,5 @@ var searchData=
 [
   ['httpmethod',['HttpMethod',['../a00032.html#a71d3731486391e8356628dae79023fd6',1,'pcpp::HttpRequestLayer']]],
   ['httpresponsestatuscode',['HttpResponseStatusCode',['../a00035.html#ab5bbbd02f36805001550d1168f1412bc',1,'pcpp::HttpResponseLayer']]],
-  ['httpversion',['HttpVersion',['../a00247.html#a7680d508534c12b5ab8bcbe4cae06932',1,'pcpp']]]
+  ['httpversion',['HttpVersion',['../a00249.html#a7680d508534c12b5ab8bcbe4cae06932',1,'pcpp']]]
 ];

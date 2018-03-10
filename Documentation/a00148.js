@@ -1,8 +1,8 @@
 var a00148 =
 [
-    [ "SSLApplicationDataLayer", "a00148.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
-    [ "computeCalculateFields", "a00148.html#a26b335b7dff7b46724894cad71ee56eb", null ],
-    [ "getEncrpytedData", "a00148.html#a5aee5cb13e0c078fb4c4e24c5fbac99e", null ],
-    [ "getEncrpytedDataLen", "a00148.html#ab078cc94b266ccb418e3047db02b6130", null ],
-    [ "toString", "a00148.html#a9676cb9040c57b7f4929c450d4e952f8", null ]
+    [ "SSLAlertLayer", "a00148.html#aecf449f0c8f821ede816f33d6012b622", null ],
+    [ "computeCalculateFields", "a00148.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
+    [ "getAlertDescription", "a00148.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
+    [ "getAlertLevel", "a00148.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
+    [ "toString", "a00148.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
 ];

@@ -1,18 +1,10 @@
 var a00154 =
 [
-    [ "SSLClientHelloMessage", "a00154.html#a3924029c72b57cee6f2dd62b4f64f2dc", null ],
-    [ "getCipherSuite", "a00154.html#aa64bd1a68e76e2be414a38f6eb580486", null ],
-    [ "getCipherSuiteCount", "a00154.html#a0ba32d03d991bc3bcf1b2cc9c9287b80", null ],
-    [ "getClientHelloHeader", "a00154.html#abe34e212201e7f5af859de2ff328bde2", null ],
-    [ "getCompressionMethodsValue", "a00154.html#a388d82c71b2a4e3a595e52c8fe831ac4", null ],
-    [ "getExtension", "a00154.html#a6524de241525ebb27fbe007c040190e0", null ],
-    [ "getExtensionCount", "a00154.html#ab4ba807d5c659e70d14beef727b005af", null ],
-    [ "getExtensionOfType", "a00154.html#ad2dbb97936a31c01ed205fc192fac8ba", null ],
-    [ "getExtensionOfType", "a00154.html#a436dec8f52e84ac994cb36eb6de51efd", null ],
-    [ "getExtensionOfType", "a00154.html#a0647bfdab89e32e6d375555a9f5055f5", null ],
-    [ "getExtensionsLenth", "a00154.html#abba3dfa226812e3076bf10422fee8152", null ],
-    [ "getHandshakeVersion", "a00154.html#a90dfa6a04e721d49368c35f39dca5a6d", null ],
-    [ "getSessionID", "a00154.html#a184db75cdb1f74e0e8b388eccfc59de1", null ],
-    [ "getSessionIDLength", "a00154.html#a506053dfdcb25222975d285bb20ca98a", null ],
-    [ "toString", "a00154.html#a4525dd29e48f1dcea786e8c889c368e1", null ]
+    [ "SSLCipherSuite", "a00154.html#a91a906a5f733f3afab0b6706e6641e16", null ],
+    [ "asString", "a00154.html#afc805ee667a9ffaa0d4c9146460312df", null ],
+    [ "getAuthAlg", "a00154.html#ae072d7734dc748e94133c3ad6c3b026c", null ],
+    [ "getID", "a00154.html#a09959781bd410417c7bc4e337f32b708", null ],
+    [ "getKeyExchangeAlg", "a00154.html#a56322a3bb08908c7b68c286c9fdd8fcd", null ],
+    [ "getMACAlg", "a00154.html#aedcc0ac097c43786c40a858171db2197", null ],
+    [ "getSymKeyAlg", "a00154.html#acdb497b3a27bff5fa936458876c5f7d4", null ]
 ];
