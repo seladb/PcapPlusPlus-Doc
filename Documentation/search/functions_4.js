@@ -2,6 +2,7 @@ var searchData=
 [
   ['enableerrors',['enableErrors',['../a00094.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91',1,'pcpp::LoggerPP']]],
   ['end',['end',['../a00116.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1',1,'pcpp::PcapRemoteDeviceList::end()'],['../a00116.html#a4384231f937c67a346698218c6cc4818',1,'pcpp::PcapRemoteDeviceList::end() const '],['../a00120.html#adff5df71707ed082640407949028c334',1,'pcpp::PointerVector::end()'],['../a00120.html#ae5a728c8465d9b8af4d0e3e116256bd0',1,'pcpp::PointerVector::end() const ']]],
+  ['equals',['equals',['../a00067.html#a6865c1a43ff71cd424426c846f36dbd4',1,'pcpp::IPAddress']]],
   ['erase',['erase',['../a00120.html#a548970610623b300fd3f65ff65f325e3',1,'pcpp::PointerVector']]],
   ['eraseelement',['eraseElement',['../a00095.html#a5682e992a5b22c9ed24242a38265ce73',1,'pcpp::LRUList']]],
   ['ethertypefilter',['EtherTypeFilter',['../a00020.html#a232ed2349710314257417a2541a45358',1,'pcpp::EtherTypeFilter']]],

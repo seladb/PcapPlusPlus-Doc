@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_7econnectiondata',['~ConnectionData',['../a00007.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
   ['_7edhcplayer',['~DhcpLayer',['../a00009.html#a41eaefdbfb7e73dcaf863c7639bd5db4',1,'pcpp::DhcpLayer']]],
   ['_7edpdkworkerthread',['~DpdkWorkerThread',['../a00018.html#afee1cd32d8aa6bbb639f7e45ca85e68d',1,'pcpp::DpdkWorkerThread']]],
   ['_7egeneralfilter',['~GeneralFilter',['../a00022.html#aba731757009c1ce8db973aa334634765',1,'pcpp::GeneralFilter']]],

@@ -5,6 +5,7 @@ var a00072 =
     [ "IPv4Address", "a00072.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
     [ "IPv4Address", "a00072.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
     [ "IPv4Address", "a00072.html#a133598783690be861bd41452680b2290", null ],
+    [ "clone", "a00072.html#a1a3676a324eed401512a58d1fde07ee1", null ],
     [ "getType", "a00072.html#a17308b1152e801d0ed68ed0a63b6077f", null ],
     [ "matchSubnet", "a00072.html#a5551eda249276e8676675e5d0184bb49", null ],
     [ "operator!=", "a00072.html#a8160f16543866740b00e8350f617442e", null ],

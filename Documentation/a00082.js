@@ -4,6 +4,7 @@ var a00082 =
     [ "IPv6Address", "a00082.html#a40d009ad41c7a05fd3b566f6f460e870", null ],
     [ "IPv6Address", "a00082.html#ae7b6883d2ee46444059a33cd3be73f38", null ],
     [ "IPv6Address", "a00082.html#a325c75bccad81bda34ce148f291a999c", null ],
+    [ "clone", "a00082.html#a759fd179125aa42ff0752aeab69bec30", null ],
     [ "copyTo", "a00082.html#ade7dd5e08fa04101f72f60cbed397b7d", null ],
     [ "copyTo", "a00082.html#a54ed6cb154a9687ad675ef95e40a212b", null ],
     [ "getType", "a00082.html#a2a899e36131b3ac54d94de99e6e67f2b", null ],
