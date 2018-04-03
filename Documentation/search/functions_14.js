@@ -24,7 +24,8 @@ var searchData=
   ['_7epfringdevice',['~PfRingDevice',['../a00118.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
   ['_7epointervector',['~PointerVector',['../a00120.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
   ['_7erawpacket',['~RawPacket',['../a00131.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
-  ['_7etcpreassembly',['~TcpReassembly',['../a00177.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
-  ['_7etcpstreamdata',['~TcpStreamData',['../a00178.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
-  ['_7etlvoptionbuilder',['~TLVOptionBuilder',['../a00182.html#a830df211046011da78f7d50b1b791176',1,'pcpp::IPv6TLVOptionHeader::TLVOptionBuilder']]]
+  ['_7etableprinter',['~TablePrinter',['../a00173.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
+  ['_7etcpreassembly',['~TcpReassembly',['../a00178.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
+  ['_7etcpstreamdata',['~TcpStreamData',['../a00179.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
+  ['_7etlvoptionbuilder',['~TLVOptionBuilder',['../a00183.html#a830df211046011da78f7d50b1b791176',1,'pcpp::IPv6TLVOptionHeader::TLVOptionBuilder']]]
 ];

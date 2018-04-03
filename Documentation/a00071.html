@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('a00071.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00325.html">List of all members</a>  </div>
+<a href="a00327.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::IPReassembly Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00203_source.html">IPReassembly.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00204_source.html">IPReassembly.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0155a088e62cd22ad9c72b18f91f7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the IP reassembly (a.k.a IP de-fragmentation) mechanism. Encapsulates both IPv4 and IPv6 reassembly. Please refer to the documentation at the top of <a class="el" href="a00203.html">IPReassembly.h</a> to understand how this mechanism works. The main APIs are:</p><ul>
+<div class="textblock"><p>Contains the IP reassembly (a.k.a IP de-fragmentation) mechanism. Encapsulates both IPv4 and IPv6 reassembly. Please refer to the documentation at the top of <a class="el" href="a00204.html">IPReassembly.h</a> to understand how this mechanism works. The main APIs are:</p><ul>
 <li><a class="el" href="a00071.html#a923687e62b4287ed6b800dc64f8a53c8">IPReassembly::processPacket()</a> - process a fragment. This is the main method which should be called whenever a new fragment arrives. This method processes the fragment, runs the reassembly logic and returns the result packet when it's fully reassembled</li>
 <li><a class="el" href="a00071.html#a0efa8ec7258bbc0a83348bae42f93506">IPReassembly::getCurrentPacket()</a> - get the reassembled data that is currently available, even if reassembly process is not yet completed</li>
 <li><a class="el" href="a00071.html#a72d9dea60bb16f09caadd0b82c00afd6">IPReassembly::removePacket()</a> - remove all data that is currently stored for a packet, including the reassembled data that was gathered so far </li>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The IP reassembly mechanism has a certain capacity of concurrent packets it can handle. This capacity is determined in its c'tor (default value is <a class="el" href="a00203.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>). When traffic volume exceeds this capacity the mechanism starts dropping packets in a LRU manner (least recently used are dropped first). Whenever a packet is dropped this callback is fired </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The IP reassembly mechanism has a certain capacity of concurrent packets it can handle. This capacity is determined in its c'tor (default value is <a class="el" href="a00204.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>). When traffic volume exceeds this capacity the mechanism starts dropping packets in a LRU manner (least recently used are dropped first). Whenever a packet is dropped this callback is fired </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A pointer to the identifier of the packet that is being dropped </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in IPReassemby c'tor (or NULL if no cookie provided) </td></tr>
@@ -258,9 +258,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A c'tor for this class. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="a00203.html">IPReassembly.h</a> file description. This parameter is optional, default value is NULL (no callback) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="a00204.html">IPReassembly.h</a> file description. This parameter is optional, default value is NULL (no callback) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callbackUserCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the onFragmentsCleanCallback. This parameter is optional, default cookie is NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketsToStore</td><td>Set the capacity limit of the IP reassembly mechanism. Default capacity is <a class="el" href="a00203.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketsToStore</td><td>Set the capacity limit of the IP reassembly mechanism. Default capacity is <a class="el" href="a00204.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -378,7 +378,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The main API that drives <a class="el" href="a00071.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IP reassembly logic that is described in <a class="el" href="a00203.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The main API that drives <a class="el" href="a00071.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IP reassembly logic that is described in <a class="el" href="a00204.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process (IPv4 or IPv6). Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
@@ -426,7 +426,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The main API that drives <a class="el" href="a00071.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IPv4 reassembly logic that is described in <a class="el" href="a00203.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The main API that drives <a class="el" href="a00071.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IPv4 reassembly logic that is described in <a class="el" href="a00204.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process (IPv4 or IPv6). Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
@@ -478,8 +478,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00249.html">pcpp</a></li><li class="navelem"><a class="el" href="a00071.html">IPReassembly</a></li>
-    <li class="footer">Generated on Mon Mar 19 2018 09:01:43 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00071.html">IPReassembly</a></li>
+    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

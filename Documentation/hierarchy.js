@@ -30,14 +30,14 @@ var hierarchy =
       [ "pcpp::IFilterWithOperator", "a00056.html", [
         [ "pcpp::IpV4IDFilter", "a00073.html", null ],
         [ "pcpp::IpV4TotalLengthFilter", "a00078.html", null ],
-        [ "pcpp::TcpWindowSizeFilter", "a00179.html", null ],
-        [ "pcpp::UdpLengthFilter", "a00185.html", null ]
+        [ "pcpp::TcpWindowSizeFilter", "a00180.html", null ],
+        [ "pcpp::UdpLengthFilter", "a00186.html", null ]
       ] ],
       [ "pcpp::NotFilter", "a00101.html", null ],
       [ "pcpp::OrFilter", "a00103.html", null ],
       [ "pcpp::ProtoFilter", "a00130.html", null ],
-      [ "pcpp::TcpFlagsFilter", "a00173.html", null ],
-      [ "pcpp::VlanFilter", "a00187.html", null ]
+      [ "pcpp::TcpFlagsFilter", "a00174.html", null ],
+      [ "pcpp::VlanFilter", "a00188.html", null ]
     ] ],
     [ "pcpp::gre_basic_header", "a00024.html", [
       [ "pcpp::gre1_header", "a00023.html", null ]
@@ -94,8 +94,8 @@ var hierarchy =
           [ "pcpp::SSLChangeCipherSpecLayer", "a00153.html", null ],
           [ "pcpp::SSLHandshakeLayer", "a00160.html", null ]
         ] ],
-        [ "pcpp::TcpLayer", "a00175.html", null ],
-        [ "pcpp::TextBasedProtocolMessage", "a00180.html", [
+        [ "pcpp::TcpLayer", "a00176.html", null ],
+        [ "pcpp::TextBasedProtocolMessage", "a00181.html", [
           [ "pcpp::HttpMessage", "a00029.html", [
             [ "pcpp::HttpRequestLayer", "a00032.html", null ],
             [ "pcpp::HttpResponseLayer", "a00035.html", null ]
@@ -106,9 +106,9 @@ var hierarchy =
             [ "pcpp::SipResponseLayer", "a00140.html", null ]
           ] ]
         ] ],
-        [ "pcpp::UdpLayer", "a00184.html", null ],
-        [ "pcpp::VlanLayer", "a00188.html", null ],
-        [ "pcpp::VxlanLayer", "a00190.html", null ]
+        [ "pcpp::UdpLayer", "a00185.html", null ],
+        [ "pcpp::VlanLayer", "a00189.html", null ],
+        [ "pcpp::VxlanLayer", "a00191.html", null ]
       ] ]
     ] ],
     [ "pcpp::IDnsResource", "a00051.html", [
@@ -138,7 +138,7 @@ var hierarchy =
       ] ],
       [ "pcpp::PcapLiveDevice", "a00110.html", [
         [ "pcpp::PcapRemoteDevice", "a00115.html", null ],
-        [ "pcpp::WinPcapLiveDevice", "a00191.html", null ]
+        [ "pcpp::WinPcapLiveDevice", "a00192.html", null ]
       ] ],
       [ "pcpp::PfRingDevice", "a00118.html", null ]
     ] ],
@@ -218,13 +218,14 @@ var hierarchy =
     [ "pcpp::SSLx509Certificate", "a00170.html", null ],
     [ "pcpp::SystemCore", "a00171.html", null ],
     [ "pcpp::SystemCores", "a00172.html", null ],
-    [ "pcpp::tcphdr", "a00174.html", null ],
-    [ "pcpp::TcpOptionData", "a00176.html", null ],
-    [ "pcpp::TcpReassembly", "a00177.html", null ],
-    [ "pcpp::TcpStreamData", "a00178.html", null ],
-    [ "pcpp::IPv6TLVOptionHeader::TLVOption", "a00181.html", null ],
-    [ "pcpp::IPv6TLVOptionHeader::TLVOptionBuilder", "a00182.html", null ],
-    [ "pcpp::udphdr", "a00183.html", null ],
-    [ "pcpp::vlan_header", "a00186.html", null ],
-    [ "pcpp::vxlan_header", "a00189.html", null ]
+    [ "pcpp::TablePrinter", "a00173.html", null ],
+    [ "pcpp::tcphdr", "a00175.html", null ],
+    [ "pcpp::TcpOptionData", "a00177.html", null ],
+    [ "pcpp::TcpReassembly", "a00178.html", null ],
+    [ "pcpp::TcpStreamData", "a00179.html", null ],
+    [ "pcpp::IPv6TLVOptionHeader::TLVOption", "a00182.html", null ],
+    [ "pcpp::IPv6TLVOptionHeader::TLVOptionBuilder", "a00183.html", null ],
+    [ "pcpp::udphdr", "a00184.html", null ],
+    [ "pcpp::vlan_header", "a00187.html", null ],
+    [ "pcpp::vxlan_header", "a00190.html", null ]
 ];

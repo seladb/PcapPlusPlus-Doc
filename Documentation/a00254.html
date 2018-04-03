@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: Todo List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,9 +46,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,14 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
-    </ul>
-  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -88,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00001.html','');});
+$(document).ready(function(){initNavTree('a00254.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,23 +99,76 @@ $(document).ready(function(){initNavTree('a00001.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::AndFilter Member List</div>  </div>
+<div class="title">Todo List </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="a00001.html">pcpp::AndFilter</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00001.html#a31a8d91c6139693fa05a06fd6c6ab5fe">addFilter</a>(GeneralFilter *filter)</td><td class="entry"><a class="el" href="a00001.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00001.html#a136268df7041a70e46dcfed6c9c0711f">AndFilter</a>()</td><td class="entry"><a class="el" href="a00001.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00001.html#a663de154b20959cc253d18bbbe2e081d">AndFilter</a>(std::vector&lt; GeneralFilter * &gt; &amp;filters)</td><td class="entry"><a class="el" href="a00001.html">pcpp::AndFilter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00001.html#a59d7dd260b5f1bb4c9147263cb0b0308">parseToString</a>(std::string &amp;result)</td><td class="entry"><a class="el" href="a00001.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00022.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>()</td><td class="entry"><a class="el" href="a00022.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000007"></a>Class <a class="el" href="a00001.html">pcpp::AndFilter</a>  </dt>
+<dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="a00015.html#a385533189ae3c86b503996d03b5e0d84">pcpp::DpdkDevice::getStatistics</a>  (pcap_stat &amp;stats)</dt>
+<dd>pcap_stat is a poor struct that doesn't contain all the information DPDK can provide. Consider using a more extensive struct  </dd>
+<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="a00069.html">pcpp::IPFilter</a>  </dt>
+<dd>Add IPv6 filtering support  </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="a00072.html#a7eef864e1a372d665a27de6189901e1e">pcpp::IPv4Address::IPv4Address</a>  (uint32_t addressAsInt)</dt>
+<dd>consider endianess in this method <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsInt</td><td>The address as 4-byte integer  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="a00094.html#acfad96e288a29a2a5321723d0e41cda9">pcpp::LoggerPP::getInstance</a>  ()</dt>
+<dd>: make this singleton thread-safe/ <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="a00094.html">LoggerPP</a> singleton  </dd></dl>
+</dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="a00096.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a>  (uint8_t *addr)</dt>
+<dd>there is no verification array length &gt;= 6. If this is not the case, address will read uninitialized memory <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A pointer to the byte array containing 6 bytes representing the MAC address  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="a00103.html">pcpp::OrFilter</a>  </dt>
+<dd>add some methods: "addFilter", "removeFilter", "clearAllFilter"  </dd>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="a00107.html#a54bd43575f175701675dc0431c699a0e">pcpp::PayloadLayer::PayloadLayer</a>  (const uint8_t *data, size_t dataLen, bool dummy)</dt>
+<dd>dummy is probably not necessary anymore. Remove it  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="a00131.html#ab6b169b02bda40e90279e7d8f6816e41">pcpp::RawPacket::clear</a>  ()</dt>
+<dd><p class="startdd">deleteRawDataAtDestructor was set to 'true', don't free the raw data </p>
+<p class="enddd">set timestamp to a default value as well  </p>
+</dd>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="a00131.html#afc8278a0208727a579a122f197c4d02e">pcpp::RawPacket::operator=</a>  (const <a class="el" href="a00131.html">RawPacket</a> &amp;other)</dt>
+<dd>free raw data only if deleteRawDataAtDestructor was set to 'true' <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="a00131.html#acc12f855f36a798ce0e8c7dc8a4618f9">pcpp::RawPacket::RawPacket</a>  ()</dt>
+<dd>timestamp isn't set here to a default value  </dd>
+<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="a00152.html">pcpp::SSLCertificateVerifyMessage</a>  </dt>
+<dd>This message type wasn't tested in unit-tests  </dd>
+<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="a00159.html">pcpp::SSLFinishedMessage</a>  </dt>
+<dd>This message type wasn't tested in unit-tests  </dd>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="a00189.html#abe0453b916a6733faf3d658e83340db2">pcpp::VlanLayer::getCFI</a>  ()</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="a00189.html#a021259caeb2905bcf0ffa0fd4debaa26">pcpp::VlanLayer::getPriority</a>  ()</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="a00189.html#a0aa76692b5502afa254931d4249937ba">pcpp::VlanLayer::getVlanID</a>  ()</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="a00189.html#ac9702d193a250da803639863ecf12373">pcpp::VlanLayer::setCFI</a>  (bool cfi)</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="a00189.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a>  (uint8_t priority)</dt>
+<dd>Verify it works in big endian machines as well  </dd>
+<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="a00189.html#aeb6dcaefa11775c2b64e0be74094116d">pcpp::VlanLayer::setVlanID</a>  (uint16_t id)</dt>
+<dd>Verify it works in big endian machines as well </dd>
+</dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 19 2018 09:01:42 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Apr 3 2018 12:52:29 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

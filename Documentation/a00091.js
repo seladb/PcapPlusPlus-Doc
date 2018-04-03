@@ -1,7 +1,7 @@
 var a00091 =
 [
-    [ "TLVOption", "a00181.html", "a00181" ],
-    [ "TLVOptionBuilder", "a00182.html", "a00182" ],
+    [ "TLVOption", "a00182.html", "a00182" ],
+    [ "TLVOptionBuilder", "a00183.html", "a00183" ],
     [ "IPv6TLVOptionHeader", "a00091.html#a299b5196ca0a47c9ac81a92a689fd9eb", null ],
     [ "getFirstOption", "a00091.html#a4c0290e277f718900b20085179814898", null ],
     [ "getNextOption", "a00091.html#adb9953af226ecc200c50b4c215b34676", null ],
