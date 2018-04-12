@@ -10,5 +10,6 @@ var searchData=
   ['dpdkdevice',['DpdkDevice',['../a00015.html',1,'pcpp']]],
   ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../a00016.html',1,'pcpp::DpdkDevice']]],
   ['dpdkdevicelist',['DpdkDeviceList',['../a00017.html',1,'pcpp']]],
-  ['dpdkworkerthread',['DpdkWorkerThread',['../a00018.html',1,'pcpp']]]
+  ['dpdkdevicestats',['DpdkDeviceStats',['../a00018.html',1,'pcpp::DpdkDevice']]],
+  ['dpdkworkerthread',['DpdkWorkerThread',['../a00019.html',1,'pcpp']]]
 ];

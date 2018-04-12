@@ -1,23 +1,18 @@
 var a00176 =
 [
-    [ "TcpLayer", "a00176.html#a586788dd716915a61f263996ebaae626", null ],
-    [ "TcpLayer", "a00176.html#a3dfca9bce5c6ec475894d476e8372156", null ],
-    [ "TcpLayer", "a00176.html#a9a9a7a8f1be4cfa9a181330d48b676ef", null ],
-    [ "TcpLayer", "a00176.html#a5501475794c2db27489dcd27d01423bd", null ],
-    [ "addTcpOption", "a00176.html#a1a05337e558a7f7b8420911d2f0f8e44", null ],
-    [ "addTcpOptionAfter", "a00176.html#aa38d093ade5504875801fc74762e6cf6", null ],
-    [ "calculateChecksum", "a00176.html#abf39676d5adf4e2b3b2d90a616428780", null ],
-    [ "computeCalculateFields", "a00176.html#a500d6585f588aaed9c73c2872c581e02", null ],
-    [ "getFirstTcpOptionData", "a00176.html#a61378c46f72ddcc4480e15e3dee46c7d", null ],
-    [ "getHeaderLen", "a00176.html#a5d81b7bed2f5c4389b5b80c9282493e6", null ],
-    [ "getNextTcpOptionData", "a00176.html#ad08a096aafc4a57608336f5c7c156cf4", null ],
-    [ "getOsiModelLayer", "a00176.html#ae924f98f5fb2cb2ea0f72c34f6eba322", null ],
-    [ "getTcpHeader", "a00176.html#a351dbc0708b8930036940ff93abb362f", null ],
-    [ "getTcpOptionData", "a00176.html#a1b427e3e350460835e76d315c0f0b4bb", null ],
-    [ "getTcpOptionsCount", "a00176.html#a5f4221c3c8c65f55e21c2db0e87b566a", null ],
-    [ "operator=", "a00176.html#a7dea7265510eda5cd67b984c2634ef19", null ],
-    [ "parseNextLayer", "a00176.html#ab26777b6ea7d6bfaed5032b20630fc72", null ],
-    [ "removeAllTcpOptions", "a00176.html#a54812a58a88be8978b3e609f32504a87", null ],
-    [ "removeTcpOption", "a00176.html#addfb058ef0cd1b7fa3963b8889e7d5b6", null ],
-    [ "toString", "a00176.html#a73e8482bed0fbb00e7a7ba87699df92f", null ]
+    [ "MatchOptions", "a00176.html#a5c46e6577ab32373602693aa2b1b25fc", [
+      [ "MatchAll", "a00176.html#a5c46e6577ab32373602693aa2b1b25fca0aac4bcfd152dfe7ca619973fb9b8d61", null ],
+      [ "MatchOneAtLeast", "a00176.html#a5c46e6577ab32373602693aa2b1b25fca88fe87162ec498bd7b05cd65d00ea866", null ]
+    ] ],
+    [ "TcpFlags", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8", [
+      [ "tcpFin", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8a427a97c7c7cac5de742260befa6a3623", null ],
+      [ "tcpSyn", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8a2e972455e93ab34790922b3bc2195e30", null ],
+      [ "tcpRst", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8aad26b70502594d3a26ea0ad38d67a219", null ],
+      [ "tcpPush", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8ab5839fbc7807f3ac3a1a2ae8a53e35b4", null ],
+      [ "tcpAck", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8a96e2dff66752cd1f1a08954c78b387b5", null ],
+      [ "tcpUrg", "a00176.html#a1ac0469b57beda847374c1d39f9b1ee8a61002e77c501f9f1d3ecd65f13a35e45", null ]
+    ] ],
+    [ "TcpFlagsFilter", "a00176.html#af34bc19a3b995a717adaaed3ef845a18", null ],
+    [ "parseToString", "a00176.html#a1c9003c27c6c52e80276cba9dd33d117", null ],
+    [ "setTcpFlagsBitMask", "a00176.html#a96f7b9ad543aff00eed99b2c43729fae", null ]
 ];

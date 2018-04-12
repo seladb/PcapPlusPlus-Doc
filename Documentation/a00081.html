@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IPv6RoutingHeader::ipv6_routing_header Struct Reference</title>
+<title>PcapPlusPlus: pcpp::IPv6FragmentationHeader::ipv6_frag_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,77 +108,77 @@ $(document).ready(function(){initNavTree('a00081.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00347.html">List of all members</a>  </div>
+<a href="a00349.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPv6RoutingHeader::ipv6_routing_header Struct Reference</div>  </div>
+<div class="title">pcpp::IPv6FragmentationHeader::ipv6_frag_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00207_source.html">IPv6Extensions.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00209_source.html">IPv6Extensions.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4d9369b6437e7665bd8fc54a23232ef4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a4d9369b6437e7665bd8fc54a23232ef4">nextHeader</a></td></tr>
-<tr class="separator:a4d9369b6437e7665bd8fc54a23232ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e5662b426aa656b4facb81bc947518"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ae7e5662b426aa656b4facb81bc947518">headerLen</a></td></tr>
-<tr class="separator:ae7e5662b426aa656b4facb81bc947518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4579b3c40ab7180339addc210d0898"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a7c4579b3c40ab7180339addc210d0898">routingType</a></td></tr>
-<tr class="separator:a7c4579b3c40ab7180339addc210d0898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f695f69f4ef95239ac86212a8fcd4dd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a0f695f69f4ef95239ac86212a8fcd4dd">segmentsLeft</a></td></tr>
-<tr class="separator:a0f695f69f4ef95239ac86212a8fcd4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8163575c2faa31dc56ef5e004168f77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ad8163575c2faa31dc56ef5e004168f77">nextHeader</a></td></tr>
+<tr class="separator:ad8163575c2faa31dc56ef5e004168f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a5856041f7a061a0d6d0c0c53a0bdc493">headerLen</a></td></tr>
+<tr class="separator:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25c6f0e0649e2ce43c4cca084f9ea62"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#aa25c6f0e0649e2ce43c4cca084f9ea62">fragOffsetAndFlags</a></td></tr>
+<tr class="separator:aa25c6f0e0649e2ce43c4cca084f9ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa385b898dc21535012593791a41358dd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#aa385b898dc21535012593791a41358dd">id</a></td></tr>
+<tr class="separator:aa385b898dc21535012593791a41358dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct representing the fixed part of the IPv6 routing extension header </p>
+<div class="textblock"><p>A struct representing IPv6 fragmentation header </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae7e5662b426aa656b4facb81bc947518"></a>
+<a class="anchor" id="aa25c6f0e0649e2ce43c4cca084f9ea62"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::IPv6RoutingHeader::ipv6_routing_header::headerLen</td>
+          <td class="memname">uint16_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::fragOffsetAndFlags</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The length of this header, in multiples of 8 octets, not including the first 8 octets </p>
+<p>Offset, in 8-octet units, relative to the start of the fragmentable part of the original packet plus 1-bit indicating if more fragments will follow </p>
 
 </div>
 </div>
-<a class="anchor" id="a4d9369b6437e7665bd8fc54a23232ef4"></a>
+<a class="anchor" id="a5856041f7a061a0d6d0c0c53a0bdc493"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::IPv6RoutingHeader::ipv6_routing_header::nextHeader</td>
+          <td class="memname">uint8_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::headerLen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fragmentation header size is fixed 8 bytes, so len is always zero </p>
+
+</div>
+</div>
+<a class="anchor" id="aa385b898dc21535012593791a41358dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>packet identification value. Needed for reassembly of the original packet </p>
+
+</div>
+</div>
+<a class="anchor" id="ad8163575c2faa31dc56ef5e004168f77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::nextHeader</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Next header type </p>
-
-</div>
-</div>
-<a class="anchor" id="a7c4579b3c40ab7180339addc210d0898"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::IPv6RoutingHeader::ipv6_routing_header::routingType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A value representing the routing type </p>
-
-</div>
-</div>
-<a class="anchor" id="a0f695f69f4ef95239ac86212a8fcd4dd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::IPv6RoutingHeader::ipv6_routing_header::segmentsLeft</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of nodes this packet still has to visit before reaching its final destination </p>
 
 </div>
 </div>
@@ -187,8 +187,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00090.html">IPv6RoutingHeader</a></li><li class="navelem"><a class="el" href="a00081.html">ipv6_routing_header</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00087.html">IPv6FragmentationHeader</a></li><li class="navelem"><a class="el" href="a00081.html">ipv6_frag_header</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

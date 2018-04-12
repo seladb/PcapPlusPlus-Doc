@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IDnsResource Class Reference</title>
+<title>PcapPlusPlus: pcpp::IDataContainer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,118 +107,55 @@ $(document).ready(function(){initNavTree('a00051.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00307.html">List of all members</a>  </div>
+<a href="a00312.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IDnsResource Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::IDataContainer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00195_source.html">DnsLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00211_source.html">Layer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::IDnsResource:</div>
+Inheritance diagram for pcpp::IDataContainer:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00051.png" usemap="#pcpp::IDnsResource_map" alt=""/>
-  <map id="pcpp::IDnsResource_map" name="pcpp::IDnsResource_map">
-<area href="a00013.html" alt="pcpp::DnsQuery" shape="rect" coords="0,56,125,80"/>
-<area href="a00014.html" alt="pcpp::DnsResource" shape="rect" coords="135,56,260,80"/>
+  <img src="a00051.png" usemap="#pcpp::IDataContainer_map" alt=""/>
+  <map id="pcpp::IDataContainer_map" name="pcpp::IDataContainer_map">
+<area href="a00093.html" alt="pcpp::Layer" shape="rect" coords="0,56,202,80"/>
+<area href="a00006.html" alt="pcpp::ArpLayer" shape="rect" coords="212,112,414,136"/>
+<area href="a00009.html" alt="pcpp::DhcpLayer" shape="rect" coords="212,168,414,192"/>
+<area href="a00012.html" alt="pcpp::DnsLayer" shape="rect" coords="212,224,414,248"/>
+<area href="a00022.html" alt="pcpp::EthLayer" shape="rect" coords="212,280,414,304"/>
+<area href="a00026.html" alt="pcpp::GreLayer" shape="rect" coords="212,336,414,360"/>
+<area href="a00050.html" alt="pcpp::IcmpLayer" shape="rect" coords="212,392,414,416"/>
+<area href="a00059.html" alt="pcpp::IgmpLayer" shape="rect" coords="212,448,414,472"/>
+<area href="a00075.html" alt="pcpp::IPv4Layer" shape="rect" coords="212,504,414,528"/>
+<area href="a00089.html" alt="pcpp::IPv6Layer" shape="rect" coords="212,560,414,584"/>
+<area href="a00100.html" alt="pcpp::MplsLayer" shape="rect" coords="212,616,414,640"/>
+<area href="a00103.html" alt="pcpp::NullLoopbackLayer" shape="rect" coords="212,672,414,696"/>
+<area href="a00107.html" alt="pcpp::PacketTrailerLayer" shape="rect" coords="212,728,414,752"/>
+<area href="a00108.html" alt="pcpp::PayloadLayer" shape="rect" coords="212,784,414,808"/>
+<area href="a00125.html" alt="pcpp::PPP_PPTPLayer" shape="rect" coords="212,840,414,864"/>
+<area href="a00128.html" alt="pcpp::PPPoELayer" shape="rect" coords="212,896,414,920"/>
+<area href="a00144.html" alt="pcpp::SllLayer" shape="rect" coords="212,952,414,976"/>
+<area href="a00165.html" alt="pcpp::SSLLayer" shape="rect" coords="212,1008,414,1032"/>
+<area href="a00178.html" alt="pcpp::TcpLayer" shape="rect" coords="212,1064,414,1088"/>
+<area href="a00183.html" alt="pcpp::TextBasedProtocolMessage" shape="rect" coords="212,1120,414,1144"/>
+<area href="a00187.html" alt="pcpp::UdpLayer" shape="rect" coords="212,1176,414,1200"/>
+<area href="a00191.html" alt="pcpp::VlanLayer" shape="rect" coords="212,1232,414,1256"/>
+<area href="a00193.html" alt="pcpp::VxlanLayer" shape="rect" coords="212,1288,414,1312"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a31f2e8268a4850da83b3d85c17d99d96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96">ResourceType</a> { <a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5">DnsQuery</a> = 0, 
-<a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca">DnsAnswer</a> = 1, 
-<a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d">DnsAuthority</a> = 2, 
-<a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226">DnsAdditional</a> = 3
- }</td></tr>
-<tr class="separator:a31f2e8268a4850da83b3d85c17d99d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae44ba669fc827f7b8bb6c8f9ce783d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00251.html#ad888578fe7df9849bbfbb10cdf245886">DnsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#ae44ba669fc827f7b8bb6c8f9ce783d8d">getDnsType</a> ()</td></tr>
-<tr class="separator:ae44ba669fc827f7b8bb6c8f9ce783d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15c4d0513904997e4b77cc11526d204e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a15c4d0513904997e4b77cc11526d204e">setDnsType</a> (<a class="el" href="a00251.html#ad888578fe7df9849bbfbb10cdf245886">DnsType</a> newType)</td></tr>
-<tr class="separator:a15c4d0513904997e4b77cc11526d204e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4a6e1550c6de7ebdf0188bb80ce484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00251.html#a9a53cd13fb37fed91d2acda175bee7b9">DnsClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a6c4a6e1550c6de7ebdf0188bb80ce484">getDnsClass</a> ()</td></tr>
-<tr class="separator:a6c4a6e1550c6de7ebdf0188bb80ce484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c0a3adac252a14a48502ae8a43afe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#ad9c0a3adac252a14a48502ae8a43afe5">setDnsClass</a> (<a class="el" href="a00251.html#a9a53cd13fb37fed91d2acda175bee7b9">DnsClass</a> newClass)</td></tr>
-<tr class="separator:ad9c0a3adac252a14a48502ae8a43afe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5042b3c8948096ff808d9d4c4a5c4ef0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a5042b3c8948096ff808d9d4c4a5c4ef0">getName</a> ()</td></tr>
-<tr class="separator:a5042b3c8948096ff808d9d4c4a5c4ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08da68e8e0133db0723fd117be4217e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#af08da68e8e0133db0723fd117be4217e">setName</a> (const std::string &amp;newName)</td></tr>
-<tr class="separator:af08da68e8e0133db0723fd117be4217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0581453e507b721f27eb2e148bc45ef9"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a0581453e507b721f27eb2e148bc45ef9">getSize</a> ()=0</td></tr>
-<tr class="separator:a0581453e507b721f27eb2e148bc45ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70bf0be92f655fcf024d5c60eb1cba32"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96">ResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a70bf0be92f655fcf024d5c60eb1cba32">getType</a> ()=0</td></tr>
-<tr class="separator:a70bf0be92f655fcf024d5c60eb1cba32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af410251b3a081fb6cb0e4779d1741c1a"><td class="memItemLeft" align="right" valign="top">virtual uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#af410251b3a081fb6cb0e4779d1741c1a">getDataPtr</a> (size_t offset=0)=0</td></tr>
+<tr class="separator:af410251b3a081fb6cb0e4779d1741c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class for representing all types of DNS records. This class gives access to all available record data such as DNS type, class, name, type of record, etc. The <a class="el" href="a00012.html">DnsLayer</a> holds an instance of (inherited type of) this class for each DNS record in the DNS packet </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a31f2e8268a4850da83b3d85c17d99d96"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96">pcpp::IDnsResource::ResourceType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for representing the 4 types of possible DNS records </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5"></a>DnsQuery&#160;</td><td class="fielddoc">
-<p>DNS query record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca"></a>DnsAnswer&#160;</td><td class="fielddoc">
-<p>DNS answer record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d"></a>DnsAuthority&#160;</td><td class="fielddoc">
-<p>DNS authority record </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226"></a>DnsAdditional&#160;</td><td class="fielddoc">
-<p>DNS additional record </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6c4a6e1550c6de7ebdf0188bb80ce484"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00251.html#a9a53cd13fb37fed91d2acda175bee7b9">DnsClass</a> pcpp::IDnsResource::getDnsClass </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The DNS class of this record </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae44ba669fc827f7b8bb6c8f9ce783d8d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00251.html#ad888578fe7df9849bbfbb10cdf245886">DnsType</a> pcpp::IDnsResource::getDnsType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The DNS type of this record </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5042b3c8948096ff808d9d4c4a5c4ef0"></a>
+<div class="textblock"><p>An interface (virtual abstract class) that indicates an object that holds a pointer to a buffer data. The <a class="el" href="a00093.html">Layer</a> class is an example of such object, hence it inherits this interface </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af410251b3a081fb6cb0e4779d1741c1a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -226,33 +163,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string pcpp::IDnsResource::getName </td>
+          <td class="memname">virtual uint8_t* pcpp::IDataContainer::getDataPtr </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The name of this record </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0581453e507b721f27eb2e148bc45ef9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual size_t pcpp::IDnsResource::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -262,101 +176,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The total size in bytes of this record </dd></dl>
-
-<p>Implemented in <a class="el" href="a00014.html#a9e624aed896eeea88916ba4b3c2f23cd">pcpp::DnsResource</a>, and <a class="el" href="a00013.html#aa58a85121063a1df0d91e04df7f2ff0d">pcpp::DnsQuery</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70bf0be92f655fcf024d5c60eb1cba32"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00051.html#a31f2e8268a4850da83b3d85c17d99d96">ResourceType</a> pcpp::IDnsResource::getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The type of this record (query, answer, authority, additional) </dd></dl>
-
-<p>Implemented in <a class="el" href="a00014.html#a75c1006edcc7273dbfc6bdc7e9245113">pcpp::DnsResource</a>, and <a class="el" href="a00013.html#a09231b2035b920aa5d36f76f420613f6">pcpp::DnsQuery</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad9c0a3adac252a14a48502ae8a43afe5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IDnsResource::setDnsClass </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00251.html#a9a53cd13fb37fed91d2acda175bee7b9">DnsClass</a>&#160;</td>
-          <td class="paramname"><em>newClass</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set DNS class for this record </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to the data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newClass</td><td>The class to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Get a pointer in a certain offset. Default is 0 - get a pointer to start of data </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="a15c4d0513904997e4b77cc11526d204e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IDnsResource::setDnsType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00251.html#ad888578fe7df9849bbfbb10cdf245886">DnsType</a>&#160;</td>
-          <td class="paramname"><em>newType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set DNS type for this record </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newType</td><td>The type to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af08da68e8e0133db0723fd117be4217e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IDnsResource::setName </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>newName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the name of this record. Note the new name can be shorter or longer of the old name, so this method can cause the packet to be shorten or extended </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>The name to set </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Implemented in <a class="el" href="a00093.html#a2fdf63eb660bf17119fbe9b9ae89aff2">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -365,8 +193,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00051.html">IDnsResource</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00051.html">IDataContainer</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

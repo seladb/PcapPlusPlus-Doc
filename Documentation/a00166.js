@@ -1,17 +1,7 @@
 var a00166 =
 [
-    [ "SSLServerHelloMessage", "a00166.html#a1556f47b07981b9d6c24d0f7cd7bafb0", null ],
-    [ "getCipherSuite", "a00166.html#a2077712bafe2bdf1b5b8e808d2002692", null ],
-    [ "getCompressionMethodsValue", "a00166.html#a35a1d36501d95099afa785b816ee3ccc", null ],
-    [ "getExtension", "a00166.html#aa0a52a20c677f96efb2d6f8f2c1d0817", null ],
-    [ "getExtensionCount", "a00166.html#aa41fcaf6f5d831b9f0fdf0995972f2b0", null ],
-    [ "getExtensionOfType", "a00166.html#ac6773d4fa9bdabfdc40add0ab78a9335", null ],
-    [ "getExtensionOfType", "a00166.html#a2640d7975ecc0ac9722981e691c7b799", null ],
-    [ "getExtensionOfType", "a00166.html#a1769691cfbf5f89cee901779b2f5dbe7", null ],
-    [ "getExtensionsLenth", "a00166.html#abf96f6d167902c110f9982c9ecbf80df", null ],
-    [ "getHandshakeVersion", "a00166.html#aac4f84fa44a8b1f8812d802ce7cbcf72", null ],
-    [ "getServerHelloHeader", "a00166.html#a04b2dcc2adaf0d90f10040e2bc439961", null ],
-    [ "getSessionID", "a00166.html#ae7a95492fd974b5799f3a1a979e808ef", null ],
-    [ "getSessionIDLength", "a00166.html#a1116e3643ae6a9ccdd4eed46861f071a", null ],
-    [ "toString", "a00166.html#ab6d2e12e5d3aa1340faf260f29ab1e21", null ]
+    [ "SSLNewSessionTicketMessage", "a00166.html#a55d2fff5ceb20ca419344ced210606a4", null ],
+    [ "getSessionTicketData", "a00166.html#a1d30391db4fdab5edae186d9355ad95d", null ],
+    [ "getSessionTicketDataLength", "a00166.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
+    [ "toString", "a00166.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IPcapDevice Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPAddress Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,80 +107,80 @@ $(document).ready(function(){initNavTree('a00068.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00324.html">List of all members</a>  </div>
+<a href="a00329.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPcapDevice Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::IPAddress Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00221_source.html">PcapDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00205_source.html">IpAddress.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::IPcapDevice:</div>
+Inheritance diagram for pcpp::IPAddress:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00068.png" usemap="#pcpp::IPcapDevice_map" alt=""/>
-  <map id="pcpp::IPcapDevice_map" name="pcpp::IPcapDevice_map">
-<area href="a00015.html" alt="pcpp::DpdkDevice" shape="rect" coords="0,56,193,80"/>
-<area href="a00052.html" alt="pcpp::IFileDevice" shape="rect" coords="304,56,497,80"/>
-<area href="a00110.html" alt="pcpp::PcapLiveDevice" shape="rect" coords="812,56,1005,80"/>
-<area href="a00118.html" alt="pcpp::PfRingDevice" shape="rect" coords="1015,56,1208,80"/>
-<area href="a00053.html" alt="pcpp::IFileReaderDevice" shape="rect" coords="101,112,294,136"/>
-<area href="a00054.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="507,112,700,136"/>
-<area href="a00115.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="710,112,903,136"/>
-<area href="a00192.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="913,112,1106,136"/>
-<area href="a00108.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,168,193,192"/>
-<area href="a00112.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,168,396,192"/>
-<area href="a00109.html" alt="pcpp::PcapFileWriterDevice" shape="rect" coords="406,168,599,192"/>
-<area href="a00113.html" alt="pcpp::PcapNgFileWriterDevice" shape="rect" coords="609,168,802,192"/>
+  <img src="a00068.png" usemap="#pcpp::IPAddress_map" alt=""/>
+  <map id="pcpp::IPAddress_map" name="pcpp::IPAddress_map">
+<area href="a00073.html" alt="pcpp::IPv4Address" shape="rect" coords="0,56,118,80"/>
+<area href="a00083.html" alt="pcpp::IPv6Address" shape="rect" coords="128,56,246,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac389e5507d75b60d2b0ca939db195231"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> { <a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383">IPv4AddressType</a>, 
+<a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838">IPv6AddressType</a>
+ }</td></tr>
+<tr class="separator:ac389e5507d75b60d2b0ca939db195231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7d1358756653febf63d23b21447649c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa7d1358756653febf63d23b21447649c">open</a> ()=0</td></tr>
-<tr class="separator:aa7d1358756653febf63d23b21447649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce8877d4e047f11a3cb8d0f4f527e56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5ce8877d4e047f11a3cb8d0f4f527e56">close</a> ()=0</td></tr>
-<tr class="separator:a5ce8877d4e047f11a3cb8d0f4f527e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b03cdabb9f359c6bed0728c3614789"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a22b03cdabb9f359c6bed0728c3614789">isOpened</a> ()</td></tr>
-<tr class="separator:a22b03cdabb9f359c6bed0728c3614789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace3640f2330899687e34aa3789f4cd05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a> (pcap_stat &amp;stats)=0</td></tr>
-<tr class="separator:ace3640f2330899687e34aa3789f4cd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadba6a20265dca6ba29b548325a798fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aadba6a20265dca6ba29b548325a798fe">setFilter</a> (<a class="el" href="a00022.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:aadba6a20265dca6ba29b548325a798fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134f061d7883abbdb256abd48d53e66c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a134f061d7883abbdb256abd48d53e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba28d535c6aa05e9f9492c82ece25de7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aba28d535c6aa05e9f9492c82ece25de7">clearFilter</a> ()</td></tr>
-<tr class="separator:aba28d535c6aa05e9f9492c82ece25de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a3e43774848c93585f97bdef6ec73d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a85a3e43774848c93585f97bdef6ec73d">getType</a> () const =0</td></tr>
+<tr class="separator:a85a3e43774848c93585f97bdef6ec73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39eeb2c3b4ec235f8c938ec1b77fe2ac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">toString</a> () const </td></tr>
+<tr class="separator:a39eeb2c3b4ec235f8c938ec1b77fe2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6b031d025c3ef287584a605b64d750"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a2d6b031d025c3ef287584a605b64d750">isValid</a> ()</td></tr>
+<tr class="separator:a2d6b031d025c3ef287584a605b64d750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d35f8f8e9965d0e4c38e183fba7d1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00068.html">IPAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a92d35f8f8e9965d0e4c38e183fba7d1e">clone</a> () const =0</td></tr>
+<tr class="separator:a92d35f8f8e9965d0e4c38e183fba7d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6865c1a43ff71cd424426c846f36dbd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a6865c1a43ff71cd424426c846f36dbd4">equals</a> (const <a class="el" href="a00068.html">IPAddress</a> *other)</td></tr>
+<tr class="separator:a6865c1a43ff71cd424426c846f36dbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5cc546829570cd981bfa762acd9759c8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a5cc546829570cd981bfa762acd9759c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a00131.html">RawPacket</a> *rawPacket)</td></tr>
-<tr class="separator:a54df47e98feadfd830789ca3a7f5f86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381e5006e8ac432c8756a86db7e9f9fc"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a381e5006e8ac432c8756a86db7e9f9fc">fromString</a> (char *addressAsString)</td></tr>
+<tr class="separator:a381e5006e8ac432c8756a86db7e9f9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab172b2f55f772fccdec86d7eb4c1c16a"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ab172b2f55f772fccdec86d7eb4c1c16a">fromString</a> (std::string addressAsString)</td></tr>
+<tr class="separator:ab172b2f55f772fccdec86d7eb4c1c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class representing all possible packet capturing devices: files, libPcap, WinPcap, RemoteCapture, PF_RING, etc. This class cannot obviously be instantiated </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aba28d535c6aa05e9f9492c82ece25de7"></a>
+<div class="textblock"><p>Base class for <a class="el" href="a00073.html">IPv4Address</a> and <a class="el" href="a00083.html">IPv6Address</a>. It's an abstract class and cannot be used as is. The only useful method in this class are the 2 static methods that constructs an IP address class from string </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ac389e5507d75b60d2b0ca939db195231"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IPcapDevice::clearFilter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231">pcpp::IPAddress::AddressType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clear the filter currently set on device </p>
+<p>An enum representing the address type: IPv4 or IPv6 </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383"></a>IPv4AddressType&#160;</td><td class="fielddoc">
+<p>IPv4 address type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838"></a>IPv6AddressType&#160;</td><td class="fielddoc">
+<p>IPv6 address type </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a class="anchor" id="a5ce8877d4e047f11a3cb8d0f4f527e56"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a92d35f8f8e9965d0e4c38e183fba7d1e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,10 +188,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::IPcapDevice::close </td>
+          <td class="memname">virtual <a class="el" href="a00068.html">IPAddress</a>* pcpp::IPAddress::clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -200,13 +200,30 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Close the device </p>
+<p>Clone the object </p><dl class="section return"><dt>Returns</dt><dd>A newly allocated instance which is a clone of the current instance </dd></dl>
 
-<p>Implemented in <a class="el" href="a00015.html#ab772ecb6a13f970a1671a143dfcf8edc">pcpp::DpdkDevice</a>, <a class="el" href="a00113.html#a87cdcca0ace3ba4ccbaad4093def33a8">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00110.html#ad7ccb5eac1b23651e7b157b628435528">pcpp::PcapLiveDevice</a>, <a class="el" href="a00109.html#a60b102a04429b8baba0637c3505f6448">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00112.html#a637743eb1a25fde92af7aeca8879fc02">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00118.html#ad9df26e45654c94c08bfd73c0c18474d">pcpp::PfRingDevice</a>, and <a class="el" href="a00052.html#a65be98019748f6509445136013a0d1cb">pcpp::IFileDevice</a>.</p>
+<p>Implemented in <a class="el" href="a00083.html#a759fd179125aa42ff0752aeab69bec30">pcpp::IPv6Address</a>, and <a class="el" href="a00073.html#a1a3676a324eed401512a58d1fde07ee1">pcpp::IPv4Address</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ace3640f2330899687e34aa3789f4cd05"></a>
+<a class="anchor" id="a6865c1a43ff71cd424426c846f36dbd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00068.html">IPAddress</a> *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compare between this IP address and another IP address. This method is different than operator==() implemented in <a class="el" href="a00073.html">IPv4Address</a> and <a class="el" href="a00083.html">IPv6Address</a> in the sense that you can compare any IP type: IPv6 to IPv6, IPv4 to IPv4 or IPv4 to IPv6. It fits cases when you're not sure which type you currently have </p><dl class="section return"><dt>Returns</dt><dd>True if addresses match or false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a381e5006e8ac432c8756a86db7e9f9fc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -214,36 +231,30 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::IPcapDevice::getStatistics </td>
+          <td class="memname">static Ptr_t pcpp::IPAddress::fromString </td>
           <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get statistics from device:</p><ul>
-<li>pcap_stat::ps_recv: number of packets received</li>
-<li>pcap_stat::ps_drop: number of packets dropped</li>
-<li>pcap_stat::ps_ifdorp: number of packets dropped by interface <dl class="params"><dt>Parameters</dt><dd>
+<p>Constructs an IP address of type IPv4 or IPv6 from a string (char*) representation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in string (char*) representation </td></tr>
   </table>
   </dd>
 </dl>
-</li>
-</ul>
-
-<p>Implemented in <a class="el" href="a00015.html#a385533189ae3c86b503996d03b5e0d84">pcpp::DpdkDevice</a>, <a class="el" href="a00113.html#a55a11ff6431efc054fd4a47bbaab9852">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00110.html#a68f87416b25abe3b625f0f9993bb7e1b">pcpp::PcapLiveDevice</a>, <a class="el" href="a00109.html#a3f72c11bc118609f84c5b462f27cdc1f">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00112.html#a32ecbe14fa25297ee599a5d52c4e15e1">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00118.html#a0d704b9bfa52548f1abbed7d50d98d03">pcpp::PfRingDevice</a>, <a class="el" href="a00108.html#a6c07f1cc3675dfa8ff7157d09be311c7">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="a00115.html#ac4f3b9ace451b38aa9930950dc695273">pcpp::PcapRemoteDevice</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00073.html">IPv4Address</a> or <a class="el" href="a00083.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a22b03cdabb9f359c6bed0728c3614789"></a>
+<a class="anchor" id="ab172b2f55f772fccdec86d7eb4c1c16a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -251,7 +262,64 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::IPcapDevice::isOpened </td>
+          <td class="memname">static Ptr_t pcpp::IPAddress::fromString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>addressAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an IP address of type IPv4 or IPv6 from a std::string representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in std::string representation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="a00073.html">IPv4Address</a> or <a class="el" href="a00083.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85a3e43774848c93585f97bdef6ec73d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00068.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> pcpp::IPAddress::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the address type: IPv4 or IPv6 </p><dl class="section return"><dt>Returns</dt><dd>The address type </dd></dl>
+
+<p>Implemented in <a class="el" href="a00083.html#a2a899e36131b3ac54d94de99e6e67f2b">pcpp::IPv6Address</a>, and <a class="el" href="a00073.html#a17308b1152e801d0ed68ed0a63b6077f">pcpp::IPv4Address</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d6b031d025c3ef287584a605b64d750"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::isValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -263,11 +331,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+<p>Get an indication if the address is valid. An address can be invalid if it was constructed from illegal input, for example: An IPv4 address that was constructed form the string "999.999.999.999" </p><dl class="section return"><dt>Returns</dt><dd>True if the address is valid, false otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a54df47e98feadfd830789ca3a7f5f86b"></a>
+<a class="anchor" id="a39eeb2c3b4ec235f8c938ec1b77fe2ac"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,150 +343,19 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool pcpp::IPcapDevice::matchPakcetWithFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00131.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacket</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Match a raw packet with a given BPF filter. Notice this method is static which means you don't need any device instance in order to perform this match </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The BPF filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet to match the BPF filter with </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw packet matches the BPF filter or false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa7d1358756653febf63d23b21447649c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool pcpp::IPcapDevice::open </td>
+          <td class="memname">std::string pcpp::IPAddress::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Open the device </p><dl class="section return"><dt>Returns</dt><dd>True if device was opened successfully, false otherwise </dd></dl>
-
-<p>Implemented in <a class="el" href="a00015.html#ad5717b8aa18dbb657e4c346adbb38163">pcpp::DpdkDevice</a>, <a class="el" href="a00113.html#a9c709c035f8ba98682693a248d6d1e5d">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="a00110.html#a281f2cd6062791c68ecdd82384f751f8">pcpp::PcapLiveDevice</a>, <a class="el" href="a00109.html#ab9c5ea38028c05717dd2957c4be08296">pcpp::PcapFileWriterDevice</a>, <a class="el" href="a00112.html#aea89bc17fd3b560576a20afc6da1d304">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="a00118.html#a94f3512928cf7ccdb4f8a28532c6ee51">pcpp::PfRingDevice</a>, <a class="el" href="a00108.html#af9e798abe511b1ba8bd14360535753a1">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="a00115.html#a2b9e2ac456a61dcd739cfd7de0b827df">pcpp::PcapRemoteDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aadba6a20265dca6ba29b548325a798fe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IPcapDevice::setFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00022.html">GeneralFilter</a> &amp;&#160;</td>
-          <td class="paramname"><em>filter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to be set in PcapPlusPlus' <a class="el" href="a00022.html">GeneralFilter</a> format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a134f061d7883abbdb256abd48d53e66c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool pcpp::IPcapDevice::setFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set a filter for the device. When implemented by the device, only packets that match the filter will be received </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter to be set in Berkeley <a class="el" href="a00104.html">Packet</a> Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
-
-<p>Reimplemented in <a class="el" href="a00015.html#a0145dc440ebcd7c0a05709c57c2fa99d">pcpp::DpdkDevice</a>, <a class="el" href="a00118.html#addd683b41cf717a08248ddf86b08df49">pcpp::PfRingDevice</a>, and <a class="el" href="a00112.html#af28e1f52506a83feae30e279adb538a7">pcpp::PcapNgFileReaderDevice</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5cc546829570cd981bfa762acd9759c8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool pcpp::IPcapDevice::verifyFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Verify a filter is valid </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter in Berkeley <a class="el" href="a00104.html">Packet</a> Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the filter is valid or false otherwise </dd></dl>
+<p>Returns a std::string representation of the address </p><dl class="section return"><dt>Returns</dt><dd>A string representation of the address </dd></dl>
 
 </div>
 </div>
@@ -427,8 +364,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00068.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00068.html">IPAddress</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

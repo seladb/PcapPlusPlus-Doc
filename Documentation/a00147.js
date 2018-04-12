@@ -1,6 +1,5 @@
 var a00147 =
 [
-    [ "length", "a00147.html#ad0988dfc40b111270d4c447293218d1c", null ],
-    [ "recordType", "a00147.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
-    [ "recordVersion", "a00147.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
+    [ "handshakeVersion", "a00147.html#aa7f3e7a1886a78bf528650958c167d72", null ],
+    [ "random", "a00147.html#a81da9a7d83f33c7a1809fdd919d05d6e", null ]
 ];

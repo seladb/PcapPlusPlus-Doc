@@ -1,14 +1,8 @@
 var a00064 =
 [
-    [ "IgmpV3QueryLayer", "a00064.html#a7b55459a995707aee9f7fbf2fbf6cc3f", null ],
-    [ "IgmpV3QueryLayer", "a00064.html#ab551be87a93aeaa0c88e92877d5f1622", null ],
-    [ "addSourceAddress", "a00064.html#a5a899abed0005e7be97fcad24dfe50d8", null ],
-    [ "addSourceAddressAtIndex", "a00064.html#a23bc052794bffdb6bc1f297a9e6c4a78", null ],
-    [ "computeCalculateFields", "a00064.html#a7b414a996a95b763244d62b2b690f3d0", null ],
-    [ "getHeaderLen", "a00064.html#a7bda0feeacf1348b4638adbeb241b976", null ],
-    [ "getIgmpV3QueryHeader", "a00064.html#a71bdd31a33a48c7ae109921251b3c915", null ],
-    [ "getSourceAddressAtIndex", "a00064.html#af3b97362ea6af15af95883fc705019fc", null ],
-    [ "getSourceAddressCount", "a00064.html#aef8bb73bd4a63cce661e9b3e6a76800f", null ],
-    [ "removeAllSourceAddresses", "a00064.html#ae1b34e7244184be1f41470665913b7e1", null ],
-    [ "removeSourceAddressAtIndex", "a00064.html#a87009d34db619dcfd3a54e40f696fece", null ]
+    [ "checksum", "a00064.html#ae99c9328318afe39ba35e5412b7971c1", null ],
+    [ "numOfGroupRecords", "a00064.html#a43de3d4e5ee029ff4c04c49d555e9c1c", null ],
+    [ "reserved1", "a00064.html#a762ceb0f245c08c7fbfb838b13c71b13", null ],
+    [ "reserved2", "a00064.html#a8e0a855a998749d895a546ce33feef33", null ],
+    [ "type", "a00064.html#a5af52956a647d8fcef26084d188f66bd", null ]
 ];

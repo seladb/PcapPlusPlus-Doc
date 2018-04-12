@@ -109,18 +109,18 @@ $(document).ready(function(){initNavTree('a00016.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00271.html">List of all members</a>  </div>
+<a href="a00275.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::DpdkDevice::DpdkDeviceConfiguration Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00196_source.html">DpdkDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00198_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9343bc64a2b34c9940adc355a225b52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ae9343bc64a2b34c9940adc355a225b52">DpdkDeviceConfiguration</a> (uint16_t <a class="el" href="a00016.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a>=128, uint16_t <a class="el" href="a00016.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a>=512)</td></tr>
-<tr class="separator:ae9343bc64a2b34c9940adc355a225b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0cc13c866bacbe04fe9be2a7afb58b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ad0cc13c866bacbe04fe9be2a7afb58b5">DpdkDeviceConfiguration</a> (uint16_t <a class="el" href="a00016.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a>=128, uint16_t <a class="el" href="a00016.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a>=512, uint16_t <a class="el" href="a00016.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a>=100)</td></tr>
+<tr class="separator:ad0cc13c866bacbe04fe9be2a7afb58b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -128,11 +128,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af0f377c2974af2766ffcb3bd54ed7e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43841be287a4fc02b76d06c1eabcc83c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a></td></tr>
 <tr class="separator:a43841be287a4fc02b76d06c1eabcc83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225b415490ad496be6e0a93cf0b829ba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a></td></tr>
+<tr class="separator:a225b415490ad496be6e0a93cf0b829ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct that contains user configurable parameters for opening a <a class="el" href="a00015.html">DpdkDevice</a>. All of these parameters have default values so the user doesn't have to use these parameters or understand exactly what is their effect </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae9343bc64a2b34c9940adc355a225b52"></a>
+<a class="anchor" id="ad0cc13c866bacbe04fe9be2a7afb58b5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -149,7 +151,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>transmitDescriptorsNumber</em> = <code>512</code>&#160;</td>
+          <td class="paramname"><em>transmitDescriptorsNumber</em> = <code>512</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>flushTxBufferTimeout</em> = <code>100</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -167,6 +175,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">receiveDescriptorsNumber</td><td>An optional parameter for defining the number of RX descriptors that will be allocated for each RX queue. Default value is 128 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">transmitDescriptorsNumber</td><td>An optional parameter for defining the number of TX descriptors that will be allocated for each TX queue. Default value is 512 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flushTxBufferTimeout</td><td>An optional parameter for setting TX buffer timeout in usec. Default value is 100 usec </td></tr>
   </table>
   </dd>
 </dl>
@@ -174,6 +183,19 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a225b415490ad496be6e0a93cf0b829ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::DpdkDevice::DpdkDeviceConfiguration::flushTxBufferTimeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the TX buffer flush timeout in millisecond (only relevant if sending packets using DPDK TX buffer mechanism). A value of zero means no timeout </p>
+
+</div>
+</div>
 <a class="anchor" id="af0f377c2974af2766ffcb3bd54ed7e2d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -205,8 +227,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00015.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00016.html">DpdkDeviceConfiguration</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00015.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00016.html">DpdkDeviceConfiguration</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

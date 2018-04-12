@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: IPv4Layer.h File Reference</title>
+<title>PcapPlusPlus: IPReassembly.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,105 +107,76 @@ $(document).ready(function(){initNavTree('a00206.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">IPv4Layer.h File Reference</div>  </div>
+<div class="title">IPReassembly.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00209_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00203_source.html">IpAddress.h</a>&quot;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00219_source.html">Packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00213_source.html">LRUList.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00205_source.html">IpAddress.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00234_source.html">PointerVector.h</a>&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="a00206_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">pcpp::iphdr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">pcpp::IPReassembly</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">pcpp::IPv4TimestampOptionValue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html">pcpp::IPReassembly::PacketKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">pcpp::IPv4OptionData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">pcpp::IPReassembly::IPv4PacketKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html">pcpp::IPv4Layer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html">pcpp::IPReassembly::IPv6PacketKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">pcpp</a></td></tr>
-<tr class="memdesc:a00251"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">pcpp</a></td></tr>
+<tr class="memdesc:a00253"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ace8e2e21b82a8adc602f561e1e612fb0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0">pcpp::IPProtocolTypes</a> { <br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a37ebd16dbd9fae867a264e290501dd0d">pcpp::PACKETPP_IPPROTO_IP</a> = 0, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0ab4b438a108e462f86dc5d62f51d105dc">pcpp::PACKETPP_IPPROTO_HOPOPTS</a> = 0, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a027db1494ff303416341ffb814c17dfa">pcpp::PACKETPP_IPPROTO_ICMP</a> = 1, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a4a4dbf2992a8132fa14bb414b8bc2766">pcpp::PACKETPP_IPPROTO_IGMP</a> = 2, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a085980e09e408abae0d98cd37ef44f1a">pcpp::PACKETPP_IPPROTO_IPIP</a> = 4, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a5dffe1f660439e4cbde02f6df7125c05">pcpp::PACKETPP_IPPROTO_TCP</a> = 6, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a96638308145652889be03ab78e3c2568">pcpp::PACKETPP_IPPROTO_EGP</a> = 8, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a8ccae1eb803bbf3b8e07eea30d310a9d">pcpp::PACKETPP_IPPROTO_PUP</a> = 12, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a37bdb863a039ad4072f57ab7c10f9d5d">pcpp::PACKETPP_IPPROTO_UDP</a> = 17, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a96435254e0cef23a1eab3153fdc3cbfe">pcpp::PACKETPP_IPPROTO_IDP</a> = 22, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0afc03c7e8eb3dc25345bdbbaa0e148c69">pcpp::PACKETPP_IPPROTO_IPV6</a> = 41, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a00a5aa163aa7b7fd4f76178b22156831">pcpp::PACKETPP_IPPROTO_ROUTING</a> = 43, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a2e3b8ae9b97750a4512bf5aae24b7710">pcpp::PACKETPP_IPPROTO_FRAGMENT</a> = 44, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a50ba6b3e134f18b8e3f9bf492e6e6273">pcpp::PACKETPP_IPPROTO_GRE</a> = 47, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a4791d404d67873fc51c48d600c838998">pcpp::PACKETPP_IPPROTO_ESP</a> = 50, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a018524a2341f1c23dde17e2c385193b9">pcpp::PACKETPP_IPPROTO_AH</a> = 51, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a81cfda499cc9e38aeb886f4fdafd9e9d">pcpp::PACKETPP_IPPROTO_ICMPV6</a> = 58, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0af526200e5e89dfb3596f0b119d4b20bc">pcpp::PACKETPP_IPPROTO_NONE</a> = 59, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0ad59abbf5fc384899c3d484987e5becc4">pcpp::PACKETPP_IPPROTO_DSTOPTS</a> = 60, 
-<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0af29fae046d1c041be606aec6b905b5b2">pcpp::PACKETPP_IPPROTO_RAW</a> = 255, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0af9c6e2fb2f497c363bfb861abd2ca29e">pcpp::PACKETPP_IPPROTO_MAX</a>
-<br />
- }</td></tr>
-<tr class="separator:ace8e2e21b82a8adc602f561e1e612fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac8e7540b72db061b0078f1e2ca2b68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68">pcpp::IPv4OptionTypes</a> { <br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a7ed09a52eb2c2f8c0a6149d4119fb5c4">pcpp::IPV4OPT_EndOfOtionsList</a> = 0, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a5730c6990b55c67a401892b5a0f76f06">pcpp::IPV4OPT_NOP</a> = 1, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50">pcpp::IPV4OPT_RecordRoute</a> = 7, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68ad83361723394c8145e8fbeca520e4883">pcpp::IPV4OPT_MTUProbe</a> = 11, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a137fad8a87da1db821136d7627bcdc3e">pcpp::IPV4OPT_MTUReply</a> = 12, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a16956a70df0824b3d090ccbae26085a9">pcpp::IPV4OPT_QuickStart</a> = 25, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68aa77e6e483eb6b730d83c8e4193c6ae13">pcpp::IPV4OPT_Timestamp</a> = 68, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a4fe4acafa3083d9c53910e1df5e06cf3">pcpp::IPV4OPT_Traceroute</a> = 82, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68aa190d22ee5bdcfbf3ceabf0eec7c242b">pcpp::IPV4OPT_Security</a> = 130, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a4a89e19c9e3e20847149686506190eb0">pcpp::IPV4OPT_LooseSourceRoute</a> = 131, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a8abdeca5161c2e84d5a0d1ffd424cf73">pcpp::IPV4OPT_ExtendedSecurity</a> = 133, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68acffb9a6304ee9ad91e462cf37f4fffc3">pcpp::IPV4OPT_CommercialSecurity</a> = 134, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68af5b15706d9397c6b85f23724c32150ce">pcpp::IPV4OPT_StreamID</a> = 136, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68ae542288e706da4062872975d7a126ab0">pcpp::IPV4OPT_StrictSourceRoute</a> = 137, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68af4adb71ef4b996b0accacc146e35615d">pcpp::IPV4OPT_ExtendedInternetProtocol</a> = 145, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68ab2571c49fbee46558e4d03d20ac4e109">pcpp::IPV4OPT_AddressExtension</a> = 147, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a95c34f23e51ecb1cf92dad1c7a0ed414">pcpp::IPV4OPT_RouterAlert</a> = 148, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a9650103a9ec812a250197bb1468a4b6d">pcpp::IPV4OPT_SelectiveDirectedBroadcast</a> = 149, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a657fa695458649b1fd9ab77f422cd371">pcpp::IPV4OPT_DynamicPacketState</a> = 151, 
-<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68a62a87c452d7656ca675882f322d966fe">pcpp::IPV4OPT_UpstreamMulticastPkt</a> = 152, 
-<br />
-&#160;&#160;<a class="el" href="a00251.html#a4ac8e7540b72db061b0078f1e2ca2b68aad0353574fe158b11da6113b7b129d0d">pcpp::IPV4OPT_Unknown</a>
-<br />
- }</td></tr>
-<tr class="separator:a4ac8e7540b72db061b0078f1e2ca2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a15bf1bb934fcb4a1d7ea4093edd598c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>&#160;&#160;&#160;500000</td></tr>
+<tr class="separator:a15bf1bb934fcb4a1d7ea4093edd598c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file includes an implementation of IP reassembly mechanism (a.k.a IP de-fragmentation), which is the mechanism of assembling IPv4 or IPv6 fragments back into one whole packet. As the previous sentence imply, this module supports both IPv4 and IPv6 reassembly which means the same <a class="el" href="a00072.html">pcpp::IPReassembly</a> instance can reassemble both IPv4 and IPv6 fragments. You can read more about IP fragmentation here: <a href="https://en.wikipedia.org/wiki/IP_fragmentation">https://en.wikipedia.org/wiki/IP_fragmentation</a>.<br />
+ The API is rather simple and contains one main method: <a class="el" href="a00072.html#a923687e62b4287ed6b800dc64f8a53c8">pcpp::IPReassembly::processPacket()</a> which gets a fragment packet as a parameter, does the reassembly and returns a fully reassembled packet when done.<br />
+</p>
+<p>The logic works as follows:</p><ul>
+<li>There is an internal map that stores the reassembly data for each packet. The key to this map, meaning the way to uniquely associate a fragment to a (reassembled) packet is the triplet of source IP, destination IP and IP ID (for IPv4) or Fragment ID (for IPv6)</li>
+<li>When the first fragment arrives a new record is created in the map and the fragment data is copied</li>
+<li>With each fragment arriving the fragment data is copied right after the previous fragment and the reassembled packet is gradually being built</li>
+<li>When the last fragment arrives the packet is fully reassembled and returned to the user. Since all fragment data is copied, the packet pointer returned to the user has to be freed by the user when done using it</li>
+<li>The logic supports out-of-order fragments, meaning that a fragment which arrives out-of-order, its data will be copied to a list of out-of-order fragments where it waits for its turn. This list is observed each time a new fragment arrives to see if the next fragment(s) wait(s) in this list</li>
+<li>If a non-IP packet arrives it's returned as is to the user</li>
+<li>If a non-fragment packet arrives it's returned as is to the user</li>
+</ul>
+<p>In order to limit the amount of memory used by this mechanism there is a limit to the number of concurrent packets being reassembled. The default limit is <a class="el" href="a00206.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> but the user can set any value (determined in <a class="el" href="a00072.html">pcpp::IPReassembly</a> c'tor). Once capacity (the number of concurrent reassembled packets) exceeds this number, the packet that was least recently used will be dropped from the map along with all the data that was reassembled so far. This means that if the next fragment from this packet suddenly appears it will be treated as a new reassembled packet (which will create another record in the map). The user can be notified when reassembled packets are removed from the map by registering to the <a class="el" href="a00072.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">pcpp::IPReassembly::OnFragmentsClean</a> callback in <a class="el" href="a00072.html">pcpp::IPReassembly</a> c'tor </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a15bf1bb934fcb4a1d7ea4093edd598c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE&#160;&#160;&#160;500000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IP reassembly mechanism default capacity. If concurrent packet volume exceeds this numbers, packets will start to be dropped in a LRU manner </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00206.html">IPv4Layer.h</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:29 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00206.html">IPReassembly.h</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

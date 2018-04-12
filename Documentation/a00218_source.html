@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: PacketTrailerLayer.h Source File</title>
+<title>PcapPlusPlus: NullLoopbackLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,74 +105,88 @@ $(document).ready(function(){initNavTree('a00218_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PacketTrailerLayer.h</div>  </div>
+<div class="title">NullLoopbackLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00218.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_PACKET_TRAILER_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_PACKET_TRAILER_LAYER</span></div>
+<a href="a00218.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_NULL_LOOPBACK_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_NULL_LOOPBACK_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00209.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00211.html">Layer.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00251.html">pcpp</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00253.html">pcpp</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00106.html">   30</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00106.html">PacketTrailerLayer</a> : <span class="keyword">public</span> <a class="code" href="a00092.html">Layer</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00106.html#aea69b064afa86745324a8622a0165e66">   39</a></span>&#160;        <a class="code" href="a00106.html#aea69b064afa86745324a8622a0165e66">PacketTrailerLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00092.html">Layer</a>* prevLayer, <a class="code" href="a00104.html">Packet</a>* packet) : <a class="code" href="a00092.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="a00251.html#a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35">PacketTrailer</a>; }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        ~<a class="code" href="a00106.html">PacketTrailerLayer</a>() {}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00106.html#a0bb39a14fd2f8db4b6266048c8f1f9e3">   47</a></span>&#160;        <span class="keyword">inline</span> uint8_t* <a class="code" href="a00106.html#a0bb39a14fd2f8db4b6266048c8f1f9e3">getTrailerData</a>() { <span class="keywordflow">return</span> m_Data; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::string <a class="code" href="a00106.html#aa72e8b8cfd49ab0460138c8e0bdabeea">getTrailerDataAsHexString</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00106.html#ae4b6f2cc0b328146002f9b35f5380d55">   58</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00106.html#ae4b6f2cc0b328146002f9b35f5380d55">getTrailerLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00106.html#ac6cec085e12da509d680cd457503d27d">   65</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00106.html#ac6cec085e12da509d680cd457503d27d">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00218.html#a72b9931b8ad1b827b2fce31ace25cd1c">   12</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_INET          2</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00218.html#a25f214b48ecfdd1a8eeef7549ba07016">   14</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_NS            6</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00218.html#aa5dd2725b050935e84ddcbc642f0ac98">   16</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_ISO           7</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00218.html#a071b913aa88e800c09b87bf426696fe3">   18</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_APPLETALK     16</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00218.html#ae7ce3fda5cf388ac74795c1552997ec3">   20</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_IPX           23</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00218.html#a4733862a795ae56d21d1b14f5def3629">   22</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_INET6_BSD     24</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00218.html#ae4c38fe88eaeac9592eb16619d0a8aca">   24</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_INET6_FREEBSD 28</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00218.html#aa32c8402569788e76a8da0b669d692f5">   26</a></span>&#160;<span class="preprocessor">    #define PCPP_BSD_AF_INET6_DARWIN  30</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00103.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00103.html">NullLoopbackLayer</a> : <span class="keyword">public</span> <a class="code" href="a00093.html">Layer</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00103.html#a3e7c188f2eabfc769fa1f0fa666f01ab">   40</a></span>&#160;        <a class="code" href="a00103.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00105.html">Packet</a>* packet) : <a class="code" href="a00093.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00253.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="a00103.html#a3e7c188f2eabfc769fa1f0fa666f01ab">NullLoopbackLayer</a>(uint32_t family);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00103.html#af2da77d44b862d1f7e1b809ea6db35b4">   51</a></span>&#160;        <a class="code" href="a00103.html#af2da77d44b862d1f7e1b809ea6db35b4">~NullLoopbackLayer</a>() {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        uint32_t <a class="code" href="a00103.html#a82c2b5ee534360deb829789f8fc6bbdb">getFamily</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00103.html#a858718a72b0563f413b8a545d2f6b9d4">setFamily</a>(uint32_t family);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// implement abstract methods</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="a00106.html#a88bcfd9803acb70ffddfc4e5eb13ef94">   70</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00106.html#a88bcfd9803acb70ffddfc4e5eb13ef94">getHeaderLen</a>() { <span class="keywordflow">return</span> m_DataLen; }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00106.html#a5f1c6c8c95e769c599399068003d8be8">   75</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00106.html#a5f1c6c8c95e769c599399068003d8be8">computeCalculateFields</a>() {}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        std::string <a class="code" href="a00106.html#a5a9890a85024926a9da795a884acb074">toString</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00106.html#aca2fc3b5556f04d011977d5460c7a4db">   79</a></span>&#160;        <a class="code" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00106.html#aca2fc3b5556f04d011977d5460c7a4db">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::string dataAsString(<span class="keywordtype">size_t</span> sizeLimitation);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // PACKETPP_PACKET_TRAILER_LAYER</span></div>
-<div class="ttc" id="a00251_html_a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35"><div class="ttname"><a href="a00251.html#a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35">pcpp::PacketTrailer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:201</div></div>
-<div class="ttc" id="a00251_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
-<div class="ttc" id="a00106_html_ac6cec085e12da509d680cd457503d27d"><div class="ttname"><a href="a00106.html#ac6cec085e12da509d680cd457503d27d">pcpp::PacketTrailerLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:65</div></div>
-<div class="ttc" id="a00106_html_a0bb39a14fd2f8db4b6266048c8f1f9e3"><div class="ttname"><a href="a00106.html#a0bb39a14fd2f8db4b6266048c8f1f9e3">pcpp::PacketTrailerLayer::getTrailerData</a></div><div class="ttdeci">uint8_t * getTrailerData()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:47</div></div>
-<div class="ttc" id="a00106_html"><div class="ttname"><a href="a00106.html">pcpp::PacketTrailerLayer</a></div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:30</div></div>
-<div class="ttc" id="a00106_html_aea69b064afa86745324a8622a0165e66"><div class="ttname"><a href="a00106.html#aea69b064afa86745324a8622a0165e66">pcpp::PacketTrailerLayer::PacketTrailerLayer</a></div><div class="ttdeci">PacketTrailerLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:39</div></div>
-<div class="ttc" id="a00209_html"><div class="ttname"><a href="a00209.html">Layer.h</a></div></div>
-<div class="ttc" id="a00106_html_a5f1c6c8c95e769c599399068003d8be8"><div class="ttname"><a href="a00106.html#a5f1c6c8c95e769c599399068003d8be8">pcpp::PacketTrailerLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:75</div></div>
-<div class="ttc" id="a00106_html_ae4b6f2cc0b328146002f9b35f5380d55"><div class="ttname"><a href="a00106.html#ae4b6f2cc0b328146002f9b35f5380d55">pcpp::PacketTrailerLayer::getTrailerLen</a></div><div class="ttdeci">size_t getTrailerLen()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:58</div></div>
-<div class="ttc" id="a00251_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:213</div></div>
-<div class="ttc" id="a00106_html_a5a9890a85024926a9da795a884acb074"><div class="ttname"><a href="a00106.html#a5a9890a85024926a9da795a884acb074">pcpp::PacketTrailerLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00106_html_aa72e8b8cfd49ab0460138c8e0bdabeea"><div class="ttname"><a href="a00106.html#aa72e8b8cfd49ab0460138c8e0bdabeea">pcpp::PacketTrailerLayer::getTrailerDataAsHexString</a></div><div class="ttdeci">std::string getTrailerDataAsHexString()</div></div>
-<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
-<div class="ttc" id="a00106_html_a88bcfd9803acb70ffddfc4e5eb13ef94"><div class="ttname"><a href="a00106.html#a88bcfd9803acb70ffddfc4e5eb13ef94">pcpp::PacketTrailerLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:70</div></div>
-<div class="ttc" id="a00251_html"><div class="ttname"><a href="a00251.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00106_html_aca2fc3b5556f04d011977d5460c7a4db"><div class="ttname"><a href="a00106.html#aca2fc3b5556f04d011977d5460c7a4db">pcpp::PacketTrailerLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> PacketTrailerLayer.h:79</div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00103.html#a6cac977c2a2227ff17b682a30587793a">parseNextLayer</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00103.html#abb777e83866785f6884b9073eee28602">   78</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00103.html#abb777e83866785f6884b9073eee28602">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint32_t); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00103.html#af569f6eae1c3f3638cac65729fda7ead">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00103.html#af569f6eae1c3f3638cac65729fda7ead">computeCalculateFields</a>() {}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::string <a class="code" href="a00103.html#a60754e5840948f08bfb2860fdceb7431">toString</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a00103.html#a422ffca2ade943bab40c462ff64dcaf4">   87</a></span>&#160;        <a class="code" href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00103.html#a422ffca2ade943bab40c462ff64dcaf4">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_NULL_LOOPBACK_LAYER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
+<div class="ttc" id="a00103_html_a6cac977c2a2227ff17b682a30587793a"><div class="ttname"><a href="a00103.html#a6cac977c2a2227ff17b682a30587793a">pcpp::NullLoopbackLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
+<div class="ttc" id="a00103_html_a422ffca2ade943bab40c462ff64dcaf4"><div class="ttname"><a href="a00103.html#a422ffca2ade943bab40c462ff64dcaf4">pcpp::NullLoopbackLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:87</div></div>
+<div class="ttc" id="a00103_html"><div class="ttname"><a href="a00103.html">pcpp::NullLoopbackLayer</a></div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:32</div></div>
+<div class="ttc" id="a00103_html_a82c2b5ee534360deb829789f8fc6bbdb"><div class="ttname"><a href="a00103.html#a82c2b5ee534360deb829789f8fc6bbdb">pcpp::NullLoopbackLayer::getFamily</a></div><div class="ttdeci">uint32_t getFamily()</div></div>
+<div class="ttc" id="a00253_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
+<div class="ttc" id="a00253_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:213</div></div>
+<div class="ttc" id="a00253_html_a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353"><div class="ttname"><a href="a00253.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:146</div></div>
+<div class="ttc" id="a00103_html_a3e7c188f2eabfc769fa1f0fa666f01ab"><div class="ttname"><a href="a00103.html#a3e7c188f2eabfc769fa1f0fa666f01ab">pcpp::NullLoopbackLayer::NullLoopbackLayer</a></div><div class="ttdeci">NullLoopbackLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:40</div></div>
+<div class="ttc" id="a00103_html_af2da77d44b862d1f7e1b809ea6db35b4"><div class="ttname"><a href="a00103.html#af2da77d44b862d1f7e1b809ea6db35b4">pcpp::NullLoopbackLayer::~NullLoopbackLayer</a></div><div class="ttdeci">~NullLoopbackLayer()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:51</div></div>
+<div class="ttc" id="a00105_html"><div class="ttname"><a href="a00105.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00103_html_a60754e5840948f08bfb2860fdceb7431"><div class="ttname"><a href="a00103.html#a60754e5840948f08bfb2860fdceb7431">pcpp::NullLoopbackLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00211_html"><div class="ttname"><a href="a00211.html">Layer.h</a></div></div>
+<div class="ttc" id="a00103_html_a858718a72b0563f413b8a545d2f6b9d4"><div class="ttname"><a href="a00103.html#a858718a72b0563f413b8a545d2f6b9d4">pcpp::NullLoopbackLayer::setFamily</a></div><div class="ttdeci">void setFamily(uint32_t family)</div></div>
+<div class="ttc" id="a00103_html_af569f6eae1c3f3638cac65729fda7ead"><div class="ttname"><a href="a00103.html#af569f6eae1c3f3638cac65729fda7ead">pcpp::NullLoopbackLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:83</div></div>
+<div class="ttc" id="a00253_html"><div class="ttname"><a href="a00253.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00103_html_abb777e83866785f6884b9073eee28602"><div class="ttname"><a href="a00103.html#abb777e83866785f6884b9073eee28602">pcpp::NullLoopbackLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> NullLoopbackLayer.h:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00218.html">PacketTrailerLayer.h</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:29 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00218.html">NullLoopbackLayer.h</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

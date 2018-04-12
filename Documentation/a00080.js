@@ -1,7 +1,8 @@
 var a00080 =
 [
-    [ "fragOffsetAndFlags", "a00080.html#aa25c6f0e0649e2ce43c4cca084f9ea62", null ],
-    [ "headerLen", "a00080.html#a5856041f7a061a0d6d0c0c53a0bdc493", null ],
-    [ "id", "a00080.html#aa385b898dc21535012593791a41358dd", null ],
-    [ "nextHeader", "a00080.html#ad8163575c2faa31dc56ef5e004168f77", null ]
+    [ "headerLen", "a00080.html#a1a5a99b636d53665ecddd07811f188a8", null ],
+    [ "nextHeader", "a00080.html#a88815614e37fce3f5e036fd937be3da8", null ],
+    [ "reserved", "a00080.html#adc7379c6d35f30061fb9db853a69bf63", null ],
+    [ "securityParametersIndex", "a00080.html#af02819e49931d5f4b30da30eb76795e0", null ],
+    [ "sequenceNumber", "a00080.html#a35af84ed644faa6cf1a8ae10876dcb2c", null ]
 ];

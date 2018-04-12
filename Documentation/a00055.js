@@ -1,4 +1,4 @@
 var a00055 =
 [
-    [ "setDirection", "a00055.html#ace8adbbf3d89a745c02b353ac6f2122a", null ]
+    [ "~IFileWriterDevice", "a00055.html#ad1efdc8f258b6981d0429c61992f2e13", null ]
 ];

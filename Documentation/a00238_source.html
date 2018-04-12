@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: SllLayer.h Source File</title>
+<title>PcapPlusPlus: SdpLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,92 +105,113 @@ $(document).ready(function(){initNavTree('a00238_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SllLayer.h</div>  </div>
+<div class="title">SdpLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00238.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_SLL_LAYER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_SLL_LAYER</span></div>
+<a href="a00238.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACKETPP_SDP_LAYER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACKETPP_SDP_LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00212.html">MacAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00209.html">Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00251.html">pcpp</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00141.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00141.html">sll_header</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00141.html#a915dd77d81fbf0e815fc8e7e268582b8">   27</a></span>&#160;        uint16_t <a class="code" href="a00141.html#a915dd77d81fbf0e815fc8e7e268582b8">packet_type</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00141.html#a8f8dbb002e720ec7700bc617d2429ab2">   29</a></span>&#160;        uint16_t <a class="code" href="a00141.html#a8f8dbb002e720ec7700bc617d2429ab2">ARPHRD_type</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00141.html#ac253e0a098c39f46d192619ed5d229bf">   31</a></span>&#160;        uint16_t <a class="code" href="a00141.html#ac253e0a098c39f46d192619ed5d229bf">link_layer_addr_len</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00141.html#afbec8e24ed690d8765fdd5ebeff649cd">   35</a></span>&#160;        uint8_t <a class="code" href="a00141.html#afbec8e24ed690d8765fdd5ebeff649cd">link_layer_addr</a>[8];</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00141.html#a133d6e18091bafa51d1a4558a9f6bda9">   37</a></span>&#160;        uint16_t <a class="code" href="a00141.html#a133d6e18091bafa51d1a4558a9f6bda9">protocol_type</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00142.html">   45</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00142.html">SllLayer</a> : <span class="keyword">public</span> <a class="code" href="a00092.html">Layer</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00142.html#af684b2025e641ddebc35fb62055a5cb8">   54</a></span>&#160;        <a class="code" href="a00142.html#af684b2025e641ddebc35fb62055a5cb8">SllLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00104.html">Packet</a>* packet) : <a class="code" href="a00092.html">Layer</a>(data, dataLen, NULL, packet) { m_Protocol = <a class="code" href="a00251.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">SLL</a>; }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="a00142.html#af684b2025e641ddebc35fb62055a5cb8">SllLayer</a>(uint16_t packetType, uint16_t ARPHRDType);</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00205.html">IpAddress.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00248.html">TextBasedProtocol.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00253.html">pcpp</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00238.html#a8be76a4922f6098201e92850e913ddc8">   18</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_PROTOCOL_VERSION_FIELD &quot;v&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00238.html#a976f9f075cfb24ce0ddaf80f404efe42">   20</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_ORIGINATOR_FIELD       &quot;o&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00238.html#a766206ef6d418e2f5b8f06c392881611">   22</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_SESSION_NAME_FIELD     &quot;s&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00238.html#a10b654364cc129e8a8a09d8336cee763">   24</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_INFO_FIELD             &quot;i&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00238.html#a0cfcd66fe312890f3f7ff44e98ec909f">   26</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_URI_FIELD              &quot;u&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00238.html#a5a64a6604b467c377ec83a69c1efa8a9">   28</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_EMAIL_FIELD            &quot;e&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00238.html#a2945d31c61f0c871400a2ebbc68d3a93">   30</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_PHONE_FIELD            &quot;p&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00238.html#a37c55925c55aa40dbee6c3e98fb5611c">   32</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_CONNECTION_INFO_FIELD  &quot;c&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00238.html#a7342cb29cdbf5457a14d26182c274b4e">   34</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_BANDWIDTH_FIELD        &quot;b&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00238.html#a436559034ada506e5c3a5abc0b35899b">   36</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_TIME_FIELD             &quot;t&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00238.html#ad27c33e00d5080184880cd3b5dc8f222">   38</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_REPEAT_TIMES_FIELD     &quot;r&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00238.html#addc61e36c79f08af7bd78403817dfc26">   40</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_TIME_ZONE_FIELD        &quot;z&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00238.html#a4a0ebed21e39e533c37a554919f3e597">   42</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_ENCRYPTION_KEY_FIELD   &quot;k&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00238.html#a916b64da7dfa7de9a44d9d0650e7e34d">   44</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_MEDIA_ATTRIBUTE_FIELD  &quot;a&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00238.html#ad8edc312ae073f11b132152adf6a2908">   46</a></span>&#160;<span class="preprocessor">#define PCPP_SDP_MEDIA_NAME_FIELD       &quot;m&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00135.html">   59</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00135.html">SdpLayer</a> : <span class="keyword">public</span> <a class="code" href="a00183.html">TextBasedProtocolMessage</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ~<a class="code" href="a00142.html">SllLayer</a>() {}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00142.html#a69226013847c3e90af712f731ae3272e">   69</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="a00141.html">sll_header</a>* <a class="code" href="a00142.html#a69226013847c3e90af712f731ae3272e">getSllHeader</a>() { <span class="keywordflow">return</span> (<a class="code" href="a00141.html">sll_header</a>*)m_Data; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="a00135.html#add15c986ba55f22fe64c9e21b0475949">SdpLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="a00093.html">Layer</a>* prevLayer, <a class="code" href="a00105.html">Packet</a>* packet);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00142.html#a78053b4433c4378a004eda79cbb29d46">setLinkLayerAddr</a>(uint8_t* addr, <span class="keywordtype">size_t</span> addrLength);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00142.html#aae8f13d547c763ec186679f72e597766">setMacAddressAsLinkLayer</a>(<a class="code" href="a00096.html">MacAddress</a> macAddr);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00142.html#a77739a7d98720c05eab96a09ce54f12d">parseNextLayer</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00142.html#ac71b262a4181ef0cc659c902251e6790">   96</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="a00142.html#ac71b262a4181ef0cc659c902251e6790">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="a00141.html">sll_header</a>); }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="a00135.html#add15c986ba55f22fe64c9e21b0475949">SdpLayer</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="a00135.html#add15c986ba55f22fe64c9e21b0475949">SdpLayer</a>(std::string username, <span class="keywordtype">long</span> sessionID, <span class="keywordtype">long</span> sessionVersion, <a class="code" href="a00073.html">IPv4Address</a> ipAddress, std::string sessionName, <span class="keywordtype">long</span> startTime, <span class="keywordtype">long</span> stopTime);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00142.html#a2964574f2bc958b94d7474778f691e62">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::string <a class="code" href="a00142.html#a7cfa1a15bfd60e2b88ad86123d818a5c">toString</a>();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00142.html#a7e5b24fb74a0a6a7a026706a723293f2">  105</a></span>&#160;        <a class="code" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00142.html#a7e5b24fb74a0a6a7a026706a723293f2">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_SLL_LAYER */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="ttc" id="a00141_html_ac253e0a098c39f46d192619ed5d229bf"><div class="ttname"><a href="a00141.html#ac253e0a098c39f46d192619ed5d229bf">pcpp::sll_header::link_layer_addr_len</a></div><div class="ttdeci">uint16_t link_layer_addr_len</div><div class="ttdef"><b>Definition:</b> SllLayer.h:31</div></div>
-<div class="ttc" id="a00142_html_a69226013847c3e90af712f731ae3272e"><div class="ttname"><a href="a00142.html#a69226013847c3e90af712f731ae3272e">pcpp::SllLayer::getSllHeader</a></div><div class="ttdeci">sll_header * getSllHeader()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:69</div></div>
-<div class="ttc" id="a00141_html_a915dd77d81fbf0e815fc8e7e268582b8"><div class="ttname"><a href="a00141.html#a915dd77d81fbf0e815fc8e7e268582b8">pcpp::sll_header::packet_type</a></div><div class="ttdeci">uint16_t packet_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:27</div></div>
-<div class="ttc" id="a00142_html_a2964574f2bc958b94d7474778f691e62"><div class="ttname"><a href="a00142.html#a2964574f2bc958b94d7474778f691e62">pcpp::SllLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
-<div class="ttc" id="a00251_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
-<div class="ttc" id="a00142_html"><div class="ttname"><a href="a00142.html">pcpp::SllLayer</a></div><div class="ttdef"><b>Definition:</b> SllLayer.h:45</div></div>
-<div class="ttc" id="a00142_html_af684b2025e641ddebc35fb62055a5cb8"><div class="ttname"><a href="a00142.html#af684b2025e641ddebc35fb62055a5cb8">pcpp::SllLayer::SllLayer</a></div><div class="ttdeci">SllLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> SllLayer.h:54</div></div>
-<div class="ttc" id="a00141_html_a8f8dbb002e720ec7700bc617d2429ab2"><div class="ttname"><a href="a00141.html#a8f8dbb002e720ec7700bc617d2429ab2">pcpp::sll_header::ARPHRD_type</a></div><div class="ttdeci">uint16_t ARPHRD_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:29</div></div>
-<div class="ttc" id="a00251_html_a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744"><div class="ttname"><a href="a00251.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:136</div></div>
-<div class="ttc" id="a00096_html"><div class="ttname"><a href="a00096.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
-<div class="ttc" id="a00142_html_a7e5b24fb74a0a6a7a026706a723293f2"><div class="ttname"><a href="a00142.html#a7e5b24fb74a0a6a7a026706a723293f2">pcpp::SllLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:105</div></div>
-<div class="ttc" id="a00142_html_a78053b4433c4378a004eda79cbb29d46"><div class="ttname"><a href="a00142.html#a78053b4433c4378a004eda79cbb29d46">pcpp::SllLayer::setLinkLayerAddr</a></div><div class="ttdeci">bool setLinkLayerAddr(uint8_t *addr, size_t addrLength)</div></div>
-<div class="ttc" id="a00141_html"><div class="ttname"><a href="a00141.html">pcpp::sll_header</a></div><div class="ttdef"><b>Definition:</b> SllLayer.h:21</div></div>
-<div class="ttc" id="a00209_html"><div class="ttname"><a href="a00209.html">Layer.h</a></div></div>
-<div class="ttc" id="a00142_html_a77739a7d98720c05eab96a09ce54f12d"><div class="ttname"><a href="a00142.html#a77739a7d98720c05eab96a09ce54f12d">pcpp::SllLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="a00212_html"><div class="ttname"><a href="a00212.html">MacAddress.h</a></div></div>
-<div class="ttc" id="a00142_html_a7cfa1a15bfd60e2b88ad86123d818a5c"><div class="ttname"><a href="a00142.html#a7cfa1a15bfd60e2b88ad86123d818a5c">pcpp::SllLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="a00141_html_afbec8e24ed690d8765fdd5ebeff649cd"><div class="ttname"><a href="a00141.html#afbec8e24ed690d8765fdd5ebeff649cd">pcpp::sll_header::link_layer_addr</a></div><div class="ttdeci">uint8_t link_layer_addr[8]</div><div class="ttdef"><b>Definition:</b> SllLayer.h:35</div></div>
-<div class="ttc" id="a00142_html_ac71b262a4181ef0cc659c902251e6790"><div class="ttname"><a href="a00142.html#ac71b262a4181ef0cc659c902251e6790">pcpp::SllLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:96</div></div>
-<div class="ttc" id="a00141_html_a133d6e18091bafa51d1a4558a9f6bda9"><div class="ttname"><a href="a00141.html#a133d6e18091bafa51d1a4558a9f6bda9">pcpp::sll_header::protocol_type</a></div><div class="ttdeci">uint16_t protocol_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:37</div></div>
-<div class="ttc" id="a00251_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:213</div></div>
-<div class="ttc" id="a00142_html_aae8f13d547c763ec186679f72e597766"><div class="ttname"><a href="a00142.html#aae8f13d547c763ec186679f72e597766">pcpp::SllLayer::setMacAddressAsLinkLayer</a></div><div class="ttdeci">bool setMacAddressAsLinkLayer(MacAddress macAddr)</div></div>
-<div class="ttc" id="a00092_html"><div class="ttname"><a href="a00092.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
-<div class="ttc" id="a00251_html"><div class="ttname"><a href="a00251.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
-<div class="ttc" id="a00104_html"><div class="ttname"><a href="a00104.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        ~<a class="code" href="a00135.html">SdpLayer</a>() {}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00135.html#a5e53ceb5fbe79493f5da02d340b8bee2">  105</a></span>&#160;        <a class="code" href="a00135.html#a5e53ceb5fbe79493f5da02d340b8bee2">SdpLayer</a>(<span class="keyword">const</span> <a class="code" href="a00135.html">SdpLayer</a>&amp; other) : <a class="code" href="a00183.html">TextBasedProtocolMessage</a>(other) {}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="a00135.html#aa6ca3ae82b3e5cbfa0781a68c231e605">  112</a></span>&#160;        <a class="code" href="a00135.html">SdpLayer</a>&amp; <a class="code" href="a00135.html#aa6ca3ae82b3e5cbfa0781a68c231e605">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00135.html">SdpLayer</a>&amp; other) { TextBasedProtocolMessage::operator=(other); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="a00073.html">IPv4Address</a> <a class="code" href="a00135.html#a14f4a728d68929c829e93b0de336d538">getOwnerIPv4Address</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        uint16_t <a class="code" href="a00135.html#a5fae788a725d57e2e9fe6a7d8f046885">getMediaPort</a>(std::string mediaType);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00135.html#a9df93bfb9cd914625bbd8f20895f8b8b">addMediaDescription</a>(std::string mediaType, uint16_t mediaPort, std::string mediaProtocol, std::string mediaFormat, std::vector&lt;std::string&gt; mediaAttributes);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="comment">// overridden methods</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="a00135.html#aa9dadbd7cb435abf90f298bb2a3eb21d">  156</a></span>&#160;        <a class="code" href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="a00135.html#aa9dadbd7cb435abf90f298bb2a3eb21d">getOsiModelLayer</a>() { <span class="keywordflow">return</span> <a class="code" href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a>; }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        std::string <a class="code" href="a00135.html#acdb3cc196fd8bb453d4293f93d5ff514">toString</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// implementation of abstract methods</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">char</span> getHeaderFieldNameValueSeparator() { <span class="keywordflow">return</span> <span class="charliteral">&#39;=&#39;</span>; }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">bool</span> spacesAllowedBetweenHeaderFieldNameAndValue() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    };</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif // PACKETPP_SDP_LAYER</span></div>
+<div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
+<div class="ttc" id="a00135_html"><div class="ttname"><a href="a00135.html">pcpp::SdpLayer</a></div><div class="ttdef"><b>Definition:</b> SdpLayer.h:59</div></div>
+<div class="ttc" id="a00135_html_a5fae788a725d57e2e9fe6a7d8f046885"><div class="ttname"><a href="a00135.html#a5fae788a725d57e2e9fe6a7d8f046885">pcpp::SdpLayer::getMediaPort</a></div><div class="ttdeci">uint16_t getMediaPort(std::string mediaType)</div></div>
+<div class="ttc" id="a00135_html_acdb3cc196fd8bb453d4293f93d5ff514"><div class="ttname"><a href="a00135.html#acdb3cc196fd8bb453d4293f93d5ff514">pcpp::SdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="a00135_html_a14f4a728d68929c829e93b0de336d538"><div class="ttname"><a href="a00135.html#a14f4a728d68929c829e93b0de336d538">pcpp::SdpLayer::getOwnerIPv4Address</a></div><div class="ttdeci">IPv4Address getOwnerIPv4Address()</div></div>
+<div class="ttc" id="a00253_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
+<div class="ttc" id="a00135_html_aa6ca3ae82b3e5cbfa0781a68c231e605"><div class="ttname"><a href="a00135.html#aa6ca3ae82b3e5cbfa0781a68c231e605">pcpp::SdpLayer::operator=</a></div><div class="ttdeci">SdpLayer &amp; operator=(const SdpLayer &amp;other)</div><div class="ttdef"><b>Definition:</b> SdpLayer.h:112</div></div>
+<div class="ttc" id="a00253_html_a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"><div class="ttname"><a href="a00253.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:219</div></div>
+<div class="ttc" id="a00183_html"><div class="ttname"><a href="a00183.html">pcpp::TextBasedProtocolMessage</a></div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:104</div></div>
+<div class="ttc" id="a00205_html"><div class="ttname"><a href="a00205.html">IpAddress.h</a></div></div>
+<div class="ttc" id="a00105_html"><div class="ttname"><a href="a00105.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
+<div class="ttc" id="a00135_html_aa9dadbd7cb435abf90f298bb2a3eb21d"><div class="ttname"><a href="a00135.html#aa9dadbd7cb435abf90f298bb2a3eb21d">pcpp::SdpLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer()</div><div class="ttdef"><b>Definition:</b> SdpLayer.h:156</div></div>
+<div class="ttc" id="a00135_html_a9df93bfb9cd914625bbd8f20895f8b8b"><div class="ttname"><a href="a00135.html#a9df93bfb9cd914625bbd8f20895f8b8b">pcpp::SdpLayer::addMediaDescription</a></div><div class="ttdeci">bool addMediaDescription(std::string mediaType, uint16_t mediaPort, std::string mediaProtocol, std::string mediaFormat, std::vector&lt; std::string &gt; mediaAttributes)</div></div>
+<div class="ttc" id="a00135_html_a5e53ceb5fbe79493f5da02d340b8bee2"><div class="ttname"><a href="a00135.html#a5e53ceb5fbe79493f5da02d340b8bee2">pcpp::SdpLayer::SdpLayer</a></div><div class="ttdeci">SdpLayer(const SdpLayer &amp;other)</div><div class="ttdef"><b>Definition:</b> SdpLayer.h:105</div></div>
+<div class="ttc" id="a00253_html"><div class="ttname"><a href="a00253.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib. </div></div>
+<div class="ttc" id="a00135_html_add15c986ba55f22fe64c9e21b0475949"><div class="ttname"><a href="a00135.html#add15c986ba55f22fe64c9e21b0475949">pcpp::SdpLayer::SdpLayer</a></div><div class="ttdeci">SdpLayer()</div></div>
+<div class="ttc" id="a00073_html"><div class="ttname"><a href="a00073.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:113</div></div>
+<div class="ttc" id="a00248_html"><div class="ttname"><a href="a00248.html">TextBasedProtocol.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00238.html">SllLayer.h</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:29 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00238.html">SdpLayer.h</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

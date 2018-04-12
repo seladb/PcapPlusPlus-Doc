@@ -1,4 +1,4 @@
 var a00056 =
 [
-    [ "setOperator", "a00056.html#ae6bd275b11802dec7f9bc1a7baaf6d19", null ]
+    [ "setDirection", "a00056.html#ace8adbbf3d89a745c02b353ac6f2122a", null ]
 ];

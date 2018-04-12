@@ -1,8 +1,9 @@
 var a00029 =
 [
-    [ "addField", "a00029.html#a10f4534ce8764aacae232c789bfa1884", null ],
-    [ "addField", "a00029.html#ad51afc66df73de546fa6e0c30184bb2c", null ],
-    [ "getOsiModelLayer", "a00029.html#a7609cb4fbbab808fb6b1755a3a738f16", null ],
-    [ "insertField", "a00029.html#afc89318693401eeeff64f852c8c1c5e6", null ],
-    [ "insertField", "a00029.html#a6c69d36f3197df9ee3f9fb7e3de186fc", null ]
+    [ "HeaderField", "a00029.html#adfc033ec04c1a31156bedf7273791ed0", null ],
+    [ "getFieldName", "a00029.html#a776aa57e69e9c18fc5398f62cbed046c", null ],
+    [ "getFieldSize", "a00029.html#ad8ff08cb95afb62d01caccf7edb5fd54", null ],
+    [ "getFieldValue", "a00029.html#ad3f846ebe5f87b5bc1ec452135bd7ad0", null ],
+    [ "isEndOfHeader", "a00029.html#a80a8b96e3e6cb6589799e6440ab1cf75", null ],
+    [ "setFieldValue", "a00029.html#a6c89f09744ba1ade7e75adf8fddbecbb", null ]
 ];

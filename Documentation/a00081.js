@@ -1,7 +1,7 @@
 var a00081 =
 [
-    [ "headerLen", "a00081.html#ae7e5662b426aa656b4facb81bc947518", null ],
-    [ "nextHeader", "a00081.html#a4d9369b6437e7665bd8fc54a23232ef4", null ],
-    [ "routingType", "a00081.html#a7c4579b3c40ab7180339addc210d0898", null ],
-    [ "segmentsLeft", "a00081.html#a0f695f69f4ef95239ac86212a8fcd4dd", null ]
+    [ "fragOffsetAndFlags", "a00081.html#aa25c6f0e0649e2ce43c4cca084f9ea62", null ],
+    [ "headerLen", "a00081.html#a5856041f7a061a0d6d0c0c53a0bdc493", null ],
+    [ "id", "a00081.html#aa385b898dc21535012593791a41358dd", null ],
+    [ "nextHeader", "a00081.html#ad8163575c2faa31dc56ef5e004168f77", null ]
 ];

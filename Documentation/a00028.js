@@ -1,9 +1,11 @@
 var a00028 =
 [
-    [ "HeaderField", "a00028.html#adfc033ec04c1a31156bedf7273791ed0", null ],
-    [ "getFieldName", "a00028.html#a776aa57e69e9c18fc5398f62cbed046c", null ],
-    [ "getFieldSize", "a00028.html#ad8ff08cb95afb62d01caccf7edb5fd54", null ],
-    [ "getFieldValue", "a00028.html#ad3f846ebe5f87b5bc1ec452135bd7ad0", null ],
-    [ "isEndOfHeader", "a00028.html#a80a8b96e3e6cb6589799e6440ab1cf75", null ],
-    [ "setFieldValue", "a00028.html#a6c89f09744ba1ade7e75adf8fddbecbb", null ]
+    [ "GREv1Layer", "a00028.html#affdd47adeca80911b621a14421853e8e", null ],
+    [ "GREv1Layer", "a00028.html#a9c118e97790a83bf6d22592191d2f453", null ],
+    [ "computeCalculateFields", "a00028.html#aa2b638c7d16b9475222dd0d0696a3514", null ],
+    [ "getAcknowledgmentNum", "a00028.html#a7f14840cae9c48e13afb7716411e6934", null ],
+    [ "getGreHeader", "a00028.html#ab3913842456c877137d5a2e921d97007", null ],
+    [ "setAcknowledgmentNum", "a00028.html#a5adce7bc05cabe68f5680b44fb5a0d12", null ],
+    [ "toString", "a00028.html#a94273542f85918215b272ae98b5ade35", null ],
+    [ "unsetAcknowledgmentNum", "a00028.html#ab5c8246ba3b77d8ac14644801dd8ebda", null ]
 ];

@@ -1,6 +1,7 @@
 var a00158 =
 [
-    [ "extensionData", "a00158.html#a058c404f39c4b185647f5fc6cade65d4", null ],
-    [ "extensionDataLength", "a00158.html#af116e93a2decd3c986ae109b16c12b28", null ],
-    [ "extensionType", "a00158.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
+    [ "SSLClientKeyExchangeMessage", "a00158.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
+    [ "getClientKeyExchangeParams", "a00158.html#a23584b393dea97a6d249c750b99f4c5f", null ],
+    [ "getClientKeyExchangeParamsLength", "a00158.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
+    [ "toString", "a00158.html#ada71ea045d9dbfd57484a156a108c00b", null ]
 ];

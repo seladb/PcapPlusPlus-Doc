@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::IPv6Layer Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPv6HopByHopHeader Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,249 +108,67 @@ $(document).ready(function(){initNavTree('a00088.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00345.html">List of all members</a>  </div>
+<a href="a00350.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPv6Layer Class Reference</div>  </div>
+<div class="title">pcpp::IPv6HopByHopHeader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00208_source.html">IPv6Layer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00209_source.html">IPv6Extensions.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::IPv6Layer:</div>
+Inheritance diagram for pcpp::IPv6HopByHopHeader:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00088.png" usemap="#pcpp::IPv6Layer_map" alt=""/>
-  <map id="pcpp::IPv6Layer_map" name="pcpp::IPv6Layer_map">
-<area href="a00092.html" alt="pcpp::Layer" shape="rect" coords="0,56,130,80"/>
-<area href="a00050.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,130,24"/>
+  <img src="a00088.png" usemap="#pcpp::IPv6HopByHopHeader_map" alt=""/>
+  <map id="pcpp::IPv6HopByHopHeader_map" name="pcpp::IPv6HopByHopHeader_map">
+<area href="a00092.html" alt="pcpp::IPv6TLVOptionHeader" shape="rect" coords="0,56,174,80"/>
+<area href="a00086.html" alt="pcpp::IPv6Extension" shape="rect" coords="0,0,174,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2545ecbcd8e42b449366237745f0774"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#ad2545ecbcd8e42b449366237745f0774">IPv6Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00092.html">Layer</a> *prevLayer, <a class="el" href="a00104.html">Packet</a> *packet)</td></tr>
-<tr class="separator:ad2545ecbcd8e42b449366237745f0774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a959b6e8d2698d12418b301e15fbbf446"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a959b6e8d2698d12418b301e15fbbf446">IPv6Layer</a> ()</td></tr>
-<tr class="separator:a959b6e8d2698d12418b301e15fbbf446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16dddacbec4de2d1905cedbebc663400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a16dddacbec4de2d1905cedbebc663400">IPv6Layer</a> (const <a class="el" href="a00082.html">IPv6Address</a> &amp;srcIP, const <a class="el" href="a00082.html">IPv6Address</a> &amp;dstIP)</td></tr>
-<tr class="separator:a16dddacbec4de2d1905cedbebc663400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9b33cb2b2295bbed21a97b47f746be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a1c9b33cb2b2295bbed21a97b47f746be">IPv6Layer</a> (const <a class="el" href="a00088.html">IPv6Layer</a> &amp;other)</td></tr>
-<tr class="separator:a1c9b33cb2b2295bbed21a97b47f746be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd2642767dd2a9d59ff78ed849a48c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#acd2642767dd2a9d59ff78ed849a48c62">~IPv6Layer</a> ()</td></tr>
-<tr class="separator:acd2642767dd2a9d59ff78ed849a48c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8677acd397608ff8535b88cf66e656c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00088.html">IPv6Layer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a8677acd397608ff8535b88cf66e656c7">operator=</a> (const <a class="el" href="a00088.html">IPv6Layer</a> &amp;other)</td></tr>
-<tr class="separator:a8677acd397608ff8535b88cf66e656c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acacfbacbed97b015fb54326f914e3bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00066.html">ip6_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#acacfbacbed97b015fb54326f914e3bae">getIPv6Header</a> ()</td></tr>
-<tr class="separator:acacfbacbed97b015fb54326f914e3bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8080e3a1ef1cd7fe81cd36033bbc52df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00082.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a8080e3a1ef1cd7fe81cd36033bbc52df">getSrcIpAddress</a> ()</td></tr>
-<tr class="separator:a8080e3a1ef1cd7fe81cd36033bbc52df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a436faafdf30e810e3a8d96e74f256c74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00082.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a436faafdf30e810e3a8d96e74f256c74">getDstIpAddress</a> ()</td></tr>
-<tr class="separator:a436faafdf30e810e3a8d96e74f256c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea41b0a0d381fe8696ce95e87cf00f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a4ea41b0a0d381fe8696ce95e87cf00f8">getExtensionCount</a> ()</td></tr>
-<tr class="separator:a4ea41b0a0d381fe8696ce95e87cf00f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80515a5c17a42d5fbae1a8b4877ca98c"><td class="memTemplParams" colspan="2">template&lt;class TIPv6Extension &gt; </td></tr>
-<tr class="memitem:a80515a5c17a42d5fbae1a8b4877ca98c"><td class="memTemplItemLeft" align="right" valign="top">TIPv6Extension *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00088.html#a80515a5c17a42d5fbae1a8b4877ca98c">getExtensionOfType</a> ()</td></tr>
-<tr class="separator:a80515a5c17a42d5fbae1a8b4877ca98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee1cdbf42f6003d3c748ae51afe4d44"><td class="memTemplParams" colspan="2">template&lt;class TIPv6Extension &gt; </td></tr>
-<tr class="memitem:adee1cdbf42f6003d3c748ae51afe4d44"><td class="memTemplItemLeft" align="right" valign="top">TIPv6Extension *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00088.html#adee1cdbf42f6003d3c748ae51afe4d44">addExtension</a> (const TIPv6Extension &amp;extensionHeader)</td></tr>
-<tr class="separator:adee1cdbf42f6003d3c748ae51afe4d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3201693539a2f88cc5a4710384e0b03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a3201693539a2f88cc5a4710384e0b03d">removeAllExtensions</a> ()</td></tr>
-<tr class="separator:a3201693539a2f88cc5a4710384e0b03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c27497fd33a8d8a4888c7611f56161"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a87c27497fd33a8d8a4888c7611f56161">isFragment</a> ()</td></tr>
-<tr class="separator:a87c27497fd33a8d8a4888c7611f56161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494abc8a7bfc1a520c86e61fee3a2f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a494abc8a7bfc1a520c86e61fee3a2f46">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a494abc8a7bfc1a520c86e61fee3a2f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee75c2ab7ef3112b58ebe3c73a1c4ce"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#acee75c2ab7ef3112b58ebe3c73a1c4ce">getHeaderLen</a> ()</td></tr>
-<tr class="separator:acee75c2ab7ef3112b58ebe3c73a1c4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba2a45fa6e2cc43edab9a548773faf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#aaba2a45fa6e2cc43edab9a548773faf1">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:aaba2a45fa6e2cc43edab9a548773faf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2abd76cb9650332abde50e5040aed1d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#af2abd76cb9650332abde50e5040aed1d">toString</a> ()</td></tr>
-<tr class="separator:af2abd76cb9650332abde50e5040aed1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff702bd88a02c7f05a84bdf5b77a1a21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#aff702bd88a02c7f05a84bdf5b77a1a21">getOsiModelLayer</a> ()</td></tr>
-<tr class="separator:aff702bd88a02c7f05a84bdf5b77a1a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00092"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00092')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00092.html">pcpp::Layer</a></td></tr>
-<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
-<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00092.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
-<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00092.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00251.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
-<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
-<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
-<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
-<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a2fdf63eb660bf17119fbe9b9ae89aff2">getDataPtr</a> (size_t offset=0)</td></tr>
-<tr class="separator:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0382711ca3677f063e9d47130e38ab0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a0382711ca3677f063e9d47130e38ab0b">IPv6HopByHopHeader</a> (const std::vector&lt; <a class="el" href="a00185.html">TLVOptionBuilder</a> &gt; &amp;options)</td></tr>
+<tr class="separator:a0382711ca3677f063e9d47130e38ab0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00092"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00092')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00092.html">pcpp::IPv6TLVOptionHeader</a></td></tr>
+<tr class="memitem:a4bef63b0af6888fa110fdb2a36a17365 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00184.html">TLVOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a4bef63b0af6888fa110fdb2a36a17365">getOption</a> (uint8_t optionType)</td></tr>
+<tr class="separator:a4bef63b0af6888fa110fdb2a36a17365 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0290e277f718900b20085179814898 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00184.html">TLVOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a4c0290e277f718900b20085179814898">getFirstOption</a> ()</td></tr>
+<tr class="separator:a4c0290e277f718900b20085179814898 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9953af226ecc200c50b4c215b34676 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00184.html">TLVOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#adb9953af226ecc200c50b4c215b34676">getNextOption</a> (<a class="el" href="a00184.html">TLVOption</a> *option)</td></tr>
+<tr class="separator:adb9953af226ecc200c50b4c215b34676 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0c471faaacd0bdb7ab3644b51c70c3 inherit pub_methods_a00092"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#adc0c471faaacd0bdb7ab3644b51c70c3">getOptionCount</a> ()</td></tr>
+<tr class="separator:adc0c471faaacd0bdb7ab3644b51c70c3 inherit pub_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00086"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00086')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00086.html">pcpp::IPv6Extension</a></td></tr>
+<tr class="memitem:a02bb5410b5504dbbdfe5b42d7f97e5fe inherit pub_methods_a00086"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a02bb5410b5504dbbdfe5b42d7f97e5fe">getExtensionLen</a> () const </td></tr>
+<tr class="separator:a02bb5410b5504dbbdfe5b42d7f97e5fe inherit pub_methods_a00086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973139f3b152f49125f87c3b442b0b93 inherit pub_methods_a00086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379">IPv6ExtensionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a973139f3b152f49125f87c3b442b0b93">getExtensionType</a> ()</td></tr>
+<tr class="separator:a973139f3b152f49125f87c3b442b0b93 inherit pub_methods_a00086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_a00086"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a8925687d2b0eeae8fbdcf8999e7c60c2">~IPv6Extension</a> ()</td></tr>
+<tr class="separator:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_a00086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_a00086"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a00086')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="a00086.html">pcpp::IPv6Extension</a></td></tr>
+<tr class="memitem:a6b445a68c4313bfabd44a6f57de03379 inherit pub_types_a00086"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379">IPv6ExtensionType</a> { <br />
+&#160;&#160;<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379a1195489dc910590eb445dda1d992b605">IPv6HopByHop</a> = 0, 
+<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379a9fcfe959d72f80e4684e00e6e9559491">IPv6Routing</a> = 43, 
+<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379aa14f4c7f39800c769a02bd032c4a5b87">IPv6Fragmentation</a> = 44, 
+<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379afb7f534eac2e9e0a1fe653669ae42d6b">IPv6AuthenticationHdr</a> = 51, 
+<br />
+&#160;&#160;<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379af3d807c9ff58cd2ec3ec5fc34e9efcb3">IPv6Destination</a> = 60, 
+<a class="el" href="a00086.html#a6b445a68c4313bfabd44a6f57de03379ae3395e712995d3fec2e28e1b2df278db">IPv6ExtensionUnknown</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a6b445a68c4313bfabd44a6f57de03379 inherit pub_types_a00086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_a00092"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00092')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a00092.html">pcpp::IPv6TLVOptionHeader</a></td></tr>
+<tr class="memitem:a299b5196ca0a47c9ac81a92a689fd9eb inherit pro_methods_a00092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a299b5196ca0a47c9ac81a92a689fd9eb">IPv6TLVOptionHeader</a> (const std::vector&lt; <a class="el" href="a00185.html">TLVOptionBuilder</a> &gt; &amp;options)</td></tr>
+<tr class="separator:a299b5196ca0a47c9ac81a92a689fd9eb inherit pro_methods_a00092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an IPv6 protocol layer </p>
+<div class="textblock"><p>Represents IPv6 Hop-By-Hop extension header and allows easy access to all of its data including the TLV options stored </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad2545ecbcd8e42b449366237745f0774"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv6Layer::IPv6Layer </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00092.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00104.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00066.html">ip6_hdr</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00104.html">Packet</a> instance where layer will be stored in </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a959b6e8d2698d12418b301e15fbbf446"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv6Layer::IPv6Layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that allocates a new IPv6 header with empty fields </p>
-
-</div>
-</div>
-<a class="anchor" id="a16dddacbec4de2d1905cedbebc663400"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv6Layer::IPv6Layer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00082.html">IPv6Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>srcIP</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00082.html">IPv6Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>dstIP</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that allocates a new IPv6 header with source and destination IPv6 addresses </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcIP</td><td>Source IPv6 address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dstIP</td><td>Destination IPv6 address </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a1c9b33cb2b2295bbed21a97b47f746be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv6Layer::IPv6Layer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00088.html">IPv6Layer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A copy constructor that copies the entire header from the other <a class="el" href="a00088.html">IPv6Layer</a> (including IPv6 extensions) </p>
-
-</div>
-</div>
-<a class="anchor" id="acd2642767dd2a9d59ff78ed849a48c62"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv6Layer::~IPv6Layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A destrcutor for this layer </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adee1cdbf42f6003d3c748ae51afe4d44"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TIPv6Extension &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">TIPv6Extension * pcpp::IPv6Layer::addExtension </td>
-          <td>(</td>
-          <td class="paramtype">const TIPv6Extension &amp;&#160;</td>
-          <td class="paramname"><em>extensionHeader</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add a new extension of type TIPv6Extension to the layer. This is a templated method and TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="a00085.html">IPv6Extension</a>. If the extension is added successfully a pointer to the newly added extension object is returned, otherwise NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">extensionHeader</td><td>The extension object to add. Notice the object passed here is read-only, meaning its data is copied but the object itself isn't modified </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the extension is added successfully a pointer to the newly added extension object is returned. Otherwise NULL is returned </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aaba2a45fa6e2cc43edab9a548773faf1"></a>
+<a class="anchor" id="a0382711ca3677f063e9d47130e38ab0b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -358,39 +176,10 @@ template&lt;class TIPv6Extension &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IPv6Layer::computeCalculateFields </td>
+          <td class="memname">pcpp::IPv6HopByHopHeader::IPv6HopByHopHeader </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate the following fields:</p><ul>
-<li><a class="el" href="a00066.html#ae5849394b92e6a7d3cd0b2972e30391e">ip6_hdr::payloadLength</a> = size of payload (all data minus header size)</li>
-<li><a class="el" href="a00066.html#aee7025c3316d0ecbb3db29bfdecb1e25">ip6_hdr::ipVersion</a> = 6</li>
-<li><a class="el" href="a00066.html#aee8e571549e08804cbf245c37eed7cfa">ip6_hdr::nextHeader</a> = calculated if next layer is known: <a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a5dffe1f660439e4cbde02f6df7125c05">PACKETPP_IPPROTO_TCP</a> for TCP, <a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a37bdb863a039ad4072f57ab7c10f9d5d">PACKETPP_IPPROTO_UDP</a> for UDP, <a class="el" href="a00251.html#ace8e2e21b82a8adc602f561e1e612fb0a027db1494ff303416341ffb814c17dfa">PACKETPP_IPPROTO_ICMP</a> for ICMP </li>
-</ul>
-
-<p>Implements <a class="el" href="a00092.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a436faafdf30e810e3a8d96e74f256c74"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00082.html">IPv6Address</a> pcpp::IPv6Layer::getDstIpAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00185.html">TLVOptionBuilder</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -400,242 +189,12 @@ template&lt;class TIPv6Extension &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the destination IP address in the form of <a class="el" href="a00082.html">IPv6Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00082.html">IPv6Address</a> containing the destination address </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4ea41b0a0d381fe8696ce95e87cf00f8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t pcpp::IPv6Layer::getExtensionCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Number of IPv6 extensions in this layer </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a80515a5c17a42d5fbae1a8b4877ca98c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TIPv6Extension &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">TIPv6Extension * pcpp::IPv6Layer::getExtensionOfType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A templated getter for an IPv6 extension of a type TIPv6Extension. TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="a00085.html">IPv6Extension</a>. If the requested extension type isn't found NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the extension instance or NULL if the requested extension type isn't found </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="acee75c2ab7ef3112b58ebe3c73a1c4ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t pcpp::IPv6Layer::getHeaderLen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00066.html">ip6_hdr</a> </dd></dl>
-
-<p>Implements <a class="el" href="a00092.html#ae2746ac75563d4ed44632ff06b5a2666">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acacfbacbed97b015fb54326f914e3bae"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00066.html">ip6_hdr</a>* pcpp::IPv6Layer::getIPv6Header </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the IPv6 header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00066.html">ip6_hdr</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aff702bd88a02c7f05a84bdf5b77a1a21"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00251.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> pcpp::IPv6Layer::getOsiModelLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The OSI Model layer this protocol belongs to </dd></dl>
-
-<p>Implements <a class="el" href="a00092.html#ac505ad06f83ca3f0a2947f9063f423a5">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8080e3a1ef1cd7fe81cd36033bbc52df"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00082.html">IPv6Address</a> pcpp::IPv6Layer::getSrcIpAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the source IP address in the form of <a class="el" href="a00082.html">IPv6Address</a> </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a00082.html">IPv6Address</a> containing the source address </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a87c27497fd33a8d8a4888c7611f56161"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IPv6Layer::isFragment </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>True if this packet is an IPv6 fragment, meaning if it has an <a class="el" href="a00086.html">IPv6FragmentationHeader</a> extension </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8677acd397608ff8535b88cf66e656c7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00088.html">IPv6Layer</a>&amp; pcpp::IPv6Layer::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00088.html">IPv6Layer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An assignment operator that first delete all data from current layer and then copy the entire header from the other <a class="el" href="a00088.html">IPv6Layer</a> (including IPv6 extensions) </p>
-
-</div>
-</div>
-<a class="anchor" id="a494abc8a7bfc1a520c86e61fee3a2f46"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IPv6Layer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a00185.html">UdpLayer</a>, <a class="el" href="a00176.html">TcpLayer</a>. Otherwise sets <a class="el" href="a00107.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="a00092.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3201693539a2f88cc5a4710384e0b03d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IPv6Layer::removeAllExtensions </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove all IPv6 extensions in this layer </p>
-
-</div>
-</div>
-<a class="anchor" id="af2abd76cb9650332abde50e5040aed1d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string pcpp::IPv6Layer::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
-
-<p>Implements <a class="el" href="a00092.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
+<p>A c'tor for creating a new IPv6 Hop-By-Hop extension object not bounded to a packet. Useful for adding new extensions to an IPv6 layer with <a class="el" href="a00089.html#adee1cdbf42f6003d3c748ae51afe4d44">IPv6Layer::addExtension()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>A vector of <a class="el" href="a00185.html">IPv6TLVOptionHeader::TLVOptionBuilder</a> instances which define the options that will be stored in the extension data. Notice this vector is read-only and its content won't be modified </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -644,8 +203,8 @@ template&lt;class TIPv6Extension &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00088.html">IPv6Layer</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00088.html">IPv6HopByHopHeader</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

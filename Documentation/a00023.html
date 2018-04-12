@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>PcapPlusPlus: pcpp::gre1_header Struct Reference</title>
+<title>PcapPlusPlus: pcpp::GeneralFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,78 +107,98 @@ $(document).ready(function(){initNavTree('a00023.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00279.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00284.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::gre1_header Struct Reference</div>  </div>
+<div class="title">pcpp::GeneralFilter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00199_source.html">GreLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00225_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::gre1_header:</div>
+Inheritance diagram for pcpp::GeneralFilter:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00023.png" usemap="#pcpp::gre1_header_map" alt=""/>
-  <map id="pcpp::gre1_header_map" name="pcpp::gre1_header_map">
-<area href="a00024.html" alt="pcpp::gre_basic_header" shape="rect" coords="0,0,149,24"/>
+  <img src="a00023.png" usemap="#pcpp::GeneralFilter_map" alt=""/>
+  <map id="pcpp::GeneralFilter_map" name="pcpp::GeneralFilter_map">
+<area href="a00001.html" alt="pcpp::AndFilter" shape="rect" coords="163,56,316,80"/>
+<area href="a00004.html" alt="pcpp::ArpFilter" shape="rect" coords="163,112,316,136"/>
+<area href="a00021.html" alt="pcpp::EtherTypeFilter" shape="rect" coords="163,168,316,192"/>
+<area href="a00056.html" alt="pcpp::IFilterWithDirection" shape="rect" coords="163,224,316,248"/>
+<area href="a00057.html" alt="pcpp::IFilterWithOperator" shape="rect" coords="163,280,316,304"/>
+<area href="a00102.html" alt="pcpp::NotFilter" shape="rect" coords="163,336,316,360"/>
+<area href="a00104.html" alt="pcpp::OrFilter" shape="rect" coords="163,392,316,416"/>
+<area href="a00131.html" alt="pcpp::ProtoFilter" shape="rect" coords="163,448,316,472"/>
+<area href="a00176.html" alt="pcpp::TcpFlagsFilter" shape="rect" coords="163,504,316,528"/>
+<area href="a00190.html" alt="pcpp::VlanFilter" shape="rect" coords="163,560,316,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a727e2a2affa2696a0177475af78a196b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a727e2a2affa2696a0177475af78a196b">payloadLength</a></td></tr>
-<tr class="separator:a727e2a2affa2696a0177475af78a196b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b495794c197d8cb79aff47177784f9b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8b495794c197d8cb79aff47177784f9b">callID</a></td></tr>
-<tr class="separator:a8b495794c197d8cb79aff47177784f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_a00024"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00024')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="a00024.html">pcpp::gre_basic_header</a></td></tr>
-<tr class="memitem:a01d91f77713e08fe2c8baef6580b522c inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a01d91f77713e08fe2c8baef6580b522c">recursionControl</a>:3</td></tr>
-<tr class="separator:a01d91f77713e08fe2c8baef6580b522c inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbc55bc0bdf9653f08939fe8a6c8312 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a3fbc55bc0bdf9653f08939fe8a6c8312">strictSourceRouteBit</a>:1</td></tr>
-<tr class="separator:a3fbc55bc0bdf9653f08939fe8a6c8312 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2189d1d50075e911ce84e27a5767c2b9 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a2189d1d50075e911ce84e27a5767c2b9">sequenceNumBit</a>:1</td></tr>
-<tr class="separator:a2189d1d50075e911ce84e27a5767c2b9 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2e844896f8a4d14f07626891b67f8d inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a7d2e844896f8a4d14f07626891b67f8d">keyBit</a>:1</td></tr>
-<tr class="separator:a7d2e844896f8a4d14f07626891b67f8d inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ed856400ff63a74bd1f6b4d08ea6c8 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a58ed856400ff63a74bd1f6b4d08ea6c8">routingBit</a>:1</td></tr>
-<tr class="separator:a58ed856400ff63a74bd1f6b4d08ea6c8 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af12d9d73804241f3e31a70cfb8afc5af inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#af12d9d73804241f3e31a70cfb8afc5af">checksumBit</a>:1</td></tr>
-<tr class="separator:af12d9d73804241f3e31a70cfb8afc5af inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58a09ec8526b9576275214accbb05d7 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#af58a09ec8526b9576275214accbb05d7">version</a>:3</td></tr>
-<tr class="separator:af58a09ec8526b9576275214accbb05d7 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bdcf443c9acd69a97be3b872630f37b inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a9bdcf443c9acd69a97be3b872630f37b">flags</a>:4</td></tr>
-<tr class="separator:a9bdcf443c9acd69a97be3b872630f37b inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a659ab94bc214af116075f48367c0ae25 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a659ab94bc214af116075f48367c0ae25">ackSequenceNumBit</a>:1</td></tr>
-<tr class="separator:a659ab94bc214af116075f48367c0ae25 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad64488dc863563820f7541dfdb4ee910 inherit pub_attribs_a00024"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ad64488dc863563820f7541dfdb4ee910">protocol</a></td></tr>
-<tr class="separator:ad64488dc863563820f7541dfdb4ee910 inherit pub_attribs_a00024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">parseToString</a> (std::string &amp;result)=0</td></tr>
+<tr class="separator:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba731757009c1ce8db973aa334634765"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:aba731757009c1ce8db973aa334634765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents GREv1 protocol header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a8b495794c197d8cb79aff47177784f9b"></a>
+<div class="textblock"><p>The base class for all filter classes. This class is virtual and abstract, hence cannot be instantiated.<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00225.html">PcapFilter.h</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aba731757009c1ce8db973aa334634765"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::gre1_header::callID</td>
+          <td class="memname">virtual pcpp::GeneralFilter::~GeneralFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Contains the Peer's Call ID for the session to which this packet belongs </p>
+<p>Virtual destructor, does nothing for this class </p>
 
 </div>
 </div>
-<a class="anchor" id="a727e2a2affa2696a0177475af78a196b"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae38fb802a74a1d9b7d7025b1b5cb83e5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::gre1_header::payloadLength</td>
+          <td class="memname">virtual void pcpp::GeneralFilter::parseToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Size of the payload not including the GRE header </p>
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00188.html#a438eb7a89725685d7f98f069ce76b966">pcpp::UdpLengthFilter</a>, <a class="el" href="a00182.html#a8152be659392238cd28750c44d760057">pcpp::TcpWindowSizeFilter</a>, <a class="el" href="a00176.html#a1c9003c27c6c52e80276cba9dd33d117">pcpp::TcpFlagsFilter</a>, <a class="el" href="a00190.html#a4d5759a458f683cebac7134668fc0c2d">pcpp::VlanFilter</a>, <a class="el" href="a00004.html#a2af1942f2bad988ff88589ed17cc5353">pcpp::ArpFilter</a>, <a class="el" href="a00131.html#a2eba86ed1facd283f54363176618d6ff">pcpp::ProtoFilter</a>, <a class="el" href="a00102.html#a27559a09376420b6b8466a1819b42509">pcpp::NotFilter</a>, <a class="el" href="a00104.html#a6552bb49fddc97e6e2f8ef0833c45b36">pcpp::OrFilter</a>, <a class="el" href="a00001.html#a59d7dd260b5f1bb4c9147263cb0b0308">pcpp::AndFilter</a>, <a class="el" href="a00021.html#a3b632e6dffbdbf6264a0173f4aa0b059">pcpp::EtherTypeFilter</a>, <a class="el" href="a00098.html#ac94ba464b2cd6d936b87811a120f73df">pcpp::MacAddressFilter</a>, <a class="el" href="a00123.html#a267adc124537789fd02510b61e2b4905">pcpp::PortRangeFilter</a>, <a class="el" href="a00122.html#afd42f1ac6f213c3f347f7b5efbafdbef">pcpp::PortFilter</a>, <a class="el" href="a00079.html#a1621c7ded338765e9cb20213d1e996ae">pcpp::IpV4TotalLengthFilter</a>, <a class="el" href="a00074.html#af718627a6c4f2bd003a87a7d310d9c7e">pcpp::IpV4IDFilter</a>, and <a class="el" href="a00070.html#a9244dc71714f73d8e215498c7c3b0f23">pcpp::IPFilter</a>.</p>
 
 </div>
 </div>
@@ -187,8 +207,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00251.html">pcpp</a></li><li class="navelem"><a class="el" href="a00023.html">gre1_header</a></li>
-    <li class="footer">Generated on Tue Apr 3 2018 12:52:30 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00023.html">GeneralFilter</a></li>
+    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
