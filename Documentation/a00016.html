@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('a00016.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0cc13c866bacbe04fe9be2a7afb58b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ad0cc13c866bacbe04fe9be2a7afb58b5">DpdkDeviceConfiguration</a> (uint16_t <a class="el" href="a00016.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a>=128, uint16_t <a class="el" href="a00016.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a>=512, uint16_t <a class="el" href="a00016.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a>=100)</td></tr>
-<tr class="separator:ad0cc13c866bacbe04fe9be2a7afb58b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b5e780f69972a7295beea8acd9299e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a02b5e780f69972a7295beea8acd9299e">DpdkDeviceConfiguration</a> (uint16_t <a class="el" href="a00016.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a>=128, uint16_t <a class="el" href="a00016.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a>=512, uint16_t <a class="el" href="a00016.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a>=100, uint64_t <a class="el" href="a00016.html#adebf03bb242d47ddc1340e7ecae555f6">rssHashFunction</a>=<a class="el" href="a00015.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a">RSS_IPV4</a>|<a class="el" href="a00015.html#aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80">RSS_IPV6</a>, uint8_t *<a class="el" href="a00016.html#ab031afa238020cf7389500461675d7fc">rssKey</a>=DpdkDevice::m_RSSKey, uint8_t <a class="el" href="a00016.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5">rssKeyLength</a>=40)</td></tr>
+<tr class="separator:a02b5e780f69972a7295beea8acd9299e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,11 +130,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a43841be287a4fc02b76d06c1eabcc83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225b415490ad496be6e0a93cf0b829ba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a></td></tr>
 <tr class="separator:a225b415490ad496be6e0a93cf0b829ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab031afa238020cf7389500461675d7fc"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ab031afa238020cf7389500461675d7fc">rssKey</a></td></tr>
+<tr class="separator:ab031afa238020cf7389500461675d7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ce4d27e30d5382fbdfe882cc5ab1f5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5">rssKeyLength</a></td></tr>
+<tr class="separator:ad3ce4d27e30d5382fbdfe882cc5ab1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebf03bb242d47ddc1340e7ecae555f6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html#adebf03bb242d47ddc1340e7ecae555f6">rssHashFunction</a></td></tr>
+<tr class="separator:adebf03bb242d47ddc1340e7ecae555f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct that contains user configurable parameters for opening a <a class="el" href="a00015.html">DpdkDevice</a>. All of these parameters have default values so the user doesn't have to use these parameters or understand exactly what is their effect </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad0cc13c866bacbe04fe9be2a7afb58b5"></a>
+<a class="anchor" id="a02b5e780f69972a7295beea8acd9299e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -157,7 +163,25 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>flushTxBufferTimeout</em> = <code>100</code>&#160;</td>
+          <td class="paramname"><em>flushTxBufferTimeout</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>rssHashFunction</em> = <code><a class="el" href="a00015.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a">RSS_IPV4</a>&#160;|&#160;<a class="el" href="a00015.html#aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80">RSS_IPV6</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>rssKey</em> = <code>DpdkDevice::m_RSSKey</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>rssKeyLength</em> = <code>40</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,11 +195,14 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A c'tor for this strcut </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A c'tor for this struct </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">receiveDescriptorsNumber</td><td>An optional parameter for defining the number of RX descriptors that will be allocated for each RX queue. Default value is 128 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">transmitDescriptorsNumber</td><td>An optional parameter for defining the number of TX descriptors that will be allocated for each TX queue. Default value is 512 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">flushTxBufferTimeout</td><td>An optional parameter for setting TX buffer timeout in usec. Default value is 100 usec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rssHashFunction</td><td>This parameter enable to configure the types of packets to which the RSS hashing must be applied. The value provided here should be a mask composed of hash functions described in DpdkRssHashFunction enum. The default value is IPv4 and IPv6 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rssKey</td><td>A pointer to an array holding the RSS key to use for hashing specific header of received packets. If not specified, there is a default key defined inside <a class="el" href="a00015.html">DpdkDevice</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rssKeyLength</td><td>The length in bytes of the array pointed by rssKey. Default value is the length of default rssKey </td></tr>
   </table>
   </dd>
 </dl>
@@ -209,6 +236,45 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adebf03bb242d47ddc1340e7ecae555f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pcpp::DpdkDevice::DpdkDeviceConfiguration::rssHashFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This parameter enables to configure the types of packets to which the RSS hashing must be applied. The value is a mask composed of hash functions described in DpdkRssHashFunction enum. Supplying a value equal to zero disables the RSS feature. Supplying a value equal to -1 enables all hash functions supported by this PMD </p>
+
+</div>
+</div>
+<a class="anchor" id="ab031afa238020cf7389500461675d7fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* pcpp::DpdkDevice::DpdkDeviceConfiguration::rssKey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When configuring a DPDK device, DPDK supports to activate the Receive Side Scaling (RSS) feature to distribute traffic between the RX queues This parameter points to an array holding the RSS key to use for hashing specific header fields of received packets. The length of this array should be indicated by rssKeyLength below. Supplying a NULL value causes a default random hash key to be used by the device driver </p>
+
+</div>
+</div>
+<a class="anchor" id="ad3ce4d27e30d5382fbdfe882cc5ab1f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::DpdkDevice::DpdkDeviceConfiguration::rssKeyLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This parameter indicates the length in bytes of the array pointed by rssKey. This length will be checked in i40e only. Others assume 40 bytes to be used. </p>
+
+</div>
+</div>
 <a class="anchor" id="a43841be287a4fc02b76d06c1eabcc83c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +294,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00253.html">pcpp</a></li><li class="navelem"><a class="el" href="a00015.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00016.html">DpdkDeviceConfiguration</a></li>
-    <li class="footer">Generated on Fri Apr 13 2018 01:38:32 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Apr 16 2018 02:12:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

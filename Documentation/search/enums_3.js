@@ -6,5 +6,6 @@ var searchData=
   ['direction',['Direction',['../a00253.html#a966edb536b73cf93cbc9b83f9c64930a',1,'pcpp']]],
   ['dnsclass',['DnsClass',['../a00253.html#a9a53cd13fb37fed91d2acda175bee7b9',1,'pcpp']]],
   ['dnstype',['DnsType',['../a00253.html#ad888578fe7df9849bbfbb10cdf245886',1,'pcpp']]],
-  ['dpdkpmdtype',['DpdkPMDType',['../a00253.html#adb43f1f8284d4e0b74d1c77b70152fa9',1,'pcpp']]]
+  ['dpdkpmdtype',['DpdkPMDType',['../a00253.html#adb43f1f8284d4e0b74d1c77b70152fa9',1,'pcpp']]],
+  ['dpdkrsshashfunction',['DpdkRssHashFunction',['../a00015.html#aa3acd5ec67d8777437c32f3af875dbc4',1,'pcpp::DpdkDevice']]]
 ];

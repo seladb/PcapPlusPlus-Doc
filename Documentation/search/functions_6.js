@@ -283,6 +283,7 @@ var searchData=
   ['getstatuscode',['getStatusCode',['../a00034.html#ae35360d5e3655fa9f46faca62af76317',1,'pcpp::HttpResponseFirstLine::getStatusCode()'],['../a00140.html#a2ceeeee9cab9c17731526e4cf0d50c29',1,'pcpp::SipResponseFirstLine::getStatusCode()']]],
   ['getstatuscodeasint',['getStatusCodeAsInt',['../a00034.html#ae5c584fcbd30273e841fc71795e20e04',1,'pcpp::HttpResponseFirstLine::getStatusCodeAsInt()'],['../a00140.html#a400bf7c7fd55b195858673ee301739fe',1,'pcpp::SipResponseFirstLine::getStatusCodeAsInt()']]],
   ['getstatuscodestring',['getStatusCodeString',['../a00034.html#a2f29d9228033a2789435d83ab4bf0c5b',1,'pcpp::HttpResponseFirstLine::getStatusCodeString()'],['../a00140.html#a540ecfdb65bf0a901a4c2dfe66dba4ec',1,'pcpp::SipResponseFirstLine::getStatusCodeString()']]],
+  ['getsupportedrsshashfunctions',['getSupportedRssHashFunctions',['../a00015.html#aba312d8bd2d5ac18c75cebaa21a28f17',1,'pcpp::DpdkDevice']]],
   ['getsymkeyalg',['getSymKeyAlg',['../a00156.html#acdb497b3a27bff5fa936458876c5f7d4',1,'pcpp::SSLCipherSuite']]],
   ['gettag',['getTag',['../a00127.html#a7932bf92ec5dcd06eff5b6a0b95c1c71',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['gettagcount',['getTagCount',['../a00127.html#aadb869e50f48a05d18ba9151243e769d',1,'pcpp::PPPoEDiscoveryLayer']]],
