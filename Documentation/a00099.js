@@ -13,5 +13,6 @@ var a00099 =
     [ "operator=", "a00099.html#ab194bcba22f170560890ee3f73faa027", null ],
     [ "reallocateData", "a00099.html#ac8984ba4413680165a38d13bdd853987", null ],
     [ "removeData", "a00099.html#a3895fef553d8345e18b7f97e52f1a10d", null ],
+    [ "setFreeMbuf", "a00099.html#a6d4727b09d81aed644524a190c4a39db", null ],
     [ "setRawData", "a00099.html#a4b49f6bfba58da926405df2e2fef914c", null ]
 ];
