@@ -1,12 +1,12 @@
 var a00068 =
 [
-    [ "AddressType", "a00068.html#ac389e5507d75b60d2b0ca939db195231", [
-      [ "IPv4AddressType", "a00068.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
-      [ "IPv6AddressType", "a00068.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
-    ] ],
-    [ "clone", "a00068.html#a92d35f8f8e9965d0e4c38e183fba7d1e", null ],
-    [ "equals", "a00068.html#a6865c1a43ff71cd424426c846f36dbd4", null ],
-    [ "getType", "a00068.html#a85a3e43774848c93585f97bdef6ec73d", null ],
-    [ "isValid", "a00068.html#a2d6b031d025c3ef287584a605b64d750", null ],
-    [ "toString", "a00068.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
+    [ "NullLoopbackLayer", "a01111.html", "a01111" ],
+    [ "PCPP_BSD_AF_APPLETALK", "a00068.html#a071b913aa88e800c09b87bf426696fe3", null ],
+    [ "PCPP_BSD_AF_INET", "a00068.html#a72b9931b8ad1b827b2fce31ace25cd1c", null ],
+    [ "PCPP_BSD_AF_INET6_BSD", "a00068.html#a4733862a795ae56d21d1b14f5def3629", null ],
+    [ "PCPP_BSD_AF_INET6_DARWIN", "a00068.html#aa32c8402569788e76a8da0b669d692f5", null ],
+    [ "PCPP_BSD_AF_INET6_FREEBSD", "a00068.html#ae4c38fe88eaeac9592eb16619d0a8aca", null ],
+    [ "PCPP_BSD_AF_IPX", "a00068.html#ae7ce3fda5cf388ac74795c1552997ec3", null ],
+    [ "PCPP_BSD_AF_ISO", "a00068.html#aa5dd2725b050935e84ddcbc642f0ac98", null ],
+    [ "PCPP_BSD_AF_NS", "a00068.html#a25f214b48ecfdd1a8eeef7549ba07016", null ]
 ];
