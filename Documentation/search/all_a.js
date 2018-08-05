@@ -12,7 +12,7 @@ var searchData=
   ['lifetime',['lifetime',['../a00907.html#a922aebe9d43f85ee3088da3ad21e5b63',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['link_5flayer_5faddr',['link_layer_addr',['../a01327.html#afbec8e24ed690d8765fdd5ebeff649cd',1,'pcpp::sll_header']]],
   ['link_5flayer_5faddr_5flen',['link_layer_addr_len',['../a01327.html#ac253e0a098c39f46d192619ed5d229bf',1,'pcpp::sll_header']]],
-  ['linkduplex',['linkDuplex',['../a00783.html#a64cfc43e13a80ba49369288ad220bd1b',1,'pcpp::DpdkDevice::LinkStatus::linkDuplex()'],['../a00783.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus::LinkDuplex()']]],
+  ['linkduplex',['LinkDuplex',['../a00783.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus::LinkDuplex()'],['../a00783.html#a64cfc43e13a80ba49369288ad220bd1b',1,'pcpp::DpdkDevice::LinkStatus::linkDuplex()']]],
   ['linklayertype',['LinkLayerType',['../a00179.html#ab3f43dd3ccd8c93acac8b67909be02be',1,'pcpp']]],
   ['linkspeedmbps',['linkSpeedMbps',['../a00783.html#a6177ed98446f18d57be88d8c2411a473',1,'pcpp::DpdkDevice::LinkStatus']]],
   ['linkstatus',['LinkStatus',['../a00783.html',1,'pcpp::DpdkDevice']]],
