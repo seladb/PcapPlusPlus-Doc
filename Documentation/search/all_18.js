@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7econnectiondata',['~ConnectionData',['../a01479.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
+  ['_7econnectiondata',['~ConnectionData',['../a01483.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
   ['_7edhcplayer',['~DhcpLayer',['../a00743.html#a41eaefdbfb7e73dcaf863c7639bd5db4',1,'pcpp::DhcpLayer']]],
   ['_7edpdkworkerthread',['~DpdkWorkerThread',['../a00799.html#afee1cd32d8aa6bbb639f7e45ca85e68d',1,'pcpp::DpdkWorkerThread']]],
   ['_7egeneralfilter',['~GeneralFilter',['../a01159.html#aba731757009c1ce8db973aa334634765',1,'pcpp::GeneralFilter']]],
@@ -21,11 +21,11 @@ var searchData=
   ['_7epcaplivedevice',['~PcapLiveDevice',['../a01235.html#a0172bbe45fb66f4722bf2bd4847c91fe',1,'pcpp::PcapLiveDevice']]],
   ['_7epcapngfilereaderdevice',['~PcapNgFileReaderDevice',['../a01143.html#a3fdac9f71c23e6c973f6bb119d1ce75d',1,'pcpp::PcapNgFileReaderDevice']]],
   ['_7epcapngfilewriterdevice',['~PcapNgFileWriterDevice',['../a01155.html#a93312aab61a193df522f8046af6d291e',1,'pcpp::PcapNgFileWriterDevice']]],
-  ['_7epfringdevice',['~PfRingDevice',['../a01255.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
-  ['_7epointervector',['~PointerVector',['../a01267.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
-  ['_7erawpacket',['~RawPacket',['../a01291.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
-  ['_7etableprinter',['~TablePrinter',['../a01463.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
-  ['_7etcpreassembly',['~TcpReassembly',['../a01487.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
-  ['_7etcpstreamdata',['~TcpStreamData',['../a01483.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
+  ['_7epfringdevice',['~PfRingDevice',['../a01259.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
+  ['_7epointervector',['~PointerVector',['../a01271.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
+  ['_7erawpacket',['~RawPacket',['../a01295.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
+  ['_7etableprinter',['~TablePrinter',['../a01467.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
+  ['_7etcpreassembly',['~TcpReassembly',['../a01491.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
+  ['_7etcpstreamdata',['~TcpStreamData',['../a01487.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
   ['_7etlvoptionbuilder',['~TLVOptionBuilder',['../a01043.html#a830df211046011da78f7d50b1b791176',1,'pcpp::IPv6TLVOptionHeader::TLVOptionBuilder']]]
 ];

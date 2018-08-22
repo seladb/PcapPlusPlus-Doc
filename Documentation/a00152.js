@@ -1,8 +1,8 @@
 var a00152 =
 [
-    [ "tcphdr", "a01467.html", "a01467" ],
-    [ "TcpOptionData", "a01471.html", "a01471" ],
-    [ "TcpLayer", "a01475.html", "a01475" ],
+    [ "tcphdr", "a01471.html", "a01471" ],
+    [ "TcpOptionData", "a01475.html", "a01475" ],
+    [ "TcpLayer", "a01479.html", "a01479" ],
     [ "PCPP_TCPOLEN_CC", "a00152.html#a2ba3f9ff28dbd65780526d5306b653a0", null ],
     [ "PCPP_TCPOLEN_CCECHO", "a00152.html#ab5e2e3231f1117d3735a163fb160dee6", null ],
     [ "PCPP_TCPOLEN_CCNEW", "a00152.html#afc4ee0fb5f33243d1cd7cd9c856ea5b7", null ],

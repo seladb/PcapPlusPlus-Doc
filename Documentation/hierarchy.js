@@ -1,9 +1,10 @@
 var hierarchy =
 [
-    [ "pcpp::ApplicationEventHandler", "a01459.html", null ],
-    [ "pcpp::AppName", "a01455.html", null ],
+    [ "pcpp::ApplicationEventHandler", "a01463.html", null ],
+    [ "pcpp::AppName", "a01459.html", null ],
     [ "pcpp::arphdr", "a00727.html", null ],
-    [ "pcpp::ConnectionData", "a01479.html", null ],
+    [ "pcpp::ConnectionData", "a01483.html", null ],
+    [ "pcpp::PcapLiveDevice::DeviceConfiguration", "a01239.html", null ],
     [ "pcpp::dhcp_header", "a00735.html", null ],
     [ "pcpp::DhcpOptionData", "a00739.html", null ],
     [ "pcpp::dnshdr", "a00747.html", null ],
@@ -15,8 +16,8 @@ var hierarchy =
     [ "std::exception", null, [
       [ "pcpp::HttpRequestFirstLine::HttpRequestFirstLineException", "a00859.html", null ],
       [ "pcpp::HttpResponseFirstLine::HttpResponseFirstLineException", "a00867.html", null ],
-      [ "pcpp::SipRequestFirstLine::SipRequestFirstLineException", "a01315.html", null ],
-      [ "pcpp::SipResponseFirstLine::SipResponseFirstLineException", "a01323.html", null ]
+      [ "pcpp::SipRequestFirstLine::SipRequestFirstLineException", "a01319.html", null ],
+      [ "pcpp::SipResponseFirstLine::SipResponseFirstLineException", "a01327.html", null ]
     ] ],
     [ "pcpp::GeneralFilter", "a01159.html", [
       [ "pcpp::AndFilter", "a01199.html", null ],
@@ -43,7 +44,7 @@ var hierarchy =
     [ "pcpp::gre_basic_header", "a00815.html", [
       [ "pcpp::gre1_header", "a00819.html", null ]
     ] ],
-    [ "pcpp::HeaderField", "a01503.html", null ],
+    [ "pcpp::HeaderField", "a01507.html", null ],
     [ "pcpp::HttpRequestFirstLine", "a00855.html", null ],
     [ "pcpp::HttpResponseFirstLine", "a00863.html", null ],
     [ "pcpp::icmp_echo_request", "a00879.html", null ],
@@ -84,32 +85,32 @@ var hierarchy =
         [ "pcpp::PacketTrailerLayer", "a01119.html", null ],
         [ "pcpp::PayloadLayer", "a01123.html", null ],
         [ "pcpp::PPP_PPTPLayer", "a00839.html", null ],
-        [ "pcpp::PPPoELayer", "a01275.html", [
-          [ "pcpp::PPPoEDiscoveryLayer", "a01283.html", null ],
-          [ "pcpp::PPPoESessionLayer", "a01279.html", null ]
+        [ "pcpp::PPPoELayer", "a01279.html", [
+          [ "pcpp::PPPoEDiscoveryLayer", "a01287.html", null ],
+          [ "pcpp::PPPoESessionLayer", "a01283.html", null ]
         ] ],
-        [ "pcpp::SllLayer", "a01331.html", null ],
-        [ "pcpp::SSLLayer", "a01427.html", [
-          [ "pcpp::SSLAlertLayer", "a01439.html", null ],
-          [ "pcpp::SSLApplicationDataLayer", "a01443.html", null ],
-          [ "pcpp::SSLChangeCipherSpecLayer", "a01435.html", null ],
-          [ "pcpp::SSLHandshakeLayer", "a01431.html", null ]
+        [ "pcpp::SllLayer", "a01335.html", null ],
+        [ "pcpp::SSLLayer", "a01431.html", [
+          [ "pcpp::SSLAlertLayer", "a01443.html", null ],
+          [ "pcpp::SSLApplicationDataLayer", "a01447.html", null ],
+          [ "pcpp::SSLChangeCipherSpecLayer", "a01439.html", null ],
+          [ "pcpp::SSLHandshakeLayer", "a01435.html", null ]
         ] ],
-        [ "pcpp::TcpLayer", "a01475.html", null ],
-        [ "pcpp::TextBasedProtocolMessage", "a01507.html", [
+        [ "pcpp::TcpLayer", "a01479.html", null ],
+        [ "pcpp::TextBasedProtocolMessage", "a01511.html", [
           [ "pcpp::HttpMessage", "a00843.html", [
             [ "pcpp::HttpRequestLayer", "a00847.html", null ],
             [ "pcpp::HttpResponseLayer", "a00851.html", null ]
           ] ],
-          [ "pcpp::SdpLayer", "a01295.html", null ],
-          [ "pcpp::SipLayer", "a01299.html", [
-            [ "pcpp::SipRequestLayer", "a01303.html", null ],
-            [ "pcpp::SipResponseLayer", "a01307.html", null ]
+          [ "pcpp::SdpLayer", "a01299.html", null ],
+          [ "pcpp::SipLayer", "a01303.html", [
+            [ "pcpp::SipRequestLayer", "a01307.html", null ],
+            [ "pcpp::SipResponseLayer", "a01311.html", null ]
           ] ]
         ] ],
-        [ "pcpp::UdpLayer", "a01515.html", null ],
-        [ "pcpp::VlanLayer", "a01523.html", null ],
-        [ "pcpp::VxlanLayer", "a01531.html", null ]
+        [ "pcpp::UdpLayer", "a01519.html", null ],
+        [ "pcpp::VlanLayer", "a01527.html", null ],
+        [ "pcpp::VxlanLayer", "a01535.html", null ]
       ] ]
     ] ],
     [ "pcpp::IDnsResource", "a00751.html", [
@@ -138,10 +139,10 @@ var hierarchy =
         ] ]
       ] ],
       [ "pcpp::PcapLiveDevice", "a01235.html", [
-        [ "pcpp::PcapRemoteDevice", "a01247.html", null ],
-        [ "pcpp::WinPcapLiveDevice", "a01535.html", null ]
+        [ "pcpp::PcapRemoteDevice", "a01251.html", null ],
+        [ "pcpp::WinPcapLiveDevice", "a01539.html", null ]
       ] ],
-      [ "pcpp::PfRingDevice", "a01255.html", null ]
+      [ "pcpp::PfRingDevice", "a01259.html", null ]
     ] ],
     [ "pcpp::iphdr", "a01003.html", null ],
     [ "pcpp::IPReassembly", "a00975.html", null ],
@@ -170,64 +171,64 @@ var hierarchy =
       [ "pcpp::IPReassembly::IPv4PacketKey", "a00983.html", null ],
       [ "pcpp::IPReassembly::IPv6PacketKey", "a00987.html", null ]
     ] ],
-    [ "pcpp::PcapLiveDeviceList", "a01239.html", null ],
-    [ "pcpp::PcapRemoteAuthentication", "a01243.html", null ],
-    [ "pcpp::PcapRemoteDeviceList", "a01251.html", null ],
+    [ "pcpp::PcapLiveDeviceList", "a01243.html", null ],
+    [ "pcpp::PcapRemoteAuthentication", "a01247.html", null ],
+    [ "pcpp::PcapRemoteDeviceList", "a01255.html", null ],
     [ "pcpp::PciAddress", "a00771.html", null ],
-    [ "pcpp::PfRingDeviceList", "a01263.html", null ],
-    [ "pcpp::PointerVector< T >", "a01267.html", null ],
-    [ "pcpp::PointerVector< IPFragment >", "a01267.html", null ],
-    [ "pcpp::PointerVector< pcpp::SSLExtension >", "a01267.html", null ],
-    [ "pcpp::PointerVector< pcpp::SSLHandshakeMessage >", "a01267.html", null ],
-    [ "pcpp::PointerVector< pcpp::SSLx509Certificate >", "a01267.html", null ],
-    [ "pcpp::PointerVector< TcpFragment >", "a01267.html", null ],
+    [ "pcpp::PfRingDeviceList", "a01267.html", null ],
+    [ "pcpp::PointerVector< T >", "a01271.html", null ],
+    [ "pcpp::PointerVector< IPFragment >", "a01271.html", null ],
+    [ "pcpp::PointerVector< pcpp::SSLExtension >", "a01271.html", null ],
+    [ "pcpp::PointerVector< pcpp::SSLHandshakeMessage >", "a01271.html", null ],
+    [ "pcpp::PointerVector< pcpp::SSLx509Certificate >", "a01271.html", null ],
+    [ "pcpp::PointerVector< TcpFragment >", "a01271.html", null ],
     [ "pcpp::ppp_pptp_header", "a00823.html", null ],
-    [ "pcpp::pppoe_header", "a01271.html", null ],
-    [ "pcpp::PPPoEDiscoveryLayer::PPPoETag", "a01287.html", null ],
-    [ "pcpp::RawPacket", "a01291.html", [
+    [ "pcpp::pppoe_header", "a01275.html", null ],
+    [ "pcpp::PPPoEDiscoveryLayer::PPPoETag", "a01291.html", null ],
+    [ "pcpp::RawPacket", "a01295.html", [
       [ "pcpp::MBufRawPacket", "a00767.html", null ]
     ] ],
     [ "pcpp::DpdkDevice::RxTxStats", "a00787.html", null ],
     [ "pcpp::ScalarBuffer< T >", "a00999.html", null ],
-    [ "pcpp::SipRequestFirstLine", "a01311.html", null ],
-    [ "pcpp::SipResponseFirstLine", "a01319.html", null ],
-    [ "pcpp::sll_header", "a01327.html", null ],
-    [ "pcpp::ssl_tls_alert", "a01351.html", null ],
-    [ "pcpp::ssl_tls_change_cipher_spec", "a01347.html", null ],
-    [ "pcpp::ssl_tls_handshake_layer", "a01339.html", [
-      [ "pcpp::ssl_tls_client_server_hello", "a01343.html", null ]
+    [ "pcpp::SipRequestFirstLine", "a01315.html", null ],
+    [ "pcpp::SipResponseFirstLine", "a01323.html", null ],
+    [ "pcpp::sll_header", "a01331.html", null ],
+    [ "pcpp::ssl_tls_alert", "a01355.html", null ],
+    [ "pcpp::ssl_tls_change_cipher_spec", "a01351.html", null ],
+    [ "pcpp::ssl_tls_handshake_layer", "a01343.html", [
+      [ "pcpp::ssl_tls_client_server_hello", "a01347.html", null ]
     ] ],
-    [ "pcpp::ssl_tls_record_layer", "a01335.html", null ],
-    [ "pcpp::SSLCipherSuite", "a01355.html", null ],
-    [ "pcpp::SSLExtension", "a01359.html", [
-      [ "pcpp::SSLServerNameIndicationExtension", "a01367.html", null ]
+    [ "pcpp::ssl_tls_record_layer", "a01339.html", null ],
+    [ "pcpp::SSLCipherSuite", "a01359.html", null ],
+    [ "pcpp::SSLExtension", "a01363.html", [
+      [ "pcpp::SSLServerNameIndicationExtension", "a01371.html", null ]
     ] ],
-    [ "pcpp::SSLExtension::SSLExtensionStruct", "a01363.html", null ],
-    [ "pcpp::SSLHandshakeMessage", "a01375.html", [
-      [ "pcpp::SSLCertificateMessage", "a01387.html", null ],
-      [ "pcpp::SSLCertificateRequestMessage", "a01403.html", null ],
-      [ "pcpp::SSLCertificateVerifyMessage", "a01411.html", null ],
-      [ "pcpp::SSLClientHelloMessage", "a01379.html", null ],
-      [ "pcpp::SSLClientKeyExchangeMessage", "a01399.html", null ],
-      [ "pcpp::SSLFinishedMessage", "a01415.html", null ],
-      [ "pcpp::SSLHelloRequestMessage", "a01391.html", null ],
-      [ "pcpp::SSLNewSessionTicketMessage", "a01419.html", null ],
-      [ "pcpp::SSLServerHelloDoneMessage", "a01407.html", null ],
-      [ "pcpp::SSLServerHelloMessage", "a01383.html", null ],
-      [ "pcpp::SSLServerKeyExchangeMessage", "a01395.html", null ],
-      [ "pcpp::SSLUnknownMessage", "a01423.html", null ]
+    [ "pcpp::SSLExtension::SSLExtensionStruct", "a01367.html", null ],
+    [ "pcpp::SSLHandshakeMessage", "a01379.html", [
+      [ "pcpp::SSLCertificateMessage", "a01391.html", null ],
+      [ "pcpp::SSLCertificateRequestMessage", "a01407.html", null ],
+      [ "pcpp::SSLCertificateVerifyMessage", "a01415.html", null ],
+      [ "pcpp::SSLClientHelloMessage", "a01383.html", null ],
+      [ "pcpp::SSLClientKeyExchangeMessage", "a01403.html", null ],
+      [ "pcpp::SSLFinishedMessage", "a01419.html", null ],
+      [ "pcpp::SSLHelloRequestMessage", "a01395.html", null ],
+      [ "pcpp::SSLNewSessionTicketMessage", "a01423.html", null ],
+      [ "pcpp::SSLServerHelloDoneMessage", "a01411.html", null ],
+      [ "pcpp::SSLServerHelloMessage", "a01387.html", null ],
+      [ "pcpp::SSLServerKeyExchangeMessage", "a01399.html", null ],
+      [ "pcpp::SSLUnknownMessage", "a01427.html", null ]
     ] ],
-    [ "pcpp::SSLx509Certificate", "a01371.html", null ],
-    [ "pcpp::SystemCore", "a01447.html", null ],
-    [ "pcpp::SystemCores", "a01451.html", null ],
-    [ "pcpp::TablePrinter", "a01463.html", null ],
-    [ "pcpp::tcphdr", "a01467.html", null ],
-    [ "pcpp::TcpOptionData", "a01471.html", null ],
-    [ "pcpp::TcpReassembly", "a01487.html", null ],
-    [ "pcpp::TcpStreamData", "a01483.html", null ],
+    [ "pcpp::SSLx509Certificate", "a01375.html", null ],
+    [ "pcpp::SystemCore", "a01451.html", null ],
+    [ "pcpp::SystemCores", "a01455.html", null ],
+    [ "pcpp::TablePrinter", "a01467.html", null ],
+    [ "pcpp::tcphdr", "a01471.html", null ],
+    [ "pcpp::TcpOptionData", "a01475.html", null ],
+    [ "pcpp::TcpReassembly", "a01491.html", null ],
+    [ "pcpp::TcpStreamData", "a01487.html", null ],
     [ "pcpp::IPv6TLVOptionHeader::TLVOption", "a01039.html", null ],
     [ "pcpp::IPv6TLVOptionHeader::TLVOptionBuilder", "a01043.html", null ],
-    [ "pcpp::udphdr", "a01511.html", null ],
-    [ "pcpp::vlan_header", "a01519.html", null ],
-    [ "pcpp::vxlan_header", "a01527.html", null ]
+    [ "pcpp::udphdr", "a01515.html", null ],
+    [ "pcpp::vlan_header", "a01523.html", null ],
+    [ "pcpp::vxlan_header", "a01531.html", null ]
 ];

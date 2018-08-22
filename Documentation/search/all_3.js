@@ -2,10 +2,11 @@ var searchData=
 [
   ['data',['data',['../a00879.html#ae817d79a4d209c620bdf074ddc2c5a52',1,'pcpp::icmp_echo_request']]],
   ['datalength',['dataLength',['../a00879.html#a4ed0221d15cb8465ae37cb8cc4311386',1,'pcpp::icmp_echo_request']]],
-  ['dataoffset',['dataOffset',['../a01467.html#a593a30084c297a99ea01b76fce5c5b11',1,'pcpp::tcphdr']]],
+  ['dataoffset',['dataOffset',['../a01471.html#a593a30084c297a99ea01b76fce5c5b11',1,'pcpp::tcphdr']]],
   ['debug',['Debug',['../a01087.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../a00179.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['defaulttimeout',['DefaultTimeout',['../a01107.html#a6c8310c11abf274e400a9b2be59ab873',1,'pcpp::NetworkUtils']]],
+  ['deviceconfiguration',['DeviceConfiguration',['../a01239.html',1,'pcpp::PcapLiveDevice::DeviceConfiguration'],['../a01239.html#a505433eb8fae1ef563618e4c1625adf4',1,'pcpp::PcapLiveDevice::DeviceConfiguration::DeviceConfiguration()']]],
   ['devicemode',['DeviceMode',['../a01235.html#a2381e7f053285090f0f9620bcbd8f0f3',1,'pcpp::PcapLiveDevice']]],
   ['devid',['devid',['../a00771.html#a17156ff00832fd42ad67cf9b0ef7e66f',1,'pcpp::PciAddress::devid()'],['../a00791.html#a49e5bd913fde8b892d1bbe27dbf53065',1,'pcpp::DpdkDevice::DpdkDeviceStats::devId()']]],
   ['dhcp',['DHCP',['../a00179.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56',1,'pcpp']]],
@@ -241,7 +242,7 @@ var searchData=
   ['dnsresource',['DnsResource',['../a00759.html',1,'pcpp']]],
   ['dnstype',['DnsType',['../a00179.html#ad888578fe7df9849bbfbb10cdf245886',1,'pcpp']]],
   ['domain',['domain',['../a00771.html#ab5de4955b79543fff9502806e2b4fcd9',1,'pcpp::PciAddress']]],
-  ['dontlearnflag',['dontLearnFlag',['../a01527.html#a8bf01681565ea80e389e36c7911c9c37',1,'pcpp::vxlan_header']]],
+  ['dontlearnflag',['dontLearnFlag',['../a01531.html#a8bf01681565ea80e389e36c7911c9c37',1,'pcpp::vxlan_header']]],
   ['dpdkdevice',['DpdkDevice',['../a00775.html',1,'pcpp']]],
   ['dpdkdevice_2eh',['DpdkDevice.h',['../a00011.html',1,'']]],
   ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../a00779.html',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration'],['../a00779.html#a02b5e780f69972a7295beea8acd9299e',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration::DpdkDeviceConfiguration()']]],
@@ -252,8 +253,8 @@ var searchData=
   ['dpdkrsshashfunction',['DpdkRssHashFunction',['../a00775.html#aa3acd5ec67d8777437c32f3af875dbc4',1,'pcpp::DpdkDevice']]],
   ['dpdkworkerthread',['DpdkWorkerThread',['../a00799.html',1,'pcpp']]],
   ['dst',['DST',['../a00179.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb',1,'pcpp']]],
-  ['dstip',['dstIP',['../a01479.html#a4e468846d01cc8d1e1721d9c6d727f7e',1,'pcpp::ConnectionData']]],
+  ['dstip',['dstIP',['../a01483.html#a4e468846d01cc8d1e1721d9c6d727f7e',1,'pcpp::ConnectionData']]],
   ['dstmac',['dstMac',['../a00807.html#a6fbac47e840aa3f6055d0b97c684bd45',1,'pcpp::ether_header']]],
-  ['dstport',['dstPort',['../a01479.html#a75cd7efdfa6cf70b9aa2e19819800d4c',1,'pcpp::ConnectionData']]],
+  ['dstport',['dstPort',['../a01483.html#a75cd7efdfa6cf70b9aa2e19819800d4c',1,'pcpp::ConnectionData']]],
   ['documentation',['Documentation',['../index.html',1,'']]]
 ];

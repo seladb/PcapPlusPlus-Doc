@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8cc950c85c0fada668f978db3d6bf4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c1da4d0a0187609dffa2951352d4c3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00775.html#a99c1da4d0a0187609dffa2951352d4c3">sendPackets</a> (<a class="el" href="a00179.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPacketsVec, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a99c1da4d0a0187609dffa2951352d4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d69ce6eec56281db512a80fb1909078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00775.html#a1d69ce6eec56281db512a80fb1909078">sendPacket</a> (<a class="el" href="a01291.html">RawPacket</a> &amp;rawPacket, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
+<tr class="memitem:a1d69ce6eec56281db512a80fb1909078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00775.html#a1d69ce6eec56281db512a80fb1909078">sendPacket</a> (<a class="el" href="a01295.html">RawPacket</a> &amp;rawPacket, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a1d69ce6eec56281db512a80fb1909078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3ec4284c41402b040efae54cc31f60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00775.html#a3e3ec4284c41402b040efae54cc31f60">sendPacket</a> (<a class="el" href="a00767.html">MBufRawPacket</a> &amp;rawPacket, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a3e3ec4284c41402b040efae54cc31f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_a01127"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a01127')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a01127.html">pcpp::IPcapDevice</a></td></tr>
 <tr class="memitem:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a01127"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01127.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
 <tr class="separator:a5cc546829570cd981bfa762acd9759c8 inherit pub_static_methods_a01127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a01127"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01127.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a01291.html">RawPacket</a> *rawPacket)</td></tr>
+<tr class="memitem:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a01127"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01127.html#a54df47e98feadfd830789ca3a7f5f86b">matchPakcetWithFilter</a> (std::string filterAsString, <a class="el" href="a01295.html">RawPacket</a> *rawPacket)</td></tr>
 <tr class="separator:a54df47e98feadfd830789ca3a7f5f86b inherit pub_static_methods_a01127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1106,7 +1106,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::DpdkDevice::sendPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a01291.html">RawPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a01295.html">RawPacket</a> &amp;&#160;</td>
           <td class="paramname"><em>rawPacket</em>, </td>
         </tr>
         <tr>
@@ -1426,7 +1426,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a vector of <a class="el" href="a01291.html">RawPacket</a> pointers to the network. Please notice the following:<br />
+<p>Send a vector of <a class="el" href="a01295.html">RawPacket</a> pointers to the network. Please notice the following:<br />
 </p><ul>
 <li>If some or all of the raw packets aren't of type <a class="el" href="a00767.html">MBufRawPacket</a>, a new temp <a class="el" href="a00767.html">MBufRawPacket</a> instances will be created and packet data will be copied to them. This is necessary to allocate mbufs which will store the data to be sent. If performance is a critical factor please make sure you send only raw packets of type <a class="el" href="a00767.html">MBufRawPacket</a> (or use the sendPackets overload that sends MBufRawPacketVector)</li>
 <li>If the number of packets to send is higher than 64 this method will run multiple iterations of sending packets to DPDK, each iteration of 64 packets</li>
@@ -1623,7 +1623,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00179.html">pcpp</a></li><li class="navelem"><a class="el" href="a00775.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Sat Aug 4 2018 23:35:13 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Aug 21 2018 22:39:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

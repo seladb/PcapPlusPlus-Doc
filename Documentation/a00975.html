@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3a3885752f5254e99d8a3b0d59f1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a923687e62b4287ed6b800dc64f8a53c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01115.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00975.html#a923687e62b4287ed6b800dc64f8a53c8">processPacket</a> (<a class="el" href="a01115.html">Packet</a> *fragment, <a class="el" href="a00975.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status)</td></tr>
 <tr class="separator:a923687e62b4287ed6b800dc64f8a53c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8e48fcaaa8439f4c43ca3bbf18c62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01115.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00975.html#aef8e48fcaaa8439f4c43ca3bbf18c62c">processPacket</a> (<a class="el" href="a01291.html">RawPacket</a> *fragment, <a class="el" href="a00975.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status)</td></tr>
+<tr class="memitem:aef8e48fcaaa8439f4c43ca3bbf18c62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01115.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00975.html#aef8e48fcaaa8439f4c43ca3bbf18c62c">processPacket</a> (<a class="el" href="a01295.html">RawPacket</a> *fragment, <a class="el" href="a00975.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status)</td></tr>
 <tr class="separator:aef8e48fcaaa8439f4c43ca3bbf18c62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0efa8ec7258bbc0a83348bae42f93506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01115.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00975.html#a0efa8ec7258bbc0a83348bae42f93506">getCurrentPacket</a> (const <a class="el" href="a00979.html">PacketKey</a> &amp;key)</td></tr>
 <tr class="separator:a0efa8ec7258bbc0a83348bae42f93506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,7 +394,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="a01115.html">Packet</a>* pcpp::IPReassembly::processPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a01291.html">RawPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="a01295.html">RawPacket</a> *&#160;</td>
           <td class="paramname"><em>fragment</em>, </td>
         </tr>
         <tr>
@@ -427,7 +427,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to a <a class="el" href="a01115.html">Packet</a> object wrapping the input fragment <a class="el" href="a01291.html">RawPacket</a> object. It's the user responsibility to free this instance</li>
+<li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to a <a class="el" href="a01115.html">Packet</a> object wrapping the input fragment <a class="el" href="a01295.html">RawPacket</a> object. It's the user responsibility to free this instance</li>
 <li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
 <li>If the reassembled packet isn't ready then NULL is returned </li>
 </ul>
@@ -465,7 +465,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00179.html">pcpp</a></li><li class="navelem"><a class="el" href="a00975.html">IPReassembly</a></li>
-    <li class="footer">Generated on Sat Aug 4 2018 23:35:13 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Aug 21 2018 22:39:31 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

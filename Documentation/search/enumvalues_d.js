@@ -2,7 +2,7 @@ var searchData=
 [
   ['reassembled',['REASSEMBLED',['../a00975.html#aae7f2e113808978827abf3b7cdbe91afa91beabc1fd8775d590a7d6415aeb6a31',1,'pcpp::IPReassembly']]],
   ['remotedevice',['RemoteDevice',['../a01235.html#a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c',1,'pcpp::PcapLiveDevice']]],
-  ['roundrobin',['RoundRobin',['../a01255.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
+  ['roundrobin',['RoundRobin',['../a01259.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
   ['rss_5ffrag_5fipv4',['RSS_FRAG_IPV4',['../a00775.html#aa3acd5ec67d8777437c32f3af875dbc4ad35e8d99ee794f88c1584c047c817589',1,'pcpp::DpdkDevice']]],
   ['rss_5ffrag_5fipv6',['RSS_FRAG_IPV6',['../a00775.html#aa3acd5ec67d8777437c32f3af875dbc4a68b15d26b363368eee62f858ef7f9955',1,'pcpp::DpdkDevice']]],
   ['rss_5fgeneve',['RSS_GENEVE',['../a00775.html#aa3acd5ec67d8777437c32f3af875dbc4a51f61ea0b54c244e2289a065ecc0182c',1,'pcpp::DpdkDevice']]],

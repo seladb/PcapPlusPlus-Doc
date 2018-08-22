@@ -1,6 +1,8 @@
 var a01447 =
 [
-    [ "operator==", "a01447.html#a684c9f6cdc848afadf8735f12c43820c", null ],
-    [ "Id", "a01447.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
-    [ "Mask", "a01447.html#aa76587497e2faa7f7354ca8444a9450b", null ]
+    [ "SSLApplicationDataLayer", "a01447.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
+    [ "computeCalculateFields", "a01447.html#a26b335b7dff7b46724894cad71ee56eb", null ],
+    [ "getEncrpytedData", "a01447.html#a5aee5cb13e0c078fb4c4e24c5fbac99e", null ],
+    [ "getEncrpytedDataLen", "a01447.html#ab078cc94b266ccb418e3047db02b6130", null ],
+    [ "toString", "a01447.html#a9676cb9040c57b7f4929c450d4e952f8", null ]
 ];

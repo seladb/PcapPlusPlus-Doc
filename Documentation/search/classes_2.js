@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['deviceconfiguration',['DeviceConfiguration',['../a01239.html',1,'pcpp::PcapLiveDevice']]],
   ['dhcp_5fheader',['dhcp_header',['../a00735.html',1,'pcpp']]],
   ['dhcplayer',['DhcpLayer',['../a00743.html',1,'pcpp']]],
   ['dhcpoptiondata',['DhcpOptionData',['../a00739.html',1,'pcpp']]],

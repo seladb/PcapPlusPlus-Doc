@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::TablePrinter Class Reference</title>
+<title>PcapPlusPlus: pcpp::ApplicationEventHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,70 +80,58 @@ $(document).ready(function(){initNavTree('a01463.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a01460.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TablePrinter Class Reference</div>  </div>
+<div class="title">pcpp::ApplicationEventHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00149_source.html">TablePrinter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00146_source.html">SystemUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abfff8961708dec4b1c4802fc42180284"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>) (void *cookie)</td></tr>
+<tr class="separator:abfff8961708dec4b1c4802fc42180284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e4ddaab16e4a28d2558ebda8c2c826f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a5e4ddaab16e4a28d2558ebda8c2c826f">TablePrinter</a> (std::vector&lt; std::string &gt; columnNames, std::vector&lt; int &gt; columnWidths)</td></tr>
-<tr class="separator:a5e4ddaab16e4a28d2558ebda8c2c826f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5005ab3050d077f8cd2496ce47a263d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a5005ab3050d077f8cd2496ce47a263d2">~TablePrinter</a> ()</td></tr>
-<tr class="separator:a5005ab3050d077f8cd2496ce47a263d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c062b177190a14600612ac22993baa0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a0c062b177190a14600612ac22993baa0">printRow</a> (std::string values, char delimiter)</td></tr>
-<tr class="separator:a0c062b177190a14600612ac22993baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c69a05b21aa6ca82bc05ba7c76983b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a84c69a05b21aa6ca82bc05ba7c76983b">printRow</a> (std::vector&lt; std::string &gt; values)</td></tr>
-<tr class="separator:a84c69a05b21aa6ca82bc05ba7c76983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797543ffaa68eafac85cd020e0e85ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a797543ffaa68eafac85cd020e0e85ce8">printSeparator</a> ()</td></tr>
-<tr class="separator:a797543ffaa68eafac85cd020e0e85ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bcc8b76c8994e674a7639124582506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a88bcc8b76c8994e674a7639124582506">closeTable</a> ()</td></tr>
-<tr class="separator:a88bcc8b76c8994e674a7639124582506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#adb15e6e3b2b082cb5eebafcc7df15aa7">onApplicationInterrupted</a> (<a class="el" href="a01463.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a> handler, void *cookie)</td></tr>
+<tr class="separator:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a20e86342f93b84fe40ef38891a22b59a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a01463.html">ApplicationEventHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01463.html#a20e86342f93b84fe40ef38891a22b59a">getInstance</a> ()</td></tr>
+<tr class="separator:a20e86342f93b84fe40ef38891a22b59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for printing tables in command-line </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5e4ddaab16e4a28d2558ebda8c2c826f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e4ddaab16e4a28d2558ebda8c2c826f">&#9670;&nbsp;</a></span>TablePrinter()</h2>
+<div class="textblock"><p>A singleton class that provides callbacks for events that occur during application life-cycle such as ctrl+c pressed, application closed, killed, etc. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="abfff8961708dec4b1c4802fc42180284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfff8961708dec4b1c4802fc42180284">&#9670;&nbsp;</a></span>EventHandlerCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::TablePrinter::TablePrinter </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>columnNames</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
-          <td class="paramname"><em>columnWidths</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">pcpp::ApplicationEventHandler::EventHandlerCallback</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>C'tor - get column names and column widths </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback to be invoked when the event occurs </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">columnNames</td><td>A vector of strings containing column names </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">columnWidths</td><td>A vector of integers containing column widths </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cookie</td><td>A pointer the the cookie provided by the user in <a class="el" href="a01463.html">ApplicationEventHandler</a> c'tor </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5005ab3050d077f8cd2496ce47a263d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5005ab3050d077f8cd2496ce47a263d2">&#9670;&nbsp;</a></span>~TablePrinter()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a20e86342f93b84fe40ef38891a22b59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e86342f93b84fe40ef38891a22b59a">&#9670;&nbsp;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +140,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::TablePrinter::~TablePrinter </td>
+          <td class="memname">static <a class="el" href="a01463.html">ApplicationEventHandler</a>&amp; pcpp::ApplicationEventHandler::getInstance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -160,50 +148,31 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A d'tor for this class. Closes the table if not closed </p>
+<p>As <a class="el" href="a01463.html">ApplicationEventHandler</a> is a singleton, this is the static getter to retrieve its instance </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of <a class="el" href="a01463.html">ApplicationEventHandler</a> </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a88bcc8b76c8994e674a7639124582506"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88bcc8b76c8994e674a7639124582506">&#9670;&nbsp;</a></span>closeTable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::TablePrinter::closeTable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close the table - should be called after all rows were printed. Calling this method is not a must as it's called in the class d'tor </p>
-
-</div>
-</div>
-<a id="a0c062b177190a14600612ac22993baa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c062b177190a14600612ac22993baa0">&#9670;&nbsp;</a></span>printRow() <span class="overload">[1/2]</span></h2>
+<a id="adb15e6e3b2b082cb5eebafcc7df15aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb15e6e3b2b082cb5eebafcc7df15aa7">&#9670;&nbsp;</a></span>onApplicationInterrupted()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::TablePrinter::printRow </td>
+          <td class="memname">void pcpp::ApplicationEventHandler::onApplicationInterrupted </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
+          <td class="paramtype"><a class="el" href="a01463.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>delimiter</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cookie</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,57 +181,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Print a single row by providing a single string containing all values delimited by a specified character. For example: if specified delimiter is '|' and there are 3 columns an example input can be: "value for column1|value for column2|value for column3" </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Register for an application-interrupted event, meaning ctrl+c was pressed </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">values</td><td>A string delimited by a specified delimiter that contains values for all columns </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">delimiter</td><td>A delimiter that separates between values of different columns in the values string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>The callback to be activated when the event occurs </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cookie</td><td>A pointer to a user provided object. This object will be transferred to the EventHandlerCallback callback. This cookie is very useful for transferring objects that give context to the event callback </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if row was printed successfully or false otherwise (in any case of error an appropriate message will be printed to log) </dd></dl>
-
-</div>
-</div>
-<a id="a84c69a05b21aa6ca82bc05ba7c76983b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84c69a05b21aa6ca82bc05ba7c76983b">&#9670;&nbsp;</a></span>printRow() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::TablePrinter::printRow </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>values</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print a single row </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">values</td><td>A vector of strings containing values for all columns </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if row was printed successfully or false otherwise (in any case of error an appropriate message will be printed to log) </dd></dl>
-
-</div>
-</div>
-<a id="a797543ffaa68eafac85cd020e0e85ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797543ffaa68eafac85cd020e0e85ce8">&#9670;&nbsp;</a></span>printSeparator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::TablePrinter::printSeparator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print a separator line </p>
 
 </div>
 </div>
@@ -271,8 +196,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00179.html">pcpp</a></li><li class="navelem"><a class="el" href="a01463.html">TablePrinter</a></li>
-    <li class="footer">Generated on Sat Aug 4 2018 23:35:14 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00179.html">pcpp</a></li><li class="navelem"><a class="el" href="a01463.html">ApplicationEventHandler</a></li>
+    <li class="footer">Generated on Tue Aug 21 2018 22:39:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

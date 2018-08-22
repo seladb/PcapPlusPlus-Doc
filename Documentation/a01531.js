@@ -1,13 +1,15 @@
 var a01531 =
 [
-    [ "VxlanLayer", "a01531.html#aea5e8a6d3cf3a9fc45bbb30030ddc8ea", null ],
-    [ "VxlanLayer", "a01531.html#a95d29aa1bc7b26c82f2f39068cdeaca0", null ],
-    [ "computeCalculateFields", "a01531.html#a1a3382f05372478fbe1b5d87ab6333e4", null ],
-    [ "getHeaderLen", "a01531.html#a61796102e5c21034def5b158232bac3b", null ],
-    [ "getOsiModelLayer", "a01531.html#a0e45a6e3fcfcdadddc24974e3fc139c9", null ],
-    [ "getVNI", "a01531.html#a3efe820adaf6e71b04acff6f0e800674", null ],
-    [ "getVxlanHeader", "a01531.html#a021ee4907d7dffae04806c18269682fa", null ],
-    [ "parseNextLayer", "a01531.html#a7c7ea9ff536dbc602dac07591de6a202", null ],
-    [ "setVNI", "a01531.html#ae03a61d99376b70b8f92b30d1a3b429e", null ],
-    [ "toString", "a01531.html#a13439c97767b4419de816e32b7759917", null ]
+    [ "dontLearnFlag", "a01531.html#a8bf01681565ea80e389e36c7911c9c37", null ],
+    [ "gbpFlag", "a01531.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
+    [ "groupPolicyID", "a01531.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
+    [ "pad", "a01531.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
+    [ "policyAppliedFlag", "a01531.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
+    [ "reserved11_12", "a01531.html#a3335ab561fbf911e3c070c231d37669f", null ],
+    [ "reserved14_16", "a01531.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
+    [ "reserved2_4", "a01531.html#aeaec3eb74ec694974471243a35a76313", null ],
+    [ "reserved6_8", "a01531.html#ada8c68230dd90d8400398c333216a9f3", null ],
+    [ "reserved9", "a01531.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
+    [ "vni", "a01531.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
+    [ "vniPresentFlag", "a01531.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
 ];

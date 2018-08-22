@@ -1,5 +1,6 @@
 var a01235 =
 [
+    [ "DeviceConfiguration", "a01239.html", "a01239" ],
     [ "DeviceMode", "a01235.html#a2381e7f053285090f0f9620bcbd8f0f3", [
       [ "Normal", "a01235.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
       [ "Promiscuous", "a01235.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]
@@ -23,7 +24,7 @@ var a01235 =
     [ "getName", "a01235.html#a606d887cb3005e75cc67609b957a886c", null ],
     [ "getStatistics", "a01235.html#a68f87416b25abe3b625f0f9993bb7e1b", null ],
     [ "open", "a01235.html#a281f2cd6062791c68ecdd82384f751f8", null ],
-    [ "open", "a01235.html#a5e61feb22fdab2bbbff8da63751169c9", null ],
+    [ "open", "a01235.html#a3f58e22a71cbed9109ae75bd1759e8ed", null ],
     [ "sendPacket", "a01235.html#a2e7b9be7551ad7759c32e9d5fbabd5c8", null ],
     [ "sendPacket", "a01235.html#a2f45c8bc2c370f3f2120909f36b22802", null ],
     [ "sendPacket", "a01235.html#aa547d006ea10328c631eb5379798dede", null ],
