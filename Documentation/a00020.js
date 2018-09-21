@@ -1,7 +1,7 @@
 var a00020 =
 [
-    [ "ether_header", "a00817.html", "a00817" ],
-    [ "EthLayer", "a00821.html", "a00821" ],
+    [ "ether_header", "a00820.html", "a00820" ],
+    [ "EthLayer", "a00824.html", "a00824" ],
     [ "PCPP_ETHERTYPE_AARP", "a00020.html#ab8cff68aa7d47eeb5e608246c8727615", null ],
     [ "PCPP_ETHERTYPE_ARP", "a00020.html#aa2d96bc006e5d45a033943b55c498903", null ],
     [ "PCPP_ETHERTYPE_AT", "a00020.html#a16ad61f226417b0ec229061052e02ff5", null ],

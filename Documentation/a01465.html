@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::SystemCore Struct Reference</title>
+<title>PcapPlusPlus: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a01465.html','');});
+$(document).ready(function(){initNavTree('a01468.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,97 +79,45 @@ $(document).ready(function(){initNavTree('a01465.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a01462.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::SystemCore Struct Reference</div>  </div>
+<div class="title">pcpp::SSLApplicationDataLayer Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00149_source.html">SystemUtils.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a684c9f6cdc848afadf8735f12c43820c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01465.html#a684c9f6cdc848afadf8735f12c43820c">operator==</a> (const <a class="el" href="a01465.html">SystemCore</a> &amp;other) const</td></tr>
-<tr class="separator:a684c9f6cdc848afadf8735f12c43820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aa76587497e2faa7f7354ca8444a9450b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01465.html#aa76587497e2faa7f7354ca8444a9450b">Mask</a></td></tr>
-<tr class="separator:aa76587497e2faa7f7354ca8444a9450b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf545b5f5f0fad64aee7cc3b46034a4d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01465.html#acf545b5f5f0fad64aee7cc3b46034a4d">Id</a></td></tr>
-<tr class="separator:acf545b5f5f0fad64aee7cc3b46034a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents data of 1 CPU core. Current implementation supports up to 32 cores </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a684c9f6cdc848afadf8735f12c43820c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a684c9f6cdc848afadf8735f12c43820c">&#9670;&nbsp;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::SystemCore::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01465.html">SystemCore</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overload of the comparison operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are equal. False otherwise </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="acf545b5f5f0fad64aee7cc3b46034a4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf545b5f5f0fad64aee7cc3b46034a4d">&#9670;&nbsp;</a></span>Id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::SystemCore::Id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Core ID - a value between 0 and 31 </p>
-
-</div>
-</div>
-<a id="aa76587497e2faa7f7354ca8444a9450b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa76587497e2faa7f7354ca8444a9450b">&#9670;&nbsp;</a></span>Mask</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::SystemCore::Mask</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Core position in a 32-bit mask. For each core this attribute holds a 4B integer where only 1 bit is set, according to the core ID. For example: in core #0 the right-most bit will be set (meaning the number 0x01); in core #5 the 5th right-most bit will be set (meaning the number 0x20)... </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a01468.html#a26b335b7dff7b46724894cad71ee56eb">computeCalculateFields</a>()</td><td class="entry"><a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a658e543c6c13707f8f624957cadc19e9">copyData</a>(uint8_t *toArr)</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01096.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a2fdf63eb660bf17119fbe9b9ae89aff2">getDataPtr</a>(size_t offset=0)</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01468.html#a5aee5cb13e0c078fb4c4e24c5fbac99e">getEncrpytedData</a>()</td><td class="entry"><a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01468.html#ab078cc94b266ccb418e3047db02b6130">getEncrpytedDataLen</a>()</td><td class="entry"><a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#afd062c291faff189eff54e987885e3f6">getHeaderLen</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01096.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#af19d2257b49531b37f546810c5b788b8">getOsiModelLayer</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01096.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01452.html#a693e2da655cd33a4906bcbcffb394126">getRecordLayer</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#af0bff83614a0641b170e8fb4734178bd">getRecordType</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01452.html#a56f3a017783ffc524463a5691959ae5a">getRecordVersion</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#a1ea39487affc954f5584adc260de9d02">getSSLPortMap</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01452.html#a15327f1acf51062ba2852678211f8264">IsSSLMessage</a>(uint16_t srcPort, uint16_t dstPort, uint8_t *data, size_t dataLen)</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01452.html#acc45ce490c60762cf4be2da0a4d57723">parseNextLayer</a>()</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01468.html#ad2d812ae6c47cb20693c81f7d0f0b76d">SSLApplicationDataLayer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01452.html#af38f557785a417888c5a1096d8c5c52f">sslVersionToString</a>(SSLVersion ver)</td><td class="entry"><a class="el" href="a01452.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01468.html#a9676cb9040c57b7f4929c450d4e952f8">toString</a>()</td><td class="entry"><a class="el" href="a01468.html">pcpp::SSLApplicationDataLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01096.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a>()</td><td class="entry"><a class="el" href="a01096.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00181.html">pcpp</a></li><li class="navelem"><a class="el" href="a01465.html">SystemCore</a></li>
-    <li class="footer">Generated on Wed Aug 29 2018 01:57:25 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 20 2018 22:34:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

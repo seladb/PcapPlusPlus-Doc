@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::OrFilter Class Reference</title>
+<title>PcapPlusPlus: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a01213.html','');});
+$(document).ready(function(){initNavTree('a01216.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,169 +79,24 @@ $(document).ready(function(){initNavTree('a01213.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01210.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::OrFilter Class Reference</div>  </div>
+<div class="title">pcpp::OrFilter Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00092_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::OrFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a01213.png" usemap="#pcpp::OrFilter_map" alt=""/>
-  <map id="pcpp::OrFilter_map" name="pcpp::OrFilter_map">
-<area href="a01169.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,120,24"/>
-</map>
- </div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab190d9fab6cf4dbddaa3d3091eef88dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01213.html#ab190d9fab6cf4dbddaa3d3091eef88dd">OrFilter</a> ()</td></tr>
-<tr class="separator:ab190d9fab6cf4dbddaa3d3091eef88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372efb90b1751a96f9f3c93fd1b06216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01213.html#a372efb90b1751a96f9f3c93fd1b06216">OrFilter</a> (std::vector&lt; <a class="el" href="a01169.html">GeneralFilter</a> *&gt; &amp;filters)</td></tr>
-<tr class="separator:a372efb90b1751a96f9f3c93fd1b06216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd751c0048d632f82d8f3a1464ed257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01213.html#abcd751c0048d632f82d8f3a1464ed257">addFilter</a> (<a class="el" href="a01169.html">GeneralFilter</a> *filter)</td></tr>
-<tr class="separator:abcd751c0048d632f82d8f3a1464ed257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6552bb49fddc97e6e2f8ef0833c45b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01213.html#a6552bb49fddc97e6e2f8ef0833c45b36">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:a6552bb49fddc97e6e2f8ef0833c45b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a01169"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01169')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01169.html">pcpp::GeneralFilter</a></td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a01169"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01169.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a01169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for connecting several filters into one filter with logical "or" between them. For example: if the 2 filters are: "IPv4 address =
-x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x _OR_ TCP port dst = 80"<br />
- This class follows the composite design pattern<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00092.html">PcapFilter.h</a>  </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab190d9fab6cf4dbddaa3d3091eef88dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab190d9fab6cf4dbddaa3d3091eef88dd">&#9670;&nbsp;</a></span>OrFilter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::OrFilter::OrFilter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>An empty constructor for this class. Use <a class="el" href="a01213.html#abcd751c0048d632f82d8f3a1464ed257">addFilter()</a> to add filters to the or condition </p>
-
-</div>
-</div>
-<a id="a372efb90b1751a96f9f3c93fd1b06216"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372efb90b1751a96f9f3c93fd1b06216">&#9670;&nbsp;</a></span>OrFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::OrFilter::OrFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="a01169.html">GeneralFilter</a> *&gt; &amp;&#160;</td>
-          <td class="paramname"><em>filters</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that gets a list of pointers to filters and creates one filter from all filters with logical "or" between them </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filters</td><td>The list of pointers to filters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="abcd751c0048d632f82d8f3a1464ed257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd751c0048d632f82d8f3a1464ed257">&#9670;&nbsp;</a></span>addFilter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::OrFilter::addFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a01169.html">GeneralFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Add filter to the or condition </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to add </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6552bb49fddc97e6e2f8ef0833c45b36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6552bb49fddc97e6e2f8ef0833c45b36">&#9670;&nbsp;</a></span>parseToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::OrFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a01169.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a01216.html">pcpp::OrFilter</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a01216.html#abcd751c0048d632f82d8f3a1464ed257">addFilter</a>(GeneralFilter *filter)</td><td class="entry"><a class="el" href="a01216.html">pcpp::OrFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01216.html#ab190d9fab6cf4dbddaa3d3091eef88dd">OrFilter</a>()</td><td class="entry"><a class="el" href="a01216.html">pcpp::OrFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01216.html#a372efb90b1751a96f9f3c93fd1b06216">OrFilter</a>(std::vector&lt; GeneralFilter *&gt; &amp;filters)</td><td class="entry"><a class="el" href="a01216.html">pcpp::OrFilter</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01216.html#a6552bb49fddc97e6e2f8ef0833c45b36">parseToString</a>(std::string &amp;result)</td><td class="entry"><a class="el" href="a01216.html">pcpp::OrFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01172.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>()</td><td class="entry"><a class="el" href="a01172.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00181.html">pcpp</a></li><li class="navelem"><a class="el" href="a01213.html">OrFilter</a></li>
-    <li class="footer">Generated on Wed Aug 29 2018 01:57:25 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 20 2018 22:34:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -1,6 +1,6 @@
 var a00041 =
 [
-    [ "ScalarBuffer", "a01009.html", "a01009" ],
+    [ "ScalarBuffer", "a01012.html", "a01012" ],
     [ "compute_checksum", "a00041.html#a27f80839f1794fa67f59d5f4046466d7", null ],
     [ "fnv_hash", "a00041.html#af5ed4e611bb0af5bade4697ff2308b18", null ],
     [ "fnv_hash", "a00041.html#af66abbe5d82d79edd056eb54e70774f2", null ],
