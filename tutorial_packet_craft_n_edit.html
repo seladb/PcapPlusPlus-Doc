@@ -9,10 +9,8 @@ section: tutorials
         <p>Table of contents:</p>
         <ul>
           <li><a href="tutorial_intro.html">Part 1: Introduction and basics</a></li>
-          <li><a href="tutorial_pcap_files.html">Part 2: Reading and writing
-              pcap files</a></li>
-          <li><a href="tutorial_live_capture.html">Part 3: Capturing and sending
-              packets</a></li>
+          <li><a href="tutorial_pcap_files.html">Part 2: Reading and writing pcap files</a></li>
+          <li><a href="tutorial_live_capture.html">Part 3: Capturing and sending packets</a></li>
           <li><a href="tutorial_packet_parsing.html">Part 4: Packet parsing</a></li>
           <li>Part 5: Packet crafting and editing
             <ol>
@@ -22,6 +20,7 @@ section: tutorials
               <li><a href="#run_example">Running the example</a></li>
             </ol>
           </li>
+          <li><a href="tutorial_dpdk.html">Part 6: Working with DPDK</a></li>
         </ul>
         <h2 id="intro">Introduction</h2>
         <p>In the previous <a href="tutorial_packet_parsing.html">Packet
@@ -49,10 +48,10 @@ section: tutorials
         <h2 id="packet_editing">Packet editing</h2>
         <p>In this part of the tutorial we'll read a packet from a pcap file,
           let PcapPlusPlus parse it, and then see how we can edit and change the
-          data in each layer. Let's start by writing a <code>mai<span style="font-family: &quot;trebuchet ms&quot;,arial,sans-serif;">n()</span></code>
+          data in each layer. Let's start by writing a <code class="cpp">main()</code>
           method and add the includes that we need:</p>
         <pre><code class="cpp">#if !defined(WIN32) && !defined(WINx64)
-#include <in.h> // this is for using ntohs() and htons() on non-Windows OS's
+#include &lt;in.h&gt; // this is for using ntohs() and htons() on non-Windows OS's
 #endif
 #include "stdlib.h"
 #include "Packet.h"
