@@ -1,7 +1,6 @@
 var searchData=
 [
   ['callid',['callID',['../a00832.html#a8b495794c197d8cb79aff47177784f9b',1,'pcpp::gre1_header']]],
-  ['cfi',['cfi',['../a01544.html#a1cba4c151a11a2527eccb5c472be835b',1,'pcpp::vlan_header']]],
   ['changecipherspec',['changeCipherSpec',['../a01372.html#a188d68450805f01ee83f6660903fe2a3',1,'pcpp::ssl_tls_change_cipher_spec']]],
   ['checkingdisabled',['checkingDisabled',['../a00760.html#ab01657453ab6e8bb16fd6ac9338ad37c',1,'pcpp::dnshdr']]],
   ['checksum',['checksum',['../a00884.html#afc53df5a90f51ecf5d3e517f730f3e9f',1,'pcpp::icmphdr::checksum()'],['../a00940.html#a46db4b30167d803fa9ef00f510c9a69d',1,'pcpp::igmp_header::checksum()'],['../a00944.html#adb78f71a90f2ecd2276d28258a2ce1d0',1,'pcpp::igmpv3_query_header::checksum()'],['../a00948.html#ae99c9328318afe39ba35e5412b7971c1',1,'pcpp::igmpv3_report_header::checksum()']]],

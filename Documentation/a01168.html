@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87cdcca0ace3ba4ccbaad4093def33a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a11ff6431efc054fd4a47bbaab9852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01168.html#a55a11ff6431efc054fd4a47bbaab9852">getStatistics</a> (pcap_stat &amp;stats)</td></tr>
 <tr class="separator:a55a11ff6431efc054fd4a47bbaab9852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad636213ad5ae9af2936c1c4ea29682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01168.html#a4ad636213ad5ae9af2936c1c4ea29682">setFilter</a> (std::string filterAsString)</td></tr>
+<tr class="separator:a4ad636213ad5ae9af2936c1c4ea29682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_a01160"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01160')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01160.html">pcpp::IFileWriterDevice</a></td></tr>
 <tr class="memitem:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a01160"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01160.html#ad1efdc8f258b6981d0429c61992f2e13">~IFileWriterDevice</a> ()</td></tr>
 <tr class="separator:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_a01160"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +133,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62e21c94c6046f2d16a81df62b0c8d86 inherit pub_methods_a01144"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01144.html#a62e21c94c6046f2d16a81df62b0c8d86">getFileName</a> ()</td></tr>
 <tr class="separator:a62e21c94c6046f2d16a81df62b0c8d86 inherit pub_methods_a01144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_a01140"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01140')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01140.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a134f061d7883abbdb256abd48d53e66c inherit pub_methods_a01140"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01140.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a134f061d7883abbdb256abd48d53e66c inherit pub_methods_a01140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ca7eb3d99231a8cfd9d68cde0b5067c inherit pub_methods_a01140"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01140.html#a8ca7eb3d99231a8cfd9d68cde0b5067c">clearFilter</a> ()</td></tr>
 <tr class="separator:a8ca7eb3d99231a8cfd9d68cde0b5067c inherit pub_methods_a01140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_a00740"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00740')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00740.html">pcpp::IDevice</a></td></tr>
@@ -379,6 +379,41 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4ad636213ad5ae9af2936c1c4ea29682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad636213ad5ae9af2936c1c4ea29682">&#9670;&nbsp;</a></span>setFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapNgFileWriterDevice::setFilter </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filterAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set a filter for PcapNG writer device. Only packets that match the filter will be persisted </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter to be set in Berkeley <a class="el" href="a01128.html">Packet</a> Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if filter set successfully, false otherwise </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a01140.html#a134f061d7883abbdb256abd48d53e66c">pcpp::IPcapDevice</a>.</p>
+
+</div>
+</div>
 <a id="a81069d1681efd6adf22e6ae80f300993"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81069d1681efd6adf22e6ae80f300993">&#9670;&nbsp;</a></span>writePacket() <span class="overload">[1/2]</span></h2>
 
@@ -491,7 +526,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00184.html">pcpp</a></li><li class="navelem"><a class="el" href="a01168.html">PcapNgFileWriterDevice</a></li>
-    <li class="footer">Generated on Sun Oct 7 2018 23:54:38 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Oct 31 2018 08:34:16 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

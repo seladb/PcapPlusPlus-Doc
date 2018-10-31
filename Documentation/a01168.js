@@ -7,6 +7,7 @@ var a01168 =
     [ "open", "a01168.html#adca940885348d13ae58865ff5011e6fd", null ],
     [ "open", "a01168.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
     [ "open", "a01168.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "setFilter", "a01168.html#a4ad636213ad5ae9af2936c1c4ea29682", null ],
     [ "writePacket", "a01168.html#a81069d1681efd6adf22e6ae80f300993", null ],
     [ "writePacket", "a01168.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
     [ "writePackets", "a01168.html#a214c363a167e1538d9ea29a58efd9640", null ]

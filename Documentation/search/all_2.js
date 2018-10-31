@@ -2,7 +2,6 @@ var searchData=
 [
   ['calculatechecksum',['calculateChecksum',['../a01500.html#abf39676d5adf4e2b3b2d90a616428780',1,'pcpp::TcpLayer::calculateChecksum()'],['../a01540.html#a98ae7478c27ae01ae6be6c887506e8f4',1,'pcpp::UdpLayer::calculateChecksum()']]],
   ['callid',['callID',['../a00832.html#a8b495794c197d8cb79aff47177784f9b',1,'pcpp::gre1_header']]],
-  ['cfi',['cfi',['../a01544.html#a1cba4c151a11a2527eccb5c472be835b',1,'pcpp::vlan_header']]],
   ['changecipherspec',['changeCipherSpec',['../a01372.html#a188d68450805f01ee83f6660903fe2a3',1,'pcpp::ssl_tls_change_cipher_spec']]],
   ['channeldistribution',['ChannelDistribution',['../a01272.html#a2a7113725490fea52c9702998e6a8f78',1,'pcpp::PfRingDevice']]],
   ['checkingdisabled',['checkingDisabled',['../a00760.html#ab01657453ab6e8bb16fd6ac9338ad37c',1,'pcpp::dnshdr']]],
