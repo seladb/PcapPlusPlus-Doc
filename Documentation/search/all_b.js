@@ -9,7 +9,7 @@ var searchData=
   ['matchall',['MatchAll',['../a01236.html#a5c46e6577ab32373602693aa2b1b25fca0aac4bcfd152dfe7ca619973fb9b8d61',1,'pcpp::TcpFlagsFilter']]],
   ['matchoneatleast',['MatchOneAtLeast',['../a01236.html#a5c46e6577ab32373602693aa2b1b25fca88fe87162ec498bd7b05cd65d00ea866',1,'pcpp::TcpFlagsFilter']]],
   ['matchoptions',['MatchOptions',['../a01236.html#a5c46e6577ab32373602693aa2b1b25fc',1,'pcpp::TcpFlagsFilter']]],
-  ['matchpakcetwithfilter',['matchPakcetWithFilter',['../a01140.html#a54df47e98feadfd830789ca3a7f5f86b',1,'pcpp::IPcapDevice']]],
+  ['matchpacketwithfilter',['matchPacketWithFilter',['../a01140.html#ae51f3909886e5fa8a35b1c6067b3c561',1,'pcpp::IPcapDevice']]],
   ['matchsubnet',['matchSubnet',['../a00980.html#a5551eda249276e8676675e5d0184bb49',1,'pcpp::IPv4Address']]],
   ['maxresponsetime',['maxResponseTime',['../a00940.html#a7f27621294fb1d9a9e0016150c6c4133',1,'pcpp::igmp_header::maxResponseTime()'],['../a00944.html#ae1720bbb2665eca8153e26f26175ef55',1,'pcpp::igmpv3_query_header::maxResponseTime()']]],
   ['mbufrawpacket',['MBufRawPacket',['../a00780.html',1,'pcpp::MBufRawPacket'],['../a00780.html#aaf206811e019a695318954e65b044f96',1,'pcpp::MBufRawPacket::MBufRawPacket()'],['../a00780.html#a0b2a21888dbcbdc2e50c703938de6804',1,'pcpp::MBufRawPacket::MBufRawPacket(const MBufRawPacket &amp;other)']]],
