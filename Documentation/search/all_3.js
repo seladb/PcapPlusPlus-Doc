@@ -6,6 +6,7 @@ var searchData=
   ['debug',['Debug',['../a01100.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../a00184.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['defaulttimeout',['DefaultTimeout',['../a01120.html#a6c8310c11abf274e400a9b2be59ab873',1,'pcpp::NetworkUtils']]],
+  ['detachlayer',['detachLayer',['../a01128.html#a54d83577cda897699f28595477f2d92d',1,'pcpp::Packet::detachLayer(ProtocolType layerType, int index=0)'],['../a01128.html#ad4dbb6b0bedb3f58f6855aa0329a8908',1,'pcpp::Packet::detachLayer(Layer *layer)']]],
   ['device_2eh',['Device.h',['../a00005.html',1,'']]],
   ['deviceconfiguration',['DeviceConfiguration',['../a01252.html',1,'pcpp::PcapLiveDevice::DeviceConfiguration'],['../a01252.html#a505433eb8fae1ef563618e4c1625adf4',1,'pcpp::PcapLiveDevice::DeviceConfiguration::DeviceConfiguration()']]],
   ['devicemode',['DeviceMode',['../a01248.html#a2381e7f053285090f0f9620bcbd8f0f3',1,'pcpp::PcapLiveDevice']]],

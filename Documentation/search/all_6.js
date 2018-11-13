@@ -156,7 +156,7 @@ var searchData=
   ['getkey',['getKey',['../a00844.html#af38425c78abd54d4c3b3e7c696d675c1',1,'pcpp::GREv0Layer']]],
   ['getkeyexchangealg',['getKeyExchangeAlg',['../a01380.html#a56322a3bb08908c7b68c286c9fdd8fcd',1,'pcpp::SSLCipherSuite']]],
   ['getlastlayer',['getLastLayer',['../a01128.html#a1c2dd7a761efe7393249ddc54bdd662b',1,'pcpp::Packet']]],
-  ['getlayeroftype',['getLayerOfType',['../a01128.html#a78d0de95b49eb313e3184021234e5c5e',1,'pcpp::Packet']]],
+  ['getlayeroftype',['getLayerOfType',['../a01128.html#a715863c05629b7d5ff66d9b1ba8a14ab',1,'pcpp::Packet::getLayerOfType(ProtocolType layerType, int index=0)'],['../a01128.html#a78d0de95b49eb313e3184021234e5c5e',1,'pcpp::Packet::getLayerOfType()']]],
   ['getlayerpayload',['getLayerPayload',['../a01096.html#aa2cede93f23dc2afd032fa589e22cd7d',1,'pcpp::Layer']]],
   ['getlayerpayloadsize',['getLayerPayloadSize',['../a01096.html#aa6b3d4c2c2b85b8211d2b9544194d20e',1,'pcpp::Layer']]],
   ['getlength',['getLength',['../a00752.html#a46622003c92a40c40ed61d2a52418684',1,'pcpp::DhcpOptionData::getLength()'],['../a01384.html#aaaa014f15ccc4e5b433d9825333bbf1c',1,'pcpp::SSLExtension::getLength()']]],
