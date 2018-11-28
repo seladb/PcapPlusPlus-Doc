@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Logger.h File Reference</title>
+<title>PcapPlusPlus: Layer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,84 +81,38 @@ $(document).ready(function(){initNavTree('a00056.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">Logger.h File Reference</div>  </div>
+<div class="title">Layer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00128_source.html">ProtocolType.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="a00056_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01100.html">pcpp::LoggerPP</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01101.html">pcpp::IDataContainer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01105.html">pcpp::Layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00184"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html">pcpp</a></td></tr>
-<tr class="memdesc:a00184"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00193"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00193.html">pcpp</a></td></tr>
+<tr class="memdesc:a00193"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ac6557f5dc8fcb14858f231b12bdc1c1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1a">pcpp::LogModule</a> { , <br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa488fbdb95747a99c14eed410adaedeba">pcpp::CommonLogModuleIpUtils</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa19e1e3077dd9686b33d231086d30fab0">pcpp::CommonLogModuleTablePrinter</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0025ed15da2a62fb8a238935e3cff176">pcpp::PacketLogModuleRawPacket</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aad5986a9a071903534131367226ec468f">pcpp::PacketLogModulePacket</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aae0a0177e1ba9dbf0af6a92498ca1e878">pcpp::PacketLogModuleLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa35b4bee6678121de9ced26986def4552">pcpp::PacketLogModuleArpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2a8edf00f8e0414805f5227a84f3a233">pcpp::PacketLogModuleEthLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa340d8b7004d909e1797da374491bfa34">pcpp::PacketLogModuleIPv4Layer</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aaadb7f5f41503efce69f207ff0b531ab7">pcpp::PacketLogModuleIPv6Layer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa007ea70046eb889350b7c0ad367cfb15">pcpp::PacketLogModulePayloadLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aae1d6f5c2cffa265426beaa30b59e84e0">pcpp::PacketLogModuleTcpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa05c3c946e561a9df0f7c16cce779118d">pcpp::PacketLogModuleUdpLayer</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1cf3ebd1c9d8cfbb9b2be2bd8b1a3c23">pcpp::PacketLogModuleVlanLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9513c0418e3230f7922ba841d1b20a89">pcpp::PacketLogModuleHttpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7828b609594d427af9e9f162d54a4345">pcpp::PacketLogModulePPPoELayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aab73a06a22add3f775fe2d9816e7eb557">pcpp::PacketLogModuleDnsLayer</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aab1be2060cbc0ac2d9b11a26d1d95c000">pcpp::PacketLogModuleMplsLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa4aa1defc906956e729e862544306661d">pcpp::PacketLogModuleIcmpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da">pcpp::PacketLogModuleGreLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b">pcpp::PacketLogModuleSSLLayer</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed">pcpp::PacketLogModuleSllLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2">pcpp::PacketLogModuleDhcpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">pcpp::PacketLogModuleIgmpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261">pcpp::PacketLogModuleSipLayer</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772">pcpp::PacketLogModuleSdpLayer</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">pcpp::PacketLogModuleTcpReassembly</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">pcpp::PacketLogModuleIPReassembly</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b">pcpp::PcapLogModuleWinPcapLiveDevice</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c">pcpp::PcapLogModuleRemoteDevice</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">pcpp::PcapLogModuleLiveDevice</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">pcpp::PcapLogModuleFileDevice</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b">pcpp::PcapLogModulePfRingDevice</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">pcpp::PcapLogModuleDpdkDevice</a>, 
-<a class="el" href="a00184.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68">pcpp::NetworkUtils</a>
-<br />
- }</td></tr>
-<tr class="separator:ac6557f5dc8fcb14858f231b12bdc1c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_28e1bb8382970ac72e8ae3b23df4a891.html">temp</a></li><li class="navelem"><a class="el" href="dir_d75c333d15700fa5ca52ea392b4fbd17.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_0751405f2c2bfb2f42e1a09452f577e5.html">Dist</a></li><li class="navelem"><a class="el" href="dir_99dc552f4488de3a8c28cec336df5bdd.html">header</a></li><li class="navelem"><a class="el" href="a00056.html">Logger.h</a></li>
-    <li class="footer">Generated on Tue Nov 13 2018 01:41:04 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00056.html">Layer.h</a></li>
+    <li class="footer">Generated on Tue Nov 27 2018 23:36:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

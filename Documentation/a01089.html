@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: pcpp::IPv6AuthenticationHeader::ipv6_authentication_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a01092.html','');});
+$(document).ready(function(){initNavTree('a01089.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,20 +79,114 @@ $(document).ready(function(){initNavTree('a01092.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a01086.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IDataContainer Member List</div>  </div>
+<div class="title">pcpp::IPv6AuthenticationHeader::ipv6_authentication_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01092.html">pcpp::IDataContainer</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01092.html#af410251b3a081fb6cb0e4779d1741c1a">getDataPtr</a>(size_t offset=0)=0</td><td class="entry"><a class="el" href="a01092.html">pcpp::IDataContainer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00050_source.html">IPv6Extensions.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a88815614e37fce3f5e036fd937be3da8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01089.html#a88815614e37fce3f5e036fd937be3da8">nextHeader</a></td></tr>
+<tr class="separator:a88815614e37fce3f5e036fd937be3da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5a99b636d53665ecddd07811f188a8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01089.html#a1a5a99b636d53665ecddd07811f188a8">headerLen</a></td></tr>
+<tr class="separator:a1a5a99b636d53665ecddd07811f188a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7379c6d35f30061fb9db853a69bf63"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01089.html#adc7379c6d35f30061fb9db853a69bf63">reserved</a></td></tr>
+<tr class="separator:adc7379c6d35f30061fb9db853a69bf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02819e49931d5f4b30da30eb76795e0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01089.html#af02819e49931d5f4b30da30eb76795e0">securityParametersIndex</a></td></tr>
+<tr class="separator:af02819e49931d5f4b30da30eb76795e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35af84ed644faa6cf1a8ae10876dcb2c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01089.html#a35af84ed644faa6cf1a8ae10876dcb2c">sequenceNumber</a></td></tr>
+<tr class="separator:a35af84ed644faa6cf1a8ae10876dcb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A struct representing the fixed part of the IPv6 authentication header extension </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1a5a99b636d53665ecddd07811f188a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5a99b636d53665ecddd07811f188a8">&#9670;&nbsp;</a></span>headerLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::headerLen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of this Authentication Header in 4-octet units, minus 2. For example, an AH value of 4 equals: [ 3×(32-bit fixed-length AH fields) + 3×(32-bit ICV fields) − 2 ] and thus an AH value of 4 means 24 octets </p>
+
+</div>
+</div>
+<a id="a88815614e37fce3f5e036fd937be3da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88815614e37fce3f5e036fd937be3da8">&#9670;&nbsp;</a></span>nextHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::nextHeader</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Next header type </p>
+
+</div>
+</div>
+<a id="adc7379c6d35f30061fb9db853a69bf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7379c6d35f30061fb9db853a69bf63">&#9670;&nbsp;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reserved bytes, all zeros </p>
+
+</div>
+</div>
+<a id="af02819e49931d5f4b30da30eb76795e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02819e49931d5f4b30da30eb76795e0">&#9670;&nbsp;</a></span>securityParametersIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::securityParametersIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arbitrary value which is used (together with the destination IP address) to identify the security association of the receiving party </p>
+
+</div>
+</div>
+<a id="a35af84ed644faa6cf1a8ae10876dcb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35af84ed644faa6cf1a8ae10876dcb2c">&#9670;&nbsp;</a></span>sequenceNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::sequenceNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A monotonic strictly increasing sequence number (incremented by 1 for every packet sent) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 13 2018 01:41:05 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00193.html">pcpp</a></li><li class="navelem"><a class="el" href="a01085.html">IPv6AuthenticationHeader</a></li><li class="navelem"><a class="el" href="a01089.html">ipv6_authentication_header</a></li>
+    <li class="footer">Generated on Tue Nov 27 2018 23:36:46 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

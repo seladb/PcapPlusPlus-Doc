@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: pcpp::AppName Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a01508.html','');});
+$(document).ready(function(){initNavTree('a01505.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,27 +79,102 @@ $(document).ready(function(){initNavTree('a01508.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a01502.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TcpStreamData Member List</div>  </div>
+<div class="title">pcpp::AppName Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01508.html">pcpp::TcpStreamData</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01508.html#ae7120f2faf97cfc9a560f7062daab95a">getConnectionData</a>()</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01508.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">getData</a>()</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01508.html#aeceeb369d8e8cb114f2c8682b966d1e6">getDataLength</a>()</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01508.html#a23bae012dd3ef982d9f010d9afcf6690">operator=</a>(const TcpStreamData &amp;other)</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01508.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a>()</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a01508.html#a551d14dcbc145af6c2ac75fc8cd395eb">TcpStreamData</a>(uint8_t *tcpData, size_t tcpDataLength, ConnectionData connData)</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01508.html#a88cac5a4f7a299b2f987a565f97a678f">TcpStreamData</a>(TcpStreamData &amp;other)</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a01508.html#aacb6d4bc4dd7bf367598aa24e5d5f425">~TcpStreamData</a>()</td><td class="entry"><a class="el" href="a01508.html">pcpp::TcpStreamData</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00158_source.html">SystemUtils.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0d7ab654799ce9da628ef9e082cfd525"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01505.html#a0d7ab654799ce9da628ef9e082cfd525">init</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0d7ab654799ce9da628ef9e082cfd525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e80e85c48484753f82a1d3cd2cbfb6b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01505.html#a0e80e85c48484753f82a1d3cd2cbfb6b">get</a> ()</td></tr>
+<tr class="separator:a0e80e85c48484753f82a1d3cd2cbfb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class extracts the application name from the current running executable and stores it for usage of the application throughout its runtime. This class should be initialized once in the beginning of the main() method using <a class="el" href="a01505.html#a0d7ab654799ce9da628ef9e082cfd525">AppName::init()</a> and from then on the app name could be retrieved using <a class="el" href="a01505.html#a0e80e85c48484753f82a1d3cd2cbfb6b">AppName::get()</a> </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0e80e85c48484753f82a1d3cd2cbfb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e80e85c48484753f82a1d3cd2cbfb6b">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string pcpp::AppName::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The app name as extracted from the current running executable </dd></dl>
+
+</div>
+</div>
+<a id="a0d7ab654799ce9da628ef9e082cfd525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7ab654799ce9da628ef9e082cfd525">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void pcpp::AppName::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static init method which should be called once at the beginning of the main method. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">argc</td><td>The argc param from main() </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">argv</td><td>The argv param from main() </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 13 2018 01:41:06 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00193.html">pcpp</a></li><li class="navelem"><a class="el" href="a01505.html">AppName</a></li>
+    <li class="footer">Generated on Tue Nov 27 2018 23:36:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
