@@ -1,4 +1,4 @@
 var a01073 =
 [
-    [ "IPv6DestinationHeader", "a01073.html#aa020bb4a6382216dbea99b4098138324", null ]
+    [ "IPv6HopByHopHeader", "a01073.html#a0382711ca3677f063e9d47130e38ab0b", null ]
 ];

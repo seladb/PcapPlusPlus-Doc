@@ -1,10 +1,10 @@
 var a00125 =
 [
-    [ "pppoe_header", "a01301.html", "a01301" ],
-    [ "PPPoELayer", "a01305.html", "a01305" ],
-    [ "PPPoESessionLayer", "a01309.html", "a01309" ],
-    [ "PPPoEDiscoveryLayer", "a01313.html", "a01313" ],
-    [ "PPPoETag", "a01317.html", "a01317" ],
+    [ "pppoe_header", "a01305.html", "a01305" ],
+    [ "PPPoELayer", "a01309.html", "a01309" ],
+    [ "PPPoESessionLayer", "a01313.html", "a01313" ],
+    [ "PPPoEDiscoveryLayer", "a01317.html", "a01317" ],
+    [ "PPPoETag", "a01321.html", "a01321" ],
     [ "PCPP_PPP_ACSP", "a00125.html#a634242ecff91dc9975ac68599b283e33", null ],
     [ "PCPP_PPP_ACSPC", "a00125.html#ae5e8f9f639154e2aff01663e2ec7ce61", null ],
     [ "PCPP_PPP_ASCOM", "a00125.html#a26f7e5d9185e01b85d2cecd0c883c410", null ],

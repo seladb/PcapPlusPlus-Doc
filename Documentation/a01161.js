@@ -1,9 +1,7 @@
 var a01161 =
 [
-    [ "PcapFileReaderDevice", "a01161.html#a7c578fa0c04a93de4a6dc54b845fae34", null ],
-    [ "~PcapFileReaderDevice", "a01161.html#aa6c4637873a1a830372449a81f048ab2", null ],
-    [ "getLinkLayerType", "a01161.html#a68ed8a4e9fb754054c32682ac2c6411f", null ],
-    [ "getNextPacket", "a01161.html#afc4c2142b7787e6c191b0d2ab6822c07", null ],
-    [ "getStatistics", "a01161.html#a6c07f1cc3675dfa8ff7157d09be311c7", null ],
-    [ "open", "a01161.html#af9e798abe511b1ba8bd14360535753a1", null ]
+    [ "IFileReaderDevice", "a01161.html#a0292cb89821cdbdb5914d4ed76c5e0f1", null ],
+    [ "~IFileReaderDevice", "a01161.html#acdc7b6e2db17994aaf167c081ddfaafb", null ],
+    [ "getFileSize", "a01161.html#a74f00fc3036c19629c3a1e6f358f9a78", null ],
+    [ "getNextPackets", "a01161.html#a279a1c148671df93bd85afd43af1f958", null ]
 ];

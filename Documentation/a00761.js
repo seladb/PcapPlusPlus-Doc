@@ -1,15 +1,11 @@
 var a00761 =
 [
-    [ "getLength", "a00761.html#a46622003c92a40c40ed61d2a52418684", null ],
-    [ "getTotalSize", "a00761.html#a251ab891210c10519da7a59dee3037af", null ],
-    [ "getType", "a00761.html#a2065c8efa4225ccb628cc00f3dc7c54f", null ],
-    [ "getValueAs", "a00761.html#aa46dc21a16859a7448d414c31f835932", null ],
-    [ "getValueAsIpAddr", "a00761.html#af30849dfd2e9974b26765e8b79769b57", null ],
-    [ "getValueAsString", "a00761.html#ab03a247b099092176eb9826f46bae324", null ],
-    [ "setValue", "a00761.html#a2c94a3a4b3c22c671195a59172834fd9", null ],
-    [ "setValueIpAddr", "a00761.html#af044e3a46404b2a69c5877b14139a0bb", null ],
-    [ "setValueString", "a00761.html#a5d9282c92ec72ce847c8167cf635d8e8", null ],
-    [ "len", "a00761.html#af5c152f122a4f03fbbea001d359dde58", null ],
-    [ "opCode", "a00761.html#a1922870b0a12ba98c09fac0400946ae5", null ],
-    [ "value", "a00761.html#ae9ce16ab6f53ee701b180094320b56f1", null ]
+    [ "DhcpOption", "a00761.html#ac6ef6cbf88e0b2fe67677963ed492c48", null ],
+    [ "~DhcpOption", "a00761.html#a280836170d092e111cbad745e46b5e5c", null ],
+    [ "getDataSize", "a00761.html#a9dc5a8aa9bf96982b1f24069d3e76c60", null ],
+    [ "getTotalSize", "a00761.html#adcc1721eddb9010f8ba9d57d822ec921", null ],
+    [ "getValueAsIpAddr", "a00761.html#a256967f3ac71c287d32d4b6a98ad6bec", null ],
+    [ "getValueAsString", "a00761.html#a330327d5f8d04c6d8a7525bba756623a", null ],
+    [ "setValueIpAddr", "a00761.html#a8877956c1ad2fb5d64988134d1c2eab8", null ],
+    [ "setValueString", "a00761.html#a1d8b72aeaa4425947c0ef9bcc5229631", null ]
 ];

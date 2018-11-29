@@ -1,8 +1,6 @@
 var a00905 =
 [
-    [ "id", "a00905.html#a26bbc51803f744df65d517483a7bc0ae", null ],
-    [ "originateTimestamp", "a00905.html#af9ae072cf3636b545d2c2fc1babb3964", null ],
-    [ "receiveTimestamp", "a00905.html#ad6c33b9a1da04e9e692b35575828747d", null ],
-    [ "sequence", "a00905.html#a717104fa64883aec168e2d99581698d2", null ],
-    [ "transmitTimestamp", "a00905.html#a68e8720ae016dc5d2b9c3c0f2f068fea", null ]
+    [ "data", "a00905.html#ae817d79a4d209c620bdf074ddc2c5a52", null ],
+    [ "dataLength", "a00905.html#a4ed0221d15cb8465ae37cb8cc4311386", null ],
+    [ "header", "a00905.html#a294b798279892837efdf0e44ddf9d04b", null ]
 ];

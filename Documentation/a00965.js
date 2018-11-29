@@ -1,12 +1,12 @@
 var a00965 =
 [
-    [ "getGroupAddress", "a00965.html#a4aa7f64af8b5909147d6a3df382cc244", null ],
-    [ "getHeaderLen", "a00965.html#ab9f390cb7dc2e9501147d011fb34d05d", null ],
-    [ "getIgmpHeader", "a00965.html#ac6b7b7df753d5d727d3d8d18f08bd1d9", null ],
-    [ "getOsiModelLayer", "a00965.html#a21e272a3ab56ab84190030f79e72ce3b", null ],
-    [ "getType", "a00965.html#ab2376bdcbcdc9c03af88a55b0c092600", null ],
-    [ "parseNextLayer", "a00965.html#a189e9eac7a558017feb2901feeabcca3", null ],
-    [ "setGroupAddress", "a00965.html#a2a09455ff572e33373e16a5eda6a4486", null ],
-    [ "setType", "a00965.html#aa5da5a6be635a67d4d1de24b74a0a6db", null ],
-    [ "toString", "a00965.html#a790ec2b31e252632c42d8829498b2ef0", null ]
+    [ "getMulticastAddress", "a00965.html#a7b9ad5915bd97d2d0b0dc06104dde340", null ],
+    [ "getRecordLen", "a00965.html#ab3e440bbfc112fdc3ee66fd5604f1680", null ],
+    [ "getSoruceAddressAtIndex", "a00965.html#a50d1b1a09a82ed9fd600b6323fbafa39", null ],
+    [ "getSourceAdressCount", "a00965.html#a04e2d7e436a09973609cf539663988bb", null ],
+    [ "auxDataLen", "a00965.html#a89bbec160141d8e9a6c200fda910ea6f", null ],
+    [ "multicastAddress", "a00965.html#a7ccef33a9eb41a061d180b96b8b8c41f", null ],
+    [ "numOfSources", "a00965.html#ac0a94620acece7ad93e2fe363d2f2115", null ],
+    [ "recordType", "a00965.html#a9ea96cdeb8d7e3215a3251916e738d57", null ],
+    [ "sourceAddresses", "a00965.html#a48c79e0095e98b80a4882a29073b6810", null ]
 ];

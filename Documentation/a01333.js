@@ -1,23 +1,11 @@
 var a01333 =
 [
-    [ "RadiusLayer", "a01333.html#a686bd44354ada532b305ca17996e6304", null ],
-    [ "RadiusLayer", "a01333.html#a24b8e066bb934019f838f226eff2e96e", null ],
-    [ "RadiusLayer", "a01333.html#aebddad0eeced9dea349795bee84a2ddc", null ],
-    [ "~RadiusLayer", "a01333.html#a262ced9bfe44889a43874957a06dde61", null ],
-    [ "addAttribute", "a01333.html#a6cc9497abf345423bb8a5e386b426631", null ],
-    [ "addAttributeAfter", "a01333.html#a5211b127dc6151652ee6ef8e57d70c6e", null ],
-    [ "computeCalculateFields", "a01333.html#a1742e0575d342cee1cbb8a6d1c9ec12c", null ],
-    [ "getAttribute", "a01333.html#ac1fdf65fd5271c96c6a4a14a0509098f", null ],
-    [ "getAttributeCount", "a01333.html#aa127113465a0e24026dbaca39920ba20", null ],
-    [ "getAuthenticatorValue", "a01333.html#a45953e3bbdeba85c908f40c40cdf6317", null ],
-    [ "getFirstAttribute", "a01333.html#a996afc5e8e11fe65bc999aa0e63e0870", null ],
-    [ "getHeaderLen", "a01333.html#a43e729a3c137246ef9af870ebeff3298", null ],
-    [ "getNextAttribute", "a01333.html#a7008dd2409dff2e4cfd47ce1eee78259", null ],
-    [ "getOsiModelLayer", "a01333.html#a5c62a56ec8546590154213dd3afd688c", null ],
-    [ "getRadiusHeader", "a01333.html#a5df7ada9dbba6f48861f7255bab04c62", null ],
-    [ "parseNextLayer", "a01333.html#a5c0587335360b7a5b50dd1df841c44f3", null ],
-    [ "removeAllAttributes", "a01333.html#a0f0fe6d64980e46a48f1e14aa0257e3f", null ],
-    [ "removeAttribute", "a01333.html#a899b783e9afadbce7bbcf77a6258089a", null ],
-    [ "setAuthenticatorValue", "a01333.html#a67b8bba9bdbd7c114e61bfa30c11bc8e", null ],
-    [ "toString", "a01333.html#a7a83d6635607d5c3a44c72ac8e4de3db", null ]
+    [ "RadiusAttributeBuilder", "a01333.html#ae4e4103c97d84b306e43fdb048739486", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#a301a22e10b0aa007a257a9f6c2deaeaf", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#aad7479c1da08a5e4b74eeff374b2b2f6", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#a87930d2fae978ce6005e43fb2999771e", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#ab89689baf3708d7d174bcfb0eb972865", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#a68d5fa00501aa516a851c9b5b0de8998", null ],
+    [ "RadiusAttributeBuilder", "a01333.html#abc074bbecb7823ab1f8e1dc8647e9c62", null ],
+    [ "build", "a01333.html#a18dae925eac2f705b8fa68eb12507b17", null ]
 ];

@@ -1,12 +1,7 @@
 var a00813 =
 [
-    [ "aggregatedRxStats", "a00813.html#a77fd3f759f0a227da48089029d1547b8", null ],
-    [ "aggregatedTxStats", "a00813.html#aa5ea1d3127ed22b2d1b8b886b6851f3d", null ],
-    [ "devId", "a00813.html#a49e5bd913fde8b892d1bbe27dbf53065", null ],
-    [ "rxErroneousPackets", "a00813.html#aea2ad4acf3b506d68fdf608c8666942e", null ],
-    [ "rxMbufAlocFailed", "a00813.html#a213f66e013a40f84cbfadae0f1232722", null ],
-    [ "rxPacketsDropeedByHW", "a00813.html#ac8aa478b40945e79f41f8186a888c17b", null ],
-    [ "rxStats", "a00813.html#abfb9e3e7e4370993c9a28a67402e70a8", null ],
-    [ "timestamp", "a00813.html#a7be0c63ba880f0b603cad0355e8f9a04", null ],
-    [ "txStats", "a00813.html#a8c8f344207f63fca45d3be9830051e5a", null ]
+    [ "bytes", "a00813.html#aeeb02f0b115b0d7a81cd1076535c8ac2", null ],
+    [ "bytesPerSec", "a00813.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f", null ],
+    [ "packets", "a00813.html#a39ba9e581d7353a484f575487a334fc8", null ],
+    [ "packetsPerSec", "a00813.html#a0531a2f378b09192aadf66e4ae1e5019", null ]
 ];

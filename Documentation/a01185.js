@@ -1,4 +1,5 @@
 var a01185 =
 [
-    [ "setDirection", "a01185.html#ace8adbbf3d89a745c02b353ac6f2122a", null ]
+    [ "~GeneralFilter", "a01185.html#aba731757009c1ce8db973aa334634765", null ],
+    [ "parseToString", "a01185.html#ae38fb802a74a1d9b7d7025b1b5cb83e5", null ]
 ];

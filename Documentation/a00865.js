@@ -1,8 +1,11 @@
 var a00865 =
 [
-    [ "addField", "a00865.html#a10f4534ce8764aacae232c789bfa1884", null ],
-    [ "addField", "a00865.html#ad51afc66df73de546fa6e0c30184bb2c", null ],
-    [ "getOsiModelLayer", "a00865.html#a7609cb4fbbab808fb6b1755a3a738f16", null ],
-    [ "insertField", "a00865.html#afc89318693401eeeff64f852c8c1c5e6", null ],
-    [ "insertField", "a00865.html#a6c69d36f3197df9ee3f9fb7e3de186fc", null ]
+    [ "PPP_PPTPLayer", "a00865.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
+    [ "PPP_PPTPLayer", "a00865.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
+    [ "computeCalculateFields", "a00865.html#a989b126eecc1536b660d46dda3e5a795", null ],
+    [ "getHeaderLen", "a00865.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
+    [ "getOsiModelLayer", "a00865.html#a160d2b07571f8dc68d01d9c425dc80f6", null ],
+    [ "getPPP_PPTPHeader", "a00865.html#aa9707853653d941e1ae0a8727b281191", null ],
+    [ "parseNextLayer", "a00865.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
+    [ "toString", "a00865.html#a92c398562bc0be52b28dce752c669d70", null ]
 ];

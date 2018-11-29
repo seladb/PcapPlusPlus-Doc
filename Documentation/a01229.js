@@ -1,6 +1,7 @@
 var a01229 =
 [
-    [ "NotFilter", "a01229.html#af61317b37c81544b370424bf490371ca", null ],
-    [ "parseToString", "a01229.html#a27559a09376420b6b8466a1819b42509", null ],
-    [ "setFilter", "a01229.html#abb53fe1af021e8638c66b0b57d36f6dc", null ]
+    [ "OrFilter", "a01229.html#ab190d9fab6cf4dbddaa3d3091eef88dd", null ],
+    [ "OrFilter", "a01229.html#a372efb90b1751a96f9f3c93fd1b06216", null ],
+    [ "addFilter", "a01229.html#abcd751c0048d632f82d8f3a1464ed257", null ],
+    [ "parseToString", "a01229.html#a6552bb49fddc97e6e2f8ef0833c45b36", null ]
 ];

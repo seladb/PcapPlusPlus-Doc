@@ -1,11 +1,11 @@
 var a00861 =
 [
-    [ "PPP_PPTPLayer", "a00861.html#a58464c2715829d1eaeddc056c3f3ac61", null ],
-    [ "PPP_PPTPLayer", "a00861.html#a94bbc5c4830cedde68a0cabf9a009f67", null ],
-    [ "computeCalculateFields", "a00861.html#a989b126eecc1536b660d46dda3e5a795", null ],
-    [ "getHeaderLen", "a00861.html#a611bc5facdadeeb5f5d48b2bba8777c7", null ],
-    [ "getOsiModelLayer", "a00861.html#a160d2b07571f8dc68d01d9c425dc80f6", null ],
-    [ "getPPP_PPTPHeader", "a00861.html#aa9707853653d941e1ae0a8727b281191", null ],
-    [ "parseNextLayer", "a00861.html#a8e49df5de4ea5496672cc6113da2fc1c", null ],
-    [ "toString", "a00861.html#a92c398562bc0be52b28dce752c669d70", null ]
+    [ "GREv1Layer", "a00861.html#affdd47adeca80911b621a14421853e8e", null ],
+    [ "GREv1Layer", "a00861.html#a9c118e97790a83bf6d22592191d2f453", null ],
+    [ "computeCalculateFields", "a00861.html#aa2b638c7d16b9475222dd0d0696a3514", null ],
+    [ "getAcknowledgmentNum", "a00861.html#a7f14840cae9c48e13afb7716411e6934", null ],
+    [ "getGreHeader", "a00861.html#ab3913842456c877137d5a2e921d97007", null ],
+    [ "setAcknowledgmentNum", "a00861.html#a5adce7bc05cabe68f5680b44fb5a0d12", null ],
+    [ "toString", "a00861.html#a94273542f85918215b272ae98b5ade35", null ],
+    [ "unsetAcknowledgmentNum", "a00861.html#ab5c8246ba3b77d8ac14644801dd8ebda", null ]
 ];

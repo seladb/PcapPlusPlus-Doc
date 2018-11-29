@@ -1,18 +1,11 @@
 var a01537 =
 [
-    [ "OnTcpConnectionEnd", "a01537.html#abbcb38ac950666833df4084f80beb056", null ],
-    [ "OnTcpConnectionStart", "a01537.html#abda8219de68412e0ce7f7116601243a8", null ],
-    [ "OnTcpMessageReady", "a01537.html#ab6698eb002363dc18e664f15418fc1eb", null ],
-    [ "ConnectionEndReason", "a01537.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0", [
-      [ "TcpReassemblyConnectionClosedByFIN_RST", "a01537.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133", null ],
-      [ "TcpReassemblyConnectionClosedManually", "a01537.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9", null ]
-    ] ],
-    [ "TcpReassembly", "a01537.html#a49281471fb379fdae6c8df5ed7844c92", null ],
-    [ "~TcpReassembly", "a01537.html#aa1797ebded60f0637ae95223653b9f78", null ],
-    [ "closeAllConnections", "a01537.html#acf940b05f75a129f595301012be46005", null ],
-    [ "closeConnection", "a01537.html#ae173fc16a427b5e46b1a5417de19d735", null ],
-    [ "getConnectionInformation", "a01537.html#a6b92c2d8b3116190504e8d60ca0b7e7e", null ],
-    [ "isConnectionOpen", "a01537.html#afb80b9ac9c6c454e5fb747a847d4d0a2", null ],
-    [ "reassemblePacket", "a01537.html#acbe7a908f4367cc9234096998dc6d56e", null ],
-    [ "reassemblePacket", "a01537.html#a5f56a069fdd66f154990c35c9d462d7b", null ]
+    [ "TcpStreamData", "a01537.html#acb6875699103b7d1967cb799f7501913", null ],
+    [ "TcpStreamData", "a01537.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
+    [ "~TcpStreamData", "a01537.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
+    [ "TcpStreamData", "a01537.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
+    [ "getConnectionData", "a01537.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getData", "a01537.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
+    [ "getDataLength", "a01537.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
+    [ "operator=", "a01537.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
 ];

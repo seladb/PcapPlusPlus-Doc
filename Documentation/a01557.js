@@ -1,19 +1,9 @@
 var a01557 =
 [
-    [ "addEndOfHeader", "a01557.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b", null ],
-    [ "addField", "a01557.html#ac997392fd26a58b63827bf81a380b031", null ],
-    [ "addField", "a01557.html#aeada4c60e7c10924b6fa82d5ddfa9908", null ],
-    [ "computeCalculateFields", "a01557.html#aab0f4a2beb4bf2a423e8b0b7c18e3645", null ],
-    [ "getFieldByName", "a01557.html#af97866e274c94d11f6c4ab782e02150c", null ],
-    [ "getFieldCount", "a01557.html#a5bd3adf2a0137c18c13cf512e9f08bb2", null ],
-    [ "getFirstField", "a01557.html#a1584cbd19a25aebb26a92b6915b69a62", null ],
-    [ "getHeaderLen", "a01557.html#abd5dcefff49b14110c9ef322b826f083", null ],
-    [ "getNextField", "a01557.html#a4b29d0cbe4cb6284a1fd7061ee9d68e5", null ],
-    [ "insertField", "a01557.html#abf28607ed41ed3bfdb1c476bda303ae9", null ],
-    [ "insertField", "a01557.html#a8917992953e2a38885af837a2c49abd0", null ],
-    [ "insertField", "a01557.html#ac0555ddcc81fffa266fbc207bf040314", null ],
-    [ "isHeaderComplete", "a01557.html#a4fbea31a4f1c5a028ce874fece1cd353", null ],
-    [ "parseNextLayer", "a01557.html#ac593024db983f68d486893c0cb2acc76", null ],
-    [ "removeField", "a01557.html#a3751401eb05f223685abd0c7c6990c66", null ],
-    [ "removeField", "a01557.html#a9712764bb961cc7485335d1d30920232", null ]
+    [ "HeaderField", "a01557.html#adfc033ec04c1a31156bedf7273791ed0", null ],
+    [ "getFieldName", "a01557.html#ae628e19ba7dc0eb8eb031c779b336b61", null ],
+    [ "getFieldSize", "a01557.html#ad8ff08cb95afb62d01caccf7edb5fd54", null ],
+    [ "getFieldValue", "a01557.html#a987671480ebed7284d00b7e21af759a3", null ],
+    [ "isEndOfHeader", "a01557.html#a80a8b96e3e6cb6589799e6440ab1cf75", null ],
+    [ "setFieldValue", "a01557.html#a6c89f09744ba1ade7e75adf8fddbecbb", null ]
 ];

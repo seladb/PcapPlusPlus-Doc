@@ -1,10 +1,7 @@
 var a01057 =
 [
-    [ "TLVOption", "a01061.html", "a01061" ],
-    [ "TLVOptionBuilder", "a01065.html", "a01065" ],
-    [ "IPv6TLVOptionHeader", "a01057.html#a299b5196ca0a47c9ac81a92a689fd9eb", null ],
-    [ "getFirstOption", "a01057.html#a4c0290e277f718900b20085179814898", null ],
-    [ "getNextOption", "a01057.html#adb9953af226ecc200c50b4c215b34676", null ],
-    [ "getOption", "a01057.html#a4bef63b0af6888fa110fdb2a36a17365", null ],
-    [ "getOptionCount", "a01057.html#adc0c471faaacd0bdb7ab3644b51c70c3", null ]
+    [ "fragOffsetAndFlags", "a01057.html#aa25c6f0e0649e2ce43c4cca084f9ea62", null ],
+    [ "headerLen", "a01057.html#a5856041f7a061a0d6d0c0c53a0bdc493", null ],
+    [ "id", "a01057.html#aa385b898dc21535012593791a41358dd", null ],
+    [ "nextHeader", "a01057.html#ad8163575c2faa31dc56ef5e004168f77", null ]
 ];

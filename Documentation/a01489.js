@@ -1,8 +1,6 @@
 var a01489 =
 [
-    [ "SSLAlertLayer", "a01489.html#aecf449f0c8f821ede816f33d6012b622", null ],
-    [ "computeCalculateFields", "a01489.html#ad0d48805edb1cb7a1820accacefb42e5", null ],
-    [ "getAlertDescription", "a01489.html#abe330e7c044c958d5b0f2093d3572fa5", null ],
-    [ "getAlertLevel", "a01489.html#a9475a8edb483087bddcdc2dbbb9aee50", null ],
-    [ "toString", "a01489.html#a83cc6bf4395282603e1fa47c55bece5b", null ]
+    [ "SSLChangeCipherSpecLayer", "a01489.html#a7c8ad60a5877520ba242db95471fb8c2", null ],
+    [ "computeCalculateFields", "a01489.html#a4c923d17f77571ec8c5273bfbd844ac4", null ],
+    [ "toString", "a01489.html#a25cb2a35845fa1e357e06330d958f53c", null ]
 ];

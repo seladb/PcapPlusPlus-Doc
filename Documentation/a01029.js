@@ -1,13 +1,14 @@
 var a01029 =
 [
-    [ "TimestampType", "a01029.html#a7e40161cb0427081efb75885ae38d2fb", [
-      [ "TimestampOnly", "a01029.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3", null ],
-      [ "TimestampAndIP", "a01029.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0", null ],
-      [ "TimestampsForPrespecifiedIPs", "a01029.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8", null ],
-      [ "Unknown", "a01029.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30", null ]
-    ] ],
-    [ "clear", "a01029.html#aebdf61198a25c376676deec6fc6be0ef", null ],
-    [ "ipAddresses", "a01029.html#a38f920da501372e5fdcc68200e63f316", null ],
-    [ "timestamps", "a01029.html#a99bbb61fda3f7dc4a3323b92efac8ac8", null ],
-    [ "type", "a01029.html#a145ef3773e1b0ccb3d5b2d601db3361c", null ]
+    [ "fragmentOffset", "a01029.html#a9b98fc149f9d262fbdfe2e4f92595c24", null ],
+    [ "headerChecksum", "a01029.html#a724ead037aaf6310e5b9ebceba77f922", null ],
+    [ "internetHeaderLength", "a01029.html#aafb906cd9dd7be5a3443f5fe6c7dad09", null ],
+    [ "ipDst", "a01029.html#a2722895dc1ed669dd9b241fc472a284f", null ],
+    [ "ipId", "a01029.html#a9d50037f1b02307d20dc8a113207dbce", null ],
+    [ "ipSrc", "a01029.html#a7da8d9dc60a51c873500c175f6c65c52", null ],
+    [ "ipVersion", "a01029.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7", null ],
+    [ "protocol", "a01029.html#a9600c9b8e380ba5468763cdf648d043c", null ],
+    [ "timeToLive", "a01029.html#aaa374efc60c926ef18055a84bdbe55bc", null ],
+    [ "totalLength", "a01029.html#aab4d8ad9872f38be7fb53dd2ec45c63a", null ],
+    [ "typeOfService", "a01029.html#a229d7a9444c63a92532cd17b16e9de70", null ]
 ];

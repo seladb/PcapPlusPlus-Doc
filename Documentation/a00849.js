@@ -1,9 +1,6 @@
 var a00849 =
 [
-    [ "getHeaderLen", "a00849.html#ac7018c5b2696e7b24e4e0436b4322633", null ],
-    [ "getOsiModelLayer", "a00849.html#adb08f041297bf331db4fade12c353124", null ],
-    [ "getSequenceNumber", "a00849.html#ae57d3a2ea180cc02f7e388857dd045eb", null ],
-    [ "parseNextLayer", "a00849.html#ac00bc357027ecb088b5546f860b7a27b", null ],
-    [ "setSequenceNumber", "a00849.html#ad37a993ffd8f97f5d59925d7c1c19205", null ],
-    [ "unsetSequenceNumber", "a00849.html#a2557f69597006f086a09ba54a80a5ea7", null ]
+    [ "address", "a00849.html#ab0d4dbeb685845400c93be1636b9b2fb", null ],
+    [ "control", "a00849.html#ae925aba063d9662de4efe5151c128372", null ],
+    [ "protocol", "a00849.html#a9e49420e46bdc801452f9c30ef5b8659", null ]
 ];

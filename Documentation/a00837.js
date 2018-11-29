@@ -1,13 +1,16 @@
 var a00837 =
 [
-    [ "ackSequenceNumBit", "a00837.html#a659ab94bc214af116075f48367c0ae25", null ],
-    [ "checksumBit", "a00837.html#af12d9d73804241f3e31a70cfb8afc5af", null ],
-    [ "flags", "a00837.html#a9bdcf443c9acd69a97be3b872630f37b", null ],
-    [ "keyBit", "a00837.html#a7d2e844896f8a4d14f07626891b67f8d", null ],
-    [ "protocol", "a00837.html#ad64488dc863563820f7541dfdb4ee910", null ],
-    [ "recursionControl", "a00837.html#a01d91f77713e08fe2c8baef6580b522c", null ],
-    [ "routingBit", "a00837.html#a58ed856400ff63a74bd1f6b4d08ea6c8", null ],
-    [ "sequenceNumBit", "a00837.html#a2189d1d50075e911ce84e27a5767c2b9", null ],
-    [ "strictSourceRouteBit", "a00837.html#a3fbc55bc0bdf9653f08939fe8a6c8312", null ],
-    [ "version", "a00837.html#af58a09ec8526b9576275214accbb05d7", null ]
+    [ "EthLayer", "a00837.html#ae509330de4c0b0c2c52bc0ba4f1276d4", null ],
+    [ "EthLayer", "a00837.html#ac85daa93647a62a4dec8c1514f006b8c", null ],
+    [ "EthLayer", "a00837.html#a4fc8bd04450057d9fbb7a6764723aea7", null ],
+    [ "computeCalculateFields", "a00837.html#a23c0729d47399ea7bcf89098334f7fe0", null ],
+    [ "getDestMac", "a00837.html#a5fdd7e94ac678adb3d2a44068479c110", null ],
+    [ "getEthHeader", "a00837.html#af4a293a8a0fb44a8b396b53960f67c64", null ],
+    [ "getHeaderLen", "a00837.html#a7b49445f344b1f5aafc662ce222450d6", null ],
+    [ "getOsiModelLayer", "a00837.html#a84135b9ab8715d441ad974d614afbcc5", null ],
+    [ "getSourceMac", "a00837.html#a358f676539e8aa723d548115271be4bd", null ],
+    [ "parseNextLayer", "a00837.html#a1cf68349e014756d8f7f6fa0181d4129", null ],
+    [ "setDestMac", "a00837.html#ac9b2011c1421ed40ab327e5a26872733", null ],
+    [ "setSourceMac", "a00837.html#ab3a46b8944f2914b8c6ebfec6fd8f6cc", null ],
+    [ "toString", "a00837.html#acd79c662d372e1ea4ea1a679305ab810", null ]
 ];

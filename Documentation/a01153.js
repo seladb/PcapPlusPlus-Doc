@@ -1,5 +1,6 @@
 var a01153 =
 [
-    [ "close", "a01153.html#a65be98019748f6509445136013a0d1cb", null ],
-    [ "getFileName", "a01153.html#a62e21c94c6046f2d16a81df62b0c8d86", null ]
+    [ "clearFilter", "a01153.html#a8ca7eb3d99231a8cfd9d68cde0b5067c", null ],
+    [ "getStatistics", "a01153.html#ace3640f2330899687e34aa3789f4cd05", null ],
+    [ "setFilter", "a01153.html#a134f061d7883abbdb256abd48d53e66c", null ]
 ];

@@ -1,11 +1,8 @@
 var a01093 =
 [
-    [ "flowLabel", "a01093.html#a8d0d381008c855e00afd32403e4f946b", null ],
-    [ "hopLimit", "a01093.html#a9734da4d88f3f3938f12e2c71b4ac855", null ],
-    [ "ipDst", "a01093.html#af9eaa28de54512c88c43a95ed6c2a846", null ],
-    [ "ipSrc", "a01093.html#ad49c20046e6d9a6c3526f353352f91a3", null ],
-    [ "ipVersion", "a01093.html#aee7025c3316d0ecbb3db29bfdecb1e25", null ],
-    [ "nextHeader", "a01093.html#aee8e571549e08804cbf245c37eed7cfa", null ],
-    [ "payloadLength", "a01093.html#ae5849394b92e6a7d3cd0b2972e30391e", null ],
-    [ "trafficClass", "a01093.html#a613b6372ccae91487cc5f3a7f14aed94", null ]
+    [ "headerLen", "a01093.html#a1a5a99b636d53665ecddd07811f188a8", null ],
+    [ "nextHeader", "a01093.html#a88815614e37fce3f5e036fd937be3da8", null ],
+    [ "reserved", "a01093.html#adc7379c6d35f30061fb9db853a69bf63", null ],
+    [ "securityParametersIndex", "a01093.html#af02819e49931d5f4b30da30eb76795e0", null ],
+    [ "sequenceNumber", "a01093.html#a35af84ed644faa6cf1a8ae10876dcb2c", null ]
 ];

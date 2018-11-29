@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug',['Debug',['../a01109.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
+  ['debug',['Debug',['../a01113.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../a00193.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['dhcp',['DHCP',['../a00193.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56',1,'pcpp']]],
   ['dhcp_5fack',['DHCP_ACK',['../a00193.html#a960a2fb425b0c54c217309ff6215a0deac094d7ad5204b559d5881e7c16e7a17f',1,'pcpp']]],
@@ -216,9 +216,9 @@ var searchData=
   ['dns_5ftype_5ftxt',['DNS_TYPE_TXT',['../a00193.html#ad888578fe7df9849bbfbb10cdf245886a551edfbef6dc4610e34a419233b7cd2e',1,'pcpp']]],
   ['dns_5ftype_5fwks',['DNS_TYPE_WKS',['../a00193.html#ad888578fe7df9849bbfbb10cdf245886a5b8f303b021ecf1d9323bfbc78600d1b',1,'pcpp']]],
   ['dns_5ftype_5fx25',['DNS_TYPE_X25',['../a00193.html#ad888578fe7df9849bbfbb10cdf245886aba2f9b8b2883c425d5365cde72978e22',1,'pcpp']]],
-  ['dnsadditional',['DnsAdditional',['../a00773.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226',1,'pcpp::IDnsResource']]],
-  ['dnsanswer',['DnsAnswer',['../a00773.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca',1,'pcpp::IDnsResource']]],
-  ['dnsauthority',['DnsAuthority',['../a00773.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d',1,'pcpp::IDnsResource']]],
-  ['dnsquery',['DnsQuery',['../a00773.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5',1,'pcpp::IDnsResource']]],
+  ['dnsadditional',['DnsAdditional',['../a00777.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226',1,'pcpp::IDnsResource']]],
+  ['dnsanswer',['DnsAnswer',['../a00777.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca',1,'pcpp::IDnsResource']]],
+  ['dnsauthority',['DnsAuthority',['../a00777.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d',1,'pcpp::IDnsResource']]],
+  ['dnsquery',['DnsQuery',['../a00777.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5',1,'pcpp::IDnsResource']]],
   ['dst',['DST',['../a00193.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb',1,'pcpp']]]
 ];

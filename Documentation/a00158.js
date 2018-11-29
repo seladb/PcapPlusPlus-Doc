@@ -1,9 +1,9 @@
 var a00158 =
 [
-    [ "SystemCore", "a01497.html", "a01497" ],
-    [ "SystemCores", "a01501.html", null ],
-    [ "AppName", "a01505.html", null ],
-    [ "ApplicationEventHandler", "a01509.html", "a01509" ],
+    [ "SystemCore", "a01501.html", "a01501" ],
+    [ "SystemCores", "a01505.html", null ],
+    [ "AppName", "a01509.html", null ],
+    [ "ApplicationEventHandler", "a01513.html", "a01513" ],
     [ "clockGetTime", "a00158.html#ae517edc41624400eebc521c6c5bc8a82", null ],
     [ "createCoreMaskFromCoreIds", "a00158.html#a572ce60b003993527593a10e6da9481b", null ],
     [ "createCoreMaskFromCoreVector", "a00158.html#ab6f336984bb48eb504d5e23f04581697", null ],

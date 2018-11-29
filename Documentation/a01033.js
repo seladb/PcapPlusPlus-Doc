@@ -1,12 +1,13 @@
 var a01033 =
 [
-    [ "getDataSize", "a01033.html#aa2feb3f3d9ca162b9fd8b3bd96c26b08", null ],
-    [ "getTimestampOptionValue", "a01033.html#a561ef920c5f7b137c8f849946bc81e25", null ],
-    [ "getTotalSize", "a01033.html#ab3693f29aca8cae966b5f1051067ad9f", null ],
-    [ "getType", "a01033.html#a9b12f6588f2625c1deff78dbeec1c726", null ],
-    [ "getValueAs", "a01033.html#a82ae90c0ba4e04d7b2f945d40b58aebc", null ],
-    [ "getValueAsIpList", "a01033.html#a70051c572c9a93d66bf424aa1a43ad3f", null ],
-    [ "len", "a01033.html#af9019dd1cc5a4b2c9135c20f4d52cc1d", null ],
-    [ "opCode", "a01033.html#ae35c6fce1ffebcbc7e00636c68d3fd83", null ],
-    [ "value", "a01033.html#a139001cb6060693fd3d5c10d0af0273e", null ]
+    [ "TimestampType", "a01033.html#a7e40161cb0427081efb75885ae38d2fb", [
+      [ "TimestampOnly", "a01033.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3", null ],
+      [ "TimestampAndIP", "a01033.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0", null ],
+      [ "TimestampsForPrespecifiedIPs", "a01033.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8", null ],
+      [ "Unknown", "a01033.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30", null ]
+    ] ],
+    [ "clear", "a01033.html#aebdf61198a25c376676deec6fc6be0ef", null ],
+    [ "ipAddresses", "a01033.html#a38f920da501372e5fdcc68200e63f316", null ],
+    [ "timestamps", "a01033.html#a99bbb61fda3f7dc4a3323b92efac8ac8", null ],
+    [ "type", "a01033.html#a145ef3773e1b0ccb3d5b2d601db3361c", null ]
 ];

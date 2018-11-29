@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::TLVRecordBuilder Class Reference</title>
+<title>PcapPlusPlus: pcpp::TLVRecordReader&lt; TLVRecordType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,31 +80,334 @@ $(document).ready(function(){initNavTree('a01573.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a01570.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TLVRecordBuilder Class Reference</div>  </div>
+<div class="title">pcpp::TLVRecordReader&lt; TLVRecordType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00173_source.html">TLVData.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::TLVRecordBuilder:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a01573.png" usemap="#pcpp::TLVRecordBuilder_map" alt=""/>
-  <map id="pcpp::TLVRecordBuilder_map" name="pcpp::TLVRecordBuilder_map">
-<area href="a01329.html" alt="pcpp::RadiusAttributeBuilder" shape="rect" coords="0,56,171,80"/>
-</map>
- </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acee327e44fb0381301ae28b52dc44573"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#acee327e44fb0381301ae28b52dc44573">TLVRecordReader</a> ()</td></tr>
+<tr class="separator:acee327e44fb0381301ae28b52dc44573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e5156649400b8043ee0a1fa2e4bd0a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#ae9e5156649400b8043ee0a1fa2e4bd0a">~TLVRecordReader</a> ()</td></tr>
+<tr class="separator:ae9e5156649400b8043ee0a1fa2e4bd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27354988c0e6f4f734e982f45e6b36b0"><td class="memItemLeft" align="right" valign="top">TLVRecordType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#a27354988c0e6f4f734e982f45e6b36b0">getFirstTLVRecord</a> (uint8_t *tlvDataBasePtr, size_t tlvDataLen)</td></tr>
+<tr class="separator:a27354988c0e6f4f734e982f45e6b36b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf22614ccaea321f0115af2cad1e005f"><td class="memItemLeft" align="right" valign="top">TLVRecordType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#adf22614ccaea321f0115af2cad1e005f">getNextTLVRecord</a> (TLVRecordType &amp;record, uint8_t *tlvDataBasePtr, size_t tlvDataLen)</td></tr>
+<tr class="separator:adf22614ccaea321f0115af2cad1e005f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97640c0c27c6672461a0b31eb820e547"><td class="memItemLeft" align="right" valign="top">TLVRecordType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#a97640c0c27c6672461a0b31eb820e547">getTLVRecord</a> (uint8_t recordType, uint8_t *tlvDataBasePtr, size_t tlvDataLen)</td></tr>
+<tr class="separator:a97640c0c27c6672461a0b31eb820e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d88ccd5080f72bdcc1608ece7e2d1d4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#a5d88ccd5080f72bdcc1608ece7e2d1d4">getTLVRecordCount</a> (uint8_t *tlvDataBasePtr, size_t tlvDataLen)</td></tr>
+<tr class="separator:a5d88ccd5080f72bdcc1608ece7e2d1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0454e680a3ba777f77b10f462a7a6b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01573.html#a0454e680a3ba777f77b10f462a7a6b43">changeTLVRecordCount</a> (int changedBy)</td></tr>
+<tr class="separator:a0454e680a3ba777f77b10f462a7a6b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class for building Type-Length-Value (TLV) records. This builder receives the record parameters in its c'tor, builds the record raw buffer and provides a method to build a <a class="el" href="a01561.html">TLVRecord</a> object out of it. Please notice this is a base class that lacks the capability of actually building <a class="el" href="a01561.html">TLVRecord</a> objects and also cannot be instantiated. The reason for that is that different protocols build TLV records in different ways, so these missing capabilities will be implemented by the derived classes which are specific to each protocol. This class only provides the common infrastructure that will be used by them </p>
-</div></div><!-- contents -->
+<div class="textblock"><h3>template&lt;typename TLVRecordType&gt;<br />
+class pcpp::TLVRecordReader&lt; TLVRecordType &gt;</h3>
+
+<p>A class for reading TLV records data out of a byte stream. This class contains helper methods for retrieving and counting TLV records. This is a template class that expects template argument class derived from <a class="el" href="a01565.html">TLVRecord</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acee327e44fb0381301ae28b52dc44573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee327e44fb0381301ae28b52dc44573">&#9670;&nbsp;</a></span>TLVRecordReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::<a class="el" href="a01573.html">TLVRecordReader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A default c'tor for this class </p>
+
+</div>
+</div>
+<a id="ae9e5156649400b8043ee0a1fa2e4bd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e5156649400b8043ee0a1fa2e4bd0a">&#9670;&nbsp;</a></span>~TLVRecordReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::~<a class="el" href="a01573.html">TLVRecordReader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A d'tor for this class which currently does nothing </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0454e680a3ba777f77b10f462a7a6b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0454e680a3ba777f77b10f462a7a6b43">&#9670;&nbsp;</a></span>changeTLVRecordCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::changeTLVRecordCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>changedBy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>As described in <a class="el" href="a01573.html#a5d88ccd5080f72bdcc1608ece7e2d1d4">getTLVRecordCount()</a>, the TLV record count is being cached for efficiency purposes. So if the number of TLV records change, it's the user's responsibility to call this method with the number of TLV records being added or removed. If records were added the change should be a positive number, or a negative number if records were removed </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">changedBy</td><td>Number of records that were added or removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27354988c0e6f4f734e982f45e6b36b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27354988c0e6f4f734e982f45e6b36b0">&#9670;&nbsp;</a></span>getFirstTLVRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TLVRecordType <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::getFirstTLVRecord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataBasePtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the first TLV record out of a byte stream </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataBasePtr</td><td>A pointer to the TLV data byte stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The TLV data byte stream length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An instance of type TLVRecordType that contains the first TLV record. If tlvDataBasePtr is NULL or tlvDataLen is zero the returned TLVRecordType instance will be logically NULL, meaning TLVRecordType.isNull() will return true </dd></dl>
+
+</div>
+</div>
+<a id="adf22614ccaea321f0115af2cad1e005f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf22614ccaea321f0115af2cad1e005f">&#9670;&nbsp;</a></span>getNextTLVRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TLVRecordType <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::getNextTLVRecord </td>
+          <td>(</td>
+          <td class="paramtype">TLVRecordType &amp;&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataBasePtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a TLV record that follows a given TLV record in a byte stream </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">record</td><td>A given TLV record </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataBasePtr</td><td>A pointer to the TLV data byte stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The TLV data byte stream length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An instance of type TLVRecordType that wraps the record following the record given as input. If the input record.isNull() is true or if the next record is out of bounds of the byte stream, a logical NULL instance of TLVRecordType will be returned, meaning TLVRecordType.isNull() will return true </dd></dl>
+
+</div>
+</div>
+<a id="a97640c0c27c6672461a0b31eb820e547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97640c0c27c6672461a0b31eb820e547">&#9670;&nbsp;</a></span>getTLVRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TLVRecordType <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::getTLVRecord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>recordType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataBasePtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Search for the first TLV record that corresponds to a given record type (the 'T' in <b>Type</b>-Length-Value) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recordType</td><td>The record type to search for </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataBasePtr</td><td>A pointer to the TLV data byte stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The TLV data byte stream length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An instance of type TLVRecordType that contains the result record. If record was not found a logical NULL instance of TLVRecordType will be returned, meaning TLVRecordType.isNull() will return true </dd></dl>
+
+</div>
+</div>
+<a id="a5d88ccd5080f72bdcc1608ece7e2d1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d88ccd5080f72bdcc1608ece7e2d1d4">&#9670;&nbsp;</a></span>getTLVRecordCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLVRecordType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a01573.html">pcpp::TLVRecordReader</a>&lt; TLVRecordType &gt;::getTLVRecordCount </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataBasePtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the TLV record count in a given TLV data byte stream. For efficiency purposes the count is being cached so only the first call to this method will go over all the TLV records, while all consequent calls will return the cached number. This implies that if there is a change in the number of records, it's the user's responsibility to call <a class="el" href="a01573.html#a0454e680a3ba777f77b10f462a7a6b43">changeTLVRecordCount()</a> with the record count change </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataBasePtr</td><td>A pointer to the TLV data byte stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The TLV data byte stream length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The TLV record count </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00193.html">pcpp</a></li><li class="navelem"><a class="el" href="a01573.html">TLVRecordBuilder</a></li>
-    <li class="footer">Generated on Tue Nov 27 2018 23:36:47 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00193.html">pcpp</a></li><li class="navelem"><a class="el" href="a01573.html">TLVRecordReader</a></li>
+    <li class="footer">Generated on Thu Nov 29 2018 09:09:57 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

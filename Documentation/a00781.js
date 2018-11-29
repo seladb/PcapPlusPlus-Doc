@@ -1,12 +1,5 @@
 var a00781 =
 [
-    [ "getCustomDnsClass", "a00781.html#ac223a326142de6d1dc1fe7975436b7a2", null ],
-    [ "getDataAsString", "a00781.html#a9b36e9f38af1a6210ad6d81655b14da1", null ],
-    [ "getDataLength", "a00781.html#ac688df931aa666a232fc7006c75971e2", null ],
-    [ "getSize", "a00781.html#a9e624aed896eeea88916ba4b3c2f23cd", null ],
-    [ "getTTL", "a00781.html#a5182a292b41e1ac3d5b7edc67ce72d6d", null ],
-    [ "getType", "a00781.html#a75c1006edcc7273dbfc6bdc7e9245113", null ],
-    [ "setCustomDnsClass", "a00781.html#a502a8a0fcfc2853b6b08d00c6f877d46", null ],
-    [ "setData", "a00781.html#af27876b34431904ce10e2f48f6193b77", null ],
-    [ "setTTL", "a00781.html#a2f99de92eb4dd8f82d9fbbdecedc2f12", null ]
+    [ "getSize", "a00781.html#aa58a85121063a1df0d91e04df7f2ff0d", null ],
+    [ "getType", "a00781.html#a09231b2035b920aa5d36f76f420613f6", null ]
 ];

@@ -1,7 +1,7 @@
 var a01469 =
 [
-    [ "SSLNewSessionTicketMessage", "a01469.html#a55d2fff5ceb20ca419344ced210606a4", null ],
-    [ "getSessionTicketData", "a01469.html#a1d30391db4fdab5edae186d9355ad95d", null ],
-    [ "getSessionTicketDataLength", "a01469.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
-    [ "toString", "a01469.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
+    [ "SSLFinishedMessage", "a01469.html#aa622f2b0512e51b904ce8d2d8aac85b0", null ],
+    [ "getSignedHash", "a01469.html#afae04041b9e28633f6a2b15807307791", null ],
+    [ "getSignedHashLength", "a01469.html#a6c2cf5081a5b4499755a2e51cc8f4032", null ],
+    [ "toString", "a01469.html#a614be67e42308cd5c81437ac5e2d70b8", null ]
 ];

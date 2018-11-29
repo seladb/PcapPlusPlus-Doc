@@ -1,17 +1,18 @@
 var a00773 =
 [
-    [ "ResourceType", "a00773.html#a31f2e8268a4850da83b3d85c17d99d96", [
-      [ "DnsQuery", "a00773.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5", null ],
-      [ "DnsAnswer", "a00773.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca", null ],
-      [ "DnsAuthority", "a00773.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d", null ],
-      [ "DnsAdditional", "a00773.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226", null ]
-    ] ],
-    [ "getDnsClass", "a00773.html#a6c4a6e1550c6de7ebdf0188bb80ce484", null ],
-    [ "getDnsType", "a00773.html#ae44ba669fc827f7b8bb6c8f9ce783d8d", null ],
-    [ "getName", "a00773.html#a5042b3c8948096ff808d9d4c4a5c4ef0", null ],
-    [ "getSize", "a00773.html#a0581453e507b721f27eb2e148bc45ef9", null ],
-    [ "getType", "a00773.html#a70bf0be92f655fcf024d5c60eb1cba32", null ],
-    [ "setDnsClass", "a00773.html#ad9c0a3adac252a14a48502ae8a43afe5", null ],
-    [ "setDnsType", "a00773.html#a15c4d0513904997e4b77cc11526d204e", null ],
-    [ "setName", "a00773.html#af08da68e8e0133db0723fd117be4217e", null ]
+    [ "authenticData", "a00773.html#ac7e51ef9ae04bec1e3ce7530e39d53d8", null ],
+    [ "authoritativeAnswer", "a00773.html#a36e1dea9807654d43ddbc82e60cf557b", null ],
+    [ "checkingDisabled", "a00773.html#ab01657453ab6e8bb16fd6ac9338ad37c", null ],
+    [ "numberOfAdditional", "a00773.html#a9e3f93ab8cf39ecc8b261b99df182fb7", null ],
+    [ "numberOfAnswers", "a00773.html#ac1c882f5f9bd83d50a671b09a08683bf", null ],
+    [ "numberOfAuthority", "a00773.html#a6d7eb212fa99e55db2dd9683a3c99ece", null ],
+    [ "numberOfQuestions", "a00773.html#af22351368a518e3597634f9ad6338952", null ],
+    [ "opcode", "a00773.html#ac9995bbebc0af173ef829ad425e385f4", null ],
+    [ "queryOrResponse", "a00773.html#a3f1015b3db91aac75caa0e42d93efef4", null ],
+    [ "recursionAvailable", "a00773.html#accb70bf9b2e440c94820dd8e22651326", null ],
+    [ "recursionDesired", "a00773.html#adfb415bb642ceba8a9d8e826bd95830a", null ],
+    [ "responseCode", "a00773.html#a13e46f496586640b3f2810601f4200c4", null ],
+    [ "transactionID", "a00773.html#a5f061194ac1009cd5a8fc521f3f2abfc", null ],
+    [ "truncation", "a00773.html#a8cca9968cb3832318147243698c973cc", null ],
+    [ "zero", "a00773.html#a4f951f5089275a84bb124a2e3127f3ba", null ]
 ];

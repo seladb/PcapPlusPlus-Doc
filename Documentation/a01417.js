@@ -1,5 +1,6 @@
 var a01417 =
 [
-    [ "SSLServerNameIndicationExtension", "a01417.html#af05391f55be98d6aa8b5192c6a170e60", null ],
-    [ "getHostName", "a01417.html#a37ef3d9cccd951c27057f0c1515dab9c", null ]
+    [ "extensionData", "a01417.html#a058c404f39c4b185647f5fc6cade65d4", null ],
+    [ "extensionDataLength", "a01417.html#af116e93a2decd3c986ae109b16c12b28", null ],
+    [ "extensionType", "a01417.html#a7d15f02daf7b87d24fd4d8e1586b1b04", null ]
 ];

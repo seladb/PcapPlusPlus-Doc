@@ -1,15 +1,9 @@
 var a00853 =
 [
-    [ "GREv0Layer", "a00853.html#a8cab834d500d69bd53ea9f980080aa66", null ],
-    [ "GREv0Layer", "a00853.html#a4e6349fa245ab6fec55236aeeff2e79e", null ],
-    [ "computeCalculateFields", "a00853.html#a8dadeabbc9e1bcce8c8030bfed2cfde9", null ],
-    [ "getChecksum", "a00853.html#a7a31ac3661be643b434564a0275cd044", null ],
-    [ "getGreHeader", "a00853.html#abc3ca19c4b7da40c91bac6bfd64fcadb", null ],
-    [ "getKey", "a00853.html#af38425c78abd54d4c3b3e7c696d675c1", null ],
-    [ "getOffset", "a00853.html#a954bd499950709dc21235a75e4e54a41", null ],
-    [ "setChecksum", "a00853.html#ac8e0328698bf7208f6a68c828a36a91b", null ],
-    [ "setKey", "a00853.html#a8658b40f8017cf2f91eb292a7d9fee16", null ],
-    [ "toString", "a00853.html#a2d09f08dccb71119e0db999d31bf22b5", null ],
-    [ "unsetChecksum", "a00853.html#a165866e7549b82b339eb4cd26bd27ee9", null ],
-    [ "unsetKey", "a00853.html#a601b518f0c43ea4c96254b089759a8e5", null ]
+    [ "getHeaderLen", "a00853.html#ac7018c5b2696e7b24e4e0436b4322633", null ],
+    [ "getOsiModelLayer", "a00853.html#adb08f041297bf331db4fade12c353124", null ],
+    [ "getSequenceNumber", "a00853.html#ae57d3a2ea180cc02f7e388857dd045eb", null ],
+    [ "parseNextLayer", "a00853.html#ac00bc357027ecb088b5546f860b7a27b", null ],
+    [ "setSequenceNumber", "a00853.html#ad37a993ffd8f97f5d59925d7c1c19205", null ],
+    [ "unsetSequenceNumber", "a00853.html#a2557f69597006f086a09ba54a80a5ea7", null ]
 ];

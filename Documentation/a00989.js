@@ -1,16 +1,12 @@
 var a00989 =
 [
-    [ "IPv4Address", "a00989.html#a7eef864e1a372d665a27de6189901e1e", null ],
-    [ "IPv4Address", "a00989.html#a1ec2cd8425ee7d92b1f95cde69650df7", null ],
-    [ "IPv4Address", "a00989.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
-    [ "IPv4Address", "a00989.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
-    [ "IPv4Address", "a00989.html#a133598783690be861bd41452680b2290", null ],
-    [ "clone", "a00989.html#a1fffaebfa683074cd987de6b6207fda8", null ],
-    [ "getType", "a00989.html#a7b49b92e0182d39422c334efc49cc87c", null ],
-    [ "matchSubnet", "a00989.html#a5551eda249276e8676675e5d0184bb49", null ],
-    [ "operator!=", "a00989.html#ae40e1dfbb7b1c78e825af482fcc302ff", null ],
-    [ "operator=", "a00989.html#a086c40b049355635699e3b3c18678fb6", null ],
-    [ "operator==", "a00989.html#aa8a201db40014bd54910598935ae2eaa", null ],
-    [ "toInAddr", "a00989.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
-    [ "toInt", "a00989.html#abccc9bbc341ea0e3d58387c24bd74a3c", null ]
+    [ "AddressType", "a00989.html#ac389e5507d75b60d2b0ca939db195231", [
+      [ "IPv4AddressType", "a00989.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "a00989.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    ] ],
+    [ "clone", "a00989.html#a92d35f8f8e9965d0e4c38e183fba7d1e", null ],
+    [ "equals", "a00989.html#a6865c1a43ff71cd424426c846f36dbd4", null ],
+    [ "getType", "a00989.html#a85a3e43774848c93585f97bdef6ec73d", null ],
+    [ "isValid", "a00989.html#a2d6b031d025c3ef287584a605b64d750", null ],
+    [ "toString", "a00989.html#a16d19ff8459edd846ee7b6b3f121769c", null ]
 ];

@@ -1,15 +1,7 @@
 var a01005 =
 [
-    [ "IPv4PacketKey", "a01005.html#a99e40e4e9a816f2bfd6fac51e1db24f5", null ],
-    [ "IPv4PacketKey", "a01005.html#a6f8b3d6f45128c357ebd7b94d08f84fc", null ],
-    [ "IPv4PacketKey", "a01005.html#abcd0f53ccc2e970b9da2270819c43597", null ],
-    [ "clone", "a01005.html#a070a6a56545520f022a35d9ec5423ba6", null ],
-    [ "getDstIP", "a01005.html#af31f4b36d499e1ffe55bc21b6bd2c809", null ],
-    [ "getHashValue", "a01005.html#a8131b9f74fb68a6a7b4862d51acb0a9a", null ],
-    [ "getIpID", "a01005.html#aff34ec616f7e53adaa5ae376cc7ce76a", null ],
-    [ "getProtocolType", "a01005.html#a48cfba0896917ecb38c57ec8cf6bdba9", null ],
-    [ "getSrcIP", "a01005.html#ab96d3a442d57b860eb84cecfffc448cd", null ],
-    [ "setDstIP", "a01005.html#a3f08e39cd7a151f1006521e8b29dfd8a", null ],
-    [ "setIpID", "a01005.html#ab1b8c2f9bd9e928290667b576ed0be81", null ],
-    [ "setSrcIP", "a01005.html#a6f19f3d1f0e173d7cd36bbebc0c8f455", null ]
+    [ "~PacketKey", "a01005.html#aa67476ed9ca9d6bf21821446d6f9af33", null ],
+    [ "clone", "a01005.html#a38bb114ec2d125fa47d7a1d113203a4c", null ],
+    [ "getHashValue", "a01005.html#abd42f4375f021a1bf7d89a151b231911", null ],
+    [ "getProtocolType", "a01005.html#a36810a692eb627629bf0db6ad04c8fb1", null ]
 ];
