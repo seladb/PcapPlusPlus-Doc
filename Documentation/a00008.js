@@ -1,9 +1,9 @@
 var a00008 =
 [
-    [ "dhcp_header", "a00757.html", "a00757" ],
-    [ "DhcpOption", "a00761.html", "a00761" ],
-    [ "DhcpOptionBuilder", "a00765.html", "a00765" ],
-    [ "DhcpLayer", "a00769.html", "a00769" ],
+    [ "dhcp_header", "a00766.html", "a00766" ],
+    [ "DhcpOption", "a00770.html", "a00770" ],
+    [ "DhcpOptionBuilder", "a00774.html", "a00774" ],
+    [ "DhcpLayer", "a00778.html", "a00778" ],
     [ "BootpOpCodes", "a00008.html#a977d5d1fabe89dba06443bbca6a711bb", [
       [ "DHCP_BOOTREQUEST", "a00008.html#a977d5d1fabe89dba06443bbca6a711bbac2dc2a02d77464f2ad09460e52027547", null ],
       [ "DHCP_BOOTREPLY", "a00008.html#a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f", null ]

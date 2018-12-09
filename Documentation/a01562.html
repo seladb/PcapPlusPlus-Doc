@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: pcpp::tcphdr Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a01565.html','');});
+$(document).ready(function(){initNavTree('a01562.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,32 +79,301 @@ $(document).ready(function(){initNavTree('a01565.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a01559.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TLVRecord Member List</div>  </div>
+<div class="title">pcpp::tcphdr Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01565.html">pcpp::TLVRecord</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#a8fc8e09321d69cdec0b4cb10f3f87a8c">getDataSize</a>()=0</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#ac47981a74a9e1e1e1f524bc3bb90e325">getRecordBasePtr</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#aa9720120d597258e2465e728551b581a">getTotalSize</a>() const =0</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#af5d54089390f9518df2cebc55c0d350f">getType</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#a9dbb7a66d16a0ef6ec7051813cc3cbe1">getValue</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#adb83b36536618115e29f40b51181e381">getValueAs</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">isNull</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#ab207979132727f91150f6a54197153e3">operator=</a>(const TLVRecord &amp;other)</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#a6e723034e8daff9b577b16718a5c60fe">purgeRecordData</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#aa65d6cf9416f13aa6f9e9a4cea786bee">setValue</a>(T newValue, int valueOffset=0)</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#af558b23a2c8e99f574c867d518f1b71e">TLVRecord</a>(uint8_t *recordRawData)</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01565.html#a807e4d02649af082d1e0c568aade122a">TLVRecord</a>(const TLVRecord &amp;other)</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01565.html#aceee59b58ee528adcc4fa4f4902d35ec">~TLVRecord</a>()</td><td class="entry"><a class="el" href="a01565.html">pcpp::TLVRecord</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00173_source.html">TcpLayer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4ba66caaf79a20c53a8e92f7537d50a6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a4ba66caaf79a20c53a8e92f7537d50a6">portSrc</a></td></tr>
+<tr class="separator:a4ba66caaf79a20c53a8e92f7537d50a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae26537b0e824c5b0fc1bcf9adf2fdc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc">portDst</a></td></tr>
+<tr class="separator:a4ae26537b0e824c5b0fc1bcf9adf2fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2edb7c27d93777ae552eca417cf118d0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a2edb7c27d93777ae552eca417cf118d0">sequenceNumber</a></td></tr>
+<tr class="separator:a2edb7c27d93777ae552eca417cf118d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54a29e632cb6526df4a7e2e79261ad7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#ae54a29e632cb6526df4a7e2e79261ad7">ackNumber</a></td></tr>
+<tr class="separator:ae54a29e632cb6526df4a7e2e79261ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593a30084c297a99ea01b76fce5c5b11"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a593a30084c297a99ea01b76fce5c5b11">dataOffset</a>:4</td></tr>
+<tr class="separator:a593a30084c297a99ea01b76fce5c5b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76c48fa043559ec4b0b90fa9535feeb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#aa76c48fa043559ec4b0b90fa9535feeb">finFlag</a>:1</td></tr>
+<tr class="separator:aa76c48fa043559ec4b0b90fa9535feeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469f06456ae6eaf39e764d7f30c06dc3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a469f06456ae6eaf39e764d7f30c06dc3">synFlag</a>:1</td></tr>
+<tr class="separator:a469f06456ae6eaf39e764d7f30c06dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a5abf30794062f32de013b6ddf39c9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a36a5abf30794062f32de013b6ddf39c9">rstFlag</a>:1</td></tr>
+<tr class="separator:a36a5abf30794062f32de013b6ddf39c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1561eb6d029e00fe449bbaac3be8d705"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a1561eb6d029e00fe449bbaac3be8d705">pshFlag</a>:1</td></tr>
+<tr class="separator:a1561eb6d029e00fe449bbaac3be8d705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1b2600722973e7c2e6f4e05e34c93b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#abf1b2600722973e7c2e6f4e05e34c93b">ackFlag</a>:1</td></tr>
+<tr class="separator:abf1b2600722973e7c2e6f4e05e34c93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2c38c9079e807f366b3cc62669b09c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a2e2c38c9079e807f366b3cc62669b09c">urgFlag</a>:1</td></tr>
+<tr class="separator:a2e2c38c9079e807f366b3cc62669b09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607801a4305ecb6d4ab234a6755b78e7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a607801a4305ecb6d4ab234a6755b78e7">eceFlag</a>:1</td></tr>
+<tr class="separator:a607801a4305ecb6d4ab234a6755b78e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d5425128be717916096e577f2561fe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a26d5425128be717916096e577f2561fe">cwrFlag</a>:1</td></tr>
+<tr class="separator:a26d5425128be717916096e577f2561fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ab389980bbae1e81846792a1c8846a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a62ab389980bbae1e81846792a1c8846a">windowSize</a></td></tr>
+<tr class="separator:a62ab389980bbae1e81846792a1c8846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25c27d92c75ab68816d23c3ead02d5a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#af25c27d92c75ab68816d23c3ead02d5a">headerChecksum</a></td></tr>
+<tr class="separator:af25c27d92c75ab68816d23c3ead02d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43efd09b5aad3f50f38bf2a689cc790c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01562.html#a43efd09b5aad3f50f38bf2a689cc790c">urgentPointer</a></td></tr>
+<tr class="separator:a43efd09b5aad3f50f38bf2a689cc790c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an TCP protocol header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="abf1b2600722973e7c2e6f4e05e34c93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1b2600722973e7c2e6f4e05e34c93b">&#9670;&nbsp;</a></span>ackFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::ackFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ACK flag </p>
+
+</div>
+</div>
+<a id="ae54a29e632cb6526df4a7e2e79261ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54a29e632cb6526df4a7e2e79261ad7">&#9670;&nbsp;</a></span>ackNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::tcphdr::ackNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Acknowledgment number </p>
+
+</div>
+</div>
+<a id="a26d5425128be717916096e577f2561fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d5425128be717916096e577f2561fe">&#9670;&nbsp;</a></span>cwrFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::cwrFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CWR flag </p>
+
+</div>
+</div>
+<a id="a593a30084c297a99ea01b76fce5c5b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593a30084c297a99ea01b76fce5c5b11">&#9670;&nbsp;</a></span>dataOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::dataOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Specifies the size of the TCP header in 32-bit words </p>
+
+</div>
+</div>
+<a id="a607801a4305ecb6d4ab234a6755b78e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607801a4305ecb6d4ab234a6755b78e7">&#9670;&nbsp;</a></span>eceFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::eceFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ECE flag </p>
+
+</div>
+</div>
+<a id="aa76c48fa043559ec4b0b90fa9535feeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76c48fa043559ec4b0b90fa9535feeb">&#9670;&nbsp;</a></span>finFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::finFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>FIN flag </p>
+
+</div>
+</div>
+<a id="af25c27d92c75ab68816d23c3ead02d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25c27d92c75ab68816d23c3ead02d5a">&#9670;&nbsp;</a></span>headerChecksum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::headerChecksum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The 16-bit checksum field is used for error-checking of the header and data </p>
+
+</div>
+</div>
+<a id="a4ae26537b0e824c5b0fc1bcf9adf2fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae26537b0e824c5b0fc1bcf9adf2fdc">&#9670;&nbsp;</a></span>portDst</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::portDst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destination TCP port </p>
+
+</div>
+</div>
+<a id="a4ba66caaf79a20c53a8e92f7537d50a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba66caaf79a20c53a8e92f7537d50a6">&#9670;&nbsp;</a></span>portSrc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::portSrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Source TCP port </p>
+
+</div>
+</div>
+<a id="a1561eb6d029e00fe449bbaac3be8d705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1561eb6d029e00fe449bbaac3be8d705">&#9670;&nbsp;</a></span>pshFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::pshFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PSH flag </p>
+
+</div>
+</div>
+<a id="a36a5abf30794062f32de013b6ddf39c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a5abf30794062f32de013b6ddf39c9">&#9670;&nbsp;</a></span>rstFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::rstFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RST flag </p>
+
+</div>
+</div>
+<a id="a2edb7c27d93777ae552eca417cf118d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2edb7c27d93777ae552eca417cf118d0">&#9670;&nbsp;</a></span>sequenceNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::tcphdr::sequenceNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sequence number </p>
+
+</div>
+</div>
+<a id="a469f06456ae6eaf39e764d7f30c06dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469f06456ae6eaf39e764d7f30c06dc3">&#9670;&nbsp;</a></span>synFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::synFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SYN flag </p>
+
+</div>
+</div>
+<a id="a43efd09b5aad3f50f38bf2a689cc790c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43efd09b5aad3f50f38bf2a689cc790c">&#9670;&nbsp;</a></span>urgentPointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::urgentPointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the URG flag (<a class="el" href="a01562.html#a2e2c38c9079e807f366b3cc62669b09c">tcphdr::urgFlag</a>) is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte </p>
+
+</div>
+</div>
+<a id="a2e2c38c9079e807f366b3cc62669b09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2c38c9079e807f366b3cc62669b09c">&#9670;&nbsp;</a></span>urgFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::urgFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>URG flag </p>
+
+</div>
+</div>
+<a id="a62ab389980bbae1e81846792a1c8846a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ab389980bbae1e81846792a1c8846a">&#9670;&nbsp;</a></span>windowSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::tcphdr::windowSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The size of the receive window, which specifies the number of window size units (by default, bytes) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 29 2018 09:09:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01562.html">tcphdr</a></li>
+    <li class="footer">Generated on Sat Dec 8 2018 23:22:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: pcpp::DhcpOptionBuilder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00777.html','');});
+$(document).ready(function(){initNavTree('a00774.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,32 +79,370 @@ $(document).ready(function(){initNavTree('a00777.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00771.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IDnsResource Member List</div>  </div>
+<div class="title">pcpp::DhcpOptionBuilder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00777.html">pcpp::IDnsResource</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#a31f2e8268a4850da83b3d85c17d99d96a6afa9641fa6f2e597c07e0c532119226">DnsAdditional</a> enum value</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#a31f2e8268a4850da83b3d85c17d99d96a21d018204b3fd6801a9d2fe05884dcca">DnsAnswer</a> enum value</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#a31f2e8268a4850da83b3d85c17d99d96ae14f9629dbd384393b0eda4e8dc48d9d">DnsAuthority</a> enum value</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#a31f2e8268a4850da83b3d85c17d99d96ae89ef0693020b32d135145588fe3baf5">DnsQuery</a> enum value</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#a6c4a6e1550c6de7ebdf0188bb80ce484">getDnsClass</a>()</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#ae44ba669fc827f7b8bb6c8f9ce783d8d">getDnsType</a>()</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#a5042b3c8948096ff808d9d4c4a5c4ef0">getName</a>()</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#a0581453e507b721f27eb2e148bc45ef9">getSize</a>()=0</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#a70bf0be92f655fcf024d5c60eb1cba32">getType</a>()=0</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#a31f2e8268a4850da83b3d85c17d99d96">ResourceType</a> enum name</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#ad9c0a3adac252a14a48502ae8a43afe5">setDnsClass</a>(DnsClass newClass)</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00777.html#a15c4d0513904997e4b77cc11526d204e">setDnsType</a>(DnsType newType)</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00777.html#af08da68e8e0133db0723fd117be4217e">setName</a>(const std::string &amp;newName)</td><td class="entry"><a class="el" href="a00777.html">pcpp::IDnsResource</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00008_source.html">DhcpLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::DhcpOptionBuilder:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00774.png" usemap="#pcpp::DhcpOptionBuilder_map" alt=""/>
+  <map id="pcpp::DhcpOptionBuilder_map" name="pcpp::DhcpOptionBuilder_map">
+<area href="a01618.html" alt="pcpp::TLVRecordBuilder" shape="rect" coords="0,0,153,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3b35901811e8f40c468714ca63c0d788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#a3b35901811e8f40c468714ca63c0d788">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, const uint8_t *optionValue, uint8_t optionValueLen)</td></tr>
+<tr class="separator:a3b35901811e8f40c468714ca63c0d788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1c66aab7c9755f25983a96c13d2090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#aab1c66aab7c9755f25983a96c13d2090">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, uint8_t optionValue)</td></tr>
+<tr class="separator:aab1c66aab7c9755f25983a96c13d2090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30f05144cb3a55b0bd81a23387a49ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#ad30f05144cb3a55b0bd81a23387a49ec">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, uint16_t optionValue)</td></tr>
+<tr class="separator:ad30f05144cb3a55b0bd81a23387a49ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af769fe0919a3965bdc4dbc463f3f82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#a1af769fe0919a3965bdc4dbc463f3f82">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, uint32_t optionValue)</td></tr>
+<tr class="separator:a1af769fe0919a3965bdc4dbc463f3f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6900bf2202939f4079adb606c94074a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#a6900bf2202939f4079adb606c94074a3">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, const <a class="el" href="a01034.html">IPv4Address</a> &amp;optionValue)</td></tr>
+<tr class="separator:a6900bf2202939f4079adb606c94074a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac933fad864e8c5862e9def4849b2a529"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#ac933fad864e8c5862e9def4849b2a529">DhcpOptionBuilder</a> (<a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a> optionType, const std::string &amp;optionValue)</td></tr>
+<tr class="separator:ac933fad864e8c5862e9def4849b2a529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad796afde8b590479f6e33e6d0cae2f52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#ad796afde8b590479f6e33e6d0cae2f52">DhcpOptionBuilder</a> (const <a class="el" href="a00774.html">DhcpOptionBuilder</a> &amp;other)</td></tr>
+<tr class="separator:ad796afde8b590479f6e33e6d0cae2f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac0ea2086b71e28c4d920bea97248bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00770.html">DhcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build</a> () const</td></tr>
+<tr class="separator:a2ac0ea2086b71e28c4d920bea97248bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class for building DHCP options. This builder receives the option parameters in its c'tor, builds the DHCP option raw buffer and provides a <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> method to get a <a class="el" href="a00770.html">DhcpOption</a> object out of it </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3b35901811e8f40c468714ca63c0d788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35901811e8f40c468714ca63c0d788">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>optionValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>optionValueLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which their value is a byte array. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A buffer containing the option value. This buffer is read-only and isn't modified in any way </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValueLen</td><td>DHCP option value length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab1c66aab7c9755f25983a96c13d2090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1c66aab7c9755f25983a96c13d2090">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>optionValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which have a 1-byte value. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A 1-byte option value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad30f05144cb3a55b0bd81a23387a49ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30f05144cb3a55b0bd81a23387a49ec">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>optionValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which have a 2-byte value. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A 2-byte option value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1af769fe0919a3965bdc4dbc463f3f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af769fe0919a3965bdc4dbc463f3f82">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>optionValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which have a 4-byte value. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A 4-byte option value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6900bf2202939f4079adb606c94074a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6900bf2202939f4079adb606c94074a3">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01034.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>optionValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which have an <a class="el" href="a01034.html">IPv4Address</a> value. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>The IPv4 address option value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac933fad864e8c5862e9def4849b2a529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac933fad864e8c5862e9def4849b2a529">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00202.html#a211aac29a5c4d0b7844926cfd369c32c">DhcpOptionTypes</a>&#160;</td>
+          <td class="paramname"><em>optionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>optionValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for building DHCP options which have a string value. The <a class="el" href="a00770.html">DhcpOption</a> object can later be retrieved by calling <a class="el" href="a00774.html#a2ac0ea2086b71e28c4d920bea97248bf">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>DHCP option type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>The string option value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad796afde8b590479f6e33e6d0cae2f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad796afde8b590479f6e33e6d0cae2f52">&#9670;&nbsp;</a></span>DhcpOptionBuilder() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::DhcpOptionBuilder::DhcpOptionBuilder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00774.html">DhcpOptionBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A copy c'tor which copies all the data from another instance of <a class="el" href="a00774.html">DhcpOptionBuilder</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ac0ea2086b71e28c4d920bea97248bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac0ea2086b71e28c4d920bea97248bf">&#9670;&nbsp;</a></span>build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00770.html">DhcpOption</a> pcpp::DhcpOptionBuilder::build </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Build the <a class="el" href="a00770.html">DhcpOption</a> object out of the parameters defined in the c'tor </p><dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00770.html">DhcpOption</a> object </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 29 2018 09:09:56 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a00774.html">DhcpOptionBuilder</a></li>
+    <li class="footer">Generated on Sat Dec 8 2018 23:22:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

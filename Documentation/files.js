@@ -3,185 +3,195 @@ var files =
     [ "ArpLayer.h", "a00002.html", "a00002" ],
     [ "Device.h", "a00005.html", "a00005" ],
     [ "DhcpLayer.h", "a00008.html", "a00008" ],
-    [ "DnsLayer.h", "a00011.html", "a00011" ],
-    [ "DpdkDevice.h", "a00014.html", "a00014" ],
-    [ "DpdkDeviceList.h", "a00017.html", [
-      [ "DpdkWorkerThread", "a00825.html", "a00825" ],
-      [ "DpdkDeviceList", "a00829.html", "a00829" ]
+    [ "DnsLayer.h", "a00011.html", [
+      [ "dnshdr", "a00782.html", "a00782" ],
+      [ "DnsLayer", "a00786.html", "a00786" ]
     ] ],
-    [ "EthLayer.h", "a00020.html", "a00020" ],
-    [ "GeneralUtils.h", "a00023.html", "a00023" ],
-    [ "GreLayer.h", "a00026.html", [
-      [ "gre_basic_header", "a00841.html", "a00841" ],
-      [ "gre1_header", "a00845.html", "a00845" ],
-      [ "ppp_pptp_header", "a00849.html", "a00849" ],
-      [ "GreLayer", "a00853.html", "a00853" ],
-      [ "GREv0Layer", "a00857.html", "a00857" ],
-      [ "GREv1Layer", "a00861.html", "a00861" ],
-      [ "PPP_PPTPLayer", "a00865.html", "a00865" ]
+    [ "DnsLayerEnums.h", "a00014.html", "a00014" ],
+    [ "DnsResource.h", "a00017.html", [
+      [ "IDnsResource", "a00790.html", "a00790" ],
+      [ "DnsQuery", "a00794.html", "a00794" ],
+      [ "DnsResource", "a00798.html", "a00798" ]
     ] ],
-    [ "HttpLayer.h", "a00029.html", "a00029" ],
-    [ "IcmpLayer.h", "a00032.html", "a00032" ],
-    [ "IgmpLayer.h", "a00035.html", "a00035" ],
-    [ "IpAddress.h", "a00038.html", "a00038" ],
-    [ "IPReassembly.h", "a00041.html", "a00041" ],
-    [ "IpUtils.h", "a00044.html", "a00044" ],
-    [ "IPv4Layer.h", "a00047.html", "a00047" ],
-    [ "IPv6Extensions.h", "a00050.html", [
-      [ "IPv6Extension", "a01045.html", "a01045" ],
-      [ "IPv6FragmentationHeader", "a01053.html", "a01053" ],
-      [ "ipv6_frag_header", "a01057.html", "a01057" ],
-      [ "IPv6TLVOptionHeader", "a01061.html", "a01061" ],
-      [ "TLVOption", "a01065.html", "a01065" ],
-      [ "TLVOptionBuilder", "a01069.html", "a01069" ],
-      [ "IPv6HopByHopHeader", "a01073.html", "a01073" ],
-      [ "IPv6DestinationHeader", "a01077.html", "a01077" ],
-      [ "IPv6RoutingHeader", "a01081.html", "a01081" ],
-      [ "ipv6_routing_header", "a01085.html", "a01085" ],
-      [ "IPv6AuthenticationHeader", "a01089.html", "a01089" ],
-      [ "ipv6_authentication_header", "a01093.html", "a01093" ]
+    [ "DnsResourceData.h", "a00020.html", "a00020" ],
+    [ "DpdkDevice.h", "a00023.html", "a00023" ],
+    [ "DpdkDeviceList.h", "a00026.html", [
+      [ "DpdkWorkerThread", "a00866.html", "a00866" ],
+      [ "DpdkDeviceList", "a00870.html", "a00870" ]
     ] ],
-    [ "IPv6Layer.h", "a00053.html", [
-      [ "ip6_hdr", "a01097.html", "a01097" ],
-      [ "IPv6Layer", "a01101.html", "a01101" ]
+    [ "EthLayer.h", "a00029.html", "a00029" ],
+    [ "GeneralUtils.h", "a00032.html", "a00032" ],
+    [ "GreLayer.h", "a00035.html", [
+      [ "gre_basic_header", "a00882.html", "a00882" ],
+      [ "gre1_header", "a00886.html", "a00886" ],
+      [ "ppp_pptp_header", "a00890.html", "a00890" ],
+      [ "GreLayer", "a00894.html", "a00894" ],
+      [ "GREv0Layer", "a00898.html", "a00898" ],
+      [ "GREv1Layer", "a00902.html", "a00902" ],
+      [ "PPP_PPTPLayer", "a00906.html", "a00906" ]
     ] ],
-    [ "Layer.h", "a00056.html", [
-      [ "IDataContainer", "a01105.html", "a01105" ],
-      [ "Layer", "a01109.html", "a01109" ]
+    [ "HttpLayer.h", "a00038.html", "a00038" ],
+    [ "IcmpLayer.h", "a00041.html", "a00041" ],
+    [ "IgmpLayer.h", "a00044.html", "a00044" ],
+    [ "IpAddress.h", "a00047.html", "a00047" ],
+    [ "IPReassembly.h", "a00050.html", "a00050" ],
+    [ "IpUtils.h", "a00053.html", "a00053" ],
+    [ "IPv4Layer.h", "a00056.html", "a00056" ],
+    [ "IPv6Extensions.h", "a00059.html", [
+      [ "IPv6Extension", "a01086.html", "a01086" ],
+      [ "IPv6FragmentationHeader", "a01094.html", "a01094" ],
+      [ "ipv6_frag_header", "a01098.html", "a01098" ],
+      [ "IPv6TLVOptionHeader", "a01102.html", "a01102" ],
+      [ "TLVOption", "a01106.html", "a01106" ],
+      [ "TLVOptionBuilder", "a01110.html", "a01110" ],
+      [ "IPv6HopByHopHeader", "a01114.html", "a01114" ],
+      [ "IPv6DestinationHeader", "a01118.html", "a01118" ],
+      [ "IPv6RoutingHeader", "a01122.html", "a01122" ],
+      [ "ipv6_routing_header", "a01126.html", "a01126" ],
+      [ "IPv6AuthenticationHeader", "a01130.html", "a01130" ],
+      [ "ipv6_authentication_header", "a01134.html", "a01134" ]
     ] ],
-    [ "Logger.h", "a00059.html", "a00059" ],
-    [ "LRUList.h", "a00062.html", [
-      [ "LRUList", "a01117.html", "a01117" ]
+    [ "IPv6Layer.h", "a00062.html", [
+      [ "ip6_hdr", "a01138.html", "a01138" ],
+      [ "IPv6Layer", "a01142.html", "a01142" ]
     ] ],
-    [ "MacAddress.h", "a00065.html", [
-      [ "MacAddress", "a01121.html", "a01121" ]
+    [ "Layer.h", "a00065.html", [
+      [ "IDataContainer", "a01146.html", "a01146" ],
+      [ "Layer", "a01150.html", "a01150" ]
     ] ],
-    [ "MplsLayer.h", "a00068.html", [
-      [ "MplsLayer", "a01125.html", "a01125" ]
+    [ "Logger.h", "a00068.html", "a00068" ],
+    [ "LRUList.h", "a00071.html", [
+      [ "LRUList", "a01158.html", "a01158" ]
     ] ],
-    [ "NetworkUtils.h", "a00071.html", [
-      [ "NetworkUtils", "a01133.html", "a01133" ]
+    [ "MacAddress.h", "a00074.html", [
+      [ "MacAddress", "a01162.html", "a01162" ]
     ] ],
-    [ "NullLoopbackLayer.h", "a00074.html", "a00074" ],
-    [ "Packet.h", "a00077.html", [
-      [ "Packet", "a01141.html", "a01141" ]
+    [ "MplsLayer.h", "a00077.html", [
+      [ "MplsLayer", "a01166.html", "a01166" ]
     ] ],
-    [ "PacketTrailerLayer.h", "a00080.html", [
-      [ "PacketTrailerLayer", "a01145.html", "a01145" ]
+    [ "NetworkUtils.h", "a00080.html", [
+      [ "NetworkUtils", "a01174.html", "a01174" ]
     ] ],
-    [ "PacketUtils.h", "a00083.html", "a00083" ],
-    [ "PayloadLayer.h", "a00086.html", [
-      [ "PayloadLayer", "a01149.html", "a01149" ]
+    [ "NullLoopbackLayer.h", "a00083.html", "a00083" ],
+    [ "Packet.h", "a00086.html", [
+      [ "Packet", "a01182.html", "a01182" ]
     ] ],
-    [ "PcapDevice.h", "a00089.html", [
-      [ "IPcapDevice", "a01153.html", "a01153" ]
+    [ "PacketTrailerLayer.h", "a00089.html", [
+      [ "PacketTrailerLayer", "a01186.html", "a01186" ]
     ] ],
-    [ "PcapFileDevice.h", "a00092.html", [
-      [ "IFileDevice", "a01157.html", "a01157" ],
-      [ "IFileReaderDevice", "a01161.html", "a01161" ],
-      [ "PcapFileReaderDevice", "a01165.html", "a01165" ],
-      [ "PcapNgFileReaderDevice", "a01169.html", "a01169" ],
-      [ "IFileWriterDevice", "a01173.html", "a01173" ],
-      [ "PcapFileWriterDevice", "a01177.html", "a01177" ],
-      [ "PcapNgFileWriterDevice", "a01181.html", "a01181" ]
+    [ "PacketUtils.h", "a00092.html", "a00092" ],
+    [ "PayloadLayer.h", "a00095.html", [
+      [ "PayloadLayer", "a01190.html", "a01190" ]
     ] ],
-    [ "PcapFilter.h", "a00095.html", "a00095" ],
-    [ "PcapLiveDevice.h", "a00098.html", "a00098" ],
-    [ "PcapLiveDeviceList.h", "a00101.html", [
-      [ "PcapLiveDeviceList", "a01269.html", "a01269" ]
+    [ "PcapDevice.h", "a00098.html", [
+      [ "IPcapDevice", "a01194.html", "a01194" ]
     ] ],
-    [ "PcapPlusPlusVersion.h", "a00104.html", "a00104" ],
-    [ "PcapRemoteDevice.h", "a00107.html", [
-      [ "PcapRemoteAuthentication", "a01273.html", "a01273" ],
-      [ "PcapRemoteDevice", "a01277.html", "a01277" ]
+    [ "PcapFileDevice.h", "a00101.html", [
+      [ "IFileDevice", "a01198.html", "a01198" ],
+      [ "IFileReaderDevice", "a01202.html", "a01202" ],
+      [ "PcapFileReaderDevice", "a01206.html", "a01206" ],
+      [ "PcapNgFileReaderDevice", "a01210.html", "a01210" ],
+      [ "IFileWriterDevice", "a01214.html", "a01214" ],
+      [ "PcapFileWriterDevice", "a01218.html", "a01218" ],
+      [ "PcapNgFileWriterDevice", "a01222.html", "a01222" ]
     ] ],
-    [ "PcapRemoteDeviceList.h", "a00110.html", [
-      [ "PcapRemoteDeviceList", "a01281.html", "a01281" ]
+    [ "PcapFilter.h", "a00104.html", "a00104" ],
+    [ "PcapLiveDevice.h", "a00107.html", "a00107" ],
+    [ "PcapLiveDeviceList.h", "a00110.html", [
+      [ "PcapLiveDeviceList", "a01310.html", "a01310" ]
     ] ],
-    [ "PfRingDevice.h", "a00113.html", "a00113" ],
-    [ "PfRingDeviceList.h", "a00116.html", [
-      [ "PfRingDeviceList", "a01297.html", "a01297" ]
+    [ "PcapPlusPlusVersion.h", "a00113.html", "a00113" ],
+    [ "PcapRemoteDevice.h", "a00116.html", [
+      [ "PcapRemoteAuthentication", "a01314.html", "a01314" ],
+      [ "PcapRemoteDevice", "a01318.html", "a01318" ]
     ] ],
-    [ "PlatformSpecificUtils.h", "a00119_source.html", null ],
-    [ "PointerVector.h", "a00122.html", [
-      [ "PointerVector", "a01301.html", "a01301" ]
+    [ "PcapRemoteDeviceList.h", "a00119.html", [
+      [ "PcapRemoteDeviceList", "a01322.html", "a01322" ]
     ] ],
-    [ "PPPoELayer.h", "a00125.html", "a00125" ],
-    [ "ProtocolType.h", "a00128.html", "a00128" ],
-    [ "RadiusLayer.h", "a00131.html", [
-      [ "radius_header", "a01325.html", "a01325" ],
-      [ "RadiusAttribute", "a01329.html", "a01329" ],
-      [ "RadiusAttributeBuilder", "a01333.html", "a01333" ],
-      [ "RadiusLayer", "a01337.html", "a01337" ]
+    [ "PfRingDevice.h", "a00122.html", "a00122" ],
+    [ "PfRingDeviceList.h", "a00125.html", [
+      [ "PfRingDeviceList", "a01338.html", "a01338" ]
     ] ],
-    [ "RawPacket.h", "a00134.html", "a00134" ],
-    [ "RawSocketDevice.h", "a00137.html", [
-      [ "RawSocketDevice", "a01345.html", "a01345" ]
+    [ "PlatformSpecificUtils.h", "a00128_source.html", null ],
+    [ "PointerVector.h", "a00131.html", [
+      [ "PointerVector", "a01342.html", "a01342" ]
     ] ],
-    [ "SdpLayer.h", "a00140.html", "a00140" ],
-    [ "SipLayer.h", "a00143.html", "a00143" ],
-    [ "SllLayer.h", "a00146.html", [
-      [ "sll_header", "a01381.html", "a01381" ],
-      [ "SllLayer", "a01385.html", "a01385" ]
+    [ "PPPoELayer.h", "a00134.html", "a00134" ],
+    [ "ProtocolType.h", "a00137.html", "a00137" ],
+    [ "RadiusLayer.h", "a00140.html", [
+      [ "radius_header", "a01366.html", "a01366" ],
+      [ "RadiusAttribute", "a01370.html", "a01370" ],
+      [ "RadiusAttributeBuilder", "a01374.html", "a01374" ],
+      [ "RadiusLayer", "a01378.html", "a01378" ]
     ] ],
-    [ "SSLCommon.h", "a00149.html", "a00149" ],
-    [ "SSLHandshake.h", "a00152.html", [
-      [ "SSLCipherSuite", "a01409.html", "a01409" ],
-      [ "SSLExtension", "a01413.html", "a01413" ],
-      [ "SSLExtensionStruct", "a01417.html", "a01417" ],
-      [ "SSLServerNameIndicationExtension", "a01421.html", "a01421" ],
-      [ "SSLx509Certificate", "a01425.html", "a01425" ],
-      [ "SSLHandshakeMessage", "a01429.html", "a01429" ],
-      [ "SSLClientHelloMessage", "a01433.html", "a01433" ],
-      [ "SSLServerHelloMessage", "a01437.html", "a01437" ],
-      [ "SSLCertificateMessage", "a01441.html", "a01441" ],
-      [ "SSLHelloRequestMessage", "a01445.html", "a01445" ],
-      [ "SSLServerKeyExchangeMessage", "a01449.html", "a01449" ],
-      [ "SSLClientKeyExchangeMessage", "a01453.html", "a01453" ],
-      [ "SSLCertificateRequestMessage", "a01457.html", "a01457" ],
-      [ "SSLServerHelloDoneMessage", "a01461.html", "a01461" ],
-      [ "SSLCertificateVerifyMessage", "a01465.html", "a01465" ],
-      [ "SSLFinishedMessage", "a01469.html", "a01469" ],
-      [ "SSLNewSessionTicketMessage", "a01473.html", "a01473" ],
-      [ "SSLUnknownMessage", "a01477.html", "a01477" ]
+    [ "RawPacket.h", "a00143.html", "a00143" ],
+    [ "RawSocketDevice.h", "a00146.html", [
+      [ "RawSocketDevice", "a01386.html", "a01386" ]
     ] ],
-    [ "SSLLayer.h", "a00155.html", [
-      [ "SSLLayer", "a01481.html", "a01481" ],
-      [ "SSLHandshakeLayer", "a01485.html", "a01485" ],
-      [ "SSLChangeCipherSpecLayer", "a01489.html", "a01489" ],
-      [ "SSLAlertLayer", "a01493.html", "a01493" ],
-      [ "SSLApplicationDataLayer", "a01497.html", "a01497" ]
+    [ "SdpLayer.h", "a00149.html", "a00149" ],
+    [ "SipLayer.h", "a00152.html", "a00152" ],
+    [ "SllLayer.h", "a00155.html", [
+      [ "sll_header", "a01422.html", "a01422" ],
+      [ "SllLayer", "a01426.html", "a01426" ]
     ] ],
-    [ "SystemUtils.h", "a00158.html", "a00158" ],
-    [ "TablePrinter.h", "a00161.html", [
-      [ "TablePrinter", "a01517.html", "a01517" ]
+    [ "SSLCommon.h", "a00158.html", "a00158" ],
+    [ "SSLHandshake.h", "a00161.html", [
+      [ "SSLCipherSuite", "a01450.html", "a01450" ],
+      [ "SSLExtension", "a01454.html", "a01454" ],
+      [ "SSLExtensionStruct", "a01458.html", "a01458" ],
+      [ "SSLServerNameIndicationExtension", "a01462.html", "a01462" ],
+      [ "SSLx509Certificate", "a01466.html", "a01466" ],
+      [ "SSLHandshakeMessage", "a01470.html", "a01470" ],
+      [ "SSLClientHelloMessage", "a01474.html", "a01474" ],
+      [ "SSLServerHelloMessage", "a01478.html", "a01478" ],
+      [ "SSLCertificateMessage", "a01482.html", "a01482" ],
+      [ "SSLHelloRequestMessage", "a01486.html", "a01486" ],
+      [ "SSLServerKeyExchangeMessage", "a01490.html", "a01490" ],
+      [ "SSLClientKeyExchangeMessage", "a01494.html", "a01494" ],
+      [ "SSLCertificateRequestMessage", "a01498.html", "a01498" ],
+      [ "SSLServerHelloDoneMessage", "a01502.html", "a01502" ],
+      [ "SSLCertificateVerifyMessage", "a01506.html", "a01506" ],
+      [ "SSLFinishedMessage", "a01510.html", "a01510" ],
+      [ "SSLNewSessionTicketMessage", "a01514.html", "a01514" ],
+      [ "SSLUnknownMessage", "a01518.html", "a01518" ]
     ] ],
-    [ "TcpLayer.h", "a00164.html", "a00164" ],
-    [ "TcpReassembly.h", "a00167.html", [
-      [ "ConnectionData", "a01533.html", "a01533" ],
-      [ "TcpStreamData", "a01537.html", "a01537" ],
-      [ "TcpReassembly", "a01541.html", "a01541" ]
+    [ "SSLLayer.h", "a00164.html", [
+      [ "SSLLayer", "a01522.html", "a01522" ],
+      [ "SSLHandshakeLayer", "a01526.html", "a01526" ],
+      [ "SSLChangeCipherSpecLayer", "a01530.html", "a01530" ],
+      [ "SSLAlertLayer", "a01534.html", "a01534" ],
+      [ "SSLApplicationDataLayer", "a01538.html", "a01538" ]
     ] ],
-    [ "TextBasedProtocol.h", "a00170.html", "a00170" ],
-    [ "TLVData.h", "a00173.html", [
-      [ "TLVRecord", "a01565.html", "a01565" ],
-      [ "TLVRawData", "a01569.html", "a01569" ],
-      [ "TLVRecordReader", "a01573.html", "a01573" ],
-      [ "TLVRecordBuilder", "a01577.html", null ]
+    [ "SystemUtils.h", "a00167.html", "a00167" ],
+    [ "TablePrinter.h", "a00170.html", [
+      [ "TablePrinter", "a01558.html", "a01558" ]
     ] ],
-    [ "UdpLayer.h", "a00176.html", [
-      [ "udphdr", "a01581.html", "a01581" ],
-      [ "UdpLayer", "a01585.html", "a01585" ]
+    [ "TcpLayer.h", "a00173.html", "a00173" ],
+    [ "TcpReassembly.h", "a00176.html", [
+      [ "ConnectionData", "a01574.html", "a01574" ],
+      [ "TcpStreamData", "a01578.html", "a01578" ],
+      [ "TcpReassembly", "a01582.html", "a01582" ]
     ] ],
-    [ "VlanLayer.h", "a00179.html", [
-      [ "vlan_header", "a01589.html", "a01589" ],
-      [ "VlanLayer", "a01593.html", "a01593" ]
+    [ "TextBasedProtocol.h", "a00179.html", "a00179" ],
+    [ "TLVData.h", "a00182.html", [
+      [ "TLVRecord", "a01606.html", "a01606" ],
+      [ "TLVRawData", "a01610.html", "a01610" ],
+      [ "TLVRecordReader", "a01614.html", "a01614" ],
+      [ "TLVRecordBuilder", "a01618.html", null ]
     ] ],
-    [ "VxlanLayer.h", "a00182.html", [
-      [ "vxlan_header", "a01597.html", "a01597" ],
-      [ "VxlanLayer", "a01601.html", "a01601" ]
+    [ "UdpLayer.h", "a00185.html", [
+      [ "udphdr", "a01622.html", "a01622" ],
+      [ "UdpLayer", "a01626.html", "a01626" ]
     ] ],
-    [ "WinPcapLiveDevice.h", "a00185.html", [
-      [ "WinPcapLiveDevice", "a01605.html", "a01605" ]
+    [ "VlanLayer.h", "a00188.html", [
+      [ "vlan_header", "a01630.html", "a01630" ],
+      [ "VlanLayer", "a01634.html", "a01634" ]
+    ] ],
+    [ "VxlanLayer.h", "a00191.html", [
+      [ "vxlan_header", "a01638.html", "a01638" ],
+      [ "VxlanLayer", "a01642.html", "a01642" ]
+    ] ],
+    [ "WinPcapLiveDevice.h", "a00194.html", [
+      [ "WinPcapLiveDevice", "a01646.html", "a01646" ]
     ] ]
 ];
