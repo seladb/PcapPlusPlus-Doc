@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a02f98bcdd465eac96673752838826de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2dd7a761efe7393249ddc54bdd662b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01150.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#a1c2dd7a761efe7393249ddc54bdd662b">getLastLayer</a> ()</td></tr>
 <tr class="separator:a1c2dd7a761efe7393249ddc54bdd662b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4c12806f2b320cdddd83a2b3a1136eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer</a> (<a class="el" href="a01150.html">Layer</a> *newLayer)</td></tr>
-<tr class="separator:af4c12806f2b320cdddd83a2b3a1136eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2f9ea31fb1b7fa610db251405522f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer</a> (<a class="el" href="a01150.html">Layer</a> *prevLayer, <a class="el" href="a01150.html">Layer</a> *newLayer)</td></tr>
-<tr class="separator:a2e2f9ea31fb1b7fa610db251405522f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43e09f561e9b8bfe32bc498c2fa3ec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#ad43e09f561e9b8bfe32bc498c2fa3ec1">addLayer</a> (<a class="el" href="a01150.html">Layer</a> *newLayer, bool ownInPacket=false)</td></tr>
+<tr class="separator:ad43e09f561e9b8bfe32bc498c2fa3ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b84fbbd9a0e0074445b95d89103fa3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#a0b84fbbd9a0e0074445b95d89103fa3e">insertLayer</a> (<a class="el" href="a01150.html">Layer</a> *prevLayer, <a class="el" href="a01150.html">Layer</a> *newLayer, bool ownInPacket=false)</td></tr>
+<tr class="separator:a0b84fbbd9a0e0074445b95d89103fa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fbabf49349df90548ac7c085b1cff3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#a28fbabf49349df90548ac7c085b1cff3">removeLayer</a> (<a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> layerType, int index=0)</td></tr>
 <tr class="separator:a28fbabf49349df90548ac7c085b1cff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7755654f74cc1280409f3f42d9c9e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01182.html#a2e7755654f74cc1280409f3f42d9c9e3">removeFirstLayer</a> ()</td></tr>
@@ -317,7 +317,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A destructor for this class. Frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a01182.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer()</a> or <a class="el" href="a01182.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor) </p>
+<p>A destructor for this class. Frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a01182.html#ad43e09f561e9b8bfe32bc498c2fa3ec1">addLayer()</a> or <a class="el" href="a01182.html#a0b84fbbd9a0e0074445b95d89103fa3e">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor) </p>
 
 </div>
 </div>
@@ -346,8 +346,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af4c12806f2b320cdddd83a2b3a1136eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4c12806f2b320cdddd83a2b3a1136eb">&#9670;&nbsp;</a></span>addLayer()</h2>
+<a id="ad43e09f561e9b8bfe32bc498c2fa3ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43e09f561e9b8bfe32bc498c2fa3ec1">&#9670;&nbsp;</a></span>addLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,14 +356,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool pcpp::Packet::addLayer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a01150.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>newLayer</em></td><td>)</td>
+          <td class="paramname"><em>newLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ownInPacket</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Add a new layer as the last layer in the packet. This method gets a pointer to the new layer as a parameter and attaches it to the packet. Notice after calling this method the input layer is attached to the packet so every change you make in it affect the packet; Also it cannot be attached to other packets </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">newLayer</td><td>A pointer to the new layer to be added to the packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ownInPacket</td><td>If true, <a class="el" href="a01182.html">Packet</a> fully owns newLayer, including memory deletion upon destruct. Default is false. </td></tr>
   </table>
   </dd>
 </dl>
@@ -637,8 +648,8 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
-<a id="a2e2f9ea31fb1b7fa610db251405522f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e2f9ea31fb1b7fa610db251405522f7">&#9670;&nbsp;</a></span>insertLayer()</h2>
+<a id="a0b84fbbd9a0e0074445b95d89103fa3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b84fbbd9a0e0074445b95d89103fa3e">&#9670;&nbsp;</a></span>insertLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -653,7 +664,13 @@ template&lt;class TLayer &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="a01150.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>newLayer</em>&#160;</td>
+          <td class="paramname"><em>newLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ownInPacket</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -666,6 +683,7 @@ template&lt;class TLayer &gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to an existing layer in the packet which the new layer should followed by. If this layer isn't attached to a packet and error will be printed to log and false will be returned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">newLayer</td><td>A pointer to the new layer to be added to the packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ownInPacket</td><td>If true, <a class="el" href="a01182.html">Packet</a> fully owns newLayer, including memory deletion upon destruct. Default is false. </td></tr>
   </table>
   </dd>
 </dl>
@@ -721,7 +739,7 @@ template&lt;class TLayer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assignment operator overloading. It first frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a01182.html#af4c12806f2b320cdddd83a2b3a1136eb">addLayer()</a> or <a class="el" href="a01182.html#a2e2f9ea31fb1b7fa610db251405522f7">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor). Afterwards it copies the data from the other packet in the same way used in the copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assignment operator overloading. It first frees all layers allocated by this instance (Notice: it doesn't free layers that weren't allocated by this class, for example layers that were added by <a class="el" href="a01182.html#ad43e09f561e9b8bfe32bc498c2fa3ec1">addLayer()</a> or <a class="el" href="a01182.html#a0b84fbbd9a0e0074445b95d89103fa3e">insertLayer()</a> ). In addition it frees the raw packet if it was allocated by this instance (meaning if it was allocated by this instance constructor). Afterwards it copies the data from the other packet in the same way used in the copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
   </table>
@@ -942,7 +960,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01182.html">Packet</a></li>
-    <li class="footer">Generated on Sat Dec 8 2018 23:22:23 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jan 22 2019 00:15:18 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
