@@ -153,6 +153,7 @@ section: download
 	</ol>
   </li>
   <li>Also make sure you have Xcode Command Line Tools. You can install it by running the following command in Terminal: <pre><code class="cpp">xcode-select --install</code></pre></li>
+  <li>In MacOS Mojave 10.14 you need to run an extra step because <pre><code>/usr/include</code></pre> <a href="https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes">is not installed by default</a>: <pre><code class="cpp">sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /</code></pre></li>
 </ol>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
