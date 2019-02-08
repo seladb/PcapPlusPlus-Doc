@@ -58,7 +58,9 @@ var searchData=
   ['ipv6fragmentationheader',['IPv6FragmentationHeader',['../a01094.html',1,'pcpp']]],
   ['ipv6hopbyhopheader',['IPv6HopByHopHeader',['../a01114.html',1,'pcpp']]],
   ['ipv6layer',['IPv6Layer',['../a01142.html',1,'pcpp']]],
+  ['ipv6option',['IPv6Option',['../a01106.html',1,'pcpp::IPv6TLVOptionHeader']]],
   ['ipv6packetkey',['IPv6PacketKey',['../a01054.html',1,'pcpp::IPReassembly']]],
   ['ipv6routingheader',['IPv6RoutingHeader',['../a01122.html',1,'pcpp']]],
+  ['ipv6tlvoptionbuilder',['IPv6TLVOptionBuilder',['../a01110.html',1,'pcpp::IPv6TLVOptionHeader']]],
   ['ipv6tlvoptionheader',['IPv6TLVOptionHeader',['../a01102.html',1,'pcpp']]]
 ];

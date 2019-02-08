@@ -13,6 +13,7 @@ var searchData=
   ['_7eipreassembly',['~IPReassembly',['../a01042.html#ad3a3885752f5254e99d8a3b0d59f1507',1,'pcpp::IPReassembly']]],
   ['_7eipv6extension',['~IPv6Extension',['../a01086.html#a8925687d2b0eeae8fbdcf8999e7c60c2',1,'pcpp::IPv6Extension']]],
   ['_7eipv6layer',['~IPv6Layer',['../a01142.html#acd2642767dd2a9d59ff78ed849a48c62',1,'pcpp::IPv6Layer']]],
+  ['_7eipv6option',['~IPv6Option',['../a01106.html#a5f5ab9d09590c9d536a5eaedb5a40491',1,'pcpp::IPv6TLVOptionHeader::IPv6Option']]],
   ['_7elayer',['~Layer',['../a01150.html#a9d02400f5421309786e1ea6c031c8d19',1,'pcpp::Layer']]],
   ['_7embufrawpacket',['~MBufRawPacket',['../a00834.html#a696d9e42af3f7b8ea296e4137a019a13',1,'pcpp::MBufRawPacket']]],
   ['_7enullloopbacklayer',['~NullLoopbackLayer',['../a01178.html#af2da77d44b862d1f7e1b809ea6db35b4',1,'pcpp::NullLoopbackLayer']]],
@@ -32,7 +33,6 @@ var searchData=
   ['_7etableprinter',['~TablePrinter',['../a01558.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
   ['_7etcpreassembly',['~TcpReassembly',['../a01582.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
   ['_7etcpstreamdata',['~TcpStreamData',['../a01578.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
-  ['_7etlvoptionbuilder',['~TLVOptionBuilder',['../a01110.html#a830df211046011da78f7d50b1b791176',1,'pcpp::IPv6TLVOptionHeader::TLVOptionBuilder']]],
   ['_7etlvrecord',['~TLVRecord',['../a01606.html#aceee59b58ee528adcc4fa4f4902d35ec',1,'pcpp::TLVRecord']]],
   ['_7etlvrecordreader',['~TLVRecordReader',['../a01614.html#ae9e5156649400b8043ee0a1fa2e4bd0a',1,'pcpp::TLVRecordReader']]]
 ];

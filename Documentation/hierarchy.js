@@ -246,19 +246,20 @@ var hierarchy =
     [ "pcpp::TcpOptionData", "a01566.html", null ],
     [ "pcpp::TcpReassembly", "a01582.html", null ],
     [ "pcpp::TcpStreamData", "a01578.html", null ],
-    [ "pcpp::IPv6TLVOptionHeader::TLVOption", "a01106.html", null ],
-    [ "pcpp::IPv6TLVOptionHeader::TLVOptionBuilder", "a01110.html", null ],
     [ "pcpp::TLVRecord::TLVRawData", "a01610.html", null ],
     [ "pcpp::TLVRecord", "a01606.html", [
       [ "pcpp::DhcpOption", "a00770.html", null ],
+      [ "pcpp::IPv6TLVOptionHeader::IPv6Option", "a01106.html", null ],
       [ "pcpp::RadiusAttribute", "a01370.html", null ]
     ] ],
     [ "pcpp::TLVRecordBuilder", "a01618.html", [
       [ "pcpp::DhcpOptionBuilder", "a00774.html", null ],
+      [ "pcpp::IPv6TLVOptionHeader::IPv6TLVOptionBuilder", "a01110.html", null ],
       [ "pcpp::RadiusAttributeBuilder", "a01374.html", null ]
     ] ],
     [ "pcpp::TLVRecordReader< TLVRecordType >", "a01614.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::DhcpOption >", "a01614.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::IPv6TLVOptionHeader::IPv6Option >", "a01614.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::RadiusAttribute >", "a01614.html", null ],
     [ "pcpp::udphdr", "a01622.html", null ],
     [ "pcpp::vlan_header", "a01630.html", null ],

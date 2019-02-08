@@ -1,10 +1,8 @@
 var a01110 =
 [
-    [ "TLVOptionBuilder", "a01110.html#a6b9183956c1a7e424d25b9d640df13c0", null ],
-    [ "TLVOptionBuilder", "a01110.html#aff053627ec38aa9baa420bfd0ebefcc0", null ],
-    [ "TLVOptionBuilder", "a01110.html#a9a90c877a53f192649f4905fe4c82921", null ],
-    [ "TLVOptionBuilder", "a01110.html#a604a8f8ece188cfb59f3c124ebd71f33", null ],
-    [ "~TLVOptionBuilder", "a01110.html#a830df211046011da78f7d50b1b791176", null ],
-    [ "build", "a01110.html#a543f5f54a9c708660421d01b9c1838db", null ],
-    [ "getRawBuffer", "a01110.html#ae1a74d8c570957ec96546e4b14789e2e", null ]
+    [ "IPv6TLVOptionBuilder", "a01110.html#add982c7ed2d71c8c4537d6c3791bb5e3", null ],
+    [ "IPv6TLVOptionBuilder", "a01110.html#a6ef5bd9f8d698858c7bf64a2e984470d", null ],
+    [ "IPv6TLVOptionBuilder", "a01110.html#a750d194b1b7591dce691e3d4dea9cdf6", null ],
+    [ "IPv6TLVOptionBuilder", "a01110.html#adcfa4ddbead56443cf986ca4b4587b21", null ],
+    [ "build", "a01110.html#ae95e07714190f34a8063a17bc7477a82", null ]
 ];

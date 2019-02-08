@@ -1,9 +1,7 @@
 var a01106 =
 [
-    [ "getDataSize", "a01106.html#a812412419d122817ba2fff05a3d17829", null ],
-    [ "getTotalSize", "a01106.html#a146b589f95ce153ed5d8fcb65a4aca27", null ],
-    [ "getValueAs", "a01106.html#a5c40e7e42afa4e552c64f3ad5cb198c6", null ],
-    [ "optionData", "a01106.html#a79843b4fc559414130e0ba57ebcec9c7", null ],
-    [ "optionLen", "a01106.html#af18c5f82d643d3d5403b7a4ed2d49c55", null ],
-    [ "optionType", "a01106.html#a7b9ce8c300e013ae3d36ebf390d58527", null ]
+    [ "IPv6Option", "a01106.html#a023e2e03094cd2431e70b94d6f144906", null ],
+    [ "~IPv6Option", "a01106.html#a5f5ab9d09590c9d536a5eaedb5a40491", null ],
+    [ "getDataSize", "a01106.html#a5f71c3e3cb719d76fca28250562911e9", null ],
+    [ "getTotalSize", "a01106.html#a2145e93d58855c929496a2a315a57e5a", null ]
 ];

@@ -9,12 +9,11 @@ var searchData=
   ['tcpstreamdata',['TcpStreamData',['../a01578.html',1,'pcpp']]],
   ['tcpwindowsizefilter',['TcpWindowSizeFilter',['../a01294.html',1,'pcpp']]],
   ['textbasedprotocolmessage',['TextBasedProtocolMessage',['../a01602.html',1,'pcpp']]],
-  ['tlvoption',['TLVOption',['../a01106.html',1,'pcpp::IPv6TLVOptionHeader']]],
-  ['tlvoptionbuilder',['TLVOptionBuilder',['../a01110.html',1,'pcpp::IPv6TLVOptionHeader']]],
   ['tlvrawdata',['TLVRawData',['../a01610.html',1,'pcpp::TLVRecord']]],
   ['tlvrecord',['TLVRecord',['../a01606.html',1,'pcpp']]],
   ['tlvrecordbuilder',['TLVRecordBuilder',['../a01618.html',1,'pcpp']]],
   ['tlvrecordreader',['TLVRecordReader',['../a01614.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3adhcpoption_20_3e',['TLVRecordReader&lt; pcpp::DhcpOption &gt;',['../a01614.html',1,'pcpp']]],
+  ['tlvrecordreader_3c_20pcpp_3a_3aipv6tlvoptionheader_3a_3aipv6option_20_3e',['TLVRecordReader&lt; pcpp::IPv6TLVOptionHeader::IPv6Option &gt;',['../a01614.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aradiusattribute_20_3e',['TLVRecordReader&lt; pcpp::RadiusAttribute &gt;',['../a01614.html',1,'pcpp']]]
 ];
