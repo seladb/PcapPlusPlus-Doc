@@ -1,23 +1,10 @@
 var a01570 =
 [
-    [ "TcpLayer", "a01570.html#a586788dd716915a61f263996ebaae626", null ],
-    [ "TcpLayer", "a01570.html#a3dfca9bce5c6ec475894d476e8372156", null ],
-    [ "TcpLayer", "a01570.html#a9a9a7a8f1be4cfa9a181330d48b676ef", null ],
-    [ "TcpLayer", "a01570.html#a5501475794c2db27489dcd27d01423bd", null ],
-    [ "addTcpOption", "a01570.html#a1a05337e558a7f7b8420911d2f0f8e44", null ],
-    [ "addTcpOptionAfter", "a01570.html#aa38d093ade5504875801fc74762e6cf6", null ],
-    [ "calculateChecksum", "a01570.html#abf39676d5adf4e2b3b2d90a616428780", null ],
-    [ "computeCalculateFields", "a01570.html#a500d6585f588aaed9c73c2872c581e02", null ],
-    [ "getFirstTcpOptionData", "a01570.html#a61378c46f72ddcc4480e15e3dee46c7d", null ],
-    [ "getHeaderLen", "a01570.html#a5d81b7bed2f5c4389b5b80c9282493e6", null ],
-    [ "getNextTcpOptionData", "a01570.html#ad08a096aafc4a57608336f5c7c156cf4", null ],
-    [ "getOsiModelLayer", "a01570.html#ae924f98f5fb2cb2ea0f72c34f6eba322", null ],
-    [ "getTcpHeader", "a01570.html#a351dbc0708b8930036940ff93abb362f", null ],
-    [ "getTcpOptionData", "a01570.html#a1b427e3e350460835e76d315c0f0b4bb", null ],
-    [ "getTcpOptionsCount", "a01570.html#a5f4221c3c8c65f55e21c2db0e87b566a", null ],
-    [ "operator=", "a01570.html#a7dea7265510eda5cd67b984c2634ef19", null ],
-    [ "parseNextLayer", "a01570.html#ab26777b6ea7d6bfaed5032b20630fc72", null ],
-    [ "removeAllTcpOptions", "a01570.html#a54812a58a88be8978b3e609f32504a87", null ],
-    [ "removeTcpOption", "a01570.html#addfb058ef0cd1b7fa3963b8889e7d5b6", null ],
-    [ "toString", "a01570.html#a73e8482bed0fbb00e7a7ba87699df92f", null ]
+    [ "getTotalSize", "a01570.html#abf71e53de2c80600960145c49801671d", null ],
+    [ "getType", "a01570.html#a3d561ce1356aa17068d970b57723a6d7", null ],
+    [ "getValueAs", "a01570.html#a49cb10f4e52cf92178725fae9d5ec469", null ],
+    [ "setValue", "a01570.html#aaa3ce2fbd266fde95d8e7c57fd091d4f", null ],
+    [ "len", "a01570.html#a722a42e1ceef77b984bfe06c33d77ab3", null ],
+    [ "option", "a01570.html#a33d7eb2c21b7cbb8a629ea91a7df4c26", null ],
+    [ "value", "a01570.html#ae4d31ebb49c6bae190edd6d51a8c1757", null ]
 ];

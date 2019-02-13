@@ -1,7 +1,7 @@
 var a01270 =
 [
-    [ "OrFilter", "a01270.html#ab190d9fab6cf4dbddaa3d3091eef88dd", null ],
-    [ "OrFilter", "a01270.html#a372efb90b1751a96f9f3c93fd1b06216", null ],
-    [ "addFilter", "a01270.html#abcd751c0048d632f82d8f3a1464ed257", null ],
-    [ "parseToString", "a01270.html#a6552bb49fddc97e6e2f8ef0833c45b36", null ]
+    [ "AndFilter", "a01270.html#a136268df7041a70e46dcfed6c9c0711f", null ],
+    [ "AndFilter", "a01270.html#ad863800306526e1c5b0bb0e90dfb2cf8", null ],
+    [ "addFilter", "a01270.html#a31a8d91c6139693fa05a06fd6c6ab5fe", null ],
+    [ "parseToString", "a01270.html#a59d7dd260b5f1bb4c9147263cb0b0308", null ]
 ];

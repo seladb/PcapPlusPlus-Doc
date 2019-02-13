@@ -1,8 +1,7 @@
 var a01110 =
 [
-    [ "IPv6TLVOptionBuilder", "a01110.html#add982c7ed2d71c8c4537d6c3791bb5e3", null ],
-    [ "IPv6TLVOptionBuilder", "a01110.html#a6ef5bd9f8d698858c7bf64a2e984470d", null ],
-    [ "IPv6TLVOptionBuilder", "a01110.html#a750d194b1b7591dce691e3d4dea9cdf6", null ],
-    [ "IPv6TLVOptionBuilder", "a01110.html#adcfa4ddbead56443cf986ca4b4587b21", null ],
-    [ "build", "a01110.html#ae95e07714190f34a8063a17bc7477a82", null ]
+    [ "IPv6Option", "a01110.html#a023e2e03094cd2431e70b94d6f144906", null ],
+    [ "~IPv6Option", "a01110.html#a5f5ab9d09590c9d536a5eaedb5a40491", null ],
+    [ "getDataSize", "a01110.html#a5f71c3e3cb719d76fca28250562911e9", null ],
+    [ "getTotalSize", "a01110.html#a2145e93d58855c929496a2a315a57e5a", null ]
 ];

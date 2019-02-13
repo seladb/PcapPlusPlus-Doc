@@ -1,6 +1,6 @@
 var a01278 =
 [
-    [ "ProtoFilter", "a01278.html#a7da0456df8d7486bfe18d31b7929baae", null ],
-    [ "parseToString", "a01278.html#a2eba86ed1facd283f54363176618d6ff", null ],
-    [ "setProto", "a01278.html#a063d8ebd0aeb25de8a33b2e4b6e6e5a1", null ]
+    [ "NotFilter", "a01278.html#af61317b37c81544b370424bf490371ca", null ],
+    [ "parseToString", "a01278.html#a27559a09376420b6b8466a1819b42509", null ],
+    [ "setFilter", "a01278.html#abb53fe1af021e8638c66b0b57d36f6dc", null ]
 ];

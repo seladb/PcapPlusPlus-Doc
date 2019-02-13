@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::TcpReassembly Class Reference</title>
+<title>PcapPlusPlus: pcpp::TcpStreamData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,169 +80,78 @@ $(document).ready(function(){initNavTree('a01582.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a01579.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TcpReassembly Class Reference</div>  </div>
+<div class="title">pcpp::TcpStreamData Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00176_source.html">TcpReassembly.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> { <a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a>, 
-<a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a>
- }</td></tr>
-<tr class="separator:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6698eb002363dc18e664f15418fc1eb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>) (int side, <a class="el" href="a01578.html">TcpStreamData</a> tcpData, void *userCookie)</td></tr>
-<tr class="separator:ab6698eb002363dc18e664f15418fc1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda8219de68412e0ce7f7116601243a8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>) (<a class="el" href="a01574.html">ConnectionData</a> connectionData, void *userCookie)</td></tr>
-<tr class="separator:abda8219de68412e0ce7f7116601243a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbcb38ac950666833df4084f80beb056"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>) (<a class="el" href="a01574.html">ConnectionData</a> connectionData, <a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason, void *userCookie)</td></tr>
-<tr class="separator:abbcb38ac950666833df4084f80beb056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49281471fb379fdae6c8df5ed7844c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a> (<a class="el" href="a01582.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="a01582.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL)</td></tr>
-<tr class="separator:a49281471fb379fdae6c8df5ed7844c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1797ebded60f0637ae95223653b9f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a> ()</td></tr>
-<tr class="separator:aa1797ebded60f0637ae95223653b9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe7a908f4367cc9234096998dc6d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#acbe7a908f4367cc9234096998dc6d56e">reassemblePacket</a> (<a class="el" href="a01182.html">Packet</a> &amp;tcpData)</td></tr>
-<tr class="separator:acbe7a908f4367cc9234096998dc6d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f56a069fdd66f154990c35c9d462d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a5f56a069fdd66f154990c35c9d462d7b">reassemblePacket</a> (<a class="el" href="a01382.html">RawPacket</a> *tcpRawData)</td></tr>
-<tr class="separator:a5f56a069fdd66f154990c35c9d462d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae173fc16a427b5e46b1a5417de19d735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a> (uint32_t flowKey)</td></tr>
-<tr class="separator:ae173fc16a427b5e46b1a5417de19d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf940b05f75a129f595301012be46005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#acf940b05f75a129f595301012be46005">closeAllConnections</a> ()</td></tr>
-<tr class="separator:acf940b05f75a129f595301012be46005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b92c2d8b3116190504e8d60ca0b7e7e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a01574.html">ConnectionData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a6b92c2d8b3116190504e8d60ca0b7e7e">getConnectionInformation</a> () const</td></tr>
-<tr class="separator:a6b92c2d8b3116190504e8d60ca0b7e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb80b9ac9c6c454e5fb747a847d4d0a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#afb80b9ac9c6c454e5fb747a847d4d0a2">isConnectionOpen</a> (const <a class="el" href="a01574.html">ConnectionData</a> &amp;connection)</td></tr>
-<tr class="separator:afb80b9ac9c6c454e5fb747a847d4d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6875699103b7d1967cb799f7501913"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#acb6875699103b7d1967cb799f7501913">TcpStreamData</a> ()</td></tr>
+<tr class="separator:acb6875699103b7d1967cb799f7501913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551d14dcbc145af6c2ac75fc8cd395eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a551d14dcbc145af6c2ac75fc8cd395eb">TcpStreamData</a> (uint8_t *tcpData, size_t tcpDataLength, <a class="el" href="a01578.html">ConnectionData</a> connData)</td></tr>
+<tr class="separator:a551d14dcbc145af6c2ac75fc8cd395eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb6d4bc4dd7bf367598aa24e5d5f425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#aacb6d4bc4dd7bf367598aa24e5d5f425">~TcpStreamData</a> ()</td></tr>
+<tr class="separator:aacb6d4bc4dd7bf367598aa24e5d5f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88cac5a4f7a299b2f987a565f97a678f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a88cac5a4f7a299b2f987a565f97a678f">TcpStreamData</a> (<a class="el" href="a01582.html">TcpStreamData</a> &amp;other)</td></tr>
+<tr class="separator:a88cac5a4f7a299b2f987a565f97a678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bae012dd3ef982d9f010d9afcf6690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01582.html">TcpStreamData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#a23bae012dd3ef982d9f010d9afcf6690">operator=</a> (const <a class="el" href="a01582.html">TcpStreamData</a> &amp;other)</td></tr>
+<tr class="separator:a23bae012dd3ef982d9f010d9afcf6690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f70f5bd9689c11412b2c82e1e4c4d2"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#ae1f70f5bd9689c11412b2c82e1e4c4d2">getData</a> ()</td></tr>
+<tr class="separator:ae1f70f5bd9689c11412b2c82e1e4c4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeceeb369d8e8cb114f2c8682b966d1e6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#aeceeb369d8e8cb114f2c8682b966d1e6">getDataLength</a> ()</td></tr>
+<tr class="separator:aeceeb369d8e8cb114f2c8682b966d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7120f2faf97cfc9a560f7062daab95a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01578.html">ConnectionData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html#ae7120f2faf97cfc9a560f7062daab95a">getConnectionData</a> ()</td></tr>
+<tr class="separator:ae7120f2faf97cfc9a560f7062daab95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class containing the TCP reassembly logic. Please refer to the documentation at the top of <a class="el" href="a00176.html">TcpReassembly.h</a> for understanding how to use this class </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="abbcb38ac950666833df4084f80beb056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbcb38ac950666833df4084f80beb056">&#9670;&nbsp;</a></span>OnTcpConnectionEnd</h2>
+<div class="textblock"><p>When following a TCP connection each packet may contain a piece of the data transferred between the client and the server. This class represents these pieces: each instance of it contains a piece of data, usually extracted from a single packet, as well as information about the connection </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acb6875699103b7d1967cb799f7501913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6875699103b7d1967cb799f7501913">&#9670;&nbsp;</a></span>TcpStreamData() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::TcpReassembly::OnTcpConnectionEnd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A callback invoked when a TCP connection is terminated, either by a FIN or RST packet or manually by the user </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connectionData</td><td>Connection information </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>The reason for connection termination: FIN/RST packet or manually by the user </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="a01582.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abda8219de68412e0ce7f7116601243a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda8219de68412e0ce7f7116601243a8">&#9670;&nbsp;</a></span>OnTcpConnectionStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpReassembly::OnTcpConnectionStart</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A callback invoked when a new TCP connection is identified (whether it begins with a SYN packet or not) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connectionData</td><td>Connection information </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="a01582.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab6698eb002363dc18e664f15418fc1eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6698eb002363dc18e664f15418fc1eb">&#9670;&nbsp;</a></span>OnTcpMessageReady</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpReassembly::OnTcpMessageReady</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A callback invoked when new data arrives on a connection </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">side</td><td>The side this data belongs to (MachineA-&gt;MachineB or vice versa). The value is 0 or 1 where 0 is the first side seen in the connection and 1 is the second side seen </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>The TCP data itself + connection information </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="a01582.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5fdf7b5322d1bb8f6fe43b59a9edc0">&#9670;&nbsp;</a></span>ConnectionEndReason</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">pcpp::TcpReassembly::ConnectionEndReason</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for connection end reasons </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"></a>TcpReassemblyConnectionClosedByFIN_RST&#160;</td><td class="fielddoc"><p>Connection ended because of FIN or RST packet </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"></a>TcpReassemblyConnectionClosedManually&#160;</td><td class="fielddoc"><p>Connection ended manually by the user </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a49281471fb379fdae6c8df5ed7844c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49281471fb379fdae6c8df5ed7844c92">&#9670;&nbsp;</a></span>TcpReassembly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpReassembly::TcpReassembly </td>
+          <td class="memname">pcpp::TcpStreamData::TcpStreamData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a01582.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>&#160;</td>
-          <td class="paramname"><em>onMessageReadyCallback</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A c'tor for this class that basically zeros all members </p>
+
+</div>
+</div>
+<a id="a551d14dcbc145af6c2ac75fc8cd395eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551d14dcbc145af6c2ac75fc8cd395eb">&#9670;&nbsp;</a></span>TcpStreamData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::TcpStreamData::TcpStreamData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tcpData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userCookie</em> = <code>NULL</code>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tcpDataLength</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01582.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>&#160;</td>
-          <td class="paramname"><em>onConnectionStartCallback</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>&#160;</td>
-          <td class="paramname"><em>onConnectionEndCallback</em> = <code>NULL</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="a01578.html">ConnectionData</a>&#160;</td>
+          <td class="paramname"><em>connData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -251,167 +160,160 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A c'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A c'tor for this class that get data from outside and set the internal members. Notice that when this class is destroyed it also frees the TCP data it stores </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onMessageReadyCallback</td><td>The callback to be invoked when new data arrives </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the various callbacks. This parameter is optional, default cookie is NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionStartCallback</td><td>The callback to be invoked when a new connection is identified. This parameter is optional </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionEndCallback</td><td>The callback to be invoked when a new connection is terminated (either by a FIN/RST packet or manually by the user). This parameter is optional </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>A buffer containing the TCP data piece </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tcpDataLength</td><td>The length of the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">connData</td><td>TCP connection information for this TCP data </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aa1797ebded60f0637ae95223653b9f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1797ebded60f0637ae95223653b9f78">&#9670;&nbsp;</a></span>~TcpReassembly()</h2>
+<a id="aacb6d4bc4dd7bf367598aa24e5d5f425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb6d4bc4dd7bf367598aa24e5d5f425">&#9670;&nbsp;</a></span>~TcpStreamData()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::TcpReassembly::~TcpReassembly </td>
+          <td class="memname">pcpp::TcpStreamData::~TcpStreamData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A d'tor for this class. Frees all internal structures. Notice that if the d'tor is called while connections are still open, all data is lost and <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">TcpReassembly::OnTcpConnectionEnd</a> won't be called for those connections </p>
+<p>A d'tor for this class </p>
+
+</div>
+</div>
+<a id="a88cac5a4f7a299b2f987a565f97a678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cac5a4f7a299b2f987a565f97a678f">&#9670;&nbsp;</a></span>TcpStreamData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::TcpStreamData::TcpStreamData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01582.html">TcpStreamData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A copy c'tor for this class. Notice the data buffer is copied from the source instance to this instance, so even if the source instance is destroyed the data in this instance stays valid. When this instance is destroyed it also frees the data buffer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acf940b05f75a129f595301012be46005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf940b05f75a129f595301012be46005">&#9670;&nbsp;</a></span>closeAllConnections()</h2>
+<a id="ae7120f2faf97cfc9a560f7062daab95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7120f2faf97cfc9a560f7062daab95a">&#9670;&nbsp;</a></span>getConnectionData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TcpReassembly::closeAllConnections </td>
+          <td class="memname"><a class="el" href="a01578.html">ConnectionData</a> pcpp::TcpStreamData::getConnectionData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Close all open connections manually. This method will cause the <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">TcpReassembly::OnTcpConnectionEnd</a> to be invoked for each connection with a reason of <a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p>
+<p>A getter for the connection data </p><dl class="section return"><dt>Returns</dt><dd>The connection data </dd></dl>
 
 </div>
 </div>
-<a id="ae173fc16a427b5e46b1a5417de19d735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae173fc16a427b5e46b1a5417de19d735">&#9670;&nbsp;</a></span>closeConnection()</h2>
+<a id="ae1f70f5bd9689c11412b2c82e1e4c4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f70f5bd9689c11412b2c82e1e4c4d2">&#9670;&nbsp;</a></span>getData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TcpReassembly::closeConnection </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flowKey</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close a connection manually. If the connection doesn't exist or already closed an error log is printed. This method will cause the <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">TcpReassembly::OnTcpConnectionEnd</a> to be invoked with a reason of <a class="el" href="a01582.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flowKey</td><td>A 4-byte hash key representing the connection. Can be taken from a <a class="el" href="a01574.html">ConnectionData</a> instance </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6b92c2d8b3116190504e8d60ca0b7e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b92c2d8b3116190504e8d60ca0b7e7e">&#9670;&nbsp;</a></span>getConnectionInformation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="a01574.html">ConnectionData</a>&gt;&amp; pcpp::TcpReassembly::getConnectionInformation </td>
+          <td class="memname">uint8_t* pcpp::TcpStreamData::getData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Get a list of all connections managed by this <a class="el" href="a01582.html">TcpReassembly</a> instance (both connections that are open and those that are already closed) </p><dl class="section return"><dt>Returns</dt><dd>A list of all connections managed. Notice this list is constant and cannot be changed by the user </dd></dl>
+<p>A getter for the data buffer </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the buffer </dd></dl>
 
 </div>
 </div>
-<a id="afb80b9ac9c6c454e5fb747a847d4d0a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb80b9ac9c6c454e5fb747a847d4d0a2">&#9670;&nbsp;</a></span>isConnectionOpen()</h2>
+<a id="aeceeb369d8e8cb114f2c8682b966d1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeceeb369d8e8cb114f2c8682b966d1e6">&#9670;&nbsp;</a></span>getDataLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::TcpStreamData::getDataLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A getter for buffer length </p><dl class="section return"><dt>Returns</dt><dd>Buffer length </dd></dl>
+
+</div>
+</div>
+<a id="a23bae012dd3ef982d9f010d9afcf6690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bae012dd3ef982d9f010d9afcf6690">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int pcpp::TcpReassembly::isConnectionOpen </td>
+          <td class="memname"><a class="el" href="a01582.html">TcpStreamData</a>&amp; pcpp::TcpStreamData::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01574.html">ConnectionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>connection</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a01582.html">TcpStreamData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if a certain connection managed by this <a class="el" href="a01582.html">TcpReassembly</a> instance is currently opened or closed </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Overload of the assignment operator. Notice the data buffer is copied from the source instance to this instance, so even if the source instance is destroyed the data in this instance stays valid. When this instance is destroyed it also frees the data buffer </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>The connection to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A positive number (&gt; 0) if connection is opened, zero (0) if connection is closed, and a negative number (&lt; 0) if this connection isn't managed by this <a class="el" href="a01582.html">TcpReassembly</a> instance </dd></dl>
-
-</div>
-</div>
-<a id="acbe7a908f4367cc9234096998dc6d56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe7a908f4367cc9234096998dc6d56e">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::TcpReassembly::reassemblePacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a01182.html">Packet</a> &amp;&#160;</td>
-          <td class="paramname"><em>tcpData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The most important method of this class which gets a packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be called (<a class="el" href="a01582.html#ab6698eb002363dc18e664f15418fc1eb">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="a01582.html#abda8219de68412e0ce7f7116601243a8">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>A reference to the packet to process </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5f56a069fdd66f154990c35c9d462d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f56a069fdd66f154990c35c9d462d7b">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::TcpReassembly::reassemblePacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a01382.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>tcpRawData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The most important method of this class which gets a raw packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be invoked (<a class="el" href="a01582.html#ab6698eb002363dc18e664f15418fc1eb">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="a01582.html#abda8219de68412e0ce7f7116601243a8">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="a01582.html#abbcb38ac950666833df4084f80beb056">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcpRawData</td><td>A reference to the raw packet to process </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to this instance </dd></dl>
 
 </div>
 </div>
@@ -420,8 +322,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01582.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Thu Feb 7 2019 23:45:13 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01582.html">TcpStreamData</a></li>
+    <li class="footer">Generated on Wed Feb 13 2019 00:56:01 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

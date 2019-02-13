@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nextheader',['nextHeader',['../a01098.html#ad8163575c2faa31dc56ef5e004168f77',1,'pcpp::IPv6FragmentationHeader::ipv6_frag_header::nextHeader()'],['../a01126.html#a4d9369b6437e7665bd8fc54a23232ef4',1,'pcpp::IPv6RoutingHeader::ipv6_routing_header::nextHeader()'],['../a01134.html#a88815614e37fce3f5e036fd937be3da8',1,'pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::nextHeader()'],['../a01138.html#aee8e571549e08804cbf245c37eed7cfa',1,'pcpp::ip6_hdr::nextHeader()']]],
+  ['nextheader',['nextHeader',['../a01102.html#ad8163575c2faa31dc56ef5e004168f77',1,'pcpp::IPv6FragmentationHeader::ipv6_frag_header::nextHeader()'],['../a01130.html#a4d9369b6437e7665bd8fc54a23232ef4',1,'pcpp::IPv6RoutingHeader::ipv6_routing_header::nextHeader()'],['../a01138.html#a88815614e37fce3f5e036fd937be3da8',1,'pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::nextHeader()'],['../a01142.html#aee8e571549e08804cbf245c37eed7cfa',1,'pcpp::ip6_hdr::nextHeader()']]],
   ['nexthopmtu',['nextHopMTU',['../a00954.html#a55e8c3c3cffaff9d7207b3902ec9634a',1,'pcpp::icmp_destination_unreachable']]],
   ['numberofadditional',['numberOfAdditional',['../a00782.html#a9e3f93ab8cf39ecc8b261b99df182fb7',1,'pcpp::dnshdr']]],
   ['numberofanswers',['numberOfAnswers',['../a00782.html#ac1c882f5f9bd83d50a671b09a08683bf',1,'pcpp::dnshdr']]],

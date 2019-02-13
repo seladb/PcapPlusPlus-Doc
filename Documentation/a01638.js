@@ -1,15 +1,17 @@
 var a01638 =
 [
-    [ "dontLearnFlag", "a01638.html#a8bf01681565ea80e389e36c7911c9c37", null ],
-    [ "gbpFlag", "a01638.html#a1e6a85624e90c0e9fb7fde311ec1c04d", null ],
-    [ "groupPolicyID", "a01638.html#aa4598ca59f075a7464cef0db92df6f8d", null ],
-    [ "pad", "a01638.html#ab0625babfb4261f6a2cb6c44f7160325", null ],
-    [ "policyAppliedFlag", "a01638.html#a11efc5349d82e0342a51d0ceaa9d7c5a", null ],
-    [ "reserved11_12", "a01638.html#a3335ab561fbf911e3c070c231d37669f", null ],
-    [ "reserved14_16", "a01638.html#a68f15dbbae7b94b17492dec0ab348be0", null ],
-    [ "reserved2_4", "a01638.html#aeaec3eb74ec694974471243a35a76313", null ],
-    [ "reserved6_8", "a01638.html#ada8c68230dd90d8400398c333216a9f3", null ],
-    [ "reserved9", "a01638.html#a738ed06e14b53ae9938503ecdd218bb8", null ],
-    [ "vni", "a01638.html#a6876e2fecc5a2c7a307d16bb15ceacca", null ],
-    [ "vniPresentFlag", "a01638.html#a6e36029b61e40a0ee0f83b5346c5d108", null ]
+    [ "VlanLayer", "a01638.html#a5f6f8f15642dd1f0a88550bde0fb51b0", null ],
+    [ "VlanLayer", "a01638.html#a35cf7eaece6f8eec9d722dfbc24cf8f0", null ],
+    [ "computeCalculateFields", "a01638.html#a931be22ad37fcedab548a9752d7c834a", null ],
+    [ "getCFI", "a01638.html#abe0453b916a6733faf3d658e83340db2", null ],
+    [ "getHeaderLen", "a01638.html#a9f89975517e388390c7b97d84f1bca50", null ],
+    [ "getOsiModelLayer", "a01638.html#aef6347664baf2caecbd033588f8fc898", null ],
+    [ "getPriority", "a01638.html#a021259caeb2905bcf0ffa0fd4debaa26", null ],
+    [ "getVlanHeader", "a01638.html#a248cdb71f54fe1d29e52c7c5f86d908c", null ],
+    [ "getVlanID", "a01638.html#a0aa76692b5502afa254931d4249937ba", null ],
+    [ "parseNextLayer", "a01638.html#a083d3c9058269a46b6874adda2930e69", null ],
+    [ "setCFI", "a01638.html#ac9702d193a250da803639863ecf12373", null ],
+    [ "setPriority", "a01638.html#a92084616cf00c45903ecaaeed0c20cd5", null ],
+    [ "setVlanID", "a01638.html#aeb6dcaefa11775c2b64e0be74094116d", null ],
+    [ "toString", "a01638.html#af9b69bf34d39563db7f140665ed322bd", null ]
 ];

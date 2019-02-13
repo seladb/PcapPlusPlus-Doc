@@ -1,6 +1,6 @@
 var a01282 =
 [
-    [ "ArpFilter", "a01282.html#a26aef5e3b1f92d4cd3764d6f8d2660dd", null ],
-    [ "parseToString", "a01282.html#a2af1942f2bad988ff88589ed17cc5353", null ],
-    [ "setOpCode", "a01282.html#a528548676f844bec27b045ecb93c293d", null ]
+    [ "ProtoFilter", "a01282.html#a7da0456df8d7486bfe18d31b7929baae", null ],
+    [ "parseToString", "a01282.html#a2eba86ed1facd283f54363176618d6ff", null ],
+    [ "setProto", "a01282.html#a063d8ebd0aeb25de8a33b2e4b6e6e5a1", null ]
 ];

@@ -1,17 +1,18 @@
 var a01478 =
 [
-    [ "SSLServerHelloMessage", "a01478.html#a1556f47b07981b9d6c24d0f7cd7bafb0", null ],
-    [ "getCipherSuite", "a01478.html#a2077712bafe2bdf1b5b8e808d2002692", null ],
-    [ "getCompressionMethodsValue", "a01478.html#a35a1d36501d95099afa785b816ee3ccc", null ],
-    [ "getExtension", "a01478.html#aa0a52a20c677f96efb2d6f8f2c1d0817", null ],
-    [ "getExtensionCount", "a01478.html#aa41fcaf6f5d831b9f0fdf0995972f2b0", null ],
-    [ "getExtensionOfType", "a01478.html#ac6773d4fa9bdabfdc40add0ab78a9335", null ],
-    [ "getExtensionOfType", "a01478.html#a2640d7975ecc0ac9722981e691c7b799", null ],
-    [ "getExtensionOfType", "a01478.html#a1769691cfbf5f89cee901779b2f5dbe7", null ],
-    [ "getExtensionsLenth", "a01478.html#abf96f6d167902c110f9982c9ecbf80df", null ],
-    [ "getHandshakeVersion", "a01478.html#aac4f84fa44a8b1f8812d802ce7cbcf72", null ],
-    [ "getServerHelloHeader", "a01478.html#a04b2dcc2adaf0d90f10040e2bc439961", null ],
-    [ "getSessionID", "a01478.html#ae7a95492fd974b5799f3a1a979e808ef", null ],
-    [ "getSessionIDLength", "a01478.html#a1116e3643ae6a9ccdd4eed46861f071a", null ],
-    [ "toString", "a01478.html#ab6d2e12e5d3aa1340faf260f29ab1e21", null ]
+    [ "SSLClientHelloMessage", "a01478.html#a3924029c72b57cee6f2dd62b4f64f2dc", null ],
+    [ "getCipherSuite", "a01478.html#aa64bd1a68e76e2be414a38f6eb580486", null ],
+    [ "getCipherSuiteCount", "a01478.html#a0ba32d03d991bc3bcf1b2cc9c9287b80", null ],
+    [ "getClientHelloHeader", "a01478.html#abe34e212201e7f5af859de2ff328bde2", null ],
+    [ "getCompressionMethodsValue", "a01478.html#a388d82c71b2a4e3a595e52c8fe831ac4", null ],
+    [ "getExtension", "a01478.html#a6524de241525ebb27fbe007c040190e0", null ],
+    [ "getExtensionCount", "a01478.html#ab4ba807d5c659e70d14beef727b005af", null ],
+    [ "getExtensionOfType", "a01478.html#ad2dbb97936a31c01ed205fc192fac8ba", null ],
+    [ "getExtensionOfType", "a01478.html#a436dec8f52e84ac994cb36eb6de51efd", null ],
+    [ "getExtensionOfType", "a01478.html#a0647bfdab89e32e6d375555a9f5055f5", null ],
+    [ "getExtensionsLenth", "a01478.html#abba3dfa226812e3076bf10422fee8152", null ],
+    [ "getHandshakeVersion", "a01478.html#a90dfa6a04e721d49368c35f39dca5a6d", null ],
+    [ "getSessionID", "a01478.html#a184db75cdb1f74e0e8b388eccfc59de1", null ],
+    [ "getSessionIDLength", "a01478.html#a506053dfdcb25222975d285bb20ca98a", null ],
+    [ "toString", "a01478.html#a4525dd29e48f1dcea786e8c889c368e1", null ]
 ];

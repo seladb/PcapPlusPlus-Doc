@@ -1,6 +1,6 @@
 var a01286 =
 [
-    [ "VlanFilter", "a01286.html#a0fe4f5f6ee92f8cf92dc98338a5128d6", null ],
-    [ "parseToString", "a01286.html#a4d5759a458f683cebac7134668fc0c2d", null ],
-    [ "setVlanID", "a01286.html#a71b1fd58f036b4ee5a77ce34b443aa42", null ]
+    [ "ArpFilter", "a01286.html#a26aef5e3b1f92d4cd3764d6f8d2660dd", null ],
+    [ "parseToString", "a01286.html#a2af1942f2bad988ff88589ed17cc5353", null ],
+    [ "setOpCode", "a01286.html#a528548676f844bec27b045ecb93c293d", null ]
 ];

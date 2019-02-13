@@ -1,6 +1,5 @@
 var a01338 =
 [
-    [ "getPfRingDeviceByName", "a01338.html#ac6980c295b2294ffc337cf0b69bd6e20", null ],
-    [ "getPfRingDevicesList", "a01338.html#aaf4ca5719934a1320d22ad470fa3441e", null ],
-    [ "getPfRingVersion", "a01338.html#a2e8cec8374cbb122940b8f6d4e6e17c0", null ]
+    [ "drop", "a01338.html#a83db0ccadf101d72b41c3eb2ff6a72c3", null ],
+    [ "recv", "a01338.html#a9d6a72fc5152c35043b22aedf602a9b6", null ]
 ];

@@ -1,10 +1,6 @@
 var a01614 =
 [
-    [ "TLVRecordReader", "a01614.html#acee327e44fb0381301ae28b52dc44573", null ],
-    [ "~TLVRecordReader", "a01614.html#ae9e5156649400b8043ee0a1fa2e4bd0a", null ],
-    [ "changeTLVRecordCount", "a01614.html#a0454e680a3ba777f77b10f462a7a6b43", null ],
-    [ "getFirstTLVRecord", "a01614.html#a27354988c0e6f4f734e982f45e6b36b0", null ],
-    [ "getNextTLVRecord", "a01614.html#adf22614ccaea321f0115af2cad1e005f", null ],
-    [ "getTLVRecord", "a01614.html#a97640c0c27c6672461a0b31eb820e547", null ],
-    [ "getTLVRecordCount", "a01614.html#a5d88ccd5080f72bdcc1608ece7e2d1d4", null ]
+    [ "recordLen", "a01614.html#ad4062a2e11c5882fe480b0adc803b3f8", null ],
+    [ "recordType", "a01614.html#a127038b9ab8ee1cb3475e7064ac0299d", null ],
+    [ "recordValue", "a01614.html#a0d596e5016d0595feea7413ea3dfb9eb", null ]
 ];

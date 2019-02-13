@@ -1,6 +1,6 @@
 var a01434 =
 [
-    [ "handshakeType", "a01434.html#a9a456a315b65d5e41587b83972471398", null ],
-    [ "length1", "a01434.html#ac4f81bbd5b177a96ee7bbe5d949086e0", null ],
-    [ "length2", "a01434.html#aa0bf28e3b67d3c500d8b72682e123538", null ]
+    [ "length", "a01434.html#ad0988dfc40b111270d4c447293218d1c", null ],
+    [ "recordType", "a01434.html#a77fe184eb1e2f559b4ed1395cc015ab7", null ],
+    [ "recordVersion", "a01434.html#ac3a7e87ce16dec3662286d0a94686de6", null ]
 ];

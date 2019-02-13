@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::PcapRemoteAuthentication Struct Reference</title>
+<title>PcapPlusPlus: pcpp::PcapLiveDeviceList Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,156 +81,232 @@ $(document).ready(function(){initNavTree('a01314.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a01311.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::PcapRemoteAuthentication Struct Reference</div>  </div>
+<div class="title">pcpp::PcapLiveDeviceList Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00116_source.html">PcapRemoteDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00110_source.html">PcapLiveDeviceList.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a239165d4eaaf752899e7656439f8f19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a239165d4eaaf752899e7656439f8f19e">PcapRemoteAuthentication</a> (const std::string username, const std::string <a class="el" href="a01314.html#a2f464437d3df5c609c4f91675ea73a63">password</a>)</td></tr>
-<tr class="separator:a239165d4eaaf752899e7656439f8f19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f1d4e564af1f378e6778d71910d1581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a7f1d4e564af1f378e6778d71910d1581">PcapRemoteAuthentication</a> (const <a class="el" href="a01314.html">PcapRemoteAuthentication</a> &amp;other)</td></tr>
-<tr class="separator:a7f1d4e564af1f378e6778d71910d1581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6690ebfa8d5de408a635fed992c50999"><td class="memItemLeft" align="right" valign="top">pcap_rmtauth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a6690ebfa8d5de408a635fed992c50999">getPcapRmAuth</a> ()</td></tr>
-<tr class="separator:a6690ebfa8d5de408a635fed992c50999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993aefeec8551a21171a0d5cfdd78675"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a01306.html">PcapLiveDevice</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a993aefeec8551a21171a0d5cfdd78675">getPcapLiveDevicesList</a> ()</td></tr>
+<tr class="separator:a993aefeec8551a21171a0d5cfdd78675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab7bad31dbb97247648d1a149d2f612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01306.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a1ab7bad31dbb97247648d1a149d2f612">getPcapLiveDeviceByIp</a> (<a class="el" href="a01030.html">IPAddress</a> *ipAddr)</td></tr>
+<tr class="separator:a1ab7bad31dbb97247648d1a149d2f612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fd8d0f7a2a6d507bcdcb2836325be2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01306.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a55fd8d0f7a2a6d507bcdcb2836325be2">getPcapLiveDeviceByIp</a> (<a class="el" href="a01034.html">IPv4Address</a> ipAddr)</td></tr>
+<tr class="separator:a55fd8d0f7a2a6d507bcdcb2836325be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b3cad054b24d8868cbf141c654c614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01306.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a00b3cad054b24d8868cbf141c654c614">getPcapLiveDeviceByIp</a> (<a class="el" href="a01038.html">IPv6Address</a> ip6Addr)</td></tr>
+<tr class="separator:a00b3cad054b24d8868cbf141c654c614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffe9373b73371e24023ae30f36ead62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01306.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#aeffe9373b73371e24023ae30f36ead62">getPcapLiveDeviceByIp</a> (const char *ipAddrAsString)</td></tr>
+<tr class="separator:aeffe9373b73371e24023ae30f36ead62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab421bc6f40bf1be764555fb4ab340e0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01306.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#ab421bc6f40bf1be764555fb4ab340e0a">getPcapLiveDeviceByName</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:ab421bc6f40bf1be764555fb4ab340e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cefca3fa33b793cdfb1b58c3883f25b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01034.html">IPv4Address</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a2cefca3fa33b793cdfb1b58c3883f25b">getDnsServers</a> ()</td></tr>
+<tr class="separator:a2cefca3fa33b793cdfb1b58c3883f25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ab20a5fd24c937d1432587cbec80a14a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#ab20a5fd24c937d1432587cbec80a14a7">userName</a></td></tr>
-<tr class="separator:ab20a5fd24c937d1432587cbec80a14a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f464437d3df5c609c4f91675ea73a63"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a2f464437d3df5c609c4f91675ea73a63">password</a></td></tr>
-<tr class="separator:a2f464437d3df5c609c4f91675ea73a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4db03635ca46c83d8edc9852bff07bb2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a01314.html">PcapLiveDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01314.html#a4db03635ca46c83d8edc9852bff07bb2">getInstance</a> ()</td></tr>
+<tr class="separator:a4db03635ca46c83d8edc9852bff07bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The remote daemon (rpcapd) can be configured to require authentication before allowing a client to connect. This is done for security reasons of course. This struct wraps the WinPcap authentication object (pcap_rmtauth) and can (but not must) be given to <a class="el" href="a01322.html">PcapRemoteDeviceList</a> when initiating a connection to the remote daemon </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a239165d4eaaf752899e7656439f8f19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a239165d4eaaf752899e7656439f8f19e">&#9670;&nbsp;</a></span>PcapRemoteAuthentication() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::PcapRemoteAuthentication::PcapRemoteAuthentication </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>username</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A constructor that sets username and password </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">username</td><td>The username for authentication with the remote daemon </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>The password for authentication with the remote daemon </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7f1d4e564af1f378e6778d71910d1581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f1d4e564af1f378e6778d71910d1581">&#9670;&nbsp;</a></span>PcapRemoteAuthentication() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::PcapRemoteAuthentication::PcapRemoteAuthentication </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01314.html">PcapRemoteAuthentication</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A copy c'tor for this object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The object to copy from </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6690ebfa8d5de408a635fed992c50999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6690ebfa8d5de408a635fed992c50999">&#9670;&nbsp;</a></span>getPcapRmAuth()</h2>
+<div class="textblock"><p>A singleton class that creates, stores and provides access to all <a class="el" href="a01306.html">PcapLiveDevice</a> (on Linux) or <a class="el" href="a01650.html">WinPcapLiveDevice</a> (on Windows) instances. All live devices are initialized on startup and wrap the network interfaces installed on the machine. This class enables access to them through their IP addresses or get a vector of all of them so the user can search them in some other way </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2cefca3fa33b793cdfb1b58c3883f25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cefca3fa33b793cdfb1b58c3883f25b">&#9670;&nbsp;</a></span>getDnsServers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcap_rmtauth pcpp::PcapRemoteAuthentication::getPcapRmAuth </td>
+          <td class="memname">std::vector&lt;<a class="el" href="a01034.html">IPv4Address</a>&gt;&amp; pcpp::PcapLiveDeviceList::getDnsServers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A conversion method from <a class="el" href="a01314.html">PcapRemoteAuthentication</a> to pcap_rmtauth. Note: the char* pointers of the returned pcap_rmtauth points to the same places in memory as <a class="el" href="a01314.html#ab20a5fd24c937d1432587cbec80a14a7">PcapRemoteAuthentication::userName</a> and <a class="el" href="a01314.html#a2f464437d3df5c609c4f91675ea73a63">PcapRemoteAuthentication::password</a> so the user should avoid freeing this memory </p><dl class="section return"><dt>Returns</dt><dd>A pcap_rmtauth that is converted from this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of all DNS servers defined for this machine. If this list is empty it means no DNS servers were defined or they couldn't be extracted from some reason </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2f464437d3df5c609c4f91675ea73a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f464437d3df5c609c4f91675ea73a63">&#9670;&nbsp;</a></span>password</h2>
+<a id="a4db03635ca46c83d8edc9852bff07bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db03635ca46c83d8edc9852bff07bb2">&#9670;&nbsp;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a01314.html">PcapLiveDeviceList</a>&amp; pcpp::PcapLiveDeviceList::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The access method to the singleton </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of this class </dd></dl>
+
+</div>
+</div>
+<a id="a1ab7bad31dbb97247648d1a149d2f612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab7bad31dbb97247648d1a149d2f612">&#9670;&nbsp;</a></span>getPcapLiveDeviceByIp() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string pcpp::PcapRemoteAuthentication::password</td>
+          <td class="memname"><a class="el" href="a01306.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01030.html">IPAddress</a> *&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The password for authentication </p>
+<p>Get a pointer to the live device by its IP address. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address exists. NULL otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ab20a5fd24c937d1432587cbec80a14a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab20a5fd24c937d1432587cbec80a14a7">&#9670;&nbsp;</a></span>userName</h2>
+<a id="a55fd8d0f7a2a6d507bcdcb2836325be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fd8d0f7a2a6d507bcdcb2836325be2">&#9670;&nbsp;</a></span>getPcapLiveDeviceByIp() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string pcpp::PcapRemoteAuthentication::userName</td>
+          <td class="memname"><a class="el" href="a01306.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01034.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The username for authentication </p>
+<p>Get a pointer to the live device by its IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv4 address exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a00b3cad054b24d8868cbf141c654c614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b3cad054b24d8868cbf141c654c614">&#9670;&nbsp;</a></span>getPcapLiveDeviceByIp() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01306.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01038.html">IPv6Address</a>&#160;</td>
+          <td class="paramname"><em>ip6Addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IPv6 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip6Addr</td><td>The IPv6 address defined for the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IPv6 address exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aeffe9373b73371e24023ae30f36ead62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeffe9373b73371e24023ae30f36ead62">&#9670;&nbsp;</a></span>getPcapLiveDeviceByIp() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01306.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ipAddrAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IP address represented as string. IP address can be both IPv4 or IPv6 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddrAsString</td><td>The IP address defined for the device as string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this IP address is valid and exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ab421bc6f40bf1be764555fb4ab340e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab421bc6f40bf1be764555fb4ab340e0a">&#9670;&nbsp;</a></span>getPcapLiveDeviceByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01306.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the interface (e.g eth0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if this name exists. NULL otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a993aefeec8551a21171a0d5cfdd78675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993aefeec8551a21171a0d5cfdd78675">&#9670;&nbsp;</a></span>getPcapLiveDevicesList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="a01306.html">PcapLiveDevice</a>*&gt;&amp; pcpp::PcapLiveDeviceList::getPcapLiveDevicesList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A vector containing pointers to all live devices currently installed on the machine </dd></dl>
 
 </div>
 </div>
@@ -239,8 +315,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01314.html">PcapRemoteAuthentication</a></li>
-    <li class="footer">Generated on Thu Feb 7 2019 23:45:08 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01314.html">PcapLiveDeviceList</a></li>
+    <li class="footer">Generated on Wed Feb 13 2019 00:55:57 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

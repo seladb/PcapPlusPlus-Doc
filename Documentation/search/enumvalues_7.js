@@ -77,10 +77,10 @@ var searchData=
   ['ipv4opt_5fupstreammulticastpkt',['IPV4OPT_UpstreamMulticastPkt',['../a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68a62a87c452d7656ca675882f322d966fe',1,'pcpp']]],
   ['ipv6',['IPv6',['../a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131',1,'pcpp']]],
   ['ipv6addresstype',['IPv6AddressType',['../a01030.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838',1,'pcpp::IPAddress']]],
-  ['ipv6authenticationhdr',['IPv6AuthenticationHdr',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379afb7f534eac2e9e0a1fe653669ae42d6b',1,'pcpp::IPv6Extension']]],
-  ['ipv6destination',['IPv6Destination',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379af3d807c9ff58cd2ec3ec5fc34e9efcb3',1,'pcpp::IPv6Extension']]],
-  ['ipv6extensionunknown',['IPv6ExtensionUnknown',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379ae3395e712995d3fec2e28e1b2df278db',1,'pcpp::IPv6Extension']]],
-  ['ipv6fragmentation',['IPv6Fragmentation',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379aa14f4c7f39800c769a02bd032c4a5b87',1,'pcpp::IPv6Extension']]],
-  ['ipv6hopbyhop',['IPv6HopByHop',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379a1195489dc910590eb445dda1d992b605',1,'pcpp::IPv6Extension']]],
-  ['ipv6routing',['IPv6Routing',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379a9fcfe959d72f80e4684e00e6e9559491',1,'pcpp::IPv6Extension']]]
+  ['ipv6authenticationhdr',['IPv6AuthenticationHdr',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379afb7f534eac2e9e0a1fe653669ae42d6b',1,'pcpp::IPv6Extension']]],
+  ['ipv6destination',['IPv6Destination',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379af3d807c9ff58cd2ec3ec5fc34e9efcb3',1,'pcpp::IPv6Extension']]],
+  ['ipv6extensionunknown',['IPv6ExtensionUnknown',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379ae3395e712995d3fec2e28e1b2df278db',1,'pcpp::IPv6Extension']]],
+  ['ipv6fragmentation',['IPv6Fragmentation',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379aa14f4c7f39800c769a02bd032c4a5b87',1,'pcpp::IPv6Extension']]],
+  ['ipv6hopbyhop',['IPv6HopByHop',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379a1195489dc910590eb445dda1d992b605',1,'pcpp::IPv6Extension']]],
+  ['ipv6routing',['IPv6Routing',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379a9fcfe959d72f80e4684e00e6e9559491',1,'pcpp::IPv6Extension']]]
 ];

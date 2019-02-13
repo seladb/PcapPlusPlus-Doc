@@ -1,7 +1,6 @@
 var a01266 =
 [
-    [ "AndFilter", "a01266.html#a136268df7041a70e46dcfed6c9c0711f", null ],
-    [ "AndFilter", "a01266.html#ad863800306526e1c5b0bb0e90dfb2cf8", null ],
-    [ "addFilter", "a01266.html#a31a8d91c6139693fa05a06fd6c6ab5fe", null ],
-    [ "parseToString", "a01266.html#a59d7dd260b5f1bb4c9147263cb0b0308", null ]
+    [ "EtherTypeFilter", "a01266.html#a232ed2349710314257417a2541a45358", null ],
+    [ "parseToString", "a01266.html#a3b632e6dffbdbf6264a0173f4aa0b059", null ],
+    [ "setEtherType", "a01266.html#a65af479a0460c96693a720e4f41fe0ca", null ]
 ];

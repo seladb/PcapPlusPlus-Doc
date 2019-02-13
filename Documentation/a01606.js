@@ -1,17 +1,19 @@
 var a01606 =
 [
-    [ "TLVRawData", "a01610.html", "a01610" ],
-    [ "TLVRecord", "a01606.html#af558b23a2c8e99f574c867d518f1b71e", null ],
-    [ "TLVRecord", "a01606.html#a807e4d02649af082d1e0c568aade122a", null ],
-    [ "~TLVRecord", "a01606.html#aceee59b58ee528adcc4fa4f4902d35ec", null ],
-    [ "getDataSize", "a01606.html#a8fc8e09321d69cdec0b4cb10f3f87a8c", null ],
-    [ "getRecordBasePtr", "a01606.html#ac47981a74a9e1e1e1f524bc3bb90e325", null ],
-    [ "getTotalSize", "a01606.html#aa9720120d597258e2465e728551b581a", null ],
-    [ "getType", "a01606.html#af5d54089390f9518df2cebc55c0d350f", null ],
-    [ "getValue", "a01606.html#a9dbb7a66d16a0ef6ec7051813cc3cbe1", null ],
-    [ "getValueAs", "a01606.html#adb83b36536618115e29f40b51181e381", null ],
-    [ "isNull", "a01606.html#a80a1bb2e42bf886ba8a9ff2d2f74084c", null ],
-    [ "operator=", "a01606.html#ab207979132727f91150f6a54197153e3", null ],
-    [ "purgeRecordData", "a01606.html#a6e723034e8daff9b577b16718a5c60fe", null ],
-    [ "setValue", "a01606.html#aa65d6cf9416f13aa6f9e9a4cea786bee", null ]
+    [ "addEndOfHeader", "a01606.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b", null ],
+    [ "addField", "a01606.html#ac997392fd26a58b63827bf81a380b031", null ],
+    [ "addField", "a01606.html#aeada4c60e7c10924b6fa82d5ddfa9908", null ],
+    [ "computeCalculateFields", "a01606.html#aab0f4a2beb4bf2a423e8b0b7c18e3645", null ],
+    [ "getFieldByName", "a01606.html#af97866e274c94d11f6c4ab782e02150c", null ],
+    [ "getFieldCount", "a01606.html#a5bd3adf2a0137c18c13cf512e9f08bb2", null ],
+    [ "getFirstField", "a01606.html#a1584cbd19a25aebb26a92b6915b69a62", null ],
+    [ "getHeaderLen", "a01606.html#abd5dcefff49b14110c9ef322b826f083", null ],
+    [ "getNextField", "a01606.html#a4b29d0cbe4cb6284a1fd7061ee9d68e5", null ],
+    [ "insertField", "a01606.html#abf28607ed41ed3bfdb1c476bda303ae9", null ],
+    [ "insertField", "a01606.html#a8917992953e2a38885af837a2c49abd0", null ],
+    [ "insertField", "a01606.html#ac0555ddcc81fffa266fbc207bf040314", null ],
+    [ "isHeaderComplete", "a01606.html#a4fbea31a4f1c5a028ce874fece1cd353", null ],
+    [ "parseNextLayer", "a01606.html#ac593024db983f68d486893c0cb2acc76", null ],
+    [ "removeField", "a01606.html#a3751401eb05f223685abd0c7c6990c66", null ],
+    [ "removeField", "a01606.html#a9712764bb961cc7485335d1d30920232", null ]
 ];

@@ -1,7 +1,10 @@
 var a01366 =
 [
-    [ "authenticator", "a01366.html#a12baeb5d7b2bcece1043131e1515663b", null ],
-    [ "code", "a01366.html#ad7341098e0278fdcac9f7d8da1e55ce0", null ],
-    [ "id", "a01366.html#abbe35efe2bd07008905230bf0c068a46", null ],
-    [ "length", "a01366.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5", null ]
+    [ "getTagDataAs", "a01366.html#a90c9d117f0227b28315f66fb86621894", null ],
+    [ "getTagTotalSize", "a01366.html#afc3e8e3510d857cbb1c5fce78b1c69ff", null ],
+    [ "getType", "a01366.html#ad721e2c2e3dbb15efae5e700120f1bd9", null ],
+    [ "setTagData", "a01366.html#a058a53a2eac30209abaec60f70e7ad63", null ],
+    [ "tagData", "a01366.html#a859b9c75b9f17f734c42b9bdc7ac1ad3", null ],
+    [ "tagDataLength", "a01366.html#ae4e187f3ca9a2b81adaa193823bf2a2a", null ],
+    [ "tagType", "a01366.html#a53236fe2fd4cf146334cdc19ffc01192", null ]
 ];

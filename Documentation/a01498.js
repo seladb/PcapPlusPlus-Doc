@@ -1,8 +1,7 @@
 var a01498 =
 [
-    [ "SSLCertificateRequestMessage", "a01498.html#ae85b37b12ff7e387b3d3513ec7170558", null ],
-    [ "getCertificateAuthorityData", "a01498.html#a3939ecbf00de57ea722e8cf5005c0717", null ],
-    [ "getCertificateAuthorityLength", "a01498.html#a68ce41ecc995e5b8bab7a333a72334b3", null ],
-    [ "getCertificateTypes", "a01498.html#a2d6091acdd00f6e43544890ccf951e2a", null ],
-    [ "toString", "a01498.html#ae1e7664638e7d2df1baa6e8e96a29c4f", null ]
+    [ "SSLClientKeyExchangeMessage", "a01498.html#a6bb93f9682449bf3aa27b3302b07f1a2", null ],
+    [ "getClientKeyExchangeParams", "a01498.html#a23584b393dea97a6d249c750b99f4c5f", null ],
+    [ "getClientKeyExchangeParamsLength", "a01498.html#a4f7f82d6231467638a0e7c5e2e998073", null ],
+    [ "toString", "a01498.html#ada71ea045d9dbfd57484a156a108c00b", null ]
 ];
