@@ -8,7 +8,8 @@ section: download
 <h2>Table Of Contents</h2>
 <ul>
 	<li><a href="#source_code">Download Source Code</a></li>
-  <li><a href="#binaries">Download Compiled Binaries</a></li>
+  <li><a href="#bin-package-managers">Download Binaries From Package Managers</a></li>
+  <li><a href="#bin-release">Download Binaries From Release Page</a></li>
   <li><a href="#package_content">Package Content</a></li>
   <li><a href="#vs2015">Building PcapPlusPlus - Windows (Visual Studio 2015)</a></li>
   <li><a href="#mingw32_mingww64">Building PcapPlusPlus - Windows (MinGW32 + MinGW-w64)</a></li>
@@ -24,19 +25,19 @@ section: download
   <li>Project home on GitHub: <a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></li>
 </ul>
 
-<h2 id="binaries">Download Compiled Binaries</h2>
-<p>I'll be releasing compiled binaries for several platforms once in a while. You can find them in the <a href="https://github.com/seladb/PcapPlusPlus/releases">releases</a> section in GitHub project home</p>
+<h2 id="bin-package-managers">Download Binaries From Package Managers</h2>
+<h6><a href="https://brew.sh/">Homebrew</a> (MacOS only)</h6>
+<pre><code class="cpp">brew install pcapplusplus</code></pre>
+<h6><a href="https://conan.io/">Conan</a> (Windows, Linux, MacOs)</h6>
+<p>PcapPlusPlus is available in Conan through <a href="https://bincrafters.github.io/">Bincrafters</a>:</p>
+<pre><code class="cpp">conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
+conan install pcapplusplus/18.08@bincrafters/stable -r public-conan</code></pre>
+
+<h2 id="bin-release">Download Binaries From Release Page</h2>
+<p>PcapPlusPlus binaries for specific platforms are also available in the <a href="https://github.com/seladb/PcapPlusPlus/releases">releases</a> page in GitHub project home.</p>
 <p>Currently the latest release is <a href="https://github.com/seladb/PcapPlusPlus/releases/tag/v18.08">August 2018 Release (18.08)</a>
 <!--img src="style/label_new_yellow.png" height="40" width="40" alt="paperclip" /-->
 </p>
-<h6><strong>MacOS</strong></h6>
-<p>On MacOS you can use <a href="https://brew.sh/">Homebrew</a> to install the latest version's binaries:
-  <pre><code class="cpp">brew install pcapplusplus</code></pre>
-</p>
-<p>If you prefer Homebreow to build the binaries from (latest version) source run this command:
-  <pre><code class="cpp">brew install pcapplusplus --build-from-source</code></pre>
-</p>
-
 
 <h2 id="package_content">Package Content</h2>
 <p>The PcapPlusPlus package contains several libraries, unit-tests and example utilities:</p>
