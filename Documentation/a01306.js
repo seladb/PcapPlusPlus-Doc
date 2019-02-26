@@ -18,6 +18,7 @@ var a01306 =
     [ "getDeviceType", "a01306.html#a70b3e39208905585907c3557971b71e8", null ],
     [ "getDnsServers", "a01306.html#a89cdf86d684d71cf556cd9dd98f1a9c6", null ],
     [ "getIPv4Address", "a01306.html#a36fb6a59e454d6594451e4b285344181", null ],
+    [ "getLinkType", "a01306.html#a04ed5e53ada7cb76e0f09be6069414a9", null ],
     [ "getLoopback", "a01306.html#a75748fd040d8f97f4c43b1524e4fb479", null ],
     [ "getMacAddress", "a01306.html#a1bfa0fc4bc0374aaf9f11333a9904110", null ],
     [ "getMtu", "a01306.html#ae9c3eb2f9d1af368fa0d9da30ef60f9b", null ],

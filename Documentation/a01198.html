@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac9e91fa6b66ced9a92d09068712ccffc"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01198.html#ac9e91fa6b66ced9a92d09068712ccffc">getPcapLibVersionInfo</a> ()</td></tr>
+<tr class="separator:ac9e91fa6b66ced9a92d09068712ccffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc546829570cd981bfa762acd9759c8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01198.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
 <tr class="separator:a5cc546829570cd981bfa762acd9759c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae51f3909886e5fa8a35b1c6067b3c561"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01198.html#ae51f3909886e5fa8a35b1c6067b3c561">matchPacketWithFilter</a> (std::string filterAsString, <a class="el" href="a01386.html">RawPacket</a> *rawPacket)</td></tr>
@@ -164,6 +166,32 @@ Static Public Member Functions</h2></td></tr>
 <p>Clear the filter currently set on device </p><dl class="section return"><dt>Returns</dt><dd>True if filter was removed successfully or if no filter was set, false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="a00762.html#abfccd588fbbbb6634332a834e039ddf3">pcpp::IFilterableDevice</a>.</p>
+
+</div>
+</div>
+<a id="ac9e91fa6b66ced9a92d09068712ccffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e91fa6b66ced9a92d09068712ccffc">&#9670;&nbsp;</a></span>getPcapLibVersionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string pcpp::IPcapDevice::getPcapLibVersionInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for retreiving pcap lib (libpcap/WinPcap/etc.) version information. This method is actually a wrapper for <a href="https://www.tcpdump.org/manpages/pcap_lib_version.3pcap.html">pcap_lib_version()</a> </p><dl class="section return"><dt>Returns</dt><dd>A string containing the pcap lib version information </dd></dl>
 
 </div>
 </div>
@@ -326,7 +354,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01198.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Wed Feb 13 2019 00:55:53 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Feb 26 2019 01:48:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
