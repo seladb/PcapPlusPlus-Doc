@@ -379,13 +379,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new IPv4 option at the end of the layer </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a new IPv4 option at the end of the layer (after the last IPv4 option) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">optionBuilder</td><td>An <a class="el" href="a01082.html">IPv4OptionBuilder</a> object that contains the IPv4 option data to be added </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object that contains the newly added IPv4 option data or logical NULL (<a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if addition failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object that contains the newly added IPv4 option data or logical NULL (<a class="el" href="a01614.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if addition failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
 
 </div>
 </div>
@@ -417,11 +417,11 @@ Public Member Functions</h2></td></tr>
 <p>Add a new IPv4 option after an existing one </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">optionBuilder</td><td>An <a class="el" href="a01082.html">IPv4OptionBuilder</a> object that contains the requested IPv4 option data to be added </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevOptionType</td><td>The IPv4 option which the newly added option should come after. This is an optional parameter which gets a default value of <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68aad0353574fe158b11da6113b7b129d0d">IPV4OPT_Unknown</a> if omitted, which means adding the new option as the first option in the layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevOptionType</td><td>The IPv4 option which the newly added option should come after. This is an optional parameter which gets a default value of <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68aad0353574fe158b11da6113b7b129d0d">IPV4OPT_Unknown</a> if omitted, which means the new option will be added as the first option in the layer </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object containing the newly added IPv4 option data or logical NULL (<a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if addition failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object containing the newly added IPv4 option data or logical NULL (<a class="el" href="a01614.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if addition failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first IPv4 option in the packet. If the current layer contains no options the returned value will contain a logical NULL (<a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first IPv4 option in the packet. If the current layer contains no options the returned value will contain a logical NULL (<a class="el" href="a01614.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) </dd></dl>
 
 </div>
 </div>
@@ -607,13 +607,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the IPv4 option that comes after a given option. If the given option was the last one, the returned value will contain a logical NULL (<a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the IPv4 option that comes after a given option. If the given option was the last one, the returned value will contain a logical NULL (<a class="el" href="a01614.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>A given IPv4 option that exists in the current layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>An IPv4 option object that exists in the current layer </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object that contains the IPv4 option data that comes next, or logical NULL if the given IPv4 option: (1) was the last one; (2) contains a logical NULL or (3) doesn't belong to this packet </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="a01078.html">IPv4Option</a> object that contains the IPv4 option data that comes next, or logical NULL if the given IPv4 option: (1) was the last one; or (2) contains a logical NULL; or (3) doesn't belong to this packet </dd></dl>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a01078.html">IPv4Option</a> object that contains the first option that matches this type, or logical NULL (<a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if no such option found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="a01078.html">IPv4Option</a> object that contains the first option that matches this type, or logical NULL (<a class="el" href="a01614.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">IPv4Option::isNull()</a> == true) if no such option found </dd></dl>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a01630.html">UdpLayer</a>, <a class="el" href="a01574.html">TcpLayer</a>. Otherwise sets <a class="el" href="a01194.html">PayloadLayer</a> </p>
+<p>Currently identifies the following next layers: <a class="el" href="a01634.html">UdpLayer</a>, <a class="el" href="a01578.html">TcpLayer</a>. Otherwise sets <a class="el" href="a01194.html">PayloadLayer</a> </p>
 
 <p>Implements <a class="el" href="a01154.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
 
@@ -956,7 +956,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01086.html">IPv4Layer</a></li>
-    <li class="footer">Generated on Tue Feb 26 2019 01:48:26 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Mar 6 2019 00:16:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

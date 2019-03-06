@@ -165,8 +165,7 @@ tcpLayer-&gt;getTcpHeader()-&gt;portSrc = htons(12345);
 // add URG flag
 tcpLayer-&gt;getTcpHeader()-&gt;urgFlag = 1;
 // add MSS TCP option
-uint16_t mssValue = htons(1460);
-tcpLayer-&gt;addTcpOptionAfter(pcpp::TCPOPT_MSS, PCPP_TCPOLEN_MSS, (uint8_t*)&amp;mssValue, NULL); </code></pre>
+tcpLayer-&gt;addTcpOptionAfter(pcpp::TcpOptionBuilder(pcpp::TCPOPT_MSS, (uint16_t)1460));</code></pre>
             <p>
             </p>
             <p>We start by using the method <code>getTcpHeader()</code> which
@@ -175,18 +174,17 @@ tcpLayer-&gt;addTcpOptionAfter(pcpp::TCPOPT_MSS, PCPP_TCPOLEN_MSS, (uint8_t*)&am
               packet bytes so every change we do changes the packet. So
               we changed the source port to 12345 and set the URG flag. </p>
             <p>Now let's take a look at the 2 bottom lines in the code snippet
-              above.&nbsp; <code>TcpLayer </code>exposes an API to read, add
+              above.&nbsp; <code>TcpLayer</code> exposes an API to read, add
               and remove TCP options. The packet we're editing already has 3 TCP
               options: NOP, NOP and Timestamp. We'd like to add a fourth one of
               type MSS with MSS value of 1460 and we want it to appear first (before
               the existing TCP options). So we use the <code>addTcpOptionAfter()</code>
-              method and give it the following parameters: TCP option type
-              (MSS), TCP option length (PcapPlusPlus already has a macro for
-              that: <code>PCPP_TCPOLEN_MSS</code>), the TCP option value which
-              is 1460 cast to a byte array, and the layer we want to put our
-              option after (in this case we set <code>NULL</code> which means this option
-              will be inserted as the first one). That's it! with 2 lines of
-              code we managed to add a TCP option!</p>
+              method and give it a <code>TcpOptionBuilder</code> object. This builder
+              object gets in its constructor the TCP option type (which is 
+              <code>PCPP_TCPOLEN_MSS</code>), and the option value (1460) and 
+              <code>addTcpOptionAfter()</code> uses it to create the TCP option object
+              and add it to the existing list of TCP options. That's it! with 1 line 
+              of code we managed to add a new TCP option!</p>
             <p>Now let move on to the last layer in this packet: <strong>HTTP</strong>. Let's see the code:</p>
             <pre><code class="cpp" ?="">// let's get the HTTP layer
 pcpp::HttpRequestLayer* httpRequestLayer = parsedPacket.getLayerOfType&lt;pcpp::HttpRequestLayer&amp;hl;();

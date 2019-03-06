@@ -82,6 +82,7 @@ var menudata={children:[
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html",children:[
 {text:"d",url:"functions_eval.html#index_d"},
+{text:"e",url:"functions_eval_e.html#index_e"},
 {text:"f",url:"functions_eval_f.html#index_f"},
 {text:"h",url:"functions_eval_h.html#index_h"},
 {text:"i",url:"functions_eval_i.html#index_i"},

@@ -303,16 +303,16 @@ printf("TCP flags: %s\n", printTcpFlags(tcpLayer).c_str());</code>
 </pre>
           <p>Another cool feature <code class="cpp">TcpLayer</code> provides is
             retrieving information about the TCP options (if exist). We can
-            iterate the TCP options using the methods <code class="cpp">getFirstTcpOptionData()</code>
-            and <code class="cpp">getNextTcpOptionData(option)</code> and
+            iterate the TCP options using the methods <code class="cpp">getFirstTcpOption()</code>
+            and <code class="cpp">getNextTcpOption(tcpOption)</code> and
             extract all the information on the TCP option such as type, length
             and value. In our example let's iterate over them and print their
             type:</p>
           <pre>	<code class="cpp">// go over all TCP options in this layer and print its type
 printf("TCP options: ");
-for (pcpp::TcpOptionData* tcpOption = tcpLayer-&gt;getFirstTcpOptionData(); tcpOption != NULL; tcpOption = tcpLayer-&gt;getNextTcpOptionData(tcpOption))
+for (pcpp::TcpOption tcpOption = tcpLayer-&gt;getFirstTcpOption(); tcpOption.isNotNull(); tcpOption = tcpLayer-&gt;getNextTcpOption(tcpOption))
 {
-	printf("%s ", printTcpOptionType(tcpOption-&gt;getType()).c_str());
+	printf("%s ", printTcpOptionType(tcpOption.getTcpOptionType()).c_str());
 }
 printf("\n");</code>
 </pre>
@@ -320,7 +320,7 @@ printf("\n");</code>
             converts it to string. Notice this method handles only the TCP
             options we have on the specific packet we're parsing, PcapPlusPlus
             support all TCP options types:</p>
-          <pre>	<code class="cpp">std::string printTcpOptionType(pcpp::TcpOption optionType)
+          <pre>	<code class="cpp">std::string printTcpOptionType(pcpp::TcpOptionType optionType)
 {
 	switch (optionType)
 	{

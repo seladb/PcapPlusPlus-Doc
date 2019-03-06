@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['reassemblystatus',['ReassemblyStatus',['../a01042.html#aae7f2e113808978827abf3b7cdbe91af',1,'pcpp::IPReassembly']]],
-  ['recvpacketresult',['RecvPacketResult',['../a01390.html#a06ec60dc8d38dfab0333fb793ad0da76',1,'pcpp::RawSocketDevice']]]
+  ['pppoecode',['PPPoECode',['../a01354.html#aa170ba4bb5e03d3ac1dddb45118ed9cb',1,'pcpp::PPPoELayer']]],
+  ['pppoetagtypes',['PPPoETagTypes',['../a01362.html#ac761ea9a8298b8ee8614da86de314876',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['protocoltype',['ProtocolType',['../a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb',1,'pcpp']]]
 ];

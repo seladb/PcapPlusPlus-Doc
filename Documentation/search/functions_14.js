@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7econnectiondata',['~ConnectionData',['../a01578.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
+  ['_7econnectiondata',['~ConnectionData',['../a01582.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
   ['_7edhcplayer',['~DhcpLayer',['../a00778.html#a41eaefdbfb7e73dcaf863c7639bd5db4',1,'pcpp::DhcpLayer']]],
   ['_7edhcpoption',['~DhcpOption',['../a00770.html#a280836170d092e111cbad745e46b5e5c',1,'pcpp::DhcpOption']]],
   ['_7edpdkworkerthread',['~DpdkWorkerThread',['../a00866.html#afee1cd32d8aa6bbb639f7e45ca85e68d',1,'pcpp::DpdkWorkerThread']]],
@@ -32,8 +32,9 @@ var searchData=
   ['_7erawpacket',['~RawPacket',['../a01386.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
   ['_7erawsocketdevice',['~RawSocketDevice',['../a01390.html#a16669eaf3e120d99ff07a07223aca9b6',1,'pcpp::RawSocketDevice']]],
   ['_7etableprinter',['~TablePrinter',['../a01562.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
-  ['_7etcpreassembly',['~TcpReassembly',['../a01586.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
-  ['_7etcpstreamdata',['~TcpStreamData',['../a01582.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
-  ['_7etlvrecord',['~TLVRecord',['../a01610.html#aceee59b58ee528adcc4fa4f4902d35ec',1,'pcpp::TLVRecord']]],
-  ['_7etlvrecordreader',['~TLVRecordReader',['../a01618.html#ae9e5156649400b8043ee0a1fa2e4bd0a',1,'pcpp::TLVRecordReader']]]
+  ['_7etcpoption',['~TcpOption',['../a01570.html#a96cb9a2d3cdf31e208ff180981686ab3',1,'pcpp::TcpOption']]],
+  ['_7etcpreassembly',['~TcpReassembly',['../a01590.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
+  ['_7etcpstreamdata',['~TcpStreamData',['../a01586.html#aacb6d4bc4dd7bf367598aa24e5d5f425',1,'pcpp::TcpStreamData']]],
+  ['_7etlvrecord',['~TLVRecord',['../a01614.html#aceee59b58ee528adcc4fa4f4902d35ec',1,'pcpp::TLVRecord']]],
+  ['_7etlvrecordreader',['~TLVRecordReader',['../a01622.html#ae9e5156649400b8043ee0a1fa2e4bd0a',1,'pcpp::TLVRecordReader']]]
 ];

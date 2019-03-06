@@ -6,7 +6,7 @@ var hierarchy =
     [ "std::auto_ptr< T >", null, [
       [ "pcpp::DnsResourceDataPtr", "a00806.html", null ]
     ] ],
-    [ "pcpp::ConnectionData", "a01578.html", null ],
+    [ "pcpp::ConnectionData", "a01582.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "a01310.html", null ],
     [ "pcpp::dhcp_header", "a00766.html", null ],
     [ "pcpp::dnshdr", "a00782.html", null ],
@@ -46,7 +46,7 @@ var hierarchy =
     [ "pcpp::gre_basic_header", "a00882.html", [
       [ "pcpp::gre1_header", "a00886.html", null ]
     ] ],
-    [ "pcpp::HeaderField", "a01602.html", null ],
+    [ "pcpp::HeaderField", "a01606.html", null ],
     [ "pcpp::HttpRequestFirstLine", "a00922.html", null ],
     [ "pcpp::HttpResponseFirstLine", "a00930.html", null ],
     [ "pcpp::icmp_echo_request", "a00946.html", null ],
@@ -99,8 +99,8 @@ var hierarchy =
           [ "pcpp::SSLChangeCipherSpecLayer", "a01534.html", null ],
           [ "pcpp::SSLHandshakeLayer", "a01530.html", null ]
         ] ],
-        [ "pcpp::TcpLayer", "a01574.html", null ],
-        [ "pcpp::TextBasedProtocolMessage", "a01606.html", [
+        [ "pcpp::TcpLayer", "a01578.html", null ],
+        [ "pcpp::TextBasedProtocolMessage", "a01610.html", [
           [ "pcpp::HttpMessage", "a00910.html", [
             [ "pcpp::HttpRequestLayer", "a00914.html", null ],
             [ "pcpp::HttpResponseLayer", "a00918.html", null ]
@@ -111,9 +111,9 @@ var hierarchy =
             [ "pcpp::SipResponseLayer", "a01406.html", null ]
           ] ]
         ] ],
-        [ "pcpp::UdpLayer", "a01630.html", null ],
-        [ "pcpp::VlanLayer", "a01638.html", null ],
-        [ "pcpp::VxlanLayer", "a01646.html", null ]
+        [ "pcpp::UdpLayer", "a01634.html", null ],
+        [ "pcpp::VlanLayer", "a01642.html", null ],
+        [ "pcpp::VxlanLayer", "a01650.html", null ]
       ] ]
     ] ],
     [ "pcpp::IDevice", "a00758.html", [
@@ -131,7 +131,7 @@ var hierarchy =
         ] ],
         [ "pcpp::PcapLiveDevice", "a01306.html", [
           [ "pcpp::PcapRemoteDevice", "a01322.html", null ],
-          [ "pcpp::WinPcapLiveDevice", "a01650.html", null ]
+          [ "pcpp::WinPcapLiveDevice", "a01654.html", null ]
         ] ]
       ] ],
       [ "pcpp::PfRingDevice", "a01330.html", null ],
@@ -242,28 +242,30 @@ var hierarchy =
     [ "pcpp::SystemCores", "a01550.html", null ],
     [ "pcpp::TablePrinter", "a01562.html", null ],
     [ "pcpp::tcphdr", "a01566.html", null ],
-    [ "pcpp::TcpOptionData", "a01570.html", null ],
-    [ "pcpp::TcpReassembly", "a01586.html", null ],
-    [ "pcpp::TcpStreamData", "a01582.html", null ],
-    [ "pcpp::TLVRecord::TLVRawData", "a01614.html", null ],
-    [ "pcpp::TLVRecord", "a01610.html", [
+    [ "pcpp::TcpReassembly", "a01590.html", null ],
+    [ "pcpp::TcpStreamData", "a01586.html", null ],
+    [ "pcpp::TLVRecord::TLVRawData", "a01618.html", null ],
+    [ "pcpp::TLVRecord", "a01614.html", [
       [ "pcpp::DhcpOption", "a00770.html", null ],
       [ "pcpp::IPv4Option", "a01078.html", null ],
       [ "pcpp::IPv6TLVOptionHeader::IPv6Option", "a01110.html", null ],
-      [ "pcpp::RadiusAttribute", "a01374.html", null ]
+      [ "pcpp::RadiusAttribute", "a01374.html", null ],
+      [ "pcpp::TcpOption", "a01570.html", null ]
     ] ],
-    [ "pcpp::TLVRecordBuilder", "a01622.html", [
+    [ "pcpp::TLVRecordBuilder", "a01626.html", [
       [ "pcpp::DhcpOptionBuilder", "a00774.html", null ],
       [ "pcpp::IPv4OptionBuilder", "a01082.html", null ],
       [ "pcpp::IPv6TLVOptionHeader::IPv6TLVOptionBuilder", "a01114.html", null ],
-      [ "pcpp::RadiusAttributeBuilder", "a01378.html", null ]
+      [ "pcpp::RadiusAttributeBuilder", "a01378.html", null ],
+      [ "pcpp::TcpOptionBuilder", "a01574.html", null ]
     ] ],
-    [ "pcpp::TLVRecordReader< TLVRecordType >", "a01618.html", null ],
-    [ "pcpp::TLVRecordReader< pcpp::DhcpOption >", "a01618.html", null ],
-    [ "pcpp::TLVRecordReader< pcpp::IPv4Option >", "a01618.html", null ],
-    [ "pcpp::TLVRecordReader< pcpp::IPv6TLVOptionHeader::IPv6Option >", "a01618.html", null ],
-    [ "pcpp::TLVRecordReader< pcpp::RadiusAttribute >", "a01618.html", null ],
-    [ "pcpp::udphdr", "a01626.html", null ],
-    [ "pcpp::vlan_header", "a01634.html", null ],
-    [ "pcpp::vxlan_header", "a01642.html", null ]
+    [ "pcpp::TLVRecordReader< TLVRecordType >", "a01622.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::DhcpOption >", "a01622.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::IPv4Option >", "a01622.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::IPv6TLVOptionHeader::IPv6Option >", "a01622.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::RadiusAttribute >", "a01622.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::TcpOption >", "a01622.html", null ],
+    [ "pcpp::udphdr", "a01630.html", null ],
+    [ "pcpp::vlan_header", "a01638.html", null ],
+    [ "pcpp::vxlan_header", "a01646.html", null ]
 ];
