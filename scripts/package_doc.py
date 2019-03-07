@@ -68,13 +68,13 @@ def parse_html_file(input_dir, filename):
     content = ''
     with open(input_dir + '/' + filename, 'r') as cur_file:
         lines = cur_file.readlines()
-        header_start = False
+        header_start = 0
         for line in lines:
             if line.startswith('---'):
-                header_start = not header_start
+                header_start = header_start + 1
                 continue
 
-            if header_start is True:
+            if header_start == 1:
                 key_value = line.split(':')
                 header[key_value[0].strip().replace('\n','')] = key_value[1].strip().replace('\n','')
                 continue
