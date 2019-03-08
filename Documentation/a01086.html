@@ -284,7 +284,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a01186.html">Packet</a> instance where layer will be stored in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">setTotalLenAsDataLen</td><td>When setting this value to "true" or when using the other c'tor, the layer data length is calculated from <a class="el" href="a01070.html#aab4d8ad9872f38be7fb53dd2ec45c63a">iphdr::totalLength</a> field. When setting to "false" the data length is set as the value of dataLen parameter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">setTotalLenAsDataLen</td><td>When setting this value to "true" or when using the other c'tor, the layer data length is calculated from <a class="el" href="a01070.html#aab4d8ad9872f38be7fb53dd2ec45c63a">iphdr::totalLength</a> field. When setting to "false" the data length is set as the value of dataLen parameter. Please notice that if <a class="el" href="a01070.html#aab4d8ad9872f38be7fb53dd2ec45c63a">iphdr::totalLength</a> is equal to zero (which can happen in TCP Segmentation Offloading), this flag is ignored and the layer data length is calculated by the actual data captured on the wire </td></tr>
   </table>
   </dd>
 </dl>
@@ -956,7 +956,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01086.html">IPv4Layer</a></li>
-    <li class="footer">Generated on Wed Mar 6 2019 00:16:19 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Mar 8 2019 02:15:33 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
