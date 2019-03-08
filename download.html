@@ -21,18 +21,18 @@ section: download
 <ul>
   <li>In <a href="https://github.com/seladb/PcapPlusPlus/archive/master.zip">zip</a> format</li>
   <li>In <a href="https://github.com/seladb/PcapPlusPlus/archive/master.tar.gz">tar.gz</a> format</li>
-  <li>Or clone the git repository: <pre><code class="cpp">git clone https://github.com/seladb/PcapPlusPlus.git</code></pre></li>
+  <li>Or clone the git repository: <pre><code class="language-shell">git clone https://github.com/seladb/PcapPlusPlus.git</code></pre></li>
   <li>Project home on GitHub: <a href="https://github.com/seladb/PcapPlusPlus">https://github.com/seladb/PcapPlusPlus</a></li>
 </ul>
 
 <h2 id="bin-package-managers">Download Binaries From Package Managers</h2>
 <h6><strong>Homebrew (MacOS only)</strong></h6>
 <p>PcapPlusPlus is available in <a href="https://formulae.brew.sh/formula/pcapplusplus">Homebrew</a> on MacOs:</p>
-<pre><code class="cpp">brew install pcapplusplus</code></pre>
+<pre><code class="language-shell">brew install pcapplusplus</code></pre>
 <p></p>
 <h6><strong>Conan (Windows, Linux, MacOs)</strong></h6>
 <p>PcapPlusPlus Conan package is available in <a href="https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters">Bintray</a> and is managed by the <a href="https://bincrafters.github.io/">Bincrafters</a> team:</p>
-<pre><code class="cpp">conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
+<pre><code class="language-shell">conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
 conan install pcapplusplus/18.08@bincrafters/stable -r public-conan</code></pre>
 <p></p>
 
@@ -109,10 +109,10 @@ conan install pcapplusplus/18.08@bincrafters/stable -r public-conan</code></pre>
       <li>Follow the instruction in the installation wizard</li>
       <li>Install MSYS or MSYS2. MSYS2 installer can be downloaded from here: <a href="http://msys2.github.io/">http://msys2.github.io/</a></li>
       <li>Make sure to download and install the <b>msys2-i686</b> installer and not the msys2-x86_64 installer</li>
-      <li>Add the following folders to your <code class="cpp">PATH</code> environment variable: 
+      <li>Add the following folders to your <code class="language-shell">PATH</code> environment variable: 
         <ul>
-          <li>The MinGW-w64 folder that cotains <code class="cpp">g++.exe</code>, <code class="cpp">mingw32-make</code>, etc. It should be under <code class="cpp">[MinGW-w64_install_folder]\mingw32\bin</code>, for example: <code class="cpp">C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin</code></li>
-          <li>The MSYS2 <code class="cpp">usr\bin</code> folder, for example: <code class="cpp">C:\msys32\usr\bin</code></li>
+          <li>The MinGW-w64 folder that cotains <code class="language-shell">g++.exe</code>, <code class="language-shell">mingw32-make</code>, etc. It should be under <code class="language-shell">[MinGW-w64_install_folder]\mingw32\bin</code>, for example: <code class="language-shell">C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin</code></li>
+          <li>The MSYS2 <code class="language-shell">usr\bin</code> folder, for example: <code class="language-shell">C:\msys32\usr\bin</code></li>
         </ul>
       </li> 
     </ul>
@@ -124,27 +124,27 @@ conan install pcapplusplus/18.08@bincrafters/stable -r public-conan</code></pre>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
   <li>Please notice that <b>x64 compilation is not supported (and will not work)</b> on either MinGW32 nor MinGW-w64!</li>
-  <li>Run the <strong>configure-windows-mingw.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location. For MinGW-w64 please make sure to set the <code class="cpp">mingw32\i686-w64-mingw32</code> folder, for example: <code class="cpp">C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\i686-w64-mingw32</code></li>
+  <li>Run the <strong>configure-windows-mingw.bat</strong> batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location. For MinGW-w64 please make sure to set the <code class="language-shell">mingw32\i686-w64-mingw32</code> folder, for example: <code class="language-shell">C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\i686-w64-mingw32</code></li>
   <li>Run <strong>mingw32-make.exe all</strong> from PcapPlusPlus main directory</li>
   <li>This should compile all libraries, unit-tests and examples</li>
-  <li>After compilation you can find the libraries, examples, header files and helpful makefiles under the <strong>Dist\</strong> directory</li>
+  <li>After compilation you can find the libraries, examples, header files and helpful makefiles under the <code class="language-shell">Dist\</code> directory</li>
 </ol>
 
 <h2 id="linux">Building PcapPlusPlus - Linux</h2>
 <h6><strong>Prerequisites</strong></h6>
 <p>In order to compile PcapPlusPlus on Linux you need the following components:</p>
 <ol>
-  <li><strong>libpcap developers pack</strong> - containing the libpcap library PcapPlusPlus is linking with plus relevant header files. You can download it from <a href="http://www.tcpdump.org/#latest-release">http://www.tcpdump.org/#latest-release</a> or through package management engines such as apt-get/yum: <pre><code class="cpp">sudo apt-get install libpcap-dev</code></pre> or: <pre><code class="cpp">sudo yum install libpcap-devel</code></pre></li>
+  <li><strong>libpcap developers pack</strong> - containing the libpcap library PcapPlusPlus is linking with plus relevant header files. You can download it from <a href="http://www.tcpdump.org/#latest-release">http://www.tcpdump.org/#latest-release</a> or through package management engines such as apt-get/yum: <pre><code class="language-shell">sudo apt-get install libpcap-dev</code></pre> or: <pre><code class="language-shell">sudo yum install libpcap-devel</code></pre></li>
   <li>Make sure you have the libstdc++-static package. If not, you can install it via <i>yum</i> or <i>apt-get</i></li>
 </ol>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
-  <li>Run the configuration script from PcapPlusPlus main directory: <pre><code class="cpp">./configure-linux.sh</code></pre></li>
+  <li>Run the configuration script from PcapPlusPlus main directory: <pre><code class="language-shell">./configure-linux.sh</code></pre></li>
   <li>If you'd like to compile it with PF_RING please follow the instructions in <a href="dpdk-pf_ring.html">DPDK & PF_RING</a> page and press "y" in "Compile PcapPlusPlus with PF_RING?"</li>
   <li>If you'd like to compile it with DPDK please follow the instructions in <a href="dpdk-pf_ring.html">DPDK & PF_RING</a> page and press "y" in "Compile PcapPlusPlus with DPDK?"</li>
-  <li>If you'd like to enable libpcap immediate mode (supported on libpcap>=1.5) please use the <code class="cpp">--use-immediate-mode</code> flag: <pre><code class="cpp">./configure-linux.sh --use-immediate-mode</code></pre></li>
-  <li>Build PcapPlusPlus libraries, unit-test and examples: <pre><code class="cpp">make all</code></pre></li>
-  <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="cpp">sudo make install</code></pre></li>
+  <li>If you'd like to enable libpcap immediate mode (supported on libpcap>=1.5) please use the <code class="language-shell">--use-immediate-mode</code> flag: <pre><code class="language-shell">./configure-linux.sh --use-immediate-mode</code></pre></li>
+  <li>Build PcapPlusPlus libraries, unit-test and examples: <pre><code class="language-shell">make all</code></pre></li>
+  <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="language-shell">sudo make install</code></pre></li>
 </ol>
 
 <h2 id="macosx">Building PcapPlusPlus - MacOS</h2>
@@ -156,20 +156,19 @@ conan install pcapplusplus/18.08@bincrafters/stable -r public-conan</code></pre>
 	  <li>libpcap with all relevant header files</li>
 	</ol>
   </li>
-  <li>Also make sure you have Xcode Command Line Tools. You can install it by running the following command in Terminal: <pre><code class="cpp">xcode-select --install</code></pre></li>
-  <li>In MacOS Mojave 10.14 you need to run an extra step because <code>/usr/include</code> <a href="https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes">is not installed by default</a>: <pre><code class="cpp">sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /</code></pre></li>
+  <li>Also make sure you have Xcode Command Line Tools. You can install it by running the following command in Terminal: <pre><code class="language-shell">xcode-select --install</code></pre></li>
+  <li>In MacOS Mojave 10.14 you need to run an extra step because <code class="language-shell">/usr/include</code> <a href="https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes">is not installed by default</a>: <pre><code class="language-shell">sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /</code></pre></li>
 </ol>
 <h6><strong>Configuration and compilation</strong></h6>
 <ol>
-  <li>Run the configuration script from PcapPlusPlus main directory: <pre><code class="cpp">./configure-mac_os_x.sh</code></pre>To enable libpcap immediate mode (supported on libpcap>=1.5) please use the <code class="cpp">--use-immediate-mode</code> flag: <pre><code class="cpp">./configure-linux.sh --use-immediate-mode</code></pre></li>
-  <li>Build PcapPlusPlus libraries, unit-test and examples: <pre><code class="cpp">make all</code></pre></li>
-  <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="cpp">sudo make install</code></pre></li>
+  <li>Run the configuration script from PcapPlusPlus main directory: <pre><code class="language-shell">./configure-mac_os_x.sh</code></pre>To enable libpcap immediate mode (supported on libpcap>=1.5) please use the <code class="language-shell">--use-immediate-mode</code> flag: <pre><code class="language-shell">./configure-linux.sh --use-immediate-mode</code></pre></li>
+  <li>Build PcapPlusPlus libraries, unit-test and examples: <pre><code class="language-shell">make all</code></pre></li>
+  <li>Then run the installation script as <strong>sudo</strong>: <pre><code class="language-shell">sudo make install</code></pre></li>
 </ol>
 
 <h2 id="testing">Simple Testing</h2>
 <p>To ensure configuration and compilation went smoothly, you can run the unit-test applications for both Packet++ and Pcap++:</p>
-<pre>
-  <code class="cpp">seladb@seladb:~/home/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test
+<pre><code class="language-shell">seladb@seladb:~/home/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test
 EthPacketCreation             : PASSED
 EthAndArpPacketParsing        : PASSED
 ArpPacketCreation             : PASSED
@@ -202,8 +201,7 @@ DnsLayerParsingTest           : PASSED
 ...
 ALL TESTS PASSED!!</code>
 </pre>
-<pre>
-  <code class="cpp">seladb@seladb:~/PcapPlusPlus/Tests/Pcap++Test$ sudo Bin/Pcap++Test -i 10.0.0.1
+<pre><code class="language-shell">seladb@seladb:~/PcapPlusPlus/Tests/Pcap++Test$ sudo Bin/Pcap++Test -i 10.0.0.1
 Using ip: 10.0.0.1
 Debug mode: off
 Starting tests...
