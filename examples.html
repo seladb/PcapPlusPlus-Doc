@@ -9,71 +9,71 @@ section: examples
 <p>PcapPlusPlus package already contains various example applications that make use of most PcapPlusPlus APIs and features. Although some of them may be useful on their own (like arping or arp-spoofing), their main objective is to show how to use PcapPlusPlus. All examples are well documented and contain code which is easy to understand. After compiling PcapPlusPlus all compiled applications are under <strong>Dist/examples</strong>. Here is the list of example applications:</p>
 <ul>
   <li>
-	<h4>ArpSpoofing</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/ArpSpoofing">ArpSpoofing</a></h4>
 	<p>an application that does ARP spoofing using Packet++ and Pcap++. You can read more about ARP spoofing <a href="https://en.wikipedia.org/wiki/ARP_spoofing">here</a></p>
   </li>
   <li>
-	<h4>Arping</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Arping">Arping</a></h4>
 	<p>an implementation of the <a href="https://en.wikipedia.org/wiki/Arping">arping</a> utility using PcapPlusPlus</p>
   </li>
   <li>
-	<h4>DnsSpoofing</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DnsSpoofing">DnsSpoofing</a></h4>
 	<p>a command-line utility that does <a href="https://en.wikipedia.org/wiki/DNS_spoofing">DNS spoofing</a> using Packet++ and Pcap++</p>
   </li>
   <li>
-	<h4>DNSResolver</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DNSResolver">DNSResolver</a></h4>
 	<p>a command-line utility that resolves IPv4 address for an hostname using ARP and DNS protocols</p>
   </li>
   <li>
-	<h4>IcmpFileTransfer</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/IcmpFileTransfer">IcmpFileTransfer</a></h4>
 	<p>an application that demonstrates how to transfer files between two machines using only ICMP messages. The basic idea is to use the data part of ICMP messages to transfer chunks of the file between the machines. You can read more about it <a href="http://www.unixist.com/security/data-transfer-over-icmp/index.html">here</a></p>
   </li>
   <li>
-	<h4>HttpAnalyzer</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/HttpAnalyzer">HttpAnalyzer</a></h4>
 	<p>an application that analyzes HTTP traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, HTTP requests and responses count and rate, hostname histogram, content-type histogram, status code histogram and much more. Can operate on live traffic or read packets from a pcap file</li>
   </li>
   <li>
-	<h4>SSLAnalyzer</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/SSLAnalyzer">SSLAnalyzer</a></h4>
 	<p>an application that analyzes SSL/TLS traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, SSL/TLS messages count, hostname histogram, SSL/TLS version count, cipher-suite count and much more. Can operate on live traffic or read packets from a pcap file</li>
   </li>
   <li>
-	<h4>DpdkExample-FilterTraffic</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DpdkExample-FilterTraffic">DpdkExample-FilterTraffic</a></h4>
 	<p>an application that demonstartes PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another DPDK port and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
   </li>
   <li>
-	<h4>DpdkBridge</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DpdkBridge">DpdkBridge</a></h4>
 	<p>an application that demonstartes how to create a bridge between two network devices (similar to DPDK's L2 forwarding example) using PcapPlusPlus DPDK APIs</p>
   </li>
   <li>
-	<h4>PfRingExample-FilterTraffic</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PfRingExample-FilterTraffic">PfRingExample-FilterTraffic</a></h4>
 	<p>an application that demonstartes PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another PF_RING interface and/or be save to a pcap file. In addition the application collects statistics on received and matched packets</p>
   </li>
   <li>
-	<h4>PcapPrinter</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapPrinter">PcapPrinter</a></h4>
 	<p>a simple application that outputs packets from a pcap file as a readable string</p>
   </li>
   <li>
-	<h4>PcapSplitter</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapSplitter">PcapSplitter</a></h4>
 	<p>an application that splits pcap files into smaller pcap files by various criteria defined by the user like file size, packet count, split per connection, per client-ip, per server-ip, per server-port (protocol) or per IP src + IP dst (2-tuple). This application is very advanced compared to similar tools, for example: there is no limit on input file size or packet count, no technical limit on number of output files (unless the user sets a limit), support for both IPv4 and IPv6, and a lot more</p>
   </li>
   <li>
-	<h4>PcapSearch</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapSearch">PcapSearch</a></h4>
 	<p>an application that search inside pcap files in a directory/ies given by the user and counts how many packet match a user-defined pattern given in a BPF format</p>
   </li>
   <li>
-	<h4>TcpReassembly</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/TcpReassembly">TcpReassembly</a></h4>
 	<p>an application that captures data transmitted as part of TCP connections, organizes the data and stores it in a way that is convenient for protocol analysis and debugging. This application reconstructs the TCP data streams and stores each connection in a separate file(s). TcpReassembly understands TCP sequence numbers and will correctly reconstruct data streams regardless of retransmissions, out-of-order delivery or data loss</p>
   </li>
   <li>
-	<h4>IPFragUtil</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/IPFragUtil">IPFragUtil</a></h4>
 	<p>A utility for splitting IP packets into fragmets. It works on pcap and pcapng files and allows the user to choose which packets to fragment and to which size. Works on IPv4 and IPv6 packets</p>
   </li>
   <li>
-	<h4>IPDefragUtil</h4>
+	<h4><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/IPDefragUtil">IPDefragUtil</a></h4>
 	<p>A utility for reassembling IP fragments back to IP packets. It works on pcap and pcapng files and allows the user to choose which fragments to reassemble. Works on IPv4 and IPv6 packets</p>
   </li>  
   <li>
-	<h4 id="benchmark">PcapPlusPlus-benchmark</h4>
+	<h4 id="benchmark"><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapPlusPlus-benchmark">PcapPlusPlus-benchmark</a></h4>
 	<p>the benchmark application used for measuring PcapPlusPlus performance. See <a href="benchmark.html">benchmark page</a> for more details. This application currently compiles on Linux only (where benchmark was running on)</p>
   </li>
 </ul>
