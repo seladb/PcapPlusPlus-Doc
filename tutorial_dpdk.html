@@ -57,7 +57,7 @@ section: tutorials
 <p>The second step is done in the application's code and is a general DPDK initialization phase. It is also described in the
   <a href="dpdk-pf_ring.html">PcapPlusPlus support for DPDK</a> page and contains steps like initialize DPDK internal structures and memory pools,
   initialize packet memory pool, and more. Lets start by writing a general main method and initialize DPDK:</p>  
-<pre><code class="cpp">#include &lt;vector&gt;
+<pre><code class="language-cpp">#include &lt;vector&gt;
 #include &lt;unistd.h&gt;
 #include &lt;sstream&gt;
 #include "SystemUtils.h"
@@ -90,12 +90,12 @@ int main(int argc, char* argv[])
     <li>Decide which CPU cores will take part in running the application. DPDK leverages multi-core architecture to parallelize packet processing. In our case
       we initialize DPDK with all cores available on the machine
     </li>
-    <li>Invoke <code class="cpp">pcpp::DpdkDeviceList::initDpdk()</code> which runs the initialization</li>
+    <li>Invoke <code class="language-cpp">pcpp::DpdkDeviceList::initDpdk()</code> which runs the initialization</li>
   </ul>
 </p>
-<p>Now let's find the DPDK interfaces (devices) we'll use to send and receive packets. The class <code class="cpp">DpdkDevice</code> encapsulates a DPDK interface.
-  The singleton <code class="cpp">DpdkDeviceList</code> contains all DPDK devices that are available for us to use:</p>
-<pre><code class="cpp">// Find DPDK devices
+<p>Now let's find the DPDK interfaces (devices) we'll use to send and receive packets. The class <code class="language-cpp">DpdkDevice</code> encapsulates a DPDK interface.
+  The singleton <code class="language-cpp">DpdkDeviceList</code> contains all DPDK devices that are available for us to use:</p>
+<pre><code class="language-cpp">// Find DPDK devices
 pcpp::DpdkDevice* device1 = pcpp::DpdkDeviceList::getInstance().getDeviceByPort(DEVICE_ID_1);
 if (device1 == NULL)
 {
@@ -111,11 +111,11 @@ if (device2 == NULL)
 }
   </code>
 </pre>
-<p>As you can see, we're using the <code class="cpp">DpdkDeviceList</code> singleton to get the 2 DPDK devices. 
+<p>As you can see, we're using the <code class="language-cpp">DpdkDeviceList</code> singleton to get the 2 DPDK devices. 
   The port numbers <i>DEVICE_ID_1</i> (of value 0) and <i>DEVICE_ID_2</i> (of value 1) are determined by DPDK and we should know
   them in advance.</p>
 <p>The next step is to open the 2 devices so we can start receiving and sending packets through them. Let's see the code:</p>
-<pre>	<code class="cpp">// Open DPDK devices
+<pre><code class="language-cpp">// Open DPDK devices
 if (!device1->openMultiQueues(1, 1))
 {
     printf("Couldn't open device1 #%d, PMD '%s'\n", device1->getDeviceId(), device1->getPMDName().c_str());
@@ -126,18 +126,17 @@ if (!device2->openMultiQueues(1, 1))
 {
     printf("Couldn't open device2 #%d, PMD '%s'\n", device2->getDeviceId(), device2->getPMDName().c_str());
     return 1;
-}
-  </code>
+}</code>
 </pre>
-<p>As you can see we're using a method called <code class="cpp">openMultiQueues()</code>. This method opens the device
+<p>As you can see we're using a method called <code class="language-cpp">openMultiQueues()</code>. This method opens the device
   with a provided number of RX and TX queues. The number of supported RX and TX queues varies between NICs. You can get
-  the number of supported queues by using the following methods: <code class="cpp">DpdkDevice::getTotalNumOfRxQueues()</code>
-  and <code class="cpp">DpdkDevice::getTotalNumOfTxQueues()</code>. The reason for opening more than 1 RX/TX queue is to
+  the number of supported queues by using the following methods: <code class="language-cpp">DpdkDevice::getTotalNumOfRxQueues()</code>
+  and <code class="language-cpp">DpdkDevice::getTotalNumOfTxQueues()</code>. The reason for opening more than 1 RX/TX queue is to
   parallelize packet processing over multiple cores where each core is responsible for 1 or more RX/TX queues. On RX, 
   The NIC is responsible to load-balance RX packets to the different queues based on a provided hash function. Doing this
   inside the NIC makes it much faster and offloads processing from CPU cores. This load balancing mechanism 
   is called Receive Side Scaling (RSS) and is also wrapped by PcapPlusPlus, for more details please see RSS configuration in
-  <code class="cpp">DpdkDevice::DpdkDeviceConfiguration</code>.</p>
+  <code class="language-cpp">DpdkDevice::DpdkDeviceConfiguration</code>.</p>
 <p>In our case we choose the simple case of 1 RX queue and 1 TX queue for each device. That means we'll use 1 thread for each direction.</p>
 
 <h2 id="worker_threads">DPDK Worker Threads</h2>
@@ -145,9 +144,9 @@ if (!device2->openMultiQueues(1, 1))
   The way we are going to do that is using DPDK worker threads. We will create 2 worker threads: one for sending packets from device1
   to device2, and the other for sending packets from device2 to device1. Each worker thread will run on a separate CPU core and will
   execute an endless loop that will receive packets from one device and send them to the other.</p>
-<p>Worker threads on PcapPlusPlus are instances of a class that inherits <code class="cpp">DpdkWorkerThread</code>. Let's write the 
+<p>Worker threads on PcapPlusPlus are instances of a class that inherits <code class="language-cpp">DpdkWorkerThread</code>. Let's write the 
   header file of this class and see how it looks like:</p>
-<pre>	<code class="cpp">#pragma once
+<pre><code class="language-cpp">#pragma once
 
 #include "DpdkDevice.h"
 #include "DpdkDeviceList.h"
@@ -177,21 +176,20 @@ class L2FwdWorkerThread : public pcpp::DpdkWorkerThread
               
     // get worker thread core ID
     uint32_t getCoreId();
-};
-  </code>
+};</code>
 </pre>
-<p><code class="cpp">DpdkWorkerThread</code> is an abstract class that requires inherited classes to implement 3 methods:</p>
+<p><code class="language-cpp">DpdkWorkerThread</code> is an abstract class that requires inherited classes to implement 3 methods:</p>
 <ul>
-  <li><code class="cpp">run()</code> - start the worker. This method is called when the thread gets invoked and is 
+  <li><code class="language-cpp">run()</code> - start the worker. This method is called when the thread gets invoked and is 
     expected to run throughout the life of the thread. Typically this method will contain an endless loop that runs the logic of the 
     application</li>
-  <li><code class="cpp">stop()</code> - stop the execution of the worker</li>
-  <li><code class="cpp">getCoreId()</code> - return the core ID the worker is running on</li>
+  <li><code class="language-cpp">stop()</code> - stop the execution of the worker</li>
+  <li><code class="language-cpp">getCoreId()</code> - return the core ID the worker is running on</li>
 </ul>
 <p>In addition to implementing these method we also have a constructor and an empty destructor. We also save pointers to the
   RX and TX devices of where the worker will read packets from and send packets to. Now let's see the implementation of
   this class's methods:</p>
-<pre><code class="cpp">#include "WorkerThread.h"
+<pre><code class="language-cpp">#include "WorkerThread.h"
 
 
 L2FwdWorkerThread::L2FwdWorkerThread(pcpp::DpdkDevice* rxDevice, pcpp::DpdkDevice* txDevice) :
@@ -233,21 +231,21 @@ uint32_t L2FwdWorkerThread::getCoreId()
 {
   return m_CoreId;
 }
-  </code>
+</code>
 </pre>
 <p>The constructor is quite straight forward and initializes the private members. Please notice that the initialized value 
   for the core ID is the maximum supported number of cores + 10.</p>
-<p>The <code class="cpp">stop()</code> and <code class="cpp">getCoreId()</code> methods are also quite trivial and 
+<p>The <code class="language-cpp">stop()</code> and <code class="language-cpp">getCoreId()</code> methods are also quite trivial and 
   self explanatory.</p>
-<p>Now let's take a look at the <code class="cpp">run()</code> method which contains the L2 forwarding logic. 
-  It consists of an endless loop that is interrupted through a flag set by the <code class="cpp">stop()</code>
+<p>Now let's take a look at the <code class="language-cpp">run()</code> method which contains the L2 forwarding logic. 
+  It consists of an endless loop that is interrupted through a flag set by the <code class="language-cpp">stop()</code>
   method (which indicates the thread should stop its execution). Before starting the loop it creates an array of 64
-  <code class="cpp">MBufRawPacket</code> pointers which will be used to store the received packets. The loop itself
-  is very simple: it receives packets from the RX device using <code class="cpp">m_RxDevice->receivePackets(mbufArr, 64, 0)</code>.
-  The packets are stored in the <code class="cpp">MBufRawPacket</code> array. Then it immediately sends those packets to the 
-  TX device using <code class="cpp">m_TxDevice->sendPackets(mbufArr, numOfPackets, 0)</code>. You may be asking who takes care
+  <code class="language-cpp">MBufRawPacket</code> pointers which will be used to store the received packets. The loop itself
+  is very simple: it receives packets from the RX device using <code class="language-cpp">m_RxDevice->receivePackets(mbufArr, 64, 0)</code>.
+  The packets are stored in the <code class="language-cpp">MBufRawPacket</code> array. Then it immediately sends those packets to the 
+  TX device using <code class="language-cpp">m_TxDevice->sendPackets(mbufArr, numOfPackets, 0)</code>. You may be asking who takes care
   of freeing the packet array and mbufs in each iteration of the loop. Well, this is done automatically by 
-  <code class="cpp">sendPackets()</code> so we don't have to take care of it ourselves.</p>
+  <code class="language-cpp">sendPackets()</code> so we don't have to take care of it ourselves.</p>
 <p>This basically summarizes the implementation of the worker thread. In the current application we'll set up 2 worker threads:
   one for receiving packets from DEVICE_ID_1 and send them over DEVICE_ID_2 and another to receiving packets from DEVICE_ID_2
   and send them over DEVICE_ID_1.</p>
@@ -256,7 +254,7 @@ uint32_t L2FwdWorkerThread::getCoreId()
 <h2 id="start_worker_threads">Start Worker Threads</h2>
 <p>Now that we have the worker thread code ready, let's wire everything up and start the application. First, let's create the
   worker thread instances:</p>
-<pre>	<code class="cpp">// Create worker threads
+<pre><code class="language-cpp">// Create worker threads
 std::vector&lt;pcpp::DpdkWorkerThread*&gt; workers;
 workers.push_back(new L2FwdWorkerThread(device1, device2));
 workers.push_back(new L2FwdWorkerThread(device2, device1));</code>
@@ -266,8 +264,7 @@ workers.push_back(new L2FwdWorkerThread(device2, device1));</code>
 <p>Next step is to assign cores for these two worker threads to run on. DPDK enforces running each worker in a 
   separate core to maximize performance. We will create a core mask that contains core 1 and core 2, let's see how this code
   looks like:</p>
-<pre>
-  <code class="cpp">// Create core mask - use core 1 and 2 for the two threads
+<pre><code class="language-cpp">// Create core mask - use core 1 and 2 for the two threads
 int workersCoreMask = 0;
 for (int i = 1; i &lt;= 2; i++)
 {
@@ -276,8 +273,7 @@ for (int i = 1; i &lt;= 2; i++)
 </pre>
 <p>As you can see, we basically create the value 0x6 (or 0b110) where we set only the bits who correspond to the cores we want to use (1 and 2)</p>
 <p>Now let's start the worker threads:</p>
-<pre>
-  <code class="cpp">// Start capture in async mode
+<pre><code class="language-cpp">// Start capture in async mode
 if (!pcpp::DpdkDeviceList::getInstance().startDpdkWorkerThreads(workersCoreMask, workers))
 {
 	printf("Couldn't start worker threads");
@@ -290,12 +286,11 @@ if (!pcpp::DpdkDeviceList::getInstance().startDpdkWorkerThreads(workersCoreMask,
 <p>Now wer'e at a point where the 2 worker threads are running their endless loops which receives packets on one interface and sends them 
   to the other interface. Practically we're done and the bridge should be working now. But to make the program more complete let's also 
   add a graceful shutdown and user friendly prints to view the RX/TX statistics during application run.</p>
-<p>For the graceful shutdown we'll use an utility class in PcapPlusPlus called <code class="cpp">ApplicationEventHandler</code> which 
+<p>For the graceful shutdown we'll use an utility class in PcapPlusPlus called <code class="language-cpp">ApplicationEventHandler</code> which 
 encapsulates user-driven events that may occur during application run, such as process kill (ctrl+c). For using this class we'll need
-to add one line at the beginning of our <code class="cpp">main()</code> method which registers a callback we'd like to be called when  
+to add one line at the beginning of our <code class="language-cpp">main()</code> method which registers a callback we'd like to be called when  
 ctrl+c is pressed:</p>
-<pre>
-  <code class="cpp">int main(int argc, char* argv[])
+<pre><code class="language-cpp">int main(int argc, char* argv[])
 {
   // Register the on app close event handler
   pcpp::ApplicationEventHandler::getInstance().onApplicationInterrupted(onApplicationInterrupted, NULL);
@@ -307,9 +302,8 @@ ctrl+c is pressed:</p>
   .....
   .....</code>
 </pre>
-<p>Now let's implement this <code class="cpp">onApplicationInterrupted</code> callback. It'll have a very simple logic which sets a global flag:</p>
-<pre>
-  <code class="cpp">// Keep running flag
+<p>Now let's implement this <code class="language-cpp">onApplicationInterrupted</code> callback. It'll have a very simple logic which sets a global flag:</p>
+<pre><code class="language-cpp">// Keep running flag
 bool keepRunning = true;
 
 void onApplicationInterrupted(void* cookie)
@@ -325,12 +319,11 @@ void onApplicationInterrupted(void* cookie)
     performance. However it's a good practice (although not required) to allocate at least one more CPU core for management, meaning 
     tasks that are not in the application's fast-path, such as statistics collection, provide user-interface (CLI or other), health monitoring,
     etc. Usually this management core will be core 0, but you can set up any other core. This management core is also the one running the 
-    <code class="cpp">main()</code> method. Now let's go back to our application: once we started the worker threads on cores 1 and 2, we would
+    <code class="language-cpp">main()</code> method. Now let's go back to our application: once we started the worker threads on cores 1 and 2, we would
     like the management core to continuously gather statistics and print them to the user. The way to do that is to set up and endless loop inside 
-    the <code class="cpp">main()</code> method that will collect and print the stats and will be interrupted when the user presses ctrl+c 
-    (and setting the <code class="cpp">keepRunning</code> flag). Let's see the implementation:</p>
-<pre>
-  <code class="cpp">#define COLLECT_STATS_EVERY_SEC 2
+    the <code class="language-cpp">main()</code> method that will collect and print the stats and will be interrupted when the user presses ctrl+c 
+    (and setting the <code class="language-cpp">keepRunning</code> flag). Let's see the implementation:</p>
+<pre><code class="language-cpp">#define COLLECT_STATS_EVERY_SEC 2
 uint64_t counter = 0;
 int statsCounter = 1;
               
@@ -365,8 +358,7 @@ while (keepRunning)
 </pre>
 <p>As you can see the while loop collects statistics, prints them and then sleeps for 1 second.</p>
 <p>Now let's see how to gather network statistics:</p>
-<pre>
-  <code class="cpp">void printStats(pcpp::DpdkDevice* rxDevice, pcpp::DpdkDevice* txDevice)
+<pre><code class="language-cpp">void printStats(pcpp::DpdkDevice* rxDevice, pcpp::DpdkDevice* txDevice)
 {
   pcpp::DpdkDevice::DpdkDeviceStats rxStats;
   pcpp::DpdkDevice::DpdkDeviceStats txStats;
@@ -398,26 +390,25 @@ while (keepRunning)
   printer.printRow(totalTx.str(), '|');
 }</code>
 </pre>
-<p><code class="cpp">DpdkDevice</code> exposes the <code class="cpp">getStatistics()</code> method for stats collection. Various counters are
+<p><code class="language-cpp">DpdkDevice</code> exposes the <code class="language-cpp">getStatistics()</code> method for stats collection. Various counters are
   being collected such as the number of packets, amount of data, packet per second, bytes per second, etc. You can view them separately per 
   RX/TX queue, or aggregated per device. It's important to understand that these numbers are only relevant for the timestamp they
   are being collected and therefore this timestamp is also included in the data. You can read more about this in the class documentation.</p>
 <p>If we go back to the code above, you can see we're collecting stats for the 2 devices. From one we take RX stats and from the other we
-  take TX stats. We are using an utility class in PcapPlusPlus called <code class="cpp">TablePrinter</code> to print the numbers nicely in a 
+  take TX stats. We are using an utility class in PcapPlusPlus called <code class="language-cpp">TablePrinter</code> to print the numbers nicely in a 
   table format. For the sake of simplicity we are taking only the aggregated RX and TX stats, but of course we can also take and prints RX/TX 
   stats per queue.</p>
 <p>We are almost done. One last thing to do is to run the necessary clean ups once the user presses ctrl+c. The only relevant clean-up is 
   to stop the worker threads, let's see the code:</p>
 <pre>
-  <code class="cpp">// Stop worker threads
+  <code class="language-cpp">// Stop worker threads
 pcpp::DpdkDeviceList::getInstance().stopDpdkWorkerThreads();
 
 // Exit app with normal exit code
 return 0;</code>
 </pre>
 <p>That's it, we're all set! Now let's run the program and see the output:</p>
-<pre>
-  <code>Stats #5
+<pre><code class="language-shell">Stats #5
 ==========
 
 
@@ -437,7 +428,8 @@ Device2->Device1 stats:
 --------------------------------------------------------------------------------------
 | rx         | 160880          | 3273            | 11261910        | 1833416         |
 | tx         | 161001          | 4533            | 10627168        | 2393688         |
---------------------------------------------------------------------------------------</code>
+--------------------------------------------------------------------------------------
+</code>
 </pre>
 <p>This output is printed every 2 seconds and shows for each direction: the total number of packets received and sent so far, 
   the total number of bytes received and sent so far, packets per second and bps (bits per second)</p>
@@ -449,13 +441,13 @@ Device2->Device1 stats:
   <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. When building from source please
   make sure to configure the build for DPDK, as explained <a href="dpdk-pf_ring.html">here</a>. The only platform relevant for this
   tutorial is Linux as DPDK is not supported on other platforms.</p>
-<p>After done building PcapPlusPlus and the tutorial and before running the tutorial please run <code>setup-dpdk.sh</code> script to setup
+<p>After done building PcapPlusPlus and the tutorial and before running the tutorial please run <code class="language-shell">setup-dpdk.sh</code> script to setup
   the necessary runtime parameters for DPDK. More details on this script can be found <a href="dpdk-pf_ring.html">here</a>.</p>
 <p>Please note this tutorial needs a special environment to run on, as it needs at least 2 devices connected only through a third device running
   this application. If you need help setting up this environment and you have VirtualBox you can use  
   <a href="https://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/">this</a> great tutorial which will walk you through it.</p>
 <p>The compiled executable will be inside the tutorial directory 
-  (<code>[PcapPlusPlus
+  (<code class="language-shell">[PcapPlusPlus
     Folder]/Examples/Tutorials/Tutorial-DpdkL2Fwd</code>).</p>
 <script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
 <p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>

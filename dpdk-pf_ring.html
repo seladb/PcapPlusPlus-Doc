@@ -13,7 +13,7 @@ section: dpdk-pfring
 <h6><strong>Download and install</strong></h6>
 <p>Download and install instructions for DPDK are on this page: <a href="http://dpdk.org/download">http://dpdk.org/download</a></p>
 <p>Please make sure to install DPDK in the following way:</p>
-<pre><code class="cpp">make config T=[platform_type_string] && make</code></pre><p></p>
+<pre><code class="language-shell">make config T=[platform_type_string] && make</code></pre><p></p>
 
 <h6><strong>So what does PcapPlusPlus offer for DPDK?</strong></h6>
 <ul>
@@ -51,7 +51,7 @@ section: dpdk-pfring
 <p>If everything went well the system is ready to run a DPDK application and the script output should look like this:</p>
 
 <pre>
-<code class="cpp">*******************************
+<code class="language-shell">*******************************
 PcapPlusPlus setup DPDK script 
 *******************************
 
@@ -85,8 +85,8 @@ Setup DPDK completed</code>
   <li>Configure each NIC controlled by DPDK</li>
 </ol>
 <p>These steps are wrapped in one static method that should be called once in application startup:</p>
-<pre><code class="cpp">DpdkDeviceList::initDpdk()</code></pre>
-<p/>
+<pre><code class="language-cpp">DpdkDeviceList::initDpdk()</code></pre>
+</p>
 <h6><strong>Tests and limitations</strong></h6>
 <ul>
   <li>All unit-tests I perfromed are in Pcap++Test</li>
@@ -119,4 +119,4 @@ Setup DPDK completed</code>
   <li>Then you can compile PcapPlusPlus as usual</li>
   <li>Before you activate any PcapPlusPlus application that uses PF_RING, don't forget to enable PF_RING kernel module. If you forget to do that, PcapPlusPlus will output an appropriate error on startup which will remind you:</li>
 </ol>
-<pre><code class="cpp">sudo insmod &lt;PF_RING_LOCATION&gt;/kernel/pf_ring.ko</code></pre>
+<pre><code class="language-shell">sudo insmod &lt;PF_RING_LOCATION&gt;/kernel/pf_ring.ko</code></pre>

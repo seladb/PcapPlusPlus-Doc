@@ -48,9 +48,9 @@ section: tutorials
         <h2 id="packet_editing">Packet editing</h2>
         <p>In this part of the tutorial we'll read a packet from a pcap file,
           let PcapPlusPlus parse it, and then see how we can edit and change the
-          data in each layer. Let's start by writing a <code class="cpp">main()</code>
+          data in each layer. Let's start by writing a <code class="language-cpp">main()</code>
           method and add the includes that we need:</p>
-        <pre><code class="cpp">#if !defined(WIN32) && !defined(WINx64)
+<pre><code class="language-cpp">#if !defined(WIN32) && !defined(WINx64)
 #include &lt;in.h&gt; // this is for using ntohs() and htons() on non-Windows OS's
 #endif
 #include "stdlib.h"
@@ -70,17 +70,17 @@ int main(int argc, char* argv[])
 }
 	</code>
 </pre>
-        <p>As you can see we added an include to <code class="cpp">Packet.h</code>
-          which contains the basic parsed packet structures, to <code class="cpp">PcapFileDevice.h</code>
+        <p>As you can see we added an include to <code class="language-cpp">Packet.h</code>
+          which contains the basic parsed packet structures, to <code class="language-cpp">PcapFileDevice.h</code>
           which contains the API for reading/writing from/to pcap files and to
           all of the layers which we will edit and add data from. In addition we included
-          <code class="cpp">in.h</code> for using <code class="cpp">htons()</code> and
-          <code class="cpp">ntohs()</code> which we'll use later. This include is relevant for non-Windows
+          <code class="language-cpp">in.h</code> for using <code class="language-cpp">htons()</code> and
+          <code class="language-cpp">ntohs()</code> which we'll use later. This include is relevant for non-Windows
           operating systems only.</p>
         <p>Now let's read the packet from the pcap file. This pcap file contains
           only 1 packet, so we'll open the reader, read the packet and close the
           reader:</p>
-        <pre>	<code class="cpp">// use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
+<pre><code class="language-cpp">// use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
 // and create an interface instance that both readers implement
 pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("1_http_packet.pcap");
 
@@ -110,10 +110,10 @@ if (!reader-&gt;getNextPacket(rawPacket))
 reader-&gt;close();</code>
 </pre>
         <p>The next step is to let PcapPlusPlus parse the packet by creating an
-          instance of the <code class="cpp">Packet</code> class and giving it
-          in the constructor a pointer to the <code class="cpp">RawPacket</code>
+          instance of the <code class="language-cpp">Packet</code> class and giving it
+          in the constructor a pointer to the <code class="language-cpp">RawPacket</code>
           instance we have:</p>
-        <pre>	<code class="cpp">// parse the raw packet into a parsed packet
+<pre><code class="language-cpp">// parse the raw packet into a parsed packet
 pcpp::Packet parsedPacket(&amp;rawPacket);</code>
 </pre>
         <p>You may notice this is exactly the same packet as we used in the <a
@@ -122,21 +122,19 @@ pcpp::Packet parsedPacket(&amp;rawPacket);</code>
           this time we won't just read data from the various layers but actually
           change it. First thing we'll do is get the <strong>Ethernet</strong>
           layer and change it:</p>
-        <pre><code class="cpp">// now let's get the Ethernet layer
+<pre><code class="language-cpp">// now let's get the Ethernet layer
 pcpp::EthLayer* ethernetLayer = parsedPacket.getLayerOfType&lt;pcpp::EthLayer&gt;();
 // change the source dest MAC address
 // change the source dest MAC address
 ethernetLayer-&gt;setDestMac(pcpp::MacAddress("aa:bb:cc:dd:ee:ff"));</code>
 </pre>
-            <p>As you can see, we changed the destination MAC address to <span style="font-family: monospace;">"aa:bb:cc:dd:ee"</span><code
-
-class="cpp"></code>.
-              We used the <code class="cpp">setDestMac()</code> method exposed
-              in <code>EthLayer</code> to do that and we gave it a <code>MacAddress</code>
+            <p>As you can see, we changed the destination MAC address to <code class="language-shell">"aa:bb:cc:dd:ee"</code>
+              We used the <code class="language-cpp">setDestMac()</code> method exposed
+              in <code class="language-cpp">EthLayer</code> to do that and we gave it a <code class="language-cpp">MacAddress</code>
               class instance we created with the new MAC address we want.</p>
             <p>Ethernet layer is quite simple, let's move to a more complex
               layer - <strong>IPv4</strong>, and see what data we can change there:</p>
-            <pre><code class="cpp">// let's get the IPv4 layer
+<pre><code class="language-cpp">// let's get the IPv4 layer
 pcpp::IPv4Layer* ipLayer = parsedPacket.getLayerOfType&lt;pcpp::IPv4Layer&gt;();
 // change source IP address
 ipLayer-&gt;setSrcIpAddress(pcpp::IPv4Address(std::string("1.1.1.1")));
@@ -145,20 +143,20 @@ ipLayer-&gt;getIPv4Header()-&gt;ipId = htons(4000);
 // change TTL value
 ipLayer-&gt;getIPv4Header()-&gt;timeToLive = 12;</code>
 </pre>
-            <p>First we changed the source IPv4 address to <code>"1.1.1.1"</code>
-              using the method <code>setSrcIpAddress()</code> and provided it
+            <p>First we changed the source IPv4 address to <code class="language-shell">"1.1.1.1"</code>
+              using the method <code class="language-cpp">setSrcIpAddress()</code> and provided it
               an instance of the class <code>IPv4Address</code> with the value
-              of <code>"1.1.1.1"</code>. Then, we used the <code class="cpp">getIPv4Header()</code>
-              method which casts the raw packet bytes to a struct called <code class="cpp">iphdr*</code> in the same way we did in the packet
+              of <code class="language-shell">"1.1.1.1"</code>. Then, we used the <code class="language-cpp">getIPv4Header()</code>
+              method which casts the raw packet bytes to a struct called <code class="language-cpp">iphdr*</code> in the same way we did in the packet
               parsing tutorial, but this time instead of reading values we're
-              changing them. It is very important to understand that the <code>iphdr*</code>
+              changing them. It is very important to understand that the <code class="language-cpp">iphdr*</code>
               object gives access to the actual packet bytes so it can be both
               read and manipulated, and each change affects the actual packet
               data. When setting fields which are wider than 1 byte it's
-              important to write in network order and that's why we're using <code>htons()</code>
+              important to write in network order and that's why we're using <code class="language-cpp">htons()</code>
               to set the IP ID to 4000.</p>
             <p>Let's move on to the next layer - <strong>TCP</strong>:</p>
-            <pre><code class="cpp">// let's get the TCP layer
+<pre><code class="language-cpp">// let's get the TCP layer
 pcpp::TcpLayer* tcpLayer = parsedPacket.getLayerOfType&lt;pcpp::TcpLayer&gt;();
 // change source port
 tcpLayer-&gt;getTcpHeader()-&gt;portSrc = htons(12345);
@@ -168,25 +166,25 @@ tcpLayer-&gt;getTcpHeader()-&gt;urgFlag = 1;
 tcpLayer-&gt;addTcpOptionAfter(pcpp::TcpOptionBuilder(pcpp::TCPOPT_MSS, (uint16_t)1460));</code></pre>
             <p>
             </p>
-            <p>We start by using the method <code>getTcpHeader()</code> which
-              casts the raw packet bytes to a struct <code class="cpp">tpchdr*</code>
-              which contains all of the TCP fields. Again, like we saw in <code>IPv4Layer</code>, this method gives access to the actual
+            <p>We start by using the method <code class="language-cpp">getTcpHeader()</code> which
+              casts the raw packet bytes to a struct <code class="language-cpp">tpchdr*</code>
+              which contains all of the TCP fields. Again, like we saw in <code class="language-cpp">IPv4Layer</code>, this method gives access to the actual
               packet bytes so every change we do changes the packet. So
               we changed the source port to 12345 and set the URG flag. </p>
             <p>Now let's take a look at the 2 bottom lines in the code snippet
-              above.&nbsp; <code>TcpLayer</code> exposes an API to read, add
+              above.&nbsp; <code class="language-cpp">TcpLayer</code> exposes an API to read, add
               and remove TCP options. The packet we're editing already has 3 TCP
               options: NOP, NOP and Timestamp. We'd like to add a fourth one of
               type MSS with MSS value of 1460 and we want it to appear first (before
-              the existing TCP options). So we use the <code>addTcpOptionAfter()</code>
-              method and give it a <code>TcpOptionBuilder</code> object. This builder
+              the existing TCP options). So we use the <code class="language-cpp">addTcpOptionAfter()</code>
+              method and give it a <code class="language-cpp">TcpOptionBuilder</code> object. This builder
               object gets in its constructor the TCP option type (which is 
-              <code>PCPP_TCPOLEN_MSS</code>), and the option value (1460) and 
-              <code>addTcpOptionAfter()</code> uses it to create the TCP option object
+              <code class="language-cpp">PCPP_TCPOLEN_MSS</code>), and the option value (1460) and 
+              <code class="language-cpp">addTcpOptionAfter()</code> uses it to create the TCP option object
               and add it to the existing list of TCP options. That's it! with 1 line 
               of code we managed to add a new TCP option!</p>
             <p>Now let move on to the last layer in this packet: <strong>HTTP</strong>. Let's see the code:</p>
-            <pre><code class="cpp" ?="">// let's get the HTTP layer
+<pre><code class="language-cpp">// let's get the HTTP layer
 pcpp::HttpRequestLayer* httpRequestLayer = parsedPacket.getLayerOfType&lt;pcpp::HttpRequestLayer&amp;hl;();
 // change the request method from GET to TRACE
 httpRequestLayer-&gt;getFirstLine()-&gt;setMethod(pcpp::HttpRequestLayer::HttpTRACE);
@@ -200,33 +198,34 @@ httpRequestLayer-&gt;removeField(PCPP_HTTP_COOKIE_FIELD);
 pcpp::HttpField* xForwardedForField = httpRequestLayer-&gt;insertField(httpRequestLayer-&gt;getFieldByName(PCPP_HTTP_HOST_FIELD), "X-Forwarded-For", "1.1.1.1");
 // add cache-control field
 httpRequestLayer-&gt;insertField(xForwardedForField, "Cache-Control", "max-age=0");</code></pre>
-            <p>We already discussed the highlights of the <code>HttpLayer</code> API in the
+            <p>We already discussed the highlights of the <code class="language-cpp">HttpLayer</code> API in the
               <a href="tutorial_packet_parsing.html">Packet parsing</a> tutorial so we
               won't repeat all of it again. But as you can see the
               API provides setters for all of the relevant data:</p>
             <ul>
-              <li><code>HttpRequestFirstLine</code> exposes is a setter for the HTTP method <code>setMethod()</code>
-                where we change it to <code>TRACE</code>. Similar methods exist for the URI and version
+              <li><code class="language-cpp">HttpRequestFirstLine</code> exposes is a setter for the HTTP method <code class="language-cpp">setMethod()</code>
+                where we change it to <code class="language-cpp">TRACE</code>. Similar methods exist for the URI and version
               </li>
-              <li>When retrieving HTTP fields, the <code>HttpField</code> class exposes a method of <code>setFieldValue()</code>
-                for setting the field value (demonstrated above for <code>"Host"</code> and <code>"Referer"</code> fields)
+              <li>When retrieving HTTP fields, the <code class="language-cpp">HttpField</code> class exposes a method of <code class="language-cpp">setFieldValue()</code>
+                for setting the field value (demonstrated above for <code class="language-cpp">"Host"</code> and <code class="language-cpp">"Referer"</code> fields)
               </li>
-              <li><code>HttpLayer</code> exposes methods for adding new fields: <code>insertField()</code> and <code>addField()</code>,
-                and methods for removing existing fields: <code>removeField()</code>. Here we demonstrated how to add <code>"X-Forwarded-For"
-                </code> and <code>"Cache-Control"</code> header fields (and set their values) and how to remove the <code>"Cookie"</code> header field
+              <li><code class="language-cpp">HttpLayer</code> exposes methods for adding new fields: <code class="language-cpp">insertField()</code> and <code class="language-cpp">addField()</code>,
+                and methods for removing existing fields: <code class="language-cpp">removeField()</code>. Here we demonstrated how to add <code class="language-cpp">"X-Forwarded-For"
+                </code> and <code class="language-cpp">"Cache-Control"</code> header fields (and set their values) and how to remove the <code class="language-cpp">"Cookie"</code> header field
               </li>
             </ul>
             <p>So far we've seen editing of existing layers. But what about adding new layers or removing existing ones?</p>
-            <p>Of course this is also possible using the <code>Packet</code> class API. Let's demonstrate how to add a VLAN layer between the Ethernet and IPv4 layer:</p>
-            <pre><code class="cpp">// create a new vlan layer
+            <p>Of course this is also possible using the <code class="language-cpp">Packet</code> class API. Let's demonstrate how to add a VLAN layer between the Ethernet and IPv4 layer:</p>
+<pre><code class="language-cpp">// create a new vlan layer
 pcpp::VlanLayer newVlanLayer(123, false, 1, PCPP_ETHERTYPE_IP);
 
 // add the vlan layer to the packet after the existing Ethernet layer
 parsedPacket.insertLayer(ethernetLayer, &amp;newVlanLayer);
 </code></pre>
-            <p>First we created a new <code>VlanLayer</code> instance and gave it the necessary parameters which are VLAN ID (123), CFI (false), priority (1) and the Ether type for the next layer (IPv4). Then we added this layer to the packet right after the Ethernet layer using <code>insertLayer()</code> method. Nice and simple :)</p><p>In the same way we added a new layer we can also remove layers from the packet using the <code>Packet::removeLayer()</code> method.</p>
+            <p>First we created a new <code class="language-cpp">VlanLayer</code> instance and gave it the necessary parameters which are VLAN ID (123), CFI (false), priority (1) and the Ether type for the next layer (IPv4). Then we added this layer to the packet right after the Ethernet layer using <code class="language-cpp">insertLayer()</code> method. Nice and simple :)</p>
+            <p>In the same way we added a new layer we can also remove layers from the packet using the <code class="language-cpp">Packet::removeLayer()</code> method.</p>
             <p>We've made quite a lot of changes to the packet. Let's save it to a pcap file and view the result in Wireshark. But before doing that let's first instruct the packet to re-calculate all of the layers' calculated fields:</p>
-            <pre><code class="cpp">// compute all calculated fields
+<pre><code class="language-cpp">// compute all calculated fields
 parsedPacket.computeCalculateFields();
 
 // write the modified packet to a pcap file
@@ -234,8 +233,8 @@ pcpp::PcapFileWriterDevice writer("1_modified_packet.pcap");
 writer.open();
 writer.writePacket(*(parsedPacket.getRawPacket()));
 writer.close();</code>
-            </pre>
-            <p>Now let's open <code>"1_modified_packet.pcap"</code> in Wireshark and view the result:</p>
+</pre>
+            <p>Now let's open <code class="language-shell">"1_modified_packet.pcap"</code> in Wireshark and view the result:</p>
             <img alt="" src="resources/PacketEdit1.png"><br><br>
             <img alt="" src="resources/PacketEdit2.png"><br><br>
             <img alt="" src="resources/PacketEdit3.png"><br><br><br><br>
@@ -244,52 +243,52 @@ writer.close();</code>
             <h2 id="packet_creation">Packet Creation</h2>
             <p>In this part of the tutorial we'll build a packet from scratch, create the different layers one by one and eventually save it to a pcap file to verify packet data is the same as expected.</p>
             <p>Let's start by creating the first layer - an <strong>Ethernet </strong>layer:</p>
-            <pre><code class="cpp">// create a new Ethernet layer
+            <pre><code class="language-cpp">// create a new Ethernet layer
 pcpp::EthLayer newEthernetLayer(pcpp::MacAddress("00:50:43:11:22:33"), pcpp::MacAddress("aa:bb:cc:dd:ee"));</code>
             </pre>
-            <p>What we did here is create a new instance of the <code>EthLayer</code> class and give it the necessary parameters which are source and dest MAC addresses (both are instances of the <code>MacAddress</code> class instantiated with the MAC address string). Rather easy right?</p>
+            <p>What we did here is create a new instance of the <code class="language-cpp">EthLayer</code> class and give it the necessary parameters which are source and dest MAC addresses (both are instances of the <code>MacAddress</code> class instantiated with the MAC address string). Rather easy right?</p>
             <p>Now let's move on to the second layer - <strong>IPv4</strong>:</p>
-            <pre><code class="cpp">// create a new IPv4 layer
+            <pre><code class="language-cpp">// create a new IPv4 layer
 pcpp::IPv4Layer newIPLayer(pcpp::IPv4Address(std::string("192.168.1.1")), pcpp::IPv4Address(std::string("10.0.0.1")));
 newIPLayer.getIPv4Header()-&gt;ipId = htons(2000);
 newIPLayer.getIPv4Header()-&gt;timeToLive = 64;</code>
             </pre>
-            <p>Here we created a new instance of the <code>IPv4Layer</code> and gave it the necessary parameters which are source and dest IP addresses (both are instances of the <code>IPv4Address </code>class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the
-              <a href="#packet_editing">Packet editing</a> part: call the <code>getIPv4Header()</code> method to get an instance of the <code>iphdr*</code> struct (which is actually a pointer to the packet raw data cast to <code>iphdr*</code>) and set the IP ID and TTL values. Since IP ID is 2-bytes long we use <code>htons()</code> to convert from host to network order.</p>
+            <p>Here we created a new instance of the <code class="language-cpp">IPv4Layer</code> and gave it the necessary parameters which are source and dest IP addresses (both are instances of the <code class="language-cpp">IPv4Address </code>class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the
+              <a href="#packet_editing">Packet editing</a> part: call the <code class="language-cpp">getIPv4Header()</code> method to get an instance of the <code class="language-c">iphdr*</code> struct (which is actually a pointer to the packet raw data cast to <code class="language-c">iphdr*</code>) and set the IP ID and TTL values. Since IP ID is 2-bytes long we use <code class="language-c">htons()</code> to convert from host to network order.</p>
             <p>Now let's move on to the third layer - <strong>UDP</strong>:</p>
-            <pre><code class="cpp">// create a new UDP layer
+            <pre><code class="language-cpp">// create a new UDP layer
 pcpp::UdpLayer newUdpLayer(12345, 53);</code>
             </pre>
-            <p>As you can see, this is quite straight forward: we created a new instance of&nbsp; <code>UdpLayer</code> and gave it in the constructor the source and dest UDP ports.</p>
+            <p>As you can see, this is quite straight forward: we created a new instance of&nbsp; <code class="language-cpp">UdpLayer</code> and gave it in the constructor the source and dest UDP ports.</p>
             <p>Let's move on to the fourth and last layer - <strong>DNS</strong>:</p>
-            <pre><code class="cpp">// create a new DNS layer
+            <pre><code class="language-cpp">// create a new DNS layer
 pcpp::DnsLayer newDnsLayer;
 newDnsLayer.addQuery("www.ebay.com", pcpp::DNS_TYPE_A, pcpp::DNS_CLASS_IN);</code>
             </pre>
-            <p>Here we first created an instance of <code>DnsLayer</code> with the default constructor (without any parameters). Then we added a DNS query record to the layer using the <code>addQuery()</code> method and gave it the query parameters which are: query name ("www.ebay.com"), query type (type A means IPv4 address) and query class (class IN means Internet).</p>
-            <p>That's it! we created 4 layers, now let's add them to a new packet. Let's first create a new <code>Packet</code> instance:</p>
-            <pre><code class="cpp">// create a packet with initial capacity of 100 bytes (will grow automatically if needed)
+            <p>Here we first created an instance of <code class="language-cpp">DnsLayer</code> with the default constructor (without any parameters). Then we added a DNS query record to the layer using the <code class="language-cpp">addQuery()</code> method and gave it the query parameters which are: query name ("www.ebay.com"), query type (type A means IPv4 address) and query class (class IN means Internet).</p>
+            <p>That's it! we created 4 layers, now let's add them to a new packet. Let's first create a new <code class="language-cpp">Packet</code> instance:</p>
+            <pre><code class="language-cpp">// create a packet with initial capacity of 100 bytes (will grow automatically if needed)
 pcpp::Packet newPacket(100);</code>
             </pre>
             <p>The value 100 we gave in the constructor is the expected length of the packet (in bytes). When we give this number a buffer of size 100 is automatically created and will be used to store the packet raw data. Of course, if our packet exceeds 100 bytes this buffer will be automatically extended, but this has a performance cost, so in applications that require high performance it's better to allocate this buffer in advanced (meaning setting the buffer size in the constructor). Now it's time to add all the layers we created to the packet, we'll use the <code>addLayer()</code> method for that:</p>
-            <pre><code class="cpp">// add all the layers we created
+            <pre><code class="language-cpp">// add all the layers we created
 newPacket.addLayer(&amp;newEthernetLayer);
 newPacket.addLayer(&amp;newIPLayer);
 newPacket.addLayer(&amp;newUdpLayer);
 newPacket.addLayer(&amp;newDnsLayer);</code>
             </pre>
-            <p>We're almost done. All that is left is to call the <code>computeCalculateFields()</code> method to calculate the layers' calculated fields:</p>
-            <pre><code class="cpp">// compute all calculated fields
+            <p>We're almost done. All that is left is to call the <code class="language-cpp">computeCalculateFields()</code> method to calculate the layers' calculated fields:</p>
+            <pre><code class="language-cpp">// compute all calculated fields
 newPacket.computeCalculateFields();</code>
             </pre>
             <p>Our packet is ready! Now let's save it to a pcap file and open this file in Wireshark to verify the packet looks exactly like we built it:</p>
-            <pre><code class="cpp">// write the new packet to a pcap file
+            <pre><code class="language-cpp">// write the new packet to a pcap file
 pcpp::PcapFileWriterDevice writer2("1_new_packet.pcap");
 writer2.open();
 writer2.writePacket(*(newPacket.getRawPacket()));
 writer2.close();</code>
             </pre>
-            <p>Now let's compile the code, run it and open the <code>"1_new_packet.pcap"</code> file in Wireshark:</p>
+            <p>Now let's compile the code, run it and open the <code class="language-shell">"1_new_packet.pcap"</code> file in Wireshark:</p>
             <img alt="" src="resources/NewPacket.png">
             <p>As you can see, the packet looks exactly as expected.</p>
             <p></p><p></p>
@@ -305,17 +304,17 @@ writer2.close();</code>
               according to your platform:</p>
             <ul>
               <li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code>Makefile.non_windows</code>
-                file name to <code>Makefile</code> and run <code>make all</code>,
-                or run <code>make -f Makefile.non_windows all</code></li>
-              <li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code>
-                file name to <code>Makefile</code> and run <code>make all</code>,
-                or run <code>make -f Makefile.windows all</code></li>
+                file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>,
+                or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
+              <li>Windows using MinGW or MinGW-w64 - either change the <code class="language-shell">Makefile.windows</code>
+                file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>,
+                or run <code class="language-shell">make -f Makefile.windows all</code></li>
               <li>Windows using Visual Studio 2015 - there is a Visual Studio
                 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>.
                 Just open it and compile all tutorials</li>
             </ul>
             <p>In all options the compiled executable will be inside the
-              tutorial directory (<code>[PcapPlusPlus
+              tutorial directory (<code class="language-shell">[PcapPlusPlus
                 Folder]/Examples/Tutorials/Tutorial-PacketCraftAndEdit</code>)</p>
             <script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
             <p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p></body></html>

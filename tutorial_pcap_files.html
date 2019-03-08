@@ -37,7 +37,7 @@ section: tutorials
 <h2 id="read_write_packets">Reading and writing packets</h2>
 <p>So let's start our application with a "main" method and a single include to "PcapFileDevice.h" which contains all the API for reading and writing packets from/to files</p>
 <pre>
-	<code class="cpp">#include "stdlib.h"
+<code class="language-cpp">#include "stdlib.h"
 #include "PcapFileDevice.h"
 
 /**
@@ -48,10 +48,10 @@ int main(int argc, char* argv[])
 	// write your code here
 }</code>
 </pre>
-<p>Next thing would be to open a pcap file for reading. We'll assume we have a pcap file named "input.pcap" and we want to open it for reading. If we know it's a pcap file we can use the pcap reader class <code class="cpp">PcapFileReaderDevice</code>, and same for pcap-ng files we can use <code class="cpp">PcapNgFileReaderDevice</code> class.</p>
-<p>But PcapPlusPlus also contains an interface class that automatically identifies the file type by its extension and creates an interface instance which both classes implement, so you can use it without really knowing which class hides behind it. This interface is called <code class="cpp">IFileReaderDevice</code>. Let's use it in our application:</p>
+<p>Next thing would be to open a pcap file for reading. We'll assume we have a pcap file named "input.pcap" and we want to open it for reading. If we know it's a pcap file we can use the pcap reader class <code class="language-cpp">PcapFileReaderDevice</code>, and same for pcap-ng files we can use <code class="language-cpp">PcapNgFileReaderDevice</code> class.</p>
+<p>But PcapPlusPlus also contains an interface class that automatically identifies the file type by its extension and creates an interface instance which both classes implement, so you can use it without really knowing which class hides behind it. This interface is called <code class="language-cpp">IFileReaderDevice</code>. Let's use it in our application:</p>
 <pre>
-<code class="cpp">// use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
+<code class="language-cpp">// use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
 // and create an interface instance that both readers implement
 pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("input.pcap");
 
@@ -62,10 +62,10 @@ if (reader == NULL)
 	exit(1);
 }</code>
 </pre>
-<p>As you can see we used the static method <code class="cpp">pcpp::IFileReaderDevice::getReader()</code> to create the interface.</p>
+<p>As you can see we used the static method <code class="language-cpp">pcpp::IFileReaderDevice::getReader()</code> to create the interface.</p>
 <p>Now let's open the reader for reading:</p>
 <pre>
-	<code class="cpp">// open the reader for reading
+<code class="language-cpp">// open the reader for reading
 if (!reader->open())
 {
 	printf("Cannot open input.pcap for reading\n");
@@ -75,7 +75,7 @@ if (!reader->open())
 <p>Now we are ready to start reading packets from the file. But before we do that let's demonstrate using file writers as well. We'll open 2 file writers: one pcap writer and one pcap-ng writer. We'll write the packets we read from the reader to both writers.</p>
 <p>Let's start by creating the pcap writer and open it for writing:</p>
 <pre>
-	<code class="cpp">// create a pcap file writer. Specify file name and link type of all packets that
+<code class="language-cpp">// create a pcap file writer. Specify file name and link type of all packets that
 // will be written to it
 pcpp::PcapFileWriterDevice pcapWriter("output.pcap", pcpp::LINKTYPE_ETHERNET);
 
@@ -89,7 +89,7 @@ if (!pcapWriter.open())
 <p>As you can see we need to specify in the constructor the file name ("output.pcap") and the link type of all packets that will be written to it. That's because the pcap file format can contain single link type per file.</p>
 <p>Now let's open the second writer that writes pcap-ng files:</p>
 <pre>
-	<code class="cpp">// create a pcap-ng file writer. Specify file name. Link type is not necessary because
+<code class="language-cpp">// create a pcap-ng file writer. Specify file name. Link type is not necessary because
 // pcap-ng files can store multiple link types in the same file
 pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
 
@@ -103,7 +103,7 @@ if (!pcapNgWriter.open())
 <p>You can notice that in this constructor there's no need to specify the link type. That's because pcap-ng files can store multiple link types in the same file.</p>
 <p>Another cool feature in file readers is setting a BPF filter so only packets that match the filter will be read and the others will be ignored. Let's set a filter that will catch only packets with source or dest IP of "98.138.19.88":</p>
 <pre>
-	<code class="cpp">// set a BPF filter for the reader - only packets that match the filter will be read
+<code class="language-cpp">// set a BPF filter for the reader - only packets that match the filter will be read
 if (!reader->setFilter("net 98.138.19.88"))
 {
 	printf("Cannot set filter for file reader\n");
@@ -112,7 +112,7 @@ if (!reader->setFilter("net 98.138.19.88"))
 </pre>
 <p>Now let's start a while loop where we'll read all the packets (that match the BPF filter) and write them to both writers:</p>
 <pre>
-	<code class="cpp">// the packet container
+<code class="language-cpp">// the packet container
 pcpp::RawPacket rawPacket;
 
 // a while loop that will continue as long as there are packets in the input file
@@ -127,7 +127,7 @@ while (reader->getNextPacket(rawPacket))
 <p>We're done reading all packets that match the BPF filter and writing them to both writers.</p>
 <p>Another feature I'd like to demonstrate is getting reader/writer statistics. These are basic stats that only count packets that were read/written successfully and those who weren't. Let's get stats from reader and both writers and print them:</p>
 <pre>
-	<code class="cpp">// create the stats object
+<code class="language-cpp">// create the stats object
 pcap_stat stats;
 
 // read stats from reader and print them
@@ -142,9 +142,9 @@ printf("Written %d packets successfully to pcap writer and %d packets could not 
 pcapNgWriter.getStatistics(stats);
 printf("Written %d packets successfully to pcap-ng writer and %d packets could not be written\n", stats.ps_recv, stats.ps_drop);</code>
 </pre>
-<p>We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the <code class="cpp">pcpp::IFileReaderDevice::getReader()</code> static method.</p>
+<p>We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the <code class="language-cpp">pcpp::IFileReaderDevice::getReader()</code> static method.</p>
 <pre>
-	<code class="cpp">// close reader
+<code class="language-cpp">// close reader
 reader->close();
 
 // close writers
@@ -156,16 +156,16 @@ delete reader;</code>
 </pre>
 <p>When running the application with the input.pcap file attached below, here is the output (on Windows):</p>
 <pre>
-	<code>C:\PcapPlusPlus\Examples\Tutorials\Part2-PcapFiles>Part2-PcapFiles.exe
+<code class="language-shell">C:\PcapPlusPlus\Examples\Tutorials\Part2-PcapFiles>Part2-PcapFiles.exe
 Read 10 packets successfully and 0 packets could not be read
 Written 10 packets successfully to pcap writer and 0 packets could not be written
 Written 10 packets successfully to pcap-ng writer and 0 packets could not be written</code>
 </pre>
 <p>As you can see 10 packets were read successfully from the reader and written to both writers. Notice the original "input.pcap" file contains 28 packets, the reason not all of them were read is the BPF filter we set: only 10 out of the 28 packets matched the filter.</p>
 <h2 id="append_packets">Appending packets to existing files</h2>
-<p>PcapPlusPlus enables appending packets to existing pcap/pcap-ng files. This means that packets that you write won't overwrite the file but will be apppended to the existing packets in the file. This is a unique feature for PcapPlusPlus that is not supported in libpcap/WinPcap and required specific implementation outside of libpcap/WinPcap APIs. If you want to open a file writer in append mode all you need to do it to use the <code class="cpp">open(bool)</code> method overload and set it to "true", let's see an example:</p>
+<p>PcapPlusPlus enables appending packets to existing pcap/pcap-ng files. This means that packets that you write won't overwrite the file but will be apppended to the existing packets in the file. This is a unique feature for PcapPlusPlus that is not supported in libpcap/WinPcap and required specific implementation outside of libpcap/WinPcap APIs. If you want to open a file writer in append mode all you need to do it to use the <code class="language-cpp">open(bool)</code> method overload and set it to "true", let's see an example:</p>
 <pre>
-	<code class="cpp">// try to open the file for writing in append mode
+<code class="language-cpp">// try to open the file for writing in append mode
 if (!pcapWriter.open(true))
 {
 	printf("Cannot open output.pcap for writing in append mode\n");
@@ -176,10 +176,10 @@ if (!pcapWriter.open(true))
 <h2 id="run_example">Running the example</h2>
 <p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-PcapFiles">here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. Then follow these instruction, according to your platform:</p>
 <ul>
-	<li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code>Makefile.non_windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.non_windows all</code></li>
-	<li>Windows using MinGW or MinGW-w64 - either change the <code>Makefile.windows</code> file name to <code>Makefile</code> and run <code>make all</code>, or run <code>make -f Makefile.windows all</code></li>
+	<li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code class="language-shell">Makefile.non_windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
+	<li>Windows using MinGW or MinGW-w64 - either change the <code class="language-shell">Makefile.windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.windows all</code></li>
 	<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
 </ul>
-<p>In all options the compiled executable will be inside the tutorial directory (<code>[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PcapFiles</code>)</p>
+<p>In all options the compiled executable will be inside the tutorial directory (<code class="language-shell">[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PcapFiles</code>)</p>
 <script>function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }</script>
 <p><a onclick="topFunction()" href="#">Go to top &uarr;</a></p>
