@@ -70,7 +70,7 @@ def parse_html_file(input_dir, filename):
         lines = cur_file.readlines()
         header_start = 0
         for line in lines:
-            if line.startswith('---'):
+            if line.startswith('---\n'):
                 header_start = header_start + 1
                 continue
 
