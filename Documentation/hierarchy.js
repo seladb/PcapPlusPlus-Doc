@@ -32,8 +32,8 @@ var hierarchy =
         [ "pcpp::PortRangeFilter", "a01258.html", null ]
       ] ],
       [ "pcpp::IFilterWithOperator", "a01238.html", [
-        [ "pcpp::IpV4IDFilter", "a01246.html", null ],
-        [ "pcpp::IpV4TotalLengthFilter", "a01250.html", null ],
+        [ "pcpp::IPv4IDFilter", "a01246.html", null ],
+        [ "pcpp::IPv4TotalLengthFilter", "a01250.html", null ],
         [ "pcpp::TcpWindowSizeFilter", "a01298.html", null ],
         [ "pcpp::UdpLengthFilter", "a01302.html", null ]
       ] ],
