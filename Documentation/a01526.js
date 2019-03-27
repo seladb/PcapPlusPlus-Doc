@@ -1,9 +1,10 @@
 var a01526 =
 [
-    [ "getHeaderLen", "a01526.html#afd062c291faff189eff54e987885e3f6", null ],
-    [ "getOsiModelLayer", "a01526.html#af19d2257b49531b37f546810c5b788b8", null ],
-    [ "getRecordLayer", "a01526.html#a693e2da655cd33a4906bcbcffb394126", null ],
-    [ "getRecordType", "a01526.html#af0bff83614a0641b170e8fb4734178bd", null ],
-    [ "getRecordVersion", "a01526.html#a56f3a017783ffc524463a5691959ae5a", null ],
-    [ "parseNextLayer", "a01526.html#acc45ce490c60762cf4be2da0a4d57723", null ]
+    [ "SSLHandshakeLayer", "a01526.html#a0b37d33d8342f166a5a1746820aa0c0b", null ],
+    [ "computeCalculateFields", "a01526.html#ab9db43d75aec58260e33cbce36f969bb", null ],
+    [ "getHandshakeMessageAt", "a01526.html#ac8d1ae87429f17ad41ca8aa4b4231fa8", null ],
+    [ "getHandshakeMessageOfType", "a01526.html#a4a40a448fd7234eb08c95b5032e64974", null ],
+    [ "getHandshakeMessagesCount", "a01526.html#a9f7c42970ded74d0fee34103e51f7632", null ],
+    [ "getNextHandshakeMessageOfType", "a01526.html#ac1659f58a8e3ed9ed506df80d91c7dbb", null ],
+    [ "toString", "a01526.html#a33923287a108f28edc654c5120cf6158", null ]
 ];

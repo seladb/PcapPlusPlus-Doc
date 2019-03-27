@@ -1,10 +1,6 @@
 var a01242 =
 [
-    [ "IPFilter", "a01242.html#a953d29c9f7d99369acea260016ab6825", null ],
-    [ "IPFilter", "a01242.html#aee54dc6a3492eee05f53c80e44ab9b08", null ],
-    [ "IPFilter", "a01242.html#a68c98982c7c42c9397c2ed84f0a863ac", null ],
-    [ "parseToString", "a01242.html#a9244dc71714f73d8e215498c7c3b0f23", null ],
-    [ "setAddr", "a01242.html#a41a8a2bdad3732f03639ab5009c8e10c", null ],
-    [ "setLen", "a01242.html#af9b725cf2a44144a36d9775ea9e36c5c", null ],
-    [ "setMask", "a01242.html#a7e47d6b236db754fe0463e8f011edd79", null ]
+    [ "IPv4IDFilter", "a01242.html#a95ec38153691fd8a06103a348de77fac", null ],
+    [ "parseToString", "a01242.html#aa7894608d9cd66ab8396359cae68b43d", null ],
+    [ "setIpID", "a01242.html#ab5d467721a4c6ed5028985497cccdcc0", null ]
 ];

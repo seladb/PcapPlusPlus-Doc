@@ -1,16 +1,15 @@
 var a01034 =
 [
-    [ "IPv4Address", "a01034.html#a7eef864e1a372d665a27de6189901e1e", null ],
-    [ "IPv4Address", "a01034.html#a1ec2cd8425ee7d92b1f95cde69650df7", null ],
-    [ "IPv4Address", "a01034.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
-    [ "IPv4Address", "a01034.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
-    [ "IPv4Address", "a01034.html#a133598783690be861bd41452680b2290", null ],
-    [ "clone", "a01034.html#a1fffaebfa683074cd987de6b6207fda8", null ],
-    [ "getType", "a01034.html#a7b49b92e0182d39422c334efc49cc87c", null ],
-    [ "matchSubnet", "a01034.html#a5551eda249276e8676675e5d0184bb49", null ],
-    [ "operator!=", "a01034.html#ae40e1dfbb7b1c78e825af482fcc302ff", null ],
-    [ "operator=", "a01034.html#a086c40b049355635699e3b3c18678fb6", null ],
-    [ "operator==", "a01034.html#aa8a201db40014bd54910598935ae2eaa", null ],
-    [ "toInAddr", "a01034.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
-    [ "toInt", "a01034.html#abccc9bbc341ea0e3d58387c24bd74a3c", null ]
+    [ "IPv6Address", "a01034.html#ad86bb8f234fe5d5b8327902fe04b3af9", null ],
+    [ "IPv6Address", "a01034.html#a40d009ad41c7a05fd3b566f6f460e870", null ],
+    [ "IPv6Address", "a01034.html#ae7b6883d2ee46444059a33cd3be73f38", null ],
+    [ "IPv6Address", "a01034.html#a325c75bccad81bda34ce148f291a999c", null ],
+    [ "clone", "a01034.html#a477cf27dfaf91d782f4f1305c66d4202", null ],
+    [ "copyTo", "a01034.html#ade7dd5e08fa04101f72f60cbed397b7d", null ],
+    [ "copyTo", "a01034.html#a039182943235feb705b2ebd08052d075", null ],
+    [ "getType", "a01034.html#a8a95c46b4a4d4569b18182a1f17f40d1", null ],
+    [ "operator!=", "a01034.html#a2ce04912047630b1c2442bebb87dabb2", null ],
+    [ "operator=", "a01034.html#a6f3b86e75434f2c106d341736151a464", null ],
+    [ "operator==", "a01034.html#acf2d4e996c67c9d7e3986e98b8c28d80", null ],
+    [ "toIn6Addr", "a01034.html#a1d4c09c0982b5b3905f53493489e7383", null ]
 ];

@@ -1,22 +1,16 @@
 var a01386 =
 [
-    [ "RawPacket", "a01386.html#a8834cea9fc72516c3d22a841479ee684", null ],
-    [ "RawPacket", "a01386.html#acc12f855f36a798ce0e8c7dc8a4618f9", null ],
-    [ "~RawPacket", "a01386.html#abb8b8a3574217ab88b406cba3d2551fb", null ],
-    [ "RawPacket", "a01386.html#a38d24eda21061c53f0801f3bcbe34193", null ],
-    [ "appendData", "a01386.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
-    [ "clear", "a01386.html#ab6b169b02bda40e90279e7d8f6816e41", null ],
-    [ "getFrameLength", "a01386.html#a19819af25bdac6217aad301b7b243b15", null ],
-    [ "getLinkLayerType", "a01386.html#ad3cd4246f2c2e6a7d4238a02b28771ba", null ],
-    [ "getObjectType", "a01386.html#a84cca99a63eeaa7653e984462686f2bc", null ],
-    [ "getPacketTimeStamp", "a01386.html#a6d71610f601b3de6bbd38bd45bf95504", null ],
-    [ "getRawData", "a01386.html#ac6448bbdb926de421a6e26cc3e2aa860", null ],
-    [ "getRawDataLen", "a01386.html#a15e5700fb9d76cdfbcb3c3d505f22904", null ],
-    [ "getRawDataReadOnly", "a01386.html#a25d32fa76d975bcbb6020f63b607e594", null ],
-    [ "insertData", "a01386.html#a3563f649177826c9e4f649eec7b35887", null ],
-    [ "isPacketSet", "a01386.html#a829ca934f43a2a3610d81d481c4303dd", null ],
-    [ "operator=", "a01386.html#afc8278a0208727a579a122f197c4d02e", null ],
-    [ "reallocateData", "a01386.html#acd9248a47bd60427e2a3ef34b379a28e", null ],
-    [ "removeData", "a01386.html#a9cf289e6bbf461f55c20784615c899ce", null ],
-    [ "setRawData", "a01386.html#a6babfc371bd3b9eac8c741cba5e097f6", null ]
+    [ "RecvPacketResult", "a01386.html#a06ec60dc8d38dfab0333fb793ad0da76", [
+      [ "RecvSuccess", "a01386.html#a06ec60dc8d38dfab0333fb793ad0da76ad36c34a2ebc972da8d8ad02b1e1d8c70", null ],
+      [ "RecvTimeout", "a01386.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c", null ],
+      [ "RecvWouldBlock", "a01386.html#a06ec60dc8d38dfab0333fb793ad0da76abaedaa450ddecac58433cf954fdfd8b8", null ],
+      [ "RecvError", "a01386.html#a06ec60dc8d38dfab0333fb793ad0da76adce5f5b2a3d83a5816da7520ee4228ea", null ]
+    ] ],
+    [ "~RawSocketDevice", "a01386.html#a16669eaf3e120d99ff07a07223aca9b6", null ],
+    [ "close", "a01386.html#a040fdad86cc60ef3b289834251a942c5", null ],
+    [ "open", "a01386.html#afadbe3e75178913f1d9c2cc3f6d02909", null ],
+    [ "receivePacket", "a01386.html#a184663a2718b6e4f5f7ad353d840dfbc", null ],
+    [ "receivePackets", "a01386.html#a83f604ddccbb3dad4dbee74bcda6d21d", null ],
+    [ "sendPacket", "a01386.html#a3a7822e719e2f5895b3bee1523327e08", null ],
+    [ "sendPackets", "a01386.html#a348a0cfddc2d9b04857fd8bf8402b6ba", null ]
 ];

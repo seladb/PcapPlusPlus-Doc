@@ -1,10 +1,10 @@
 var a00846 =
 [
-    [ "DpdkDeviceConfiguration", "a00846.html#a02b5e780f69972a7295beea8acd9299e", null ],
-    [ "flushTxBufferTimeout", "a00846.html#a225b415490ad496be6e0a93cf0b829ba", null ],
-    [ "receiveDescriptorsNumber", "a00846.html#af0f377c2974af2766ffcb3bd54ed7e2d", null ],
-    [ "rssHashFunction", "a00846.html#adebf03bb242d47ddc1340e7ecae555f6", null ],
-    [ "rssKey", "a00846.html#ab031afa238020cf7389500461675d7fc", null ],
-    [ "rssKeyLength", "a00846.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5", null ],
-    [ "transmitDescriptorsNumber", "a00846.html#a43841be287a4fc02b76d06c1eabcc83c", null ]
+    [ "LinkDuplex", "a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
+      [ "FULL_DUPLEX", "a00846.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
+      [ "HALF_DUPLEX", "a00846.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
+    ] ],
+    [ "linkDuplex", "a00846.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
+    [ "linkSpeedMbps", "a00846.html#a6177ed98446f18d57be88d8c2411a473", null ],
+    [ "linkUp", "a00846.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
 ];

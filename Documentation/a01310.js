@@ -1,7 +1,10 @@
 var a01310 =
 [
-    [ "DeviceConfiguration", "a01310.html#a505433eb8fae1ef563618e4c1625adf4", null ],
-    [ "mode", "a01310.html#af44933f7a8a561384201368ef54b2d01", null ],
-    [ "packetBufferSize", "a01310.html#a8e3d6ec76ba3addc0bbe11838f925f9c", null ],
-    [ "packetBufferTimeoutMs", "a01310.html#a0811c333b0b3b50f41c7826d20c9bfde", null ]
+    [ "getDnsServers", "a01310.html#a2cefca3fa33b793cdfb1b58c3883f25b", null ],
+    [ "getPcapLiveDeviceByIp", "a01310.html#a1ab7bad31dbb97247648d1a149d2f612", null ],
+    [ "getPcapLiveDeviceByIp", "a01310.html#a55fd8d0f7a2a6d507bcdcb2836325be2", null ],
+    [ "getPcapLiveDeviceByIp", "a01310.html#a00b3cad054b24d8868cbf141c654c614", null ],
+    [ "getPcapLiveDeviceByIp", "a01310.html#aeffe9373b73371e24023ae30f36ead62", null ],
+    [ "getPcapLiveDeviceByName", "a01310.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
+    [ "getPcapLiveDevicesList", "a01310.html#a993aefeec8551a21171a0d5cfdd78675", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::PPP_PPTPLayer Class Reference</title>
+<title>PcapPlusPlus: pcpp::HttpMessage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,71 +81,101 @@ $(document).ready(function(){initNavTree('a00906.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a00903.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::PPP_PPTPLayer Class Reference</div>  </div>
+<div class="title">pcpp::HttpMessage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00035_source.html">GreLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00038_source.html">HttpLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::PPP_PPTPLayer:</div>
+Inheritance diagram for pcpp::HttpMessage:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00906.png" usemap="#pcpp::PPP_5FPPTPLayer_map" alt=""/>
-  <map id="pcpp::PPP_5FPPTPLayer_map" name="pcpp::PPP_5FPPTPLayer_map">
-<area href="a01154.html" alt="pcpp::Layer" shape="rect" coords="0,56,141,80"/>
-<area href="a01150.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,141,24"/>
+  <img src="a00906.png" usemap="#pcpp::HttpMessage_map" alt=""/>
+  <map id="pcpp::HttpMessage_map" name="pcpp::HttpMessage_map">
+<area href="a01606.html" alt="pcpp::TextBasedProtocolMessage" shape="rect" coords="106,112,308,136"/>
+<area href="a01150.html" alt="pcpp::Layer" shape="rect" coords="106,56,308,80"/>
+<area href="a01146.html" alt="pcpp::IDataContainer" shape="rect" coords="106,0,308,24"/>
+<area href="a00910.html" alt="pcpp::HttpRequestLayer" shape="rect" coords="0,224,202,248"/>
+<area href="a00914.html" alt="pcpp::HttpResponseLayer" shape="rect" coords="212,224,414,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a58464c2715829d1eaeddc056c3f3ac61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a58464c2715829d1eaeddc056c3f3ac61">PPP_PPTPLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a01154.html">Layer</a> *prevLayer, <a class="el" href="a01186.html">Packet</a> *packet)</td></tr>
-<tr class="separator:a58464c2715829d1eaeddc056c3f3ac61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bbc5c4830cedde68a0cabf9a009f67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a94bbc5c4830cedde68a0cabf9a009f67">PPP_PPTPLayer</a> (uint8_t address, uint8_t control)</td></tr>
-<tr class="separator:a94bbc5c4830cedde68a0cabf9a009f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9707853653d941e1ae0a8727b281191"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00890.html">ppp_pptp_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#aa9707853653d941e1ae0a8727b281191">getPPP_PPTPHeader</a> ()</td></tr>
-<tr class="separator:aa9707853653d941e1ae0a8727b281191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e49df5de4ea5496672cc6113da2fc1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a8e49df5de4ea5496672cc6113da2fc1c">parseNextLayer</a> ()</td></tr>
-<tr class="separator:a8e49df5de4ea5496672cc6113da2fc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a611bc5facdadeeb5f5d48b2bba8777c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a611bc5facdadeeb5f5d48b2bba8777c7">getHeaderLen</a> ()</td></tr>
-<tr class="separator:a611bc5facdadeeb5f5d48b2bba8777c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989b126eecc1536b660d46dda3e5a795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a989b126eecc1536b660d46dda3e5a795">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a989b126eecc1536b660d46dda3e5a795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92c398562bc0be52b28dce752c669d70"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a92c398562bc0be52b28dce752c669d70">toString</a> ()</td></tr>
-<tr class="separator:a92c398562bc0be52b28dce752c669d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160d2b07571f8dc68d01d9c425dc80f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a160d2b07571f8dc68d01d9c425dc80f6">getOsiModelLayer</a> ()</td></tr>
-<tr class="separator:a160d2b07571f8dc68d01d9c425dc80f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a01154"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01154')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01154.html">pcpp::Layer</a></td></tr>
-<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
-<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01154.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
-<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01154.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
-<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
-<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
-<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
-<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
-<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
-<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
-<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
-<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a01154"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01154.html#a2fdf63eb660bf17119fbe9b9ae89aff2">getDataPtr</a> (size_t offset=0)</td></tr>
-<tr class="separator:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a01154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f4534ce8764aacae232c789bfa1884"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a10f4534ce8764aacae232c789bfa1884">addField</a> (const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
+<tr class="separator:a10f4534ce8764aacae232c789bfa1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51afc66df73de546fa6e0c30184bb2c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#ad51afc66df73de546fa6e0c30184bb2c">addField</a> (const <a class="el" href="a01602.html">HeaderField</a> &amp;newField)</td></tr>
+<tr class="separator:ad51afc66df73de546fa6e0c30184bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc89318693401eeeff64f852c8c1c5e6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#afc89318693401eeeff64f852c8c1c5e6">insertField</a> (<a class="el" href="a01602.html">HeaderField</a> *prevField, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
+<tr class="separator:afc89318693401eeeff64f852c8c1c5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c69d36f3197df9ee3f9fb7e3de186fc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a6c69d36f3197df9ee3f9fb7e3de186fc">insertField</a> (<a class="el" href="a01602.html">HeaderField</a> *prevField, const <a class="el" href="a01602.html">HeaderField</a> &amp;newField)</td></tr>
+<tr class="separator:a6c69d36f3197df9ee3f9fb7e3de186fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7609cb4fbbab808fb6b1755a3a738f16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#a7609cb4fbbab808fb6b1755a3a738f16">getOsiModelLayer</a> ()</td></tr>
+<tr class="separator:a7609cb4fbbab808fb6b1755a3a738f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a01606"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01606')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01606.html">pcpp::TextBasedProtocolMessage</a></td></tr>
+<tr class="memitem:af97866e274c94d11f6c4ab782e02150c inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#af97866e274c94d11f6c4ab782e02150c">getFieldByName</a> (std::string fieldName, int index=0)</td></tr>
+<tr class="separator:af97866e274c94d11f6c4ab782e02150c inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1584cbd19a25aebb26a92b6915b69a62 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a1584cbd19a25aebb26a92b6915b69a62">getFirstField</a> ()</td></tr>
+<tr class="separator:a1584cbd19a25aebb26a92b6915b69a62 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b29d0cbe4cb6284a1fd7061ee9d68e5 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a4b29d0cbe4cb6284a1fd7061ee9d68e5">getNextField</a> (<a class="el" href="a01602.html">HeaderField</a> *prevField)</td></tr>
+<tr class="separator:a4b29d0cbe4cb6284a1fd7061ee9d68e5 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd3adf2a0137c18c13cf512e9f08bb2 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a5bd3adf2a0137c18c13cf512e9f08bb2">getFieldCount</a> ()</td></tr>
+<tr class="separator:a5bd3adf2a0137c18c13cf512e9f08bb2 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bc9956fb5ddd6f19fceb35a8a7ad3b inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b">addEndOfHeader</a> ()</td></tr>
+<tr class="separator:af2bc9956fb5ddd6f19fceb35a8a7ad3b inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8917992953e2a38885af837a2c49abd0 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01602.html">HeaderField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a8917992953e2a38885af837a2c49abd0">insertField</a> (std::string prevFieldName, const std::string &amp;fieldName, const std::string &amp;fieldValue)</td></tr>
+<tr class="separator:a8917992953e2a38885af837a2c49abd0 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3751401eb05f223685abd0c7c6990c66 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a3751401eb05f223685abd0c7c6990c66">removeField</a> (<a class="el" href="a01602.html">HeaderField</a> *fieldToRemove)</td></tr>
+<tr class="separator:a3751401eb05f223685abd0c7c6990c66 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9712764bb961cc7485335d1d30920232 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a9712764bb961cc7485335d1d30920232">removeField</a> (std::string fieldName, int index=0)</td></tr>
+<tr class="separator:a9712764bb961cc7485335d1d30920232 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbea31a4f1c5a028ce874fece1cd353 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#a4fbea31a4f1c5a028ce874fece1cd353">isHeaderComplete</a> ()</td></tr>
+<tr class="separator:a4fbea31a4f1c5a028ce874fece1cd353 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac593024db983f68d486893c0cb2acc76 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#ac593024db983f68d486893c0cb2acc76">parseNextLayer</a> ()</td></tr>
+<tr class="separator:ac593024db983f68d486893c0cb2acc76 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5dcefff49b14110c9ef322b826f083 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#abd5dcefff49b14110c9ef322b826f083">getHeaderLen</a> ()</td></tr>
+<tr class="separator:abd5dcefff49b14110c9ef322b826f083 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0f4a2beb4bf2a423e8b0b7c18e3645 inherit pub_methods_a01606"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01606.html#aab0f4a2beb4bf2a423e8b0b7c18e3645">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:aab0f4a2beb4bf2a423e8b0b7c18e3645 inherit pub_methods_a01606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a01150"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01150')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01150.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
+<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01150.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
+<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01150.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
+<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
+<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
+<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
+<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a2fdf63eb660bf17119fbe9b9ae89aff2">getDataPtr</a> (size_t offset=0)</td></tr>
+<tr class="separator:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acb12ad2f7e10ed03fc3dd0ae22dbf7 inherit pub_methods_a01150"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01150.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">toString</a> ()=0</td></tr>
+<tr class="separator:a3acb12ad2f7e10ed03fc3dd0ae22dbf7 inherit pub_methods_a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aca42f6b13b45da870a9f014886cff56b"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00906.html#aca42f6b13b45da870a9f014886cff56b">getHTTPPortMap</a> ()</td></tr>
+<tr class="separator:aca42f6b13b45da870a9f014886cff56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represent a PPP (point-to-point) protocol header that comes after GREv1 header, as part of PPTP - Point-to-Point Tunneling Protocol </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a58464c2715829d1eaeddc056c3f3ac61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58464c2715829d1eaeddc056c3f3ac61">&#9670;&nbsp;</a></span>PPP_PPTPLayer() <span class="overload">[1/2]</span></h2>
+<div class="textblock"><p>Represents a general HTTP message. It's an abstract class and cannot be instantiated. It's inherited by <a class="el" href="a00910.html">HttpRequestLayer</a> and <a class="el" href="a00914.html">HttpResponseLayer</a> </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a10f4534ce8764aacae232c789bfa1884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f4534ce8764aacae232c789bfa1884">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,28 +184,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::PPP_PPTPLayer::PPP_PPTPLayer </td>
+          <td class="memname">virtual <a class="el" href="a01602.html">HeaderField</a>* pcpp::HttpMessage::addField </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fieldName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a01154.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>prevLayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a01186.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fieldValue</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -185,60 +203,25 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a new header field to this message. This field will be added last (before the end-of-header field) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00890.html">ppp_pptp_header</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a01186.html">Packet</a> instance where layer will be stored in </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a01606.html#ac997392fd26a58b63827bf81a380b031">pcpp::TextBasedProtocolMessage</a>.</p>
 
 </div>
 </div>
-<a id="a94bbc5c4830cedde68a0cabf9a009f67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94bbc5c4830cedde68a0cabf9a009f67">&#9670;&nbsp;</a></span>PPP_PPTPLayer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::PPP_PPTPLayer::PPP_PPTPLayer </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>control</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that allocates a new PPP-PPTP header </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address field </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>Control field </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a989b126eecc1536b660d46dda3e5a795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a989b126eecc1536b660d46dda3e5a795">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
+<a id="ad51afc66df73de546fa6e0c30184bb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51afc66df73de546fa6e0c30184bb2c">&#9670;&nbsp;</a></span>addField() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,9 +230,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::PPP_PPTPLayer::computeCalculateFields </td>
+          <td class="memname">virtual <a class="el" href="a01602.html">HeaderField</a>* pcpp::HttpMessage::addField </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a01602.html">HeaderField</a> &amp;&#160;</td>
+          <td class="paramname"><em>newField</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -259,16 +243,20 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Calculate the following fields:</p><ul>
-<li><a class="el" href="a00890.html#a9e49420e46bdc801452f9c30ef5b8659">ppp_pptp_header::protocol</a> </li>
-</ul>
+<p>Add a new header field to this message. This field will be added last (before the end-of-header field) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newField</td><td>The header field to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
 
-<p>Implements <a class="el" href="a01154.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a01606.html#aeada4c60e7c10924b6fa82d5ddfa9908">pcpp::TextBasedProtocolMessage</a>.</p>
 
 </div>
 </div>
-<a id="a611bc5facdadeeb5f5d48b2bba8777c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a611bc5facdadeeb5f5d48b2bba8777c7">&#9670;&nbsp;</a></span>getHeaderLen()</h2>
+<a id="aca42f6b13b45da870a9f014886cff56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca42f6b13b45da870a9f014886cff56b">&#9670;&nbsp;</a></span>getHTTPPortMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +265,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t pcpp::PPP_PPTPLayer::getHeaderLen </td>
+          <td class="memname">static const std::map&lt;uint16_t, bool&gt;* pcpp::HttpMessage::getHTTPPortMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -285,18 +273,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The size of <a class="el" href="a00890.html">ppp_pptp_header</a> </dd></dl>
-
-<p>Implements <a class="el" href="a01154.html#ae2746ac75563d4ed44632ff06b5a2666">pcpp::Layer</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a map containing all TCP ports recognize as HTTP </dd></dl>
 
 </div>
 </div>
-<a id="a160d2b07571f8dc68d01d9c425dc80f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160d2b07571f8dc68d01d9c425dc80f6">&#9670;&nbsp;</a></span>getOsiModelLayer()</h2>
+<a id="a7609cb4fbbab808fb6b1755a3a738f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7609cb4fbbab808fb6b1755a3a738f16">&#9670;&nbsp;</a></span>getOsiModelLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +291,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00202.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> pcpp::PPP_PPTPLayer::getOsiModelLayer </td>
+          <td class="memname"><a class="el" href="a00202.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> pcpp::HttpMessage::getOsiModelLayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -319,12 +305,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The OSI Model layer this protocol belongs to </dd></dl>
 
-<p>Implements <a class="el" href="a01154.html#ac505ad06f83ca3f0a2947f9063f423a5">pcpp::Layer</a>.</p>
+<p>Implements <a class="el" href="a01150.html#ac505ad06f83ca3f0a2947f9063f423a5">pcpp::Layer</a>.</p>
 
 </div>
 </div>
-<a id="aa9707853653d941e1ae0a8727b281191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9707853653d941e1ae0a8727b281191">&#9670;&nbsp;</a></span>getPPP_PPTPHeader()</h2>
+<a id="afc89318693401eeeff64f852c8c1c5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc89318693401eeeff64f852c8c1c5e6">&#9670;&nbsp;</a></span>insertField() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,36 +319,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00890.html">ppp_pptp_header</a>* pcpp::PPP_PPTPLayer::getPPP_PPTPHeader </td>
+          <td class="memname">virtual <a class="el" href="a01602.html">HeaderField</a>* pcpp::HttpMessage::insertField </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td>
+          <td class="paramname"><em>prevField</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to the PPP-PPTP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00890.html">ppp_pptp_header</a> </dd></dl>
-
-</div>
-</div>
-<a id="a8e49df5de4ea5496672cc6113da2fc1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e49df5de4ea5496672cc6113da2fc1c">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">void pcpp::PPP_PPTPLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fieldName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fieldValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -371,14 +348,22 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="a01086.html">IPv4Layer</a>, <a class="el" href="a01146.html">IPv6Layer</a>. Otherwise sets <a class="el" href="a01194.html">PayloadLayer</a> </p>
+<p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field. If it's NULL the new field will be added as first field </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
 
-<p>Implements <a class="el" href="a01154.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a01606.html#abf28607ed41ed3bfdb1c476bda303ae9">pcpp::TextBasedProtocolMessage</a>.</p>
 
 </div>
 </div>
-<a id="a92c398562bc0be52b28dce752c669d70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92c398562bc0be52b28dce752c669d70">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a6c69d36f3197df9ee3f9fb7e3de186fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c69d36f3197df9ee3f9fb7e3de186fc">&#9670;&nbsp;</a></span>insertField() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,21 +372,39 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string pcpp::PPP_PPTPLayer::toString </td>
+          <td class="memname">virtual <a class="el" href="a01602.html">HeaderField</a>* pcpp::HttpMessage::insertField </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a01602.html">HeaderField</a> *&#160;</td>
+          <td class="paramname"><em>prevField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="a01602.html">HeaderField</a> &amp;&#160;</td>
+          <td class="paramname"><em>newField</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+<p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newField</td><td>The header field to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
 
-<p>Implements <a class="el" href="a01154.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="a01606.html#ac0555ddcc81fffa266fbc207bf040314">pcpp::TextBasedProtocolMessage</a>.</p>
 
 </div>
 </div>
@@ -410,8 +413,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a00906.html">PPP_PPTPLayer</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:58 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a00906.html">HttpMessage</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

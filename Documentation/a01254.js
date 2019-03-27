@@ -1,6 +1,7 @@
 var a01254 =
 [
-    [ "PortFilter", "a01254.html#a5ea132bbeb522071dd39a3063f473b3f", null ],
-    [ "parseToString", "a01254.html#afd42f1ac6f213c3f347f7b5efbafdbef", null ],
-    [ "setPort", "a01254.html#af1a2f77c5a9d96d23991bd28cc9413c6", null ]
+    [ "PortRangeFilter", "a01254.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
+    [ "parseToString", "a01254.html#a267adc124537789fd02510b61e2b4905", null ],
+    [ "setFromPort", "a01254.html#ae68efea901b4af50277b64632bc91d19", null ],
+    [ "setToPort", "a01254.html#a568420221c6f509bcdb58c937d0c683d", null ]
 ];

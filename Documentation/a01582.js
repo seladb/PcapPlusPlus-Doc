@@ -1,18 +1,11 @@
 var a01582 =
 [
-    [ "ConnectionData", "a01582.html#acff3614b14bd54ac98a996714a8a24b0", null ],
-    [ "~ConnectionData", "a01582.html#af5cf5f30d9d42b8d7f877d167fa8e8e3", null ],
-    [ "ConnectionData", "a01582.html#a6a0899a9dd0b08a1b88acd2fa4bd6fe7", null ],
-    [ "operator=", "a01582.html#aef3564b2f33bc1733f2b1e7a031b1d13", null ],
-    [ "setDstIpAddress", "a01582.html#a54e23e30163a3d62d14f2cfca774109f", null ],
-    [ "setEndTime", "a01582.html#ae4b2d922bf240422c8550ced90e1300e", null ],
-    [ "setSrcIpAddress", "a01582.html#ae74d9afd502455d526046ee608ebcf87", null ],
-    [ "setStartTime", "a01582.html#a371aaf3f3ca56578a52e76847eda3f97", null ],
-    [ "dstIP", "a01582.html#a4e468846d01cc8d1e1721d9c6d727f7e", null ],
-    [ "dstPort", "a01582.html#a75cd7efdfa6cf70b9aa2e19819800d4c", null ],
-    [ "endTime", "a01582.html#a443a3fe2d4ed8061e867cc9dadfb522c", null ],
-    [ "flowKey", "a01582.html#ad5a3d88fb59140020216ac83fd12219a", null ],
-    [ "srcIP", "a01582.html#a10a2fa73d739d49577a8e5bbae04d880", null ],
-    [ "srcPort", "a01582.html#acee601fef74ec911e3bcb860a3a73844", null ],
-    [ "startTime", "a01582.html#a5747f1d8a060ec528720d051431a0aa5", null ]
+    [ "TcpStreamData", "a01582.html#acb6875699103b7d1967cb799f7501913", null ],
+    [ "TcpStreamData", "a01582.html#a551d14dcbc145af6c2ac75fc8cd395eb", null ],
+    [ "~TcpStreamData", "a01582.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
+    [ "TcpStreamData", "a01582.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
+    [ "getConnectionData", "a01582.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getData", "a01582.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
+    [ "getDataLength", "a01582.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
+    [ "operator=", "a01582.html#a23bae012dd3ef982d9f010d9afcf6690", null ]
 ];

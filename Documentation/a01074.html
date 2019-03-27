@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::IPv4TimestampOptionValue Struct Reference</title>
+<title>PcapPlusPlus: pcpp::IPv4Option Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,71 +80,75 @@ $(document).ready(function(){initNavTree('a01074.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a01071.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPv4TimestampOptionValue Struct Reference</div>  </div>
+<div class="title">pcpp::IPv4Option Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00056_source.html">IPv4Layer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::IPv4Option:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a01074.png" usemap="#pcpp::IPv4Option_map" alt=""/>
+  <map id="pcpp::IPv4Option_map" name="pcpp::IPv4Option_map">
+<area href="a01610.html" alt="pcpp::TLVRecord" shape="rect" coords="0,0,110,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7e40161cb0427081efb75885ae38d2fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> { <a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3">TimestampOnly</a> = 0, 
-<a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0">TimestampAndIP</a> = 1, 
-<a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8">TimestampsForPrespecifiedIPs</a> = 2, 
-<a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">Unknown</a> = 3
- }</td></tr>
-<tr class="separator:a7e40161cb0427081efb75885ae38d2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aebdf61198a25c376676deec6fc6be0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#aebdf61198a25c376676deec6fc6be0ef">clear</a> ()</td></tr>
-<tr class="separator:aebdf61198a25c376676deec6fc6be0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a145ef3773e1b0ccb3d5b2d601db3361c">type</a></td></tr>
-<tr class="separator:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a99bbb61fda3f7dc4a3323b92efac8ac8">timestamps</a></td></tr>
-<tr class="separator:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f920da501372e5fdcc68200e63f316"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01034.html">IPv4Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a38f920da501372e5fdcc68200e63f316">ipAddresses</a></td></tr>
-<tr class="separator:a38f920da501372e5fdcc68200e63f316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d5c83e2742d8ae56cbba31c2f17c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a07d5c83e2742d8ae56cbba31c2f17c0f">IPv4Option</a> (uint8_t *optionRawData)</td></tr>
+<tr class="separator:a07d5c83e2742d8ae56cbba31c2f17c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418d18e47dc7301b9204ffb734eeee45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a418d18e47dc7301b9204ffb734eeee45">~IPv4Option</a> ()</td></tr>
+<tr class="separator:a418d18e47dc7301b9204ffb734eeee45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0a5d5d45dbf1d10f7a5ee7351a34a8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01030.html">IPv4Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a5c0a5d5d45dbf1d10f7a5ee7351a34a8">getValueAsIpList</a> ()</td></tr>
+<tr class="separator:a5c0a5d5d45dbf1d10f7a5ee7351a34a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabed93f6ae94cb9eaef0a30e76d012f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01070.html">IPv4TimestampOptionValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#aabed93f6ae94cb9eaef0a30e76d012f8">getTimestampOptionValue</a> ()</td></tr>
+<tr class="separator:aabed93f6ae94cb9eaef0a30e76d012f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876989df38dc93beac81cc70ada78683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68">IPv4OptionTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a876989df38dc93beac81cc70ada78683">getIPv4OptionType</a> () const</td></tr>
+<tr class="separator:a876989df38dc93beac81cc70ada78683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dbdc08ff76ffb47248d32805084ad9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#ad1dbdc08ff76ffb47248d32805084ad9">getTotalSize</a> () const</td></tr>
+<tr class="separator:ad1dbdc08ff76ffb47248d32805084ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6633956b0a8e4e17f58b04c4a0e00e9e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01074.html#a6633956b0a8e4e17f58b04c4a0e00e9e">getDataSize</a> ()</td></tr>
+<tr class="separator:a6633956b0a8e4e17f58b04c4a0e00e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a01610"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01610')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01610.html">pcpp::TLVRecord</a></td></tr>
+<tr class="memitem:af558b23a2c8e99f574c867d518f1b71e inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#af558b23a2c8e99f574c867d518f1b71e">TLVRecord</a> (uint8_t *recordRawData)</td></tr>
+<tr class="separator:af558b23a2c8e99f574c867d518f1b71e inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807e4d02649af082d1e0c568aade122a inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#a807e4d02649af082d1e0c568aade122a">TLVRecord</a> (const <a class="el" href="a01610.html">TLVRecord</a> &amp;other)</td></tr>
+<tr class="separator:a807e4d02649af082d1e0c568aade122a inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceee59b58ee528adcc4fa4f4902d35ec inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#aceee59b58ee528adcc4fa4f4902d35ec">~TLVRecord</a> ()</td></tr>
+<tr class="separator:aceee59b58ee528adcc4fa4f4902d35ec inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab207979132727f91150f6a54197153e3 inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01610.html">TLVRecord</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#ab207979132727f91150f6a54197153e3">operator=</a> (const <a class="el" href="a01610.html">TLVRecord</a> &amp;other)</td></tr>
+<tr class="separator:ab207979132727f91150f6a54197153e3 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe648e7a150c7872a57342e329d2a163 inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#abe648e7a150c7872a57342e329d2a163">operator==</a> (const <a class="el" href="a01610.html">TLVRecord</a> &amp;rhs)</td></tr>
+<tr class="separator:abe648e7a150c7872a57342e329d2a163 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d54089390f9518df2cebc55c0d350f inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#af5d54089390f9518df2cebc55c0d350f">getType</a> ()</td></tr>
+<tr class="separator:af5d54089390f9518df2cebc55c0d350f inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbb7a66d16a0ef6ec7051813cc3cbe1 inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#a9dbb7a66d16a0ef6ec7051813cc3cbe1">getValue</a> ()</td></tr>
+<tr class="separator:a9dbb7a66d16a0ef6ec7051813cc3cbe1 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a1bb2e42bf886ba8a9ff2d2f74084c inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">isNull</a> ()</td></tr>
+<tr class="separator:a80a1bb2e42bf886ba8a9ff2d2f74084c inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51385fe9cd2f6c640ee7892b1bcd859 inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#ae51385fe9cd2f6c640ee7892b1bcd859">isNotNull</a> ()</td></tr>
+<tr class="separator:ae51385fe9cd2f6c640ee7892b1bcd859 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47981a74a9e1e1e1f524bc3bb90e325 inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#ac47981a74a9e1e1e1f524bc3bb90e325">getRecordBasePtr</a> ()</td></tr>
+<tr class="separator:ac47981a74a9e1e1e1f524bc3bb90e325 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e723034e8daff9b577b16718a5c60fe inherit pub_methods_a01610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01610.html#a6e723034e8daff9b577b16718a5c60fe">purgeRecordData</a> ()</td></tr>
+<tr class="separator:a6e723034e8daff9b577b16718a5c60fe inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb9660337785bf347933751380cdf57 inherit pub_methods_a01610"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:accb9660337785bf347933751380cdf57 inherit pub_methods_a01610"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01610.html#accb9660337785bf347933751380cdf57">getValueAs</a> (size_t offset=0)</td></tr>
+<tr class="separator:accb9660337785bf347933751380cdf57 inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee inherit pub_methods_a01610"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee inherit pub_methods_a01610"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01610.html#aa65d6cf9416f13aa6f9e9a4cea786bee">setValue</a> (T newValue, int valueOffset=0)</td></tr>
+<tr class="separator:aa65d6cf9416f13aa6f9e9a4cea786bee inherit pub_methods_a01610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct representing a parsed value of the IPv4 timestamp option. This struct is used returned in IPv4OptionData::getTimestampOptionValue() method </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a7e40161cb0427081efb75885ae38d2fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e40161cb0427081efb75885ae38d2fb">&#9670;&nbsp;</a></span>TimestampType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fb">pcpp::IPv4TimestampOptionValue::TimestampType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum for IPv4 timestamp option types </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3"></a>TimestampOnly&#160;</td><td class="fielddoc"><p>Value containing only timestamps </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0"></a>TimestampAndIP&#160;</td><td class="fielddoc"><p>Value containing both timestamps and IPv4 addresses </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8"></a>TimestampsForPrespecifiedIPs&#160;</td><td class="fielddoc"><p>The IPv4 addresses are prespecified </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30"></a>Unknown&#160;</td><td class="fielddoc"><p>Invalid or unknown value type </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aebdf61198a25c376676deec6fc6be0ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebdf61198a25c376676deec6fc6be0ef">&#9670;&nbsp;</a></span>clear()</h2>
+<div class="textblock"><p>A wrapper class for IPv4 options. This class does not create or modify IPv4 option records, but rather serves as a wrapper and provides useful methods for retrieving data from them </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a07d5c83e2742d8ae56cbba31c2f17c0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d5c83e2742d8ae56cbba31c2f17c0f">&#9670;&nbsp;</a></span>IPv4Option()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +157,39 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::IPv4TimestampOptionValue::clear </td>
+          <td class="memname">pcpp::IPv4Option::IPv4Option </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>optionRawData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor for this class that gets a pointer to the option raw data (byte array) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionRawData</td><td>A pointer to the IPv4 option raw data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a418d18e47dc7301b9204ffb734eeee45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418d18e47dc7301b9204ffb734eeee45">&#9670;&nbsp;</a></span>~IPv4Option()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPv4Option::~IPv4Option </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -165,53 +201,142 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear the structure. Clean the timestamps and IP addresses vectors and set the type as <a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">IPv4TimestampOptionValue::Unknown</a> </p>
+<p>A d'tor for this class, currently does nothing </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a38f920da501372e5fdcc68200e63f316"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38f920da501372e5fdcc68200e63f316">&#9670;&nbsp;</a></span>ipAddresses</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="a01034.html">IPv4Address</a>&gt; pcpp::IPv4TimestampOptionValue::ipAddresses</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A list of IPv4 addresses parsed from the IPv4 timestamp option value </p>
-
-</div>
-</div>
-<a id="a99bbb61fda3f7dc4a3323b92efac8ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99bbb61fda3f7dc4a3323b92efac8ac8">&#9670;&nbsp;</a></span>timestamps</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6633956b0a8e4e17f58b04c4a0e00e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6633956b0a8e4e17f58b04c4a0e00e9e">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint32_t&gt; pcpp::IPv4TimestampOptionValue::timestamps</td>
+          <td class="memname">size_t pcpp::IPv4Option::getDataSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>A list of timestamps parsed from the IPv4 timestamp option value </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the record value (meaning the size of the 'V' part in TLV) </dd></dl>
+
+<p>Implements <a class="el" href="a01610.html#a8fc8e09321d69cdec0b4cb10f3f87a8c">pcpp::TLVRecord</a>.</p>
 
 </div>
 </div>
-<a id="a145ef3773e1b0ccb3d5b2d601db3361c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a145ef3773e1b0ccb3d5b2d601db3361c">&#9670;&nbsp;</a></span>type</h2>
+<a id="a876989df38dc93beac81cc70ada78683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876989df38dc93beac81cc70ada78683">&#9670;&nbsp;</a></span>getIPv4OptionType()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01074.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> pcpp::IPv4TimestampOptionValue::type</td>
+          <td class="memname"><a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68">IPv4OptionTypes</a> pcpp::IPv4Option::getIPv4OptionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>The timestamp value type </p>
+<dl class="section return"><dt>Returns</dt><dd>IPv4 option type casted as <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68">pcpp::IPv4OptionTypes</a> enum </dd></dl>
+
+</div>
+</div>
+<a id="aabed93f6ae94cb9eaef0a30e76d012f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabed93f6ae94cb9eaef0a30e76d012f8">&#9670;&nbsp;</a></span>getTimestampOptionValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01070.html">IPv4TimestampOptionValue</a> pcpp::IPv4Option::getTimestampOptionValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A method for parsing the IPv4 timestamp option value. This method is relevant only for IPv4 timestamp option. For other option types an empty result will be returned. The returned structure contains the timestamp value type (timestamp only, timestamp + IP addresses, etc.) as well as 2 vectors containing the list of timestamps and the list of IP addresses (if applicable for the timestamp value type). Blank timestamps or IP addresses (meaning zeroed values - timestamp=0 or IP address=0.0.0.0) will not be added to the lists. If some error occurs during the parsing or the value is invalid an empty result is returned </p><dl class="section return"><dt>Returns</dt><dd>A structured containing the IPv4 timestamp value </dd></dl>
+
+</div>
+</div>
+<a id="ad1dbdc08ff76ffb47248d32805084ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1dbdc08ff76ffb47248d32805084ad9">&#9670;&nbsp;</a></span>getTotalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::IPv4Option::getTotalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The total size of the TLV record (in bytes) </dd></dl>
+
+<p>Implements <a class="el" href="a01610.html#aa9720120d597258e2465e728551b581a">pcpp::TLVRecord</a>.</p>
+
+</div>
+</div>
+<a id="a5c0a5d5d45dbf1d10f7a5ee7351a34a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0a5d5d45dbf1d10f7a5ee7351a34a8">&#9670;&nbsp;</a></span>getValueAsIpList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a01030.html">IPv4Address</a>&gt; pcpp::IPv4Option::getValueAsIpList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A method for parsing the IPv4 option value as a list of IPv4 addresses. This method is relevant only for certain types of IPv4 options which their value is a list of IPv4 addresses such as <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50">IPV4OPT_RecordRoute</a>, <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68ae542288e706da4062872975d7a126ab0">IPV4OPT_StrictSourceRoute</a>, <a class="el" href="a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68a4a89e19c9e3e20847149686506190eb0">IPV4OPT_LooseSourceRoute</a>, etc. This method returns a vector of the IPv4 addresses. Blank IP addresses (meaning zeroed addresses - 0.0.0.0) will not be added to the returned list. If some error occurs during the parsing or the value is invalid an empty vector is returned </p><dl class="section return"><dt>Returns</dt><dd>A vector of IPv4 addresses parsed from the IPv4 option value </dd></dl>
 
 </div>
 </div>
@@ -220,8 +345,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01074.html">IPv4TimestampOptionValue</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01074.html">IPv4Option</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

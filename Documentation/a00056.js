@@ -1,10 +1,10 @@
 var a00056 =
 [
-    [ "iphdr", "a01070.html", "a01070" ],
-    [ "IPv4TimestampOptionValue", "a01074.html", "a01074" ],
-    [ "IPv4Option", "a01078.html", "a01078" ],
-    [ "IPv4OptionBuilder", "a01082.html", "a01082" ],
-    [ "IPv4Layer", "a01086.html", "a01086" ],
+    [ "iphdr", "a01066.html", "a01066" ],
+    [ "IPv4TimestampOptionValue", "a01070.html", "a01070" ],
+    [ "IPv4Option", "a01074.html", "a01074" ],
+    [ "IPv4OptionBuilder", "a01078.html", "a01078" ],
+    [ "IPv4Layer", "a01082.html", "a01082" ],
     [ "IPProtocolTypes", "a00056.html#ace8e2e21b82a8adc602f561e1e612fb0", [
       [ "PACKETPP_IPPROTO_IP", "a00056.html#ace8e2e21b82a8adc602f561e1e612fb0a37ebd16dbd9fae867a264e290501dd0d", null ],
       [ "PACKETPP_IPPROTO_HOPOPTS", "a00056.html#ace8e2e21b82a8adc602f561e1e612fb0ab4b438a108e462f86dc5d62f51d105dc", null ],

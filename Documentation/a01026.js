@@ -1,15 +1,12 @@
 var a01026 =
 [
-    [ "IgmpV3ReportLayer", "a01026.html#a4a4471d38de1ca94ed40daa98ba887c8", null ],
-    [ "IgmpV3ReportLayer", "a01026.html#aca14573c71b42df13e3beec55d151aed", null ],
-    [ "addGroupRecord", "a01026.html#a16965c0755e315db8c53cd91c38ac8a6", null ],
-    [ "addGroupRecordAtIndex", "a01026.html#a1794a460a7850f676a2fafa1ff57f70d", null ],
-    [ "computeCalculateFields", "a01026.html#a4e41980f2b4d98c30f4caffea255b3af", null ],
-    [ "getFirstGroupRecord", "a01026.html#a54518fc6655b31f041fbc570e255fc84", null ],
-    [ "getGroupRecordCount", "a01026.html#a520b1eb367ae67b472e6cc994da588e8", null ],
-    [ "getHeaderLen", "a01026.html#a69bf1bc34b4d5b2660e8a55e96abc815", null ],
-    [ "getNextGroupRecord", "a01026.html#a8964c61b90952f84408a7bfcffd22ca9", null ],
-    [ "getReportHeader", "a01026.html#a48924861b16e9282e91c049797f0f377", null ],
-    [ "removeAllGroupRecords", "a01026.html#a949a8ed3a9091b41d03e17eef056ec07", null ],
-    [ "removeGroupRecordAtIndex", "a01026.html#a6179870d8386e1761ad9233a345e4dd9", null ]
+    [ "AddressType", "a01026.html#ac389e5507d75b60d2b0ca939db195231", [
+      [ "IPv4AddressType", "a01026.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "a01026.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    ] ],
+    [ "clone", "a01026.html#a92d35f8f8e9965d0e4c38e183fba7d1e", null ],
+    [ "equals", "a01026.html#a6865c1a43ff71cd424426c846f36dbd4", null ],
+    [ "getType", "a01026.html#a85a3e43774848c93585f97bdef6ec73d", null ],
+    [ "isValid", "a01026.html#a87c99d4671e64cc23ce3824c35290abf", null ],
+    [ "toString", "a01026.html#a16d19ff8459edd846ee7b6b3f121769c", null ]
 ];

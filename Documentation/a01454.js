@@ -1,10 +1,10 @@
 var a01454 =
 [
-    [ "SSLCipherSuite", "a01454.html#a91a906a5f733f3afab0b6706e6641e16", null ],
-    [ "asString", "a01454.html#afc805ee667a9ffaa0d4c9146460312df", null ],
-    [ "getAuthAlg", "a01454.html#ae072d7734dc748e94133c3ad6c3b026c", null ],
-    [ "getID", "a01454.html#a09959781bd410417c7bc4e337f32b708", null ],
-    [ "getKeyExchangeAlg", "a01454.html#a56322a3bb08908c7b68c286c9fdd8fcd", null ],
-    [ "getMACAlg", "a01454.html#aedcc0ac097c43786c40a858171db2197", null ],
-    [ "getSymKeyAlg", "a01454.html#acdb497b3a27bff5fa936458876c5f7d4", null ]
+    [ "SSLExtensionStruct", "a01458.html", "a01458" ],
+    [ "SSLExtension", "a01454.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "getData", "a01454.html#ac9ff17e0b8e84c9e693d573fc40e714c", null ],
+    [ "getLength", "a01454.html#aaaa014f15ccc4e5b433d9825333bbf1c", null ],
+    [ "getTotalLength", "a01454.html#a84c6e634a3738b65cb9b7210124abca5", null ],
+    [ "getType", "a01454.html#a844b273c0abd9c6d2c217a0e7eb87071", null ],
+    [ "getTypeAsInt", "a01454.html#a1be433ad3fff137428f270e6f30f09c7", null ]
 ];

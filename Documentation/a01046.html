@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::IPReassembly::PacketKey Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPReassembly::IPv4PacketKey Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,38 +83,56 @@ $(document).ready(function(){initNavTree('a01046.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a01043.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPReassembly::PacketKey Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::IPReassembly::IPv4PacketKey Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00050_source.html">IPReassembly.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::IPReassembly::PacketKey:</div>
+Inheritance diagram for pcpp::IPReassembly::IPv4PacketKey:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a01046.png" usemap="#pcpp::IPReassembly::PacketKey_map" alt=""/>
-  <map id="pcpp::IPReassembly::PacketKey_map" name="pcpp::IPReassembly::PacketKey_map">
-<area href="a01050.html" alt="pcpp::IPReassembly::IPv4PacketKey" shape="rect" coords="0,56,215,80"/>
-<area href="a01054.html" alt="pcpp::IPReassembly::IPv6PacketKey" shape="rect" coords="225,56,440,80"/>
+  <img src="a01046.png" usemap="#pcpp::IPReassembly::IPv4PacketKey_map" alt=""/>
+  <map id="pcpp::IPReassembly::IPv4PacketKey_map" name="pcpp::IPReassembly::IPv4PacketKey_map">
+<area href="a01042.html" alt="pcpp::IPReassembly::PacketKey" shape="rect" coords="0,0,215,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa67476ed9ca9d6bf21821446d6f9af33"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#aa67476ed9ca9d6bf21821446d6f9af33">~PacketKey</a> ()</td></tr>
-<tr class="separator:aa67476ed9ca9d6bf21821446d6f9af33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd42f4375f021a1bf7d89a151b231911"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#abd42f4375f021a1bf7d89a151b231911">getHashValue</a> () const =0</td></tr>
-<tr class="separator:abd42f4375f021a1bf7d89a151b231911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36810a692eb627629bf0db6ad04c8fb1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a36810a692eb627629bf0db6ad04c8fb1">getProtocolType</a> () const =0</td></tr>
-<tr class="separator:a36810a692eb627629bf0db6ad04c8fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38bb114ec2d125fa47d7a1d113203a4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01046.html">PacketKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a38bb114ec2d125fa47d7a1d113203a4c">clone</a> () const =0</td></tr>
-<tr class="separator:a38bb114ec2d125fa47d7a1d113203a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e40e4e9a816f2bfd6fac51e1db24f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a99e40e4e9a816f2bfd6fac51e1db24f5">IPv4PacketKey</a> ()</td></tr>
+<tr class="separator:a99e40e4e9a816f2bfd6fac51e1db24f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8b3d6f45128c357ebd7b94d08f84fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a6f8b3d6f45128c357ebd7b94d08f84fc">IPv4PacketKey</a> (uint16_t ipid, <a class="el" href="a01030.html">IPv4Address</a> srcip, <a class="el" href="a01030.html">IPv4Address</a> dstip)</td></tr>
+<tr class="separator:a6f8b3d6f45128c357ebd7b94d08f84fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd0f53ccc2e970b9da2270819c43597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#abcd0f53ccc2e970b9da2270819c43597">IPv4PacketKey</a> (const <a class="el" href="a01046.html">IPv4PacketKey</a> &amp;other)</td></tr>
+<tr class="separator:abcd0f53ccc2e970b9da2270819c43597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff34ec616f7e53adaa5ae376cc7ce76a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#aff34ec616f7e53adaa5ae376cc7ce76a">getIpID</a> ()</td></tr>
+<tr class="separator:aff34ec616f7e53adaa5ae376cc7ce76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96d3a442d57b860eb84cecfffc448cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01030.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#ab96d3a442d57b860eb84cecfffc448cd">getSrcIP</a> ()</td></tr>
+<tr class="separator:ab96d3a442d57b860eb84cecfffc448cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31f4b36d499e1ffe55bc21b6bd2c809"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01030.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#af31f4b36d499e1ffe55bc21b6bd2c809">getDstIP</a> ()</td></tr>
+<tr class="separator:af31f4b36d499e1ffe55bc21b6bd2c809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b8c2f9bd9e928290667b576ed0be81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#ab1b8c2f9bd9e928290667b576ed0be81">setIpID</a> (uint16_t ipID)</td></tr>
+<tr class="separator:ab1b8c2f9bd9e928290667b576ed0be81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f19f3d1f0e173d7cd36bbebc0c8f455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a6f19f3d1f0e173d7cd36bbebc0c8f455">setSrcIP</a> (const <a class="el" href="a01030.html">IPv4Address</a> &amp;srcIP)</td></tr>
+<tr class="separator:a6f19f3d1f0e173d7cd36bbebc0c8f455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f08e39cd7a151f1006521e8b29dfd8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a3f08e39cd7a151f1006521e8b29dfd8a">setDstIP</a> (const <a class="el" href="a01030.html">IPv4Address</a> &amp;dstIP)</td></tr>
+<tr class="separator:a3f08e39cd7a151f1006521e8b29dfd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8131b9f74fb68a6a7b4862d51acb0a9a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a8131b9f74fb68a6a7b4862d51acb0a9a">getHashValue</a> () const</td></tr>
+<tr class="separator:a8131b9f74fb68a6a7b4862d51acb0a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cfba0896917ecb38c57ec8cf6bdba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a48cfba0896917ecb38c57ec8cf6bdba9">getProtocolType</a> () const</td></tr>
+<tr class="separator:a48cfba0896917ecb38c57ec8cf6bdba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070a6a56545520f022a35d9ec5423ba6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01042.html">PacketKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01046.html#a070a6a56545520f022a35d9ec5423ba6">clone</a> () const</td></tr>
+<tr class="separator:a070a6a56545520f022a35d9ec5423ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a01042"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01042')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a01042.html">pcpp::IPReassembly::PacketKey</a></td></tr>
+<tr class="memitem:aa67476ed9ca9d6bf21821446d6f9af33 inherit pub_methods_a01042"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01042.html#aa67476ed9ca9d6bf21821446d6f9af33">~PacketKey</a> ()</td></tr>
+<tr class="separator:aa67476ed9ca9d6bf21821446d6f9af33 inherit pub_methods_a01042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract class that represents a key that can uniquely identify an IP packet. This class cannot be instantiated or copied, only its derived classes can </p>
+<div class="textblock"><p>Represents a key that can uniquely identify IPv4 packets. The key comprises of source IPv4 address, dest IPv4 address and IP ID </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa67476ed9ca9d6bf21821446d6f9af33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa67476ed9ca9d6bf21821446d6f9af33">&#9670;&nbsp;</a></span>~PacketKey()</h2>
+<a id="a99e40e4e9a816f2bfd6fac51e1db24f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e40e4e9a816f2bfd6fac51e1db24f5">&#9670;&nbsp;</a></span>IPv4PacketKey() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,10 +141,114 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::IPReassembly::PacketKey::~PacketKey </td>
+          <td class="memname">pcpp::IPReassembly::IPv4PacketKey::IPv4PacketKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A default c'tor which zeros all members </p>
+
+</div>
+</div>
+<a id="a6f8b3d6f45128c357ebd7b94d08f84fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8b3d6f45128c357ebd7b94d08f84fc">&#9670;&nbsp;</a></span>IPv4PacketKey() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPReassembly::IPv4PacketKey::IPv4PacketKey </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ipid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01030.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>srcip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01030.html">IPv4Address</a>&#160;</td>
+          <td class="paramname"><em>dstip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A c'tor that sets values in each one of the members </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipid</td><td>IP ID value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcip</td><td>Source IPv4 address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstip</td><td>Dest IPv4 address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abcd0f53ccc2e970b9da2270819c43597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd0f53ccc2e970b9da2270819c43597">&#9670;&nbsp;</a></span>IPv4PacketKey() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPReassembly::IPv4PacketKey::IPv4PacketKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01046.html">IPv4PacketKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A copy c'tor for this class </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a070a6a56545520f022a35d9ec5423ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070a6a56545520f022a35d9ec5423ba6">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01042.html">PacketKey</a>* pcpp::IPReassembly::IPv4PacketKey::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -135,13 +257,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A default virtual d'tor </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new instance which is a clone of the current instance </dd></dl>
+
+<p>Implements <a class="el" href="a01042.html#a38bb114ec2d125fa47d7a1d113203a4c">pcpp::IPReassembly::PacketKey</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38bb114ec2d125fa47d7a1d113203a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38bb114ec2d125fa47d7a1d113203a4c">&#9670;&nbsp;</a></span>clone()</h2>
+<a id="af31f4b36d499e1ffe55bc21b6bd2c809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31f4b36d499e1ffe55bc21b6bd2c809">&#9670;&nbsp;</a></span>getDstIP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,26 +273,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a01046.html">PacketKey</a>* pcpp::IPReassembly::PacketKey::clone </td>
+          <td class="memname"><a class="el" href="a01030.html">IPv4Address</a> pcpp::IPReassembly::IPv4PacketKey::getDstIP </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new instance which is a clone of the current instance </dd></dl>
-
-<p>Implemented in <a class="el" href="a01054.html#aacb5db09cd6abaae25837497d01107bf">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a01050.html#a070a6a56545520f022a35d9ec5423ba6">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>Dest IP address </dd></dl>
 
 </div>
 </div>
-<a id="abd42f4375f021a1bf7d89a151b231911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd42f4375f021a1bf7d89a151b231911">&#9670;&nbsp;</a></span>getHashValue()</h2>
+<a id="a8131b9f74fb68a6a7b4862d51acb0a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8131b9f74fb68a6a7b4862d51acb0a9a">&#9670;&nbsp;</a></span>getHashValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +299,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual uint32_t pcpp::IPReassembly::PacketKey::getHashValue </td>
+          <td class="memname">uint32_t pcpp::IPReassembly::IPv4PacketKey::getHashValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -186,18 +307,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A 4-byte hash value of the packet key </dd></dl>
 
-<p>Implemented in <a class="el" href="a01054.html#a52b084bd8614b144dd6db64e422d030b">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a01050.html#a8131b9f74fb68a6a7b4862d51acb0a9a">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
+<p>Implements <a class="el" href="a01042.html#abd42f4375f021a1bf7d89a151b231911">pcpp::IPReassembly::PacketKey</a>.</p>
 
 </div>
 </div>
-<a id="a36810a692eb627629bf0db6ad04c8fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36810a692eb627629bf0db6ad04c8fb1">&#9670;&nbsp;</a></span>getProtocolType()</h2>
+<a id="aff34ec616f7e53adaa5ae376cc7ce76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff34ec616f7e53adaa5ae376cc7ce76a">&#9670;&nbsp;</a></span>getIpID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +327,33 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPReassembly::PacketKey::getProtocolType </td>
+          <td class="memname">uint16_t pcpp::IPReassembly::IPv4PacketKey::getIpID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>IP ID value </dd></dl>
+
+</div>
+</div>
+<a id="a48cfba0896917ecb38c57ec8cf6bdba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48cfba0896917ecb38c57ec8cf6bdba9">&#9670;&nbsp;</a></span>getProtocolType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPReassembly::IPv4PacketKey::getProtocolType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -214,13 +361,135 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IP protocol this key represents (<a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> or <a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="a00202.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> protocol </dd></dl>
 
-<p>Implemented in <a class="el" href="a01054.html#a8bd1215cb8650f04f6c7f413560fe721">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="a01050.html#a48cfba0896917ecb38c57ec8cf6bdba9">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
+<p>Implements <a class="el" href="a01042.html#a36810a692eb627629bf0db6ad04c8fb1">pcpp::IPReassembly::PacketKey</a>.</p>
+
+</div>
+</div>
+<a id="ab96d3a442d57b860eb84cecfffc448cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96d3a442d57b860eb84cecfffc448cd">&#9670;&nbsp;</a></span>getSrcIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01030.html">IPv4Address</a> pcpp::IPReassembly::IPv4PacketKey::getSrcIP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Source IP address </dd></dl>
+
+</div>
+</div>
+<a id="a3f08e39cd7a151f1006521e8b29dfd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f08e39cd7a151f1006521e8b29dfd8a">&#9670;&nbsp;</a></span>setDstIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPReassembly::IPv4PacketKey::setDstIP </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01030.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>dstIP</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set dest IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstIP</td><td>Dest IP to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1b8c2f9bd9e928290667b576ed0be81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b8c2f9bd9e928290667b576ed0be81">&#9670;&nbsp;</a></span>setIpID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPReassembly::IPv4PacketKey::setIpID </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ipID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set IP ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipID</td><td>IP ID value to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f19f3d1f0e173d7cd36bbebc0c8f455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f19f3d1f0e173d7cd36bbebc0c8f455">&#9670;&nbsp;</a></span>setSrcIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPReassembly::IPv4PacketKey::setSrcIP </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01030.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcIP</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set source IPv4 address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcIP</td><td>Source IP to set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -229,8 +498,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01042.html">IPReassembly</a></li><li class="navelem"><a class="el" href="a01046.html">PacketKey</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01038.html">IPReassembly</a></li><li class="navelem"><a class="el" href="a01046.html">IPv4PacketKey</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

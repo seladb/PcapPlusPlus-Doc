@@ -1,16 +1,13 @@
 var a01390 =
 [
-    [ "RecvPacketResult", "a01390.html#a06ec60dc8d38dfab0333fb793ad0da76", [
-      [ "RecvSuccess", "a01390.html#a06ec60dc8d38dfab0333fb793ad0da76ad36c34a2ebc972da8d8ad02b1e1d8c70", null ],
-      [ "RecvTimeout", "a01390.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c", null ],
-      [ "RecvWouldBlock", "a01390.html#a06ec60dc8d38dfab0333fb793ad0da76abaedaa450ddecac58433cf954fdfd8b8", null ],
-      [ "RecvError", "a01390.html#a06ec60dc8d38dfab0333fb793ad0da76adce5f5b2a3d83a5816da7520ee4228ea", null ]
-    ] ],
-    [ "~RawSocketDevice", "a01390.html#a16669eaf3e120d99ff07a07223aca9b6", null ],
-    [ "close", "a01390.html#a040fdad86cc60ef3b289834251a942c5", null ],
-    [ "open", "a01390.html#afadbe3e75178913f1d9c2cc3f6d02909", null ],
-    [ "receivePacket", "a01390.html#a184663a2718b6e4f5f7ad353d840dfbc", null ],
-    [ "receivePackets", "a01390.html#a83f604ddccbb3dad4dbee74bcda6d21d", null ],
-    [ "sendPacket", "a01390.html#a3a7822e719e2f5895b3bee1523327e08", null ],
-    [ "sendPackets", "a01390.html#a348a0cfddc2d9b04857fd8bf8402b6ba", null ]
+    [ "SdpLayer", "a01390.html#a1e02f3e410bbaf055882040a920b6dce", null ],
+    [ "SdpLayer", "a01390.html#add15c986ba55f22fe64c9e21b0475949", null ],
+    [ "SdpLayer", "a01390.html#a5e7b8badf590bf0dc6f9dc0061319c88", null ],
+    [ "SdpLayer", "a01390.html#a5e53ceb5fbe79493f5da02d340b8bee2", null ],
+    [ "addMediaDescription", "a01390.html#a9df93bfb9cd914625bbd8f20895f8b8b", null ],
+    [ "getMediaPort", "a01390.html#a5fae788a725d57e2e9fe6a7d8f046885", null ],
+    [ "getOsiModelLayer", "a01390.html#aa9dadbd7cb435abf90f298bb2a3eb21d", null ],
+    [ "getOwnerIPv4Address", "a01390.html#a14f4a728d68929c829e93b0de336d538", null ],
+    [ "operator=", "a01390.html#aa6ca3ae82b3e5cbfa0781a68c231e605", null ],
+    [ "toString", "a01390.html#acdb3cc196fd8bb453d4293f93d5ff514", null ]
 ];

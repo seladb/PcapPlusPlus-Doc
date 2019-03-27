@@ -1,12 +1,6 @@
 var a00870 =
 [
-    [ "getDeviceByPciAddress", "a00870.html#a10d26c48dcd131d49d2bd87c058c520e", null ],
-    [ "getDeviceByPort", "a00870.html#aa7396105028e0b06ec205d2dc0dea868", null ],
-    [ "getDpdkDeviceList", "a00870.html#a86087a708113697332e06343b52682e8", null ],
-    [ "getDpdkLogLevel", "a00870.html#ad4f956f6d492abfe596e45fe1cdaebb8", null ],
-    [ "getDpdkMasterCore", "a00870.html#a5fb998e1ced87c149b19073669bf6ae9", null ],
-    [ "setDpdkLogLevel", "a00870.html#a550bddaf268440874c84c56a0b68672f", null ],
-    [ "startDpdkWorkerThreads", "a00870.html#afc44087f40693687b57c6b9740241dd2", null ],
-    [ "stopDpdkWorkerThreads", "a00870.html#a231f0417a70c8b014e68dea5454b00d9", null ],
-    [ "writeDpdkLogToFile", "a00870.html#ad23f3dc15588208e77f524864eb2ec16", null ]
+    [ "dstMac", "a00870.html#a6fbac47e840aa3f6055d0b97c684bd45", null ],
+    [ "etherType", "a00870.html#a3200f5fc394812077b6c96d2b15f7658", null ],
+    [ "srcMac", "a00870.html#a466d328a654e445f4d9cb594ff1486ff", null ]
 ];

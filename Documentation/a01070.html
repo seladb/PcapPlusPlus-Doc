@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::iphdr Struct Reference</title>
+<title>PcapPlusPlus: pcpp::IPv4TimestampOptionValue Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,205 +80,138 @@ $(document).ready(function(){initNavTree('a01070.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a01067.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::iphdr Struct Reference</div>  </div>
+<div class="title">pcpp::IPv4TimestampOptionValue Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00056_source.html">IPv4Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7e40161cb0427081efb75885ae38d2fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> { <a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3">TimestampOnly</a> = 0, 
+<a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0">TimestampAndIP</a> = 1, 
+<a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8">TimestampsForPrespecifiedIPs</a> = 2, 
+<a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">Unknown</a> = 3
+ }</td></tr>
+<tr class="separator:a7e40161cb0427081efb75885ae38d2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aebdf61198a25c376676deec6fc6be0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#aebdf61198a25c376676deec6fc6be0ef">clear</a> ()</td></tr>
+<tr class="separator:aebdf61198a25c376676deec6fc6be0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#aafb906cd9dd7be5a3443f5fe6c7dad09">internetHeaderLength</a>:4</td></tr>
-<tr class="separator:aafb906cd9dd7be5a3443f5fe6c7dad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7">ipVersion</a>:4</td></tr>
-<tr class="separator:a74b5c1fbf03d4ebbd3d6ea2d263237b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229d7a9444c63a92532cd17b16e9de70"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a229d7a9444c63a92532cd17b16e9de70">typeOfService</a></td></tr>
-<tr class="separator:a229d7a9444c63a92532cd17b16e9de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#aab4d8ad9872f38be7fb53dd2ec45c63a">totalLength</a></td></tr>
-<tr class="separator:aab4d8ad9872f38be7fb53dd2ec45c63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d50037f1b02307d20dc8a113207dbce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a9d50037f1b02307d20dc8a113207dbce">ipId</a></td></tr>
-<tr class="separator:a9d50037f1b02307d20dc8a113207dbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a9b98fc149f9d262fbdfe2e4f92595c24">fragmentOffset</a></td></tr>
-<tr class="separator:a9b98fc149f9d262fbdfe2e4f92595c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa374efc60c926ef18055a84bdbe55bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#aaa374efc60c926ef18055a84bdbe55bc">timeToLive</a></td></tr>
-<tr class="separator:aaa374efc60c926ef18055a84bdbe55bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9600c9b8e380ba5468763cdf648d043c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a9600c9b8e380ba5468763cdf648d043c">protocol</a></td></tr>
-<tr class="separator:a9600c9b8e380ba5468763cdf648d043c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724ead037aaf6310e5b9ebceba77f922"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a724ead037aaf6310e5b9ebceba77f922">headerChecksum</a></td></tr>
-<tr class="separator:a724ead037aaf6310e5b9ebceba77f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da8d9dc60a51c873500c175f6c65c52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a7da8d9dc60a51c873500c175f6c65c52">ipSrc</a></td></tr>
-<tr class="separator:a7da8d9dc60a51c873500c175f6c65c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2722895dc1ed669dd9b241fc472a284f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a2722895dc1ed669dd9b241fc472a284f">ipDst</a></td></tr>
-<tr class="separator:a2722895dc1ed669dd9b241fc472a284f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a145ef3773e1b0ccb3d5b2d601db3361c">type</a></td></tr>
+<tr class="separator:a145ef3773e1b0ccb3d5b2d601db3361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a99bbb61fda3f7dc4a3323b92efac8ac8">timestamps</a></td></tr>
+<tr class="separator:a99bbb61fda3f7dc4a3323b92efac8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f920da501372e5fdcc68200e63f316"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01030.html">IPv4Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01070.html#a38f920da501372e5fdcc68200e63f316">ipAddresses</a></td></tr>
+<tr class="separator:a38f920da501372e5fdcc68200e63f316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an IPv4 protocol header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9b98fc149f9d262fbdfe2e4f92595c24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b98fc149f9d262fbdfe2e4f92595c24">&#9670;&nbsp;</a></span>fragmentOffset</h2>
+<div class="textblock"><p>A struct representing a parsed value of the IPv4 timestamp option. This struct is used returned in IPv4OptionData::getTimestampOptionValue() method </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a7e40161cb0427081efb75885ae38d2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e40161cb0427081efb75885ae38d2fb">&#9670;&nbsp;</a></span>TimestampType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::iphdr::fragmentOffset</td>
+          <td class="memname">enum <a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fb">pcpp::IPv4TimestampOptionValue::TimestampType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fragment offset field, measured in units of eight-byte blocks (64 bits) </p>
+<p>An enum for IPv4 timestamp option types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fbad9b625154708e4bf2d305cebc2d606b3"></a>TimestampOnly&#160;</td><td class="fielddoc"><p>Value containing only timestamps </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fbaac59bf620a58fd546baa27ef3e33d2a0"></a>TimestampAndIP&#160;</td><td class="fielddoc"><p>Value containing both timestamps and IPv4 addresses </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fba8e5934d36432a03bea76c3ef40ece2a8"></a>TimestampsForPrespecifiedIPs&#160;</td><td class="fielddoc"><p>The IPv4 addresses are prespecified </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30"></a>Unknown&#160;</td><td class="fielddoc"><p>Invalid or unknown value type </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a id="a724ead037aaf6310e5b9ebceba77f922"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724ead037aaf6310e5b9ebceba77f922">&#9670;&nbsp;</a></span>headerChecksum</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aebdf61198a25c376676deec6fc6be0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdf61198a25c376676deec6fc6be0ef">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPv4TimestampOptionValue::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear the structure. Clean the timestamps and IP addresses vectors and set the type as <a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30">IPv4TimestampOptionValue::Unknown</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a38f920da501372e5fdcc68200e63f316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f920da501372e5fdcc68200e63f316">&#9670;&nbsp;</a></span>ipAddresses</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::iphdr::headerChecksum</td>
+          <td class="memname">std::vector&lt;<a class="el" href="a01030.html">IPv4Address</a>&gt; pcpp::IPv4TimestampOptionValue::ipAddresses</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Error-checking of the header </p>
+<p>A list of IPv4 addresses parsed from the IPv4 timestamp option value </p>
 
 </div>
 </div>
-<a id="aafb906cd9dd7be5a3443f5fe6c7dad09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb906cd9dd7be5a3443f5fe6c7dad09">&#9670;&nbsp;</a></span>internetHeaderLength</h2>
+<a id="a99bbb61fda3f7dc4a3323b92efac8ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bbb61fda3f7dc4a3323b92efac8ac8">&#9670;&nbsp;</a></span>timestamps</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::iphdr::internetHeaderLength</td>
+          <td class="memname">std::vector&lt;uint32_t&gt; pcpp::IPv4TimestampOptionValue::timestamps</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>IP header length, has the value of 5 for IPv4 </p>
+<p>A list of timestamps parsed from the IPv4 timestamp option value </p>
 
 </div>
 </div>
-<a id="a2722895dc1ed669dd9b241fc472a284f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2722895dc1ed669dd9b241fc472a284f">&#9670;&nbsp;</a></span>ipDst</h2>
+<a id="a145ef3773e1b0ccb3d5b2d601db3361c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145ef3773e1b0ccb3d5b2d601db3361c">&#9670;&nbsp;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pcpp::iphdr::ipDst</td>
+          <td class="memname"><a class="el" href="a01070.html#a7e40161cb0427081efb75885ae38d2fb">TimestampType</a> pcpp::IPv4TimestampOptionValue::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>IPv4 address of the receiver of the packet </p>
-
-</div>
-</div>
-<a id="a9d50037f1b02307d20dc8a113207dbce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d50037f1b02307d20dc8a113207dbce">&#9670;&nbsp;</a></span>ipId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::iphdr::ipId</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Identification field. Primarily used for uniquely identifying the group of fragments of a single IP datagram </p>
-
-</div>
-</div>
-<a id="a7da8d9dc60a51c873500c175f6c65c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7da8d9dc60a51c873500c175f6c65c52">&#9670;&nbsp;</a></span>ipSrc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::iphdr::ipSrc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IPv4 address of the sender of the packet </p>
-
-</div>
-</div>
-<a id="a74b5c1fbf03d4ebbd3d6ea2d263237b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b5c1fbf03d4ebbd3d6ea2d263237b7">&#9670;&nbsp;</a></span>ipVersion</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::ipVersion</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IP version number, has the value of 4 for IPv4 </p>
-
-</div>
-</div>
-<a id="a9600c9b8e380ba5468763cdf648d043c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9600c9b8e380ba5468763cdf648d043c">&#9670;&nbsp;</a></span>protocol</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::protocol</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Defines the protocol used in the data portion of the IP datagram. Must be one of <a class="el" href="a00202.html#ace8e2e21b82a8adc602f561e1e612fb0">IPProtocolTypes</a> </p>
-
-</div>
-</div>
-<a id="aaa374efc60c926ef18055a84bdbe55bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa374efc60c926ef18055a84bdbe55bc">&#9670;&nbsp;</a></span>timeToLive</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::timeToLive</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An eight-bit time to live field helps prevent datagrams from persisting (e.g. going in circles) on an internet. In practice, the field has become a hop count </p>
-
-</div>
-</div>
-<a id="aab4d8ad9872f38be7fb53dd2ec45c63a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab4d8ad9872f38be7fb53dd2ec45c63a">&#9670;&nbsp;</a></span>totalLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::iphdr::totalLength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Entire packet (fragment) size, including header and data, in bytes </p>
-
-</div>
-</div>
-<a id="a229d7a9444c63a92532cd17b16e9de70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a229d7a9444c63a92532cd17b16e9de70">&#9670;&nbsp;</a></span>typeOfService</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::iphdr::typeOfService</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>type of service, same as Differentiated Services Code Point (DSCP) </p>
+<p>The timestamp value type </p>
 
 </div>
 </div>
@@ -287,8 +220,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01070.html">iphdr</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a01070.html">IPv4TimestampOptionValue</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

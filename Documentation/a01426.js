@@ -1,8 +1,13 @@
 var a01426 =
 [
-    [ "ARPHRD_type", "a01426.html#a8f8dbb002e720ec7700bc617d2429ab2", null ],
-    [ "link_layer_addr", "a01426.html#afbec8e24ed690d8765fdd5ebeff649cd", null ],
-    [ "link_layer_addr_len", "a01426.html#ac253e0a098c39f46d192619ed5d229bf", null ],
-    [ "packet_type", "a01426.html#a915dd77d81fbf0e815fc8e7e268582b8", null ],
-    [ "protocol_type", "a01426.html#a133d6e18091bafa51d1a4558a9f6bda9", null ]
+    [ "SllLayer", "a01426.html#af684b2025e641ddebc35fb62055a5cb8", null ],
+    [ "SllLayer", "a01426.html#a2841d88aee1ce41ffdb1d36ec60db7f5", null ],
+    [ "computeCalculateFields", "a01426.html#a2964574f2bc958b94d7474778f691e62", null ],
+    [ "getHeaderLen", "a01426.html#ac71b262a4181ef0cc659c902251e6790", null ],
+    [ "getOsiModelLayer", "a01426.html#a7e5b24fb74a0a6a7a026706a723293f2", null ],
+    [ "getSllHeader", "a01426.html#a69226013847c3e90af712f731ae3272e", null ],
+    [ "parseNextLayer", "a01426.html#a77739a7d98720c05eab96a09ce54f12d", null ],
+    [ "setLinkLayerAddr", "a01426.html#a78053b4433c4378a004eda79cbb29d46", null ],
+    [ "setMacAddressAsLinkLayer", "a01426.html#aae8f13d547c763ec186679f72e597766", null ],
+    [ "toString", "a01426.html#a7cfa1a15bfd60e2b88ad86123d818a5c", null ]
 ];

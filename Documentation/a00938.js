@@ -1,6 +1,6 @@
 var a00938 =
 [
-    [ "checksum", "a00938.html#afc53df5a90f51ecf5d3e517f730f3e9f", null ],
-    [ "code", "a00938.html#a6a428f920e2143563b39327b37985fea", null ],
-    [ "type", "a00938.html#aee18974a6f35dba7ec638d25681756b7", null ]
+    [ "id", "a00938.html#ad783cd30b1cc3febd8f0e9db72ffca7a", null ],
+    [ "sequence", "a00938.html#ae4f17a2a06478c0300e64c9dacf67def", null ],
+    [ "timestamp", "a00938.html#aaa7c797c73f222014bcdecaca7175236", null ]
 ];

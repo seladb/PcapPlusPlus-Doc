@@ -1,7 +1,6 @@
 var a01258 =
 [
-    [ "PortRangeFilter", "a01258.html#a026ebf41ef60d94c4ea90aed406f2041", null ],
-    [ "parseToString", "a01258.html#a267adc124537789fd02510b61e2b4905", null ],
-    [ "setFromPort", "a01258.html#ae68efea901b4af50277b64632bc91d19", null ],
-    [ "setToPort", "a01258.html#a568420221c6f509bcdb58c937d0c683d", null ]
+    [ "MacAddressFilter", "a01258.html#ab652b758a699a376248c46908465d7fc", null ],
+    [ "parseToString", "a01258.html#ac94ba464b2cd6d936b87811a120f73df", null ],
+    [ "setMacAddress", "a01258.html#a960adffd3e6bb7e83b85bce6baccddf3", null ]
 ];

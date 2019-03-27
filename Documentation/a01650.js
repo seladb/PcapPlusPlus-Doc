@@ -1,13 +1,10 @@
 var a01650 =
 [
-    [ "VxlanLayer", "a01650.html#aea5e8a6d3cf3a9fc45bbb30030ddc8ea", null ],
-    [ "VxlanLayer", "a01650.html#a95d29aa1bc7b26c82f2f39068cdeaca0", null ],
-    [ "computeCalculateFields", "a01650.html#a1a3382f05372478fbe1b5d87ab6333e4", null ],
-    [ "getHeaderLen", "a01650.html#a61796102e5c21034def5b158232bac3b", null ],
-    [ "getOsiModelLayer", "a01650.html#a0e45a6e3fcfcdadddc24974e3fc139c9", null ],
-    [ "getVNI", "a01650.html#a3efe820adaf6e71b04acff6f0e800674", null ],
-    [ "getVxlanHeader", "a01650.html#a021ee4907d7dffae04806c18269682fa", null ],
-    [ "parseNextLayer", "a01650.html#a7c7ea9ff536dbc602dac07591de6a202", null ],
-    [ "setVNI", "a01650.html#ae03a61d99376b70b8f92b30d1a3b429e", null ],
-    [ "toString", "a01650.html#a13439c97767b4419de816e32b7759917", null ]
+    [ "getDeviceType", "a01650.html#acc1fc2d75dc09c9e3920c6c1d3f0ce37", null ],
+    [ "getMinAmountOfDataToCopyFromKernelToApplication", "a01650.html#a8dfdf0d5b3e54235756d9695b90f3ef7", null ],
+    [ "sendPackets", "a01650.html#a8f0f1d43beaf1e839959ec51838a246f", null ],
+    [ "setMinAmountOfDataToCopyFromKernelToApplication", "a01650.html#aebff78da9d57c6ec9046de32746943bd", null ],
+    [ "startCapture", "a01650.html#af22e2966176d4127e69300cd4b208758", null ],
+    [ "startCapture", "a01650.html#a70126c098779937e5ce88360966c7aa1", null ],
+    [ "startCapture", "a01650.html#a74824694b8f72f687dec10557a196675", null ]
 ];

@@ -5,5 +5,5 @@ var searchData=
   ['igmptype',['IgmpType',['../a00202.html#ad59f90b2f755654b75205c3e06fb2bd8',1,'pcpp']]],
   ['ipprotocoltypes',['IPProtocolTypes',['../a00202.html#ace8e2e21b82a8adc602f561e1e612fb0',1,'pcpp']]],
   ['ipv4optiontypes',['IPv4OptionTypes',['../a00202.html#a4ac8e7540b72db061b0078f1e2ca2b68',1,'pcpp']]],
-  ['ipv6extensiontype',['IPv6ExtensionType',['../a01090.html#a6b445a68c4313bfabd44a6f57de03379',1,'pcpp::IPv6Extension']]]
+  ['ipv6extensiontype',['IPv6ExtensionType',['../a01086.html#a6b445a68c4313bfabd44a6f57de03379',1,'pcpp::IPv6Extension']]]
 ];

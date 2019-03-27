@@ -1,7 +1,10 @@
 var a01102 =
 [
-    [ "fragOffsetAndFlags", "a01102.html#aa25c6f0e0649e2ce43c4cca084f9ea62", null ],
-    [ "headerLen", "a01102.html#a5856041f7a061a0d6d0c0c53a0bdc493", null ],
-    [ "id", "a01102.html#aa385b898dc21535012593791a41358dd", null ],
-    [ "nextHeader", "a01102.html#ad8163575c2faa31dc56ef5e004168f77", null ]
+    [ "IPv6Option", "a01106.html", "a01106" ],
+    [ "IPv6TLVOptionBuilder", "a01110.html", "a01110" ],
+    [ "IPv6TLVOptionHeader", "a01102.html#a2401032e061357d5d4b232c9390174c1", null ],
+    [ "getFirstOption", "a01102.html#ae985020e938e97e345e85fcad9bd2fb7", null ],
+    [ "getNextOption", "a01102.html#a37757360614e3f7a81e1fd586b13986c", null ],
+    [ "getOption", "a01102.html#ae26e2b992ddbfd2c4f5c26913ed56d05", null ],
+    [ "getOptionCount", "a01102.html#adc0c471faaacd0bdb7ab3644b51c70c3", null ]
 ];

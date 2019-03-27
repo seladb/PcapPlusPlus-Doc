@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::DpdkDevice::DpdkDeviceConfiguration Struct Reference</title>
+<title>PcapPlusPlus: pcpp::DpdkDevice::LinkStatus Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,198 +80,99 @@ $(document).ready(function(){initNavTree('a00846.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00843.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::DpdkDevice::DpdkDeviceConfiguration Struct Reference</div>  </div>
+<div class="title">pcpp::DpdkDevice::LinkStatus Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00023_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a02b5e780f69972a7295beea8acd9299e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a02b5e780f69972a7295beea8acd9299e">DpdkDeviceConfiguration</a> (uint16_t <a class="el" href="a00846.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a>=128, uint16_t <a class="el" href="a00846.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a>=512, uint16_t <a class="el" href="a00846.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a>=100, uint64_t <a class="el" href="a00846.html#adebf03bb242d47ddc1340e7ecae555f6">rssHashFunction</a>=<a class="el" href="a00842.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a">RSS_IPV4</a>|<a class="el" href="a00842.html#aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80">RSS_IPV6</a>, uint8_t *<a class="el" href="a00846.html#ab031afa238020cf7389500461675d7fc">rssKey</a>=DpdkDevice::m_RSSKey, uint8_t <a class="el" href="a00846.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5">rssKeyLength</a>=40)</td></tr>
-<tr class="separator:a02b5e780f69972a7295beea8acd9299e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a67ef869fa855fbe7c29add4e9d6ac45b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a> { <a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947">FULL_DUPLEX</a>, 
+<a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14">HALF_DUPLEX</a>
+ }</td></tr>
+<tr class="separator:a67ef869fa855fbe7c29add4e9d6ac45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af0f377c2974af2766ffcb3bd54ed7e2d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#af0f377c2974af2766ffcb3bd54ed7e2d">receiveDescriptorsNumber</a></td></tr>
-<tr class="separator:af0f377c2974af2766ffcb3bd54ed7e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43841be287a4fc02b76d06c1eabcc83c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a43841be287a4fc02b76d06c1eabcc83c">transmitDescriptorsNumber</a></td></tr>
-<tr class="separator:a43841be287a4fc02b76d06c1eabcc83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a225b415490ad496be6e0a93cf0b829ba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a225b415490ad496be6e0a93cf0b829ba">flushTxBufferTimeout</a></td></tr>
-<tr class="separator:a225b415490ad496be6e0a93cf0b829ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab031afa238020cf7389500461675d7fc"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#ab031afa238020cf7389500461675d7fc">rssKey</a></td></tr>
-<tr class="separator:ab031afa238020cf7389500461675d7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ce4d27e30d5382fbdfe882cc5ab1f5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5">rssKeyLength</a></td></tr>
-<tr class="separator:ad3ce4d27e30d5382fbdfe882cc5ab1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebf03bb242d47ddc1340e7ecae555f6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#adebf03bb242d47ddc1340e7ecae555f6">rssHashFunction</a></td></tr>
-<tr class="separator:adebf03bb242d47ddc1340e7ecae555f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#ac71de439a1f9d3f7c95aadd5b20b0469">linkUp</a></td></tr>
+<tr class="separator:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6177ed98446f18d57be88d8c2411a473"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a6177ed98446f18d57be88d8c2411a473">linkSpeedMbps</a></td></tr>
+<tr class="separator:a6177ed98446f18d57be88d8c2411a473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cfc43e13a80ba49369288ad220bd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00846.html#a64cfc43e13a80ba49369288ad220bd1b">linkDuplex</a></td></tr>
+<tr class="separator:a64cfc43e13a80ba49369288ad220bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct that contains user configurable parameters for opening a <a class="el" href="a00842.html">DpdkDevice</a>. All of these parameters have default values so the user doesn't have to use these parameters or understand exactly what is their effect </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a02b5e780f69972a7295beea8acd9299e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02b5e780f69972a7295beea8acd9299e">&#9670;&nbsp;</a></span>DpdkDeviceConfiguration()</h2>
+<div class="textblock"><p>A struct that contains the link status of a <a class="el" href="a00838.html">DpdkDevice</a> (DPDK port). Returned from <a class="el" href="a00838.html#a4ca58304c0df036a23e40f1505925319">DpdkDevice::getLinkStatus()</a> </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a67ef869fa855fbe7c29add4e9d6ac45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ef869fa855fbe7c29add4e9d6ac45b">&#9670;&nbsp;</a></span>LinkDuplex</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::DpdkDevice::DpdkDeviceConfiguration::DpdkDeviceConfiguration </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>receiveDescriptorsNumber</em> = <code>128</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>transmitDescriptorsNumber</em> = <code>512</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>flushTxBufferTimeout</em> = <code>100</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>rssHashFunction</em> = <code><a class="el" href="a00842.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a">RSS_IPV4</a>&#160;|&#160;<a class="el" href="a00842.html#aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80">RSS_IPV6</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>rssKey</em> = <code>DpdkDevice::m_RSSKey</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>rssKeyLength</em> = <code>40</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b">pcpp::DpdkDevice::LinkStatus::LinkDuplex</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A c'tor for this struct </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">receiveDescriptorsNumber</td><td>An optional parameter for defining the number of RX descriptors that will be allocated for each RX queue. Default value is 128 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">transmitDescriptorsNumber</td><td>An optional parameter for defining the number of TX descriptors that will be allocated for each TX queue. Default value is 512 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flushTxBufferTimeout</td><td>An optional parameter for setting TX buffer timeout in usec. Default value is 100 usec </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rssHashFunction</td><td>This parameter enable to configure the types of packets to which the RSS hashing must be applied. The value provided here should be a mask composed of hash functions described in DpdkRssHashFunction enum. The default value is IPv4 and IPv6 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rssKey</td><td>A pointer to an array holding the RSS key to use for hashing specific header of received packets. If not specified, there is a default key defined inside <a class="el" href="a00842.html">DpdkDevice</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rssKeyLength</td><td>The length in bytes of the array pointed by rssKey. Default value is the length of default rssKey </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Enum for describing link duplex </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947"></a>FULL_DUPLEX&#160;</td><td class="fielddoc"><p>Full duplex </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14"></a>HALF_DUPLEX&#160;</td><td class="fielddoc"><p>Half duplex </p>
+</td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a225b415490ad496be6e0a93cf0b829ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225b415490ad496be6e0a93cf0b829ba">&#9670;&nbsp;</a></span>flushTxBufferTimeout</h2>
+<a id="a64cfc43e13a80ba49369288ad220bd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cfc43e13a80ba49369288ad220bd1b">&#9670;&nbsp;</a></span>linkDuplex</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::DpdkDevice::DpdkDeviceConfiguration::flushTxBufferTimeout</td>
+          <td class="memname"><a class="el" href="a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a> pcpp::DpdkDevice::LinkStatus::linkDuplex</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the TX buffer flush timeout in millisecond (only relevant if sending packets using DPDK TX buffer mechanism). A value of zero means no timeout </p>
+<p>Link duplex (half/full duplex) </p>
 
 </div>
 </div>
-<a id="af0f377c2974af2766ffcb3bd54ed7e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0f377c2974af2766ffcb3bd54ed7e2d">&#9670;&nbsp;</a></span>receiveDescriptorsNumber</h2>
+<a id="a6177ed98446f18d57be88d8c2411a473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6177ed98446f18d57be88d8c2411a473">&#9670;&nbsp;</a></span>linkSpeedMbps</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pcpp::DpdkDevice::DpdkDeviceConfiguration::receiveDescriptorsNumber</td>
+          <td class="memname">int pcpp::DpdkDevice::LinkStatus::linkSpeedMbps</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When configuring a DPDK RX queue, DPDK creates descriptors it will use for receiving packets from the network to this RX queue. This parameter enables to configure the number of descriptors that will be created for each RX queue </p>
+<p>Link speed in Mbps (for example: 10Gbe will show 10000) </p>
 
 </div>
 </div>
-<a id="adebf03bb242d47ddc1340e7ecae555f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adebf03bb242d47ddc1340e7ecae555f6">&#9670;&nbsp;</a></span>rssHashFunction</h2>
+<a id="ac71de439a1f9d3f7c95aadd5b20b0469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71de439a1f9d3f7c95aadd5b20b0469">&#9670;&nbsp;</a></span>linkUp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t pcpp::DpdkDevice::DpdkDeviceConfiguration::rssHashFunction</td>
+          <td class="memname">bool pcpp::DpdkDevice::LinkStatus::linkUp</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This parameter enables to configure the types of packets to which the RSS hashing must be applied. The value is a mask composed of hash functions described in DpdkRssHashFunction enum. Supplying a value equal to zero disables the RSS feature. Supplying a value equal to -1 enables all hash functions supported by this PMD </p>
-
-</div>
-</div>
-<a id="ab031afa238020cf7389500461675d7fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab031afa238020cf7389500461675d7fc">&#9670;&nbsp;</a></span>rssKey</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* pcpp::DpdkDevice::DpdkDeviceConfiguration::rssKey</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When configuring a DPDK device, DPDK supports to activate the Receive Side Scaling (RSS) feature to distribute traffic between the RX queues This parameter points to an array holding the RSS key to use for hashing specific header fields of received packets. The length of this array should be indicated by rssKeyLength below. Supplying a NULL value causes a default random hash key to be used by the device driver </p>
-
-</div>
-</div>
-<a id="ad3ce4d27e30d5382fbdfe882cc5ab1f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3ce4d27e30d5382fbdfe882cc5ab1f5">&#9670;&nbsp;</a></span>rssKeyLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::DpdkDevice::DpdkDeviceConfiguration::rssKeyLength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This parameter indicates the length in bytes of the array pointed by rssKey. This length will be checked in i40e only. Others assume 40 bytes to be used. </p>
-
-</div>
-</div>
-<a id="a43841be287a4fc02b76d06c1eabcc83c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43841be287a4fc02b76d06c1eabcc83c">&#9670;&nbsp;</a></span>transmitDescriptorsNumber</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::DpdkDevice::DpdkDeviceConfiguration::transmitDescriptorsNumber</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When configuring a DPDK TX queue, DPDK creates descriptors it will use for transmitting packets to the network through this TX queue. This parameter enables to configure the number of descriptors that will be created for each TX queue </p>
+<p>True if link is up, false if it's down </p>
 
 </div>
 </div>
@@ -280,8 +181,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a00842.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00846.html">DpdkDeviceConfiguration</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:57 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00202.html">pcpp</a></li><li class="navelem"><a class="el" href="a00838.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00846.html">LinkStatus</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

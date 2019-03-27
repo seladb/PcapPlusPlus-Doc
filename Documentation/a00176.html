@@ -95,11 +95,11 @@ $(document).ready(function(){initNavTree('a00176.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html">pcpp::ConnectionData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01578.html">pcpp::ConnectionData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01586.html">pcpp::TcpStreamData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01582.html">pcpp::TcpStreamData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01590.html">pcpp::TcpReassembly</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01586.html">pcpp::TcpReassembly</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -112,7 +112,7 @@ Namespaces</h2></td></tr>
 <div class="textblock"><p>This is an implementation of TCP reassembly logic, which means reassembly of TCP messages spanning multiple TCP segments (or packets).<br />
  This logic can be useful in analyzing messages for a large number of protocols implemented on top of TCP including HTTP, SSL/TLS, FTP and many many more.</p>
 <p><b>General Features:</b></p><ul>
-<li>Manage multiple TCP connections under one <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance</li>
+<li>Manage multiple TCP connections under one <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance</li>
 <li>Support TCP retransmission</li>
 <li>Support out-of-order packets</li>
 <li>Support missing TCP data</li>
@@ -120,34 +120,34 @@ Namespaces</h2></td></tr>
 <li>Support callbacks for new TCP data, connection start and connection end</li>
 </ul>
 <p><b>Logic Description:</b></p><ul>
-<li>The user creates an instance of the <a class="el" href="a01590.html">pcpp::TcpReassembly</a> class</li>
+<li>The user creates an instance of the <a class="el" href="a01586.html">pcpp::TcpReassembly</a> class</li>
 <li>Then the user starts feeding it with TCP packets</li>
-<li>The <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance manages all TCP connections from the packets it's being fed. For each connection it manages its 2 sides (A-&gt;B and B-&gt;A)</li>
+<li>The <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance manages all TCP connections from the packets it's being fed. For each connection it manages its 2 sides (A-&gt;B and B-&gt;A)</li>
 <li>When a packet arrives, it is first classified to a certain TCP connection</li>
 <li>Then it is classified to a certain side of the TCP connection</li>
-<li>Then the <a class="el" href="a01590.html">pcpp::TcpReassembly</a> logic tries to understand if the data in this packet is the expected data (sequence-wise) and if it's new (e.g isn't a retransmission)</li>
-<li>If the packet data matches these criteria a callback is being invoked. This callback is supplied by the user in the creation of the <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance. This callback contains the new data (of course), but also information about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance</li>
+<li>Then the <a class="el" href="a01586.html">pcpp::TcpReassembly</a> logic tries to understand if the data in this packet is the expected data (sequence-wise) and if it's new (e.g isn't a retransmission)</li>
+<li>If the packet data matches these criteria a callback is being invoked. This callback is supplied by the user in the creation of the <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance. This callback contains the new data (of course), but also information about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance</li>
 <li>If the data in this packet isn't new, it's being ignored</li>
 <li>If the data in this packet isn't expected (meaning this packet came out-of-order), then the data is being queued internally and will be sent to the user when its turn arrives (meaning, after the data before arrives)</li>
 <li>If the missing data doesn't arrive until a new message from the other side of the connection arrives or until the connection ends - this will be considered as missing data and the queued data will be sent to the user, but the string "[X bytes missing]" will be added to the message sent in the callback</li>
-<li><a class="el" href="a01590.html">pcpp::TcpReassembly</a> supports 2 more callbacks - one is invoked when a new TCP connection is first seen and the other when it's ended (either by a FIN/RST packet or manually by the user). Both of these callbacks contain data about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance. The end connection callback also provides the reason for closing it ("naturally" or manually)</li>
+<li><a class="el" href="a01586.html">pcpp::TcpReassembly</a> supports 2 more callbacks - one is invoked when a new TCP connection is first seen and the other when it's ended (either by a FIN/RST packet or manually by the user). Both of these callbacks contain data about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance. The end connection callback also provides the reason for closing it ("naturally" or manually)</li>
 </ul>
 <p><b>Basic Usage and APIs:</b></p><ul>
-<li><a class="el" href="a01590.html">pcpp::TcpReassembly</a> c'tor - Create an instance, provide the callbacks and the user cookie to the instance</li>
-<li>pcpp::TcpReassembly::ReassemblePacket() - Feed <a class="el" href="a01590.html">pcpp::TcpReassembly</a> instance with packets</li>
-<li><a class="el" href="a01590.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection()</a> - Manually close a connection by a flow key</li>
-<li><a class="el" href="a01590.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections()</a> - Manually close all currently opened connections</li>
-<li><a class="el" href="a01590.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a> callback - Invoked when new data arrives on a certain connection. Contains the new data as well as connection data (5-tuple, flow key)</li>
-<li><a class="el" href="a01590.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a> callback - Invoked when a new connection is identified</li>
-<li><a class="el" href="a01590.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a> callback - Invoked when a connection ends (either by FIN/RST or manually by the user) </li>
+<li><a class="el" href="a01586.html">pcpp::TcpReassembly</a> c'tor - Create an instance, provide the callbacks and the user cookie to the instance</li>
+<li>pcpp::TcpReassembly::ReassemblePacket() - Feed <a class="el" href="a01586.html">pcpp::TcpReassembly</a> instance with packets</li>
+<li><a class="el" href="a01586.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection()</a> - Manually close a connection by a flow key</li>
+<li><a class="el" href="a01586.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections()</a> - Manually close all currently opened connections</li>
+<li><a class="el" href="a01586.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a> callback - Invoked when new data arrives on a certain connection. Contains the new data as well as connection data (5-tuple, flow key)</li>
+<li><a class="el" href="a01586.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a> callback - Invoked when a new connection is identified</li>
+<li><a class="el" href="a01586.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a> callback - Invoked when a connection ends (either by FIN/RST or manually by the user) </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00176.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:56 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_28e1bb8382970ac72e8ae3b23df4a891.html">temp</a></li><li class="navelem"><a class="el" href="dir_70b229c663330356443b0599ac1efa0a.html">pcpp1904</a></li><li class="navelem"><a class="el" href="dir_ff395d3b700a139196536a54049dd392.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_1a846adfe6d6065894a358446db8f993.html">Dist</a></li><li class="navelem"><a class="el" href="dir_5ee4a6e65e89bb3c05fa3ae62982da56.html">header</a></li><li class="navelem"><a class="el" href="a00176.html">TcpReassembly.h</a></li>
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

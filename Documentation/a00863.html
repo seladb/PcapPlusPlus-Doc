@@ -80,22 +80,29 @@ $(document).ready(function(){initNavTree('a00866.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::DpdkWorkerThread Member List</div>  </div>
+<div class="title">pcpp::DpdkDeviceList Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00866.html">pcpp::DpdkWorkerThread</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00866.html">pcpp::DpdkDeviceList</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a6516fee0ccc9d545283806a3f78ee82c">getCoreId</a>()=0</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkWorkerThread</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00866.html#adf8c2b08e51679b20e9f56e166483492">run</a>(uint32_t coreId)=0</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkWorkerThread</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a7ae564e0ed9544c9e06ddbf5f1f1ecb9">stop</a>()=0</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkWorkerThread</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00866.html#afee1cd32d8aa6bbb639f7e45ca85e68d">~DpdkWorkerThread</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkWorkerThread</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a28e3ef22fd0ea3830d5f0b85696148f8">getDeviceByPciAddress</a>(const std::string &amp;pciAddr)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00866.html#aa7396105028e0b06ec205d2dc0dea868">getDeviceByPort</a>(int portId)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a86087a708113697332e06343b52682e8">getDpdkDeviceList</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00866.html#ad4f956f6d492abfe596e45fe1cdaebb8">getDpdkLogLevel</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a5fb998e1ced87c149b19073669bf6ae9">getDpdkMasterCore</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00866.html#a6aff4e87a01f2025508811feb1f4412a">getInstance</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#a644841cec0811a3dff810cbf33770d1d">initDpdk</a>(CoreMask coreMask, uint32_t mBufPoolSizePerDevice, uint8_t masterCore=0)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00866.html#a550bddaf268440874c84c56a0b68672f">setDpdkLogLevel</a>(LoggerPP::LogLevel logLevel)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#afc44087f40693687b57c6b9740241dd2">startDpdkWorkerThreads</a>(CoreMask coreMask, std::vector&lt; DpdkWorkerThread *&gt; &amp;workerThreadsVec)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00866.html#a231f0417a70c8b014e68dea5454b00d9">stopDpdkWorkerThreads</a>()</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00866.html#ad23f3dc15588208e77f524864eb2ec16">writeDpdkLogToFile</a>(FILE *logFile)</td><td class="entry"><a class="el" href="a00866.html">pcpp::DpdkDeviceList</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 13 2019 01:38:57 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 26 2019 23:11:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

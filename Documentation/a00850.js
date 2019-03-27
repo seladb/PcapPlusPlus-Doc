@@ -1,10 +1,7 @@
 var a00850 =
 [
-    [ "LinkDuplex", "a00850.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
-      [ "FULL_DUPLEX", "a00850.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
-      [ "HALF_DUPLEX", "a00850.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
-    ] ],
-    [ "linkDuplex", "a00850.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
-    [ "linkSpeedMbps", "a00850.html#a6177ed98446f18d57be88d8c2411a473", null ],
-    [ "linkUp", "a00850.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
+    [ "bytes", "a00850.html#aeeb02f0b115b0d7a81cd1076535c8ac2", null ],
+    [ "bytesPerSec", "a00850.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f", null ],
+    [ "packets", "a00850.html#a39ba9e581d7353a484f575487a334fc8", null ],
+    [ "packetsPerSec", "a00850.html#a0531a2f378b09192aadf66e4ae1e5019", null ]
 ];
