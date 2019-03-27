@@ -317,7 +317,7 @@ SSL packet count:      251</code>
 <h2 id="send_packets">Sending packets</h2>
 <p>Until now we saw the different methods of capturing packets. But <code class="language-cpp">PcapLiveDevice</code> or <code class="language-cpp">WinPcapLiveDevice</code> also provide APIs for sending packets to the network. The APIs are rather straight forward and enable sending one packet or multiple packets in a batch, and also enable to send raw packets (of type <code class="language-cpp">RawPacket</code>) or parsed packets (of type <code class="language-cpp">Packet</code>). We won't go over all of the methods, we'll demonstrate some of them. The rest should be quite easy to understand.</p>
 <p>Let's start with sending one raw packet. In this example we'll use the raw packet vector we collected from the packet capture in the previous section, iterate on it and send each packet to the network one by one. Let's look at the code first:</p>
-<pre><code class="language-cpp">printf("\nSending %d packets one by one...\n", packetVec.size());
+<pre><code class="language-cpp">printf("\nSending %d packets one by one...\n", (int)packetVec.size());
 
 // go over the vector of packets and send them one by one
 for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter != packetVec.end(); iter++)
@@ -329,11 +329,11 @@ for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter !
 		exit(1);
 	}
 }
-printf("%d packets sent\n", packetVec.size());</code>
+printf("%d packets sent\n", (int)packetVec.size());</code>
 </pre>
 <p>As you can see we send each packet using the <code class="language-cpp">dev->sendPacket()</code> method. Notice the return value is a boolean saying whether the packet was sent successfully or not.</p>
 <p>Now let's demonstrate sending a bunch of packets. Here we'll only demonstrate sending a raw packet list (<code class="language-cpp">RawPacketVector</code>). Let's see the code:</p>
-<pre><code class="language-cpp">printf("\nSending %d packets...\n", packetVec.size());
+<pre><code class="language-cpp">printf("\nSending %d packets...\n", (int)packetVec.size());
 
 // send all packets in the vector. The returned number shows how many packets were actually sent (expected to be equal to vector size)
 int packetsSent = dev->sendPackets(packetVec);
