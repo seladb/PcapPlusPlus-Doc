@@ -18,7 +18,7 @@ var a01038 =
     [ "getCurrentCapacity", "a01038.html#ab0155a088e62cd22ad9c72b18f91f7e6", null ],
     [ "getCurrentPacket", "a01038.html#a0efa8ec7258bbc0a83348bae42f93506", null ],
     [ "getMaxCapacity", "a01038.html#a81e2aec670b394d49687bb4f1d497d06", null ],
-    [ "processPacket", "a01038.html#a923687e62b4287ed6b800dc64f8a53c8", null ],
-    [ "processPacket", "a01038.html#aef8e48fcaaa8439f4c43ca3bbf18c62c", null ],
+    [ "processPacket", "a01038.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7", null ],
+    [ "processPacket", "a01038.html#a97763fcf5926f60684cbbe3fda79cba4", null ],
     [ "removePacket", "a01038.html#a72d9dea60bb16f09caadd0b82c00afd6", null ]
 ];

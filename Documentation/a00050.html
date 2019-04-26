@@ -119,7 +119,7 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes an implementation of IP reassembly mechanism (a.k.a IP de-fragmentation), which is the mechanism of assembling IPv4 or IPv6 fragments back into one whole packet. As the previous sentence imply, this module supports both IPv4 and IPv6 reassembly which means the same <a class="el" href="a01038.html">pcpp::IPReassembly</a> instance can reassemble both IPv4 and IPv6 fragments. You can read more about IP fragmentation here: <a href="https://en.wikipedia.org/wiki/IP_fragmentation">https://en.wikipedia.org/wiki/IP_fragmentation</a>.<br />
- The API is rather simple and contains one main method: <a class="el" href="a01038.html#a923687e62b4287ed6b800dc64f8a53c8">pcpp::IPReassembly::processPacket()</a> which gets a fragment packet as a parameter, does the reassembly and returns a fully reassembled packet when done.<br />
+ The API is rather simple and contains one main method: <a class="el" href="a01038.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7">pcpp::IPReassembly::processPacket()</a> which gets a fragment packet as a parameter, does the reassembly and returns a fully reassembled packet when done.<br />
 </p>
 <p>The logic works as follows:</p><ul>
 <li>There is an internal map that stores the reassembly data for each packet. The key to this map, meaning the way to uniquely associate a fragment to a (reassembled) packet is the triplet of source IP, destination IP and IP ID (for IPv4) or Fragment ID (for IPv6)</li>
@@ -152,8 +152,8 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_28e1bb8382970ac72e8ae3b23df4a891.html">temp</a></li><li class="navelem"><a class="el" href="dir_d75c333d15700fa5ca52ea392b4fbd17.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_0751405f2c2bfb2f42e1a09452f577e5.html">Dist</a></li><li class="navelem"><a class="el" href="dir_99dc552f4488de3a8c28cec336df5bdd.html">header</a></li><li class="navelem"><a class="el" href="a00050.html">IPReassembly.h</a></li>
-    <li class="footer">Generated on Fri Mar 29 2019 00:46:58 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="a00050.html">IPReassembly.h</a></li>
+    <li class="footer">Generated on Thu Apr 25 2019 23:52:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -32,5 +32,6 @@ var searchData=
   ['removesourceaddressatindex',['removeSourceAddressAtIndex',['../a01018.html#a87009d34db619dcfd3a54e40f696fece',1,'pcpp::IgmpV3QueryLayer']]],
   ['removetag',['removeTag',['../a01358.html#aaa3f807f3db2c33ae7bf157a2ecae951',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['removetcpoption',['removeTcpOption',['../a01574.html#ac24e0b402da8a1489379e80876eb8dcf',1,'pcpp::TcpLayer']]],
+  ['reset',['reset',['../a01310.html#af4e002ab316a892b4ea46f5294447830',1,'pcpp::PcapLiveDeviceList']]],
   ['run',['run',['../a00862.html#adf8c2b08e51679b20e9f56e166483492',1,'pcpp::DpdkWorkerThread']]]
 ];

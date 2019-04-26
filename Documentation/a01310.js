@@ -6,5 +6,6 @@ var a01310 =
     [ "getPcapLiveDeviceByIp", "a01310.html#a00b3cad054b24d8868cbf141c654c614", null ],
     [ "getPcapLiveDeviceByIp", "a01310.html#aeffe9373b73371e24023ae30f36ead62", null ],
     [ "getPcapLiveDeviceByName", "a01310.html#ab421bc6f40bf1be764555fb4ab340e0a", null ],
-    [ "getPcapLiveDevicesList", "a01310.html#a993aefeec8551a21171a0d5cfdd78675", null ]
+    [ "getPcapLiveDevicesList", "a01310.html#a993aefeec8551a21171a0d5cfdd78675", null ],
+    [ "reset", "a01310.html#af4e002ab316a892b4ea46f5294447830", null ]
 ];

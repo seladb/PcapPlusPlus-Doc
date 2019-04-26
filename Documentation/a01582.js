@@ -5,6 +5,7 @@ var a01582 =
     [ "~TcpStreamData", "a01582.html#aacb6d4bc4dd7bf367598aa24e5d5f425", null ],
     [ "TcpStreamData", "a01582.html#a88cac5a4f7a299b2f987a565f97a678f", null ],
     [ "getConnectionData", "a01582.html#ae7120f2faf97cfc9a560f7062daab95a", null ],
+    [ "getConnectionDataRef", "a01582.html#a2d9ea82060db3ef649904e28f27b406b", null ],
     [ "getData", "a01582.html#ae1f70f5bd9689c11412b2c82e1e4c4d2", null ],
     [ "getDataLength", "a01582.html#aeceeb369d8e8cb114f2c8682b966d1e6", null ],
     [ "operator=", "a01582.html#a23bae012dd3ef982d9f010d9afcf6690", null ]

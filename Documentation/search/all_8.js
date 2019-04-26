@@ -197,6 +197,6 @@ var searchData=
   ['issslmessage',['IsSSLMessage',['../a01522.html#a15327f1acf51062ba2852678211f8264',1,'pcpp::SSLLayer']]],
   ['issupresserrors',['isSupressErrors',['../a01154.html#ab1634894a477fbd9bccf8df68326d6d2',1,'pcpp::LoggerPP']]],
   ['istypeof',['isTypeOf',['../a00802.html#a8a0aba99fc544c523a10ed41b3fc80a4',1,'pcpp::IDnsResourceData::isTypeOf()'],['../a00806.html#ad8a149d31dc9e4081cd1db433ee06052',1,'pcpp::DnsResourceDataPtr::isTypeOf()']]],
-  ['isvalid',['isValid',['../a01026.html#a87c99d4671e64cc23ce3824c35290abf',1,'pcpp::IPAddress::isValid()'],['../a01162.html#afe46520073e14b9e02bb368627896f4a',1,'pcpp::MacAddress::isValid()']]],
+  ['isvalid',['isValid',['../a01026.html#a87c99d4671e64cc23ce3824c35290abf',1,'pcpp::IPAddress::isValid()'],['../a01162.html#a16c78d3efcb5a63bc1bb95f98d418ca0',1,'pcpp::MacAddress::isValid()']]],
   ['isvirtual',['isVirtual',['../a00838.html#ac6a4321f24373e785cc07950a2434527',1,'pcpp::DpdkDevice']]]
 ];

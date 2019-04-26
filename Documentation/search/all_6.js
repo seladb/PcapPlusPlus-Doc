@@ -50,6 +50,7 @@ var searchData=
   ['getclientkeyexchangeparamslength',['getClientKeyExchangeParamsLength',['../a01494.html#a4f7f82d6231467638a0e7c5e2e998073',1,'pcpp::SSLClientKeyExchangeMessage']]],
   ['getcompressionmethodsvalue',['getCompressionMethodsValue',['../a01474.html#a388d82c71b2a4e3a595e52c8fe831ac4',1,'pcpp::SSLClientHelloMessage::getCompressionMethodsValue()'],['../a01478.html#a35a1d36501d95099afa785b816ee3ccc',1,'pcpp::SSLServerHelloMessage::getCompressionMethodsValue()']]],
   ['getconnectiondata',['getConnectionData',['../a01582.html#ae7120f2faf97cfc9a560f7062daab95a',1,'pcpp::TcpStreamData']]],
+  ['getconnectiondataref',['getConnectionDataRef',['../a01582.html#a2d9ea82060db3ef649904e28f27b406b',1,'pcpp::TcpStreamData']]],
   ['getconnectioninformation',['getConnectionInformation',['../a01586.html#a6b92c2d8b3116190504e8d60ca0b7e7e',1,'pcpp::TcpReassembly']]],
   ['getcontaininglayer',['getContainingLayer',['../a01470.html#a4342813d150cb1cec2911b59b99e0418',1,'pcpp::SSLHandshakeMessage']]],
   ['getcontentlength',['getContentLength',['../a00914.html#a9e35cb52f524ee88973d4b43a508ca30',1,'pcpp::HttpResponseLayer::getContentLength()'],['../a01394.html#a1dc499aa8f68b4bcd491441ec2296bb9',1,'pcpp::SipLayer::getContentLength()']]],
