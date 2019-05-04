@@ -40,7 +40,7 @@ section: tutorials
 	</li>
 	<li><strong><i>Pcap++</i></strong> - a library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
 		<ol>
-			<li><code class="language-cpp">PcapLiveDevice</code> - representing a Linux/Mac OS network interface and enables capturing and sending packets as well as retrieving interface information</li>
+			<li><code class="language-cpp">PcapLiveDevice</code> - representing a Linux/MacOS network interface and enables capturing and sending packets as well as retrieving interface information</li>
 			<li><code class="language-cpp">WinPcapLiveDevice</code> - representing a Windows network interface and contains all functionality exposed in <code class="language-cpp">PcapLiveDevice</code>. This class actually inherits <code class="language-cpp">PcapLiveDevice</code> and does the relevant adjustments for WinPcap and Windows OS</li>
 			<li><code class="language-cpp">DpdkDevice</code> - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information</li>
 			<li><code class="language-cpp">PfRingDevice</code> - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information</li>
@@ -162,7 +162,7 @@ clean:
 	del main.o
 	del Tutorial-LiveTraffic.exe</code>
 </pre>
-<h4>Linux and Mac OS Makefile</h4>
+<h4>Linux and MacOS Makefile</h4>
 <pre><code class="language-makefile">include /usr/local/etc/PcapPlusPlus.mk
 
 # All Target
@@ -220,7 +220,7 @@ clean:
 <h2 id="run_example">Running the example</h2>
 <p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-HelloWorld">here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. Then follow these instruction, according to your platform:</p>
 <ul>
-	<li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code class="language-shell">Makefile.non_windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
+	<li>Linux and MacOS - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code class="language-shell">Makefile.non_windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
 	<li>Windows using MinGW or MinGW-w64 - either change the <code class="language-shell">Makefile.windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.windows all</code></li>
 	<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
 </ul>

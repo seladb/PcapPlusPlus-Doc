@@ -28,7 +28,7 @@ section: tutorials
 <p>PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:</p>
 <ul>
 	<li><strong>PcapLiveDevice</strong> - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface</li>
-	<li><strong>WinPcapLiveDevice</strong> - wraps WinPcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/Mac OS</li>
+	<li><strong>WinPcapLiveDevice</strong> - wraps WinPcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS</li>
 	<li><strong>PcapLiveDeviceList</strong> - A singleton class that creates, stores and provides access to all PcapLiveDevice or WinPcapLiveDevice instances. These instances are initialized on startup and wrap all the network interfaces installed on the machine</li>
 	<li><strong>PcapRemoteDevice</strong> - wraps WinPcap functionality for <a href="https://www.winpcap.org/docs/docs_412/html/group__remote.html">remote packet capture</a>. As this functionality is less common and less used, it won't be covered in this tutorial. You can take a look at PcapPlusPlus documentation for a comprehensive overview and API description</li>
 	<li><strong></strong></li>
@@ -400,7 +400,7 @@ SSL packet count:      0</code>
 <h2 id="run_example">Running the example</h2>
 <p>All code that was covered in this tutorial can be found <a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-LiveTraffic">here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from <a href="https://github.com/seladb/PcapPlusPlus/releases/latest">the latest PcapPlusPlus release</a>. Then follow these instruction, according to your platform:</p>
 <ul>
-	<li>Linux and Mac OSX - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code class="language-shell">Makefile.non_windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
+	<li>Linux and MacOS - make sure PcapPlusPlus is installed (by running <strong>sudo make install</strong> in PcapPlusPlus main directory). Then either change the <code class="language-shell">Makefile.non_windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.non_windows all</code></li>
 	<li>Windows using MinGW or MinGW-w64 - either change the <code class="language-shell">Makefile.windows</code> file name to <code class="language-shell">Makefile</code> and run <code class="language-shell">make all</code>, or run <code class="language-shell">make -f Makefile.windows all</code></li>
 	<li>Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials <a href="https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln">here</a>. Just open it and compile all tutorials</li>
 </ul>
