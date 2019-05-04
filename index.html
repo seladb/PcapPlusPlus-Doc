@@ -4,20 +4,71 @@ layout: default
 section: home
 ---
 <h1>Welcome To PcapPlusPlus Web-site</h1>
-<p>PcapPlusPlus is a multiplatform C++ network sniffing and packet parsing and crafting framework. It's meant to be lightweight, efficient and easy to use</p>
-<h2>What makes PcapPlusPlus different from similar C++ wrappers for libpcap/WinPcap?</h2>
+<p>PcapPlusPlus is a multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.</p>
+<p>PcapPlusPlus enables decoding and forging capabilities for a large variety of network protocols. It also provides easy to use C++ wrappers for the most popular packet processing engines such as <a href="https://www.tcpdump.org/">libpcap</a>, 
+  <a href="https://www.winpcap.org/">WinPcap</a>, <a href="https://www.dpdk.org/">DPDK</a> and <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a>.</p>
+<h2>Key Features</h2>
 <ul>
-  <li>Designed to be lightweight and efficient (see <a href="benchmark.html">benchmark results</a>)</li>
-  <li>Support for <strong>DPDK</strong> fast packet processing engine which enables packet capturing and transmition in line rate using kernel bypass</li>
-  <li>Support for ntop's <strong>PF_RING</strong> packet capturing engine that dramatically improves the packet capture speed</li>
-  <li>Support for parsing and editing of many protocols, including L7 protocols like HTTP and SSL/TLS</li>
-  <li>Unique implementation of <strong>TCP reassembly</strong> logic which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</li>
-  <li>Support for Remote Capture capabilities on Windows (using RPCAP protocol supported in WinPcap)</li>
-  <li>Support for reading and writing <strong>PCAPNG</strong> files (a lot more more than currently supported in WinPcap/libpcap)</li>
-  <li>Vast object-oriented filtering mechanism that makes libpcap filters a lot more user-friendly (no need to know the exact filter string to use)</li>
+  <li><strong>Decoding and forging capabilities</strong> for a large variety of network protocols (see the full list <a href="#supported-protocols">here</a>)</li>
+  <li><strong>Capture and send network packets</strong> through an easy to use C++ wrapper for <a href="https://www.tcpdump.org/">libpcap</a> and <a href="https://www.winpcap.org/">WinPcap</a></li>
+  <li><strong>Packet processing in line speed</strong> through an efficient and easy to use C++ wrapper for <a href="https://www.dpdk.org/">DPDK</a> and <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a></li>
+  <li><strong>Read and write network packets to/from files</strong> in both <strong>PCAP</strong> and <strong>PCAPNG</strong> formats</li>
+  <li><strong>Multiplatform support</strong> including Linux, MacOS and Windows</li>
+  <li>Unique implementation of <strong>TCP Reassembly</strong> logic which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</li>
+  <li>Implementation of <strong>IP Fragmentation and Defragmentation</strong> logic to create and reassemble IPv4 and IPv6 fragments</li>
+  <li><strong>Remote packet capture</strong> on Windows using RPCAP protocol supported in WinPcap</li>
+  <li><strong>Vast object-oriented packet filtering</strong> that makes libpcap's BPF filters a lot more user-friendly</li>
+  <li>Designed to be <strong>powerful and efficient</strong></li>
 </ul>
-<h2>PcapPlusPlus is multi-platform!</h2>
-<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>Mac OS X</strong>. It was tested on the follwoing platforms:</p>
+<h2>Getting Started</h2>
+<p>Writing applications with PcapPlusPlus is very easy and intuitive. Here is a simple application that shows how to read a packet from a PCAP file and parse it:</p>
+<pre>
+<code class="language-cpp">#include "IPv4Layer.h"
+#include "Packet.h"
+#include "PcapFileDevice.h"
+
+int main(int argc, char* argv[])
+{
+    // open a pcap file for reading
+    pcpp::PcapFileReaderDevice reader("1_packet.pcap");
+    if (!reader.open())
+    {
+        printf("Error opening the pcap file\n");
+        return 1;
+    }
+
+    // read the first (and only) packet from the file
+    pcpp::RawPacket rawPacket;
+    if (!reader.getNextPacket(rawPacket))
+    {
+        printf("Couldn't read the first packet in the file\n");
+        return 1;
+    }
+
+    // parse the raw packet into a parsed packet
+    pcpp::Packet parsedPacket(&rawPacket);
+
+    // verify the packet is IPv4
+    if (parsedPacket.isPacketOfType(pcpp::IPv4))
+    {
+        // extract source and dest IPs
+        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIpAddress();
+        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIpAddress();
+
+        // print source and dest IPs
+        printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
+    }
+
+    // close the file
+    reader.close();
+
+    return 0;
+}
+</code>
+</pre>
+<p>You can find much more information in the <a href="tutorials.html">Tutorials</a> section in PcapPlusPlus web-site. These tutorials will walk you through the main concepts and features of PcapPlusPlus and also provide code examples that you can easily download and run.</p>
+<h2>Multi Platform Support</h2>
+<p>PcapPlusPlus is currently supported on <strong>Windows</strong>, <strong>Linux</strong> and <strong>MacOS</strong>. It is being continuously tested on the following platforms:</p>
 <h6><strong>Windows</strong></h6>
 <ul>
   <li>Microsoft Visual Studio 2015 - x86 (32-bit) & x64 (64-bit) configurations</li>
@@ -27,28 +78,26 @@ section: home
 <h6><strong>Linux</strong></h6>
 <ul>
   <li>Ubuntu (12.04 LTS, 14.04 LTS, 16.04 LTS, 18.04 LTS)</li>
-  <li>Fedora 26</li>
+  <li>Fedora 26 & 29</li>
   <li>CentOS 7</li>
   <li>It should work on other Linux distributions as well</li>
 </ul>
 <h6><strong>Mac OS X</strong></h6>
 <ul>
-  <li>Yosemite (10.10)</li>
   <li>El Capitan (10.11)</li>
   <li>Sierra (10.12)</li>
   <li>High Sierra (10.13)</li>
+  <li>Mojave (10.14)</li>
 </ul>
-<h2>Supported packet capture engines</h2>
-<p>PcapPlusPlus currently works with the following packet capture engines:</p>
-<ul>
-  <li>libpcap live capture (on Linux and Mac OS X)</li>
-  <li>WinPcap live capture (on Windows)</li>
-  <li>ntop's Vanilla PF_RING engine (on Linux)</li>
-  <li>Intel DPDK engine (on Linux)</li>
-  <li>WinPcap Remote live capture (on Windows)</li>
-  <li>PCAP and PCAPNG file devices (reading and writing)</li>
-</ul>
-<h2 id=supported-protocols>Supported protocols</h2>
+<h2>Package Content</h2>
+<p>PcapPlusPlus consists of 3 libraries:</p>
+<ol>
+  <li><strong>Packet++</strong> - a library for parsing, creating and editing network packets</li>
+  <li><strong>Pcap++</strong> - a library for intercepting and sending packets, providing network and NIC info, stats, etc. It is actually a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING</li>
+  <li><strong>Common++</strong> - a library with some common code utilities used by both Packet++ and Pcap++</li>
+</ol>
+<p>In addition it contains many examples, tutorials and utilities documented in the <a href="examples.html">Examples</a> and in the <a href="tutorials.html">Tutorials</a> pages.</p>
+<h2 id=supported-protocols>Supported Network Protocols</h2>
 <p>The Packet++ library currently supports parsing, editing and creation of packets of the following protocols:</p>
 <ul>
   <li>Ethernet</li>
@@ -77,7 +126,17 @@ section: home
   <li>Packet trailer (a.k.a footer or padding)</li>
   <li>Generic payload</li>
 </ul>
-<h2 id=packet-and-network-utils>Packet And Network Utilities</h2>
+<h2>Supported Packet Capture Engines</h2>
+<p>PcapPlusPlus currently works with the following packet capture engines:</p>
+<ul>
+  <li>libpcap live capture (on Linux and Mac OS X)</li>
+  <li>WinPcap live capture (on Windows)</li>
+  <li>ntop's Vanilla PF_RING engine (on Linux)</li>
+  <li>Intel DPDK engine (on Linux)</li>
+  <li>WinPcap Remote live capture (on Windows)</li>
+  <li>PCAP and PCAPNG file devices (reading and writing)</li>
+</ul>
+<h2 id=packet-and-network-utils>Useful Packet And Network Utilities</h2>
 <ul>
   <li>TCP reassembly logic</li>
   <li>IPv4 reassembly logic (a.k.a IPv4 de-fragmentation)</li>
@@ -86,3 +145,11 @@ section: home
   <li>Retrieve host IPv4 address by using DNS protocol</li>
   <li>Checksum calculation</li>
 </ul>
+<h2>DPDK And PF_RING Support</h2>
+<p><a href="https://www.dpdk.org/">The Data Plane Development Kit (DPDK)</a> is a set of data plane libraries and network interface controller drivers for fast packet processing.</p>
+<p><a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a> is a new type of network socket that dramatically improves the packet capture speed.</p>
+<p>Both frameworks provide very fast packets processing (up to line speed) and are used in many network applications such as routers, firewalls, load balancers, etc. 
+  PcapPlusPLus provides a C++ abstraction layer over DPDK & PF_RING. This abstraction layer provides an easy to use interface that removes a lot of the boilerplate involved in using these frameworks. 
+  You can learn more by visiting the <a href="dpdk-pf_ring.html">DPDK & PF_RING support page</a>.</p>
+<h2>License</h2>
+<p>PcapPlusPlus is released under the <a href="https://unlicense.org/">Unlicense license</a>.</p>
