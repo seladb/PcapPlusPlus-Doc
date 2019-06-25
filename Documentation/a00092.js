@@ -1,5 +1,7 @@
 var a00092 =
 [
-    [ "hash2Tuple", "a00092.html#a0e3e701e5f325548e218664e3cdfceda", null ],
-    [ "hash5Tuple", "a00092.html#abfdd9e106e5346beb012d0ae5d127f73", null ]
+    [ "headerLen", "a00092.html#ae7e5662b426aa656b4facb81bc947518", null ],
+    [ "nextHeader", "a00092.html#a4d9369b6437e7665bd8fc54a23232ef4", null ],
+    [ "routingType", "a00092.html#a7c4579b3c40ab7180339addc210d0898", null ],
+    [ "segmentsLeft", "a00092.html#a0f695f69f4ef95239ac86212a8fcd4dd", null ]
 ];

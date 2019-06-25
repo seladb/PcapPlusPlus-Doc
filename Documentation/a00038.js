@@ -1,29 +1,22 @@
 var a00038 =
 [
-    [ "HttpMessage", "a00906.html", "a00906" ],
-    [ "HttpRequestLayer", "a00910.html", "a00910" ],
-    [ "HttpResponseLayer", "a00914.html", "a00914" ],
-    [ "HttpRequestFirstLine", "a00918.html", "a00918" ],
-    [ "HttpRequestFirstLineException", "a00922.html", null ],
-    [ "HttpResponseFirstLine", "a00926.html", "a00926" ],
-    [ "HttpResponseFirstLineException", "a00930.html", null ],
-    [ "PCPP_HTTP_ACCEPT_ENCODING_FIELD", "a00038.html#aeded104b9a9823c48628dfc53bb5c32c", null ],
-    [ "PCPP_HTTP_ACCEPT_FIELD", "a00038.html#a01fe71fd479ba5d2386511cd04297049", null ],
-    [ "PCPP_HTTP_ACCEPT_LANGUAGE_FIELD", "a00038.html#a4edcdfd01334646d1ae39b819f03a6de", null ],
-    [ "PCPP_HTTP_CONNECTION_FIELD", "a00038.html#af4ae135bc0a0182aafb06c06658ccb49", null ],
-    [ "PCPP_HTTP_CONTENT_ENCODING_FIELD", "a00038.html#a519d1d715a0d496b550f01546141be01", null ],
-    [ "PCPP_HTTP_CONTENT_LENGTH_FIELD", "a00038.html#aad4792749471ce21ba531aa664f05708", null ],
-    [ "PCPP_HTTP_CONTENT_TYPE_FIELD", "a00038.html#a0c5cab5222e6dbbd80ba3cb8cbf9d9a5", null ],
-    [ "PCPP_HTTP_COOKIE_FIELD", "a00038.html#a3c6fd8e9c98942e261d05ef0a635f6df", null ],
-    [ "PCPP_HTTP_HOST_FIELD", "a00038.html#a80dfa33737fc2a44ec8c7bd07b7d105e", null ],
-    [ "PCPP_HTTP_REFERER_FIELD", "a00038.html#a782fe857db81db29db6aa1541fa10185", null ],
-    [ "PCPP_HTTP_SERVER_FIELD", "a00038.html#a06590f70d88b96fe9d4ddccffac01439", null ],
-    [ "PCPP_HTTP_TRANSFER_ENCODING_FIELD", "a00038.html#a9bb4a1c05917117a1df6e467b6e14a31", null ],
-    [ "PCPP_HTTP_USER_AGENT_FIELD", "a00038.html#afc6ef9816d0b84f273e328cd13b597e0", null ],
-    [ "HttpVersion", "a00038.html#a7680d508534c12b5ab8bcbe4cae06932", [
-      [ "ZeroDotNine", "a00038.html#a7680d508534c12b5ab8bcbe4cae06932a9e548b54e33e8673bfd2c3e5bdef3fe3", null ],
-      [ "OneDotZero", "a00038.html#a7680d508534c12b5ab8bcbe4cae06932abe466c99c710b7a75b204cc027160424", null ],
-      [ "OneDotOne", "a00038.html#a7680d508534c12b5ab8bcbe4cae06932acc762982ad91d241427c26da4ca3be10", null ],
-      [ "HttpVersionUnknown", "a00038.html#a7680d508534c12b5ab8bcbe4cae06932a2c1fb93009a13f182895ebbb1d5b0417", null ]
-    ] ]
+    [ "HttpMethod", "a00038.html#a71d3731486391e8356628dae79023fd6", [
+      [ "HttpGET", "a00038.html#a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c", null ],
+      [ "HttpHEAD", "a00038.html#a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd", null ],
+      [ "HttpPOST", "a00038.html#a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c", null ],
+      [ "HttpPUT", "a00038.html#a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2", null ],
+      [ "HttpDELETE", "a00038.html#a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68", null ],
+      [ "HttpTRACE", "a00038.html#a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c", null ],
+      [ "HttpOPTIONS", "a00038.html#a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf", null ],
+      [ "HttpCONNECT", "a00038.html#a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511", null ],
+      [ "HttpPATCH", "a00038.html#a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022", null ],
+      [ "HttpMethodUnknown", "a00038.html#a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84", null ]
+    ] ],
+    [ "HttpRequestLayer", "a00038.html#a9176b25290460e34e8bf5bab481ac866", null ],
+    [ "HttpRequestLayer", "a00038.html#aab5bc6ab39eb8b300af00abd5802c1f6", null ],
+    [ "HttpRequestLayer", "a00038.html#aa09a5aec4ff2ba350bd173f04e731764", null ],
+    [ "getFirstLine", "a00038.html#a3aa1f4a481537b60fd3dca97fcc4f274", null ],
+    [ "getUrl", "a00038.html#a7e96e48a038161740799ccf0de865e3f", null ],
+    [ "operator=", "a00038.html#a56153c001fed50c2cc0a4697640fd048", null ],
+    [ "toString", "a00038.html#a432ab3edcd973f498e9da8d067a6f631", null ]
 ];

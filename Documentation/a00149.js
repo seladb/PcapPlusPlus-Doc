@@ -1,19 +1,19 @@
 var a00149 =
 [
-    [ "SdpLayer", "a01390.html", "a01390" ],
-    [ "PCPP_SDP_BANDWIDTH_FIELD", "a00149.html#a7342cb29cdbf5457a14d26182c274b4e", null ],
-    [ "PCPP_SDP_CONNECTION_INFO_FIELD", "a00149.html#a37c55925c55aa40dbee6c3e98fb5611c", null ],
-    [ "PCPP_SDP_EMAIL_FIELD", "a00149.html#a5a64a6604b467c377ec83a69c1efa8a9", null ],
-    [ "PCPP_SDP_ENCRYPTION_KEY_FIELD", "a00149.html#a4a0ebed21e39e533c37a554919f3e597", null ],
-    [ "PCPP_SDP_INFO_FIELD", "a00149.html#a10b654364cc129e8a8a09d8336cee763", null ],
-    [ "PCPP_SDP_MEDIA_ATTRIBUTE_FIELD", "a00149.html#a916b64da7dfa7de9a44d9d0650e7e34d", null ],
-    [ "PCPP_SDP_MEDIA_NAME_FIELD", "a00149.html#ad8edc312ae073f11b132152adf6a2908", null ],
-    [ "PCPP_SDP_ORIGINATOR_FIELD", "a00149.html#a976f9f075cfb24ce0ddaf80f404efe42", null ],
-    [ "PCPP_SDP_PHONE_FIELD", "a00149.html#a2945d31c61f0c871400a2ebbc68d3a93", null ],
-    [ "PCPP_SDP_PROTOCOL_VERSION_FIELD", "a00149.html#a8be76a4922f6098201e92850e913ddc8", null ],
-    [ "PCPP_SDP_REPEAT_TIMES_FIELD", "a00149.html#ad27c33e00d5080184880cd3b5dc8f222", null ],
-    [ "PCPP_SDP_SESSION_NAME_FIELD", "a00149.html#a766206ef6d418e2f5b8f06c392881611", null ],
-    [ "PCPP_SDP_TIME_FIELD", "a00149.html#a436559034ada506e5c3a5abc0b35899b", null ],
-    [ "PCPP_SDP_TIME_ZONE_FIELD", "a00149.html#addc61e36c79f08af7bd78403817dfc26", null ],
-    [ "PCPP_SDP_URI_FIELD", "a00149.html#a0cfcd66fe312890f3f7ff44e98ec909f", null ]
+    [ "PPPoECode", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cb", [
+      [ "PPPOE_CODE_SESSION", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6", null ],
+      [ "PPPOE_CODE_PADO", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6", null ],
+      [ "PPPOE_CODE_PADI", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df", null ],
+      [ "PPPOE_CODE_PADG", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b", null ],
+      [ "PPPOE_CODE_PADC", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683", null ],
+      [ "PPPOE_CODE_PADQ", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab", null ],
+      [ "PPPOE_CODE_PADR", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157", null ],
+      [ "PPPOE_CODE_PADS", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232", null ],
+      [ "PPPOE_CODE_PADT", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52", null ],
+      [ "PPPOE_CODE_PADM", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3", null ],
+      [ "PPPOE_CODE_PADN", "a00149.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
+    ] ],
+    [ "computeCalculateFields", "a00149.html#aea130ab24ed851b7d2ffab48db145d16", null ],
+    [ "getOsiModelLayer", "a00149.html#a0a86801fdcc49572cec407ebc53ed40e", null ],
+    [ "getPPPoEHeader", "a00149.html#a8f7687b64b4cbfe4e217109fd074eeb3", null ]
 ];

@@ -1,13 +1,8 @@
 var a00053 =
 [
-    [ "ScalarBuffer", "a01062.html", "a01062" ],
-    [ "compute_checksum", "a00053.html#a27f80839f1794fa67f59d5f4046466d7", null ],
-    [ "fnv_hash", "a00053.html#af5ed4e611bb0af5bade4697ff2308b18", null ],
-    [ "fnv_hash", "a00053.html#af66abbe5d82d79edd056eb54e70774f2", null ],
-    [ "in_addr2int", "a00053.html#a0e2a6ea816a6f32ed721b4db05911b8f", null ],
-    [ "inet_ntop", "a00053.html#a2a4b830a00870799ee852d4c6a72a1eb", null ],
-    [ "inet_pton", "a00053.html#acdce1d46efd09e8485a2f682b388ebc0", null ],
-    [ "sockaddr2in6_addr", "a00053.html#acf8855571df4a1ba17129f946383f3be", null ],
-    [ "sockaddr2in_addr", "a00053.html#accf99d75d7ba993b6146e5915a7fa2db", null ],
-    [ "sockaddr2string", "a00053.html#adca8f8917951fbfa34b0a24fab6c9152", null ]
+    [ "id", "a00053.html#a26bbc51803f744df65d517483a7bc0ae", null ],
+    [ "originateTimestamp", "a00053.html#af9ae072cf3636b545d2c2fc1babb3964", null ],
+    [ "receiveTimestamp", "a00053.html#ad6c33b9a1da04e9e692b35575828747d", null ],
+    [ "sequence", "a00053.html#a717104fa64883aec168e2d99581698d2", null ],
+    [ "transmitTimestamp", "a00053.html#a68e8720ae016dc5d2b9c3c0f2f068fea", null ]
 ];

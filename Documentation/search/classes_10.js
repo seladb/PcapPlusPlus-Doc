@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['vlan_5fheader',['vlan_header',['../a01634.html',1,'pcpp']]],
-  ['vlanfilter',['VlanFilter',['../a01286.html',1,'pcpp']]],
-  ['vlanlayer',['VlanLayer',['../a01638.html',1,'pcpp']]],
-  ['vxlan_5fheader',['vxlan_header',['../a01642.html',1,'pcpp']]],
-  ['vxlanlayer',['VxlanLayer',['../a01646.html',1,'pcpp']]]
+  ['udphdr',['udphdr',['../a00216.html',1,'pcpp']]],
+  ['udplayer',['UdpLayer',['../a00217.html',1,'pcpp']]],
+  ['udplengthfilter',['UdpLengthFilter',['../a00218.html',1,'pcpp']]]
 ];
