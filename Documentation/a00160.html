@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</title>
+<title>PcapPlusPlus: pcpp::DpdkDevice::RxTxStats Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,54 +106,77 @@ $(document).ready(function(){initNavTree('a00160.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00455.html">List of all members</a>  </div>
+<a href="a00319.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ScalarBuffer&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">pcpp::DpdkDevice::RxTxStats Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00242_source.html">IpUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00233_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a43b9b1dd5d0156c85e01157a681d7150"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a43b9b1dd5d0156c85e01157a681d7150">buffer</a></td></tr>
-<tr class="separator:a43b9b1dd5d0156c85e01157a681d7150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a677d3e0fa3faf87c0f275efd1bac6abd">len</a></td></tr>
-<tr class="separator:a677d3e0fa3faf87c0f275efd1bac6abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ba9e581d7353a484f575487a334fc8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a39ba9e581d7353a484f575487a334fc8">packets</a></td></tr>
+<tr class="separator:a39ba9e581d7353a484f575487a334fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb02f0b115b0d7a81cd1076535c8ac2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#aeeb02f0b115b0d7a81cd1076535c8ac2">bytes</a></td></tr>
+<tr class="separator:aeeb02f0b115b0d7a81cd1076535c8ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0531a2f378b09192aadf66e4ae1e5019"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a0531a2f378b09192aadf66e4ae1e5019">packetsPerSec</a></td></tr>
+<tr class="separator:a0531a2f378b09192aadf66e4ae1e5019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fa4203a8bf1ed1c39d8b8d6aa7fa0f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f">bytesPerSec</a></td></tr>
+<tr class="separator:a31fa4203a8bf1ed1c39d8b8d6aa7fa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-struct pcpp::ScalarBuffer&lt; T &gt;</h3>
-
-<p>A struct that represent a single buffer </p>
+<div class="textblock"><p>A container for RX/TX statistics </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a43b9b1dd5d0156c85e01157a681d7150"></a>
+<a class="anchor" id="aeeb02f0b115b0d7a81cd1076535c8ac2"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="a00160.html">pcpp::ScalarBuffer</a>&lt; T &gt;::buffer</td>
+          <td class="memname">uint64_t pcpp::DpdkDevice::RxTxStats::bytes</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The pointer to the buffer </p>
+<p>Total number of successfully received bytes </p>
 
 </div>
 </div>
-<a class="anchor" id="a677d3e0fa3faf87c0f275efd1bac6abd"></a>
+<a class="anchor" id="a31fa4203a8bf1ed1c39d8b8d6aa7fa0f"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a00160.html">pcpp::ScalarBuffer</a>&lt; T &gt;::len</td>
+          <td class="memname">uint64_t pcpp::DpdkDevice::RxTxStats::bytesPerSec</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Buffer length </p>
+<p>Bytes per second </p>
+
+</div>
+</div>
+<a class="anchor" id="a39ba9e581d7353a484f575487a334fc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pcpp::DpdkDevice::RxTxStats::packets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total number of packets </p>
+
+</div>
+</div>
+<a class="anchor" id="a0531a2f378b09192aadf66e4ae1e5019"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pcpp::DpdkDevice::RxTxStats::packetsPerSec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Packets per second </p>
 
 </div>
 </div>
@@ -162,8 +185,8 @@ template&lt;typename T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00160.html">ScalarBuffer</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:56 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00020.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00160.html">RxTxStats</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

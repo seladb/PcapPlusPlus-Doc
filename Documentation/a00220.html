@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::VlanFilter Class Reference</title>
+<title>PcapPlusPlus: pcpp::vlan_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,131 +105,53 @@ $(document).ready(function(){initNavTree('a00220.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00515.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00516.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::VlanFilter Class Reference</div>  </div>
+<div class="title">pcpp::vlan_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00263_source.html">PcapFilter.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::VlanFilter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00220.png" usemap="#pcpp::VlanFilter_map" alt=""/>
-  <map id="pcpp::VlanFilter_map" name="pcpp::VlanFilter_map">
-<area href="a00027.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,120,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00293_source.html">VlanLayer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fe4f5f6ee92f8cf92dc98338a5128d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a0fe4f5f6ee92f8cf92dc98338a5128d6">VlanFilter</a> (uint16_t vlanId)</td></tr>
-<tr class="separator:a0fe4f5f6ee92f8cf92dc98338a5128d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5759a458f683cebac7134668fc0c2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a4d5759a458f683cebac7134668fc0c2d">parseToString</a> (std::string &amp;result)</td></tr>
-<tr class="separator:a4d5759a458f683cebac7134668fc0c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b1fd58f036b4ee5a77ce34b443aa42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a71b1fd58f036b4ee5a77ce34b443aa42">setVlanID</a> (uint16_t vlanId)</td></tr>
-<tr class="separator:a71b1fd58f036b4ee5a77ce34b443aa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00027"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00027')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00027.html">pcpp::GeneralFilter</a></td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00027"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a97b02b09b19f6ee7395865617afab10e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a97b02b09b19f6ee7395865617afab10e">vlan</a></td></tr>
+<tr class="separator:a97b02b09b19f6ee7395865617afab10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790a917cc070fb1ace8c77a7a12d0870"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a790a917cc070fb1ace8c77a7a12d0870">etherType</a></td></tr>
+<tr class="separator:a790a917cc070fb1ace8c77a7a12d0870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for filtering VLAN tagged packets by VLAN ID. When using this filter only packets tagged with VLAN which has the specific VLAN ID will be received <br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00263.html">PcapFilter.h</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0fe4f5f6ee92f8cf92dc98338a5128d6"></a>
+<div class="textblock"><p>Represents a VLAN header </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a790a917cc070fb1ace8c77a7a12d0870"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::VlanFilter::VlanFilter </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>vlanId</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t pcpp::vlan_header::etherType</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A constructor the gets the VLAN ID and creates the filter </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Ethernet type for next layer </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4d5759a458f683cebac7134668fc0c2d"></a>
+<a class="anchor" id="a97b02b09b19f6ee7395865617afab10e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::VlanFilter::parseToString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t pcpp::vlan_header::vlan</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00027.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a71b1fd58f036b4ee5a77ce34b443aa42"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::VlanFilter::setVlanID </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>vlanId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the VLAN ID of the filter </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vlanId</td><td>The VLAN ID to use for the filter </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<pre class="fragment">0                 1
+0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|Prio |C|         VLAN ID     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</pre> 
 </div>
 </div>
 </div><!-- contents -->
@@ -237,8 +159,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00220.html">VlanFilter</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:56 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00220.html">vlan_header</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

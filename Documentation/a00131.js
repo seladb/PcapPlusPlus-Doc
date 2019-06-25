@@ -1,11 +1,9 @@
 var a00131 =
 [
-    [ "PcapFileWriterDevice", "a00131.html#a46b3b5c1ffed33d3540fa40db94010e2", null ],
-    [ "~PcapFileWriterDevice", "a00131.html#ac3aa347668d24475e9f750fcb5959d93", null ],
-    [ "close", "a00131.html#a60b102a04429b8baba0637c3505f6448", null ],
-    [ "getStatistics", "a00131.html#a3f72c11bc118609f84c5b462f27cdc1f", null ],
-    [ "open", "a00131.html#ab9c5ea38028c05717dd2957c4be08296", null ],
-    [ "open", "a00131.html#a0fee40c9c768596aab93c2a4d1b0cae3", null ],
-    [ "writePacket", "a00131.html#add964c71699315d457a33b22998501fd", null ],
-    [ "writePackets", "a00131.html#ac2e22200a6da2898262499699c001430", null ]
+    [ "PcapFileReaderDevice", "a00131.html#a7c578fa0c04a93de4a6dc54b845fae34", null ],
+    [ "~PcapFileReaderDevice", "a00131.html#aa6c4637873a1a830372449a81f048ab2", null ],
+    [ "getLinkLayerType", "a00131.html#a68ed8a4e9fb754054c32682ac2c6411f", null ],
+    [ "getNextPacket", "a00131.html#afc4c2142b7787e6c191b0d2ab6822c07", null ],
+    [ "getStatistics", "a00131.html#a6c07f1cc3675dfa8ff7157d09be311c7", null ],
+    [ "open", "a00131.html#af9e798abe511b1ba8bd14360535753a1", null ]
 ];

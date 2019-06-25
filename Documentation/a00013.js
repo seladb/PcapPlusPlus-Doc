@@ -1,11 +1,11 @@
 var a00013 =
 [
-    [ "DhcpOptionBuilder", "a00013.html#a3b35901811e8f40c468714ca63c0d788", null ],
-    [ "DhcpOptionBuilder", "a00013.html#aab1c66aab7c9755f25983a96c13d2090", null ],
-    [ "DhcpOptionBuilder", "a00013.html#ad30f05144cb3a55b0bd81a23387a49ec", null ],
-    [ "DhcpOptionBuilder", "a00013.html#a1af769fe0919a3965bdc4dbc463f3f82", null ],
-    [ "DhcpOptionBuilder", "a00013.html#a6900bf2202939f4079adb606c94074a3", null ],
-    [ "DhcpOptionBuilder", "a00013.html#ac933fad864e8c5862e9def4849b2a529", null ],
-    [ "DhcpOptionBuilder", "a00013.html#ad796afde8b590479f6e33e6d0cae2f52", null ],
-    [ "build", "a00013.html#abc37c11d819b91ec638badac8d4572a9", null ]
+    [ "DhcpOption", "a00013.html#ac6ef6cbf88e0b2fe67677963ed492c48", null ],
+    [ "~DhcpOption", "a00013.html#a280836170d092e111cbad745e46b5e5c", null ],
+    [ "getDataSize", "a00013.html#a9dc5a8aa9bf96982b1f24069d3e76c60", null ],
+    [ "getTotalSize", "a00013.html#a48c18be4508b1ed18e11182aaf31150c", null ],
+    [ "getValueAsIpAddr", "a00013.html#a256967f3ac71c287d32d4b6a98ad6bec", null ],
+    [ "getValueAsString", "a00013.html#a330327d5f8d04c6d8a7525bba756623a", null ],
+    [ "setValueIpAddr", "a00013.html#a8877956c1ad2fb5d64988134d1c2eab8", null ],
+    [ "setValueString", "a00013.html#a1d8b72aeaa4425947c0ef9bcc5229631", null ]
 ];

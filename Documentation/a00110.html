@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::KniDevice::KniOldIoctlCallbacks Struct Reference</title>
+<title>PcapPlusPlus: pcpp::KniDevice::KniIoctlCallbacks Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,33 +106,38 @@ $(document).ready(function(){initNavTree('a00110.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00406.html">List of all members</a>  </div>
+<a href="a00407.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::KniDevice::KniOldIoctlCallbacks Struct Reference</div>  </div>
+<div class="title">pcpp::KniDevice::KniIoctlCallbacks Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Old callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="a00108.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_OLD. Or if You are sure that DPDK version used is lower than 17.11. If some callback is not provided (NULL) the request will always succeeds.  
+<p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="a00109.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (NULL) the request will always succeeds if other is not specified in callback description.  
  <a href="a00110.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00246_source.html">KniDevice.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00247_source.html">KniDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7536ecfac6ecb14edc740e603b5c1e72"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a7536ecfac6ecb14edc740e603b5c1e72">change_mtu</a> )(uint8_t port_id, unsigned int new_mtu)</td></tr>
-<tr class="separator:a7536ecfac6ecb14edc740e603b5c1e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab548ab7f397d18a78a767225f9fb3192"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#ab548ab7f397d18a78a767225f9fb3192">config_network_if</a> )(uint8_t port_id, uint8_t if_up)</td></tr>
-<tr class="separator:ab548ab7f397d18a78a767225f9fb3192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af9caa75f5c83e134e2e606c648762c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a1af9caa75f5c83e134e2e606c648762c">change_mtu</a> )(uint16_t port_id, unsigned int new_mtu)</td></tr>
+<tr class="separator:a1af9caa75f5c83e134e2e606c648762c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7202b6797b63f0f1cb779db56056c35"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#aa7202b6797b63f0f1cb779db56056c35">config_network_if</a> )(uint16_t port_id, uint8_t if_up)</td></tr>
+<tr class="separator:aa7202b6797b63f0f1cb779db56056c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935e5aa0c623107a4bf7088be436e68d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#a935e5aa0c623107a4bf7088be436e68d">config_mac_address</a> )(uint16_t port_id, uint8_t mac_addr[])</td></tr>
+<tr class="separator:a935e5aa0c623107a4bf7088be436e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b5330e4ee138f16b4be662250634a3"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html#ac3b5330e4ee138f16b4be662250634a3">config_promiscusity</a> )(uint16_t port_id, uint8_t to_on)</td></tr>
+<tr class="separator:ac3b5330e4ee138f16b4be662250634a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Old callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="a00108.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_OLD. Or if You are sure that DPDK version used is lower than 17.11. If some callback is not provided (NULL) the request will always succeeds. </p>
+<div class="textblock"><p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="a00109.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (NULL) the request will always succeeds if other is not specified in callback description. </p>
+<dl class="section note"><dt>Note</dt><dd>This callbacks are direct copy of one defined in rte_kni_ops. Future maintainers of KNI device feature MUST refer to rte_kni_ops structure in rte_kni.h header file of DPDK to track the difference in signatures </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a7536ecfac6ecb14edc740e603b5c1e72"></a>
+<a class="anchor" id="a1af9caa75f5c83e134e2e606c648762c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* pcpp::KniDevice::KniOldIoctlCallbacks::change_mtu) (uint8_t port_id, unsigned int new_mtu)</td>
+          <td class="memname">int(* pcpp::KniDevice::KniIoctlCallbacks::change_mtu) (uint16_t port_id, unsigned int new_mtu)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -140,16 +145,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab548ab7f397d18a78a767225f9fb3192"></a>
+<a class="anchor" id="a935e5aa0c623107a4bf7088be436e68d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* pcpp::KniDevice::KniOldIoctlCallbacks::config_network_if) (uint8_t port_id, uint8_t if_up)</td>
+          <td class="memname">int(* pcpp::KniDevice::KniIoctlCallbacks::config_mac_address) (uint16_t port_id, uint8_t mac_addr[])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to function of configuring mac address. If callback is not provided and port_id of KNI device is not UINT16_MAX then DPDK will use predefined callback witch sets MAC address of DPDK port port_id via rte_eth_dev_default_mac_addr_set. Must return 0 in case of success or negative error code </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7202b6797b63f0f1cb779db56056c35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* pcpp::KniDevice::KniIoctlCallbacks::config_network_if) (uint16_t port_id, uint8_t if_up)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Pointer to function of configuring network interface. Must return 0 in case of success or negative error code </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3b5330e4ee138f16b4be662250634a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* pcpp::KniDevice::KniIoctlCallbacks::config_promiscusity) (uint16_t port_id, uint8_t to_on)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to function of configuring promiscuous mode. If callback is not provided and port_id of KNI device is not UINT16_MAX then DPDK will use predefined callback witch sets promiscuous mode of DPDK port port_id via rte_eth_promiscuous_enable/rte_eth_promiscuous_disable. Must return 0 in case of success or negative error code </p>
 
 </div>
 </div>
@@ -158,8 +189,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00106.html">KniDevice</a></li><li class="navelem"><a class="el" href="a00110.html">KniOldIoctlCallbacks</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00107.html">KniDevice</a></li><li class="navelem"><a class="el" href="a00110.html">KniIoctlCallbacks</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

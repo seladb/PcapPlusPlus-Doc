@@ -1,15 +1,12 @@
 var a00007 =
 [
-    [ "ArpLayer", "a00007.html#aa067af1ff96f04fa052ce58b48fedf16", null ],
-    [ "ArpLayer", "a00007.html#ae1ed5752ba9d216d4b93b67afda278b0", null ],
-    [ "computeCalculateFields", "a00007.html#ab599658bf636386d072bc9f547a895ff", null ],
-    [ "getArpHeader", "a00007.html#abd37dcbf07706abc60420cef86cd6acc", null ],
-    [ "getHeaderLen", "a00007.html#a20505a826fb822064ac92e7f620718fc", null ],
-    [ "getOsiModelLayer", "a00007.html#acd2173fecd2fdc46824781d3638b3046", null ],
-    [ "getSenderIpAddr", "a00007.html#aa84e596a640b5eca03313857efcadcd6", null ],
-    [ "getSenderMacAddress", "a00007.html#a8a3a13a0026847321e7eb5e8bc710636", null ],
-    [ "getTargetIpAddr", "a00007.html#a0e652e91317f67d8d0392a8dcb26b73b", null ],
-    [ "getTargetMacAddress", "a00007.html#a49ec3d5cf579eb5df065d43d8f30b38f", null ],
-    [ "parseNextLayer", "a00007.html#a923dcd5cae530350e56f05e77c5d7d2e", null ],
-    [ "toString", "a00007.html#a6221aa423773085357f95c34ff838e50", null ]
+    [ "hardwareSize", "a00007.html#acba39a68dfd991e0f91280869a148599", null ],
+    [ "hardwareType", "a00007.html#a9f00e8a6c7ae7645e1305e210f0c76af", null ],
+    [ "opcode", "a00007.html#a84c4a70a6f0c7464a0eec160ec91f9e8", null ],
+    [ "protocolSize", "a00007.html#a36e89262f76da9f28beb86cdec632c8c", null ],
+    [ "protocolType", "a00007.html#ae729b0afe661b105ceb7e5996f37a662", null ],
+    [ "senderIpAddr", "a00007.html#aca7c16b83b2464ef081c10b0aa8cb9ad", null ],
+    [ "senderMacAddr", "a00007.html#accf7624ca7cf307853bf9cee623a3433", null ],
+    [ "targetIpAddr", "a00007.html#a318c9f31a0d60e5e5b65ebe400be1540", null ],
+    [ "targetMacAddr", "a00007.html#a9f8954a5001ddafb365b165f30b06a12", null ]
 ];

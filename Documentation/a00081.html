@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::IPv4Address Class Reference</title>
+<title>PcapPlusPlus: pcpp::IPReassembly Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,187 +105,172 @@ $(document).ready(function(){initNavTree('a00081.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00380.html">List of all members</a>  </div>
+<a href="a00378.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPv4Address Class Reference</div>  </div>
+<div class="title">pcpp::IPReassembly Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00240_source.html">IpAddress.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::IPv4Address:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00081.png" usemap="#pcpp::IPv4Address_map" alt=""/>
-  <map id="pcpp::IPv4Address_map" name="pcpp::IPv4Address_map">
-<area href="a00076.html" alt="pcpp::IPAddress" shape="rect" coords="0,0,118,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="a00242_source.html">IPReassembly.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html">IPv4PacketKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html">IPv6PacketKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00128.html">PacketKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8836fa2c9aca7ee90a2f6cf44ec12a8a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a>) (const <a class="el" href="a00128.html">PacketKey</a> *key, void *userCookie)</td></tr>
+<tr class="separator:a8836fa2c9aca7ee90a2f6cf44ec12a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7eef864e1a372d665a27de6189901e1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a> (uint32_t addressAsInt)</td></tr>
-<tr class="separator:a7eef864e1a372d665a27de6189901e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a95be5b6cc51daa47a2064ae11dcef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a5a95be5b6cc51daa47a2064ae11dcef2">IPv4Address</a> (const char *addressAsString)</td></tr>
-<tr class="separator:a5a95be5b6cc51daa47a2064ae11dcef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dddbd492f427fc06b2c8b0de8237c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a1dddbd492f427fc06b2c8b0de8237c09">IPv4Address</a> (std::string addressAsString)</td></tr>
-<tr class="separator:a1dddbd492f427fc06b2c8b0de8237c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75cbcf6dc68064e9a5c3b2dfcd8cc805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805">IPv4Address</a> (in_addr *inAddr)</td></tr>
-<tr class="separator:a75cbcf6dc68064e9a5c3b2dfcd8cc805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133598783690be861bd41452680b2290"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a133598783690be861bd41452680b2290">IPv4Address</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;other)</td></tr>
-<tr class="separator:a133598783690be861bd41452680b2290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17308b1152e801d0ed68ed0a63b6077f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a17308b1152e801d0ed68ed0a63b6077f">getType</a> () const </td></tr>
-<tr class="separator:a17308b1152e801d0ed68ed0a63b6077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3676a324eed401512a58d1fde07ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">IPAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a1a3676a324eed401512a58d1fde07ee1">clone</a> () const </td></tr>
-<tr class="separator:a1a3676a324eed401512a58d1fde07ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe150ecb366ca60577da2cc426ed2c97"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#afe150ecb366ca60577da2cc426ed2c97">toInt</a> () const </td></tr>
-<tr class="separator:afe150ecb366ca60577da2cc426ed2c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a39c8f5d881a3fddfff5f6163c7370"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a00a39c8f5d881a3fddfff5f6163c7370">toInAddr</a> ()</td></tr>
-<tr class="separator:a00a39c8f5d881a3fddfff5f6163c7370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab244cc421284de22fdad9fc9a77a306f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ab244cc421284de22fdad9fc9a77a306f">operator==</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;other) const </td></tr>
-<tr class="separator:ab244cc421284de22fdad9fc9a77a306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8160f16543866740b00e8350f617442e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a8160f16543866740b00e8350f617442e">operator!=</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;other) const </td></tr>
-<tr class="separator:a8160f16543866740b00e8350f617442e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a086c40b049355635699e3b3c18678fb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a086c40b049355635699e3b3c18678fb6">operator=</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;other)</td></tr>
-<tr class="separator:a086c40b049355635699e3b3c18678fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab466d51f6769fbffcdb157f9e2c03512"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ab466d51f6769fbffcdb157f9e2c03512">matchSubnet</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;subnet, const std::string &amp;subnetMask) const </td></tr>
-<tr class="separator:ab466d51f6769fbffcdb157f9e2c03512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df4f1d75b14946bf82f116859b6a15f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a7df4f1d75b14946bf82f116859b6a15f">matchSubnet</a> (const <a class="el" href="a00081.html">IPv4Address</a> &amp;subnet, const <a class="el" href="a00081.html">IPv4Address</a> &amp;subnetMask) const </td></tr>
-<tr class="separator:a7df4f1d75b14946bf82f116859b6a15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00076"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00076')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00076.html">pcpp::IPAddress</a></td></tr>
-<tr class="memitem:a39eeb2c3b4ec235f8c938ec1b77fe2ac inherit pub_methods_a00076"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac">toString</a> () const </td></tr>
-<tr class="separator:a39eeb2c3b4ec235f8c938ec1b77fe2ac inherit pub_methods_a00076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7edb664a93cbc9ba3c0f71f0c3ede0c inherit pub_methods_a00076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ae7edb664a93cbc9ba3c0f71f0c3ede0c">isValid</a> () const </td></tr>
-<tr class="separator:ae7edb664a93cbc9ba3c0f71f0c3ede0c inherit pub_methods_a00076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6865c1a43ff71cd424426c846f36dbd4 inherit pub_methods_a00076"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a6865c1a43ff71cd424426c846f36dbd4">equals</a> (const <a class="el" href="a00076.html">IPAddress</a> *other)</td></tr>
-<tr class="separator:a6865c1a43ff71cd424426c846f36dbd4 inherit pub_methods_a00076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab1fdcb75a0d28033e51770605ec978cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00081.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ab1fdcb75a0d28033e51770605ec978cb">Zero</a></td></tr>
-<tr class="separator:ab1fdcb75a0d28033e51770605ec978cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_a00076"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a00076')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="a00076.html">pcpp::IPAddress</a></td></tr>
-<tr class="inherit_header pub_static_methods_a00076"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00076')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="a00076.html">pcpp::IPAddress</a></td></tr>
-<tr class="memitem:a381e5006e8ac432c8756a86db7e9f9fc inherit pub_static_methods_a00076"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a381e5006e8ac432c8756a86db7e9f9fc">fromString</a> (char *addressAsString)</td></tr>
-<tr class="separator:a381e5006e8ac432c8756a86db7e9f9fc inherit pub_static_methods_a00076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab172b2f55f772fccdec86d7eb4c1c16a inherit pub_static_methods_a00076"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab172b2f55f772fccdec86d7eb4c1c16a">fromString</a> (std::string addressAsString)</td></tr>
-<tr class="separator:ab172b2f55f772fccdec86d7eb4c1c16a inherit pub_static_methods_a00076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a55c126f0361bc1a928d0e39924c16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a9a55c126f0361bc1a928d0e39924c16d">IPReassembly</a> (<a class="el" href="a00081.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a> onFragmentsCleanCallback=NULL, void *callbackUserCookie=NULL, size_t maxPacketsToStore=500000)</td></tr>
+<tr class="separator:a9a55c126f0361bc1a928d0e39924c16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a3885752f5254e99d8a3b0d59f1507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#ad3a3885752f5254e99d8a3b0d59f1507">~IPReassembly</a> ()</td></tr>
+<tr class="separator:ad3a3885752f5254e99d8a3b0d59f1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fcfd5f8b3cfe10c0c69ee24d2766f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00127.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7">processPacket</a> (<a class="el" href="a00127.html">Packet</a> *fragment, <a class="el" href="a00081.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status, <a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil=<a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>, <a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
+<tr class="separator:a92fcfd5f8b3cfe10c0c69ee24d2766f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97763fcf5926f60684cbbe3fda79cba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00127.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a97763fcf5926f60684cbbe3fda79cba4">processPacket</a> (<a class="el" href="a00158.html">RawPacket</a> *fragment, <a class="el" href="a00081.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status, <a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil=<a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>, <a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
+<tr class="separator:a97763fcf5926f60684cbbe3fda79cba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efa8ec7258bbc0a83348bae42f93506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00127.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a0efa8ec7258bbc0a83348bae42f93506">getCurrentPacket</a> (const <a class="el" href="a00128.html">PacketKey</a> &amp;key)</td></tr>
+<tr class="separator:a0efa8ec7258bbc0a83348bae42f93506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d9dea60bb16f09caadd0b82c00afd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a72d9dea60bb16f09caadd0b82c00afd6">removePacket</a> (const <a class="el" href="a00128.html">PacketKey</a> &amp;key)</td></tr>
+<tr class="separator:a72d9dea60bb16f09caadd0b82c00afd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b8c609967b33e0f77ba197e34ab053"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#a82b8c609967b33e0f77ba197e34ab053">getMaxCapacity</a> () const </td></tr>
+<tr class="separator:a82b8c609967b33e0f77ba197e34ab053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d4c3298adad6fa1e56ba251214028e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#aa1d4c3298adad6fa1e56ba251214028e">getCurrentCapacity</a> () const </td></tr>
+<tr class="separator:aa1d4c3298adad6fa1e56ba251214028e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an IPv4 address (of type XXX.XXX.XXX.XXX). An instance of this class can be constructed from string, 4-byte integer or from the in_addr struct. It can be converted to each of these types </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7eef864e1a372d665a27de6189901e1e"></a>
+<div class="textblock"><p>Contains the IP reassembly (a.k.a IP de-fragmentation) mechanism. Encapsulates both IPv4 and IPv6 reassembly. Please refer to the documentation at the top of <a class="el" href="a00242.html">IPReassembly.h</a> to understand how this mechanism works. The main APIs are:</p><ul>
+<li><a class="el" href="a00081.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7">IPReassembly::processPacket()</a> - process a fragment. This is the main method which should be called whenever a new fragment arrives. This method processes the fragment, runs the reassembly logic and returns the result packet when it's fully reassembled</li>
+<li><a class="el" href="a00081.html#a0efa8ec7258bbc0a83348bae42f93506">IPReassembly::getCurrentPacket()</a> - get the reassembled data that is currently available, even if reassembly process is not yet completed</li>
+<li><a class="el" href="a00081.html#a72d9dea60bb16f09caadd0b82c00afd6">IPReassembly::removePacket()</a> - remove all data that is currently stored for a packet, including the reassembled data that was gathered so far </li>
+</ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a8836fa2c9aca7ee90a2f6cf44ec12a8a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>addressAsInt</em></td><td>)</td>
-          <td></td>
+          <td class="memname">pcpp::IPReassembly::OnFragmentsClean</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of 4-byte integer value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The IP reassembly mechanism has a certain capacity of concurrent packets it can handle. This capacity is determined in its c'tor (default value is <a class="el" href="a00242.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>). When traffic volume exceeds this capacity the mechanism starts dropping packets in a LRU manner (least recently used are dropped first). Whenever a packet is dropped this callback is fired </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsInt</td><td>The address as 4-byte integer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A pointer to the identifier of the packet that is being dropped </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in IPReassemby c'tor (or NULL if no cookie provided) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a5a95be5b6cc51daa47a2064ae11dcef2"></a>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="aae7f2e113808978827abf3b7cdbe91af"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>addressAsString</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="a00081.html#aae7f2e113808978827abf3b7cdbe91af">pcpp::IPReassembly::ReassemblyStatus</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of string (char*) value If the string doesn't represent a valid IPv4 address, instance will be invalid, meaning <a class="el" href="a00076.html#ae7edb664a93cbc9ba3c0f71f0c3ede0c">isValid()</a> will return false </p><dl class="params"><dt>Parameters</dt><dd>
+<p>An enum representing the status returned from processing a fragment </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afae35ca23b99eef8c92cb89994c1ee5e04"></a>NON_IP_PACKET&#160;</td><td class="fielddoc">
+<p>The processed packet isn't of type IPv4 or IPv6 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afad646e48ec06733b9c603a3dc89d57494"></a>NON_FRAGMENT&#160;</td><td class="fielddoc">
+<p>The processed packet isn't a fragment </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afa0314585fac91b7f1260e0c2ac8409425"></a>FIRST_FRAGMENT&#160;</td><td class="fielddoc">
+<p>The processed fragment is the first fragment </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afa59d0c69d880e6597e02931f805416653"></a>FRAGMENT&#160;</td><td class="fielddoc">
+<p>The processed fragment is a fragment (but not the first one) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afa720ffdf993a5a1f3e344be2cfda6cb1c"></a>OUT_OF_ORDER_FRAGMENT&#160;</td><td class="fielddoc">
+<p>The processed fragment is not the fragment that was expected at this time </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afa9bfbeeb420ef09c3bc62c3e56f28c6b0"></a>MALFORMED_FRAGMENT&#160;</td><td class="fielddoc">
+<p>The processed fragment is malformed, meaning a fragment which has offset of zero but isn't the first fragment </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aae7f2e113808978827abf3b7cdbe91afa91beabc1fd8775d590a7d6415aeb6a31"></a>REASSEMBLED&#160;</td><td class="fielddoc">
+<p><a class="el" href="a00127.html">Packet</a> is now fully reassembled </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9a55c126f0361bc1a928d0e39924c16d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPReassembly::IPReassembly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00081.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a>&#160;</td>
+          <td class="paramname"><em>onFragmentsCleanCallback</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>callbackUserCookie</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxPacketsToStore</em> = <code>500000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A c'tor for this class. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The string (char*) representation of the address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="a00242.html">IPReassembly.h</a> file description. This parameter is optional, default value is NULL (no callback) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callbackUserCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the onFragmentsCleanCallback. This parameter is optional, default cookie is NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketsToStore</td><td>Set the capacity limit of the IP reassembly mechanism. Default capacity is <a class="el" href="a00242.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a1dddbd492f427fc06b2c8b0de8237c09"></a>
+<a class="anchor" id="ad3a3885752f5254e99d8a3b0d59f1507"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
+          <td class="memname">pcpp::IPReassembly::~IPReassembly </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>addressAsString</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of std::string value If the string doesn't represent a valid IPv4 address, instance will be invalid, meaning <a class="el" href="a00076.html#ae7edb664a93cbc9ba3c0f71f0c3ede0c">isValid()</a> will return false </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The std::string representation of the address </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a75cbcf6dc68064e9a5c3b2dfcd8cc805"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
-          <td>(</td>
-          <td class="paramtype">in_addr *&#160;</td>
-          <td class="paramname"><em>inAddr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of in_addr struct pointer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inAddr</td><td>The in_addr struct representation of the address </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a133598783690be861bd41452680b2290"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A copy constructor for this class </p>
+<p>A d'tor for this class </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1a3676a324eed401512a58d1fde07ee1"></a>
+<a class="anchor" id="aa1d4c3298adad6fa1e56ba251214028e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -293,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00076.html">IPAddress</a>* pcpp::IPv4Address::clone </td>
+          <td class="memname">size_t pcpp::IPReassembly::getCurrentCapacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -301,17 +286,38 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clone the object </p><dl class="section return"><dt>Returns</dt><dd>A newly allocated instance which is a clone of the current instance </dd></dl>
-
-<p>Implements <a class="el" href="a00076.html#a92d35f8f8e9965d0e4c38e183fba7d1e">pcpp::IPAddress</a>.</p>
+<p>Get the current number of packets being processed </p>
 
 </div>
 </div>
-<a class="anchor" id="a17308b1152e801d0ed68ed0a63b6077f"></a>
+<a class="anchor" id="a0efa8ec7258bbc0a83348bae42f93506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00127.html">Packet</a>* pcpp::IPReassembly::getCurrentPacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00128.html">PacketKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a partially reassembled packet. This method returns all the reassembled data that was gathered so far which is obviously not a fully reassembled packet (otherwise it would have returned by <a class="el" href="a00081.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7">processPacket()</a>). Notice all data is being copied so the user is responsible to free the returned <a class="el" href="a00127.html">Packet</a> object when done using it. Notice#2 - calling this method doesn't interfere with the reassembly of this packet - all internal structures and data remain </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The identifiers of the packet to return </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a <a class="el" href="a00127.html">Packet</a> object containing the partially reassembled packet. Notice the user is responsible to free this object when done using it </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82b8c609967b33e0f77ba197e34ab053"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -319,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00076.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> pcpp::IPv4Address::getType </td>
+          <td class="memname">size_t pcpp::IPReassembly::getMaxCapacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -327,208 +333,157 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>IPv4AddressType </dd></dl>
-
-<p>Implements <a class="el" href="a00076.html#a85a3e43774848c93585f97bdef6ec73d">pcpp::IPAddress</a>.</p>
+<p>Get the maximum capacity as determined in the c'tor </p>
 
 </div>
 </div>
-<a class="anchor" id="ab466d51f6769fbffcdb157f9e2c03512"></a>
+<a class="anchor" id="a92fcfd5f8b3cfe10c0c69ee24d2766f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::IPv4Address::matchSubnet </td>
+          <td class="memname"><a class="el" href="a00127.html">Packet</a>* pcpp::IPReassembly::processPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>subnet</em>, </td>
+          <td class="paramtype"><a class="el" href="a00127.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>fragment</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>subnetMask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks whether the address matches a subnet. For example: if subnet is 10.1.1.X, subnet mask is 255.255.255.0 and address is 10.1.1.9 then the method will return true Another example: if subnet is 10.1.X.X, subnet mask is 255.0.0.0 and address is 11.1.1.9 then the method will return false </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">subnet</td><td>The subnet to be verified. Notice it's an <a class="el" href="a00081.html">IPv4Address</a> type, so subnets with don't-cares (like 10.0.0.X) must have some number (it'll be ignored if subnet mask is correct) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">subnetMask</td><td>A string representing the subnet mask to compare the address with the subnet </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7df4f1d75b14946bf82f116859b6a15f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IPv4Address::matchSubnet </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>subnet</em>, </td>
+          <td class="paramtype"><a class="el" href="a00081.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>subnetMask</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>parseUntil</em> = <code><a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td>
+          <td class="paramname"><em>parseUntilLayer</em> = <code><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks whether the address matches a subnet. For example: if subnet is 10.1.1.X, subnet mask is 255.255.255.0 and address is 10.1.1.9 then the method will return true Another example: if subnet is 10.1.X.X, subnet mask is 255.0.0.0 and address is 11.1.1.9 then the method will return false </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The main API that drives <a class="el" href="a00081.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IP reassembly logic that is described in <a class="el" href="a00242.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">subnet</td><td>The subnet to be verified. Notice it's an <a class="el" href="a00081.html">IPv4Address</a> type, so subnets with don't-cares (like 10.0.0.X) must have some number (it'll be ignored if subnet mask is correct) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">subnetMask</td><td>The subnet mask to compare the address with the subnet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process (IPv4 or IPv6). Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
+<li>The input fragment is not a IPv4 or IPv6 packet</li>
+<li>The input fragment is not a IPv4 or IPv6 fragment packet</li>
+<li>The input fragment is the first fragment of the packet</li>
+<li>The input fragment is not the first or last fragment</li>
+<li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
+<li>The input fragment is malformed and will be ignored</li>
+<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the reassembled packet until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the reassembled packet until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to the input fragment</li>
+<li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
+<li>If the reassembled packet isn't ready then NULL is returned </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8160f16543866740b00e8350f617442e"></a>
+<a class="anchor" id="a97763fcf5926f60684cbbe3fda79cba4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::IPv4Address::operator!= </td>
+          <td class="memname"><a class="el" href="a00127.html">Packet</a>* pcpp::IPReassembly::processPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="a00158.html">RawPacket</a> *&#160;</td>
+          <td class="paramname"><em>fragment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00081.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>parseUntil</em> = <code><a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td>
+          <td class="paramname"><em>parseUntilLayer</em> = <code><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload of the non-equal operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are not equal. False otherwise </dd></dl>
+<p>The main API that drives <a class="el" href="a00081.html">IPReassembly</a>. This method should be called whenever a fragment arrives. This method finds the relevant packet this fragment belongs to and runs the IPv4 reassembly logic that is described in <a class="el" href="a00242.html">IPReassembly.h</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fragment</td><td>The fragment to process (IPv4 or IPv6). Please notice that the reassembly logic doesn't change or manipulate this object in any way. All of its data is copied to internal structures and manipulated there </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>An indication of the packet reassembly status following the processing of this fragment. Possible values are:<ul>
+<li>The input fragment is not a IPv4 or IPv6 packet</li>
+<li>The input fragment is not a IPv4 or IPv6 fragment packet</li>
+<li>The input fragment is the first fragment of the packet</li>
+<li>The input fragment is not the first or last fragment</li>
+<li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
+<li>The input fragment is malformed and will be ignored</li>
+<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to a <a class="el" href="a00127.html">Packet</a> object wrapping the input fragment <a class="el" href="a00158.html">RawPacket</a> object. It's the user responsibility to free this instance</li>
+<li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
+<li>If the reassembled packet isn't ready then NULL is returned </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a086c40b049355635699e3b3c18678fb6"></a>
+<a class="anchor" id="a72d9dea60bb16f09caadd0b82c00afd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00081.html">IPv4Address</a>&amp; pcpp::IPv4Address::operator= </td>
+          <td class="memname">void pcpp::IPReassembly::removePacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00128.html">PacketKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overload of the assignment operator </p>
-
-</div>
-</div>
-<a class="anchor" id="ab244cc421284de22fdad9fc9a77a306f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IPv4Address::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00081.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overload of the comparison operator </p><dl class="section return"><dt>Returns</dt><dd>true if 2 addresses are equal. False otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a00a39c8f5d881a3fddfff5f6163c7370"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">in_addr* pcpp::IPv4Address::toInAddr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a in_addr struct pointer representing the IPv4 address </p><dl class="section return"><dt>Returns</dt><dd>a in_addr struct pointer representing the IPv4 address </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afe150ecb366ca60577da2cc426ed2c97"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::IPv4Address::toInt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Converts the IPv4 address into a 4B integer </p><dl class="section return"><dt>Returns</dt><dd>a 4B integer representing the IPv4 address </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab1fdcb75a0d28033e51770605ec978cb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00081.html">IPv4Address</a> pcpp::IPv4Address::Zero</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A static value representing a zero value of IPv4 address, meaning address of value "0.0.0.0" </p>
+<p>Remove a partially reassembled packet from all internal structures. That means that if another fragment of this packet appears it will be treated as a new packet </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The identifiers of the packet to remove </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -537,8 +492,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00081.html">IPv4Address</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00081.html">IPReassembly</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

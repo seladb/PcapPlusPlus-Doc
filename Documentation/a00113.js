@@ -1,8 +1,10 @@
 var a00113 =
 [
-    [ "IoctlType", "a00113.html#aaa9b5d6420de52d330e43a65663c523d", null ],
-    [ "LinuxSocket", "a00113.html#a01722c01a7fb72295efbfc5e8aa27723", null ],
-    [ "LinuxNicInformationSocket", "a00113.html#ab61d863ff5a60c25059d9627ee214c16", null ],
-    [ "~LinuxNicInformationSocket", "a00113.html#a810ea2386d18ef11adb6429cbafe6be4", null ],
-    [ "makeRequest", "a00113.html#a86176bab7ca80b09d271d1335ad987aa", null ]
+    [ "LinkDuplex", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
+      [ "FULL_DUPLEX", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
+      [ "HALF_DUPLEX", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
+    ] ],
+    [ "linkDuplex", "a00113.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
+    [ "linkSpeedMbps", "a00113.html#a6177ed98446f18d57be88d8c2411a473", null ],
+    [ "linkUp", "a00113.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
 ];

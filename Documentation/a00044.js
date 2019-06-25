@@ -1,6 +1,5 @@
 var a00044 =
 [
-    [ "id", "a00044.html#ad783cd30b1cc3febd8f0e9db72ffca7a", null ],
-    [ "sequence", "a00044.html#ae4f17a2a06478c0300e64c9dacf67def", null ],
-    [ "timestamp", "a00044.html#aaa7c797c73f222014bcdecaca7175236", null ]
+    [ "nextHopMTU", "a00044.html#a55e8c3c3cffaff9d7207b3902ec9634a", null ],
+    [ "unused", "a00044.html#a04f434cf79f3a4e52a654dd664f08de3", null ]
 ];

@@ -1,6 +1,7 @@
 var a00200 =
 [
-    [ "operator==", "a00200.html#aa757ff97d3c182eb1f3852bd2be4d836", null ],
-    [ "Id", "a00200.html#acf545b5f5f0fad64aee7cc3b46034a4d", null ],
-    [ "Mask", "a00200.html#aa76587497e2faa7f7354ca8444a9450b", null ]
+    [ "StringDnsResourceData", "a00200.html#af47b8943630f686bffd2e340f97e1c6c", null ],
+    [ "operator==", "a00200.html#a2b681492cc870b92d9ea9c3c75e6a39c", null ],
+    [ "toByteArr", "a00200.html#ae41fbf9bc041c85b4c2d44b507218500", null ],
+    [ "toString", "a00200.html#a952f821104af5d2a5bbfc64c99e0c862", null ]
 ];

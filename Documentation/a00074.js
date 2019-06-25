@@ -1,15 +1,14 @@
 var a00074 =
 [
-    [ "IgmpV3ReportLayer", "a00074.html#a4a4471d38de1ca94ed40daa98ba887c8", null ],
-    [ "IgmpV3ReportLayer", "a00074.html#aca14573c71b42df13e3beec55d151aed", null ],
-    [ "addGroupRecord", "a00074.html#a16965c0755e315db8c53cd91c38ac8a6", null ],
-    [ "addGroupRecordAtIndex", "a00074.html#a1794a460a7850f676a2fafa1ff57f70d", null ],
-    [ "computeCalculateFields", "a00074.html#a4e41980f2b4d98c30f4caffea255b3af", null ],
-    [ "getFirstGroupRecord", "a00074.html#a54518fc6655b31f041fbc570e255fc84", null ],
-    [ "getGroupRecordCount", "a00074.html#a520b1eb367ae67b472e6cc994da588e8", null ],
-    [ "getHeaderLen", "a00074.html#a69bf1bc34b4d5b2660e8a55e96abc815", null ],
-    [ "getNextGroupRecord", "a00074.html#a8964c61b90952f84408a7bfcffd22ca9", null ],
-    [ "getReportHeader", "a00074.html#a4496276945f18ae35a9df6352318199d", null ],
-    [ "removeAllGroupRecords", "a00074.html#a949a8ed3a9091b41d03e17eef056ec07", null ],
-    [ "removeGroupRecordAtIndex", "a00074.html#a6179870d8386e1761ad9233a345e4dd9", null ]
+    [ "IgmpV3QueryLayer", "a00074.html#a7b55459a995707aee9f7fbf2fbf6cc3f", null ],
+    [ "IgmpV3QueryLayer", "a00074.html#ab551be87a93aeaa0c88e92877d5f1622", null ],
+    [ "addSourceAddress", "a00074.html#a5a899abed0005e7be97fcad24dfe50d8", null ],
+    [ "addSourceAddressAtIndex", "a00074.html#a23bc052794bffdb6bc1f297a9e6c4a78", null ],
+    [ "computeCalculateFields", "a00074.html#a7b414a996a95b763244d62b2b690f3d0", null ],
+    [ "getHeaderLen", "a00074.html#a7bda0feeacf1348b4638adbeb241b976", null ],
+    [ "getIgmpV3QueryHeader", "a00074.html#a71bdd31a33a48c7ae109921251b3c915", null ],
+    [ "getSourceAddressAtIndex", "a00074.html#af3b97362ea6af15af95883fc705019fc", null ],
+    [ "getSourceAddressCount", "a00074.html#aef8bb73bd4a63cce661e9b3e6a76800f", null ],
+    [ "removeAllSourceAddresses", "a00074.html#ae1b34e7244184be1f41470665913b7e1", null ],
+    [ "removeSourceAddressAtIndex", "a00074.html#a87009d34db619dcfd3a54e40f696fece", null ]
 ];

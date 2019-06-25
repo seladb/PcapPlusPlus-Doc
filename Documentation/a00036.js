@@ -1,12 +1,8 @@
 var a00036 =
 [
-    [ "HttpRequestFirstLineException", "a00037.html", null ],
-    [ "getMethod", "a00036.html#a5833180521a889af5707e6137bf53a73", null ],
-    [ "getSize", "a00036.html#afc8a656cffd44c4d4a50bb983dca319c", null ],
-    [ "getUri", "a00036.html#ade4bc4f1ed7a3aec29d95455c4c24a70", null ],
-    [ "getVersion", "a00036.html#ae9774e0c16a4983e9ab77a6779c444c7", null ],
-    [ "isComplete", "a00036.html#a8dac35f7b7227a2a18320d00616d3be8", null ],
-    [ "setMethod", "a00036.html#a056c5df1c6732b666b28852f68836e6e", null ],
-    [ "setUri", "a00036.html#aa31083ea230c4cf5e1fe27608a76f6b0", null ],
-    [ "setVersion", "a00036.html#ac9b66f371b763217776c4eaec0f9a14c", null ]
+    [ "addField", "a00036.html#a10f4534ce8764aacae232c789bfa1884", null ],
+    [ "addField", "a00036.html#ad51afc66df73de546fa6e0c30184bb2c", null ],
+    [ "getOsiModelLayer", "a00036.html#ac1c1d6e50be7e9546874da2e40b28a5b", null ],
+    [ "insertField", "a00036.html#afc89318693401eeeff64f852c8c1c5e6", null ],
+    [ "insertField", "a00036.html#a6c69d36f3197df9ee3f9fb7e3de186fc", null ]
 ];

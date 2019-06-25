@@ -1,12 +1,7 @@
 var a00128 =
 [
-    [ "PacketTrailerLayer", "a00128.html#aea69b064afa86745324a8622a0165e66", null ],
-    [ "computeCalculateFields", "a00128.html#a5f1c6c8c95e769c599399068003d8be8", null ],
-    [ "getHeaderLen", "a00128.html#a88bcfd9803acb70ffddfc4e5eb13ef94", null ],
-    [ "getOsiModelLayer", "a00128.html#ae38a45a73abe95762e757ce9967b3366", null ],
-    [ "getTrailerData", "a00128.html#a0bb39a14fd2f8db4b6266048c8f1f9e3", null ],
-    [ "getTrailerDataAsHexString", "a00128.html#aa72e8b8cfd49ab0460138c8e0bdabeea", null ],
-    [ "getTrailerLen", "a00128.html#ae4b6f2cc0b328146002f9b35f5380d55", null ],
-    [ "parseNextLayer", "a00128.html#ac6cec085e12da509d680cd457503d27d", null ],
-    [ "toString", "a00128.html#a5a9890a85024926a9da795a884acb074", null ]
+    [ "~PacketKey", "a00128.html#aa67476ed9ca9d6bf21821446d6f9af33", null ],
+    [ "clone", "a00128.html#a38bb114ec2d125fa47d7a1d113203a4c", null ],
+    [ "getHashValue", "a00128.html#abd42f4375f021a1bf7d89a151b231911", null ],
+    [ "getProtocolType", "a00128.html#a36810a692eb627629bf0db6ad04c8fb1", null ]
 ];

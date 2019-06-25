@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::ApplicationEventHandler Class Reference</title>
+<title>PcapPlusPlus: pcpp::AndFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,55 +105,47 @@ $(document).ready(function(){initNavTree('a00003.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00298.html">List of all members</a>  </div>
+<a href="a00299.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::ApplicationEventHandler Class Reference</div>  </div>
+<div class="title">pcpp::AndFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00284_source.html">SystemUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00265_source.html">PcapFilter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::AndFilter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00003.png" usemap="#pcpp::AndFilter_map" alt=""/>
+  <map id="pcpp::AndFilter_map" name="pcpp::AndFilter_map">
+<area href="a00028.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,120,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:abfff8961708dec4b1c4802fc42180284"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>) (void *cookie)</td></tr>
-<tr class="separator:abfff8961708dec4b1c4802fc42180284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#adb15e6e3b2b082cb5eebafcc7df15aa7">onApplicationInterrupted</a> (<a class="el" href="a00003.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a> handler, void *cookie)</td></tr>
-<tr class="separator:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a20e86342f93b84fe40ef38891a22b59a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00003.html">ApplicationEventHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a20e86342f93b84fe40ef38891a22b59a">getInstance</a> ()</td></tr>
-<tr class="separator:a20e86342f93b84fe40ef38891a22b59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136268df7041a70e46dcfed6c9c0711f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a136268df7041a70e46dcfed6c9c0711f">AndFilter</a> ()</td></tr>
+<tr class="separator:a136268df7041a70e46dcfed6c9c0711f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663de154b20959cc253d18bbbe2e081d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a663de154b20959cc253d18bbbe2e081d">AndFilter</a> (std::vector&lt; <a class="el" href="a00028.html">GeneralFilter</a> * &gt; &amp;filters)</td></tr>
+<tr class="separator:a663de154b20959cc253d18bbbe2e081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a8d91c6139693fa05a06fd6c6ab5fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a31a8d91c6139693fa05a06fd6c6ab5fe">addFilter</a> (<a class="el" href="a00028.html">GeneralFilter</a> *filter)</td></tr>
+<tr class="separator:a31a8d91c6139693fa05a06fd6c6ab5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b4fbd7e50d5dad0939febaf8efad05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a46b4fbd7e50d5dad0939febaf8efad05">setFilters</a> (std::vector&lt; <a class="el" href="a00028.html">GeneralFilter</a> * &gt; &amp;filters)</td></tr>
+<tr class="separator:a46b4fbd7e50d5dad0939febaf8efad05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d7dd260b5f1bb4c9147263cb0b0308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html#a59d7dd260b5f1bb4c9147263cb0b0308">parseToString</a> (std::string &amp;result)</td></tr>
+<tr class="separator:a59d7dd260b5f1bb4c9147263cb0b0308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00028"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00028')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00028.html">pcpp::GeneralFilter</a></td></tr>
+<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00028"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A singleton class that provides callbacks for events that occur during application life-cycle such as ctrl+c pressed, application closed, killed, etc. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="abfff8961708dec4b1c4802fc42180284"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::ApplicationEventHandler::EventHandlerCallback</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The callback to be invoked when the event occurs </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cookie</td><td>A pointer the the cookie provided by the user in <a class="el" href="a00003.html">ApplicationEventHandler</a> c'tor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a20e86342f93b84fe40ef38891a22b59a"></a>
+<div class="textblock"><p>A class for connecting several filters into one filter with logical "and" between them. For example: if the 2 filters are: "IPv4 address =
+x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x _AND_ TCP port dst = 80"<br />
+ This class follows the composite design pattern<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00265.html">PcapFilter.h</a>  </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a136268df7041a70e46dcfed6c9c0711f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -161,7 +153,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00003.html">ApplicationEventHandler</a>&amp; pcpp::ApplicationEventHandler::getInstance </td>
+          <td class="memname">pcpp::AndFilter::AndFilter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -169,41 +161,115 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>As <a class="el" href="a00003.html">ApplicationEventHandler</a> is a singleton, this is the static getter to retrieve its instance </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of <a class="el" href="a00003.html">ApplicationEventHandler</a> </dd></dl>
+<p>An empty constructor for this class. Use <a class="el" href="a00003.html#a31a8d91c6139693fa05a06fd6c6ab5fe">addFilter()</a> to add filters to the and condition </p>
 
 </div>
 </div>
-<a class="anchor" id="adb15e6e3b2b082cb5eebafcc7df15aa7"></a>
+<a class="anchor" id="a663de154b20959cc253d18bbbe2e081d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::ApplicationEventHandler::onApplicationInterrupted </td>
+          <td class="memname">pcpp::AndFilter::AndFilter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00003.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>&#160;</td>
-          <td class="paramname"><em>handler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a00028.html">GeneralFilter</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filters</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cookie</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Register for an application-interrupted event, meaning ctrl+c was pressed </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that gets a list of pointers to filters and creates one filter from all filters with logical "and" between them </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>The callback to be activated when the event occurs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cookie</td><td>A pointer to a user provided object. This object will be transferred to the EventHandlerCallback callback. This cookie is very useful for transferring objects that give context to the event callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filters</td><td>The list of pointers to filters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a31a8d91c6139693fa05a06fd6c6ab5fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::AndFilter::addFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00028.html">GeneralFilter</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add filter to the and condition </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a59d7dd260b5f1bb4c9147263cb0b0308"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::AndFilter::parseToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00028.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46b4fbd7e50d5dad0939febaf8efad05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::AndFilter::setFilters </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a00028.html">GeneralFilter</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the current filters and set new ones </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filters</td><td>The new filters to set. The previous ones will be removed </td></tr>
   </table>
   </dd>
 </dl>
@@ -215,8 +281,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00003.html">ApplicationEventHandler</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00003.html">AndFilter</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

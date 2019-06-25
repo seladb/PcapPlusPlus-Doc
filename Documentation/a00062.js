@@ -1,4 +1,7 @@
 var a00062 =
 [
-    [ "~IFileWriterDevice", "a00062.html#ad1efdc8f258b6981d0429c61992f2e13", null ]
+    [ "IFileReaderDevice", "a00062.html#a0292cb89821cdbdb5914d4ed76c5e0f1", null ],
+    [ "~IFileReaderDevice", "a00062.html#acdc7b6e2db17994aaf167c081ddfaafb", null ],
+    [ "getFileSize", "a00062.html#a74f00fc3036c19629c3a1e6f358f9a78", null ],
+    [ "getNextPackets", "a00062.html#a279a1c148671df93bd85afd43af1f958", null ]
 ];

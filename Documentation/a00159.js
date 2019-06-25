@@ -1,7 +1,16 @@
 var a00159 =
 [
-    [ "bytes", "a00159.html#aeeb02f0b115b0d7a81cd1076535c8ac2", null ],
-    [ "bytesPerSec", "a00159.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f", null ],
-    [ "packets", "a00159.html#a39ba9e581d7353a484f575487a334fc8", null ],
-    [ "packetsPerSec", "a00159.html#a0531a2f378b09192aadf66e4ae1e5019", null ]
+    [ "RecvPacketResult", "a00159.html#a06ec60dc8d38dfab0333fb793ad0da76", [
+      [ "RecvSuccess", "a00159.html#a06ec60dc8d38dfab0333fb793ad0da76ad36c34a2ebc972da8d8ad02b1e1d8c70", null ],
+      [ "RecvTimeout", "a00159.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c", null ],
+      [ "RecvWouldBlock", "a00159.html#a06ec60dc8d38dfab0333fb793ad0da76abaedaa450ddecac58433cf954fdfd8b8", null ],
+      [ "RecvError", "a00159.html#a06ec60dc8d38dfab0333fb793ad0da76adce5f5b2a3d83a5816da7520ee4228ea", null ]
+    ] ],
+    [ "~RawSocketDevice", "a00159.html#a16669eaf3e120d99ff07a07223aca9b6", null ],
+    [ "close", "a00159.html#a040fdad86cc60ef3b289834251a942c5", null ],
+    [ "open", "a00159.html#afadbe3e75178913f1d9c2cc3f6d02909", null ],
+    [ "receivePacket", "a00159.html#a184663a2718b6e4f5f7ad353d840dfbc", null ],
+    [ "receivePackets", "a00159.html#a83f604ddccbb3dad4dbee74bcda6d21d", null ],
+    [ "sendPacket", "a00159.html#a3a7822e719e2f5895b3bee1523327e08", null ],
+    [ "sendPackets", "a00159.html#a348a0cfddc2d9b04857fd8bf8402b6ba", null ]
 ];

@@ -1,7 +1,7 @@
 var a00154 =
 [
-    [ "RadiusAttribute", "a00154.html#aa88508d5cf4694cfcbe4447d9d7005cd", null ],
-    [ "~RadiusAttribute", "a00154.html#af50c0eb7d7498e51c21201e8dfd946e8", null ],
-    [ "getDataSize", "a00154.html#ab954f0710570d825181cd76be71dce66", null ],
-    [ "getTotalSize", "a00154.html#ad39501e29a2a11bec37f175100d9f1ad", null ]
+    [ "authenticator", "a00154.html#a12baeb5d7b2bcece1043131e1515663b", null ],
+    [ "code", "a00154.html#ad7341098e0278fdcac9f7d8da1e55ce0", null ],
+    [ "id", "a00154.html#abbe35efe2bd07008905230bf0c068a46", null ],
+    [ "length", "a00154.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5", null ]
 ];

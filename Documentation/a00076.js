@@ -1,12 +1,11 @@
 var a00076 =
 [
-    [ "AddressType", "a00076.html#ac389e5507d75b60d2b0ca939db195231", [
-      [ "IPv4AddressType", "a00076.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
-      [ "IPv6AddressType", "a00076.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
-    ] ],
-    [ "clone", "a00076.html#a92d35f8f8e9965d0e4c38e183fba7d1e", null ],
-    [ "equals", "a00076.html#a6865c1a43ff71cd424426c846f36dbd4", null ],
-    [ "getType", "a00076.html#a85a3e43774848c93585f97bdef6ec73d", null ],
-    [ "isValid", "a00076.html#ae7edb664a93cbc9ba3c0f71f0c3ede0c", null ],
-    [ "toString", "a00076.html#a39eeb2c3b4ec235f8c938ec1b77fe2ac", null ]
+    [ "flowLabel", "a00076.html#a8d0d381008c855e00afd32403e4f946b", null ],
+    [ "hopLimit", "a00076.html#a9734da4d88f3f3938f12e2c71b4ac855", null ],
+    [ "ipDst", "a00076.html#af9eaa28de54512c88c43a95ed6c2a846", null ],
+    [ "ipSrc", "a00076.html#ad49c20046e6d9a6c3526f353352f91a3", null ],
+    [ "ipVersion", "a00076.html#aee7025c3316d0ecbb3db29bfdecb1e25", null ],
+    [ "nextHeader", "a00076.html#aee8e571549e08804cbf245c37eed7cfa", null ],
+    [ "payloadLength", "a00076.html#ae5849394b92e6a7d3cd0b2972e30391e", null ],
+    [ "trafficClass", "a00076.html#a613b6372ccae91487cc5f3a7f14aed94", null ]
 ];

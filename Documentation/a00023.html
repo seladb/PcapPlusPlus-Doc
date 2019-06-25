@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::DpdkWorkerThread Class Reference</title>
+<title>PcapPlusPlus: pcpp::DpdkDevice::DpdkDeviceStats Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,130 +105,153 @@ $(document).ready(function(){initNavTree('a00023.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00319.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00317.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::DpdkWorkerThread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::DpdkDevice::DpdkDeviceStats Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00233_source.html">DpdkDeviceList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00233_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:afee1cd32d8aa6bbb639f7e45ca85e68d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#afee1cd32d8aa6bbb639f7e45ca85e68d">~DpdkWorkerThread</a> ()</td></tr>
-<tr class="separator:afee1cd32d8aa6bbb639f7e45ca85e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8c2b08e51679b20e9f56e166483492"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#adf8c2b08e51679b20e9f56e166483492">run</a> (uint32_t coreId)=0</td></tr>
-<tr class="separator:adf8c2b08e51679b20e9f56e166483492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae564e0ed9544c9e06ddbf5f1f1ecb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7ae564e0ed9544c9e06ddbf5f1f1ecb9">stop</a> ()=0</td></tr>
-<tr class="separator:a7ae564e0ed9544c9e06ddbf5f1f1ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6516fee0ccc9d545283806a3f78ee82c"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6516fee0ccc9d545283806a3f78ee82c">getCoreId</a> ()=0</td></tr>
-<tr class="separator:a6516fee0ccc9d545283806a3f78ee82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a49e5bd913fde8b892d1bbe27dbf53065"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a49e5bd913fde8b892d1bbe27dbf53065">devId</a></td></tr>
+<tr class="separator:a49e5bd913fde8b892d1bbe27dbf53065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be0c63ba880f0b603cad0355e8f9a04"><td class="memItemLeft" align="right" valign="top">timespec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7be0c63ba880f0b603cad0355e8f9a04">timestamp</a></td></tr>
+<tr class="separator:a7be0c63ba880f0b603cad0355e8f9a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb9e3e7e4370993c9a28a67402e70a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html">RxTxStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abfb9e3e7e4370993c9a28a67402e70a8">rxStats</a> [16]</td></tr>
+<tr class="separator:abfb9e3e7e4370993c9a28a67402e70a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8f344207f63fca45d3be9830051e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html">RxTxStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8c8f344207f63fca45d3be9830051e5a">txStats</a> [16]</td></tr>
+<tr class="separator:a8c8f344207f63fca45d3be9830051e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fd3f759f0a227da48089029d1547b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html">RxTxStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a77fd3f759f0a227da48089029d1547b8">aggregatedRxStats</a></td></tr>
+<tr class="separator:a77fd3f759f0a227da48089029d1547b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ea1d3127ed22b2d1b8b886b6851f3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html">RxTxStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa5ea1d3127ed22b2d1b8b886b6851f3d">aggregatedTxStats</a></td></tr>
+<tr class="separator:aa5ea1d3127ed22b2d1b8b886b6851f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8aa478b40945e79f41f8186a888c17b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ac8aa478b40945e79f41f8186a888c17b">rxPacketsDropeedByHW</a></td></tr>
+<tr class="separator:ac8aa478b40945e79f41f8186a888c17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2ad4acf3b506d68fdf608c8666942e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aea2ad4acf3b506d68fdf608c8666942e">rxErroneousPackets</a></td></tr>
+<tr class="separator:aea2ad4acf3b506d68fdf608c8666942e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213f66e013a40f84cbfadae0f1232722"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a213f66e013a40f84cbfadae0f1232722">rxMbufAlocFailed</a></td></tr>
+<tr class="separator:a213f66e013a40f84cbfadae0f1232722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>There are two ways to capture packets using <a class="el" href="a00019.html">DpdkDevice</a>: one of them is using worker threads and the other way is using a callback which is invoked on each a burst of packets are captured (see <a class="el" href="a00019.html#ae200ae83e4eb63c66ff18a1004836f3d">DpdkDevice::startCaptureSingleThread()</a> ). This class is a base class for implementing workers. A worker is basically a class that is activated by <a class="el" href="a00021.html#a6a2d2fdf700451adb9a27567f6e6eda3">DpdkDeviceList::startDpdkWorkerThreads()</a> and runs on a designated core. When it runs it can do whatever the user wants it to do. The most common use it running in an endless loop and receive, analyze and send packets using one or more <a class="el" href="a00019.html">DpdkDevice</a> instances. It can do all kinds of processing for these packets. The only restriction for a worker class is that it must implement the 3 abstract methods stated in this class-interface for start running, stop running and get the core ID the worker is running on. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afee1cd32d8aa6bbb639f7e45ca85e68d"></a>
+<div class="textblock"><p>A container for <a class="el" href="a00020.html">DpdkDevice</a> statistics </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a77fd3f759f0a227da48089029d1547b8"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::DpdkWorkerThread::~DpdkWorkerThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="a00160.html">RxTxStats</a> pcpp::DpdkDevice::DpdkDeviceStats::aggregatedRxStats</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>A virtual d'tor. Can be overridden by child class if needed </p>
+<p>RX statistics, aggregated for all RX queues </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6516fee0ccc9d545283806a3f78ee82c"></a>
+<a class="anchor" id="aa5ea1d3127ed22b2d1b8b886b6851f3d"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual uint32_t pcpp::DpdkWorkerThread::getCoreId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="a00160.html">RxTxStats</a> pcpp::DpdkDevice::DpdkDeviceStats::aggregatedTxStats</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>An abstract method that must be implemented by child class. Get the core ID the worker is running on (as sent to the <a class="el" href="a00023.html#adf8c2b08e51679b20e9f56e166483492">run()</a> method as a parameter) </p><dl class="section return"><dt>Returns</dt><dd>The core ID the worker is running on </dd></dl>
+<p>TX statistics, aggregated for all TX queues </p>
 
 </div>
 </div>
-<a class="anchor" id="adf8c2b08e51679b20e9f56e166483492"></a>
+<a class="anchor" id="a49e5bd913fde8b892d1bbe27dbf53065"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool pcpp::DpdkWorkerThread::run </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>coreId</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint8_t pcpp::DpdkDevice::DpdkDeviceStats::devId</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>An abstract method that must be implemented by child class. It's the indication for the worker to start running </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coreId</td><td>The core ID the worker is running on (should be returned in <a class="el" href="a00023.html#a6516fee0ccc9d545283806a3f78ee82c">getCoreId()</a> ) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all went well or false otherwise </dd></dl>
+<p><a class="el" href="a00020.html">DpdkDevice</a> ID </p>
 
 </div>
 </div>
-<a class="anchor" id="a7ae564e0ed9544c9e06ddbf5f1f1ecb9"></a>
+<a class="anchor" id="aea2ad4acf3b506d68fdf608c8666942e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::DpdkWorkerThread::stop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint64_t pcpp::DpdkDevice::DpdkDeviceStats::rxErroneousPackets</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>An abstract method that must be implemented by child class. It's the indication for the worker to stop running. After this method is called the caller expects the worker to stop running as fast as possible </p>
+<p>Total number of erroneous packets </p>
+
+</div>
+</div>
+<a class="anchor" id="a213f66e013a40f84cbfadae0f1232722"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pcpp::DpdkDevice::DpdkDeviceStats::rxMbufAlocFailed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total number of RX mbuf allocation failuers </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8aa478b40945e79f41f8186a888c17b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pcpp::DpdkDevice::DpdkDeviceStats::rxPacketsDropeedByHW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total number of RX packets dropped by H/W because there are no available buffers (i.e RX queues are full) </p>
+
+</div>
+</div>
+<a class="anchor" id="abfb9e3e7e4370993c9a28a67402e70a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00160.html">RxTxStats</a> pcpp::DpdkDevice::DpdkDeviceStats::rxStats[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RX statistics per RX queue </p>
+
+</div>
+</div>
+<a class="anchor" id="a7be0c63ba880f0b603cad0355e8f9a04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timespec pcpp::DpdkDevice::DpdkDeviceStats::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The timestamp of when the stats were written </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c8f344207f63fca45d3be9830051e5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00160.html">RxTxStats</a> pcpp::DpdkDevice::DpdkDeviceStats::txStats[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TX statistics per TX queue </p>
 
 </div>
 </div>
@@ -237,8 +260,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00023.html">DpdkWorkerThread</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00020.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00023.html">DpdkDeviceStats</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

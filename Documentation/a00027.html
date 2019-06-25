@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::GeneralFilter Class Reference</title>
+<title>PcapPlusPlus: pcpp::EthLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,44 +106,80 @@ $(document).ready(function(){initNavTree('a00027.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00323.html">List of all members</a>  </div>
+<a href="a00324.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::GeneralFilter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::EthLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00263_source.html">PcapFilter.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00235_source.html">EthLayer.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::GeneralFilter:</div>
+Inheritance diagram for pcpp::EthLayer:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00027.png" usemap="#pcpp::GeneralFilter_map" alt=""/>
-  <map id="pcpp::GeneralFilter_map" name="pcpp::GeneralFilter_map">
-<area href="a00002.html" alt="pcpp::AndFilter" shape="rect" coords="163,56,316,80"/>
-<area href="a00005.html" alt="pcpp::ArpFilter" shape="rect" coords="163,112,316,136"/>
-<area href="a00025.html" alt="pcpp::EtherTypeFilter" shape="rect" coords="163,168,316,192"/>
-<area href="a00064.html" alt="pcpp::IFilterWithDirection" shape="rect" coords="163,224,316,248"/>
-<area href="a00065.html" alt="pcpp::IFilterWithOperator" shape="rect" coords="163,280,316,304"/>
-<area href="a00123.html" alt="pcpp::NotFilter" shape="rect" coords="163,336,316,360"/>
-<area href="a00125.html" alt="pcpp::OrFilter" shape="rect" coords="163,392,316,416"/>
-<area href="a00152.html" alt="pcpp::ProtoFilter" shape="rect" coords="163,448,316,472"/>
-<area href="a00203.html" alt="pcpp::TcpFlagsFilter" shape="rect" coords="163,504,316,528"/>
-<area href="a00220.html" alt="pcpp::VlanFilter" shape="rect" coords="163,560,316,584"/>
+  <img src="a00027.png" usemap="#pcpp::EthLayer_map" alt=""/>
+  <map id="pcpp::EthLayer_map" name="pcpp::EthLayer_map">
+<area href="a00112.html" alt="pcpp::Layer" shape="rect" coords="0,56,130,80"/>
+<area href="a00057.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,130,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">parseToString</a> (std::string &amp;result)=0</td></tr>
-<tr class="separator:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba731757009c1ce8db973aa334634765"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
-<tr class="separator:aba731757009c1ce8db973aa334634765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae509330de4c0b0c2c52bc0ba4f1276d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae509330de4c0b0c2c52bc0ba4f1276d4">EthLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00127.html">Packet</a> *packet)</td></tr>
+<tr class="separator:ae509330de4c0b0c2c52bc0ba4f1276d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85daa93647a62a4dec8c1514f006b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ac85daa93647a62a4dec8c1514f006b8c">EthLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="a00112.html">Layer</a> *prevLayer, <a class="el" href="a00127.html">Packet</a> *packet)</td></tr>
+<tr class="separator:ac85daa93647a62a4dec8c1514f006b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc8bd04450057d9fbb7a6764723aea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4fc8bd04450057d9fbb7a6764723aea7">EthLayer</a> (const <a class="el" href="a00117.html">MacAddress</a> &amp;sourceMac, const <a class="el" href="a00117.html">MacAddress</a> &amp;destMac, uint16_t etherType=0)</td></tr>
+<tr class="separator:a4fc8bd04450057d9fbb7a6764723aea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5162828037e8dbd4d5c310b365d1a26c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html">ether_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a5162828037e8dbd4d5c310b365d1a26c">getEthHeader</a> () const </td></tr>
+<tr class="separator:a5162828037e8dbd4d5c310b365d1a26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0eb6bf63e0be994fdecd8a30347f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00117.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a4e0eb6bf63e0be994fdecd8a30347f17">getSourceMac</a> () const </td></tr>
+<tr class="separator:a4e0eb6bf63e0be994fdecd8a30347f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a46b8944f2914b8c6ebfec6fd8f6cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ab3a46b8944f2914b8c6ebfec6fd8f6cc">setSourceMac</a> (const <a class="el" href="a00117.html">MacAddress</a> &amp;sourceMac)</td></tr>
+<tr class="separator:ab3a46b8944f2914b8c6ebfec6fd8f6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91af580d1e65d73b71aff65d83fa1ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00117.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae91af580d1e65d73b71aff65d83fa1ec">getDestMac</a> () const </td></tr>
+<tr class="separator:ae91af580d1e65d73b71aff65d83fa1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b2011c1421ed40ab327e5a26872733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ac9b2011c1421ed40ab327e5a26872733">setDestMac</a> (const <a class="el" href="a00117.html">MacAddress</a> &amp;destMac)</td></tr>
+<tr class="separator:ac9b2011c1421ed40ab327e5a26872733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf68349e014756d8f7f6fa0181d4129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1cf68349e014756d8f7f6fa0181d4129">parseNextLayer</a> ()</td></tr>
+<tr class="separator:a1cf68349e014756d8f7f6fa0181d4129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b49445f344b1f5aafc662ce222450d6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7b49445f344b1f5aafc662ce222450d6">getHeaderLen</a> ()</td></tr>
+<tr class="separator:a7b49445f344b1f5aafc662ce222450d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c0729d47399ea7bcf89098334f7fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a23c0729d47399ea7bcf89098334f7fe0">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a23c0729d47399ea7bcf89098334f7fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd79c662d372e1ea4ea1a679305ab810"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#acd79c662d372e1ea4ea1a679305ab810">toString</a> ()</td></tr>
+<tr class="separator:acd79c662d372e1ea4ea1a679305ab810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc4f4d5d7a0d67a2a10b549601c4319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a3fc4f4d5d7a0d67a2a10b549601c4319">getOsiModelLayer</a> () const </td></tr>
+<tr class="separator:a3fc4f4d5d7a0d67a2a10b549601c4319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00112"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00112')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00112.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a> ()</td></tr>
+<tr class="separator:a9d02400f5421309786e1ea6c031c8d19 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00112.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a8bcc2c5c58c42f15a38f4b92a631c82e">getNextLayer</a> ()</td></tr>
+<tr class="separator:a8bcc2c5c58c42f15a38f4b92a631c82e inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00112.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a2fe84819a0d4734612bd4adaf152adc0">getPrevLayer</a> ()</td></tr>
+<tr class="separator:a2fe84819a0d4734612bd4adaf152adc0 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00296.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#af529fae0ddcfd57db8d6118e6e8ceeb6">getProtocol</a> ()</td></tr>
+<tr class="separator:af529fae0ddcfd57db8d6118e6e8ceeb6 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#ad5d8b96d3cd71d4669ddfb8b22368a28">getData</a> ()</td></tr>
+<tr class="separator:ad5d8b96d3cd71d4669ddfb8b22368a28 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a7153407f6e0e38a9e72e9d5019e6889a">getDataLen</a> ()</td></tr>
+<tr class="separator:a7153407f6e0e38a9e72e9d5019e6889a inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#aa2cede93f23dc2afd032fa589e22cd7d">getLayerPayload</a> ()</td></tr>
+<tr class="separator:aa2cede93f23dc2afd032fa589e22cd7d inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#aa6b3d4c2c2b85b8211d2b9544194d20e">getLayerPayloadSize</a> ()</td></tr>
+<tr class="separator:aa6b3d4c2c2b85b8211d2b9544194d20e inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a3064f6bfadcc96b1fcb0d28aa1afe8a3">isAllocatedToPacket</a> ()</td></tr>
+<tr class="separator:a3064f6bfadcc96b1fcb0d28aa1afe8a3 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a658e543c6c13707f8f624957cadc19e9">copyData</a> (uint8_t *toArr)</td></tr>
+<tr class="separator:a658e543c6c13707f8f624957cadc19e9 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a00112"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a2fdf63eb660bf17119fbe9b9ae89aff2">getDataPtr</a> (size_t offset=0)</td></tr>
+<tr class="separator:a2fdf63eb660bf17119fbe9b9ae89aff2 inherit pub_methods_a00112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The base class for all filter classes. This class is virtual and abstract, hence cannot be instantiated.<br />
- For deeper understanding of the filter concept please refer to <a class="el" href="a00263.html">PcapFilter.h</a> </p>
+<div class="textblock"><p>Represents an Ethernet protocol layer </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aba731757009c1ce8db973aa334634765"></a>
+<a class="anchor" id="ae509330de4c0b0c2c52bc0ba4f1276d4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -151,7 +187,151 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::GeneralFilter::~GeneralFilter </td>
+          <td class="memname">pcpp::EthLayer::EthLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00127.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00025.html">ether_header</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00127.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac85daa93647a62a4dec8c1514f006b8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::EthLayer::EthLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00112.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00127.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="a00025.html">ether_header</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="a00127.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4fc8bd04450057d9fbb7a6764723aea7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::EthLayer::EthLayer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00117.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceMac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00117.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>destMac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>etherType</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that creates a new Ethernet header and allocates the data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>The source MAC address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destMac</td><td>The destination MAC address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>The EtherType to be used. It's an optional parameter, a value of 0 will be set if not provided </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a23c0729d47399ea7bcf89098334f7fe0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::EthLayer::computeCalculateFields </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -163,12 +343,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Virtual destructor, does nothing for this class </p>
+<p>Calculate <a class="el" href="a00025.html#a3200f5fc394812077b6c96d2b15f7658">ether_header::etherType</a> for known protocols: IPv4, IPv6, ARP, VLAN </p>
+
+<p>Implements <a class="el" href="a00112.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae38fb802a74a1d9b7d7025b1b5cb83e5"></a>
+<a class="anchor" id="ae91af580d1e65d73b71aff65d83fa1ec"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -176,27 +357,231 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::GeneralFilter::parseToString </td>
+          <td class="memname"><a class="el" href="a00117.html">MacAddress</a> pcpp::EthLayer::getDestMac </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the destination MAC address </p><dl class="section return"><dt>Returns</dt><dd>The destination MAC address </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5162828037e8dbd4d5c310b365d1a26c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html">ether_header</a>* pcpp::EthLayer::getEthHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the Ethernet header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="a00025.html">ether_header</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b49445f344b1f5aafc662ce222450d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::EthLayer::getHeaderLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section return"><dt>Returns</dt><dd>Size of <a class="el" href="a00025.html">ether_header</a> </dd></dl>
+
+<p>Implements <a class="el" href="a00112.html#ae2746ac75563d4ed44632ff06b5a2666">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fc4f4d5d7a0d67a2a10b549601c4319"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00296.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> pcpp::EthLayer::getOsiModelLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The OSI Model layer this protocol belongs to </dd></dl>
+
+<p>Implements <a class="el" href="a00112.html#af9e51f48a58a3b0dcd1a7341111c66e0">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e0eb6bf63e0be994fdecd8a30347f17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00117.html">MacAddress</a> pcpp::EthLayer::getSourceMac </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the source MAC address </p><dl class="section return"><dt>Returns</dt><dd>The source MAC address </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cf68349e014756d8f7f6fa0181d4129"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::EthLayer::parseNextLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Currently identifies the following next layers: <a class="el" href="a00085.html">IPv4Layer</a>, <a class="el" href="a00101.html">IPv6Layer</a>, <a class="el" href="a00008.html">ArpLayer</a>, <a class="el" href="a00222.html">VlanLayer</a>, <a class="el" href="a00151.html">PPPoESessionLayer</a>, <a class="el" href="a00149.html">PPPoEDiscoveryLayer</a>, <a class="el" href="a00120.html">MplsLayer</a>. Otherwise sets <a class="el" href="a00130.html">PayloadLayer</a> </p>
+
+<p>Implements <a class="el" href="a00112.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9b2011c1421ed40ab327e5a26872733"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::EthLayer::setDestMac </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00117.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>destMac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set destination MAC address </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
+    <tr><td class="paramname">destMac</td><td>Destination MAC to set </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="a00218.html#a438eb7a89725685d7f98f069ce76b966">pcpp::UdpLengthFilter</a>, <a class="el" href="a00210.html#a8152be659392238cd28750c44d760057">pcpp::TcpWindowSizeFilter</a>, <a class="el" href="a00203.html#a1c9003c27c6c52e80276cba9dd33d117">pcpp::TcpFlagsFilter</a>, <a class="el" href="a00220.html#a4d5759a458f683cebac7134668fc0c2d">pcpp::VlanFilter</a>, <a class="el" href="a00005.html#a2af1942f2bad988ff88589ed17cc5353">pcpp::ArpFilter</a>, <a class="el" href="a00152.html#a2eba86ed1facd283f54363176618d6ff">pcpp::ProtoFilter</a>, <a class="el" href="a00123.html#a27559a09376420b6b8466a1819b42509">pcpp::NotFilter</a>, <a class="el" href="a00125.html#a6552bb49fddc97e6e2f8ef0833c45b36">pcpp::OrFilter</a>, <a class="el" href="a00002.html#a59d7dd260b5f1bb4c9147263cb0b0308">pcpp::AndFilter</a>, <a class="el" href="a00025.html#a3b632e6dffbdbf6264a0173f4aa0b059">pcpp::EtherTypeFilter</a>, <a class="el" href="a00117.html#ac94ba464b2cd6d936b87811a120f73df">pcpp::MacAddressFilter</a>, <a class="el" href="a00144.html#a267adc124537789fd02510b61e2b4905">pcpp::PortRangeFilter</a>, <a class="el" href="a00143.html#afd42f1ac6f213c3f347f7b5efbafdbef">pcpp::PortFilter</a>, <a class="el" href="a00089.html#ae5fbf85f075db71863099fa21ae444b2">pcpp::IPv4TotalLengthFilter</a>, <a class="el" href="a00083.html#aa7894608d9cd66ab8396359cae68b43d">pcpp::IPv4IDFilter</a>, and <a class="el" href="a00078.html#a9244dc71714f73d8e215498c7c3b0f23">pcpp::IPFilter</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ab3a46b8944f2914b8c6ebfec6fd8f6cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::EthLayer::setSourceMac </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00117.html">MacAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceMac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set source MAC address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceMac</td><td>Source MAC to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acd79c662d372e1ea4ea1a679305ab810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string pcpp::EthLayer::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the layer most important data (should look like the layer description in Wireshark) </dd></dl>
+
+<p>Implements <a class="el" href="a00112.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -205,8 +590,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00027.html">GeneralFilter</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00027.html">EthLayer</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

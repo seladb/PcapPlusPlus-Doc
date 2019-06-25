@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::MBufRawPacket Class Reference</title>
+<title>PcapPlusPlus: pcpp::MacAddressFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,100 +106,44 @@ $(document).ready(function(){initNavTree('a00118.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00414.html">List of all members</a>  </div>
+<a href="a00415.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::MBufRawPacket Class Reference</div>  </div>
+<div class="title">pcpp::MacAddressFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00253_source.html">MBufRawPacket.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00265_source.html">PcapFilter.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for pcpp::MBufRawPacket:</div>
+Inheritance diagram for pcpp::MacAddressFilter:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00118.png" usemap="#pcpp::MBufRawPacket_map" alt=""/>
-  <map id="pcpp::MBufRawPacket_map" name="pcpp::MBufRawPacket_map">
-<area href="a00157.html" alt="pcpp::RawPacket" shape="rect" coords="0,0,138,24"/>
+  <img src="a00118.png" usemap="#pcpp::MacAddressFilter_map" alt=""/>
+  <map id="pcpp::MacAddressFilter_map" name="pcpp::MacAddressFilter_map">
+<area href="a00065.html" alt="pcpp::IFilterWithDirection" shape="rect" coords="0,56,153,80"/>
+<area href="a00028.html" alt="pcpp::GeneralFilter" shape="rect" coords="0,0,153,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaf206811e019a695318954e65b044f96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#aaf206811e019a695318954e65b044f96">MBufRawPacket</a> ()</td></tr>
-<tr class="separator:aaf206811e019a695318954e65b044f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696d9e42af3f7b8ea296e4137a019a13"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a696d9e42af3f7b8ea296e4137a019a13">~MBufRawPacket</a> ()</td></tr>
-<tr class="separator:a696d9e42af3f7b8ea296e4137a019a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2a21888dbcbdc2e50c703938de6804"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a0b2a21888dbcbdc2e50c703938de6804">MBufRawPacket</a> (const <a class="el" href="a00118.html">MBufRawPacket</a> &amp;other)</td></tr>
-<tr class="separator:a0b2a21888dbcbdc2e50c703938de6804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9faebadf686bb3b6351bcb04c335b4e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a9faebadf686bb3b6351bcb04c335b4e6">init</a> (<a class="el" href="a00019.html">DpdkDevice</a> *device)</td></tr>
-<tr class="memdesc:a9faebadf686bb3b6351bcb04c335b4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class from <a class="el" href="a00019.html">DpdkDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="a00019.html">DpdkDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a9faebadf686bb3b6351bcb04c335b4e6">More...</a><br /></td></tr>
-<tr class="separator:a9faebadf686bb3b6351bcb04c335b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#af58b7495df6fcbf81a0a0c1047dd8a2b">init</a> (<a class="el" href="a00106.html">KniDevice</a> *device)</td></tr>
-<tr class="memdesc:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class from <a class="el" href="a00106.html">KniDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="a00106.html">KniDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#af58b7495df6fcbf81a0a0c1047dd8a2b">More...</a><br /></td></tr>
-<tr class="separator:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a0a8f9f35e751a2edc16ff7a19ce85b88">initFromRawPacket</a> (const <a class="el" href="a00157.html">RawPacket</a> *rawPacket, <a class="el" href="a00019.html">DpdkDevice</a> *device)</td></tr>
-<tr class="memdesc:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class and copies the content of a <a class="el" href="a00157.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="a00019.html">DpdkDevice</a>, and copying the data from the input <a class="el" href="a00157.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a0a8f9f35e751a2edc16ff7a19ce85b88">More...</a><br /></td></tr>
-<tr class="separator:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a728abbe6a08520d019588c1aa8d16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a91a728abbe6a08520d019588c1aa8d16">initFromRawPacket</a> (const <a class="el" href="a00157.html">RawPacket</a> *rawPacket, <a class="el" href="a00106.html">KniDevice</a> *device)</td></tr>
-<tr class="memdesc:a91a728abbe6a08520d019588c1aa8d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class and copies the content of a <a class="el" href="a00157.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="a00106.html">KniDevice</a>, and copying the data from the input <a class="el" href="a00157.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a91a728abbe6a08520d019588c1aa8d16">More...</a><br /></td></tr>
-<tr class="separator:a91a728abbe6a08520d019588c1aa8d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203b86f2e4098cd2a51e5e87c7c7ebdc"><td class="memItemLeft" align="right" valign="top">rte_mbuf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a203b86f2e4098cd2a51e5e87c7c7ebdc">getMBuf</a> ()</td></tr>
-<tr class="separator:a203b86f2e4098cd2a51e5e87c7c7ebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1daedb0141e2420a31df330658c15a9e"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a1daedb0141e2420a31df330658c15a9e">getObjectType</a> () const </td></tr>
-<tr class="separator:a1daedb0141e2420a31df330658c15a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab194bcba22f170560890ee3f73faa027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html">MBufRawPacket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ab194bcba22f170560890ee3f73faa027">operator=</a> (const <a class="el" href="a00118.html">MBufRawPacket</a> &amp;other)</td></tr>
-<tr class="separator:ab194bcba22f170560890ee3f73faa027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b49f6bfba58da926405df2e2fef914c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a4b49f6bfba58da926405df2e2fef914c">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, <a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>, int frameLength=-1)</td></tr>
-<tr class="separator:a4b49f6bfba58da926405df2e2fef914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a265214f9d02a63d0cff85b4e1a93c396"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a265214f9d02a63d0cff85b4e1a93c396">clear</a> ()</td></tr>
-<tr class="separator:a265214f9d02a63d0cff85b4e1a93c396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c5144634729ce1ab2da2aa89946e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#af1c5144634729ce1ab2da2aa89946e89">appendData</a> (const uint8_t *dataToAppend, size_t dataToAppendLen)</td></tr>
-<tr class="separator:af1c5144634729ce1ab2da2aa89946e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12e04aa6f066e6971946cc033fb2bdf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a12e04aa6f066e6971946cc033fb2bdf9">insertData</a> (int atIndex, const uint8_t *dataToInsert, size_t dataToInsertLen)</td></tr>
-<tr class="separator:a12e04aa6f066e6971946cc033fb2bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3895fef553d8345e18b7f97e52f1a10d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a3895fef553d8345e18b7f97e52f1a10d">removeData</a> (int atIndex, size_t numOfBytesToRemove)</td></tr>
-<tr class="separator:a3895fef553d8345e18b7f97e52f1a10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8984ba4413680165a38d13bdd853987"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ac8984ba4413680165a38d13bdd853987">reallocateData</a> (size_t newBufferLength)</td></tr>
-<tr class="separator:ac8984ba4413680165a38d13bdd853987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4727b09d81aed644524a190c4a39db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a6d4727b09d81aed644524a190c4a39db">setFreeMbuf</a> (bool val=true)</td></tr>
-<tr class="separator:a6d4727b09d81aed644524a190c4a39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00157"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00157')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00157.html">pcpp::RawPacket</a></td></tr>
-<tr class="memitem:a8834cea9fc72516c3d22a841479ee684 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a8834cea9fc72516c3d22a841479ee684">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor, <a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
-<tr class="separator:a8834cea9fc72516c3d22a841479ee684 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc12f855f36a798ce0e8c7dc8a4618f9 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#acc12f855f36a798ce0e8c7dc8a4618f9">RawPacket</a> ()</td></tr>
-<tr class="separator:acc12f855f36a798ce0e8c7dc8a4618f9 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8b8a3574217ab88b406cba3d2551fb inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#abb8b8a3574217ab88b406cba3d2551fb">~RawPacket</a> ()</td></tr>
-<tr class="separator:abb8b8a3574217ab88b406cba3d2551fb inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d24eda21061c53f0801f3bcbe34193 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a38d24eda21061c53f0801f3bcbe34193">RawPacket</a> (const <a class="el" href="a00157.html">RawPacket</a> &amp;other)</td></tr>
-<tr class="separator:a38d24eda21061c53f0801f3bcbe34193 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8278a0208727a579a122f197c4d02e inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00157.html">RawPacket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#afc8278a0208727a579a122f197c4d02e">operator=</a> (const <a class="el" href="a00157.html">RawPacket</a> &amp;other)</td></tr>
-<tr class="separator:afc8278a0208727a579a122f197c4d02e inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6642df1975fd488edb5af26bd45b1658 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a6642df1975fd488edb5af26bd45b1658">getRawData</a> () const </td></tr>
-<tr class="separator:a6642df1975fd488edb5af26bd45b1658 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35366699f27979fa43dddc2e22ca16f9 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a35366699f27979fa43dddc2e22ca16f9">getRawDataReadOnly</a> () const </td></tr>
-<tr class="separator:a35366699f27979fa43dddc2e22ca16f9 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0986e059e7357842d6a4b45695a7b2f7 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a0986e059e7357842d6a4b45695a7b2f7">getLinkLayerType</a> () const </td></tr>
-<tr class="separator:a0986e059e7357842d6a4b45695a7b2f7 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88543611741cc88d70ff27c995cc5922 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a88543611741cc88d70ff27c995cc5922">getRawDataLen</a> () const </td></tr>
-<tr class="separator:a88543611741cc88d70ff27c995cc5922 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98365b7764f87bf1eb4db06f56dc659 inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#ab98365b7764f87bf1eb4db06f56dc659">getFrameLength</a> () const </td></tr>
-<tr class="separator:ab98365b7764f87bf1eb4db06f56dc659 inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5f14271c49051c16ec600387bf94f7e inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#ac5f14271c49051c16ec600387bf94f7e">getPacketTimeStamp</a> () const </td></tr>
-<tr class="separator:ac5f14271c49051c16ec600387bf94f7e inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a829ca934f43a2a3610d81d481c4303dd inherit pub_methods_a00157"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html#a829ca934f43a2a3610d81d481c4303dd">isPacketSet</a> ()</td></tr>
-<tr class="separator:a829ca934f43a2a3610d81d481c4303dd inherit pub_methods_a00157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab652b758a699a376248c46908465d7fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ab652b758a699a376248c46908465d7fc">MacAddressFilter</a> (<a class="el" href="a00117.html">MacAddress</a> address, <a class="el" href="a00296.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> dir)</td></tr>
+<tr class="separator:ab652b758a699a376248c46908465d7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94ba464b2cd6d936b87811a120f73df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ac94ba464b2cd6d936b87811a120f73df">parseToString</a> (std::string &amp;result)</td></tr>
+<tr class="separator:ac94ba464b2cd6d936b87811a120f73df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960adffd3e6bb7e83b85bce6baccddf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a960adffd3e6bb7e83b85bce6baccddf3">setMacAddress</a> (<a class="el" href="a00117.html">MacAddress</a> address)</td></tr>
+<tr class="separator:a960adffd3e6bb7e83b85bce6baccddf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00065"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00065')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00065.html">pcpp::IFilterWithDirection</a></td></tr>
+<tr class="memitem:ace8adbbf3d89a745c02b353ac6f2122a inherit pub_methods_a00065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#ace8adbbf3d89a745c02b353ac6f2122a">setDirection</a> (<a class="el" href="a00296.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> dir)</td></tr>
+<tr class="separator:ace8adbbf3d89a745c02b353ac6f2122a inherit pub_methods_a00065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00028"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00028')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00028.html">pcpp::GeneralFilter</a></td></tr>
+<tr class="memitem:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00028"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a> ()</td></tr>
+<tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_a00028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that inherits <a class="el" href="a00157.html">RawPacket</a> and wraps DPDK's mbuf object (see some info about mbuf in <a class="el" href="a00232.html">DpdkDevice.h</a>) but is compatible with PcapPlusPlus framework. Using <a class="el" href="a00118.html">MBufRawPacket</a> is be almost similar to using <a class="el" href="a00157.html">RawPacket</a>, the implementation differences are encapsulated in the class implementation. For example: user can create and manipulate a <a class="el" href="a00126.html">Packet</a> object from <a class="el" href="a00118.html">MBufRawPacket</a> the same way it is done with <a class="el" href="a00157.html">RawPacket</a>; User can use <a class="el" href="a00131.html">PcapFileWriterDevice</a> to save <a class="el" href="a00118.html">MBufRawPacket</a> to pcap the same way it's used with <a class="el" href="a00157.html">RawPacket</a>; etc.<br />
- The main difference is that <a class="el" href="a00157.html">RawPacket</a> contains a pointer to the data itself and <a class="el" href="a00118.html">MBufRawPacket</a> is holding a pointer to an mbuf object which contains a pointer to the data. This implies that <a class="el" href="a00118.html">MBufRawPacket</a> without an mbuf allocated to it is not usable. Getting instances of <a class="el" href="a00118.html">MBufRawPacket</a> can be done in one to the following ways:</p><ul>
-<li>Receiving packets from <a class="el" href="a00019.html">DpdkDevice</a>. In this case <a class="el" href="a00019.html">DpdkDevice</a> takes care of getting the mbuf from DPDK and wrapping it with <a class="el" href="a00118.html">MBufRawPacket</a></li>
-<li>Creating <a class="el" href="a00118.html">MBufRawPacket</a> from scratch (in order to send it with <a class="el" href="a00019.html">DpdkDevice</a>, for example). In this case the user should call the init() method after constructing the object in order to allocate a new mbuf from DPDK port pool (encapsulated by <a class="el" href="a00019.html">DpdkDevice</a>)</li>
-</ul>
-<p>Limitations of this class:</p><ul>
-<li>Currently chained mbufs are not supported. An mbuf has the capability to be linked to another mbuf and create a linked list of mbufs. This is good for Jumbo packets or other uses. <a class="el" href="a00118.html">MBufRawPacket</a> doesn't support this capability so there is no way to access the mbufs linked to the mbuf wrapped by <a class="el" href="a00118.html">MBufRawPacket</a> instance. I hope I'll be able to add this support in the future </li>
-</ul>
+<div class="textblock"><p>A class for filtering Ethernet traffic by MAC addresses, for example: "ether src 12:34:56:78:90:12" or "ether dst "10:29:38:47:56:10:29"<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="a00265.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aaf206811e019a695318954e65b044f96"></a>
+<a class="anchor" id="ab652b758a699a376248c46908465d7fc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,10 +151,21 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::MBufRawPacket::MBufRawPacket </td>
+          <td class="memname">pcpp::MacAddressFilter::MacAddressFilter </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00117.html">MacAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="a00296.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -219,50 +174,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A default c'tor for this class. Constructs an instance of this class without an mbuf attached to it. In order to allocate an mbuf the user should call the init() method. Without calling init() the instance of this class is not usable. This c'tor can be used for initializing an array of <a class="el" href="a00118.html">MBufRawPacket</a> (which requires an empty c'tor) </p>
-
-</div>
-</div>
-<a class="anchor" id="a696d9e42af3f7b8ea296e4137a019a13"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual pcpp::MBufRawPacket::~MBufRawPacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A d'tor for this class. Once called it frees the mbuf attached to it (returning it back to the mbuf pool it was allocated from) </p>
-
-</div>
-</div>
-<a class="anchor" id="a0b2a21888dbcbdc2e50c703938de6804"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::MBufRawPacket::MBufRawPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00118.html">MBufRawPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A copy c'tor for this class. The copy c'tor allocates a new mbuf from the same pool the original mbuf was allocated from, attaches the new mbuf to this instance of <a class="el" href="a00118.html">MBufRawPacket</a> and copies the data from the original mbuf to the new mbuf </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that gets the MAC address and the direction and creates the filter with them </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The <a class="el" href="a00118.html">MBufRawPacket</a> instance to copy from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>The MAC address to use for filtering </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>The MAC address direction to filter (source or destination) </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,7 +185,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af1c5144634729ce1ab2da2aa89946e89"></a>
+<a class="anchor" id="ac94ba464b2cd6d936b87811a120f73df"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -278,21 +193,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::MBufRawPacket::appendData </td>
+          <td class="memname">void pcpp::MacAddressFilter::parseToString </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>dataToAppend</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataToAppendLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -301,19 +206,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Append packet data at the end of current data. This method uses the same mbuf already allocated and tries to append more space and copy the data to it. If <a class="el" href="a00118.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A method that parses the class instance into BPF string format </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppend</td><td>A pointer to the data to append </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppendLen</td><td>Length in bytes of dataToAppend </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>An empty string that the parsing will be written into. If the string isn't empty, its content will be overridden </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="a00157.html#a6ed098d0dfcf60fa561b56e6c73bed9c">pcpp::RawPacket</a>.</p>
+<p>Implements <a class="el" href="a00028.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">pcpp::GeneralFilter</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a265214f9d02a63d0cff85b4e1a93c396"></a>
+<a class="anchor" id="a960adffd3e6bb7e83b85bce6baccddf3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -321,35 +225,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::MBufRawPacket::clear </td>
+          <td class="memname">void pcpp::MacAddressFilter::setMacAddress </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Clears the object and frees the mbuf </p>
-
-<p>Reimplemented from <a class="el" href="a00157.html#ab6b169b02bda40e90279e7d8f6816e41">pcpp::RawPacket</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a203b86f2e4098cd2a51e5e87c7c7ebdc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rte_mbuf* pcpp::MBufRawPacket::getMBuf </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00117.html">MacAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -359,399 +238,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the DPDK mbuf stored in this object </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1daedb0141e2420a31df330658c15a9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual uint8_t pcpp::MBufRawPacket::getObjectType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="a00118.html">MBufRawPacket</a> object type </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00157.html#a98d12a77ac3cdd89480a81d60156ddf7">pcpp::RawPacket</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9faebadf686bb3b6351bcb04c335b4e6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html">DpdkDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class from <a class="el" href="a00019.html">DpdkDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="a00019.html">DpdkDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the MAC address </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="a00019.html">DpdkDevice</a> which has the pool to allocate the mbuf from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>The MAC address to use for filtering </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af58b7495df6fcbf81a0a0c1047dd8a2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00106.html">KniDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class from <a class="el" href="a00106.html">KniDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="a00106.html">KniDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="a00106.html">KniDevice</a> which has the pool to allocate the mbuf from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0a8f9f35e751a2edc16ff7a19ce85b88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::initFromRawPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00157.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacket</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html">DpdkDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class and copies the content of a <a class="el" href="a00157.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="a00019.html">DpdkDevice</a>, and copying the data from the input <a class="el" href="a00157.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to a <a class="el" href="a00157.html">RawPacket</a> object from which data will be copied </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="a00019.html">DpdkDevice</a> which has the pool to allocate the mbuf from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a91a728abbe6a08520d019588c1aa8d16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::initFromRawPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00157.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacket</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00106.html">KniDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class and copies the content of a <a class="el" href="a00157.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="a00106.html">KniDevice</a>, and copying the data from the input <a class="el" href="a00157.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to a <a class="el" href="a00157.html">RawPacket</a> object from which data will be copied </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="a00106.html">KniDevice</a> which has the pool to allocate the mbuf from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a12e04aa6f066e6971946cc033fb2bdf9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::MBufRawPacket::insertData </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>atIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>dataToInsert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataToInsertLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Insert raw data at some index of the current data and shift the remaining data to the end. This method uses the same mbuf already allocated and tries to append more space to it. Then it just copies dataToAppend at the relevant index and shifts the remaining data to the end. If <a class="el" href="a00118.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to insert the new data to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsert</td><td>A pointer to the new data to insert </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsertLen</td><td>Length in bytes of dataToInsert </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="a00157.html#a3563f649177826c9e4f649eec7b35887">pcpp::RawPacket</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab194bcba22f170560890ee3f73faa027"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00118.html">MBufRawPacket</a>&amp; pcpp::MBufRawPacket::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00118.html">MBufRawPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An assignment operator for this class. Copies the data from the mbuf attached to the other <a class="el" href="a00118.html">MBufRawPacket</a> to the mbuf attached to this instance. If instance is not initialized (meaning no mbuf is attached) nothing will be copied and instance will remain uninitialized (also, an error will be printed) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The <a class="el" href="a00118.html">MBufRawPacket</a> to assign data from </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac8984ba4413680165a38d13bdd853987"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::reallocateData </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>newBufferLength</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>This overridden method,in contrast to its ancestor <a class="el" href="a00157.html#acd9248a47bd60427e2a3ef34b379a28e">RawPacket::reallocateData()</a> doesn't need to do anything because mbuf is already allocated to its maximum extent. So it only performs a check to verify the size after re-allocation doesn't exceed mbuf max size </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">newBufferLength</td><td>The new buffer length as required by the user </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if new size is larger than current size but smaller than mbuf max size, false otherwise </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00157.html#acd9248a47bd60427e2a3ef34b379a28e">pcpp::RawPacket</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3895fef553d8345e18b7f97e52f1a10d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::removeData </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>atIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numOfBytesToRemove</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Remove certain number of bytes from current raw data buffer. All data after the removed bytes will be shifted back. This method uses the mbuf already allocated and tries to trim space from it </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to start removing bytes from </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numOfBytesToRemove</td><td>Number of bytes to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all bytes were removed successfully, or false if <a class="el" href="a00118.html">MBufRawPacket</a> is not initialize (mbuf is NULL), mbuf trim failed or logatIndex+numOfBytesToRemove is out-of-bounds of the raw data buffer. In all of these cases an error is printed to log </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00157.html#a9cf289e6bbf461f55c20784615c899ce">pcpp::RawPacket</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6d4727b09d81aed644524a190c4a39db"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::MBufRawPacket::setFreeMbuf </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em> = <code>true</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set an indication whether to free the mbuf when done using it or not ("done using it" means setting another mbuf or class d'tor). Default value is true. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value to set. True means free the mbuf when done using it. Default it True </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4b49f6bfba58da926405df2e2fef914c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::setRawData </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>pRawData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rawDataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">timeval&#160;</td>
-          <td class="paramname"><em>timestamp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
-          <td class="paramname"><em>layerType</em> = <code><a class="el" href="a00294.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frameLength</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set raw data to the mbuf by copying the data to it. In order to stay compatible with the ancestor method which takes control of the data pointer and frees it when <a class="el" href="a00157.html">RawPacket</a> is destroyed, this method frees this pointer right away after data is copied to the mbuf. So when using this method please notice that after it's called pRawData memory is free, don't use this pointer again. In addition, if raw packet isn't initialized (mbuf is NULL), this method will call the init() method </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type for this raw data. Default is Ethernet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frameLength</td><td>When reading from pcap files, sometimes the captured length is different from the actual packet length. This parameter represents the packet length. This parameter is optional, if not set or set to -1 it is assumed both lengths are equal </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw data was copied to the mbuf successfully, false if rawDataLen is larger than mbuf max size, if initialization failed or if copying the data to the mbuf failed. In all of these cases an error will be printed to log </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00157.html#a6babfc371bd3b9eac8c741cba5e097f6">pcpp::RawPacket</a>.</p>
 
 </div>
 </div>
@@ -760,8 +252,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00118.html">MBufRawPacket</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00118.html">MacAddressFilter</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

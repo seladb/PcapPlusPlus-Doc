@@ -1,10 +1,10 @@
 var a00151 =
 [
-    [ "getTagDataAs", "a00151.html#a90c9d117f0227b28315f66fb86621894", null ],
-    [ "getTagTotalSize", "a00151.html#ae0a0ec3151b3be1dc391bd9ebb1a2d15", null ],
-    [ "getType", "a00151.html#ad721e2c2e3dbb15efae5e700120f1bd9", null ],
-    [ "setTagData", "a00151.html#a058a53a2eac30209abaec60f70e7ad63", null ],
-    [ "tagData", "a00151.html#a859b9c75b9f17f734c42b9bdc7ac1ad3", null ],
-    [ "tagDataLength", "a00151.html#ae4e187f3ca9a2b81adaa193823bf2a2a", null ],
-    [ "tagType", "a00151.html#a53236fe2fd4cf146334cdc19ffc01192", null ]
+    [ "PPPoESessionLayer", "a00151.html#a433678572ac1217a16a38e6aa8ade4f2", null ],
+    [ "PPPoESessionLayer", "a00151.html#ac9e2dcfee946bc38c1deefe557606188", null ],
+    [ "getHeaderLen", "a00151.html#a07941bb7f6351ca4cd9d3c3b583a0168", null ],
+    [ "getPPPNextProtocol", "a00151.html#a4521d824fcc13fa995376ba4757953d7", null ],
+    [ "parseNextLayer", "a00151.html#a68ee818cde48545d0d4cfa701bef6a0e", null ],
+    [ "setPPPNextProtocol", "a00151.html#adad1131f1a337c499577510c35383fb8", null ],
+    [ "toString", "a00151.html#a1938913dc6bed3dd7b443ddcd052b5e3", null ]
 ];

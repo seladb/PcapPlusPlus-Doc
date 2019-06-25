@@ -1,4 +1,6 @@
 var a00052 =
 [
-    [ "unused", "a00052.html#aabe0b87bdc760c4aca3b9da3d3caf0b9", null ]
+    [ "addressEntrySize", "a00052.html#a7ae4d3591f09904126f1a19f3dc799a6", null ],
+    [ "advertisementCount", "a00052.html#aadfebe1e44b051e3a22dedfa32bec6c5", null ],
+    [ "lifetime", "a00052.html#a922aebe9d43f85ee3088da3ad21e5b63", null ]
 ];

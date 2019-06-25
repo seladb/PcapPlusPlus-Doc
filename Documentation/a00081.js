@@ -1,17 +1,24 @@
 var a00081 =
 [
-    [ "IPv4Address", "a00081.html#a7eef864e1a372d665a27de6189901e1e", null ],
-    [ "IPv4Address", "a00081.html#a5a95be5b6cc51daa47a2064ae11dcef2", null ],
-    [ "IPv4Address", "a00081.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
-    [ "IPv4Address", "a00081.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
-    [ "IPv4Address", "a00081.html#a133598783690be861bd41452680b2290", null ],
-    [ "clone", "a00081.html#a1a3676a324eed401512a58d1fde07ee1", null ],
-    [ "getType", "a00081.html#a17308b1152e801d0ed68ed0a63b6077f", null ],
-    [ "matchSubnet", "a00081.html#ab466d51f6769fbffcdb157f9e2c03512", null ],
-    [ "matchSubnet", "a00081.html#a7df4f1d75b14946bf82f116859b6a15f", null ],
-    [ "operator!=", "a00081.html#a8160f16543866740b00e8350f617442e", null ],
-    [ "operator=", "a00081.html#a086c40b049355635699e3b3c18678fb6", null ],
-    [ "operator==", "a00081.html#ab244cc421284de22fdad9fc9a77a306f", null ],
-    [ "toInAddr", "a00081.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
-    [ "toInt", "a00081.html#afe150ecb366ca60577da2cc426ed2c97", null ]
+    [ "IPv4PacketKey", "a00088.html", "a00088" ],
+    [ "IPv6PacketKey", "a00103.html", "a00103" ],
+    [ "PacketKey", "a00128.html", "a00128" ],
+    [ "OnFragmentsClean", "a00081.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a", null ],
+    [ "ReassemblyStatus", "a00081.html#aae7f2e113808978827abf3b7cdbe91af", [
+      [ "NON_IP_PACKET", "a00081.html#aae7f2e113808978827abf3b7cdbe91afae35ca23b99eef8c92cb89994c1ee5e04", null ],
+      [ "NON_FRAGMENT", "a00081.html#aae7f2e113808978827abf3b7cdbe91afad646e48ec06733b9c603a3dc89d57494", null ],
+      [ "FIRST_FRAGMENT", "a00081.html#aae7f2e113808978827abf3b7cdbe91afa0314585fac91b7f1260e0c2ac8409425", null ],
+      [ "FRAGMENT", "a00081.html#aae7f2e113808978827abf3b7cdbe91afa59d0c69d880e6597e02931f805416653", null ],
+      [ "OUT_OF_ORDER_FRAGMENT", "a00081.html#aae7f2e113808978827abf3b7cdbe91afa720ffdf993a5a1f3e344be2cfda6cb1c", null ],
+      [ "MALFORMED_FRAGMENT", "a00081.html#aae7f2e113808978827abf3b7cdbe91afa9bfbeeb420ef09c3bc62c3e56f28c6b0", null ],
+      [ "REASSEMBLED", "a00081.html#aae7f2e113808978827abf3b7cdbe91afa91beabc1fd8775d590a7d6415aeb6a31", null ]
+    ] ],
+    [ "IPReassembly", "a00081.html#a9a55c126f0361bc1a928d0e39924c16d", null ],
+    [ "~IPReassembly", "a00081.html#ad3a3885752f5254e99d8a3b0d59f1507", null ],
+    [ "getCurrentCapacity", "a00081.html#aa1d4c3298adad6fa1e56ba251214028e", null ],
+    [ "getCurrentPacket", "a00081.html#a0efa8ec7258bbc0a83348bae42f93506", null ],
+    [ "getMaxCapacity", "a00081.html#a82b8c609967b33e0f77ba197e34ab053", null ],
+    [ "processPacket", "a00081.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7", null ],
+    [ "processPacket", "a00081.html#a97763fcf5926f60684cbbe3fda79cba4", null ],
+    [ "removePacket", "a00081.html#a72d9dea60bb16f09caadd0b82c00afd6", null ]
 ];

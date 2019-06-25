@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: TcpLayer.h File Reference</title>
+<title>PcapPlusPlus: SystemUtils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,394 +105,61 @@ $(document).ready(function(){initNavTree('a00286.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">TcpLayer.h File Reference</div>  </div>
+<div class="title">SystemUtils.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00248_source.html">Layer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00289_source.html">TLVData.h</a>&quot;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
 </div>
 <p><a href="a00286_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00204.html">pcpp::tcphdr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00201.html">pcpp::SystemCore</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">pcpp::TcpOption</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html">pcpp::SystemCores</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00207.html">pcpp::TcpOptionBuilder</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html">pcpp::AppName</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00205.html">pcpp::TcpLayer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html">pcpp::ApplicationEventHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00294"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html">pcpp</a></td></tr>
-<tr class="memdesc:a00294"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
+<tr class="memitem:a00296"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html">pcpp</a></td></tr>
+<tr class="memdesc:a00296"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:adea4e7b13e9341a4ba6362805b9290f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#adea4e7b13e9341a4ba6362805b9290f2">PCPP_TCPOLEN_NOP</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:adea4e7b13e9341a4ba6362805b9290f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2c95f87257bb4300ab47db1d3fea79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a0d2c95f87257bb4300ab47db1d3fea79">PCPP_TCPOLEN_EOL</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a0d2c95f87257bb4300ab47db1d3fea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f2dcf43fbf2f9c0e03043368b6fb37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a89f2dcf43fbf2f9c0e03043368b6fb37">PCPP_TCPOLEN_MSS</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a89f2dcf43fbf2f9c0e03043368b6fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce30dd81cb66c2576ac968c4e9fc33f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a7ce30dd81cb66c2576ac968c4e9fc33f">PCPP_TCPOLEN_WINDOW</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a7ce30dd81cb66c2576ac968c4e9fc33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64a2bcb1a1f4fe9e51aa6d9f00fa9780"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a64a2bcb1a1f4fe9e51aa6d9f00fa9780">PCPP_TCPOLEN_SACK_PERM</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a64a2bcb1a1f4fe9e51aa6d9f00fa9780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacff66e946d05e033507f036972e3aaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#aacff66e946d05e033507f036972e3aaf">PCPP_TCPOLEN_SACK_MIN</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:aacff66e946d05e033507f036972e3aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264a0d34df22cad1fee1523a4e01d7ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a264a0d34df22cad1fee1523a4e01d7ba">PCPP_TCPOLEN_ECHO</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a264a0d34df22cad1fee1523a4e01d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca033eac3c97bee9bc70499262d5bac8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#aca033eac3c97bee9bc70499262d5bac8">PCPP_TCPOLEN_ECHOREPLY</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:aca033eac3c97bee9bc70499262d5bac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0fd18fd227d9cf40fd0176dce1ed2e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#ae0fd18fd227d9cf40fd0176dce1ed2e4">PCPP_TCPOLEN_TIMESTAMP</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:ae0fd18fd227d9cf40fd0176dce1ed2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba3f9ff28dbd65780526d5306b653a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a2ba3f9ff28dbd65780526d5306b653a0">PCPP_TCPOLEN_CC</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a2ba3f9ff28dbd65780526d5306b653a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4ee0fb5f33243d1cd7cd9c856ea5b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#afc4ee0fb5f33243d1cd7cd9c856ea5b7">PCPP_TCPOLEN_CCNEW</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:afc4ee0fb5f33243d1cd7cd9c856ea5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e2e3231f1117d3735a163fb160dee6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#ab5e2e3231f1117d3735a163fb160dee6">PCPP_TCPOLEN_CCECHO</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ab5e2e3231f1117d3735a163fb160dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed2c7c3e37b9977037e94daf2813b6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a1ed2c7c3e37b9977037e94daf2813b6b">PCPP_TCPOLEN_MD5</a>&#160;&#160;&#160;18</td></tr>
-<tr class="separator:a1ed2c7c3e37b9977037e94daf2813b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f72fa987aaa8599d7553a189c7417b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#ad0f72fa987aaa8599d7553a189c7417b">PCPP_TCPOLEN_MPTCP_MIN</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:ad0f72fa987aaa8599d7553a189c7417b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc1861d1e3032581bdfa540422aadfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a2dc1861d1e3032581bdfa540422aadfd">PCPP_TCPOLEN_SCPS</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a2dc1861d1e3032581bdfa540422aadfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4edf9f057a86313f3bc5c68148bd5499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a4edf9f057a86313f3bc5c68148bd5499">PCPP_TCPOLEN_SNACK</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a4edf9f057a86313f3bc5c68148bd5499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a816a3d38e1261a2fc8ef7a0a6d412678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a816a3d38e1261a2fc8ef7a0a6d412678">PCPP_TCPOLEN_RECBOUND</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a816a3d38e1261a2fc8ef7a0a6d412678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0508763fac22e8bd23fc336049f681"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#abe0508763fac22e8bd23fc336049f681">PCPP_TCPOLEN_CORREXP</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:abe0508763fac22e8bd23fc336049f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6004efca801f4107e709b57f650757c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a6004efca801f4107e709b57f650757c4">PCPP_TCPOLEN_QS</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:a6004efca801f4107e709b57f650757c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eec6154f51bfe9616c3e0f4768c6804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a1eec6154f51bfe9616c3e0f4768c6804">PCPP_TCPOLEN_USER_TO</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a1eec6154f51bfe9616c3e0f4768c6804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6838e204cbc45a08c94333d4a41efa17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a6838e204cbc45a08c94333d4a41efa17">PCPP_TCPOLEN_RVBD_PROBE_MIN</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a6838e204cbc45a08c94333d4a41efa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590e0f3a1b3237e82fb353e50cfd2835"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a590e0f3a1b3237e82fb353e50cfd2835">PCPP_TCPOLEN_RVBD_TRPY_MIN</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:a590e0f3a1b3237e82fb353e50cfd2835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8197703959f102d53f2d773114e1e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#afe8197703959f102d53f2d773114e1e8">PCPP_TCPOLEN_EXP_MIN</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:afe8197703959f102d53f2d773114e1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9da3b8abc599b1744dc36c64b802bbd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a9da3b8abc599b1744dc36c64b802bbd2">pcpp::getNumOfCores</a> ()</td></tr>
+<tr class="separator:a9da3b8abc599b1744dc36c64b802bbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9b4fa3436a28221db583802b9524f5"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a4d9b4fa3436a28221db583802b9524f5">pcpp::getCoreMaskForAllMachineCores</a> ()</td></tr>
+<tr class="separator:a4d9b4fa3436a28221db583802b9524f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f336984bb48eb504d5e23f04581697"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#ab6f336984bb48eb504d5e23f04581697">pcpp::createCoreMaskFromCoreVector</a> (std::vector&lt; SystemCore &gt; cores)</td></tr>
+<tr class="separator:ab6f336984bb48eb504d5e23f04581697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572ce60b003993527593a10e6da9481b"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a572ce60b003993527593a10e6da9481b">pcpp::createCoreMaskFromCoreIds</a> (std::vector&lt; int &gt; coreIds)</td></tr>
+<tr class="separator:a572ce60b003993527593a10e6da9481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a74065e37f1f7390a6ab299ebc7c4c229">pcpp::createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; SystemCore &gt; &amp;resultVec)</td></tr>
+<tr class="separator:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#ac278806cc421fd25eb61aa073fcf5e1b">pcpp::executeShellCommand</a> (const std::string command)</td></tr>
+<tr class="separator:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a90c94556ad172d6c3ffb766e1ab25edf">pcpp::directoryExists</a> (std::string dirPath)</td></tr>
+<tr class="separator:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae517edc41624400eebc521c6c5bc8a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#ae517edc41624400eebc521c6c5bc8a82">pcpp::clockGetTime</a> (long &amp;sec, long &amp;nsec)</td></tr>
+<tr class="separator:ae517edc41624400eebc521c6c5bc8a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a2ba3f9ff28dbd65780526d5306b653a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_CC&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba82a419fa83ffede0528bbe66b9eb0a29">pcpp::TCPOPT_CC</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="ab5e2e3231f1117d3735a163fb160dee6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_CCECHO&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301baecbe259aa1fb8dff733084929a25ca27">pcpp::TCPOPT_CCECHO</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="afc4ee0fb5f33243d1cd7cd9c856ea5b7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_CCNEW&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba39a5d63627b15bff0bd86fe2157dbe20">pcpp::TCPOPT_CCNEW</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="abe0508763fac22e8bd23fc336049f681"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_CORREXP&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bad997623b58c2d423f13721d5570484b8">pcpp::TCPOPT_CORREXP</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a264a0d34df22cad1fee1523a4e01d7ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_ECHO&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301baf7e1c0704f4b2752500ea250ec05243a">pcpp::TCPOPT_ECHO</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="aca033eac3c97bee9bc70499262d5bac8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_ECHOREPLY&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba8e5a017910f13b5205a8109e2c898d2e">pcpp::TCPOPT_ECHOREPLY</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a0d2c95f87257bb4300ab47db1d3fea79"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_EOL&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba572937db672d4d69625f0662ed76b962">pcpp::PCPP_TCPOPT_EOL</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="afe8197703959f102d53f2d773114e1e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_EXP_MIN&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba0205491540fd32d17506aba9d94af517">pcpp::TCPOPT_EXP_FD</a> and <a class="el" href="a00294.html#a470be375e45a572c355154116879301ba7419b4758897f479aa1ae84c2061ccb2">pcpp::TCPOPT_EXP_FE</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a1ed2c7c3e37b9977037e94daf2813b6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_MD5&#160;&#160;&#160;18</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bacf51a70b96198793030c576bf48111f6">pcpp::TCPOPT_MD5</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="ad0f72fa987aaa8599d7553a189c7417b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_MPTCP_MIN&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba6a8400173edfca48e2e795c1e9afc862">pcpp::TCPOPT_MPTCP</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a89f2dcf43fbf2f9c0e03043368b6fb37"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_MSS&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba2e397d517856130b7b8015a2a5116702">pcpp::TCPOPT_MSS</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="adea4e7b13e9341a4ba6362805b9290f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_NOP&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba313ec412b9693a6535bce5e111f228d6">pcpp::PCPP_TCPOPT_NOP</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a6004efca801f4107e709b57f650757c4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_QS&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba368220fcd77a952c25993ff0d328b34d">pcpp::TCPOPT_QS</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a816a3d38e1261a2fc8ef7a0a6d412678"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_RECBOUND&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bae7b809cbdeefd6ef5caa8fda23f2c38a">pcpp::TCPOPT_RECBOUND</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a6838e204cbc45a08c94333d4a41efa17"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_RVBD_PROBE_MIN&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301babd01da185004dc3f371e2ec536c1bfd7">pcpp::TCPOPT_RVBD_PROBE</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a590e0f3a1b3237e82fb353e50cfd2835"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_RVBD_TRPY_MIN&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba448a533dced328df05277c2daf60fb1d">pcpp::TCPOPT_RVBD_TRPY</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="aacff66e946d05e033507f036972e3aaf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_SACK_MIN&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301baf6f2d4d9c60472415287e15825eb24cf">pcpp::PCPP_TCPOPT_SACK</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a64a2bcb1a1f4fe9e51aa6d9f00fa9780"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_SACK_PERM&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bae8a33bd70ab512bd473f1ba75038285d">pcpp::TCPOPT_SACK_PERM</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a2dc1861d1e3032581bdfa540422aadfd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_SCPS&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba2c4c5fa96b5f24013ef13e8bddf232f3">pcpp::TCPOPT_SCPS</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a4edf9f057a86313f3bc5c68148bd5499"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_SNACK&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bacfa8aa4d4604c71338bae5270e3df540">pcpp::TCPOPT_SNACK</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="ae0fd18fd227d9cf40fd0176dce1ed2e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_TIMESTAMP&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301bad048b5042b768d619a7af21604d05a0d">pcpp::PCPP_TCPOPT_TIMESTAMP</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a1eec6154f51bfe9616c3e0f4768c6804"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_USER_TO&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba0ea39933d465fbcf6eb99587c1ea7b7b">pcpp::TCPOPT_USER_TO</a> length </p>
-
-</div>
-</div>
-<a class="anchor" id="a7ce30dd81cb66c2576ac968c4e9fc33f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCPP_TCPOLEN_WINDOW&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00294.html#a470be375e45a572c355154116879301ba3887404116247fb2f34cdcf0f6ec3b46">pcpp::PCPP_TCPOPT_WINDOW</a> length </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_28e1bb8382970ac72e8ae3b23df4a891.html">temp</a></li><li class="navelem"><a class="el" href="dir_d75c333d15700fa5ca52ea392b4fbd17.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_0751405f2c2bfb2f42e1a09452f577e5.html">Dist</a></li><li class="navelem"><a class="el" href="dir_99dc552f4488de3a8c28cec336df5bdd.html">header</a></li><li class="navelem"><a class="el" href="a00286.html">TcpLayer.h</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_28e1bb8382970ac72e8ae3b23df4a891.html">temp</a></li><li class="navelem"><a class="el" href="dir_d75c333d15700fa5ca52ea392b4fbd17.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_0751405f2c2bfb2f42e1a09452f577e5.html">Dist</a></li><li class="navelem"><a class="el" href="dir_99dc552f4488de3a8c28cec336df5bdd.html">header</a></li><li class="navelem"><a class="el" href="a00286.html">SystemUtils.h</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

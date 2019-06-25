@@ -1,11 +1,15 @@
 var a00033 =
 [
-    [ "GREv1Layer", "a00033.html#affdd47adeca80911b621a14421853e8e", null ],
-    [ "GREv1Layer", "a00033.html#a9c118e97790a83bf6d22592191d2f453", null ],
-    [ "computeCalculateFields", "a00033.html#aa2b638c7d16b9475222dd0d0696a3514", null ],
-    [ "getAcknowledgmentNum", "a00033.html#a7f14840cae9c48e13afb7716411e6934", null ],
-    [ "getGreHeader", "a00033.html#a29e245ada218149a81e6f341e95e5b2e", null ],
-    [ "setAcknowledgmentNum", "a00033.html#a5adce7bc05cabe68f5680b44fb5a0d12", null ],
-    [ "toString", "a00033.html#a94273542f85918215b272ae98b5ade35", null ],
-    [ "unsetAcknowledgmentNum", "a00033.html#ab5c8246ba3b77d8ac14644801dd8ebda", null ]
+    [ "GREv0Layer", "a00033.html#a8cab834d500d69bd53ea9f980080aa66", null ],
+    [ "GREv0Layer", "a00033.html#a4e6349fa245ab6fec55236aeeff2e79e", null ],
+    [ "computeCalculateFields", "a00033.html#a8dadeabbc9e1bcce8c8030bfed2cfde9", null ],
+    [ "getChecksum", "a00033.html#a7a31ac3661be643b434564a0275cd044", null ],
+    [ "getGreHeader", "a00033.html#a6eddf589cb3f9ab2bcee6ef8f14eb1c8", null ],
+    [ "getKey", "a00033.html#af38425c78abd54d4c3b3e7c696d675c1", null ],
+    [ "getOffset", "a00033.html#a954bd499950709dc21235a75e4e54a41", null ],
+    [ "setChecksum", "a00033.html#ac8e0328698bf7208f6a68c828a36a91b", null ],
+    [ "setKey", "a00033.html#a8658b40f8017cf2f91eb292a7d9fee16", null ],
+    [ "toString", "a00033.html#a2d09f08dccb71119e0db999d31bf22b5", null ],
+    [ "unsetChecksum", "a00033.html#a165866e7549b82b339eb4cd26bd27ee9", null ],
+    [ "unsetKey", "a00033.html#a601b518f0c43ea4c96254b089759a8e5", null ]
 ];

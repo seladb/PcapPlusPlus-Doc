@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::KniDeviceList Class Reference</title>
+<title>PcapPlusPlus: pcpp::KniDevice::KniDeviceConfiguration Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,288 +105,111 @@ $(document).ready(function(){initNavTree('a00108.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00407.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00406.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::KniDeviceList Class Reference</div>  </div>
+<div class="title">pcpp::KniDevice::KniDeviceConfiguration Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00247_source.html">KniDeviceList.h</a>&gt;</code></p>
+<p>KNI device initialization data. Used to create new KNI device. Usage of callbacks member or oldCallbacks member is defined by result of <a class="el" href="a00109.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a>.  
+ <a href="a00108.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00247_source.html">KniDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a41eb1dbf9e8985f8c0387a6083c68f3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a41eb1dbf9e8985f8c0387a6083c68f3d">isInitialized</a> ()</td></tr>
-<tr class="separator:a41eb1dbf9e8985f8c0387a6083c68f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20344920bac3647235f624c33f50f6c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html">KniDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a20344920bac3647235f624c33f50f6c8">createDevice</a> (const <a class="el" href="a00107.html">KniDevice::KniDeviceConfiguration</a> &amp;config, const size_t mempoolSize)</td></tr>
-<tr class="memdesc:a20344920bac3647235f624c33f50f6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method for KNI devices. Newly created device is remembered under portId and name provided in config and can be found later by them. If KNI device is not destroyed explicitly thru KniDeviceList::destroyDevice then it will be destroyed implicitly by the time application exits.  <a href="#a20344920bac3647235f624c33f50f6c8">More...</a><br /></td></tr>
-<tr class="separator:a20344920bac3647235f624c33f50f6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77f7df0cd857dc7363e37f342bfb24ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html">KniDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a77f7df0cd857dc7363e37f342bfb24ac">getDeviceByPort</a> (const uint16_t portId)</td></tr>
-<tr class="memdesc:a77f7df0cd857dc7363e37f342bfb24ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns KNI device with specified portId.  <a href="#a77f7df0cd857dc7363e37f342bfb24ac">More...</a><br /></td></tr>
-<tr class="separator:a77f7df0cd857dc7363e37f342bfb24ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e85941faf19d95ae994010290b18be2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00106.html">KniDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a2e85941faf19d95ae994010290b18be2">getDeviceByName</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a2e85941faf19d95ae994010290b18be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns KNI device with specified name.  <a href="#a2e85941faf19d95ae994010290b18be2">More...</a><br /></td></tr>
-<tr class="separator:a2e85941faf19d95ae994010290b18be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a36f15dfe77675fdb81606ed9bdb07ff2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00108.html">KniDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a36f15dfe77675fdb81606ed9bdb07ff2">getInstance</a> ()</td></tr>
-<tr class="memdesc:a36f15dfe77675fdb81606ed9bdb07ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for singleton.  <a href="#a36f15dfe77675fdb81606ed9bdb07ff2">More...</a><br /></td></tr>
-<tr class="separator:a36f15dfe77675fdb81606ed9bdb07ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa8b65d977557e02a19e87139e1fbcc0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00108.html#a003785d82290a553d4c88d653f181118">KniCallbackVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#afa8b65d977557e02a19e87139e1fbcc0">callbackVersion</a> ()</td></tr>
-<tr class="separator:afa8b65d977557e02a19e87139e1fbcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e8d8259bfa8345755361bc804256cc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a73e8d8259bfa8345755361bc804256cc">isCallbackSupported</a> (const <a class="el" href="a00108.html#a9fa814b1db6f983d7421f9cd3f25afc7">KniCallbackType</a> cbType)</td></tr>
-<tr class="separator:a73e8d8259bfa8345755361bc804256cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2df48dfa7610b8e97f48a46403feb4c4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a2df48dfa7610b8e97f48a46403feb4c4">name</a></td></tr>
+<tr class="separator:a2df48dfa7610b8e97f48a46403feb4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971b099355d4da2fc8f85224f50ed42c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00117.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a971b099355d4da2fc8f85224f50ed42c">mac</a></td></tr>
+<tr class="separator:a971b099355d4da2fc8f85224f50ed42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22df3fac00ba8927f0554bf970e389ac"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a22df3fac00ba8927f0554bf970e389ac">portId</a></td></tr>
+<tr class="separator:a22df3fac00ba8927f0554bf970e389ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a367e9fa4227ef174aff1f4c9a0f85ab6">mtu</a></td></tr>
+<tr class="separator:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e4fec9e87b52e390e1d79e3d8e6dd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a75e4fec9e87b52e390e1d79e3d8e6dd6">bindKthread</a></td></tr>
+<tr class="separator:a75e4fec9e87b52e390e1d79e3d8e6dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a4e04ae1b8e56cb5cfe523dea16113d1b">kthreadCoreId</a></td></tr>
+<tr class="separator:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A singleton class that encapsulates DPDK KNI module initialization and holds the list of <a class="el" href="a00106.html">KniDevice</a> instances. As it's a singleton, it has only one active instance doesn't have a public c'tor. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a9fa814b1db6f983d7421f9cd3f25afc7"></a>
+<div class="textblock"><p>KNI device initialization data. Used to create new KNI device. Usage of callbacks member or oldCallbacks member is defined by result of <a class="el" href="a00109.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a>. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a75e4fec9e87b52e390e1d79e3d8e6dd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00108.html#a9fa814b1db6f983d7421f9cd3f25afc7">pcpp::KniDeviceList::KniCallbackType</a></td>
+          <td class="memname">bool pcpp::KniDevice::KniDeviceConfiguration::bindKthread</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Various callback types supported by KNI device </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9fa814b1db6f983d7421f9cd3f25afc7ab8cb46f3aab1546b45ec9a5352fbe6b2"></a>CALLBACK_MTU&#160;</td><td class="fielddoc">
-<p><a class="el" href="a00109.html#a1af9caa75f5c83e134e2e606c648762c">KniDevice::KniIoctlCallbacks::change_mtu</a> and <a class="el" href="a00110.html#a7536ecfac6ecb14edc740e603b5c1e72">KniDevice::KniOldIoctlCallbacks::change_mtu</a> callback </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9fa814b1db6f983d7421f9cd3f25afc7a2302a55a00b0bc2ab12f13b9c38dfd1b"></a>CALLBACK_LINK&#160;</td><td class="fielddoc">
-<p><a class="el" href="a00109.html#aa7202b6797b63f0f1cb779db56056c35">KniDevice::KniIoctlCallbacks::config_network_if</a> and <a class="el" href="a00110.html#ab548ab7f397d18a78a767225f9fb3192">KniDevice::KniOldIoctlCallbacks::config_network_if</a> callback </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9fa814b1db6f983d7421f9cd3f25afc7ad2286c4d8e90a9947d5c60adfe7b25c4"></a>CALLBACK_MAC&#160;</td><td class="fielddoc">
-<p><a class="el" href="a00109.html#a935e5aa0c623107a4bf7088be436e68d">KniDevice::KniIoctlCallbacks::config_mac_address</a> callback </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9fa814b1db6f983d7421f9cd3f25afc7a66be143adea67701a87b93096ff933c1"></a>CALLBACK_PROMISC&#160;</td><td class="fielddoc">
-<p><a class="el" href="a00109.html#ac3b5330e4ee138f16b4be662250634a3">KniDevice::KniIoctlCallbacks::config_promiscusity</a> callback </p>
-</td></tr>
-</table>
+<p>If set forces to bind KNI Linux kernel thread (NOT userspace thread) to specific core. If rte_kni kernel module is loaded with "kthread_mode=single" then - rebinds kernel thread used for all KNI devices to specified core. If rte_kni kernel module is loaded with "kthread_mode=multiple" then - binds new kernel thread for this device to specified core. </p>
 
 </div>
 </div>
-<a class="anchor" id="a003785d82290a553d4c88d653f181118"></a>
+<a class="anchor" id="a4e04ae1b8e56cb5cfe523dea16113d1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00108.html#a003785d82290a553d4c88d653f181118">pcpp::KniDeviceList::KniCallbackVersion</a></td>
+          <td class="memname">uint32_t pcpp::KniDevice::KniDeviceConfiguration::kthreadCoreId</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Callback related constants for KNI device </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a003785d82290a553d4c88d653f181118a87098e339406ba36eb0111cef26f860a"></a>CALLBACKS_NEW&#160;</td><td class="fielddoc">
-<p>Reports that DPDK supports only <a class="el" href="a00109.html" title="New callbacks for KNI device events. This structure MUST be used ONLY when KniDeviceList::callbackVer...">KniDevice::KniIoctlCallbacks</a> callback structure </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a003785d82290a553d4c88d653f181118aee7297eb0928cf114ec91f5476bd203f"></a>CALLBACKS_OLD&#160;</td><td class="fielddoc">
-<p>Reports that DPDK supports only <a class="el" href="a00110.html" title="Old callbacks for KNI device events. This structure MUST be used ONLY when KniDeviceList::callbackVer...">KniDevice::KniOldIoctlCallbacks</a> callback structure </p>
-</td></tr>
-</table>
+<p>ID of core to bind Linux kernel thread to (same as DPDK cores IDs) </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afa8b65d977557e02a19e87139e1fbcc0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00108.html#a003785d82290a553d4c88d653f181118">KniCallbackVersion</a> pcpp::KniDeviceList::callbackVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns KniCallbackVersion::CALLBACKS_NEW or KniCallbackVersion::CALLBACKS_OLD based on DPDK version used </p><dl class="section note"><dt>Note</dt><dd>MT SAFE </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a20344920bac3647235f624c33f50f6c8"></a>
+<a class="anchor" id="a971b099355d4da2fc8f85224f50ed42c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00106.html">KniDevice</a>* pcpp::KniDeviceList::createDevice </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00107.html">KniDevice::KniDeviceConfiguration</a> &amp;&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>mempoolSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="a00117.html">MacAddress</a> pcpp::KniDevice::KniDeviceConfiguration::mac</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Factory method for KNI devices. Newly created device is remembered under portId and name provided in config and can be found later by them. If KNI device is not destroyed explicitly thru KniDeviceList::destroyDevice then it will be destroyed implicitly by the time application exits. </p>
-<dl class="section warning"><dt>Warning</dt><dd>NOT MT SAFE </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>KNI device configuration structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mempoolSize</td><td>Size of packet mempool used by this device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to new KNI device or NULL in case of error </dd></dl>
+<p>MAC (ETHERNET) address of new KNI device. If <a class="el" href="a00117.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a> is provided then some valid address will be automatically generated. If provided (not <a class="el" href="a00117.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a>) will be cached by new KNI device info structure. </p>
 
 </div>
 </div>
-<a class="anchor" id="a2e85941faf19d95ae994010290b18be2"></a>
+<a class="anchor" id="a367e9fa4227ef174aff1f4c9a0f85ab6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00106.html">KniDevice</a>* pcpp::KniDeviceList::getDeviceByName </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t pcpp::KniDevice::KniDeviceConfiguration::mtu</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns KNI device with specified name. </p>
-<dl class="section note"><dt>Note</dt><dd>MT SAFE if createDevice or destroyDevice is not called concurrently </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name of KNI device to find </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to KNI device or NULL if device not found </dd></dl>
+<p>MTU of new KNI device. Will be cached by new KNI device info structure </p>
 
 </div>
 </div>
-<a class="anchor" id="a77f7df0cd857dc7363e37f342bfb24ac"></a>
+<a class="anchor" id="a2df48dfa7610b8e97f48a46403feb4c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00106.html">KniDevice</a>* pcpp::KniDeviceList::getDeviceByPort </td>
-          <td>(</td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>portId</em></td><td>)</td>
-          <td></td>
+          <td class="memname">std::string pcpp::KniDevice::KniDeviceConfiguration::name</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns KNI device with specified portId. </p>
-<dl class="section note"><dt>Note</dt><dd>MT SAFE if createDevice or destroyDevice is not called concurrently </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">portId</td><td>ID of KNI device to find </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to KNI device or NULL if device not found </dd></dl>
+<p>Name used to display device in system. Must not interfere with already existing network interfaces. Must be less than or equal to IFNAMSIZ (16 chars including \0 on most systems) </p>
 
 </div>
 </div>
-<a class="anchor" id="a36f15dfe77675fdb81606ed9bdb07ff2"></a>
+<a class="anchor" id="a22df3fac00ba8927f0554bf970e389ac"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00108.html">KniDeviceList</a>&amp; pcpp::KniDeviceList::getInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">uint16_t pcpp::KniDevice::KniDeviceConfiguration::portId</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Getter for singleton. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Initialization of Kni module depends on initialization of DPDK made by <a class="el" href="a00021.html">DpdkDeviceList</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The singleton instance of <a class="el" href="a00108.html">KniDeviceList</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a73e8d8259bfa8345755361bc804256cc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool pcpp::KniDeviceList::isCallbackSupported </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00108.html#a9fa814b1db6f983d7421f9cd3f25afc7">KniCallbackType</a>&#160;</td>
-          <td class="paramname"><em>cbType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns true if provided callback type is supported by used DPDK version </p><dl class="section note"><dt>Note</dt><dd>MT SAFE </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cbType</td><td>One of KniCallbackType enum values </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a41eb1dbf9e8985f8c0387a6083c68f3d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::KniDeviceList::isInitialized </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if KNI module was initialized successfully false otherwise </dd></dl>
+<p>Used in same way as DPDK port id. If some new callbacks are omitted then have separate meaning (see <a class="el" href="a00110.html#a935e5aa0c623107a4bf7088be436e68d">KniIoctlCallbacks::config_mac_address</a> and <a class="el" href="a00110.html#ac3b5330e4ee138f16b4be662250634a3">KniIoctlCallbacks::config_promiscusity</a>). Can be set to UINT16_MAX. </p>
 
 </div>
 </div>
@@ -395,8 +218,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00108.html">KniDeviceList</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00107.html">KniDevice</a></li><li class="navelem"><a class="el" href="a00108.html">KniDeviceConfiguration</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

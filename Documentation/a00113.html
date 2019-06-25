@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>PcapPlusPlus: pcpp::LinuxNicInformationSocket Class Reference</title>
+<title>PcapPlusPlus: pcpp::DpdkDevice::LinkStatus Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,135 +106,88 @@ $(document).ready(function(){initNavTree('a00113.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00409.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00318.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::LinuxNicInformationSocket Class Reference</div>  </div>
+<div class="title">pcpp::DpdkDevice::LinkStatus Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00249_source.html">LinuxNicInformationSocket.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00233_source.html">DpdkDevice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a01722c01a7fb72295efbfc5e8aa27723"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a01722c01a7fb72295efbfc5e8aa27723">LinuxSocket</a></td></tr>
-<tr class="separator:a01722c01a7fb72295efbfc5e8aa27723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9b5d6420de52d330e43a65663c523d"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#aaa9b5d6420de52d330e43a65663c523d">IoctlType</a></td></tr>
-<tr class="separator:aaa9b5d6420de52d330e43a65663c523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab61d863ff5a60c25059d9627ee214c16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#ab61d863ff5a60c25059d9627ee214c16">LinuxNicInformationSocket</a> ()</td></tr>
-<tr class="separator:ab61d863ff5a60c25059d9627ee214c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a810ea2386d18ef11adb6429cbafe6be4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a810ea2386d18ef11adb6429cbafe6be4">~LinuxNicInformationSocket</a> ()</td></tr>
-<tr class="separator:a810ea2386d18ef11adb6429cbafe6be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86176bab7ca80b09d271d1335ad987aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a86176bab7ca80b09d271d1335ad987aa">makeRequest</a> (const char *nicName, const <a class="el" href="a00113.html#aaa9b5d6420de52d330e43a65663c523d">IoctlType</a> ioctlType, ifreq *request)</td></tr>
-<tr class="memdesc:a86176bab7ca80b09d271d1335ad987aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) request to handled socket with provided request structure. See: <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a> for description of possible values of ioctlType and content of request.  <a href="#a86176bab7ca80b09d271d1335ad987aa">More...</a><br /></td></tr>
-<tr class="separator:a86176bab7ca80b09d271d1335ad987aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#ac71de439a1f9d3f7c95aadd5b20b0469">linkUp</a></td></tr>
+<tr class="separator:ac71de439a1f9d3f7c95aadd5b20b0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6177ed98446f18d57be88d8c2411a473"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a6177ed98446f18d57be88d8c2411a473">linkSpeedMbps</a></td></tr>
+<tr class="separator:a6177ed98446f18d57be88d8c2411a473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cfc43e13a80ba49369288ad220bd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00113.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a64cfc43e13a80ba49369288ad220bd1b">linkDuplex</a></td></tr>
+<tr class="separator:a64cfc43e13a80ba49369288ad220bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple wrapper over Linux socket for making the information requests about NICs or making some changes in NICs setup. All possible requests are described in <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a>. The instance of this class handels underlying socket during its lifetime and takes an appropriate actions to close socket on destruction. The user must call <a class="el" href="a00113.html#a86176bab7ca80b09d271d1335ad987aa" title="Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) req...">LinuxNicInformationSocket::makeRequest</a> method with known ioctl type and properly filled ifreq structure for this ioctl type. Filling of ifr_name may be omitted as it will be done automatically from provided NIC name. </p><dl class="section note"><dt>Note</dt><dd>Usage of this class requires the inclusion of &lt;sys/ioctl.h&gt; and &lt;net/if.h&gt; Linux headers </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aaa9b5d6420de52d330e43a65663c523d"></a>
+<div class="textblock"><p>A struct that contains the link status of a <a class="el" href="a00020.html">DpdkDevice</a> (DPDK port). Returned from <a class="el" href="a00020.html#a4ca58304c0df036a23e40f1505925319">DpdkDevice::getLinkStatus()</a> </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned long <a class="el" href="a00113.html#aaa9b5d6420de52d330e43a65663c523d">pcpp::LinuxNicInformationSocket::IoctlType</a></td>
+          <td class="memname">enum <a class="el" href="a00113.html#a67ef869fa855fbe7c29add4e9d6ac45b">pcpp::DpdkDevice::LinkStatus::LinkDuplex</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Simple type rename for convenience </p>
+<p>Enum for describing link duplex </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947"></a>FULL_DUPLEX&#160;</td><td class="fielddoc">
+<p>Full duplex </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14"></a>HALF_DUPLEX&#160;</td><td class="fielddoc">
+<p>Half duplex </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a class="anchor" id="a01722c01a7fb72295efbfc5e8aa27723"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a64cfc43e13a80ba49369288ad220bd1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int <a class="el" href="a00113.html#a01722c01a7fb72295efbfc5e8aa27723">pcpp::LinuxNicInformationSocket::LinuxSocket</a></td>
+          <td class="memname"><a class="el" href="a00113.html#a67ef869fa855fbe7c29add4e9d6ac45b">LinkDuplex</a> pcpp::DpdkDevice::LinkStatus::linkDuplex</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Simple type rename for convenience </p>
+<p>Link duplex (half/full duplex) </p>
 
 </div>
 </div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab61d863ff5a60c25059d9627ee214c16"></a>
+<a class="anchor" id="a6177ed98446f18d57be88d8c2411a473"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::LinuxNicInformationSocket::LinuxNicInformationSocket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int pcpp::DpdkDevice::LinkStatus::linkSpeedMbps</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tries to open handled socket on construction. If fails prints the debug message </p>
+<p>Link speed in Mbps (for example: 10Gbe will show 10000) </p>
 
 </div>
 </div>
-<a class="anchor" id="a810ea2386d18ef11adb6429cbafe6be4"></a>
+<a class="anchor" id="ac71de439a1f9d3f7c95aadd5b20b0469"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::LinuxNicInformationSocket::~LinuxNicInformationSocket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">bool pcpp::DpdkDevice::LinkStatus::linkUp</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Closes handled socket on destruction. If no socket was opened prints the debug message </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a86176bab7ca80b09d271d1335ad987aa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::LinuxNicInformationSocket::makeRequest </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nicName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00113.html#aaa9b5d6420de52d330e43a65663c523d">IoctlType</a>&#160;</td>
-          <td class="paramname"><em>ioctlType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ifreq *&#160;</td>
-          <td class="paramname"><em>request</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) request to handled socket with provided request structure. See: <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a> for description of possible values of ioctlType and content of request. </p>
-<dl class="section note"><dt>Note</dt><dd>User have no need to fill ifr_name field of request. It will be filled automatically from provided nicName argument. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nicName</td><td>Name of internet controller as displayed by Linux </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ioctlType</td><td>Value of ioctl to make </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>True if link is up, false if it's down </p>
 
 </div>
 </div>
@@ -243,8 +196,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00294.html">pcpp</a></li><li class="navelem"><a class="el" href="a00113.html">LinuxNicInformationSocket</a></li>
-    <li class="footer">Generated on Tue Jun 25 2019 05:48:55 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="a00296.html">pcpp</a></li><li class="navelem"><a class="el" href="a00020.html">DpdkDevice</a></li><li class="navelem"><a class="el" href="a00113.html">LinkStatus</a></li>
+    <li class="footer">Generated on Tue Jun 25 2019 06:10:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
