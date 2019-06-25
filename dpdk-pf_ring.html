@@ -21,6 +21,7 @@ section: dpdk-pfring
   <li>Encapsulation of DPDK's initialization process - both outside and inside the application - using simple scripts and methods</li>
   <li>A C++ class wrapper for DPDK's packet struct (mbuf) which offers most common functionality</li>
   <li>Seamless integration to other PcapPlusPlus capabilities, for example: receivce packets with DPDK, parse them with Packet++ protocol layers and save them to a pcap file</li>
+  <li>An easy-to-use C++ wrapper for <a href="https://doc.dpdk.org/guides/prog_guide/kernel_nic_interface.html">DPDK KNI (Kernel NIC Interface)</a></li>
 </ul>
 
 <h6><strong>PcapPlusPlus configuration for DPDK</strong></h6>
@@ -39,13 +40,15 @@ section: dpdk-pfring
 <p>DPDK requires several Linux configurations to run:</p>
 <ol>
   <li>DPDK uses the Linux huge-pages mechanism for faster virtual to physical page conversion resulting in better performance. So huge-pages must be set before a DPDK application is run</li>
-  <li>DPDK uses a designated kernel module for the kernel-bypass mechanism. This module should be loaded into the kernel</li>
+  <li>DPDK uses a designated kernel module for the kernel-bypass mechanism (igb_uio.ko). This module should be loaded into the kernel</li>
   <li>The user needs to state which NICs will move to DPDK control and which will stay under Linux control</li>
+  <li>For using DPDK KNI there is another kernel module to load (rte_kni.ko)</li>
 </ol>
 <p>PcapPlusPlus offers a simple script that automatically configures all of these. The script is under PcapPlusPlus root directory and is called <strong>setup-dpdk.sh</strong>. The script takes as an input the following parameters:</p>
 <ol>
   <li>-p    : the amount of huge pages to allocate. By default each huge-page size is 2048KB</li>
   <li>-n    : a comma-separated list of all NICs that will be unbinded from Linux and move to DPDK control. Only these NICs will be used by DPDK, the others will stay under Linux control. For example: eth0,eth1 will move these 2 interfaces under DPDK control - assuming this NIC is supported by DPDK. You can use the -h switch for help.</li>
+  <li>-k    : when this flag is specified the KNI kernel module is loaded</li>
 </ol>
 
 <p>If everything went well the system is ready to run a DPDK application and the script output should look like this:</p>
@@ -89,32 +92,31 @@ Setup DPDK completed</code>
 </p>
 <h6><strong>Tests and limitations</strong></h6>
 <ul>
-  <li>All unit-tests I perfromed are in Pcap++Test</li>
-  <li>In addition you try the DPDK example application (Examples/DpdkExample-FilterTraffic)</li>
-  <li>Supported DPDK versions are 16.11 to 18.02 (inclusive)</li>
-  <li>So far I managed to test the code on 2 virtual PMDs only: 
-	<ol>
-	  <li>VMXNET3 - a VMWare guest driver</li>
-	  <li>E1000/EM - 1GbE Intel NIC but I tested it as virtual NIC in VirtualBox guest</li>
-	</ol>
+  <li>You can find all unit-tests in Pcap++Test</li>
+  <li>In addition you can check out the following example applications:
+    <ol>
+      <li><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DpdkExample-FilterTraffic">DpdkExample-FilterTraffic</a></li>
+      <li><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/DpdkBridge">DpdkBridge</a></li>
+      <li><a href="https://github.com/seladb/PcapPlusPlus/tree/master/Examples/KniPong">KniPong</a></li>
+    </ol>  
   </li>
-  <li>I hope I'll be able to test it on some more (preferebly non-virtual) NICs soon - I'll update if/when I do</li>
+  <li>Supported DPDK versions are 16.11 to 19.02 (inclusive)</li>
+  <li>Not all PMDs were tested, but the majority of them should work. Please report an issue if the PMD you're using isn't working</li> 
   <li>Operating systems and configurations tested:
-	<ol>
-	  <li>Ubuntu 14.04.1 LTS 64bit with kernel 3.x and gcc 4.8.x</li>
-	  <li>Ubuntu 12.04.5 LTS 32bit with kernel 3.x and gcc 4.6.x</li>
-	  <li>CentOS 7.1 64bit with kernel 3.x and gcc 4.8.x</li>
-	</ol>
+    <ol>
+      <li>Ubuntu 18.04, 16.04, 14.04 LTS 64bit with kernel version > 3 and gcc version >= 4.8</li>
+      <li>CentOS 7.1 64bit with kernel 3.x and gcc 4.8.x</li>
+    </ol>
   </li>
 </ul>
 
 <h2>PF_RING support</h2>
-<p>PcapPlusPlus provides a clean and simple C++ wrapper API for Vanilla PF_RING. Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but PF_RING DNA or ZC (which allows kernel bypass and zero-copy of packets from NIC to user-space) isn't supported. I hope I'll be able to add it in the future.</p>
+<p>PcapPlusPlus provides a clean and simple C++ wrapper API for Vanilla PF_RING. Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but PF_RING DNA or ZC (which allows kernel bypass and zero-copy of packets from NIC to user-space) isn't supported.</p>
 <p>You can read more about PF_RING in ntop web-site: <a href="http://www.ntop.org/products/pf_ring/">http://www.ntop.org/products/pf_ring/</a> and in PF_RING user guide: <a href="https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf">https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf</a></p>
 <p>In order to compile PcapPlusPlus with PF_RING you need to:</p>
 <ol>
   <li>Download PF_RING from ntop's web-site: <a href="http://www.ntop.org/get-started/download/#PF_RING">http://www.ntop.org/get-started/download/#PF_RING</a></li>
-  <li>Note that I used PcapPlusPlus with PF_RING versions 6.2.0 - 6.4.1. I can't guarantee it'll work with previous or later versions</li>
+  <li>Note that PcapPlusPlus was tested with PF_RING versions 6.2.0 - 6.4.1. Later versions aren't guaranteed to work. Please report if you're seeing issues with later versions</li>
   <li>Once PF_RING is compiled successfully, you need to run PcapPlusPlus <strong>configure-linux.sh</strong> and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
   <li>Then you can compile PcapPlusPlus as usual</li>
   <li>Before you activate any PcapPlusPlus application that uses PF_RING, don't forget to enable PF_RING kernel module. If you forget to do that, PcapPlusPlus will output an appropriate error on startup which will remind you:</li>
