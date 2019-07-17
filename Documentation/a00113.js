@@ -1,9 +1,10 @@
 var a00113 =
 [
-    [ "getBuildDateTime", "a00113.html#aa6e2dd1c0d8281b957fd0a52555c9908", null ],
-    [ "getGitBranch", "a00113.html#a85b9d50917da9312e11f3373e2999073", null ],
-    [ "getGitCommit", "a00113.html#acae7542122e659b88073dc6b76564e6b", null ],
-    [ "getGitInfo", "a00113.html#aa1b1b04caac37857e13624c044924bf7", null ],
-    [ "getPcapPlusPlusVersion", "a00113.html#aa818bc85ee8391b470263dc3aefa945b", null ],
-    [ "getPcapPlusPlusVersionFull", "a00113.html#a405f96d13d38a7b86a8321c31edc6ef0", null ]
+    [ "LinkDuplex", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45b", [
+      [ "FULL_DUPLEX", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947", null ],
+      [ "HALF_DUPLEX", "a00113.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14", null ]
+    ] ],
+    [ "linkDuplex", "a00113.html#a64cfc43e13a80ba49369288ad220bd1b", null ],
+    [ "linkSpeedMbps", "a00113.html#a6177ed98446f18d57be88d8c2411a473", null ],
+    [ "linkUp", "a00113.html#ac71de439a1f9d3f7c95aadd5b20b0469", null ]
 ];

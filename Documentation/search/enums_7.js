@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['linkduplex',['LinkDuplex',['../a00846.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus']]],
-  ['linklayertype',['LinkLayerType',['../a00202.html#ab3f43dd3ccd8c93acac8b67909be02be',1,'pcpp']]],
-  ['livedevicetype',['LiveDeviceType',['../a01302.html#a0e343585711ee4e02d4b9507467135ab',1,'pcpp::PcapLiveDevice']]],
-  ['loglevel',['LogLevel',['../a01154.html#a522254c250da7b12b5b4817b84c208b6',1,'pcpp::LoggerPP']]],
-  ['logmodule',['LogModule',['../a00202.html#ac6557f5dc8fcb14858f231b12bdc1c1a',1,'pcpp']]]
+  ['knicallbacktype',['KniCallbackType',['../a00109.html#a9fa814b1db6f983d7421f9cd3f25afc7',1,'pcpp::KniDeviceList']]],
+  ['knicallbackversion',['KniCallbackVersion',['../a00109.html#a003785d82290a553d4c88d653f181118',1,'pcpp::KniDeviceList']]],
+  ['kniinfostate',['KniInfoState',['../a00107.html#a3fd22d62a55612b03481d65bc49fa0cc',1,'pcpp::KniDevice']]],
+  ['knilinkstate',['KniLinkState',['../a00107.html#a9a016df4487ece71c8dc911961a4f329',1,'pcpp::KniDevice']]],
+  ['knipromiscuousmode',['KniPromiscuousMode',['../a00107.html#acfeed0b25fa073d8a74b2d29ca218dc6',1,'pcpp::KniDevice']]]
 ];

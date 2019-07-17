@@ -1,15 +1,12 @@
 var a00167 =
 [
-    [ "SystemCore", "a01542.html", "a01542" ],
-    [ "SystemCores", "a01546.html", null ],
-    [ "AppName", "a01550.html", null ],
-    [ "ApplicationEventHandler", "a01554.html", "a01554" ],
-    [ "clockGetTime", "a00167.html#ae517edc41624400eebc521c6c5bc8a82", null ],
-    [ "createCoreMaskFromCoreIds", "a00167.html#a572ce60b003993527593a10e6da9481b", null ],
-    [ "createCoreMaskFromCoreVector", "a00167.html#ab6f336984bb48eb504d5e23f04581697", null ],
-    [ "createCoreVectorFromCoreMask", "a00167.html#a74065e37f1f7390a6ab299ebc7c4c229", null ],
-    [ "directoryExists", "a00167.html#a90c94556ad172d6c3ffb766e1ab25edf", null ],
-    [ "executeShellCommand", "a00167.html#ac278806cc421fd25eb61aa073fcf5e1b", null ],
-    [ "getCoreMaskForAllMachineCores", "a00167.html#a4d9b4fa3436a28221db583802b9524f5", null ],
-    [ "getNumOfCores", "a00167.html#a9da3b8abc599b1744dc36c64b802bbd2", null ]
+    [ "SipResponseFirstLineException", "a00168.html", null ],
+    [ "getSize", "a00167.html#a89d84af60d42a03dadf345c355c7fe00", null ],
+    [ "getStatusCode", "a00167.html#a2ceeeee9cab9c17731526e4cf0d50c29", null ],
+    [ "getStatusCodeAsInt", "a00167.html#a400bf7c7fd55b195858673ee301739fe", null ],
+    [ "getStatusCodeString", "a00167.html#a540ecfdb65bf0a901a4c2dfe66dba4ec", null ],
+    [ "getVersion", "a00167.html#a89d050886d9305631d0f947ad216d965", null ],
+    [ "isComplete", "a00167.html#aaae2f9b72de06ccca54bf6aeb504d64c", null ],
+    [ "setStatusCode", "a00167.html#a2ddb5a023bc342946fbbd691ec51c2ed", null ],
+    [ "setVersion", "a00167.html#a0db5ff108fa435fd73e7b4c22e9abe24", null ]
 ];

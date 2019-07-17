@@ -1,6 +1,7 @@
 var a00179 =
 [
-    [ "HeaderField", "a01602.html", "a01602" ],
-    [ "TextBasedProtocolMessage", "a01606.html", "a01606" ],
-    [ "PCPP_END_OF_TEXT_BASED_PROTOCOL_HEADER", "a00179.html#aa2341b081240f8fec259fac869f58f3c", null ]
+    [ "SSLCertificateMessage", "a00179.html#a92debae3c5af150d7e09fb0f74eaa6f1", null ],
+    [ "getCertificate", "a00179.html#a06a60bd71d24cbe8f91ded6c074bfe64", null ],
+    [ "getNumOfCertificates", "a00179.html#a621b0b59bac98cf240d0ed6631d432c5", null ],
+    [ "toString", "a00179.html#a3efa384d6853e29d9448269fd1a00b20", null ]
 ];

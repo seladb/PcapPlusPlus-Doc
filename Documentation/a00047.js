@@ -1,6 +1,5 @@
 var a00047 =
 [
-    [ "IPAddress", "a01026.html", "a01026" ],
-    [ "IPv4Address", "a01030.html", "a01030" ],
-    [ "IPv6Address", "a01034.html", "a01034" ]
+    [ "id", "a00047.html#acdde59e7b8ebd9e3cd7b52ce5cc3a108", null ],
+    [ "sequence", "a00047.html#a04e519c8c310e680af34ead3c5bd3d5f", null ]
 ];
